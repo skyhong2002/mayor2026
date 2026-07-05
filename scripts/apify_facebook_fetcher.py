@@ -4,10 +4,11 @@
 Facebook is only reachable through Apify (the rss.observe.tw RSSHub has no
 facebook route), and the actor is pay-per-result, so this fetcher enforces
 the same budget discipline as Harmonica-in-Taiwan's version via a ledger
-(state/apify_facebook_fetcher.json):
-
-- minimum spacing between runs (default 12h; the pipeline ticks every 30min)
-- estimated monthly spend cap (default $4; the free plan gives $5/month)
+(state/apify_facebook_fetcher.json), with dynamic pacing: the remaining
+monthly budget (default $5 x 95% utilization) is spread evenly over the rest
+of the month, so the run interval adapts to actual usage — overspend early
+and the interval grows, underspend and it shrinks. Freshness floor: at most
+one run per 4h.
 
 Requires APIFY_TOKEN in the environment / .env; without it this prints a
 skip message and exits 0 (non-fatal).
@@ -34,8 +35,11 @@ MAX_POLL_ATTEMPTS = 24
 
 LEDGER_JSON = feed_common.PROJECT_ROOT / "state" / "apify_facebook_fetcher.json"
 COST_PER_RESULT_USD = 0.005  # facebook-posts-scraper list price: $5 / 1000 results
-DEFAULT_MIN_RUN_SPACING_HOURS = float(os.environ.get("MAYOR_APIFY_MIN_RUN_SPACING_HOURS", "12"))
-DEFAULT_MONTHLY_BUDGET_USD = float(os.environ.get("MAYOR_APIFY_MONTHLY_BUDGET_USD", "4"))
+DEFAULT_MONTHLY_BUDGET_USD = float(os.environ.get("MAYOR_APIFY_MONTHLY_BUDGET_USD", "5"))
+DEFAULT_BUDGET_UTILIZATION = float(os.environ.get("MAYOR_APIFY_BUDGET_UTILIZATION", "0.95"))
+DEFAULT_POSTS_PER_PAGE = int(os.environ.get("MAYOR_APIFY_POSTS_PER_PAGE", "3"))
+MIN_RUN_INTERVAL_HOURS = 4.0  # freshness floor: never hammer more often than this
+MAX_RUN_INTERVAL_HOURS = 24.0 * 7  # staleness ceiling used only for logging
 
 
 def apify_token() -> str:
@@ -62,6 +66,53 @@ def ledger_month_spend(ledger: dict[str, Any], now: dt.datetime) -> float:
     months = ledger.get("months") or {}
     entry = months.get(month_key(now)) or {}
     return float(entry.get("estimated_spend_usd") or 0.0)
+
+
+def month_end(now: dt.datetime) -> dt.datetime:
+    if now.month == 12:
+        return dt.datetime(now.year + 1, 1, 1, tzinfo=dt.timezone.utc)
+    return dt.datetime(now.year, now.month + 1, 1, tzinfo=dt.timezone.utc)
+
+
+def dynamic_run_decision(
+    ledger: dict[str, Any],
+    *,
+    now: dt.datetime,
+    run_cost_usd: float,
+    budget_usd: float,
+    utilization: float,
+) -> tuple[bool, str]:
+    """Spread the remaining monthly budget evenly over the rest of the month.
+
+    interval = remaining_time / affordable_runs_left. Overspending early makes
+    the interval grow; an underspent budget near month-end makes it shrink.
+    """
+    target = budget_usd * utilization
+    spent = ledger_month_spend(ledger, now)
+    remaining = target - spent
+    if remaining < run_cost_usd:
+        return False, (
+            f"monthly budget target reached (~${spent:.2f} of ${target:.2f}, run costs ~${run_cost_usd:.2f}); "
+            "waiting for next month"
+        )
+
+    affordable_runs = remaining / run_cost_usd
+    seconds_left = max((month_end(now) - now).total_seconds(), 1.0)
+    interval_hours = max(seconds_left / affordable_runs / 3600.0, MIN_RUN_INTERVAL_HOURS)
+
+    last_run = parse_time(ledger.get("last_run_at"))
+    if last_run is None:
+        return True, f"first run this ledger; pacing thereafter ~every {interval_hours:.1f}h"
+    due_at = last_run + dt.timedelta(hours=interval_hours)
+    if now >= due_at:
+        return True, (
+            f"due (pace ~every {interval_hours:.1f}h; ~${spent:.2f} of ${target:.2f} spent, "
+            f"~{affordable_runs:.0f} runs left this month)"
+        )
+    return False, (
+        f"not due yet (pace ~every {interval_hours:.1f}h, next at {due_at.isoformat(timespec='seconds')}; "
+        f"~${spent:.2f} of ${target:.2f} spent)"
+    )
 
 
 def record_run(ledger: dict[str, Any], *, now: dt.datetime, results: int) -> None:
@@ -183,10 +234,10 @@ def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[s
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--posts-per-page", type=int, default=10)
-    parser.add_argument("--min-run-spacing-hours", type=float, default=DEFAULT_MIN_RUN_SPACING_HOURS)
+    parser.add_argument("--posts-per-page", type=int, default=DEFAULT_POSTS_PER_PAGE)
     parser.add_argument("--monthly-budget-usd", type=float, default=DEFAULT_MONTHLY_BUDGET_USD)
-    parser.add_argument("--force", action="store_true", help="Ignore run spacing and budget checks.")
+    parser.add_argument("--budget-utilization", type=float, default=DEFAULT_BUDGET_UTILIZATION)
+    parser.add_argument("--force", action="store_true", help="Ignore the dynamic budget pacing.")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -202,22 +253,17 @@ def main() -> int:
 
     ledger = feed_common.load_json(LEDGER_JSON, {})
     now = dt.datetime.now(dt.timezone.utc)
+    run_cost = len(sources) * args.posts_per_page * COST_PER_RESULT_USD
     if not args.force:
-        last_run = parse_time(ledger.get("last_run_at"))
-        if last_run and now - last_run < dt.timedelta(hours=args.min_run_spacing_hours):
-            due_at = last_run + dt.timedelta(hours=args.min_run_spacing_hours)
-            print(
-                f"apify_facebook_fetcher: last run {last_run.isoformat(timespec='seconds')}, "
-                f"next not before {due_at.isoformat(timespec='seconds')} (spacing {args.min_run_spacing_hours}h); skipping."
-            )
-            return 0
-        spend = ledger_month_spend(ledger, now)
-        estimated_run_cost = len(sources) * args.posts_per_page * COST_PER_RESULT_USD
-        if spend + estimated_run_cost > args.monthly_budget_usd:
-            print(
-                f"apify_facebook_fetcher: monthly budget reached "
-                f"(spent ~${spend:.2f} + run ~${estimated_run_cost:.2f} > ${args.monthly_budget_usd:.2f}); skipping."
-            )
+        should_run, reason = dynamic_run_decision(
+            ledger,
+            now=now,
+            run_cost_usd=run_cost,
+            budget_usd=args.monthly_budget_usd,
+            utilization=args.budget_utilization,
+        )
+        print(f"apify_facebook_fetcher: {reason}")
+        if not should_run:
             return 0
 
     source_by_url = {s["url"]: s for s in sources}
