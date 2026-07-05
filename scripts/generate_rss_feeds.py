@@ -73,6 +73,11 @@ def main() -> int:
             posts=[{**p, "posted_at": p.get("postedAt"), "url": p.get("url"), "id": p.get("id"), "text": p.get("text")} for p in posts],
         )
         (FEEDS_DIR / f"{candidate['id']}.xml").write_text(rss_xml, encoding="utf-8")
+        # JSON twin of each feed, matching Harmonica's feeds/*.json outputs.
+        feed_common.save_json_atomic(
+            FEEDS_DIR / f"{candidate['id']}.json",
+            {"version": 1, "title": f"{candidate['name']}（{candidate['cityLabel']}）貼文更新", "count": len(posts), "posts": posts},
+        )
 
     all_posts.sort(key=lambda p: p.get("postedAt") or "", reverse=True)
     combined_xml = render_rss(
@@ -82,8 +87,52 @@ def main() -> int:
         posts=[{**p, "posted_at": p.get("postedAt")} for p in all_posts[:100]],
     )
     (FEEDS_DIR / "updates.xml").write_text(combined_xml, encoding="utf-8")
+    feed_common.save_json_atomic(
+        FEEDS_DIR / "updates.json",
+        {"version": 1, "title": SITE_TITLE, "count": len(all_posts[:100]), "posts": all_posts[:100]},
+    )
 
-    print(f"generate_rss_feeds: wrote {len(candidates)} candidate feed(s) + updates.xml to {FEEDS_DIR.relative_to(feed_common.PROJECT_ROOT)}")
+    feed_links = "\n".join(
+        f'      <li><a href="{c["id"]}.xml">{c["name"]}（{c["cityLabel"]}）</a>'
+        f' · <a href="{c["id"]}.json">JSON</a></li>'
+        for c in candidates
+    )
+    index_html = f"""<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSS 訂閱｜2026 市長官方來源觀測站</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../">
+      <img class="brand-logo-img" src="../assets/logo.svg" alt="">
+      <span>2026 市長官方來源觀測站</span>
+    </a>
+    <nav class="site-nav">
+      <a href="../">六都總覽</a>
+      <a href="../source/">公開來源</a>
+    </nav>
+  </header>
+  <section class="band">
+    <div class="band-inner">
+      <p class="section-kicker">Feeds</p>
+      <h2>RSS 訂閱</h2>
+      <p>總河道：<a href="updates.xml">updates.xml</a> · <a href="updates.json">updates.json</a></p>
+      <ul>
+{feed_links}
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
+"""
+    (FEEDS_DIR / "index.html").write_text(index_html, encoding="utf-8")
+
+    print(f"generate_rss_feeds: wrote {len(candidates)} candidate feed(s) (xml+json), updates feed, and feeds index to {FEEDS_DIR.relative_to(feed_common.PROJECT_ROOT)}")
     return 0
 
 

@@ -25,6 +25,11 @@ def main() -> int:
     source_dir.mkdir(parents=True, exist_ok=True)
     (source_dir / "index.html").write_text(source_index_template, encoding="utf-8")
 
+    status_template = (TEMPLATES_DIR / "status.html").read_text(encoding="utf-8")
+    status_dir = SITE_ROOT / "status"
+    status_dir.mkdir(parents=True, exist_ok=True)
+    (status_dir / "index.html").write_text(status_template, encoding="utf-8")
+
     candidate_template = (TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8")
     source_detail_template = (TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8")
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})

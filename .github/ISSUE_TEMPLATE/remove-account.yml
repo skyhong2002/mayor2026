@@ -1,0 +1,40 @@
+name: 移除或停用帳號
+description: 回報應停止監看的帳號（停用、冒名、非官方、候選人退選等）
+title: "[移除帳號] "
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 要移除或停用的帳號
+      description: 請貼帳號網址，或候選人姓名 + 平台。
+      placeholder: 例：https://www.instagram.com/xxx/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: 原因
+      options:
+        - 帳號已停用或刪除
+        - 非官方帳號／冒名
+        - 候選人已退選或更換帳號
+        - 其他（請於下方說明）
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 佐證說明
+      description: 請提供公開可查的佐證（新聞、官方聲明、帳號頁面現況）。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: public_confirmation
+    attributes:
+      label: 公開資料確認
+      options:
+        - label: 我了解這個 issue 會公開顯示，且沒有提供私人或不應公開的資料。
+          required: true

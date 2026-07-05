@@ -27,28 +27,11 @@
     <key>RunAtLoad</key>
     <true/>
 
-    <!-- Three fixed ticks a day: 12:00 / 17:00 / 22:00 Taipei time. -->
-    <key>StartCalendarInterval</key>
-    <array>
-      <dict>
-        <key>Hour</key>
-        <integer>12</integer>
-        <key>Minute</key>
-        <integer>0</integer>
-      </dict>
-      <dict>
-        <key>Hour</key>
-        <integer>17</integer>
-        <key>Minute</key>
-        <integer>0</integer>
-      </dict>
-      <dict>
-        <key>Hour</key>
-        <integer>22</integer>
-        <key>Minute</key>
-        <integer>0</integer>
-      </dict>
-    </array>
+    <!-- Every 30 minutes, same cadence as Harmonica-in-Taiwan; the pipeline
+         lock and per-source fetch intervals (e.g. Instagram 12h) keep this
+         from hammering any single platform. -->
+    <key>StartInterval</key>
+    <integer>1800</integer>
 
     <key>StandardOutPath</key>
     <string>/Users/REPLACE_ME/mayor2026/logs/pipeline.log</string>

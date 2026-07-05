@@ -21,8 +21,9 @@ cp deploy/tw.observe.mayor2026.pipeline.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/tw.observe.mayor2026.pipeline.plist
 ```
 
-`StartCalendarInterval` 設定三個固定時間點（12:00 / 17:00 / 22:00）；跟 `StartInterval`（固定間隔）不同，
-機器睡眠錯過的時間點不會補跑，開機或喚醒後由 `RunAtLoad` 立即補一次。
+`StartInterval` 每 30 分鐘跑一次（與 Harmonica-in-Taiwan 相同節奏）。不用擔心打爆平台：
+pipeline 有 lock 防止重疊執行，抓取層也有各自的節流（Instagram 預設 12 小時抓一次、
+請求之間有延遲），大多數 tick 只會抓 Threads/YouTube 增量並重建站台。
 
 ## 遠端維運建議
 

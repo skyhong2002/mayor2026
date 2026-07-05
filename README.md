@@ -3,12 +3,14 @@
 `mayor2026.observe.tw` 是一個獨立、以公開資料為主的六都（臺北、新北、桃園、臺中、臺南、高雄）市長候選人官方發文觀測站。定期從候選人公開的
 Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規化、分類議題比例，輸出成靜態網站、JSON API 與 RSS。
 
-## 目前輸出（規劃中，尚未部署）
+## 目前輸出
 
-- 網站首頁：六都候選人總覽矩陣
+- 網站首頁：<https://mayor2026.observe.tw/>（六都候選人總覽 + 最新公開發文河道）
 - `/<city>/<candidate>/`：單一候選人跨平台合併時間軸 + 議題比例圖表
-- `/api/*.json`：公開 JSON API
-- `/feeds/<candidate>.xml`：每位候選人一條 RSS
+- `/source/`：公開來源列表；`/source/<candidate>/`：帳號清單（含性質與驗證等級）
+- `/status/`：資料管線狀態（收錄統計、最近一次執行、近期抓取錯誤）
+- `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）
+- `/feeds/`：RSS 訂閱入口；每位候選人一條 `<id>.xml` 與對應 `<id>.json`
 
 ## 專案結構
 
