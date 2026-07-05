@@ -36,7 +36,11 @@ REQUEST_TIMEOUT_SECS = 15
 USER_AGENT = "Mozilla/5.0 (compatible; 2026mayor-fetcher/0.1)"
 
 RSSHUB_ROUTE_BUILDERS = {
-    "instagram": lambda username: f"/instagram/user/{username}",
+    # rss.observe.tw only configures IG_COOKIE (for the V2 web-API route);
+    # the V1 route /instagram/user/:key needs IG_USERNAME/IG_PASSWORD, which
+    # the instance deliberately leaves unset (login-by-password gets the
+    # account locked), so V1 stays disabled there.
+    "instagram": lambda username: f"/instagram/2/user/{username}",
     # NOTE: on rss.observe.tw the Threads route is /threads/:user directly;
     # /threads/user/:user would treat the literal "user" as the username.
     "threads": lambda username: f"/threads/{username}",
