@@ -44,7 +44,7 @@
             link.href = `${city.id}/${candidate.id}/`;
             link.innerHTML = `
               <div class="candidate-name">${candidate.name}</div>
-              <div class="candidate-meta">${candidate.party || "無黨籍/未標註"} · ${candidate.postCount} 則貼文 · 最新 ${formatDate(candidate.latestPostAt)}</div>
+              <div class="candidate-meta">${candidate.party || "政黨/陣營未標註"} · ${candidate.postCount} 則貼文 · 最新 ${formatDate(candidate.latestPostAt)}</div>
             `;
             card.appendChild(link);
           });
@@ -78,8 +78,9 @@
     Promise.all([fetchJson(`api/posts/${candidateId}.json`), fetchJson("api/spectrum.json")])
       .then(([postsPayload, spectrumPayload]) => {
         const candidate = postsPayload.candidate;
-        document.getElementById("candidate-name").textContent = `${candidate.name}（${candidate.cityLabel}）`;
-        document.getElementById("candidate-party").textContent = candidate.party || "無黨籍/未標註";
+        document.getElementById("candidate-city").textContent = candidate.cityLabel;
+        document.getElementById("candidate-name").textContent = candidate.name;
+        document.getElementById("candidate-party").textContent = `${candidate.party || "政黨/陣營未標註"} · ${postsPayload.count} 則貼文`;
 
         const linksEl = document.getElementById("candidate-links");
         Object.entries(candidate.links || {}).forEach(([platform, url]) => {
