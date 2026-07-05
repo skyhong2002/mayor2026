@@ -30,6 +30,11 @@ def main() -> int:
     status_dir.mkdir(parents=True, exist_ok=True)
     (status_dir / "index.html").write_text(status_template, encoding="utf-8")
 
+    spectrum_template = (TEMPLATES_DIR / "spectrum.html").read_text(encoding="utf-8")
+    spectrum_dir = SITE_ROOT / "spectrum"
+    spectrum_dir.mkdir(parents=True, exist_ok=True)
+    (spectrum_dir / "index.html").write_text(spectrum_template, encoding="utf-8")
+
     candidate_template = (TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8")
     source_detail_template = (TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8")
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})

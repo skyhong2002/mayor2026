@@ -114,6 +114,7 @@ def main() -> int:
     </a>
     <nav class="site-nav">
       <a href="../">六都總覽</a>
+      <a href="../spectrum/">議題光譜</a>
       <a href="../source/">公開來源</a>
       <a href="../status/">狀態</a>
       <a href="./">RSS</a>
@@ -137,6 +138,7 @@ def main() -> int:
         <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
       </div>
       <div class="footer-links">
+        <a href="../spectrum/">議題光譜</a>
         <a href="../source/">公開來源</a>
         <a href="../status/">狀態</a>
         <a href="./">RSS</a>

@@ -32,6 +32,7 @@ REQUIRED_FILES = [
     SITE_ROOT / "index.html",
     SITE_ROOT / "source" / "index.html",
     SITE_ROOT / "status" / "index.html",
+    SITE_ROOT / "spectrum" / "index.html",
     SITE_ROOT / "sitemap.xml",
     SITE_ROOT / "robots.txt",
 ]

@@ -17,7 +17,7 @@ def main() -> int:
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
     candidates = candidates_payload.get("candidates", [])
 
-    paths = ["/", "/source/", "/status/"]
+    paths = ["/", "/source/", "/status/", "/spectrum/"]
     for candidate in candidates:
         paths.append(f"/{candidate['city']}/{candidate['id']}/")
         paths.append(f"/source/{candidate['id']}/")

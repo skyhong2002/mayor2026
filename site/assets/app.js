@@ -312,16 +312,8 @@
         datasets: [
           {
             data: values,
-            backgroundColor: [
-              "#0f766e",
-              "#b87921",
-              "#c85f44",
-              "#3b6ea5",
-              "#7c5cad",
-              "#4d8a56",
-              "#a54d68",
-              "#5c6a63",
-            ],
+            // Same topic->color mapping as the spectrum page.
+            backgroundColor: labels.map((label) => TOPIC_COLORS[label] || "#9aa19d"),
           },
         ],
       },
@@ -479,6 +471,97 @@
       });
   }
 
+  // Shared topic palette — same order/colors as the candidate-page pie chart.
+  const TOPIC_COLORS = {
+    交通: "#0f766e",
+    住宅: "#b87921",
+    社福: "#c85f44",
+    環境: "#4d8a56",
+    教育: "#3b6ea5",
+    經濟: "#7c5cad",
+    治安: "#a54d68",
+    醫療: "#5c6a63",
+  };
+
+  function renderSpectrum() {
+    Promise.all([fetchJson("api/cities.json"), fetchJson("api/sources.json"), fetchJson("api/spectrum.json")])
+      .then(([citiesPayload, sourcesPayload, spectrumPayload]) => {
+        const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
+        const spectrumById = Object.fromEntries(spectrumPayload.candidates.map((c) => [c.candidateId, c]));
+
+        const legend = document.getElementById("spectrum-legend");
+        Object.entries(TOPIC_COLORS).forEach(([topic, color]) => {
+          const item = el("span");
+          const swatch = el("i");
+          swatch.style.background = color;
+          item.appendChild(swatch);
+          item.appendChild(document.createTextNode(topic));
+          legend.appendChild(item);
+        });
+
+        const container = document.getElementById("spectrum-cities");
+        container.innerHTML = "";
+        citiesPayload.cities.forEach((city) => {
+          if (!city.candidateIds.length) return;
+          const section = el("div", "spectrum-city");
+          const kicker = el("p", "section-kicker", city.id.replace("-", " ").toUpperCase());
+          section.appendChild(kicker);
+          section.appendChild(el("h2", "", city.label));
+
+          city.candidateIds.forEach((candidateId) => {
+            const source = sourcesById[candidateId];
+            if (!source) return;
+            const entry = spectrumById[candidateId];
+            const proportions = (entry && entry.topicProportions) || {};
+
+            const row = el("div", "spectrum-row");
+
+            const identity = el("a", "spectrum-identity");
+            identity.href = `../${source.city}/${source.id}/`;
+            identity.appendChild(avatarNode(source, true));
+            const nameWrap = el("div");
+            nameWrap.appendChild(el("strong", "", source.name));
+            nameWrap.appendChild(el("span", "data-date", `${source.party || "未標註"} · ${source.postCount} 則`));
+            identity.appendChild(nameWrap);
+            row.appendChild(identity);
+
+            const topics = Object.entries(proportions).sort((a, b) => b[1] - a[1]);
+            if (!topics.length) {
+              const emptyBar = el("div", "spectrum-bar spectrum-bar-empty", "尚無足夠貼文計算議題比例");
+              row.appendChild(emptyBar);
+            } else {
+              const bar = el("div", "spectrum-bar");
+              topics.forEach(([topic, value]) => {
+                const segment = el("i");
+                segment.style.width = `${(value * 100).toFixed(2)}%`;
+                segment.style.background = TOPIC_COLORS[topic] || "#9aa19d";
+                segment.title = `${topic} ${(value * 100).toFixed(1)}%`;
+                bar.appendChild(segment);
+              });
+              row.appendChild(bar);
+            }
+
+            const dominant = el("div", "spectrum-dominant");
+            if (entry && entry.dominantTopic) {
+              const pill = el("span", "pill", `主要：${entry.dominantTopic}`);
+              pill.style.background = "rgba(15, 118, 110, 0.12)";
+              pill.style.color = "var(--accent-strong, #0a514d)";
+              dominant.appendChild(pill);
+            } else {
+              dominant.textContent = "—";
+            }
+            row.appendChild(dominant);
+
+            section.appendChild(row);
+          });
+          container.appendChild(section);
+        });
+      })
+      .catch((err) => {
+        document.getElementById("spectrum-cities").textContent = `資料載入失敗：${err.message}`;
+      });
+  }
+
   function renderStatus() {
     const STEP_LABELS = { ok: "成功", failed: "失敗", optional_failed: "失敗（非必要）", running: "執行中", pending: "等待中" };
     Promise.all([
@@ -560,5 +643,7 @@
     renderSourceDetail();
   } else if (body.dataset.page === "status") {
     renderStatus();
+  } else if (body.dataset.page === "spectrum") {
+    renderSpectrum();
   }
 })();
