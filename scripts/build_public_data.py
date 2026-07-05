@@ -14,7 +14,13 @@ AVATAR_CACHE_JSON = feed_common.PROJECT_ROOT / "state" / "source_avatar_cache.js
 LINK_PLATFORMS = ["website", "facebook", "instagram", "threads", "youtube", "x", "line_oa", "line_openchat", "tiktok", "podcast"]
 
 IMAGE_CACHE = feed_common.load_json(IMAGE_CACHE_JSON, {})
-AVATAR_CACHE = feed_common.load_json(AVATAR_CACHE_JSON, {})
+AVATAR_CACHE = feed_common.load_json(AVATAR_CACHE_JSON, {})  # keyed by account id
+PROFILES = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
+
+
+def account_avatar_url(account_id: str) -> str | None:
+    cached = AVATAR_CACHE.get(account_id)
+    return f"assets/source-avatars/{cached['file']}" if cached else None
 
 
 def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candidate: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
@@ -23,6 +29,12 @@ def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candid
         accounts = accounts_by_candidate.get(candidate["candidate_id"], [])
         best = feed_common.best_accounts_per_platform(accounts)
         links = {platform: best[platform]["url"] if platform in best else None for platform in LINK_PLATFORMS}
+        # Candidate-level avatar (city cards, hero): best-ranked account that has one.
+        avatar_url = None
+        for account in sorted(accounts, key=feed_common.account_sort_key):
+            avatar_url = account_avatar_url(account.get("account_id", ""))
+            if avatar_url:
+                break
         entries.append(
             {
                 "id": candidate["candidate_id"],
@@ -31,11 +43,7 @@ def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candid
                 "cityLabel": feed_common.CITY_LABELS[candidate["city"]],
                 "party": candidate["party"],
                 "links": links,
-                "avatarUrl": (
-                    f"assets/source-avatars/{AVATAR_CACHE[candidate['candidate_id']]['file']}"
-                    if candidate["candidate_id"] in AVATAR_CACHE
-                    else None
-                ),
+                "avatarUrl": avatar_url,
             }
         )
     return entries
@@ -114,17 +122,22 @@ def build_sources_index(
     entries = []
     for candidate in candidates:
         posts = grouped_posts.get(candidate["id"], [])
-        accounts = [
-            {
-                "id": account.get("account_id", ""),
-                "platform": account["platform"],
-                "url": account["url"],
-                "handle": account.get("handle", ""),
-                "role": account.get("account_role", ""),
-                "verification": account.get("verification", ""),
-            }
-            for account in accounts_by_candidate.get(candidate["id"], [])
-        ]
+        accounts = []
+        for account in accounts_by_candidate.get(candidate["id"], []):
+            account_id = account.get("account_id", "")
+            profile = PROFILES.get(account_id, {})
+            accounts.append(
+                {
+                    "id": account_id,
+                    "platform": account["platform"],
+                    "url": account["url"],
+                    "handle": account.get("handle", ""),
+                    "role": account.get("account_role", ""),
+                    "verification": account.get("verification", ""),
+                    "displayName": profile.get("display_name") or None,
+                    "avatarUrl": account_avatar_url(account_id),
+                }
+            )
         entries.append(
             {
                 **candidate,

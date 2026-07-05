@@ -84,23 +84,30 @@ def extract_media_urls(item: dict[str, Any]) -> list[str]:
     return urls
 
 
-def update_source_profiles(rows_by_page: dict[str, dict[str, Any]]) -> None:
-    """Record each page's avatar URL so fetch_media_cache.py can cache it."""
+def update_source_profiles(rows_by_page: dict[str, tuple[dict[str, Any], dict[str, Any]]]) -> None:
+    """Record each page's own display name and avatar URL, keyed by account id."""
     profiles = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
     changed = False
     for source, item in rows_by_page.values():
-        profile_pic = (item.get("user") or {}).get("profilePic")
-        if not profile_pic:
+        user = item.get("user") or {}
+        display_name = user.get("name") or item.get("pageName") or ""
+        profile_pic = user.get("profilePic") or ""
+        if not display_name and not profile_pic:
             continue
-        entry = profiles.setdefault(source["candidate_id"], {})
-        if entry.get("avatar_url") != profile_pic:
-            entry["avatar_url"] = profile_pic
-            entry["avatar_source"] = "facebook"
+        entry = profiles.setdefault(source["id"], {})
+        updates = {
+            "candidate_id": source["candidate_id"],
+            "platform": "facebook",
+            "display_name": display_name or entry.get("display_name", ""),
+            "avatar_url": profile_pic or entry.get("avatar_url", ""),
+        }
+        if any(entry.get(key) != value for key, value in updates.items()):
+            entry.update(updates)
             entry["updated_at"] = feed_common.utc_now_iso()
             changed = True
     if changed:
         feed_common.save_json_atomic(feed_common.SOURCE_PROFILES_JSON, profiles)
-        print("apify_facebook_fetcher: updated avatar URLs in source_profiles.json")
+        print("apify_facebook_fetcher: updated account profiles in source_profiles.json")
 
 
 def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[str, Any]]) -> list[dict[str, Any]]:

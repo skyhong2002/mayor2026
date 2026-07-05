@@ -107,19 +107,20 @@ def cache_post_images() -> None:
 
 
 def cache_avatars() -> None:
+    """Cache one avatar per watched account (profiles are keyed by account id)."""
     profiles = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
     cache = feed_common.load_json(AVATAR_CACHE_JSON, {})
     fetched = 0
-    for candidate_id, profile in profiles.items():
+    for account_id, profile in profiles.items():
         url = profile.get("avatar_url")
         if not url:
             continue
-        cached = cache.get(candidate_id)
+        cached = cache.get(account_id)
         if cached and cached.get("url") == url:
             continue
         result = cache_image(url, AVATARS_DIR, max_width=AVATAR_SIZE, square=True)
         if result:
-            cache[candidate_id] = {"url": url, "file": result["file"]}
+            cache[account_id] = {"url": url, "file": result["file"]}
             fetched += 1
     feed_common.save_json_atomic(AVATAR_CACHE_JSON, cache)
     print(f"fetch_media_cache: {fetched} new avatar(s) cached ({len(cache)} total).")

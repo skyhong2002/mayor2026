@@ -68,6 +68,49 @@ def normalize_entries(source: dict[str, Any], entries: list[dict[str, Any]]) -> 
     return rows
 
 
+def fetch_channel_profile(url: str) -> dict[str, str]:
+    """Fetch a channel's display name and avatar URL (one extra yt-dlp call)."""
+    command = [YTDLP_BIN, "--skip-download", "--playlist-items", "0", "--dump-single-json", url]
+    result = subprocess.run(command, capture_output=True, text=True, timeout=60)
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or "yt-dlp exited non-zero")
+    info = json.loads(result.stdout)
+    avatar_url = ""
+    for thumb in info.get("thumbnails") or []:
+        if thumb.get("id") == "avatar_uncropped":
+            avatar_url = thumb.get("url", "")
+            break
+    return {"display_name": info.get("channel") or info.get("title") or "", "avatar_url": avatar_url}
+
+
+def update_source_profiles(sources: list[dict[str, Any]], names_from_entries: dict[str, str]) -> None:
+    profiles = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
+    changed = False
+    for source in sources:
+        entry = profiles.setdefault(source["id"], {})
+        entry.setdefault("candidate_id", source["candidate_id"])
+        entry.setdefault("platform", "youtube")
+        name = names_from_entries.get(source["id"], "")
+        if name and entry.get("display_name") != name:
+            entry["display_name"] = name
+            changed = True
+        if not entry.get("avatar_url"):
+            try:
+                profile = fetch_channel_profile(source["url"])
+            except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError) as exc:
+                print(f"youtube_ytdlp_fetcher: profile fetch failed for {source['id']}: {exc}")
+                continue
+            if profile["display_name"] and not entry.get("display_name"):
+                entry["display_name"] = profile["display_name"]
+            if profile["avatar_url"]:
+                entry["avatar_url"] = profile["avatar_url"]
+            entry["updated_at"] = feed_common.utc_now_iso()
+            changed = True
+    if changed:
+        feed_common.save_json_atomic(feed_common.SOURCE_PROFILES_JSON, profiles)
+        print("youtube_ytdlp_fetcher: updated channel profiles in source_profiles.json")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=5)
@@ -84,15 +127,23 @@ def main() -> int:
         return 0
 
     all_rows: list[dict[str, Any]] = []
+    channel_names: dict[str, str] = {}
     for source in sources:
         try:
             entries = fetch_channel_videos(source["url"], limit=args.limit)
         except (RuntimeError, subprocess.TimeoutExpired) as exc:
             feed_common.record_error(source["id"], f"yt-dlp fetch failed: {exc}")
             continue
+        for entry in entries:
+            name = entry.get("channel") or entry.get("uploader")
+            if name:
+                channel_names[source["id"]] = name
+                break
         rows = normalize_entries(source, entries)
         all_rows.extend(rows)
         print(f"youtube_ytdlp_fetcher: {source['id']} -> {len(rows)} item(s)")
+
+    update_source_profiles(sources, channel_names)
 
     if args.dry_run:
         print(f"youtube_ytdlp_fetcher: dry-run, fetched {len(all_rows)} item(s), not writing.")
