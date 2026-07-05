@@ -98,9 +98,16 @@
 
     const source = el("div", "home-feed-source");
     const sourceMain = el("div", "home-feed-source-main");
-    sourceMain.appendChild(avatarNode(candidate, true));
+    // The card identity is the platform account itself (its own page/channel
+    // name and avatar), falling back to the candidate only when the account
+    // profile hasn't been fetched yet.
+    const identity = {
+      name: (account && account.displayName) || (candidate && candidate.name) || post.candidateId,
+      avatarUrl: (account && account.avatarUrl) || (candidate && candidate.avatarUrl) || null,
+    };
+    sourceMain.appendChild(avatarNode(identity, true));
     const nameWrap = el("div");
-    nameWrap.appendChild(el("strong", "", (candidate && candidate.name) || post.candidateId));
+    nameWrap.appendChild(el("strong", "", identity.name));
     const accountLabel = account
       ? `${account.handle || account.url}`
       : PLATFORM_LABELS[post.platform] || post.platform;
