@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Fetch Facebook / Instagram / Threads updates via a RSSHub instance.
+"""Fetch Instagram / Threads updates via a RSSHub instance.
 
-This is a working skeleton: it can already fetch and normalize real RSS
-output from any RSSHub deployment (e.g. the public https://rsshub.app demo
-instance) into `data/feeds/social_feed_inbox.jsonl`. The Hsinchu machine's
-own RSSHub instance is not reachable from this dev environment, so:
+Defaults to https://rss.observe.tw, the same RSSHub deployment used by the
+Harmonica-in-Taiwan project. Override with MAYOR_RSSHUB_BASE if a different
+instance should be used (e.g. a local one on the Hsinchu machine).
 
-  TODO: point MAYOR_RSSHUB_BASE at the Hsinchu RSSHub before scheduling this
-  for real. RSSHub's Facebook/Instagram routes are notoriously unstable —
-  expect --dry-run testing against public demo routes to sometimes 404.
+Facebook is deliberately NOT fetched here: this RSSHub instance has no
+matching `/facebook/*` route registered at all (verified live — no
+`x-rsshub-route` response header, vs. Instagram/Threads which do match but
+can still 503 under rate limiting). Facebook goes through
+apify_facebook_fetcher.py instead. A single source failing here does not
+stop the rest of the batch (see feed_common.record_error).
 """
 
 from __future__ import annotations
@@ -24,12 +26,11 @@ from typing import Any
 
 import feed_common
 
-DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rsshub.app").rstrip("/")
+DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 REQUEST_TIMEOUT_SECS = 15
 USER_AGENT = "Mozilla/5.0 (compatible; 2026mayor-fetcher/0.1)"
 
 RSSHUB_ROUTE_BUILDERS = {
-    "facebook": lambda username: f"/facebook/page/{username}",
     "instagram": lambda username: f"/instagram/user/{username}",
     "threads": lambda username: f"/threads/user/{username}",
 }
@@ -106,7 +107,7 @@ def main() -> int:
 
     sources = feed_common.load_sources(platforms=set(RSSHUB_ROUTE_BUILDERS))
     if not sources:
-        print("rsshub_fetcher: no facebook/instagram/threads sources configured; nothing to do.")
+        print("rsshub_fetcher: no instagram/threads sources configured; nothing to do.")
         return 0
 
     all_rows: list[dict[str, Any]] = []

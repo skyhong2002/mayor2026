@@ -12,6 +12,9 @@ state/
 # Generated social/feed config (rebuildable from CSV).
 data/feeds/social_sources.json
 
+# Transient fetch error log (operational noise, not a historical record).
+data/feeds/social_feed_errors.jsonl
+
 # NOTE: unlike the Harmonica-in-Taiwan template, social_feed_inbox.jsonl and
 # social_candidates.jsonl are intentionally tracked in git, not ignored.
 # Deleted candidate posts are themselves newsworthy; we keep full history.

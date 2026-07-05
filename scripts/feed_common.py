@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import datetime as dt
 import json
 import re
@@ -13,20 +14,87 @@ SOCIAL_SOURCES_JSON = PROJECT_ROOT / "data" / "feeds" / "social_sources.json"
 INBOX_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_feed_inbox.jsonl"
 CANDIDATES_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_candidates.jsonl"
 ERRORS_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_feed_errors.jsonl"
+CANDIDATES_CSV = PROJECT_ROOT / "data" / "sources" / "candidates.csv"
+ACCOUNTS_CSV = PROJECT_ROOT / "data" / "sources" / "watchlist_accounts.csv"
 
 HTML_TAG_RE = re.compile(r"<[^>]+>")
 
+CITY_LABELS = {
+    "taipei": "臺北市",
+    "new-taipei": "新北市",
+    "taoyuan": "桃園市",
+    "taichung": "臺中市",
+    "tainan": "臺南市",
+    "kaohsiung": "高雄市",
+}
+VALID_CITIES = set(CITY_LABELS)
 
-def slugify(value: str) -> str:
-    value = re.sub(r"[^a-zA-Z0-9一-鿿]+", "-", value).strip("-").lower()
-    return value or "candidate"
+# Lower rank = preferred when a candidate has more than one account on the
+# same platform (e.g. a campaign FB page and a personal FB profile).
+ACCOUNT_ROLE_RANK = {"campaign": 0, "incumbent": 0, "personal": 1, "affiliated": 2, "party": 3}
+VERIFICATION_RANK = {"first_party": 0, "cross_ref": 1, "unverified": 2}
 
 
-def candidate_id_from_row(row: dict[str, str]) -> str:
-    city = (row.get("city") or "").strip()
-    public_id = (row.get("public_id") or "").strip()
-    name = (row.get("candidate_name_en") or "").strip() or (row.get("candidate_name") or "").strip()
-    return f"{city}-{public_id}-{slugify(name)}"
+def account_sort_key(account: dict[str, Any]) -> tuple[int, int]:
+    return (
+        ACCOUNT_ROLE_RANK.get(account.get("account_role", ""), 3),
+        VERIFICATION_RANK.get(account.get("verification", ""), 3),
+    )
+
+
+def clean(value: str | None) -> str:
+    return (value or "").strip()
+
+
+def read_csv_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"CSV not found: {path}")
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        return list(csv.DictReader(handle))
+
+
+def load_candidates() -> list[dict[str, str]]:
+    candidates = []
+    for row in read_csv_rows(CANDIDATES_CSV):
+        city = clean(row.get("city"))
+        if city not in VALID_CITIES:
+            print(f"feed_common: skipping candidate row with unknown city {city!r} (candidate_id={row.get('candidate_id')!r})")
+            continue
+        candidates.append(
+            {
+                "candidate_id": clean(row.get("candidate_id")),
+                "name": clean(row.get("name")),
+                "city": city,
+                "party": clean(row.get("party")),
+            }
+        )
+    return candidates
+
+
+def load_accounts() -> list[dict[str, Any]]:
+    accounts = []
+    for row in read_csv_rows(ACCOUNTS_CSV):
+        url = clean(row.get("url"))
+        active = clean(row.get("active")).lower() in {"true", "1", "yes"}
+        if not url or not active:
+            continue
+        accounts.append({key: clean(value) for key, value in row.items()})
+    return accounts
+
+
+def accounts_by_candidate(accounts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for account in accounts:
+        grouped.setdefault(account["candidate_id"], []).append(account)
+    return grouped
+
+
+def best_accounts_per_platform(accounts: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Pick the single best account per platform for a candidate's link list."""
+    by_platform: dict[str, list[dict[str, Any]]] = {}
+    for account in accounts:
+        by_platform.setdefault(account["platform"], []).append(account)
+    return {platform: sorted(rows, key=account_sort_key)[0] for platform, rows in by_platform.items()}
 
 
 def utc_now_iso() -> str:

@@ -1,68 +1,41 @@
 #!/usr/bin/env python3
-"""Build the public JSON API from the watchlist CSV + classified posts."""
+"""Build the public JSON API from candidates.csv + watchlist_accounts.csv + classified posts."""
 
 from __future__ import annotations
 
-import csv
-from pathlib import Path
 from typing import Any
 
 import feed_common
 
-WATCHLIST_CSV = feed_common.PROJECT_ROOT / "data" / "sources" / "candidate-watchlist.csv"
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
 
-CITY_LABELS = {
-    "taipei": "臺北市",
-    "new-taipei": "新北市",
-    "taoyuan": "桃園市",
-    "taichung": "臺中市",
-    "tainan": "臺南市",
-    "kaohsiung": "高雄市",
-}
+LINK_PLATFORMS = ["website", "facebook", "instagram", "threads", "youtube", "x", "line_oa", "line_openchat", "tiktok", "podcast"]
 
 
-def clean(value: str | None) -> str:
-    return (value or "").strip()
-
-
-def load_candidates() -> list[dict[str, Any]]:
-    if not WATCHLIST_CSV.exists():
-        return []
-    with WATCHLIST_CSV.open(newline="", encoding="utf-8-sig") as handle:
-        rows = list(csv.DictReader(handle))
-    candidates = []
-    for row in rows:
-        city = clean(row.get("city"))
-        if city not in CITY_LABELS:
-            continue
-        candidates.append(
+def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candidate: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+    entries = []
+    for candidate in candidates:
+        accounts = accounts_by_candidate.get(candidate["candidate_id"], [])
+        best = feed_common.best_accounts_per_platform(accounts)
+        links = {platform: best[platform]["url"] if platform in best else None for platform in LINK_PLATFORMS}
+        entries.append(
             {
-                "id": feed_common.candidate_id_from_row(row),
-                "publicId": clean(row.get("public_id")),
-                "name": clean(row.get("candidate_name")),
-                "nameEn": clean(row.get("candidate_name_en")),
-                "city": city,
-                "cityLabel": CITY_LABELS[city],
-                "party": clean(row.get("party")),
-                "links": {
-                    "facebook": clean(row.get("fb_url")) or None,
-                    "instagram": clean(row.get("ig_url")) or None,
-                    "threads": clean(row.get("threads_url")) or None,
-                    "youtube": clean(row.get("youtube_url")) or None,
-                    "x": clean(row.get("x_url")) or None,
-                    "website": clean(row.get("website_url")) or None,
-                },
+                "id": candidate["candidate_id"],
+                "name": candidate["name"],
+                "city": candidate["city"],
+                "cityLabel": feed_common.CITY_LABELS[candidate["city"]],
+                "party": candidate["party"],
+                "links": links,
             }
         )
-    return candidates
+    return entries
 
 
 def posts_by_candidate(posts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = {}
     for post in posts:
         grouped.setdefault(post["candidate_id"], []).append(post)
-    for candidate_id, rows in grouped.items():
+    for rows in grouped.values():
         rows.sort(key=lambda r: r.get("posted_at") or "", reverse=True)
     return grouped
 
@@ -113,7 +86,7 @@ def build_candidates_index(candidates: list[dict[str, Any]], grouped_posts: dict
 
 def build_cities_index(candidates: list[dict[str, Any]]) -> None:
     cities = []
-    for city_id, label in CITY_LABELS.items():
+    for city_id, label in feed_common.CITY_LABELS.items():
         city_candidates = [c["id"] for c in candidates if c["city"] == city_id]
         cities.append({"id": city_id, "label": label, "candidateIds": city_candidates})
     feed_common.save_json_atomic(API_DIR / "cities.json", {"version": 1, "cities": cities})
@@ -128,7 +101,11 @@ def build_latest_feed(posts: list[dict[str, Any]], *, limit: int = 100) -> None:
 
 
 def main() -> int:
-    candidates = load_candidates()
+    candidates_csv = feed_common.load_candidates()
+    accounts = feed_common.load_accounts()
+    accounts_by_candidate = feed_common.accounts_by_candidate(accounts)
+    candidates = build_candidate_entries(candidates_csv, accounts_by_candidate)
+
     posts = feed_common.read_jsonl(feed_common.CANDIDATES_JSONL)
     grouped_posts = posts_by_candidate(posts)
 

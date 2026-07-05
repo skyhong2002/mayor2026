@@ -7,11 +7,25 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="index" data-base="">
-  <header>
-    <h1>六都市長候選人貼文監測站</h1>
-    <p>整理臺北、新北、桃園、臺中、臺南、高雄市長候選人公開發文，跨平台合併時間軸與議題比例。</p>
+  <nav class="topnav">
+    <a class="brand" href=".">
+      <span class="brand-mark">六都</span>
+      2026mayor
+    </a>
+    <div>
+      <a class="navlink" href="api/latest.json">最新 JSON</a>
+      <a class="navlink" href="feeds/updates.xml">RSS</a>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">2026 六都選舉</p>
+      <h1>六都市長候選人貼文監測站</h1>
+      <p class="subtitle">整理臺北、新北、桃園、臺中、臺南、高雄市長候選人公開發文，跨平台合併時間軸與議題比例。</p>
+    </div>
   </header>
   <main>
+    <p class="section-label">六都總覽</p>
     <div id="city-grid" class="city-grid">載入中...</div>
   </main>
   <script src="assets/app.js"></script>

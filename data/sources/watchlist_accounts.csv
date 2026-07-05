@@ -1,0 +1,84 @@
+account_id,candidate_id,city,platform,handle,url,account_role,verification,evidence,last_checked,active
+shen-web-campaign,shen-poyang,taipei,website,puma.taipei,https://puma.taipei/,campaign,first_party,官網本體 2026-07-05 fetch 成功 站名「沈伯洋台北市長競選官方網站」；pumashen.org 為同站鏡射轉址,2026-07-05,true
+shen-fb-campaign,shen-poyang,taipei,facebook,puma.taipei,https://www.facebook.com/puma.taipei/,campaign,cross_ref,官網頁首頁尾直連 facebook.com/1087764201093899；搜尋顯示 facebook.com/puma.taipei 為「台北沈伯洋」粉專；FB 擋爬無法一手確認該 ID 即同一頁,2026-07-05,true
+shen-fb-personal,shen-poyang,taipei,facebook,pumashen,https://www.facebook.com/pumashen/,personal,cross_ref,搜尋確認「沈伯洋(@pumashen)」粉專存在 與 IG/Threads/YT 同 handle 個人矩陣,2026-07-05,true
+shen-ig-campaign,shen-poyang,taipei,instagram,puma.shen,https://www.instagram.com/puma.shen/,campaign,unverified,截至 2026-07-05 官網 IG 直連已改為 pumashen；多組搜尋均查無 @puma.shen 存在跡象 判定已不存在或非官方導向,2026-07-05,false
+shen-ig-personal,shen-poyang,taipei,instagram,pumashen,https://www.instagram.com/pumashen/,personal,first_party,官網頁首頁尾直連 https://www.instagram.com/pumashen/ 現為唯一官方導向 IG（59K 粉絲 330 posts）,2026-07-05,true
+shen-threads-campaign,shen-poyang,taipei,threads,puma.shen,https://www.threads.com/@puma.shen,campaign,unverified,截至 2026-07-05 官網 Threads 直連為 @pumashen；搜尋查無 @puma.shen Threads 帳號 判定已不存在或非官方導向,2026-07-05,false
+shen-threads-personal,shen-poyang,taipei,threads,pumashen,https://www.threads.com/@pumashen,personal,first_party,官網頁首頁尾直連 https://www.threads.com/@pumashen 自介「2026 台北市長參選人」403K 粉絲,2026-07-05,true
+shen-yt-personal,shen-poyang,taipei,youtube,PumaShen,https://www.youtube.com/@PumaShen,personal,first_party,官網頁首頁尾直連 https://www.youtube.com/@PumaShen 頻道名「沈伯洋Puma」每日受訪影片同步官網影片區,2026-07-05,true
+shen-x-personal,shen-poyang,taipei,x,pumashen,https://x.com/pumashen,personal,unverified,同 handle 且貼文以沈伯洋第一人稱發言（例 x.com/pumashen/status/1847806524867170555）但官網未直連 X 擋爬無法核對自介,2026-07-05,true
+shen-line-campaign,shen-poyang,taipei,line_oa,unknown,https://join.puma.taipei/line/UkfBBgZ2,campaign,first_party,官網頁首與頁尾「加入 LINE」直連；落地頁標題「沈伯洋 | LINE 官方帳號」（oakmega SCRM 閘道需 LINE 登入 無法取得 basic ID）,2026-07-05,true
+chiang-wa-fb,chiang-wanan,taipei,facebook,chiangwanan,https://www.facebook.com/chiangwanan/,personal,cross_ref,搜尋確認「蔣萬安(@chiangwanan)」長期公開本人粉專 市政與競選訊息共用,2026-07-05,true
+chiang-wa-ig,chiang-wanan,taipei,instagram,wanan.chiang,https://www.instagram.com/wanan.chiang/,personal,cross_ref,與 Threads/YouTube 同 handle wanan.chiang 三平臺互證 含市政內容,2026-07-05,true
+chiang-wa-threads,chiang-wanan,taipei,threads,wanan.chiang,https://www.threads.com/@wanan.chiang,personal,cross_ref,handle 與 IG/YouTube 對應 搜尋確認帳號存在,2026-07-05,true
+chiang-wa-yt,chiang-wanan,taipei,youtube,wanan.chiang,https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ,personal,cross_ref,2026-07-05 fetch 頻道 about 頁確認 handle @wanan.chiang 頻道關鍵字含台北市長市政 與 IG/Threads 同 handle,2026-07-05,true
+chiang-wa-line,chiang-wanan,taipei,line_oa,eso5326z,https://page.line.me/eso5326z,personal,cross_ref,搜尋結果確認 page.line.me/eso5326z 頁面名「蔣萬安」LINE Official Account,2026-07-05,true
+chiang-wa-x,chiang-wanan,taipei,x,WananChiang,https://x.com/WananChiang,personal,cross_ref,帳號名「蔣萬安 Wanan Chiang」自介 Mayor of Taipei 2020 年起長期本人名義發文（例 x.com/WananChiang/status/1846896789909332269）,2026-07-05,true
+su-ch-web,su-chiaohui,new-taipei,website,chiao.tw,https://chiao.tw/,campaign,first_party,官方網站本人域名 2026-07-05 fetch 確認正常運作,2026-07-05,true
+su-ch-fb,su-chiaohui,new-taipei,facebook,chiaohui.su,https://www.facebook.com/chiaohui.su,personal,first_party,官網 chiao.tw 導覽列與頁尾直連,2026-07-05,true
+su-ch-ig,su-chiaohui,new-taipei,instagram,su.chiaohui,https://www.instagram.com/su.chiaohui/,personal,first_party,官網 chiao.tw 導覽列直連,2026-07-05,true
+su-ch-yt,su-chiaohui,new-taipei,youtube,UCBybqVtDU2YgADc8tBqUz5A,https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A,personal,first_party,官網 chiao.tw 導覽列直連,2026-07-05,true
+su-ch-line,su-chiaohui,new-taipei,line_oa,@suchiaohui,http://line.me/ti/p/%40suchiaohui,personal,first_party,官網 chiao.tw 導覽列直連 LINE 官方帳號,2026-07-05,true
+su-ch-threads,su-chiaohui,new-taipei,threads,su.chiaohui,https://www.threads.com/@su.chiaohui,personal,cross_ref,與官網直連 IG 同 handle 且自介一致（新北市長參選人／立委）約10.9萬追蹤,2026-07-05,true
+su-ch-podcast,su-chiaohui,new-taipei,podcast,水獺媽媽巧巧話,https://open.spotify.com/show/06fXdjNXspAe1QLML8EsAv,personal,cross_ref,本人主持節目 Spotify creators 帳號 chiaohuisu 且 Apple Podcasts 同名（podcasts.apple.com/us/podcast/id1525687063）IG 自介亦提及,2026-07-05,true
+lee-sc-fb,lee-shih-chuan,new-taipei,facebook,李四川Hammer-Lee-100051818071280,https://www.facebook.com/p/%E6%9D%8E%E5%9B%9B%E5%B7%9DHammer-Lee-100051818071280/,personal,first_party,本人 Threads 指認,2026-07-05,true
+lee-sc-ig-main,lee-shih-chuan,new-taipei,instagram,hammer__lee,https://www.instagram.com/hammer__lee/,personal,first_party,本人 Threads 指認,2026-07-05,true
+lee-sc-ig-old,lee-shih-chuan,new-taipei,instagram,hammer_lee0201,https://www.instagram.com/hammer_lee0201/,personal,unverified,帳號存在且顯示名為李四川 但無第一方指認、無法確認仍由本人使用,2026-07-05,true
+lee-sc-threads,lee-shih-chuan,new-taipei,threads,hammer__lee,https://www.threads.com/@hammer__lee,personal,first_party,本人自述,2026-07-05,true
+lee-sc-yt,lee-shih-chuan,new-taipei,youtube,UCfS5UhHzM8rjH5DnYuVCw5w,https://www.youtube.com/channel/UCfS5UhHzM8rjH5DnYuVCw5w,personal,first_party,本人 Threads 指認,2026-07-05,true
+lee-sc-tiktok,lee-shih-chuan,new-taipei,tiktok,,,personal,unverified,雖有本人自述開設但多輪搜尋（含 site:tiktok.com）截至 2026-07-05 找不到帳號 URL 暫列不存在,2026-07-05,false
+huang-sj-fb,huang-shih-chieh,taoyuan,facebook,SCHuangLawyer,https://www.facebook.com/SCHuangLawyer/,campaign,first_party,自介明示候選人；VoteTW 外部連結亦指向此頁（votetw.com/wiki/黃世杰）,2026-07-05,true
+huang-sj-ig,huang-shih-chieh,taoyuan,instagram,schuanglawyer,https://www.instagram.com/schuanglawyer/,campaign,first_party,自介明示候選人,2026-07-05,true
+huang-sj-threads,huang-shih-chieh,taoyuan,threads,schuanglawyer,https://www.threads.com/@schuanglawyer,campaign,cross_ref,handle 與 IG 對應,2026-07-05,true
+huang-sj-yt,huang-shih-chieh,taoyuan,youtube,@黃世杰-o2f,https://www.youtube.com/channel/UC7mnxOvJmztdSfFpOp8BkjQ,campaign,unverified,頻道名稱為黃世杰且搜尋結果指向該頻道 但 handle 為系統自動產生且無官網或 FB/IG 直連可證為本人官方頻道,2026-07-05,true
+chang-sc-fb,chang-san-cheng,taoyuan,facebook,SanCheng624,https://www.facebook.com/SanCheng624/,personal,first_party,官方頁面；2026 競選造勢（南區聯合競選總部成立）影片亦由此頁發布,2026-07-05,true
+chang-sc-ig,chang-san-cheng,taoyuan,instagram,sancheng624,https://www.instagram.com/sancheng624/,personal,first_party,官方頁面；簡介標語「拚 桃園善好」與 2026 競選主軸一致,2026-07-05,true
+chang-sc-yt,chang-san-cheng,taoyuan,youtube,taoyuansango,https://www.youtube.com/@taoyuansango,incumbent,cross_ref,handle 含 taoyuan 市長品牌頻道,2026-07-05,true
+ho-hc-web,ho-hsin-chun,taichung,website,a-chun.tw,https://a-chun.tw/,campaign,first_party,競選官網 2026-07-05 可正常訪問,2026-07-05,true
+ho-hc-fb,ho-hsin-chun,taichung,facebook,94achun,https://www.facebook.com/94achun/,campaign,first_party,官網頁尾直連（a-chun.tw footer 2026-07-05 確認）,2026-07-05,true
+ho-hc-ig,ho-hsin-chun,taichung,instagram,a_chun1973,https://www.instagram.com/a_chun1973/,personal,first_party,官網頁尾直連（a-chun.tw footer 2026-07-05 確認）,2026-07-05,true
+ho-hc-threads,ho-hsin-chun,taichung,threads,a_chun1973,https://www.threads.com/@a_chun1973,personal,first_party,官網頁尾直連（a-chun.tw footer 2026-07-05 確認）,2026-07-05,true
+ho-hc-yt,ho-hsin-chun,taichung,youtube,UCFcDN6t7tJ7qObwtyBQHdRg,https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg,campaign,first_party,官網頁尾直連 @何欣純 handle 解析為同一 channel ID（YouTube about 頁確認）,2026-07-05,true
+ho-hc-line,ho-hsin-chun,taichung,line_oa,beu1231o,https://page.line.me/beu1231o,campaign,first_party,官網頁尾直連且官網「市民意見專區」導向同一 LINE LIFF,2026-07-05,true
+chiang-cc-web,chiang-chi-chen,taichung,website,chichen.org,https://chichen.org/,personal,first_party,官網 2026-07-05 回應 200 但內容 JS 動態渲染無法抓取全文,2026-07-05,true
+chiang-cc-fb,chiang-chi-chen,taichung,facebook,johnnyccchiang,https://www.facebook.com/johnnyccchiang/,personal,first_party,搜尋結果顯示為本人官方粉專約39萬讚,2026-07-05,true
+chiang-cc-ig,chiang-chi-chen,taichung,instagram,taichungjohnny,https://www.instagram.com/taichungjohnny/,personal,first_party,搜尋結果確認帳號存在且為本人,2026-07-05,true
+chiang-cc-threads,chiang-chi-chen,taichung,threads,taichungjohnny,https://www.threads.com/@taichungjohnny,personal,cross_ref,與 IG 同 handle 互證,2026-07-05,true
+chiang-cc-yt,chiang-chi-chen,taichung,youtube,kesing168,https://www.youtube.com/user/kesing168,personal,first_party,YouTube about 頁確認 handle @kesing168 對應 channel UCiEDxhFdhncL7bzw5RtllJg 且簡介為本人,2026-07-05,true
+chiang-cc-x,chiang-chi-chen,taichung,x,JohnnyChiang12,https://x.com/JohnnyChiang12,personal,first_party,個人 X 帳號沿用既有 first_party 認定 2026-07-05 無反證,2026-07-05,true
+chiang-cc-line,chiang-chi-chen,taichung,line_oa,openchiang,https://chichen.org/lineme,personal,first_party,官網短鏈+本人FB貼文（YouTube 頻道簡介亦導向 LINE 友群但 reurl 短鏈已失效）,2026-07-05,true
+chen-tf-fb,chen-ting-fei,tainan,facebook,fififans,https://www.facebook.com/fififans/,personal,first_party,主粉專且獲個人帳號與 YouTube 頻道簡介指認（youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw/about）,2026-07-05,true
+chen-tf-fb-profile,chen-ting-fei,tainan,facebook,fififamily,https://www.facebook.com/fififamily/,personal,first_party,本人個人帳號頁面 自介稱好友已滿並導向 fififans 粉專,2026-07-05,true
+chen-tf-ig,chen-ting-fei,tainan,instagram,chen_tingfei,https://www.instagram.com/chen_tingfei/,personal,first_party,官方帳號,2026-07-05,true
+chen-tf-threads,chen-ting-fei,tainan,threads,chen_tingfei,https://www.threads.com/@chen_tingfei,personal,first_party,官方帳號,2026-07-05,true
+chen-tf-yt,chen-ting-fei,tainan,youtube,UCWlv4Ixpdv0QjkdCL3yfGZw,https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw,personal,first_party,妃常女力頻道,2026-07-05,true
+chen-tf-yt-2,chen-ting-fei,tainan,youtube,UCLaZg5OlVbqLZmz3Zwu42sw,https://www.youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw,personal,first_party,第二頻道「陳亭妃」簡介直連 facebook.com/fififans 判定本人舊頻道,2026-07-05,true
+chen-tf-line,chen-ting-fei,tainan,line_oa,nhu2565u,https://page.line.me/nhu2565u,personal,first_party,LINE OA,2026-07-05,true
+hsieh-lc-web,hsieh-lung-chieh,tainan,website,tel062268268,https://www.joo.com.tw/tel062268268/,personal,first_party,本人服務網站 頁尾信箱 hsieh501003@yahoo.com.tw 且「view more」直連其 FB 粉專 TEL062268268（2026-07-05 fetch 正常）,2026-07-05,true
+hsieh-lc-fb,hsieh-lung-chieh,tainan,facebook,TEL062268268,https://www.facebook.com/TEL062268268/,personal,first_party,官方粉專且獲官網頁尾直連（joo.com.tw/tel062268268）,2026-07-05,true
+hsieh-lc-ig,hsieh-lung-chieh,tainan,instagram,hsiehlungchieh,https://www.instagram.com/hsiehlungchieh/,personal,first_party,官方帳號,2026-07-05,true
+hsieh-lc-threads,hsieh-lung-chieh,tainan,threads,hsiehlungchieh,https://www.threads.com/@hsiehlungchieh,personal,first_party,官方帳號,2026-07-05,true
+hsieh-lc-yt,hsieh-lung-chieh,tainan,youtube,UCwmpCYMVf3j9D_-dToJxPNw,https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw,personal,first_party,官方頻道 簡介附聯絡信箱 long19611003@gmail.com,2026-07-05,true
+hsieh-lc-line,hsieh-lung-chieh,tainan,line_oa,lcz1318b,https://page.line.me/lcz1318b,campaign,first_party,LINE 頁顯示競選總部資訊,2026-07-05,true
+hsieh-lc-tiktok,hsieh-lung-chieh,tainan,tiktok,longuy1003,https://www.tiktok.com/@longuy1003,personal,cross_ref,帳號以第一人稱發布「龍介直播」剪輯 handle 含 1003 與其生日/信箱 long19611003 一致（例 tiktok.com/@longuy1003/video/7449000866587413777）TikTok 擋爬無法讀簡介,2026-07-05,true
+lin-yf-web,lin-yi-feng,tainan,website,豐市長林義豐,https://www.xn--btvt94cw3i.com/,campaign,cross_ref,2026-07-05 兩次 fetch 均回應空白內容 站點仍不穩定 暫保留,2026-07-05,true
+lin-yf-fb,lin-yi-feng,tainan,facebook,ceotainan,https://www.facebook.com/ceotainan/,personal,first_party,本人頁面,2026-07-05,true
+lin-yf-ig,lin-yi-feng,tainan,instagram,marklin_ceo,https://www.instagram.com/marklin_ceo/,personal,first_party,本人 FB 公告開設,2026-07-05,true
+lin-yf-yt,lin-yi-feng,tainan,youtube,UCAbvXdpn460E7CtcjO7KuJA,https://www.youtube.com/channel/UCAbvXdpn460E7CtcjO7KuJA,personal,cross_ref,虧雞福來爹頻道,2026-07-05,true
+lai-jl-web,lai-jui-lung,kaohsiung,website,zenolai.oen.tw,https://zenolai.oen.tw/,campaign,first_party,競選網站 頁尾列全部官方連結（2026-07-05 fetch 確認）,2026-07-05,true
+lai-jl-fb,lai-jui-lung,kaohsiung,facebook,zenolai2,https://www.facebook.com/zenolai2/,campaign,first_party,官網 zenolai.oen.tw 頁尾直連,2026-07-05,true
+lai-jl-ig,lai-jui-lung,kaohsiung,instagram,zenolai,https://www.instagram.com/zenolai/,personal,first_party,官網 zenolai.oen.tw 頁尾直連,2026-07-05,true
+lai-jl-threads,lai-jui-lung,kaohsiung,threads,zenolai,https://www.threads.com/@zenolai,personal,first_party,官網 zenolai.oen.tw 頁尾直連,2026-07-05,true
+lai-jl-yt,lai-jui-lung,kaohsiung,youtube,賴瑞隆,https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86,personal,first_party,官網頁尾直連頻道 UCGK-Tc98y8XgFPfibokbuNQ,2026-07-05,true
+lai-jl-line,lai-jui-lung,kaohsiung,line_oa,@myt7120g,https://lin.ee/zW17s0a,campaign,first_party,官網頁尾直連 line.me/R/ti/p/@myt7120g（與 lin.ee/zW17s0a 同帳號）,2026-07-05,true
+ko-ce-web,ko-chih-en,kaohsiung,website,k100.tw,https://www.k100.tw/,campaign,first_party,本人 YT 頻道簡介明列「柯志恩官網」（查核日直接 fetch 無回應 疑擋爬或暫時異常）,2026-07-05,true
+ko-ce-fb,ko-chih-en,kaohsiung,facebook,KoChihEn,https://www.facebook.com/KoChihEn/,personal,first_party,本人 YT 頻道簡介（UCmDcMkSjhyj2R91z0FlGjAA）列 FB 連結,2026-07-05,true
+ko-ce-ig,ko-chih-en,kaohsiung,instagram,prof.kochihen,https://www.instagram.com/prof.kochihen/,personal,first_party,YT 頻道簡介 reurl.cc/MN2yoK 解析至 instagram.com/prof.kochihen,2026-07-05,true
+ko-ce-threads,ko-chih-en,kaohsiung,threads,prof.kochihen,https://www.threads.com/@prof.kochihen,personal,cross_ref,與 IG 同 handle 且自介一致,2026-07-05,true
+ko-ce-yt,ko-chih-en,kaohsiung,youtube,kochihen,https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA,personal,first_party,頻道 @kochihen 簡介列全部官方連結,2026-07-05,true
+ko-ce-tiktok,ko-chih-en,kaohsiung,tiktok,kochihen,https://www.tiktok.com/@kochihen,personal,cross_ref,與 YT 同 handle 且內容為本人立院問政影片（例 tiktok.com/@kochihen/video/7343244809315831045）,2026-07-05,true
+ko-ce-line,ko-chih-en,kaohsiung,line_oa,柯志恩LINE@,https://reurl.cc/MNQXRL,personal,first_party,YT 頻道簡介列「志恩LINE@」短網址導向 LINE Official Account Profile（最終帳號 ID 需 App 內確認）,2026-07-05,true
+ko-ce-line-community,ko-chih-en,kaohsiung,line_openchat,柯志恩加油讚,https://reurl.cc/lep726,affiliated,first_party,YT 頻道簡介列「志恩LINE社群」導向 LINE 社群「柯志恩加油讚」（openchat 頁 og:title 確認）,2026-07-05,true
+chang-ching-party-fb,chang-ching,kaohsiung,facebook,司法改革黨,https://www.facebook.com/p/%E5%8F%B8%E6%B3%95%E6%94%B9%E9%9D%A9%E9%BB%A8-100093646137173/,party,first_party,黨頁指名高雄市長參選人（黨主席張靜 2026-03-29 宣布參選 見 newtalk.tw/news/view/2026-03-29/1026911）,2026-07-05,true
+chang-ching-fb-personal,chang-ching,kaohsiung,facebook,張靜,https://www.facebook.com/people/%E5%BC%B5%E9%9D%9C/100006888229303/,personal,unverified,個人檔案存在且搜尋結果指向同名律師 但 FB 擋爬無法確認為本人經營與公開發文 且無官方來源指認,2026-07-05,true
