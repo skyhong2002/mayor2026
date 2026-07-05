@@ -18,7 +18,9 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import email.utils
+import html
 import os
+import re
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -26,13 +28,18 @@ from typing import Any
 
 import feed_common
 
+IMG_SRC_RE = re.compile(r"<img\b[^>]*\bsrc=[\"']([^\"']+)[\"']", re.IGNORECASE)
+VIDEO_POSTER_RE = re.compile(r"<video\b[^>]*\bposter=[\"']([^\"']+)[\"']", re.IGNORECASE)
+
 DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 REQUEST_TIMEOUT_SECS = 15
 USER_AGENT = "Mozilla/5.0 (compatible; 2026mayor-fetcher/0.1)"
 
 RSSHUB_ROUTE_BUILDERS = {
     "instagram": lambda username: f"/instagram/user/{username}",
-    "threads": lambda username: f"/threads/user/{username}",
+    # NOTE: on rss.observe.tw the Threads route is /threads/:user directly;
+    # /threads/user/:user would treat the literal "user" as the username.
+    "threads": lambda username: f"/threads/{username}",
 }
 
 
@@ -65,6 +72,9 @@ def normalize_items(source: dict[str, Any], root: ET.Element, *, limit: int) -> 
         title = (item.findtext("title") or "").strip()
         description = item.findtext("description") or ""
         text = feed_common.strip_html(description) or title
+        # src attributes are HTML-escaped in the feed; unescape or the signed
+        # CDN URLs' query params break (403).
+        media = [html.unescape(u) for u in IMG_SRC_RE.findall(description) + VIDEO_POSTER_RE.findall(description)]
         rows.append(
             {
                 "id": f"{source['platform']}:{guid}",
@@ -75,7 +85,7 @@ def normalize_items(source: dict[str, Any], root: ET.Element, *, limit: int) -> 
                 "url": link or guid,
                 "posted_at": parse_pubdate(item.findtext("pubDate") or ""),
                 "text": text,
-                "media": [],
+                "media": media,
                 "fetched_at": feed_common.utc_now_iso(),
             }
         )
