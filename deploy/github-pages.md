@@ -2,8 +2,8 @@
 
 ## 一次性設定
 
-1. `gh repo create 2026mayor --public --source=. --remote=origin`（或手動在 GitHub 建立 public repo 後
-   `git remote add origin git@github.com:<user>/2026mayor.git`）。
+1. `gh repo create mayor2026 --public --source=. --remote=origin`（或手動在 GitHub 建立 public repo 後
+   `git remote add origin git@github.com:<user>/mayor2026.git`）。
 2. `git push -u origin main`。
 3. 在 GitHub repo Settings → Pages，Source 選擇 `Deploy from a branch`，Branch 選 `gh-pages` / `/`（root）。
    `scripts/publish_github_pages.py` 第一次執行時會自動建立 `gh-pages` 分支並在其中放入
@@ -16,9 +16,9 @@
 ## 新竹機器排程（launchd）
 
 ```bash
-cp deploy/tw.observe.2026mayor.pipeline.plist ~/Library/LaunchAgents/
-# 編輯 plist，把 /Users/REPLACE_ME/2026mayor 換成實際路徑
-launchctl load ~/Library/LaunchAgents/tw.observe.2026mayor.pipeline.plist
+cp deploy/tw.observe.mayor2026.pipeline.plist ~/Library/LaunchAgents/
+# 編輯 plist，把 /Users/REPLACE_ME/mayor2026 換成實際路徑
+launchctl load ~/Library/LaunchAgents/tw.observe.mayor2026.pipeline.plist
 ```
 
 `StartCalendarInterval` 設定三個固定時間點（12:00 / 17:00 / 22:00）；跟 `StartInterval`（固定間隔）不同，

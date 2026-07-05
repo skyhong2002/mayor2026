@@ -1,4 +1,4 @@
-# 2026mayor - Workspace Rules
+# mayor2026 - Workspace Rules
 
 Whenever adding a new entry to `data/sources/candidate-watchlist.csv`:
 

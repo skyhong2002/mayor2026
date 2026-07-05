@@ -4,22 +4,22 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>tw.observe.2026mayor.pipeline</string>
+    <string>tw.observe.mayor2026.pipeline</string>
 
     <key>ProgramArguments</key>
     <array>
       <string>/bin/zsh</string>
       <string>-lc</string>
-      <string>cd '/Users/REPLACE_ME/2026mayor' &amp;&amp; /usr/bin/python3 scripts/run_pipeline.py --publish-pages</string>
+      <string>cd '/Users/REPLACE_ME/mayor2026' &amp;&amp; /usr/bin/python3 scripts/run_pipeline.py --publish-pages</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/REPLACE_ME/2026mayor</string>
+    <string>/Users/REPLACE_ME/mayor2026</string>
 
     <key>EnvironmentVariables</key>
     <dict>
       <key>MAYOR_OBSERVE_HOME</key>
-      <string>/Users/REPLACE_ME/2026mayor</string>
+      <string>/Users/REPLACE_ME/mayor2026</string>
       <key>MAYOR_RSSHUB_BASE</key>
       <string>https://rss.observe.tw</string>
     </dict>
@@ -51,9 +51,9 @@
     </array>
 
     <key>StandardOutPath</key>
-    <string>/Users/REPLACE_ME/2026mayor/logs/pipeline.log</string>
+    <string>/Users/REPLACE_ME/mayor2026/logs/pipeline.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/REPLACE_ME/2026mayor/logs/pipeline.err.log</string>
+    <string>/Users/REPLACE_ME/mayor2026/logs/pipeline.err.log</string>
   </dict>
 </plist>
