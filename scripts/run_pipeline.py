@@ -74,6 +74,7 @@ def main() -> int:
                 run([PYTHON, "scripts/official_site_fetcher.py"], optional=True)
             run([PYTHON, "scripts/social_feed_watchdog.py", "--max-post-age-days", str(args.max_post_age_days)])
 
+        run([PYTHON, "scripts/fetch_media_cache.py"], optional=True)
         run([PYTHON, "scripts/build_public_data.py"])
         run([PYTHON, "scripts/build_spectrum.py"])
         run([PYTHON, "scripts/generate_rss_feeds.py"])

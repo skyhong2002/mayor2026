@@ -10,7 +10,7 @@ import feed_common
 
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
 FEEDS_DIR = feed_common.PROJECT_ROOT / "site" / "feeds"
-SITE_TITLE = "2026mayor - 六都市長候選人貼文監測站"
+SITE_TITLE = "2026 市長官方來源觀測站"
 
 
 def rfc822(iso_timestamp: str) -> str:

@@ -5,15 +5,34 @@ from __future__ import annotations
 import csv
 import datetime as dt
 import json
+import os
 import re
 from pathlib import Path
 from typing import Any, Iterable
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+
+def _load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv(PROJECT_ROOT / ".env")
 SOCIAL_SOURCES_JSON = PROJECT_ROOT / "data" / "feeds" / "social_sources.json"
 INBOX_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_feed_inbox.jsonl"
 CANDIDATES_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_candidates.jsonl"
 ERRORS_JSONL = PROJECT_ROOT / "data" / "feeds" / "social_feed_errors.jsonl"
+SOURCE_PROFILES_JSON = PROJECT_ROOT / "data" / "feeds" / "source_profiles.json"
 CANDIDATES_CSV = PROJECT_ROOT / "data" / "sources" / "candidates.csv"
 ACCOUNTS_CSV = PROJECT_ROOT / "data" / "sources" / "watchlist_accounts.csv"
 

@@ -8,8 +8,13 @@ from typing import Any
 import feed_common
 
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
+IMAGE_CACHE_JSON = feed_common.PROJECT_ROOT / "state" / "feed_image_cache.json"
+AVATAR_CACHE_JSON = feed_common.PROJECT_ROOT / "state" / "source_avatar_cache.json"
 
 LINK_PLATFORMS = ["website", "facebook", "instagram", "threads", "youtube", "x", "line_oa", "line_openchat", "tiktok", "podcast"]
+
+IMAGE_CACHE = feed_common.load_json(IMAGE_CACHE_JSON, {})
+AVATAR_CACHE = feed_common.load_json(AVATAR_CACHE_JSON, {})
 
 
 def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candidate: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
@@ -26,6 +31,11 @@ def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candid
                 "cityLabel": feed_common.CITY_LABELS[candidate["city"]],
                 "party": candidate["party"],
                 "links": links,
+                "avatarUrl": (
+                    f"assets/source-avatars/{AVATAR_CACHE[candidate['candidate_id']]['file']}"
+                    if candidate["candidate_id"] in AVATAR_CACHE
+                    else None
+                ),
             }
         )
     return entries
@@ -41,13 +51,17 @@ def posts_by_candidate(posts: list[dict[str, Any]]) -> dict[str, list[dict[str, 
 
 
 def to_api_post(post: dict[str, Any]) -> dict[str, Any]:
+    cached_image = IMAGE_CACHE.get(post["id"])
     return {
         "id": post["id"],
+        "candidateId": post.get("candidate_id"),
+        "sourceId": post.get("source_id"),
         "platform": post.get("platform"),
         "url": post.get("url"),
         "postedAt": post.get("posted_at"),
         "text": post.get("text"),
-        "media": post.get("media") or [],
+        "imageUrl": f"assets/feed-images/{cached_image['file']}" if cached_image else None,
+        "imageAspect": cached_image["aspect"] if cached_image else None,
         "topics": post.get("topics") or [],
         "topicScores": post.get("topic_scores") or {},
     }
@@ -92,6 +106,39 @@ def build_cities_index(candidates: list[dict[str, Any]]) -> None:
     feed_common.save_json_atomic(API_DIR / "cities.json", {"version": 1, "cities": cities})
 
 
+def build_sources_index(
+    candidates: list[dict[str, Any]],
+    accounts_by_candidate: dict[str, list[dict[str, Any]]],
+    grouped_posts: dict[str, list[dict[str, Any]]],
+) -> None:
+    entries = []
+    for candidate in candidates:
+        posts = grouped_posts.get(candidate["id"], [])
+        accounts = [
+            {
+                "id": account.get("account_id", ""),
+                "platform": account["platform"],
+                "url": account["url"],
+                "handle": account.get("handle", ""),
+                "role": account.get("account_role", ""),
+                "verification": account.get("verification", ""),
+            }
+            for account in accounts_by_candidate.get(candidate["id"], [])
+        ]
+        entries.append(
+            {
+                **candidate,
+                "accounts": accounts,
+                "postCount": len(posts),
+                "latestPostAt": posts[0].get("posted_at") if posts else None,
+            }
+        )
+    feed_common.save_json_atomic(
+        API_DIR / "sources.json",
+        {"version": 1, "count": len(entries), "sources": entries},
+    )
+
+
 def build_latest_feed(posts: list[dict[str, Any]], *, limit: int = 100) -> None:
     ordered = sorted(posts, key=lambda r: r.get("posted_at") or "", reverse=True)[:limit]
     feed_common.save_json_atomic(
@@ -110,6 +157,7 @@ def main() -> int:
     grouped_posts = posts_by_candidate(posts)
 
     build_candidates_index(candidates, grouped_posts)
+    build_sources_index(candidates, accounts_by_candidate, grouped_posts)
     build_cities_index(candidates)
     build_candidate_pages(candidates, grouped_posts)
     build_latest_feed(posts)

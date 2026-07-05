@@ -18,8 +18,10 @@ REQUIRED_FILES = [
     API_DIR / "cities.json",
     API_DIR / "latest.json",
     API_DIR / "spectrum.json",
+    API_DIR / "sources.json",
     FEEDS_DIR / "updates.xml",
     SITE_ROOT / "index.html",
+    SITE_ROOT / "source" / "index.html",
 ]
 
 

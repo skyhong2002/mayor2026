@@ -64,14 +64,55 @@ def fetch_dataset_items(token: str, dataset_id: str) -> list[dict[str, Any]]:
         return json.loads(response.read())
 
 
+def extract_media_urls(item: dict[str, Any]) -> list[str]:
+    """Pull image URLs out of the actor's media entries (objects, not strings)."""
+    urls: list[str] = []
+    for entry in item.get("media") or []:
+        if isinstance(entry, str):
+            urls.append(entry)
+            continue
+        if not isinstance(entry, dict):
+            continue
+        for key in ("thumbnail", "photo_image", "image"):
+            value = entry.get(key)
+            if isinstance(value, str) and value.startswith("http"):
+                urls.append(value)
+                break
+            if isinstance(value, dict) and isinstance(value.get("uri"), str):
+                urls.append(value["uri"])
+                break
+    return urls
+
+
+def update_source_profiles(rows_by_page: dict[str, dict[str, Any]]) -> None:
+    """Record each page's avatar URL so fetch_media_cache.py can cache it."""
+    profiles = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
+    changed = False
+    for source, item in rows_by_page.values():
+        profile_pic = (item.get("user") or {}).get("profilePic")
+        if not profile_pic:
+            continue
+        entry = profiles.setdefault(source["candidate_id"], {})
+        if entry.get("avatar_url") != profile_pic:
+            entry["avatar_url"] = profile_pic
+            entry["avatar_source"] = "facebook"
+            entry["updated_at"] = feed_common.utc_now_iso()
+            changed = True
+    if changed:
+        feed_common.save_json_atomic(feed_common.SOURCE_PROFILES_JSON, profiles)
+        print("apify_facebook_fetcher: updated avatar URLs in source_profiles.json")
+
+
 def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows = []
+    latest_item_by_page: dict[str, tuple[dict[str, Any], dict[str, Any]]] = {}
     for item in items:
         post_url = item.get("url") or item.get("postUrl") or ""
         page_url = item.get("facebookUrl") or item.get("pageUrl") or ""
         source = source_by_url.get(page_url)
         if not source or not post_url:
             continue
+        latest_item_by_page[page_url] = (source, item)
         post_id = item.get("postId") or post_url
         rows.append(
             {
@@ -83,10 +124,11 @@ def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[s
                 "url": post_url,
                 "posted_at": item.get("time") or "",
                 "text": item.get("text") or "",
-                "media": [m for m in (item.get("media") or []) if isinstance(m, str)],
+                "media": extract_media_urls(item),
                 "fetched_at": feed_common.utc_now_iso(),
             }
         )
+    update_source_profiles(latest_item_by_page)
     return rows
 
 
