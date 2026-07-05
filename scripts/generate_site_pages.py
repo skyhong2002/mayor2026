@@ -9,6 +9,7 @@ metadata (title, base path, candidate id) into the template shells.
 
 from __future__ import annotations
 
+import classify_topics
 import feed_common
 
 SITE_ROOT = feed_common.PROJECT_ROOT / "site"
@@ -34,6 +35,12 @@ def main() -> int:
     spectrum_dir = SITE_ROOT / "spectrum"
     spectrum_dir.mkdir(parents=True, exist_ok=True)
     (spectrum_dir / "index.html").write_text(spectrum_template, encoding="utf-8")
+
+    topic_template = (TEMPLATES_DIR / "topic.html").read_text(encoding="utf-8")
+    for topic, slug in classify_topics.TOPIC_SLUGS.items():
+        topic_dir = spectrum_dir / "topic" / slug
+        topic_dir.mkdir(parents=True, exist_ok=True)
+        (topic_dir / "index.html").write_text(topic_template.replace("__TOPIC__", topic), encoding="utf-8")
 
     candidate_template = (TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8")
     source_detail_template = (TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8")

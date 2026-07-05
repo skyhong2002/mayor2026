@@ -160,7 +160,17 @@
 
     if (post.topics && post.topics.length) {
       const meta = el("div", "entry-meta");
-      post.topics.forEach((topic) => meta.appendChild(el("span", "pill", topic)));
+      post.topics.forEach((topic) => {
+        const url = topicPageUrl(topic);
+        if (url) {
+          const pill = el("a", "pill", topic);
+          pill.href = url;
+          pill.style.textDecoration = "none";
+          meta.appendChild(pill);
+        } else {
+          meta.appendChild(el("span", "pill", topic));
+        }
+      });
       card.appendChild(meta);
     }
 
@@ -471,6 +481,30 @@
       });
   }
 
+  // Mirrors classify_topics.TOPIC_SLUGS — per-topic page URLs.
+  const TOPIC_SLUGS = {
+    交通: "transport",
+    住宅: "housing",
+    社福: "welfare",
+    環境: "environment",
+    教育: "education",
+    經濟: "economy",
+    治安: "safety",
+    醫療: "health",
+    競選: "campaign",
+    體育: "sports",
+    文化觀光: "culture",
+    兩岸外交: "cross-strait",
+    防災: "disaster",
+    議會監督: "oversight",
+    生活: "life",
+  };
+
+  function topicPageUrl(topic) {
+    const slug = TOPIC_SLUGS[topic];
+    return slug ? `${base}spectrum/topic/${slug}/` : null;
+  }
+
   // Shared topic palette — same order/colors as the candidate-page pie chart.
   const TOPIC_COLORS = {
     交通: "#0f766e",
@@ -491,30 +525,128 @@
   };
 
   function renderSpectrum() {
-    Promise.all([fetchJson("api/cities.json"), fetchJson("api/sources.json"), fetchJson("api/spectrum.json")])
-      .then(([citiesPayload, sourcesPayload, spectrumPayload]) => {
+    Promise.all([fetchJson("api/cities.json"), fetchJson("api/sources.json"), fetchJson("api/topic-index.json")])
+      .then(([citiesPayload, sourcesPayload, topicIndex]) => {
         const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
-        const spectrumById = Object.fromEntries(spectrumPayload.candidates.map((c) => [c.candidateId, c]));
+        const fallbackTopic = topicIndex.fallbackTopic;
+        const allTopics = Object.keys(TOPIC_COLORS);
+
+        const state = {
+          rangeDays: null, // null = 全部
+          excluded: new Set([fallbackTopic]),
+        };
+
+        const RANGES = [
+          ["全部", null],
+          ["近 30 天", 30],
+          ["近 14 天", 14],
+          ["近 7 天", 7],
+        ];
+
+        function computeSpectrum() {
+          const cutoff = state.rangeDays ? Date.now() - state.rangeDays * 86400e3 : null;
+          const perCandidate = {};
+          topicIndex.posts.forEach((post) => {
+            if (cutoff) {
+              const at = post.postedAt ? Date.parse(post.postedAt) : NaN;
+              if (Number.isNaN(at) || at < cutoff) return;
+            }
+            const bucket = (perCandidate[post.candidateId] ||= { totals: {}, count: 0 });
+            let counted = false;
+            Object.entries(post.topicScores || {}).forEach(([topic, score]) => {
+              if (state.excluded.has(topic)) return;
+              bucket.totals[topic] = (bucket.totals[topic] || 0) + score;
+              counted = true;
+            });
+            if (counted) bucket.count += 1;
+          });
+          const result = {};
+          Object.entries(perCandidate).forEach(([candidateId, bucket]) => {
+            const grand = Object.values(bucket.totals).reduce((a, b) => a + b, 0);
+            const proportions = {};
+            if (grand > 0) {
+              Object.entries(bucket.totals).forEach(([topic, value]) => {
+                proportions[topic] = value / grand;
+              });
+            }
+            result[candidateId] = { proportions, count: bucket.count };
+          });
+          return result;
+        }
+
+        function renderChips() {
+          const rangeChips = document.getElementById("range-chips");
+          rangeChips.innerHTML = "";
+          RANGES.forEach(([label, days]) => {
+            const chip = el("button", "feed-option-chip", label);
+            chip.dataset.filterState = (state.rangeDays === days ? "include" : "");
+            chip.addEventListener("click", () => {
+              state.rangeDays = days;
+              renderChips();
+              renderTable();
+            });
+            rangeChips.appendChild(chip);
+          });
+
+          const topicChips = document.getElementById("topic-chips");
+          topicChips.innerHTML = "";
+          allTopics.forEach((topic) => {
+            const chip = el("button", "feed-option-chip", topic);
+            chip.dataset.filterState = state.excluded.has(topic) ? "exclude" : "include";
+            chip.title = state.excluded.has(topic) ? "已排除，點擊恢復" : "點擊排除";
+            chip.addEventListener("click", () => {
+              if (state.excluded.has(topic)) state.excluded.delete(topic);
+              else state.excluded.add(topic);
+              renderChips();
+              renderTable();
+            });
+            topicChips.appendChild(chip);
+          });
+        }
+
+        const container = document.getElementById("spectrum-cities");
+
+        function renderTable() {
+        const spectrum = computeSpectrum();
+        const spectrumById = {};
+        Object.entries(spectrum).forEach(([candidateId, entry]) => {
+          spectrumById[candidateId] = { topicProportions: entry.proportions, filteredCount: entry.count };
+        });
 
         // Fixed topic column order = overall volume across all candidates,
         // so the most-discussed issues sit left and every row is comparable.
         const totals = {};
-        spectrumPayload.candidates.forEach((entry) => {
+        Object.values(spectrumById).forEach((entry) => {
           Object.entries(entry.topicProportions || {}).forEach(([topic, value]) => {
             totals[topic] = (totals[topic] || 0) + value;
           });
         });
         const topics = Object.keys(totals).sort((a, b) => totals[b] - totals[a]);
 
-        const container = document.getElementById("spectrum-cities");
         container.innerHTML = "";
+        if (!topics.length) {
+          container.appendChild(el("p", "empty-state", "目前的篩選條件下沒有任何議題資料。"));
+          return;
+        }
 
         const wrap = el("div", "directory-table-list");
         const table = el("table", "score-table spectrum-table");
         const thead = document.createElement("thead");
         const headRow = document.createElement("tr");
         headRow.appendChild(el("th", "", "候選人"));
-        topics.forEach((topic) => headRow.appendChild(el("th", "spectrum-topic-head", topic)));
+        topics.forEach((topic) => {
+          const th = el("th", "spectrum-topic-head");
+          const url = topicPageUrl(topic);
+          if (url) {
+            const link = el("a", "spectrum-topic-link", topic);
+            link.href = url;
+            link.title = `看「${topic}」議題的候選人比較`;
+            th.appendChild(link);
+          } else {
+            th.textContent = topic;
+          }
+          headRow.appendChild(th);
+        });
         thead.appendChild(headRow);
         table.appendChild(thead);
         const tbody = document.createElement("tbody");
@@ -573,12 +705,90 @@
         wrap.appendChild(table);
         container.appendChild(wrap);
 
-        const note = el("p", "data-date", "顏色深淺＝該議題佔該候選人議題發文的比例（每列各自正規化）；粗框＝該候選人聲量最高的議題；「·」＝無相關貼文。");
+        const note = el("p", "data-date", "顏色深淺＝該議題佔該候選人議題發文的比例（每列各自正規化）；粗框＝該候選人聲量最高的議題；「·」＝無相關貼文。點表頭議題名稱可看該議題的跨候選人比較。");
         note.style.marginTop = "12px";
         container.appendChild(note);
+        }
+
+        renderChips();
+        renderTable();
       })
       .catch((err) => {
         document.getElementById("spectrum-cities").textContent = `資料載入失敗：${err.message}`;
+      });
+  }
+
+  function renderTopicDetail() {
+    const topic = body.dataset.topic;
+    Promise.all([fetchJson("api/sources.json"), fetchJson("api/topic-details.json"), fetchJson("api/topic-index.json")])
+      .then(([sourcesPayload, details, topicIndex]) => {
+        const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
+        const keywordsByCandidate = (details.topics || {})[topic] || {};
+
+        // Which candidates have posts on this topic, ordered by volume.
+        const postIdsByCandidate = {};
+        topicIndex.posts.forEach((post) => {
+          if (post.topicScores && post.topicScores[topic]) {
+            (postIdsByCandidate[post.candidateId] ||= new Set()).add(post.id);
+          }
+        });
+        const candidateIds = Object.keys(postIdsByCandidate).sort(
+          (a, b) => postIdsByCandidate[b].size - postIdsByCandidate[a].size
+        );
+
+        const totalPosts = candidateIds.reduce((sum, id) => sum + postIdsByCandidate[id].size, 0);
+        document.getElementById("topic-summary").textContent =
+          `${candidateIds.length} 位候選人共 ${totalPosts} 則相關貼文。每位候選人列出常用關鍵詞與最近貼文，比較彼此在同一議題上談的內容有何異同。`;
+
+        const container = document.getElementById("topic-candidates");
+        container.innerHTML = "";
+        if (!candidateIds.length) {
+          container.appendChild(el("p", "empty-state", "目前沒有這個議題的貼文。"));
+          return;
+        }
+
+        candidateIds.forEach((candidateId) => {
+          const source = sourcesById[candidateId];
+          if (!source) return;
+
+          const section = el("div", "topic-candidate-section");
+          const heading = el("div", "topic-candidate-heading");
+          const identity = el("a", "spectrum-identity");
+          identity.href = `${base}${source.city}/${source.id}/`;
+          identity.appendChild(avatarNode(source, true));
+          const nameWrap = el("div");
+          nameWrap.appendChild(el("strong", "", source.name));
+          nameWrap.appendChild(
+            el("span", "data-date", `${source.cityLabel} · ${source.party || "未標註"} · 本議題 ${postIdsByCandidate[candidateId].size} 則`)
+          );
+          identity.appendChild(nameWrap);
+          heading.appendChild(identity);
+
+          const keywords = keywordsByCandidate[candidateId] || [];
+          if (keywords.length) {
+            const chipRow = el("div", "entry-meta");
+            keywords.slice(0, 8).forEach(([keyword, count]) => {
+              chipRow.appendChild(el("span", "pill", `${keyword} ×${count}`));
+            });
+            heading.appendChild(chipRow);
+          }
+          section.appendChild(heading);
+
+          const list = el("div", "latest-feed-grid");
+          list.textContent = "載入貼文中...";
+          section.appendChild(list);
+          container.appendChild(section);
+
+          fetchJson(`api/posts/${candidateId}.json`).then((postsPayload) => {
+            const wanted = postIdsByCandidate[candidateId];
+            const posts = postsPayload.posts.filter((p) => wanted.has(p.id));
+            list.textContent = "";
+            createRiver(list, posts, { [candidateId]: source });
+          });
+        });
+      })
+      .catch((err) => {
+        document.getElementById("topic-candidates").textContent = `資料載入失敗：${err.message}`;
       });
   }
 
@@ -665,5 +875,7 @@
     renderStatus();
   } else if (body.dataset.page === "spectrum") {
     renderSpectrum();
+  } else if (body.dataset.page === "topic-detail") {
+    renderTopicDetail();
   }
 })();

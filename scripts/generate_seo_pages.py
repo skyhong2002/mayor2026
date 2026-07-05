@@ -18,6 +18,9 @@ def main() -> int:
     candidates = candidates_payload.get("candidates", [])
 
     paths = ["/", "/source/", "/status/", "/spectrum/"]
+    import classify_topics
+
+    paths.extend(f"/spectrum/topic/{slug}/" for slug in classify_topics.TOPIC_SLUGS.values())
     for candidate in candidates:
         paths.append(f"/{candidate['city']}/{candidate['id']}/")
         paths.append(f"/source/{candidate['id']}/")

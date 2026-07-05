@@ -33,6 +33,9 @@ REQUIRED_FILES = [
     SITE_ROOT / "source" / "index.html",
     SITE_ROOT / "status" / "index.html",
     SITE_ROOT / "spectrum" / "index.html",
+    SITE_ROOT / "spectrum" / "topic" / "transport" / "index.html",
+    API_DIR / "topic-index.json",
+    API_DIR / "topic-details.json",
     SITE_ROOT / "sitemap.xml",
     SITE_ROOT / "robots.txt",
 ]

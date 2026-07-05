@@ -41,6 +41,25 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
 # greetings...) still get one bucket so every post lands somewhere.
 FALLBACK_TOPIC = "生活"
 
+# ASCII slugs for per-topic page URLs (/spectrum/topic/<slug>/).
+TOPIC_SLUGS = {
+    "交通": "transport",
+    "住宅": "housing",
+    "社福": "welfare",
+    "環境": "environment",
+    "教育": "education",
+    "經濟": "economy",
+    "治安": "safety",
+    "醫療": "health",
+    "競選": "campaign",
+    "體育": "sports",
+    "文化觀光": "culture",
+    "兩岸外交": "cross-strait",
+    "防災": "disaster",
+    "議會監督": "oversight",
+    "生活": "life",
+}
+
 
 def classify(text: str) -> dict[str, Any]:
     text = text or ""
