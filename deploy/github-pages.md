@@ -8,8 +8,10 @@
 3. 在 GitHub repo Settings → Pages，Source 選擇 `Deploy from a branch`，Branch 選 `gh-pages` / `/`（root）。
    `scripts/publish_github_pages.py` 第一次執行時會自動建立 `gh-pages` 分支並在其中放入
    `.github/workflows/deploy.yml`，之後 push 到 `gh-pages` 會自動觸發 Pages 部署。
-4. 若要自訂網域，執行 `publish_github_pages.py --cname your.domain.tw`，並在 DNS 設定 CNAME 指到
-   `<user>.github.io`。不需要自訂網域則不用加這個參數。
+4. 自訂網域：DNS 已設定 `mayor2026.observe.tw` CNAME 指到 `skyhong2002.github.io`，
+   `publish_github_pages.py` 預設就會寫入這個 CNAME（可用 `MAYOR_PAGES_CNAME` 環境變數或
+   `--cname` 覆寫；傳空字串則回到預設 `*.github.io` 網址）。GitHub repo Settings → Pages 的
+   custom domain 也已設為 `mayor2026.observe.tw`，等憑證簽發後記得勾 Enforce HTTPS。
 
 ## 新竹機器排程（launchd）
 

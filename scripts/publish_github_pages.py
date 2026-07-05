@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -17,6 +18,7 @@ DEFAULT_SITE_DIR = PROJECT_ROOT / "site"
 DEFAULT_WORKTREE = PROJECT_ROOT.with_name(f"{PROJECT_ROOT.name}-gh-pages")
 DEFAULT_BRANCH = "gh-pages"
 DEFAULT_REMOTE = "origin"
+DEFAULT_CNAME = "mayor2026.observe.tw"
 TAIPEI_TZ = dt.timezone(dt.timedelta(hours=8))
 
 
@@ -168,7 +170,11 @@ def main() -> int:
     parser.add_argument("--worktree", type=Path, default=DEFAULT_WORKTREE)
     parser.add_argument("--branch", default=DEFAULT_BRANCH)
     parser.add_argument("--remote", default=DEFAULT_REMOTE)
-    parser.add_argument("--cname", default="", help="Custom domain for CNAME file; leave empty for the default *.github.io URL.")
+    parser.add_argument(
+        "--cname",
+        default=os.environ.get("MAYOR_PAGES_CNAME", DEFAULT_CNAME),
+        help="Custom domain for CNAME file; pass an empty string for the default *.github.io URL.",
+    )
     parser.add_argument("--message", default="")
     parser.add_argument("--no-push", action="store_true")
     parser.add_argument("--json", action="store_true")
