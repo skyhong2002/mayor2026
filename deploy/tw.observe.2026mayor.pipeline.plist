@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>tw.observe.2026mayor.pipeline</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/zsh</string>
+      <string>-lc</string>
+      <string>cd '/Users/REPLACE_ME/2026mayor' &amp;&amp; /usr/bin/python3 scripts/run_pipeline.py --publish-pages</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/REPLACE_ME/2026mayor</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>MAYOR_OBSERVE_HOME</key>
+      <string>/Users/REPLACE_ME/2026mayor</string>
+      <key>MAYOR_RSSHUB_BASE</key>
+      <string>http://127.0.0.1:1200</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Three fixed ticks a day: 12:00 / 17:00 / 22:00 Taipei time. -->
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict>
+        <key>Hour</key>
+        <integer>12</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>Hour</key>
+        <integer>17</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>Hour</key>
+        <integer>22</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/Users/REPLACE_ME/2026mayor/logs/pipeline.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/REPLACE_ME/2026mayor/logs/pipeline.err.log</string>
+  </dict>
+</plist>

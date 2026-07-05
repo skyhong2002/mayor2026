@@ -1,0 +1,56 @@
+name: 新增或更新候選人來源
+description: 新增六都市長候選人，或補充其官方社群/官網連結
+title: "[新增候選人] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        謝謝你補充資料。請只提供公開可查的資訊；GitHub issue 會公開顯示，不要放私人電話、私人信箱、未公開群組連結或憑證。
+
+  - type: dropdown
+    id: city
+    attributes:
+      label: 城市
+      options:
+        - 臺北市
+        - 新北市
+        - 桃園市
+        - 臺中市
+        - 臺南市
+        - 高雄市
+    validations:
+      required: true
+
+  - type: input
+    id: candidate_name
+    attributes:
+      label: 候選人姓名
+      placeholder: 例：王小明
+    validations:
+      required: true
+
+  - type: input
+    id: party
+    attributes:
+      label: 所屬政黨/陣營
+    validations:
+      required: false
+
+  - type: textarea
+    id: links
+    attributes:
+      label: 官方公開連結
+      description: 官網、Facebook、Instagram、Threads、YouTube 等，一行一個連結。
+      placeholder: |
+        https://www.facebook.com/...
+        https://www.instagram.com/...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: public_confirmation
+    attributes:
+      label: 公開資料確認
+      options:
+        - label: 我了解這個 issue 會公開顯示，且沒有提供私人或不應公開的資料。
+          required: true

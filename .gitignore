@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv/
+private/
+
+# Runtime logs and fetch state.
+logs/
+state/
+
+# Generated social/feed config (rebuildable from CSV).
+data/feeds/social_sources.json
+
+# NOTE: unlike the Harmonica-in-Taiwan template, social_feed_inbox.jsonl and
+# social_candidates.jsonl are intentionally tracked in git, not ignored.
+# Deleted candidate posts are themselves newsworthy; we keep full history.
+
+# Generated public site outputs (rebuilt by scripts/run_pipeline.py).
+site/api/
+site/data/
+site/feeds/
+site/redirects/
+site/status/
+site/*.html
+site/assets/feed-images/
+site/assets/source-avatars/
+
+# Per-candidate generated pages, one directory per six-city slug.
+site/taipei/
+site/new-taipei/
+site/taoyuan/
+site/taichung/
+site/tainan/
+site/kaohsiung/

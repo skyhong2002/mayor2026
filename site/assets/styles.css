@@ -1,0 +1,129 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #2a2f3a;
+  --text: #e8e9ec;
+  --muted: #9aa1ad;
+  --accent: #4da3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.4rem;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.city-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.city-card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.candidate-link {
+  display: block;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.candidate-link:first-of-type {
+  border-top: none;
+}
+
+.candidate-name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.candidate-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.post-platform {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.post-topics span {
+  display: inline-block;
+  background: rgba(77, 163, 255, 0.15);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  margin: 6px 6px 0 0;
+}
+
+.chart-wrap {
+  max-width: 360px;
+  margin: 16px 0 24px;
+}
+
+.candidate-links a {
+  margin-right: 12px;
+}
+
+.empty-state {
+  color: var(--muted);
+}

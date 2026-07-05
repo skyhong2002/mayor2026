@@ -1,0 +1,27 @@
+name: 修正資料
+description: 回報候選人資料錯誤、連結失效，或議題分類錯誤
+title: "[修正資料] "
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 要修正的候選人或頁面
+      placeholder: 例：/taipei/1-todo/ 或候選人姓名
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題描述
+      placeholder: 目前顯示的內容、應該是什麼、佐證連結
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: public_confirmation
+    attributes:
+      label: 公開資料確認
+      options:
+        - label: 我了解這個 issue 會公開顯示，且沒有提供私人或不應公開的資料。
+          required: true
