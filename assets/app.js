@@ -496,33 +496,47 @@
         const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
         const spectrumById = Object.fromEntries(spectrumPayload.candidates.map((c) => [c.candidateId, c]));
 
-        const legend = document.getElementById("spectrum-legend");
-        Object.entries(TOPIC_COLORS).forEach(([topic, color]) => {
-          const item = el("span");
-          const swatch = el("i");
-          swatch.style.background = color;
-          item.appendChild(swatch);
-          item.appendChild(document.createTextNode(topic));
-          legend.appendChild(item);
+        // Fixed topic column order = overall volume across all candidates,
+        // so the most-discussed issues sit left and every row is comparable.
+        const totals = {};
+        spectrumPayload.candidates.forEach((entry) => {
+          Object.entries(entry.topicProportions || {}).forEach(([topic, value]) => {
+            totals[topic] = (totals[topic] || 0) + value;
+          });
         });
+        const topics = Object.keys(totals).sort((a, b) => totals[b] - totals[a]);
 
         const container = document.getElementById("spectrum-cities");
         container.innerHTML = "";
+
+        const wrap = el("div", "directory-table-list");
+        const table = el("table", "score-table spectrum-table");
+        const thead = document.createElement("thead");
+        const headRow = document.createElement("tr");
+        headRow.appendChild(el("th", "", "候選人"));
+        topics.forEach((topic) => headRow.appendChild(el("th", "spectrum-topic-head", topic)));
+        thead.appendChild(headRow);
+        table.appendChild(thead);
+        const tbody = document.createElement("tbody");
+
         citiesPayload.cities.forEach((city) => {
           if (!city.candidateIds.length) return;
-          const section = el("div", "spectrum-city");
-          const kicker = el("p", "section-kicker", city.id.replace("-", " ").toUpperCase());
-          section.appendChild(kicker);
-          section.appendChild(el("h2", "", city.label));
+          const cityRow = document.createElement("tr");
+          const cityCell = el("td", "spectrum-city-cell", city.label);
+          cityCell.colSpan = topics.length + 1;
+          cityRow.appendChild(cityCell);
+          tbody.appendChild(cityRow);
 
           city.candidateIds.forEach((candidateId) => {
             const source = sourcesById[candidateId];
             if (!source) return;
             const entry = spectrumById[candidateId];
             const proportions = (entry && entry.topicProportions) || {};
+            const rowMax = Math.max(0, ...Object.values(proportions));
 
-            const row = el("div", "spectrum-row");
-
+            const row = document.createElement("tr");
+            const nameCell = document.createElement("td");
+            nameCell.className = "directory-source-cell";
             const identity = el("a", "spectrum-identity");
             identity.href = `../${source.city}/${source.id}/`;
             identity.appendChild(avatarNode(source, true));
@@ -530,39 +544,38 @@
             nameWrap.appendChild(el("strong", "", source.name));
             nameWrap.appendChild(el("span", "data-date", `${source.party || "未標註"} · ${source.postCount} 則`));
             identity.appendChild(nameWrap);
-            row.appendChild(identity);
+            nameCell.appendChild(identity);
+            row.appendChild(nameCell);
 
-            const topics = Object.entries(proportions).sort((a, b) => b[1] - a[1]);
-            if (!topics.length) {
-              const emptyBar = el("div", "spectrum-bar spectrum-bar-empty", "尚無足夠貼文計算議題比例");
-              row.appendChild(emptyBar);
-            } else {
-              const bar = el("div", "spectrum-bar");
-              topics.forEach(([topic, value]) => {
-                const segment = el("i");
-                segment.style.width = `${(value * 100).toFixed(2)}%`;
-                segment.style.background = TOPIC_COLORS[topic] || "#9aa19d";
-                segment.title = `${topic} ${(value * 100).toFixed(1)}%`;
-                bar.appendChild(segment);
-              });
-              row.appendChild(bar);
-            }
-
-            const dominant = el("div", "spectrum-dominant");
-            if (entry && entry.dominantTopic) {
-              const pill = el("span", "pill", `主要：${entry.dominantTopic}`);
-              pill.style.background = "rgba(15, 118, 110, 0.12)";
-              pill.style.color = "var(--accent-strong, #0a514d)";
-              dominant.appendChild(pill);
-            } else {
-              dominant.textContent = "—";
-            }
-            row.appendChild(dominant);
-
-            section.appendChild(row);
+            topics.forEach((topic) => {
+              const value = proportions[topic] || 0;
+              const cell = el("td", "spectrum-cell");
+              if (!Object.keys(proportions).length) {
+                cell.textContent = "—";
+                cell.style.color = "var(--muted)";
+              } else if (value > 0) {
+                cell.textContent = `${Math.round(value * 100)}%`;
+                // Shade by intensity; highlight each candidate's strongest topic.
+                cell.style.background = `rgba(15, 118, 110, ${(0.08 + 0.72 * (value / (rowMax || 1))).toFixed(3)})`;
+                if (value / (rowMax || 1) > 0.55) cell.style.color = "#fff";
+                if (value === rowMax) cell.classList.add("spectrum-cell-max");
+              } else {
+                cell.textContent = "·";
+                cell.style.color = "#c4ccc6";
+              }
+              row.appendChild(cell);
+            });
+            tbody.appendChild(row);
           });
-          container.appendChild(section);
         });
+
+        table.appendChild(tbody);
+        wrap.appendChild(table);
+        container.appendChild(wrap);
+
+        const note = el("p", "data-date", "顏色深淺＝該議題佔該候選人議題發文的比例（每列各自正規化）；粗框＝該候選人聲量最高的議題；「·」＝無相關貼文。");
+        note.style.marginTop = "12px";
+        container.appendChild(note);
       })
       .catch((err) => {
         document.getElementById("spectrum-cities").textContent = `資料載入失敗：${err.message}`;
