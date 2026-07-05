@@ -116,9 +116,6 @@ def main() -> int:
       <a href="../">六都總覽</a>
       <a href="../spectrum/">議題光譜</a>
       <a href="../source/">公開來源</a>
-      <a href="../status/">狀態</a>
-      <a href="./">RSS</a>
-      <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
     </nav>
   </header>
   <section class="band">
@@ -138,10 +135,8 @@ def main() -> int:
         <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
       </div>
       <div class="footer-links">
-        <a href="../spectrum/">議題光譜</a>
-        <a href="../source/">公開來源</a>
         <a href="../status/">狀態</a>
-        <a href="./">RSS</a>
+        <a href="../feeds/">RSS</a>
         <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
         <a href="https://github.com/skyhong2002/mayor2026/issues/new/choose">資料回報</a>
       </div>
