@@ -16,10 +16,18 @@ import feed_common
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
 
 
+import classify_topics
+
+
 def aggregate_topic_proportions(posts: list[dict[str, Any]]) -> dict[str, float]:
     totals: dict[str, float] = {}
     for post in posts:
         for topic, score in (post.get("topic_scores") or {}).items():
+            # The fallback bucket (daily-life posts with no issue content)
+            # stays on the post cards but is excluded from the spectrum —
+            # otherwise it dominates every bar and hides the actual issues.
+            if topic == classify_topics.FALLBACK_TOPIC:
+                continue
             totals[topic] = totals.get(topic, 0.0) + score
     grand_total = sum(totals.values())
     if not grand_total:
