@@ -3436,3 +3436,36 @@ p.feed-page-summary {
     text-align: left;
   }
 }
+
+/* Spectrum heatmap table. */
+.spectrum-table {
+  width: 100%;
+  min-width: 900px;
+}
+
+.spectrum-table th:first-child,
+.spectrum-table td:first-child {
+  width: 220px;
+}
+
+.spectrum-topic-head {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.spectrum-cell {
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+.spectrum-cell-max {
+  outline: 2px solid var(--teal-deep);
+  outline-offset: -2px;
+}
+
+.spectrum-city-cell {
+  color: var(--teal-deep);
+  font-weight: 900;
+  background: #eef4f0;
+}
