@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>張善政｜公開來源｜2026 市長官方來源觀測站</title>
+  <title>張善政｜2026 市長官方來源觀測站</title>
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../assets/styles.css?v=9cc753beeb">
+  <link rel="stylesheet" href="../../assets/styles.css?v=80a51e8575">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body data-page="source-detail" data-base="../../" data-candidate-id="chang-san-cheng">
   <header class="site-header">
@@ -32,7 +33,7 @@
       </div>
       <div class="hero-actions" style="margin-top: 24px;">
         <a class="secondary-link" href="../../source/">返回公開來源列表</a>
-        <a class="secondary-link" href="../../">前往首頁</a>
+        <a class="secondary-link" href="../../feeds/chang-san-cheng.xml">RSS</a>
       </div>
     </div>
   </section>
@@ -40,18 +41,6 @@
   <section class="band source-band">
     <div class="band-inner">
       <div class="section-heading">
-        <div>
-          <p class="section-kicker">Profile</p>
-          <h2>基本資訊</h2>
-        </div>
-      </div>
-      <div class="directory-table-list">
-        <table class="score-table source-list-table" id="info-table">
-          <tbody></tbody>
-        </table>
-      </div>
-
-      <div class="section-heading" style="margin-top: 40px;">
         <div>
           <p class="section-kicker">Accounts</p>
           <h2>監看中的公開帳號</h2>
@@ -73,12 +62,40 @@
     </div>
   </section>
 
+  <section class="band">
+    <div class="band-inner">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Topics</p>
+          <h2>議題比例</h2>
+        </div>
+      </div>
+      <div class="topic-breakdown-layout">
+        <div class="topic-chart-panel">
+          <canvas id="topic-chart"></canvas>
+        </div>
+        <div class="topic-breakdown" id="topic-breakdown">載入中...</div>
+      </div>
+    </div>
+  </section>
+
   <section class="band latest-feed-band">
     <div class="band-inner">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">Latest</p>
-          <h2>近期公開更新</h2>
+          <p class="section-kicker">Timeline</p>
+          <h2>貼文時間軸</h2>
+        </div>
+        <p class="data-date" id="timeline-count"></p>
+      </div>
+      <div class="spectrum-controls" id="timeline-filters" hidden>
+        <div class="spectrum-control-group">
+          <span class="feed-chip-group-label" title="點一下＝只看，再點＝排除，再點＝取消">議題</span>
+          <div class="feed-option-chips" id="timeline-topic-chips"></div>
+        </div>
+        <div class="spectrum-control-group">
+          <span class="feed-chip-group-label">關鍵詞</span>
+          <div class="feed-option-chips" id="timeline-keyword-chips"></div>
         </div>
       </div>
       <div id="post-list" class="latest-feed-grid">載入中...</div>
@@ -100,6 +117,6 @@
       <p class="footer-meta">資料來源為候選人公開帳號；貼文著作權屬原作者。MIT License.</p>
     </div>
   </footer>
-  <script src="../../assets/app.js?v=9cc753beeb"></script>
+  <script src="../../assets/app.js?v=80a51e8575"></script>
 </body>
 </html>

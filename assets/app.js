@@ -291,7 +291,7 @@
             sortCandidates(city.candidateIds.map((id) => candidatesById[id]).filter(Boolean)).forEach((candidate) => {
               const candidateId = candidate.id;
               const link = el("a");
-              link.href = `${city.id}/${candidate.id}/`;
+              link.href = `source/${candidate.id}/`;
               const identity = el("span", "candidate-city-identity");
               identity.appendChild(avatarNode(candidate, true));
               identity.appendChild(el("strong", "", candidate.name));
@@ -339,149 +339,123 @@
     });
   }
 
-  function renderCandidate() {
-    const candidateId = body.dataset.candidateId;
-    Promise.all([
-      fetchJson(`api/posts/${candidateId}.json`),
-      fetchJson("api/spectrum.json"),
-      fetchJson("api/sources.json"),
-      fetchJson("api/topic-details.json").catch(() => null),
-    ])
-      .then(([postsPayload, spectrumPayload, sourcesPayload, topicDetails]) => {
-        const candidate = postsPayload.candidate;
-        const sourceEntry = sourcesPayload.sources.find((s) => s.id === candidateId) || candidate;
-        document.getElementById("candidate-city").textContent = candidate.cityLabel;
-        document.getElementById("candidate-name").textContent = candidate.name;
-        document.getElementById("candidate-party").textContent = `${candidate.party || "未標註"} · 已收錄 ${postsPayload.count} 則公開貼文`;
+  // Chart + per-topic breakdown + filterable timeline, shared by the merged
+  // candidate page (/source/<id>/).
+  function renderCandidateAnalytics({ candidateId, sourceEntry, posts, spectrumPayload, topicDetails }) {
+    const spectrumEntry = spectrumPayload.candidates.find((c) => c.candidateId === candidateId);
+    renderTopicChart(document.getElementById("topic-chart"), spectrumEntry ? spectrumEntry.topicProportions : {});
 
-        const linksEl = document.getElementById("candidate-links");
-        Object.entries(candidate.links || {}).forEach(([platform, url]) => {
-          if (!url) return;
-          const a = el("a", "secondary-link", PLATFORM_LABELS[platform] || platform);
-          a.href = url;
-          a.target = "_blank";
-          a.rel = "noopener";
-          linksEl.appendChild(a);
+    // Per-topic breakdown: proportion bar + the keyword sub-items this
+    // candidate actually hits within each topic, linking to the
+    // cross-candidate topic page.
+    const breakdown = document.getElementById("topic-breakdown");
+    breakdown.innerHTML = "";
+    const proportions = (spectrumEntry && spectrumEntry.topicProportions) || {};
+    const orderedTopics = Object.entries(proportions).sort((a, b) => b[1] - a[1]);
+    if (!orderedTopics.length) {
+      breakdown.appendChild(el("p", "empty-state", "尚無足夠貼文計算議題細項。"));
+    }
+    orderedTopics.forEach(([topic, value]) => {
+      const row = el("div", "topic-breakdown-row");
+
+      const head = el("div", "topic-breakdown-head");
+      const url = topicPageUrl(topic);
+      const nameNode = el(url ? "a" : "span", "topic-breakdown-name", topic);
+      if (url) {
+        nameNode.href = url;
+        nameNode.title = `看「${topic}」議題的候選人比較`;
+      }
+      head.appendChild(nameNode);
+      head.appendChild(el("span", "data-date", `${Math.round(value * 100)}%`));
+      row.appendChild(head);
+
+      const track = el("div", "topic-breakdown-track");
+      const fill = el("i");
+      fill.style.width = `${Math.max(value * 100, 1.5).toFixed(1)}%`;
+      fill.style.background = TOPIC_COLORS[topic] || "#9aa19d";
+      track.appendChild(fill);
+      row.appendChild(track);
+
+      const keywordRows =
+        (topicDetails && topicDetails.topics && topicDetails.topics[topic] && topicDetails.topics[topic][candidateId]) || [];
+      if (keywordRows.length) {
+        const chips = el("div", "entry-meta");
+        keywordRows.slice(0, 6).forEach(([keyword, count]) => {
+          chips.appendChild(el("span", "pill", `${keyword} ×${count}`));
         });
+        row.appendChild(chips);
+      }
+      breakdown.appendChild(row);
+    });
 
-        const spectrumEntry = spectrumPayload.candidates.find((c) => c.candidateId === candidateId);
-        renderTopicChart(document.getElementById("topic-chart"), spectrumEntry ? spectrumEntry.topicProportions : {});
+    const list = document.getElementById("post-list");
+    const candidatesById = { [candidateId]: sourceEntry };
+    const allPosts = posts;
 
-        // Per-topic breakdown: proportion bar + the keyword sub-items this
-        // candidate actually hits within each topic, linking to the
-        // cross-candidate topic page.
-        const breakdown = document.getElementById("topic-breakdown");
-        breakdown.innerHTML = "";
-        const proportions = (spectrumEntry && spectrumEntry.topicProportions) || {};
-        const orderedTopics = Object.entries(proportions).sort((a, b) => b[1] - a[1]);
-        if (!orderedTopics.length) {
-          breakdown.appendChild(el("p", "empty-state", "尚無足夠貼文計算議題細項。"));
-        }
-        orderedTopics.forEach(([topic, value]) => {
-          const row = el("div", "topic-breakdown-row");
+    // Tri-state chip filters (none → include → exclude), same interaction
+    // model as Harmonica-in-Taiwan's feed filter.
+    const filterState = { topics: new Map(), keywords: new Map() };
 
-          const head = el("div", "topic-breakdown-head");
-          const url = topicPageUrl(topic);
-          const nameNode = el(url ? "a" : "span", "topic-breakdown-name", topic);
-          if (url) {
-            nameNode.href = url;
-            nameNode.title = `看「${topic}」議題的候選人比較`;
-          }
-          head.appendChild(nameNode);
-          head.appendChild(el("span", "data-date", `${Math.round(value * 100)}%`));
-          row.appendChild(head);
+    const topicCounts = new Map();
+    const keywordCounts = new Map();
+    allPosts.forEach((post) => {
+      (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
+      (post.keywords || []).forEach((k) => keywordCounts.set(k, (keywordCounts.get(k) || 0) + 1));
+    });
+    const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
+    const keywordOptions = [...keywordCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
 
-          const track = el("div", "topic-breakdown-track");
-          const fill = el("i");
-          fill.style.width = `${Math.max(value * 100, 1.5).toFixed(1)}%`;
-          fill.style.background = TOPIC_COLORS[topic] || "#9aa19d";
-          track.appendChild(fill);
-          row.appendChild(track);
-
-          const keywordRows =
-            (topicDetails && topicDetails.topics && topicDetails.topics[topic] && topicDetails.topics[topic][candidateId]) || [];
-          if (keywordRows.length) {
-            const chips = el("div", "entry-meta");
-            keywordRows.slice(0, 6).forEach(([keyword, count]) => {
-              chips.appendChild(el("span", "pill", `${keyword} ×${count}`));
-            });
-            row.appendChild(chips);
-          }
-          breakdown.appendChild(row);
-        });
-
-        const list = document.getElementById("post-list");
-        const candidatesById = { [candidate.id]: sourceEntry };
-        const allPosts = postsPayload.posts;
-
-        // Tri-state chip filters (none → include → exclude), same interaction
-        // model as Harmonica-in-Taiwan's feed filter.
-        const filterState = { topics: new Map(), keywords: new Map() };
-
-        const topicCounts = new Map();
-        const keywordCounts = new Map();
-        allPosts.forEach((post) => {
-          (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
-          (post.keywords || []).forEach((k) => keywordCounts.set(k, (keywordCounts.get(k) || 0) + 1));
-        });
-        const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
-        const keywordOptions = [...keywordCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
-
-        function passes(post) {
-          const groups = [
-            [filterState.topics, post.topics || []],
-            [filterState.keywords, post.keywords || []],
-          ];
-          return groups.every(([states, values]) => {
-            if (values.some((v) => states.get(v) === "exclude")) return false;
-            const includes = [...states.entries()].filter(([, s]) => s === "include").map(([v]) => v);
-            return !includes.length || values.some((v) => includes.includes(v));
-          });
-        }
-
-        function renderTimeline() {
-          const filtered = allPosts.filter(passes);
-          document.getElementById("timeline-count").textContent = `顯示 ${filtered.length} / ${allPosts.length} 則`;
-          list.innerHTML = "";
-          if (!filtered.length) {
-            list.appendChild(el("p", "empty-state", "沒有符合篩選條件的貼文。"));
-            return;
-          }
-          createRiver(list, filtered, candidatesById);
-        }
-
-        function renderChipGroup(containerId, options, states) {
-          const box = document.getElementById(containerId);
-          box.innerHTML = "";
-          options.forEach(([value, count]) => {
-            const chip = el("button", "feed-option-chip", `${value}（${count}）`);
-            chip.dataset.filterState = states.get(value) || "";
-            chip.addEventListener("click", () => {
-              const current = states.get(value);
-              if (!current) states.set(value, "include");
-              else if (current === "include") states.set(value, "exclude");
-              else states.delete(value);
-              renderFilters();
-              renderTimeline();
-            });
-            box.appendChild(chip);
-          });
-        }
-
-        function renderFilters() {
-          renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
-          renderChipGroup("timeline-keyword-chips", keywordOptions, filterState.keywords);
-        }
-
-        if (allPosts.length) {
-          document.getElementById("timeline-filters").hidden = false;
-          renderFilters();
-        }
-        renderTimeline();
-      })
-      .catch((err) => {
-        document.getElementById("post-list").textContent = `資料載入失敗：${err.message}`;
+    function passes(post) {
+      const groups = [
+        [filterState.topics, post.topics || []],
+        [filterState.keywords, post.keywords || []],
+      ];
+      return groups.every(([states, values]) => {
+        if (values.some((v) => states.get(v) === "exclude")) return false;
+        const includes = [...states.entries()].filter(([, s]) => s === "include").map(([v]) => v);
+        return !includes.length || values.some((v) => includes.includes(v));
       });
+    }
+
+    function renderTimeline() {
+      const filtered = allPosts.filter(passes);
+      document.getElementById("timeline-count").textContent = `顯示 ${filtered.length} / ${allPosts.length} 則`;
+      list.innerHTML = "";
+      if (!filtered.length) {
+        list.appendChild(el("p", "empty-state", "沒有符合篩選條件的貼文。"));
+        return;
+      }
+      createRiver(list, filtered, candidatesById);
+    }
+
+    function renderChipGroup(containerId, options, states) {
+      const box = document.getElementById(containerId);
+      box.innerHTML = "";
+      options.forEach(([value, count]) => {
+        const chip = el("button", "feed-option-chip", `${value}（${count}）`);
+        chip.dataset.filterState = states.get(value) || "";
+        chip.addEventListener("click", () => {
+          const current = states.get(value);
+          if (!current) states.set(value, "include");
+          else if (current === "include") states.set(value, "exclude");
+          else states.delete(value);
+          renderFilters();
+          renderTimeline();
+        });
+        box.appendChild(chip);
+      });
+    }
+
+    function renderFilters() {
+      renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
+      renderChipGroup("timeline-keyword-chips", keywordOptions, filterState.keywords);
+    }
+
+    if (allPosts.length) {
+      document.getElementById("timeline-filters").hidden = false;
+      renderFilters();
+    }
+    renderTimeline();
   }
 
   function renderSources() {
@@ -545,8 +519,13 @@
 
   function renderSourceDetail() {
     const candidateId = body.dataset.candidateId;
-    Promise.all([fetchJson("api/sources.json"), fetchJson(`api/posts/${candidateId}.json`)])
-      .then(([sourcesPayload, postsPayload]) => {
+    Promise.all([
+      fetchJson("api/sources.json"),
+      fetchJson(`api/posts/${candidateId}.json`),
+      fetchJson("api/spectrum.json"),
+      fetchJson("api/topic-details.json").catch(() => null),
+    ])
+      .then(([sourcesPayload, postsPayload, spectrumPayload, topicDetails]) => {
         const source = sourcesPayload.sources.find((s) => s.id === candidateId);
         if (!source) throw new Error(`unknown candidate ${candidateId}`);
 
@@ -555,24 +534,6 @@
         document.getElementById("candidate-party").textContent = `${source.party || "未標註"} · 已收錄 ${source.postCount} 則公開貼文`;
         const heroAvatar = document.getElementById("hero-avatar");
         heroAvatar.replaceWith(Object.assign(avatarNode(source, false), { id: "hero-avatar", className: "source-avatar source-hero-avatar" }));
-
-        const infoBody = document.querySelector("#info-table tbody");
-        [
-          ["城市", source.cityLabel],
-          ["政黨", source.party || "未標註"],
-          ["監看帳號數", String(source.accounts.length)],
-          ["最後更新", formatDate(source.latestPostAt) || "尚無貼文"],
-        ].forEach(([label, value]) => {
-          const row = document.createElement("tr");
-          const th = document.createElement("th");
-          th.textContent = label;
-          th.style.width = "180px";
-          const td = document.createElement("td");
-          td.textContent = value;
-          row.appendChild(th);
-          row.appendChild(td);
-          infoBody.appendChild(row);
-        });
 
         const accountBody = document.querySelector("#account-table tbody");
         source.accounts.forEach((account) => {
@@ -604,9 +565,13 @@
           accountBody.appendChild(row);
         });
 
-        const list = document.getElementById("post-list");
-        list.innerHTML = "";
-        createRiver(list, postsPayload.posts, { [source.id]: source });
+        renderCandidateAnalytics({
+          candidateId,
+          sourceEntry: source,
+          posts: postsPayload.posts,
+          spectrumPayload,
+          topicDetails,
+        });
       })
       .catch((err) => {
         document.getElementById("post-list").textContent = `資料載入失敗：${err.message}`;
@@ -853,7 +818,7 @@
             const nameCell = document.createElement("td");
             nameCell.className = "directory-source-cell";
             const identity = el("a", "spectrum-identity");
-            identity.href = `../${source.city}/${source.id}/`;
+            identity.href = `../source/${source.id}/`;
             identity.appendChild(avatarNode(source, true));
             const nameWrap = el("div");
             nameWrap.appendChild(el("strong", "", source.name));
@@ -984,7 +949,7 @@
           const source = sourcesById[candidateId];
           const heading = el("div", "topic-candidate-heading");
           const identity = el("a", "spectrum-identity");
-          identity.href = `${base}${source.city}/${source.id}/`;
+          identity.href = `${base}source/${source.id}/`;
           identity.appendChild(avatarNode(source, true));
           const nameWrap = el("div");
           nameWrap.appendChild(el("strong", "", source.name));
@@ -1127,8 +1092,6 @@
 
   if (body.dataset.page === "index") {
     renderIndex();
-  } else if (body.dataset.page === "candidate") {
-    renderCandidate();
   } else if (body.dataset.page === "sources") {
     renderSources();
   } else if (body.dataset.page === "source-detail") {
