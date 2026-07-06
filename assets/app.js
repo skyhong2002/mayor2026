@@ -786,7 +786,7 @@
 
         const totalPosts = candidateIds.reduce((sum, id) => sum + postIdsByCandidate[id].size, 0);
         document.getElementById("topic-summary").textContent =
-          `${candidateIds.length} 位候選人共 ${totalPosts} 則相關貼文。每位候選人列出常用關鍵詞與最近貼文，比較彼此在同一議題上談的內容有何異同。`;
+          `${candidateIds.length} 位候選人共 ${totalPosts} 則相關貼文。先選候選人，或看全部並排比較。`;
 
         const container = document.getElementById("topic-candidates");
         container.innerHTML = "";
@@ -795,7 +795,48 @@
           return;
         }
 
-        candidateIds.forEach((candidateId) => {
+        // Candidate picker: jump straight to one candidate instead of
+        // scrolling through every section.
+        let selectedId = null; // null = show everyone
+        const picker = el("div", "feed-option-chips topic-candidate-picker");
+        container.appendChild(picker);
+        const sectionsWrap = el("div");
+        container.appendChild(sectionsWrap);
+
+        function renderPicker() {
+          picker.innerHTML = "";
+          const allChip = el("button", "feed-option-chip", "全部");
+          allChip.dataset.filterState = selectedId === null ? "include" : "";
+          allChip.addEventListener("click", () => {
+            selectedId = null;
+            renderPicker();
+            renderSections();
+          });
+          picker.appendChild(allChip);
+
+          candidateIds.forEach((candidateId) => {
+            const source = sourcesById[candidateId];
+            if (!source) return;
+            const chip = el("button", "feed-option-chip topic-candidate-chip");
+            chip.dataset.filterState = selectedId === candidateId ? "include" : "";
+            chip.appendChild(avatarNode(source, true));
+            chip.appendChild(document.createTextNode(` ${source.name}（${postIdsByCandidate[candidateId].size}）`));
+            chip.addEventListener("click", () => {
+              selectedId = selectedId === candidateId ? null : candidateId;
+              renderPicker();
+              renderSections();
+            });
+            picker.appendChild(chip);
+          });
+        }
+
+        function renderSections() {
+          sectionsWrap.innerHTML = "";
+          const shown = selectedId ? [selectedId] : candidateIds;
+          shown.forEach((candidateId) => renderCandidateSection(candidateId));
+        }
+
+        function renderCandidateSection(candidateId) {
           const source = sourcesById[candidateId];
           if (!source) return;
 
@@ -825,7 +866,7 @@
           const list = el("div", "latest-feed-grid");
           list.textContent = "載入貼文中...";
           section.appendChild(list);
-          container.appendChild(section);
+          sectionsWrap.appendChild(section);
 
           fetchJson(`api/posts/${candidateId}.json`).then((postsPayload) => {
             const wanted = postIdsByCandidate[candidateId];
@@ -833,7 +874,10 @@
             list.textContent = "";
             createRiver(list, posts, { [candidateId]: source });
           });
-        });
+        }
+
+        renderPicker();
+        renderSections();
       })
       .catch((err) => {
         document.getElementById("topic-candidates").textContent = `資料載入失敗：${err.message}`;
