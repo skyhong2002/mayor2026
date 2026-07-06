@@ -905,7 +905,7 @@
 
         const totalPosts = candidateIds.reduce((sum, id) => sum + postIdsByCandidate[id].size, 0);
         document.getElementById("topic-summary").textContent =
-          `${candidateIds.length} 位候選人共 ${totalPosts} 則相關貼文。先選候選人，或看全部並排比較。`;
+          `${candidateIds.length} 位候選人共 ${totalPosts} 則相關貼文。可複選候選人縮小比較範圍，或直接看全部並排比較。`;
 
         const container = document.getElementById("topic-candidates");
         container.innerHTML = "";
@@ -914,9 +914,10 @@
           return;
         }
 
-        // Candidate picker: jump straight to one candidate instead of
-        // scrolling through every section.
-        let selectedId = null; // null = show everyone
+        // Candidate picker: pick one or more candidates to narrow the view
+        // instead of scrolling through every section. Empty selection = show
+        // everyone.
+        const selectedIds = new Set();
         const picker = el("div", "feed-option-chips topic-candidate-picker");
         container.appendChild(picker);
         const sectionsWrap = el("div");
@@ -925,9 +926,10 @@
         function renderPicker() {
           picker.innerHTML = "";
           const allChip = el("button", "feed-option-chip", "全部");
-          allChip.dataset.filterState = selectedId === null ? "include" : "";
+          allChip.dataset.filterState = selectedIds.size === 0 ? "include" : "";
+          allChip.title = "清除選取，顯示所有候選人";
           allChip.addEventListener("click", () => {
-            selectedId = null;
+            selectedIds.clear();
             renderPicker();
             renderSections();
           });
@@ -937,11 +939,12 @@
             const source = sourcesById[candidateId];
             if (!source) return;
             const chip = el("button", "feed-option-chip topic-candidate-chip");
-            chip.dataset.filterState = selectedId === candidateId ? "include" : "";
+            chip.dataset.filterState = selectedIds.has(candidateId) ? "include" : "";
             chip.appendChild(avatarNode(source, true));
             chip.appendChild(document.createTextNode(` ${source.name}（${postIdsByCandidate[candidateId].size}）`));
             chip.addEventListener("click", () => {
-              selectedId = selectedId === candidateId ? null : candidateId;
+              if (selectedIds.has(candidateId)) selectedIds.delete(candidateId);
+              else selectedIds.add(candidateId);
               renderPicker();
               renderSections();
             });
@@ -992,38 +995,26 @@
         function renderSections() {
           sectionsWrap.innerHTML = "";
 
-          if (selectedId) {
-            // Single candidate: their summary + their topic posts.
-            const section = el("div", "topic-candidate-section");
-            section.appendChild(candidateHeading(selectedId));
-            const list = el("div", "latest-feed-grid");
-            list.textContent = "載入貼文中...";
-            section.appendChild(list);
-            sectionsWrap.appendChild(section);
-            topicPosts(selectedId).then((posts) => {
-              list.textContent = "";
-              createRiver(list, posts, { [selectedId]: sourcesById[selectedId] });
-            });
-            return;
-          }
+          // Empty selection = everyone; otherwise only the picked candidates,
+          // in the same order the picker lists them (already sorted by
+          // volume for this topic).
+          const shownIds = selectedIds.size ? candidateIds.filter((id) => selectedIds.has(id)) : candidateIds;
 
-          // Everyone: all candidate summaries first, then ONE merged wall of
-          // every candidate's posts on this topic, newest first.
           const summaryBlock = el("div", "topic-summaries");
-          candidateIds.forEach((candidateId) => summaryBlock.appendChild(candidateHeading(candidateId)));
+          shownIds.forEach((candidateId) => summaryBlock.appendChild(candidateHeading(candidateId)));
           sectionsWrap.appendChild(summaryBlock);
 
-          const wallTitle = el("p", "section-kicker", "All Posts");
+          const wallTitle = el("p", "section-kicker", "Posts");
           wallTitle.style.marginTop = "28px";
           sectionsWrap.appendChild(wallTitle);
-          sectionsWrap.appendChild(el("h2", "", "全部貼文"));
+          sectionsWrap.appendChild(el("h2", "", shownIds.length === candidateIds.length ? "全部貼文" : "選取的貼文"));
 
           const list = el("div", "latest-feed-grid");
           list.textContent = "載入貼文中...";
           list.style.marginTop = "14px";
           sectionsWrap.appendChild(list);
 
-          Promise.all(candidateIds.map((id) => topicPosts(id))).then((groups) => {
+          Promise.all(shownIds.map((id) => topicPosts(id))).then((groups) => {
             const merged = groups.flat().sort((a, b) => (b.postedAt || "").localeCompare(a.postedAt || ""));
             list.textContent = "";
             createRiver(list, merged, sourcesById);
