@@ -3597,3 +3597,12 @@ a.topic-breakdown-name:hover {
   font-size: 0.6rem;
   border: none;
 }
+
+.topic-summaries {
+  display: grid;
+  gap: 10px;
+}
+
+.topic-summaries .topic-candidate-heading {
+  margin-bottom: 0;
+}
