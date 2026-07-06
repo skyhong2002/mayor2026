@@ -333,8 +333,13 @@
 
   function renderCandidate() {
     const candidateId = body.dataset.candidateId;
-    Promise.all([fetchJson(`api/posts/${candidateId}.json`), fetchJson("api/spectrum.json"), fetchJson("api/sources.json")])
-      .then(([postsPayload, spectrumPayload, sourcesPayload]) => {
+    Promise.all([
+      fetchJson(`api/posts/${candidateId}.json`),
+      fetchJson("api/spectrum.json"),
+      fetchJson("api/sources.json"),
+      fetchJson("api/topic-details.json").catch(() => null),
+    ])
+      .then(([postsPayload, spectrumPayload, sourcesPayload, topicDetails]) => {
         const candidate = postsPayload.candidate;
         const sourceEntry = sourcesPayload.sources.find((s) => s.id === candidateId) || candidate;
         document.getElementById("candidate-city").textContent = candidate.cityLabel;
@@ -353,6 +358,49 @@
 
         const spectrumEntry = spectrumPayload.candidates.find((c) => c.candidateId === candidateId);
         renderTopicChart(document.getElementById("topic-chart"), spectrumEntry ? spectrumEntry.topicProportions : {});
+
+        // Per-topic breakdown: proportion bar + the keyword sub-items this
+        // candidate actually hits within each topic, linking to the
+        // cross-candidate topic page.
+        const breakdown = document.getElementById("topic-breakdown");
+        breakdown.innerHTML = "";
+        const proportions = (spectrumEntry && spectrumEntry.topicProportions) || {};
+        const orderedTopics = Object.entries(proportions).sort((a, b) => b[1] - a[1]);
+        if (!orderedTopics.length) {
+          breakdown.appendChild(el("p", "empty-state", "尚無足夠貼文計算議題細項。"));
+        }
+        orderedTopics.forEach(([topic, value]) => {
+          const row = el("div", "topic-breakdown-row");
+
+          const head = el("div", "topic-breakdown-head");
+          const url = topicPageUrl(topic);
+          const nameNode = el(url ? "a" : "span", "topic-breakdown-name", topic);
+          if (url) {
+            nameNode.href = url;
+            nameNode.title = `看「${topic}」議題的候選人比較`;
+          }
+          head.appendChild(nameNode);
+          head.appendChild(el("span", "data-date", `${Math.round(value * 100)}%`));
+          row.appendChild(head);
+
+          const track = el("div", "topic-breakdown-track");
+          const fill = el("i");
+          fill.style.width = `${Math.max(value * 100, 1.5).toFixed(1)}%`;
+          fill.style.background = TOPIC_COLORS[topic] || "#9aa19d";
+          track.appendChild(fill);
+          row.appendChild(track);
+
+          const keywordRows =
+            (topicDetails && topicDetails.topics && topicDetails.topics[topic] && topicDetails.topics[topic][candidateId]) || [];
+          if (keywordRows.length) {
+            const chips = el("div", "entry-meta");
+            keywordRows.slice(0, 6).forEach(([keyword, count]) => {
+              chips.appendChild(el("span", "pill", `${keyword} ×${count}`));
+            });
+            row.appendChild(chips);
+          }
+          breakdown.appendChild(row);
+        });
 
         const list = document.getElementById("post-list");
         list.innerHTML = "";

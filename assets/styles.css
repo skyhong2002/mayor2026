@@ -3517,3 +3517,66 @@ p.feed-page-summary {
 .topic-candidate-heading .entry-meta {
   margin: 0;
 }
+
+/* Candidate page: per-topic breakdown next to the pie chart. */
+.topic-breakdown-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .topic-breakdown-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.topic-breakdown {
+  display: grid;
+  gap: 14px;
+}
+
+.topic-breakdown-row {
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.topic-breakdown-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.topic-breakdown-name {
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+a.topic-breakdown-name:hover {
+  color: var(--teal-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.topic-breakdown-track {
+  height: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  background: #eef4f0;
+  border-radius: 999px;
+}
+
+.topic-breakdown-track i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.topic-breakdown-row .entry-meta {
+  margin: 10px 0 0;
+}
