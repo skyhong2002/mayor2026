@@ -273,7 +273,13 @@
         if (latestAt) document.getElementById("data-date").textContent = `最後更新 ${formatDate(latestAt)}`;
 
         const grid = document.getElementById("city-grid");
+
+        function renderGrid() {
         grid.innerHTML = "";
+        const sortWrap = el("div");
+        sortWrap.style.gridColumn = "1 / -1";
+        sortWrap.appendChild(sortControl(renderGrid));
+        grid.appendChild(sortWrap);
         citiesPayload.cities.forEach((city) => {
           const card = el("article", "home-feed-card city-card");
           card.appendChild(el("h3", "city-card-title", city.label));
@@ -282,9 +288,8 @@
             card.appendChild(el("p", "empty-state", "尚無候選人資料"));
           } else {
             const list = el("div", "candidate-city-list");
-            city.candidateIds.forEach((candidateId) => {
-              const candidate = candidatesById[candidateId];
-              if (!candidate) return;
+            sortCandidates(city.candidateIds.map((id) => candidatesById[id]).filter(Boolean)).forEach((candidate) => {
+              const candidateId = candidate.id;
               const link = el("a");
               link.href = `${city.id}/${candidate.id}/`;
               const identity = el("span", "candidate-city-identity");
@@ -298,6 +303,9 @@
           }
           grid.appendChild(card);
         });
+        }
+
+        renderGrid();
 
         const feed = document.getElementById("latest-feed");
         feed.innerHTML = "";
@@ -479,10 +487,19 @@
   function renderSources() {
     fetchJson("api/sources.json")
       .then((payload) => {
+        const tableWrap = document.querySelector(".directory-table-list");
+        let control = document.getElementById("source-sort-control");
+        function renderTable() {
+        if (control) control.remove();
+        control = sortControl(renderTable);
+        control.id = "source-sort-control";
+        control.style.marginBottom = "12px";
+        tableWrap.parentElement.insertBefore(control, tableWrap);
+
         const tbody = document.querySelector("#source-table tbody");
         tbody.innerHTML = "";
         document.getElementById("source-count").textContent = `${payload.count} 位候選人`;
-        payload.sources.forEach((source) => {
+        sortCandidates(payload.sources).forEach((source) => {
           const row = document.createElement("tr");
 
           const nameCell = document.createElement("td");
@@ -517,6 +534,9 @@
 
           tbody.appendChild(row);
         });
+        }
+
+        renderTable();
       })
       .catch((err) => {
         document.querySelector("#source-table tbody").innerHTML = `<tr><td colspan="5">資料載入失敗：${err.message}</td></tr>`;
@@ -617,6 +637,43 @@
     return slug ? `${base}spectrum/topic/${slug}/` : null;
   }
 
+  // Neutral candidate orderings. A fixed order (e.g. CSV / party order)
+  // reads as an editorial stance, so co-listings sort by a data metric and
+  // the default rotates randomly per page load.
+  const NEUTRAL_SORTS = [
+    {
+      id: "latest",
+      label: "最新更新",
+      cmp: (a, b) => String(b.latestPostAt || "").localeCompare(String(a.latestPostAt || "")),
+    },
+    {
+      id: "count",
+      label: "貼文數",
+      cmp: (a, b) => (b.postCount || 0) - (a.postCount || 0),
+    },
+  ];
+  let activeSort = NEUTRAL_SORTS[Math.floor(Math.random() * NEUTRAL_SORTS.length)];
+
+  function sortCandidates(list) {
+    return [...list].sort(activeSort.cmp);
+  }
+
+  // Small "排序：..." control; onChange re-renders the caller's view.
+  function sortControl(onChange) {
+    const wrap = el("div", "sort-control");
+    wrap.appendChild(el("span", "data-date", "排序（每次載入隨機，避免固定排序暗示立場）："));
+    NEUTRAL_SORTS.forEach((sort) => {
+      const chip = el("button", "feed-option-chip", sort.label);
+      chip.dataset.filterState = activeSort.id === sort.id ? "include" : "";
+      chip.addEventListener("click", () => {
+        activeSort = sort;
+        onChange();
+      });
+      wrap.appendChild(chip);
+    });
+    return wrap;
+  }
+
   // Shared topic palette — same order/colors as the candidate-page pie chart.
   const TOPIC_COLORS = {
     交通: "#0f766e",
@@ -714,6 +771,20 @@
             });
             topicChips.appendChild(chip);
           });
+
+          let sortGroup = document.getElementById("spectrum-sort-group");
+          if (!sortGroup) {
+            sortGroup = el("div", "spectrum-control-group");
+            sortGroup.id = "spectrum-sort-group";
+            document.querySelector(".spectrum-controls").appendChild(sortGroup);
+          }
+          sortGroup.innerHTML = "";
+          sortGroup.appendChild(
+            sortControl(() => {
+              renderChips();
+              renderTable();
+            })
+          );
         }
 
         const container = document.getElementById("spectrum-cities");
@@ -771,9 +842,8 @@
           cityRow.appendChild(cityCell);
           tbody.appendChild(cityRow);
 
-          city.candidateIds.forEach((candidateId) => {
-            const source = sourcesById[candidateId];
-            if (!source) return;
+          sortCandidates(city.candidateIds.map((id) => sourcesById[id]).filter(Boolean)).forEach((source) => {
+            const candidateId = source.id;
             const entry = spectrumById[candidateId];
             const proportions = (entry && entry.topicProportions) || {};
             const rowMax = Math.max(0, ...Object.values(proportions));
