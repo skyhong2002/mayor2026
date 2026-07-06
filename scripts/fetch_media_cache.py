@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import re
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -33,6 +34,24 @@ REQUEST_TIMEOUT_SECS = 20
 FEED_IMAGE_MAX_WIDTH = 1200
 AVATAR_SIZE = 320
 WEBP_QUALITY = 82
+
+FB_CROP_SIZE_RE = re.compile(r"ctp=s\d+x\d+")
+FB_SOURCE_MAX_RE = re.compile(r"cstp=mx(\d+)x(\d+)")
+
+
+def request_larger_avatar(url: str) -> str:
+    """Apify's Facebook `user.profilePic` links carry a `ctp=s50x50` crop
+    parameter — a 50x50 thumbnail that looks blurry once shown at hero size.
+    The signed URL isn't tied to this parameter, so bumping it up gets a
+    sharper photo instead, capped at the source's own `cstp=mxWxH` ceiling
+    when present (requesting past it 400s)."""
+    if "fbcdn" not in url:
+        return url
+    wanted = AVATAR_SIZE * 2
+    source_max = FB_SOURCE_MAX_RE.search(url)
+    if source_max:
+        wanted = min(wanted, int(source_max.group(1)), int(source_max.group(2)))
+    return FB_CROP_SIZE_RE.sub(f"ctp=s{wanted}x{wanted}", url)
 
 
 def url_hash(url: str) -> str:
@@ -115,20 +134,42 @@ def cache_avatars() -> None:
         url = profile.get("avatar_url")
         if not url:
             continue
+        fetch_url = request_larger_avatar(url)
         cached = cache.get(account_id)
-        if cached and cached.get("url") == url:
+        if cached and cached.get("url") == url and cached.get("fetchUrl", url) == fetch_url:
             continue
-        result = cache_image(url, AVATARS_DIR, max_width=AVATAR_SIZE, square=True)
+        result = cache_image(fetch_url, AVATARS_DIR, max_width=AVATAR_SIZE, square=True)
         if result:
-            cache[account_id] = {"url": url, "file": result["file"]}
+            cache[account_id] = {"url": url, "fetchUrl": fetch_url, "file": result["file"]}
             fetched += 1
     feed_common.save_json_atomic(AVATAR_CACHE_JSON, cache)
     print(f"fetch_media_cache: {fetched} new avatar(s) cached ({len(cache)} total).")
 
 
+def prune_orphaned_files() -> None:
+    """Delete cached files no longer referenced by either cache — old
+    resolutions superseded by a re-fetch (e.g. after request_larger_avatar
+    started asking for bigger crops), or posts/accounts dropped from the
+    watchlist."""
+    image_cache = feed_common.load_json(IMAGE_CACHE_JSON, {})
+    avatar_cache = feed_common.load_json(AVATAR_CACHE_JSON, {})
+    referenced = {v["file"] for v in image_cache.values() if v} | {v["file"] for v in avatar_cache.values() if v}
+    removed = 0
+    for directory in (FEED_IMAGES_DIR, AVATARS_DIR):
+        if not directory.is_dir():
+            continue
+        for path in directory.iterdir():
+            if path.name not in referenced:
+                path.unlink()
+                removed += 1
+    if removed:
+        print(f"fetch_media_cache: pruned {removed} orphaned cached file(s).")
+
+
 def main() -> int:
     cache_post_images()
     cache_avatars()
+    prune_orphaned_files()
     return 0
 
 
