@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from typing import Any
 
+import classify_topics
 import feed_common
 
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
@@ -58,6 +59,17 @@ def posts_by_candidate(posts: list[dict[str, Any]]) -> dict[str, list[dict[str, 
     return grouped
 
 
+def matched_keywords(post: dict[str, Any]) -> list[str]:
+    """Keyword sub-items this post actually hits, for the timeline's 小 tag filter."""
+    text = post.get("text") or ""
+    found = []
+    for topic in post.get("topics") or []:
+        for keyword in classify_topics.TOPIC_KEYWORDS.get(topic, ()):
+            if keyword in text and keyword not in found:
+                found.append(keyword)
+    return found
+
+
 def to_api_post(post: dict[str, Any]) -> dict[str, Any]:
     cached_image = IMAGE_CACHE.get(post["id"])
     return {
@@ -72,6 +84,7 @@ def to_api_post(post: dict[str, Any]) -> dict[str, Any]:
         "imageAspect": cached_image["aspect"] if cached_image else None,
         "topics": post.get("topics") or [],
         "topicScores": post.get("topic_scores") or {},
+        "keywords": matched_keywords(post),
     }
 
 
