@@ -3606,3 +3606,10 @@ a.topic-breakdown-name:hover {
 .topic-summaries .topic-candidate-heading {
   margin-bottom: 0;
 }
+
+.sort-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
