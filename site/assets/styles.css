@@ -3580,3 +3580,20 @@ a.topic-breakdown-name:hover {
 .topic-breakdown-row .entry-meta {
   margin: 10px 0 0;
 }
+
+/* Candidate picker on topic pages. */
+.topic-candidate-picker {
+  margin-bottom: 20px;
+}
+
+.topic-candidate-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.topic-candidate-chip .source-avatar {
+  --source-avatar-size: 24px;
+  font-size: 0.6rem;
+  border: none;
+}
