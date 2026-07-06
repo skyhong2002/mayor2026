@@ -403,9 +403,73 @@
         });
 
         const list = document.getElementById("post-list");
-        list.innerHTML = "";
         const candidatesById = { [candidate.id]: sourceEntry };
-        createRiver(list, postsPayload.posts, candidatesById);
+        const allPosts = postsPayload.posts;
+
+        // Tri-state chip filters (none → include → exclude), same interaction
+        // model as Harmonica-in-Taiwan's feed filter.
+        const filterState = { topics: new Map(), keywords: new Map() };
+
+        const topicCounts = new Map();
+        const keywordCounts = new Map();
+        allPosts.forEach((post) => {
+          (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
+          (post.keywords || []).forEach((k) => keywordCounts.set(k, (keywordCounts.get(k) || 0) + 1));
+        });
+        const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
+        const keywordOptions = [...keywordCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
+
+        function passes(post) {
+          const groups = [
+            [filterState.topics, post.topics || []],
+            [filterState.keywords, post.keywords || []],
+          ];
+          return groups.every(([states, values]) => {
+            if (values.some((v) => states.get(v) === "exclude")) return false;
+            const includes = [...states.entries()].filter(([, s]) => s === "include").map(([v]) => v);
+            return !includes.length || values.some((v) => includes.includes(v));
+          });
+        }
+
+        function renderTimeline() {
+          const filtered = allPosts.filter(passes);
+          document.getElementById("timeline-count").textContent = `顯示 ${filtered.length} / ${allPosts.length} 則`;
+          list.innerHTML = "";
+          if (!filtered.length) {
+            list.appendChild(el("p", "empty-state", "沒有符合篩選條件的貼文。"));
+            return;
+          }
+          createRiver(list, filtered, candidatesById);
+        }
+
+        function renderChipGroup(containerId, options, states) {
+          const box = document.getElementById(containerId);
+          box.innerHTML = "";
+          options.forEach(([value, count]) => {
+            const chip = el("button", "feed-option-chip", `${value}（${count}）`);
+            chip.dataset.filterState = states.get(value) || "";
+            chip.addEventListener("click", () => {
+              const current = states.get(value);
+              if (!current) states.set(value, "include");
+              else if (current === "include") states.set(value, "exclude");
+              else states.delete(value);
+              renderFilters();
+              renderTimeline();
+            });
+            box.appendChild(chip);
+          });
+        }
+
+        function renderFilters() {
+          renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
+          renderChipGroup("timeline-keyword-chips", keywordOptions, filterState.keywords);
+        }
+
+        if (allPosts.length) {
+          document.getElementById("timeline-filters").hidden = false;
+          renderFilters();
+        }
+        renderTimeline();
       })
       .catch((err) => {
         document.getElementById("post-list").textContent = `資料載入失敗：${err.message}`;
