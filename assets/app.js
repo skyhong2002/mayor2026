@@ -894,17 +894,23 @@
           });
         }
 
-        function renderSections() {
-          sectionsWrap.innerHTML = "";
-          const shown = selectedId ? [selectedId] : candidateIds;
-          shown.forEach((candidateId) => renderCandidateSection(candidateId));
+        // Topic posts per candidate, fetched once and cached.
+        const topicPostsCache = new Map();
+        function topicPosts(candidateId) {
+          if (!topicPostsCache.has(candidateId)) {
+            topicPostsCache.set(
+              candidateId,
+              fetchJson(`api/posts/${candidateId}.json`).then((payload) => {
+                const wanted = postIdsByCandidate[candidateId];
+                return payload.posts.filter((p) => wanted.has(p.id));
+              })
+            );
+          }
+          return topicPostsCache.get(candidateId);
         }
 
-        function renderCandidateSection(candidateId) {
+        function candidateHeading(candidateId) {
           const source = sourcesById[candidateId];
-          if (!source) return;
-
-          const section = el("div", "topic-candidate-section");
           const heading = el("div", "topic-candidate-heading");
           const identity = el("a", "spectrum-identity");
           identity.href = `${base}${source.city}/${source.id}/`;
@@ -925,18 +931,47 @@
             });
             heading.appendChild(chipRow);
           }
-          section.appendChild(heading);
+          return heading;
+        }
+
+        function renderSections() {
+          sectionsWrap.innerHTML = "";
+
+          if (selectedId) {
+            // Single candidate: their summary + their topic posts.
+            const section = el("div", "topic-candidate-section");
+            section.appendChild(candidateHeading(selectedId));
+            const list = el("div", "latest-feed-grid");
+            list.textContent = "載入貼文中...";
+            section.appendChild(list);
+            sectionsWrap.appendChild(section);
+            topicPosts(selectedId).then((posts) => {
+              list.textContent = "";
+              createRiver(list, posts, { [selectedId]: sourcesById[selectedId] });
+            });
+            return;
+          }
+
+          // Everyone: all candidate summaries first, then ONE merged wall of
+          // every candidate's posts on this topic, newest first.
+          const summaryBlock = el("div", "topic-summaries");
+          candidateIds.forEach((candidateId) => summaryBlock.appendChild(candidateHeading(candidateId)));
+          sectionsWrap.appendChild(summaryBlock);
+
+          const wallTitle = el("p", "section-kicker", "All Posts");
+          wallTitle.style.marginTop = "28px";
+          sectionsWrap.appendChild(wallTitle);
+          sectionsWrap.appendChild(el("h2", "", "全部貼文"));
 
           const list = el("div", "latest-feed-grid");
           list.textContent = "載入貼文中...";
-          section.appendChild(list);
-          sectionsWrap.appendChild(section);
+          list.style.marginTop = "14px";
+          sectionsWrap.appendChild(list);
 
-          fetchJson(`api/posts/${candidateId}.json`).then((postsPayload) => {
-            const wanted = postIdsByCandidate[candidateId];
-            const posts = postsPayload.posts.filter((p) => wanted.has(p.id));
+          Promise.all(candidateIds.map((id) => topicPosts(id))).then((groups) => {
+            const merged = groups.flat().sort((a, b) => (b.postedAt || "").localeCompare(a.postedAt || ""));
             list.textContent = "";
-            createRiver(list, posts, { [candidateId]: source });
+            createRiver(list, merged, sourcesById);
           });
         }
 
