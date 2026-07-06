@@ -22,7 +22,8 @@ def main() -> int:
 
     paths.extend(f"/spectrum/topic/{slug}/" for slug in classify_topics.TOPIC_SLUGS.values())
     for candidate in candidates:
-        paths.append(f"/{candidate['city']}/{candidate['id']}/")
+        # /<city>/<id>/ is now just a redirect stub to /source/<id>/; only the
+        # canonical target belongs in the sitemap.
         paths.append(f"/source/{candidate['id']}/")
 
     today = dt.date.today().isoformat()

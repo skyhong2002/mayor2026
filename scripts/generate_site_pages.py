@@ -65,21 +65,11 @@ def main() -> int:
         topic_dir.mkdir(parents=True, exist_ok=True)
         (topic_dir / "index.html").write_text(topic_template.replace("__TOPIC__", topic), encoding="utf-8")
 
-    candidate_template = render((TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8"))
     source_detail_template = render((TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8"))
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
 
     count = 0
     for candidate in candidates_payload.get("candidates", []):
-        page_dir = SITE_ROOT / candidate["city"] / candidate["id"]
-        page_dir.mkdir(parents=True, exist_ok=True)
-        html = (
-            candidate_template.replace("__CANDIDATE_NAME__", candidate["name"])
-            .replace("__CANDIDATE_ID__", candidate["id"])
-            .replace("__BASE__", "../../")
-        )
-        (page_dir / "index.html").write_text(html, encoding="utf-8")
-
         detail_dir = source_dir / candidate["id"]
         detail_dir.mkdir(parents=True, exist_ok=True)
         detail_html = (
@@ -88,6 +78,20 @@ def main() -> int:
             .replace("__BASE__", "../../")
         )
         (detail_dir / "index.html").write_text(detail_html, encoding="utf-8")
+
+        # /<city>/<candidate>/ merged into /source/<candidate>/; keep a redirect
+        # so old links (bookmarks, RSS, search results) still land somewhere.
+        old_page_dir = SITE_ROOT / candidate["city"] / candidate["id"]
+        old_page_dir.mkdir(parents=True, exist_ok=True)
+        target = f"../../source/{candidate['id']}/"
+        redirect_html = (
+            "<!DOCTYPE html><html lang=\"zh-Hant\"><head><meta charset=\"utf-8\">"
+            f"<meta http-equiv=\"refresh\" content=\"0; url={target}\">"
+            f"<link rel=\"canonical\" href=\"{target}\">"
+            f"<title>{candidate['name']}｜2026 市長官方來源觀測站</title></head>"
+            f"<body>頁面已搬移，請見 <a href=\"{target}\">{candidate['name']} 的公開來源頁</a>。</body></html>"
+        )
+        (old_page_dir / "index.html").write_text(redirect_html, encoding="utf-8")
         count += 1
 
     print(f"generate_site_pages: wrote site/index.html, source index, and {count} candidate + source page(s).")
