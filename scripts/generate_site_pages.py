@@ -9,6 +9,8 @@ metadata (title, base path, candidate id) into the template shells.
 
 from __future__ import annotations
 
+import hashlib
+
 import classify_topics
 import feed_common
 
@@ -17,33 +19,54 @@ TEMPLATES_DIR = SITE_ROOT / "templates"
 API_DIR = SITE_ROOT / "api"
 
 
+def asset_version() -> str:
+    """Short content hash over the frontend assets, used as a cache-busting
+    query string — CDN edges cache /assets/*.js for hours, so every deploy
+    must reference a fresh URL."""
+    digest = hashlib.sha256()
+    for name in ("styles.css", "app.js"):
+        digest.update((SITE_ROOT / "assets" / name).read_bytes())
+    return digest.hexdigest()[:10]
+
+
+def stamp_assets(html: str, version: str) -> str:
+    return html.replace("assets/styles.css", f"assets/styles.css?v={version}").replace(
+        "assets/app.js", f"assets/app.js?v={version}"
+    )
+
+
 def main() -> int:
-    index_template = (TEMPLATES_DIR / "index.html").read_text(encoding="utf-8")
+    version = asset_version()
+
+    def render(template: str) -> str:
+        return stamp_assets(template, version)
+
+    index_template = render((TEMPLATES_DIR / "index.html").read_text(encoding="utf-8"))
     (SITE_ROOT / "index.html").write_text(index_template, encoding="utf-8")
 
-    source_index_template = (TEMPLATES_DIR / "source-index.html").read_text(encoding="utf-8")
+    source_index_template = render((TEMPLATES_DIR / "source-index.html").read_text(encoding="utf-8"))
     source_dir = SITE_ROOT / "source"
     source_dir.mkdir(parents=True, exist_ok=True)
     (source_dir / "index.html").write_text(source_index_template, encoding="utf-8")
 
-    status_template = (TEMPLATES_DIR / "status.html").read_text(encoding="utf-8")
+    status_template = render((TEMPLATES_DIR / "status.html").read_text(encoding="utf-8"))
     status_dir = SITE_ROOT / "status"
     status_dir.mkdir(parents=True, exist_ok=True)
     (status_dir / "index.html").write_text(status_template, encoding="utf-8")
 
-    spectrum_template = (TEMPLATES_DIR / "spectrum.html").read_text(encoding="utf-8")
+    spectrum_template = render((TEMPLATES_DIR / "spectrum.html").read_text(encoding="utf-8"))
     spectrum_dir = SITE_ROOT / "spectrum"
     spectrum_dir.mkdir(parents=True, exist_ok=True)
     (spectrum_dir / "index.html").write_text(spectrum_template, encoding="utf-8")
 
-    topic_template = (TEMPLATES_DIR / "topic.html").read_text(encoding="utf-8")
+    topic_template = render((TEMPLATES_DIR / "topic.html").read_text(encoding="utf-8"))
     for topic, slug in classify_topics.TOPIC_SLUGS.items():
         topic_dir = spectrum_dir / "topic" / slug
         topic_dir.mkdir(parents=True, exist_ok=True)
         (topic_dir / "index.html").write_text(topic_template.replace("__TOPIC__", topic), encoding="utf-8")
 
-    candidate_template = (TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8")
-    source_detail_template = (TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8")
+    candidate_template = render((TEMPLATES_DIR / "candidate.html").read_text(encoding="utf-8"))
+    source_detail_template = render((TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8"))
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
 
     count = 0
