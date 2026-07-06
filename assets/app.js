@@ -661,7 +661,8 @@
   // Small "排序：..." control; onChange re-renders the caller's view.
   function sortControl(onChange) {
     const wrap = el("div", "sort-control");
-    wrap.appendChild(el("span", "data-date", "排序（每次載入隨機，避免固定排序暗示立場）："));
+    wrap.appendChild(el("span", "data-date", "排序："));
+    wrap.title = "預設排序方式於每次載入時隨機選擇，避免固定順序暗示立場";
     NEUTRAL_SORTS.forEach((sort) => {
       const chip = el("button", "feed-option-chip", sort.label);
       chip.dataset.filterState = activeSort.id === sort.id ? "include" : "";

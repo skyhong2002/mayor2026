@@ -1,10 +1,10 @@
 {
   "currentStep": "publish github pages",
-  "heartbeatAt": "2026-07-06T10:15:14.581526+00:00",
+  "heartbeatAt": "2026-07-06T10:17:27.232845+00:00",
   "maxPostAgeDays": 30,
   "message": "",
-  "pid": 3091,
-  "startedAt": "2026-07-06T10:15:13.995111+00:00",
+  "pid": 3395,
+  "startedAt": "2026-07-06T10:17:26.663826+00:00",
   "status": "running",
   "steps": [
     {
@@ -12,10 +12,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_social_sources.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.035291+00:00",
+      "finishedAt": "2026-07-06T10:17:26.701400+00:00",
       "name": "build social sources",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:13.995884+00:00",
+      "startedAt": "2026-07-06T10:17:26.664436+00:00",
       "status": "ok"
     },
     {
@@ -23,10 +23,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/fetch_media_cache.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.151926+00:00",
+      "finishedAt": "2026-07-06T10:17:26.811126+00:00",
       "name": "cache media",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.035874+00:00",
+      "startedAt": "2026-07-06T10:17:26.702059+00:00",
       "status": "ok"
     },
     {
@@ -34,10 +34,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_public_data.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.221146+00:00",
+      "finishedAt": "2026-07-06T10:17:26.876655+00:00",
       "name": "build public data",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.152594+00:00",
+      "startedAt": "2026-07-06T10:17:26.811800+00:00",
       "status": "ok"
     },
     {
@@ -45,10 +45,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_spectrum.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.275303+00:00",
+      "finishedAt": "2026-07-06T10:17:26.929458+00:00",
       "name": "build spectrum",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.221719+00:00",
+      "startedAt": "2026-07-06T10:17:26.877315+00:00",
       "status": "ok"
     },
     {
@@ -56,10 +56,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_rss_feeds.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.366104+00:00",
+      "finishedAt": "2026-07-06T10:17:27.018954+00:00",
       "name": "generate rss feeds",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.275920+00:00",
+      "startedAt": "2026-07-06T10:17:26.930067+00:00",
       "status": "ok"
     },
     {
@@ -67,10 +67,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_status_page.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.408739+00:00",
+      "finishedAt": "2026-07-06T10:17:27.061819+00:00",
       "name": "build status page",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.366689+00:00",
+      "startedAt": "2026-07-06T10:17:27.019620+00:00",
       "status": "ok"
     },
     {
@@ -78,10 +78,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_site_pages.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.453656+00:00",
+      "finishedAt": "2026-07-06T10:17:27.106157+00:00",
       "name": "generate site pages",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.409277+00:00",
+      "startedAt": "2026-07-06T10:17:27.062456+00:00",
       "status": "ok"
     },
     {
@@ -89,10 +89,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_seo_pages.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.489430+00:00",
+      "finishedAt": "2026-07-06T10:17:27.140779+00:00",
       "name": "generate SEO pages",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.454330+00:00",
+      "startedAt": "2026-07-06T10:17:27.106771+00:00",
       "status": "ok"
     },
     {
@@ -100,10 +100,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/check_source_coverage.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.522851+00:00",
+      "finishedAt": "2026-07-06T10:17:27.174927+00:00",
       "name": "check source coverage",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.490087+00:00",
+      "startedAt": "2026-07-06T10:17:27.141516+00:00",
       "status": "ok"
     },
     {
@@ -111,10 +111,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/validate_public_outputs.py"
       ],
-      "finishedAt": "2026-07-06T10:15:14.580429+00:00",
+      "finishedAt": "2026-07-06T10:17:27.232022+00:00",
       "name": "validate public outputs",
       "returnCode": 0,
-      "startedAt": "2026-07-06T10:15:14.523405+00:00",
+      "startedAt": "2026-07-06T10:17:27.175629+00:00",
       "status": "ok"
     },
     {
@@ -125,7 +125,7 @@
       "finishedAt": "",
       "name": "publish github pages",
       "returnCode": null,
-      "startedAt": "2026-07-06T10:15:14.581519+00:00",
+      "startedAt": "2026-07-06T10:17:27.232840+00:00",
       "status": "running"
     }
   ],
