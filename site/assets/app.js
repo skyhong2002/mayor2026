@@ -16,20 +16,6 @@
     podcast: "Podcast",
   };
 
-  const ROLE_LABELS = {
-    campaign: "競選帳號",
-    personal: "個人帳號",
-    incumbent: "現任市政帳號",
-    party: "政黨帳號",
-    affiliated: "周邊社群",
-  };
-
-  const VERIFICATION_LABELS = {
-    first_party: "一手驗證",
-    cross_ref: "交叉驗證",
-    unverified: "未完全驗證",
-  };
-
   // Platform icon SVGs from the Harmonica-in-Taiwan project.
   const PLATFORM_ICONS = {
     facebook: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/></svg>',
@@ -65,6 +51,24 @@
     const date = new Date(iso);
     if (Number.isNaN(date.getTime())) return iso;
     return date.toLocaleString("zh-TW", { dateStyle: "medium", timeStyle: "short" });
+  }
+
+  // Relative time (X秒前/X分鐘前/X小時前/X天前) for post and "最後更新"
+  // timestamps — used everywhere content freshness matters, so the reader
+  // feels how recent something is instead of parsing an absolute date.
+  function formatRelative(iso) {
+    if (!iso) return "";
+    const date = new Date(iso);
+    if (Number.isNaN(date.getTime())) return iso;
+    const diffSec = Math.round((Date.now() - date.getTime()) / 1000);
+    if (diffSec < 5) return "剛剛";
+    if (diffSec < 60) return `${diffSec} 秒前`;
+    const diffMin = Math.round(diffSec / 60);
+    if (diffMin < 60) return `${diffMin} 分鐘前`;
+    const diffHour = Math.round(diffMin / 60);
+    if (diffHour < 24) return `${diffHour} 小時前`;
+    const diffDay = Math.round(diffHour / 24);
+    return `${diffDay} 天前`;
   }
 
   function el(tag, className, text) {
@@ -175,7 +179,7 @@
     }
 
     const footer = el("div", "home-feed-footer");
-    footer.appendChild(el("p", "entry-meta data-date", formatDate(post.postedAt)));
+    footer.appendChild(el("p", "entry-meta data-date", formatRelative(post.postedAt)));
     const open = el("a", "feed-open-link", "打開原始貼文 ↗");
     open.href = post.url;
     open.target = "_blank";
@@ -270,7 +274,7 @@
           .filter(Boolean)
           .sort()
           .pop();
-        if (latestAt) document.getElementById("data-date").textContent = `最後更新 ${formatDate(latestAt)}`;
+        if (latestAt) document.getElementById("data-date").textContent = `最後更新 ${formatRelative(latestAt)}`;
 
         const grid = document.getElementById("city-grid");
 
@@ -495,7 +499,7 @@
           row.appendChild(linkCell);
 
           const dateCell = document.createElement("td");
-          dateCell.textContent = formatDate(source.latestPostAt) || "—";
+          dateCell.textContent = formatRelative(source.latestPostAt) || "—";
           row.appendChild(dateCell);
 
           const cityCell = document.createElement("td");
@@ -535,6 +539,20 @@
         const heroAvatar = document.getElementById("hero-avatar");
         heroAvatar.replaceWith(Object.assign(avatarNode(source, false), { id: "hero-avatar", className: "source-avatar source-hero-avatar" }));
 
+        // Per-account post count + last update, from the candidate's own
+        // posts (each carries the source_id of the account it came from) —
+        // no separate API needed.
+        const postsByAccount = new Map();
+        postsPayload.posts.forEach((post) => {
+          const bucket = postsByAccount.get(post.sourceId);
+          if (bucket) {
+            bucket.count += 1;
+            if (!bucket.latest || post.postedAt > bucket.latest) bucket.latest = post.postedAt;
+          } else {
+            postsByAccount.set(post.sourceId, { count: 1, latest: post.postedAt });
+          }
+        });
+
         const accountBody = document.querySelector("#account-table tbody");
         source.accounts.forEach((account) => {
           const row = document.createElement("tr");
@@ -554,13 +572,14 @@
           handleCell.appendChild(handleLink);
           row.appendChild(handleCell);
 
-          const roleCell = document.createElement("td");
-          roleCell.textContent = ROLE_LABELS[account.role] || account.role || "—";
-          row.appendChild(roleCell);
+          const stats = postsByAccount.get(account.id);
+          const countCell = document.createElement("td");
+          countCell.textContent = stats ? String(stats.count) : "0";
+          row.appendChild(countCell);
 
-          const verifyCell = document.createElement("td");
-          verifyCell.textContent = VERIFICATION_LABELS[account.verification] || account.verification || "—";
-          row.appendChild(verifyCell);
+          const updatedCell = document.createElement("td");
+          updatedCell.textContent = (stats && formatRelative(stats.latest)) || "—";
+          row.appendChild(updatedCell);
 
           accountBody.appendChild(row);
         });
@@ -1028,7 +1047,7 @@
       .then(([status, runtime]) => {
         const metrics = status.metrics || {};
         document.getElementById("status-summary").textContent =
-          `資料產生於 ${formatDate(status.generatedAt)}；最新收錄貼文 ${formatDate(metrics.latestPostAt) || "—"}。`;
+          `資料產生於 ${formatRelative(status.generatedAt)}；最新收錄貼文 ${formatRelative(metrics.latestPostAt) || "—"}。`;
 
         const metricRow = document.getElementById("metric-row");
         const cells = [
