@@ -20,18 +20,21 @@
     <dict>
       <key>MAYOR_OBSERVE_HOME</key>
       <string>/Users/REPLACE_ME/mayor2026</string>
-      <key>MAYOR_RSSHUB_BASE</key>
-      <string>https://rss.observe.tw</string>
     </dict>
 
-    <key>RunAtLoad</key>
-    <true/>
+    <!-- MAYOR_RSSHUB_BASE is intentionally left out here: when this deploys
+         beside a machine that already runs RSSHub locally (e.g. the same
+         host as Harmonica-in-Taiwan), set MAYOR_RSSHUB_BASE=http://127.0.0.1:1200
+         in .env instead of here, so it's easy to flip back to the public
+         https://rss.observe.tw default without editing this plist. -->
 
-    <!-- Every 30 minutes, same cadence as Harmonica-in-Taiwan; the pipeline
-         lock and per-source fetch intervals (e.g. Instagram 12h) keep this
-         from hammering any single platform. -->
-    <key>StartInterval</key>
-    <integer>1800</integer>
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>0</integer></dict>
+      <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>0</integer></dict>
+      <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer></dict>
+      <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+    </array>
 
     <key>StandardOutPath</key>
     <string>/Users/REPLACE_ME/mayor2026/logs/pipeline.log</string>
