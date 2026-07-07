@@ -1,5 +1,83 @@
 {
-  "generatedAt": "2026-07-07T03:45:43+00:00",
+  "components": [
+    {
+      "details": [
+        "最近一次執行心跳：2026-07-07 13:55:01"
+      ],
+      "id": "pipeline",
+      "label": "正常",
+      "name": "主排程與輸出",
+      "status": "ok",
+      "summary": "定期 pipeline 已產生公開資料快照。"
+    },
+    {
+      "details": [
+        "已收錄貼文：478",
+        "監看帳號：81"
+      ],
+      "id": "public-api",
+      "label": "正常",
+      "name": "公開 API",
+      "status": "ok",
+      "summary": "candidates.json 有 14 位候選人，sources.json 有 65 個監看帳號。"
+    },
+    {
+      "details": [
+        "HTTP：200",
+        "耗時：525 ms"
+      ],
+      "id": "rsshub",
+      "label": "正常",
+      "name": "RSSHub 服務",
+      "status": "ok",
+      "summary": "https://rss.observe.tw 回應 正常。"
+    },
+    {
+      "details": [
+        "最新抓取時間：2026-07-07 11:43:41",
+        "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
+      ],
+      "id": "instagram-threads",
+      "label": "正常",
+      "name": "Instagram / Threads RSSHub",
+      "status": "ok",
+      "summary": "14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 0 個錯誤。"
+    },
+    {
+      "details": [
+        "最近成功 run：2026-07-05 17:57:15",
+        "本月已花費：$1.85 / 目標 $4.75",
+        "單次預估花費：$0.26",
+        "pacing 判斷：not due yet (pace ~every 52.3h, next at 2026-07-07T14:16:58+00:00; ~$1.85 of $4.75 spent)"
+      ],
+      "id": "facebook-apify",
+      "label": "節流中",
+      "name": "Facebook Apify",
+      "status": "paused",
+      "summary": "17 個 Facebook 來源。 目前依預算 pacing 暫停開 run。"
+    },
+    {
+      "details": [
+        "已收錄影片：158"
+      ],
+      "id": "youtube",
+      "label": "正常",
+      "name": "YouTube yt-dlp",
+      "status": "ok",
+      "summary": "14 個 YouTube 來源；最新抓取批次目前 0 個錯誤。"
+    },
+    {
+      "details": [
+        "official_site_fetcher.py 目前是骨架；每個官網需要個別撰寫解析邏輯才能抓到內容。"
+      ],
+      "id": "official-site",
+      "label": "節流中",
+      "name": "候選人官網",
+      "status": "paused",
+      "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
+    }
+  ],
+  "generatedAt": "2026-07-07T05:55:01+00:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-07-07T01:51:42+00:00",
@@ -12,183 +90,53 @@
     "totalPosts": 478,
     "watchAccounts": 81
   },
+  "overall": {
+    "label": "正常",
+    "status": "ok",
+    "summary": "核心資料抓取與公開 API 正常。 Facebook Apify、候選人官網 目前依排程或預算節流。"
+  },
   "recentErrors": [],
-  "sourceHealth": [
-    {
-      "lastAttemptAt": "2026-07-07T03:41:50+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:50+00:00",
-      "sourceId": "chang-sc-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:34+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:34+00:00",
-      "sourceId": "chen-tf-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:45+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:45+00:00",
-      "sourceId": "chen-tf-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:18+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:18+00:00",
-      "sourceId": "chiang-cc-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:31+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:31+00:00",
-      "sourceId": "chiang-cc-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:40:39+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:40:39+00:00",
-      "sourceId": "chiang-wa-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:40:51+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:40:51+00:00",
-      "sourceId": "chiang-wa-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:01+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:01+00:00",
-      "sourceId": "ho-hc-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:15+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:15+00:00",
-      "sourceId": "ho-hc-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:42:48+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:42:48+00:00",
-      "sourceId": "hsieh-lc-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:00+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:00+00:00",
-      "sourceId": "hsieh-lc-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:35+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:35+00:00",
-      "sourceId": "huang-sj-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:47+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:47+00:00",
-      "sourceId": "huang-sj-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:29+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:29+00:00",
-      "sourceId": "ko-ce-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:41+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:41+00:00",
-      "sourceId": "ko-ce-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:14+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:14+00:00",
-      "sourceId": "lai-jl-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:26+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:26+00:00",
-      "sourceId": "lai-jl-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:10+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:10+00:00",
-      "sourceId": "lee-sc-ig-main"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:20+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:20+00:00",
-      "sourceId": "lee-sc-ig-old"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:31+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:31+00:00",
-      "sourceId": "lee-sc-threads"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:43:03+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:43:03+00:00",
-      "sourceId": "lin-yf-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:40:21+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:40:21+00:00",
-      "sourceId": "shen-ig-personal"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:40:36+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:40:36+00:00",
-      "sourceId": "shen-threads-personal"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:40:55+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:40:55+00:00",
-      "sourceId": "su-ch-ig"
-    },
-    {
-      "lastAttemptAt": "2026-07-07T03:41:07+00:00",
-      "lastError": null,
-      "lastErrorAt": null,
-      "lastSuccessAt": "2026-07-07T03:41:07+00:00",
-      "sourceId": "su-ch-threads"
+  "site": "https://mayor2026.observe.tw",
+  "version": 1,
+  "watchSources": {
+    "platformRows": [
+      {
+        "currentErrors": 0,
+        "platform": "facebook",
+        "sources": 17,
+        "status": "ok"
+      },
+      {
+        "currentErrors": 0,
+        "platform": "instagram",
+        "sources": 14,
+        "status": "ok"
+      },
+      {
+        "currentErrors": 0,
+        "platform": "threads",
+        "sources": 11,
+        "status": "ok"
+      },
+      {
+        "currentErrors": 0,
+        "platform": "website",
+        "sources": 9,
+        "status": "ok"
+      },
+      {
+        "currentErrors": 0,
+        "platform": "youtube",
+        "sources": 14,
+        "status": "ok"
+      }
+    ],
+    "platforms": {
+      "facebook": 17,
+      "instagram": 14,
+      "threads": 11,
+      "website": 9,
+      "youtube": 14
     }
-  ],
-  "version": 1
+  }
 }

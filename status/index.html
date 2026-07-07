@@ -1,90 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>狀態｜2026 市長官方來源觀測站</title>
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/styles.css?v=4c051422a6">
-</head>
-<body data-page="status" data-base="../">
-  <header class="site-header">
-    <a class="brand" href="../">
-      <img class="brand-logo-img" src="../assets/logo.svg" alt="">
-      <span>2026 市長官方來源觀測站</span>
-    </a>
-    <nav class="site-nav">
-      <a href="../">六都總覽</a>
-      <a href="../spectrum/">議題光譜</a>
-      <a href="../source/">公開來源</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>資料管線狀態｜2026 市長官方來源觀測站</title>
+    <meta name="robots" content="noindex,follow">
+    <link rel="icon" href="../assets/favicon.svg?v=9ff3921339" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/styles.css?v=9ff3921339">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../">
+        <img class="brand-logo-img" src="../assets/logo.svg?v=9ff3921339" alt="">
+        <span>2026 市長官方來源觀測站</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../">六都總覽</a>
+        <a href="../spectrum/">議題光譜</a>
+        <a href="../source/">公開來源</a>
+      </nav>
+    </header>
 
-  <section class="feed-page-hero">
-    <div class="band-inner">
-      <p class="eyebrow">Status</p>
-      <h1>資料管線狀態</h1>
-      <p class="feed-page-summary" id="status-summary">載入中...</p>
-    </div>
-  </section>
-
-  <section class="band source-band">
-    <div class="band-inner">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Metrics</p>
-          <h2>收錄統計</h2>
+    <main>
+      <section class="feed-page-hero status-hero">
+        <div class="band-inner split-layout">
+          <div>
+            <p class="section-kicker">Status</p>
+            <h1>資料管線狀態</h1>
+          </div>
+          <div class="feed-page-summary status-summary-panel">
+            <div class="status-summary-line">
+              <span class="status-badge status-ok">正常</span>
+              <strong>核心資料抓取與公開 API 正常。 Facebook Apify、候選人官網 目前依排程或預算節流。</strong>
+            </div>
+            <p>快照時間 2026-07-07T05:55:01+00:00</p>
+            <div class="feed-links">
+              <a href="../api/status.json">Status JSON</a>
+              <a href="../feeds/">RSS</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="stat-row" id="metric-row" style="margin-top: 0;"></div>
+      </section>
 
-      <div class="section-heading" style="margin-top: 40px;">
-        <div>
-          <p class="section-kicker">Pipeline</p>
-          <h2>最近一次執行</h2>
+      <section class="band status-overview-band">
+        <div class="band-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Metrics</p>
+              <h2>收錄統計</h2>
+            </div>
+          </div>
+          <div class="status-metric-grid">
+            
+      <article class="status-metric-card">
+        <span>監看候選人</span>
+        <strong>14</strong>
+        <p>candidates.json</p>
+      </article>
+    
+            
+      <article class="status-metric-card">
+        <span>監看帳號</span>
+        <strong>81</strong>
+        <p>sources.json</p>
+      </article>
+    
+            
+      <article class="status-metric-card">
+        <span>已收錄貼文</span>
+        <strong>478</strong>
+        <p>social_candidates.jsonl</p>
+      </article>
+    
+            
+      <article class="status-metric-card">
+        <span>目前錯誤</span>
+        <strong></strong>
+        <p>最新抓取批次</p>
+      </article>
+    
+          </div>
         </div>
-      </div>
-      <div class="directory-table-list">
-        <table class="score-table source-list-table" id="pipeline-table">
-          <thead>
-            <tr><th>步驟</th><th>狀態</th><th>開始</th><th>結束</th></tr>
-          </thead>
-          <tbody><tr><td colspan="4">載入中...</td></tr></tbody>
-        </table>
-      </div>
+      </section>
 
-      <div class="section-heading" style="margin-top: 40px;">
-        <div>
-          <p class="section-kicker">Errors</p>
-          <h2>近期抓取錯誤</h2>
+      <section class="band status-component-band">
+        <div class="band-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Collectors</p>
+              <h2>元件狀態</h2>
+            </div>
+          </div>
+          <div class="status-component-grid">
+            
+      <article class="status-component-card status-card-ok">
+        <div class="status-component-head">
+          <h2>主排程與輸出</h2>
+          <span class="status-badge status-ok">正常</span>
         </div>
-      </div>
-      <div class="directory-table-list">
-        <table class="score-table source-list-table" id="error-table">
-          <thead>
-            <tr><th>來源</th><th>訊息</th><th>時間</th></tr>
-          </thead>
-          <tbody><tr><td colspan="3">載入中...</td></tr></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+        <p>定期 pipeline 已產生公開資料快照。</p>
+        <ul class="status-detail-list"><li>最近一次執行心跳：2026-07-07 13:55:01</li></ul>
+      </article>
+    
 
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div class="footer-brand">
-        <span class="footer-title">2026 市長官方來源觀測站</span>
-        <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
+      <article class="status-component-card status-card-ok">
+        <div class="status-component-head">
+          <h2>公開 API</h2>
+          <span class="status-badge status-ok">正常</span>
+        </div>
+        <p>candidates.json 有 14 位候選人，sources.json 有 65 個監看帳號。</p>
+        <ul class="status-detail-list"><li>已收錄貼文：478</li><li>監看帳號：81</li></ul>
+      </article>
+    
+
+      <article class="status-component-card status-card-ok">
+        <div class="status-component-head">
+          <h2>RSSHub 服務</h2>
+          <span class="status-badge status-ok">正常</span>
+        </div>
+        <p>https://rss.observe.tw 回應 正常。</p>
+        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：525 ms</li></ul>
+      </article>
+    
+
+      <article class="status-component-card status-card-ok">
+        <div class="status-component-head">
+          <h2>Instagram / Threads RSSHub</h2>
+          <span class="status-badge status-ok">正常</span>
+        </div>
+        <p>14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 0 個錯誤。</p>
+        <ul class="status-detail-list"><li>最新抓取時間：2026-07-07 11:43:41</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
+      </article>
+    
+
+      <article class="status-component-card status-card-paused">
+        <div class="status-component-head">
+          <h2>Facebook Apify</h2>
+          <span class="status-badge status-paused">節流中</span>
+        </div>
+        <p>17 個 Facebook 來源。 目前依預算 pacing 暫停開 run。</p>
+        <ul class="status-detail-list"><li>最近成功 run：2026-07-05 17:57:15</li><li>本月已花費：$1.85 / 目標 $4.75</li><li>單次預估花費：$0.26</li><li>pacing 判斷：not due yet (pace ~every 52.3h, next at 2026-07-07T14:16:58+00:00; ~$1.85 of $4.75 spent)</li></ul>
+      </article>
+    
+
+      <article class="status-component-card status-card-ok">
+        <div class="status-component-head">
+          <h2>YouTube yt-dlp</h2>
+          <span class="status-badge status-ok">正常</span>
+        </div>
+        <p>14 個 YouTube 來源；最新抓取批次目前 0 個錯誤。</p>
+        <ul class="status-detail-list"><li>已收錄影片：158</li></ul>
+      </article>
+    
+
+      <article class="status-component-card status-card-paused">
+        <div class="status-component-head">
+          <h2>候選人官網</h2>
+          <span class="status-badge status-paused">節流中</span>
+        </div>
+        <p>9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。</p>
+        <ul class="status-detail-list"><li>official_site_fetcher.py 目前是骨架；每個官網需要個別撰寫解析邏輯才能抓到內容。</li></ul>
+      </article>
+    
+          </div>
+        </div>
+      </section>
+
+      <section class="band status-platform-band">
+        <div class="band-inner split-layout">
+          <div>
+            <p class="section-kicker">Platforms</p>
+            <h2>平台來源</h2>
+          </div>
+          <div class="status-table-wrap">
+            <table class="status-table">
+              <thead>
+                <tr>
+                  <th scope="col">平台</th>
+                  <th scope="col">來源數</th>
+                  <th scope="col">目前錯誤</th>
+                  <th scope="col">狀態</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr>
+              <th scope="row">Facebook</th>
+              <td>17</td>
+              <td></td>
+              <td><span class="status-badge status-ok">正常</span></td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">Instagram</th>
+              <td>14</td>
+              <td></td>
+              <td><span class="status-badge status-ok">正常</span></td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">Threads</th>
+              <td>11</td>
+              <td></td>
+              <td><span class="status-badge status-ok">正常</span></td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">官網</th>
+              <td>9</td>
+              <td></td>
+              <td><span class="status-badge status-ok">正常</span></td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">YouTube</th>
+              <td>14</td>
+              <td></td>
+              <td><span class="status-badge status-ok">正常</span></td>
+            </tr>
+            
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="band status-errors-band">
+        <div class="band-inner">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Latest Errors</p>
+              <h2>最新錯誤</h2>
+            </div>
+            <p class="data-date">最多顯示 20 筆</p>
+          </div>
+          <div class="status-error-list">
+            <div class="empty-state">近期沒有抓取錯誤。</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-brand">
+          <span class="footer-title">2026 市長官方來源觀測站</span>
+          <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
+        </div>
+        <div class="footer-links">
+          <a href="../status/">狀態</a>
+          <a href="../feeds/">RSS</a>
+          <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
+          <a href="https://github.com/skyhong2002/mayor2026/issues/new/choose">資料回報</a>
+        </div>
+        <p class="footer-meta">資料來源為候選人公開帳號；貼文著作權屬原作者。MIT License.</p>
       </div>
-      <div class="footer-links">
-        <a href="../status/">狀態</a>
-        <a href="../feeds/">RSS</a>
-        <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
-        <a href="https://github.com/skyhong2002/mayor2026/issues/new/choose">資料回報</a>
-      </div>
-      <p class="footer-meta">資料來源為候選人公開帳號；貼文著作權屬原作者。MIT License.</p>
-    </div>
-  </footer>
-  <script src="../assets/app.js?v=4c051422a6"></script>
-</body>
+    </footer>
+  </body>
 </html>
