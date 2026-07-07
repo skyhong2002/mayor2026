@@ -333,7 +333,7 @@ def build_status() -> dict[str, Any]:
 
     return {
         "version": 1,
-        "generatedAt": now.isoformat(timespec="seconds"),
+        "generatedAt": taipei_iso(now),
         "site": PUBLIC_BASE_URL,
         "overall": {"status": overall_status, "label": STATUS_LABELS[overall_status], "summary": overall_summary},
         "metrics": {
