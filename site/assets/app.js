@@ -618,7 +618,7 @@
 
   function topicPageUrl(topic) {
     const slug = TOPIC_SLUGS[topic];
-    return slug ? `${base}spectrum/topic/${slug}/` : null;
+    return slug ? `${base}spectrum/${slug}/` : null;
   }
 
   // Neutral candidate orderings. A fixed order (e.g. CSV / party order)

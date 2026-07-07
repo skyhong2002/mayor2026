@@ -61,9 +61,24 @@ def main() -> int:
 
     topic_template = render((TEMPLATES_DIR / "topic.html").read_text(encoding="utf-8"))
     for topic, slug in classify_topics.TOPIC_SLUGS.items():
-        topic_dir = spectrum_dir / "topic" / slug
+        topic_dir = spectrum_dir / slug
         topic_dir.mkdir(parents=True, exist_ok=True)
         (topic_dir / "index.html").write_text(topic_template.replace("__TOPIC__", topic), encoding="utf-8")
+
+        # /spectrum/topic/<slug>/ flattened into /spectrum/<slug>/; keep a
+        # redirect so old links (bookmarks, RSS, search results) still land
+        # somewhere.
+        old_topic_dir = spectrum_dir / "topic" / slug
+        old_topic_dir.mkdir(parents=True, exist_ok=True)
+        target = f"../../{slug}/"
+        redirect_html = (
+            "<!DOCTYPE html><html lang=\"zh-Hant\"><head><meta charset=\"utf-8\">"
+            f"<meta http-equiv=\"refresh\" content=\"0; url={target}\">"
+            f"<link rel=\"canonical\" href=\"{target}\">"
+            f"<title>{topic}｜2026 市長官方來源觀測站</title></head>"
+            f"<body>頁面已搬移，請見 <a href=\"{target}\">{topic} 議題比較頁</a>。</body></html>"
+        )
+        (old_topic_dir / "index.html").write_text(redirect_html, encoding="utf-8")
 
     source_detail_template = render((TEMPLATES_DIR / "source-detail.html").read_text(encoding="utf-8"))
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})

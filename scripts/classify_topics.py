@@ -41,7 +41,7 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
 # greetings...) still get one bucket so every post lands somewhere.
 FALLBACK_TOPIC = "生活"
 
-# ASCII slugs for per-topic page URLs (/spectrum/topic/<slug>/).
+# ASCII slugs for per-topic page URLs (/spectrum/<slug>/).
 TOPIC_SLUGS = {
     "交通": "transport",
     "住宅": "housing",
