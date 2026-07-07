@@ -1029,76 +1029,9 @@
       });
   }
 
-  function renderStatus() {
-    const STEP_LABELS = { ok: "成功", failed: "失敗", optional_failed: "失敗（非必要）", running: "執行中", pending: "等待中" };
-    Promise.all([
-      fetchJson("api/status.json"),
-      fetchJson("api/pipeline-runtime.json").catch(() => null),
-    ])
-      .then(([status, runtime]) => {
-        const metrics = status.metrics || {};
-        document.getElementById("status-summary").textContent =
-          `資料產生於 ${formatRelative(status.generatedAt)}；最新收錄貼文 ${formatRelative(metrics.latestPostAt) || "—"}。`;
-
-        const metricRow = document.getElementById("metric-row");
-        const cells = [
-          [String(metrics.candidates ?? "—"), "監看候選人"],
-          [String(metrics.watchAccounts ?? "—"), "監看帳號"],
-          [String(metrics.totalPosts ?? "—"), "已收錄貼文"],
-        ];
-        Object.entries(metrics.postsByPlatform || {}).forEach(([platform, count]) => {
-          cells.push([String(count), PLATFORM_LABELS[platform] || platform]);
-        });
-        metricRow.innerHTML = "";
-        cells.forEach(([value, label]) => {
-          const cell = el("div", "stat-card");
-          cell.style.color = "var(--ink)";
-          cell.style.background = "#eef4f0";
-          cell.style.border = "1px solid var(--line)";
-          cell.appendChild(el("strong", "", value));
-          cell.appendChild(Object.assign(el("span", "", label), { style: "color: var(--muted)" }));
-          metricRow.appendChild(cell);
-        });
-
-        const pipelineBody = document.querySelector("#pipeline-table tbody");
-        pipelineBody.innerHTML = "";
-        const steps = (runtime && runtime.steps) || [];
-        if (!steps.length) {
-          pipelineBody.innerHTML = '<tr><td colspan="4">尚無執行紀錄。</td></tr>';
-        }
-        steps.forEach((step) => {
-          const row = document.createElement("tr");
-          [step.name, STEP_LABELS[step.status] || step.status, formatDate(step.startedAt) || "—", formatDate(step.finishedAt) || "—"].forEach(
-            (value) => {
-              const td = document.createElement("td");
-              td.textContent = value;
-              row.appendChild(td);
-            }
-          );
-          pipelineBody.appendChild(row);
-        });
-
-        const errorBody = document.querySelector("#error-table tbody");
-        errorBody.innerHTML = "";
-        const errors = status.recentErrors || [];
-        if (!errors.length) {
-          errorBody.innerHTML = '<tr><td colspan="3">近期沒有抓取錯誤。</td></tr>';
-        }
-        errors.slice().reverse().forEach((error) => {
-          const row = document.createElement("tr");
-          [error.sourceId || "—", error.message || "—", formatDate(error.recordedAt) || "—"].forEach((value) => {
-            const td = document.createElement("td");
-            td.textContent = value;
-            td.style.whiteSpace = "normal";
-            row.appendChild(td);
-          });
-          errorBody.appendChild(row);
-        });
-      })
-      .catch((err) => {
-        document.getElementById("status-summary").textContent = `資料載入失敗：${err.message}`;
-      });
-  }
+  // /status/ is now rendered server-side by build_status_page.py (it needs
+  // live collector health data — RSSHub probe, Apify pacing check, etc. —
+  // that only make sense to compute at build time).
 
   if (body.dataset.page === "index") {
     renderIndex();
@@ -1106,8 +1039,6 @@
     renderSources();
   } else if (body.dataset.page === "source-detail") {
     renderSourceDetail();
-  } else if (body.dataset.page === "status") {
-    renderStatus();
   } else if (body.dataset.page === "spectrum") {
     renderSpectrum();
   } else if (body.dataset.page === "topic-detail") {

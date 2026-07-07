@@ -232,6 +232,42 @@ def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[s
     return rows
 
 
+def check_status(args: argparse.Namespace) -> dict[str, Any]:
+    """Public-safe pacing snapshot for the status page — never exposes the
+    token itself, only whether one is configured."""
+    token = apify_token()
+    sources = feed_common.load_sources(platforms={"facebook"}) if token else []
+    ledger = feed_common.load_json(LEDGER_JSON, {})
+    now = dt.datetime.now(dt.timezone.utc)
+    run_cost = len(sources) * args.posts_per_page * COST_PER_RESULT_USD
+    target = args.monthly_budget_usd * args.budget_utilization
+    spent = ledger_month_spend(ledger, now)
+    should_run, reason = (
+        dynamic_run_decision(
+            ledger,
+            now=now,
+            run_cost_usd=run_cost,
+            budget_usd=args.monthly_budget_usd,
+            utilization=args.budget_utilization,
+        )
+        if token and sources
+        else (False, "no token or no facebook sources configured")
+    )
+    return {
+        "has_token": bool(token),
+        "facebook_sources": len(sources),
+        "posts_per_page": args.posts_per_page,
+        "monthly_budget_usd": args.monthly_budget_usd,
+        "monthly_remaining_usd": round(target - spent, 4),
+        "month_spend_usd": round(spent, 4),
+        "month_target_usd": round(target, 4),
+        "estimated_run_cost_usd": round(run_cost, 4),
+        "last_run_at": ledger.get("last_run_at"),
+        "should_run": should_run,
+        "reason": reason,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--posts-per-page", type=int, default=DEFAULT_POSTS_PER_PAGE)
@@ -239,7 +275,12 @@ def main() -> int:
     parser.add_argument("--budget-utilization", type=float, default=DEFAULT_BUDGET_UTILIZATION)
     parser.add_argument("--force", action="store_true", help="Ignore the dynamic budget pacing.")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--check", action="store_true", help="Print pacing status as JSON and exit; used by build_status_page.py.")
     args = parser.parse_args()
+
+    if args.check:
+        print(json.dumps(check_status(args), ensure_ascii=False))
+        return 0
 
     token = apify_token()
     if not token:

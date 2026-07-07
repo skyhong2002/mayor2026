@@ -49,10 +49,8 @@ def main() -> int:
     source_dir.mkdir(parents=True, exist_ok=True)
     (source_dir / "index.html").write_text(source_index_template, encoding="utf-8")
 
-    status_template = render((TEMPLATES_DIR / "status.html").read_text(encoding="utf-8"))
-    status_dir = SITE_ROOT / "status"
-    status_dir.mkdir(parents=True, exist_ok=True)
-    (status_dir / "index.html").write_text(status_template, encoding="utf-8")
+    # /status/ is rendered directly by build_status_page.py (it needs live
+    # collector health data, not just static template text).
 
     spectrum_template = render((TEMPLATES_DIR / "spectrum.html").read_text(encoding="utf-8"))
     spectrum_dir = SITE_ROOT / "spectrum"
