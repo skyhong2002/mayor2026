@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-11 12:01:23"
+        "最近一次執行心跳：2026-07-12 03:03:34"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：689",
+        "已收錄貼文：693",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -23,32 +23,32 @@
     },
     {
       "details": [
-        "HTTP：200",
-        "耗時：28 ms"
+        "HTTP：無回應",
+        "錯誤：<urlopen error [Errno 61] Connection refused>"
       ],
       "id": "rsshub",
-      "label": "正常",
+      "label": "部分異常",
       "name": "RSSHub 服務",
-      "status": "ok",
-      "summary": "http://127.0.0.1:1200 回應 正常。"
+      "status": "degraded",
+      "summary": "http://127.0.0.1:1200 回應 異常。"
     },
     {
       "details": [
-        "最新抓取時間：2026-07-11 12:01:01",
+        "最新抓取時間：2026-07-12 03:03:21",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
-      "label": "正常",
+      "label": "部分異常",
       "name": "Instagram / Threads RSSHub",
-      "status": "ok",
-      "summary": "14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 0 個錯誤。"
+      "status": "degraded",
+      "summary": "14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 20 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-07-10 06:03:25",
         "本月已花費：$2.35 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 53.0h, next at 2026-07-12T03:04:08+00:00; ~$2.35 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 51.4h, next at 2026-07-12T01:28:29+00:00; ~$2.35 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：179"
+        "已收錄影片：183"
       ],
       "id": "youtube",
       "label": "正常",
@@ -77,7 +77,7 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-11T12:01:23+08:00",
+  "generatedAt": "2026-07-12T03:03:34+08:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-07-10T13:36:31+00:00",
@@ -85,17 +85,158 @@
       "facebook": 235,
       "instagram": 181,
       "threads": 94,
-      "youtube": 179
+      "youtube": 183
     },
-    "totalPosts": 689,
+    "totalPosts": 693,
     "watchAccounts": 81
   },
   "overall": {
-    "label": "正常",
-    "status": "ok",
-    "summary": "核心資料抓取與公開 API 正常。 Facebook Apify、候選人官網 目前依排程或預算節流。"
+    "label": "部分異常",
+    "status": "degraded",
+    "summary": "核心 pipeline 有產出；需要注意：RSSHub 服務、Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
-  "recentErrors": [],
+  "recentErrors": [
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:01:50+00:00",
+      "sourceId": "su-ch-threads",
+      "sourceName": "蘇巧慧（su-ch-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:01:50+00:00",
+      "sourceId": "lee-sc-ig-main",
+      "sourceName": "李四川（lee-sc-ig-main）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:01:58+00:00",
+      "sourceId": "lee-sc-ig-old",
+      "sourceName": "李四川（lee-sc-ig-old）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:06+00:00",
+      "sourceId": "lee-sc-threads",
+      "sourceName": "李四川（lee-sc-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:06+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:15+00:00",
+      "sourceId": "huang-sj-threads",
+      "sourceName": "黃世杰（huang-sj-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:15+00:00",
+      "sourceId": "chang-sc-ig",
+      "sourceName": "張善政（chang-sc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:23+00:00",
+      "sourceId": "ho-hc-ig",
+      "sourceName": "何欣純（ho-hc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:31+00:00",
+      "sourceId": "ho-hc-threads",
+      "sourceName": "何欣純（ho-hc-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:31+00:00",
+      "sourceId": "chiang-cc-ig",
+      "sourceName": "江啟臣（chiang-cc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:39+00:00",
+      "sourceId": "chiang-cc-threads",
+      "sourceName": "江啟臣（chiang-cc-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:40+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:48+00:00",
+      "sourceId": "chen-tf-threads",
+      "sourceName": "陳亭妃（chen-tf-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:48+00:00",
+      "sourceId": "hsieh-lc-ig",
+      "sourceName": "謝龍介（hsieh-lc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:02:56+00:00",
+      "sourceId": "hsieh-lc-threads",
+      "sourceName": "謝龍介（hsieh-lc-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:02:57+00:00",
+      "sourceId": "lin-yf-ig",
+      "sourceName": "林義豐（lin-yf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:03:05+00:00",
+      "sourceId": "lai-jl-ig",
+      "sourceName": "賴瑞隆（lai-jl-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:03:13+00:00",
+      "sourceId": "lai-jl-threads",
+      "sourceName": "賴瑞隆（lai-jl-threads）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "instagram",
+      "recordedAt": "2026-07-11T19:03:13+00:00",
+      "sourceId": "ko-ce-ig",
+      "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 502: error code: 502",
+      "platform": "threads",
+      "recordedAt": "2026-07-11T19:03:21+00:00",
+      "sourceId": "ko-ce-threads",
+      "sourceName": "柯志恩（ko-ce-threads）"
+    }
+  ],
   "site": "https://mayor2026.observe.tw",
   "version": 1,
   "watchSources": {
@@ -107,16 +248,16 @@
         "status": "ok"
       },
       {
-        "currentErrors": 0,
+        "currentErrors": 11,
         "platform": "instagram",
         "sources": 14,
-        "status": "ok"
+        "status": "degraded"
       },
       {
-        "currentErrors": 0,
+        "currentErrors": 9,
         "platform": "threads",
         "sources": 11,
-        "status": "ok"
+        "status": "degraded"
       },
       {
         "currentErrors": 0,
