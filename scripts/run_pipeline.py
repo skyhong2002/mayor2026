@@ -124,6 +124,8 @@ def main() -> int:
     parser.add_argument("--max-post-age-days", type=int, default=30)
     parser.add_argument("--publish-pages", action="store_true")
     parser.add_argument("--pages-no-push", action="store_true")
+    parser.add_argument("--skip-data-restore", action="store_true", help="Use existing local pipeline data without restoring the data branch first.")
+    parser.add_argument("--data-no-push", action="store_true", help="Commit pipeline data only to the local data branch.")
     parser.add_argument("--lock-file", type=Path, default=DEFAULT_LOCK_FILE)
     parser.add_argument("--lock-stale-minutes", type=float, default=240.0)
     parser.add_argument("--runtime-status", type=Path, default=DEFAULT_RUNTIME_STATUS)
@@ -195,6 +197,8 @@ def main() -> int:
     publish_runtime_status("running", message="Pipeline started")
     completed = False
     try:
+        if not args.skip_data_restore:
+            run([PYTHON, "scripts/sync_pipeline_data.py", "restore"], step="restore pipeline data")
         run([PYTHON, "scripts/build_social_sources.py"], step="build social sources")
 
         if not args.skip_watch:
@@ -222,6 +226,11 @@ def main() -> int:
         run([PYTHON, "scripts/generate_seo_pages.py"], step="generate SEO pages")
         run([PYTHON, "scripts/check_source_coverage.py"], step="check source coverage")
         run([PYTHON, "scripts/validate_public_outputs.py"], step="validate public outputs")
+
+        data_args = [PYTHON, "scripts/sync_pipeline_data.py", "publish"]
+        if args.data_no_push:
+            data_args.append("--no-push")
+        run(data_args, step="publish pipeline data")
 
         if args.publish_pages:
             pages_args = [PYTHON, "scripts/publish_github_pages.py"]

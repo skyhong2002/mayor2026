@@ -5,10 +5,12 @@
 1. `gh repo create mayor2026 --public --source=. --remote=origin`（或手動在 GitHub 建立 public repo 後
    `git remote add origin git@github.com:<user>/mayor2026.git`）。
 2. `git push -u origin main`。
-3. 在 GitHub repo Settings → Pages，Source 選擇 `Deploy from a branch`，Branch 選 `gh-pages` / `/`（root）。
+3. pipeline 資料由 `scripts/sync_pipeline_data.py` 自動還原並推送到獨立的 `data` 分支；排程使用的
+   GitHub credentials 必須具有該分支的讀寫權限。首次 migration 完成後不需人工切換分支。
+4. 在 GitHub repo Settings → Pages，Source 選擇 `Deploy from a branch`，Branch 選 `gh-pages` / `/`（root）。
    `scripts/publish_github_pages.py` 第一次執行時會自動建立 `gh-pages` 分支並在其中放入
    `.github/workflows/deploy.yml`，之後 push 到 `gh-pages` 會自動觸發 Pages 部署。
-4. 自訂網域：DNS 已設定 `mayor2026.observe.tw` CNAME 指到 `skyhong2002.github.io`，
+5. 自訂網域：DNS 已設定 `mayor2026.observe.tw` CNAME 指到 `skyhong2002.github.io`，
    `publish_github_pages.py` 預設就會寫入這個 CNAME（可用 `MAYOR_PAGES_CNAME` 環境變數或
    `--cname` 覆寫；傳空字串則回到預設 `*.github.io` 網址）。GitHub repo Settings → Pages 的
    custom domain 也已設為 `mayor2026.observe.tw`，等憑證簽發後記得勾 Enforce HTTPS。
