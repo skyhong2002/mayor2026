@@ -1,5 +1,5 @@
 {
-  "count": 65,
+  "count": 66,
   "posts": [
     {
       "actionEvidence": {
@@ -2924,6 +2924,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/Y1ENjX5hYPo"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:fZBpYWV7FEk",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/265fc6b22bfee6cb8553.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "hsieh-lc-yt",
+      "targets": [],
+      "text": "Empathy is essential! In today's utilitarian society... human connections are fading away. #Hsieh...",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/fZBpYWV7FEk"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",
