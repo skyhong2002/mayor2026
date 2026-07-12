@@ -19,8 +19,152 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 58,
+  "count": 61,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DarjMzhGdUz",
+      "imageAspect": 0.7361,
+      "imageUrl": "assets/feed-images/8d984b4328582b41171c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-12T05:05:52+00:00",
+      "sourceId": "ko-ce-threads",
+      "targets": [],
+      "text": "@prof.kochihen:我同時發了兩篇貼文\n你被分配到的是：彌陀。",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DarjMzhGdUz"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DarjKCLCea8",
+      "imageAspect": 0.6557,
+      "imageUrl": "assets/feed-images/71696c48b339fd862139.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-12T05:05:29+00:00",
+      "sourceId": "ko-ce-threads",
+      "targets": [],
+      "text": "@prof.kochihen:我同時發了兩篇貼文\n你被分配到的是：永安。",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DarjKCLCea8"
+    },
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "資訊轉達"
+      ],
+      "actions": [
+        "policy_proposal",
+        "public_information"
+      ],
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dapw6hJidOz",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/13c0ffaa34cae4cd6578.webp",
+      "keywords": [
+        "颱風",
+        "防災",
+        "停班停課",
+        "災情",
+        "長輩",
+        "照顧",
+        "交通",
+        "環境"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-11T12:27:13+00:00",
+      "sourceId": "ko-ce-threads",
+      "targets": [],
+      "text": "@prof.kochihen:今天高雄市停班停課，許多行程被取消，但我仍前往鳳山區與多位里長交流地方建設與基層需求，也傾聽第一線最真實的聲音。\n\n里長是最了解地方的人，無論是交通、排水、環境清潔、長輩照顧，社區大小事都是里長最早發現、最先處理。未來我也會與所有基層夥伴攜手合作，把地方的需求帶進市政，讓政策更貼近市民生活。\n\n今天高雄因應颱風停班停課，所幸風雨未帶來重大災情，僅零星傳出招牌掉落、路樹倒塌等。不過，我與團隊仍持續掌握各地狀況，並關心相關災後復原進度。\n\n另外，市府宣布，明天高雄山區五行政區（六龜、甲仙、茂林、桃源、那瑪夏）因雨量達標，宣布停班停課。市府也已預防性撤離逾千人，感謝所有投入防災工作的第一線同仁的辛勞與付出。\n\n最後提醒大家，根據中央氣象署預報，今天下午至明晚，高雄局部地區仍可能出現6級平均風及8級以上陣風。颱風動態仍持續變化，也提醒鄉親朋友不要掉以輕心，持續留意最新氣象資訊，做好防颱準備、注意外出安全。\n\n希望這次颱風能夠平安通過，高雄不要再有災情，大家一起平安度過。",
+      "topicScores": {
+        "交通": 0.0769,
+        "環境": 0.0769,
+        "社福": 0.1538,
+        "防災": 0.6923
+      },
+      "topics": [
+        "防災",
+        "社福",
+        "交通",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/Dapw6hJidOz"
+    },
     {
       "actionEvidence": {
         "policy_proposal": [

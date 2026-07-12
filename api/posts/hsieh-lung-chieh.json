@@ -19,8 +19,49 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 66,
+  "count": 67,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DasbjVQjzfq",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2b484a1aacad39eddb80.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-12T13:18:50+00:00",
+      "sourceId": "hsieh-lc-threads",
+      "targets": [],
+      "text": "@hsiehlungchieh:做人要將心比心！現在的功利社會...人情越來越淡薄",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DasbjVQjzfq"
+    },
     {
       "actionEvidence": {
         "other": [

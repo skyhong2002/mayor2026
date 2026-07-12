@@ -1,6 +1,111 @@
 {
-  "count": 51,
+  "count": 53,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dasi0JsE_FV",
+      "imageAspect": 1.3324,
+      "imageUrl": "assets/feed-images/059e09f541423b2e65f0.webp",
+      "keywords": [
+        "經濟"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-12T14:21:45+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:今天世杰出席國際獅子會300B 5區總監交接典禮！看著這麼多長期深耕社區的獅友，聽到大家高喊「We Serve」，心裡非常感動也非常感謝。桃園能夠愈來愈好，正是因為有獅友們這樣長期深耕、默默付出、不求回報的力量。\n\n其實這也是我一直以來的信念，真正讓城市變好的，就是像獅友們這樣長期在地深耕、默默付出的公民力量。未來如果有機會為桃園服務，我希望能站在這樣的基礎上，把大家的心聲、各行各業的智慧，真正納入市政決策，讓桃園的經濟更好、發展更進步。",
+      "topicScores": {
+        "經濟": 1.0
+      },
+      "topics": [
+        "經濟"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/Dasi0JsE_FV"
+    },
+    {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "personal_content": [
+          "日常"
+        ],
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DapvWrXiUnz",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "颱風",
+        "警戒",
+        "土石流",
+        "道路",
+        "垃圾"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-11T12:13:36+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:桃園市7/12（日）復興區停止上班上課，其餘各區照常上班及上課。\n\n這次的風雨讓復興區受創嚴重，特別是大利幹部落、義興部落，三條聯外道路發生大面積崩塌，區內仍有多處持續發布土石流紅色警戒及黃色警戒，請周邊居民務必提高警覺、注意自身安全。也呼籲所有市民朋友，非必要請暫時不要前往山區活動。\n\n桃園市內有部分地區停電，台電人員正冒著風雨全力搶修，請受影響的市民耐心等候，感謝第一線搶修人員，期盼平安順利完成任務。\n\n另外，石門水庫上午已啟動溢洪道放水，特別提醒大家，停止洩洪前，請不要進入石門水庫下游河道、水域、溪床及相關警戒區域，以維護自身安全。\n\n這兩天因颱風停止垃圾收運，明天（7/12）將在原時段加班清運，協助市民整理家園，感謝辛苦的清潔隊同仁，大家辛苦了。\n\n待颱風離開後，災後的修復與重建工作正要開始，需要各單位通力合作，以最快的速度協助災區復原，讓市民朋友早日恢復安穩的日常生活。天佑桃園，大家平安！",
+      "topicScores": {
+        "交通": 0.125,
+        "環境": 0.125,
+        "防災": 0.75
+      },
+      "topics": [
+        "防災",
+        "交通",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、警戒、土石流、停電",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/DapvWrXiUnz"
+    },
     {
       "actionEvidence": {
         "administrative_update": [

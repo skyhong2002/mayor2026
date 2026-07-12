@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-13 00:00:23"
+        "最近一次執行心跳：2026-07-13 06:01:12"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：723",
+        "已收錄貼文：736",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -23,18 +23,18 @@
     },
     {
       "details": [
-        "HTTP：無回應",
-        "錯誤：<urlopen error [Errno 61] Connection refused>"
+        "HTTP：200",
+        "耗時：134 ms"
       ],
       "id": "rsshub",
-      "label": "部分異常",
+      "label": "正常",
       "name": "RSSHub 服務",
-      "status": "degraded",
-      "summary": "http://127.0.0.1:1200 回應 異常。"
+      "status": "ok",
+      "summary": "http://127.0.0.1:1200 回應 正常。"
     },
     {
       "details": [
-        "最新抓取時間：2026-07-13 00:00:11",
+        "最新抓取時間：2026-07-13 06:00:54",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-07-12 12:00:23",
         "本月已花費：$2.59 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 54.8h, next at 2026-07-14T10:47:00+00:00; ~$2.59 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 54.1h, next at 2026-07-14T10:04:24+00:00; ~$2.59 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,23 +77,23 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-13T00:00:23+08:00",
+  "generatedAt": "2026-07-13T06:01:12+08:00",
   "metrics": {
     "candidates": 14,
-    "latestPostAt": "2026-07-12T01:15:23.000Z",
+    "latestPostAt": "2026-07-12T14:21:45+00:00",
     "postsByPlatform": {
       "facebook": 261,
       "instagram": 181,
-      "threads": 94,
+      "threads": 107,
       "youtube": 187
     },
-    "totalPosts": 723,
+    "totalPosts": 736,
     "watchAccounts": 81
   },
   "overall": {
     "label": "部分異常",
     "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：RSSHub 服務、Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
+    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
     {

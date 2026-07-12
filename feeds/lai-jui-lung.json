@@ -1,6 +1,47 @@
 {
-  "count": 84,
+  "count": 86,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DardXhzkRES",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/b4a878a086e1ddf0b7e2.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-12T04:17:33+00:00",
+      "sourceId": "lai-jl-threads",
+      "targets": [],
+      "text": "@zenolai:哈囉市場應援團  ꉂꉂ📣(ˊᗜˋ)و*",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DardXhzkRES"
+    },
     {
       "actionEvidence": {
         "other": [
@@ -49,6 +90,52 @@
         "type": "external_event"
       },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02GFds5uHYntxvC1JJPWhuYnLymG84yPVXGEZH6tsciKcSzp3FGdYUvVEQ9LcLn6Lvl"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dapg_DHiQw5",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4ae46e6064923f875e33.webp",
+      "keywords": [
+        "防災",
+        "大雨",
+        "警戒"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-11T10:08:02+00:00",
+      "sourceId": "lai-jl-threads",
+      "targets": [],
+      "text": "@zenolai:因山區連日大雨已達警戒標準，為確保安全，市府宣布，六龜、甲仙、茂林、桃源及那瑪夏等五個行政區，明（12）日停止上班上課。高雄市其他的行政區，則恢復正常上班上課。\n\n特別提醒山區的朋友，連日大雨容易造成土石鬆動，請務必配合各區公所的撤離指示，一切以安全為第一優先。明天需要出門的市區朋友，也請記得攜帶雨具，騎車或開車多預留一點時間，隨時小心瞬間的強陣風。\n\n向每一位挺進山區、守護基層的防災夥伴致上最高敬意。明天出門，請大家務必把自身安全放在第一位，我們團結一心，攜手度過這次的風雨考驗！",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "大雨、警戒",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/Dapg_DHiQw5"
     },
     {
       "actionEvidence": {

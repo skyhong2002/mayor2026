@@ -1,6 +1,49 @@
 {
-  "count": 63,
+  "count": 65,
   "posts": [
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DapNgUWEfC8",
+      "imageAspect": 0.7426,
+      "imageUrl": "assets/feed-images/98d632df50ed684c0605.webp",
+      "keywords": [
+        "颱風"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-11T07:17:49+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:來跟大家分享一下我的颱風天存糧😂\n\n身為泡麵富翁，家裡泡麵庫存很充足，暫時不用擔心沒東西吃哈哈～\n\n大家颱風天都煮什麼、吃什麼呢？歡迎留言跟我分享🍜\n\n也提醒大家，颱風影響還沒結束，今天下午到晚間風雨最明顯。台中市區已有多處路樹倒塌，非必要盡量不要外出，行經路樹、招牌或施工路段時也要多留意，大家都要平平安安❤️",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/DapNgUWEfC8"
+    },
     {
       "actionEvidence": {
         "public_information": [
@@ -43,6 +86,55 @@
         "type": "external_event"
       },
       "url": "https://www.facebook.com/94achun/posts/pfbid0Q4roCCLQxXiYoDWXovB5Src1JJS2btX2m8xYSTWLYmuPrpHc4aERfbBoPNf7Zn6Ul"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dao-XilERbO",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/b10a93f65cfeb1d35495.webp",
+      "keywords": [
+        "颱風",
+        "淹水",
+        "警戒",
+        "治水"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-11T05:05:32+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:今天我前往太平光隆營區南側滯洪池，了解滯洪、排水及清疏情形，確認防颱整備狀況。這座滯洪池是我自2010年起持續協調推動的重要治水工程，完工後大幅改善車籠埔地區淹水問題。\n\n目前台中有間歇性的風雨，海線也有雷陣雨產生！雖然有些地方還算平穩，但提醒大家持續留意颱風資訊，非必要避免前往山區、海邊及警戒區域。\n\n希望颱風影響降到最低，祝福大家都平安。\n\n蔡耀頡 @tsai_yaochieh \n張玉嬿 @myishuca",
+      "topicScores": {
+        "環境": 0.2,
+        "防災": 0.8
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、警戒、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/Dao-XilERbO"
     },
     {
       "actionEvidence": {
