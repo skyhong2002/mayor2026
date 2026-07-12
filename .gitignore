@@ -29,6 +29,8 @@ site/feeds/
 site/redirects/
 site/status/
 site/spectrum/
+site/events/
+site/policy-match/
 site/*.html
 site/sitemap.xml
 site/robots.txt
@@ -45,3 +47,6 @@ site/taoyuan/
 site/taichung/
 site/tainan/
 site/kaohsiung/
+
+# Generated human-review queues can be recreated from pipeline data.
+data/review/

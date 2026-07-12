@@ -2,6 +2,8 @@
   const body = document.body;
   const base = body.dataset.base || "";
   const FEED_PAGE_SIZE = 30;
+  const TRIGGER_LABELS = { self_initiated: "自主議程", external_event: "外部事件", direct_response: "直接回應", routine: "例行發布", unclear: "待確認" };
+  const ACTION_LABELS = { policy_proposal: "政策倡議", position_statement: "立場表態", public_information: "資訊轉達", administrative_update: "行政進度", clarification: "回應澄清", criticism: "批評究責", mobilization: "動員宣傳", personal_content: "個人／日常", other: "其他／待細分" };
 
   const PLATFORM_LABELS = {
     website: "官網",
@@ -177,6 +179,19 @@
       });
       card.appendChild(meta);
     }
+
+    const contextMeta = el("div", "entry-meta context-meta");
+    const trigger = (post.trigger && post.trigger.type) || "unclear";
+    const triggerPill = el("span", `pill context-pill context-${trigger}`, TRIGGER_LABELS[trigger] || trigger);
+    triggerPill.title = post.trigger && post.trigger.evidence ? `判斷依據：${post.trigger.evidence}；信心 ${Math.round((post.trigger.confidence || 0) * 100)}%` : "尚無分類證據";
+    contextMeta.appendChild(triggerPill);
+    (post.actions || []).forEach((action) => contextMeta.appendChild(el("span", "pill action-pill", ACTION_LABELS[action] || action)));
+    if (post.classification && post.classification.needsReview) {
+      const review = el("span", "pill review-pill", "待人工複核");
+      review.title = "規則信心較低或涉及回應對象，尚待人工複核";
+      contextMeta.appendChild(review);
+    }
+    card.appendChild(contextMeta);
 
     const footer = el("div", "home-feed-footer");
     footer.appendChild(el("p", "entry-meta data-date", formatRelative(post.postedAt)));
@@ -398,21 +413,30 @@
 
     // Tri-state chip filters (none → include → exclude), same interaction
     // model as Harmonica-in-Taiwan's feed filter.
-    const filterState = { topics: new Map(), keywords: new Map() };
+    const filterState = { topics: new Map(), keywords: new Map(), triggers: new Map(), actions: new Map() };
 
     const topicCounts = new Map();
     const keywordCounts = new Map();
+    const triggerCounts = new Map();
+    const actionCounts = new Map();
     allPosts.forEach((post) => {
       (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
       (post.keywords || []).forEach((k) => keywordCounts.set(k, (keywordCounts.get(k) || 0) + 1));
+      const trigger = (post.trigger && post.trigger.type) || "unclear";
+      triggerCounts.set(trigger, (triggerCounts.get(trigger) || 0) + 1);
+      (post.actions || []).forEach((a) => actionCounts.set(a, (actionCounts.get(a) || 0) + 1));
     });
     const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
     const keywordOptions = [...keywordCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
+    const triggerOptions = [...triggerCounts.entries()].map(([key, count]) => [key, count, TRIGGER_LABELS[key] || key]);
+    const actionOptions = [...actionCounts.entries()].map(([key, count]) => [key, count, ACTION_LABELS[key] || key]);
 
     function passes(post) {
       const groups = [
         [filterState.topics, post.topics || []],
         [filterState.keywords, post.keywords || []],
+        [filterState.triggers, [(post.trigger && post.trigger.type) || "unclear"]],
+        [filterState.actions, post.actions || []],
       ];
       return groups.every(([states, values]) => {
         if (values.some((v) => states.get(v) === "exclude")) return false;
@@ -435,8 +459,8 @@
     function renderChipGroup(containerId, options, states) {
       const box = document.getElementById(containerId);
       box.innerHTML = "";
-      options.forEach(([value, count]) => {
-        const chip = el("button", "feed-option-chip", `${value}（${count}）`);
+      options.forEach(([value, count, display]) => {
+        const chip = el("button", "feed-option-chip", `${display || value}（${count}）`);
         chip.dataset.filterState = states.get(value) || "";
         chip.addEventListener("click", () => {
           const current = states.get(value);
@@ -453,6 +477,8 @@
     function renderFilters() {
       renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
       renderChipGroup("timeline-keyword-chips", keywordOptions, filterState.keywords);
+      renderChipGroup("timeline-trigger-chips", triggerOptions, filterState.triggers);
+      renderChipGroup("timeline-action-chips", actionOptions, filterState.actions);
     }
 
     if (allPosts.length) {
@@ -1029,6 +1055,119 @@
       });
   }
 
+  function renderEvents() {
+    fetchJson("api/events.json").then((payload) => {
+      const list = document.getElementById("events-list");
+      list.innerHTML = "";
+      if (!payload.events.length) list.appendChild(el("p", "empty-state", "目前尚無事件資料。"));
+      payload.events.forEach((event) => {
+        const card = el("article", "home-feed-card city-card");
+        const title = el("a", "event-card-link", event.name);
+        title.href = `${event.id}/`;
+        card.appendChild(title);
+        card.appendChild(el("p", "feed-latest-excerpt", event.description || ""));
+        card.appendChild(el("p", "entry-meta", `${event.candidateCount} 位候選人 · ${event.postCount} 則貼文 · ${event.startAt}～${event.endAt}`));
+        list.appendChild(card);
+      });
+    }).catch((err) => { document.getElementById("events-list").textContent = `資料載入失敗：${err.message}`; });
+  }
+
+  function renderEventDetail() {
+    const eventId = body.dataset.eventId;
+    Promise.all([fetchJson(`api/events/${eventId}.json`), fetchJson("api/sources.json")]).then(([payload, sources]) => {
+      const event = payload.event;
+      const sourcesById = Object.fromEntries(sources.sources.map((s) => [s.id, s]));
+      document.getElementById("event-name").textContent = event.name;
+      document.getElementById("event-description").textContent = `${event.description}｜${event.startAt}～${event.endAt}，共 ${event.postCount} 則。`;
+      const comparison = document.getElementById("event-comparison");
+      comparison.innerHTML = "";
+      event.comparisons.sort((a, b) => b.postCount - a.postCount).forEach((row) => {
+        const card = el("article", "home-feed-card city-card");
+        const candidate = sourcesById[row.candidateId] || { name: row.candidateName };
+        const heading = el("a", "candidate-city-identity");
+        heading.href = `${base}source/${row.candidateId}/`;
+        heading.appendChild(avatarNode(candidate, true));
+        heading.appendChild(el("strong", "", row.candidateName));
+        card.appendChild(heading);
+        card.appendChild(el("p", "data-date", `${row.postCount} 則相關貼文`));
+        const chips = el("div", "entry-meta");
+        Object.entries(row.actionCounts).sort((a, b) => b[1] - a[1]).forEach(([action, count]) => chips.appendChild(el("span", "pill action-pill", `${ACTION_LABELS[action] || action} ×${count}`)));
+        card.appendChild(chips);
+        comparison.appendChild(card);
+      });
+      const posts = document.getElementById("event-posts");
+      posts.innerHTML = "";
+      createRiver(posts, event.posts, sourcesById);
+    }).catch((err) => { document.getElementById("event-comparison").textContent = `資料載入失敗：${err.message}`; });
+  }
+
+  function renderPolicyMatch() {
+    Promise.all([fetchJson("api/policy-match.json"), fetchJson("api/sources.json")]).then(([data, sources]) => {
+      const sourceById = Object.fromEntries(sources.sources.map((s) => [s.id, s]));
+      const wrap = document.getElementById("policy-questions");
+      const selections = new Map(data.questions.map((question) => [question.id, new Set()]));
+      wrap.innerHTML = "";
+      data.questions.forEach((question) => {
+        const block = el("section", "policy-question");
+        const selected = selections.get(question.id);
+        block.appendChild(el("h2", "", question.prompt));
+        block.appendChild(el("p", "data-date", `最多選 ${question.maxChoices} 項`));
+        const choices = el("div", "policy-choice-grid");
+        question.choices.forEach((choice) => {
+          const button = el("button", "policy-choice", choice.label);
+          button.addEventListener("click", () => {
+            if (selected.has(choice.id)) selected.delete(choice.id);
+            else if (selected.size < question.maxChoices) selected.add(choice.id);
+            button.dataset.selected = selected.has(choice.id) ? "true" : "false";
+          });
+          choices.appendChild(button);
+        });
+        block.appendChild(choices);
+        wrap.appendChild(block);
+      });
+      const submit = el("button", "feed-load-more-button policy-submit", "查看匹配結果");
+      wrap.appendChild(submit);
+      wrap.appendChild(el("p", "data-date", data.methodology));
+      submit.addEventListener("click", () => {
+        const results = document.getElementById("policy-results");
+        results.hidden = false;
+        results.innerHTML = "";
+        const selectedIds = [...selections.values()].flatMap((values) => [...values]);
+        if (!selectedIds.length) { results.appendChild(el("p", "empty-state", "請先選擇至少一項政策。")); return; }
+        const choiceMap = Object.fromEntries(data.questions.flatMap((q) => q.choices).map((c) => [c.id, c]));
+        const topics = [...new Set(selectedIds.flatMap((id) => choiceMap[id].topics))];
+        results.appendChild(el("h2", "", "與你的市政優先順序最接近"));
+        results.appendChild(el("p", "feed-page-summary", "相似度只反映候選人自主政策倡議貼文的議題分布；貼文太少者標示資料不足，不代表候選人反對該政策。"));
+        const byCity = {};
+        data.candidates.forEach((candidate) => {
+          const targetNorm = Math.sqrt(topics.length);
+          const candidateNorm = Math.sqrt(Object.values(candidate.topicWeights).reduce((sum, value) => sum + value * value, 0));
+          const dot = topics.reduce((sum, topic) => sum + (candidate.topicWeights[topic] || 0), 0);
+          const score = candidateNorm ? dot / (targetNorm * candidateNorm) : 0;
+          (byCity[candidate.city] ||= []).push({ ...candidate, score });
+        });
+        Object.values(byCity).forEach((rows) => {
+          rows.sort((a, b) => b.score - a.score);
+          const city = sourceById[rows[0].candidateId] && sourceById[rows[0].candidateId].cityLabel;
+          results.appendChild(el("h3", "policy-city-title", city || rows[0].city));
+          const grid = el("div", "directory-grid");
+          rows.forEach((row) => {
+            const card = el("article", "home-feed-card policy-result-card");
+            const source = sourceById[row.candidateId] || row;
+            const head = el("a", "candidate-city-identity"); head.href = `${base}source/${row.candidateId}/`;
+            head.appendChild(avatarNode(source, true)); head.appendChild(el("strong", "", row.candidateName)); card.appendChild(head);
+            card.appendChild(el("strong", "policy-score", row.eligiblePostCount ? `${Math.round(row.score * 100)}% 議題重合` : "資料不足"));
+            card.appendChild(el("p", "data-date", `依 ${row.eligiblePostCount} 則自主政策倡議貼文計算`));
+            const evidence = topics.flatMap((topic) => (row.evidence[topic] || []).map((item) => ({ ...item, topic }))).slice(0, 3);
+            evidence.forEach((item) => { const link = el("a", "policy-evidence", `${item.topic}：${item.text}`); link.href = item.url; link.target = "_blank"; link.rel = "noopener"; card.appendChild(link); });
+            grid.appendChild(card);
+          });
+          results.appendChild(grid);
+        });
+      });
+    }).catch((err) => { document.getElementById("policy-questions").textContent = `資料載入失敗：${err.message}`; });
+  }
+
   // /status/ is now rendered server-side by build_status_page.py (it needs
   // live collector health data — RSSHub probe, Apify pacing check, etc. —
   // that only make sense to compute at build time).
@@ -1043,5 +1182,11 @@
     renderSpectrum();
   } else if (body.dataset.page === "topic-detail") {
     renderTopicDetail();
+  } else if (body.dataset.page === "events") {
+    renderEvents();
+  } else if (body.dataset.page === "event-detail") {
+    renderEventDetail();
+  } else if (body.dataset.page === "policy-match") {
+    renderPolicyMatch();
   }
 })();

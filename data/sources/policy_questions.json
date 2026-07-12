@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "title": "你的市政優先順序",
+  "methodology": "題目先呈現政策方向，不顯示候選人。結果以使用者選擇的方向，和候選人自主發起且包含政策倡議的公開貼文議題分布計算餘弦相似度；每項證據均連回原始貼文。這不是支持度或人格測驗，未發文不等於反對。",
+  "questions": [
+    {
+      "id": "daily-life",
+      "prompt": "日常生活方面，你希望市政府優先處理什麼？",
+      "multiple": true,
+      "maxChoices": 2,
+      "choices": [
+        {"id": "daily-transport", "label": "公共運輸、道路與行人安全", "topics": ["交通"]},
+        {"id": "daily-housing", "label": "住宅供給、租屋與都市更新", "topics": ["住宅"]},
+        {"id": "daily-safety", "label": "治安、反詐與公共安全", "topics": ["治安"]},
+        {"id": "daily-environment", "label": "空污、垃圾與生活環境", "topics": ["環境"]}
+      ]
+    },
+    {
+      "id": "care",
+      "prompt": "家庭與照顧政策方面，你最重視什麼？",
+      "multiple": true,
+      "maxChoices": 2,
+      "choices": [
+        {"id": "care-child", "label": "托育、育兒與家庭支持", "topics": ["社福", "教育"]},
+        {"id": "care-elder", "label": "高齡、長照與無障礙生活", "topics": ["社福", "醫療"]},
+        {"id": "care-school", "label": "校園品質與教育資源", "topics": ["教育"]},
+        {"id": "care-health", "label": "醫療、公衛與心理健康", "topics": ["醫療"]}
+      ]
+    },
+    {
+      "id": "development",
+      "prompt": "城市發展方面，你偏好優先投入哪個方向？",
+      "multiple": true,
+      "maxChoices": 2,
+      "choices": [
+        {"id": "dev-jobs", "label": "產業投資、就業與創業", "topics": ["經濟"]},
+        {"id": "dev-culture", "label": "文化保存、觀光與藝文", "topics": ["文化觀光"]},
+        {"id": "dev-sports", "label": "運動設施與全民體育", "topics": ["體育"]},
+        {"id": "dev-sustainable", "label": "淨零、綠地與永續轉型", "topics": ["環境", "經濟"]}
+      ]
+    },
+    {
+      "id": "resilience",
+      "prompt": "面對重大風險時，你希望市政更重視哪一項？",
+      "multiple": true,
+      "maxChoices": 2,
+      "choices": [
+        {"id": "risk-disaster", "label": "防洪、防災與氣候韌性", "topics": ["防災", "環境"]},
+        {"id": "risk-oversight", "label": "預算透明與議會監督", "topics": ["議會監督"]},
+        {"id": "risk-health", "label": "緊急醫療與公共衛生", "topics": ["醫療", "治安"]},
+        {"id": "risk-security", "label": "城市安全與國家韌性", "topics": ["治安", "兩岸外交"]}
+      ]
+    }
+  ]
+}

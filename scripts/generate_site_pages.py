@@ -57,6 +57,20 @@ def main() -> int:
     spectrum_dir.mkdir(parents=True, exist_ok=True)
     (spectrum_dir / "index.html").write_text(spectrum_template, encoding="utf-8")
 
+    events = feed_common.load_json(API_DIR / "events.json", {"events": []}).get("events", [])
+    events_dir = SITE_ROOT / "events"
+    events_dir.mkdir(parents=True, exist_ok=True)
+    (events_dir / "index.html").write_text(render((TEMPLATES_DIR / "events.html").read_text(encoding="utf-8")), encoding="utf-8")
+    event_detail_template = render((TEMPLATES_DIR / "event-detail.html").read_text(encoding="utf-8"))
+    for event in events:
+        detail_dir = events_dir / event["id"]
+        detail_dir.mkdir(parents=True, exist_ok=True)
+        (detail_dir / "index.html").write_text(event_detail_template.replace("__EVENT_ID__", event["id"]).replace("__EVENT_NAME__", event["name"]), encoding="utf-8")
+
+    policy_dir = SITE_ROOT / "policy-match"
+    policy_dir.mkdir(parents=True, exist_ok=True)
+    (policy_dir / "index.html").write_text(render((TEMPLATES_DIR / "policy-match.html").read_text(encoding="utf-8")), encoding="utf-8")
+
     topic_template = render((TEMPLATES_DIR / "topic.html").read_text(encoding="utf-8"))
     for topic, slug in classify_topics.TOPIC_SLUGS.items():
         topic_dir = spectrum_dir / slug

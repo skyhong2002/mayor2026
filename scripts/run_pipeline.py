@@ -218,8 +218,11 @@ def main() -> int:
             )
 
         run([PYTHON, "scripts/fetch_media_cache.py"], step="cache media", optional=True)
+        run([PYTHON, "scripts/classify_topics.py"], step="classify topics")
+        run([PYTHON, "scripts/classify_context.py"], step="classify post context")
         run([PYTHON, "scripts/build_public_data.py"], step="build public data")
         run([PYTHON, "scripts/build_spectrum.py"], step="build spectrum")
+        run([PYTHON, "scripts/build_qualitative.py"], step="build qualitative comparisons")
         run([PYTHON, "scripts/generate_rss_feeds.py"], step="generate rss feeds")
         run([PYTHON, "scripts/build_status_page.py"], step="build status page")
         run([PYTHON, "scripts/generate_site_pages.py"], step="generate site pages")

@@ -17,7 +17,9 @@ def main() -> int:
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
     candidates = candidates_payload.get("candidates", [])
 
-    paths = ["/", "/source/", "/status/", "/spectrum/"]
+    paths = ["/", "/source/", "/status/", "/spectrum/", "/events/", "/policy-match/"]
+    events = feed_common.load_json(API_DIR / "events.json", {"events": []}).get("events", [])
+    paths.extend(f"/events/{event['id']}/" for event in events)
     import classify_topics
 
     paths.extend(f"/spectrum/{slug}/" for slug in classify_topics.TOPIC_SLUGS.values())
