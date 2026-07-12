@@ -2,9 +2,25 @@
   "count": 100,
   "posts": [
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1607633274051670",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/6cd7cec8ae2fd3ec45a0.webp",
@@ -16,6 +32,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-12T01:15:23.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "早安高雄！\n\n一早我來到左營文武聖殿，參加新廟落成入火安座平安遶境的起駕典禮，和大家一起向關聖帝君祈福。這幾天颱風過境，我也特別向關聖帝君祈求，保佑所有受風雨影響的市民朋友都能平安度過難關，早日恢復正常生活。\n\n感謝陳正誠主委、薛煒立爐主及廟方團隊的用心。左營文武聖殿是左營重要的信仰中心，長期關懷弱勢家庭，把溫暖送進社區，這份基層的互助人情味令人感動。\n\n祝福遶境圓滿順利，祈求帝君庇佑高雄風調雨順、百業興旺。大家平安健康、闔家安康。\n\n李柏毅 拚搏未來 黃文志 高雄市議員 李雅慧 高雄市議員 尹立 左營楠梓市議員參選人 理想青年 張以理",
       "topicScores": {
         "社福": 0.3333,
@@ -27,12 +44,45 @@
         "競選",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02GFds5uHYntxvC1JJPWhuYnLymG84yPVXGEZH6tsciKcSzp3FGdYUvVEQ9LcLn6Lvl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "personal_content": [
+          "日常"
+        ],
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1543905233850676",
       "imageAspect": null,
       "imageUrl": null,
@@ -46,6 +96,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T12:13:20.000Z",
       "sourceId": "huang-sj-fb",
+      "targets": [],
       "text": "桃園市7/12（日）復興區停止上班上課，其餘各區照常上班及上課。\n\n這次的風雨讓復興區受創嚴重，特別是大利幹部落、義興部落，三條聯外道路發生大面積崩塌，區內仍有多處持續發布土石流紅色警戒及黃色警戒，請周邊居民務必提高警覺、注意自身安全。也呼籲所有市民朋友，非必要請暫時不要前往山區活動。\n\n桃園市內有部分地區停電，台電人員正冒著風雨全力搶修，請受影響的市民耐心等候，感謝第一線搶修人員，期盼平安順利完成任務。\n\n另外，石門水庫上午已啟動溢洪道放水，特別提醒大家，停止洩洪前，請不要進入石門水庫下游河道、水域、溪床及相關警戒區域，以維護自身安全。\n\n這兩天因颱風停止垃圾收運，明天（7/12）將在原時段加班清運，協助市民整理家園，感謝辛苦的清潔隊同仁，大家辛苦了。\n\n待颱風離開後，災後的修復與重建工作正要開始，需要各單位通力合作，以最快的速度協助災區復原，讓市民朋友早日恢復安穩的日常生活。天佑桃園，大家平安！",
       "topicScores": {
         "交通": 0.125,
@@ -57,12 +108,40 @@
         "交通",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、警戒、土石流、停電",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0Qc6NgABxUMex9CKKP6mnzJp4UFRwWBfsBDZcJZ4KtM6hS1xT7wMsqpFBGUwyr5S1l"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "資訊轉達"
+      ],
+      "actions": [
+        "policy_proposal",
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1585893802891000",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/e6af6c5099f5bdd84bc8.webp",
@@ -79,6 +158,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T12:05:22.000Z",
       "sourceId": "ko-ce-fb",
+      "targets": [],
       "text": "今天高雄市停班停課，許多行程被取消，但我仍前往鳳山區與多位里長交流地方建設與基層需求，也傾聽第一線最真實的聲音。\n\n里長是最了解地方的人，無論是交通、排水、環境清潔、長輩照顧，社區大小事都是里長最早發現、最先處理。未來我也會與所有基層夥伴攜手合作，把地方的需求帶進市政，讓政策更貼近市民生活。\n\n今天高雄因應颱風停班停課，所幸風雨未帶來重大災情，僅零星傳出招牌掉落、路樹倒塌等。不過，我與團隊仍持續掌握各地狀況，並關心相關災後復原進度。\n\n另外，市府宣布，明天高雄山區五行政區（六龜、甲仙、茂林、桃源、那瑪夏）因雨量達標，宣布停班停課。市府也已預防性撤離逾千人，感謝所有投入防災工作的第一線同仁的辛勞與付出。\n\n最後提醒大家，根據中央氣象署預報，今天下午至明晚，高雄局部地區仍可能出現6級平均風及8級以上陣風。颱風動態仍持續變化，也提醒鄉親朋友不要掉以輕心，持續留意最新氣象資訊，做好防颱準備、注意外出安全。\n\n希望這次颱風能夠平安通過，高雄不要再有災情，大家一起平安度過。\n\n#高雄 #平安",
       "topicScores": {
         "交通": 0.0769,
@@ -92,12 +172,45 @@
         "交通",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02CT2qFkMuKsixKMWLGD8oaWf2roWr32rYpknz3UKv1MhZ24LBFKqX9gkw6c6DGJjwl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊",
+          "搶修"
+        ],
+        "mobilization": [
+          "支持"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1795259361963288",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/8a81c007dec48b918f8e.webp",
@@ -111,6 +224,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T12:01:23.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "桃園市明（7/12）日 #復興區停止上班上課  其餘地區照常上班上課。\n\n雖然巴威颱風暴風圈預計今晚深夜離開台灣，但外圍環流仍將持續為復興區帶來大豪雨至超大豪雨等級降雨，這兩天已預防性撤離745人，收容135人，稍早也將華陵里2戶7人撤離並完成安置；另外針對大溪崁津部落也已全數完成疏散。\n\n在超大豪雨的侵襲下，復興區部分道路發生損壞情況，我們與區公所保持密切聯繫，能搶修的先搶修，較嚴重的也會等天氣較穩定後，儘快展開修復工作，讓居民能夠儘快返回家園，恢復正常通行。\n\n一整天下來，桃園累計已超過五萬戶曾停電，感謝台電同仁冒著風雨全力搶修，讓多數地區都能在短時間內恢復供電。我也在應變會議中一再提醒所有投入外勤工作的市府同仁及各單位夥伴，救災重要，大家自身安全更重要。\n\n另外，垃圾收運因颱風已停收兩日，明天（7/12）將於原時段加班清運。特別感謝清潔隊同仁及工會的支持，也請大家配合做好垃圾分類，不要隨意棄置垃圾，一起讓市容盡快恢復正常。\n\n截至目前，桃園整體災情都在掌握與處理當中，颱風雖然逐漸遠離，但山區雨勢仍大，請大家非必要避免前往山區及海邊活動，避免讓自己遭遇危險。\n\n市府團隊會持續守視各地狀況，妥善做好各項應變與復原工作，也請大家留意最新天氣資訊，共同平安度過這次颱風。",
       "topicScores": {
         "交通": 0.0833,
@@ -122,12 +236,39 @@
         "環境",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、停電",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02GrhAQCCJdyrYyaNJyxHNvpqrF9C9qQF8ynQ5LMpz2Z5w9KJxcyMr4pYrrXfX3w4Fl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-wanan",
       "candidate_id": "chiang-wanan",
       "candidate_name": "蔣萬安",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1580540270102591",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/6040100853165f0449de.webp",
@@ -141,6 +282,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T12:00:31.000Z",
       "sourceId": "chiang-wa-fb",
+      "targets": [],
       "text": "市民朋友晚安！\n\n#巴威颱風 逐漸遠離臺灣，根據中央氣象署最新預報資料，並經基北北桃四市討論共識，我宣布臺北市明天（7/12）正常上班上課。\n\n根據氣象團隊資訊，巴威颱風暴風圈範圍略為縮小，持續朝西北方向快速移動，預估今天深夜到明天凌晨，有機會脫離暴風圈範圍。\n\n雖然颱風影響逐漸減弱，市府團隊仍持續堅守崗位，全力投入各項復原工作。\n\n截至今天，市府已累積動員27,758人次、7,031車次，持續加強溝渠及易積淹水地點巡檢與清疏作業，避免雜物堵塞、確保排水順暢；同時也加強道路巡查，即時清除斷枝殘幹，維持道路及排水系統正常運作。\n\n另外，我也指示環保局全面展開復舊工作，動員人力加速恢復市容。尤其是要優先清理主要道路及大學分科測驗考場周邊，讓市民朋友及考生都能在明天恢復正常生活與交通秩序。\n\n提醒市民朋友，今天晚間風勢及雨勢仍有一定影響，請持續留意最新氣象資訊，外出務必注意安全。\n\n市府團隊會持續努力，以最快速度恢復市容、守護市民安全。",
       "topicScores": {
         "交通": 0.4444,
@@ -152,12 +294,35 @@
         "防災",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0pfFc1EvpPq2ZHU9b6gMmMZiNpWHAv3fPiAFxpENwSPWzRimgu49BQ4BQmTNNUNwwl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意",
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1590379422449980",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fffeba603b38ec216877.webp",
@@ -169,6 +334,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T10:54:56.000Z",
       "sourceId": "chen-tf-fb",
+      "targets": [],
       "text": "【妃妃提醒｜7/12（日）臺南垃圾收運資訊】\n\n受到颱風影響，為避免市民朋友連續3天無法倒垃圾，臺南市環保局明天（7/12）安排 22個行政區加班收運一般垃圾，不收資源回收，請大家留意各區收運時間。\n\n✅ 加班收運22區： 北區、東區、南區、大內、山上、中西、仁德、左鎮、永康、玉井、安平、安南、官田、南化、後壁、麻豆、新化、楠西、龍崎、歸仁、關廟、鹽水。\n\n❌ 其餘15區暫停收運。\n\n請鄉親朋友把握收運時間。風雨雖然逐漸趨緩，外出仍請注意安全，也請持續留意市府最新公告。\n\n#陳亭妃 #妃妃提醒 #垃圾收運 #防颱 #臺南",
       "topicScores": {
         "環境": 0.8333,
@@ -178,12 +344,35 @@
         "環境",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02dnLyWSZjcKupxqScConWADZ5nqghEPrcvUsepnuUCkkzy2XmYU6SGdsgChyz6cnFl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1607114777436853",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/7622c35d7af54d29c53f.webp",
@@ -195,6 +384,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T10:07:30.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "因山區連日大雨已達警戒標準，為確保安全，市府宣布，六龜、甲仙、茂林、桃源及那瑪夏等五個行政區，明（12）日停止上班上課。高雄市其他的行政區，則恢復正常上班上課。\n\n特別提醒山區的朋友，連日大雨容易造成土石鬆動，請務必配合各區公所的撤離指示，一切以安全為第一優先。明天需要出門的市區朋友，也請記得攜帶雨具，騎車或開車多預留一點時間，隨時小心瞬間的強陣風。\n\n向每一位挺進山區、守護基層的防災夥伴致上最高敬意。明天出門，請大家務必把自身安全放在第一位，我們團結一心，攜手度過這次的風雨考驗！",
       "topicScores": {
         "防災": 1.0
@@ -202,12 +392,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "大雨、警戒",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02Fayb1PkRzK2hA85WFqGvFuXnfEW8yR98QUhRuo7ngmd5F5s6Nc8TZguUDVUNG8oJl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1561202338699915",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/0e0ad42eacbaee139333.webp",
@@ -221,6 +433,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T08:02:01.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "還記得有一群熱血的臺中孩子，代表臺灣遠征西班牙踢足球賽嗎？\n\n沒錯！就是我們臺中清水國小足球隊，在「2026西班牙科斯塔布蘭卡盃」一路過關斬將，今天晚上就是最關鍵的冠軍賽！孩子們即將帶著大家的期盼，全力抱回冠軍金盃🏆\n\n適逢巴威颱風影響，啟臣提醒大家做好防颱準備、平安待在家。今天傍晚，就讓我們一起守在螢幕前，用最熱情的線上聲援為這群「臺中之光」集氣加油！\n\n🏆 冠軍賽直播資訊\n👉 比賽時間：7/11（六）臺灣時間18:15\n\n今晚，讓我們一起為臺灣加油、為臺中清水國小足球隊加油💪🇹🇼\n\n#清水國小足球隊 #臺中之光 \n#前進西班牙 #冠軍賽",
       "topicScores": {
         "教育": 0.2,
@@ -232,12 +445,34 @@
         "教育",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0foRHLvYJFnTkaB7To9EJnTQyTqKvbnLy8LYptgzGmNTeCAQDxfGZvxDYikv3m9YVl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627778052044936",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/75d363a147d8baef324d.webp",
@@ -247,6 +482,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T07:15:13.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "和大家分享我的乾糧！\n身為泡麵富翁，不擔心颱風天沒有存糧😂\n\n大家在颱風天都在家吃什麼呢？？？\n\n也提醒大家，颱風影響仍持續，下午至晚間是風雨最明顯的時段。台中市區已有多處路樹倒塌，非必要盡量避免外出，行經路樹、招牌及施工路段時也要多加留意呦～～",
       "topicScores": {
         "防災": 1.0
@@ -254,12 +490,40 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0Q4roCCLQxXiYoDWXovB5Src1JJS2btX2m8xYSTWLYmuPrpHc4aERfbBoPNf7Zn6Ul"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627710885384986",
       "imageAspect": 1.7771,
       "imageUrl": "assets/feed-images/b7be098ef0f33c116e1b.webp",
@@ -276,6 +540,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T05:03:27.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "巴威颱風逼近，今天上午我前往太平車籠埔光隆營區南側滯洪池，與市議員 張玉嬿、 蔡耀頡一起了解滯洪池蓄水、排水及清疏情形，確認防颱整備狀況。\n\n這座滯洪池是我自2010年起持續協調國防部、台中市政府及地方單位共同推動的重要治水工程，2017年完工後，滯洪量達4萬7,500立方公尺，大幅改善車籠埔地區長年淹水問題，也兼顧國防訓練需求。\n\n面對極端氣候，防災不能等到颱風來了才準備，滯洪池、排水系統及雨水下水道都應平時做好巡檢與清疏，才能在豪雨來襲時發揮作用。\n\n提醒大家，颱風警報解除前仍可能有強風豪雨，請持續留意最新天氣資訊，非必要避免前往山區、海邊及警戒區域。\n\n祝福台中平安、台灣平安，也向所有堅守崗位的防災與搶修人員致上感謝。",
       "topicScores": {
         "兩岸外交": 0.1538,
@@ -287,12 +552,34 @@
         "環境",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid026ojGzMRM11mkH6bfPi1S2GCDuUN3TpeJxuuhQYFdiX76X1mnPtHzHBPgMTzh1inul"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1590156102472312",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/e72a7e72efbdb9e4bc94.webp",
@@ -303,6 +590,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T04:06:36.000Z",
       "sourceId": "chen-tf-fb",
+      "targets": [],
       "text": "大家還好嗎？亭妃早上6:30出門到現在，目前台南的狀況還OK，但是防災絕對不能掉以輕心喔！\n\n#巴威颱風 #台南 #陳亭妃",
       "topicScores": {
         "防災": 1.0
@@ -310,12 +598,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0MmjSzNxF7hjXRkfG1GaHYRQz8xfs2Zd1xfnJRcrHXrST1jSrS8Cpexmw9hzps9v6l"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1560984858721663",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/449220341d3c5bfb01d0.webp",
@@ -329,6 +639,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T01:00:35.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🍇 臺中金香葡萄、黑后葡萄災損現金救助明起開辦！\n\n上個月底豪雨來襲，導致臺中葡萄受損嚴重。啟臣第一時間要求中央與地方政府「從寬從速」認定，極力為農民發聲；農業部已正式公告，臺中市為金香葡萄、黑后葡萄天然災害現金救助地區。\n\n請農友把握時間，備妥資料於當地公所申辦：\n\n救助額度：每公頃19萬5,000元\n申請資格：損害率達20%以上的農民\n受理期限：115年7月11日-7月24日止（假日照常受理；但11日受颱風假影響，順延至25日）\n補充提醒：若遇天災停班將順延；因不可抗力錯過者，可在原因消滅後10日內申請回復原狀\n\n救助金並非解決農災問題之根本，啟臣未來會積極推動科技防災對策，與農民一起防範未然，一起顧好農產品質、升級臺中農業，打造 #農業旗艦城💪\n\n#臺中啟程 #打造旗艦城 #臺中農業 #金香葡萄 #黑后葡萄 #守護農民 #農家子弟",
       "topicScores": {
         "經濟": 0.2,
@@ -338,12 +649,34 @@
         "防災",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0fpcxZ9qpU2ALRyo7SuRanBCzTvG9YU97eK4yZY1dJ2iYp1EzLxmruu1EErWP4HT3l"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lee-shih-chuan",
       "candidate_id": "lee-shih-chuan",
       "candidate_name": "李四川",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1581662320237689",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b7d01fbb8e36cc235510.webp",
@@ -355,6 +688,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T14:53:35.000Z",
       "sourceId": "lee-sc-fb",
+      "targets": [],
       "text": "巴威還沒走。新北市政府已公告：明天（7/11）持續停止上班、停止上課。\n\n風雨還在，低窪地區留意積淹水、山區留意土石流，儘量避免靠近海邊、溪邊。\n\n向每一位連續兩天仍守在應變中心的防災人員致敬。\n\n大家平安，比什麼都重要。",
       "topicScores": {
         "防災": 1.0
@@ -362,12 +696,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "淹水、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02GoJoXuoHruSjJky6k3ry39KiUJsGAdVitwQDW9tmvuaWS6oqFsJrLj9iktp69To9l&id=100051818071280"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
       "candidate_name": "沈伯洋",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:10175192125060654",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/ad97d5507eada82466c0.webp",
@@ -377,6 +733,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T13:37:52.000Z",
       "sourceId": "shen-fb-personal",
+      "targets": [],
       "text": "今早我跟眾多的父母一樣，\n颱風天帶著孩子一起準備防颱。\n⠀\n除了糧食、飲水以外，\n也需要準備消耗小孩電力的東西XD。\n早上也清了落葉，\n然後把腳踏車收好，\n而且還遇到一隻黑冠麻鷺卡到鐵格，\n幫他脫困了一下。\n⠀\n明天北部風雨漸增，\n大家務必在家防颱，\n注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -384,12 +741,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/pumashen/posts/pfbid07n5mz9mDUQaXmq81FDsqpmnW63KyHka9RCZQ5rn3NbTsUeUwcqR8sAgGAtpu3zDJl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
       "candidate_name": "沈伯洋",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DanUDNFFA7z",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/46abb8f48ef887298439.webp",
@@ -399,6 +778,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T13:36:31+00:00",
       "sourceId": "shen-threads-personal",
+      "targets": [],
       "text": "@pumashen:今早我跟眾多的父母一樣，\n颱風天帶著孩子一起準備防颱。\n⠀\n除了糧食、飲水以外，\n也需要準備消耗小孩電力的東西XD。\n早上也清了落葉，\n然後把腳踏車收好，\n而且還遇到一隻黑冠麻鷺卡到鐵格，\n幫他脫困了一下。\n⠀\n明天北部風雨漸增，\n大家務必在家防颱，\n注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -406,12 +786,48 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DanUDNFFA7z"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "警戒",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DanJp5FFEHL/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/3ecfc1e91cb61286a55d.webp",
@@ -428,6 +844,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T12:05:43+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "桃園市明（7/11）停止上班上課\n\n依據中央氣象署最新預報，明天桃園市風力、雨量都已達停班停課標準。山區恐有超大豪雨，平地也可能出現大豪雨，濱海地區最大陣風更可達11至12級，巴威颱風的威力不容有任何的輕忽。\n\n為了確保市民的安全，今天一整天我也接連趕赴各區，確認相關的防颱整備工作是否就緒。\n\n從龜山華國新村、桃園捷運行控中心、新屋農會社子辦事處倉庫、力青農場，再到八德介壽路，每到一個地方，我也很欣慰看到第一線夥伴一遍又一遍確認抽水設備、檢查防汛設施、盤點物資，大家都不斷確認手邊的工作細節，也盡可能預想到各種情況，希望將颱風的影響降到最低。\n\n我相信，沒有人希望這些準備真的派上用場，但只有現在多準備一分，風雨來的時候，市民才能有更堅實的保護。\n\n目前，復興區31處土石流潛勢溪流已發布黃色警戒；入夜後，土石流潛勢溪流可能達紅色警戒。市府與復興區公所已完成復興區居民的預防性撤離。所有防災團隊今晚都會持續待命，隨時掌握各地狀況，守護市民安全。\n\n我要特別提醒大家，今晚到明天一整天都是颱風影響最明顯的時段，請大家務必做好居家防颱準備，避免前往山區、河川及海邊等危險區域，非必要請不要外出，把自己和家人的安全放在第一位。\n\n市府團隊會繼續監控颱風動態，隨時應變各項災情。如果有任何通報需求，請立即撥打119或1999市民專線。\n\n大家平安！",
       "topicScores": {
         "交通": 0.0714,
@@ -437,12 +854,48 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、停班停課、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DanJp5FFEHL/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "警戒",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1794477288708162",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/640aef235e3a3578afe3.webp",
@@ -459,6 +912,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T12:02:31.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "桃園市明（7/11）停止上班上課\n\n依據中央氣象署最新預報，明天桃園市風力、雨量都已達停班停課標準。山區恐有超大豪雨，平地也可能出現大豪雨，濱海地區最大陣風更可達11至12級，巴威颱風的威力不容有任何的輕忽。\n\n為了確保市民的安全，今天一整天我也接連趕赴各區，確認相關的防颱整備工作是否就緒。\n\n從龜山華國新村、桃園捷運行控中心、新屋農會社子辦事處倉庫、力青農場，再到八德介壽路，每到一個地方，我也很欣慰看到第一線夥伴一遍又一遍確認抽水設備、檢查防汛設施、盤點物資，大家都不斷確認手邊的工作細節，也盡可能預想到各種情況，希望將颱風的影響降到最低。\n\n我相信，沒有人希望這些準備真的派上用場，但只有現在多準備一分，風雨來的時候，市民才能有更堅實的保護。\n\n目前，復興區31處土石流潛勢溪流已發布黃色警戒；入夜後，土石流潛勢溪流可能達紅色警戒。市府與復興區公所已完成復興區居民的預防性撤離。所有防災團隊今晚都會持續待命，隨時掌握各地狀況，守護市民安全。\n\n我要特別提醒大家，今晚到明天一整天都是颱風影響最明顯的時段，請大家務必做好居家防颱準備，避免前往山區、河川及海邊等危險區域，非必要請不要外出，把自己和家人的安全放在第一位。\n\n市府團隊會繼續監控颱風動態，隨時應變各項災情。如果有任何通報需求，請立即撥打119或1999市民專線。\n\n大家平安！",
       "topicScores": {
         "交通": 0.0714,
@@ -468,12 +922,34 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、停班停課、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid0Uz1QZqEAcHh8jTZfRN8iRKbYbXgi4FKEaeT6PFFfi53AEMVEyGp4wHJ8iPax95eTl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1543117320596134",
       "imageAspect": null,
       "imageUrl": null,
@@ -483,6 +959,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T12:01:39.000Z",
       "sourceId": "huang-sj-fb",
+      "targets": [],
       "text": "【桃園市7/11（六）停止上班上課】\n\n巴威颱風減弱為中度，但是暴風範圍不容小覷，中央氣象署已針對桃園發布陸上颱風警報、陸上強風特報，明天可能有9-11級陣風。\n\n請外出的市民，尤其是騎車的朋友，一定要留意安全，小心慢行！\n\n在我們安心待在家的同時，感謝警消、醫護、國軍、台電及在颱風天仍堅守崗位的同仁，持續守護市民。有您們真好，謝謝你們💪",
       "topicScores": {
         "防災": 1.0
@@ -490,12 +967,39 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02bVsajNS1fDytAgtHyYssTbYR6md5LT4CNmCJGUX4mZWdFPkfhurwJjiUqb7tx6wul"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-wanan",
       "candidate_id": "chiang-wanan",
       "candidate_name": "蔣萬安",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1579761933513758",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/5188719e6d57f150db33.webp",
@@ -508,6 +1012,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T12:01:03.000Z",
       "sourceId": "chiang-wa-fb",
+      "targets": [],
       "text": "市民朋友晚安！\n\n#巴威颱風 持續逼近北臺灣，根據中央氣象署及氣象團隊預報資料，今天入夜到週六一整天，將是影響臺北市最顯著的時段，風力及雨勢都不容小覷。\n\n經過基北北桃四市討論共識，我宣布臺北市明天（7/11）停止上班上課。\n\n巴威颱風是近25年來暴風圈最大的颱風之一，除了強降雨之外，強風影響範圍也相當廣，臺北隊不敢掉以輕心，已全面進入戒備狀態。\n\n今天一早，我再次主持巴威颱風工作會報，要求臺北隊把握風雨來臨前最後的整備時間，再次針對側溝清疏、樹木修剪、招牌廣告物穩固及工地安全等項目全面巡檢。\n\n接著，我前往大安區芳蘭路、大同區光能里、士林區社子島抽水站及萬華區華江疏散門，實地確認排水系統、社區防災、抽水設備、疏散門及堤外停車場撤離等各項工作準備就緒。\n\n提醒市民朋友，風雨已經開始增強，請大家 #待在家 ，做好居家防颱準備、留意最新氣象資訊，和我們一起做好防颱準備。\n\n市府團隊會持續堅守崗位、隨時待命，全力守護每一位市民的安全",
       "topicScores": {
         "交通": 0.1429,
@@ -517,12 +1022,34 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02SYMtAWoDEyy2PXA3iDk4gRb77ELJQGygGqhfHGwaVGrsWyiwpARCh3PMpPFv2i1wl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DanJHMfCbo3",
       "imageAspect": null,
       "imageUrl": null,
@@ -532,6 +1059,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T12:00:57+00:00",
       "sourceId": "huang-sj-threads",
+      "targets": [],
       "text": "@schuanglawyer:【桃園市7/11（六）停止上班上課】\n\n巴威颱風減弱為中度，但是暴風範圍不容小覷，中央氣象署已針對桃園發布陸上颱風警報、陸上強風特報，明天可能有9-11級陣風。\n\n請外出的市民，尤其是騎車的朋友，一定要留意安全，小心慢行！\n\n在我們安心待在家的同時，感謝警消、醫護、國軍、台電及在颱風天仍堅守崗位的同仁，持續守護市民。有您們真好，謝謝你們💪",
       "topicScores": {
         "防災": 1.0
@@ -539,12 +1067,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DanJHMfCbo3"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DanIVExEzmE/",
       "imageAspect": 1.3086,
       "imageUrl": "assets/feed-images/5751b36d40f9745dce3d.webp",
@@ -555,6 +1105,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T11:54:08+00:00",
       "sourceId": "ko-ce-ig",
+      "targets": [],
       "text": "風雨來臨前，行程依然不停歇。\n\n今晚與 #黃香菽 議員、#童燕珍 議員候選人，一同參加三民區正安宮平安宴，與鄉親相聚，也誠心祈求國泰民安、風調雨順。\n\n因應颱風可能帶來的強風，團隊也已提前將容易受影響的看板暫時撤下，希望將風險降到最低。\n\n明天颱風預計影響高雄，市府也已宣布停班停課。無論藍綠，不少民代、議員今晚都出席平安宴，大家共同為高雄祈福，盼望颱風平安度過，鄉親一切平安。\n\n#祈福 #高雄 #平安",
       "topicScores": {
         "防災": 1.0
@@ -562,12 +1113,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、停班停課",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DanIVExEzmE/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1585099542970426",
       "imageAspect": 1.3093,
       "imageUrl": "assets/feed-images/a3139bc3e79210af7547.webp",
@@ -578,6 +1151,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T11:54:05.000Z",
       "sourceId": "ko-ce-fb",
+      "targets": [],
       "text": "風雨來臨前，行程依然不停歇。\n\n今晚與 #黃香菽 議員、#童燕珍 議員候選人，一同參加三民區正安宮平安宴，與鄉親相聚，也誠心祈求國泰民安、風調雨順。\n\n因應颱風可能帶來的強風，團隊也已提前將容易受影響的看板暫時撤下，希望將風險降到最低。\n\n明天颱風預計影響高雄，市府也已宣布停班停課。無論藍綠，不少民代、議員今晚都出席平安宴，大家共同為高雄祈福，盼望颱風平安度過，鄉親一切平安。\n\n#祈福 #高雄 #平安",
       "topicScores": {
         "防災": 1.0
@@ -585,12 +1159,39 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、停班停課",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02DLguKcMJShAmFiFfUXd4FCjWC9qZq6QWeWvAg8UH8Z7e3WbPcMCCxJ86zSkNzJ1pl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DanFHF4oF-c/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/3243e2b86f53d1539ca7.webp",
@@ -604,6 +1205,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T11:26:01+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🌀巴威颱風近逼\n防災視同作戰，請市民朋友們做好防颱準備🙏\n\n中央氣象署已發布中度颱風巴威的海陸警報，上午臺中雖天氣狀況不錯，但今晚到明天將是風雨最劇烈的時候！臺中市政府已宣布今晚18:00起至明天全天「停止上班、上課」，請大家提早回家，防災不可鬆懈。\n\n啟臣特別提醒市民朋友，切勿前往沿海觀浪或進入山區。同時也請農漁民鄉親多加留意，請務必加強田間排水與作物固定，漁友們也要緊固港區船隻、注意養殖巡檢，安全為第一。\n\n颱風過境期間，最辛苦的就是第一線的警察、消防、搶修同仁與防災夥伴。是您們頂著風雨、守護這座城市。啟臣要向所有堅守崗位的無名英雄致上最深謝意，執行勤務時，請務必注意自身安全！\n\n面對天災，多一分準備、少一分災害，盼一切平安、臺中平安🙏\n\n#巴威颱風 #防災視同作戰 #安全第一 #臺中平安",
       "topicScores": {
         "治安": 0.1818,
@@ -613,12 +1215,39 @@
         "防災",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DanFHF4oF-c/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1560516958768453",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/f99061a1a3fc396e9b96.webp",
@@ -632,6 +1261,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T11:25:56.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🌀巴威颱風近逼\n防災視同作戰，請市民朋友們做好防颱準備🙏\n\n中央氣象署已發布中度颱風巴威的海陸警報，上午臺中雖天氣狀況不錯，但今晚到明天將是風雨最劇烈的時候！臺中市政府已宣布今晚18:00起至明天全天「停止上班、上課」，請大家提早回家，防災不可鬆懈。\n\n啟臣特別提醒市民朋友，切勿前往沿海觀浪或進入山區。同時也請農漁民鄉親多加留意，請務必加強田間排水與作物固定，漁友們也要緊固港區船隻、注意養殖巡檢，安全為第一。\n\n颱風過境期間，最辛苦的就是第一線的警察、消防、搶修同仁與防災夥伴。是您們頂著風雨、守護這座城市。啟臣要向所有堅守崗位的無名英雄致上最深謝意，執行勤務時，請務必注意自身安全！\n\n面對天災，多一分準備、少一分災害，盼一切平安、臺中平安🙏\n\n#巴威颱風 #防災視同作戰 #安全第一 #臺中平安",
       "topicScores": {
         "治安": 0.1818,
@@ -641,12 +1271,35 @@
         "防災",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02CbmZsxjsbQVn5VdC24KN2yfjdSMxUrPLZzbNdhq2v2pRMyPYu27u4kZwavN1c1FBl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam-LUUieSv",
       "imageAspect": null,
       "imageUrl": null,
@@ -658,6 +1311,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T10:25:23+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -665,12 +1319,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dam-LUUieSv"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam-JgGFM3B",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/ad4070000262e143747e.webp",
@@ -684,6 +1360,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T10:25:09+00:00",
       "sourceId": "ko-ce-threads",
+      "targets": [],
       "text": "@prof.kochihen:各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
         "社福": 0.2222,
@@ -693,12 +1370,34 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、土石流、災情",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dam-JgGFM3B"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam93k2zVZR/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f8fdb88aed5f7d39be1d.webp",
@@ -712,6 +1411,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T10:25:05+00:00",
       "sourceId": "ko-ce-ig",
+      "targets": [],
       "text": "各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
         "社福": 0.2222,
@@ -721,12 +1421,35 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、土石流、災情",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dam93k2zVZR/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam-FkpAZ_M/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/ccc872ff9c355e3419e4.webp",
@@ -738,6 +1461,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T10:24:39+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -745,12 +1469,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dam-FkpAZ_M/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1606319877516343",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/2cb77303aa8e7a5732dd.webp",
@@ -762,6 +1509,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T10:24:33.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -769,12 +1517,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0FNrXYtEWXxEHG6aQBgWtkgENrTeiS9HcWVqNnbYrTyHRKwLgyFbVwVY3fk5qZsmsl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1585045182975862",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/8e64f4732845299ab845.webp",
@@ -788,6 +1558,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T10:22:26.000Z",
       "sourceId": "ko-ce-fb",
+      "targets": [],
       "text": "各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
         "社福": 0.2222,
@@ -797,12 +1568,34 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、土石流、災情",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0ssg5tRuCxbABwuWM2awqCRA3VP6wzea74LebAEDLm1Q3nL6SLgUApdJb7N4PQCUql"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam4gy2EfpK",
       "imageAspect": null,
       "imageUrl": null,
@@ -810,6 +1603,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T09:35:54+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:視察防颱整備工作，全力守護市民朋友安全！",
       "topicScores": {
         "生活": 1.0
@@ -817,12 +1611,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/Dam4gy2EfpK"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam37QzgDXb/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/8fd0b4173ea71f69dab8.webp",
@@ -830,6 +1646,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T09:31:21+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "視察防颱整備工作，全力守護市民朋友安全！",
       "topicScores": {
         "生活": 1.0
@@ -837,12 +1654,35 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/Dam37QzgDXb/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam3lgKznNK/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fd5086ef669304faf884.webp",
@@ -854,6 +1694,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T09:28:25+00:00",
       "sourceId": "chen-tf-ig",
+      "targets": [],
       "text": "【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
         "防災": 1.0
@@ -861,12 +1702,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dam3lgKznNK/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam3mhBkxh8",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/a68e29da8f8ec020f8ed.webp",
@@ -878,6 +1742,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T09:27:57+00:00",
       "sourceId": "chen-tf-threads",
+      "targets": [],
       "text": "@chen_tingfei:【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
         "防災": 1.0
@@ -885,12 +1750,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dam3mhBkxh8"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1589519105869345",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/354e858d3217ba945c7d.webp",
@@ -902,6 +1790,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T09:27:55.000Z",
       "sourceId": "chen-tf-fb",
+      "targets": [],
       "text": "【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
         "防災": 1.0
@@ -909,12 +1798,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0gdafAJNufdkPi5QoUTLjappdzBGKS1VhymiNmwya9NNrkQ5NcTpDtHEzgAjQLGFml"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627037882118953",
       "imageAspect": 0.7069,
       "imageUrl": "assets/feed-images/a6ca06006e1d56c38165.webp",
@@ -924,6 +1835,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T09:00:58.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "台中要更好，就需要更多市民一起參與、一起討論。\n\n下周一 ＃168巡迴說明會 將來到南區辦理，我會和熱情 活力 陳雅惠、鄭功進 及 何翊綾 協同和市民報告六星市政願景，邀請大家作伙參加，我們一起攜手擘劃台中的未來。\n\n📌168巡迴說明會南區場\n時間：7月13日（一）晚上六點\n地點：南區崇仁活動中心（柳川西路一段59號）\n\n⚠️本周六日因颱風延期的烏日、沙鹿、大肚、梧棲場168說明會，也請鄉親們別擔心，我們後續會再公佈辦理時間，屆時邀請大家再一起來關心台中市政。\n\n＃心存大台中\n＃市長換欣_台中創新",
       "topicScores": {
         "防災": 1.0
@@ -931,12 +1843,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0325q5SqeRDg58YtPPqdt9aPkpHfx68B1XAMwBwBFZYSJWs2hghZJgrc6NjrKmBAn5l"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamzIhCEen1",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/9e1d1af7007784c825a5.webp",
@@ -948,6 +1883,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:48:53+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:根據中央氣象署資訊，今（10）日晚間高雄山區雨量預測已達停班停課標準。\n\n高雄市政府已公布，今晚6時起，那瑪夏、桃源、茂林、甲仙及六龜區停班、停課。\n\n入夜後風雨可能增強，提醒市民朋友持續留意颱風與雨勢資訊，非必要避免前往山區、沿海、溪邊等危險區域，也請大家配合市府及各單位防災措施。\n\n我和高雄隊也會持續掌握各區狀況，全力守護市民朋友安全！",
       "topicScores": {
         "防災": 1.0
@@ -955,12 +1891,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DamzIhCEen1"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Damy6blgYDe/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/c76f1febd09c269a1cff.webp",
@@ -972,6 +1931,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T08:47:00+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "根據中央氣象署資訊，今（10）日晚間高雄山區雨量預測已達停班停課標準。\n\n高雄市政府已公布，今晚6時起，那瑪夏、桃源、茂林、甲仙及六龜區停班、停課。\n\n入夜後風雨可能增強，提醒市民朋友持續留意颱風與雨勢資訊，非必要避免前往山區、沿海、溪邊等危險區域，也請大家配合市府及各單位防災措施。\n\n我和高雄隊也會持續掌握各區狀況，全力守護市民朋友安全！",
       "topicScores": {
         "防災": 1.0
@@ -979,12 +1939,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Damy6blgYDe/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "停班停課",
+          "最新資訊"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamxrHyz5mZ/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f764ae3f8e6b974d7df9.webp",
@@ -999,6 +1982,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T08:36:13+00:00",
       "sourceId": "ko-ce-ig",
+      "targets": [],
       "text": "今晚高雄山區雨勢增強，請鄉親務必留意安全！\n\n根據中央氣象署最新資訊，今（10）日晚間高雄市山區雨量預測已達停班停課標準。市府宣布，為維護山區民眾安全：\n\n📍桃源、那瑪夏、茂林、六龜及甲仙區\n⏰今（10）日晚間6時起停止上班、停止上課。\n\n隨著颱風逐漸接近，山區可能出現較大雨勢，請鄉親提高警覺，嚴防溪水暴漲、土石鬆動、坍方落石及土石流，也請避免前往山區、溪流及河床等高風險地區。若有外出需求，務必事先掌握道路及交通狀況。\n\n颱風動態與雨勢仍可能持續變化，請大家隨時留意中央氣象署及市府發布的最新資訊，提高警覺、注意安全。希望高雄平安渡過本次颱風。",
       "topicScores": {
         "交通": 0.25,
@@ -1008,12 +1992,35 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、大雨、停班停課、土石流、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DamxrHyz5mZ/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "停班停課",
+          "最新資訊"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamxkRXifBX",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/ff5784e9e156afc40e4a.webp",
@@ -1028,6 +2035,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:35:12+00:00",
       "sourceId": "ko-ce-threads",
+      "targets": [],
       "text": "@prof.kochihen:今晚高雄山區雨勢增強，請鄉親務必留意安全！\n\n根據中央氣象署最新資訊，今（10）日晚間高雄市山區雨量預測已達停班停課標準。市府宣布，為維護山區民眾安全：\n\n📍桃源、那瑪夏、茂林、六龜及甲仙區\n⏰今（10）日晚間6時起停止上班、停止上課。\n\n隨著颱風逐漸接近，山區可能出現較大雨勢，請鄉親提高警覺，嚴防溪水暴漲、土石鬆動、坍方落石及土石流，也請避免前往山區、溪流及河床等高風險地區。若有外出需求，務必事先掌握道路及交通狀況。\n\n颱風動態與雨勢仍可能持續變化，請大家隨時留意中央氣象署及市府發布的最新資訊，提高警覺、注意安全。希望高雄平安渡過本次颱風。",
       "topicScores": {
         "交通": 0.25,
@@ -1037,12 +2045,34 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、大雨、停班停課、土石流、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DamxkRXifBX"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamvfAoTCCd/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/cd813f423d2a8f982447.webp",
@@ -1053,6 +2083,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T08:17:31+00:00",
       "sourceId": "chen-tf-ig",
+      "targets": [],
       "text": "【巴威颱風陸警發布｜今晚6點後風雨將明顯增強】\n　　　　\n中央氣象署已發布巴威颱風陸上颱風警報，預估今晚6點後風雨將逐漸增強，請大家務必提高警覺，提前完成各項防颱準備。\n　　　　　　\n✅ 固定招牌、盆栽及戶外易掉落物品\n✅ 檢查門窗、排水溝是否暢通\n✅ 備妥飲水、乾糧、手電筒及常備藥品\n✅ 非必要請減少外出，避免前往海邊、河川及山區\n✅ 持續留意中央氣象署及市府最新防颱資訊\n　　　　\n亭妃也會持續關注颱風動態，與中央及市府保持密切聯繫，掌握各項防災應變工作。\n　　　　\n防颱多一分準備，就少一分風險。🙏💪\n　　　　　　　\n#陳亭妃 #台南 #巴威颱風 #防颱準備 #平安第一",
       "topicScores": {
         "防災": 1.0
@@ -1060,12 +2091,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DamvfAoTCCd/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamvgJTk17N",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/19e5beb3e2848d1dab40.webp",
@@ -1076,6 +2129,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:17:11+00:00",
       "sourceId": "chen-tf-threads",
+      "targets": [],
       "text": "@chen_tingfei:【巴威颱風陸警發布｜今晚6點後風雨將明顯增強】\n　　　　\n中央氣象署已發布巴威颱風陸上颱風警報，預估今晚6點後風雨將逐漸增強，請大家務必提高警覺，提前完成各項防颱準備。\n　　　　　　\n✅ 固定招牌、盆栽及戶外易掉落物品\n✅ 檢查門窗、排水溝是否暢通\n✅ 備妥飲水、乾糧、手電筒及常備藥品\n✅ 非必要請減少外出，避免前往海邊、河川及山區\n✅ 持續留意中央氣象署及市府最新防颱資訊\n　　　　\n亭妃也會持續關注颱風動態，與中央及市府保持密切聯繫，掌握各項防災應變工作。\n　　　　\n防颱多一分準備，就少一分風險。🙏💪\n　　　　　　　\n#陳亭妃 #台南 #巴威颱風 #防颱準備 #平安第一",
       "topicScores": {
         "防災": 1.0
@@ -1083,12 +2137,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DamvgJTk17N"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamuAnyGUWE",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/949d66cc86888769af47.webp",
@@ -1096,6 +2172,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:04:07+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:雖然目前台中還沒有雨，但是風勢有越來越大的趨勢。\n還請大家注意防颱，也盡快做好相關準備！",
       "topicScores": {
         "生活": 1.0
@@ -1103,12 +2180,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamuAnyGUWE"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamkVNiFHYW",
       "imageAspect": null,
       "imageUrl": null,
@@ -1116,6 +2215,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T06:39:33+00:00",
       "sourceId": "hsieh-lc-threads",
+      "targets": [],
       "text": "@hsiehlungchieh:今晚龍介直播暫停一次！請大家注意防颱⚠️",
       "topicScores": {
         "生活": 1.0
@@ -1123,12 +2223,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamkVNiFHYW"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamkRpKEWGf",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/398bf80e3f52b5bd1993.webp",
@@ -1141,6 +2263,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T06:39:04+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:今天出席中科23週年園慶，很高興看到中科一路成長，也讓台中的產業持續站上國際舞台。\n\n產業要發展，托育、交通也要跟上，讓年輕人安心工作、安心成家，也讓企業更願意留在台中、深耕台中。\n\n期待中科持續帶動台中產業升級，讓台中成為人才願意留下、企業願意投資的城市。",
       "topicScores": {
         "交通": 0.1667,
@@ -1152,12 +2275,34 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamkRpKEWGf"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamkQteEYgm/",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/01471af9c3d66dd1e632.webp",
@@ -1170,6 +2315,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T06:38:58+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "今天出席中科23週年園慶，很高興看到中科一路成長，也讓台中的產業持續站上國際舞台。\n\n產業要發展，托育、交通也要跟上，讓年輕人安心工作、安心成家，也讓企業更願意留在台中、深耕台中。\n\n期待中科持續帶動台中產業升級，讓台中成為人才願意留下、企業願意投資的城市。",
       "topicScores": {
         "交通": 0.1667,
@@ -1181,12 +2327,34 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DamkQteEYgm/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601353164679599",
       "imageAspect": null,
       "imageUrl": null,
@@ -1194,6 +2362,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T06:35:50.000Z",
       "sourceId": "hsieh-lc-fb",
+      "targets": [],
       "text": "今晚龍介直播暫停一次\n請大家注意防颱⚠️",
       "topicScores": {
         "生活": 1.0
@@ -1201,12 +2370,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid0LWLskBmhFS1B2dNqxZA3vcV89Y6s5oDtsS6YxcHn9ih4XLBn3iiXXPfRMfydJoM9l"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamY_dnEVTs",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/0adad5b3ff7cf1327b31.webp",
@@ -1214,6 +2405,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T05:00:28+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:確認再確認，將風險降到最低。\n\n今早前往鹽埕北斗抽水站和楠梓美昌抽水站視察防颱整備，確保各項防汛工程都能在關鍵時刻發揮效用。\n\n我會與高雄隊持續緊盯各項防汛工程如期執行，全力守護市民朋友的安全！\n\n@huangjie_official @poyilee__ \n@lichiaoju_official  @2014_chikoyan @wenchih0717 @yahui_li0830 @changyilisocool @aaronyin",
       "topicScores": {
         "生活": 1.0
@@ -1221,12 +2413,35 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamY_dnEVTs"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "最新資訊"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamY1-dGbO3",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/48a1d8b14fc638704d0a.webp",
@@ -1242,6 +2457,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T04:59:10+00:00",
       "sourceId": "ko-ce-threads",
+      "targets": [],
       "text": "@prof.kochihen:高雄今早依舊炎熱，但隨颱風逐漸接近，天氣變化將越來越明顯，請大家務必提前做好防颱準備。\n\n受到颱風外圍環流影響，今（10）日高雄市發布高溫橙色燈號，有連續出現攝氏36度高溫的機率。提醒需要長時間在戶外工作的朋友，務必多補充水分、適時休息，避免中暑及熱傷害，也要多關心家中長輩與孩童。\n\n根據中央氣象署陸上強風特報，明（11）日高雄部分地區可能出現平均風力6級以上、或陣風8級以上的強風。請大家提前固定招牌、盆栽及戶外懸掛物，行經沿海、空曠地區時，也要特別注意安全。\n\n隨著颱風接近，低窪地區請留意短延時強降雨可能造成的積淹水，預先檢查排水孔、清理住家周邊溝渠，並備妥沙包或防水閘門；山區未來幾天也要嚴防豪大雨，避免前往溪流、山區道路及容易發生落石、土石流的地區。\n\n颱風動態仍可能持續變化，請鄉親隨時留意氣象及市府發布的最新資訊。防颱準備多一分，安全就多一分。讓我們一同做好準備、彼此提醒，平安度過這次颱風。",
       "topicScores": {
         "交通": 0.0909,
@@ -1253,12 +2469,39 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、大雨、淹水、土石流、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DamY1-dGbO3"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamTNoWAVNI/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/ec36b28b682efc0e9669.webp",
@@ -1270,6 +2513,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T04:10:00+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "確認再確認，將風險降到最低。\n\n今早前往鹽埕北斗抽水站和楠梓美昌抽水站視察防颱整備，確保各項防汛工程都能在關鍵時刻發揮效用。\n\n📌 鹽埕北斗抽水站\n該站於去年五月正式啟用，目前運作順利，但在提升整體雨水下水道系統上還有2,400萬元的經費缺口，這部分我將與黃捷委員全力協助向中央爭取。\n\n📌 楠梓美昌抽水站\n為了強化右昌周邊地勢低窪區域排水，李柏毅委員也長期關注改善情形，美昌抽水站獲得中央補助4,000萬元，預計擴增兩部沉水式抽水機，總抽水量將提升到每秒4噸；站體前池也同步進行擴建，預計今年12月底就能完工。\n\n我會與高雄隊持續緊盯各項防汛工程如期執行，全力守護市民朋友的安全。也再次提醒大家，儘管巴威颱風減弱為中度仍不可輕忽，氣象署已對高雄市發佈陸上強風「黃色燈號」，平均風6級以上或有8級以上陣風出現，外出務必留意安全，避免掉落物造成危險。\n\n黃捷 李柏毅 拚搏未來 \n姐姐的行動力  李喬如  簡煥宗 高雄市議員 \n黃文志 高雄市議員  李雅慧 高雄市議員  尹立 左營楠梓市議員參選人 理想青年 張以理",
       "topicScores": {
         "社福": 0.3333,
@@ -1281,12 +2525,34 @@
         "競選",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DamTNoWAVNI/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamCIEKyNDj/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/eb151460bc06906b2647.webp",
@@ -1294,6 +2560,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T01:41:16+00:00",
       "sourceId": "hsieh-lc-ig",
+      "targets": [],
       "text": "網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
         "生活": 1.0
@@ -1301,12 +2568,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DamCIEKyNDj/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601197178028531",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/de39ff517be89f718c30.webp",
@@ -1314,6 +2603,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T01:34:40.000Z",
       "sourceId": "hsieh-lc-fb",
+      "targets": [],
       "text": "網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
         "生活": 1.0
@@ -1321,12 +2611,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/2264686147667456/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamA53DDwN2",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/88751a498bfb540d4d06.webp",
@@ -1334,6 +2646,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T01:30:42+00:00",
       "sourceId": "hsieh-lc-threads",
+      "targets": [],
       "text": "@hsiehlungchieh:網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
         "生活": 1.0
@@ -1341,12 +2654,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamA53DDwN2"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dal2vL1gPnO/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/3d4b05da418808e2e9c1.webp",
@@ -1357,6 +2692,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T00:01:37+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "感謝民間善心捐贈！\n日前啟臣受邀見證熱心公益的林傳全先生，慷慨捐贈優異越野性能的消防警備車予特搜大隊國光分隊，用實際行動充實臺中的救災戰力，守護市民生命財產安全，真的非常令人欽佩！政府資源有限、民間力量無窮。特別感謝所有消防弟兄始終站在第一線守護市民，適逢颱風來襲，也特別提醒鄉親朋友們務必提早做好防颱準備、注意安全！",
       "topicScores": {
         "治安": 0.6667,
@@ -1366,12 +2702,39 @@
         "治安",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dal2vL1gPnO/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "chang-ching",
       "candidate_id": "chang-ching",
       "candidate_name": "張靜",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:919530677845128",
       "imageAspect": 1.0111,
       "imageUrl": "assets/feed-images/c95d17585a000c0dc6ca.webp",
@@ -1384,6 +2747,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T23:35:04.000Z",
       "sourceId": "chang-ching-party-fb",
+      "targets": [],
       "text": "🌬️【颱風來襲，平安最重要】\n\n❤️各位鄉親朋友大家好，我是司法改革黨秘書長、台中市雅潭神市議員參選人 張烱春。\n\n🌀颱風接近，請大家務必提高警覺，提前做好防颱準備，固定招牌及盆栽，避免前往海邊、山區及溪流等危險地區，外出時注意強風豪雨，行車請減速慢行。\n\n🧓🤱也請多關心家中長輩、孩子及獨居長者，互相提醒、彼此照應，共同守護家人與社區安全。\n\n❤️祝福大家平安度過颱風，闔家平安、萬事順心！\n張烱春 敬上 司法改革黨秘書長 台中市雅潭神市議員參選人",
       "topicScores": {
         "社福": 0.1429,
@@ -1395,12 +2759,34 @@
         "競選",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/reel/1693518878532125/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dalv64pE7DT",
       "imageAspect": 0.5623,
       "imageUrl": "assets/feed-images/0b6cbf8aabe01a726897.webp",
@@ -1410,6 +2796,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T23:01:37+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -1417,12 +2804,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dalv64pE7DT"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dalu-0ayPWW/",
       "imageAspect": 0.5623,
       "imageUrl": "assets/feed-images/e134945e0c7a5ca527a0.webp",
@@ -1432,6 +2841,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T23:01:26+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -1439,12 +2849,45 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dalu-0ayPWW/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ],
+        "policy_proposal": [
+          "必須",
+          "提出"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
       "candidate_name": "沈伯洋",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dak7iN9lG7-",
       "imageAspect": 1.5625,
       "imageUrl": "assets/feed-images/593878ed5df9d3cc492d.webp",
@@ -1460,6 +2903,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T15:23:49+00:00",
       "sourceId": "shen-threads-personal",
+      "targets": [],
       "text": "@pumashen:巴威強颱來襲，\n中央災害應變中心已啟動二級開設，\n跟9個縣市視訊連線全力防颱。\n⠀\n下午卓榮泰院長前往內湖視察，\n我也一起前往了解。\n面對汛期可能帶來的災害風險，\n中央與地方必須攜手合作，\n儘速解決迫切的治水問題。\n⠀\n⠀\n這幾次現場勘查，\n我有兩點觀察，\n提出來和大家分享。\n⠀\n第一，\n上次強降雨造成的淹水區域，\n其實並不在淹水潛勢預測範圍內，\n災害本來就有許多難以預料的變數，\n這也提醒我們，\n持續依據實際情況滾動檢討、更新資料。\n⠀\n第二，\n這次我跟水利署、經濟部和北市府會勘時發現，\n部分下水道與側溝的銜接處較狹窄，\n豪雨來臨時可能影響排水效率。\n因此，建議持續盤點排水系統，\n加強清淤工作，提升整體排水韌性。\n⠀\n⠀\n防災工作不分中央、地方\n也不分藍綠，\n⠀\n把災害風險降到最低，\n全力守護市民生命財產安全。",
       "topicScores": {
         "環境": 0.0909,
@@ -1471,12 +2915,44 @@
         "環境",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "豪雨、淹水、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dak7iN9lG7-"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dak7OaHn2MD/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/352f4a5282d086b37b37.webp",
@@ -1493,6 +2969,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T15:21:10+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
       "topicScores": {
         "教育": 0.2727,
@@ -1506,12 +2983,44 @@
         "社福",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dak7OaHn2MD/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1793826868773204",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/c1b2edd9887415cd0dfd.webp",
@@ -1528,6 +3037,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T15:19:38.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
       "topicScores": {
         "教育": 0.2727,
@@ -1541,12 +3051,34 @@
         "社福",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02E5cATZ3RmqPrbQJVWfdRoZoE5BKdw3sR8QUgsTpoELfTQQZaHJ3bD7PFUBWN5UpWl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "最新資訊"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lee-shih-chuan",
       "candidate_id": "lee-shih-chuan",
       "candidate_name": "李四川",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1580819110322010",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/78f8cd0c8cefb03887d2.webp",
@@ -1556,6 +3088,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T14:03:33.000Z",
       "sourceId": "lee-sc-fb",
+      "targets": [],
       "text": "新北市政府已公告：明天（7/10）停止上班上課。\n\n請大家做好防颱準備：門窗關好，非必要儘量避免出門，留意颱風最新資訊。\n\n大家平安，比什麼都重要。",
       "topicScores": {
         "防災": 1.0
@@ -1563,12 +3096,45 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0cBJD63sWiEm178rAmyAVg7WHwKTkxQ66mt6cKZgSz9b1pL2y2gkEvifdsoNWg2yEl&id=100051818071280"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ],
+        "policy_proposal": [
+          "必須",
+          "提出"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
       "candidate_name": "沈伯洋",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:122106037569329310",
       "imageAspect": 1.5611,
       "imageUrl": "assets/feed-images/4c1c20076a771c2e565a.webp",
@@ -1584,6 +3150,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T13:33:15.000Z",
       "sourceId": "shen-fb-campaign",
+      "targets": [],
       "text": "巴威強颱來襲，今天下午氣象署已發布海上警報，中央災害應變中心也已啟動二級開設，並與9個縣市視訊連線，全力投入防颱整備。⁣\n⁣\n下午，卓榮泰院長前往內湖視察金龍路及港墘抽水站，我也一起前往了解防颱整備情形。面對汛期可能帶來的災害風險，中央與地方必須攜手合作，儘速解決迫切的治水問題。⁣\n⁣\n這幾次現場勘查，也讓我有兩點觀察，提出來和大家分享。⁣\n⁣\n第一，持續滾動檢討淹水潛勢區。⁣\n⁣\n上一次6月25日颱風造成淹水的部分區域，並不在過去的淹水潛勢預測範圍內。災害本來就有許多難以預料的變數，每一次颱風都會帶來新的挑戰。這也提醒我們，淹水潛勢評估需要持續依據實際情況滾動檢討、更新資料，讓防災整備更貼近現況，也讓有限的資源投入真正有需要的地方。⁣\n⁣\n第二，加強下水道及側溝系統的清淤與改善。⁣\n⁣\n我與水利署、經濟部以及台北市政府會勘時發現，部分下水道與側溝的銜接處較為狹窄，豪雨來臨時可能影響排水效率。因此，建議持續盤點排水系統瓶頸，並加強下水道及側溝清淤工作，提升整體排水韌性。⁣\n⁣\n⁣\n防災工作不分中央、地方，也不分藍、綠。唯有平時做好準備、持續檢討精進，才能在風雨來臨時，把災害風險降到最低，全力守護市民生命財產安全。⁣\n⁣\n⁣\n#你的市長沈伯洋",
       "topicScores": {
         "環境": 0.0667,
@@ -1595,12 +3162,40 @@
         "環境",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid021a1q72aogruMPJpNZLF71QmRkwBAEZwh91qdrm5KmvuC2sMGfZzgCG6M4pk4h8NCl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "部署"
+        ],
+        "public_information": [
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-wanan",
       "candidate_id": "chiang-wanan",
       "candidate_name": "蔣萬安",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaktrpSti6c/",
       "imageAspect": 0.5629,
       "imageUrl": "assets/feed-images/59396d39fc926b6de589.webp",
@@ -1616,6 +3211,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T13:23:36+00:00",
       "sourceId": "chiang-wa-ig",
+      "targets": [],
       "text": "市民朋友晚安！\n\n經過基北北桃四縣市共同討論，我宣布臺北市明天（7/10）停止上班上課。\n\n這次 #巴威颱風是25年來暴風圈最大的一次。尤其臺北市整體人口密度高、與周邊縣市通勤流動人口數也是最多，加上前陣子強降雨讓土壤含水量飽和、提升了山坡地致災風險。\n\n我們在基北北桃四市平台討論後，基於天然災害停止上班及上課作業辦法第四條第三款規定宣布臺北明日停班停課。\n\n我也要向市民朋友呼籲：\n因應目前氣候變遷的挑戰，我們要妥善運用明天的防颱整備日，儘早完成各項防災準備、注意水情與相關災防資訊。\n\n今天上午，我先到文山區視察邊坡；下午陸續到信義、松山及內湖等地，實地了解各項防颱整備工作的進度。晚上，我在臺北市災害應變中心（EOC），主持 #防颱整備會議，確保各項防颱準備工作確實，提前完成人力、機具等應變能量部署。\n\n臺北隊嚴陣以待，守護市民安全。",
       "topicScores": {
         "交通": 0.125,
@@ -1627,12 +3223,35 @@
         "交通",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DaktrpSti6c/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaktVRqID6S/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/9ea68895790cbe692804.webp",
@@ -1645,6 +3264,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T13:19:46+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🌪️強颱巴威來襲！\n啟臣提醒全國鄉親務必嚴加戒備、提早做好防颱準備！ \n\n根據氣象報導，這次的巴威颱風是今年最強、最有感的颱風，大家絕對不能掉以輕心！啟臣特別提醒所有大臺中的鄉親朋友，請務必提前巡檢居家周邊、固定招牌門窗並清空排水溝渠。特別是居住在山區、沿海地區的市民朋友，要密切注意土石流警戒與長浪豪雨資訊。\n\n我們最辛苦的農友與漁民朋友，在巡視田區、加固農作與進行漁船防颱整備時，請務必將「人身安全」放在第一位，隨時注意風雨變化，千萬不要冒險涉溪或出海！\n\n面對強颱考驗，希望大家都能平安渡過颱風天，天佑臺灣、臺中平安！",
       "topicScores": {
         "防災": 1.0
@@ -1652,12 +3272,35 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DaktVRqID6S/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
       "candidate_id": "chiang-chi-chen",
       "candidate_name": "江啟臣",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1559790452174437",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/1ea1e27894021a52c88b.webp",
@@ -1670,6 +3313,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T13:19:41.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🌪️強颱巴威來襲！\n啟臣提醒全國鄉親務必嚴加戒備、提早做好防颱準備！ \n\n根據氣象報導，這次的巴威颱風是今年最強、最有感的颱風，大家絕對不能掉以輕心！啟臣特別提醒所有大臺中的鄉親朋友，請務必提前巡檢居家周邊、固定招牌門窗並清空排水溝渠。特別是居住在山區、沿海地區的市民朋友，要密切注意土石流警戒與長浪豪雨資訊。\n\n我們最辛苦的農友與漁民朋友，在巡視田區、加固農作與進行漁船防颱整備時，請務必將「人身安全」放在第一位，隨時注意風雨變化，千萬不要冒險涉溪或出海！\n\n面對強颱考驗，希望大家都能平安渡過颱風天，天佑臺灣、臺中平安！",
       "topicScores": {
         "防災": 1.0
@@ -1677,12 +3321,40 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02aM9Ly51WkBQmrjXw4BBLMi3guqAYLXdn8BX8TE2SikuzvqEiWgD323c9147Yn8mBl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaknUiliTiH",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/b21f57bd30bcfb35b541.webp",
@@ -1695,6 +3367,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T12:27:12+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:巴威颱風海上警報已經發布，我們嚴陣以待，緊盯各項防颱整備。\n\n今天我前往鳳山八德滯洪池視察水情，這座總工程費7千餘萬的滯洪池，是在國土署補助、農業試驗所提供用地，以及市府水利局積極協調而來，工程預計在今年9月完工，滯洪量將高達4.7萬噸，不僅能大幅改善建國路至文衡路一帶的積水隱患，未來更將兼顧環境綠美化和休憩功能。目前已具初步蓄水功能，防汛設備也已駐地待命。\n\n感謝許智傑委員長期關注，積極爭取治水資源，有智傑委員在國會全力推動，加上市府團隊高效執行，這正是高雄隊團結作戰、落實地方建設的最佳典範。\n\n治水工程沒有終點，除了上述的八德滯洪池，其他如建國路雨水箱涵改善工程，水利局已向國土署提報第二期改善計畫，我也會持續爭取後續建設經費，確保各項工程順利推動。\n\n市府防汛機制已全面上緊發條，我們會隨時緊盯颱風動向，陪伴大家平安度過風雨考驗。",
       "topicScores": {
         "環境": 0.5,
@@ -1706,12 +3379,40 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DaknUiliTiH"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "部署"
+        ],
+        "public_information": [
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-wanan",
       "candidate_id": "chiang-wanan",
       "candidate_name": "蔣萬安",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1578954913594460",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/68b2f6476da46e8ac4d2.webp",
@@ -1727,6 +3428,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T12:07:50.000Z",
       "sourceId": "chiang-wa-fb",
+      "targets": [],
       "text": "市民朋友晚安！\n\n經過基北北桃四縣市共同討論，我宣布臺北市明天（7/10）停止上班上課。\n\n這次 #巴威颱風是25年來暴風圈最大的一次。尤其臺北市整體人口密度高、與周邊縣市通勤流動人口數也是最多，加上前陣子強降雨讓土壤含水量飽和、提升了山坡地致災風險。\n\n我們在基北北桃四市平台討論後，基於天然災害停止上班及上課作業辦法第四條第三款規定宣布臺北明日停班停課。\n\n我也要向市民朋友呼籲：\n因應目前氣候變遷的挑戰，我們要妥善運用明天的防颱整備日，儘早完成各項防災準備、注意水情與相關災防資訊。\n\n今天上午，我先到文山區視察邊坡；下午陸續到信義、松山及內湖等地，實地了解各項防颱整備工作的進度。晚上，我在臺北市災害應變中心（EOC），主持 #防颱整備會議，確保各項防颱準備工作確實，提前完成人力、機具等應變能量部署。\n\n臺北隊嚴陣以待，守護市民安全。",
       "topicScores": {
         "交通": 0.125,
@@ -1738,12 +3440,34 @@
         "交通",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02Z3gRT2VFEz3FXdtbhb2qBxgmjqavKuqa5txUNysuDnw8LcENCtQjCeC4efb5kBvql"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dakkm0xCbrV",
       "imageAspect": null,
       "imageUrl": null,
@@ -1751,6 +3475,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T12:03:28+00:00",
       "sourceId": "huang-sj-threads",
+      "targets": [],
       "text": "@schuanglawyer:桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
       "topicScores": {
         "生活": 1.0
@@ -1758,12 +3483,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/Dakkm0xCbrV"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1542333297341203",
       "imageAspect": null,
       "imageUrl": null,
@@ -1771,6 +3518,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T12:03:17.000Z",
       "sourceId": "huang-sj-fb",
+      "targets": [],
       "text": "桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
       "topicScores": {
         "生活": 1.0
@@ -1778,12 +3526,41 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02YGgjjXY6kjovpDWgj3QxnEVBqYUVBr9brr9UaeDQf3VsDRqqj9EVJ4kFGhgdpni5l"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakkfFSoCBi/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f471551a0a201f9964d9.webp",
@@ -1798,6 +3575,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T12:02:27+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "根據天氣預報，明（7/10）日下半天雨勢與風力有持續增強趨勢，考量市民通勤安全，且為讓市民朋友有充足時間因應此次25年來最強颱風，再加上復興山區達標，因此宣布明天停止上班上課。\n\n提醒市民朋友，明天中午12點以後，颱風變化情況恐加大，且明天晚上平均風力與陣風已瀕臨停班課標準，在誤差範圍內，考量整體安全，做出停班停課決策。\n\n巴威颱風來勢洶洶，桃園山區可能有 #長延時強降雨 發生，提醒大家避免前往山區；颱風期間，非必要請避免外出，遠離河川、海邊等危險地區，並持續留意最新氣象資訊。\n\n市府災害應變中心今晚6點已完成二級開設，我們會隨時掌握颱風動態，及時應變處置相關狀況。如有災情通報需求，請撥打119或1999市民服務專線。\n\n請市民朋友提早做好防颱準備，我們一起平安度過颱風天。",
       "topicScores": {
         "交通": 0.0909,
@@ -1807,12 +3585,41 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakkfFSoCBi/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
       "candidate_id": "chang-san-cheng",
       "candidate_name": "張善政",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1793656532123571",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b9fb401731a5d2c3b8cc.webp",
@@ -1827,6 +3634,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T12:02:22.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "根據天氣預報，明（7/10）日下半天雨勢與風力有持續增強趨勢，考量市民通勤安全，且為讓市民朋友有充足時間因應此次25年來最強颱風，再加上復興山區達標，因此宣布明天停止上班上課。\n\n提醒市民朋友，明天中午12點以後，颱風變化情況恐加大，且明天晚上平均風力與陣風已瀕臨停班課標準，在誤差範圍內，考量整體安全，做出停班停課決策。\n\n巴威颱風來勢洶洶，桃園山區可能有 #長延時強降雨 發生，提醒大家避免前往山區；颱風期間，非必要請避免外出，遠離河川、海邊等危險地區，並持續留意最新氣象資訊。\n\n市府災害應變中心今晚6點已完成二級開設，我們會隨時掌握颱風動態，及時應變處置相關狀況。如有災情通報需求，請撥打119或1999市民服務專線。\n\n請市民朋友提早做好防颱準備，我們一起平安度過颱風天。",
       "topicScores": {
         "交通": 0.0909,
@@ -1836,12 +3644,39 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02zwKV1i6NKgbGgw7FmyiYdNCWnBQLwZxrVKZVLDUJ4ZKbAiu1ig5aHEu8hrp1HjEEl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ],
+        "position_statement": [
+          "認為"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "立場表態"
+      ],
+      "actions": [
+        "policy_proposal",
+        "position_statement"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakkQwnk41i/",
       "imageAspect": 1.3348,
       "imageUrl": "assets/feed-images/7eaf7c9e4e59522d54e1.webp",
@@ -1859,6 +3694,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T12:00:29+00:00",
       "sourceId": "ko-ce-ig",
+      "targets": [],
       "text": "今天很高興受邀參加 #高雄市體育總會 會員代表大會。特別感謝許文宗理事長的邀請，許理事長不只是高雄體育界的重要推手，也是我在政大教育系的學長。更要感謝所有體育界的好朋友，長年投入基層耕耘，陪伴一代又一代選手成長，大家的努力，都是高雄體育不斷向前的重要力量。\n\n高雄是一座充滿熱情的城市，這份熱情，也展現在每一位運動員揮灑汗水的球場、田徑場、泳池等運動場域中。\n\n我常說，體育政策需要有人推動，而高雄體育界最重要的推手，就是體育總會與各單項協會。多年來，大家串聯各項運動發展，陪伴選手一路成長，也是高雄體育持續進步的重要力量。\n\n我始終認為，體育預算、場館維護與選手權益，不能只是口號，而是需要一步一步扎實落實。無論是在中央爭取法規與預算，或是未來推動市政，我都會全力完善高雄各區運動場館的軟硬體設施，打造更安全、更友善的運動環境，同時強化選手培育體系，讓更多高雄子弟站上全國、站上世界，持續為高雄爭光。\n\n未來，我也希望邀請體育總會及各單項協會代表共同參與體育政策白皮書的修訂，讓第一線教練與選手的意見真正納入市政決策。同時推動行政減壓，簡化補助申請與核銷流程，讓各協會把更多心力放在選手培訓與賽事推廣。\n\n我也會積極爭取更多國內外大型賽事來到高雄，包括近年風靡全球的 Hyrox 等新興運動賽事，提升高雄的國際能見度，帶動運動產業發展，朝台灣運動首都的目標穩健邁進。\n\n#高雄 #體育 #運動 #城市發展",
       "topicScores": {
         "教育": 0.04,
@@ -1876,12 +3712,39 @@
         "教育",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DakkQwnk41i/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ],
+        "position_statement": [
+          "認為"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "立場表態"
+      ],
+      "actions": [
+        "policy_proposal",
+        "position_statement"
+      ],
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
       "candidate_name": "柯志恩",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1584312576382456",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/44752d97450441ba98eb.webp",
@@ -1899,6 +3762,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T12:00:24.000Z",
       "sourceId": "ko-ce-fb",
+      "targets": [],
       "text": "今天很高興受邀參加 #高雄市體育總會 會員代表大會。特別感謝許文宗理事長的邀請，許理事長不只是高雄體育界的重要推手，也是我在政大教育系的學長。更要感謝所有體育界的好朋友，長年投入基層耕耘，陪伴一代又一代選手成長，大家的努力，都是高雄體育不斷向前的重要力量。\n\n高雄是一座充滿熱情的城市，這份熱情，也展現在每一位運動員揮灑汗水的球場、田徑場、泳池等運動場域中。\n\n我常說，體育政策需要有人推動，而高雄體育界最重要的推手，就是體育總會與各單項協會。多年來，大家串聯各項運動發展，陪伴選手一路成長，也是高雄體育持續進步的重要力量。\n\n我始終認為，體育預算、場館維護與選手權益，不能只是口號，而是需要一步一步扎實落實。無論是在中央爭取法規與預算，或是未來推動市政，我都會全力完善高雄各區運動場館的軟硬體設施，打造更安全、更友善的運動環境，同時強化選手培育體系，讓更多高雄子弟站上全國、站上世界，持續為高雄爭光。\n\n未來，我也希望邀請體育總會及各單項協會代表共同參與體育政策白皮書的修訂，讓第一線教練與選手的意見真正納入市政決策。同時推動行政減壓，簡化補助申請與核銷流程，讓各協會把更多心力放在選手培訓與賽事推廣。\n\n我也會積極爭取更多國內外大型賽事來到高雄，包括近年風靡全球的 Hyrox 等新興運動賽事，提升高雄的國際能見度，帶動運動產業發展，朝台灣運動首都的目標穩健邁進。\n\n#高雄 #體育 #運動 #城市發展",
       "topicScores": {
         "教育": 0.04,
@@ -1916,12 +3780,40 @@
         "教育",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02jHZj98jfiPyehTcrrRno65HMp2FuSUFJaDKXFdZVTChWHQRSiv2gmQscpUDtEVTNl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1605529764262021",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/c7c59a1dd9860b9b2002.webp",
@@ -1934,6 +3826,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T11:00:04.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "巴威颱風海上警報已經發布，我們嚴陣以待，緊盯各項防颱整備。\n\n今天我前往鳳山八德滯洪池視察水情，這座總工程費7千餘萬的滯洪池，是在國土署補助、農業試驗所提供用地，以及市府水利局積極協調而來，工程預計在今年9月完工，滯洪量將高達4.7萬噸，不僅能大幅改善建國路至文衡路一帶的積水隱患，未來更將兼顧環境綠美化和休憩功能。目前已具初步蓄水功能，防汛設備也已駐地待命。\n\n感謝許智傑委員長期關注，積極爭取治水資源，有智傑委員在國會全力推動，加上市府團隊高效執行，這正是高雄隊團結作戰、落實地方建設的最佳典範。\n\n治水工程沒有終點，除了上述的八德滯洪池，其他如建國路雨水箱涵改善工程，水利局已向國土署提報第二期改善計畫，我也會持續爭取後續建設經費，確保各項工程順利推動。\n\n市府防汛機制已全面上緊發條，我們會隨時緊盯颱風動向，陪伴大家平安度過風雨考驗。\n\n陳慧文 高雄市議員 張漢忠 高雄市議員 蘇致榮 鳳山阿榮 鳳山絕配 鄧巧佩 高雄小金剛許智傑服務團隊",
       "topicScores": {
         "環境": 0.5,
@@ -1945,12 +3838,34 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0AWmGtvUSskKMqDY4jQ9rKzZtPc9PDUkbeVhcocQSoreKLJXY7unJ8n4zaU3jvf5Hl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-ching",
       "candidate_id": "chang-ching",
       "candidate_name": "張靜",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:911880108610185",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/99eeabc14f45ced2acc5.webp",
@@ -1961,6 +3876,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T11:00:04.000Z",
       "sourceId": "chang-ching-party-fb",
+      "targets": [],
       "text": "📌 你以為立法院通過就結束了？其實還差一步！\n\n很多人以為，法律只要立法院三讀通過，就已經正式生效。\n\n其實，事情沒有這麼簡單。\n\n司法改革黨主席 張靜律師 在影片中說明，法律完成立法院程序後，後續仍涉及行政程序與總統公布等環節。\n\n主席也以近期引發討論的 36萬元退休資遣撫卹相關修法 為例，分享他對制度運作的看法。\n\n⚠️ 一部法律，從三讀通過到真正施行，中間到底還有哪些程序？\n\n看完影片，你就知道！\n\n歡迎留言分享你的看法 👇\n\n#司法改革黨 #張靜律師 #法律知識 #立法院 #行政院 #熱門話題 #留言討論",
       "topicScores": {
         "議會監督": 1.0
@@ -1968,12 +3884,34 @@
       "topics": [
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1563526735489920/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakXup8J8XJ/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/16717b0b4fa919be57ae.webp",
@@ -1986,6 +3924,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T10:11:01+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布 #海上警報，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -1993,12 +3932,39 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakXup8J8XJ/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakXtOoD_Yd/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/922360cd972f449f24bd.webp",
@@ -2010,6 +3976,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T10:10:47+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "雖然目前台中還無風無雨，但提醒大家不要掉以輕心，還是要做好 ＃防颱準備 喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。\n\n持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。",
       "topicScores": {
         "防災": 1.0
@@ -2017,12 +3984,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakXtOoD_Yd/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakXqXaGX4X",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b2e7c688452e304105aa.webp",
@@ -2035,6 +4024,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T10:10:22+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布海警，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -2042,12 +4032,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakXqXaGX4X"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1594180755397088",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/79fcc2a789c354f0e17b.webp",
@@ -2060,6 +4072,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T10:10:07.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布 #海上警報，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -2067,12 +4080,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0WSKJMMKmxB67EoeFAf3GPJncb5i52wfrNHTtWbvSGJPDUkJvmsSf5pCBkFXrmqiWl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakTK96k3V0",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/b07e69850b9e3045d465.webp",
@@ -2084,6 +4119,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T09:31:07+00:00",
       "sourceId": "chen-tf-threads",
+      "targets": [],
       "text": "@chen_tingfei:【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
         "文化觀光": 0.3333,
@@ -2095,12 +4131,34 @@
         "文化觀光",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DakTK96k3V0"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1588706815950574",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/dde13aaec766c381fc7c.webp",
@@ -2112,6 +4170,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T09:31:05.000Z",
       "sourceId": "chen-tf-fb",
+      "targets": [],
       "text": "【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
         "文化觀光": 0.3333,
@@ -2123,12 +4182,34 @@
         "文化觀光",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02396YN42qwqMAuYaujWvT2w1kBJJoA3qFVsEFVkF4XDbajXx7BdRpqKLMd2Q4RyiYl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakTJpsE2wT/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/ed3cd07fd63819d77f5f.webp",
@@ -2140,6 +4221,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T09:30:59+00:00",
       "sourceId": "chen-tf-ig",
+      "targets": [],
       "text": "【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
         "文化觀光": 0.3333,
@@ -2151,12 +4233,42 @@
         "文化觀光",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DakTJpsE2wT/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakQdjjEu2F/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/d0159bae4e4d9f144031.webp",
@@ -2188,6 +4300,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T09:07:29+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。\n\n二、國際力：高雄青年海外圓夢國際交流補助\n🌟擴大對象與分流設計：呼應中央海外圓夢計畫，推出地方加碼配套。將補助對象從現有高中職生，擴大到大專院校學生，並優先支持本市籍青年。\n\n🌟多元支持接軌國際：擴大支持海外實習、國際交流、專業競賽、國際志工、產業參訪與創業展會。採分流設計與擴大名額，讓人人都有機會登上世界舞台，把世界經驗帶回高雄！\n\n三、創業力：青年創業加速行動\n🌟全週期支持系統：導入青創導師制度，打造涵蓋「提案驗證、設立登記、共享空間、導師陪跑、品牌行銷、資金接洽、市場擴張」的一條龍支持體系。\n\n四、安居力：青年宜居生活支持計畫\n🌟擴大居住支持：擴大社會住宅、包租代管、租金補貼與青年友善租屋資訊等政策，並搭配通勤支持，以減輕生活壓力。\n🌟人才生活圈共好：結合 TOD發展模式，讓捷運、輕軌等大眾運輸與社宅、青創基地、托育資源緊密串聯，建構「住、行、育、業共好」的環境。\n\n五、溫暖力：青年心理健康與公共參與計畫\n🌟加碼心理諮商：結合學校、社區心理衛生中心及民間團體，擴大心理諮商協助，支持青年面對升學、求職、轉職的焦慮。\n🌟職場微型運動：鼓勵企業、校園和青年團體導入簡單可行的職場運動設施、壓力調適和健康促進活動，協助青年在緊湊的生活節奏中維持身心平衡。\n\n陳其邁市長任內推動多項青年支持政策，更積極招商引資，為高雄創造了多元的就業機會。我將延續現行政策，並透過擴大升級讓青年獲得更多元和穩定的支持。\n\n這項旗艦計畫，希望全面搭建起支持青年的系統性網絡，在未來進一步強化青年政策諮詢、社團參與和公共提案機制，讓青年成為市政討論的參與者，共同決定高雄的未來，讓大南方成為台灣下一世代的夢想核心。\n\n#讓高雄成為青年實現夢想的第一選擇",
       "topicScores": {
         "交通": 0.1579,
@@ -2209,12 +4322,41 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DakQdjjEu2F/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakPERokfKu",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/c58e852131eb194b2d9b.webp",
@@ -2230,6 +4372,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T08:55:15+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。",
       "topicScores": {
         "交通": 0.2727,
@@ -2243,12 +4386,42 @@
         "社福",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DakPERokfKu"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
       "candidate_name": "賴瑞隆",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1605458920935772",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/e4c5f73976fcc026f4b8.webp",
@@ -2280,6 +4453,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T08:55:03.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。\n\n二、國際力：高雄青年海外圓夢國際交流補助\n🌟擴大對象與分流設計：呼應中央海外圓夢計畫，推出地方加碼配套。將補助對象從現有高中職生，擴大到大專院校學生，並優先支持本市籍青年。\n\n🌟多元支持接軌國際：擴大支持海外實習、國際交流、專業競賽、國際志工、產業參訪與創業展會。採分流設計與擴大名額，讓人人都有機會登上世界舞台，把世界經驗帶回高雄！\n\n三、創業力：青年創業加速行動\n🌟全週期支持系統：導入青創導師制度，打造涵蓋「提案驗證、設立登記、共享空間、導師陪跑、品牌行銷、資金接洽、市場擴張」的一條龍支持體系。\n\n四、安居力：青年宜居生活支持計畫\n🌟擴大居住支持：擴大社會住宅、包租代管、租金補貼與青年友善租屋資訊等政策，並搭配通勤支持，以減輕生活壓力。\n🌟人才生活圈共好：結合 TOD發展模式，讓捷運、輕軌等大眾運輸與社宅、青創基地、托育資源緊密串聯，建構「住、行、育、業共好」的環境。\n\n五、溫暖力：青年心理健康與公共參與計畫\n🌟加碼心理諮商：結合學校、社區心理衛生中心及民間團體，擴大心理諮商協助，支持青年面對升學、求職、轉職的焦慮。\n🌟職場微型運動：鼓勵企業、校園和青年團體導入簡單可行的職場運動設施、壓力調適和健康促進活動，協助青年在緊湊的生活節奏中維持身心平衡。\n\n陳其邁市長任內推動多項青年支持政策，更積極招商引資，為高雄創造了多元的就業機會。我將延續現行政策，並透過擴大升級讓青年獲得更多元和穩定的支持。\n\n這項旗艦計畫，希望全面搭建起支持青年的系統性網絡，在未來進一步強化青年政策諮詢、社團參與和公共提案機制，讓青年成為市政討論的參與者，共同決定高雄的未來，讓大南方成為台灣下一世代的夢想核心。\n\n#讓高雄成為青年實現夢想的第一選擇",
       "topicScores": {
         "交通": 0.1579,
@@ -2301,12 +4475,34 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid06G4M96XZgo29cJvHEZBBPqspZiDw4YGeWQUjDzcyCcXaNuDWQX7vkSxpgdYPUQg7l"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600609431420639",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/a21342a76e47fe36b3cb.webp",
@@ -2314,6 +4510,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T08:38:09.000Z",
       "sourceId": "hsieh-lc-fb",
+      "targets": [],
       "text": "支持蔣萬安防颱上緊發條",
       "topicScores": {
         "生活": 1.0
@@ -2321,12 +4518,34 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/2586923745075025/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakM69KnVWz",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/7b1bba74c681afd508ae.webp",
@@ -2334,6 +4553,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T08:36:33+00:00",
       "sourceId": "hsieh-lc-threads",
+      "targets": [],
       "text": "@hsiehlungchieh:支持蔣萬安防颱上緊發條",
       "topicScores": {
         "生活": 1.0
@@ -2341,12 +4561,39 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DakM69KnVWz"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakM4yKGYuX",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/6ccc2c568a2331ed8bbb.webp",
@@ -2358,6 +4605,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T08:36:13+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:雖然目前台中還無風無雨，但提醒大家不要掉以輕心，還是要做好防颱準備喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。\n\n更多資訊請見中央氣象署網站：\nhttps://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html",
       "topicScores": {
         "防災": 1.0
@@ -2365,12 +4613,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、豪雨、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakM4yKGYuX"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
       "candidate_name": "謝龍介",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakM0zuShY2/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/1eaebf57c69e6aeee47d.webp",
@@ -2378,6 +4648,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T08:36:05+00:00",
       "sourceId": "hsieh-lc-ig",
+      "targets": [],
       "text": "支持蔣萬安防颱上緊發條",
       "topicScores": {
         "生活": 1.0
@@ -2385,12 +4656,39 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DakM0zuShY2/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1626193732203368",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fb44a28e93eaee60b0d7.webp",
@@ -2402,6 +4700,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T08:28:10.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "針對強颱 #巴威 襲來，中央氣象署已發布海上颱風警報，提醒大家做好防颱準備，嚴防可能的強風豪雨。\n\n雖然目前還豔陽高照，但提醒大家不要掉以輕心，還是要做好防颱準備喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。\n\n更多資訊請見中央氣象署網站：\nhttps://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html",
       "topicScores": {
         "防災": 1.0
@@ -2409,12 +4708,40 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、豪雨、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0Ah92GBB34v2Vjpk2wRjSkmGQW1Sw3FJgPNiXZNr3cPL7vXtS9NzYoGsJP1ESWvfFl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakHV5IGdRu",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/15b3e1cd74103c5c015a.webp",
@@ -2429,6 +4756,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T07:47:45+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:因應巴威颱風來襲，我和侯市長一起到萬里視察「瑪鋉溪護岸改善工程」，希望減緩這次颱風對地方的侵害，也強化在地防洪量能。\n\n另外，早上我陪同 @william_chingte 賴總統參加「臺大醫院金山分院」長照暨醫療大樓動土典禮，感謝歷任行政院長，以及新北市府團隊共同支持，未來不僅將提供醫療人員更好的工作環境，也將大幅提升北海岸的醫療量能。\n\n繼續努力、繼續拚！讓北海岸、新北都更好！",
       "topicScores": {
         "住宅": 0.1111,
@@ -2444,12 +4772,34 @@
         "社福",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakHV5IGdRu"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakGU8QCYny",
       "imageAspect": null,
       "imageUrl": null,
@@ -2461,6 +4811,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T07:38:53+00:00",
       "sourceId": "huang-sj-threads",
+      "targets": [],
       "text": "@schuanglawyer:🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
         "防災": 1.0
@@ -2468,12 +4819,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakGU8QCYny"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakGLnEk2Gj/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f4d019cd4d79fca6c8b7.webp",
@@ -2485,6 +4858,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T07:37:38+00:00",
       "sourceId": "huang-sj-ig",
+      "targets": [],
       "text": "🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
         "防災": 1.0
@@ -2492,12 +4866,34 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakGLnEk2Gj/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
       "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1542182604022939",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/d9dcbbff5b47dfef3e86.webp",
@@ -2509,6 +4905,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T07:35:33.000Z",
       "sourceId": "huang-sj-fb",
+      "targets": [],
       "text": "🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
         "防災": 1.0
@@ -2516,12 +4913,40 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0dpxyrpfBoZnzmFo7o4KDwUy2ow8TV6oJkM3v33PaRcui36mnR3QEksEaTM6fuybml"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakFg7oid2T/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/ef777392176d111b4c76.webp",
@@ -2538,6 +4963,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T07:31:49+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "北海岸更進步！提升防洪韌性、強化醫療量能\n\n因應巴威颱風來襲，我今天和侯友宜市長一起來到萬里視察「#瑪鋉溪忠福橋至中幅橋護岸改善」工程狀況，希望減緩這次颱風對於地方的侵害，以及強化在地防洪量能。\n\n2024年山陀兒颱風造成金山地區多處積水和淹水，中央與地方除了啟動員潭溪清淤及周邊治水計劃，中央也在今年六月正式核定全額補助「#員潭溪分洪及拓寬工程」總經費8200萬元。\n\n而在瑪鋉溪護岸改善工程，中央也補助近六成，期盼能共同提升萬里、金山兩地區的防洪及排水量能，我也會緊盯進度，推進工程如期如質完成，也讓鄉親有更好的生活環境。\n\n另外，早上我出席 #臺大醫院金山分院「長照暨醫療大樓」動土典禮，感謝歷任行政院長以及新北市府團隊共同支持，未來不僅將提供臺大醫院金山分院的全體醫療人員有更好的工作環境，也將大幅提升北海岸地區的醫療量能。\n\n#賴清德 總統也在現場承諾，除了原先補助的4.6億元，中央也會全額補助追加設備費1.1億，我會持續爭取工程加速落實，期望北海岸的鄉親盡快享有更好的醫療資源。\n\n我會繼續努力，提升北海岸各面向的設施，為市民打造更好的新北市！",
       "topicScores": {
         "環境": 0.1579,
@@ -2551,12 +4977,40 @@
         "防災",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakFg7oid2T/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
       "candidate_name": "蘇巧慧",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1594088795406284",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/24a659b3925e2155fb20.webp",
@@ -2573,6 +5027,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T07:30:09.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "北海岸更進步！提升防洪韌性、強化醫療量能\n\n因應巴威颱風來襲，我今天和侯友宜市長一起來到萬里視察「#瑪鋉溪忠福橋至中幅橋護岸改善」工程狀況，希望減緩這次颱風對於地方的侵害，以及強化在地防洪量能。\n\n2024年山陀兒颱風造成金山地區多處積水和淹水，中央與地方除了啟動員潭溪清淤及周邊治水計劃，中央也在今年六月正式核定全額補助「#員潭溪分洪及拓寬工程」總經費8200萬元。\n\n而在瑪鋉溪護岸改善工程，中央也補助近六成，期盼能共同提升萬里、金山兩地區的防洪及排水量能，我也會緊盯進度，推進工程如期如質完成，也讓鄉親有更好的生活環境。\n\n另外，早上我出席 #臺大醫院金山分院「長照暨醫療大樓」動土典禮，感謝歷任行政院長以及新北市府團隊共同支持，未來不僅將提供臺大醫院金山分院的全體醫療人員有更好的工作環境，也將大幅提升北海岸地區的醫療量能。\n\n賴清德總統也在現場承諾，除了原先補助的4.6億元，中央也會全額補助追加設備費1.1億，我會持續爭取工程加速落實，期望北海岸的鄉親盡快享有更好的醫療資源。\n\n我會繼續努力，提升北海岸各面向的設施，為市民打造更好的新北市！",
       "topicScores": {
         "環境": 0.1579,
@@ -2586,12 +5041,40 @@
         "防災",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02BGZDvyDuiiiD78tp9xgshnifgLZpgwSPKPg1DqQgznddzdxV4VR9dmJCRhzTuSpgl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "主張",
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
       "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1626148718874536",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/a57f2c9c76f20705d03d.webp",
@@ -2606,6 +5089,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T07:06:48.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "台灣無人機產業正站在發展的關鍵時刻，今天我和漢翔公司沙鹿廠企業工會交流，針對無人機、國機國造、航太人才培育及國防產業發展深入交換意見。\n\n我一直主張，立法院應盡快完成無人機特別條例與特別預算審議，甚至曾為此鞠躬請命。產業需要明確的政策方向和穩定的資源投入，企業才有信心提前布局、持續投資。\n\n工會理事長 #邱振銘 也提到，相較於年度預算，特別預算能提供更穩定的政策支持，更能滿足產業發展與國防自主的需求。\n\n無人機產業牽動台中上萬家供應鏈廠商、數十萬個家庭的生計。我呼籲朝野共同支持相關法案與預算，讓產業安心發展，也讓台中持續朝無人機與國防產業重鎮邁進。\n\n#心存大台中\n#台中純派",
       "topicScores": {
         "兩岸外交": 0.1765,
@@ -2617,12 +5101,34 @@
         "議會監督",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid035S1BmUeQLn3CbYdmw3tjWnDgnmgZqEHYRTVW4T1vgSEhfKdUqz9qQF5ptmMcs2RJl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakBUKNE0Rq/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/b51f4bd9cd9887362495.webp",
@@ -2636,6 +5142,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T06:55:40+00:00",
       "sourceId": "chen-tf-ig",
+      "targets": [],
       "text": "【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
         "交通": 0.8889,
@@ -2645,12 +5152,34 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DakBUKNE0Rq/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakBVmukzl9",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/5ac5d82c57cd1e972318.webp",
@@ -2664,6 +5193,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T06:55:17+00:00",
       "sourceId": "chen-tf-threads",
+      "targets": [],
       "text": "@chen_tingfei:【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
         "交通": 0.8889,
@@ -2673,12 +5203,34 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DakBVmukzl9"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chen-ting-fei",
       "candidate_id": "chen-ting-fei",
       "candidate_name": "陳亭妃",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1588623655958890",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/d09fa31a25b29d84c434.webp",
@@ -2692,6 +5244,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T06:55:15.000Z",
       "sourceId": "chen-tf-fb",
+      "targets": [],
       "text": "【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
         "交通": 0.8889,
@@ -2701,6 +5254,12 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02EPdJczaExSRbjAMqrqwrWx6pKbR5s3cdRWDZYqmkYGrcZkUuhebpBd1kdE8EHaixl"
     }
   ],

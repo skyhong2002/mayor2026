@@ -2,7 +2,23 @@
   "count": 57,
   "posts": [
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakXup8J8XJ/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/16717b0b4fa919be57ae.webp",
@@ -15,6 +31,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T10:11:01+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布 #海上警報，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -22,10 +39,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakXup8J8XJ/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakXqXaGX4X",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b2e7c688452e304105aa.webp",
@@ -38,6 +77,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T10:10:22+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布海警，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -45,10 +85,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakXqXaGX4X"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1594180755397088",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/79fcc2a789c354f0e17b.webp",
@@ -61,6 +123,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T10:10:07.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "強颱巴威持續逼近！請注意安全、做好防颱準備⚠️\n\n稍早中央氣象署已發布 #海上警報，預估週五（7/10）晚間至週六（7/11）影響最大，全台都要嚴防強風豪雨，請大家務必提前做好防颱準備。\n\n✅ 儲水、準備防災物資\n✅ 巡檢門窗、加固易墜物、疏通排水溝渠\n✅ 減少非必要外出\n✅ 避免前往山區、河川、海邊或易淹水地區\n\n最新颱風動態與消息，請留意中央氣象署官網（https://www.cwa.gov.tw）\n\n謝謝每一位堅守第一線的防災夥伴。大家一起提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -68,10 +131,38 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、淹水、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0WSKJMMKmxB67EoeFAf3GPJncb5i52wfrNHTtWbvSGJPDUkJvmsSf5pCBkFXrmqiWl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakHV5IGdRu",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/15b3e1cd74103c5c015a.webp",
@@ -86,6 +177,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T07:47:45+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:因應巴威颱風來襲，我和侯市長一起到萬里視察「瑪鋉溪護岸改善工程」，希望減緩這次颱風對地方的侵害，也強化在地防洪量能。\n\n另外，早上我陪同 @william_chingte 賴總統參加「臺大醫院金山分院」長照暨醫療大樓動土典禮，感謝歷任行政院長，以及新北市府團隊共同支持，未來不僅將提供醫療人員更好的工作環境，也將大幅提升北海岸的醫療量能。\n\n繼續努力、繼續拚！讓北海岸、新北都更好！",
       "topicScores": {
         "住宅": 0.1111,
@@ -101,10 +193,38 @@
         "社福",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakHV5IGdRu"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakFg7oid2T/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/ef777392176d111b4c76.webp",
@@ -121,6 +241,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T07:31:49+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "北海岸更進步！提升防洪韌性、強化醫療量能\n\n因應巴威颱風來襲，我今天和侯友宜市長一起來到萬里視察「#瑪鋉溪忠福橋至中幅橋護岸改善」工程狀況，希望減緩這次颱風對於地方的侵害，以及強化在地防洪量能。\n\n2024年山陀兒颱風造成金山地區多處積水和淹水，中央與地方除了啟動員潭溪清淤及周邊治水計劃，中央也在今年六月正式核定全額補助「#員潭溪分洪及拓寬工程」總經費8200萬元。\n\n而在瑪鋉溪護岸改善工程，中央也補助近六成，期盼能共同提升萬里、金山兩地區的防洪及排水量能，我也會緊盯進度，推進工程如期如質完成，也讓鄉親有更好的生活環境。\n\n另外，早上我出席 #臺大醫院金山分院「長照暨醫療大樓」動土典禮，感謝歷任行政院長以及新北市府團隊共同支持，未來不僅將提供臺大醫院金山分院的全體醫療人員有更好的工作環境，也將大幅提升北海岸地區的醫療量能。\n\n#賴清德 總統也在現場承諾，除了原先補助的4.6億元，中央也會全額補助追加設備費1.1億，我會持續爭取工程加速落實，期望北海岸的鄉親盡快享有更好的醫療資源。\n\n我會繼續努力，提升北海岸各面向的設施，為市民打造更好的新北市！",
       "topicScores": {
         "環境": 0.1579,
@@ -134,10 +255,38 @@
         "防災",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakFg7oid2T/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1594088795406284",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/24a659b3925e2155fb20.webp",
@@ -154,6 +303,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T07:30:09.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "北海岸更進步！提升防洪韌性、強化醫療量能\n\n因應巴威颱風來襲，我今天和侯友宜市長一起來到萬里視察「#瑪鋉溪忠福橋至中幅橋護岸改善」工程狀況，希望減緩這次颱風對於地方的侵害，以及強化在地防洪量能。\n\n2024年山陀兒颱風造成金山地區多處積水和淹水，中央與地方除了啟動員潭溪清淤及周邊治水計劃，中央也在今年六月正式核定全額補助「#員潭溪分洪及拓寬工程」總經費8200萬元。\n\n而在瑪鋉溪護岸改善工程，中央也補助近六成，期盼能共同提升萬里、金山兩地區的防洪及排水量能，我也會緊盯進度，推進工程如期如質完成，也讓鄉親有更好的生活環境。\n\n另外，早上我出席 #臺大醫院金山分院「長照暨醫療大樓」動土典禮，感謝歷任行政院長以及新北市府團隊共同支持，未來不僅將提供臺大醫院金山分院的全體醫療人員有更好的工作環境，也將大幅提升北海岸地區的醫療量能。\n\n賴清德總統也在現場承諾，除了原先補助的4.6億元，中央也會全額補助追加設備費1.1億，我會持續爭取工程加速落實，期望北海岸的鄉親盡快享有更好的醫療資源。\n\n我會繼續努力，提升北海岸各面向的設施，為市民打造更好的新北市！",
       "topicScores": {
         "環境": 0.1579,
@@ -167,10 +317,32 @@
         "防災",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02BGZDvyDuiiiD78tp9xgshnifgLZpgwSPKPg1DqQgznddzdxV4VR9dmJCRhzTuSpgl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DahvNAWEv4g",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/6886ab2ca4c65da0f7c8.webp",
@@ -178,6 +350,7 @@
       "platform": "threads",
       "postedAt": "2026-07-08T09:40:56+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:今晚最後一天！趕緊前往新北美術館欣賞最精彩的《海山夜行》！✨",
       "topicScores": {
         "生活": 1.0
@@ -185,10 +358,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DahvNAWEv4g"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahtcSDp6cL/",
       "imageAspect": 0.5629,
       "imageUrl": "assets/feed-images/40957b9b6b069f5887c7.webp",
@@ -200,6 +395,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T09:31:41+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "今晚最後一天！趕緊前往 #新北市美術館 欣賞最精彩的《海山夜行》！✨\n\n我和館方、策展團隊及地方創生團體共同欣賞《海山夜行》光雕及聲光展演！\n\n美術館從建物本身到草皮，都成為《海山夜行》的展演舞台，結合音樂、燈光、投影等技術，讓每一位踏進美術館的民眾，都有沈浸式的體驗！\n\n這次展覽也納入地方創生團體、學校師生的參與，除了投影設計可以看到在地特色外，還會看見小孩的畫作被投影在建物上！\n\n感謝館方、策展團隊及地方創生團體的共同努力，讓這樣 #跨域合作、結合 #在地特色 的展演能夠完成，也讓更多人看見新北美術館的美！\n\n未來我希望持續策劃跨域、跨界的展演，結合更多人的力量，並用創新方法，讓更多人看見新北的美！",
       "topicScores": {
         "教育": 0.3333,
@@ -209,10 +405,32 @@
         "文化觀光",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DahtcSDp6cL/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1593365652145265",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/6ad3063edfc875bca545.webp",
@@ -224,6 +442,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-08T09:20:59.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "今晚最後一天！趕緊前往 新北市美術館 New Taipei City Art Museum 欣賞最精彩的《海山夜行》！✨\n\n我和館方、策展團隊及地方創生團體共同欣賞《海山夜行》光雕及聲光展演！\n\n美術館從建物本身到草皮，都成為《海山夜行》的展演舞台，結合音樂、燈光、投影等技術，讓每一位踏進美術館的民眾，都有沈浸式的體驗！\n\n這次展覽也納入地方創生團體、學校師生的參與，除了投影設計可以看到在地特色外，還會看見小孩的畫作被投影在建物上！\n\n感謝館方、策展團隊及地方創生團體的共同努力，讓這樣 #跨域合作、結合 #在地特色 的展演能夠完成，也讓更多人看見新北美術館的美！\n\n未來我希望持續策劃跨域、跨界的展演，結合更多人的力量，並用創新方法，讓更多人看見新北的美！",
       "topicScores": {
         "教育": 0.3333,
@@ -233,10 +452,32 @@
         "文化觀光",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1652682755840081/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DahJUkAmRNd",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/cd873eb00b1bf4e71236.webp",
@@ -251,6 +492,7 @@
       "platform": "threads",
       "postedAt": "2026-07-08T04:07:20+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:我和台北市長候選人 @pumashen 沈伯洋、桃園市長候選人 @schuanglawyer 黃世杰，以及宜蘭縣長候選人 @lin.kuo.chang 林國漳一起簽署✍️交通改善承諾白皮書。\n\n過去十年，我在立法院大力向中央爭取預算，改善行人環境、通學步道等等，未來我不僅會繼續推動「公車站牌電子到站系統普及化」，也要提升偏鄉交通便利性與通學安全，讓新北的每一個角落，不分城鄉，都享有平等的安全保障❤️\n\n未來我擔任新北市長，不但會 「以人為本」積極推動交通改善，也要繼續加速改善學校周邊的通學環境，讓每一位市民朋友都能安心出門、平安回家！",
       "topicScores": {
         "交通": 0.4444,
@@ -264,10 +506,32 @@
         "議會監督",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DahJUkAmRNd"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahGO1Kptjc/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/64c1c258c4930efbe29c.webp",
@@ -283,6 +547,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T03:52:50+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "我和台北市長候選人 @pumashen 沈伯洋、桃園市長候選人 @schuanglawyer 黃世杰，以及宜蘭縣長候選人 @lin.kuo.chang 林國漳一起簽署「#交通改善承諾白皮書」，宣示未來我們會 #以人為本，重新檢視並改善城市整體的交通規劃與設計。\n\n過去十年，我在立法院大力向中央爭取預算，推動實體人行道拓寬、鋪面改善、行人動線淨空、公車站拓寬、通學步道改善等，未來我也要繼續推動「#公車站牌電子到站系統普及化」，希望讓所有人都能擁有更安全、舒適的生活環境。\n\n我們的新北有山有海，因此也有非常多元交通需求。未來我會透過推動 #幸福巴士 增班，並結合數位預約平台，落實點對點接送，提升偏鄉交通的便利性。此外，我也要提升在地孩子的通學安全，讓新北的每一個角落，不分城鄉，都享有平等的安全保障。\n\n非常謝謝 @nextgenwalkers 下一代人本交通促進會，未來我擔任新北市長，不但會積極推動交通改善，也要繼續加速改善學校周邊的通學環境，讓每一位市民朋友都能安心出門、平安回家。",
       "topicScores": {
         "交通": 0.6429,
@@ -296,10 +561,32 @@
         "議會監督",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DahGO1Kptjc/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1592590665556097",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/0712158b969bc01655fb.webp",
@@ -311,6 +598,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T12:04:19.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "帶著原住民族的視角和聲音，走進新北市政府！\n\n和 楊國昌 布落・馬信候選人一起舉辦座談會，不僅向大家見證我們在中央、地方一起為族人努力的成果，未來我們更要一起合作，讓新北市的原住民族有更全面的照顧！\n\n未來我會推動設置 #烏來公共托育中心，讓烏來注入充足的幼托量能；我也會持續完善 #部落聚會所興建 ，打造合適的文化學習場所；以及落實傳統領袖 #文化傳承事物費，讓傳統領袖有更好的資源做文化傳承。\n\n更重要的是，我會成立 #新北市原住民族青年團 ，未來任何有關原住民族的市政決策，原民青年的聲音都能被聽見。\n\n我希望帶著原住民族的眼睛、原住民族的心，走進新北市政府，讓族人的聲音成為市政的重要力量。未來我會和布落・馬信一起合作，打造溫暖的新北市！",
       "topicScores": {
         "文化觀光": 0.6,
@@ -320,10 +608,37 @@
         "文化觀光",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1118728017781372/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DadBHU8mYlT",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/c6b726e55b32ed935203.webp",
@@ -336,6 +651,7 @@
       "platform": "threads",
       "postedAt": "2026-07-06T13:38:39+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:￼新莊三金博物館前進一大步，行政院 @t.ai_good 卓榮泰院長核定國影中心二期計畫留新莊，增設800個汽車與800個機車停車位，經費由中央全額補助！\n\n今年三月時，我和吳秉叡委員共同向行政院爭取中央 #全力支持國影中心二期 修正計畫，並且進一步照顧新北市民的停車需求， #全額補助擴充新莊市民所需要的停車場。\n\n稍早文化部對外公布，行政院已經正式核定國影中心二期計畫，修正後總經費從原先45億元，增加為83億元，一樣由中央全額支應。同時配合新北市都市計畫需求，設置汽機車各830個停車位，評估停車位朝全地下層建置。\n\n國影中心擁有國家級的影視音館藏，我將與中央一起努力，讓國影中心成為金馬獎、金曲獎、金鐘獎的 #三金博物館，非常感謝卓榮泰院長和文化部的協助，相信未來國影中心一定可以成為匯聚台灣影視音文化的重要據點，也兼顧在地市民的需求！",
       "topicScores": {
         "交通": 0.4545,
@@ -347,10 +663,37 @@
         "社福",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DadBHU8mYlT"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1591775182304312",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/ac8fd90c91fef8ec29be.webp",
@@ -363,6 +706,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-06T13:34:29.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "新莊三金博物館前進一大步，行政院 卓榮泰院長核定國影中心二期計畫留新莊，增設800個汽車與800個機車停車位，經費由中央全額補助！\n\n今年三月時，我和吳秉叡委員共同向行政院爭取中央 #全力支持國影中心二期 修正計畫，並且進一步照顧新北市民的停車需求， #全額補助擴充新莊市民所需要的停車場。\n\n稍早文化部對外公布，行政院已經正式核定國影中心二期計畫，修正後總經費從原先45億元，增加為83億元，一樣由中央全額支應。同時配合新北市都市計畫需求，設置汽機車各830個停車位，評估停車位朝全地下層建置。\n\n國影中心擁有國家級的影視音館藏，我將與中央一起努力，讓國影中心成為金馬獎、金曲獎、金鐘獎的 #三金博物館，非常感謝卓榮泰院長和文化部的協助，相信未來國影中心一定可以成為匯聚台灣影視音文化的重要據點，也兼顧在地市民的需求！",
       "topicScores": {
         "交通": 0.4545,
@@ -374,10 +718,32 @@
         "社福",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02wLcobwWrXia4hvnKza349nbgyTxhC3AZYPvfdhhHWxAt4XDDxPDQ3MAUKm9Jp5Tcl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaadVjEmXXq",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/7f8e247bf3a1e83202ba.webp",
@@ -389,6 +755,7 @@
       "platform": "threads",
       "postedAt": "2026-07-05T13:47:33+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:從淡水、樹林，再衝到新莊！和鄭宇恩、廖宜琨、林秉宥 新世代一起加油！\n\n✨連任三屆的 @yuencheng1986 宇恩，在地深耕超過十年，最了解淡水的需要！\n\n✨我和 @yikun_liao 宜琨在樹林共同打拚，在場每一位鄉親都是我們滿滿成績的見證人！\n\n✨新莊的 @pinyulin1217 秉宥，不僅有國防外交專業，地方服務更是不遺餘力。\n\n今天我們向鄉親報告對新北的願景與規劃，未來我們也要一起繼續加油，讓新北更漂亮！",
       "topicScores": {
         "兩岸外交": 0.6667,
@@ -398,10 +765,32 @@
         "兩岸外交",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DaadVjEmXXq"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaabYQVCe8p/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/a0772a6997efc19303e9.webp",
@@ -423,6 +812,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T13:39:41+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "和 #鄭宇恩、#廖宜琨、#林秉宥 新世代做伙衝！\n\n宇恩已經連任三屆，在地深耕超過十年，最了解淡水的需要；我和宜琨在樹林共同打拚，在場每一位鄉親都是我們滿滿成績的見證人；而新莊的秉宥，不僅有國防外交專業，地方服務更是不遺餘力。\n\n今天，我們也向鄉親報告對新北的願景與規劃：\n\n✅ 在淡水，我們要繼續加速推動淡北道路、淡海科學園區、淡水新市鎮增設醫院、淡海二期輕軌 並延伸三芝，打造智慧、移居的淡水。\n\n✅ 我們也要緊盯樹林捷運、樹德安居社會住宅進度，並加速大柑園、防洪三期、三多都市計畫！我也希望能串連山佳百年車站、樹林調車場和綠廊，並設置鐵道文物館，讓樹林成為一座「活的鐵道博物館」。\n\n✅ 在新莊，除了發揚在地最驕傲的傳統文化祭儀，也要以「新莊體育園區」為核心，結合AI智慧管理，帶動新北運動產業全面再升級！\n\n#慧做事、#拚未來！我會和新北隊一起繼續加油！",
       "topicScores": {
         "交通": 0.2308,
@@ -444,10 +834,32 @@
         "體育",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaabYQVCe8p/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1590903419058155",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/f03dd3a21bad288c0533.webp",
@@ -469,6 +881,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T13:30:20.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "和新北市議員鄭宇恩、廖宜琨 新北市議員、林秉宥 新世代做伙衝！\n\n宇恩已經連任三屆，在地深耕超過十年，最了解 #淡水 的需要；我和宜琨在 #樹林 共同打拚，在場每一位鄉親都是我們滿滿成績的見證人；而 #新莊 的秉宥，不僅有國防外交專業，地方服務更是不遺餘力。\n\n今天，我們也向鄉親報告對新北的願景與規劃：\n\n在淡水，我們要繼續加速推動 #淡北道路、#淡海科學園區、#淡水新市鎮增設醫院、#淡海二期輕軌 並延伸三芝，打造智慧、移居的淡水。\n\n我們也要緊盯 #樹林捷運、#樹德安居社會住宅 進度，並加速大柑園、防洪三期、三多都市計畫！我也希望能串連山佳百年車站、樹林調車場和綠廊，並設置鐵道文物館，讓樹林成為一座「活的鐵道博物館」。\n\n在新莊，除了發揚在地最驕傲的傳統文化祭儀，也要以 #新莊體育園區 為核心，結合AI智慧管理，帶動新北運動產業全面再升級！\n\n慧做事、拚未來！我會和新北隊一起繼續加油！",
       "topicScores": {
         "交通": 0.2308,
@@ -490,10 +903,37 @@
         "體育",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0E9D6x41YogKKWq7TEtATaTPqtHEkYuBtMLV4J2rBN8ufHphMbVqpSubZmdJeE2R6l"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1590721359076361",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/a85ee5fe8e217d24c0a9.webp",
@@ -506,6 +946,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T09:12:51.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "板橋隊向前衝！新北再升級！\n\n我和 張宏陸 委員 一起拜託大家支持，讓優秀的現任議員 戴瑋姍、黃淑君 板橋、山田摩衣 繼續在議會為大家發聲，也要全力支持新人 陳俊諺 板橋・開創新願、李昆穎 板橋新未來，為新北帶來更多活力與服務！\n\n未來，我們要繼續一起努力，不但要加速推動都更，還有 #兒童未來館、#板二體育館更新、#板橋醫療園區、#泰板輕軌、#浮洲都市計畫，讓板橋更好、新北再升級！\n\n#慧做事 #拚未來\n#新世代扛起新時代",
       "topicScores": {
         "交通": 0.25,
@@ -519,10 +960,32 @@
         "醫療",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/reel/1927892891087641/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaX4Ey4k6ly",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/89ce32691a6fe2ca3c25.webp",
@@ -532,6 +995,7 @@
       "platform": "threads",
       "postedAt": "2026-07-04T13:43:28+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:謝謝超過一千組大小水獺的熱情參與！水獺媽媽樂園林口場大成功✨\n\n「水獺媽媽巧巧話」說故事頻道今年邁入第六年了，很開心能在這個暑假，把對新北和孩子的願景化為一座實體樂園🎡\n\n7/18 水獺媽媽樂園即將前進📍淡水，小水獺們都準備好了嗎？我們下次見囉！\n\n📍 水獺媽媽樂園 淡水場\n🏫 真理大學—玻璃屋（淡水區真理街32號）\n🕘 7月18日（六）09:00-16:00 \n🎟️ 免費入場",
       "topicScores": {
         "教育": 1.0
@@ -539,10 +1003,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DaX4Ey4k6ly"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "回憶"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1590004055814758",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/dc519ab8c8312adce9c0.webp",
@@ -552,6 +1038,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T13:20:16.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "#水獺媽媽樂園 林口場大成功✨\n\n謝謝大小水獺的熱情參與！今天不只一樣有好玩的 #互動闖關遊戲，還特別邀請到 小芙尼家族 帶來充滿活力的帶動唱，現場的小水獺們都嗨翻了！還有 離譜樂團Lipu String 的精彩演奏，讓會場充滿歡笑與知性樂聲！\n\n#水獺媽媽巧巧話 說故事頻道今年邁入第六年了，很開心能在這個暑假，把對新北和孩子的願景化為一座實體樂園🎡\n\n看到今天超過一千組大小朋友在現場邊玩邊學，帶著滿滿的知識與快樂回憶回家，就是我最大的動力！\n\n7/18 水獺媽媽樂園即將前進 #淡水，小水獺們都準備好了嗎？我們下次見！\n\n📍 水獺媽媽樂園 淡水場\n🏫 真理大學—玻璃屋（淡水區真理街32號）\n🕘 7月18日（六）09:00-16:00 \n🎟️ 免費入場",
       "topicScores": {
         "教育": 1.0
@@ -559,10 +1046,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0TtYzojL6qCqHKBrskHzXYKq5HxUR61LLemNu9hhd7Vf2SZpPZQ8HCUafuQR5mkNrl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "回憶"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaX1cg3lD86/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/2ad3adca18502d7b67a7.webp",
@@ -572,6 +1081,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T13:20:06+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "#水獺媽媽樂園 林口場大成功✨\n\n謝謝大小水獺的熱情參與！今天不只一樣有好玩的 #互動闖關遊戲，還特別邀請到 #小芙尼家族 帶來充滿活力的帶動唱，現場的小水獺們都嗨翻了！還有 #離譜樂團 的精彩演奏，讓會場充滿歡笑與知性樂聲！\n\n#水獺媽媽巧巧話 說故事頻道今年邁入第六年了，很開心能在這個暑假，把對新北和孩子的願景化為一座實體樂園🎡\n\n看到今天超過一千組大小朋友在現場邊玩邊學，帶著滿滿的知識與快樂回憶回家，就是我最大的動力！\n\n7/18 水獺媽媽樂園即將前進淡水，小水獺們都準備好了嗎？我們下次見！\n\n📍 水獺媽媽樂園 淡水場\n🏫 真理大學—玻璃屋（淡水區真理街32號）\n🕘 7月18日（六）09:00-16:00 \n🎟️ 免費入場",
       "topicScores": {
         "教育": 1.0
@@ -579,10 +1089,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaX1cg3lD86/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaXgEdrk7zQ",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/5d651f35068623a54164.webp",
@@ -592,6 +1124,7 @@
       "platform": "threads",
       "postedAt": "2026-07-04T10:13:42+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:早上來到熟悉的樹林三興市場，掃完市場大包小包，採買收穫滿滿！今天不只天氣很熱、鄉親們更是熱情如火，給我大大的擁抱，還有許多鼓勵❤️‍🔥\n\n未來我會和議員、里長繼續努力，為樹林鄉親打造更好的生活環境！新北隊繼續衝！",
       "topicScores": {
         "環境": 1.0
@@ -599,10 +1132,32 @@
       "topics": [
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DaXgEdrk7zQ"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXfyr4jwkc/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/27eb48aa48a9462d9dec.webp",
@@ -621,6 +1176,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T10:11:19+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "熱情相挺的 #樹林三興市場 鄉親❤️‍🔥\n\n今天早上來到熟悉的樹林三興市場，掃完市場大包小包，採買收穫滿滿！今天不只天氣很熱、鄉親們更是熱情如火，給我大大的擁抱，還有許多鼓勵！\n\n感謝樹林鄉親的支持，我們非常努力爭取各項資源，建設地方，從長壽公園地下停車場、樹林捷運等，再到翻新學校操場、新建天幕球場，拓寬更新人行道！\n\n我們也成功把三興里閒置的國有地變成停車場，讓鄉親來到菜市場採買更便利！我更提案推動國家樂生醫療人權文化館，要保存樂生醫療人權教育歷史現場！\n\n未來我會和議員、里長繼續努力，為樹林鄉親打造更好的生活環境！新北隊，繼續衝🏃🏼🏃🏼‍♀️",
       "topicScores": {
         "交通": 0.3333,
@@ -638,10 +1194,32 @@
         "環境",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaXfyr4jwkc/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1589904992491331",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/229c2b6e1080f6c66fe7.webp",
@@ -660,6 +1238,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T10:10:43.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "熱情相挺的 #樹林三興市場 鄉親❤️‍🔥\n\n今天早上來到熟悉的樹林三興市場，掃完市場大包小包，採買收穫滿滿！今天不只天氣很熱、鄉親們更是熱情如火，給我大大的擁抱，還有許多鼓勵！\n\n感謝樹林鄉親的支持，我們非常努力爭取各項資源，建設地方，從長壽公園地下停車場、樹林捷運等，再到翻新學校操場、新建天幕球場，拓寬更新人行道！\n\n我們也成功把三興里閒置的國有地變成停車場，讓鄉親來到菜市場採買更便利！我更提案推動國家樂生醫療人權文化館，要保存樂生醫療人權教育歷史現場！\n\n未來我會和議員、里長繼續努力，為樹林鄉親打造更好的生活環境！新北隊，繼續衝🏃🏼🏃🏼‍♀️",
       "topicScores": {
         "交通": 0.3333,
@@ -677,10 +1256,38 @@
         "環境",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid027rLXXiYMgz9TuaMEfWrVsRq2CsPPisWCUP5LbG4cMM5b9cuG5KdS7j2LJK9WnwtBl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXKL8KD48w/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/2d60485171dae0062405.webp",
@@ -696,6 +1303,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T08:32:13+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "挺新世代人才！讓顏蔚慈、彭一書 好議員繼續服務大家！\n\n蔚慈過去是桃園市青年局長 ，熟悉市政運作，不僅問政精準，更在青年政見上給我許多建議。\n\n四年來，蔚慈大力推動社會福利與校園建設，更站在第一線反對三重果菜市場遷移至蘆洲，做蘆洲人的最強後盾！看著擠滿支持者的廟埕，這就是蔚慈四年來努力打拚的證明。\n\n而我們土樹三鶯的彭一書，不僅深耕地方，一書更重視警消人員的權益，長期投入義消工作，我們也一起爭取為頂埔分隊蓋新厝！\n\n一書還關心基層體育，也擔任「土城家長聯合會」理事長，真真正正用行動服務地方、支持新北教育。\n\n未來，我們會繼續加速推動 #蘆洲南北側都市計畫、#蘆洲醫院，也要以新北市民權益為優先，跨縣市協調推動 #蘆社大橋，而 #捷運三鶯線 本週已正式通車，還有「捷運萬大中和線」、「捷運土城樹林線」、「捷運環狀線北環段」、「板龍快速道路」我們都會持續緊盯進度。\n\n加上 #金城交流道、 土城司法園區等等，我們會持續努力，提升在地居住品質，讓新北市民有更好的生活環境！",
       "topicScores": {
         "交通": 0.5,
@@ -711,10 +1319,38 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaXKL8KD48w/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1589782599170237",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/c2f31c8b10a058c531f1.webp",
@@ -730,6 +1366,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T06:46:39.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "挺新世代人才！讓 顏蔚慈、彭一書好議員繼續服務大家！\n\n#顏蔚慈 過去是 #桃園市青年局長 ，熟悉市政運作，不僅問政精準，更在青年政見上給我許多建議。四年來，她大力推動社會福利與校園建設，更站在第一線反對三重果菜市場遷移至蘆洲，做蘆洲人的最強後盾！看著擠滿支持者的廟埕，這就是蔚慈四年來努力打拚的證明。\n\n而我們土樹三鶯的 #彭一書，不僅深耕地方，一書更重視警消人員的權益，長期投入義消工作，我們也一起爭取為 #頂埔分隊 蓋新厝！一書還關心基層體育，也擔任 #土城家長聯合會 理事長，真真正正用行動服務地方、支持新北教育。\n\n未來，我們會繼續加速推動 #蘆洲南北側都市計畫、#蘆洲醫院，也要以新北市民權益為優先，跨縣市協調推動 #蘆社大橋，而 #捷運三鶯線 本週已正式通車，還有 #捷運萬大中和線、#捷運土城樹林線、#捷運環狀線北環段、#板龍快速道路 我們都會持續緊盯進度，加上 #金城交流道、 #土城司法園區 等等，我們會持續努力，提升在地居住品質，讓新北市民有更好的生活環境！",
       "topicScores": {
         "交通": 0.5,
@@ -745,10 +1382,32 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0WuBMuo9jJ2rjhpPtxpdo8RvZUmt8naXZaf9UeJD1SkdBbB9RwJ4W6ssEfrETewcYl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政見"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaUpiblCQVU/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/005de0bec987eaddad9d.webp",
@@ -760,6 +1419,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-03T07:38:45+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "被賴總統突襲提問！我也是狗派啦🤩\n\n今天和 @william_chingte 賴總統一起參加每年寵物界最大的盛事 #展昭台北寵物用品展 ！\n\n毛小孩是現代人生活中重要的夥伴，牠們的食品跟用品當然也非常重要！因此今天我和相關公會代表交流，未來我會繼續追蹤《寵物食品管理法》的立法進度，讓各界聲音都能納入！\n\n我也會繼續做飼主、做毛小孩的後盾！從擴大疫苗施打與健檢範圍、提升夜間醫療量能、擴大實施寵物長照等面向，用 #三大寵物政見 讓新北成為飼主安心、毛小孩開心的城市！",
       "topicScores": {
         "社福": 0.3333,
@@ -769,10 +1429,32 @@
         "醫療",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaUpiblCQVU/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政見"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1588920589256438",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/349a1529ce672f3c3861.webp",
@@ -784,6 +1466,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T07:36:48.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "被賴總統突襲提問！我也是狗派啦🤩\n\n今天和 賴清德 總統 一起參加每年寵物界最大的盛事 #展昭台北寵物用品展 ！\n\n毛小孩是現代人生活中重要的夥伴，牠們的食品跟用品當然也非常重要！因此今天我和相關公會代表交流，未來我會繼續追蹤《寵物食品管理法》的立法進度，讓各界聲音都能納入！\n\n我也會繼續做飼主、做毛小孩的後盾！從擴大疫苗施打與健檢範圍、提升夜間醫療量能、擴大實施寵物長照等面向，用 #三大寵物政見 讓新北成為飼主安心、毛小孩開心的城市！",
       "topicScores": {
         "社福": 0.3333,
@@ -793,10 +1476,32 @@
         "醫療",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02cKvRgfQ3RZVF62bsL2rvZ14hJxeb13Fgd8NVDFcPKvTD85uvgbcB6AAxhbrZ2ByJl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1588135492668281",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/cb839bdbca8bf28d5882.webp",
@@ -806,6 +1511,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T11:01:08.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "還沒參加過 #水獺媽媽樂園 的大小水獺們看過來！\n\n超過1500組大小水獺一起參與的水獺媽媽樂園，到底有多好玩？看看影片裡的孩子們笑得有多開心就知道了❤️\n\n從2020年開始，我透過Podcast頻道 #水獺媽媽巧巧話 說故事給孩子聽，6年從不間斷，已經說了超過350集故事。\n\n這禮拜水獺媽媽樂園將前往林口，現場不但有各式闖關互動機台，還有立體繪本，甚至是水獺媽媽對新北的未來願景，讓孩子有得看、有得玩、更有得學，歡迎大小朋友們一起來參加！\n\n📍水獺媽媽樂園 林口場\n🏫 林口國中－飛揚館（新北市林口區民治路25號，請從四維路校門進入）\n🕘 7月4日（六）上午9:00 至 下午4:00 \n🎟️ 免費入場",
       "topicScores": {
         "教育": 1.0
@@ -813,10 +1519,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/1029073742913387/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaSb3UBzyBS/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/42e69ec3dc264f3afb0c.webp",
@@ -826,6 +1554,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T11:00:13+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "還沒參加過 #水獺媽媽樂園 的大小水獺們看過來！\n\n超過1500組大小水獺一起參與的水獺媽媽樂園，到底有多好玩？看看影片裡的孩子們笑得有多開心就知道了❤️\n\n從2020年開始，我透過Podcast頻道 #水獺媽媽巧巧話 說故事給孩子聽，6年從不間斷，已經說了超過350集故事。\n\n這禮拜水獺媽媽樂園將前往林口，現場不但有各式闖關互動機台，還有立體繪本，甚至是水獺媽媽對新北的未來願景，讓孩子有得看、有得玩、更有得學，歡迎大小朋友們一起來參加！\n\n📍水獺媽媽樂園 林口場\n🏫 林口國中－飛揚館（新北市林口區民治路25號，請從四維路校門進入）\n🕘 7月4日（六）上午9:00 至 下午4:00 \n🎟️ 免費入場",
       "topicScores": {
         "教育": 1.0
@@ -833,10 +1562,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DaSb3UBzyBS/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政見"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaSDtynCeka/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/25f8fbbbd722894731d8.webp",
@@ -851,6 +1602,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T07:35:44+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "不只幫大家顧牙齒，也要顧生活！\n\n我在今年初推出的 #六大福利政見 就和大家報告，我們將針對長輩 #裝假牙最高補助5萬元，同時也要 #升級敬老卡，每月提升到1000點，而且 #擴大使用範圍，「可以坐公車，也可以買咪呀」，讓大家吃得健康、自在出門！\n\n我也在 #三大家庭照顧政見 中公佈，針對選擇入住住宿式長照機構的長輩，我們將調升補助至每年24萬元！希望從方方面面都能擴大照顧長輩生活。\n\n感謝新北隊給我的第一線建議，未來我們一起繼續努力，讓更多好的政見一個個來實現！",
       "topicScores": {
         "交通": 0.1,
@@ -860,10 +1612,32 @@
         "社福",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaSDtynCeka/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政見"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1588035302678300",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/c7996a5d422fed2f7a87.webp",
@@ -878,6 +1652,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T07:24:41.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "不只幫大家顧牙齒，也要顧生活！\n\n我在今年初推出的 #六大福利政見 就和大家報告，我們將針對長輩 #裝假牙最高補助5萬元，同時也要 #升級敬老卡，每月提升到1000點，而且 #擴大使用範圍，「可以坐公車，也可以買咪呀」，讓大家吃得健康、自在出門！\n\n我也在 #三大家庭照顧政見 中公佈，針對選擇入住住宿式長照機構的長輩，我們將調升補助至每年24萬元！希望從方方面面都能擴大照顧長輩生活。\n\n感謝新北隊給我的第一線建議，未來我們一起繼續努力，讓更多好的政見一個個來實現！",
       "topicScores": {
         "交通": 0.1,
@@ -887,10 +1662,32 @@
         "社福",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0ZxKQpXLB7KjetGfMApfKtE4DMYLSvhqSTmBgz3WmAszpuBvMe3sjk6aD4nFTyxMyl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1587824636032700",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/8e0ce9f14dc5e8f30c57.webp",
@@ -902,6 +1699,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T01:01:07.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "醫界為巧慧加油 #11：巧慧爭取經費 推動移植用「國家級平台」 \n\n每一份大愛捐贈的人體組織，都是延續生命、重燃希望的寶貴機會。然而，目前台灣除了設有國家眼庫、國家皮庫，其餘組織種類皆由各醫院各自保存。\n\n為了不讓珍貴的醫療資源因缺乏橫向聯繫而面臨過期、銷毀的遺憾，台灣組織庫學會 TATB 長期致力於人體組織捐贈與移植應用的資源整合。\n\n我從2023年擔任 #立法院厚生會 祕書長起，就多次召開協調會，協助組織庫學會與衛福部溝通、爭取計畫經費，希望能建立「#國家級組織庫整合平台」，強化移植用組織在各醫院間的調度。\n\n非常謝謝台灣組織庫學會 #陸振翮 理事長相挺！未來，我會和衛福部、組織庫學會繼續努力推動建立國家級整合平台，讓每份大愛都能被善用，也造福更多患者。",
       "topicScores": {
         "議會監督": 0.25,
@@ -911,10 +1709,32 @@
         "醫療",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/reel/1036164972690559/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaRXL86TaFR/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/0be43100bac7b74abef7.webp",
@@ -926,6 +1746,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T01:00:16+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "醫界為巧慧加油 #11：巧慧爭取經費 推動移植用「國家級平台」 \n\n每一份大愛捐贈的人體組織，都是延續生命、重燃希望的寶貴機會。然而，目前台灣除了設有國家眼庫、國家皮庫，其餘組織種類皆由各醫院各自保存。\n\n為了不讓珍貴的醫療資源因缺乏橫向聯繫而面臨過期、銷毀的遺憾，#台灣組織庫學會 長期致力於人體組織捐贈與移植應用的資源整合。\n\n我從2023年擔任 #立法院厚生會 祕書長起，就多次召開協調會，協助組織庫學會與衛福部溝通、爭取計畫經費，希望能建立「#國家級組織庫整合平台」，強化移植用組織在各醫院間的調度。\n\n非常謝謝台灣組織庫學會 #陸振翮 理事長相挺！未來，我會和衛福部、組織庫學會繼續努力推動建立國家級整合平台，讓每份大愛都能被善用，也造福更多患者。",
       "topicScores": {
         "議會監督": 0.25,
@@ -935,10 +1756,33 @@
         "醫療",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaRXL86TaFR/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持",
+          "凍蒜"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1587342669414230",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/d247fbfc0e9c3519eb6a.webp",
@@ -954,6 +1798,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-01T12:00:58.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "#慧做事、愛家鄰 #中和 一定贏！\n\n昨天我和 張嘉玲 來到中和座談會，感謝鄉親熱情的支持，送上包子、蒜苗和菜頭，祝福我們「包中」、「凍蒜」、「好彩頭」！\n\n嘉玲具備府、院、黨的國家級幕僚歷練，問政專業且服務全面，今天許多公會、工會也到場力挺，我們會繼續提升中和鄉親的生活品質！\n\n未來，我們不只要加速都市更新、改善老舊街廓，我們也要加速 #中和光復線 、#國道3號中和交流道改善工程 等重大工程的進度，改善中和交通！我們更要讓中和成為新北 #數位轉型的領航區，打造中和成為安居樂業的地區！\n\n同時，我也要把照顧做到更好，#提升住宿式長照補助至24萬元，並增加夜間緊急住宿量能及臨時住宿補助，讓長輩住得好、經濟也沒煩惱！\n\n#慧做事 #拚未來\n#新世代扛起新時代",
       "topicScores": {
         "交通": 0.125,
@@ -967,10 +1812,33 @@
         "經濟",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0KQLpWJjrfv6nM4yKv6aQsqimqf2d3JF5E8uNdkhNL6vXVRMf8kS6zxvmNmipyPDwl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持",
+          "凍蒜"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaP95gOCasA/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/2c20370445777e1599b1.webp",
@@ -986,6 +1854,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-01T12:00:06+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "#慧做事、愛家鄰 中和一定贏！\n\n昨天我和 #張嘉玲 來到中和座談會，感謝鄉親熱情的支持，送上包子、蒜苗和菜頭，祝福我們✨包中 ✨凍蒜 ✨好彩頭！\n\n嘉玲具備府、院、黨的國家級幕僚歷練，問政專業且服務全面，今天許多公會、工會也到場力挺，我們會繼續提升中和鄉親的生活品質！\n\n未來，我們不只要加速都市更新、改善老舊街廓，我們也要加速 #中和光復線 、#國道3號中和交流道改善工程 等重大工程的進度，改善中和交通！我們更要讓中和成為新北 #數位轉型的領航區，打造中和成為安居樂業的地區！\n\n同時，我也要把照顧做到更好， 提升住宿式長照補助至24萬元，並增加夜間緊急住宿量能及臨時住宿補助，讓長輩住得好、經濟也沒煩惱！",
       "topicScores": {
         "交通": 0.125,
@@ -999,10 +1868,37 @@
         "經濟",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaP95gOCasA/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1587243679424129",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/f90ee110250632e8da9d.webp",
@@ -1017,6 +1913,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-01T08:26:10.000Z",
       "sourceId": "su-ch-fb",
+      "targets": [],
       "text": "捷運三鶯線的完成，是中央與地方共同努力的成果，我也從來都是感謝歷任總統、行政院長、新北市歷任市府團隊，以及所有工程人員的付出。 \n\n但近期國民黨為了選舉，除了試圖抹滅他們當年反對前瞻預算的歷史，更造謠中央擋三鶯線的財務修正計劃。\n\n蘇貞昌院長第一次當院長時，為了讓頂埔科學園區有更便利的交通，拍板藍線從永寧延伸到頂埔，也因此三鶯線能夠銜接藍線。蘇院長第二度當院長，更全力支持三鶯線，任內也從未收到過三鶯線的財務修正計劃，何來「卡財務計劃」、「計劃一躺數年」？\n\n而我和吳琪銘委員捍衛前瞻預算、爭取前瞻預算挹注三鶯線，反而是國民黨反對前瞻、在立法院丟水球灑麵粉。爭取歷程清清楚楚，公開資料也都查詢得到。\n\n我希望重大工程的完成是一件大家開開心心的喜事，不該用抹黑和造謠來攻擊每一位有貢獻的人。大家一起讓新北交通更順暢，生活更便利。",
       "topicScores": {
         "交通": 0.3333,
@@ -1030,10 +1927,39 @@
         "競選",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/chiaohui.su/posts/pfbid035cp848XVDGaBuvtBexUvfCeskzZNZ9jyKEUyudH4u2fNsUiMhZ6jzXbKJWtocP4Bl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持",
+          "懇請"
+        ],
+        "policy_proposal": [
+          "政見",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DZtUFHVCio-",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/aad34ef47d5d4fe2d177.webp",
@@ -1043,6 +1969,7 @@
       "platform": "threads",
       "postedAt": "2026-06-18T01:00:50+00:00",
       "sourceId": "su-ch-threads",
+      "targets": [],
       "text": "@su.chiaohui:📢巧慧的線上捐款平台正式上線！\n\n上周公布政治獻金專戶之後，大家敲碗的線上捐款平台也在今天正式上線囉！\n\n新北市的未來藍圖，我已經提出多項福利及觀光政見，歡迎大家前往我的線上捐款網站，都可以看到所有政見詳細的資訊。\n\n如果大家認同我這十年以來的努力，也期待新北有不一樣的未來，懇請大家給我更多支持與力量，到我的線上捐款平台支持⬇️\nhttps://donate.newebpay.com/chiao/huiwin2026",
       "topicScores": {
         "文化觀光": 1.0
@@ -1050,10 +1977,40 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DZtUFHVCio-"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持",
+          "懇請"
+        ],
+        "policy_proposal": [
+          "政見",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZsfqUep-y-/",
       "imageAspect": 0.8005,
       "imageUrl": "assets/feed-images/c4deef4f46a24913ea1b.webp",
@@ -1064,6 +2021,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-18T01:00:08+00:00",
       "sourceId": "su-ch-ig",
+      "targets": [],
       "text": "📢巧慧的線上捐款平台正式上線！\n\n上周公布政治獻金專戶之後，大家敲碗的線上捐款平台也在今天正式上線囉！\n\n新北市的未來藍圖，我已經提出了✨六大福利政見、✨四大青年支持政見、✨三大家庭照顧政見、✨三大毛小孩政見、✨三大原住民族政見等福利政見，以及 ✨新皇冠海岸計畫、✨鑽石山城計畫等觀光政見，歡迎大家前往我的線上捐款網站，都可以看到所有政見詳細的資訊。\n\n如果大家認同我這十年以來的努力，也期待新北有不一樣的未來，懇請大家給我更多支持與力量，到我的線上捐款平台支持⬇️\nhttps://donate.newebpay.com/chiao/huiwin2026",
       "topicScores": {
         "文化觀光": 0.5,
@@ -1073,10 +2031,32 @@
         "社福",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DZsfqUep-y-/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:IeD82cyyI1Y",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7d5e0082e452a24c1c26.webp",
@@ -1084,6 +2064,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Su Chiao-hui x Chang Hung-lu: Team Banqiao, New Taipei, Full Speed Ahead!",
       "topicScores": {
         "生活": 1.0
@@ -1091,10 +2072,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=IeD82cyyI1Y"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Pj1gxV4JbB8",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/053112444bd5f6fde654.webp",
@@ -1102,6 +2105,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Shining New Taipei! Striving Forward with Chang Wei-chien, Li Yu-hsiang, and Lin Ping-yu",
       "topicScores": {
         "生活": 1.0
@@ -1109,10 +2113,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=Pj1gxV4JbB8"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:8T1CwDJx5KY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/1c790ae6c85af5089afd.webp",
@@ -1120,6 +2146,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【Otter Mama’s Little Chats】Sharing with Good Friends｜Fair Distribution｜Interpersonal Relationship...",
       "topicScores": {
         "生活": 1.0
@@ -1127,10 +2154,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=8T1CwDJx5KY"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:WiQGIeIVhpc",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7d1e3b8c6898cb150a83.webp",
@@ -1138,6 +2187,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "[Mother Otter's Storytime] Zazie Doesn't Want to Be a Flight Attendant Part 2 | Life Education | ...",
       "topicScores": {
         "生活": 1.0
@@ -1145,10 +2195,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=WiQGIeIVhpc"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:MDZOFferQpI",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/03f2f0ef8726d7b72bf3.webp",
@@ -1156,6 +2228,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Qiaohui, an Indigenous daughter-in-law, joins forces with Paylang Caya to support our people!",
       "topicScores": {
         "生活": 1.0
@@ -1163,10 +2236,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=MDZOFferQpI"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:IFThLmhrF8Y",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8bf113dfc920b35972e1.webp",
@@ -1174,6 +2269,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【直播】「民主的行動研究室：讓新北更好的100種可能」新店場！",
       "topicScores": {
         "生活": 1.0
@@ -1181,10 +2277,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=IFThLmhrF8Y"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:QOtqR1g2il8",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7fcf8b5a5447d601e59a.webp",
@@ -1192,6 +2310,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【直播】「民主的行動研究室：讓新北更好的100種可能」板橋場！",
       "topicScores": {
         "生活": 1.0
@@ -1199,10 +2318,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=QOtqR1g2il8"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:ahraR265ZJI",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/c3b910b348bd1efe122d.webp",
@@ -1210,6 +2351,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【直播】「民主的行動研究室：讓新北更好的100種可能」永和場！",
       "topicScores": {
         "生活": 1.0
@@ -1217,10 +2359,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=ahraR265ZJI"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:QIRhGudW0WE",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/e30e1aa0b93b58c5e242.webp",
@@ -1228,6 +2392,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【直播】「民主的行動研究室」中和場！",
       "topicScores": {
         "生活": 1.0
@@ -1235,10 +2400,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=QIRhGudW0WE"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:A7Cpkc3byyQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/c1cb213910f8671741d6.webp",
@@ -1246,6 +2433,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "【直播】「民主的行動研究室」新北首場！",
       "topicScores": {
         "生活": 1.0
@@ -1253,10 +2441,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=A7Cpkc3byyQ"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:PmvVbBN1LNA",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/cdd93a9f984b4424313a.webp",
@@ -1264,6 +2474,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Otters big and small~ See you at Linkou on 7/4 at #OtterMommyParadise!",
       "topicScores": {
         "生活": 1.0
@@ -1271,10 +2482,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/PmvVbBN1LNA"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Px-gg-AWmuQ",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/07468e9413f5f8932c75.webp",
@@ -1282,6 +2515,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "#MedicalCommunitySupportsChiaoHui Chiao-Hui Secures Funding to Promote a \"National-Level Platform...",
       "topicScores": {
         "生活": 1.0
@@ -1289,10 +2523,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Px-gg-AWmuQ"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:tVcvJvbwHME",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/32e7c6d5959a4fc3dbcf.webp",
@@ -1300,6 +2556,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Reliving the spectacular Xinzhuang Grand Pilgrimage!",
       "topicScores": {
         "生活": 1.0
@@ -1307,10 +2564,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/tVcvJvbwHME"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:qwFXn52ZkIk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/fbb389a0295e342d607f.webp",
@@ -1318,6 +2597,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "What fun and exciting activities are at Otter Mom's Paradise on 6/27?👀",
       "topicScores": {
         "生活": 1.0
@@ -1325,10 +2605,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/qwFXn52ZkIk"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:5_voypX9g1Y",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/9622a0c1d4a0a7ca8c69.webp",
@@ -1336,6 +2638,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "The Beauty of New Taipei's Coastline Deserves to Be Seen by More People❤️",
       "topicScores": {
         "生活": 1.0
@@ -1343,10 +2646,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/5_voypX9g1Y"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:4rkGRna--80",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7c82e1e0dee075526618.webp",
@@ -1354,6 +2679,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "Using Indigenous Eyes and Hearts to Protect Our People's Rights with Bulo Masin",
       "topicScores": {
         "生活": 1.0
@@ -1361,10 +2687,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=4rkGRna--80"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:PUEoSIZYLSo",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7a75345202b111d59879.webp",
@@ -1372,6 +2720,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "[Otter Mom's Storytime] Little Green Wants to Be a Dragon - Part 1 ft. Grandpa Otter | Chasing Dr...",
       "topicScores": {
         "生活": 1.0
@@ -1379,10 +2728,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=PUEoSIZYLSo"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:KM-GhUrycFE",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/87cb68d177e5d5f17d53.webp",
@@ -1390,6 +2761,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "su-ch-yt",
+      "targets": [],
       "text": "The Most Spectacular \"Haishan Night Walk\" at the New Taipei City Art Museum!✨",
       "topicScores": {
         "生活": 1.0
@@ -1397,6 +2769,12 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/KM-GhUrycFE"
     }
   ],

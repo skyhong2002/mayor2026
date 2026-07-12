@@ -2,7 +2,34 @@
   "count": 40,
   "posts": [
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊",
+          "搶修"
+        ],
+        "mobilization": [
+          "支持"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1795259361963288",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/8a81c007dec48b918f8e.webp",
@@ -16,6 +43,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T12:01:23.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "桃園市明（7/12）日 #復興區停止上班上課  其餘地區照常上班上課。\n\n雖然巴威颱風暴風圈預計今晚深夜離開台灣，但外圍環流仍將持續為復興區帶來大豪雨至超大豪雨等級降雨，這兩天已預防性撤離745人，收容135人，稍早也將華陵里2戶7人撤離並完成安置；另外針對大溪崁津部落也已全數完成疏散。\n\n在超大豪雨的侵襲下，復興區部分道路發生損壞情況，我們與區公所保持密切聯繫，能搶修的先搶修，較嚴重的也會等天氣較穩定後，儘快展開修復工作，讓居民能夠儘快返回家園，恢復正常通行。\n\n一整天下來，桃園累計已超過五萬戶曾停電，感謝台電同仁冒著風雨全力搶修，讓多數地區都能在短時間內恢復供電。我也在應變會議中一再提醒所有投入外勤工作的市府同仁及各單位夥伴，救災重要，大家自身安全更重要。\n\n另外，垃圾收運因颱風已停收兩日，明天（7/12）將於原時段加班清運。特別感謝清潔隊同仁及工會的支持，也請大家配合做好垃圾分類，不要隨意棄置垃圾，一起讓市容盡快恢復正常。\n\n截至目前，桃園整體災情都在掌握與處理當中，颱風雖然逐漸遠離，但山區雨勢仍大，請大家非必要避免前往山區及海邊活動，避免讓自己遭遇危險。\n\n市府團隊會持續守視各地狀況，妥善做好各項應變與復原工作，也請大家留意最新天氣資訊，共同平安度過這次颱風。",
       "topicScores": {
         "交通": 0.0833,
@@ -27,10 +55,46 @@
         "環境",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、停電",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02GrhAQCCJdyrYyaNJyxHNvpqrF9C9qQF8ynQ5LMpz2Z5w9KJxcyMr4pYrrXfX3w4Fl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "警戒",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DanJp5FFEHL/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/3ecfc1e91cb61286a55d.webp",
@@ -47,6 +111,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T12:05:43+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "桃園市明（7/11）停止上班上課\n\n依據中央氣象署最新預報，明天桃園市風力、雨量都已達停班停課標準。山區恐有超大豪雨，平地也可能出現大豪雨，濱海地區最大陣風更可達11至12級，巴威颱風的威力不容有任何的輕忽。\n\n為了確保市民的安全，今天一整天我也接連趕赴各區，確認相關的防颱整備工作是否就緒。\n\n從龜山華國新村、桃園捷運行控中心、新屋農會社子辦事處倉庫、力青農場，再到八德介壽路，每到一個地方，我也很欣慰看到第一線夥伴一遍又一遍確認抽水設備、檢查防汛設施、盤點物資，大家都不斷確認手邊的工作細節，也盡可能預想到各種情況，希望將颱風的影響降到最低。\n\n我相信，沒有人希望這些準備真的派上用場，但只有現在多準備一分，風雨來的時候，市民才能有更堅實的保護。\n\n目前，復興區31處土石流潛勢溪流已發布黃色警戒；入夜後，土石流潛勢溪流可能達紅色警戒。市府與復興區公所已完成復興區居民的預防性撤離。所有防災團隊今晚都會持續待命，隨時掌握各地狀況，守護市民安全。\n\n我要特別提醒大家，今晚到明天一整天都是颱風影響最明顯的時段，請大家務必做好居家防颱準備，避免前往山區、河川及海邊等危險區域，非必要請不要外出，把自己和家人的安全放在第一位。\n\n市府團隊會繼續監控颱風動態，隨時應變各項災情。如果有任何通報需求，請立即撥打119或1999市民專線。\n\n大家平安！",
       "topicScores": {
         "交通": 0.0714,
@@ -56,10 +121,46 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、停班停課、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DanJp5FFEHL/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "警戒",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1794477288708162",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/640aef235e3a3578afe3.webp",
@@ -76,6 +177,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T12:02:31.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "桃園市明（7/11）停止上班上課\n\n依據中央氣象署最新預報，明天桃園市風力、雨量都已達停班停課標準。山區恐有超大豪雨，平地也可能出現大豪雨，濱海地區最大陣風更可達11至12級，巴威颱風的威力不容有任何的輕忽。\n\n為了確保市民的安全，今天一整天我也接連趕赴各區，確認相關的防颱整備工作是否就緒。\n\n從龜山華國新村、桃園捷運行控中心、新屋農會社子辦事處倉庫、力青農場，再到八德介壽路，每到一個地方，我也很欣慰看到第一線夥伴一遍又一遍確認抽水設備、檢查防汛設施、盤點物資，大家都不斷確認手邊的工作細節，也盡可能預想到各種情況，希望將颱風的影響降到最低。\n\n我相信，沒有人希望這些準備真的派上用場，但只有現在多準備一分，風雨來的時候，市民才能有更堅實的保護。\n\n目前，復興區31處土石流潛勢溪流已發布黃色警戒；入夜後，土石流潛勢溪流可能達紅色警戒。市府與復興區公所已完成復興區居民的預防性撤離。所有防災團隊今晚都會持續待命，隨時掌握各地狀況，守護市民安全。\n\n我要特別提醒大家，今晚到明天一整天都是颱風影響最明顯的時段，請大家務必做好居家防颱準備，避免前往山區、河川及海邊等危險區域，非必要請不要外出，把自己和家人的安全放在第一位。\n\n市府團隊會繼續監控颱風動態，隨時應變各項災情。如果有任何通報需求，請立即撥打119或1999市民專線。\n\n大家平安！",
       "topicScores": {
         "交通": 0.0714,
@@ -85,10 +187,42 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、停班停課、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid0Uz1QZqEAcHh8jTZfRN8iRKbYbXgi4FKEaeT6PFFfi53AEMVEyGp4wHJ8iPax95eTl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dak7OaHn2MD/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/352f4a5282d086b37b37.webp",
@@ -105,6 +239,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T15:21:10+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
       "topicScores": {
         "教育": 0.2727,
@@ -118,10 +253,42 @@
         "社福",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dak7OaHn2MD/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1793826868773204",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/c1b2edd9887415cd0dfd.webp",
@@ -138,6 +305,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T15:19:38.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
       "topicScores": {
         "教育": 0.2727,
@@ -151,10 +319,39 @@
         "社福",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02E5cATZ3RmqPrbQJVWfdRoZoE5BKdw3sR8QUgsTpoELfTQQZaHJ3bD7PFUBWN5UpWl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakkfFSoCBi/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f471551a0a201f9964d9.webp",
@@ -169,6 +366,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T12:02:27+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "根據天氣預報，明（7/10）日下半天雨勢與風力有持續增強趨勢，考量市民通勤安全，且為讓市民朋友有充足時間因應此次25年來最強颱風，再加上復興山區達標，因此宣布明天停止上班上課。\n\n提醒市民朋友，明天中午12點以後，颱風變化情況恐加大，且明天晚上平均風力與陣風已瀕臨停班課標準，在誤差範圍內，考量整體安全，做出停班停課決策。\n\n巴威颱風來勢洶洶，桃園山區可能有 #長延時強降雨 發生，提醒大家避免前往山區；颱風期間，非必要請避免外出，遠離河川、海邊等危險地區，並持續留意最新氣象資訊。\n\n市府災害應變中心今晚6點已完成二級開設，我們會隨時掌握颱風動態，及時應變處置相關狀況。如有災情通報需求，請撥打119或1999市民服務專線。\n\n請市民朋友提早做好防颱準備，我們一起平安度過颱風天。",
       "topicScores": {
         "交通": 0.0909,
@@ -178,10 +376,39 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakkfFSoCBi/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "public_information": [
+          "提醒",
+          "停班停課",
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1793656532123571",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b9fb401731a5d2c3b8cc.webp",
@@ -196,6 +423,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T12:02:22.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "根據天氣預報，明（7/10）日下半天雨勢與風力有持續增強趨勢，考量市民通勤安全，且為讓市民朋友有充足時間因應此次25年來最強颱風，再加上復興山區達標，因此宣布明天停止上班上課。\n\n提醒市民朋友，明天中午12點以後，颱風變化情況恐加大，且明天晚上平均風力與陣風已瀕臨停班課標準，在誤差範圍內，考量整體安全，做出停班停課決策。\n\n巴威颱風來勢洶洶，桃園山區可能有 #長延時強降雨 發生，提醒大家避免前往山區；颱風期間，非必要請避免外出，遠離河川、海邊等危險地區，並持續留意最新氣象資訊。\n\n市府災害應變中心今晚6點已完成二級開設，我們會隨時掌握颱風動態，及時應變處置相關狀況。如有災情通報需求，請撥打119或1999市民服務專線。\n\n請市民朋友提早做好防颱準備，我們一起平安度過颱風天。",
       "topicScores": {
         "交通": 0.0909,
@@ -205,10 +433,38 @@
         "防災",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、停班停課、災情、災害應變中心",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02zwKV1i6NKgbGgw7FmyiYdNCWnBQLwZxrVKZVLDUJ4ZKbAiu1ig5aHEu8hrp1HjEEl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "public_information": [
+          "開放"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahW1Exnxn_/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/caa3180aa5a3944cf49e.webp",
@@ -226,6 +482,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T06:05:25+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "強颱巴威來襲 桃園市府團隊全城戒備\n\n根據最新氣象預報，強烈颱風 #巴威 持續接近台灣，由於颱風結構完整、強度高，北台灣都將受到暴風圈影響，桃園也將面臨強風豪雨的考驗。\n\n面對號稱25年以來最強的颱風，目前市府各局處已全面啟動防災整備，確保各項設備與物資隨時投入應變，全力守護市民安全：\n\n🔺水利與防汛物資\n水務局已完成全市抽水設備測試與水門整備，並針對8處滯洪池實施預先放水以空出蓄洪空間，各區移動式抽水機、沙包等防汛物資皆已隨時整備完成。\n\n🔺側溝清淤與排水設施巡檢\n今年1至6月，環保局同仁已完成全市576公里側溝的清淤工作；這兩天，更動員188人次，完成317處易淹水點的巡檢作業。\n同時，養工處與各區公所也持續針對易淹水地區加強巡檢排水設施，確保運作正常。\n\n🔺建築公安\n因應本次颱風風力驚人，都發局已加強督導全市建築工地，嚴格要求落實鷹架、圍籬等設施的固定。\n\n🔺山區防範\n因應颱風帶來的豪大雨，復興山區的狀況尤其需要特別注意，我已指示民政局、原民局與復興區公所保持密切聯繫，務必做好預防性疏散撤離整備與各項防災應變作為；工務局也將密切掌握山區土石流風險，確保山區道路通行安全與暢通。\n\n🔺地景藝術節暫停開放\n現正舉辦的「桃園地景藝術節」因展區位於沿海地區，文化局已啟動作品撤收與場域保全作業；颱風過後將於7月10日至15日暫停開放，待安全檢查完成後再恢復。\n\n我也要請市民朋友提前做好居家防颱準備，巡檢陽台花盆、遮雨棚、冷氣室外機、廣告招牌及鐵皮屋頂是否牢固，以免發生危險。\n\n市府團隊會緊盯每一個防颱細節，守護市民，讓我們一起平安度過颱風的侵襲。",
       "topicScores": {
         "交通": 0.0556,
@@ -237,10 +494,38 @@
         "文化觀光",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、大雨、淹水、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DahW1Exnxn_/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成",
+          "市府團隊"
+        ],
+        "public_information": [
+          "開放"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1792634722225752",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/509493d6651b8b13b187.webp",
@@ -258,6 +543,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-08T06:04:58.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "強颱巴威來襲 桃園市府團隊全城戒備\n\n根據最新氣象預報，強烈颱風 #巴威 持續接近台灣，由於颱風結構完整、強度高，北台灣都將受到暴風圈影響，桃園也將面臨強風豪雨的考驗。\n\n面對號稱25年以來最強的颱風，目前市府各局處已全面啟動防災整備，確保各項設備與物資隨時投入應變，全力守護市民安全：\n\n🔺水利與防汛物資\n水務局已完成全市抽水設備測試與水門整備，並針對8處滯洪池實施預先放水以空出蓄洪空間，各區移動式抽水機、沙包等防汛物資皆已隨時整備完成。\n\n🔺側溝清淤與排水設施巡檢\n今年1至6月，環保局同仁已完成全市576公里側溝的清淤工作；這兩天，更動員188人次，完成317處易淹水點的巡檢作業。\n同時，養工處與各區公所也持續針對易淹水地區加強巡檢排水設施，確保運作正常。\n\n🔺建築公安\n因應本次颱風風力驚人，都發局已加強督導全市建築工地，嚴格要求落實鷹架、圍籬等設施的固定。\n\n🔺山區防範\n因應颱風帶來的豪大雨，復興山區的狀況尤其需要特別注意，我已指示民政局、原民局與復興區公所保持密切聯繫，務必做好預防性疏散撤離整備與各項防災應變作為；工務局也將密切掌握山區土石流風險，確保山區道路通行安全與暢通。\n\n🔺地景藝術節暫停開放\n現正舉辦的「桃園地景藝術節」因展區位於沿海地區，文化局已啟動作品撤收與場域保全作業；颱風過後將於7月10日至15日暫停開放，待安全檢查完成後再恢復。\n\n我也要請市民朋友提前做好居家防颱準備，巡檢陽台花盆、遮雨棚、冷氣室外機、廣告招牌及鐵皮屋頂是否牢固，以免發生危險。\n\n市府團隊會緊盯每一個防颱細節，守護市民，讓我們一起平安度過颱風的侵襲。",
       "topicScores": {
         "交通": 0.0556,
@@ -269,10 +555,32 @@
         "文化觀光",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、大雨、淹水、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02TKaALiLc5425wuv2YMDek6kRfpCYEoqd4VyWWEKtcJSqtUnV8jdPJGYCWpGHX6Cal"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaaSlOOAkzo/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/e900fca34baa936b52f3.webp",
@@ -286,6 +594,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T12:14:17+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "到機場迎接凱旋回國的桃園孩子，給他們一個大大的擁抱。\n\n恭喜 #新明國中 勇奪LLB亞太區青少棒冠軍，一分未失取得世界賽門票！\n\n今天到機場迎接孩子們回家，看見大家臉上的笑容與自信，真的很感動。這座冠軍，是選手、教練團一路努力的成果，也是桃園深耕基層棒球最好的證明。\n\n桃園一直是棒球重鎮，更是許多國手夢想開始的地方。新明國中再次站上國際舞台，讓更多人看見台灣、看見桃園，我感到非常驕傲。\n\n下個月，孩子們將前往美國挑戰世界賽。期待大家延續這股拚戰精神，全力以赴，把世界冠軍帶回台灣。\n\n桃園加油，新明加油！你們是最棒的！",
       "topicScores": {
         "交通": 0.2,
@@ -297,10 +606,32 @@
         "交通",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaaSlOOAkzo/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1790175545805003",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/1d3c7e8f8dada22cbcd2.webp",
@@ -314,6 +645,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T12:02:12.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "到機場迎接凱旋回國的桃園孩子，給他們一個大大的擁抱。\n\n恭喜 #新明國中 勇奪LLB亞太區青少棒冠軍，一分未失取得世界賽門票！\n\n今天到機場迎接孩子們回家，看見大家臉上的笑容與自信，真的很感動。這座冠軍，是選手、教練團一路努力的成果，也是桃園深耕基層棒球最好的證明。\n\n桃園一直是棒球重鎮，更是許多國手夢想開始的地方。新明國中再次站上國際舞台，讓更多人看見台灣、看見桃園，我感到非常驕傲。\n\n下個月，孩子們將前往美國挑戰世界賽。期待大家延續這股拚戰精神，全力以赴，把世界冠軍帶回台灣。\n\n桃園加油，新明加油！你們是最棒的！",
       "topicScores": {
         "交通": 0.2,
@@ -325,10 +657,37 @@
         "交通",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1542029257627538/"
     },
     {
+      "actionEvidence": {
+        "criticism": [
+          "負責"
+        ],
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "批評究責",
+        "動員宣傳"
+      ],
+      "actions": [
+        "criticism",
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1789022432586981",
       "imageAspect": 1.6657,
       "imageUrl": "assets/feed-images/db98786c7861ad1139c1.webp",
@@ -342,6 +701,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T04:39:20.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "今天上午，我到醫院探望住院救治的員警同仁。看到他的父母和太太焦急守候，我握著他們的手，心情同樣沉重，一時說不出太多話，只能讓他們知道，市府和警察局會一直都在。\n\n這位年輕同仁，是同事眼中最可靠的夥伴，認真負責、盡忠職守。許多陪同前來的同仁們，眼眶都是紅的。\n\n我向家屬承諾，醫療與後續照顧，市府會全力協助。我們也會協助警察局，把第一線同仁的勤務負荷調整、心理支持當作最重要的事來做。照顧好第一線的夥伴，才對得起他們對市民的守護。\n\n期盼這位同仁能夠挺過難關，也期盼每一位警察，都能平平安安回家。",
       "topicScores": {
         "治安": 0.5,
@@ -353,10 +713,32 @@
         "社福",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02rbxE7HoGKjhDEBakFL5x5NVK37Urb7hQ1sxs3edMZ4DxQPHCTJRQW7Mfx2FJHXNHl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1788433519312539",
       "imageAspect": null,
       "imageUrl": null,
@@ -370,6 +752,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T13:00:18.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "今日稍早，中壢分局興國派出所一名員警在駐地宿舍發生槍擊事件，目前仍在醫院全力急救中。\n\n我在第一時間得知消息後，心情非常沉重與不捨，也立即指示警察局及衛生局全力協助醫療救治，並妥善照顧家屬，提供一切必要的支持。\n\n事件發生原因，目前仍有待進一步調查釐清。我也要求警察局全面檢視同仁關懷、心理支持及勤務管理等機制，持續強化照顧第一線執勤同仁。\n\n此刻，我仍持續為這位同仁祈福，也深深牽掛家屬此刻焦急的心情，盼望能平安度過難關。",
       "topicScores": {
         "治安": 0.4286,
@@ -381,10 +764,32 @@
         "社福",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02KWnUd3NQ1Zsa5kQdNcDMADVUCPp2dSEjPeZuoQh5ppQbsW1MC3uqn1V113m3Wxn1l"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaUuoEYkYR3/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/c086aa518a350bc77dc4.webp",
@@ -397,6 +802,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-03T08:23:39+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "2026 #桃園地景藝術節 脫胎換骨 明日即將登場\n\n桃園地景藝術節從2013年舉辦至今，每年都超過百萬人次造訪。去年開始桃園地景藝術節正式升級為雙年展模式，我們給藝術家有更多時間可以創作好作品，也藉由長期研究、跨域合作與社區共創，深化藝術與土地之間的連結。\n\n今年地景藝術節也首度跨區辦理，以35公里的 #桃園珍珠海岸 為整體策展場域，讓桃園沿海珍貴的自然生態、海洋文化、漁村聚落及產業特色，可以被更多人看見。\n\n我也要特別感謝所有策展團隊、藝術家、社區夥伴的付出，以及企業夥伴的贊助，讓桃園地景藝術節不只是市府的活動，成為凝聚地方的重要慶典。\n\n2026桃園地景藝術節這個週末即將登場，週末兩天我們也邀請到 #優人神鼓 演出，歡迎大家一起來體驗桃園珍珠海岸的魅力。",
       "topicScores": {
         "文化觀光": 0.8333,
@@ -408,10 +814,32 @@
         "環境",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DaUuoEYkYR3/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1788237515998806",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/e24dedbcd4b518c7eee7.webp",
@@ -424,6 +852,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T08:18:05.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "2026 #桃園地景藝術節 脫胎換骨 明日即將登場\n\n桃園地景藝術節從2013年舉辦至今，每年都超過百萬人次造訪。去年開始桃園地景藝術節正式升級為雙年展模式，我們給藝術家有更多時間可以創作好作品，也藉由長期研究、跨域合作與社區共創，深化藝術與土地之間的連結。\n\n今年地景藝術節也首度跨區辦理，以35公里的 #桃園珍珠海岸 為整體策展場域，讓桃園沿海珍貴的自然生態、海洋文化、漁村聚落及產業特色，可以被更多人看見。\n\n我也要特別感謝所有策展團隊、藝術家、社區夥伴的付出，以及企業夥伴的贊助，讓桃園地景藝術節不只是市府的活動，成為凝聚地方的重要慶典。\n\n2026桃園地景藝術節這個週末即將登場，週末兩天我們也邀請到 #優人神鼓 演出，歡迎大家一起來體驗桃園珍珠海岸的魅力。",
       "topicScores": {
         "文化觀光": 0.8333,
@@ -435,10 +864,33 @@
         "環境",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/2421101141715436/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaSi5vWnxif/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/ac1e8903ba194c369b1e.webp",
@@ -455,6 +907,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T12:59:32+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "#桃園智慧產業學院 正式啟動  讓更多台灣企業成為護國群山\n\nAI時代來了，決定台灣競爭力的，除了科技大廠，還有成千上萬願意轉型升級的中小企業。\n\n桃園是全台工業產值最高的城市，擁有超過1.2萬家企業，其中95%以上都是中小企業。面對AI浪潮、智慧製造、企業接班及人才培育等挑戰，市府不能只是提供補助，更要建立一套長治久安、能陪伴企業長期成長的人才培育機制。\n\n因此，我們率全國之先成立「桃園智慧產業學院」，希望打造一個協助企業智慧轉型、培育產業人才、促進跨域交流的長期平台，讓更多企業有能力升級，也讓桃園的產業競爭力持續向上。\n\n這項構想，不只是桃園的計畫。\n\n去年在桃竹竹苗區域治理平台，我就提出希望將學院資源向外延伸。如今正式付諸實現，未來課程與輔導服務將逐步拓展至新竹縣、新竹市及苗栗縣，預計明年初陸續開課，共同培育桃竹竹苗大矽谷所需要的關鍵人才。\n\n一所好的學院，需要最好的團隊。\n\n我們很榮幸邀請前行政院副院長#杜紫軍 擔任董事長，由兼具智慧製造實務經驗的漢翔前研發長吳天勝擔任院長，董事會也集結 #佳世達、#天成醫療集團、#臻鼎、#穩懋、#福佑科技 等企業代表，共同投入產業人才培育。\n\n未來除了協助企業推動智慧轉型，也將成立企業中高階主管「領袖專班」，邀請產官學界重量級講師分享最新趨勢與實務經驗。\n\n我們很榮幸的邀請到具有AI治理及科技產業經驗的新竹市 高虹安 市長，以及長期關注科技教育與人才培育的新竹縣 徐欣瑩 委員，都將加入授課陣容，讓課程更貼近企業需求。\n\n我始終相信，人才是城市最重要的投資，也是產業最穩固的競爭力。\n桃園智慧產業學院，不只是培養人才，更希望培養更多具備國際競爭力的企業。\n\n護國神山只有一座，但護國群山可以有很多座，而桃園要做的，就是讓更多企業有機會站上那座山。",
       "topicScores": {
         "教育": 0.0476,
@@ -468,10 +921,33 @@
         "教育",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaSi5vWnxif/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1787480936074464",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/bbfe09bdf09d63ef56da.webp",
@@ -488,6 +964,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T12:00:15.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "#桃園智慧產業學院 正式啟動  讓更多台灣企業成為護國群山\n\nAI時代來了，決定台灣競爭力的，除了科技大廠，還有成千上萬願意轉型升級的中小企業。\n\n桃園是全台工業產值最高的城市，擁有超過1.2萬家企業，其中95%以上都是中小企業。面對AI浪潮、智慧製造、企業接班及人才培育等挑戰，市府不能只是提供補助，更要建立一套長治久安、能陪伴企業長期成長的人才培育機制。\n\n因此，我們率全國之先成立「桃園智慧產業學院」，希望打造一個協助企業智慧轉型、培育產業人才、促進跨域交流的長期平台，讓更多企業有能力升級，也讓桃園的產業競爭力持續向上。\n\n這項構想，不只是桃園的計畫。\n\n去年在桃竹竹苗區域治理平台，我就提出希望將學院資源向外延伸。如今正式付諸實現，未來課程與輔導服務將逐步拓展至新竹縣、新竹市及苗栗縣，預計明年初陸續開課，共同培育桃竹竹苗大矽谷所需要的關鍵人才。\n\n一所好的學院，需要最好的團隊。\n\n我們很榮幸邀請前行政院副院長#杜紫軍 擔任董事長，由兼具智慧製造實務經驗的漢翔前研發長吳天勝擔任院長，董事會也集結 #佳世達、#天成醫療集團、#臻鼎、#穩懋、#福佑科技 等企業代表，共同投入產業人才培育。\n\n未來除了協助企業推動智慧轉型，也將成立企業中高階主管「領袖專班」，邀請產官學界重量級講師分享最新趨勢與實務經驗。\n\n我們很榮幸的邀請到具有AI治理及科技產業經驗的新竹市 高虹安 市長，以及長期關注科技教育與人才培育的新竹縣 徐欣瑩 委員，都將加入授課陣容，讓課程更貼近企業需求。\n\n我始終相信，人才是城市最重要的投資，也是產業最穩固的競爭力。\n桃園智慧產業學院，不只是培養人才，更希望培養更多具備國際競爭力的企業。\n\n護國神山只有一座，但護國群山可以有很多座，而桃園要做的，就是讓更多企業有機會站上那座山。",
       "topicScores": {
         "教育": 0.0476,
@@ -501,10 +978,32 @@
         "教育",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid04TS3oXesGfvN6CD5t2Tb3vJZncMb7KkwpHpGHxBZH6K4Dd9MQjJLJT1jWTZfQNZ9l"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "午餐"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaRxOJxn0fB/",
       "imageAspect": 1.3304,
       "imageUrl": "assets/feed-images/953422e462eb4e6188cd.webp",
@@ -514,6 +1013,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T04:48:11+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "昨天衛福部食藥署公布，中聯油脂約1300公噸大豆沙拉油檢驗異常，檢出致癌物苯駢芘超標。桃園市政府接獲通報後，立即啟動食安應變機制，展開全面清查、迅速處置。\n\n我要求衛生局第一時間通知各大賣場、量販店及食品販售通路，針對食藥署公告的受影響品牌、品項及批號全面下架，也同步查核食品製造業、餐飲業及下游業者，確認問題產品沒有持續流通。\n\n另外，雖然目前正值暑假，我還是特別要求盤點校園午餐使用情形。只要涉及孩子的食品安全，就不能因為沒有供餐而鬆懈，後續如果發現有相關產品，一律停止使用、封存更換。\n\n如果市民家中購買到食藥署公告的受影響產品，請先停止食用，並向原購買通路辦理退換貨；如有相關問題，也可撥打1950或0800-285-000尋求協助。\n\n食品安全不能有絲毫鬆懈，市府會持續配合中央追蹤產品流向、落實稽查，隨時向市民報告最新狀況，全力守護大家的食安。",
       "topicScores": {
         "教育": 1.0
@@ -521,10 +1021,37 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaRxOJxn0fB/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "午餐"
+        ],
+        "public_information": [
+          "最新資訊"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1787205696101988",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/79e5e298bd15052c6248.webp",
@@ -535,6 +1062,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T04:47:03.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "更新最新資訊\n\n因應油品食安事件，衛生局今日查核販售業11家、餐飲業6家、攤販8家等共計25家，架上及作業場所內均未見案內疑似違規產品，業者均已自主預防性下架及退貨完成，另查核工廠2家，未見違規產品，抽驗1件油品進行監測。\n\n另，教育局與各校聯繫確認從源頭查證供應商使用情況，再經查詢食材登平台重複驗證後，確認本市16家外訂餐盒廠商及食材供應商均未使用上開批號的食用油。\n\n—————————————————————-\n\n昨天衛福部食藥署公布，中聯油脂約1300公噸大豆沙拉油檢驗異常，檢出致癌物苯駢芘超標。桃園市政府接獲通報後，立即啟動食安應變機制，展開全面清查、迅速處置。\n\n我要求衛生局第一時間通知各大賣場、量販店及食品販售通路，針對食藥署公告的受影響品牌、品項及批號全面下架，也同步查核食品製造業、餐飲業及下游業者，確認問題產品沒有持續流通。\n\n另外，雖然目前正值暑假，我還是特別要求盤點校園午餐使用情形。只要涉及孩子的食品安全，就不能因為沒有供餐而鬆懈，後續如果發現有相關產品，一律停止使用、封存更換。\n\n如果市民家中購買到食藥署公告的受影響產品，請先停止食用，並向原購買通路辦理退換貨；如有相關問題，也可撥打1950或0800-285-000尋求協助。\n\n食品安全不能有絲毫鬆懈，市府會持續配合中央追蹤產品流向、落實稽查，隨時向市民報告最新狀況，全力守護大家的食安。",
       "topicScores": {
         "教育": 1.0
@@ -542,10 +1070,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02wMAQDFNRekMZRmVenJMs2KWA6Le2gQhkxfx9ZoQkEvb5iMkAgfW9sACHyYggetAnl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaKwbqXFBFz/",
       "imageAspect": 1.7647,
       "imageUrl": "assets/feed-images/86b125ee0771391b8a48.webp",
@@ -560,6 +1110,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-29T11:26:35+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "#2026台灣設計展 主視覺正式發布！\n\n今年，我們以 「桃園流 TAOYUAN in FLOW」 作為2026台灣設計展的策展主題，希望透過設計，讓更多人看見桃園是一座持續流動、持續創新的城市。\n\n今天一起公布主視覺與主題角色 #Flowmomo，是設計師呈現給台灣最美的景色。\n\n主視覺由「明道工作室 Akibo Works 」的 #李明道 老師與「優仕創意 StudioPros 」的 #李宜軒 老師跨世代攜手打造，以流動的線條描繪桃園快速成長的城市節奏，並運用代表科技創新的藍色，以及象徵文化交融的粉色，呈現桃園兼具產業實力與創意能量的城市特色。\n\n首次亮相的Flowmomo，更是我很喜歡的設計。\n它結合拉拉山水蜜桃與飛機起落架兩個最具桃園代表性的元素，非常可愛，更象徵桃園身為國門城市，持續起飛、不斷向前的城市精神。\n\n今年設計展將以青埔、中壢為兩大主展區，包括桃園會展中心、市立圖書館青埔智慧科技分館、中原文創園區，並串聯桃園市立美術館戶外空間等五大衛星展區，集結超過百組設計團隊，透過16個主題展覽，展現設計如何走進生活，也走進城市治理。\n\n我要感謝經濟部產業發展署、台灣設計研究院讓桃園有機會辦理這場盛事，桃園是一座因流動、交流而成長的城市，期待透過這次台灣設計展，讓更多人重新認識桃園，也看見這座城市持續前進的創新能量。\n\n9月24日至10月11日，歡迎大家來桃園，一起感受「桃園流 TAOYUAN in FLOW」的魅力。",
       "topicScores": {
         "文化觀光": 0.2,
@@ -571,10 +1122,32 @@
         "競選",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DaKwbqXFBFz/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1784779629677928",
       "imageAspect": 0.7068,
       "imageUrl": "assets/feed-images/de10dd70ce547e84a3ad.webp",
@@ -589,6 +1162,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-29T11:04:43.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "#2026台灣設計展 主視覺正式發布！\n\n今年，我們以 「桃園流 TAOYUAN in FLOW」 作為2026台灣設計展的策展主題，希望透過設計，讓更多人看見桃園是一座持續流動、持續創新的城市。\n\n今天一起公布主視覺與主題角色 #Flowmomo，是設計師呈現給台灣最美的景色。\n\n主視覺由「明道工作室 Akibo Works 」的 #李明道 老師與「優仕創意 StudioPros 」的 #李宜軒 老師跨世代攜手打造，以流動的線條描繪桃園快速成長的城市節奏，並運用代表科技創新的藍色，以及象徵文化交融的粉色，呈現桃園兼具產業實力與創意能量的城市特色。\n\n首次亮相的Flowmomo，更是我很喜歡的設計。\n它結合拉拉山水蜜桃與飛機起落架兩個最具桃園代表性的元素，非常可愛，更象徵桃園身為國門城市，持續起飛、不斷向前的城市精神。\n\n今年設計展將以青埔、中壢為兩大主展區，包括桃園會展中心、市立圖書館青埔智慧科技分館、中原文創園區，並串聯桃園市立美術館戶外空間等五大衛星展區，集結超過百組設計團隊，透過16個主題展覽，展現設計如何走進生活，也走進城市治理。\n\n我要感謝經濟部產業發展署、台灣設計研究院 TDRI讓桃園有機會辦理這場盛事，桃園是一座因流動、交流而成長的城市，期待透過這次台灣設計展，讓更多人重新認識桃園，也看見這座城市持續前進的創新能量。\n\n9月24日至10月11日，歡迎大家來桃園，一起感受「桃園流 TAOYUAN in FLOW」的魅力。",
       "topicScores": {
         "文化觀光": 0.2,
@@ -600,10 +1174,32 @@
         "競選",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02cW5UrGwyvb4TRyr2Z3fQT9oPVy4GBicT5UG1EfuQDWv17cxLpNvDMPPo7UvBaUZUl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaCPcNVn2iA/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/8660a241668c655476f7.webp",
@@ -615,6 +1211,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-26T04:04:24+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "緊盯水情、加速搶修，全力守護市民安全\n\n今天一早，我先前往水務局水情中心掌握全市降雨與各區水情，也到 #經國路與莊敬路口 了解道路受損及搶修情形。\n\n經初步研判，該路段因短時間大量雨水匯入，上游排水量瞬間增加，加上下游水壓升高，造成局部路面受損及溢流。市府已要求工務局及相關單位儘速釐清原因，必要時開挖檢視管線與路基結構，全力完成搶修，確保道路安全。\n\n市府將全面檢討經國路排水系統及上游集水區接管情形，針對人孔、管線轉折及排水銜接節點進行全面檢視，並研議增設洩壓設施，降低未來豪大雨帶來的風險。\n\n目前水務局已開設水災強化三級應變中心，各局處及各區公所持續待命，隨時掌握各地狀況、即時應變處置。\n\n感謝所有第一線同仁堅守崗位，全力投入防災與搶修工作，我們會繼續嚴陣以待，也請市民朋友外出時務必小心，注意安全。",
       "topicScores": {
         "交通": 0.5,
@@ -624,10 +1221,32 @@
         "交通",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaCPcNVn2iA/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1782038543285370",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/1856a09a4dbf99e9e0f9.webp",
@@ -639,6 +1258,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-26T04:03:21.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "緊盯水情、加速搶修，全力守護市民安全\n\n今天一早，我先前往水務局水情中心掌握全市降雨與各區水情，也到 #經國路與莊敬路口 了解道路受損及搶修情形。\n\n經初步研判，該路段因短時間大量雨水匯入，上游排水量瞬間增加，加上下游水壓升高，造成局部路面受損及溢流。市府已要求工務局及相關單位儘速釐清原因，必要時開挖檢視管線與路基結構，全力完成搶修，確保道路安全。\n\n市府將全面檢討經國路排水系統及上游集水區接管情形，針對人孔、管線轉折及排水銜接節點進行全面檢視，並研議增設洩壓設施，降低未來豪大雨帶來的風險。\n\n目前水務局已開設水災強化三級應變中心，各局處及各區公所持續待命，隨時掌握各地狀況、即時應變處置。\n\n感謝所有第一線同仁堅守崗位，全力投入防災與搶修工作，我們會繼續嚴陣以待，也請市民朋友外出時務必小心，注意安全。",
       "topicScores": {
         "交通": 0.5,
@@ -648,10 +1268,32 @@
         "交通",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02c3ef5haiwGUSJk1F96AYTqPyuoXLcbtb5yQFt2ZCQ2U92qQsJ8D9rR9oz8ZRRYSAl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1781921606630397",
       "imageAspect": null,
       "imageUrl": null,
@@ -665,6 +1307,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-26T00:38:53.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "強降雨鋒面來襲，桃園跨局處全面整備待命\n\n稍早，我已前往水情中心確認整備以及各區受影響的狀況，以及預計排除時間；隨即也會到現地瞭解，全府協力讓民眾的不便降到最低。\n\n受到滯留鋒面與西南風影響，全台迎來顯著強降雨威脅。為即時守護市民安全，水務局已於今晨5時許開設 #水災強化三級應變中心，工務局養工處與各區公所相關同仁全數進駐。\n\n除此之外，今早國道一號北向 42.6 公里（龜山路段）處，發生的遊覽車與多輛自小客車重大追撞事故，我已指示消防局立即啟動大量傷患救護機制，調派13 輛車輛全力搶救。目前該路段外側三車道封閉縮減，南桃園交流道亦受影響，車流從大興西路回堵至寶慶路；市府已透過警廣、CMS資訊看板及APP發布訊息並持續追蹤。\n\n市府將緊盯水情，也請市民出門提高警覺、注意行車安全。若發現局部積淹水或側溝堵塞，請立即利用 1999或「水情看桃園 APP」即時通報，市府團隊將在第一時間派員處置。",
       "topicScores": {
         "治安": 0.2857,
@@ -674,10 +1317,33 @@
         "防災",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "淹水、事故",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/SanCheng624/posts/pfbid02LabbrWujdbKAAth4RyZ5kJm1sRTJrstZCskF1jzRG5SnKat4r7ycyou5EnkWBUFyl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該",
+          "方案"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1778933230262568",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/8296cbce3a5113eff088.webp",
@@ -690,6 +1356,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-22T12:01:12.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "用新世代的智慧，接棒未來的護國群山\n\n今天上午，我出席余紀忠文教基金會的 #夏日Lighthouse未來提案工作坊  ，和現場許多跨領域的年輕朋友們交流。\n\n台下的年輕學子們來自各個不同科系，看到他們，讓我回想起自己大學時學土木工程、卻一頭栽進電腦世界的過往。那時的跨領域嘗試，也影響了我後來的職業生涯。\n\n過去的台積電時代，台灣傾全國的理工菁英，打造出引以為傲的護國神山。但面對現在的 AI 浪潮，許多非理工背景的年輕朋友常會焦慮：「如果我不是念理工，在未來的時代還有機會嗎？」\n\n我的答案是，機會反而更多、更廣。\n\n面對 AI 時代與全球供應鏈重組，未來的競爭力將從「MIT製造」升級為「Taiwan Intelligence」，也就是把我們的專業知識、製造經驗與應用智慧，轉化為可輸出的技術、服務與解決方案。\n\n未來的護國群山，不應該只有科技產業一枝獨秀。各行各業透過數位與智慧轉型、改變商業模式，百業共榮，台灣的貧富差距也才能逐步縮小。\n\n勉勵現在正處於 AI 成長浪潮起跑點的年輕朋友們，早一步思考科技如何為你的專業賦能。期待看到你們用智慧接棒，打造出屬於這世代的護國群山。",
       "topicScores": {
         "教育": 0.1429,
@@ -699,10 +1366,33 @@
         "經濟",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/reel/1440975334506691/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該",
+          "方案"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZ4yv_BRc1q/",
       "imageAspect": 0.5629,
       "imageUrl": "assets/feed-images/9d88f469168b7b27af65.webp",
@@ -715,6 +1405,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-22T12:01:10+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "用新世代的智慧，接棒未來的護國群山\n\n今天上午，我出席余紀忠文教基金會 @whodoyouwanttobe__ 的 #夏日Lighthouse未來提案工作坊 ，和現場許多跨領域的年輕朋友們交流。\n\n台下的年輕學子們來自各個不同科系，看到他們，讓我回想起自己大學時學土木工程、卻一頭栽進電腦世界的過往。那時的跨領域嘗試，也影響了我後來的職業生涯。\n\n過去的台積電時代，台灣傾全國的理工菁英，打造出引以為傲的護國神山。但面對現在的 AI 浪潮，許多非理工背景的年輕朋友常會焦慮：「如果我不是念理工，在未來的時代還有機會嗎？」\n\n我的答案是，機會反而更多、更廣。\n\n面對 AI 時代與全球供應鏈重組，未來的競爭力將從「MIT製造」升級為「Taiwan Intelligence」，也就是把我們的專業知識、製造經驗與應用智慧，轉化為可輸出的技術、服務與解決方案。\n\n未來的護國群山，不應該只有科技產業一枝獨秀。各行各業透過數位與智慧轉型、改變商業模式，百業共榮，台灣的貧富差距也才能逐步縮小。\n\n勉勵現在正處於 AI 成長浪潮起跑點的年輕朋友們，早一步思考科技如何為你的專業賦能。期待看到你們用智慧接棒，打造出屬於這世代的護國群山。",
       "topicScores": {
         "教育": 0.1429,
@@ -724,10 +1415,32 @@
         "經濟",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DZ4yv_BRc1q/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZy86qsn7Jw/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/49cd8cf6a502ad1b0343.webp",
@@ -742,6 +1455,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-20T05:34:15+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "傳承超過110年的龍潭埤塘龍舟賽，這個週末在龍潭大池熱鬧登場。\n\n今年總獎金高達183萬元、吸引分128組隊伍參賽，其中，女力隊伍更從去年的9隊增加到了14隊。\n\n龍潭埤塘龍舟賽不只是競賽，更是桃園重要的節慶文化。\n除了觀賞龍舟賽事、現場也有非常豐富的系列活動，像是仲夏市集、音樂饗宴、精彩的水上高樁獅，以及大家最期待的花火之夜。\n\n端午佳節，歡迎大家來龍潭大池，感受百年龍舟的熱血與魅力，也一起為參賽選手加油！\n\n#端午安康",
       "topicScores": {
         "文化觀光": 0.6667,
@@ -751,10 +1465,32 @@
         "文化觀光",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DZy86qsn7Jw/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1777041867118371",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/448c3f89a8477f40808c.webp",
@@ -769,6 +1505,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-20T05:32:14.000Z",
       "sourceId": "chang-sc-fb",
+      "targets": [],
       "text": "傳承超過110年的龍潭埤塘龍舟賽，這個週末在龍潭大池熱鬧登場。\n\n今年總獎金高達183萬元、吸引分128組隊伍參賽，其中，女力隊伍更從去年的9隊增加到了14隊。\n\n龍潭埤塘龍舟賽不只是競賽，更是桃園重要的節慶文化。\n除了觀賞龍舟賽事、現場也有非常豐富的系列活動，像是仲夏市集、音樂饗宴、精彩的水上高樁獅，以及大家最期待的花火之夜。\n\n端午佳節，歡迎大家來龍潭大池，感受百年龍舟的熱血與魅力，也一起為參賽選手加油！\n\n#端午安康",
       "topicScores": {
         "文化觀光": 0.6667,
@@ -778,10 +1515,32 @@
         "文化觀光",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/1479391190867342/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZuwvkTFHDy/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/c2578c239ae4ebf9b55a.webp",
@@ -792,6 +1551,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-18T14:30:33+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "橘海再度席捲桃園巨蛋\n恭喜 #桃園璞園領航猿 勇奪二連霸！\n\n今晚，我和滿場球迷一起在桃園巨蛋，親眼見證桃園璞園領航猿 @taoyuan_pilots_official 在總冠軍賽第七戰頂住壓力、守住主場，再次把冠軍留在桃園。\n\n這個系列賽一路走來高潮迭起，領航猿頂住每一次衝擊，用最頑強的意志力與鬥志，再次證明了冠軍球隊的實力。\n\n我要向所有球員、教練團及後勤團隊致上最高的敬意與謝意，也讓這座歷經整修升級、重新迎接球迷的桃園巨蛋，在回歸的第一個賽季就見證冠軍榮耀。\n\n同時，今晚也是 #林志傑 職業生涯的最後一場比賽。謝謝「野獸」多年來帶給台灣籃壇的感動，也謝謝兩隊在今晚傾盡全力，我們都會記住這一場難忘的經典對決。\n\n球員們辛苦了，好好休息。\n下個球季，我們繼續相約桃園巨蛋，捍衛屬於桃園的榮耀，讓橘海一次又一次沸騰！\n\n#RETURNTOOURSKY",
       "topicScores": {
         "體育": 1.0
@@ -799,10 +1559,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DZuwvkTFHDy/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZr6zbPCQ1k/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/e0d9c3a62ad12cf067f2.webp",
@@ -817,6 +1599,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-17T12:00:45+00:00",
       "sourceId": "chang-sc-ig",
+      "targets": [],
       "text": "#首都客運 加入桃園！新闢 #南環線 9月上路 市民卡可免費搭乘\n\n大家關心的公車服務品質，我們一直放在心上。\n\n這幾年，我們推動大客車駕駛「受訓即就業」以及「桃小巴」來紓解駕駛荒。今年再推出「TAB新桃園幹線公車計畫」，新闢與增班幹線公車、優化候車設施、更新公車動態資訊，也與迪士尼米奇及好友家族主題合作，讓市民朋友搭乘公車更便利舒適。\n\n今年4月桃園市區公車的總運量已達到352.4萬人次，較去年同期顯著成長7.6%；其中，桃園新幹線五大幹線的運量也達到122.4萬人次，較去年同期增加8.3%。這些數據顯示出市民朋友搭乘公共運輸的意願正持續提升。為了讓大家有更優質的公共運輸服務，市府也持續積極延攬外縣市的優良客運業者。\n\n在雙北地區以駕駛訓練嚴謹、班次管理良好而屢獲評鑑優等的「首都客運」，這次順利取得了新闢路線 #南環線 （中壢平鎮環線）的籌備經營權，這也是首都客運在桃園的第一條純境內公車路線。\n\n全新的「南環線」以環型方式串聯中壢火車站、台一幹線、機場捷運線、中豐幹線等其他幹線公車路線與重要交通節點，尖峰時段十五分鐘一班、離峰半小時一班，預計在今年9月正式上路，刷市民卡即可免費搭乘。\n\n這只是一個起點，未來市府還會繼續延攬更多外縣市的優良客運業者進駐桃園，透過良性競爭為桃園的公共運輸帶來新氣象，給市民朋友們更安全便捷的通勤服務。",
       "topicScores": {
         "交通": 0.9231,
@@ -826,10 +1609,32 @@
         "交通",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DZr6zbPCQ1k/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:EFQBLjcT0m4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/a92e0d4388785e9ca4cb.webp",
@@ -839,6 +1644,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "人生的球場上沒有標準答案，找到屬於你的位置，你就是MVP！",
       "topicScores": {
         "體育": 1.0
@@ -846,10 +1652,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=EFQBLjcT0m4"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:j_plqV2hAwc",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/155bba34b0532c41b010.webp",
@@ -857,6 +1685,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "2026桃園的國際年味",
       "topicScores": {
         "生活": 1.0
@@ -864,10 +1693,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=j_plqV2hAwc"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:ZWJ6U_kXGKQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/837cd8bdb4318b12927c.webp",
@@ -875,6 +1726,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "張市長出任務x桃園馬吉來拜年",
       "topicScores": {
         "生活": 1.0
@@ -882,10 +1734,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=ZWJ6U_kXGKQ"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "投票"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:D8dlMsquQJ0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/9579c53523b747f402bf.webp",
@@ -895,6 +1769,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "買好這週返鄉的車票了嗎？還在猶豫要不要回家投票嗎？聽聽在地桃青怎麼說🙋‍♂️🙋‍♀️",
       "topicScores": {
         "競選": 1.0
@@ -902,10 +1777,32 @@
       "topics": [
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=D8dlMsquQJ0"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "投票"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:R8CQhLnKKAA",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/de2f4b6979bf17570595.webp",
@@ -915,6 +1812,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "①起回桃園 ①起挺善良！買好這週返鄉的車票了嗎？還在猶豫要不要回家投票嗎？聽聽在地桃青怎麼說🙋‍♂️🙋‍♀️#shorts #張善政 #1126挺善良",
       "topicScores": {
         "競選": 1.0
@@ -922,10 +1820,32 @@
       "topics": [
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=R8CQhLnKKAA"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:kY9Z_Yz8NIs",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/97700f2998d393959c62.webp",
@@ -935,6 +1855,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "2026桃園地景藝術節",
       "topicScores": {
         "文化觀光": 1.0
@@ -942,10 +1863,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/kY9Z_Yz8NIs"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:GiPuEoLJfng",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/0bbf8e49cb72a9eaef72.webp",
@@ -953,6 +1896,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "用新世代的智慧，接棒未來的護國群山",
       "topicScores": {
         "生活": 1.0
@@ -960,10 +1904,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/GiPuEoLJfng"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:MsnVh_GDSmk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/0b633e62d3e198f57319.webp",
@@ -971,6 +1937,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "#桃園暑期夏令營 給孩子一個不只有3C產品的精采暑假",
       "topicScores": {
         "生活": 1.0
@@ -978,10 +1945,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/MsnVh_GDSmk"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:_85o_zyRJNA",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/90e93f2126de05bfbe12.webp",
@@ -991,6 +1980,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "戴上冠軍戒指，歡迎桃園璞園領航猿重回主場！",
       "topicScores": {
         "體育": 1.0
@@ -998,10 +1988,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/_85o_zyRJNA"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Al6GBY1G9eY",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/62135e7227bdf779bb77.webp",
@@ -1009,6 +2021,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chang-sc-yt",
+      "targets": [],
       "text": "母親節，我要向每一位媽媽說聲辛苦了！",
       "topicScores": {
         "生活": 1.0
@@ -1016,6 +2029,12 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Al6GBY1G9eY"
     }
   ],

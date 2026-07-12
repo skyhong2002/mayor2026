@@ -19,10 +19,26 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 81,
+  "count": 84,
   "posts": [
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1607633274051670",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/6cd7cec8ae2fd3ec45a0.webp",
@@ -34,6 +50,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-12T01:15:23.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "早安高雄！\n\n一早我來到左營文武聖殿，參加新廟落成入火安座平安遶境的起駕典禮，和大家一起向關聖帝君祈福。這幾天颱風過境，我也特別向關聖帝君祈求，保佑所有受風雨影響的市民朋友都能平安度過難關，早日恢復正常生活。\n\n感謝陳正誠主委、薛煒立爐主及廟方團隊的用心。左營文武聖殿是左營重要的信仰中心，長期關懷弱勢家庭，把溫暖送進社區，這份基層的互助人情味令人感動。\n\n祝福遶境圓滿順利，祈求帝君庇佑高雄風調雨順、百業興旺。大家平安健康、闔家安康。\n\n李柏毅 拚搏未來 黃文志 高雄市議員 李雅慧 高雄市議員 尹立 左營楠梓市議員參選人 理想青年 張以理",
       "topicScores": {
         "社福": 0.3333,
@@ -45,10 +62,33 @@
         "競選",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02GFds5uHYntxvC1JJPWhuYnLymG84yPVXGEZH6tsciKcSzp3FGdYUvVEQ9LcLn6Lvl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1607114777436853",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/7622c35d7af54d29c53f.webp",
@@ -60,6 +100,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T10:07:30.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "因山區連日大雨已達警戒標準，為確保安全，市府宣布，六龜、甲仙、茂林、桃源及那瑪夏等五個行政區，明（12）日停止上班上課。高雄市其他的行政區，則恢復正常上班上課。\n\n特別提醒山區的朋友，連日大雨容易造成土石鬆動，請務必配合各區公所的撤離指示，一切以安全為第一優先。明天需要出門的市區朋友，也請記得攜帶雨具，騎車或開車多預留一點時間，隨時小心瞬間的強陣風。\n\n向每一位挺進山區、守護基層的防災夥伴致上最高敬意。明天出門，請大家務必把自身安全放在第一位，我們團結一心，攜手度過這次的風雨考驗！",
       "topicScores": {
         "防災": 1.0
@@ -67,10 +108,33 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "大雨、警戒",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02Fayb1PkRzK2hA85WFqGvFuXnfEW8yR98QUhRuo7ngmd5F5s6Nc8TZguUDVUNG8oJl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam-LUUieSv",
       "imageAspect": null,
       "imageUrl": null,
@@ -82,6 +146,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T10:25:23+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -89,10 +154,33 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dam-LUUieSv"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam-FkpAZ_M/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/ccc872ff9c355e3419e4.webp",
@@ -104,6 +192,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T10:24:39+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -111,10 +200,33 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dam-FkpAZ_M/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1606319877516343",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/2cb77303aa8e7a5732dd.webp",
@@ -126,6 +238,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T10:24:33.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "📢提醒市民朋友\n\n根據中央氣象署資訊，明（11）日高雄市風力預測最大陣風達8至9級，沿海地區經評估將出現10級以上陣風，山區雨量預測也達340毫米，已達停班停課標準。\n\n高雄市政府宣布，7月11日（六）全市停止上班、停止上課。\n\n颱風影響期間，非必要請避免外出；如需外出，也請避開山區、沿海等地的危險區域，並配合市府及各單位防災措施。\n\n請大家提高警覺，平安度過颱風天。",
       "topicScores": {
         "防災": 1.0
@@ -133,10 +246,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0FNrXYtEWXxEHG6aQBgWtkgENrTeiS9HcWVqNnbYrTyHRKwLgyFbVwVY3fk5qZsmsl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dam4gy2EfpK",
       "imageAspect": null,
       "imageUrl": null,
@@ -144,6 +279,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T09:35:54+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:視察防颱整備工作，全力守護市民朋友安全！",
       "topicScores": {
         "生活": 1.0
@@ -151,10 +287,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/Dam4gy2EfpK"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dam37QzgDXb/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/8fd0b4173ea71f69dab8.webp",
@@ -162,6 +320,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T09:31:21+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "視察防颱整備工作，全力守護市民朋友安全！",
       "topicScores": {
         "生活": 1.0
@@ -169,10 +328,33 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/Dam37QzgDXb/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamzIhCEen1",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/9e1d1af7007784c825a5.webp",
@@ -184,6 +366,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:48:53+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:根據中央氣象署資訊，今（10）日晚間高雄山區雨量預測已達停班停課標準。\n\n高雄市政府已公布，今晚6時起，那瑪夏、桃源、茂林、甲仙及六龜區停班、停課。\n\n入夜後風雨可能增強，提醒市民朋友持續留意颱風與雨勢資訊，非必要避免前往山區、沿海、溪邊等危險區域，也請大家配合市府及各單位防災措施。\n\n我和高雄隊也會持續掌握各區狀況，全力守護市民朋友安全！",
       "topicScores": {
         "防災": 1.0
@@ -191,10 +374,33 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DamzIhCEen1"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "停班停課"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Damy6blgYDe/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/c76f1febd09c269a1cff.webp",
@@ -206,6 +412,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T08:47:00+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "根據中央氣象署資訊，今（10）日晚間高雄山區雨量預測已達停班停課標準。\n\n高雄市政府已公布，今晚6時起，那瑪夏、桃源、茂林、甲仙及六龜區停班、停課。\n\n入夜後風雨可能增強，提醒市民朋友持續留意颱風與雨勢資訊，非必要避免前往山區、沿海、溪邊等危險區域，也請大家配合市府及各單位防災措施。\n\n我和高雄隊也會持續掌握各區狀況，全力守護市民朋友安全！",
       "topicScores": {
         "防災": 1.0
@@ -213,10 +420,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、停班停課、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Damy6blgYDe/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamY_dnEVTs",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/0adad5b3ff7cf1327b31.webp",
@@ -224,6 +453,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T05:00:28+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:確認再確認，將風險降到最低。\n\n今早前往鹽埕北斗抽水站和楠梓美昌抽水站視察防颱整備，確保各項防汛工程都能在關鍵時刻發揮效用。\n\n我會與高雄隊持續緊盯各項防汛工程如期執行，全力守護市民朋友的安全！\n\n@huangjie_official @poyilee__ \n@lichiaoju_official  @2014_chikoyan @wenchih0717 @yahui_li0830 @changyilisocool @aaronyin",
       "topicScores": {
         "生活": 1.0
@@ -231,10 +461,37 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamY_dnEVTs"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamTNoWAVNI/",
       "imageAspect": 1.5019,
       "imageUrl": "assets/feed-images/ec36b28b682efc0e9669.webp",
@@ -246,6 +503,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T04:10:00+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "確認再確認，將風險降到最低。\n\n今早前往鹽埕北斗抽水站和楠梓美昌抽水站視察防颱整備，確保各項防汛工程都能在關鍵時刻發揮效用。\n\n📌 鹽埕北斗抽水站\n該站於去年五月正式啟用，目前運作順利，但在提升整體雨水下水道系統上還有2,400萬元的經費缺口，這部分我將與黃捷委員全力協助向中央爭取。\n\n📌 楠梓美昌抽水站\n為了強化右昌周邊地勢低窪區域排水，李柏毅委員也長期關注改善情形，美昌抽水站獲得中央補助4,000萬元，預計擴增兩部沉水式抽水機，總抽水量將提升到每秒4噸；站體前池也同步進行擴建，預計今年12月底就能完工。\n\n我會與高雄隊持續緊盯各項防汛工程如期執行，全力守護市民朋友的安全。也再次提醒大家，儘管巴威颱風減弱為中度仍不可輕忽，氣象署已對高雄市發佈陸上強風「黃色燈號」，平均風6級以上或有8級以上陣風出現，外出務必留意安全，避免掉落物造成危險。\n\n黃捷 李柏毅 拚搏未來 \n姐姐的行動力  李喬如  簡煥宗 高雄市議員 \n黃文志 高雄市議員  李雅慧 高雄市議員  尹立 左營楠梓市議員參選人 理想青年 張以理",
       "topicScores": {
         "社福": 0.3333,
@@ -257,10 +515,32 @@
         "競選",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DamTNoWAVNI/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dalv64pE7DT",
       "imageAspect": 0.5623,
       "imageUrl": "assets/feed-images/0b6cbf8aabe01a726897.webp",
@@ -270,6 +550,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T23:01:37+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -277,10 +558,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/Dalv64pE7DT"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dalu-0ayPWW/",
       "imageAspect": 0.5623,
       "imageUrl": "assets/feed-images/e134945e0c7a5ca527a0.webp",
@@ -290,6 +593,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T23:01:26+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
       "topicScores": {
         "防災": 1.0
@@ -297,10 +601,38 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dalu-0ayPWW/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaknUiliTiH",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/b21f57bd30bcfb35b541.webp",
@@ -313,6 +645,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T12:27:12+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:巴威颱風海上警報已經發布，我們嚴陣以待，緊盯各項防颱整備。\n\n今天我前往鳳山八德滯洪池視察水情，這座總工程費7千餘萬的滯洪池，是在國土署補助、農業試驗所提供用地，以及市府水利局積極協調而來，工程預計在今年9月完工，滯洪量將高達4.7萬噸，不僅能大幅改善建國路至文衡路一帶的積水隱患，未來更將兼顧環境綠美化和休憩功能。目前已具初步蓄水功能，防汛設備也已駐地待命。\n\n感謝許智傑委員長期關注，積極爭取治水資源，有智傑委員在國會全力推動，加上市府團隊高效執行，這正是高雄隊團結作戰、落實地方建設的最佳典範。\n\n治水工程沒有終點，除了上述的八德滯洪池，其他如建國路雨水箱涵改善工程，水利局已向國土署提報第二期改善計畫，我也會持續爭取後續建設經費，確保各項工程順利推動。\n\n市府防汛機制已全面上緊發條，我們會隨時緊盯颱風動向，陪伴大家平安度過風雨考驗。",
       "topicScores": {
         "環境": 0.5,
@@ -324,10 +657,38 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DaknUiliTiH"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察",
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1605529764262021",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/c7c59a1dd9860b9b2002.webp",
@@ -340,6 +701,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T11:00:04.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "巴威颱風海上警報已經發布，我們嚴陣以待，緊盯各項防颱整備。\n\n今天我前往鳳山八德滯洪池視察水情，這座總工程費7千餘萬的滯洪池，是在國土署補助、農業試驗所提供用地，以及市府水利局積極協調而來，工程預計在今年9月完工，滯洪量將高達4.7萬噸，不僅能大幅改善建國路至文衡路一帶的積水隱患，未來更將兼顧環境綠美化和休憩功能。目前已具初步蓄水功能，防汛設備也已駐地待命。\n\n感謝許智傑委員長期關注，積極爭取治水資源，有智傑委員在國會全力推動，加上市府團隊高效執行，這正是高雄隊團結作戰、落實地方建設的最佳典範。\n\n治水工程沒有終點，除了上述的八德滯洪池，其他如建國路雨水箱涵改善工程，水利局已向國土署提報第二期改善計畫，我也會持續爭取後續建設經費，確保各項工程順利推動。\n\n市府防汛機制已全面上緊發條，我們會隨時緊盯颱風動向，陪伴大家平安度過風雨考驗。\n\n陳慧文 高雄市議員 張漢忠 高雄市議員 蘇致榮 鳳山阿榮 鳳山絕配 鄧巧佩 高雄小金剛許智傑服務團隊",
       "topicScores": {
         "環境": 0.5,
@@ -351,10 +713,40 @@
         "防災",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0AWmGtvUSskKMqDY4jQ9rKzZtPc9PDUkbeVhcocQSoreKLJXY7unJ8n4zaU3jvf5Hl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakQdjjEu2F/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/d0159bae4e4d9f144031.webp",
@@ -386,6 +778,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T09:07:29+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。\n\n二、國際力：高雄青年海外圓夢國際交流補助\n🌟擴大對象與分流設計：呼應中央海外圓夢計畫，推出地方加碼配套。將補助對象從現有高中職生，擴大到大專院校學生，並優先支持本市籍青年。\n\n🌟多元支持接軌國際：擴大支持海外實習、國際交流、專業競賽、國際志工、產業參訪與創業展會。採分流設計與擴大名額，讓人人都有機會登上世界舞台，把世界經驗帶回高雄！\n\n三、創業力：青年創業加速行動\n🌟全週期支持系統：導入青創導師制度，打造涵蓋「提案驗證、設立登記、共享空間、導師陪跑、品牌行銷、資金接洽、市場擴張」的一條龍支持體系。\n\n四、安居力：青年宜居生活支持計畫\n🌟擴大居住支持：擴大社會住宅、包租代管、租金補貼與青年友善租屋資訊等政策，並搭配通勤支持，以減輕生活壓力。\n🌟人才生活圈共好：結合 TOD發展模式，讓捷運、輕軌等大眾運輸與社宅、青創基地、托育資源緊密串聯，建構「住、行、育、業共好」的環境。\n\n五、溫暖力：青年心理健康與公共參與計畫\n🌟加碼心理諮商：結合學校、社區心理衛生中心及民間團體，擴大心理諮商協助，支持青年面對升學、求職、轉職的焦慮。\n🌟職場微型運動：鼓勵企業、校園和青年團體導入簡單可行的職場運動設施、壓力調適和健康促進活動，協助青年在緊湊的生活節奏中維持身心平衡。\n\n陳其邁市長任內推動多項青年支持政策，更積極招商引資，為高雄創造了多元的就業機會。我將延續現行政策，並透過擴大升級讓青年獲得更多元和穩定的支持。\n\n這項旗艦計畫，希望全面搭建起支持青年的系統性網絡，在未來進一步強化青年政策諮詢、社團參與和公共提案機制，讓青年成為市政討論的參與者，共同決定高雄的未來，讓大南方成為台灣下一世代的夢想核心。\n\n#讓高雄成為青年實現夢想的第一選擇",
       "topicScores": {
         "交通": 0.1579,
@@ -407,10 +800,39 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DakQdjjEu2F/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakPERokfKu",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/c58e852131eb194b2d9b.webp",
@@ -426,6 +848,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T08:55:15+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。",
       "topicScores": {
         "交通": 0.2727,
@@ -439,10 +862,40 @@
         "社福",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DakPERokfKu"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1605458920935772",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/e4c5f73976fcc026f4b8.webp",
@@ -474,6 +927,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T08:55:03.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "雄青五力 未來有你\n\n青年是高雄下一世代發展和城市轉型的關鍵力量。為了讓高雄成為年輕人能勇敢作夢、踏實圓夢的友善城市，我將在現有穩健良好的施政基礎上，進一步全面升級對年輕人的支持。\n\n今天我正式發布青年政見藍圖「南方有夢 雄青五力旗艦計畫」，從職涯、國際、創業、安居到身心調適，提出五大核心方針：\n\n一、職涯力：大港青年實習計畫 2.0\n🌟規模倍增、嚴格把關：以現行基礎翻倍，讓實習成為青年接軌實務的關鍵門票，並確保每次實習都能學到專業。同時推動技職循環，讓產業經驗回到校園，促進技職人才持續累積。\n🌟轉正獎勵階梯化：推出雙軌分流獎勵，除了現行一般產業轉正留任滿3個月發給1萬元獎勵金；若進入傳統製造、在地零售餐飲、文創青創等產業，再加碼5,000元（合計最高1.5萬元）。\n🌟在地通勤補助：依照實習距離提供最高2,000元交通補助，兼顧交通平權，給予跨生活圈青年支持。\n\n二、國際力：高雄青年海外圓夢國際交流補助\n🌟擴大對象與分流設計：呼應中央海外圓夢計畫，推出地方加碼配套。將補助對象從現有高中職生，擴大到大專院校學生，並優先支持本市籍青年。\n\n🌟多元支持接軌國際：擴大支持海外實習、國際交流、專業競賽、國際志工、產業參訪與創業展會。採分流設計與擴大名額，讓人人都有機會登上世界舞台，把世界經驗帶回高雄！\n\n三、創業力：青年創業加速行動\n🌟全週期支持系統：導入青創導師制度，打造涵蓋「提案驗證、設立登記、共享空間、導師陪跑、品牌行銷、資金接洽、市場擴張」的一條龍支持體系。\n\n四、安居力：青年宜居生活支持計畫\n🌟擴大居住支持：擴大社會住宅、包租代管、租金補貼與青年友善租屋資訊等政策，並搭配通勤支持，以減輕生活壓力。\n🌟人才生活圈共好：結合 TOD發展模式，讓捷運、輕軌等大眾運輸與社宅、青創基地、托育資源緊密串聯，建構「住、行、育、業共好」的環境。\n\n五、溫暖力：青年心理健康與公共參與計畫\n🌟加碼心理諮商：結合學校、社區心理衛生中心及民間團體，擴大心理諮商協助，支持青年面對升學、求職、轉職的焦慮。\n🌟職場微型運動：鼓勵企業、校園和青年團體導入簡單可行的職場運動設施、壓力調適和健康促進活動，協助青年在緊湊的生活節奏中維持身心平衡。\n\n陳其邁市長任內推動多項青年支持政策，更積極招商引資，為高雄創造了多元的就業機會。我將延續現行政策，並透過擴大升級讓青年獲得更多元和穩定的支持。\n\n這項旗艦計畫，希望全面搭建起支持青年的系統性網絡，在未來進一步強化青年政策諮詢、社團參與和公共提案機制，讓青年成為市政討論的參與者，共同決定高雄的未來，讓大南方成為台灣下一世代的夢想核心。\n\n#讓高雄成為青年實現夢想的第一選擇",
       "topicScores": {
         "交通": 0.1579,
@@ -495,10 +949,32 @@
         "環境",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid06G4M96XZgo29cJvHEZBBPqspZiDw4YGeWQUjDzcyCcXaNuDWQX7vkSxpgdYPUQg7l"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1605359787612352",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/911066a37e7f44e2193a.webp",
@@ -514,6 +990,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T05:51:22.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "賴瑞隆和高雄隊成功爭取！\n高雄市27件優先治水預算正式核定\n\n面對極端氣候帶來的強降雨，強化大高雄防洪能力刻不容緩。為了加速推動「因應氣候變遷縣市管河川及排水整體改善計畫」，高雄隊緊密合作，積極向中央爭取治水資源。\n\n從5月21日經濟委員會當面要求盤點需求，到7月1日書面質詢強力追蹤。經過連月緊盯，經濟部在7月3日正式核定第一批共27件優先治理工程！這次我們成功爭取到第一期測設及用地先期作業經費2.89億元，並於昨日收到正式函文。\n\n這次成功爭取到的27項優先治理工程，涵蓋了大高雄15個行政區，包含滯洪池擴建、抽水站增設及護岸整治等關鍵基礎設施。這筆預算將精準挹注於各區最迫切的防洪需求，加速打通長年累積的排水瓶頸。\n\n防洪建設是高雄邁向韌性城市的關鍵基石。隨著先期作業全面啟動，我會持續爭取後續各期經費順利到位。接下來，我也將嚴格督促發包及施工進度，確保治水預算如期如質落實，打造安全宜居的韌性高雄。",
       "topicScores": {
         "環境": 0.3846,
@@ -527,10 +1004,32 @@
         "經濟",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0mZGpGmr2m1mvxfTGxUVfTZG3caZdtoWx3WHApC2niqhTMR7aRFJY3znCa2X6DUf1l"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Daj6AMEERPA",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/0a5b03cff3502071ed69.webp",
@@ -546,6 +1045,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T05:51:12+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:賴瑞隆和高雄隊成功爭取！\n高雄市27件優先治水預算正式核定\n\n面對極端氣候帶來的強降雨，強化大高雄防洪能力刻不容緩。為了加速推動「因應氣候變遷縣市管河川及排水整體改善計畫」，高雄隊緊密合作，積極向中央爭取治水資源。\n\n從5月21日經濟委員會當面要求盤點需求，到7月1日書面質詢強力追蹤。經過連月緊盯，經濟部在7月3日正式核定第一批共27件優先治理工程！這次我們成功爭取到第一期測設及用地先期作業經費2.89億元，並於昨日收到正式函文。\n\n這次成功爭取到的27項優先治理工程，涵蓋了大高雄15個行政區，包含滯洪池擴建、抽水站增設及護岸整治等關鍵基礎設施。這筆預算將精準挹注於各區最迫切的防洪需求，加速打通長年累積的排水瓶頸。\n\n防洪建設是高雄邁向韌性城市的關鍵基石。隨著先期作業全面啟動，我會持續爭取後續各期經費順利到位。接下來，我也將嚴格督促發包及施工進度，確保治水預算如期如質落實，打造安全宜居的韌性高雄。",
       "topicScores": {
         "環境": 0.3846,
@@ -559,10 +1059,37 @@
         "經濟",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/Daj6AMEERPA"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ],
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DajyDJTERXd",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/9950e82b1cbebad362f0.webp",
@@ -573,6 +1100,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T04:41:42+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:面對可能的氣候風險，必須做好萬全準備。\n\n7/5前往田寮月世界抽水站現勘，瞭解現場需求，也緊盯清疏進度及新建護岸工程規劃。目前「月世界2號護岸加固加高搶險工程」已完工；同時，在水利署也趕在巴威颱風之前，增設三組抽水設備部署。",
       "topicScores": {
         "環境": 0.5,
@@ -582,10 +1110,32 @@
         "環境",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DajyDJTERXd"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DajoUe2EsYn/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/4052fc3937a3b66435c4.webp",
@@ -593,6 +1143,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T03:17:14+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "走進市場，走近市民生活！\n市民朋友的期許，我會努力做到！",
       "topicScores": {
         "生活": 1.0
@@ -600,10 +1151,50 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DajoUe2EsYn/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "criticism": [
+          "負責"
+        ],
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "主張",
+          "應該",
+          "必須",
+          "方案"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度",
+        "批評究責",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update",
+        "criticism",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dah4totgaxb/",
       "imageAspect": 1.0059,
       "imageUrl": "assets/feed-images/9ef9e64c1c2a4a3ec19f.webp",
@@ -624,6 +1215,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T11:01:29+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "高雄作為一座進步的城市，在做好基礎建設的同時也要替未來的產業發展鋪路。\n\n我在今日經濟委員會質詢時，明確地向經濟部龔明鑫部長爭取，從解決低窪地區的淹水問題、推動傳統市場的現代化翻新，再到要求推動區域差別電價及算力中心設置應有助於打造AI產業聚落及帶給當地的效益，政府必須緊盯細節，確保資源都能被有效運用。\n\n➡️爭取3億元治水預算，強化防洪韌性\n\n日前的短延時強降雨，造成部分低窪地區受到積淹水挑戰。我專程前往二仁溪周邊現勘，確認清疏、提高護岸及加強抽水站的迫切需求。經過積極爭取協調，經濟部同意投入3億元經費改善。\n我也要求水利單位，務必在颱風來臨前先完成清疏，並依序完成堤岸加高工程，用最快速度解決大家積淹水的困擾。\n\n➡️爭取4500萬經費，推動前鎮第一公有市場現代化\n\n前鎮第一公有市場位在亞洲新灣區的核心地帶，但老舊的臨時市場空間，已經無法滿足周邊發展的需求。在今日質詢上，經濟部承諾將4,500萬元的改建經費納入「中小微企業支持方案」，待市府團隊和攤商達成退場共識後，未來這裡將蛻變為嶄新、現代化的市場，成為亞灣區最亮眼的門面。\n\n➡️推動區域差別電價，AI算力中心帶動在地就業\n\n高雄為台灣提供充足發電能量的同時，周邊居民也承擔了相應的影響。我也要求經濟部，加速評估「區域差別電價」，這才是對周邊居民負責的做法。我也主張，未來的AI算力及應用中心，應該優先設置在電廠周邊，力求實質帶動高雄在地產業的群聚和創造就業機會。\n\n對此，經濟部長承諾，將「對在地產業及就業效益」納入算力中心建置的優先評估指標。\n\n把基礎建設做扎實，把產業紅利留在高雄，是我們對這座城市堅定的承諾。我會繼續緊盯各項工程進度，用踏實的腳步，為大家打造一個更安全、繁榮的好生活。",
       "topicScores": {
         "環境": 0.0357,
@@ -637,10 +1229,37 @@
         "議會監督",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dah4totgaxb/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DahrR5YkVzC",
       "imageAspect": null,
       "imageUrl": null,
@@ -657,6 +1276,7 @@
       "platform": "threads",
       "postedAt": "2026-07-08T09:04:04+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:要引領全台科技轉型，高雄必須同時具備最厚實的人才庫及最強大的算力引擎。\n\n今年五月，我正式發表了最完整的全方位AI應用。為了加速推進這項跨世代戰略，今天在質詢時，我向經濟部明確要求，未來的國家級「AI算力中心」必須發揮帶動在地產業及創造優質就業的最大效益。只要把最核心的基礎設施留在高雄，我們就能創造最強大的科技磁吸效應，從三大方向帶動城市全面升級。\n\n一、高階人才供應系統，創造強大磁吸效應\n\n產業要走向國際，必須建立自己的高階人才庫。市府團隊已成功引進清華大學、陽明交大等頂尖學府設立分校，打造「國家重點領域校際研教園區」。透過「共教、共研、共育、共用」的模式，我們將建立最強大的高階人才供應系統，用最頂尖的頭腦來支撐半導體及AI算力發展，讓高雄成為全球科技人才的首選之地。",
       "topicScores": {
         "教育": 0.0769,
@@ -668,10 +1288,39 @@
         "教育",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DahrR5YkVzC"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ],
+        "policy_proposal": [
+          "必須",
+          "提出",
+          "方案"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dahq6DNgemT/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/4edae46548350b71c408.webp",
@@ -694,6 +1343,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T09:00:50+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "要引領全台科技轉型，高雄必須同時具備最厚實的人才庫及最強大的算力引擎。\n\n今年五月，我正式發表了最完整的全方位AI應用。為了加速推進這項跨世代戰略，今天在質詢時，我向經濟部明確要求，未來的國家級「AI算力中心」必須發揮帶動在地產業及創造優質就業的最大效益。只要把最核心的基礎設施留在高雄，我們就能創造最強大的科技磁吸效應，從三大方向帶動城市全面升級。\n\n一、高階人才供應系統，創造強大磁吸效應\n\n產業要走向國際，必須建立自己的高階人才庫。市府團隊已成功引進清華大學、陽明交大等頂尖學府設立分校，打造「國家重點領域校際研教園區」。透過「共教、共研、共育、共用」的模式，我們將建立最強大的高階人才供應系統，用最頂尖的頭腦來支撐半導體及AI算力發展，讓高雄成為全球科技人才的首選之地。\n\n二、建構算力公共底座，打造主權AI燈塔\n\nAI時代，算力就是國力及城市競爭力。未來我們推動進駐的「AI算力中心」，將結合主權AI及專屬產業模型庫，成為支撐本地產業升級的公共底座。同時，我們更要落實「AI治理產業化」，透過CityGPT城市大腦，將交通、防災及道路維護等寶貴的治理經驗，轉化為可輸出的國際級解決方案，讓高雄成為主權AI的指標燈塔。\n\n三、AI賦能百工百業，帶動傳統產業轉型\n\n科技的進步必須讓全民受惠。龐大的AI算力絕不能只停留在高科技園區，更要真正深入高雄的百工百業。從半導體研發、傳統製造業的智慧排程，到農漁業的產銷預測及冷鏈管理，甚至是文化觀光的精準行銷，未來我們都要透過AI大幅提升效率及產值。唯有讓算力真正落地，高雄的產業轉型才會全速前進。\n\n高雄的未來，將是一座強勢輸出科技的智慧首都！我們在今年五月提出的這份藍圖，從頂尖人才的培育、算力底座的建構，到深入百工百業的全面賦能，正是帶領高雄衝刺下一個黃金十年的具體戰略。我們已經為下一階段的城市升級準備好明確的行動綱領，未來將以最厚實的人才儲備及最強大的算力引擎，帶領高雄全速邁向世界的頂尖舞台！",
       "topicScores": {
         "交通": 0.0513,
@@ -713,10 +1363,32 @@
         "防災",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/Dahq6DNgemT/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DahEn2hETJP",
       "imageAspect": null,
       "imageUrl": null,
@@ -724,6 +1396,7 @@
       "platform": "threads",
       "postedAt": "2026-07-08T03:26:16+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:國家級研教園區人才中心！\n\n攜手清大、陽明交大等頂尖學府，在高雄設立分校與研教據點，串聯南部大專院校能量，打造「高階人才供應系統」！",
       "topicScores": {
         "生活": 1.0
@@ -731,10 +1404,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DahEn2hETJP"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahDz6lEvKC/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/4f1ba8c3bad9abe1179b.webp",
@@ -742,6 +1437,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T03:23:32+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "國家級研教園區人才中心！\n\n攜手清大、陽明交大等頂尖學府，在高雄設立分校與研教據點，串聯南部大專院校能量，打造「高階人才供應系統」！",
       "topicScores": {
         "生活": 1.0
@@ -749,10 +1445,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DahDz6lEvKC/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DafYAYpCWLq",
       "imageAspect": null,
       "imageUrl": null,
@@ -760,6 +1478,7 @@
       "platform": "threads",
       "postedAt": "2026-07-07T11:37:10+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:提前部署、做好萬全準備，守護鄉親安全！",
       "topicScores": {
         "生活": 1.0
@@ -767,10 +1486,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DafYAYpCWLq"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1603799174435080",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/31f9185a56afcb2ed2fa.webp",
@@ -778,6 +1519,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T11:01:50.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "提前部署、做好萬全準備，守護鄉親安全！",
       "topicScores": {
         "生活": 1.0
@@ -785,10 +1527,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1871255820857815/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DafT6GFjWWK/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/7ab93ee649f2c9ae9a45.webp",
@@ -796,6 +1560,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-07T11:01:49+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "提前部署、做好萬全準備，守護鄉親安全！",
       "topicScores": {
         "生活": 1.0
@@ -803,10 +1568,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DafT6GFjWWK/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DafH7irkX0M",
       "imageAspect": 1.0059,
       "imageUrl": "assets/feed-images/d9226a923df90b8f8241.webp",
@@ -817,6 +1604,7 @@
       "platform": "threads",
       "postedAt": "2026-07-07T09:16:42+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:針對中聯油脂大豆沙拉油事件，市府團隊今日已進一步查明第三層下游流向。我們持續緊盯食安後續處置，最新清查進度如下：\n\n✅ 確認第三層流向：經詳細比對批號，轄內新增 20 家販售、加工及餐飲業者使用到問題油品。\n\n✅ 嚴格要求下架：所有涉案的問題油品及加工產品皆已全數下架，並公告退換貨事宜，累積回收已達 3,551 公升。\n\n✅ 擴大通路稽查：針對市內農會、美食街、市場夜市商圈等 1,222 家通路進行清查，皆未發現違規使用問題油品。\n\n食安防線不容任何妥協，除了地方政府的全面清查，我也會持續緊盯食藥署，確保中央澈底落實以下具體防範措施：\n\n🔺強化源頭把關：要求上游業者全面提高檢驗頻率、精進製程管理。\n\n🔺落實分層控管：嚴格執行加工品預防性下架，並主動揭露資訊保障知情權。\n\n從源頭阻絕問題產品流通，用最嚴謹的行動為市民朋友的健康把關 。",
       "topicScores": {
         "文化觀光": 0.5,
@@ -826,10 +1614,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DafH7irkX0M"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DafHwyWgXcR/",
       "imageAspect": 1.0059,
       "imageUrl": "assets/feed-images/8ef71df12efd8091a4e6.webp",
@@ -840,6 +1650,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-07T09:15:16+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "針對中聯油脂大豆沙拉油事件，市府團隊今日已進一步查明第三層下游流向。我們持續緊盯食安後續處置，最新清查進度如下：\n\n✅ 確認第三層流向：經詳細比對批號，轄內新增 20 家販售、加工及餐飲業者使用到問題油品。\n\n✅ 嚴格要求下架：所有涉案的問題油品及加工產品皆已全數下架，並公告退換貨事宜，累積回收已達 3,551 公升。\n\n✅ 擴大通路稽查：針對市內農會、美食街、市場夜市商圈等 1,222 家通路進行清查，皆未發現違規使用問題油品。\n\n食安防線不容任何妥協，除了地方政府的全面清查，我也會持續緊盯食藥署，確保中央澈底落實以下具體防範措施：\n\n🔺強化源頭把關：要求上游業者全面提高檢驗頻率、精進製程管理。\n\n🔺落實分層控管：嚴格執行加工品預防性下架，並主動揭露資訊保障知情權。\n\n從源頭阻絕問題產品流通，用最嚴謹的行動為市民朋友的健康把關 。",
       "topicScores": {
         "文化觀光": 0.5,
@@ -849,10 +1660,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DafHwyWgXcR/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1603728864442111",
       "imageAspect": 1.0057,
       "imageUrl": "assets/feed-images/8e8c02b1f705fc87b9b5.webp",
@@ -863,6 +1696,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T09:15:12.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "針對中聯油脂大豆沙拉油事件，市府團隊今日已進一步查明第三層下游流向。我們持續緊盯食安後續處置，最新清查進度如下：\n\n✅ 確認第三層流向：經詳細比對批號，轄內新增 20 家販售、加工及餐飲業者使用到問題油品。\n\n✅ 嚴格要求下架：所有涉案的問題油品及加工產品皆已全數下架，並公告退換貨事宜，累積回收已達 3,551 公升。\n\n✅ 擴大通路稽查：針對市內農會、美食街、市場夜市商圈等 1,222 家通路進行清查，皆未發現違規使用問題油品。\n\n食安防線不容任何妥協，除了地方政府的全面清查，我也會持續緊盯食藥署，確保中央澈底落實以下具體防範措施：\n\n🔺強化源頭把關：要求上游業者全面提高檢驗頻率、精進製程管理。\n\n🔺落實分層控管：嚴格執行加工品預防性下架，並主動揭露資訊保障知情權。\n\n從源頭阻絕問題產品流通，用最嚴謹的行動為市民朋友的健康把關 。",
       "topicScores": {
         "文化觀光": 0.5,
@@ -872,10 +1706,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0Gjp29Ei4YbfWipG7T6zojgrtu6EMEM1WCzMQNcUgFqJ1S17BjfEN8sAuvwvUHJYGl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1603547481126916",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/d1305398bde86bb740f6.webp",
@@ -885,6 +1741,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T04:03:48.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "今日受邀出席台灣基督長老教會高雄中會第96屆第二次會議，和各位弟兄姐妹一同敬拜上帝，讓我在繁忙的行程中，得到了心靈的平靜。\n\n會議手冊封面印著「同心愛基督．團結顧台灣」，這是長老教會百餘年來深耕台灣、陪伴這片土地的真實寫照。在台灣民主、社會轉型的每個關鍵時刻，長老教會始終秉持基督的愛和恩典，用行動疼惜著台灣，如同舊約聖經《彌迦書》6：8「行公義，好憐憫，存謙卑的心與上帝同行」。\n\n在會中聆聽右昌教會陳見岳牧師講道，他在最後用一首詩和大家勉勵，鼓勵大家要鬥陣作伙、分享、思考、做夢，更要看遠一點、想遠一點。這段話讓我產生了極大的共鳴，如同我對這座城市的願景，我希望打造一處能讓所有市民都敢於做夢、勇於實踐的環境。\n\n未來，我將帶著這份從教會領受的遠見和奉獻精神，繼續與大家鬥陣同行，引領城市進步。再次感謝高雄中會和所有弟兄姐妹溫暖的陪伴，願上帝的恩典、平安常與眾人同在。",
       "topicScores": {
         "環境": 1.0
@@ -892,10 +1749,32 @@
       "topics": [
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0G7E4uLsZYRcLQ1BXqrGJUsxZzjYDGCUjU4vyUtC8Wqmk754eLBY2n723rqLxYDe4l"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DacyeYUj5u5",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/a2829e1030ff12b1bedd.webp",
@@ -903,6 +1782,7 @@
       "platform": "threads",
       "postedAt": "2026-07-06T11:30:46+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:金煌芒果合體啦，一起來支持高雄在地農產！",
       "topicScores": {
         "生活": 1.0
@@ -910,10 +1790,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.threads.com/t/DacyeYUj5u5"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DacxtOLyFBD/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/5176ab54626bdfee3611.webp",
@@ -921,6 +1823,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-06T11:30:36+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "金煌芒果合體啦，一起來支持高雄在地農產！",
       "topicScores": {
         "生活": 1.0
@@ -928,10 +1831,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DacxtOLyFBD/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "專線"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DacZvcmkceN",
       "imageAspect": null,
       "imageUrl": null,
@@ -946,6 +1871,7 @@
       "platform": "threads",
       "postedAt": "2026-07-06T07:54:36+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:高雄市政府為保障市民權益，已於7/2啟動跨局處專案稽查，我也會持續緊盯食藥署，強化本市食品衛生安全。\n\n針對中聯油脂公司大豆沙拉油品遭驗出不符合「食品中污染物質及毒素衛生標準」規範，目前市府已公布28家下游業者名單及擴大追查，經調查結果如下：\n\n✅各級學校、四大軍校及8家校園團膳均未使用問題油品。\n\n✅問題產品皆已下架回收，並辦理退換貨，截至今日上午已回收超過3,500公升。\n\n✅累計稽查866家相關通路，經查有3家長照機構、1家醫院美食街、1家醫院廚房及4家餐廳使用相關油品，均已嚴格要求停用及下架。\n\n⚠️近期購買食用油，請市民朋友留意是否為回收產品。\n⚠️若遇有消費爭議，可撥打「1950」向全國消費者服務專線尋求協助。\n\n📞如已購買相關產品，可向業者辦理退貨： \n福壽實業｜0800-236-699\n福懋油脂｜0800-888-255\n泰山企業｜0800-079-080\n\n完整公告名單可至衛生局官網「中聯問題油品專區」查詢。",
       "topicScores": {
         "教育": 0.2857,
@@ -961,10 +1887,32 @@
         "環境",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DacZvcmkceN"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Daabu3SiXw1/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/253af97ed2fa6992db2a.webp",
@@ -972,6 +1920,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T13:33:59+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "一同與 @zenolai  委員、  @leer0105  委員來鳳山兵仔市、公園仔市。 \n這裡，就是我細漢時陣長大的地方。",
       "topicScores": {
         "生活": 1.0
@@ -979,10 +1928,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/Daabu3SiXw1/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1602101994604798",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/bd5818c4f0530d54bc31.webp",
@@ -992,6 +1963,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T13:20:28.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "女力出擊，熱血開打！為每一位馳騁紅土的選手加油！",
       "topicScores": {
         "體育": 1.0
@@ -999,10 +1971,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1030623052771684/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaaaNcvj689",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/a82ee31c1642ad677788.webp",
@@ -1012,6 +2006,7 @@
       "platform": "threads",
       "postedAt": "2026-07-05T13:20:16+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:女力出擊，熱血開打！為每一位馳騁紅土的選手加油！",
       "topicScores": {
         "體育": 1.0
@@ -1019,10 +2014,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DaaaNcvj689"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaaZ_5_yMO3/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/e15d47ea3c2d6a7a9189.webp",
@@ -1032,6 +2049,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T13:20:06+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "女力出擊，熱血開打！為每一位馳騁紅土的選手加油！",
       "topicScores": {
         "體育": 1.0
@@ -1039,10 +2057,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaaZ_5_yMO3/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1602055987942732",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/a6c98ae1636ccb41c276.webp",
@@ -1053,6 +2093,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T12:13:18.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "金煌芒果來挺金煌芒果！\n\n之前 陳其邁 Chen Chi-Mai 市長說我像金煌芒果，所以高雄金煌芒果季，我這顆「金煌芒果」當然一定要到場相挺！\n\n金煌芒果果肉厚、香氣足、甜度高，是高雄具有代表性的農特產之一。每一顆芒果背後，都是農友辛苦栽種、用心照顧的成果，也展現高雄農業的品質與驕傲。\n\n今天在「2026高雄夏祭新鮮市」看到許多高雄好滋味，從金煌芒果、木瓜、咖啡豆，到芋頭與梅子，每一攤都是在地農友與攤商的用心。\n\n謝謝大家一起支持高雄農產、支持在地農友，也把高雄最好的滋味分享給更多人！\n\n林慧欣",
       "topicScores": {
         "社福": 0.5,
@@ -1062,10 +2103,37 @@
         "社福",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02gAPATVnxWhBste7FP1StDjfcabKiiyCHFsY7kTLxKyiYGWpgSyeaPgo2HZ8ghPiYl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ],
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaaGISxEatW",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/42b44e01a5ff1e388df1.webp",
@@ -1079,6 +2147,7 @@
       "platform": "threads",
       "postedAt": "2026-07-05T10:24:45+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:時序來到颱風好發的7至9月，加上極端氣候的變化，我們必須超前部署，用更高的防洪標準，來守護鄉親的安全。\n\n今天下午，我和有關單位來到田寮，現勘 登真-邱議瑩 委員積極爭取的月世界抽水站，為持續推動二仁溪整治及護岸加高工程把關，將災害預防工作做到最好。\n\n防洪治水是打造宜居城市的重要基石。我會持續緊盯各項排水升級工程的進度，確保如期如質完工，並結合各界力量，為大家建構更安全、更具韌性的優質環境。",
       "topicScores": {
         "環境": 0.6,
@@ -1088,10 +2157,38 @@
         "環境",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DaaGISxEatW"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "部署"
+        ],
+        "policy_proposal": [
+          "必須",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601970577951273",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/f73ae26a47f56a549192.webp",
@@ -1105,6 +2202,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T10:01:23.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "時序來到颱風好發的7至9月，加上極端氣候的變化，我們必須超前部署，用更高的防洪標準，來守護鄉親的安全。\n\n今天下午，我和有關單位來到田寮，現勘 登真-邱議瑩 委員積極爭取的月世界抽水站，為持續推動二仁溪整治及護岸加高工程把關，將災害預防工作做到最好。\n\n在中央和地方協力下，治水升級計畫已經明確啟動：\n\n📍二仁溪清疏\n短期內水利署會持續清疏二仁溪30萬立方公尺，維持河道暢通。\n\n📍月世界週邊新建護岸\n針對月世界周邊，水利署將新建115公尺長的護岸，預計明年動工。\n\n📍提升防洪能量\n同時，我們會全力推動將抽水站改建經費擴大至3億元，全面升級為三部機組的運轉能量，確實提高十年的防洪保護標準。\n\n防洪治水是打造宜居城市的重要基石。我會持續緊盯各項排水升級工程的進度，確保如期如質完工，並結合各界力量，為大家建構更安全、更具韌性的優質環境。\n\n#陳明澤議員  #黃明太議員 陳琳潔",
       "topicScores": {
         "環境": 0.6667,
@@ -1114,10 +2212,32 @@
         "環境",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02Mn4AkeZVus6drEh7LtzzAdiNcceNqidSYF616jYXufxkcpLZysgkM5gGaLBEcX3Rl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601810214633976",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/88aa209f269a6befbeb1.webp",
@@ -1133,6 +2253,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T05:35:15.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "充滿魅力的夜市文化，一直是台灣最迷人的風景，而說到高雄，不能不提字號最老的六合夜市，海產粥、烤肉、木瓜牛奶，是高雄人共同的記憶，也成為許多國際旅客體驗台灣文化的重要指標。\n\n今天中午，很高興受邀來到六合觀光夜市發展促進會會員大會。在莊其章理事長和幹部們的帶領下，積極導入數位支付、提升環境衛生，如同大家庭般的攤商會員們同心努力。如今，隨著高雄晉升為「國際演唱會之都」，每到週末都會湧入數以萬計的觀光客，為各大夜市注入滿滿的活力。\n\n未來我會持續推動「觀光高雄隊」整合跨局處資源，將更多大型活動及團體遊客導入各區，並串聯周邊飯店和觀光景點。同時，我們也會進一步擴大「盛事經濟」的能量，將龐大的演唱會人潮和商機確實導入商圈，讓高雄穩坐亞洲盛事之都。\n\n我們繼續攜手打拚，持續向世界展現高雄的觀光魅力，讓兼具人情味和國際水準的夜市文化，成為全世界遊客指名來訪的最美風景！\n\n康裕成 高雄市議長 高雄市議員郭建盟 黃文益 高雄市議員 黃捷 服務團隊 曾俊傑 服務團隊 湯詠瑜 詠瑜新選擇 服務團隊",
       "topicScores": {
         "文化觀光": 0.7143,
@@ -1144,10 +2265,32 @@
         "經濟",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid035y8FpbGU3oG3LJkoRGiGMxYHtUruqmb6ALt3kG8uqpDMwMouZJBVhu9zY3jntWfcl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601769947971336",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/3bd4e8d1063ebf194cdb.webp",
@@ -1162,6 +2305,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T04:30:21.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "前陣子 佳頴T政步 來高雄，問我除了市區，還有哪裡值得走走？\n\n我二話不說，直接帶她到北高雄的彌陀、永安，看看高雄海線還藏著哪些好風景。\n\n第一站，我們跟著年輕漁民阿倫一起下水體驗抓石斑魚。換上青蛙裝、走進魚塭，每一尾魚背後，都有漁民照顧水質、魚況和天氣變化的真功夫。\n\n我們聊起這幾年的石斑魚和虱目魚，曾經面對單一市場片面中斷的壓力，但高雄人沒有被困住。從加工、冷鏈、內外銷通路，到持續拓展日本、美國等國際市場，都是漁民、業者和政府一起努力的成果。市場打開了、選擇變多了，漁民面對變化時，也能多一分安心。\n\n中午，我們到彌陀的 #港馨合苑，點了虱目魚滷肉、龍膽石斑火鍋。看見年輕人願意返鄉創業，把老屋、漁村和在地食材重新整理成外地朋友願意專程來一趟的理由，讓人看到高雄海線正在長出新的可能。\n\n其實，彌陀和永安離路科、橋科、楠梓科技產業園區都不遠，持續推進的台61線南延計畫，未來也會讓高雄海線的交通更完整。\n\n一邊是科技廊帶，一邊是魚塭、老屋和海風。來到高雄，不一定只走市區，跟我走一趟海線，你一定也會愛上這裡。\n\n佳頴T政步，歡迎下次再來！",
       "topicScores": {
         "交通": 0.1429,
@@ -1175,10 +2319,32 @@
         "社福",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0x7inRvZY2E31vSdzhzdRrJGKXTCh8DDZzUDrUS1mqF5SVi9b1eAQjfJnkNeftkbHl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601708517977479",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/93a0b0b2286e60f50651.webp",
@@ -1188,6 +2354,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T02:55:09.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "鳳山兵仔市，早安！\n\n一早來到鳳山第一公有市場，向攤商和採買的鄉親朋友打招呼。市場裡熱鬧滾滾，攤商忙進忙出、鄉親熱情打招呼，這就是我們最熟悉的高雄日常。\n\n感謝今天許多朋友送我們菜頭和肉粽，祝福我們有好彩頭、好運「包中」！每一位鄉親的加油和鼓勵，都讓我更有勇氣繼續一步一腳印，傾聽大家的心聲，為高雄努力打拚！\n\n高雄小金剛許智傑 陳慧文 高雄市議員 林智鴻 高雄市議員 張漢忠 高雄市議員 蘇致榮 鳳山阿榮 鳳山絕配 鄧巧佩",
       "topicScores": {
         "經濟": 1.0
@@ -1195,10 +2362,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "早安",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02HxFSH2hEPnVZuq45mqPDc9LC3kPqhw7NXaNLKjZB8WNHo5kK1TzZyaoMzfGuZrVYl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601268984688099",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/044e2aa6116e652e227d.webp",
@@ -1214,6 +2403,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T14:45:07.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "今天也是充實的一天。\n\n📣高雄市屏東同鄉會\n高雄與屏東一溪之隔，不論交通、生活甚至是產業都息息相關，是互為生活圈的厝邊。\n所以南方要崛起，高屏就愛鬥陣，我向高雄市屏東縣同鄉會的鄉親報告，希望和大家一起攜手，拚出大南方更好的未來。\n\n📣嘉南藥理大學\n今年是嘉南藥理大學創校 60 週年，感謝高雄市嘉南藥理大學校友會的邀請。\n嘉藥立足南方，為臺灣培育藥理、健康、公衛等專業人才，許多校友也在高雄各個社區、各行各業服務市民，守護大家的健康與生活。\n\n📣客家聯盟協會\n今天是客家女婿回高雄市客家聯盟協會。\n身為客家女婿，我會推動高雄客家文化城，讓客語深耕、青年生根，持續鼓勵年輕世代投入公共事務和文化創生。\n\n📣中華郵政工會高雄分會\n第一線郵政同仁不分晴雨，穿梭大街小巷，把服務送到每一戶人家。\n今天也跟中華郵政工會高雄分會的所有基層夥伴報告，作為勞工子弟，我會持續關注勞動權益與職場安全，讓第一線工作者能更安心打拚。\n\n謝謝今天每一位朋友的支持，我會繼續打拼，讓每一位在高雄生活、工作的人，都能在這座城市安心立足，把高雄打造成更宜居、更溫暖的城市。\n\n李昆澤 高雄小金剛許智傑  黃捷 康裕成 高雄市議長 曾俊傑 姐姐的行動力   李喬如  何權峰 高雄市議員  湯詠瑜 詠瑜新選擇 高雄市議員郭建盟 林智鴻 高雄市議員 李雅慧 高雄市議員  張博洋 黃敬雅 Huang Ching-Ya 尹立 左營楠梓市議員參選人 林慧欣 吳昱鋒-鎮港小前鋒 鳳山絕配 鄧巧佩",
       "topicScores": {
         "交通": 0.1,
@@ -1231,10 +2421,32 @@
         "醫療",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid07r1arLBCLXPVvhFzJFLYkGgxhWB1XExeLSSqrX7ZFCXFn3nP3mFYQu7guXBeJTscl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1601162118032119",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/5b934899608ac26e989e.webp",
@@ -1244,6 +2456,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T12:15:13.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "楠仔坑運動中心正式開幕！大家一起動起來🏊  陳其邁 Chen Chi-Mai",
       "topicScores": {
         "體育": 1.0
@@ -1251,10 +2464,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/4479073212368183/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXt1WDD5aD/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/33d092ac4d8856edc4ce.webp",
@@ -1264,6 +2499,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T12:14:31+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "楠仔坑運動中心正式開幕！大家一起動起來🏊  陳其邁 Chen Chi-Mai",
       "topicScores": {
         "體育": 1.0
@@ -1271,10 +2507,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaXt1WDD5aD/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaXU_ClkUZp",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/35a6b91266bd4dad6ad0.webp",
@@ -1287,6 +2545,7 @@
       "platform": "threads",
       "postedAt": "2026-07-04T08:36:51+00:00",
       "sourceId": "lai-jl-threads",
+      "targets": [],
       "text": "@zenolai:我行，我上！2026台灣女子棒球聯賽，高雄木棉花強棒出擊！\n\n在 @huangjie_official 黃捷委員號召下，我和 13 位現任議員及參選人一起來到球場，為高雄在地球隊「高雄木棉花」加油，做他們最強應援團！",
       "topicScores": {
         "競選": 0.25,
@@ -1296,10 +2555,32 @@
         "體育",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.threads.com/t/DaXU_ClkUZp"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600996321382032",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/73ced44542cd32692597.webp",
@@ -1314,6 +2595,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T07:47:27.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "我行，我上！2026台灣女子棒球聯賽，高雄木棉花強棒出擊！\n\n在黃捷委員號召下，我和 13 位現任議員及參選人一起來到球場，為高雄在地球隊「高雄木棉花」加油，做他們最強應援團！\n\n棒球是臺灣的國球，不分性別都能享受競賽的快樂。這幾年女子棒球發展越來越精彩，三年前雄女寫下黑豹旗賽史首支全女子球隊的紀錄，為女子棒球立下新的里程碑。\n\n高雄近年透過經費補助和場地協助，支持女子棒球聯賽在高雄辦理，也讓更多選手有機會站上球場、盡情揮灑。未來我也會繼續支持，讓女子棒球像春天的木棉花一樣，在高雄熱情綻放。\n\n高雄木棉花加油！\n高雄隊加油！\n\n姐姐的行動力   李喬如 邱俊憲 高雄市議員 鄭孟洳 黃文志 高雄市議員 李雅慧 高雄市議員 張漢忠 高雄市議員 林志誠-高雄市議員 蘇致榮 鳳山阿榮 黃敬雅 Huang Ching-Ya 林慧欣 理想青年 張以理 溫暖的巨人 巫振興 鳳山絕配 鄧巧佩",
       "topicScores": {
         "社福": 0.0769,
@@ -1325,10 +2607,32 @@
         "社福",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid033saLCFtQcf7sjqGMQHqR2m4gDtJce3W1SHpSJPJvCmtrHf5hoskhdSJjcjMz7wLWl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600895481392116",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/1a6c0c8448a380dccfdc.webp",
@@ -1341,6 +2645,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T05:08:51.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "今天運動了嗎？！快來最新開幕的「楠仔坑運動中心」一起動一動！\n\n鄰近半導體S廊帶的楠仔坑運動中心今天盛大開幕，是高雄第11座運動中心，一舉創下了「三項第一」的新紀錄。\n\n作為高雄首座專業競技運動園區，楠仔坑運動中心是第一座獲得中央前瞻補助、斥資7億元打造的全民運動館，從考驗技巧的自由車、射箭、現代五項，到全齡友善的游泳、空中瑜伽、器械式皮拉提斯及體適能中心一應俱全，更是目前量體規模第一、且唯一擁有50公尺室內標準游泳池的。\n\n自陳其邁市長上任以來，積極推動「14+1座運動中心」的目標，希望將運動融入每位市民的日常。統計至去年，高雄市民的BMI超標人口比例已降至38%，在六都中取得了第二名的健康好成績，這是健康城市的全新起點。\n\n未來，我將會進一步推進「一區一運動中心」的規劃，打造高雄的每一個行政區都能擁有完善、便利的運動體驗！\n—————————\n 【場館營運資訊】\n營運時間｜每日06:00 - 22:00\n泳池清場時間｜\n平日：10:00~10:30 、16:00~16:30\n例假日：10:00~10:30\n\n陳其邁 Chen Chi-Mai 李柏毅 拚搏未來 高雄小金剛許智傑 黃文志 高雄市議員 李雅慧 高雄市議員 尹立 左營楠梓市議員參選人 理想青年 張以理",
       "topicScores": {
         "社福": 0.0714,
@@ -1354,10 +2659,32 @@
         "經濟",
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid021KvbYi2NjCwzCrUqH2b74dVL7AokWaC2ZqKnc9HvCRvo4JC8HY43m64GTX4ArDPMl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600310984783899",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/430e673e38e470469d5f.webp",
@@ -1370,6 +2697,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T13:22:00.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "傍晚前往高雄市慈善團體聯合總會請益，謝謝各位慈善團體的先進踴躍給予建議，讓我們能在未來把社福做得更完善。此行我也捐出《小鴨把拔向前衝》版稅予總會，希望拋磚引玉，當越多人投入公益，力量就能更強大。\n\n隨後則趕赴高雄市製香業職業工會會員大會，感謝各位職人用心製好香，一縷馨香為眾人將心願傳達至天聽，是信仰中不可或缺的重要媒介。\n\n科技業是推動城市進步的新引擎，但傳統產業同樣是高雄產業重要的基石，未來，我會重視每一種產業的聲音，協助大家升級轉型，讓珍貴的傳統技藝能保有競爭力，也讓每一位市民的付出，都能成為推動高雄持續成長的養分。\n\n讓我們攜手努力，顧弱勢也拚產業，讓每個在高雄奮鬥的市民，都能看到更好的願景。",
       "topicScores": {
         "社福": 0.2857,
@@ -1379,10 +2707,39 @@
         "經濟",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02EKumZTSCWt9tDkZWde7N9fbzgbBnjk2S3MNw2AcFrXjHZTegdLabTFp68DwBkC4yl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "policy_proposal": [
+          "必須",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaVLHrDgSFH/",
       "imageAspect": 1.0059,
       "imageUrl": "assets/feed-images/807527b757ede1888381.webp",
@@ -1400,6 +2757,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-03T12:32:11+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "毒駕零容忍！《道路交通管理處罰條例》修正案一讀通過！\n\n近期「喪屍菸彈」等新興毒品氾濫，毒駕風險也日益嚴峻，因此，我們必須用最嚴格的標準捍衛人民的生命財產安全。針對毒駕的《道路交通管理處罰條例》修正草案，今天已完成一讀；這次修法重點在「毒駕行政罰」部分，除加重《刑法》公共危險罪外，同步加重行政處罰，讓毒駕防線更周延！\n\n我在五月時已提出《刑法》第185條之3修正草案，推動提高毒駕、酒駕刑責，並大幅提高併科罰金上限。本次提案加重毒駕行政罰，雙軌修法同步推進，就是要嚇阻毒駕行為，吸毒者不敢輕易上路，維護公共場所與交通安全。\n\n這次道交修法也針對毒駕肇事、附載幼童、慢車毒駕、同車乘客責任，以及重新考照把關加重規範，就是要讓毒駕者不能輕易回到道路上，也讓每一位市民朋友在通勤、上學、回家的路上更安心。\n\n除了修法，我也會持續和相關部會、專家學者討論防堵毒駕的方法，並推動其他配套措施，從修法加重處罰，到科技預警、源頭管理、執法安全，以及戒治輔導與追蹤評估等更細緻的治理作為，一步步建立更完整的毒駕防堵機制，盡力把風險降到最低。接下來，在市政的部分我會朝三個方向持續推進：\n\n第一，擴大「燈塔計畫」，針對交通熱點與治安熱區強化安全管理，透過科技輔助勤務，讓第一線能更有效掌握狀況、即時應變。\n\n第二，延續第三方警政，從毒駕源頭斷鏈，針對可能衍生吸毒、毒駕風險的場所加強跨單位稽查與管理，不讓毒品熱點變成毒駕出口。\n\n第三，充分保障員警執法安全，讓第一線執法人員有更完善的裝備與科技支援，能更安心、更有力執法，也降低市民與員警在攔查過程中的風險。\n\n保護鄉親平安出門、安全回家，是我責無旁貸的使命。未來，我會持續做市民朋友與第一線執法人員最堅強的後盾，全力防堵毒駕危害，讓大家都能享有更安全、更安心的交通環境。",
       "topicScores": {
         "交通": 0.3913,
@@ -1415,10 +2773,39 @@
         "經濟",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaVLHrDgSFH/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "已完成"
+        ],
+        "policy_proposal": [
+          "必須",
+          "提出",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "行政進度"
+      ],
+      "actions": [
+        "policy_proposal",
+        "administrative_update"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600271351454529",
       "imageAspect": 1.0057,
       "imageUrl": "assets/feed-images/a3a9fa26d04fd76791eb.webp",
@@ -1436,6 +2823,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T12:32:06.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "毒駕零容忍！《道路交通管理處罰條例》修正案一讀通過！\n\n近期「喪屍菸彈」等新興毒品氾濫，毒駕風險也日益嚴峻，因此，我們必須用最嚴格的標準捍衛人民的生命財產安全。針對毒駕的《道路交通管理處罰條例》修正草案，今天已完成一讀；這次修法重點在「毒駕行政罰」部分，除加重《刑法》公共危險罪外，同步加重行政處罰，讓毒駕防線更周延！\n\n我在五月時已提出《刑法》第185條之3修正草案，推動提高毒駕、酒駕刑責，並大幅提高併科罰金上限。本次提案加重毒駕行政罰，雙軌修法同步推進，就是要嚇阻毒駕行為，吸毒者不敢輕易上路，維護公共場所與交通安全。\n\n這次道交修法也針對毒駕肇事、附載幼童、慢車毒駕、同車乘客責任，以及重新考照把關加重規範，就是要讓毒駕者不能輕易回到道路上，也讓每一位市民朋友在通勤、上學、回家的路上更安心。\n\n除了修法，我也會持續和相關部會、專家學者討論防堵毒駕的方法，並推動其他配套措施，從修法加重處罰，到科技預警、源頭管理、執法安全，以及戒治輔導與追蹤評估等更細緻的治理作為，一步步建立更完整的毒駕防堵機制，盡力把風險降到最低。接下來，在市政的部分我會朝三個方向持續推進：\n\n第一，擴大「燈塔計畫」，針對交通熱點與治安熱區強化安全管理，透過科技輔助勤務，讓第一線能更有效掌握狀況、即時應變。\n\n第二，延續第三方警政，從毒駕源頭斷鏈，針對可能衍生吸毒、毒駕風險的場所加強跨單位稽查與管理，不讓毒品熱點變成毒駕出口。\n\n第三，充分保障員警執法安全，讓第一線執法人員有更完善的裝備與科技支援，能更安心、更有力執法，也降低市民與員警在攔查過程中的風險。\n\n保護鄉親平安出門、安全回家，是我責無旁貸的使命。未來，我會持續做市民朋友與第一線執法人員最堅強的後盾，全力防堵毒駕危害，讓大家都能享有更安全、更安心的交通環境。",
       "topicScores": {
         "交通": 0.3913,
@@ -1451,10 +2839,32 @@
         "經濟",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02VgX5mSwPD64cpdPZV8qHeeEDPeKfT7ciKdVStANhrnp3hdaw6mY7o5pcjG7JNpsCl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1600197274795270",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/2afec2b22f901ae1b93c.webp",
@@ -1462,6 +2872,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T10:57:09.000Z",
       "sourceId": "lai-jl-fb",
+      "targets": [],
       "text": "咱做伙呷平安，也做伙繼續拚，讓高雄大步向前行！",
       "topicScores": {
         "生活": 1.0
@@ -1469,10 +2880,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1005656882356637/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaVAH4NDGup/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/5cc785806aa01cc7248d.webp",
@@ -1480,6 +2913,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-03T10:56:28+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "咱做伙呷平安，也做伙繼續拚，讓高雄大步向前行！",
       "topicScores": {
         "生活": 1.0
@@ -1487,10 +2921,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaVAH4NDGup/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaSU_O7kupo/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/00431af1738a6d270aaf.webp",
@@ -1500,6 +2956,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T10:01:19+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "爭取24小時海上國際機場，打造「南方國際新門戶」！",
       "topicScores": {
         "交通": 1.0
@@ -1507,10 +2964,39 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaSU_O7kupo/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "主張",
+          "應該",
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaR5DrxgS7o/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/024545c0a9ac7c5c70ba.webp",
@@ -1528,6 +3014,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T06:12:42+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "「南方崛起、邁向國際」，是我對高雄下一階段發展的重要願景，打造「南方國際新門戶」更要從國家戰略著手。\n\n高雄正在走向半導體、AI、會展觀光、港口物流與國際商務並進的新階段。面對下一個世代的產業發展與國際競爭，我主張要從三個階段推動：小港機場升級、擴大國際航網，並持續爭取24小時南方海上國際機場。\n\n在高雄隊與陳其邁市長共同爭取下，小港機場新航廈工程、大客機進駐與國際航線拓展，都已經陸續推動、看見進展。接下來，高雄要用更高格局，為大南方預留連結世界的航空能量。\n\n【短期：小港機場升級】\n880億元新航廈，打造智慧國門\n\n感謝賴清德總統、卓榮泰院長持續支持，中央投入880.8億元推動高雄國際機場新航廈工程。未來第一、二期完成後，年服務容量可提升到1,650萬人次。\n\n這項建設的意義不只是蓋一座新航廈，而是要改善機場動線、提升旅運品質、導入智慧服務，也讓高雄作為南台灣航空樞紐的功能更完整。\n\n小港機場的升級，是高雄現階段最重要的航空基礎建設。\n\n【中期：擴大國際航網】\n爭取高運量大客機、增闢國際航線\n\n接下來，高雄要持續爭取更多大客機、更多國際航線，讓高雄不只是短程旅運據點，也能承接國際商務、會展觀光、港口物流與高科技產業的需求。\n\n這也是高雄隊與南高屏立委共同努力的方向。從小港機場升級、航線拓展到南台灣24小時國際航空能量，都不是單一城市的課題，而是大南方共同爭取的基礎建設與產業條件。\n\n【長期：評估24小時南星海上機場】\n布局下一世代國際戰略\n\n小港機場升級，是提升現有國際門戶的服務能量；面對24小時營運、國際貨運與長程航線需求，高雄也需要為未來產業發展預留新的航空空間。\n\n我與陳其邁市長共同主張，應將南星計畫區外海等可能場址納入專業評估，透過填海造陸方式，從海上場址、夜間飛航、國際貨運、小港分工與聯外交通等面向完整規劃。朝海上場址評估，是因為海上場址較能降低夜間起降對市區生活的影響，也能讓未來的國際貨運、長程航線與既有小港機場形成分工，支撐高雄更長遠的產業與城市發展。\n\n東京有羽田與成田，首爾有金浦與仁川，而北部有松山與桃機。許多國際城市都不是只靠一座機場承擔所有功能。高雄也應該用機場分工的思維，規劃未來的航空需求。\n\n高雄的航空布局，不能只看一座機場、一條航線，而要從大南方的產業、觀光、物流與國際商務一起規劃。\n\n我會和陳其邁市長一起，持續整合大南方的共同需求，爭取中央支持，讓高雄具備更完整的國際連結能力，成為大南方走向世界的重要門戶。",
       "topicScores": {
         "交通": 0.6286,
@@ -1541,10 +3028,32 @@
         "文化觀光",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaR5DrxgS7o/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaKrrVqFMQU/",
       "imageAspect": 0.5615,
       "imageUrl": "assets/feed-images/9bf13c140bcc6828ab41.webp",
@@ -1552,6 +3061,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-29T10:45:27+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "感謝鄉親們的熱情支持，我們繼續鬥陣打拼💪",
       "topicScores": {
         "生活": 1.0
@@ -1559,10 +3069,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaKrrVqFMQU/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaKk3S5ib9Z/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/93c78441809ba63da15c.webp",
@@ -1583,6 +3115,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-29T09:45:30+00:00",
       "sourceId": "lai-jl-ig",
+      "targets": [],
       "text": "【從治理到城市願景，一起想像高雄的下一步】\n\n週末我們邀請到高雄市長候選人 @zenolai 賴瑞隆來到「熬民主」，分享他從對高雄未來的發展藍圖。\n\n從2009參與高雄世界運動會的籌辦，到推動高雄觀光轉型、演唱會經濟，每一項成果的背後，瑞隆委員都參與其中，這不只是他一個人的功勞，而是一群公務夥伴與專業團隊共同努力，才能讓高雄一步步站上國際舞台。\n\n賴瑞隆也提到，高雄是一座願意給年輕人機會的城市。近年在產業轉型、招商投資與青年政策的推動下，逐步創造更多元的就業環境，也讓更多年輕人願意留在高雄發展。\n\n面對AI時代與全球產業競爭，高雄更要持續向前。從半導體S廊帶布局、「一機場三中心」打造國際門戶，到推動AI治理與智慧城市，都是未來城市發展的重要方向。\n\n謝謝每一位參與「熬民主」的青年朋友，讓我們繼續用青年世代的創意與熱情一起為高雄城市未來而努力。",
       "topicScores": {
         "交通": 0.0714,
@@ -1598,10 +3131,32 @@
         "環境",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaKk3S5ib9Z/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:BlC0ZlqaMKc",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f599422434922f765012.webp",
@@ -1609,6 +3164,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "行動代號：百工百業顧電話，團結高雄挺瑞隆！ 沈伯洋探員 參上！",
       "topicScores": {
         "生活": 1.0
@@ -1616,10 +3172,37 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=BlC0ZlqaMKc"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "動員宣傳"
+      ],
+      "actions": [
+        "public_information",
+        "mobilization"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:-8N_ZXtqor8",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/9762e558bebc3ee95945.webp",
@@ -1629,6 +3212,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "感謝 #元六 #康龍 拍片相挺，還幫大家做民調教學！提醒大家，接到民調電話，唯一支持賴瑞隆！1/12-1/17 晚上18：00-22：30在家幫我一起顧電話，共同邁向成功！#電話響五聲內要接起來喔",
       "topicScores": {
         "競選": 1.0
@@ -1636,10 +3220,32 @@
       "topics": [
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=-8N_ZXtqor8"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:tMFrpTxK424",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/d384346f89ff6638c329.webp",
@@ -1647,6 +3253,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "清晨的燈光，照著市場，也照著希望。大家的努力，是這座城市最穩的力量。繼續團結，把光榮延續。",
       "topicScores": {
         "生活": 1.0
@@ -1654,10 +3261,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=tMFrpTxK424"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:79JuRFq4ag0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/44efa9f726497c1d9d8f.webp",
@@ -1665,6 +3294,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "黃色小鴨，啟動了亞洲新灣區。十年市政，真實參與，不曾停歇。我會守護高雄，我是賴瑞隆。",
       "topicScores": {
         "生活": 1.0
@@ -1672,10 +3302,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=79JuRFq4ag0"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:X8E-4tZtEtQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/e9375ff3cba295579225.webp",
@@ -1683,6 +3335,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "十年立委，一心為高雄。進步不能停歇，真實參與、完全銜接。我來守護高雄，我是賴瑞隆。",
       "topicScores": {
         "生活": 1.0
@@ -1690,10 +3343,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=X8E-4tZtEtQ"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:kqIfzc0fp4w",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/48a5d321cb258a9b239e.webp",
@@ -1701,6 +3376,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "從大立空中樂園RIZZ俯瞰高雄，小英總統隨扈表示⋯⋯",
       "topicScores": {
         "生活": 1.0
@@ -1708,10 +3384,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/kqIfzc0fp4w"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:qpAlKRfg77s",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/d4e6c43ed9b5cd506125.webp",
@@ -1719,6 +3417,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "加大平抑 #塑膠袋 價格力度，穩定市場供給！",
       "topicScores": {
         "生活": 1.0
@@ -1726,10 +3425,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/qpAlKRfg77s"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:0HVuT2tI_M8",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/ff18952d5166ded2089f.webp",
@@ -1740,6 +3461,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "「尊嚴、對等」是兩岸交流的核心原則，守護國家主權沒有模糊空間。",
       "topicScores": {
         "兩岸外交": 1.0
@@ -1747,10 +3469,32 @@
       "topics": [
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/0HVuT2tI_M8"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:EX0tHkicBA4",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/c65824cab1b81362553a.webp",
@@ -1760,6 +3504,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "「阿川喘不喘」精彩回顧！大家 #隆來運動！",
       "topicScores": {
         "體育": 1.0
@@ -1767,10 +3512,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/EX0tHkicBA4"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Kem43HXnB50",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/dd11a2ab6c896098f223.webp",
@@ -1778,6 +3545,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "「增產、嚴查」穩定塑膠袋供給！讓人民安心好過日！",
       "topicScores": {
         "生活": 1.0
@@ -1785,10 +3553,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Kem43HXnB50"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Wqak_enK_Kc",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/50e7a80ea58dc099eb14.webp",
@@ -1796,6 +3586,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "延續高雄光榮，交給我們！一起向前衝！",
       "topicScores": {
         "生活": 1.0
@@ -1803,10 +3594,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Wqak_enK_Kc"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:D-OSixGq_i0",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/76b45d1b3fe493d0b30d.webp",
@@ -1814,6 +3627,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "買鳳梨，挑「大樹」產的準沒錯🍍",
       "topicScores": {
         "生活": 1.0
@@ -1821,10 +3635,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/D-OSixGq_i0"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:_N_LITyyFm4",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/7f1782d99fdfa3a491a0.webp",
@@ -1832,6 +3668,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "神隊友集合！為海神、為高雄加油🏀",
       "topicScores": {
         "生活": 1.0
@@ -1839,10 +3676,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/_N_LITyyFm4"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:zI91UBSmerk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/48db61794384e7872072.webp",
@@ -1850,6 +3709,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "謝謝勞工朋友撐起高雄，大家辛苦了！#勞動節快樂",
       "topicScores": {
         "生活": 1.0
@@ -1857,10 +3717,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "節快樂",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.youtube.com/shorts/zI91UBSmerk"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Fox_4HyLPLY",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/4527bc5c48102e3dbcb5.webp",
@@ -1868,6 +3750,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "喝珍奶就要來高雄！這裡一定有你最喜歡的那一杯🧋#國際珍奶日",
       "topicScores": {
         "生活": 1.0
@@ -1875,10 +3758,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Fox_4HyLPLY"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:_NsqtJesnWQ",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/33c798c627c25fa0c292.webp",
@@ -1886,6 +3791,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "高雄向前的下一哩路，我們攜手一起走！",
       "topicScores": {
         "生活": 1.0
@@ -1893,10 +3799,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/_NsqtJesnWQ"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:qPqAk-aHhNg",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/daf6a53bfd9d2f17b9ed.webp",
@@ -1904,6 +3832,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "祝福天下的媽媽和代母職者 #母親節快樂，謝謝你們❤️",
       "topicScores": {
         "生活": 1.0
@@ -1911,10 +3840,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "節快樂",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.youtube.com/shorts/qPqAk-aHhNg"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Y3VtTSixGwc",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/d9ba060f1ac7ecbfd7ea.webp",
@@ -1922,6 +3873,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "全台第一桃！水蜜蜜的那瑪夏水蜜桃🍑☺️",
       "topicScores": {
         "生活": 1.0
@@ -1929,10 +3881,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/Y3VtTSixGwc"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:AuPt56XXdpA",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/e82e68e75909987b5b00.webp",
@@ -1940,6 +3914,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lai-jl-yt",
+      "targets": [],
       "text": "推動差別電價，給發電城市公平合理對待！",
       "topicScores": {
         "生活": 1.0
@@ -1947,7 +3922,136 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/AuPt56XXdpA"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:BTsg5MTFazA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/325bd0253a0decb9ab88.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "lai-jl-yt",
+      "targets": [],
+      "text": "青春設計節登場！用滿滿創意，大步邁向高雄新未來！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/BTsg5MTFazA"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:Mr0cIRTmbhw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/01cb53c144619c00b6d8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "lai-jl-yt",
+      "targets": [],
+      "text": "岡山米其林羊肉爐加持，吃飽繼續拚！feat.王瑞德",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/Mr0cIRTmbhw"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:fe1-E_BH_08",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/94688a0518a83fed5125.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "lai-jl-yt",
+      "targets": [],
+      "text": "解鎖新舞技！祝大家母親節快樂！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "節快樂",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.youtube.com/shorts/fe1-E_BH_08"
     }
   ],
   "version": 1

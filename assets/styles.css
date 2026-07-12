@@ -3613,3 +3613,21 @@ a.topic-breakdown-name:hover {
   align-items: center;
   gap: 8px;
 }
+
+.context-meta { margin-top: 8px; }
+.context-pill { border-width: 2px; }
+.context-self_initiated { border-color: #0f766e; color: #0f5f59; }
+.context-external_event { border-color: #e07b39; color: #9a4615; }
+.context-direct_response { border-color: #a54d68; color: #7c2946; }
+.context-routine { border-color: #7b8580; }
+.context-unclear, .review-pill { border-style: dashed; color: #6d625a; }
+.action-pill { background: #eef4f0; }
+.policy-question { max-width: 880px; margin: 0 auto 28px; }
+.policy-choice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 18px; }
+.policy-choice { padding: 18px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: inherit; font-weight: 800; text-align: left; cursor: pointer; }
+.policy-choice:hover, .policy-choice[data-selected="true"] { border-color: var(--teal-deep); background: #e5f3ee; }
+.policy-submit { display: block; margin: 24px auto 12px; }
+.policy-results { margin-top: 48px; }
+.policy-city-title { margin: 28px 0 12px; }
+.policy-score { display: block; margin-top: 14px; color: var(--teal-deep); font-size: 1.15rem; }
+.policy-evidence { display: block; margin-top: 8px; color: var(--ink); font-size: .88rem; line-height: 1.45; }

@@ -22,7 +22,23 @@
   "count": 63,
   "posts": [
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627778052044936",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/75d363a147d8baef324d.webp",
@@ -32,6 +48,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T07:15:13.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "和大家分享我的乾糧！\n身為泡麵富翁，不擔心颱風天沒有存糧😂\n\n大家在颱風天都在家吃什麼呢？？？\n\n也提醒大家，颱風影響仍持續，下午至晚間是風雨最明顯的時段。台中市區已有多處路樹倒塌，非必要盡量避免外出，行經路樹、招牌及施工路段時也要多加留意呦～～",
       "topicScores": {
         "防災": 1.0
@@ -39,10 +56,38 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0Q4roCCLQxXiYoDWXovB5Src1JJS2btX2m8xYSTWLYmuPrpHc4aERfbBoPNf7Zn6Ul"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627710885384986",
       "imageAspect": 1.7771,
       "imageUrl": "assets/feed-images/b7be098ef0f33c116e1b.webp",
@@ -59,6 +104,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T05:03:27.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "巴威颱風逼近，今天上午我前往太平車籠埔光隆營區南側滯洪池，與市議員 張玉嬿、 蔡耀頡一起了解滯洪池蓄水、排水及清疏情形，確認防颱整備狀況。\n\n這座滯洪池是我自2010年起持續協調國防部、台中市政府及地方單位共同推動的重要治水工程，2017年完工後，滯洪量達4萬7,500立方公尺，大幅改善車籠埔地區長年淹水問題，也兼顧國防訓練需求。\n\n面對極端氣候，防災不能等到颱風來了才準備，滯洪池、排水系統及雨水下水道都應平時做好巡檢與清疏，才能在豪雨來襲時發揮作用。\n\n提醒大家，颱風警報解除前仍可能有強風豪雨，請持續留意最新天氣資訊，非必要避免前往山區、海邊及警戒區域。\n\n祝福台中平安、台灣平安，也向所有堅守崗位的防災與搶修人員致上感謝。",
       "topicScores": {
         "兩岸外交": 0.1538,
@@ -70,10 +116,32 @@
         "環境",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、淹水",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid026ojGzMRM11mkH6bfPi1S2GCDuUN3TpeJxuuhQYFdiX76X1mnPtHzHBPgMTzh1inul"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1627037882118953",
       "imageAspect": 0.7069,
       "imageUrl": "assets/feed-images/a6ca06006e1d56c38165.webp",
@@ -83,6 +151,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T09:00:58.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "台中要更好，就需要更多市民一起參與、一起討論。\n\n下周一 ＃168巡迴說明會 將來到南區辦理，我會和熱情 活力 陳雅惠、鄭功進 及 何翊綾 協同和市民報告六星市政願景，邀請大家作伙參加，我們一起攜手擘劃台中的未來。\n\n📌168巡迴說明會南區場\n時間：7月13日（一）晚上六點\n地點：南區崇仁活動中心（柳川西路一段59號）\n\n⚠️本周六日因颱風延期的烏日、沙鹿、大肚、梧棲場168說明會，也請鄉親們別擔心，我們後續會再公佈辦理時間，屆時邀請大家再一起來關心台中市政。\n\n＃心存大台中\n＃市長換欣_台中創新",
       "topicScores": {
         "防災": 1.0
@@ -90,10 +159,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0325q5SqeRDg58YtPPqdt9aPkpHfx68B1XAMwBwBFZYSJWs2hghZJgrc6NjrKmBAn5l"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamuAnyGUWE",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/949d66cc86888769af47.webp",
@@ -101,6 +192,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T08:04:07+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:雖然目前台中還沒有雨，但是風勢有越來越大的趨勢。\n還請大家注意防颱，也盡快做好相關準備！",
       "topicScores": {
         "生活": 1.0
@@ -108,10 +200,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamuAnyGUWE"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DamkRpKEWGf",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/398bf80e3f52b5bd1993.webp",
@@ -124,6 +238,7 @@
       "platform": "threads",
       "postedAt": "2026-07-10T06:39:04+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:今天出席中科23週年園慶，很高興看到中科一路成長，也讓台中的產業持續站上國際舞台。\n\n產業要發展，托育、交通也要跟上，讓年輕人安心工作、安心成家，也讓企業更願意留在台中、深耕台中。\n\n期待中科持續帶動台中產業升級，讓台中成為人才願意留下、企業願意投資的城市。",
       "topicScores": {
         "交通": 0.1667,
@@ -135,10 +250,32 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DamkRpKEWGf"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DamkQteEYgm/",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/01471af9c3d66dd1e632.webp",
@@ -151,6 +288,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T06:38:58+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "今天出席中科23週年園慶，很高興看到中科一路成長，也讓台中的產業持續站上國際舞台。\n\n產業要發展，托育、交通也要跟上，讓年輕人安心工作、安心成家，也讓企業更願意留在台中、深耕台中。\n\n期待中科持續帶動台中產業升級，讓台中成為人才願意留下、企業願意投資的城市。",
       "topicScores": {
         "交通": 0.1667,
@@ -162,10 +300,37 @@
         "交通",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DamkQteEYgm/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DakXtOoD_Yd/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/922360cd972f449f24bd.webp",
@@ -177,6 +342,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T10:10:47+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "雖然目前台中還無風無雨，但提醒大家不要掉以輕心，還是要做好 ＃防颱準備 喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。\n\n持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。",
       "topicScores": {
         "防災": 1.0
@@ -184,10 +350,37 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DakXtOoD_Yd/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DakM4yKGYuX",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/6ccc2c568a2331ed8bbb.webp",
@@ -199,6 +392,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T08:36:13+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:雖然目前台中還無風無雨，但提醒大家不要掉以輕心，還是要做好防颱準備喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。\n\n更多資訊請見中央氣象署網站：\nhttps://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html",
       "topicScores": {
         "防災": 1.0
@@ -206,10 +400,37 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、豪雨、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.threads.com/t/DakM4yKGYuX"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "個人／日常"
+      ],
+      "actions": [
+        "public_information",
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1626193732203368",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fb44a28e93eaee60b0d7.webp",
@@ -221,6 +442,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T08:28:10.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "針對強颱 #巴威 襲來，中央氣象署已發布海上颱風警報，提醒大家做好防颱準備，嚴防可能的強風豪雨。\n\n雖然目前還豔陽高照，但提醒大家不要掉以輕心，還是要做好防颱準備喔！\n\n週五、週六是颱風影響台灣最明顯的時候，中部山區可能出現豪雨，非必要請避免前往山區及海邊活動。持續留意颱風資訊，以及政府的防災消息，保護自己與家人的安全，希望大家都能平安度過這次颱風。\n\n更多資訊請見中央氣象署網站：\nhttps://www.cwa.gov.tw/V8/C/P/Typhoon/TY_NEWS.html",
       "topicScores": {
         "防災": 1.0
@@ -228,10 +450,38 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.9,
+        "evidence": "颱風、豪雨、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0Ah92GBB34v2Vjpk2wRjSkmGQW1Sw3FJgPNiXZNr3cPL7vXtS9NzYoGsJP1ESWvfFl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "主張",
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1626148718874536",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/a57f2c9c76f20705d03d.webp",
@@ -246,6 +496,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T07:06:48.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "台灣無人機產業正站在發展的關鍵時刻，今天我和漢翔公司沙鹿廠企業工會交流，針對無人機、國機國造、航太人才培育及國防產業發展深入交換意見。\n\n我一直主張，立法院應盡快完成無人機特別條例與特別預算審議，甚至曾為此鞠躬請命。產業需要明確的政策方向和穩定的資源投入，企業才有信心提前布局、持續投資。\n\n工會理事長 #邱振銘 也提到，相較於年度預算，特別預算能提供更穩定的政策支持，更能滿足產業發展與國防自主的需求。\n\n無人機產業牽動台中上萬家供應鏈廠商、數十萬個家庭的生計。我呼籲朝野共同支持相關法案與預算，讓產業安心發展，也讓台中持續朝無人機與國防產業重鎮邁進。\n\n#心存大台中\n#台中純派",
       "topicScores": {
         "兩岸外交": 0.1765,
@@ -257,10 +508,32 @@
         "議會監督",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid035S1BmUeQLn3CbYdmw3tjWnDgnmgZqEHYRTVW4T1vgSEhfKdUqz9qQF5ptmMcs2RJl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Daj3oXxGQ1H",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/34942f856a81c0bbb994.webp",
@@ -268,6 +541,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T05:30:28+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:跟風看自己的圈圈。\n嗯，很合理（？",
       "topicScores": {
         "生活": 1.0
@@ -275,10 +549,33 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/Daj3oXxGQ1H"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意",
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DajXezsGbp0",
       "imageAspect": 0.7075,
       "imageUrl": "assets/feed-images/c1423a467ed2ee9d1b6b.webp",
@@ -286,6 +583,7 @@
       "platform": "threads",
       "postedAt": "2026-07-09T00:49:33+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:南屯、烏日、沙鹿、大肚及梧棲的朋友請注意📣\n\n原訂在本週末07/11(六)、07/12(日)舉行的 「親子同樂列車」、「168說明會」因強颱巴威來襲，考量大家安全，將延後辦理。\n\n延期日期將另行公告，造成不便敬請見諒！\n\n提醒大家提前做好防颱準備，隨時留意最新天氣資訊，外出務必注意安全。",
       "topicScores": {
         "生活": 1.0
@@ -293,10 +591,33 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DajXezsGbp0"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "請注意",
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1625924065563668",
       "imageAspect": 0.7068,
       "imageUrl": "assets/feed-images/87797c8ef4c48782e283.webp",
@@ -304,6 +625,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T00:00:09.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "南屯、烏日、沙鹿、大肚及梧棲的朋友請注意📣\n\n原訂7/11(六)、7/12(日)舉行的 #親子童樂列車 、#168說明會，因強颱巴威來襲，考量大家安全，將延後辦理。\n\n延期日期將另行公告，造成不便敬請見諒。\n\n提醒大家提前做好防颱準備，隨時留意最新天氣資訊，外出務必注意安全。",
       "topicScores": {
         "生活": 1.0
@@ -311,10 +633,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0D1aQVfFbtnMek3FqpMFyc94VpXpgq1giX8E5qKRcJdwjT2KLrWDpBtK1AYv8EyjDl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DafGwO8yVT5/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/9811fb5a7c0f54255db3.webp",
@@ -324,6 +668,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-07T09:07:12+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "最高標準守護 ＃食安，是政府責無旁貸的責任。市府應加強稽查人力、提高查核密度，從源頭把關，避免問題食品流入校園、餐飲業及市民餐桌。\n\n同時，資訊揭露必須更即時、更透明，讓民眾擁有知情權，也保障合法業者的權益。\n\n我再次呼籲，中央與地方攜手加速稽查，盡快釐清問題產品流向，讓市民吃得安心、買得放心。",
       "topicScores": {
         "教育": 1.0
@@ -331,10 +676,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DafGwO8yVT5/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "開放"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DafBkRBmWyQ",
       "imageAspect": 1.001,
       "imageUrl": "assets/feed-images/b586017aea43d4fc5af4.webp",
@@ -342,6 +709,7 @@
       "platform": "threads",
       "postedAt": "2026-07-07T08:21:05+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:再次邀請每位純派！成為我的看板，一起讓何欣純四處可見！\n\n「心存大台中」限定海報，正式在 7-11 ibon 限時開放下載列印，只到7/10本週五中午喔！\n\nibon 列印 3 步驟⬇️\n1. 散步到巷口 7-11，操作 ibon 機台點選「下載列印」 \n2. 輸入喜愛的款式編號或是掃描QRcode\n3. 列印出來後張貼，別忘了拍照上傳社群並＠我呦\n\n歡迎張貼在自家門口、鐵門等大家看得到的地方。\n但記得愛護公共空間，尊重鄰里，當最高品質的「純派戰隊」！\n\n如果來不及印或是不會操作，我們也印製實體海報，歡迎索取。\n\n以下為海報索取點：\n📌何欣純市政辦公室地址：台中市南屯區南屯路二段408號401室\n📌大里服務處地址：臺中市大里區長榮里大里路62號\n📌太平服務處地址：臺中市太平區宜欣里新平路二段142號",
       "topicScores": {
         "生活": 1.0
@@ -349,10 +717,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DafBkRBmWyQ"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "開放"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1624466759042732",
       "imageAspect": 1.0017,
       "imageUrl": "assets/feed-images/99277d46f315835a86f8.webp",
@@ -360,6 +750,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T08:19:30.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "誠摯邀請每位純派！成為我的看板，一起讓何欣純四處可見！\n\n很多朋友反應我的看板太少，有些原因難以和各位說明。但我們推出兩款 ＃心存大台中 限定海報，正式在 7-11 ibon 限時開放下載列印，只到7/10中午喔！\n\nibon 列印 3 步驟⬇️\n1. 散步到巷口 7-11，操作 ibon 機台點選「下載列印」 \n2. 輸入喜愛的款式編號或是掃描QRcode\n3. 列印出來後張貼，別忘了拍照上傳社群並＠我呦！\n\n歡迎張貼在自家門口、鐵門等大家看得到的地方。\n但記得愛護公共空間，尊重鄰里，當最高品質的「純派戰隊」！\n\n如果來不及印或是不會操作，我們也印製實體海報，歡迎索取。\n\n以下為海報索取點：\n📌何欣純市政辦公室地址：台中市南屯區南屯路二段408號401室\n📌大里服務處地址：臺中市大里區長榮里大里路62號\n📌太平服務處地址：臺中市太平區宜欣里新平路二段142號",
       "topicScores": {
         "生活": 1.0
@@ -367,10 +758,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid02VHUeJPcEqeEoZUhVy46TZykX8yfSormHaZxTTM76JDuV4JeCYQdgQBgzPbweJ5GPl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaeqUxaGgZy",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/a16794c6953e905a585a.webp",
@@ -380,6 +793,7 @@
       "platform": "threads",
       "postedAt": "2026-07-07T04:58:55+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:最高標準守護食安，是政府責無旁貸的責任。市府應加強稽查人力、提高查核密度，從源頭把關，避免問題食品流入校園、餐飲業及市民餐桌。\n\n同時，資訊揭露必須更即時、更透明，讓民眾擁有知情權，也保障合法業者的權益。\n\n我再次呼籲，中央與地方攜手加速稽查，盡快釐清問題產品流向，讓市民吃得安心、買得放心。",
       "topicScores": {
         "教育": 1.0
@@ -387,10 +801,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DaeqUxaGgZy"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1624346845721390",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/3f95cb983553ce1a6bb7.webp",
@@ -400,6 +836,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T04:58:11.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "食安不能只靠事後重罰，事前預防才是重點。\n\n最高標準守護食安，是政府責無旁貸的責任。市府應加強稽查人力、提高查核密度，從源頭把關，避免問題食品流入校園、餐飲業及市民餐桌。\n\n同時，資訊揭露必須更即時、更透明，讓民眾擁有知情權，也保障合法業者的權益！\n\n我再次呼籲，中央與地方攜手加速稽查，盡快釐清問題產品流向，讓市民吃得安心、買得放心。",
       "topicScores": {
         "教育": 1.0
@@ -407,10 +844,32 @@
       "topics": [
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/reel/1677688383454372/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1624179529071455",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/defa5c5e09736465f76e.webp",
@@ -424,6 +883,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T00:00:42.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "豐原曾是台中縣的政治經濟中心，但這八年來似乎被市府遺忘，導致人口及商業活動逐漸流失。\n\n豐原不能再被邊緣化！未來我將優先推動捷運紅線延伸至豐原，並以豐原車站為中心發展交通路網，同時推廣文化觀光亮點，吸引更多人走進豐原，帶動地方經濟再次繁榮。\n\n今晚我也將前往 #大甲 舉辦 #168巡迴說明會，歡迎大家一起到大甲孟春里活動中心，和我面對面交流，一起討論台中的未來。\n活動資訊請見👉https://www.facebook.com/share/p/1Hy6FuRdhJ/",
       "topicScores": {
         "交通": 0.3333,
@@ -435,10 +895,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/2724824514562804/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DactVJ5GeHO",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/e38fa0aa40d7abf53f38.webp",
@@ -451,6 +933,7 @@
       "platform": "threads",
       "postedAt": "2026-07-06T10:45:47+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:大肚和和美僅一溪之隔，居民往返卻得繞行20、30分鐘。為改善交通，我與陳素月 @sayyessayhi 委員共同推動總經費32億元的「大肚和美橋」，成功爭取中央超過24億元補助，讓工程順利推進。\n\n台中端▶️內政部國土管理署「生活圈道路系統建設計畫」補助約11億8,735萬元\n彰化端▶️交通部公路局計畫獲中央補助約12億1,918萬元\n\n今天大橋完成合龍，象徵這項地方期盼多年的重大建設邁向新里程碑。未來通車後，台中、彰化往返時間由原本的半小時，縮短至1到2分鐘，大幅提升中彰生活圈的交通效率。\n\n未來我也會持續監督工程進度，讓大肚和美橋如期、如質完工，串聯中彰、帶動地方發展。",
       "topicScores": {
         "交通": 0.5,
@@ -462,10 +945,32 @@
         "社福",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DactVJ5GeHO"
     },
     {
+      "actionEvidence": {
+        "criticism": [
+          "批評"
+        ]
+      },
+      "actionLabels": [
+        "批評究責"
+      ],
+      "actions": [
+        "criticism"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaccktCje9i",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/f068dc2bb6ad1c925010.webp",
@@ -473,6 +978,7 @@
       "platform": "threads",
       "postedAt": "2026-07-06T08:20:16+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:矢板明夫先生今日在台中遭不明男子攻擊受傷送醫。警方除依法偵辦外，也應釐清是否涉及尾隨、預謀或其他犯案動機。\n\n民主社會可以辯論、可以批評，但絕不能用暴力讓不同意見噤聲。\n\n事件發生在台中，警方應儘速查明犯嫌身分、犯案動機，並向社會說明偵辦進度。\n\n祝福矢板先生早日康復，也期待案件儘快水落石出。",
       "topicScores": {
         "生活": 1.0
@@ -480,10 +986,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.threads.com/t/DaccktCje9i"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaZshyRmZFc",
       "imageAspect": 1.1527,
       "imageUrl": "assets/feed-images/30ae7f6383bd486b5ac7.webp",
@@ -491,6 +1019,7 @@
       "platform": "threads",
       "postedAt": "2026-07-05T06:41:03+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:threads給我週年小帽子，但不遮陽（？）\n\n週末行程依然馬不停蹄，有點被熱暈！提醒大家，外出記得防曬和補充水分呦！",
       "topicScores": {
         "生活": 1.0
@@ -498,10 +1027,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.threads.com/t/DaZshyRmZFc"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1622613929228015",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/b92b407fdfd96d5e6fde.webp",
@@ -511,6 +1062,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T05:56:06.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "炎熱的週末，適合來一碗台中限定的麻薏料理🌿💚\n\n日前 賴清德總統和作家楊双子一起品嚐傳統麻薏湯，我也來推薦另一道台中特色創意美食「麻薏粉粿」！\n\n＃麻薏 不只是傳統，也發展出許多新吃法，邀請大家一起來品嚐這份台中的夏日滋味。",
       "topicScores": {
         "文化觀光": 1.0
@@ -518,10 +1070,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/1058587636827411/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1621925492630192",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/90ee38e4046df66dee3c.webp",
@@ -534,6 +1108,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T11:00:46.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "北屯是台中人口第一大行政區，隨著人口持續成長，交通建設更不能落後。\n\n我們要加速完善捷運、公車路網，改善台74線壅塞問題，讓通勤更順暢、生活更便利。\n\n未來我會帶領市府攜手中央，全力推動北屯交通升級，打造生活品質No.1的宜居行政區！",
       "topicScores": {
         "交通": 1.0
@@ -541,10 +1116,32 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/947787001649747/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaXD171ibyw",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/8615b9ecee0c234ab2fa.webp",
@@ -552,6 +1149,7 @@
       "platform": "threads",
       "postedAt": "2026-07-04T06:07:06+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:艷陽高照的週六下午最適合吃什麼？\n當然就是台中道地的麻薏料理❤️\n\n日前賴總統和作家楊双子品嚐傳統麻薏湯，我也想推薦甜甜涼涼的「麻薏粉粿」！\n\n相信 @william_chingte 總統一定會喜歡麻薏創意料理，我也相信應該會比寵物展的狗狗肉條好吃啦！",
       "topicScores": {
         "生活": 1.0
@@ -559,10 +1157,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.threads.com/t/DaXD171ibyw"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXDvGGxa7m/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/4a300c851f7dc0e15bba.webp",
@@ -570,6 +1190,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T06:06:55+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "艷陽高照的週六下午最適合吃什麼？\n當然就是台中道地的麻薏料理❤️\n\n日前賴總統和作家楊双子品嚐傳統麻薏湯，我也想推薦甜甜涼涼的「麻薏粉粿」！\n\n相信 @william_chingte 總統一定會喜歡麻薏創意料理，我也相信應該會比寵物展的狗狗肉條好吃啦！",
       "topicScores": {
         "生活": 1.0
@@ -577,10 +1198,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaXDvGGxa7m/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1621727292650012",
       "imageAspect": 1.7771,
       "imageUrl": "assets/feed-images/2e65159753e16fa1fb50.webp",
@@ -594,6 +1237,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T05:36:02.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "今天和 洪申翰 Sun-Han 部長來到 2026 中區就業博覽會，看到許多求職、轉職的朋友，也看到企業積極招募人才。這是台中產業、人才與勞工朋友共同前進的起點。\n\n台中是產業重鎮，也是許多勞工朋友打拚生活、照顧家庭、追求未來的城市。面對 AI 時代，勞工更需要因應變化、掌握趨勢，並且共同升級。\n\n未來我將成立「AI創新人才研修所」，協助各行各業導入 AI 應用，讓 AI 成為勞工提升職能、減輕負擔的工具，也幫助企業提升產能與競爭力。\n\n同時，我也將成立「青年局」，專責整合青年就業、職能培訓、創業輔導、國際交流、公共參與與生活支持等資源，陪伴青年從就學、就業，到成家立業、創業發展，讓年輕人能在台中看見希望、留下來打拚。\n\n我們要讓青年有舞台、企業有人才、勞工有保障。從青年局到 AI創新人才研修所，核心目標就是讓勞工朋友在台中「好生存」❤️\n\n#青年局\n#AI創新人才研修所\n#心存大台中",
       "topicScores": {
         "社福": 0.0714,
@@ -603,10 +1247,32 @@
         "經濟",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid02XAWHBnYuiWBrLgXwzoGcLvZm3KfZX8h6Jryj3MnRq36JWgNQ9xYjtaEs17ALe1nl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1621670365989038",
       "imageAspect": 0.7111,
       "imageUrl": "assets/feed-images/7e44b1b4cb50903b2eec.webp",
@@ -616,6 +1282,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T04:00:30.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "何欣純168巡迴說明會，即將來到甲安埔📣\n\n這次我將來到甲安埔，和大家報告未來大台中的施政方向，也希望透過面對面的討論，傾聽在地居民心聲，讓「欣市政」更貼近地方需求。\n\n當天也將與 施志昌 議員、 吳中源 護家園  議員候選人 一同和鄉親交流，誠摯邀請大家一起來，你的每一個建議，都是台中進步的重要力量！\n\n📌168巡迴說明會甲安埔場\n時間：7月7日（二）晚上六點\n地點：大甲區公所日南地區服務中心暨兒童運動中心2樓（孟春里活動中心）\n（大甲區孟春里中山路二段317號）\n\n#心存大台中\n#台中純派\n#六星市政168",
       "topicScores": {
         "體育": 1.0
@@ -623,10 +1290,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid032DQ76YbrVUfFG1yFHuoA1QPjStujLbsEmmTg2oipi3KRr8FFWREqRXiHZSvsW5Fl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1620796589409749",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/a2204d268b8a8fa13a62.webp",
@@ -641,6 +1330,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T04:40:36.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "北屯是台中人口第一大行政區，這幾年許多年輕家庭陸續搬進北屯，在人口持續增加的情況下，區域發展也得跟上。\n\n未來我會攜手 謝家宜 宜起拼未來 、曾咨耀 及 陳信秀 北屯新秀，一起改善北屯居民關心的問題，讓北屯越來越進步：\n\n1️⃣綠線延伸大坑路線於第一任期四年內動工\n同時全力推動捷運藍線實質動工，加速建設台中軌道運輸系統。\n\n2️⃣完善公車路網\n北屯許多社區反映公車班次不足、路線不夠便利，甚至出現脫班與減班問題，未來市府必須重新檢討，讓公車更符合人口成長與社區生活需求。\n\n3️⃣改善台74線塞車問題\n74線是北屯重要交通動脈，但上下班尖峰時段匝道經常回堵，未來市府會導入「AI智慧交通號誌管控系統」，透過大數據掌握尖峰車流、調整平面道路號誌秒數，並結合即時交通資訊與APP，解決市民最有感的交通問題。\n\n#六星市政168 前進台中各地！和市民說明我的建設願景，邀請大家來參與，我們一起討論這座城市的未來。\n\n#心存大台中\n#台中純派",
       "topicScores": {
         "交通": 0.9091,
@@ -650,10 +1340,32 @@
         "交通",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid02qyFwVCCzPfjAK1MpkUpEN9uoVH8DnNxcGTtU8cJvd4b5ZscTd1Mgn8YBTyJ6dcnFl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/DaSJRflgHIr",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/be36878d7a614a4014d9.webp",
@@ -665,6 +1377,7 @@
       "platform": "threads",
       "postedAt": "2026-07-02T08:21:44+00:00",
       "sourceId": "ho-hc-threads",
+      "targets": [],
       "text": "@a_chun1973:今天台中市府舉辦無人機論壇，我週一收到邀請後，便調整既定行程到場參與。\n\n依照國民黨版本，特別預算要改編列在年度預算中，但今年度總預算原本應在2025年底完成審查，如今到了2026年7月仍未定案，產業如何安心投入研發？\n\n聽說本週五朝野將併案審查行政院、國民黨及立委版本，期待能順利推進。\n\n我也再次呼籲，在野黨不、要、再、阻、擋無人機特別預算。世界都在發展無人機，台灣占有關鍵位置，台中更擁有完整供應鏈，不能錯失這次產業升級的機會。",
       "topicScores": {
         "經濟": 0.25,
@@ -674,10 +1387,32 @@
         "議會監督",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.threads.com/t/DaSJRflgHIr"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1619967829492625",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/6863562265953e850fb1.webp",
@@ -688,6 +1423,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T06:09:51.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "今天台中市府辦理無人機論壇，我在本週一收到邀請通知，連忙排開既定行程赴會參加。\n\n依照國民黨版本，要將特別預算編列在「年度預算」中，試問：本該在2025底就審完的今年度總預算，拖到現在2026年7月都還擱置，如何讓產業界可以安心研發？聽說本週五在野黨終於願意讓行政院的版本、國民黨的版本、立法委員個人的版本併案處理，希望屆時可以順利。\n\n我也再次呼籲：在野黨不要再阻擋無人機特別預算了！\n\n世界各國都在發展無人機，台灣具有關鍵性的位置，台中又有這麼完整的加工體系跟供應鏈，一定要好好把握，不能讓機會流失。",
       "topicScores": {
         "經濟": 0.2,
@@ -697,10 +1433,32 @@
         "議會監督",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/reel/1048596694520263/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1619871926168882",
       "imageAspect": 0.7069,
       "imageUrl": "assets/feed-images/b0957b2ef20c9f6c307f.webp",
@@ -713,6 +1471,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T03:22:10.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "何欣純168巡迴說明會，今晚即將來到豐原區📣\n\n台中的未來，需要更多市民一起參與、一起討論。\n\n這次我將來到豐原，和大家分享未來市政願景，從交通建設、產業發展，到教育、社福與青年政策，一起聊聊我們期待中的台中，也聽聽大家最真實的聲音。\n\n現場也將與 謝志忠　幫您講話 議員、 蔡怡萱（蔡ㄟ） 議員候選人一同交流，期待今晚和大家見面！\n\n📌168巡迴說明會豐原場\n時間：7月2日（四）18:00\n地點：豐原豐圳（新）活動中心（台中市豐原區成功路520號）\n\n#心存大台中\n#台中純派\n#六星市政168",
       "topicScores": {
         "交通": 0.25,
@@ -726,10 +1485,32 @@
         "教育",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0F3rBTjnvHHRFKempRSKjNV2Zr6cHQNqgff3bDev9TXvpcLGUGbDTe6Yzw5epbaPTl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1619298239559584",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/7875b9a4bc7d9a3061bf.webp",
@@ -741,6 +1522,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-01T11:00:38.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "周末參與 由豐原農會舉辦的「2026稻田遊戲節」，很開心和大小朋友一起參與，大家透過玩樂，也了解到每一碗白飯都來自農民的辛苦付出。\n\n稻田不只是生產糧食的地方，更是孩子學習生命教育、環境教育與食農教育的重要場域。\n\n未來我也會持續和農會一起推動更多食農教育與農業體驗，讓孩子更認識土地，也讓台中的農業與農村文化持續傳承💚",
       "topicScores": {
         "教育": 0.6667,
@@ -752,10 +1534,32 @@
         "環境",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1718050995981756/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1619040189585389",
       "imageAspect": 1.9157,
       "imageUrl": "assets/feed-images/a85e98cf1274e9fa1662.webp",
@@ -765,6 +1569,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-01T03:59:53.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "午安！天氣很熱，大家要注意防曬、記得補充水分！\n關切國家大事，也要心平氣和。\n\n目前我正接受黃光芹專訪，談談無人機產業對台灣的重要性。\n\n邀請大家現在、立刻、馬上點擊下方連結，收看 ＃中午來開匯，我們一起在線上關心這個國家的安全、這座城市的未來。\n\n🔴 點此進入直播⬇️",
       "topicScores": {
         "經濟": 1.0
@@ -772,10 +1577,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/94achun/posts/pfbid0SvJtfMeAirNVDhrhZJapR3yV791ofH2vyXzcxWW7VvWhKcyaTT6LUxqifd8adBvjl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1618421662980575",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/bc1db6fe1fc9e97b67a2.webp",
@@ -786,6 +1613,7 @@
       "platform": "facebook",
       "postedAt": "2026-06-30T11:00:56.000Z",
       "sourceId": "ho-hc-fb",
+      "targets": [],
       "text": "日前與周永鴻 台中市議員來到神岡參加「小小警消體驗營」，跟著小朋友一起學習實用的自救小撇步。\n\n包括AED操作、人工呼吸、以及火災時的應對，這些都是我們在面對危險時，保護自己與別人的重要技能。\n\n謝謝警察局與消防局舉辦這麼有意義的活動，也希望大家把這些知識記在心裡，備而不用，平平安安、快快樂樂地成長。",
       "topicScores": {
         "治安": 1.0
@@ -793,10 +1621,32 @@
       "topics": [
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "火災",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/reel/1526421495624314/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaM8BARyym4/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/4bf9d3a17b7fea4d3334.webp",
@@ -807,6 +1657,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-30T07:46:37+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "再次回到梨山，看到衛生所煥然一新，真的很開心😊\n\n去年前往梨山衛生所會勘時，發現建物老舊、漏水、設備損壞，因此成功向中央爭取230多萬元修繕經費。\n\n梨山衛生所修繕只是第一步，未來我會從設備、人力、遠距醫療與緊急後送等面向整體提升，讓山城居民也能享有安心的醫療照顧 💚",
       "topicScores": {
         "社福": 0.3333,
@@ -816,10 +1667,32 @@
         "醫療",
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaM8BARyym4/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaKJIIPyNDt/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/5d9419d6f9dc26a5b08e.webp",
@@ -827,6 +1700,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-29T05:44:58+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "突襲檢查！\n\n乾洗髮和韓式髮撲，是我維持儀容的秘密武器，另外台派網友製作的台灣小吊飾，更是支持我跑行程的療癒小物❤️",
       "topicScores": {
         "生活": 1.0
@@ -834,10 +1708,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DaKJIIPyNDt/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaClN0jSs5i/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/c52f51f85598fd75cde4.webp",
@@ -845,6 +1741,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-26T07:15:20+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "你有參加過我們的 #親子童樂列車 活動嗎？\n\n由於活動實在太好玩，不只小朋友玩得開心，連我自己也忍不住加入一起吹泡泡、玩氣球❤️",
       "topicScores": {
         "生活": 1.0
@@ -852,10 +1749,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaClN0jSs5i/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "將推動"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaAOSOMyFX7/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/a9aeca2027c056fa7b59.webp",
@@ -865,6 +1784,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-25T09:16:56+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "青年是城市的未來，我承諾未來將推動 #3大青年新政 ，協助年輕朋友追逐夢想：\n\n⭐成立青年局\n⭐提供青年創業貸款\n⭐協助青年國際參與\n\n何欣純會成為青年的靠山，讓台中因為年輕人而持續欣欣向榮！\n\n#心存大台中\n#台中純派",
       "topicScores": {
         "經濟": 1.0
@@ -872,10 +1792,37 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaAOSOMyFX7/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "public_information": [
+          "開放"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "動員宣傳"
+      ],
+      "actions": [
+        "public_information",
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZ9lfIukfIu/",
       "imageAspect": 1.001,
       "imageUrl": "assets/feed-images/97e132a7cbcd659a0d5d.webp",
@@ -883,6 +1830,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-24T08:49:48+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "不只是網友，其實在跑行程時，許多支持者都和我反應一件事，那就是看板太少。\n\n這期間有蠻多狀況，暫且略而不談。然而我們也明白這確實是一個問題！\n\n因此，誠摯邀請每位 ＃台中純派！成為我的看板，一起提升何欣純的「能見度」。\n\n我們推出兩款「 心存台中」 限定海報，正式在 7-11 ibon 開放下載列印。\n\nibon 列印 3 步驟⬇️\n1. 散步到巷口 7-11，操作 ibon 機台點選「下載列印」\n2. 輸入喜愛的款式編號或是掃描QRcode\n3. 列印出來後張貼，別忘了拍照上傳社群並＠我呦～",
       "topicScores": {
         "生活": 1.0
@@ -890,10 +1838,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "行程",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DZ9lfIukfIu/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZy0038SyAz/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/2868b1397b8af4750ef8.webp",
@@ -906,6 +1876,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-20T04:24:19+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "我在端午連假前，特別前往探視獨居長輩，也到人安基金會台中平安站關懷長者，希望把祝福與溫暖送到大家身邊。\n\n感謝每一位長輩過去為台灣打拚，也感謝人安基金會與所有志工長期投入照顧弱勢。未來我會持續推動更完善的長照與社會支持系統，讓長者獲得更貼近需求的照顧，也讓更多需要幫助的人感受到社會的溫暖。",
       "topicScores": {
         "社福": 1.0
@@ -913,10 +1884,34 @@
       "topics": [
         "社福"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DZy0038SyAz/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該",
+          "必須",
+          "將推動"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZwmThKkTjy/",
       "imageAspect": 1.4371,
       "imageUrl": "assets/feed-images/e374b0d995707ccff926.webp",
@@ -934,6 +1929,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-19T07:37:50+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "昨天我應美國商會邀請進行專題演講，和在台中深耕的國際友人、外商企業代表交流。\n\n在會中分享了幾個小故事\n\n我女兒幼稚園的外師知道我是國會議員後，寫了一封中英文對照信給我，希望我能主動改善台中的空氣品質；也曾有外商公司經理在產業園區座談時直接反映，企業來台中投資、創造就業、帶來技術與管理經驗，卻在申請政府補助時遇到限制。\n\n這些我的親身經驗，都顯示台中要走向國際，市府就必須成為人才與企業真正的夥伴。\n\n未來，我將推動三項具體方向：\n\n第一，成立跨局處的 「外國人事務專案辦公室」，作為國際友人洽公、商務往來與生活福利的單一窗口，協助整合租屋、教育、醫療、交通、工作、居留等需求。\n\n第二，建立長期對話機制，邀請在台中生活與工作的國際朋友參與市政諮詢，讓他們的經驗與意見能進入城市治理。\n\n第三，全面提升台中的基礎建設與生活品質，讓台中成為國際人才與家庭安心生活、安心投資、安心成家的城市。\n\n未來的台中，應該是一座願意聽見問題、面對問題、解決問題的城市。\n\nBuild a More Livable and Beautiful Taichung Together！",
       "topicScores": {
         "交通": 0.1,
@@ -953,10 +1949,32 @@
         "教育",
         "醫療"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DZwmThKkTjy/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZukCrJyiAd/",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/270fd3e85bb142cfae7e.webp",
@@ -964,6 +1982,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-18T12:43:01+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "端午節到了，今年不戰南北，我們中部粽才是最包容平衡的粽子❤️\n（說好不戰的呢？）",
       "topicScores": {
         "生活": 1.0
@@ -971,10 +1990,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DZukCrJyiAd/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "計畫"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DZruOSsPucF/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/af3efb982d0a7bcd2067.webp",
@@ -987,6 +2028,7 @@
       "platform": "instagram",
       "postedAt": "2026-06-17T10:11:02+00:00",
       "sourceId": "ho-hc-ig",
+      "targets": [],
       "text": "今天來到 #石岡土牛運動公園 的溜冰場會勘，發現場地鋪面老舊、裂縫明顯，彎道也缺乏防撞墊，對每天在這裡訓練的孩子來說，存在不小受傷風險，場地改善已經不能再等。\n\n目前台中市府規劃的改善內容以鋪面修整為主，但為了更加保護孩子安全，我建議市府進一步研議納入評估加裝防撞墊，降低選手受傷風險；現場我也要求運動部加速補助審核程序，讓中央補助盡快到位，同時研議補助計畫應納入周邊設施，如看台、家長與選手休息區、遮陽遮雨設施等，打造更安全的運動訓練環境。\n\n未來我會攜手台中隊，持續爭取中央投入資源，推動直排輪運動場地升級，讓孩子能安心訓練、勇敢追夢！",
       "topicScores": {
         "環境": 0.1,
@@ -998,10 +2040,32 @@
         "社福",
         "環境"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DZruOSsPucF/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:XiHnrK1HCLA",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/eb9dd1213999c73ae48a.webp",
@@ -1011,6 +2075,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "北屯人口全台中第一！何欣純提3大交通建設藍圖",
       "topicScores": {
         "交通": 1.0
@@ -1018,10 +2083,32 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=XiHnrK1HCLA"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:pYD6dD1WPMU",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8a6a120194ede9076173.webp",
@@ -1031,6 +2118,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "台中有實力！無人機產業需要支持",
       "topicScores": {
         "經濟": 1.0
@@ -1038,10 +2126,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=pYD6dD1WPMU"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:8Lui8jeBKvY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/c4f04072260e5075cfde.webp",
@@ -1051,6 +2161,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "無人機產業不能只喊口號 更要用行動支持！",
       "topicScores": {
         "經濟": 1.0
@@ -1058,10 +2169,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=8Lui8jeBKvY"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:TNEzaxtC4wQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/a2a3cad4a0c1bdc82122.webp",
@@ -1071,6 +2204,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "從政媽媽最痛的一刻！孩子哭著問 為什麼妳都不來看我表演？",
       "topicScores": {
         "文化觀光": 1.0
@@ -1078,10 +2212,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=TNEzaxtC4wQ"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:TdDp9aMr310",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/47df83131906ae4cd546.webp",
@@ -1089,6 +2245,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "何欣純首談成長故事！曾被黑道討債 上山打工養家",
       "topicScores": {
         "生活": 1.0
@@ -1096,10 +2253,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=TdDp9aMr310"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:TsD6X63oQHY",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/ed0e5aa7435885bb0c76.webp",
@@ -1110,6 +2289,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "北屯未來怎麼走？捷運 公車 74號全面改善 !",
       "topicScores": {
         "交通": 1.0
@@ -1117,10 +2297,32 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/TsD6X63oQHY"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:W6_URc0T6ss",
       "imageAspect": 0.6667,
       "imageUrl": "assets/feed-images/3167d633a98f6337d3db.webp",
@@ -1128,6 +2330,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "每年一定上梨山！阿純最熟悉也最牽掛的地方",
       "topicScores": {
         "生活": 1.0
@@ -1135,10 +2338,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/W6_URc0T6ss"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:W82FqFh5dCM",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/e1a898dfa47e853d85b0.webp",
@@ -1146,6 +2371,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "從不親近到無話不談 我努力追回陪伴 @話時代人物",
       "topicScores": {
         "生活": 1.0
@@ -1153,10 +2379,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/W82FqFh5dCM"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:bKM_XI9Jrh4",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/4b6f2f700f5fc64b764f.webp",
@@ -1164,6 +2412,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "麻薏粉粿加豆花？台中限定吃法🤤你吃過嗎？",
       "topicScores": {
         "生活": 1.0
@@ -1171,10 +2420,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/bKM_XI9Jrh4"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:aJuFrusmFgM",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/06a44bddc7df9fae082a.webp",
@@ -1184,6 +2455,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "從民生到產業 我準備好帶領台中向前走 ! @話時代人物",
       "topicScores": {
         "經濟": 1.0
@@ -1191,10 +2463,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/aJuFrusmFgM"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:1AY5FZ9FTYs",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f681cdfa3ec46879be04.webp",
@@ -1206,6 +2500,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "豐原交通大升級！捷運 公車一次到位",
       "topicScores": {
         "交通": 1.0
@@ -1213,10 +2508,32 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=1AY5FZ9FTYs"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:bYSHZ5NbEwg",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/809c5ec4f130c8236a97.webp",
@@ -1224,6 +2541,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "新社體育嘉年華太好玩了！大小朋友嗨翻❤️",
       "topicScores": {
         "生活": 1.0
@@ -1231,10 +2549,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/bYSHZ5NbEwg"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:St3OJ0nZa6g",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/acb9263177a25d395466.webp",
@@ -1242,6 +2582,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "食安零妥協！守護市民餐桌安全",
       "topicScores": {
         "生活": 1.0
@@ -1249,10 +2590,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=St3OJ0nZa6g"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:8JbQLtXKr_c",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/46dd5e7f493909c988ae.webp",
@@ -1262,6 +2625,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "找回豐原風華！捷運紅線 藍線都要加速",
       "topicScores": {
         "交通": 1.0
@@ -1269,10 +2633,32 @@
       "topics": [
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/8JbQLtXKr_c"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Jtvyp2JET0s",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/a1e3542cc96abf67d640.webp",
@@ -1280,6 +2666,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "港務回饋金去哪了？何欣純專款專用回饋海線",
       "topicScores": {
         "生活": 1.0
@@ -1287,10 +2674,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=Jtvyp2JET0s"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:ATsEia5b6jA",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/49c42fadae49fe92191e.webp",
@@ -1298,6 +2707,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "吃進嘴裡的安全 政府不能等出事才處理！",
       "topicScores": {
         "生活": 1.0
@@ -1305,10 +2715,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/ATsEia5b6jA"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:PCAAYR9hP2o",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/360a9ad0914cb97833e6.webp",
@@ -1316,6 +2748,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "我想替海線完成這件事！",
       "topicScores": {
         "生活": 1.0
@@ -1323,10 +2756,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/PCAAYR9hP2o"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:3iyaSQTAatU",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/57b2f144cc9429d35c0f.webp",
@@ -1336,6 +2791,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "何欣純人才就是台中最重要的投資！@SunHan",
       "topicScores": {
         "經濟": 1.0
@@ -1343,10 +2799,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/3iyaSQTAatU"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "視察"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:YXzPt3azxsY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/199b05fd6766c783ec14.webp",
@@ -1356,6 +2834,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "ho-hc-yt",
+      "targets": [],
       "text": "🌀巴威颱風來襲！何欣純前往太平光隆營區視察防汛 守護市民安全",
       "topicScores": {
         "防災": 1.0
@@ -1363,6 +2842,12 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.youtube.com/watch?v=YXzPt3azxsY"
     }
   ],

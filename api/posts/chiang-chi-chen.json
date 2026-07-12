@@ -22,7 +22,23 @@
   "count": 52,
   "posts": [
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1561202338699915",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/0e0ad42eacbaee139333.webp",
@@ -36,6 +52,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T08:02:01.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "還記得有一群熱血的臺中孩子，代表臺灣遠征西班牙踢足球賽嗎？\n\n沒錯！就是我們臺中清水國小足球隊，在「2026西班牙科斯塔布蘭卡盃」一路過關斬將，今天晚上就是最關鍵的冠軍賽！孩子們即將帶著大家的期盼，全力抱回冠軍金盃🏆\n\n適逢巴威颱風影響，啟臣提醒大家做好防颱準備、平安待在家。今天傍晚，就讓我們一起守在螢幕前，用最熱情的線上聲援為這群「臺中之光」集氣加油！\n\n🏆 冠軍賽直播資訊\n👉 比賽時間：7/11（六）臺灣時間18:15\n\n今晚，讓我們一起為臺灣加油、為臺中清水國小足球隊加油💪🇹🇼\n\n#清水國小足球隊 #臺中之光 \n#前進西班牙 #冠軍賽",
       "topicScores": {
         "教育": 0.2,
@@ -47,10 +64,32 @@
         "教育",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0foRHLvYJFnTkaB7To9EJnTQyTqKvbnLy8LYptgzGmNTeCAQDxfGZvxDYikv3m9YVl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1560984858721663",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/449220341d3c5bfb01d0.webp",
@@ -64,6 +103,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-11T01:00:35.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🍇 臺中金香葡萄、黑后葡萄災損現金救助明起開辦！\n\n上個月底豪雨來襲，導致臺中葡萄受損嚴重。啟臣第一時間要求中央與地方政府「從寬從速」認定，極力為農民發聲；農業部已正式公告，臺中市為金香葡萄、黑后葡萄天然災害現金救助地區。\n\n請農友把握時間，備妥資料於當地公所申辦：\n\n救助額度：每公頃19萬5,000元\n申請資格：損害率達20%以上的農民\n受理期限：115年7月11日-7月24日止（假日照常受理；但11日受颱風假影響，順延至25日）\n補充提醒：若遇天災停班將順延；因不可抗力錯過者，可在原因消滅後10日內申請回復原狀\n\n救助金並非解決農災問題之根本，啟臣未來會積極推動科技防災對策，與農民一起防範未然，一起顧好農產品質、升級臺中農業，打造 #農業旗艦城💪\n\n#臺中啟程 #打造旗艦城 #臺中農業 #金香葡萄 #黑后葡萄 #守護農民 #農家子弟",
       "topicScores": {
         "經濟": 0.2,
@@ -73,10 +113,37 @@
         "防災",
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0fpcxZ9qpU2ALRyo7SuRanBCzTvG9YU97eK4yZY1dJ2iYp1EzLxmruu1EErWP4HT3l"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DanFHF4oF-c/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/3243e2b86f53d1539ca7.webp",
@@ -90,6 +157,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T11:26:01+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🌀巴威颱風近逼\n防災視同作戰，請市民朋友們做好防颱準備🙏\n\n中央氣象署已發布中度颱風巴威的海陸警報，上午臺中雖天氣狀況不錯，但今晚到明天將是風雨最劇烈的時候！臺中市政府已宣布今晚18:00起至明天全天「停止上班、上課」，請大家提早回家，防災不可鬆懈。\n\n啟臣特別提醒市民朋友，切勿前往沿海觀浪或進入山區。同時也請農漁民鄉親多加留意，請務必加強田間排水與作物固定，漁友們也要緊固港區船隻、注意養殖巡檢，安全為第一。\n\n颱風過境期間，最辛苦的就是第一線的警察、消防、搶修同仁與防災夥伴。是您們頂著風雨、守護這座城市。啟臣要向所有堅守崗位的無名英雄致上最深謝意，執行勤務時，請務必注意自身安全！\n\n面對天災，多一分準備、少一分災害，盼一切平安、臺中平安🙏\n\n#巴威颱風 #防災視同作戰 #安全第一 #臺中平安",
       "topicScores": {
         "治安": 0.1818,
@@ -99,10 +167,37 @@
         "防災",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DanFHF4oF-c/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "搶修"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1560516958768453",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/f99061a1a3fc396e9b96.webp",
@@ -116,6 +211,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-10T11:25:56.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🌀巴威颱風近逼\n防災視同作戰，請市民朋友們做好防颱準備🙏\n\n中央氣象署已發布中度颱風巴威的海陸警報，上午臺中雖天氣狀況不錯，但今晚到明天將是風雨最劇烈的時候！臺中市政府已宣布今晚18:00起至明天全天「停止上班、上課」，請大家提早回家，防災不可鬆懈。\n\n啟臣特別提醒市民朋友，切勿前往沿海觀浪或進入山區。同時也請農漁民鄉親多加留意，請務必加強田間排水與作物固定，漁友們也要緊固港區船隻、注意養殖巡檢，安全為第一。\n\n颱風過境期間，最辛苦的就是第一線的警察、消防、搶修同仁與防災夥伴。是您們頂著風雨、守護這座城市。啟臣要向所有堅守崗位的無名英雄致上最深謝意，執行勤務時，請務必注意自身安全！\n\n面對天災，多一分準備、少一分災害，盼一切平安、臺中平安🙏\n\n#巴威颱風 #防災視同作戰 #安全第一 #臺中平安",
       "topicScores": {
         "治安": 0.1818,
@@ -125,10 +221,32 @@
         "防災",
         "治安"
       ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、中央氣象署",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02CbmZsxjsbQVn5VdC24KN2yfjdSMxUrPLZzbNdhq2v2pRMyPYu27u4kZwavN1c1FBl"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dal2vL1gPnO/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/3d4b05da418808e2e9c1.webp",
@@ -139,6 +257,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-10T00:01:37+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "感謝民間善心捐贈！\n日前啟臣受邀見證熱心公益的林傳全先生，慷慨捐贈優異越野性能的消防警備車予特搜大隊國光分隊，用實際行動充實臺中的救災戰力，守護市民生命財產安全，真的非常令人欽佩！政府資源有限、民間力量無窮。特別感謝所有消防弟兄始終站在第一線守護市民，適逢颱風來襲，也特別提醒鄉親朋友們務必提早做好防颱準備、注意安全！",
       "topicScores": {
         "治安": 0.6667,
@@ -148,10 +267,33 @@
         "治安",
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/Dal2vL1gPnO/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaktVRqID6S/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/9ea68895790cbe692804.webp",
@@ -164,6 +306,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-09T13:19:46+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🌪️強颱巴威來襲！\n啟臣提醒全國鄉親務必嚴加戒備、提早做好防颱準備！ \n\n根據氣象報導，這次的巴威颱風是今年最強、最有感的颱風，大家絕對不能掉以輕心！啟臣特別提醒所有大臺中的鄉親朋友，請務必提前巡檢居家周邊、固定招牌門窗並清空排水溝渠。特別是居住在山區、沿海地區的市民朋友，要密切注意土石流警戒與長浪豪雨資訊。\n\n我們最辛苦的農友與漁民朋友，在巡視田區、加固農作與進行漁船防颱整備時，請務必將「人身安全」放在第一位，隨時注意風雨變化，千萬不要冒險涉溪或出海！\n\n面對強颱考驗，希望大家都能平安渡過颱風天，天佑臺灣、臺中平安！",
       "topicScores": {
         "防災": 1.0
@@ -171,10 +314,33 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.instagram.com/p/DaktVRqID6S/"
     },
     {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1559790452174437",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/1ea1e27894021a52c88b.webp",
@@ -187,6 +353,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-09T13:19:41.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🌪️強颱巴威來襲！\n啟臣提醒全國鄉親務必嚴加戒備、提早做好防颱準備！ \n\n根據氣象報導，這次的巴威颱風是今年最強、最有感的颱風，大家絕對不能掉以輕心！啟臣特別提醒所有大臺中的鄉親朋友，請務必提前巡檢居家周邊、固定招牌門窗並清空排水溝渠。特別是居住在山區、沿海地區的市民朋友，要密切注意土石流警戒與長浪豪雨資訊。\n\n我們最辛苦的農友與漁民朋友，在巡視田區、加固農作與進行漁船防颱整備時，請務必將「人身安全」放在第一位，隨時注意風雨變化，千萬不要冒險涉溪或出海！\n\n面對強颱考驗，希望大家都能平安渡過颱風天，天佑臺灣、臺中平安！",
       "topicScores": {
         "防災": 1.0
@@ -194,10 +361,32 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、警戒、土石流",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02aM9Ly51WkBQmrjXw4BBLMi3guqAYLXdn8BX8TE2SikuzvqEiWgD323c9147Yn8mBl"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahbQexICuq/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/e62deac8edafda1e50d5.webp",
@@ -209,6 +398,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T06:44:05+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "非常榮幸受邀參加2026中部地區企業座談會，看到中部五縣市首長包括了王惠美縣長、鍾東錦縣長、盧秀燕市長、許淑華縣長以及張麗善縣長與眾多頂尖企業家齊聚一堂，展現了中臺灣最強大的團結力量。我與立法院同事在中央不分黨派，全力為中部爭取資源，把地方的聲音帶進中央。\n\n中臺灣是全臺最大的製造基地與精密機械重鎮，在全球供應鏈中不可或缺。過去中部頭家最吃虧的就是「有工廠、沒店面」，優質產品都得送到外地展覽。非常 #感謝盧秀燕市長帶領的市府團隊 ，自籌89億元蓋好臺中國際會展中心，今年所有檔期全部爆滿！現在買家在臺中看展，頭家一聲「工廠就在隔壁，30分鐘帶你看現場」， #前店後廠 一條龍的效益直接讓成交額逆勢翻倍。因為成效驚人，中央也將補助興建會展中心第二期。\n\n未來，我們擁有頂尖的製造基地、最大的會展店面，再加上空港與海港優勢，中臺灣已經具備直通國際的絕對實力。只要團結在一起，中臺灣就是全世界「最完整、最具韌性的臺灣供應鏈」，更是臺灣邁向國際最亮眼的名片！我們作伙打拚，讓中臺灣走向全世界，作伙大賺錢！\n\n#中臺灣強強聯手 \n#臺中國際會展中心 #全球供應鏈 \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 0.3333,
@@ -220,10 +410,32 @@
         "文化觀光",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DahbQexICuq/"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1558753405611475",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/56c54d43809af6d2232b.webp",
@@ -235,6 +447,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-08T06:43:57.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "非常榮幸受邀參加2026中部地區企業座談會，看到中部五縣市首長包括了王惠美縣長、鍾東錦縣長、盧秀燕市長、許淑華縣長以及張麗善縣長與眾多頂尖企業家齊聚一堂，展現了中臺灣最強大的團結力量。我與立法院同事在中央不分黨派，全力為中部爭取資源，把地方的聲音帶進中央。\n\n中臺灣是全臺最大的製造基地與精密機械重鎮，在全球供應鏈中不可或缺。過去中部頭家最吃虧的就是「有工廠、沒店面」，優質產品都得送到外地展覽。非常 #感謝盧秀燕市長帶領的市府團隊 ，自籌89億元蓋好臺中國際會展中心，今年所有檔期全部爆滿！現在買家在臺中看展，頭家一聲「工廠就在隔壁，30分鐘帶你看現場」， #前店後廠 一條龍的效益直接讓成交額逆勢翻倍。因為成效驚人，中央也將補助興建會展中心第二期。\n\n未來，我們擁有頂尖的製造基地、最大的會展店面，再加上空港與海港優勢，中臺灣已經具備直通國際的絕對實力。只要團結在一起，中臺灣就是全世界「最完整、最具韌性的臺灣供應鏈」，更是臺灣邁向國際最亮眼的名片！我們作伙打拚，讓中臺灣走向全世界，作伙大賺錢！\n\n#中臺灣強強聯手 \n#臺中國際會展中心 #全球供應鏈 \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 0.3333,
@@ -246,10 +459,32 @@
         "文化觀光",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid023PjKfDAeMFKLtmtASaB21LhqijeqDBsw49ZHVscnPwjatNPzYuUsaQGPoDX7bUY8l"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DahRTzmICJh/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/80e3a5f18f3df703e134.webp",
@@ -260,6 +495,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-08T05:17:10+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "食安是要命的事！\n致癌油漏洞零容忍，危機處理不能打折\n\n中聯油脂的致癌油風暴擴大，全臺數百家業者與百所校園中標，甚至爆出大廠隱匿通報半個月，罔顧民生、可惡至極。\n\n「食安是最要命的事！」啟臣要嚴正強調，關乎所有臺中市民及孩子的健康，絕對不能有任何蓋牌或隱瞞。我全力支持盧秀燕市長「食安零容忍」的鐵腕重罰！\n\n身為立法院副院長，我會要求衛福部與地方緊密配合、全面追蹤溯源。食安不分黨派，當務之急是將問題油品盡速下架封存，並在九月開學前，全面汰換校園團膳油品。\n\n我們也會全力捍衛受波及的臺中在地小吃、商家等商譽。相關資訊透明公開、絕不姑息，我和盧市長會站在第一線看緊門戶，真正讓市民安心。\n\n#臺中啟程 #打造旗艦城 #食安 #油品 #小吃",
       "topicScores": {
         "教育": 0.6667,
@@ -269,10 +505,32 @@
         "教育",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DahRTzmICJh/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1558704262283056",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/2db627d6fff7a0de3498.webp",
@@ -283,6 +541,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-08T05:17:06.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "食安是要命的事！\n致癌油漏洞零容忍，危機處理不能打折\n\n中聯油脂的致癌油風暴擴大，全臺數百家業者與百所校園中標，甚至爆出大廠隱匿通報半個月，罔顧民生、可惡至極。\n\n「食安是最要命的事！」啟臣要嚴正強調，關乎所有臺中市民及孩子的健康，絕對不能有任何蓋牌或隱瞞。我全力支持盧秀燕市長「食安零容忍」的鐵腕重罰！\n\n身為立法院副院長，我會要求衛福部與地方緊密配合、全面追蹤溯源。食安不分黨派，當務之急是將問題油品盡速下架封存，並在九月開學前，全面汰換校園團膳油品。\n\n我們也會全力捍衛受波及的臺中在地小吃、商家等商譽。相關資訊透明公開、絕不姑息，我和盧市長會站在第一線看緊門戶，真正讓市民安心。\n\n#臺中啟程 #打造旗艦城 #食安 #油品 #小吃",
       "topicScores": {
         "教育": 0.6667,
@@ -292,10 +551,32 @@
         "教育",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0sHVQmHkSs19P1oLZn36XHDR1FR4FZeZpSb56coS3bko1jmKeCMnYX6uVd6cyDidol"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaftO_XIEcf/",
       "imageAspect": 1.5037,
       "imageUrl": "assets/feed-images/136d03b0dfaa33a5b544.webp",
@@ -309,6 +590,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-07T14:42:41+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🇺🇸🇹🇼 老朋友再次相聚！熱烈歡迎美國聯邦參議員達克沃斯Tammy Duckworth蒞臨臺灣！ \n\n今天晚上，啟臣非常高興能再次設宴款待我的好朋友——美國聯邦參議員達克沃斯（Tammy Duckworth），這已經是我們連續兩年在臺灣見面，非常開心與老朋友再次相見。今天我們就臺美直航、無人機產業、海底電纜與水下無人載具、美國國會選舉制度等交換意見。\n\n回想去年端午前夕她訪問臺灣時，我特別將我們2023年在美國華府會面時的合照印製出來送給她留念。那張照片不僅見證我們的交情，更象徵著臺美之間堅若磐石的緊密情誼。達克沃斯參議員從2021年訪臺贈送疫苗後，每年都會固定訪問臺灣，是我們最堅定的友人！我也邀請她下次一定要安排來臺中參訪，看看我們大臺中的產業與文化，以及最熱情的臺中味！\n\n感謝達克沃斯參議員一路以來堅定挺臺，是臺灣在美國國會最堅實、最勇敢的盟友，長期致力於深化臺美安全與經貿合作。今天再次相聚，我們針對多項雙邊議題深入交換意見。期待能在既有的深厚基礎上，臺美合作能持續朝制度化、常態化地推進，共同捍衛區域的民主與繁榮！\n\n#臺美友好 #國會外交\n#民主夥伴 #能在地能國際\n#讓世界看見臺灣",
       "topicScores": {
         "兩岸外交": 0.1667,
@@ -324,10 +606,32 @@
         "文化觀光",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaftO_XIEcf/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1558170299003119",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/ad909a3cc32ac720490b.webp",
@@ -341,6 +645,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T14:42:35.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🇺🇸🇹🇼 老朋友再次相聚！熱烈歡迎美國聯邦參議員達克沃斯Tammy Duckworth蒞臨臺灣！ \n\n今天晚上，啟臣非常高興能再次設宴款待我的好朋友——美國聯邦參議員達克沃斯（Tammy Duckworth），這已經是我們連續兩年在臺灣見面，非常開心與老朋友再次相見。今天我們就臺美直航、無人機產業、海底電纜與水下無人載具、美國國會選舉制度等交換意見。\n\n回想去年端午前夕她訪問臺灣時，我特別將我們2023年在美國華府會面時的合照印製出來送給她留念。那張照片不僅見證我們的交情，更象徵著臺美之間堅若磐石的緊密情誼。達克沃斯參議員從2021年訪臺贈送疫苗後，每年都會固定訪問臺灣，是我們最堅定的友人！我也邀請她下次一定要安排來臺中參訪，看看我們大臺中的產業與文化，以及最熱情的臺中味！\n\n感謝達克沃斯參議員一路以來堅定挺臺，是臺灣在美國國會最堅實、最勇敢的盟友，長期致力於深化臺美安全與經貿合作。今天再次相聚，我們針對多項雙邊議題深入交換意見。期待能在既有的深厚基礎上，臺美合作能持續朝制度化、常態化地推進，共同捍衛區域的民主與繁榮！\n\n#臺美友好 #國會外交\n#民主夥伴 #能在地能國際\n#讓世界看見臺灣",
       "topicScores": {
         "兩岸外交": 0.1667,
@@ -356,10 +661,32 @@
         "文化觀光",
         "兩岸外交"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0HytanzqKGg1is3MkdyhDbN9B69qvBvhTe79C2S6kzqbtEGPxA2EQGKf5zQsQfBdUl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Daetl3QILGV/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/2003c7a3e24d5730ca31.webp",
@@ -375,6 +702,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-07T05:26:35+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "克服萬難，逐步實現鄉親期盼！\n#東豐快速道路 #今年底局部通車\n\n對山城居民而言，東豐快速道路不是一條普通的道路，而是一條等待了數十年的希望道路，一條攸關安全、醫療、產業的生命救援線！103年動工、早該於109年完工通車的東豐快，因故在104年遭到擱置延宕，甚至讓環評遭到撤銷，導致計劃只能從頭開始，突兀的「斷橋景觀」更成為山城鄉親永遠的痛！\n\n盧秀燕市長上任後，啟臣與臺中市政府攜手合作，重啟環評、反覆協調，從復工、落墩、縫合斷橋、隧道鑽掘，啟臣不只持續爭取中央補助，更時刻緊盯追蹤工程進度。如今工程全面推進、今年底東勢至石岡可望先行通車、118年全線通車！這條路走得並不容易，但一路走來，我始終沒有放棄。\n\n因為這條路不只是縮短通勤時間，更攸關山城居民緊急就醫、救災應變，也關係著水果、農產運輸，以及地方觀光產業的發展。我始終相信，真正的建設，是願意花時間、花力氣，把每一項承諾一步一步完成。東豐快速道路，就是最好的證明。山城要發展，交通一定要先到位；山城的未來，我們會繼續努力！\n\n#豐原山城 #臺中啟程\n#路網縫合 #繁榮山城",
       "topicScores": {
         "交通": 0.5833,
@@ -390,10 +718,32 @@
         "醫療",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/Daetl3QILGV/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1557804202373062",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/5f5dbb7e7ef1557682a3.webp",
@@ -409,6 +759,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-07T05:26:29.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "克服萬難，逐步實現鄉親期盼！\n#東豐快速道路 #今年底局部通車\n\n對山城居民而言，東豐快速道路不是一條普通的道路，而是一條等待了數十年的希望道路，一條攸關安全、醫療、產業的生命救援線！103年動工、早該於109年完工通車的東豐快，因故在104年遭到擱置延宕，甚至讓環評遭到撤銷，導致計劃只能從頭開始，突兀的「斷橋景觀」更成為山城鄉親永遠的痛！\n\n盧秀燕市長上任後，啟臣與臺中市政府攜手合作，重啟環評、反覆協調，從復工、落墩、縫合斷橋、隧道鑽掘，啟臣不只持續爭取中央補助，更時刻緊盯追蹤工程進度。如今工程全面推進、今年底東勢至石岡可望先行通車、118年全線通車！這條路走得並不容易，但一路走來，我始終沒有放棄。\n\n因為這條路不只是縮短通勤時間，更攸關山城居民緊急就醫、救災應變，也關係著水果、農產運輸，以及地方觀光產業的發展。我始終相信，真正的建設，是願意花時間、花力氣，把每一項承諾一步一步完成。東豐快速道路，就是最好的證明。山城要發展，交通一定要先到位；山城的未來，我們會繼續努力！\n\n#豐原山城 #臺中啟程\n#路網縫合 #繁榮山城",
       "topicScores": {
         "交通": 0.5833,
@@ -424,10 +775,32 @@
         "醫療",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0iU4NDj3fdFQLWb6LjzDmQvoohjNWEg8De6s163yDMbUk8KvbFxtbrY5TitRiymzEl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/Dab5VhBIKGF/",
       "imageAspect": 1.5037,
       "imageUrl": "assets/feed-images/7e72c6b85f55dd2c7b17.webp",
@@ -441,6 +814,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-06T03:11:29+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "歷經20年等待！大肚和美橋今日正式合龍，中彰黃金生活圈即將啟程🚗✨ \n\n今天一早，啟臣來到大肚和美橋的合龍考察，看到跨越烏溪橋梁正式交會，心中有無比的感動！這是鄉親20年的期盼，歷經3任市長與在地議員、立委共同攜手努力，今天我們終於迎來了關鍵的歷史里程碑，正朝著今年10月底通車的目標全力衝刺！\n\n這項由「中臺灣區域治理平台」凝聚共識、共同推動的重大交通建設，總經費將近33億元。大肚和美橋全長1,690公尺，目前實際工程進度已達92%。未來通車後，兩地原本長途繞道超過30分鐘的車程將大幅縮短至只要3分鐘！\n\n這不只是一座橋，更是串聯中彰30分鐘生活圈的關鍵動脈；不只是大肚和美橋的工程，我也希望未來捷運綠線南延至彰化進度能夠加速，為中彰地區提供更多的服務量能。期能透過完善交通串聯區域發展，將臺中大肚山黃金縱谷與彰化產業聚落緊密結合，攜手共創中臺灣智慧製造的經濟奇蹟，讓世界看見臺灣的硬實力！\n\n#大肚和美橋 #正式合龍 \n#中彰30分鐘生活圈 \n#智慧製造 \n#臺中啟程 #打造旗艦城\n#讓世界看見臺灣",
       "topicScores": {
         "交通": 0.5,
@@ -452,10 +826,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/Dab5VhBIKGF/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1556837392469743",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/c52da46503fac3ae159d.webp",
@@ -469,6 +865,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-06T03:11:21.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "歷經20年等待！大肚和美橋今日正式合龍，中彰黃金生活圈即將啟程🚗✨ \n\n今天一早，啟臣來到大肚和美橋的合龍考察，看到跨越烏溪橋梁正式交會，心中有無比的感動！這是鄉親20年的期盼，歷經3任市長與在地議員、立委共同攜手努力，今天我們終於迎來了關鍵的歷史里程碑，正朝著今年10月底通車的目標全力衝刺！\n\n這項由「中臺灣區域治理平台」凝聚共識、共同推動的重大交通建設，總經費將近33億元。大肚和美橋全長1,690公尺，目前實際工程進度已達92%。未來通車後，兩地原本長途繞道超過30分鐘的車程將大幅縮短至只要3分鐘！\n\n這不只是一座橋，更是串聯中彰30分鐘生活圈的關鍵動脈；不只是大肚和美橋的工程，我也希望未來捷運綠線南延至彰化進度能夠加速，為中彰地區提供更多的服務量能。期能透過完善交通串聯區域發展，將臺中大肚山黃金縱谷與彰化產業聚落緊密結合，攜手共創中臺灣智慧製造的經濟奇蹟，讓世界看見臺灣的硬實力！\n\n#大肚和美橋 #正式合龍 \n#中彰30分鐘生活圈 \n#智慧製造 \n#臺中啟程 #打造旗艦城\n#讓世界看見臺灣",
       "topicScores": {
         "交通": 0.5,
@@ -480,10 +877,32 @@
         "經濟",
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02AYwpn3kUVSFnHpwxtdZx8SSctcynTxwv8aRod492U1x7LtczdKFJDKDjsvZzwoHtl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaZ3LF4GCKH/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/037c09e5309b46ef8f4d.webp",
@@ -500,6 +919,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T08:14:06+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "珍奶控報到！\n大口喝珍奶、揮棒做公益🥎\n「第一屆嵐星盃」慢壘開打\n\n中區五十嵐集團「嵐星文藝體育事業」與臺中市慢速壘球發展協會共同主辦的「第一屆嵐星盃公益慢速壘球邀請賽」，今天正式熱血開打！\n\n珍珠奶茶是臺中的驕傲，慢速壘球是一項需要凝聚力與團隊精神的運動，都是人生最療癒的兩件事，身為 #珍奶控、臺中市慢壘委員會主委的我，怎麼可以錯過這場運動盛事！\n\n不過，今天球場上最耀眼的絕不只是球技，更是大家滿滿的「大愛」❤️ ，中區五十嵐集團長期秉持回饋社會的精神，這次特別將所有賽事報名費全數捐贈給「中華民國關懷心臟病童協會」，讓球場上的每一步跑壘、每一次揮棒都更有意義。\n\n啟臣要特別感謝主辦單位，以及現場60支隊伍、近1,500位參賽選手。大家在球場上全力拚戰，同時也用實際行動化為照顧弱勢兒童的溫暖力量，這就是運動結合公益最具社會影響力的展現！讓我們一起運動、一起公益、一起喝珍奶🧋，為城市注入更多溫暖與希望！\n\n#臺中啟程 #打造旗艦城\n#第一屆嵐星盃公益慢壘邀請賽\n#臺中市慢速壘球 珍珠奶茶",
       "topicScores": {
         "住宅": 0.0769,
@@ -513,10 +933,32 @@
         "住宅",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaZ3LF4GCKH/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1556134199206729",
       "imageAspect": 0.7508,
       "imageUrl": "assets/feed-images/948eca4346c3b30c6b2f.webp",
@@ -533,6 +975,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T08:09:05.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "珍奶控報到！\n大口喝珍奶、揮棒做公益🥎\n「第一屆嵐星盃」慢壘開打\n\n中區五十嵐集團「嵐星文藝體育事業」與臺中市慢速壘球發展協會共同主辦的「第一屆嵐星盃公益慢速壘球邀請賽」，今天正式熱血開打！\n\n珍珠奶茶是臺中的驕傲，慢速壘球是一項需要凝聚力與團隊精神的運動，都是人生最療癒的兩件事，身為 #珍奶控、臺中市慢壘委員會主委的我，怎麼可以錯過這場運動盛事！\n\n不過，今天球場上最耀眼的絕不只是球技，更是大家滿滿的「大愛」❤️ ，中區五十嵐集團長期秉持回饋社會的精神，這次特別將所有賽事報名費全數捐贈給「中華民國關懷心臟病童協會」，讓球場上的每一步跑壘、每一次揮棒都更有意義。\n\n啟臣要特別感謝主辦單位，以及現場60支隊伍、近1,500位參賽選手。大家在球場上全力拚戰，同時也用實際行動化為照顧弱勢兒童的溫暖力量，這就是運動結合公益最具社會影響力的展現！讓我們一起運動、一起公益、一起喝珍奶🧋，為城市注入更多溫暖與希望！\n\n#臺中啟程 #打造旗艦城\n#第一屆嵐星盃公益慢壘邀請賽\n#臺中市慢速壘球 #珍珠奶茶\n#臺中味 #臺中Way #taichungway",
       "topicScores": {
         "住宅": 0.0769,
@@ -546,10 +989,32 @@
         "住宅",
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0TJNPzJ6eFbJw9ia4jvhcspEuJ2JBWzT3N1FgshkZM5VCwqSzjcMjVLfmqhNMcPxol"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaZe7jCIDwG/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/97e775a68e3fdc7e1ba7.webp",
@@ -562,6 +1027,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-05T04:42:16+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "「滑」進幸福山城🛼~\n用運動培養健康、樂活的 #幸福旗艦城 ！✨\n\n東勢一早，就有許多孩子們一起當起了「山城溜俠」，參加「115年臺中市東勢區活力山城親子路溜嘉年華」！戴上安全帽、穿上直排輪裝備，在家長與教練的陪伴下，迎著晨光滑行，用「溜」的方式漫遊山城美景。\n\n這次活動特別選在自行車道舉辦，讓大家在優美的山城景色中享受運動，謝謝每位辛勤指導的教練，更謝謝每位家長的一路相伴與支持鼓勵。因為有你們，孩子才能勇敢追逐夢想、盡情發揮潛力。\n\n臺中市是座 #運動城市 ，近年積極耕耘直排輪運動向下扎根，發展成果有目共睹，尤其豐原、山城地區培育出許多優秀選手，在全國及國際賽事都有亮眼表現，甚至成為國家代表隊的重要成員。\n\n相信只要持續努力，每一位孩子都有機會代表山城、代表臺中、代表臺灣站上更大的舞臺。讓我們一起用運動打造更健康、有活力，更幸福的 #旗艦臺中 ！💪🛼\n\n#臺中啟程 #打造旗艦城 #路溜嘉年華 #臺中味 #健康味 #幸福宜居 #清新味",
       "topicScores": {
         "交通": 0.125,
@@ -571,10 +1037,32 @@
         "體育",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaZe7jCIDwG/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1556013129218836",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/76b59cb604ad1cbce2d6.webp",
@@ -587,6 +1075,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-05T04:42:10.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "「滑」進幸福山城🛼~\n用運動培養健康、樂活的 #幸福旗艦城 ！✨\n\n東勢一早，就有許多孩子們一起當起了「山城溜俠」，參加「115年臺中市東勢區活力山城親子路溜嘉年華」！戴上安全帽、穿上直排輪裝備，在家長與教練的陪伴下，迎著晨光滑行，用「溜」的方式漫遊山城美景。\n\n這次活動特別選在自行車道舉辦，讓大家在優美的山城景色中享受運動，謝謝每位辛勤指導的教練，更謝謝每位家長的一路相伴與支持鼓勵。因為有你們，孩子才能勇敢追逐夢想、盡情發揮潛力。\n\n臺中市是座 #運動城市 ，近年積極耕耘直排輪運動向下扎根，發展成果有目共睹，尤其豐原、山城地區培育出許多優秀選手，在全國及國際賽事都有亮眼表現，甚至成為國家代表隊的重要成員。\n\n相信只要持續努力，每一位孩子都有機會代表山城、代表臺中、代表臺灣站上更大的舞臺。讓我們一起用運動打造更健康、有活力，更幸福的 #旗艦臺中 ！💪🛼\n\n#臺中啟程 #打造旗艦城 #路溜嘉年華 #臺中味 #健康味 #幸福宜居 #清新味",
       "topicScores": {
         "交通": 0.125,
@@ -596,10 +1085,32 @@
         "體育",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid05YtDDH9vf2VpPYs9HCohKQ4w3TkBoeoK9EzmJ8Apn68mAgiW5Ton29qGkBQU8si2l"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaX2lshlXZB/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/1d812eaa4ba64a7ec5f9.webp",
@@ -615,6 +1126,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T13:30:30+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "讓啦啦隊精神，培養孩子一生受用的品格\n讓臺中成為世界舞臺，我們陪著孩子發光發熱✨\n\n啟臣今天在「2026臺灣盃全國國小暨幼兒啦啦隊錦標賽」，看到來自全國 516支隊伍、超過1,500位選手 齊聚臺中，在舞臺上展現青春活力與團隊默契，令人感動，也讓臺中充滿熱情與朝氣。\n\n啦啦隊不只是運動，但更是最生動的品格教育。每個動作，都需要彼此信任、團隊合作，更需要願意為共同目標、全力以赴的精神。這些，都是孩子在人生道路上最重要的養分。\n\n感謝主辦單位多年來一步一腳印，從零開始一路努力，把賽事辦到今天的規模；也謝謝一路陪伴孩子練習、比賽的爸爸媽媽。對孩子來說，家人的陪伴，就是最珍貴、最無可取代的力量。\n\n孩子們需要舞臺發揮，我們就打造臺中成為國際舞臺，啟臣會繼續努力，積極爭取更多國際及全國大型賽事落腳臺中，讓 #賽事經濟 帶動城市的周邊經濟動能，更能 #讓世界看見臺中，讓孩子在國際舞台被看見👏\n\n#臺中啟程 #打造旗艦城 #品格教育 #啦啦隊 #陪伴 #臺中味 #健康味 #繁榮味 #賽事經濟",
       "topicScores": {
         "交通": 0.0769,
@@ -628,10 +1140,32 @@
         "經濟",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaX2lshlXZB/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1555473455939470",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/9bb630d099e88b1629a0.webp",
@@ -647,6 +1181,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T13:30:24.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "讓啦啦隊精神，培養孩子一生受用的品格\n讓臺中成為世界舞臺，我們陪著孩子發光發熱✨\n\n啟臣今天在「2026臺灣盃全國國小暨幼兒啦啦隊錦標賽」，看到來自全國 516支隊伍、超過1,500位選手 齊聚臺中，在舞臺上展現青春活力與團隊默契，令人感動，也讓臺中充滿熱情與朝氣。\n\n啦啦隊不只是運動，但更是最生動的品格教育。每個動作，都需要彼此信任、團隊合作，更需要願意為共同目標、全力以赴的精神。這些，都是孩子在人生道路上最重要的養分。\n\n感謝主辦單位多年來一步一腳印，從零開始一路努力，把賽事辦到今天的規模；也謝謝一路陪伴孩子練習、比賽的爸爸媽媽。對孩子來說，家人的陪伴，就是最珍貴、最無可取代的力量。\n\n孩子們需要舞臺發揮，我們就打造臺中成為國際舞臺，啟臣會繼續努力，積極爭取更多國際及全國大型賽事落腳臺中，讓 #賽事經濟 帶動城市的周邊經濟動能，更能 #讓世界看見臺中，讓孩子在國際舞台被看見👏\n\n#臺中啟程 #打造旗艦城 #品格教育 #啦啦隊 #陪伴 #臺中味 #健康味 #繁榮味 #賽事經濟",
       "topicScores": {
         "交通": 0.0769,
@@ -660,10 +1195,32 @@
         "經濟",
         "交通"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid091wSxPd1nQkNyK5AAezrNFCGAyNJrn3BNBRGVLNg9injVJcyLuxF7ygzu7KwgGkfl"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXo14UFZSk/",
       "imageAspect": 1.4981,
       "imageUrl": "assets/feed-images/1a1b4d257af201c50a24.webp",
@@ -681,6 +1238,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T11:30:23+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "今天來到逢甲大學的 #CCF 動漫盛典 ，現場滿滿的活力讓我深感震撼！大家看看這規模，從服裝道具、周邊商品到原創IP，這早就不是單純的休閒娛樂，而是一座巨大的 #創作者經濟 寶庫，更是青年創業與文創產業的未來趨勢！\n\n我一直思考，如何讓臺中的年輕人有更多發揮的舞台？這次盛典選擇與熱鬧的逢甲商圈深度結合，就是一個最完美的示範。我們要把年輕人的創意能量，直接轉化為臺中的文創經濟產值，讓創作者被看見，也幫在地中小企業找到全新的商機。臺中是一座充滿包容、願意給年輕人機會的城市。未來，啟臣如果能有機會為大家服務，我承諾將臺中打造成 #ACG 友善與創意之都 。 「ACG」，就是動畫（Anime）、漫畫（Comics）與遊戲（Games）的結合。\n\n啟臣會全力挹注資源力挺青年創業，讓臺中的孩子在地就能靠創意實現夢想；同時，提供更多公共空間與數位媒合平台來優化創作環境，並串聯各大商圈，讓 Cosplay、同人創作在臺中遍地開花，打造出中臺灣最精彩的動漫觀光嘉年華！臺中的創意能量，我們一起來點亮！🔥\n\n#臺中啟程 #打造旗艦城 #創作者經濟 #CCF動漫盛典 #逢甲商圈 #文創產業 #ACG友善與創意之都",
       "topicScores": {
         "教育": 0.0588,
@@ -694,10 +1252,32 @@
         "環境",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.instagram.com/p/DaXo14UFZSk/"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1555387385948077",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/0a677429b51c290198a2.webp",
@@ -715,6 +1295,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T11:30:17.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "今天來到逢甲大學的 #CCF 動漫盛典 ，現場滿滿的活力讓我深感震撼！大家看看這規模，從服裝道具、周邊商品到原創IP，這早就不是單純的休閒娛樂，而是一座巨大的 #創作者經濟 寶庫，更是青年創業與文創產業的未來趨勢！\n\n我一直思考，如何讓臺中的年輕人有更多發揮的舞台？這次盛典選擇與熱鬧的逢甲商圈深度結合，就是一個最完美的示範。我們要把年輕人的創意能量，直接轉化為臺中的文創經濟產值，讓創作者被看見，也幫在地中小企業找到全新的商機。臺中是一座充滿包容、願意給年輕人機會的城市。未來，啟臣如果能有機會為大家服務，我承諾將臺中打造成 #ACG 友善與創意之都 。 「ACG」，就是動畫（Anime）、漫畫（Comics）與遊戲（Games）的結合。\n\n啟臣會全力挹注資源力挺青年創業，讓臺中的孩子在地就能靠創意實現夢想；同時，提供更多公共空間與數位媒合平台來優化創作環境，並串聯各大商圈，讓 Cosplay、同人創作在臺中遍地開花，打造出中臺灣最精彩的動漫觀光嘉年華！臺中的創意能量，我們一起來點亮！🔥\n\n#臺中啟程 #打造旗艦城 #創作者經濟 #CCF動漫盛典 #逢甲商圈 #文創產業 #ACG友善與創意之都",
       "topicScores": {
         "教育": 0.0588,
@@ -728,10 +1309,32 @@
         "環境",
         "教育"
       ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid035wNuhMC5CSGPnvBigBf71k3qYWNFz3z9vwGhkKtVJ4kLhTzYE64A4zUviPSoTXwUl"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaXazmCIHd1/",
       "imageAspect": 1.5037,
       "imageUrl": "assets/feed-images/d29d3b109a6ab1b948f3.webp",
@@ -741,6 +1344,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T09:27:44+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "接棒成功💪守護臺中、升級臺中\n\n今天出席臺中市黨部「小組長培訓與幹部座談會」，現場湧入大批基層夥伴與里長，展現我們大臺中的團結氣勢！\n\n我深深一鞠躬，向現場的小組長與基層幹部致謝，因為每當國民黨面臨困難與挑戰時，臺中的基層同志永遠在第一時間挺身而出，感謝各位一路走來的力挺。今天收到盧秀燕市長送我一個未來桌牌，不僅是盧市長交付給我的任務與期許，也象徵交棒與傳承，啟臣承諾：「我們只有一個目標，那就是接棒成功、守護臺中」！\n\n過去15年來臺灣面臨少子化，唯獨臺中人口逆勢成長突破286.8萬人，這是市民對盧市長執政最直接的肯定。未來十年是臺中的發展關鍵，啟臣已做好全面準備，我提出 「12345臺中更幸福」 ，就是要讓臺中從幸福城邁向國際旗艦城市，讓市民「安全、安定、安心」的三安目標。\n\n選舉將近，面對對手的抹黑與分化，我們一定要團結一心、齊力打拚，只要正向力量贏，臺中就會贏！請大家當啟臣最強大的靠山，全力拉票、票票入匭，不僅要贏得市長選舉，更要讓黨籍議員及里長全壘打高票當選，用強大民意延續幸福執政！\n\n#12345臺中更幸福 \n#臺中啟程 #打造旗艦城\n#臺中大團結 \n#接棒成功守護臺中",
       "topicScores": {
         "競選": 1.0
@@ -748,10 +1352,32 @@
       "topics": [
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaXazmCIHd1/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1555307929289356",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/303bf86888c9a0164d1a.webp",
@@ -761,6 +1387,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T09:27:38.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "接棒成功💪守護臺中、升級臺中\n\n今天出席臺中市黨部「小組長培訓與幹部座談會」，現場湧入大批基層夥伴與里長，展現我們大臺中的團結氣勢！\n\n我深深一鞠躬，向現場的小組長與基層幹部致謝，因為每當國民黨面臨困難與挑戰時，臺中的基層同志永遠在第一時間挺身而出，感謝各位一路走來的力挺。今天收到盧秀燕市長送我一個未來桌牌，不僅是盧市長交付給我的任務與期許，也象徵交棒與傳承，啟臣承諾：「我們只有一個目標，那就是接棒成功、守護臺中」！\n\n過去15年來臺灣面臨少子化，唯獨臺中人口逆勢成長突破286.8萬人，這是市民對盧市長執政最直接的肯定。未來十年是臺中的發展關鍵，啟臣已做好全面準備，我提出 「12345臺中更幸福」 ，就是要讓臺中從幸福城邁向國際旗艦城市，讓市民「安全、安定、安心」的三安目標。\n\n選舉將近，面對對手的抹黑與分化，我們一定要團結一心、齊力打拚，只要正向力量贏，臺中就會贏！請大家當啟臣最強大的靠山，全力拉票、票票入匭，不僅要贏得市長選舉，更要讓黨籍議員及里長全壘打高票當選，用強大民意延續幸福執政！\n\n#12345臺中更幸福  \n#臺中啟程 #打造旗艦城\n#臺中大團結 \n#接棒成功守護臺中",
       "topicScores": {
         "競選": 1.0
@@ -768,10 +1395,32 @@
       "topics": [
         "競選"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02ayHp4jzJzq2DzTu6ZZ7pfkAtfPLUan8gdjJ9wdTjAR3YRUPdu2sUWNj4H81EsNy3l"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaWtTdNoI3f/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/05eba3136d88eb50f841.webp",
@@ -783,6 +1432,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-04T02:50:08+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "土牛運動公園籃球場正式啟用！\n今天一早，啟臣和鄉親共同見證 #土牛運動公園籃球場啟用！現場舉辦的「3對3籃球聯誼賽」特別規劃變裝組，創意造型讓全場笑聲不斷，氣氛超歡樂！\n\n為了讓山城鄉親有更優質的休閒空間，啟臣與 吳振嘉 振興山城 有嘉在議員攜手向中央及市府爭取總計 2,000萬元經費全面翻新球場，並同步爭取 500萬元打造一旁的「熱氣球特色兒童遊戲場」，讓大朋友熱血揮汗、小朋友盡情放電。\n\n全齡共享、幸福共融，就是最美的臺中模樣。未來我會持續努力，推動 #臺中升級、#幸福加給，打造宜居幸福的臺中旗艦城💪\n\n#臺中啟程 #打造旗艦城 #石岡 #土牛運動公園 #全齡共榮",
       "topicScores": {
         "體育": 1.0
@@ -790,10 +1440,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaWtTdNoI3f/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1555071182646364",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/4ab835e4edd4038fb8ec.webp",
@@ -805,6 +1477,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-04T02:50:01.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "土牛運動公園籃球場正式啟用！\n今天一早，啟臣和鄉親共同見證 #土牛運動公園籃球場啟用！現場舉辦的「3對3籃球聯誼賽」特別規劃變裝組，創意造型讓全場笑聲不斷，氣氛超歡樂！\n\n為了讓山城鄉親有更優質的休閒空間，啟臣與 吳振嘉 振興山城 有嘉在議員攜手向中央及市府爭取總計 2,000萬元經費全面翻新球場，並同步爭取 500萬元打造一旁的「熱氣球特色兒童遊戲場」，讓大朋友熱血揮汗、小朋友盡情放電。\n\n全齡共享、幸福共融，就是最美的臺中模樣。未來我會持續努力，推動 #臺中升級、#幸福加給，打造宜居幸福的臺中旗艦城💪\n\n#臺中啟程 #打造旗艦城 #石岡 #土牛運動公園 #全齡共榮",
       "topicScores": {
         "體育": 1.0
@@ -812,10 +1485,32 @@
       "topics": [
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02MWYgxdkQF7BwVPapJiwUYV78nZRTSnqtFz7zetzorkhw3TJuV7SRWXKVJJLcoJRQl"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1554586962694786",
       "imageAspect": 0.5635,
       "imageUrl": "assets/feed-images/05f1b21a6dcb9deb9585.webp",
@@ -825,6 +1520,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-03T13:52:22.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "菇筍豚香・花開盛宴\n啟臣帶大家品嚐最澎湃的臺中味\n\n每年到了這個時節，啟臣絕對不會錯過這場臺中在地的農業頂級饗宴！昨天特別出席「菇筍豚香・花開盛宴」記者會，現場結合在地花藝與精緻料理，真的是色香味俱全、讓人大飽眼福與口福！\n\n盛宴集結了我們大臺中最驕傲的農特產：產量全國第一、鮮美厚實的新社香菇；利用低溫預冷技術鎖住鮮甜脆嫩的北屯黃金玉冷筍；以及100%國產溯源、通過國際認證的大安優質豬肉。三家農會強強聯手，完美落實「從產地到餐桌」的食農理念，完美展現了最無可取代的臺中味！\n\n眾所期待的「千人宴辦桌」將於8/2盛大登場，現場還有規劃青農市集，誠摯邀請鄉親朋友們一起用實際行動支持在地農民，感受臺中農業與花藝結合的創新魅力！\n\n#臺中味 #農家子弟\n#菇筍豚香 #新社香菇 #黃金玉冷筍 \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 1.0
@@ -832,10 +1528,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/reel/1637238830703670/"
     },
     {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaVUNcij2Sh/",
       "imageAspect": 0.5631,
       "imageUrl": "assets/feed-images/0345ecd12452c7226c17.webp",
@@ -845,6 +1563,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-03T13:52:17+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "菇筍豚香・花開盛宴\n啟臣帶大家品嚐最澎湃的臺中味\n\n每年到了這個時節，啟臣絕對不會錯過這場臺中在地的農業頂級饗宴！昨天特別出席「菇筍豚香・花開盛宴」記者會，現場結合在地花藝與精緻料理，真的是色香味俱全、讓人大飽眼福與口福！\n\n盛宴集結了我們大臺中最驕傲的農特產：產量全國第一、鮮美厚實的新社香菇；利用低溫預冷技術鎖住鮮甜脆嫩的北屯黃金玉冷筍；以及100%國產溯源、通過國際認證的大安優質豬肉。三家農會強強聯手，完美落實「從產地到餐桌」的食農理念，完美展現了最無可取代的臺中味！\n\n眾所期待的「千人宴辦桌」將於8/2盛大登場，現場還有規劃青農市集，誠摯邀請鄉親朋友們一起用實際行動支持在地農民，感受臺中農業與花藝結合的創新魅力！\n\n#臺中味 #農家子弟\n#菇筍豚香 #新社香菇 #黃金玉冷筍 \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 1.0
@@ -852,10 +1571,33 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaVUNcij2Sh/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaSoqcIoNcV/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/1f965e94ea989e552f58.webp",
@@ -867,6 +1609,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T12:52:38+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "🤖 AI機械動能大爆發！\n臺中已準備好成為全世界的 #機器人製造之都 💪\n\n從精密機械到實體AI，臺中正站在一個關鍵的產業轉捩點上。\n\n今年二月，啟臣與AIT處長谷立言拜訪中臺灣的精密機械產業時，他就說：美國推動再工業化、發展AI產業，絕對少不了臺灣的協助。三月和蔣萬安市長同臺時，我們也有志一同：NVIDIA這些科技巨頭想打造人形機器人、無人智慧載具，都必須結合 #臺中智造 硬實力。\n\n如果矽谷是AI的大腦，臺中就是賦予AI行動力、打造世界級智慧身體的關鍵城市。臺中擁有全球密度最高的精密機械聚落——「#黃金縱谷」，一小時內就能找到所有關鍵零元件；這條製造業的黃金縱谷，未來必須升級成為 #黃金機器人縱谷 。\n\n五月造訪喬治亞理工學院時，我提出了 TRMC（Taiwan Robotics Manufacturing City in Taichung）的構想——讓臺中成為機器人的製造之都，並推動臺美遠端相互認證，不必飛到美國也能完成驗證。\n\n為了讓中臺灣產業站得更穩，啟臣提出三個具體方向：\n\n1️⃣ 催生基地：加速建立臺中AI機器人智慧園區，讓廠商有更完善的空間專注高階研發與生產。\n\n2️⃣ 擴大商機：善用全新的國際會展中心，落實「前店後廠、自由港」，把買家帶進臺中、把訂單留在臺中。\n\n3️⃣ 有感減稅：推動將AI、智慧製造、無人機、機器人生產納入產創條例租稅優惠，讓廠商轉型升級真正有感。\n\n啟臣目標很清楚：「把訂單留在臺灣，把製造、升級留在臺中。」讓我們一起努力，一起打造臺灣下一座 #護國神山群 。\n\n#臺中啟程 #打造旗艦城 #機器人 #實體AI #智慧製造 #TRMC",
       "topicScores": {
         "經濟": 1.0
@@ -874,10 +1617,33 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaSoqcIoNcV/"
     },
     {
+      "actionEvidence": {
+        "policy_proposal": [
+          "必須",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1553613089458840",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/2600914335e2868e6e55.webp",
@@ -889,6 +1655,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T12:52:30.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "🤖 AI機械動能大爆發！\n臺中已準備好成為全世界的 #機器人製造之都 💪\n\n從精密機械到實體AI，臺中正站在一個關鍵的產業轉捩點上。\n\n今年二月，啟臣與AIT處長谷立言拜訪中臺灣的精密機械產業時，他就說：美國推動再工業化、發展AI產業，絕對少不了臺灣的協助。三月和蔣萬安市長同臺時，我們也有志一同：NVIDIA這些科技巨頭想打造人形機器人、無人智慧載具，都必須結合 #臺中智造 硬實力。\n\n如果矽谷是AI的大腦，臺中就是賦予AI行動力、打造世界級智慧身體的關鍵城市。臺中擁有全球密度最高的精密機械聚落——「#黃金縱谷」，一小時內就能找到所有關鍵零元件；這條製造業的黃金縱谷，未來必須升級成為 #黃金機器人縱谷 。\n\n五月造訪喬治亞理工學院時，我提出了 TRMC（Taiwan Robotics Manufacturing City in Taichung）的構想——讓臺中成為機器人的製造之都，並推動臺美遠端相互認證，不必飛到美國也能完成驗證。\n\n為了讓中臺灣產業站得更穩，啟臣提出三個具體方向：\n\n1️⃣ 催生基地：加速建立臺中AI機器人智慧園區，讓廠商有更完善的空間專注高階研發與生產。\n\n2️⃣ 擴大商機：善用全新的國際會展中心，落實「前店後廠、自由港」，把買家帶進臺中、把訂單留在臺中。\n\n3️⃣ 有感減稅：推動將AI、智慧製造、無人機、機器人生產納入產創條例租稅優惠，讓廠商轉型升級真正有感。\n\n啟臣目標很清楚：「把訂單留在臺灣，把製造、升級留在臺中。」讓我們一起努力，一起打造臺灣下一座 #護國神山群 。\n\n#臺中啟程 #打造旗艦城 #機器人 #實體AI #智慧製造 #TRMC",
       "topicScores": {
         "經濟": 1.0
@@ -896,10 +1663,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid023bjwA6MFS5SNh8UQfu6WsrGUGA2np8wWHZrFVhFm9icjEpJJ3ymUAhKY47Pstvitl"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaR6D5roFNK/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/544421072a2bd586152d.webp",
@@ -912,6 +1701,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-02T06:05:24+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "啟臣攜手在地產業\n齊心打造臺中成為全球無人載具新核心\n\n很榮幸受邀出席由臺中市與AIT共同主辦、中彰投攜手開創的無人載具海外商機論壇。\n今年二月，我邀請AIT谷立言處長參訪臺中精密機械產業，他直言美國發展AI絕對需要臺灣幫助。中臺灣擁有全球最強大的智慧製造與光學航太聚落，更是全球少數取得美方資安與軍規認證的隱形冠軍，我們擁有「強研發、高CP、快生產」的實力，未來的無人載具與AI機器人時代，臺中就是世界的核心！\n\n商用無人機產值在2030年上看1000億美元，我們絕對有實力將無人載具打造為下一座「護國神山」。未來啟臣會持續推動精密機械升級為AI機器人智慧園區（TRMC），結合中彰投產業實力，讓中臺灣領航世界！\n\n#會展經濟168 #無人載具 \n#護國神山 #臺美友好 \n#臺中智造 #AI機器人\n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "經濟": 0.9091,
@@ -921,10 +1711,32 @@
         "經濟",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.instagram.com/p/DaR6D5roFNK/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1553369072816575",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/02786a2433ff5d0bfbd6.webp",
@@ -937,6 +1749,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-02T06:05:18.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "啟臣攜手在地產業\n齊心打造臺中成為全球無人載具新核心\n\n很榮幸受邀出席由臺中市與AIT共同主辦、中彰投攜手開創的無人載具海外商機論壇。\n今年二月，我邀請AIT谷立言處長參訪臺中精密機械產業，他直言美國發展AI絕對需要臺灣幫助。中臺灣擁有全球最強大的智慧製造與光學航太聚落，更是全球少數取得美方資安與軍規認證的隱形冠軍，我們擁有「強研發、高CP、快生產」的實力，未來的無人載具與AI機器人時代，臺中就是世界的核心！\n\n商用無人機產值在2030年上看1000億美元，我們絕對有實力將無人載具打造為下一座「護國神山」。未來啟臣會持續推動精密機械升級為AI機器人智慧園區（TRMC），結合中彰投產業實力，讓中臺灣領航世界！\n\n#會展經濟168 #無人載具 \n#護國神山 #臺美友好 \n#臺中智造 #AI機器人\n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "經濟": 0.9091,
@@ -946,10 +1759,32 @@
         "經濟",
         "體育"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02QuftvT3bxDWiJdZfZCbTZie9qb61RBpNtfAAggGAnHYzUhwQXXHibACSxeTJPVNGl"
     },
     {
+      "actionEvidence": {
+        "position_statement": [
+          "認為"
+        ]
+      },
+      "actionLabels": [
+        "立場表態"
+      ],
+      "actions": [
+        "position_statement"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "facebook:1552810522872430",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/c9f96fd5225f27c68e48.webp",
@@ -959,6 +1794,7 @@
       "platform": "facebook",
       "postedAt": "2026-07-01T13:50:23.000Z",
       "sourceId": "chiang-cc-fb",
+      "targets": [],
       "text": "今天是漁民節，啟臣特別來到梧棲漁港與最辛勞的模範漁民朋友們齊聚，向撐起中部漁業半邊天的英雄們致敬！\n\n在中央部會與市府農業局的努力下，梧棲港的興建與冷凍、冷鏈等許多工程今年都將陸續完工，這對漁港升級至關重要。啟臣認為，大臺中擁有臺中港與梧棲港，海線就是未來最重要的「雙港副都心」。\n\n未來，啟臣會與漁會及在地緊密合作，以雙港為核心串聯臺中港、梧棲港到大安連成一線，打造海線生活圈，全面將海線打造成兼具漁業、商業與觀光休閒的新亮點！政府要做漁民最堅實的後盾，祝福大家出海大豐收、平安賺大錢！\n\n#漁民節快樂 #以民為本\n#梧棲漁港 #臺中港\n#海線雙港副都心  \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 1.0
@@ -966,10 +1802,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.facebook.com/reel/1053909183642875/"
     },
     {
+      "actionEvidence": {
+        "position_statement": [
+          "認為"
+        ]
+      },
+      "actionLabels": [
+        "立場表態"
+      ],
+      "actions": [
+        "position_statement"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "instagram:https://www.instagram.com/p/DaQKXE4D88h/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/ff5414a4a041524d05ee.webp",
@@ -979,6 +1837,7 @@
       "platform": "instagram",
       "postedAt": "2026-07-01T13:49:59+00:00",
       "sourceId": "chiang-cc-ig",
+      "targets": [],
       "text": "今天是漁民節，啟臣特別來到梧棲漁港與最辛勞的模範漁民朋友們齊聚，向撐起中部漁業半邊天的英雄們致敬！\n\n在中央部會與市府農業局的努力下，梧棲港的興建與冷凍、冷鏈等許多工程今年都將陸續完工，這對漁港升級至關重要。啟臣認為，大臺中擁有臺中港與梧棲港，海線就是未來最重要的「雙港副都心」。\n\n未來，啟臣會與漁會及在地緊密合作，以雙港為核心串聯臺中港、梧棲港到大安連成一線，打造海線生活圈，全面將海線打造成兼具漁業、商業與觀光休閒的新亮點！政府要做漁民最堅實的後盾，祝福大家出海大豐收、平安賺大錢！\n\n#漁民節快樂 #以民為本\n#梧棲漁港 #臺中港\n#海線雙港副都心 \n#臺中啟程 #打造旗艦城",
       "topicScores": {
         "文化觀光": 1.0
@@ -986,10 +1845,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
       "url": "https://www.instagram.com/p/DaQKXE4D88h/"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:MzBsHMqdEk4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/63cb14bc98a41b8a6e3c.webp",
@@ -999,6 +1880,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "江江美食番外篇-為你熬湯",
       "topicScores": {
         "文化觀光": 1.0
@@ -1006,10 +1888,32 @@
       "topics": [
         "文化觀光"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=MzBsHMqdEk4"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:sb6Ct4ruXH4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/9d73beca3205aaaf7b9e.webp",
@@ -1017,6 +1921,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "臺中的力量",
       "topicScores": {
         "生活": 1.0
@@ -1024,10 +1929,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=sb6Ct4ruXH4"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:j3kEYwu_eZQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/2d86c5ec0fa2d0f7f1b8.webp",
@@ -1037,6 +1964,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "823票投不同意 一起拚經濟",
       "topicScores": {
         "經濟": 1.0
@@ -1044,10 +1972,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=j3kEYwu_eZQ"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:BDbQSwMGJoU",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/17e3143f63c4badab637.webp",
@@ -1055,6 +2005,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "終結斷橋 東豐快將縫合",
       "topicScores": {
         "生活": 1.0
@@ -1062,10 +2013,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=BDbQSwMGJoU"
     },
     {
+      "actionEvidence": {
+        "personal_content": [
+          "回憶"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:lQWVvV9Ck_M",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/d58cd20c071a98c578cd.webp",
@@ -1073,6 +2046,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "帶大家走進我的童年回憶-江家濟陽堂",
       "topicScores": {
         "生活": 1.0
@@ -1080,10 +2054,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=lQWVvV9Ck_M"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:phC8kpmZLww",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/b5f651195cdd4da33240.webp",
@@ -1091,6 +2087,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "「江啟臣」正在直播！",
       "topicScores": {
         "生活": 1.0
@@ -1098,10 +2095,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=phC8kpmZLww"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:6SAxU-ZLebY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/50ef538bea1e4584e837.webp",
@@ -1109,6 +2128,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "「江啟臣」正在直播！",
       "topicScores": {
         "生活": 1.0
@@ -1116,10 +2136,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=6SAxU-ZLebY"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:5_xtLWkG6rg",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/9632d1c1a78f56071f8d.webp",
@@ -1127,6 +2169,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "《豈有此呂》海龍蛙兵究竟有多操！？ 江啟臣 feat. 呂捷",
       "topicScores": {
         "生活": 1.0
@@ -1134,10 +2177,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=5_xtLWkG6rg"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:Jx_OQBAYY84",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/87d0614ed41bb64be2cb.webp",
@@ -1148,6 +2213,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "【現正直播中】立法院第十屆第八會期施政報告總質詢",
       "topicScores": {
         "議會監督": 1.0
@@ -1155,10 +2221,32 @@
       "topics": [
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=Jx_OQBAYY84"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:HkoCP45sE-A",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/6069f45e4e8b9b59aa89.webp",
@@ -1170,6 +2258,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "【現正直播中】立法院第十屆第八會期預算總質詢",
       "topicScores": {
         "議會監督": 1.0
@@ -1177,10 +2266,32 @@
       "topics": [
         "議會監督"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/watch?v=HkoCP45sE-A"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:zuYXiN-9iyg",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/6d32838d1eb77458cc6c.webp",
@@ -1190,6 +2301,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "為臺中工具機產業加油",
       "topicScores": {
         "經濟": 1.0
@@ -1197,10 +2309,32 @@
       "topics": [
         "經濟"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/zuYXiN-9iyg"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:BMpFC9k7BtA",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/8343c0134817b3fcb654.webp",
@@ -1208,6 +2342,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "2025新社花海暨臺中國際花毯節",
       "topicScores": {
         "生活": 1.0
@@ -1215,10 +2350,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/BMpFC9k7BtA"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:RAOft0SxMCk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/0ee52b7784f95cefd951.webp",
@@ -1226,6 +2383,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "世界無車日 作伙騎鐵馬",
       "topicScores": {
         "生活": 1.0
@@ -1233,10 +2391,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/RAOft0SxMCk"
     },
     {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:JlG_Sp0Wai4",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/9c5c5144792f1ae5d71f.webp",
@@ -1244,6 +2424,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "新社白冷圳水利工程進度",
       "topicScores": {
         "生活": 1.0
@@ -1251,10 +2432,32 @@
       "topics": [
         "生活"
       ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
       "url": "https://www.youtube.com/shorts/JlG_Sp0Wai4"
     },
     {
+      "actionEvidence": {
+        "administrative_update": [
+          "勘災"
+        ]
+      },
+      "actionLabels": [
+        "行政進度"
+      ],
+      "actions": [
+        "administrative_update"
+      ],
       "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
       "id": "youtube:5FYTVcZed2k",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/c36ce30ccdb9050e1463.webp",
@@ -1264,6 +2467,7 @@
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chiang-cc-yt",
+      "targets": [],
       "text": "0731江啟臣豪雨勘災",
       "topicScores": {
         "防災": 1.0
@@ -1271,6 +2475,12 @@
       "topics": [
         "防災"
       ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
       "url": "https://www.youtube.com/shorts/5FYTVcZed2k"
     }
   ],
