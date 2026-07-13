@@ -3,6 +3,185 @@
   "posts": [
     {
       "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Daun-ZdGr6_",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/8dacfc73e87a524642b4.webp",
+      "keywords": [
+        "攤商",
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-13T09:45:19+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
+      "topicScores": {
+        "競選": 0.5,
+        "經濟": 0.5
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/Daun-ZdGr6_"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauZtlgGQDJ",
+      "imageAspect": 0.7069,
+      "imageUrl": "assets/feed-images/e35a8bfcd8ea61f62d03.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T07:40:41+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:東南區-六星市政168說明會 就在今天！\n歡迎大家一起來逗熱鬧🔥\n相信大家都會跟今天的天氣一樣熱情吧🥳",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.threads.com/t/DauZtlgGQDJ"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauEVcXjn3i",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/4410ea68f7680da55822.webp",
+      "keywords": [
+        "颱風"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-13T04:37:00+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:颱風過去，天氣又恢復炎熱...\n\n總是想要吃點清爽、開胃的東西，要和大家分享一家台中特別的涼麵店 @shake_noodles 「搖·涼麵」。\n\n除了擺盤精美、料理美味之外，更特別的是，它還是支持石虎保育的店家唷！\n有興趣的朋友，不妨找時間去嚐鮮，一起支持在地好味道！",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/DauEVcXjn3i"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauCyfkiR2h",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T04:20:23+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DauCyfkiR2h"
+    },
+    {
+      "actionEvidence": {
         "other": [
           "規則未找到更明確的溝通行動，需人工複核"
         ]
@@ -4902,211 +5081,6 @@
         "type": "external_event"
       },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02aM9Ly51WkBQmrjXw4BBLMi3guqAYLXdn8BX8TE2SikuzvqEiWgD323c9147Yn8mBl"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "視察",
-          "市府團隊"
-        ],
-        "policy_proposal": [
-          "計畫"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "administrative_update"
-      ],
-      "candidateId": "lai-jui-lung",
-      "candidate_id": "lai-jui-lung",
-      "candidate_name": "賴瑞隆",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "threads:https://www.threads.com/t/DaknUiliTiH",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/b21f57bd30bcfb35b541.webp",
-      "keywords": [
-        "環境",
-        "治水",
-        "颱風",
-        "補助"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-09T12:27:12+00:00",
-      "sourceId": "lai-jl-threads",
-      "targets": [],
-      "text": "@zenolai:巴威颱風海上警報已經發布，我們嚴陣以待，緊盯各項防颱整備。\n\n今天我前往鳳山八德滯洪池視察水情，這座總工程費7千餘萬的滯洪池，是在國土署補助、農業試驗所提供用地，以及市府水利局積極協調而來，工程預計在今年9月完工，滯洪量將高達4.7萬噸，不僅能大幅改善建國路至文衡路一帶的積水隱患，未來更將兼顧環境綠美化和休憩功能。目前已具初步蓄水功能，防汛設備也已駐地待命。\n\n感謝許智傑委員長期關注，積極爭取治水資源，有智傑委員在國會全力推動，加上市府團隊高效執行，這正是高雄隊團結作戰、落實地方建設的最佳典範。\n\n治水工程沒有終點，除了上述的八德滯洪池，其他如建國路雨水箱涵改善工程，水利局已向國土署提報第二期改善計畫，我也會持續爭取後續建設經費，確保各項工程順利推動。\n\n市府防汛機制已全面上緊發條，我們會隨時緊盯颱風動向，陪伴大家平安度過風雨考驗。",
-      "topicScores": {
-        "環境": 0.5,
-        "社福": 0.1667,
-        "防災": 0.3333
-      },
-      "topics": [
-        "環境",
-        "防災",
-        "社福"
-      ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.threads.com/t/DaknUiliTiH"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "視察",
-          "部署"
-        ],
-        "public_information": [
-          "停班停課"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update"
-      ],
-      "candidateId": "chiang-wanan",
-      "candidate_id": "chiang-wanan",
-      "candidate_name": "蔣萬安",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1578954913594460",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/68b2f6476da46e8ac4d2.webp",
-      "keywords": [
-        "颱風",
-        "災害",
-        "防災",
-        "停班停課",
-        "強降雨",
-        "通勤",
-        "氣候"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T12:07:50.000Z",
-      "sourceId": "chiang-wa-fb",
-      "targets": [],
-      "text": "市民朋友晚安！\n\n經過基北北桃四縣市共同討論，我宣布臺北市明天（7/10）停止上班上課。\n\n這次 #巴威颱風是25年來暴風圈最大的一次。尤其臺北市整體人口密度高、與周邊縣市通勤流動人口數也是最多，加上前陣子強降雨讓土壤含水量飽和、提升了山坡地致災風險。\n\n我們在基北北桃四市平台討論後，基於天然災害停止上班及上課作業辦法第四條第三款規定宣布臺北明日停班停課。\n\n我也要向市民朋友呼籲：\n因應目前氣候變遷的挑戰，我們要妥善運用明天的防颱整備日，儘早完成各項防災準備、注意水情與相關災防資訊。\n\n今天上午，我先到文山區視察邊坡；下午陸續到信義、松山及內湖等地，實地了解各項防颱整備工作的進度。晚上，我在臺北市災害應變中心（EOC），主持 #防颱整備會議，確保各項防颱準備工作確實，提前完成人力、機具等應變能量部署。\n\n臺北隊嚴陣以待，守護市民安全。",
-      "topicScores": {
-        "交通": 0.125,
-        "環境": 0.125,
-        "防災": 0.75
-      },
-      "topics": [
-        "防災",
-        "交通",
-        "環境"
-      ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、停班停課、災害應變中心",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02Z3gRT2VFEz3FXdtbhb2qBxgmjqavKuqa5txUNysuDnw8LcENCtQjCeC4efb5kBvql"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "huang-shih-chieh",
-      "candidate_id": "huang-shih-chieh",
-      "candidate_name": "黃世杰",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "threads:https://www.threads.com/t/Dakkm0xCbrV",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-09T12:03:28+00:00",
-      "sourceId": "huang-sj-threads",
-      "targets": [],
-      "text": "@schuanglawyer:桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
-      "topicScores": {
-        "生活": 1.0
-      },
-      "topics": [
-        "生活"
-      ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
-      "url": "https://www.threads.com/t/Dakkm0xCbrV"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "huang-shih-chieh",
-      "candidate_id": "huang-shih-chieh",
-      "candidate_name": "黃世杰",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1542333297341203",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T12:03:17.000Z",
-      "sourceId": "huang-sj-fb",
-      "targets": [],
-      "text": "桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
-      "topicScores": {
-        "生活": 1.0
-      },
-      "topics": [
-        "生活"
-      ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02YGgjjXY6kjovpDWgj3QxnEVBqYUVBr9brr9UaeDQf3VsDRqqj9EVJ4kFGhgdpni5l"
     }
   ],
   "title": "2026 市長官方來源觀測站",

@@ -19,8 +19,92 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 68,
+  "count": 70,
   "posts": [
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauZtlgGQDJ",
+      "imageAspect": 0.7069,
+      "imageUrl": "assets/feed-images/e35a8bfcd8ea61f62d03.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T07:40:41+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:東南區-六星市政168說明會 就在今天！\n歡迎大家一起來逗熱鬧🔥\n相信大家都會跟今天的天氣一樣熱情吧🥳",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "歡迎大家",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.threads.com/t/DauZtlgGQDJ"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauEVcXjn3i",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/4410ea68f7680da55822.webp",
+      "keywords": [
+        "颱風"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-13T04:37:00+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:颱風過去，天氣又恢復炎熱...\n\n總是想要吃點清爽、開胃的東西，要和大家分享一家台中特別的涼麵店 @shake_noodles 「搖·涼麵」。\n\n除了擺盤精美、料理美味之外，更特別的是，它還是支持石虎保育的店家唷！\n有興趣的朋友，不妨找時間去嚐鮮，一起支持在地好味道！",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.threads.com/t/DauEVcXjn3i"
+    },
     {
       "actionEvidence": {
         "public_information": [

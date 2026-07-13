@@ -1,6 +1,93 @@
 {
-  "count": 54,
+  "count": 56,
   "posts": [
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Daun-ZdGr6_",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/8dacfc73e87a524642b4.webp",
+      "keywords": [
+        "攤商",
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-13T09:45:19+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
+      "topicScores": {
+        "競選": 0.5,
+        "經濟": 0.5
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/Daun-ZdGr6_"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DauCyfkiR2h",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T04:20:23+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DauCyfkiR2h"
+    },
     {
       "actionEvidence": {
         "other": [
