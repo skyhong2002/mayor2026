@@ -19,8 +19,51 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 59,
+  "count": 61,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dauwk9sAUA-",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d58af42906214a76f38a.webp",
+      "keywords": [
+        "大學"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-13T11:00:29+00:00",
+      "sourceId": "su-ch-threads",
+      "targets": [],
+      "text": "@su.chiaohui:新北熱烈巡迴中！水獺媽媽樂園 週六淡水見！\n\n剛結束的板橋場和林口場都湧進上千組家庭，水獺媽媽我的集點卡差點印到不夠發！來不及參加的沒關係，水獺媽媽還要繼續出發巡迴啦✨\n\n📍淡水場｜7/18（六）09:00-16:00\n真理大學—玻璃屋（淡水區真理街32號）",
+      "topicScores": {
+        "教育": 1.0
+      },
+      "topics": [
+        "教育"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/Dauwk9sAUA-"
+    },
     {
       "actionEvidence": {
         "other": [
@@ -2902,6 +2945,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/KM-GhUrycFE"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:sxo85zN7m30",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4cb1c048212c00031d7f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "su-ch-yt",
+      "targets": [],
+      "text": "#水獺媽媽樂園 新北熱烈巡迴中✨",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/sxo85zN7m30"
     }
   ],
   "version": 1
