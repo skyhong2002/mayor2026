@@ -19,8 +19,92 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 57,
+  "count": 61,
   "posts": [
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dav4NhUExI3",
+      "imageAspect": 0.7143,
+      "imageUrl": "assets/feed-images/96843c77504a13450635.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T21:28:34+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:早安☀️\n五點出發\n等等中壢青果市場見！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "早安",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.threads.com/t/Dav4NhUExI3"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DavIqmKE9om/",
+      "imageAspect": 1.5047,
+      "imageUrl": "assets/feed-images/6d1a27f764a6ae998389.webp",
+      "keywords": [
+        "氣候"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T14:43:29+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "2017年，我在桃園市政府服務，見證了阿姆坪防淤隧道的開端。\n\n2023年，我在立委任內，也就是這張照片裡，參與竣工典禮，見證台灣水利史上重要的一頁。\n\n這項前瞻基礎建設，大幅提升了石門水庫的防淤與蓄水能力，更穩定了大桃園的供水。現在的桃園，面對極端氣候不再只能被動承受，而是真正有備而來。\n\n城市的進步，需要長遠的眼光跟魄力。\n\n黃世杰也會用同樣的態度跟精神，傾聽第一線民意，用專業的城市治理，為桃園的下一個十年、二十年打好基礎！",
+      "topicScores": {
+        "環境": 1.0
+      },
+      "topics": [
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DavIqmKE9om/"
+    },
     {
       "actionEvidence": {
         "other": [
@@ -112,6 +196,52 @@
     },
     {
       "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daun5LAzVtj/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d66b49cd59bbdb0d3804.webp",
+      "keywords": [
+        "攤商",
+        "掃街"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T09:45:12+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
+      "topicScores": {
+        "競選": 0.5,
+        "經濟": 0.5
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Daun5LAzVtj/"
+    },
+    {
+      "actionEvidence": {
         "other": [
           "規則未找到更明確的溝通行動，需人工複核"
         ]
@@ -150,6 +280,49 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/DauCyfkiR2h"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauB1npT7cH/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f9a9a8572642c59201f0.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T04:12:35+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！\n\n📍 美食傳送門\n香納多鮮肉湯包（桃園市八德區福國北街78號）\n\n下一站去哪裡？留言推薦桃園必吃美食給世杰，一起跟著感杰走，探索桃園的在地好味道！",
+      "topicScores": {
+        "文化觀光": 1.0
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauB1npT7cH/"
     },
     {
       "actionEvidence": {

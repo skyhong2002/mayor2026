@@ -19,8 +19,60 @@
     "name": "江啟臣",
     "party": "國民黨"
   },
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "應該"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dau4K3AoJwH/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/64ffbc4a079bc37ac83b.webp",
+      "keywords": [
+        "產業",
+        "高鐵",
+        "自行車"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T12:06:51+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "臺中，是臺灣自行車產業的重鎮。從整車到零組件，臺中擁有許多優秀自行車零組件企業，完整的產業聚落不只撐起 #臺灣製造 的實力，更擦亮 ＃臺中製造 的招牌，讓臺灣自行車在國際市場占有一席之地。\n\n啟臣今天來到大甲，拜訪屹立40年的在地企業-高鐵工業，傾聽產業心聲，深入了解車架製造與產業發展的現況。高鐵企業從大甲出發，秉持扎根臺中、放眼世界的精神，不只成為世界前十大的攜車系列產品生產商，更持續投入汽車、自行車及相關零配件研發，更憑藉多年累積的技術與製造實力，將產品行銷全球，在國際市場上與世界競爭，目前已擁有超過100項國際專利，是名符其實的臺灣之光。\n\n臺灣最強的競爭力就是人！除了企業的韌性，更重要的是不斷投入研發、持續創新，才能在快速變化、競爭激烈的國際市場中，一步一腳印闖出自己的路，讓世界看見臺灣、看見臺中。產業的發展需要企業努力，也需要政府成為最堅強的後盾，除了中央政府應該支持本土產業，地方政府更應該持續傾聽產業的聲音、了解企業面臨的挑戰，協助企業提升競爭力，讓臺中製造持續發光，讓更多臺灣企業站上國際舞台。\n\n#臺灣之光 #臺中之光 #產業創新",
+      "topicScores": {
+        "交通": 0.4286,
+        "經濟": 0.5714
+      },
+      "topics": [
+        "經濟",
+        "交通"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/Dau4K3AoJwH/"
+    },
     {
       "actionEvidence": {
         "other": [

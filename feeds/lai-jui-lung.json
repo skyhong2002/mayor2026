@@ -1,5 +1,5 @@
 {
-  "count": 88,
+  "count": 89,
   "posts": [
     {
       "actionEvidence": {
@@ -41,6 +41,47 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/DaurKQ0H3CA"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauqKx5S9S5/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6fd1d31fa5740cb252dd.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T10:12:58+00:00",
+      "sourceId": "lai-jl-ig",
+      "targets": [],
+      "text": "哈囉你好嗎！在哈囉市場一路哈囉到底，大家真的有夠暖、讚啦👍",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauqKx5S9S5/"
     },
     {
       "actionEvidence": {

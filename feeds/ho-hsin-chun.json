@@ -1,5 +1,5 @@
 {
-  "count": 70,
+  "count": 72,
   "posts": [
     {
       "actionEvidence": {
@@ -57,6 +57,61 @@
       "candidateId": "ho-hsin-chun",
       "classification": {
         "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauZH0yEWzL/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/ae47a08254e31838b670.webp",
+      "keywords": [
+        "棒球",
+        "運動",
+        "球場",
+        "教育",
+        "高中",
+        "環境",
+        "委員會"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T07:36:26+00:00",
+      "sourceId": "ho-hc-ig",
+      "targets": [],
+      "text": "今天來到陽光棒球夏令營，和孩子們一起感受棒球的熱情！\n\n雖然天氣很熱，但孩子們依然認真揮棒、努力練習，在中信兄弟 #許基宏 、 #曾頌恩 兩位職棒球星的陪伴下，每個人的眼神都充滿對棒球的熱愛與夢想。\n\n台中有深厚的棒球底蘊，我希望讓每一位愛打球的孩子，都有更好的訓練環境。未來將全面盤點各區棒球場地，改善休息區、安全設施及周邊空間，也會積極推動室內運動場館，讓孩子不受天候影響，安心訓練、持續成長。\n\n謝謝教育部次長  @zhangliaowanjian 堅持 張廖萬堅 、中職 @tsaimimi0416 蔡其昌會長協助，以及所有教練、工作人員和所有支持棒球運動的夥伴。期待未來有更多孩子，在台中勇敢追夢，揮出屬於自己的精彩人生💪⚾️\n\n＃心存大台中\n陽光城市發展協會理事長 李文烈 \n@chifeng108 林祈烽  @huangshouda 黃守達 #林德宇  #曾威 \n台中市棒球委員會副主委 #李永隆\n中華職棒大聯盟會長辦公室主任 黃斯駿\n西苑高中 劉洲溶 校長",
+      "topicScores": {
+        "教育": 0.1333,
+        "環境": 0.0667,
+        "議會監督": 0.0667,
+        "體育": 0.7333
+      },
+      "topics": [
+        "體育",
+        "教育",
+        "環境",
+        "議會監督"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauZH0yEWzL/"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
         "needsReview": false,
         "rubricVersion": "context-v1"
       },
@@ -84,6 +139,47 @@
         "type": "external_event"
       },
       "url": "https://www.threads.com/t/DauEVcXjn3i"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauERyySGBi/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1347ec2659f7bb5dc6ac.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T04:34:52+00:00",
+      "sourceId": "ho-hc-ig",
+      "targets": [],
+      "text": "你喜歡吃涼麵嗎？\n\n今天阿純跟大家分享一家台中特別的涼麵店 ＠shake_noodles 「搖·涼麵」。\n\n除了擺盤精美、料理美味之外，更特別的是，它還是支持石虎保育的店家唷！\n\n有興趣的朋友，不妨找時間去嚐鮮，支持在地好味道！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauERyySGBi/"
     },
     {
       "actionEvidence": {

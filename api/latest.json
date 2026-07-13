@@ -3,6 +3,90 @@
   "posts": [
     {
       "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Dav4NhUExI3",
+      "imageAspect": 0.7143,
+      "imageUrl": "assets/feed-images/96843c77504a13450635.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-13T21:28:34+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:早安☀️\n五點出發\n等等中壢青果市場見！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "早安",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.threads.com/t/Dav4NhUExI3"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DavIqmKE9om/",
+      "imageAspect": 1.5047,
+      "imageUrl": "assets/feed-images/6d1a27f764a6ae998389.webp",
+      "keywords": [
+        "氣候"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T14:43:29+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "2017年，我在桃園市政府服務，見證了阿姆坪防淤隧道的開端。\n\n2023年，我在立委任內，也就是這張照片裡，參與竣工典禮，見證台灣水利史上重要的一頁。\n\n這項前瞻基礎建設，大幅提升了石門水庫的防淤與蓄水能力，更穩定了大桃園的供水。現在的桃園，面對極端氣候不再只能被動承受，而是真正有備而來。\n\n城市的進步，需要長遠的眼光跟魄力。\n\n黃世杰也會用同樣的態度跟精神，傾聽第一線民意，用專業的城市治理，為桃園的下一個十年、二十年打好基礎！",
+      "topicScores": {
+        "環境": 1.0
+      },
+      "topics": [
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DavIqmKE9om/"
+    },
+    {
+      "actionEvidence": {
         "other": [
           "規則未找到更明確的溝通行動，需人工複核"
         ]
@@ -43,6 +127,154 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/DavIrkPkzyt"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "應該"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dau4K3AoJwH/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/64ffbc4a079bc37ac83b.webp",
+      "keywords": [
+        "產業",
+        "高鐵",
+        "自行車"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T12:06:51+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "臺中，是臺灣自行車產業的重鎮。從整車到零組件，臺中擁有許多優秀自行車零組件企業，完整的產業聚落不只撐起 #臺灣製造 的實力，更擦亮 ＃臺中製造 的招牌，讓臺灣自行車在國際市場占有一席之地。\n\n啟臣今天來到大甲，拜訪屹立40年的在地企業-高鐵工業，傾聽產業心聲，深入了解車架製造與產業發展的現況。高鐵企業從大甲出發，秉持扎根臺中、放眼世界的精神，不只成為世界前十大的攜車系列產品生產商，更持續投入汽車、自行車及相關零配件研發，更憑藉多年累積的技術與製造實力，將產品行銷全球，在國際市場上與世界競爭，目前已擁有超過100項國際專利，是名符其實的臺灣之光。\n\n臺灣最強的競爭力就是人！除了企業的韌性，更重要的是不斷投入研發、持續創新，才能在快速變化、競爭激烈的國際市場中，一步一腳印闖出自己的路，讓世界看見臺灣、看見臺中。產業的發展需要企業努力，也需要政府成為最堅強的後盾，除了中央政府應該支持本土產業，地方政府更應該持續傾聽產業的聲音、了解企業面臨的挑戰，協助企業提升競爭力，讓臺中製造持續發光，讓更多臺灣企業站上國際舞台。\n\n#臺灣之光 #臺中之光 #產業創新",
+      "topicScores": {
+        "交通": 0.4286,
+        "經濟": 0.5714
+      },
+      "topics": [
+        "經濟",
+        "交通"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/Dau4K3AoJwH/"
+    },
+    {
+      "actionEvidence": {
+        "clarification": [
+          "回應"
+        ]
+      },
+      "actionLabels": [
+        "回應澄清"
+      ],
+      "actions": [
+        "clarification"
+      ],
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dau3gYclJH7/",
+      "imageAspect": 1.5019,
+      "imageUrl": "assets/feed-images/775dc48352c3b421bfac.webp",
+      "keywords": [
+        "經濟",
+        "產業",
+        "投資",
+        "AI",
+        "委員會",
+        "立法院",
+        "環境"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T12:01:03+00:00",
+      "sourceId": "chang-sc-ig",
+      "targets": [],
+      "text": "桃園承擔能源重任，更要解開AI發展的電力緊箍咒\n\n感謝立法院經濟委員會召委洪毓祥委員安排今天到桃園考察，我們與呂玉玲委員、涂權吉委員從竹圍漁港，到大潭電廠周邊的AI算力中心規劃，與中央一起商討，如何讓桃園的優勢，成為台灣下一個世代的競爭力。\n\n桃園是全台第一的產業大城，也是全國最完整的AI產業聚落。隨著越來越多企業準備投資，AI資料中心、算力中心對電力的需求也快速增加。然而，目前桃園以北5MW以上資料中心的供電限制，已成為桃園發展AI產業的一道緊箍咒。\n\n長期以來，桃園承擔中油三接、大潭電廠等國家重大能源建設，肩負北部穩定供電的重要任務，也扛下能源建設的環境成本。\n但是，即便桃園承擔最多責任，卻反而沒有獲得合理的發展機會。\n\n不僅如此，桃園還擁有其他城市難以複製的優勢。\n\n大潭電廠與中油三接，不只有充足的供電條件，更有珍貴的冷能資源。如果能妥善運用天然氣氣化產生的冷能，不僅能降低AI資料中心龐大的散熱耗能，也能提升整體能源效率。這項特點，將會成為台灣發展AI的重要競爭力。\n\n因此，市府規劃在大潭電廠周邊打造北部AI算力中心示範基地，希望把供電、冷能與產業一次整合，讓企業願意留在台灣、投資桃園。\n\n很高興今天考察過程中，經濟部長龔明鑫親自與會，包含龔部長在內，台電及中油也都正面回應市府的建議，認同朝鄰近電廠專區、整合供電與冷能資源的方向，也願意共同研議放寬現行供電限制，讓這項規劃向前跨出重要一步。\n\n只要是對桃園有利、對台灣發展有幫助，我都願意積極溝通、全力爭取。\n今天有了好的開始，接下來更重要的是把承諾一步一步落實。我會持續和中央保持密切合作，讓北部AI算力中心的規劃早日成形，也讓桃園承擔能源重任的同時，迎來AI產業發展的新契機。",
+      "topicScores": {
+        "環境": 0.0455,
+        "經濟": 0.8636,
+        "議會監督": 0.0909
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Dau3gYclJH7/"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauwrJ5Jg-c/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/e6245cec20df97e7977c.webp",
+      "keywords": [
+        "大學"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T11:01:35+00:00",
+      "sourceId": "su-ch-ig",
+      "targets": [],
+      "text": "#水獺媽媽樂園 新北熱烈巡迴中！週六我們 #淡水 見！\n\n剛結束的板橋場和林口場都湧進上千組家庭，水獺媽媽我的集點卡差點印到不夠發！來不及參加的沒關係，水獺媽媽還要繼續出發巡迴啦✨\n\n📍淡水場｜7/18（六）09:00-16:00\n真理大學—玻璃屋（淡水區真理街32號）",
+      "topicScores": {
+        "教育": 1.0
+      },
+      "topics": [
+        "教育"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauwrJ5Jg-c/"
     },
     {
       "actionEvidence": {
@@ -130,6 +362,47 @@
     },
     {
       "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauqKx5S9S5/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6fd1d31fa5740cb252dd.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T10:12:58+00:00",
+      "sourceId": "lai-jl-ig",
+      "targets": [],
+      "text": "哈囉你好嗎！在哈囉市場一路哈囉到底，大家真的有夠暖、讚啦👍",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauqKx5S9S5/"
+    },
+    {
+      "actionEvidence": {
         "personal_content": [
           "日常"
         ]
@@ -173,6 +446,52 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/Daun-ZdGr6_"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daun5LAzVtj/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d66b49cd59bbdb0d3804.webp",
+      "keywords": [
+        "攤商",
+        "掃街"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T09:45:12+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
+      "topicScores": {
+        "競選": 0.5,
+        "經濟": 0.5
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Daun5LAzVtj/"
     },
     {
       "actionEvidence": {
@@ -230,6 +549,61 @@
       "candidateId": "ho-hsin-chun",
       "classification": {
         "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauZH0yEWzL/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/ae47a08254e31838b670.webp",
+      "keywords": [
+        "棒球",
+        "運動",
+        "球場",
+        "教育",
+        "高中",
+        "環境",
+        "委員會"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T07:36:26+00:00",
+      "sourceId": "ho-hc-ig",
+      "targets": [],
+      "text": "今天來到陽光棒球夏令營，和孩子們一起感受棒球的熱情！\n\n雖然天氣很熱，但孩子們依然認真揮棒、努力練習，在中信兄弟 #許基宏 、 #曾頌恩 兩位職棒球星的陪伴下，每個人的眼神都充滿對棒球的熱愛與夢想。\n\n台中有深厚的棒球底蘊，我希望讓每一位愛打球的孩子，都有更好的訓練環境。未來將全面盤點各區棒球場地，改善休息區、安全設施及周邊空間，也會積極推動室內運動場館，讓孩子不受天候影響，安心訓練、持續成長。\n\n謝謝教育部次長  @zhangliaowanjian 堅持 張廖萬堅 、中職 @tsaimimi0416 蔡其昌會長協助，以及所有教練、工作人員和所有支持棒球運動的夥伴。期待未來有更多孩子，在台中勇敢追夢，揮出屬於自己的精彩人生💪⚾️\n\n＃心存大台中\n陽光城市發展協會理事長 李文烈 \n@chifeng108 林祈烽  @huangshouda 黃守達 #林德宇  #曾威 \n台中市棒球委員會副主委 #李永隆\n中華職棒大聯盟會長辦公室主任 黃斯駿\n西苑高中 劉洲溶 校長",
+      "topicScores": {
+        "教育": 0.1333,
+        "環境": 0.0667,
+        "議會監督": 0.0667,
+        "體育": 0.7333
+      },
+      "topics": [
+        "體育",
+        "教育",
+        "環境",
+        "議會監督"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauZH0yEWzL/"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
         "needsReview": false,
         "rubricVersion": "context-v1"
       },
@@ -257,6 +631,47 @@
         "type": "external_event"
       },
       "url": "https://www.threads.com/t/DauEVcXjn3i"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ]
+      },
+      "actionLabels": [
+        "動員宣傳"
+      ],
+      "actions": [
+        "mobilization"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauERyySGBi/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1347ec2659f7bb5dc6ac.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T04:34:52+00:00",
+      "sourceId": "ho-hc-ig",
+      "targets": [],
+      "text": "你喜歡吃涼麵嗎？\n\n今天阿純跟大家分享一家台中特別的涼麵店 ＠shake_noodles 「搖·涼麵」。\n\n除了擺盤精美、料理美味之外，更特別的是，它還是支持石虎保育的店家唷！\n\n有興趣的朋友，不妨找時間去嚐鮮，支持在地好味道！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauERyySGBi/"
     },
     {
       "actionEvidence": {
@@ -298,6 +713,49 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/DauCyfkiR2h"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DauB1npT7cH/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f9a9a8572642c59201f0.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-13T04:12:35+00:00",
+      "sourceId": "huang-sj-ig",
+      "targets": [],
+      "text": "跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！\n\n📍 美食傳送門\n香納多鮮肉湯包（桃園市八德區福國北街78號）\n\n下一站去哪裡？留言推薦桃園必吃美食給世杰，一起跟著感杰走，探索桃園的在地好味道！",
+      "topicScores": {
+        "文化觀光": 1.0
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DauB1npT7cH/"
     },
     {
       "actionEvidence": {
@@ -4324,537 +4782,6 @@
         "type": "unclear"
       },
       "url": "https://www.facebook.com/reel/2264686147667456/"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "threads:https://www.threads.com/t/DamA53DDwN2",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/88751a498bfb540d4d06.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-10T01:30:42+00:00",
-      "sourceId": "hsieh-lc-threads",
-      "targets": [],
-      "text": "@hsiehlungchieh:網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
-      "topicScores": {
-        "生活": 1.0
-      },
-      "topics": [
-        "生活"
-      ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
-      "url": "https://www.threads.com/t/DamA53DDwN2"
-    },
-    {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dal2vL1gPnO/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/3d4b05da418808e2e9c1.webp",
-      "keywords": [
-        "消防",
-        "颱風"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-10T00:01:37+00:00",
-      "sourceId": "chiang-cc-ig",
-      "targets": [],
-      "text": "感謝民間善心捐贈！\n日前啟臣受邀見證熱心公益的林傳全先生，慷慨捐贈優異越野性能的消防警備車予特搜大隊國光分隊，用實際行動充實臺中的救災戰力，守護市民生命財產安全，真的非常令人欽佩！政府資源有限、民間力量無窮。特別感謝所有消防弟兄始終站在第一線守護市民，適逢颱風來襲，也特別提醒鄉親朋友們務必提早做好防颱準備、注意安全！",
-      "topicScores": {
-        "治安": 0.6667,
-        "防災": 0.3333
-      },
-      "topics": [
-        "治安",
-        "防災"
-      ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.instagram.com/p/Dal2vL1gPnO/"
-    },
-    {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "personal_content"
-      ],
-      "candidateId": "chang-ching",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:919530677845128",
-      "imageAspect": 1.0111,
-      "imageUrl": "assets/feed-images/c95d17585a000c0dc6ca.webp",
-      "keywords": [
-        "颱風",
-        "豪雨",
-        "參選",
-        "長輩"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T23:35:04.000Z",
-      "sourceId": "chang-ching-party-fb",
-      "targets": [],
-      "text": "🌬️【颱風來襲，平安最重要】\n\n❤️各位鄉親朋友大家好，我是司法改革黨秘書長、台中市雅潭神市議員參選人 張烱春。\n\n🌀颱風接近，請大家務必提高警覺，提前做好防颱準備，固定招牌及盆栽，避免前往海邊、山區及溪流等危險地區，外出時注意強風豪雨，行車請減速慢行。\n\n🧓🤱也請多關心家中長輩、孩子及獨居長者，互相提醒、彼此照應，共同守護家人與社區安全。\n\n❤️祝福大家平安度過颱風，闔家平安、萬事順心！\n張烱春 敬上 司法改革黨秘書長 台中市雅潭神市議員參選人",
-      "topicScores": {
-        "社福": 0.1429,
-        "競選": 0.2857,
-        "防災": 0.5714
-      },
-      "topics": [
-        "防災",
-        "競選",
-        "社福"
-      ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、豪雨",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/reel/1693518878532125/"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "threads:https://www.threads.com/t/Dalv64pE7DT",
-      "imageAspect": 0.5623,
-      "imageUrl": "assets/feed-images/0b6cbf8aabe01a726897.webp",
-      "keywords": [
-        "颱風"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-09T23:01:37+00:00",
-      "sourceId": "lai-jl-threads",
-      "targets": [],
-      "text": "@zenolai:颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
-      "topicScores": {
-        "防災": 1.0
-      },
-      "topics": [
-        "防災"
-      ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.threads.com/t/Dalv64pE7DT"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dalu-0ayPWW/",
-      "imageAspect": 0.5623,
-      "imageUrl": "assets/feed-images/e134945e0c7a5ca527a0.webp",
-      "keywords": [
-        "颱風"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-09T23:01:26+00:00",
-      "sourceId": "lai-jl-ig",
-      "targets": [],
-      "text": "颱風期間不能鬆懈，持續確認工程進度與防汛整備。請市民朋友留意天氣變化、注意安全！",
-      "topicScores": {
-        "防災": 1.0
-      },
-      "topics": [
-        "防災"
-      ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.instagram.com/p/Dalu-0ayPWW/"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "視察"
-        ],
-        "policy_proposal": [
-          "必須",
-          "提出"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "administrative_update"
-      ],
-      "candidateId": "shen-poyang",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "threads:https://www.threads.com/t/Dak7iN9lG7-",
-      "imageAspect": 1.5625,
-      "imageUrl": "assets/feed-images/593878ed5df9d3cc492d.webp",
-      "keywords": [
-        "豪雨",
-        "淹水",
-        "災害",
-        "防災",
-        "強降雨",
-        "治水",
-        "經濟"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-09T15:23:49+00:00",
-      "sourceId": "shen-threads-personal",
-      "targets": [],
-      "text": "@pumashen:巴威強颱來襲，\n中央災害應變中心已啟動二級開設，\n跟9個縣市視訊連線全力防颱。\n⠀\n下午卓榮泰院長前往內湖視察，\n我也一起前往了解。\n面對汛期可能帶來的災害風險，\n中央與地方必須攜手合作，\n儘速解決迫切的治水問題。\n⠀\n⠀\n這幾次現場勘查，\n我有兩點觀察，\n提出來和大家分享。\n⠀\n第一，\n上次強降雨造成的淹水區域，\n其實並不在淹水潛勢預測範圍內，\n災害本來就有許多難以預料的變數，\n這也提醒我們，\n持續依據實際情況滾動檢討、更新資料。\n⠀\n第二，\n這次我跟水利署、經濟部和北市府會勘時發現，\n部分下水道與側溝的銜接處較狹窄，\n豪雨來臨時可能影響排水效率。\n因此，建議持續盤點排水系統，\n加強清淤工作，提升整體排水韌性。\n⠀\n⠀\n防災工作不分中央、地方\n也不分藍綠，\n⠀\n把災害風險降到最低，\n全力守護市民生命財產安全。",
-      "topicScores": {
-        "環境": 0.0909,
-        "經濟": 0.0909,
-        "防災": 0.8182
-      },
-      "topics": [
-        "防災",
-        "環境",
-        "經濟"
-      ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "豪雨、淹水、災害應變中心",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.threads.com/t/Dak7iN9lG7-"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "已完成"
-        ],
-        "personal_content": [
-          "家人"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update",
-        "personal_content"
-      ],
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dak7OaHn2MD/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/352f4a5282d086b37b37.webp",
-      "keywords": [
-        "颱風",
-        "災害",
-        "防災",
-        "學校",
-        "校園",
-        "照顧",
-        "警察",
-        "消防"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-09T15:21:10+00:00",
-      "sourceId": "chang-sc-ig",
-      "targets": [],
-      "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
-      "topicScores": {
-        "教育": 0.2727,
-        "治安": 0.1818,
-        "社福": 0.1818,
-        "防災": 0.3636
-      },
-      "topics": [
-        "防災",
-        "教育",
-        "社福",
-        "治安"
-      ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、災害應變中心",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.instagram.com/p/Dak7OaHn2MD/"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "已完成"
-        ],
-        "personal_content": [
-          "家人"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update",
-        "personal_content"
-      ],
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1793826868773204",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/c1b2edd9887415cd0dfd.webp",
-      "keywords": [
-        "颱風",
-        "災害",
-        "防災",
-        "學校",
-        "校園",
-        "照顧",
-        "警察",
-        "消防"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T15:19:38.000Z",
-      "sourceId": "chang-sc-fb",
-      "targets": [],
-      "text": "這陣子，我最想說的一句話，就是謝謝。\n\n謝謝每一位堅守崗位，守護食安、守護桃園的夥伴。\n\n最近，因為中聯油食安事件，衛生局同仁日以繼夜投入稽查、流向追查及資料比對，從白天忙到深夜，只希望能把每一項風險都找出來，把市民的飲食安全守住。\n\n截至目前為止，市府已完成轄內近700家業者清查，查獲受影響產品後立即要求下架回收，並持續針對餐飲業及校園團膳追查流向。目前受影響校園仍維持原公布的13所學校，沒有新增名單，我們也會持續追蹤，確保資訊透明、查核到位。\n\n這幾天下來，看著同仁忙進忙出，真的非常辛苦。\n\n稍早我結束在災害應變中心的會議之後，我特地帶了水果餐盒到衛生局辦公室，替大家加油打氣，也提醒大家，再忙也要記得補充體力、照顧好身體。\n\n因應颱風來襲，市府已宣布明天（7/10）停止上班上課。但食安不能停，部分同仁仍將輪班持續查核。我也特別叮嚀大家，工作很重要，但安全更重要，務必做好防颱準備，照顧好自己與家人。\n\n接下來，桃園也將面對颱風的挑戰。除了衛生局之外，警察局、消防局、工務局、水務局，以及所有投入防災應變的市府同仁，都會持續堅守第一線，維繫城市正常運作，守護市民的生命財產安全。\n\n每一次食安事件、每一次風災來臨，總有一群人默默站在最前面，把責任扛在肩上。\n\n謝謝每一位辛苦的夥伴，為我們守護著桃園。",
-      "topicScores": {
-        "教育": 0.2727,
-        "治安": 0.1818,
-        "社福": 0.1818,
-        "防災": 0.3636
-      },
-      "topics": [
-        "防災",
-        "教育",
-        "社福",
-        "治安"
-      ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、災害應變中心",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/SanCheng624/posts/pfbid02E5cATZ3RmqPrbQJVWfdRoZoE5BKdw3sR8QUgsTpoELfTQQZaHJ3bD7PFUBWN5UpWl"
-    },
-    {
-      "actionEvidence": {
-        "public_information": [
-          "最新資訊"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1580819110322010",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/78f8cd0c8cefb03887d2.webp",
-      "keywords": [
-        "颱風"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T14:03:33.000Z",
-      "sourceId": "lee-sc-fb",
-      "targets": [],
-      "text": "新北市政府已公告：明天（7/10）停止上班上課。\n\n請大家做好防颱準備：門窗關好，非必要儘量避免出門，留意颱風最新資訊。\n\n大家平安，比什麼都重要。",
-      "topicScores": {
-        "防災": 1.0
-      },
-      "topics": [
-        "防災"
-      ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0cBJD63sWiEm178rAmyAVg7WHwKTkxQ66mt6cKZgSz9b1pL2y2gkEvifdsoNWg2yEl&id=100051818071280"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "視察"
-        ],
-        "policy_proposal": [
-          "必須",
-          "提出"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "administrative_update"
-      ],
-      "candidateId": "shen-poyang",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:122106037569329310",
-      "imageAspect": 1.5611,
-      "imageUrl": "assets/feed-images/4c1c20076a771c2e565a.webp",
-      "keywords": [
-        "颱風",
-        "豪雨",
-        "淹水",
-        "災害",
-        "防災",
-        "治水",
-        "經濟"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-09T13:33:15.000Z",
-      "sourceId": "shen-fb-campaign",
-      "targets": [],
-      "text": "巴威強颱來襲，今天下午氣象署已發布海上警報，中央災害應變中心也已啟動二級開設，並與9個縣市視訊連線，全力投入防颱整備。⁣\n⁣\n下午，卓榮泰院長前往內湖視察金龍路及港墘抽水站，我也一起前往了解防颱整備情形。面對汛期可能帶來的災害風險，中央與地方必須攜手合作，儘速解決迫切的治水問題。⁣\n⁣\n這幾次現場勘查，也讓我有兩點觀察，提出來和大家分享。⁣\n⁣\n第一，持續滾動檢討淹水潛勢區。⁣\n⁣\n上一次6月25日颱風造成淹水的部分區域，並不在過去的淹水潛勢預測範圍內。災害本來就有許多難以預料的變數，每一次颱風都會帶來新的挑戰。這也提醒我們，淹水潛勢評估需要持續依據實際情況滾動檢討、更新資料，讓防災整備更貼近現況，也讓有限的資源投入真正有需要的地方。⁣\n⁣\n第二，加強下水道及側溝系統的清淤與改善。⁣\n⁣\n我與水利署、經濟部以及台北市政府會勘時發現，部分下水道與側溝的銜接處較為狹窄，豪雨來臨時可能影響排水效率。因此，建議持續盤點排水系統瓶頸，並加強下水道及側溝清淤工作，提升整體排水韌性。⁣\n⁣\n⁣\n防災工作不分中央、地方，也不分藍、綠。唯有平時做好準備、持續檢討精進，才能在風雨來臨時，把災害風險降到最低，全力守護市民生命財產安全。⁣\n⁣\n⁣\n#你的市長沈伯洋",
-      "topicScores": {
-        "環境": 0.0667,
-        "經濟": 0.0667,
-        "防災": 0.8667
-      },
-      "topics": [
-        "防災",
-        "環境",
-        "經濟"
-      ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、淹水、災害應變中心",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid021a1q72aogruMPJpNZLF71QmRkwBAEZwh91qdrm5KmvuC2sMGfZzgCG6M4pk4h8NCl"
     }
   ],
   "version": 1
