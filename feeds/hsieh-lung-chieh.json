@@ -1,6 +1,47 @@
 {
-  "count": 67,
+  "count": 68,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DascfwzyAlk/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8d449205bbeb9a9c1c71.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-12T13:26:49+00:00",
+      "sourceId": "hsieh-lc-ig",
+      "targets": [],
+      "text": "做人要將心比心！現在的功利社會...人情越來越淡薄 #謝龍介",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DascfwzyAlk/"
+    },
     {
       "actionEvidence": {
         "other": [

@@ -1,6 +1,157 @@
 {
-  "count": 52,
+  "count": 56,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DasEAaLILqg/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/647c4a7f6c0fecdbe034.webp",
+      "keywords": [
+        "教育",
+        "學校",
+        "颱風",
+        "地震",
+        "投資"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-12T09:52:34+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "人才，是臺灣最珍貴的資產\n教育，就是臺灣站上世界舞臺的根基💪\n\n臺灣沒有豐富的天然資源，也經常面對颱風、地震等天然挑戰，但我們卻能在世界舞臺占有一席之地，靠的就是人才。\n\n而人才的養成，除了學校教育，更需要社會各界共同守護。當孩子在人生路上遇到挫折、遭遇困難時，如果有人願意及時伸出援手，就有機會改變他們的一生。\n\n張秀菊基金會22年來，從一間小小、向人借用的空間起步，一路走到擁有自己的基地，持續打造更多讓孩子學習、成長與探索的場域。一路走來，已陪伴、翻轉超過4000位孩子的人生，這份堅持與奉獻令人由衷敬佩。\n\n我相信，今天受到幫助的孩子，未來也會成為願意回饋社會、幫助下一個孩子的人，讓善的力量不斷延續。\n\n衷心感謝張秀菊基金會長期以來的付出，也感謝每一位慷慨解囊、無私奉獻的善心人士，讓更多孩子擁有希望，也讓臺灣擁有更美好的未來。\n\n教育是一場長遠的投資，更是改變人生最重要的力量。讓我們一起陪伴孩子們勇敢追夢、安心成長。\n\n#臺中啟程 #打造旗艦城 \n#教育即國力 #陪伴孩子",
+      "topicScores": {
+        "教育": 0.625,
+        "經濟": 0.125,
+        "防災": 0.25
+      },
+      "topics": [
+        "教育",
+        "防災",
+        "經濟"
+      ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、地震",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/DasEAaLILqg/"
+    },
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DartqKUoHIR/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/2b174a9bdc1413c05f40.webp",
+      "keywords": [
+        "籃球",
+        "運動",
+        "球場",
+        "環境",
+        "氣候"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-12T06:37:17+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "今天一早連續跑了兩場充滿活力的運動行程-臺中市幼獅盃3對3鬥球賽與北屯區運動社團嘉年華，啟臣非常喜歡跑運動行程，看到現場鄉親健康、開心的笑容，連帶著我自己都充滿了能量！\n\n在3對3籃球賽現場，看到年輕朋友們熱血奔馳，啟臣也忍不住手癢、上場小試身手，與大家一起切磋球技，流流汗的感覺真的太棒了！\n\n市民朋友的健康，是啟臣最在意的事。大臺中這些年陸續在增設體育場館，這對大家非常重要，不論是豔陽高照的大熱天、還是突如其來的雨天，愛運動的朋友都應該不受氣候環境的限制，在安全、舒適的環境中揮灑汗水！\n\n未來，啟臣會持續盤點大臺中各區的體育設施包括運動中心、風雨球場等，針對不足、不夠的場館努力補齊，打造更完善的運動防護與硬體配套。讓我們一起動起來，把大臺中打造為最健康、最有活力的宜居運動旗艦城！💪\n\n#臺中啟程 #打造旗艦城\n#臺中味 #健康味 #清新味\n#以民為本 #運動城市",
+      "topicScores": {
+        "環境": 0.2308,
+        "體育": 0.7692
+      },
+      "topics": [
+        "體育",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/DartqKUoHIR/"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DapSkVdoE98/",
+      "imageAspect": 1.4993,
+      "imageUrl": "assets/feed-images/a037745c2af411cf7cfe.webp",
+      "keywords": [
+        "足球",
+        "球隊",
+        "冠軍",
+        "國小",
+        "颱風"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T08:02:05+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "還記得有一群熱血的臺中孩子，代表臺灣遠征西班牙踢足球賽嗎？\n\n沒錯！就是我們臺中清水國小足球隊，在「2026西班牙科斯塔布蘭卡盃」一路過關斬將，今天晚上就是最關鍵的冠軍賽！孩子們即將帶著大家的期盼，全力抱回冠軍金盃🏆\n\n適逢巴威颱風影響，啟臣提醒大家做好防颱準備、平安待在家。今天傍晚，就讓我們一起守在螢幕前，用最熱情的線上聲援為這群「臺中之光」集氣加油！\n\n🏆 冠軍賽直播資訊\n👉 比賽時間：7/11（六）臺灣時間18:15\n\n今晚，讓我們一起為臺灣加油、為臺中清水國小足球隊加油💪🇹🇼\n\n#清水國小足球隊 #臺中之光 \n#前進西班牙 #冠軍賽",
+      "topicScores": {
+        "教育": 0.2,
+        "防災": 0.0667,
+        "體育": 0.7333
+      },
+      "topics": [
+        "體育",
+        "教育",
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/DapSkVdoE98/"
+    },
     {
       "actionEvidence": {
         "public_information": [
@@ -51,6 +202,55 @@
         "type": "external_event"
       },
       "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0foRHLvYJFnTkaB7To9EJnTQyTqKvbnLy8LYptgzGmNTeCAQDxfGZvxDYikv3m9YVl"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DaoiVtDjWC2/",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/e74707c1d38039c95408.webp",
+      "keywords": [
+        "颱風",
+        "豪雨",
+        "災害",
+        "防災",
+        "科技"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T01:00:39+00:00",
+      "sourceId": "chiang-cc-ig",
+      "targets": [],
+      "text": "🍇 臺中金香葡萄、黑后葡萄災損現金救助明起開辦！\n\n上個月底豪雨來襲，導致臺中葡萄受損嚴重。啟臣第一時間要求中央與地方政府「從寬從速」認定，極力為農民發聲；農業部已正式公告，臺中市為金香葡萄、黑后葡萄天然災害現金救助地區。\n\n請農友把握時間，備妥資料於當地公所申辦：\n\n救助額度：每公頃19萬5,000元\n申請資格：損害率達20%以上的農民\n受理期限：115年7月11日-7月24日止（假日照常受理；但11日受颱風假影響，順延至25日）\n補充提醒：若遇天災停班將順延；因不可抗力錯過者，可在原因消滅後10日內申請回復原狀\n\n救助金並非解決農災問題之根本，啟臣未來會積極推動科技防災對策，與農民一起防範未然，一起顧好農產品質、升級臺中農業，打造 #農業旗艦城💪\n\n#臺中啟程 #打造旗艦城 #臺中農業 #金香葡萄 #黑后葡萄 #守護農民 #農家子弟",
+      "topicScores": {
+        "經濟": 0.2,
+        "防災": 0.8
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "颱風、豪雨",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/DaoiVtDjWC2/"
     },
     {
       "actionEvidence": {

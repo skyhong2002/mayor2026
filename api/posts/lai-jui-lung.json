@@ -19,7 +19,7 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 86,
+  "count": 87,
   "posts": [
     {
       "actionEvidence": {
@@ -156,6 +156,52 @@
         "type": "external_event"
       },
       "url": "https://www.threads.com/t/Dapg_DHiQw5"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒",
+          "警戒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dapg7cRj-OH/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/87aea0c45fe3f05aa528.webp",
+      "keywords": [
+        "防災",
+        "大雨",
+        "警戒"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T10:07:34+00:00",
+      "sourceId": "lai-jl-ig",
+      "targets": [],
+      "text": "因山區連日大雨已達警戒標準，為確保安全，市府宣布，六龜、甲仙、茂林、桃源及那瑪夏等五個行政區，明（12）日停止上班上課。高雄市其他的行政區，則恢復正常上班上課。\n\n特別提醒山區的朋友，連日大雨容易造成土石鬆動，請務必配合各區公所的撤離指示，一切以安全為第一優先。明天需要出門的市區朋友，也請記得攜帶雨具，騎車或開車多預留一點時間，隨時小心瞬間的強陣風。\n\n向每一位挺進山區、守護基層的防災夥伴致上最高敬意。明天出門，請大家務必把自身安全放在第一位，我們團結一心，攜手度過這次的風雨考驗！",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.84,
+        "evidence": "大雨、警戒",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/Dapg7cRj-OH/"
     },
     {
       "actionEvidence": {

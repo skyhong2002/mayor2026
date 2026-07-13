@@ -1,5 +1,5 @@
 {
-  "count": 79,
+  "count": 82,
   "posts": [
     {
       "actionEvidence": {
@@ -47,6 +47,101 @@
         "type": "routine"
       },
       "url": "https://www.threads.com/t/DasFEepE1Mz"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DasFDMwE-e5/",
+      "imageAspect": 1.7763,
+      "imageUrl": "assets/feed-images/1e2dec3d5b6d777c982b.webp",
+      "keywords": [
+        "文化",
+        "美食",
+        "參選"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-12T10:01:41+00:00",
+      "sourceId": "chen-tf-ig",
+      "targets": [],
+      "text": "2026十二生肖滿吉宴，品味台南、傳承辦桌文化！ 🍽️\n\n亭妃很開心受邀參加由總舖師盧正治舉辦的「2026十二生肖滿吉宴」，現場王定宇委員、陳皇宇議員、許又仁議員參選人、老同事陳柏惟都一起來熱鬧開桌，一道道充滿巧思的辦桌料理，不僅展現總舖師的精湛手藝，更把台南深厚的飲食文化與人情味完整呈現。\n\n台南不只是美食之都，更是一座擁有豐富文化底蘊的城市。辦桌文化承載著世代傳承的情感與記憶，每一道佳餚都是對土地的熱愛，也是台南最珍貴的文化資產。\n\n期待未來一起努力，讓台南的美食、美學與文化持續發光發熱，走向國際。\n\n#台南美食之都\n#辦桌文化\n#十二生肖滿吉宴\n#總舖師盧正治\n#陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.9091,
+        "競選": 0.0909
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "一起來",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.instagram.com/p/DasFDMwE-e5/"
+    },
+    {
+      "actionEvidence": {
+        "public_information": [
+          "請注意",
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DapmVgDT-4Q/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/45bbecc2535f6ca5d5eb.webp",
+      "keywords": [
+        "垃圾",
+        "資源回收",
+        "颱風"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T10:55:17+00:00",
+      "sourceId": "chen-tf-ig",
+      "targets": [],
+      "text": "【妃妃提醒｜7/12（日）臺南垃圾收運資訊】\n\n受到颱風影響，為避免市民朋友連續3天無法倒垃圾，臺南市環保局明天（7/12）安排 22個行政區加班收運一般垃圾，不收資源回收，請大家留意各區收運時間。\n\n✅ 加班收運22區： 北區、東區、南區、大內、山上、中西、仁德、左鎮、永康、玉井、安平、安南、官田、南化、後壁、麻豆、新化、楠西、龍崎、歸仁、關廟、鹽水。\n\n❌ 其餘15區暫停收運。\n\n請鄉親朋友把握收運時間。風雨雖然逐漸趨緩，外出仍請注意安全，也請持續留意市府最新公告。\n\n#陳亭妃 #妃妃提醒 #垃圾收運 #防颱 #臺南",
+      "topicScores": {
+        "環境": 0.8333,
+        "防災": 0.1667
+      },
+      "topics": [
+        "環境",
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/DapmVgDT-4Q/"
     },
     {
       "actionEvidence": {
@@ -143,6 +238,50 @@
         "type": "external_event"
       },
       "url": "https://www.facebook.com/fififans/posts/pfbid02dnLyWSZjcKupxqScConWADZ5nqghEPrcvUsepnuUCkkzy2XmYU6SGdsgChyz6cnFl"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dao3nCWzHkU/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/f054fb5cd85e827ae9c6.webp",
+      "keywords": [
+        "颱風",
+        "防災"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T04:06:58+00:00",
+      "sourceId": "chen-tf-ig",
+      "targets": [],
+      "text": "大家還好嗎？亭妃早上6:30出門到現在，目前台南的狀況還OK，但是防災絕對不能掉以輕心喔！\n\n#巴威颱風 #台南 #陳亭妃",
+      "topicScores": {
+        "防災": 1.0
+      },
+      "topics": [
+        "防災"
+      ],
+      "trigger": {
+        "confidence": 0.78,
+        "evidence": "颱風",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/Dao3nCWzHkU/"
     },
     {
       "actionEvidence": {

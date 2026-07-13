@@ -19,8 +19,70 @@
     "name": "張善政",
     "party": "國民黨"
   },
-  "count": 40,
+  "count": 41,
   "posts": [
+    {
+      "actionEvidence": {
+        "administrative_update": [
+          "市府團隊",
+          "搶修"
+        ],
+        "mobilization": [
+          "支持"
+        ],
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達",
+        "行政進度",
+        "動員宣傳"
+      ],
+      "actions": [
+        "public_information",
+        "administrative_update",
+        "mobilization"
+      ],
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dapt9-xoHpy/",
+      "imageAspect": 1.0008,
+      "imageUrl": "assets/feed-images/1f4ae6d197977f02051b.webp",
+      "keywords": [
+        "颱風",
+        "豪雨",
+        "災情",
+        "垃圾",
+        "道路"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-11T12:01:31+00:00",
+      "sourceId": "chang-sc-ig",
+      "targets": [],
+      "text": "桃園市明（7/12）日 #復興區停止上班上課  其餘地區照常上班上課。\n\n雖然巴威颱風暴風圈預計今晚深夜離開台灣，但外圍環流仍將持續為復興區帶來大豪雨至超大豪雨等級降雨，這兩天已預防性撤離745人，收容135人，稍早也將華陵里2戶7人撤離並完成安置；另外針對大溪崁津部落也已全數完成疏散。\n\n在超大豪雨的侵襲下，復興區部分道路發生損壞情況，我們與區公所保持密切聯繫，能搶修的先搶修，較嚴重的也會等天氣較穩定後，儘快展開修復工作，讓居民能夠儘快返回家園，恢復正常通行。\n\n一整天下來，桃園累計已超過五萬戶曾停電，感謝台電同仁冒著風雨全力搶修，讓多數地區都能在短時間內恢復供電。我也在應變會議中一再提醒所有投入外勤工作的市府同仁及各單位夥伴，救災重要，大家自身安全更重要。\n\n另外，垃圾收運因颱風已停收兩日，明天（7/12）將於原時段加班清運。特別感謝清潔隊同仁及工會的支持，也請大家配合做好垃圾分類，不要隨意棄置垃圾，一起讓市容盡快恢復正常。\n\n截至目前，桃園整體災情都在掌握與處理當中，颱風雖然逐漸遠離，但山區雨勢仍大，請大家非必要避免前往山區及海邊活動，避免讓自己遭遇危險。\n\n市府團隊會持續守視各地狀況，妥善做好各項應變與復原工作，也請大家留意最新天氣資訊，共同平安度過這次颱風。",
+      "topicScores": {
+        "交通": 0.0833,
+        "環境": 0.25,
+        "防災": 0.6667
+      },
+      "topics": [
+        "防災",
+        "環境",
+        "交通"
+      ],
+      "trigger": {
+        "confidence": 0.95,
+        "evidence": "颱風、豪雨、災情、停電",
+        "label": "外部事件驅動",
+        "type": "external_event"
+      },
+      "url": "https://www.instagram.com/p/Dapt9-xoHpy/"
+    },
     {
       "actionEvidence": {
         "administrative_update": [
