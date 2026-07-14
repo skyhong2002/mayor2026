@@ -1,5 +1,5 @@
 {
-  "count": 44,
+  "count": 45,
   "posts": [
     {
       "actionEvidence": {
@@ -49,6 +49,55 @@
         "type": "self_initiated"
       },
       "url": "https://www.threads.com/t/DaxL3PYCASs"
+    },
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DaxL0Zzsi39/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/e2245b2a4d332e8d32bc.webp",
+      "keywords": [
+        "經濟",
+        "產業",
+        "科技",
+        "AI",
+        "電競"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T09:37:47+00:00",
+      "sourceId": "lee-sc-ig-main",
+      "targets": [],
+      "text": "新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n\n工作留在新北，人才就會留在新北。",
+      "topicScores": {
+        "經濟": 0.8889,
+        "體育": 0.1111
+      },
+      "topics": [
+        "經濟",
+        "體育"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/DaxL0Zzsi39/"
     },
     {
       "actionEvidence": {

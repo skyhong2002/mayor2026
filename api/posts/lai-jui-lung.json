@@ -19,7 +19,7 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 96,
+  "count": 97,
   "posts": [
     {
       "actionEvidence": {
@@ -102,6 +102,47 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/Dawp3_cHwaP"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dawoam0SMA3/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/c5b95e6d428ffd84f6f5.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T04:40:14+00:00",
+      "sourceId": "lai-jl-ig",
+      "targets": [],
+      "text": "讓青年在高雄有舞台、有機會、敢逐夢！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Dawoam0SMA3/"
     },
     {
       "actionEvidence": {

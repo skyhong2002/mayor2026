@@ -1,6 +1,92 @@
 {
-  "count": 66,
+  "count": 71,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DaxqVRwErRl",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/446f22d3663ca10bca2a.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T14:04:00+00:00",
+      "sourceId": "su-ch-threads",
+      "targets": [],
+      "text": "@su.chiaohui:每年這個時候，我們全家都會回到台東，參與一年一度的年祭。從備餐、製作餐具、洗碗、練舞、競賽，大家聚在一起，把文化傳承下去。",
+      "topicScores": {
+        "文化觀光": 1.0
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DaxqVRwErRl"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/DaxqKN-p8yA/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/ea3721d15362e61bd4f7.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T14:02:26+00:00",
+      "sourceId": "su-ch-ig",
+      "targets": [],
+      "text": "每年這個時候，我們全家都會回到台東，參與一年一度的年祭。從備餐、製作餐具、洗碗、練舞、競賽，大家聚在一起，把文化傳承下去。",
+      "topicScores": {
+        "文化觀光": 1.0
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/DaxqKN-p8yA/"
+    },
     {
       "actionEvidence": {
         "mobilization": [
@@ -57,6 +143,63 @@
         "type": "self_initiated"
       },
       "url": "https://www.threads.com/t/Daw-l8_Gd4f"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daw8nE6Jj0u/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/683bcb588de6fc4b234d.webp",
+      "keywords": [
+        "大學",
+        "文化",
+        "預算",
+        "永續"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T07:24:10+00:00",
+      "sourceId": "su-ch-ig",
+      "targets": [],
+      "text": "增加預算和交流管道 與社大協力治理新北💪🏼\n\n我和 #新北市社區大學 的夥伴們交流，共同探討公民參與與社區永續發展的未來願景！\n\n社大在地方串起了緊密的社會支持網，是大家終身學習、參與公共事務的重要平台，讓不分年齡、不分族群的人，都能互相學習、彼此貢獻！\n\n新北29區都有自己的故事及特色，社大也因此發展出不同的課程，像是淡水社大的淡水河獨木舟文化巡禮、樹林社大的煤礦業文化路徑，以及中和社大的緬甸文化介紹，這些課堂正是新北多元人口與深厚文史的縮影！\n\n未來我要 #提高預算投入 ，#協助社大協調場地減輕費用負擔，透過完善的制度保障社區大學穩定經營！\n\n我也要 #建立順暢的溝通管道 ，讓社區大學共同參與政策推動，成為城市治理的協力者！",
+      "topicScores": {
+        "教育": 0.3333,
+        "文化觀光": 0.3333,
+        "環境": 0.1111,
+        "議會監督": 0.2222
+      },
+      "topics": [
+        "教育",
+        "文化觀光",
+        "議會監督",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/Daw8nE6Jj0u/"
     },
     {
       "actionEvidence": {
@@ -3226,6 +3369,88 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/sxo85zN7m30"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:WhpWBMUmaIA",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/cf7cd2c1fdadd5e1488e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "su-ch-yt",
+      "targets": [],
+      "text": "[Otter Mom’s Bedtime Stories] Xiaoqing Wants to Become a Dragon (Part 2) ft. Grandpa Otter | Self...",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/watch?v=WhpWBMUmaIA"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "家人"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:gXjMOPa-RVs",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b4e3cccec19740ecd3aa.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "su-ch-yt",
+      "targets": [],
+      "text": "巧慧和家人一起回到台東，參與年祭！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/gXjMOPa-RVs"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 63,
+  "count": 64,
   "posts": [
     {
       "actionEvidence": {
@@ -3038,6 +3038,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/watch?v=IgalUzEeae4"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "shen-poyang",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:J4K5ee8df44",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/27d9a761180d1fd85329.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "shen-yt-personal",
+      "targets": [],
+      "text": "I'm still teaching at Peking University. I happened to have a student taking an oral exam today, ...",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/J4K5ee8df44"
     }
   ],
   "version": 1

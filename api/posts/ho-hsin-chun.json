@@ -19,8 +19,51 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 78,
+  "count": 80,
   "posts": [
+    {
+      "actionEvidence": {
+        "public_information": [
+          "提醒"
+        ]
+      },
+      "actionLabels": [
+        "資訊轉達"
+      ],
+      "actions": [
+        "public_information"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DaxhMXQGdAp",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "足球"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T12:43:46+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:7 月 14 日是法國國慶日🇫🇷\n\n自由、平等、博愛，不只是法國的重要精神，也提醒我們，一座城市的進步，來自每一個人共同努力、彼此尊重，一起讓生活變得更好。\n\n不過，今天也要小小承認一件事......\n\n過去我在英國留學開始和同學一起看足球比賽，我對英國有著特別的感情。所以，雖然要祝法國國慶快樂，但Three Lions加油🦁🏆",
+      "topicScores": {
+        "體育": 1.0
+      },
+      "topics": [
+        "體育"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DaxhMXQGdAp"
+    },
     {
       "actionEvidence": {
         "personal_content": [
@@ -171,6 +214,70 @@
         "type": "self_initiated"
       },
       "url": "https://www.threads.com/t/Daw0ey7EbaC"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "午餐",
+          "日常"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "個人／日常"
+      ],
+      "actions": [
+        "policy_proposal",
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daw0eSRkf6P/",
+      "imageAspect": 1.001,
+      "imageUrl": "assets/feed-images/0fc6a89e9d410be891fb.webp",
+      "keywords": [
+        "長輩",
+        "敬老",
+        "補助",
+        "津貼",
+        "營養午餐",
+        "國中",
+        "創業",
+        "健保"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T06:13:01+00:00",
+      "sourceId": "ho-hc-ig",
+      "targets": [],
+      "text": "這段時間，我辦理「六星市政168巡迴說明會」走進台中各區，和市民分享城市願景，也聽見大家最真實的需求。\n\n從孩子、青年到長輩，我提出「六星福利政見」，陪伴市民走過人生每個階段：\n\n👶 兒童\n每月1,500元營養津貼、國中小營養午餐免費，餐標提高至80元。\n\n🧑 青年\n成立青年局，提供出國參賽、創業貸款利息及相關補助。\n\n👵 長輩\n持續補助長輩健保費，敬老卡點數不歸零，擴大計程車及日常消費使用。\n\n未來我會持續走進各區、傾聽大家，讓福利政策真正貼近生活。",
+      "topicScores": {
+        "教育": 0.1818,
+        "社福": 0.6364,
+        "經濟": 0.0909,
+        "醫療": 0.0909
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "經濟",
+        "醫療"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.instagram.com/p/Daw0eSRkf6P/"
     },
     {
       "actionEvidence": {
