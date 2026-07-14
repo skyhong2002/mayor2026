@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/138ab01246aad5f6153c.webp",
+    "avatarUrl": "assets/source-avatars/2af815845319742e9738.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,147 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 41,
+  "count": 44,
   "posts": [
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DaxL3PYCASs",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/b26f048c259377c4e5c1.webp",
+      "keywords": [
+        "經濟",
+        "產業",
+        "科技",
+        "AI",
+        "電競"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T09:38:18+00:00",
+      "sourceId": "lee-sc-threads",
+      "targets": [],
+      "text": "@hammer__lee:新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n\n工作留在新北，人才就會留在新北。",
+      "topicScores": {
+        "經濟": 0.8889,
+        "體育": 0.1111
+      },
+      "topics": [
+        "經濟",
+        "體育"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.threads.com/t/DaxL3PYCASs"
+    },
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1584386199965301",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/13257c5c8e8a6b845b3a.webp",
+      "keywords": [
+        "經濟",
+        "產業",
+        "科技",
+        "AI",
+        "電競"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T23:30:58.000Z",
+      "sourceId": "lee-sc-fb",
+      "targets": [],
+      "text": "新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n工作留在新北，人才就會留在新北。",
+      "topicScores": {
+        "經濟": 0.8889,
+        "體育": 0.1111
+      },
+      "topics": [
+        "經濟",
+        "體育"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.facebook.com/reel/1647628232993395/"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1583590336711554",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/62d28b2d0b4793253dee.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-12T23:31:10.000Z",
+      "sourceId": "lee-sc-fb",
+      "targets": [],
+      "text": "拿了一輩子鐵鎚的手，這一天甩不動一盤茶葉。\n86 歲的黃文雄大師說，製茶打瞌睡，會被一百多度的鐵板燙醒——說實在，功夫沒有一樣是舒服練成的。\n茶是一葉一葉炒出來的；新北的職人，我一個一個顧。",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/reel/1535251371402180/"
+    },
     {
       "actionEvidence": {
         "other": [

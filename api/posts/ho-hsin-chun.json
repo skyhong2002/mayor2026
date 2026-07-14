@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/ba92c45c13be7f182629.webp",
+    "avatarUrl": "assets/source-avatars/0d9eaee3672b93e7024a.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,273 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 72,
+  "count": 78,
   "posts": [
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "回憶"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1630242798465128",
+      "imageAspect": 0.7069,
+      "imageUrl": "assets/feed-images/ca567bf2c94e53dd29a6.webp",
+      "keywords": [
+        "市集"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-14T10:00:05.000Z",
+      "sourceId": "ho-hc-fb",
+      "targets": [],
+      "text": "#親子童樂列車 來到西區美術園道囉🚂\n\n天氣太熱不知道要帶孩子去哪裡玩嗎？7/26快來美術園道，一起享受最消暑的親子時光！\n\n📌活動日期：2026年7月26日（六）\n\n📌活動地點：美術園道（西區五權西三街與五權七街口）\n\n📌活動內容：\n13：00 夏日戲水趣\n14：00 文創、小農市集\n14：30 水槍早鳥禮報到\n15：30 氣球魔法互動開場秀\n16：00 草地野餐趣（請自備野餐墊）、大水池打水仗（事先報名送水槍）、戰鬥陀螺競技場（請自備戰鬥陀螺）、叭叭木製卡車挑戰、陽光故事劇+手作\n\n欣純與江肇國議員、黃守達議員，邀請大家一起留下開心的暑假回憶！\n\n#心存大台中",
+      "topicScores": {
+        "文化觀光": 1.0
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/94achun/posts/pfbid0k6xyMj2d6YJEGJmaFhkiUdAw3RR9Q1eEvDHvBjyt2Dgnc2KFpvxUjLRPwniNowcjl"
+    },
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "政策",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議"
+      ],
+      "actions": [
+        "policy_proposal"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DaxLKkmjTJJ",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/7f5a4bc6126b37377db6.webp",
+      "keywords": [
+        "長輩"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T09:45:22+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:這些日子以來，我辦理了多場說明會。前進台中每個區域和大家說明我的市政藍圖，也聽取在地居民的意見，深有感觸！\n\n無論政治立場是否一致，我們在台中安身立命，都會希望這座城市越來越好。\n從孩子成長、青年成家立業，到長輩照護，台中市民人生的每一階段，我都提出相應的福利政策，希望把大家從小顧到老。\n\n邀請台中的夥伴有空可以來我的168巡迴市政說明會，一起討論和關心台中的未來！",
+      "topicScores": {
+        "社福": 1.0
+      },
+      "topics": [
+        "社福"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.threads.com/t/DaxLKkmjTJJ"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "午餐",
+          "日常"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策",
+          "提出"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "個人／日常"
+      ],
+      "actions": [
+        "policy_proposal",
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Daw0ey7EbaC",
+      "imageAspect": 1.001,
+      "imageUrl": "assets/feed-images/a613d2c1bd320c0b69d6.webp",
+      "keywords": [
+        "長輩",
+        "敬老",
+        "補助",
+        "津貼",
+        "營養午餐",
+        "國中",
+        "創業",
+        "健保"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T06:13:05+00:00",
+      "sourceId": "ho-hc-threads",
+      "targets": [],
+      "text": "@a_chun1973:這段時間，我辦理「六星市政168巡迴說明會」走進台中各區，和市民分享城市願景，也聽見大家最真實的需求。\n\n從孩子、青年到長輩，我提出「六星福利政見」，陪伴市民走過人生每個階段：\n\n👶 兒童\n0-6歲每月1,500元營養津貼、國中小營養午餐免費，餐標提高至80元。\n\n🧑 青年\n成立青年局，提供出國參賽、創業貸款利息及相關補助。\n\n👵 長輩\n持續補助長輩健保費，敬老卡點數不歸零，擴大計程車及日常消費使用。\n\n未來我會持續走進各區、傾聽大家，讓福利政策真正貼近生活。",
+      "topicScores": {
+        "教育": 0.1818,
+        "社福": 0.6364,
+        "經濟": 0.0909,
+        "醫療": 0.0909
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "經濟",
+        "醫療"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.threads.com/t/Daw0ey7EbaC"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
+          "午餐"
+        ],
+        "policy_proposal": [
+          "政見",
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "個人／日常"
+      ],
+      "actions": [
+        "policy_proposal",
+        "personal_content"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1630119558477452",
+      "imageAspect": 1.0019,
+      "imageUrl": "assets/feed-images/d63eabc64f132b01c2db.webp",
+      "keywords": [
+        "老人",
+        "長輩",
+        "敬老",
+        "補助",
+        "津貼",
+        "照顧",
+        "都更",
+        "租金",
+        "營養午餐",
+        "國中",
+        "創業",
+        "健保",
+        "表演"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-14T06:12:23.000Z",
+      "sourceId": "ho-hc-fb",
+      "targets": [],
+      "text": "這些日子以來，我辦理「六星市政168巡迴說明會」前進台中各個區域，和市民闡述我的施政理念與城市願景，大家都給我許多建言，我們都期許這座城市、這個國家可以越來越好。\n\n從孩子成長、青年成家立業，到長輩照護，我也盤整出「六星福利政見」要陪伴大家走過人生每個階段，從小照顧到老。\n\n兒童｜健康成長\n✅0-6歲每月營養津貼1500元\n✅推動 #國中小營養午餐免費 \n✅每名學生的餐標提高至80元，並結合台中農民、農會及在地優質食材，讓孩子吃得好、吃得飽\n\n青年｜勇敢追夢\n✅成立 #青年局 ，整合資源協助15歲至40歲青年的各項生活需求\n✅青年出國參賽、參展或表演，市府提供個人最高10萬元、團體最高50萬元的補助\n✅青年創業提供貸款利息、設備及租金補助\n\n長輩｜安心享老\n✅持續補助老人健保費\n✅升級敬老卡：點數每月不歸零、計程車每趟扣抵提高至200點、使用通路納入藥局、超商、超市及農漁會\n\n未來我會透過「六星市政168巡迴說明會」，持續傾聽市民的需求，完善各項福利政策，讓每一項福利都更貼近市民的生活。\n\n#心存大台中\n#市長換欣_台中創新",
+      "topicScores": {
+        "住宅": 0.125,
+        "教育": 0.125,
+        "文化觀光": 0.0625,
+        "社福": 0.5625,
+        "經濟": 0.0625,
+        "醫療": 0.0625
+      },
+      "topics": [
+        "社福",
+        "住宅",
+        "教育",
+        "經濟",
+        "醫療",
+        "文化觀光"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.facebook.com/94achun/posts/pfbid02b46nhFEW5oD6VKNAfw2SW29tceuDEaJNTmiwtK4YVQUFnRfQEe7g7ccNswAwueqol"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1629476958541712",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/a558dc84ca2630f6a3ae.webp",
+      "keywords": [
+        "社福"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T10:58:16.000Z",
+      "sourceId": "ho-hc-fb",
+      "targets": [],
+      "text": "今天來到東區 #普聖宮 參加愛心便當結緣活動，看到大家九年來持續將一份份愛心便當送到需要幫助的民眾手中，真的令人感動。\n\n台中有許多默默付出的善心人士，也有豐厚的民間公益力量，未來我會持續推動公私協力，讓市府成為整合平台，串聯企業、志工、宗教團體、公益組織與社福資源，把關懷送到更多需要的人身邊，讓善的循環持續延續。\n\n讓我們一起努力，讓台中成為一座更有愛、更有人情味的城市❤️\n\n#心存大台中",
+      "topicScores": {
+        "社福": 1.0
+      },
+      "topics": [
+        "社福"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/94achun/posts/pfbid02HRnVhJoKTMkRJzi7bFGEGPZvx1AjyDFXsy4TdxKithokUJonMXp3cGmSNSCS6Hmkl"
+    },
     {
       "actionEvidence": {
         "personal_content": [
@@ -3256,6 +3521,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/JsEW0lEscYE"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:ws1pqLoKZ6c",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/5e09d48f9cf61bef72c9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "ho-hc-yt",
+      "targets": [],
+      "text": "如果我是市長 我要讓台中變成這樣！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/watch?v=ws1pqLoKZ6c"
     }
   ],
   "version": 1

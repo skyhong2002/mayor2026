@@ -1,6 +1,97 @@
 {
-  "count": 23,
+  "count": 25,
   "posts": [
+    {
+      "actionEvidence": {
+        "policy_proposal": [
+          "應該",
+          "提出"
+        ],
+        "position_statement": [
+          "認為"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "立場表態"
+      ],
+      "actions": [
+        "policy_proposal",
+        "position_statement"
+      ],
+      "candidateId": "chang-ching",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:921964574268405",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1ea3452118eb92b84b34.webp",
+      "keywords": [
+        "法案",
+        "立法院"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T12:00:03.000Z",
+      "sourceId": "chang-ching-party-fb",
+      "targets": [],
+      "text": "📌 法律問題，還是政治責任？\n\n行政院長面對立法院通過的法案，究竟該如何處理？\n\n司法改革黨主席 張靜律師 在影片中提出他的憲政觀點：\n\n他認為，依照現行憲政制度，如果總統決定不核可相關法案，行政院應循憲政程序處理；若行政院長既不依程序副署，也不承擔政治責任，將使憲政運作陷入矛盾。\n\n⚠️ 主席認為，民主政治除了法律責任，更應重視政治責任。\n\n你認為，公職人員是否應該為自己的憲政選擇負起政治責任？\n\n歡迎留言討論 👇\n\n#司法改革黨 #張靜律師 #憲法 #行政院 #立法院 #政治責任 #熱門話題 #留言討論",
+      "topicScores": {
+        "議會監督": 1.0
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.facebook.com/reel/1634598470966510/"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "chang-ching",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:921904307607765",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7ddfa625de0215a0a9f6.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T00:28:55.000Z",
+      "sourceId": "chang-ching-party-fb",
+      "targets": [],
+      "text": "🎬 《包青天穿越到現代》｜司法改革，現在開始！\n\n😄當包青天穿越到現代， 他沒有喊「升堂」， 而是說： 「司法改革，現在開始！」\n\n👍公平正義，不該只是傳說。 期待一個更值得人民信任的司法。\n\n#包青天  #司法改革黨主席張靜律師 #司法改革黨秘書長張烱春 #公平正義 #穿越短影片",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/reel/1779557423466091/"
+    },
     {
       "actionEvidence": {
         "personal_content": [

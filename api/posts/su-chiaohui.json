@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/4c24dcc56faf76be92a6.webp",
+    "avatarUrl": "assets/source-avatars/9e8f7091ea68b5089b32.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "su-chiaohui",
@@ -19,8 +19,122 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 62,
+  "count": 66,
   "posts": [
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/Daw-l8_Gd4f",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/3938c4f8e0d3a1efc417.webp",
+      "keywords": [
+        "文化",
+        "永續",
+        "大學",
+        "預算"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T07:41:26+00:00",
+      "sourceId": "su-ch-threads",
+      "targets": [],
+      "text": "@su.chiaohui:和新北市社區大學的夥伴們，一起討論公民參與與社區永續發展的未來願景！\n\n社大在地方串起了緊密的社會支持網，是大家終身學習、參與公共事務的重要平台，讓不分年齡、族群的人，都能互相學習與貢獻！\n\n新北29區都有自己的故事及特色，社大也因此發展出不同的課程，像是 ✨淡水社大的淡水河獨木舟文化巡禮、✨樹林社大的煤礦業文化路徑、✨中和社大的緬甸文化介紹，這些課堂正是新北多元人口與深厚文史的縮影！\n\n未來，我會 1️⃣提高預算投入、2️⃣協助協調場地、減輕費用負擔、3️⃣建立順暢的溝通管道。透過制度保障社大穩定經營，也讓社大共同參與政策推動，成為城市治理的協力者！",
+      "topicScores": {
+        "教育": 0.1667,
+        "文化觀光": 0.5,
+        "環境": 0.1667,
+        "議會監督": 0.1667
+      },
+      "topics": [
+        "文化觀光",
+        "環境",
+        "教育",
+        "議會監督"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.threads.com/t/Daw-l8_Gd4f"
+    },
+    {
+      "actionEvidence": {
+        "mobilization": [
+          "支持"
+        ],
+        "policy_proposal": [
+          "政策"
+        ]
+      },
+      "actionLabels": [
+        "政策倡議",
+        "動員宣傳"
+      ],
+      "actions": [
+        "policy_proposal",
+        "mobilization"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1597958808352616",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/6a92a6447494699afad6.webp",
+      "keywords": [
+        "大學",
+        "文化",
+        "預算",
+        "永續"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-14T07:23:05.000Z",
+      "sourceId": "su-ch-fb",
+      "targets": [],
+      "text": "增加預算和交流管道 與社大協力治理新北💪🏼\n\n我和 #新北市社區大學 的夥伴們交流，共同探討公民參與與社區永續發展的未來願景！\n\n社大在地方串起了緊密的社會支持網，是大家終身學習、參與公共事務的重要平台，讓不分年齡、不分族群的人，都能互相學習、彼此貢獻！\n\n新北29區都有自己的故事及特色，社大也因此發展出不同的課程，像是淡水社大的淡水河獨木舟文化巡禮、樹林社大的煤礦業文化路徑，以及中和社大的緬甸文化介紹，這些課堂正是新北多元人口與深厚文史的縮影！\n\n未來我要 #提高預算投入 ，#協助社大協調場地減輕費用負擔，透過完善的制度保障社區大學穩定經營！\n\n我也要 #建立順暢的溝通管道 ，讓社區大學共同參與政策推動，成為城市治理的協力者！",
+      "topicScores": {
+        "教育": 0.3333,
+        "文化觀光": 0.3333,
+        "環境": 0.1111,
+        "議會監督": 0.2222
+      },
+      "topics": [
+        "教育",
+        "文化觀光",
+        "議會監督",
+        "環境"
+      ],
+      "trigger": {
+        "confidence": 0.68,
+        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
+        "label": "自主議程",
+        "type": "self_initiated"
+      },
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02QweEU9wraPHDbtvxgGsGqSMBVJSfjP7Y4TgRwqpg7Ny4kt4he6y5ioYTmR7qqvCil"
+    },
     {
       "actionEvidence": {
         "other": [
@@ -82,6 +196,49 @@
         "needsReview": true,
         "rubricVersion": "context-v1"
       },
+      "id": "facebook:1597309028417594",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4abf7a34a765857663de.webp",
+      "keywords": [
+        "大學"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T11:00:41.000Z",
+      "sourceId": "su-ch-fb",
+      "targets": [],
+      "text": "#水獺媽媽樂園 新北熱烈巡迴中！週六我們 #淡水 見！\n\n剛結束的板橋場和林口場都湧進上千組家庭，水獺媽媽我的集點卡差點印到不夠發！來不及參加的沒關係，水獺媽媽還要繼續出發巡迴啦✨\n\n📍淡水場｜7/18（六）09:00-16:00\n真理大學—玻璃屋（淡水區真理街32號）",
+      "topicScores": {
+        "教育": 1.0
+      },
+      "topics": [
+        "教育"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/reel/2529450657501207/"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
       "id": "threads:https://www.threads.com/t/Dauwk9sAUA-",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/d58af42906214a76f38a.webp",
@@ -106,6 +263,66 @@
         "type": "unclear"
       },
       "url": "https://www.threads.com/t/Dauwk9sAUA-"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "facebook:1596660128482484",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/bf934915d472f16fc4be.webp",
+      "keywords": [
+        "交通",
+        "捷運",
+        "產業",
+        "觀光",
+        "議會",
+        "立法院",
+        "環境",
+        "校園"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-13T01:00:56.000Z",
+      "sourceId": "su-ch-fb",
+      "targets": [],
+      "text": "讓新世代扛起新時代！新北慧贏，三峽再昇級！\n\n吳昇翰候選人這八年來一步一腳印深耕在地，不只熟悉地方大小事，更對三峽的未來充滿願景，是 #土樹三鶯 最具即戰力的年輕世代。我相信未來新北市議會有昇翰的加入，一定能為三峽爭取更多建設與資源，不僅吸引更多年輕人返鄉發展，也要串聯老街、藍染、茶產業等特色，打造三峽觀光新品牌，讓三峽的觀光、產業與發展邁向新里程碑。\n\n過去十年，我和吳琪銘委員在立法院攜手打拚，包括捷運 #三鶯線 順利通車，#萬大中和樹林線 也將在2031年完工。我們也共同推動三鶯地區多項交通、校園及地方建設，持續改善鄉親的生活環境。我很期待未來能和昇翰一起合作，不但要延續好的服務，更要繼續為三峽推動好建設，讓城市更加進步。\n\n我會繼續努力帶著新北隊一起衝，也和每一位認真做事的夥伴攜手打拚，讓三峽更好、新北再升級！",
+      "topicScores": {
+        "交通": 0.2,
+        "教育": 0.1,
+        "文化觀光": 0.2,
+        "環境": 0.1,
+        "經濟": 0.2,
+        "議會監督": 0.2
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "文化觀光",
+        "議會監督",
+        "環境",
+        "教育"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0Go6F7CU77cN98E5PXYHLJfkfpJhYFSF3QejM19QTwnznRpWc7A59q3hw1hSvuD1El"
     },
     {
       "actionEvidence": {
