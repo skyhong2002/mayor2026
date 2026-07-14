@@ -4,6 +4,49 @@
     {
       "actionEvidence": {
         "personal_content": [
+          "日常"
+        ]
+      },
+      "actionLabels": [
+        "個人／日常"
+      ],
+      "actions": [
+        "personal_content"
+      ],
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "method": "rules",
+        "needsReview": false,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DawbL85k7bx",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4d0e5bd694e55cf20afd.webp",
+      "keywords": [
+        "攤商"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-14T02:32:03+00:00",
+      "sourceId": "huang-sj-threads",
+      "targets": [],
+      "text": "@schuanglawyer:早安，中壢！一天的活力，就從中壢青果市場開始🍎🥬\n\n天還沒亮，我和中壢戰隊彭俊豪 @pengwintaoyuan 、黃崇真 @cchuang_0223 、魏筠 @weiyunin 、張曉昀 @vina.lovezhongli 議員，一起來到中壢青果市場向攤商老闆、採買的鄉親們請安問好🙋🏻‍♂️\n\n走進市場，聽著充滿中氣的叫賣聲、感受大家蓬勃的朝氣，這就是桃園最真實、最有溫度的日常。除了巧遇各區來採購的老朋友，也有許多新朋友，給我溫暖的笑容跟鼓勵💖\n\n我是黃世杰，請大家放心，我會全力以赴，讓我們的家鄉桃園，成為更宜居更幸福的城市。\n\n掃完市場好餓，大家有推薦早餐要吃什麼嗎～",
+      "topicScores": {
+        "經濟": 1.0
+      },
+      "topics": [
+        "經濟"
+      ],
+      "trigger": {
+        "confidence": 0.72,
+        "evidence": "早安",
+        "label": "例行發布",
+        "type": "routine"
+      },
+      "url": "https://www.threads.com/t/DawbL85k7bx"
+    },
+    {
+      "actionEvidence": {
+        "personal_content": [
           "規則未找到更明確的溝通行動，需人工複核"
         ]
       },
@@ -4741,47 +4784,6 @@
         "type": "unclear"
       },
       "url": "https://www.instagram.com/p/DamCIEKyNDj/"
-    },
-    {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1601197178028531",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/de39ff517be89f718c30.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-10T01:34:40.000Z",
-      "sourceId": "hsieh-lc-fb",
-      "targets": [],
-      "text": "網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
-      "topicScores": {
-        "生活": 1.0
-      },
-      "topics": [
-        "生活"
-      ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
-      "url": "https://www.facebook.com/reel/2264686147667456/"
     }
   ],
   "version": 1
