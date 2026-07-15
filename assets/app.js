@@ -694,10 +694,17 @@
         const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
         const fallbackTopic = topicIndex.fallbackTopic;
         const allTopics = Object.keys(TOPIC_COLORS);
+        const allNatures = Object.keys(NATURE_LABELS);
+        const natureCounts = Object.fromEntries(allNatures.map((nature) => [nature, 0]));
+        topicIndex.posts.forEach((post) => {
+          const nature = post.nature || "other";
+          natureCounts[nature] = (natureCounts[nature] || 0) + 1;
+        });
 
         const state = {
           rangeDays: null, // null = 全部
           excluded: new Set([fallbackTopic]),
+          excludedNatures: new Set(),
         };
 
         const RANGES = [
@@ -711,6 +718,7 @@
           const cutoff = state.rangeDays ? Date.now() - state.rangeDays * 86400e3 : null;
           const perCandidate = {};
           topicIndex.posts.forEach((post) => {
+            if (state.excludedNatures.has(post.nature || "other")) return;
             if (cutoff) {
               const at = post.postedAt ? Date.parse(post.postedAt) : NaN;
               if (Number.isNaN(at) || at < cutoff) return;
@@ -765,6 +773,22 @@
               renderTable();
             });
             topicChips.appendChild(chip);
+          });
+
+          const natureChips = document.getElementById("nature-chips");
+          natureChips.innerHTML = "";
+          allNatures.forEach((nature) => {
+            const excluded = state.excludedNatures.has(nature);
+            const chip = el("button", "feed-option-chip", `${NATURE_LABELS[nature]} ${natureCounts[nature] || 0}`);
+            chip.dataset.filterState = excluded ? "exclude" : "include";
+            chip.title = excluded ? "已排除，點擊恢復" : "點擊排除";
+            chip.addEventListener("click", () => {
+              if (excluded) state.excludedNatures.delete(nature);
+              else state.excludedNatures.add(nature);
+              renderChips();
+              renderTable();
+            });
+            natureChips.appendChild(chip);
           });
 
           let sortGroup = document.getElementById("spectrum-sort-group");
