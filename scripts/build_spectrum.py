@@ -44,7 +44,7 @@ def build_topic_index(posts: list[dict[str, Any]]) -> None:
             "candidateId": post["candidate_id"],
             "postedAt": post.get("posted_at") or None,
             "topicScores": post.get("topic_scores") or {},
-            "nature": (post.get("nature") or {}).get("type") or "other",
+            "postingIntent": (post.get("postingIntent") or {}).get("type") or "self_initiated",
         }
         for post in posts
     ]

@@ -14,6 +14,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import classify_context
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SITE_ROOT = PROJECT_ROOT / "site"
 API_DIR = SITE_ROOT / "api"
@@ -139,11 +141,7 @@ def validate_qualitative_schema(errors: list[str]) -> None:
         topic_index = read_json(API_DIR / "topic-index.json")
     except (OSError, json.JSONDecodeError):
         return
-    valid_natures = {
-        "policy_proposal", "position_statement", "administrative_update", "public_information",
-        "response_clarification", "criticism_accountability", "campaign_mobilization",
-        "event_activity", "personal_content", "other",
-    }
+    valid_intents = set(classify_context.INTENT_LABELS)
     posts = []
     for path in sorted((API_DIR / "posts").glob("*.json")):
         try:
@@ -151,17 +149,29 @@ def validate_qualitative_schema(errors: list[str]) -> None:
         except (OSError, json.JSONDecodeError):
             continue
     for post in posts:
-        nature = post.get("nature") or {}
-        if nature.get("type") not in valid_natures:
-            errors.append(f"post {post.get('id')} has invalid nature: {nature.get('type')!r}")
-        confidence = nature.get("confidence")
+        intent = post.get("postingIntent") or {}
+        if intent.get("type") not in valid_intents:
+            errors.append(f"post {post.get('id')} has invalid posting intent: {intent.get('type')!r}")
+        confidence = intent.get("confidence")
         if not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1:
-            errors.append(f"post {post.get('id')} has invalid nature confidence: {confidence!r}")
+            errors.append(f"post {post.get('id')} has invalid posting intent confidence: {confidence!r}")
+        if "nature" in post:
+            errors.append(f"post {post.get('id')} still exposes legacy nature")
         if (post.get("classification") or {}).get("method") != "ai":
             errors.append(f"post {post.get('id')} was not classified by AI")
+        if (
+            intent.get("type") == "responsive"
+            and (post.get("classification") or {}).get("intentVerificationVersion")
+            != classify_context.INTENT_VERIFICATION_VERSION
+        ):
+            errors.append(f"post {post.get('id')} has unverified responsive intent")
     for post in topic_index.get("posts", []):
-        if post.get("nature") not in valid_natures:
-            errors.append(f"topic index post {post.get('id')} has invalid nature: {post.get('nature')!r}")
+        if post.get("postingIntent") not in valid_intents:
+            errors.append(
+                f"topic index post {post.get('id')} has invalid posting intent: {post.get('postingIntent')!r}"
+            )
+        if "nature" in post:
+            errors.append(f"topic index post {post.get('id')} still exposes legacy nature")
     if not policy.get("questions") or not isinstance(policy.get("candidates"), list):
         errors.append("policy-match.json has no questions or candidate vectors")
 

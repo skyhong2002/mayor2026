@@ -6,7 +6,7 @@ apify_facebook_fetcher.py, official_site_fetcher.py) already normalize and
 dedupe raw posts into `data/feeds/social_feed_inbox.jsonl`. This script is
 the next stage: it finds inbox rows that have not been promoted yet and appends
 them to `data/feeds/social_candidates.jsonl`. The following pipeline step is
-the only classifier and uses structured AI output for both topic and nature.
+the only classifier and uses structured AI output for both topic and posting intent.
 """
 
 from __future__ import annotations

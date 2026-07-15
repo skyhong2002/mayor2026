@@ -27,15 +27,15 @@
               "required": ["topic", "confidence"]
             }
           },
-          "nature": {
+          "postingIntent": {
             "type": "string",
-            "enum": ["policy_proposal", "position_statement", "administrative_update", "public_information", "response_clarification", "criticism_accountability", "campaign_mobilization", "event_activity", "personal_content", "other"]
+            "enum": ["self_initiated", "responsive"]
           },
-          "natureConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "intentConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
           "agendaRelevance": { "type": "number", "minimum": 0, "maximum": 1 },
           "reason": { "type": "string", "maxLength": 120 }
         },
-        "required": ["id", "topics", "nature", "natureConfidence", "agendaRelevance", "reason"]
+        "required": ["id", "topics", "postingIntent", "intentConfidence", "agendaRelevance", "reason"]
       }
     }
   },

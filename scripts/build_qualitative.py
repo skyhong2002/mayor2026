@@ -15,17 +15,17 @@ def main() -> int:
     posts = feed_common.read_jsonl(feed_common.CANDIDATES_JSONL)
     candidates = {row["candidate_id"]: row for row in feed_common.load_candidates()}
 
-    nature_counts = Counter((post.get("nature") or {}).get("type", "other") for post in posts)
+    intent_counts = Counter((post.get("postingIntent") or {}).get("type", "self_initiated") for post in posts)
     feed_common.save_json_atomic(API_DIR / "qualitative-summary.json", {
-        "version": 2, "postCount": len(posts), "natureCounts": dict(nature_counts),
-        "natureLabels": classify_context.NATURE_LABELS,
+        "version": 3, "postCount": len(posts), "intentCounts": dict(intent_counts),
+        "intentLabels": classify_context.INTENT_LABELS,
     })
     # Candidate agenda vectors use only autonomous policy-advocacy posts.  This
     # avoids treating typhoon notices or replies to opponents as manifestos.
     agenda_entries = []
     for candidate_id, candidate in candidates.items():
         eligible = [post for post in posts if post.get("candidate_id") == candidate_id
-                    and (post.get("nature") or {}).get("type") == "policy_proposal"
+                    and (post.get("postingIntent") or {}).get("type") == "self_initiated"
                     and float(post.get("agendaRelevance") or 0) >= 0.6]
         totals: Counter[str] = Counter()
         evidence: dict[str, list[dict[str, str]]] = {}

@@ -2,7 +2,7 @@
   const body = document.body;
   const base = body.dataset.base || "";
   const FEED_PAGE_SIZE = 30;
-  const NATURE_LABELS = { policy_proposal: "政策／政見", position_statement: "立場表態", administrative_update: "施政成果／行政進度", public_information: "資訊公告／服務提醒", response_clarification: "回應／澄清", criticism_accountability: "批評／究責", campaign_mobilization: "競選／動員", event_activity: "活動／行程", personal_content: "個人／日常", other: "其他" };
+  const INTENT_LABELS = { self_initiated: "主動發文", responsive: "回應他方觀點" };
 
   const PLATFORM_LABELS = {
     website: "官網",
@@ -180,11 +180,11 @@
     }
 
     const contextMeta = el("div", "entry-meta context-meta");
-    const nature = post.nature || { type: "other", confidence: 0, reason: "AI 分類處理中" };
-    const confidence = Math.round((nature.confidence || 0) * 100);
-    const naturePill = el("span", `pill nature-pill nature-${nature.type}`, `${NATURE_LABELS[nature.type] || nature.type} ${confidence}%`);
-    naturePill.title = `AI 判斷信心 ${confidence}%${nature.reason ? `；${nature.reason}` : ""}`;
-    contextMeta.appendChild(naturePill);
+    const intent = post.postingIntent || { type: "self_initiated", confidence: 0, reason: "AI 分類處理中" };
+    const confidence = Math.round((intent.confidence || 0) * 100);
+    const intentPill = el("span", `pill intent-pill intent-${intent.type}`, `${INTENT_LABELS[intent.type] || intent.type} ${confidence}%`);
+    intentPill.title = `AI 判斷信心 ${confidence}%${intent.reason ? `；${intent.reason}` : ""}`;
+    contextMeta.appendChild(intentPill);
     card.appendChild(contextMeta);
 
     const footer = el("div", "home-feed-footer");
@@ -407,22 +407,22 @@
 
     // Tri-state chip filters (none → include → exclude), same interaction
     // model as Harmonica-in-Taiwan's feed filter.
-    const filterState = { topics: new Map(), natures: new Map() };
+    const filterState = { topics: new Map(), intents: new Map() };
 
     const topicCounts = new Map();
-    const natureCounts = new Map();
+    const intentCounts = new Map();
     allPosts.forEach((post) => {
       (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
-      const nature = (post.nature && post.nature.type) || "other";
-      natureCounts.set(nature, (natureCounts.get(nature) || 0) + 1);
+      const intent = (post.postingIntent && post.postingIntent.type) || "self_initiated";
+      intentCounts.set(intent, (intentCounts.get(intent) || 0) + 1);
     });
     const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
-    const natureOptions = [...natureCounts.entries()].map(([key, count]) => [key, count, NATURE_LABELS[key] || key]);
+    const intentOptions = Object.keys(INTENT_LABELS).map((key) => [key, intentCounts.get(key) || 0, INTENT_LABELS[key]]);
 
     function passes(post) {
       const groups = [
         [filterState.topics, post.topics || []],
-        [filterState.natures, [(post.nature && post.nature.type) || "other"]],
+        [filterState.intents, [(post.postingIntent && post.postingIntent.type) || "self_initiated"]],
       ];
       return groups.every(([states, values]) => {
         if (values.some((v) => states.get(v) === "exclude")) return false;
@@ -462,7 +462,7 @@
 
     function renderFilters() {
       renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
-      renderChipGroup("timeline-nature-chips", natureOptions, filterState.natures);
+      renderChipGroup("timeline-intent-chips", intentOptions, filterState.intents);
     }
 
     if (allPosts.length) {
@@ -694,17 +694,17 @@
         const sourcesById = Object.fromEntries(sourcesPayload.sources.map((s) => [s.id, s]));
         const fallbackTopic = topicIndex.fallbackTopic;
         const allTopics = Object.keys(TOPIC_COLORS);
-        const allNatures = Object.keys(NATURE_LABELS);
-        const natureCounts = Object.fromEntries(allNatures.map((nature) => [nature, 0]));
+        const allIntents = Object.keys(INTENT_LABELS);
+        const intentCounts = Object.fromEntries(allIntents.map((intent) => [intent, 0]));
         topicIndex.posts.forEach((post) => {
-          const nature = post.nature || "other";
-          natureCounts[nature] = (natureCounts[nature] || 0) + 1;
+          const intent = post.postingIntent || "self_initiated";
+          intentCounts[intent] = (intentCounts[intent] || 0) + 1;
         });
 
         const state = {
           rangeDays: null, // null = 全部
           excluded: new Set([fallbackTopic]),
-          excludedNatures: new Set(),
+          excludedIntents: new Set(),
         };
 
         const RANGES = [
@@ -718,7 +718,7 @@
           const cutoff = state.rangeDays ? Date.now() - state.rangeDays * 86400e3 : null;
           const perCandidate = {};
           topicIndex.posts.forEach((post) => {
-            if (state.excludedNatures.has(post.nature || "other")) return;
+            if (state.excludedIntents.has(post.postingIntent || "self_initiated")) return;
             if (cutoff) {
               const at = post.postedAt ? Date.parse(post.postedAt) : NaN;
               if (Number.isNaN(at) || at < cutoff) return;
@@ -775,20 +775,20 @@
             topicChips.appendChild(chip);
           });
 
-          const natureChips = document.getElementById("nature-chips");
-          natureChips.innerHTML = "";
-          allNatures.forEach((nature) => {
-            const excluded = state.excludedNatures.has(nature);
-            const chip = el("button", "feed-option-chip", `${NATURE_LABELS[nature]} ${natureCounts[nature] || 0}`);
+          const intentChips = document.getElementById("intent-chips");
+          intentChips.innerHTML = "";
+          allIntents.forEach((intent) => {
+            const excluded = state.excludedIntents.has(intent);
+            const chip = el("button", "feed-option-chip", `${INTENT_LABELS[intent]} ${intentCounts[intent] || 0}`);
             chip.dataset.filterState = excluded ? "exclude" : "include";
             chip.title = excluded ? "已排除，點擊恢復" : "點擊排除";
             chip.addEventListener("click", () => {
-              if (excluded) state.excludedNatures.delete(nature);
-              else state.excludedNatures.add(nature);
+              if (excluded) state.excludedIntents.delete(intent);
+              else state.excludedIntents.add(intent);
               renderChips();
               renderTable();
             });
-            natureChips.appendChild(chip);
+            intentChips.appendChild(chip);
           });
 
           let sortGroup = document.getElementById("spectrum-sort-group");
