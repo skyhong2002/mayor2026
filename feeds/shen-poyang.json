@@ -1,6 +1,40 @@
 {
-  "count": 67,
+  "count": 68,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T16:01:05+00:00",
+        "inputHash": "01c7ad0c764f8056fe90f43ee2b04a97f65d4d5bae2333f67b89ade5a5123143",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da0HPt2gM1v",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/4b8972871a29c9a20cc8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T12:55:05+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主談中國影響力與跨境資訊操弄，屬國際/兩岸議題，非回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:在應對中國影響力的過程中，如果你感到壓力，請記得，台灣民主實驗室會在這裡，如果你發現任何想解決的障礙，請回到台灣，我們是一家人，我們會在這裡支持大家。\n\n國際年度盛事 「中國影響力網絡年會（China in the World Summit, CITW）」今年迎來橫跨 75 國、超過 350 位全球專家、記者與公民社會倡議者，共同應對威權擴張與跨境資訊操弄。",
+      "topicScores": {
+        "兩岸外交": 0.88,
+        "生活": 0.21
+      },
+      "topics": [
+        "兩岸外交",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da0HPt2gM1v"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",

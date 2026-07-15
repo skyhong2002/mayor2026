@@ -1,6 +1,40 @@
 {
-  "count": 80,
+  "count": 82,
   "posts": [
+    {
+      "agendaRelevance": 0.75,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T16:01:05+00:00",
+        "inputHash": "27e9117ab2385b1f7697521bb31ea73a34a96d07510a8c68f756c7e9a649cad7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dazzm3WGvxB",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6586ea5426783c5e46e6.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T10:03:12+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以選舉口號宣示參選拚改變，屬明確競選主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:用蘇南成馬上辦的精神，只做一任為台南拚一個改變",
+      "topicScores": {
+        "文化觀光": 0.18,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Dazzm3WGvxB"
+    },
     {
       "agendaRelevance": 0.45,
       "candidateId": "hsieh-lung-chieh",
@@ -2878,6 +2912,38 @@
         "醫療"
       ],
       "url": "https://www.youtube.com/shorts/FyXS6PGdKDI"
+    },
+    {
+      "agendaRelevance": 0.8,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T16:01:05+00:00",
+        "inputHash": "d4dd979749606efbb37e466fa409f723935646fcaba029fa1cd01232b3ee135f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:jWLjvodYsYE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e32588fba5154fdff201.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為只做一任、力求改變的競選式宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "With the \"Do it now\" spirit of Su Nan-cheng, I will serve only one term to strive for change for ...",
+      "topicScores": {
+        "競選": 0.93
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/jWLjvodYsYE"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

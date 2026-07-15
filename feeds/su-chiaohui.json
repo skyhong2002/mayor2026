@@ -1,6 +1,38 @@
 {
-  "count": 74,
+  "count": 75,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-15T16:01:05+00:00",
+        "inputHash": "ecb4c057e8964f81a4ee8dbf6e31ba05254d69f04956aeaee7590425f26de5c5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da0JeYyGUa8",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/de0d6b56d643816b10e1.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T13:14:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述返鄉備餐練舞與工作心情，屬日常活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:回台東的時間總是過得特別快，這兩天下來和大家一起備餐、吃飯、練舞，最平凡的日常也是最快樂的時光。\n\n回到我的崗位上，我會繼續打拚，希望能夠照顧更多族人朋友、守護這些最平凡的日常。",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da0JeYyGUa8"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "su-chiaohui",
