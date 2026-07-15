@@ -19,8 +19,51 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 79,
+  "count": 80,
   "posts": [
+    {
+      "agendaRelevance": 0.45,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T10:03:46+00:00",
+        "inputHash": "35c20df4aaae6b0c31674ff7f05febe251a92d650f2bc3023b6480d39b2a701d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dax34TSkta7/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/c7b7b158f379cb9c7602.webp",
+      "keywords": [
+        "公衛",
+        "住宅",
+        "社會住宅",
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T16:02:46+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以時事清單評論食安、住宅、交通等議題，未回應特定對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "【本集介紹】\n📌 中聯問題油品食安風暴，一句「失禮」，真的有這麼困難嗎？\n📌 蘋果芬普寧農藥殘留放寬惹議..\n📌 青安 3.0 排富，婚育可加貸，預計 8 月上路！\n📌 星鏈條款立院初審過關！\n📌 交通扣牌問題...\n📌 野鴿群聚無解，引爆公衛危機！\n📌 龍介提社會住宅政策！",
+      "topicScores": {
+        "交通": 0.58,
+        "住宅": 0.7,
+        "環境": 0.56,
+        "醫療": 0.72
+      },
+      "topics": [
+        "醫療",
+        "住宅",
+        "交通",
+        "環境"
+      ],
+      "url": "https://www.instagram.com/p/Dax34TSkta7/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
