@@ -49,6 +49,13 @@ def resolve_data_ref(remote: str) -> str | None:
     return None
 
 
+def resolve_publish_ref(remote: str, *, push: bool) -> str | None:
+    local_ref = f"refs/heads/{DATA_BRANCH}"
+    if not push and ref_exists(local_ref):
+        return local_ref
+    return resolve_data_ref(remote)
+
+
 def fetch_data_branch(remote: str) -> None:
     result = git("fetch", remote, f"{DATA_BRANCH}:refs/remotes/{remote}/{DATA_BRANCH}", check=False)
     if result.returncode and not resolve_data_ref(remote):
@@ -78,7 +85,7 @@ def publish(remote: str, *, push: bool) -> None:
         raise DataSyncError(f"Cannot publish missing pipeline data: {', '.join(missing)}")
 
     fetch_data_branch(remote)
-    ref = resolve_data_ref(remote)
+    ref = resolve_publish_ref(remote, push=push)
     if ref is None:
         raise DataSyncError(f"Data branch not found: {remote}/{DATA_BRANCH}")
 
@@ -98,11 +105,11 @@ def publish(remote: str, *, push: bool) -> None:
 
             now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
             git("commit", "-m", f"Update pipeline data {now}", cwd=worktree)
-            commit = git("rev-parse", "--short", "HEAD", cwd=worktree).stdout.strip()
+            full_commit = git("rev-parse", "HEAD", cwd=worktree).stdout.strip()
+            commit = full_commit[:7]
             if push:
                 git("push", remote, f"HEAD:refs/heads/{DATA_BRANCH}", cwd=worktree)
-            else:
-                git("branch", "-f", DATA_BRANCH, "HEAD", cwd=PROJECT_ROOT)
+            git("update-ref", f"refs/heads/{DATA_BRANCH}", full_commit, cwd=PROJECT_ROOT)
             print(f"Published pipeline data commit {commit} (pushed={push}).")
         finally:
             git("worktree", "remove", "--force", str(worktree), check=False)

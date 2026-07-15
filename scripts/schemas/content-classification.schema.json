@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "topic": {
+                  "type": "string",
+                  "enum": ["交通", "住宅", "社福", "環境", "教育", "經濟", "治安", "醫療", "競選", "體育", "文化觀光", "兩岸外交", "防災", "議會監督", "生活"]
+                },
+                "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+              },
+              "required": ["topic", "confidence"]
+            }
+          },
+          "nature": {
+            "type": "string",
+            "enum": ["policy_proposal", "position_statement", "administrative_update", "public_information", "response_clarification", "criticism_accountability", "campaign_mobilization", "event_activity", "personal_content", "other"]
+          },
+          "natureConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "agendaRelevance": { "type": "number", "minimum": 0, "maximum": 1 },
+          "reason": { "type": "string", "maxLength": 120 }
+        },
+        "required": ["id", "topics", "nature", "natureConfidence", "agendaRelevance", "reason"]
+      }
+    }
+  },
+  "required": ["results"]
+}

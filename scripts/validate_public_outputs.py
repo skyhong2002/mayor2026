@@ -36,10 +36,8 @@ REQUIRED_FILES = [
     SITE_ROOT / "spectrum" / "topic" / "transport" / "index.html",
     API_DIR / "topic-index.json",
     API_DIR / "topic-details.json",
-    API_DIR / "events.json",
     API_DIR / "qualitative-summary.json",
     API_DIR / "policy-match.json",
-    SITE_ROOT / "events" / "index.html",
     SITE_ROOT / "policy-match" / "index.html",
     SITE_ROOT / "sitemap.xml",
     SITE_ROOT / "robots.txt",
@@ -137,23 +135,29 @@ def validate_count_consistency(errors: list[str]) -> None:
 
 def validate_qualitative_schema(errors: list[str]) -> None:
     try:
-        latest = read_json(API_DIR / "latest.json")
-        events = read_json(API_DIR / "events.json")
         policy = read_json(API_DIR / "policy-match.json")
     except (OSError, json.JSONDecodeError):
         return
-    valid_triggers = {"self_initiated", "external_event", "direct_response", "routine", "unclear"}
-    for post in latest.get("posts", []):
-        trigger = (post.get("trigger") or {}).get("type")
-        if trigger not in valid_triggers:
-            errors.append(f"post {post.get('id')} has invalid trigger: {trigger!r}")
-        if not isinstance(post.get("actions"), list) or not post.get("actions"):
-            errors.append(f"post {post.get('id')} has no communicative action")
-    for event in events.get("events", []):
-        page = SITE_ROOT / "events" / event.get("id", "") / "index.html"
-        detail = API_DIR / "events" / f"{event.get('id', '')}.json"
-        if not page.exists() or not detail.exists():
-            errors.append(f"event {event.get('id')} missing detail page or API")
+    valid_natures = {
+        "policy_proposal", "position_statement", "administrative_update", "public_information",
+        "response_clarification", "criticism_accountability", "campaign_mobilization",
+        "event_activity", "personal_content", "other",
+    }
+    posts = []
+    for path in sorted((API_DIR / "posts").glob("*.json")):
+        try:
+            posts.extend(read_json(path).get("posts", []))
+        except (OSError, json.JSONDecodeError):
+            continue
+    for post in posts:
+        nature = post.get("nature") or {}
+        if nature.get("type") not in valid_natures:
+            errors.append(f"post {post.get('id')} has invalid nature: {nature.get('type')!r}")
+        confidence = nature.get("confidence")
+        if not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1:
+            errors.append(f"post {post.get('id')} has invalid nature confidence: {confidence!r}")
+        if (post.get("classification") or {}).get("method") != "ai":
+            errors.append(f"post {post.get('id')} was not classified by AI")
     if not policy.get("questions") or not isinstance(policy.get("candidates"), list):
         errors.append("policy-match.json has no questions or candidate vectors")
 

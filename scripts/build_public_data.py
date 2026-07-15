@@ -85,12 +85,9 @@ def to_api_post(post: dict[str, Any]) -> dict[str, Any]:
         "topics": post.get("topics") or [],
         "topicScores": post.get("topic_scores") or {},
         "keywords": matched_keywords(post),
-        "trigger": post.get("trigger") or {"type": "unclear", "label": "待確認", "confidence": 0, "evidence": "尚未分類"},
-        "actions": post.get("actions") or [],
-        "actionLabels": post.get("actionLabels") or [],
-        "actionEvidence": post.get("actionEvidence") or {},
-        "targets": post.get("targets") or [],
-        "classification": post.get("classification") or {"method": "unknown", "rubricVersion": "", "needsReview": True},
+        "nature": post.get("nature") or {"type": "other", "label": "其他", "confidence": 0, "reason": "AI 分類處理中"},
+        "agendaRelevance": post.get("agendaRelevance", 0),
+        "classification": post.get("classification") or {"method": "pending", "model": "", "rubricVersion": ""},
     }
 
 

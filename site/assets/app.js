@@ -2,8 +2,7 @@
   const body = document.body;
   const base = body.dataset.base || "";
   const FEED_PAGE_SIZE = 30;
-  const TRIGGER_LABELS = { self_initiated: "自主議程", external_event: "外部事件", direct_response: "直接回應", routine: "例行發布", unclear: "待確認" };
-  const ACTION_LABELS = { policy_proposal: "政策倡議", position_statement: "立場表態", public_information: "資訊轉達", administrative_update: "行政進度", clarification: "回應澄清", criticism: "批評究責", mobilization: "動員宣傳", personal_content: "個人／日常", other: "其他／待細分" };
+  const NATURE_LABELS = { policy_proposal: "政策／政見", position_statement: "立場表態", administrative_update: "施政成果／行政進度", public_information: "資訊公告／服務提醒", response_clarification: "回應／澄清", criticism_accountability: "批評／究責", campaign_mobilization: "競選／動員", event_activity: "活動／行程", personal_content: "個人／日常", other: "其他" };
 
   const PLATFORM_LABELS = {
     website: "官網",
@@ -181,16 +180,11 @@
     }
 
     const contextMeta = el("div", "entry-meta context-meta");
-    const trigger = (post.trigger && post.trigger.type) || "unclear";
-    const triggerPill = el("span", `pill context-pill context-${trigger}`, TRIGGER_LABELS[trigger] || trigger);
-    triggerPill.title = post.trigger && post.trigger.evidence ? `判斷依據：${post.trigger.evidence}；信心 ${Math.round((post.trigger.confidence || 0) * 100)}%` : "尚無分類證據";
-    contextMeta.appendChild(triggerPill);
-    (post.actions || []).forEach((action) => contextMeta.appendChild(el("span", "pill action-pill", ACTION_LABELS[action] || action)));
-    if (post.classification && post.classification.needsReview) {
-      const review = el("span", "pill review-pill", "待人工複核");
-      review.title = "規則信心較低或涉及回應對象，尚待人工複核";
-      contextMeta.appendChild(review);
-    }
+    const nature = post.nature || { type: "other", confidence: 0, reason: "AI 分類處理中" };
+    const confidence = Math.round((nature.confidence || 0) * 100);
+    const naturePill = el("span", `pill nature-pill nature-${nature.type}`, `${NATURE_LABELS[nature.type] || nature.type} ${confidence}%`);
+    naturePill.title = `AI 判斷信心 ${confidence}%${nature.reason ? `；${nature.reason}` : ""}`;
+    contextMeta.appendChild(naturePill);
     card.appendChild(contextMeta);
 
     const footer = el("div", "home-feed-footer");
@@ -413,30 +407,22 @@
 
     // Tri-state chip filters (none → include → exclude), same interaction
     // model as Harmonica-in-Taiwan's feed filter.
-    const filterState = { topics: new Map(), keywords: new Map(), triggers: new Map(), actions: new Map() };
+    const filterState = { topics: new Map(), natures: new Map() };
 
     const topicCounts = new Map();
-    const keywordCounts = new Map();
-    const triggerCounts = new Map();
-    const actionCounts = new Map();
+    const natureCounts = new Map();
     allPosts.forEach((post) => {
       (post.topics || []).forEach((t) => topicCounts.set(t, (topicCounts.get(t) || 0) + 1));
-      (post.keywords || []).forEach((k) => keywordCounts.set(k, (keywordCounts.get(k) || 0) + 1));
-      const trigger = (post.trigger && post.trigger.type) || "unclear";
-      triggerCounts.set(trigger, (triggerCounts.get(trigger) || 0) + 1);
-      (post.actions || []).forEach((a) => actionCounts.set(a, (actionCounts.get(a) || 0) + 1));
+      const nature = (post.nature && post.nature.type) || "other";
+      natureCounts.set(nature, (natureCounts.get(nature) || 0) + 1);
     });
     const topicOptions = [...topicCounts.entries()].sort((a, b) => b[1] - a[1]);
-    const keywordOptions = [...keywordCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
-    const triggerOptions = [...triggerCounts.entries()].map(([key, count]) => [key, count, TRIGGER_LABELS[key] || key]);
-    const actionOptions = [...actionCounts.entries()].map(([key, count]) => [key, count, ACTION_LABELS[key] || key]);
+    const natureOptions = [...natureCounts.entries()].map(([key, count]) => [key, count, NATURE_LABELS[key] || key]);
 
     function passes(post) {
       const groups = [
         [filterState.topics, post.topics || []],
-        [filterState.keywords, post.keywords || []],
-        [filterState.triggers, [(post.trigger && post.trigger.type) || "unclear"]],
-        [filterState.actions, post.actions || []],
+        [filterState.natures, [(post.nature && post.nature.type) || "other"]],
       ];
       return groups.every(([states, values]) => {
         if (values.some((v) => states.get(v) === "exclude")) return false;
@@ -476,9 +462,7 @@
 
     function renderFilters() {
       renderChipGroup("timeline-topic-chips", topicOptions, filterState.topics);
-      renderChipGroup("timeline-keyword-chips", keywordOptions, filterState.keywords);
-      renderChipGroup("timeline-trigger-chips", triggerOptions, filterState.triggers);
-      renderChipGroup("timeline-action-chips", actionOptions, filterState.actions);
+      renderChipGroup("timeline-nature-chips", natureOptions, filterState.natures);
     }
 
     if (allPosts.length) {
@@ -1055,52 +1039,6 @@
       });
   }
 
-  function renderEvents() {
-    fetchJson("api/events.json").then((payload) => {
-      const list = document.getElementById("events-list");
-      list.innerHTML = "";
-      if (!payload.events.length) list.appendChild(el("p", "empty-state", "目前尚無事件資料。"));
-      payload.events.forEach((event) => {
-        const card = el("article", "home-feed-card city-card");
-        const title = el("a", "event-card-link", event.name);
-        title.href = `${event.id}/`;
-        card.appendChild(title);
-        card.appendChild(el("p", "feed-latest-excerpt", event.description || ""));
-        card.appendChild(el("p", "entry-meta", `${event.candidateCount} 位候選人 · ${event.postCount} 則貼文 · ${event.startAt}～${event.endAt}`));
-        list.appendChild(card);
-      });
-    }).catch((err) => { document.getElementById("events-list").textContent = `資料載入失敗：${err.message}`; });
-  }
-
-  function renderEventDetail() {
-    const eventId = body.dataset.eventId;
-    Promise.all([fetchJson(`api/events/${eventId}.json`), fetchJson("api/sources.json")]).then(([payload, sources]) => {
-      const event = payload.event;
-      const sourcesById = Object.fromEntries(sources.sources.map((s) => [s.id, s]));
-      document.getElementById("event-name").textContent = event.name;
-      document.getElementById("event-description").textContent = `${event.description}｜${event.startAt}～${event.endAt}，共 ${event.postCount} 則。`;
-      const comparison = document.getElementById("event-comparison");
-      comparison.innerHTML = "";
-      event.comparisons.sort((a, b) => b.postCount - a.postCount).forEach((row) => {
-        const card = el("article", "home-feed-card city-card");
-        const candidate = sourcesById[row.candidateId] || { name: row.candidateName };
-        const heading = el("a", "candidate-city-identity");
-        heading.href = `${base}source/${row.candidateId}/`;
-        heading.appendChild(avatarNode(candidate, true));
-        heading.appendChild(el("strong", "", row.candidateName));
-        card.appendChild(heading);
-        card.appendChild(el("p", "data-date", `${row.postCount} 則相關貼文`));
-        const chips = el("div", "entry-meta");
-        Object.entries(row.actionCounts).sort((a, b) => b[1] - a[1]).forEach(([action, count]) => chips.appendChild(el("span", "pill action-pill", `${ACTION_LABELS[action] || action} ×${count}`)));
-        card.appendChild(chips);
-        comparison.appendChild(card);
-      });
-      const posts = document.getElementById("event-posts");
-      posts.innerHTML = "";
-      createRiver(posts, event.posts, sourcesById);
-    }).catch((err) => { document.getElementById("event-comparison").textContent = `資料載入失敗：${err.message}`; });
-  }
-
   function renderPolicyMatch() {
     Promise.all([fetchJson("api/policy-match.json"), fetchJson("api/sources.json")]).then(([data, sources]) => {
       const sourceById = Object.fromEntries(sources.sources.map((s) => [s.id, s]));
@@ -1182,10 +1120,6 @@
     renderSpectrum();
   } else if (body.dataset.page === "topic-detail") {
     renderTopicDetail();
-  } else if (body.dataset.page === "events") {
-    renderEvents();
-  } else if (body.dataset.page === "event-detail") {
-    renderEventDetail();
   } else if (body.dataset.page === "policy-match") {
     renderPolicyMatch();
   }

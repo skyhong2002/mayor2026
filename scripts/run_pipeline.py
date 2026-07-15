@@ -218,8 +218,7 @@ def main() -> int:
             )
 
         run([PYTHON, "scripts/fetch_media_cache.py"], step="cache media", optional=True)
-        run([PYTHON, "scripts/classify_topics.py"], step="classify topics")
-        run([PYTHON, "scripts/classify_context.py"], step="classify post context")
+        run([PYTHON, "scripts/classify_context.py"], step="classify post topics and nature with AI")
         run([PYTHON, "scripts/build_public_data.py"], step="build public data")
         run([PYTHON, "scripts/build_spectrum.py"], step="build spectrum")
         run([PYTHON, "scripts/build_qualitative.py"], step="build qualitative comparisons")

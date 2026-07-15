@@ -451,6 +451,7 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
       </a>
       <nav class="site-nav">
         <a href="../">六都總覽</a>
+        <a href="../policy-match/">議題選擇器</a>
         <a href="../spectrum/">議題光譜</a>
         <a href="../source/">公開來源</a>
       </nav>
