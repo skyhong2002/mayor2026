@@ -1,10 +1,10 @@
 {
   "currentStep": "",
-  "heartbeatAt": "2026-07-15T09:03:05.750484+00:00",
+  "heartbeatAt": "2026-07-15T09:52:00.121818+00:00",
   "maxPostAgeDays": 30,
   "message": "Pipeline completed",
-  "pid": 76943,
-  "startedAt": "2026-07-15T09:03:01.684596+00:00",
+  "pid": 11323,
+  "startedAt": "2026-07-15T09:51:58.157879+00:00",
   "status": "ok",
   "steps": [
     {
@@ -12,10 +12,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_social_sources.py"
       ],
-      "finishedAt": "2026-07-15T09:03:01.719947+00:00",
+      "finishedAt": "2026-07-15T09:51:58.200636+00:00",
       "name": "build social sources",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:01.685299+00:00",
+      "startedAt": "2026-07-15T09:51:58.158912+00:00",
       "status": "ok"
     },
     {
@@ -23,10 +23,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/fetch_media_cache.py"
       ],
-      "finishedAt": "2026-07-15T09:03:01.809979+00:00",
+      "finishedAt": "2026-07-15T09:51:58.352434+00:00",
       "name": "cache media",
       "returnCode": 1,
-      "startedAt": "2026-07-15T09:03:01.720337+00:00",
+      "startedAt": "2026-07-15T09:51:58.201052+00:00",
       "status": "optional_failed"
     },
     {
@@ -34,10 +34,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/classify_context.py"
       ],
-      "finishedAt": "2026-07-15T09:03:01.899920+00:00",
-      "name": "classify post topics and nature with AI",
+      "finishedAt": "2026-07-15T09:51:58.443081+00:00",
+      "name": "classify post topics and posting intent with AI",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:01.810507+00:00",
+      "startedAt": "2026-07-15T09:51:58.352933+00:00",
       "status": "ok"
     },
     {
@@ -45,10 +45,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_public_data.py"
       ],
-      "finishedAt": "2026-07-15T09:03:01.975893+00:00",
+      "finishedAt": "2026-07-15T09:51:58.521041+00:00",
       "name": "build public data",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:01.900386+00:00",
+      "startedAt": "2026-07-15T09:51:58.443557+00:00",
       "status": "ok"
     },
     {
@@ -56,10 +56,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_spectrum.py"
       ],
-      "finishedAt": "2026-07-15T09:03:02.032067+00:00",
+      "finishedAt": "2026-07-15T09:51:58.580990+00:00",
       "name": "build spectrum",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:01.976388+00:00",
+      "startedAt": "2026-07-15T09:51:58.521483+00:00",
       "status": "ok"
     },
     {
@@ -67,10 +67,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_qualitative.py"
       ],
-      "finishedAt": "2026-07-15T09:03:02.103730+00:00",
+      "finishedAt": "2026-07-15T09:51:58.645522+00:00",
       "name": "build qualitative comparisons",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:02.032492+00:00",
+      "startedAt": "2026-07-15T09:51:58.581416+00:00",
       "status": "ok"
     },
     {
@@ -78,10 +78,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_rss_feeds.py"
       ],
-      "finishedAt": "2026-07-15T09:03:02.187941+00:00",
+      "finishedAt": "2026-07-15T09:51:58.738690+00:00",
       "name": "generate rss feeds",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:02.104243+00:00",
+      "startedAt": "2026-07-15T09:51:58.646006+00:00",
       "status": "ok"
     },
     {
@@ -89,10 +89,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/build_status_page.py"
       ],
-      "finishedAt": "2026-07-15T09:03:04.531019+00:00",
+      "finishedAt": "2026-07-15T09:51:59.115019+00:00",
       "name": "build status page",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:02.188332+00:00",
+      "startedAt": "2026-07-15T09:51:58.739169+00:00",
       "status": "ok"
     },
     {
@@ -100,10 +100,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_site_pages.py"
       ],
-      "finishedAt": "2026-07-15T09:03:04.586707+00:00",
+      "finishedAt": "2026-07-15T09:51:59.150525+00:00",
       "name": "generate site pages",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:04.531563+00:00",
+      "startedAt": "2026-07-15T09:51:59.115518+00:00",
       "status": "ok"
     },
     {
@@ -111,10 +111,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/generate_seo_pages.py"
       ],
-      "finishedAt": "2026-07-15T09:03:04.612955+00:00",
+      "finishedAt": "2026-07-15T09:51:59.176655+00:00",
       "name": "generate SEO pages",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:04.587131+00:00",
+      "startedAt": "2026-07-15T09:51:59.150947+00:00",
       "status": "ok"
     },
     {
@@ -122,10 +122,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/check_source_coverage.py"
       ],
-      "finishedAt": "2026-07-15T09:03:04.638157+00:00",
+      "finishedAt": "2026-07-15T09:51:59.203013+00:00",
       "name": "check source coverage",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:04.613422+00:00",
+      "startedAt": "2026-07-15T09:51:59.177061+00:00",
       "status": "ok"
     },
     {
@@ -133,10 +133,10 @@
         "/opt/homebrew/opt/python@3.14/bin/python3.14",
         "scripts/validate_public_outputs.py"
       ],
-      "finishedAt": "2026-07-15T09:03:04.744079+00:00",
+      "finishedAt": "2026-07-15T09:51:59.286260+00:00",
       "name": "validate public outputs",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:04.638656+00:00",
+      "startedAt": "2026-07-15T09:51:59.203460+00:00",
       "status": "ok"
     },
     {
@@ -146,10 +146,10 @@
         "publish",
         "--no-push"
       ],
-      "finishedAt": "2026-07-15T09:03:05.749697+00:00",
+      "finishedAt": "2026-07-15T09:52:00.121175+00:00",
       "name": "publish pipeline data",
       "returnCode": 0,
-      "startedAt": "2026-07-15T09:03:04.744662+00:00",
+      "startedAt": "2026-07-15T09:51:59.287666+00:00",
       "status": "ok"
     }
   ],

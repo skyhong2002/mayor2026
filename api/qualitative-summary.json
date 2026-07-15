@@ -1,28 +1,12 @@
 {
-  "natureCounts": {
-    "administrative_update": 118,
-    "campaign_mobilization": 120,
-    "criticism_accountability": 78,
-    "event_activity": 127,
-    "other": 23,
-    "personal_content": 88,
-    "policy_proposal": 123,
-    "position_statement": 40,
-    "public_information": 119,
-    "response_clarification": 10
+  "intentCounts": {
+    "responsive": 2,
+    "self_initiated": 844
   },
-  "natureLabels": {
-    "administrative_update": "施政成果／行政進度",
-    "campaign_mobilization": "競選／動員",
-    "criticism_accountability": "批評／究責",
-    "event_activity": "活動／行程",
-    "other": "其他",
-    "personal_content": "個人／日常",
-    "policy_proposal": "政策／政見",
-    "position_statement": "立場表態",
-    "public_information": "資訊公告／服務提醒",
-    "response_clarification": "回應／澄清"
+  "intentLabels": {
+    "responsive": "回應他方觀點",
+    "self_initiated": "主動發文"
   },
   "postCount": 846,
-  "version": 2
+  "version": 3
 }

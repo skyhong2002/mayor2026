@@ -2,97 +2,93 @@
   "count": 47,
   "posts": [
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.34,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "7b1275f37fb3ea7f96b9a756d2566c100eb80c580ceec2836453caaa2186ee14",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "85b259c8b1a06ada3274da87dcf4e35a81eea6dc144790d59f58d1bf944c56ad",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1581841783305773",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "聚焦毒油上架爭議並質疑中央護航業者，屬批評究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-13T04:09:31.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "針對毒油風暴批評中央並要求國安會議，屬主動究責。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "針對毒油風暴，食藥署今天將公布重新上架原則。\n\n中央到現在對於哪個環節出了問題，完全說不出個所以然來，怎麼就能談重新上架？\n\n問題油品如何受到污染、流向何處、相關風險是否已經完全排除，這麼多關鍵問題都還沒釐清，談什麼上架？讓人質疑，是要圖利還是護航業者？人民生命健康安全，在中央政府眼中就是這麼不值錢嗎？\n\n我很難想像在食安這麼重大的議題上，中央政府竟然選擇站在業者的立場，而不是優先保護廣大民眾的食安。\n\n我要再次提醒賴清德總統，中央主管機關已經明確指出，這次事件涉及檢驗資料造假情形；換句話說，問題不只是單一產品出包，而是自主檢驗與源頭管理出現制度性失靈，已經重創民眾對食安的信心。\n\n賴清德總統不能再沉默。\n面對影響全國的重大食安事件，應該立即召開國安會議，召集跨部會共同解決問題，重拾民眾對食安的信心。\n\n守護食安，是中央與地方共同的使命。\n地方政府能做的，臺北一定全力做到，持續秉持從嚴、從速的預防原則，以市民優先，守護大家的健康與食品安全。",
       "topicScores": {
-        "生活": 0.61,
-        "經濟": 0.44,
-        "醫療": 0.82
+        "議會監督": 0.78,
+        "醫療": 0.97
       },
       "topics": [
         "醫療",
-        "生活",
-        "經濟"
+        "議會監督"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0BJ67NSXXBouEefpbyFgYqKeH1CAnEyXw85wtC3Hy2xusg2hD37A419QGGN3DXxdDl"
     },
     {
-      "agendaRelevance": 0.5,
+      "agendaRelevance": 0.28,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "2b26d521fec0ba11ac54649527afb19f980229c5e5f4e55ab6bdd6f261ecdfff",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4dbb834944ac46e4a34f035152d5bc67da596d885d042591cc9e06dcc732bb13",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1581354533354498",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/0fd7c06284d8e60d40f0.webp",
       "keywords": [
+        "颱風",
         "教育",
         "學校",
         "校園",
         "高中",
         "大學",
-        "颱風",
         "交通",
         "道路"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "施政成果／行政進度",
-        "reason": "說明颱風後試場與道路復原進度，屬施政與防災處理。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-12T12:48:05.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是颱風後校園與道路復原及考試整備紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "臺北隊全力守護市民安全、考生權益\n\n今年的大學分科測驗受到 #巴威颱風 影響，順延至明後天（7/13、7/14）登場。對考生而言，這是準備已久、攸關人生方向的重要考試，因此，我在颱風前，就要求教育局及各試場學校做好防颱整備；風雨過後，更要用最快速度完成復原工作，讓考生能夠安心應試。\n\n今天一整天，我陸續前往臺北市五所分科測驗試場（陽明高中、松山高中、中山女高、師大附中及成功高中）逐一確認校園整備情況。\n\n除了巡查校園環境、樹木及斷枝落葉清理狀況，我也特別確認電力設備、燈光、冷氣及鈴聲系統都已完成測試。教育局已協調建立臺電與校方的單一聯繫窗口，環保局、工務局也協力加強校園周邊交通及環境整理，確保考試期間一切順利，讓考生能專心應考。\n\n颱風逐漸遠離，市府的復原工作沒有停下腳步。\n\n今天上午，我也前往北投泉源路視察土石崩落處理情形。考量目前邊坡仍有潛在風險，市府持續把握雨勢趨緩的空檔，進行削坡、清理及相關工程作業，確保在「安全第一」的前提下，儘速恢復道路通行。同時，我也要求工務局、交通局及公運處協調接駁及替代運輸方案，減輕封路期間對居民生活造成的不便。\n\n感謝這幾天所有投入防颱與復原工作的第一線同仁，也謝謝市民朋友的配合與體諒。\n\n臺北隊會持續全力以赴，讓市民安心生活、考生安心赴考。",
       "topicScores": {
-        "交通": 0.46,
-        "教育": 0.96,
-        "生活": 0.7,
-        "防災": 0.88
+        "交通": 0.43,
+        "教育": 0.89,
+        "防災": 0.94
       },
       "topics": [
-        "教育",
         "防災",
-        "生活",
+        "教育",
         "交通"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0h8XHuiJVCcJgMdsPwCfthfHqzpUgU6dPpGiUsBYF39Ta8SicjeXYkLpiBjE7mbJFl"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.23,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "2da38f364df1752e8925899638ad94025d9e336ab60a8c8fdc86f3576683baa1",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "eae3ad85ebf6043c2c75288f9499ca7fb1dbfd2955a11abb1f6c36f20366f604",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1580540270102591",
       "imageAspect": 1.0,
@@ -103,37 +99,37 @@
         "交通",
         "道路"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "施政成果／行政進度",
-        "reason": "說明解除颱風影響後的復原與市容清理進度。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-11T12:00:31.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣布復原作業與恢復上班課，屬颱風後行政處置。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "市民朋友晚安！\n\n#巴威颱風 逐漸遠離臺灣，根據中央氣象署最新預報資料，並經基北北桃四市討論共識，我宣布臺北市明天（7/12）正常上班上課。\n\n根據氣象團隊資訊，巴威颱風暴風圈範圍略為縮小，持續朝西北方向快速移動，預估今天深夜到明天凌晨，有機會脫離暴風圈範圍。\n\n雖然颱風影響逐漸減弱，市府團隊仍持續堅守崗位，全力投入各項復原工作。\n\n截至今天，市府已累積動員27,758人次、7,031車次，持續加強溝渠及易積淹水地點巡檢與清疏作業，避免雜物堵塞、確保排水順暢；同時也加強道路巡查，即時清除斷枝殘幹，維持道路及排水系統正常運作。\n\n另外，我也指示環保局全面展開復舊工作，動員人力加速恢復市容。尤其是要優先清理主要道路及大學分科測驗考場周邊，讓市民朋友及考生都能在明天恢復正常生活與交通秩序。\n\n提醒市民朋友，今天晚間風勢及雨勢仍有一定影響，請持續留意最新氣象資訊，外出務必注意安全。\n\n市府團隊會持續努力，以最快速度恢復市容、守護市民安全。",
       "topicScores": {
-        "交通": 0.56,
-        "環境": 0.69,
-        "防災": 0.97
+        "交通": 0.71,
+        "生活": 0.24,
+        "防災": 0.98
       },
       "topics": [
         "防災",
-        "環境",
-        "交通"
+        "交通",
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0pfFc1EvpPq2ZHU9b6gMmMZiNpWHAv3fPiAFxpENwSPWzRimgu49BQ4BQmTNNUNwwl"
     },
     {
-      "agendaRelevance": 0.24,
+      "agendaRelevance": 0.18,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e9705b631440e5ac48b5beb1852c34885dff81982f0b45e541b9527f8ddfbf8e",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e0ef1bad5aed4dec08fbd70bf7e674e31b52f48d60f448c5f1c1a9a13f480871",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579761933513758",
       "imageAspect": 1.4975,
@@ -141,40 +137,37 @@
       "keywords": [
         "颱風",
         "防災",
-        "強降雨",
-        "停車"
+        "強降雨"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "宣布停班停課並實地巡查防颱整備情形。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-10T12:01:03.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布停班停課並視察防颱整備，屬防災部署。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "市民朋友晚安！\n\n#巴威颱風 持續逼近北臺灣，根據中央氣象署及氣象團隊預報資料，今天入夜到週六一整天，將是影響臺北市最顯著的時段，風力及雨勢都不容小覷。\n\n經過基北北桃四市討論共識，我宣布臺北市明天（7/11）停止上班上課。\n\n巴威颱風是近25年來暴風圈最大的颱風之一，除了強降雨之外，強風影響範圍也相當廣，臺北隊不敢掉以輕心，已全面進入戒備狀態。\n\n今天一早，我再次主持巴威颱風工作會報，要求臺北隊把握風雨來臨前最後的整備時間，再次針對側溝清疏、樹木修剪、招牌廣告物穩固及工地安全等項目全面巡檢。\n\n接著，我前往大安區芳蘭路、大同區光能里、士林區社子島抽水站及萬華區華江疏散門，實地確認排水系統、社區防災、抽水設備、疏散門及堤外停車場撤離等各項工作準備就緒。\n\n提醒市民朋友，風雨已經開始增強，請大家 #待在家 ，做好居家防颱準備、留意最新氣象資訊，和我們一起做好防颱準備。\n\n市府團隊會持續堅守崗位、隨時待命，全力守護每一位市民的安全",
       "topicScores": {
-        "交通": 0.62,
-        "環境": 0.58,
+        "生活": 0.22,
         "防災": 0.99
       },
       "topics": [
         "防災",
-        "交通",
-        "環境"
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02SYMtAWoDEyy2PXA3iDk4gRb77ELJQGygGqhfHGwaVGrsWyiwpARCh3PMpPFv2i1wl"
     },
     {
-      "agendaRelevance": 0.1,
+      "agendaRelevance": 0.05,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "97ef1627d2155d9817b559b694b97f25a7a4270116d429bc5c277283b1ef6106",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2457f30a896bcc84d6ad36bab94380b684d89f27dbd36ffc6f829e2ca52847a8",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaktrpSti6c/",
       "imageAspect": 0.5629,
@@ -186,35 +179,33 @@
         "停班停課",
         "強降雨"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "資訊公告／服務提醒",
-        "reason": "公告臺北停班停課並說明防颱整備，屬防災資訊。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-09T13:23:36+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布停班停課並交代防颱整備，非回應特定對象。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "市民朋友晚安！\n\n經過基北北桃四縣市共同討論，我宣布臺北市明天（7/10）停止上班上課。\n\n這次 #巴威颱風是25年來暴風圈最大的一次。尤其臺北市整體人口密度高、與周邊縣市通勤流動人口數也是最多，加上前陣子強降雨讓土壤含水量飽和、提升了山坡地致災風險。\n\n我們在基北北桃四市平台討論後，基於天然災害停止上班及上課作業辦法第四條第三款規定宣布臺北明日停班停課。\n\n我也要向市民朋友呼籲：\n因應目前氣候變遷的挑戰，我們要妥善運用明天的防颱整備日，儘早完成各項防災準備、注意水情與相關災防資訊。\n\n今天上午，我先到文山區視察邊坡；下午陸續到信義、松山及內湖等地，實地了解各項防颱整備工作的進度。晚上，我在臺北市災害應變中心（EOC），主持 #防颱整備會議，確保各項防颱準備工作確實，提前完成人力、機具等應變能量部署。\n\n臺北隊嚴陣以待，守護市民安全。",
       "topicScores": {
-        "生活": 0.79,
         "防災": 0.99
       },
       "topics": [
-        "防災",
-        "生活"
+        "防災"
       ],
       "url": "https://www.instagram.com/p/DaktrpSti6c/"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.06,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "adf6835134b6f245052888e22933d66acdc53114eff09524aa391827bdabb0ba",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8dcebc83a3b16939b1537faabdc001d3fbfdde008ab7152ac42354a11b2c0fef",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1578954913594460",
       "imageAspect": 1.0,
@@ -224,37 +215,38 @@
         "災害",
         "防災",
         "停班停課",
-        "強降雨"
+        "強降雨",
+        "通勤"
       ],
-      "nature": {
-        "confidence": 0.99,
-        "label": "資訊公告／服務提醒",
-        "reason": "宣布停班停課並呼籲防颱準備，屬災防公告。",
-        "type": "public_information"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-09T12:07:50.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布停班停課並視察防颱，屬災防公告。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "市民朋友晚安！\n\n經過基北北桃四縣市共同討論，我宣布臺北市明天（7/10）停止上班上課。\n\n這次 #巴威颱風是25年來暴風圈最大的一次。尤其臺北市整體人口密度高、與周邊縣市通勤流動人口數也是最多，加上前陣子強降雨讓土壤含水量飽和、提升了山坡地致災風險。\n\n我們在基北北桃四市平台討論後，基於天然災害停止上班及上課作業辦法第四條第三款規定宣布臺北明日停班停課。\n\n我也要向市民朋友呼籲：\n因應目前氣候變遷的挑戰，我們要妥善運用明天的防颱整備日，儘早完成各項防災準備、注意水情與相關災防資訊。\n\n今天上午，我先到文山區視察邊坡；下午陸續到信義、松山及內湖等地，實地了解各項防颱整備工作的進度。晚上，我在臺北市災害應變中心（EOC），主持 #防颱整備會議，確保各項防颱準備工作確實，提前完成人力、機具等應變能量部署。\n\n臺北隊嚴陣以待，守護市民安全。",
       "topicScores": {
-        "生活": 0.58,
+        "交通": 0.36,
         "防災": 0.99
       },
       "topics": [
         "防災",
-        "生活"
+        "交通"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02Z3gRT2VFEz3FXdtbhb2qBxgmjqavKuqa5txUNysuDnw8LcENCtQjCeC4efb5kBvql"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.15,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9067663e57c5c94d5713abac9e3329e1594e937d7d2514b2f59197bd64fcf440",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "14a86c32678a2850aed7e5b8556c89f2e887e6fe2cb2fc1d0a5d253341b52545",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1578035300353088",
       "imageAspect": null,
@@ -264,37 +256,39 @@
         "警察",
         "消防"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "說明路面塌陷事件的處置、停工與檢測進度。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-08T08:36:03.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "通報路面塌陷並處理公安，屬事件應變紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "和市民朋友報告\n\n今天上午松山區敦化北路199巷16弄發生路面塌陷情形。\n我在主持巴威颱風整備會議時接獲通報，立即指示消防局成立前進指揮所，警察局、工務局、產業局、都發局、松山區公所、大台北瓦斯及台電現場進駐，及時應變，以市民安全為最高原則全力處理。\n我也隨後抵達現場確認處理檢修及回填工作進度。\n\n專業團隊初步研判，這次事件是因為鄰近台塑大樓工地施作連續壁期間發生土泥流失，導致周邊地層下陷、形成坑洞。因此，市府第一時間要求工地立即回填連續壁孔洞，控制源頭以避免情況擴大。\n\n同時，我們也邀集結構技師、土木技師、大地技師到場進行專業檢測。經現場評估，坑洞沒有持續擴大的疑慮，臺北隊會持續全面檢視，確保周邊住戶及鄰近區域安全無虞。\n另一方面，我也要求在瓦斯公司完成檢修、確認安全無虞後，儘速回填並恢復正常通行。\n\n針對台塑大樓工地，建管處已經立即勒令工地停工，並依建築法裁處新臺幣90,000元的最重罰鍰，要求承造人全面檢視施工安全、提出改善計畫；未經市府審查確認安全無虞前，不得復工。後續，新工處也將針對周邊區域進行透地雷達全面檢測，進一步確認地下狀況，確保周邊環境安全。\n\n市民朋友請放心，臺北隊會持續掌握狀況、嚴格把關，維護公安、守護市民。",
       "topicScores": {
-        "治安": 0.52,
-        "生活": 0.72,
-        "防災": 0.92
+        "交通": 0.47,
+        "住宅": 0.69,
+        "治安": 0.31,
+        "防災": 0.95
       },
       "topics": [
         "防災",
-        "生活",
+        "住宅",
+        "交通",
         "治安"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0dCVPSNDZZuoBwGF2GYMAREoowB6k6sFRJWCJK8KDWR4AknoL7vjAWFTHCL4U7ABnl"
     },
     {
-      "agendaRelevance": 0.7,
+      "agendaRelevance": 0.86,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "24be799f5408e9e4ab3ba44b916aeb7d075fc59ca755e4acdf47fa5fc36eb0cd",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7be1aa94f85390fa6a957929aece863a0d197ad8d010eb7f215d930046aea0b2",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1577070423782909",
       "imageAspect": 0.5635,
@@ -303,80 +297,75 @@
         "校園",
         "經濟"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "批評中央食安處置，並要求更嚴格的追溯與檢驗機制。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-07T06:58:20.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動談中聯油脂食安事件並要求中央建立通報與追溯機制。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "關於這次中聯油脂大豆沙拉油致癌物超標事件，臺北市第一時間啟動應變機制，從通路、油品業者稽查與預防性下架，到核對並公布下游店家及受影響校園名單，全面進行預防性下架停用。\n\n截至昨天晚間為止，市府已公布受影響的19家下游店家、6家團膳業者，以及50所校園。\n\n先前，我已向中央提出四項呼籲，樂見目前中央採納其中包括「公布名單」及「成立專區」的建議。\n\n我要再次呼籲中央，應明確定義20%致癌油含量加工製品的認定標準，避免各方認定不一致的爭議；同時，也應建立全國性的食安通報平台，讓中央與地方資訊能夠即時同步。\n\n但以上這些作為，都只是針對這批問題油品的緊急防堵措施。現在最重要的，不只是追查這次出問題的油品生產供應業者，而是全面檢驗其他油品的上游生產供應商，否則無法真正安定民心。\n\n民眾一旦不敢外食，可能影響臺灣整體經濟。\n上週，我要求衛生局啟動「油品檢驗專案」，正是基於這樣的考量。\n\n我也要再次呼籲中央食藥署，不能只仰賴業者自主通報，而應建立更完整的第三方驗證、追溯及預警機制，從源頭解決食安風險與問題。\n\n這次中聯毒油事件影響範圍之大，許多人認為根本就是「地溝油事件」的重演。這也凸顯過去十年來，政府對油品源頭管理的機制，已經跟不上民眾對食品安全的期待。\n\n這起影響全國的食安風暴，中央食藥署早在6月底就已接獲通報，但賴清德總統、卓榮泰院長卻是在整整一週後，才出面向全民說明，實在有愧於民眾對中央政府的信任，以及對食品安全的期待。\n\n守護食安，是中央與地方共同的使命。\n臺北隊的原則很清楚：地方能做的，我們一定全力做到。\n至於屬於中央權限、該做而未做的事，為了民眾權益，我們也會持續提醒中央，攜手守護國人食安。",
       "topicScores": {
-        "教育": 0.85,
-        "經濟": 0.6,
-        "議會監督": 0.75,
-        "醫療": 0.97
+        "教育": 0.9,
+        "經濟": 0.55,
+        "醫療": 0.95
       },
       "topics": [
         "醫療",
         "教育",
-        "議會監督",
         "經濟"
       ],
       "url": "https://www.facebook.com/reel/4292330284367538/"
     },
     {
-      "agendaRelevance": 0.78,
+      "agendaRelevance": 0.74,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0e66f30970a8bc027b24c2d6967f4304a4223c96d19a21802de60bce76067547",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "bb60e919b96849d73e433fd7639983d2d35d949df9728dd5d45915b080a5cdc1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Dae33LlNXz5/",
       "imageAspect": 0.5635,
       "imageUrl": "assets/feed-images/b4e35e46ecdab359a8bf.webp",
       "keywords": [
-        "校園",
         "經濟"
       ],
-      "nature": {
-        "confidence": 0.94,
-        "label": "批評／究責",
-        "reason": "談食安事件處置、要求稽查與通報機制，並批評中央失職。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-07T06:57:34+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談食安油品事件與檢驗機制，兼及民生經濟影響。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "關於這次中聯油脂大豆沙拉油致癌物超標事件，臺北市第一時間啟動應變機制，從通路、油品業者稽查與預防性下架，到核對並公布下游店家及受影響校園名單，全面進行預防性下架停用。\n\n截至昨天晚間為止，市府已公布受影響的19家下游店家、6家團膳業者，以及50所校園。\n\n先前，我已向中央提出四項呼籲，樂見目前中央採納其中包括「公布名單」及「成立專區」的建議。\n\n我要再次呼籲中央，應明確定義20%致癌油含量加工製品的認定標準，避免各方認定不一致的爭議；同時，也應建立全國性的食安通報平台，讓中央與地方資訊能夠即時同步。\n\n但以上這些作為，都只是針對這批問題油品的緊急防堵措施。現在最重要的，不只是追查這次出問題的油品生產供應業者，而是全面檢驗其他油品的上游生產供應商，否則無法真正安定民心。\n\n民眾一旦不敢外食，可能影響臺灣整體經濟。\n上週，我要求衛生局啟動「油品檢驗專案」，正是基於這樣的考量。\n\n我也要再次呼籲中央食藥署，不能只仰賴業者自主通報，而應建立更完整的第三方驗證、追溯及預警機制，從源頭解決食安風險與問題。\n\n這次中聯毒油事件影響範圍之大，許多人認為根本就是「地溝油事件」的重演。這也凸顯過去十年來，政府對油品源頭管理的機制，已經跟不上民眾對食品安全的期待。\n\n這起影響全國的食安風暴，中央食藥署早在6月底就已接獲通報，但賴清德總統、卓榮泰院長卻是在整整一週後，才出面向全民說明，實在有愧於民眾對中央政府的信任，以及對食品安全的期待。\n\n守護食安，是中央與地方共同的使命。\n臺北隊的原則很清楚：地方能做的，我們一定全力做到。\n至於屬於中央權限、該做而未做的事，為了民眾權益，我們也會持續提醒中央，攜手守護國人食安。",
       "topicScores": {
-        "教育": 0.78,
-        "環境": 0.54,
-        "經濟": 0.63,
-        "醫療": 0.85
+        "環境": 0.78,
+        "經濟": 0.52,
+        "醫療": 0.9
       },
       "topics": [
         "醫療",
-        "教育",
-        "經濟",
-        "環境"
+        "環境",
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/Dae33LlNXz5/"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.44,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1c695c1193b2c3fad64e3d597d0d81bafa986b37b2a64819873d72ef1e22c36d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "558ebf267f7d579c80854ba592d9c63e96e3a55e9eb8b685361615235f17e4a4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DadH3d_thuC/",
       "imageAspect": 0.5639,
@@ -388,42 +377,41 @@
         "交通",
         "捷運",
         "停車",
-        "弱勢",
-        "環境"
+        "弱勢"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "資訊公告／服務提醒",
-        "reason": "重點是颱風來襲的防颱整備與市民提醒，屬災防公告。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-06T14:39:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動發布颱風整備與市府防災作為。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "市民朋友晚安\n\n#巴威颱風 來持續接近臺灣，今天我先到臺北市災害應變中心（EOC）主持防颱整備會議後，再前往信義區、內湖區、北投區，實地視察吳興街、文德路、大湖公園、洲美抽水站等各地防颱整備情形。\n\n根據氣象團隊最新研判，這次巴威颱風可能帶來的強風與降雨不容小覷，我要求各局處全面整備、落實防汛工作，主動進駐、提前部署。\n\n📍工務局 水利處\n啟動抽水站預抽機制，全面檢查防汛設施與地下排水系統，針對易積淹水熱區預置抽水機具、搶修人力及相關設備。\n\n📍公園處 大地處\n加強路樹、行道樹巡檢與加固，完成滯洪池預排水作業，並針對山坡地、邊坡、沉沙池及積水井加強巡查清疏。\n\n📍環保局\n針對全市溝渠及排水系統再次巡查、清疏，特別是易積淹水地區，務必提前排除阻塞風險。\n\n📍都發局 工務局 捷運局 勞動局\n全面督導各類工地落實防颱整備，加強工區排水設施檢整，固定圍籬、招牌、帆布、塔吊機具及各式懸掛物。\n\n📍民政局 社會局 教育局 各區公所\n提前完成避難收容處所、民生物資整備，並掌握易淹水地區高齡、獨居及弱勢民眾名冊，主動關懷、通報與協助。\n\n📍交通局 警察局\n針對水門啟閉、堤外停車、交通管制及必要拖吊作業，預先完成研判，確保資訊能即時發布，讓市民及早因應。\n\n面對颱風，市府團隊必須嚴陣以待、戰戰兢兢。多一分準備，就少一分風險。\n\n提醒市民朋友，記得提前檢查住家環境及排水狀況，固定盆栽與懸掛物，颱風期間避免前往山區、河川及易積水地區。有任何狀況，請通報1999市民專線。\n\n市府會持續掌握颱風動態，即時應變，全力守護臺北。",
       "topicScores": {
-        "交通": 0.68,
-        "環境": 0.62,
+        "交通": 0.66,
+        "生活": 0.73,
         "社福": 0.63,
-        "防災": 0.98
+        "防災": 0.99
       },
       "topics": [
         "防災",
+        "生活",
         "交通",
-        "社福",
-        "環境"
+        "社福"
       ],
       "url": "https://www.instagram.com/p/DadH3d_thuC/"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.24,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "59c6acc1aadd1d51c47af1acac64553faa9a74ced8cb23ca8ab59cbd90cdf31b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1664edcbb06e781931c8363b703e79dc24db5a324c8824a3ee119583054e04eb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1576498760506742",
       "imageAspect": 1.4975,
@@ -436,37 +424,37 @@
         "捷運",
         "停車"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "資訊公告／服務提醒",
-        "reason": "內容是颱風來襲前的防災整備與市民提醒。",
-        "type": "public_information"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-06T14:39:01.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是颱風防汛整備與提醒，屬災害應變公告。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "市民朋友晚安\n\n#巴威颱風 來持續接近臺灣，今天我先到臺北市災害應變中心（EOC）主持防颱整備會議後，再前往信義區、內湖區、北投區，實地視察吳興街、文德路、大湖公園、洲美抽水站等各地防颱整備情形。\n\n根據氣象團隊最新研判，這次巴威颱風可能帶來的強風與降雨不容小覷，我要求各局處全面整備、落實防汛工作，主動進駐、提前部署。\n\n📍工務局 水利處\n啟動抽水站預抽機制，全面檢查防汛設施與地下排水系統，針對易積淹水熱區預置抽水機具、搶修人力及相關設備。\n\n📍公園處 大地處\n加強路樹、行道樹巡檢與加固，完成滯洪池預排水作業，並針對山坡地、邊坡、沉沙池及積水井加強巡查清疏。\n\n📍環保局\n針對全市溝渠及排水系統再次巡查、清疏，特別是易積淹水地區，務必提前排除阻塞風險。\n\n📍都發局 工務局 捷運局 勞動局\n全面督導各類工地落實防颱整備，加強工區排水設施檢整，固定圍籬、招牌、帆布、塔吊機具及各式懸掛物。\n\n📍民政局 社會局 教育局 各區公所\n提前完成避難收容處所、民生物資整備，並掌握易淹水地區高齡、獨居及弱勢民眾名冊，主動關懷、通報與協助。\n\n📍交通局 警察局\n針對水門啟閉、堤外停車、交通管制及必要拖吊作業，預先完成研判，確保資訊能即時發布，讓市民及早因應。\n\n面對颱風，市府團隊嚴陣以待、戰戰兢兢。\n多一分準備，就少一分風險。\n\n提醒市民朋友，記得提前檢查住家環境及排水狀況，固定盆栽與懸掛物，颱風期間避免前往山區、河川及易積水地區。有任何狀況，請通報1999市民專線。\n\n市府會持續掌握颱風動態，即時應變，全力守護臺北。",
       "topicScores": {
-        "交通": 0.7,
-        "生活": 0.76,
+        "交通": 0.61,
+        "生活": 0.55,
         "防災": 0.98
       },
       "topics": [
         "防災",
-        "生活",
-        "交通"
+        "交通",
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02t3HJvsDi2Qj4j3uYjcrTHhebnViACzd1fY6q4BtMT7jAhy7iBAMuM13nBSsGsGaQl"
     },
     {
-      "agendaRelevance": 0.73,
+      "agendaRelevance": 0.89,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ab3820bc6bc0230920040eda715bb9695ef4e071eb7304e44ad7eacf8b5fa0d5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b49d0eaed26fb156f0dbcee99619cbc9171efdc03cd481e006c46df40fe36b09",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1576032937219991",
       "imageAspect": null,
@@ -477,123 +465,113 @@
         "校園",
         "幼兒園"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "施政成果／行政進度",
-        "reason": "說明毒油事件稽查、下架與通報專區建置進度。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-06T02:24:53.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "持續追查毒油並提出下架、專區與通報平台等食安措施。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "中聯油脂毒沙拉油事件，臺北市持續追查、稽查並向市民報告最新情況。\n\n今天，臺北市正對新增5家相關業者進行稽查，持續全面清查問題油品流向，並滾動更新相關資訊，全力守護市民食安。\n目前中央食藥署要求受影響的「原型油品」及使用問題油品超過20%的加工製品預防性下架，\n\n但這20%的標準認定，需要有更具體的依據與說明，才能更加速整體清查、下架的效率。例如泡麵的油包使用問題油品，但沖泡後整體比例低於20%，到底該不該下架？這些都需要中央清楚說明，避免存在模糊空間，讓民眾還是不安。\n\n因此，臺北市採取更嚴格的預防原則。\n\n針對目前已掌握在臺北的14+5家相關業者，只要涉及問題油品再製食品（如：酥油、沙拉醬、沙茶醬、蛋黃醬、抹醬等），不論使用比例高低，皆先全面預防性下架；後續由業者提出證明文件，確認符合相關規範後，再恢復上架販售。\n\n食安管理不能建立在僥倖之上。\n\n校園食安部分，教育局今天除了公布使用到該批問題油品的團膳業者名單，也要求團膳業者與各校、各幼兒園逐一核對食藥署資料，確認是否還有新增的受影響學校、幼兒園；另外，即刻起針對問題油品的再製食品全面預防性停用，絕不讓孩子的食安冒任何風險。\n\n消費者權益方面，法務局已要求相關業者本週到市府說明並提出具體退費方案，確保消費者能夠便利申請、獲得應有保障。\n\n我認為，食安事件最重要的原則，就是資訊公開、從嚴把關。\n我要呼籲中央，除了該成立 #中聯油脂受影響油品查詢專區，讓全民都能取得統一、清楚、完整、即時的資訊；\n更要針對這次油品事件成立 #跨縣市食安通報平台，讓各縣市衛生局能彼此即時同步、相互勾稽數量龐雜的再製食品流向，避免資訊落差與管理空窗。\n\n唯有資訊公開、標準一致、中央地方協力合作，才能真正守護民眾的健康與食品安全。",
       "topicScores": {
-        "教育": 0.82,
-        "生活": 0.77,
-        "議會監督": 0.8,
-        "醫療": 0.97
+        "教育": 0.86,
+        "經濟": 0.6,
+        "醫療": 0.96
       },
       "topics": [
         "醫療",
         "教育",
-        "議會監督",
-        "生活"
+        "經濟"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02zhLdi4ZuyVrj2USZdpVcUZaVdThEH2DtRZFbuHRKpiyWssdmWQ81g4v9ZphXj5nHl"
     },
     {
-      "agendaRelevance": 0.84,
+      "agendaRelevance": 0.92,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "59c0e480903fc8581b78aac591a061e2a04b44736dcfb0195c9b6a023d90922b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "842e35837c5005e14d270bd7dac63346e3f105d7411a066778a0e2e8758f3ba0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1575096653980286",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [
-        "汙染",
-        "產業",
-        "攤商",
         "教育",
         "學校",
-        "營養午餐"
+        "營養午餐",
+        "產業",
+        "攤商"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "針對毒油事件要求公布名單與查清源頭，屬究責批評。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-05T01:08:33.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主談毒油食安危機與政府查處、公布名單及源頭管理。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "中聯油脂爆發毒沙拉油事件，以目前所知資訊，影響了3家油品公司、18項油品、30個批號，甚至傳出擴及泡麵油包、罐裝沙茶醬、熟食及加工食品等，也影響各地學校營養午餐。這是一場新的、全國性的重大食安風暴，讓人想起當年所有人聞之色變的「地溝油事件」。看到食藥署在記者會上告訴全民，油品所流向的200多家廠商，「要不要公佈他們？他們也是這個事件裡面受到影響的業者」。那麼，人民何辜？這樣的做法，把消費者的權益放在哪裡？這不但會增加回收油的難度，而且會讓消費者在恐慌心理下，全面衝擊食品業與餐飲業！全國人民及消費者需要知道的是，有問題的油，到底流向何處？食安絕對沒有蓋牌的空間！\n\n我要向食藥署及中央政府，進行四點嚴正呼籲：\n\n1. 立刻公布名單、成立專區\n\n食藥署昨晚公佈的下架措施，一方面要求的是在明天午夜前完成下架，中間還是有兩天的時間差；二方面已經買到毒油品而不知情的廠商與消費者，他們的權益誰來保障；三方面廠商品牌名單依然不統一公佈，民眾心裡仍然會有疑慮，不是正辦。\n\n為了重建民眾對食用沙拉油及所有相關製成品的食安信心，食藥署應儘速成立專區，公布所有使用問題沙拉油的業者名單，讓民眾有統一、清楚、完整、即時的資訊，避免讓更多民眾成為吃下毒油的受害者。此外，中央政府也應協助受害業者向中聯油脂求償。\n\n2. 上游全面清查\n食藥署應全面檢驗目前國內所有上游油脂生產商的油品安全，排除問題，恢復民眾對食安的信心。\n\n3. 最短時間內釐清案情\n民眾最在乎的事情是：油的汙染源頭到底是原料就出狀況？還是製程與設備遭受汙染？中央主管機關必須在最快時間內嚴查釐清，確認問題的源頭，向社會大眾說明清楚，而不是讓民眾在疑慮與不安中等待答案。  \n\n4. 重建源頭管理機制\n這次事件讓全民清楚意識到，不同品牌的油品，背後可能有著共同的供應鏈。政府對於上游的供應鏈，如果只是依賴業者自主檢驗，如何讓人民安心？中央政府應該要建立更完整的第三方驗證、追溯及預警機制，從源頭解決食安的風險與問題。\n\n我也要跟市民朋友報告，目前為止台北隊的做法：\n\n1.召開跨局處會議，要求衛生局、法務局、教育局、產業局、市場處等各局處，全部動起來。\n\n2. 衛生局官網第一時間成立「中聯油脂受影響油品查詢專區」：即使案情還在釐清中，北市府積極公開相關資訊，也不斷滾動式更新，讓市民查得清、看得明。\n\n3.全面稽查、預防性下架停用：從得知這個案子的第一個早上以來，市府連續幾天都進行了對各大賣場、飯店及餐廳等通路的稽查，也到福懋等油品業者在臺北的據點，清查所有流向單據；教育局第一時間要求全市學校與團膳業者預防性全面停用相關廠牌油品；目前排查曾使用到該批油品的學校，都已要求校方通知家長；市場處也透過市場及夜市自治會對攤商進行要求，預防性停用相關廠牌油品，並張貼使用油品廠牌等資訊，讓消費者吃得安心。  \n\n4.主動擴大抽驗，絕不寬貸 ：一得知案情，我就要求衛生局針對這次案件的致癌物質，啟動「油品檢驗專案」，不是只查爆出問題的業者，而是擴大抽查市售其他品項，不要放過任何食安死角。  \n\n5.追蹤要求業者，公開退賠資訊\n消保官到場稽查時，除了要求福懋等業者積極回收現存的數百桶問題油品外；對已消耗完畢之逾萬桶油品，也要確保客服專線暢通，市府會嚴格追蹤退賠成效，捍衛市民的消費權益。  \n\n食安沒有僥倖，人民期待的是政府查清真相、資訊公開、制度補強。北市府會持續站在第一線，用最高標準守護市民健康。我再次呼籲中央正視問題，與地方攜手合作，真正守護台灣的食安，讓民眾安心、社會放心！",
       "topicScores": {
-        "教育": 0.7,
-        "環境": 0.88,
-        "社福": 0.78,
-        "經濟": 0.72
+        "教育": 0.78,
+        "經濟": 0.62,
+        "醫療": 0.98
       },
       "topics": [
-        "環境",
-        "社福",
-        "經濟",
-        "教育"
+        "醫療",
+        "教育",
+        "經濟"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0njdqrzqF3TRFyDRZq5yvXKhrwpCut9FAwJsWgum8k6UzR1himUotxUzUmov8tZ4Zl"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.18,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1d3318ff3c6ae5e2131590efd5e1bbec5e6636ba6846ca4d40a87798081e38ee",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8db751cc73f5ec5e0848d4e4ff3a000a0f61d5b0a541127c9ce4afda16ec36de",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1573830370773581",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/c36f0b6f8702e1abbed1.webp",
       "keywords": [
-        "觀光",
-        "經濟"
+        "觀光"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "活動／行程",
-        "reason": "主要在分享臺東熱氣球嘉年華與觀光景點參訪，屬活動紀錄與旅遊推廣。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T14:05:00.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄赴臺東參加熱氣球嘉年華與觀光踩線行程。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "2026臺灣國際熱氣球嘉年華明天登場！\n\n感謝臺東 饒慶鈴 縣長的邀請，今天我和臺北隊來到臺東，提前感受這片土地的熱情，也準備迎接明天清晨的熱氣球嘉年華。\n\n傍晚抵達後，在饒縣長和吳秀華議長的陪同下，我們先到臺東觀光夜市走走、欣賞舊臺東車站夜間光雕展演，再到臺東博覽會「夢想東升－WALK IN 熱氣球」主題館參觀，為明天的萬球齊飛暖身。\n\n每次來到臺東，我都能感受到這片土地獨特的魅力。這裡總能讓人慢下腳步，享受最純粹的山海風景與生活節奏。\n\n臺北和臺東雖然步調不同，卻同樣努力讓地方變得更宜居、更有魅力。近年來，透過一次次交流與互訪，也讓彼此的距離越來越近。\n\n這幾年，在饒慶鈴縣長帶領下，從國際熱氣球嘉年華到臺東博覽會，讓越來越多人看見臺東的美好。特別是博覽會所強調的「慢經濟」理念，也讓人重新思考生活的節奏與價值。\n\n暑假剛剛開始，今天在光雕展現場，也遇到不少來自臺北的朋友帶著孩子一起來玩。\n\n如果還在規劃暑假行程，我真心推薦大家來臺東走走。無論是臺東博覽會、光雕展，還是國際熱氣球嘉年華，相信都會是不虛此行的美好回憶！",
       "topicScores": {
-        "文化觀光": 0.98,
-        "生活": 0.52,
-        "經濟": 0.75
+        "文化觀光": 0.98
       },
       "topics": [
-        "文化觀光",
-        "經濟",
-        "生活"
+        "文化觀光"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0WvVPwTr8GonGpQMUJx5Jvpoa3Z86mdmCPXp2BPaUVkFK6djnBCu9MXdk5YgvHwp7l"
     },
     {
-      "agendaRelevance": 0.82,
+      "agendaRelevance": 0.91,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "49aea4dda79e8d8a4f967838a70e4a8b300f5053d38e033b91e763ac9f1e8693",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7368e1580179ae721810a95529009cefa51609878e249645a5bbbf487729646a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaSvH0-t7GX/",
       "imageAspect": 0.5625,
@@ -603,67 +581,64 @@
         "藝術",
         "氣候"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "說明貓空跨橋、步道與櫻花等建設進度及城市品牌成果。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-03T00:02:45+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動公布貓空步道、賞櫻與里山川建設。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "天空步道串連櫻花秘境 \n打造文山新風貌\n\n今早我回到熟悉的文山區，利用行程前的空檔，從貓空纜車指南宮站出發，到里山川中的後山步道走了一圈，也和市民朋友分享文山未來的新政規劃。\n\n大家期待已久的 #貓空人行跨橋，串連貓空站與天恩宮，全長382.85公尺，目前已完成設計，並規劃投入11億元建設經費。未來完工後，民眾不用再擔心人車爭道，可以安心漫步在天空步道，從不同角度欣賞貓空山林美景。\n\n此外，近年來市府陸續種植650棵適合北部氣候生長的飛寒櫻，預計2027年再增加100棵，逐步打造臺北美麗的櫻花秘境，每到花季都能來到指南宮賞櫻。\n\n這裡是臺北大縱走第七段重要的一環。\n這幾年，市府持續投入建設，完成 #千階竹柏參道 修復，整修石燈籠、石柱，打造光引謐徑，如今已成為貓空最具代表性的夜景勝地，並獲得國內外獎項肯定。\n\n我們也攜手指南宮及優人神鼓打造 #臺北里山川，興建景觀平台與展演空間，讓山林成為藝術舞台，感受文山獨有的人文底蘊。\n\n臺北大縱走，串聯珍貴的山徑、信仰文化與自然景觀，不只是健行路線，更是臺北重要城市品牌，我們會持續努力，用具體成果回應市民期待。",
       "topicScores": {
-        "交通": 0.79,
-        "文化觀光": 0.82,
+        "交通": 0.9,
+        "文化觀光": 0.88,
         "環境": 0.76
       },
       "topics": [
-        "文化觀光",
         "交通",
+        "文化觀光",
         "環境"
       ],
       "url": "https://www.instagram.com/p/DaSvH0-t7GX/"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.84,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "4e2a993617927249a75fea8f6c2376e3eeab0acab3549bc82f60e984011948cd",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "93bdecf08fcafa1d6b53b2b49c78ec2497bfb6e4bb9ad7db1c6e624a33b05a62",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1572941144195837",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/cb4e63eaca622167bf2b.webp",
       "keywords": [
         "文化",
-        "藝術",
-        "氣候"
+        "藝術"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "施政成果／行政進度",
-        "reason": "說明貓空跨橋、賞櫻與步道建設進度，屬具體市政成果與規劃。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-02T13:58:41.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主述貓空跨橋、步道與櫻花景觀等地方建設規劃。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "天空步道串連櫻花秘境 \n打造文山新風貌\n\n今早我回到熟悉的文山區，利用行程前的空檔，從貓空纜車指南宮站出發，到里山川中的後山步道走了一圈，也和市民朋友分享文山未來的新政規劃。\n\n大家期待已久的 #貓空人行跨橋，串連貓空站與天恩宮，全長382.85公尺，目前已完成設計，並規劃投入11億元建設經費。未來完工後，民眾不用再擔心人車爭道，可以安心漫步在天空步道，從不同角度欣賞貓空山林美景。\n\n此外，近年來市府陸續種植650棵適合北部氣候生長的緋寒櫻，預計2027年再增加100棵，逐步打造臺北美麗的櫻花秘境，每到花季都能來到指南宮賞櫻。\n\n這裡是臺北大縱走第七段重要的一環。\n這幾年，市府持續投入建設，完成 #千階竹柏參道 修復，整修石燈籠、石柱，打造光引謐徑，如今已成為貓空最具代表性的夜景勝地，並獲得國內外獎項肯定。\n\n我們也攜手指南宮及優人神鼓打造 #臺北里山川，興建景觀平台與展演空間，讓山林成為藝術舞台，感受文山獨有的人文底蘊。\n\n臺北大縱走，串連珍貴的山徑、信仰文化與自然景觀，不只是健行路線，更是臺北重要城市品牌，我們會持續努力，用具體成果回應市民期待。",
       "topicScores": {
-        "交通": 0.88,
-        "文化觀光": 0.87,
-        "環境": 0.72,
-        "生活": 0.54
+        "交通": 0.89,
+        "住宅": 0.34,
+        "文化觀光": 0.81
       },
       "topics": [
         "交通",
         "文化觀光",
-        "環境",
-        "生活"
+        "住宅"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02PUEbtr4tWyqQ3dEyDCFwfAJNtTZ3txyXX2QszW4WAEWa8GtnEHL4yAapyoWFS9kHl"
     },
@@ -671,49 +646,47 @@
       "agendaRelevance": 0.9,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "cd94559438420f107e11c52ae22f45e459038e59a93385d4930d1a65f59cb926",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "3dc3ef5c15371a1a019819ca2b86eddc55cffbaede56089a5295aa670ea142c1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1572095327613752",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/637915bef4a34bce6e17.webp",
       "keywords": [
-        "都更",
-        "長輩",
-        "補助"
+        "都更"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "施政成果／行政進度",
-        "reason": "說明老宅電梯補助加碼與都更進度，屬施政成果與措施。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-01T13:24:24.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動宣示老宅增設電梯與整建補助，屬住宅政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "老宅不再囚老，臺北市電梯補助再加碼！\n\n在臺北市，有超過8萬棟屋齡30年以上、未設置電梯的老舊公寓，推動都更的同時，透過整建維護讓老宅重獲新生，一直是臺北隊積極面對的重要課題。\n\n「都更八箭」政策推出後，臺北市都更重建報核案件數已達過去8年的2.4倍。其中，第五箭「電梯加碼辦」，透過提高補助金額、降低申請門檻及分期撥款等措施，協助更多社區克服困難，加速完成增設電梯工程。\n\n這幾年，臺北市公寓增設電梯的腳步穩健加速，近三年申請案件量占歷年總量將近六成，推動成果穩居全國第一。\n\n今天，我來到信義區富台社區，這棟屋齡將近40年的五層樓公寓，如今已裝設全新的電梯。長輩們可以更方便地上下樓、隨心外出，整個社區也因此煥然一新。\n\n除了把成功經驗複製到臺北市更多社區，我也宣布整建維護四大精進措施：\n\n📍 補助額度再加碼\n增設電梯補助上限再加碼，最高補助480萬元。\n\n📍 取消法停免代金\n增設電梯涉及取消法定車位者，免繳代金，減輕社區負擔。\n\n📍外牆修繕免變使\n外牆修繕免變更使用執照，縮短行政程序。\n\n📍違建阻礙專案拆\n專案拆除既存違建納入外牆修繕案件，守護市民步行與居住安全。\n\n該做的事，勇敢去做；\n對的事情，堅持到底。\n\n臺北隊會持續努力推動都更與整建維護，讓更多老宅重獲新生，為市民打造更加安全、友善的居住環境。",
       "topicScores": {
-        "住宅": 0.96,
-        "社福": 0.84
+        "住宅": 0.97,
+        "生活": 0.29
       },
       "topics": [
         "住宅",
-        "社福"
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid028y6hXu6iDKcVBu8YHx13annkHHCuWpq1H7ioWiGb8VuVLkLbM2Undnkai3ktK5FEl"
     },
     {
-      "agendaRelevance": 0.9,
+      "agendaRelevance": 0.93,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "05205599e543b2898552a50e0f36ad61ec78cad0c651497ad32e33dfdf3b19e1",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "dda771ad0e2b5eb4caef7e3bf9fbfb1418848f21507e2174534f781f629a9fd3",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaQHQ_JtQrD/",
       "imageAspect": 0.5626,
@@ -721,35 +694,33 @@
       "keywords": [
         "都更"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "施政成果／行政進度",
-        "reason": "宣布電梯補助加碼與整建維護措施，屬明確施政更新。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-01T13:24:20+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出老宅電梯補助與整建維護精進措施。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "老宅不再囚老，臺北市電梯補助再加碼！\n\n在臺北市，有超過8萬棟屋齡30年以上、未設置電梯的老舊公寓，推動都更的同時，透過整建維護讓老宅重獲新生，一直是臺北隊積極面對的重要課題。\n\n「都更八箭」政策推出後，臺北市都更重建報核案件數已達過去8年的2.4倍。其中，第五箭「電梯加碼辦」，透過提高補助金額、降低申請門檻及分期撥款等措施，協助更多社區克服困難，加速完成增設電梯工程。\n\n這幾年，臺北市公寓增設電梯的腳步穩健加速，近三年申請案件量占歷年總量將近六成，推動成果穩居全國第一。\n\n今天，我來到信義區富台社區，這棟屋齡將近40年的五層樓公寓，如今已裝設全新的電梯。長輩們可以更方便地上下樓、隨心外出，整個社區也因此煥然一新。\n\n除了把成功經驗複製到臺北市更多社區，我也宣布整建維護四大精進措施：\n\n📍 補助額度再加碼\n增設電梯補助上限再加碼，最高補助480萬元。\n\n📍 取消法停免代金\n增設電梯涉及取消法定車位者，免繳代金，減輕社區負擔。\n\n📍外牆修繕免變使\n外牆修繕免變更使用執照，縮短行政程序。\n\n📍違建阻礙專案拆\n專案拆除既存違建納入外牆修繕案件，守護市民步行與居住安全。\n\n該做的事，勇敢去做；\n對的事情，堅持到底。\n\n臺北隊會持續努力推動都更與整建維護，讓更多老宅重獲新生，為市民打造更加安全、友善的居住環境。",
       "topicScores": {
-        "住宅": 0.98,
-        "生活": 0.7
+        "住宅": 0.97
       },
       "topics": [
-        "住宅",
-        "生活"
+        "住宅"
       ],
       "url": "https://www.instagram.com/p/DaQHQ_JtQrD/"
     },
     {
-      "agendaRelevance": 0.76,
+      "agendaRelevance": 0.84,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8d05de3702bbd1f4570a12e386cbfec61e87c8b3cc83bacd6720bcf439d82250",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "9b16857ce54f75179544ed360668387712f9bf633a81ac525fcfd332a709638b",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1571155817707703",
       "imageAspect": 1.5,
@@ -759,33 +730,35 @@
         "捷運",
         "通勤"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "施政成果／行政進度",
-        "reason": "公告捷運行動支付上路與交通服務更新，屬行政進度。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-30T12:06:57.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹捷運行動支付與通車進展，屬交通施政宣示。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "iPhone免解鎖進站，明天正式上路！\n\n7月1日開始，大家期待已久的「Apple Pay快速交通模式」正式啟用。只要將iPhone靠近閘門，不用喚醒螢幕，也能直接感應進出站。\n我今天也實際體驗了一次，真的很快速、很方便！\n\n除了iPhone免解鎖進站之外，臺北捷運多元支付服務也正式全面上線。無論是Apple Pay、Google Pay、Samsung Pay等行動支付綁定信用卡，綁定信用卡後都能直接感應進站，讓搭車更加便利。\n\n今年是臺北捷運通車30週年。\n\n我還記得學生時代第一次搭捷運時，用的是藍色的磁卡單程票；後來歷經藍色代幣單程票、電子票證、QR code乘車碼，到今天手機直接感應過閘，每一次改變，都代表著臺北捷運持續進步的腳步。\n\n為了推動這項服務，市府團隊和北捷努力了很長一段時間。\n\n去年，北捷完成全線車站閘門更新及軟硬體升級；今年初，啟動QR Code乘車碼及信用卡感應測試。一路走來，改變的不只是票證形式，更代表著我們持續提升乘車體驗的決心。\n\n這項服務不只讓市民通勤更方便，也讓來自世界各地的旅客能輕鬆搭乘捷運，用一支手機暢遊臺北，享受更便利、更友善的交通服務。\n\n今天也是新北捷運三鶯線通車的大日子。未來，雙北將持續攜手合作，共同推動智慧交通發展，打造更便利、更友善的公共運輸環境。\n\n明天開始，歡迎大家一起體驗全新的捷運搭乘方式！",
       "topicScores": {
-        "交通": 0.99
+        "交通": 0.98,
+        "生活": 0.34
       },
       "topics": [
-        "交通"
+        "交通",
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid05BhNwxjeYz9ugAivUK7DKakKFW827EQEfJHUELxXPjLsdRnYxL1u4pFoEgUMAEo5l"
     },
     {
-      "agendaRelevance": 0.55,
+      "agendaRelevance": 0.84,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1ea98710bd8293cd045ae2e0360b829e9f3084760838ea9bd55fec988b47a419",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a406fbf8b659630c7ec52b9102761a26279f874d4dba32e436ba6b551b984733",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaNZz7fNruG/",
       "imageAspect": 0.5625,
@@ -795,19 +768,19 @@
         "捷運",
         "通勤"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "施政成果／行政進度",
-        "reason": "重點是捷運行動支付與快速交通模式上路，屬交通施政進度。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-30T12:06:49+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹捷運多元支付上線，屬交通政策公告。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "iPhone免解鎖進站，明天正式上路！\n\n7月1日開始，大家期待已久的「Apple Pay快速交通模式(ECP)」正式啟用。只要將iPhone靠近閘門，不用喚醒螢幕，也能直接感應進出站。\n我今天也實際體驗了一次，真的很快速、很方便！\n\n除了iPhone免解鎖進站之外，臺北捷運多元支付服務也正式全面上線。無論是Apple Pay、Google Pay、Samsung Pay等行動支付綁定信用卡，綁定信用卡後都能直接感應進站，讓搭車更加便利。\n\n今年是臺北捷運通車30週年。\n\n我還記得學生時代第一次搭捷運時，用的是藍色的磁卡單程票；後來歷經藍色代幣單程票、電子票證、QR code乘車碼，到今天手機直接感應過閘，每一次改變，都代表著臺北捷運持續進步的腳步。\n\n為了推動這項服務，市府團隊和北捷努力了很長一段時間。\n\n去年，北捷完成全線車站閘門更新及軟硬體升級；今年初，啟動QR Code乘車碼及信用卡感應測試。一路走來，改變的不只是票證形式，更代表著我們持續提升乘車體驗的決心。\n\n這項服務不只讓市民通勤更方便，也讓來自世界各地的旅客能輕鬆搭乘捷運，用一支手機暢遊臺北，享受更便利、更友善的交通服務。\n\n今天也是新北捷運三鶯線通車的大日子。未來，雙北將持續攜手合作，共同推動智慧交通發展，打造更便利、更友善的公共運輸環境。\n\n明天開始，歡迎大家一起體驗全新的捷運搭乘方式！",
       "topicScores": {
         "交通": 0.99,
-        "生活": 0.8
+        "生活": 0.7
       },
       "topics": [
         "交通",
@@ -816,14 +789,14 @@
       "url": "https://www.instagram.com/p/DaNZz7fNruG/"
     },
     {
-      "agendaRelevance": 0.46,
+      "agendaRelevance": 0.68,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "83729a61a322ff839cb1e0dab4b7822e39174f9529aea3bb35bcd2a285f52744",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a58de69ec2916fd0ecb3cfabbe52e8f644d2be9268082bf615a79f618b8218a3",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1569433857879899",
       "imageAspect": 1.3309,
@@ -834,18 +807,18 @@
         "防災",
         "強降雨"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "回報豪雨應變與現地巡查，屬災防處理與狀況更新。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-28T11:44:06.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "針對豪雨巡檢與排水應變報告，屬防災處置。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "和市民朋友報告\n\n中央氣象署今天針對臺北市全區發布豪雨特報，內湖區3小時累積雨量達99毫米。面對短延時強降雨的挑戰，我第一時間要求各區公所加強巡檢及防護工作，密切掌握各地狀況，提前做好各項應變準備。\n\n下午行程一結束，我立刻趕往內湖金龍里辦公室，和里長一起了解地方最新情況，並實地查看周邊路段，包括0625豪雨當天發生積淹水的地點以及鄰近公園，確認各項改善措施及現場排水狀況。\n\n面對越來越頻繁的短時強降雨，我們一定料敵從寬、禦敵從嚴，絕不掉以輕心。市府團隊會持續站在第一線強化治水建設，也會傾聽地方聲音、精進防災應變。\n\n守護市民安全，永遠是臺北市政府最重要的責任。",
       "topicScores": {
-        "生活": 0.7,
+        "生活": 0.34,
         "防災": 0.98
       },
       "topics": [
@@ -855,14 +828,14 @@
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02ev5uc6X46Hm2GBo2vJGE3gPjeAUVQ5UpZLwpCRW4gr7LuYPNJvjA16dDBke2JyCpl"
     },
     {
-      "agendaRelevance": 0.58,
+      "agendaRelevance": 0.34,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8c66db768c5ff67298f2d566dc13560cf9ba8acd330162f4aa1e11d8e0a7d223",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5b346bed556d4f105111670edd7c9234f2c0dd8c93def410d9b883ac912436d1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1568370987986186",
       "imageAspect": 1.3333,
@@ -870,37 +843,37 @@
       "keywords": [
         "道路"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "通報道路塌陷處置、撤離與修復進度，屬行政應變更新。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-27T05:21:06.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "報告道路塌陷應變與復原作業，屬災害處置紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "和市民朋友報告\n\n今天上午信義區松山路119巷發生道路塌陷狀況，市府第一時間啟動緊急應變機制，由自來水處、工務局、水利處、衛工處、建管處、瓦斯公司、區公所等相關單位到場檢視，確認周邊管線及公共設施狀況，並邀集土木技師公會進行現場安全評估。\n\n目前經專業檢視，確認沒有結構安全疑慮。但為了確保居民安全，我們仍採取預防性撤離，疏散兩棟共8戶住戶。\n\n稍早，我也到現場了解最新狀況，要求各單位全力投入復原工作。在確認安全無虞後，將立即進行回填作業，儘速恢復道路通行及周邊環境，讓居民生活早日回到正常軌道。\n\n除了現場搶修外，我也要求工務局透過透地雷達，針對周邊區域及相關管線進行全面檢測，進一步釐清原因，避免類似情況再次發生。\n\n市民的安全是第一優先。\n市府團隊正在全力完成修復工作，也會以最高標準做好後續檢查與預防措施，讓市民安心。",
       "topicScores": {
-        "交通": 0.72,
-        "住宅": 0.79,
-        "防災": 0.95
+        "交通": 0.79,
+        "生活": 0.44,
+        "防災": 0.96
       },
       "topics": [
         "防災",
-        "住宅",
-        "交通"
+        "交通",
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02CPXteup7DpMopDt7Ckh1H4hFJkoFgrqFcnhRG6Granjf5S2piHbgnTFrr6EWVH52l"
     },
     {
-      "agendaRelevance": 0.45,
+      "agendaRelevance": 0.61,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "eee6ff139afea2db0ea5b6e6c4da0480670781c93f15b99cbd4a4a2efcbf0a35",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7091471fdbddfd7d5dea8885d7cfffad1733dd99ffbf26ccc47ad902af832e29",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1567523028070982",
       "imageAspect": 1.3318,
@@ -911,39 +884,41 @@
         "災害",
         "防災",
         "強降雨",
-        "災情"
+        "災情",
+        "氣候",
+        "治水"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "施政成果／行政進度",
-        "reason": "說明強降雨災情、救助措施與治水工程進度。",
-        "type": "administrative_update"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-26T05:27:20.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明暴雨應變、治水預算與防災改善方向。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "全力應變、全速復原，攜手面對極端氣候 \n\n受到米克拉颱風外圍環流影響，昨天臺北市各地短延時強降雨，內湖甚至瞬間時雨量破百毫米，超過排水系統保護標準，造成積淹水災情；雨勢一趨緩、排水系統與抽水站即時因應下，積水很快消退，但仍為許多居民、店家帶來生活上的不便，我們感同身受，也會持續檢討、精進每一個可以做得更好的環節。\n\n昨天上午，臺北市災害應變中心提升為二級開設，我第一時間前往主持工作會議；昨晚我們也緊盯12區雨勢，對雨勢較大地區由區公所漏夜加強低窪地區巡檢；今天一早，我再前往內湖災害應變中心，除了掌握復原進度，也到昨天淹水較嚴重的金龍路一帶，逐戶了解居民需求、提供慰問金，區公所及各局處也在現場全力協助大家恢復家園。\n\n我也要求市府從寬、從優、從速協助受影響的住戶。\n除了慰問金以外，區公所已立即展開會勘，只要符合災害救助標準，住家淹水達50公分以上未滿100公分，每戶可申請1萬元救助金；淹水100公分以上，每戶可申請2萬元救助金。另外，住家淹水20公分以上、未達50公分，但已造成生活困難的市民，市府也將依急難救助機制提供協助，陪伴大家早日恢復正常生活。\n\n這次短延時強降雨證明了極端氣候是城市治理的一大挑戰。臺北隊投入65億連續性治水預算，持續提升臺北市整體排水能力，將排水保護標準由每小時78.8毫米提升至88.8毫米，目前各項工程正加速推動中，也會持續精進防災應變機制，提升城市面對極端氣候的韌性，守護大家的生命財產安全。",
       "topicScores": {
-        "住宅": 0.8,
-        "生活": 0.7,
-        "防災": 0.98
+        "環境": 0.88,
+        "生活": 0.55,
+        "防災": 0.97
       },
       "topics": [
         "防災",
-        "住宅",
+        "環境",
         "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid02A4mZ9HkRHx41P4qDgxTnBWyRspV8xzoU59kH8itfaWfRANrTWqp22KZsPVQMeFBBl"
     },
     {
-      "agendaRelevance": 0.36,
+      "agendaRelevance": 0.2,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e9eacad3f1432706d2eab8b1259e8c8fed29a8f179a6452657f1ea3dc9f673e3",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "78880bc702cf901bea1f4307d8043fc4a7a4329141dc002682001e9682075fef",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1563661768457108",
       "imageAspect": 0.5625,
@@ -951,35 +926,37 @@
       "keywords": [
         "產業"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "立場表態",
-        "reason": "表態支持農民與鳳梨釋迦外銷，屬立場聲援。",
-        "type": "position_statement"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-21T14:03:22.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "為農產品外銷與農民發聲，屬產業聲援。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "挺農民，推廣鳳梨釋迦！\n聲援臺東縣長饒慶鈴！\n\n我一直認為，臺東鳳梨釋迦是「水果界的台積電」。全世界很難找到另一個地方，能生產出這麼香甜、這麼有特色的鳳梨釋迦。這不只是臺東的驕傲，更是農民辛勞付出的成果，也是臺灣農業實力的展現。\n\n饒慶鈴縣長透過錄影方式，為臺東農民爭取鳳梨釋迦外銷訂單。地方首長為農民發聲、為產業找出路，本來就是職責所在。\n\n支持農民，力挺饒慶鈴縣長！\n\n#臺東鳳梨釋迦 #農民加油",
       "topicScores": {
-        "兩岸外交": 0.7,
-        "經濟": 0.82
+        "兩岸外交": 0.64,
+        "生活": 0.3,
+        "經濟": 0.77
       },
       "topics": [
         "經濟",
-        "兩岸外交"
+        "兩岸外交",
+        "生活"
       ],
       "url": "https://www.facebook.com/reel/981753744618606/"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.63,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "6e174ab2f263a5e36abf4de960f3dba53b6dfb54446999e6bdbe22fe56544c54",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "96c8297ce18d65245d18fc625471976d0579e8e66268861dfa448f95a023d650",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZ2bvPJtomN/",
       "imageAspect": 0.5625,
@@ -987,18 +964,18 @@
       "keywords": [
         "產業"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "立場表態",
-        "reason": "主要表態支持農民與鳳梨釋迦外銷，屬產業立場聲援。",
-        "type": "position_statement"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-21T14:03:06+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "為農產品外銷與農民發聲，屬產業支持。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "挺農民，推廣鳳梨釋迦！\n聲援臺東縣長饒慶鈴！\n\n我一直認為，臺東鳳梨釋迦是「水果界的台積電」。全世界很難找到另一個地方，能生產出這麼香甜、這麼有特色的鳳梨釋迦。這不只是臺東的驕傲，更是農民辛勞付出的成果，也是臺灣農業實力的展現。\n\n饒慶鈴縣長透過錄影方式，為臺東農民爭取鳳梨釋迦外銷訂單。地方首長為農民發聲、為產業找出路，本來就是職責所在。\n\n支持農民，力挺饒慶鈴縣長！\n\n#臺東鳳梨釋迦 #農民加油",
       "topicScores": {
-        "經濟": 0.87
+        "經濟": 0.9
       },
       "topics": [
         "經濟"
@@ -1006,14 +983,14 @@
       "url": "https://www.instagram.com/p/DZ2bvPJtomN/"
     },
     {
-      "agendaRelevance": 0.04,
+      "agendaRelevance": 0.01,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e237ef2b9751735291b45d4ecbdf5006b71360c13dcee9215d2e2577b2b88379",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4cb541d281ad2af3d04058d208c478ba8e5af14f935b0c90d8890110b29a63c8",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1562713241885294",
       "imageAspect": 1.7778,
@@ -1021,33 +998,35 @@
       "keywords": [
         "冠軍"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "資訊公告／服務提醒",
-        "reason": "單純分享味全龍奪勝與賽事結果，屬體育消息。",
-        "type": "public_information"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-20T11:32:40.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "祝賀棒球隊奪冠，屬單純體育分享。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-fb",
       "text": "恭喜味全龍贏得隊史第六座季冠軍，提前拿下季後賽的門票！\n\n我們10月總冠軍賽見！\n\n圖片來源：味全龍提供",
       "topicScores": {
+        "生活": 0.34,
         "體育": 0.99
       },
       "topics": [
-        "體育"
+        "體育",
+        "生活"
       ],
       "url": "https://www.facebook.com/chiangwanan/posts/pfbid0u8Bnb7vkgRTHfQuiukNbHeEAF43e7GuceLysEeAmHhqCMyTuq9QZVxunj3BgDQndl"
     },
     {
-      "agendaRelevance": 0.6,
+      "agendaRelevance": 0.78,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "99333f64cb6b285892ec4ce42014355c2680945288ef64c98e1d6901a9017b48",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a99c2f3f93ec92551541714bc3200529ca5dbc9371d3bc5350222afd0705309f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZxIxF-Nybf/",
       "imageAspect": 0.5629,
@@ -1058,20 +1037,20 @@
         "觀光",
         "演唱會"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "施政成果／行政進度",
-        "reason": "內容為赴新加坡城市交流，涉及智慧城市、產業與場館觀光合作。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-19T12:40:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "訪問新加坡交流智慧城市、場館與合作。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "這一趟訪問新加坡，臺北隊把握機會，雙方進行實質交流🤝\n\n從智慧城市規劃到參訪大型場館，每一站都有不少收穫。\n\n📍榜鵝數位園區\n感謝新加坡東北區馬炎慶市長，帶我們實地了解新加坡如何整合產業、教育、居住與公共服務空間，並透過數位平台串聯城市治理，打造未來智慧城市示範場域。\n\n我們也針對北士科未來發展、科技產業聚落布局及人才培育等議題交換經驗，期待未來有更多合作與交流機會。\n\n📍新加坡國家體育場\n實地了解新加坡如何透過大型場館串聯體育賽事、演唱會及城市觀光發展。我們也分享臺北大巨蛋啟用後舉辦國際賽事及演唱會的成果，並就大型活動引進、經驗交換意見。\n\n透過面對面的交流，深化臺北與國際城市的連結，也為未來開啟更多合作可能！\n\n臺北隊持續向前🌏",
       "topicScores": {
-        "兩岸外交": 0.75,
-        "文化觀光": 0.65,
-        "經濟": 0.7
+        "兩岸外交": 0.9,
+        "文化觀光": 0.74,
+        "經濟": 0.77
       },
       "topics": [
         "兩岸外交",
@@ -1081,14 +1060,14 @@
       "url": "https://www.instagram.com/p/DZxIxF-Nybf/"
     },
     {
-      "agendaRelevance": 0.92,
+      "agendaRelevance": 0.88,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "453ed2c974507d3cc8d2d28ae324963925ae4dc384339a1bc688d375150f8bf7",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "930d1a44193212748af6c94009159d54860bd77ff6dc944219cdf31f1268ffc1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZuu5tdNyh4/",
       "imageAspect": 0.5634,
@@ -1097,19 +1076,19 @@
         "住宅",
         "都更"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "施政成果／行政進度",
-        "reason": "聚焦信維整宅公辦都更招商與居住機能改善，屬施政成果。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-19T00:19:30+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主談信維整宅都更招商與新社區機能，屬主動提出住宅政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "信維整宅即將重生\n公辦都更案7月正式招商\n\n端午節前夕，我再次來到大安區的信維整宅。\n\n四年前，我也曾經站在這裡。那時候，我的身分還是臺北市長參選人。\n\n我記得非常清楚，當天和住戶、管委會成員聊了很久，聽他們談起對家園的感情，也談起對都更的期待。\n\n那時，社區支持都更的意願已經累積超過80%。\n\n從0到80%，靠的是數十年的努力與溝通；但從80%跨越到最後一哩路，往往才是最困難的一段路。\n\n信維整宅屋齡將近60年，這裡見證了臺北的發展，也承載許多家庭的人生故事。歲月在牆面留下痕跡，但住戶對重建家園的期待，始終沒有改變。\n\n我一直認為，如果制度不改變，再多的期待都可能被卡在原地。\n\n因此，上任後，我們推動「都更8箭」，率全國之先推出「公辦都更7599專案計畫」及「整建住宅專案計畫」，透過「早進場、幫試算、助選屋」三大創新機制，將整宅公辦都更第一、二階段意願門檻，從原本90%，調整為75%及80%。\n\n政府不再只是等待，而是主動進場協助整合。\n\n正因如此，許多長年停滯的案件開始突破瓶頸、看見曙光。包括南機場單元三、斯文里二期「斯文昌龍」等案件，都已成功招商並完成簽約。\n\n而今天，我帶著好消息重回信維整宅。\n\n熟悉的四喜食品行，湖州粽香依舊；立春堂國藥號的老闆和街坊鄰居，依然熱情地和我打招呼。\n\n更重要的是，信維整宅公辦都更案將於7月正式公告招商。\n\n這不只是程序上的里程碑，更代表信維整宅重生之路，再向前邁出關鍵的一大步。\n\n未來的新信維，除了更安全、更舒適的居住環境，也將規劃現代化超市、托嬰中心及區民活動中心，讓生活機能更加完善，打造真正宜居、宜養、宜生活的新社區。\n\n我要特別感謝在地議員、里長、管委會及所有住戶多年來的堅持與支持；也感謝都發局、更新處及住都中心同仁的努力。",
       "topicScores": {
-        "住宅": 0.99,
-        "生活": 0.72
+        "住宅": 0.98,
+        "生活": 0.78
       },
       "topics": [
         "住宅",
@@ -1118,163 +1097,164 @@
       "url": "https://www.instagram.com/p/DZuu5tdNyh4/"
     },
     {
-      "agendaRelevance": 0.42,
+      "agendaRelevance": 0.18,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "3aba5d2dfa1cc53f5eb85cb1d66dd891a30e9d1587d1eb4f1d2675349fa38973",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "fd21703a054450db944d5fe3ed17263bf9d559a173806e3e20d3bcf44d618a42",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZsC1HvtlQ0/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/2e1d9e7f3f69f7c13800.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "施政成果／行政進度",
-        "reason": "主要在敘述新加坡訪問、獲獎與國際城市交流成果。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-17T13:43:41+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為新加坡市政交流與獲獎行程紀錄，非回應他方觀點。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "三天精實的新加坡行程，臺北隊滿載而歸！\n\n這一趟旅程，除了領獎、市政交流，更重要的是透過這場國際盛會，與來自世界各地的老朋友、新朋友相聚。\n\n從城市治理到國際交流，我們透過面對面的對話，深化臺北與國際城市的友誼，也開展未來更多合作的可能性。\n\n臺北隊繼續向前、持續努力，讓世界看見臺灣、看見臺北。🌏",
       "topicScores": {
-        "兩岸外交": 0.97,
-        "生活": 0.61
+        "兩岸外交": 0.72,
+        "文化觀光": 0.5,
+        "生活": 0.35
       },
       "topics": [
         "兩岸外交",
+        "文化觀光",
         "生活"
       ],
       "url": "https://www.instagram.com/p/DZsC1HvtlQ0/"
     },
     {
-      "agendaRelevance": 0.38,
+      "agendaRelevance": 0.12,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "035e377a11aa66fd0514c4e9ce4d738f6a874e7509af730ec91ce1f663d7d8f3",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d451abfe85307c6c2e96da2dc4aaa4319bc6a14ca6e9b56fc7510dd183ef3d57",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZoDh3_zVMm/",
       "imageAspect": 0.5636,
       "imageUrl": "assets/feed-images/12d80397ba8e7cdf3e1b.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "施政成果／行政進度",
-        "reason": "內容是領取國際城市獎與對外交流的市政成果。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-16T00:00:12+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是受獎感言與市府團隊致謝，屬活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "榮耀屬於每一位市民朋友！\n\n昨天，我出席新加坡李光耀世界城市獎的頒獎典禮，正式領取特別獎獎座，代表臺北市接受這份殊榮。\n\n市政一棒接一棒，感謝市民朋友、歷屆市府團隊以及公私部門長久以來共同的努力，臺北隊會在這個基礎之上繼續努力，讓臺北不斷的進步，讓全世界看見臺灣、看見臺北。",
       "topicScores": {
-        "兩岸外交": 0.95,
-        "生活": 0.58
+        "兩岸外交": 0.52,
+        "文化觀光": 0.6,
+        "生活": 0.3
       },
       "topics": [
+        "文化觀光",
         "兩岸外交",
         "生活"
       ],
       "url": "https://www.instagram.com/p/DZoDh3_zVMm/"
     },
     {
-      "agendaRelevance": 0.4,
+      "agendaRelevance": 0.2,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d15f8fd9aac6f1dcf881cbde50eaeb755d898c097f303fa0113db645aa9e7370",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "23673509c2093a5042b4c3165f948abc6679a0766a111bab49b3c2a5cba9e40d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZkPjnHtp7z/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/5e5919f7e8bfb9eacc5b.webp",
       "keywords": [
-        "演唱會",
-        "經濟"
+        "演唱會"
       ],
-      "nature": {
-        "confidence": 0.94,
-        "label": "施政成果／行政進度",
-        "reason": "以獲獎訪新加坡、市政交流及場館經濟分享為主。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-14T12:31:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主軸為訪新加坡領獎與城市交流，非回應既有批評。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "臺北榮獲李光耀世界城市獎特別獎\n今晚，臺北隊出發訪問新加坡。🇸🇬\n\n臺北市很榮幸從全球各大城市的激烈競爭中脫穎而出，榮獲「2026李光耀世界城市獎-特別獎 」，這是臺灣第一次有城市獲得這項殊榮。\n\n感謝市民朋友、歷屆市府團隊，以及公私部門長期以來的付出，這是我們共同努力的成果。\n\n這一趟訪問新加坡，除了參與論壇分享臺北的市政成果，也將和許多國際城市領袖面對面交流、相互學習，並出席頒獎典禮，把這份被譽為「城市界諾貝爾獎」的殊榮帶回臺北。\n\n除此之外，我也率領臺北隊研考會、觀傳局、資訊局，把握機會和新加坡政府進行實質交流。例如參訪榜鵝數位園區，了解透過「開放數位平台(ODP)」將跨部門的交通、能源與物聯網數據有機整合的經驗；另外，也預計參訪新加坡國家體育場，分享大巨蛋經驗並交流國際級場館、演唱會經濟的成功模式。\n\n為期三天的行程很緊湊，除了代表臺北市接下李光耀城市獎的殊榮，還有國際市政交流等任務，我也期待能為臺北帶回更多的市政可能性。",
       "topicScores": {
-        "兩岸外交": 0.9,
-        "文化觀光": 0.66,
-        "經濟": 0.52,
-        "體育": 0.55
+        "兩岸外交": 0.78,
+        "文化觀光": 0.64,
+        "體育": 0.45
       },
       "topics": [
         "兩岸外交",
         "文化觀光",
-        "體育",
-        "經濟"
+        "體育"
       ],
       "url": "https://www.instagram.com/p/DZkPjnHtp7z/"
     },
     {
-      "agendaRelevance": 0.32,
+      "agendaRelevance": 0.22,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "acaf351b8a64ee7d262feda18e7269ed3c02825c92e87c8b2ac8f2fb07c29e38",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "0ddd383626295557004787ce5d307ea0b81cdc20e67471f3939cad115762bdcc",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZfMwYGtR-D/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/7086f7a33dc4ec9ba8a2.webp",
       "keywords": [
+        "觀光",
         "經濟",
-        "產業",
-        "觀光"
+        "產業"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "活動／行程",
-        "reason": "主要是出席咖啡節與城市交流，帶到產業與觀光推廣。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-12T13:32:28+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "討論咖啡節、農產品牌與觀光產業交流，屬主動宣傳活動。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-ig",
       "text": "在臺北市，咖啡店密度居全國之冠。走進街頭巷尾、城市角落，都有機會與獨具巧思、溫暖迷人的咖啡店相遇。\n\n早晨來一杯冰美式提神、下午一杯拿鐵續航，是許多人熟悉的日常儀式感。我自己也是咖啡的重度愛好者，最常喝的就是黑咖啡，越純粹，越能品嚐出咖啡原始的香氣與風味。\n\n臺灣平均每人每年飲用約190杯咖啡，咖啡產業的經濟規模更可望在2030年突破1,400億元，臺北不僅是重要的消費市場，更是推廣臺灣優質咖啡品牌的重要平台。\n\n很高興今天到南投，和許淑華縣長一起參加 #2026南投巧克力咖啡節。\n\n南投是臺灣重要的咖啡與巧克力產地，孕育出許多優質且具國際競爭力的品牌。透過臺北與南投的城市交流，讓更多人認識臺灣在地農產與特色品牌，也為觀光與產業發展創造更多機會。\n\n支持在地農產、支持臺灣品牌，一起品嚐臺灣好味道！",
       "topicScores": {
-        "文化觀光": 0.73,
-        "生活": 0.6,
-        "經濟": 0.76
+        "文化觀光": 0.66,
+        "生活": 0.45,
+        "經濟": 0.55
       },
       "topics": [
-        "經濟",
         "文化觀光",
+        "經濟",
         "生活"
       ],
       "url": "https://www.instagram.com/p/DZfMwYGtR-D/"
     },
     {
-      "agendaRelevance": 0.14,
+      "agendaRelevance": 0.64,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "809a657095f27f66b8bf624c0e438a0cfe21bba1f36c25f4a451891e01e64438",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e311e4e74379a7b58e1604decc35e54d99c29662c911c7d1665ab78966b1ec81",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Wr-GYZoGmOU",
       "imageAspect": 1.7872,
@@ -1282,55 +1262,53 @@
       "keywords": [
         "AI"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "標題為城市論壇活動，內容重在AI論壇舉辦與城市交流。",
-        "type": "event_activity"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "城市論壇聚焦AI發展與國際定位，屬主動政策議題宣示。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "2026 臺北國際城市論壇｜臺北：驅動全球AI的新引擎 TAIPEI: The Rise of a Global AI Power House ",
       "topicScores": {
-        "教育": 0.69,
-        "文化觀光": 0.71,
-        "經濟": 0.86
+        "兩岸外交": 0.52,
+        "經濟": 0.7
       },
       "topics": [
         "經濟",
-        "文化觀光",
-        "教育"
+        "兩岸外交"
       ],
       "url": "https://www.youtube.com/watch?v=Wr-GYZoGmOU"
     },
     {
-      "agendaRelevance": 0.04,
+      "agendaRelevance": 0.02,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "4f897b18b9a2f9c134d351cfc899e629dbe31b60f70feb9d60ad1bbcf2530dfd",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "0f7375de9cbaafa765d940f0b9d76687d553f0b79f41649a6eb99ed329fb3c86",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:mascdvQJCas",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/fc07e80a4d443b1b6e09.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.8,
-        "label": "個人／日常",
-        "reason": "北市府內KTV與新春唱歌，屬輕鬆日常與幕後分享。",
-        "type": "personal_content"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "北市府KTV春節活動紀錄，重點在趣味互動非政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "北市府內竟有KTV?! 新春K歌大會 Feat.臺北市副市長李四川",
       "topicScores": {
         "文化觀光": 0.52,
-        "生活": 0.84
+        "生活": 0.88
       },
       "topics": [
         "生活",
@@ -1339,114 +1317,114 @@
       "url": "https://www.youtube.com/watch?v=mascdvQJCas"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.02,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "cb7a1f54bbb2f598dae58b7bd22fd05eef93a7787328b5ba6ba7c6860bb1a130",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "3de042498c6f72814a460e05b49ec7eb2943aa543030d3afd0e9be0d3904c841",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:esCjSDjv5Do",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/a4cf2c6160eb0e033179.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.72,
-        "label": "競選／動員",
-        "reason": "新年拜年問候為主，屬節慶性互動與形象經營。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "春節拜年問候，屬一般節慶互動，無公共政策內容。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "臺北隊來拜年",
       "topicScores": {
-        "生活": 0.86,
-        "競選": 0.65
+        "生活": 0.99
       },
       "topics": [
-        "生活",
-        "競選"
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=esCjSDjv5Do"
     },
     {
-      "agendaRelevance": 0.02,
+      "agendaRelevance": 0.05,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "f73cc715796963ee8869ef1b01078c330c6b4dc73ac4f165b3b982a617c0445c",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "161374a44ed98905c7abf2e4eddc7803c051d440d01e66ae4233ccaefe44e6f1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:sChQCZ7gQ7I",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/ef718745d0fe3bf3f94e.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.96,
-        "label": "個人／日常",
-        "reason": "春聯開箱與熊讚聯名展示，屬節慶個人／宣傳內容。",
-        "type": "personal_content"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "春聯與吉祥物開箱，偏節慶宣傳與城市形象展示。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "2026春聯開箱｜丙午馬年 #今馬熊讚！feat. 熊讚",
       "topicScores": {
-        "生活": 0.98
+        "文化觀光": 0.9,
+        "生活": 0.7
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=sChQCZ7gQ7I"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.22,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "52a73652584d1ab1654a4701abec1a67d2071e4f395235d83739b43253ea846d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "621f84eff1edda32daa0854046be2161c58956c4ae35c7054c87168bb3afe9b5",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:waGi3MHJ6-4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8f90a5e83946acacb347.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.86,
-        "label": "競選／動員",
-        "reason": "標語式口號，呈現城市願景與競選宣傳語氣。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "標語式宣傳臺北國際形象，屬城市推廣而非具體政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "臺北全方位｜走向世界，未來就在眼前",
       "topicScores": {
-        "兩岸外交": 0.44,
-        "競選": 0.91
+        "兩岸外交": 0.78,
+        "文化觀光": 0.67
       },
       "topics": [
-        "競選",
-        "兩岸外交"
+        "兩岸外交",
+        "文化觀光"
       ],
       "url": "https://www.youtube.com/watch?v=waGi3MHJ6-4"
     },
     {
-      "agendaRelevance": 0.75,
+      "agendaRelevance": 0.78,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e0ed536526712e4b607d6d9978d052090bdf68c7cdfc34bb10e5bea775351d54",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d72fab1fbe3b003e5a7b7418708f18fa59a4445a289a6593c8ccf909a14438d1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:dqdDHhS9hYY",
       "imageAspect": 1.7872,
@@ -1454,18 +1432,18 @@
       "keywords": [
         "議會"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "市長赴議會進行專案報告，屬施政進度與議會報告。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "市長赴議會專案報告，屬施政說明與議會監督事項。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "1150515蔣萬安市長赴議會專案報告",
       "topicScores": {
-        "議會監督": 0.98
+        "議會監督": 0.99
       },
       "topics": [
         "議會監督"
@@ -1473,14 +1451,14 @@
       "url": "https://www.youtube.com/watch?v=dqdDHhS9hYY"
     },
     {
-      "agendaRelevance": 0.75,
+      "agendaRelevance": 0.82,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "738af24f8446efcfe291e8ad26dc2cf5203b42e289a9b78d23ffe23ddd9d53f6",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "836f7c70b9c247c479feae1184b9b03c35272be3c8cc65ebaa8a66fe87bc456d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:7EDlRybM0vY",
       "imageAspect": 1.7872,
@@ -1488,18 +1466,18 @@
       "keywords": [
         "議會"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "明確為市長赴議會施政報告，屬行政進度。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "市長赴議會施政報告，明確屬施政與監督溝通。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "蔣萬安市長赴議會施政報告1150409",
       "topicScores": {
-        "議會監督": 0.98
+        "議會監督": 0.99
       },
       "topics": [
         "議會監督"
@@ -1507,32 +1485,32 @@
       "url": "https://www.youtube.com/watch?v=7EDlRybM0vY"
     },
     {
-      "agendaRelevance": 0.62,
+      "agendaRelevance": 0.7,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "419904671f083bfcd0125517c92008d2b07f19a990b2eeba6063e2fc59855703",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ba39e24de36773a8deba675304b049309ac417b27dcc52a6ff24b5fe0c26b169",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:2j_kLr_sogQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/a7f097b432f946b02318.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.91,
-        "label": "施政成果／行政進度",
-        "reason": "視察北士科，重點在產業開發與市政推動。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "視察北士科，重點在產業開發與土地建設進度。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "1141217蔣萬安市長視察北士科",
       "topicScores": {
-        "住宅": 0.63,
-        "經濟": 0.78
+        "住宅": 0.64,
+        "經濟": 0.77
       },
       "topics": [
         "經濟",
@@ -1541,14 +1519,14 @@
       "url": "https://www.youtube.com/watch?v=2j_kLr_sogQ"
     },
     {
-      "agendaRelevance": 0.75,
+      "agendaRelevance": 0.82,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "3720a51b0d6f8ebecddb8a8afc16b75401ad378b289489623fec52707fea9d59",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2e40f6fc5ec8158309f6b063ffde8f8b310a9253c337c8aa13d369a711884553",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Zu6aj9askO0",
       "imageAspect": 1.7872,
@@ -1556,18 +1534,18 @@
       "keywords": [
         "議會"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "市長赴議會施政報告，屬例行市政進度。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "市長赴議會施政報告，屬例行施政與議會監督。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "蔣萬安市長赴議會施政報告 1141009",
       "topicScores": {
-        "議會監督": 0.98
+        "議會監督": 0.99
       },
       "topics": [
         "議會監督"
@@ -1575,14 +1553,14 @@
       "url": "https://www.youtube.com/watch?v=Zu6aj9askO0"
     },
     {
-      "agendaRelevance": 0.75,
+      "agendaRelevance": 0.78,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "5761ab077f34b74dfcd58ad250f9fcb4fc3d8425fb216eae3500945366e5a8ab",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b563a8866eacfda838d297611483f2feb6a8e4b29306b9dd06b410b09dd223b0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:OkzaDa0nhaM",
       "imageAspect": 1.7872,
@@ -1590,18 +1568,18 @@
       "keywords": [
         "議會"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "施政成果／行政進度",
-        "reason": "市長赴議會專案報告，屬行政進度與監督。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "市長赴議會專案報告，主要是施政說明非回應他人。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "1140515蔣萬安市長赴議會專案報告",
       "topicScores": {
-        "議會監督": 0.98
+        "議會監督": 0.99
       },
       "topics": [
         "議會監督"
@@ -1609,27 +1587,27 @@
       "url": "https://www.youtube.com/watch?v=OkzaDa0nhaM"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.03,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ce184aca373afffe262f8c7c3f205882a15497b0d63de244502d015e628ca626",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "9fcebe14227c4cc547d87fd8cf53666b48fafd95b95788f2ceec2e4af39a9306",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:bXx6WqHgIkE",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/e537d3e531cf2e9f5d9c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.7,
-        "label": "資訊公告／服務提醒",
-        "reason": "以飲品宣傳臺北形象，屬輕量生活／宣傳內容。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "特調飲品宣傳，屬生活行銷內容，無公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "來一杯特調臺北青🥤臺北尚青",
       "topicScores": {
@@ -1641,46 +1619,48 @@
       "url": "https://www.youtube.com/shorts/bXx6WqHgIkE"
     },
     {
-      "agendaRelevance": 0.06,
+      "agendaRelevance": 0.04,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "586f3bd5b1ddb05f69d9af6a9133b28812ac58eea69fd7b8a658bc08c1e91fa6",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b7fc3a0eb151f4c7616489f14d34f5d04e8aefd538eaaee5631b2423a5a294c4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:jcM_BjZYXco",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/68b28de6eebec65a9233.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.74,
-        "label": "資訊公告／服務提醒",
-        "reason": "宣告著色斗方兌換資訊，屬活動提醒。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "著色斗方兌換活動宣傳，屬節慶文化活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "用Olie的幕後花絮提醒大家🎞️#蛇馬龍鶴 著色斗方 今天開始兌換囉！",
       "topicScores": {
-        "生活": 0.9
+        "文化觀光": 0.86,
+        "生活": 0.72
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/jcM_BjZYXco"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.33,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "182c78eadc08b4ebc48cdcd31398244f9066b6ca8d1d8b2035c8a70bee8f21e8",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e87cf2ee5023dec7873770d13987b436fe3404324c8a2ebbc8707db2e280a430",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:81QpTLCxYmM",
       "imageAspect": 0.6661,
@@ -1688,35 +1668,35 @@
       "keywords": [
         "運動"
       ],
-      "nature": {
-        "confidence": 0.72,
-        "label": "立場表態",
-        "reason": "強調從小培養運動好手，屬價值倡議。",
-        "type": "position_statement"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主張從小培養運動好手，屬體育與教育宣導。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "最棒的運動好手，從小培養🏃🏽",
       "topicScores": {
-        "教育": 0.71,
-        "體育": 0.74
+        "教育": 0.82,
+        "體育": 0.8
       },
       "topics": [
-        "體育",
-        "教育"
+        "教育",
+        "體育"
       ],
       "url": "https://www.youtube.com/shorts/81QpTLCxYmM"
     },
     {
-      "agendaRelevance": 0.05,
+      "agendaRelevance": 0.2,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "bf42bbb0eaaf6efc7e788e6f395b0731b4ebbfae3ce1596a8cf2a5808b02dfc8",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "11f14faba475a64dae5a6f6a024152b3312a4baa48446d0de9ea0d82ec907ebb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:juX8bKb-ris",
       "imageAspect": 0.6661,
@@ -1724,14 +1704,14 @@
       "keywords": [
         "颱風"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "資訊公告／服務提醒",
-        "reason": "颱風防颱整備通知，屬防災提醒。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "颱風防颱整備公告，屬災害應變資訊發布。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "#凱米颱風 防颱整備",
       "topicScores": {
@@ -1743,36 +1723,36 @@
       "url": "https://www.youtube.com/shorts/juX8bKb-ris"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.08,
       "candidateId": "chiang-wanan",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "bfcb441b702c3557def8eff3ac9b853ae3067a355114095a56c111345916a5cc",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "77d0a4ed853f047ace8b62d42a7799a3230b6a32c96d484842d48ea264c2a3b9",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:n4mw6eEvH5k",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/cffa5ff291c8e185eacf.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.71,
-        "label": "資訊公告／服務提醒",
-        "reason": "宣布擔任拒菸大使，屬衛教倡導與宣導。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "拒菸大使歡迎活動，偏宣導與活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "chiang-wa-yt",
       "text": "歡迎邰哥擔任臺北市拒菸大使👏",
       "topicScores": {
-        "生活": 0.48,
+        "生活": 0.62,
         "社福": 0.52
       },
       "topics": [
-        "社福",
-        "生活"
+        "生活",
+        "社福"
       ],
       "url": "https://www.youtube.com/shorts/n4mw6eEvH5k"
     }

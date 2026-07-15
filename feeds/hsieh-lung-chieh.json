@@ -2,116 +2,121 @@
   "count": 79,
   "posts": [
     {
-      "agendaRelevance": 0.65,
+      "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1cf8b87b67f715f57cf9ab85b682245e0b86628fda7f0b9cb60b175006b46cd3",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "aac0f47b4d6e41bee5e9356de7f0fd8aa0371c06a5572083f0cf6f29e8b786f6",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Dax1XA4ygMk/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/352ae44a30860da8764a.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "批評致癌油事件處理不當，要求官員道歉究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-14T15:40:13+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以毒油事件抨擊官員，重點在食安究責與道歉。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "就是有這種官員！致癌油爆發至今...連個道歉都不願意給台灣人 #謝龍介 #卓榮泰 #民進黨",
       "topicScores": {
-        "議會監督": 0.81,
-        "醫療": 0.92
+        "經濟": 0.69,
+        "醫療": 0.95
       },
       "topics": [
         "醫療",
-        "議會監督"
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/Dax1XA4ygMk/"
     },
     {
-      "agendaRelevance": 0.55,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "7d75864e6bb8684c3364a9be6b73600b8e686809660cf3636b85fcf1f739155b",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "90af357de447fb050940c8c198fd9f33c5a490d778b1b5c7eed754dc3c5962e9",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaxmAyTD_Of",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/42aedc30228287785444.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "延續批評毒油事件與官員未道歉，屬究責發言。",
-        "type": "criticism_accountability"
-      },
       "platform": "threads",
       "postedAt": "2026-07-14T13:27:49+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅批評官員不願道歉，屬食安事件情緒性究責。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:就是有這種官員！致癌油爆發至今...連個道歉都不願意給台灣人",
       "topicScores": {
-        "議會監督": 0.84,
-        "醫療": 0.88
+        "生活": 0.6,
+        "醫療": 0.91
       },
       "topics": [
         "醫療",
-        "議會監督"
+        "生活"
       ],
       "url": "https://www.threads.com/t/DaxmAyTD_Of"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.4,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0e075e03cb134c2fca459c64a99ef9dc12d8cdbde04a5c0d5ee78f954f5da66f",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "d3adcb413d07322132a422b4473df87f6bc98d8db41c35562cefa603ce3b4e68",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaxN0zUD9oO",
       "imageAspect": null,
       "imageUrl": null,
-      "keywords": [],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "針對毒油事件要求中央道歉與負責，重點在究責批評。",
-        "type": "criticism_accountability"
-      },
+      "keywords": [
+        "質詢",
+        "立法院"
+      ],
       "platform": "threads",
       "postedAt": "2026-07-14T09:54:32+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "立法院質詢要求為毒油事件道歉，屬食安究責非回應。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:一句「失禮」，真的有這麼困難嗎？\n\n今天在立法院質詢，我只想問卓榮泰院長一句話：「這次毒油事件，讓全台灣人民吃得人心惶惶，你願不願意向台灣人民說一句『失禮』？」\n\n結果，整場質詢下來，我感受不到行政院有誠心檢討的態度，更看不出卓院長有向人民道歉的誠意。\n\n嘴巴一直說「深感遺憾」、「深刻檢討反省」，卻始終不願意說一句「失禮」。反倒一路跟我鬥嘴鼓、拚輸贏、玩文字遊戲，還一直把責任往地方推。\n\n我實在看不懂，一位行政院長，遇到這麼大的食安危機，第一時間想到的不是向人民交代、向人民道歉，而是急著替自己辯解、替政府解釋，甚至還讓人感覺是在替業者緩頰。\n\n這種態度，叫台灣人民怎麼吞得下去？\n\n2014年強冠黑心油事件，全國要求行政院長負責、要求主管機關負責；如今換民進黨執政，標準就不一樣了嗎？業者刻意隱匿、延遲通報，讓問題油流進市場，多少家庭、多少孩子早就吃下肚，人民等到今天，等到的不是一句道歉，而是一份四平八穩的報告、一場沒完沒了的鬥嘴。\n\n代誌發生，就勇敢面對；做錯事情，就勇敢認錯。真的有那麼困難嗎？\n\n台灣人很厚道，也很包容，但厚道不是讓政府敷衍，包容不是讓官員沒有肩膀。",
       "topicScores": {
-        "生活": 0.78,
-        "醫療": 0.12
+        "生活": 0.63,
+        "議會監督": 0.82,
+        "醫療": 0.89
       },
       "topics": [
-        "生活",
-        "醫療"
+        "醫療",
+        "議會監督",
+        "生活"
       ],
       "url": "https://www.threads.com/t/DaxN0zUD9oO"
     },
     {
-      "agendaRelevance": 0.68,
+      "agendaRelevance": 0.3,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "52df90369eeea9932be44dfbcfde355bf543829de5e0c257f5a6cc501cb90446",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "31e7510be95559ce3a873b66ebb6d73f7dedd582681351ca27c478da3848cb21",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaxNfNiydn8/",
       "imageAspect": 1.0,
@@ -120,35 +125,37 @@
         "質詢",
         "立法院"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "批評／究責",
-        "reason": "質詢食安危機與行政院態度，核心是批評究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-14T09:51:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "在立院質詢毒油事件並要求行政院道歉與負責。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "一句「失禮」，真的有這麼困難嗎？\n\n今天在立法院質詢，我只想問卓榮泰院長一句話：「這次毒油事件，讓全台灣人民吃得人心惶惶，你願不願意向台灣人民說一句『失禮』？」\n\n結果，整場質詢下來，我感受不到行政院有誠心檢討的態度，更看不出卓院長有向人民道歉的誠意。\n\n嘴巴一直說「深感遺憾」、「深刻檢討反省」，卻始終不願意說一句「失禮」。反倒一路跟我鬥嘴鼓、拚輸贏、玩文字遊戲，還一直把責任往地方推。\n\n我實在看不懂，一位行政院長，遇到這麼大的食安危機，第一時間想到的不是向人民交代、向人民道歉，而是急著替自己辯解、替政府解釋，甚至還讓人感覺是在替業者緩頰。\n\n這種態度，叫台灣人民怎麼吞得下去？\n\n2014年強冠黑心油事件，全國要求行政院長負責、要求主管機關負責；如今換民進黨執政，標準就不一樣了嗎？業者刻意隱匿、延遲通報，讓問題油流進市場，多少家庭、多少孩子早就吃下肚，人民等到今天，等到的不是一句道歉，而是一份四平八穩的報告、一場沒完沒了的鬥嘴。\n\n代誌發生，就勇敢面對；做錯事情，就勇敢認錯。真的有那麼困難嗎？\n\n台灣人很厚道，也很包容，但厚道不是讓政府敷衍，包容不是讓官員沒有肩膀。\n\n做官領的是人民薪水，就要替人民負責。不是遇到事情，就是推、推、推，推給地方、推給制度、推給別人，連一句「失禮」都說不出口，人民又怎麼相信，你們真的把人民健康放在第一位？",
       "topicScores": {
-        "議會監督": 0.93,
-        "醫療": 0.95
+        "經濟": 0.15,
+        "議會監督": 0.79,
+        "醫療": 0.92
       },
       "topics": [
         "醫療",
-        "議會監督"
+        "議會監督",
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DaxNfNiydn8/"
     },
     {
-      "agendaRelevance": 0.42,
+      "agendaRelevance": 0.3,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b35614e463c4de011a679241d0dc9a0416b002dc00aa80f6447767ab6f33843f",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "ba5c1b00577df61926f195cdf782ab954f0a6b29b42c6f6e69e0b604efcdf455",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1604577601023822",
       "imageAspect": 1.0,
@@ -157,37 +164,37 @@
         "質詢",
         "立法院"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "批評／究責",
-        "reason": "針對毒油食安事件質詢院長，重點在究責與道歉。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-14T09:50:31.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "在立院質詢毒油事件並要求行政院道歉與負責。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "一句「失禮」，真的有這麼困難嗎？\n\n今天在立法院質詢，我只想問卓榮泰院長一句話：「這次毒油事件，讓全台灣人民吃得人心惶惶，你願不願意向台灣人民說一句『失禮』？」\n\n結果，整場質詢下來，我感受不到行政院有誠心檢討的態度，更看不出卓院長有向人民道歉的誠意。\n\n嘴巴一直說「深感遺憾」、「深刻檢討反省」，卻始終不願意說一句「失禮」。反倒一路跟我鬥嘴鼓、拚輸贏、玩文字遊戲，還一直把責任往地方推。\n\n我實在看不懂，一位行政院長，遇到這麼大的食安危機，第一時間想到的不是向人民交代、向人民道歉，而是急著替自己辯解、替政府解釋，甚至還讓人感覺是在替業者緩頰。\n\n這種態度，叫台灣人民怎麼吞得下去？\n\n2014年強冠黑心油事件，全國要求行政院長負責、要求主管機關負責；如今換民進黨執政，標準就不一樣了嗎？業者刻意隱匿、延遲通報，讓問題油流進市場，多少家庭、多少孩子早就吃下肚，人民等到今天，等到的不是一句道歉，而是一份四平八穩的報告、一場沒完沒了的鬥嘴。\n\n代誌發生，就勇敢面對；做錯事情，就勇敢認錯。真的有那麼困難嗎？\n\n台灣人很厚道，也很包容，但厚道不是讓政府敷衍，包容不是讓官員沒有肩膀。\n\n做官領的是人民薪水，就要替人民負責。不是遇到事情，就是推、推、推，推給地方、推給制度、推給別人，連一句「失禮」都說不出口，人民又怎麼相信，你們真的把人民健康放在第一位？",
       "topicScores": {
-        "社福": 0.94,
-        "議會監督": 0.88,
-        "醫療": 0.9
+        "經濟": 0.15,
+        "議會監督": 0.79,
+        "醫療": 0.92
       },
       "topics": [
-        "社福",
         "醫療",
-        "議會監督"
+        "議會監督",
+        "經濟"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid02zHRfno3BDZyTcGfeZR5m7jzMPWZVJTyK2BsiTzqFeNnDHePEzWD2KnpoCYzxeVqCl"
     },
     {
-      "agendaRelevance": 0.46,
+      "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9932117dfb4447e398ae2234e6fca02ff5aa817e8c31c5b910f2d740ef8dedcc",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "90e63cc87941f7d17025e4e10a917e766369697040e05fed63bc84064c107067",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/Daw3CkBj2Iy",
       "imageAspect": 1.7778,
@@ -195,37 +202,35 @@
       "keywords": [
         "後援會"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "競選／動員",
-        "reason": "描述海外後援會成立與支持者相聚，屬選舉動員活動。",
-        "type": "campaign_mobilization"
-      },
       "platform": "threads",
       "postedAt": "2026-07-14T06:35:26+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "內容為泰國後援會成立與僑胞致謝，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:7月12日這天，龍介在泰國春武里府的後援會正式成立。在泰國能和這麼多台商朋友、僑胞鄉親作伙相聚，真的非常開心，也誠摯感謝大家熱情支持。\n\n人在異鄉，心繫家鄉。看到這麼多鄉親，不管離開台灣多久，依然揮著中華民國國旗、關心台灣、惦記台南，那份熱情、那份情感，真的讓我非常感動。\n\n我要誠摯感謝所有台商朋友、僑胞鄉親，以及每一位辛苦籌辦活動的夥伴。大家的熱情支持，我都放在心裡；大家對台南、對台灣的期待，龍介一定全力以赴，不辜負每一份信任，也不辜負每一份期待。\n\n龍介一路走來，沒有什麼訣竅，就是一步一腳印、有情有義，珍惜每一位支持我的朋友，也珍惜每一次為鄉親服務的機會。\n\n未來，我會繼續替台南打拚、替人民發聲，也期待和所有海外鄉親攜手同行，一起守護我們共同珍惜的民主、自由與中華民國，讓台南更好、讓台灣更好。\n\n再次謝謝泰國的每一位好朋友，大家的鼓勵，龍介一定銘記在心！\n\n圖片授權來源：史先生提供",
       "topicScores": {
-        "兩岸外交": 0.79,
-        "生活": 0.41,
-        "競選": 0.72
+        "兩岸外交": 0.58,
+        "競選": 0.74
       },
       "topics": [
-        "兩岸外交",
         "競選",
-        "生活"
+        "兩岸外交"
       ],
       "url": "https://www.threads.com/t/Daw3CkBj2Iy"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.2,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "753d52f41d4a8f20805f329f804d175b853443af03b9adaed75ab2cea847e671",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5cce281feac94a39eaa18b21eabaf4aaaf1be3085f3a9cd3ef1b1a7e231928f2",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Daw2jbSkrWd/",
       "imageAspect": 1.7778,
@@ -233,20 +238,20 @@
       "keywords": [
         "後援會"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "競選／動員",
-        "reason": "海外後援會成立與支持者動員，主要是競選活動。",
-        "type": "campaign_mobilization"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-14T06:31:12+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是泰國後援會成立與海外造勢活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "7月12日這天，龍介在泰國春武里府的後援會正式成立。在泰國能和這麼多台商朋友、僑胞鄉親作伙相聚，真的非常開心，也誠摯感謝大家熱情支持。\n\n人在異鄉，心繫家鄉。看到這麼多鄉親，不管離開台灣多久，依然揮著中華民國國旗、關心台灣、惦記台南，那份熱情、那份情感，真的讓我非常感動。\n\n我要誠摯感謝所有台商朋友、僑胞鄉親，以及每一位辛苦籌辦活動的夥伴。大家的熱情支持，我都放在心裡；大家對台南、對台灣的期待，龍介一定全力以赴，不辜負每一份信任，也不辜負每一份期待。\n\n龍介一路走來，沒有什麼訣竅，就是一步一腳印、有情有義，珍惜每一位支持我的朋友，也珍惜每一次為鄉親服務的機會。\n\n未來，我會繼續替台南打拚、替人民發聲，也期待和所有海外鄉親攜手同行，一起守護我們共同珍惜的民主、自由與中華民國，讓台南更好、讓台灣更好。\n\n再次謝謝泰國的每一位好朋友，大家的鼓勵，龍介一定銘記在心！\n\n圖片授權來源：史先生提供",
       "topicScores": {
-        "兩岸外交": 0.7,
-        "生活": 0.56,
-        "競選": 0.83
+        "兩岸外交": 0.76,
+        "生活": 0.57,
+        "競選": 0.95
       },
       "topics": [
         "競選",
@@ -256,14 +261,14 @@
       "url": "https://www.instagram.com/p/Daw2jbSkrWd/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.11,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0b5c4a623dae2c4a15844d48104c3136ad1d0c11a2eadc6357b6853a90791f77",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "893699ceb0eaafb35618e42c87eba28f365884701d00cde805ab32d7f3fa6dc2",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1604471924367723",
       "imageAspect": 1.7771,
@@ -271,54 +276,54 @@
       "keywords": [
         "後援會"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "活動／行程",
-        "reason": "主要是泰國後援會成立與海外支持活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-14T06:29:26.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "海外後援會成立與感謝支持，屬競選動員活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "7月12日這天，龍介在泰國春武里府的後援會正式成立。在泰國能和這麼多台商朋友、僑胞鄉親作伙相聚，真的非常開心，也誠摯感謝大家熱情支持。\n\n人在異鄉，心繫家鄉。看到這麼多鄉親，不管離開台灣多久，依然揮著中華民國國旗、關心台灣、惦記台南，那份熱情、那份情感，真的讓我非常感動。\n\n我要誠摯感謝所有台商朋友、僑胞鄉親，以及每一位辛苦籌辦活動的夥伴。大家的熱情支持，我都放在心裡；大家對台南、對台灣的期待，龍介一定全力以赴，不辜負每一份信任，也不辜負每一份期待。\n\n龍介一路走來，沒有什麼訣竅，就是一步一腳印、有情有義，珍惜每一位支持我的朋友，也珍惜每一次為鄉親服務的機會。\n\n未來，我會繼續替台南打拚、替人民發聲，也期待和所有海外鄉親攜手同行，一起守護我們共同珍惜的民主、自由與中華民國，讓台南更好、讓台灣更好。\n\n再次謝謝泰國的每一位好朋友，大家的鼓勵，龍介一定銘記在心！\n\n圖片授權來源：史先生提供",
       "topicScores": {
-        "兩岸外交": 0.86,
-        "生活": 0.52,
-        "競選": 0.78
+        "兩岸外交": 0.58,
+        "生活": 0.36,
+        "競選": 0.77
       },
       "topics": [
-        "兩岸外交",
         "競選",
+        "兩岸外交",
         "生活"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid02zDAdrtby1d69CnEf3pZWXx1VUxDXs3g3C97kxQFTphe2DRQFkxMh4tne2HU4BSvxl"
     },
     {
-      "agendaRelevance": 0.03,
+      "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "25a9684a974f1b887f4b3422460516c2814df0322eec385aec34e1b66ca688ad",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5334f6d41e282e470bbb76ccd0f269a62775a4ca8120a0c8adc07bc503f18dec",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DascfwzyAlk/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/8d449205bbeb9a9c1c71.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.93,
-        "label": "個人／日常",
-        "reason": "僅為情緒性發言，沒有明確公共議題。",
-        "type": "personal_content"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-12T13:26:49+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅為抽象感嘆與標註人物，無公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "做人要將心比心！現在的功利社會...人情越來越淡薄 #謝龍介",
       "topicScores": {
-        "生活": 0.98
+        "生活": 0.95
       },
       "topics": [
         "生活"
@@ -326,31 +331,31 @@
       "url": "https://www.instagram.com/p/DascfwzyAlk/"
     },
     {
-      "agendaRelevance": 0.01,
+      "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "6da9d8c27fc094205ba3ce1822596e4cd4dcda2677102b280e011311d447e504",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "dd735431d12aaa6f3506147aa165340fafd5d592e3f641303cd9a2aa67c44f1f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DasbjVQjzfq",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/2b484a1aacad39eddb80.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "個人／日常",
-        "reason": "僅表達對功利社會與人情淡薄的感慨，無公共議題。",
-        "type": "personal_content"
-      },
       "platform": "threads",
       "postedAt": "2026-07-12T13:18:50+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "抒發做人與人情變淡的感慨，屬心情貼文。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:做人要將心比心！現在的功利社會...人情越來越淡薄",
       "topicScores": {
-        "生活": 0.98
+        "生活": 0.97
       },
       "topics": [
         "生活"
@@ -361,28 +366,28 @@
       "agendaRelevance": 0.01,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "22c2d46a055fc19f2f6ffb277354064b0641c7e5e76212d4b3cbed1726c3e04a",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "22ccb786f1f9465b03e46ef5456ccbc6f50d604383be0888d9c37226752480ca",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1603152451166337",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/b8e7f39083097d7df0b1.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.99,
-        "label": "個人／日常",
-        "reason": "僅為感嘆人情淡薄的日常感想，無公共議題。",
-        "type": "personal_content"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-12T13:10:02.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "純抒發人情淡薄的感想，無公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "做人要將心比心！現在的功利社會...人情越來越淡薄",
       "topicScores": {
-        "生活": 0.98
+        "生活": 0.99
       },
       "topics": [
         "生活"
@@ -393,93 +398,97 @@
       "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "60f0fa3c3a6234017ad1e6ce07173ed7b98558501fb2ec87c6ea81d4655b1fb5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d10a19a12278fe9f95d2570e0031386e0795a0ed991b204ef88965738c85c27f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DamkVNiFHYW",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "資訊公告／服務提醒",
-        "reason": "僅公告直播暫停並提醒防颱，屬一般通知。",
-        "type": "public_information"
-      },
       "platform": "threads",
       "postedAt": "2026-07-10T06:39:33+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅宣布直播暫停並提醒防颱，無具體公共政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:今晚龍介直播暫停一次！請大家注意防颱⚠️",
       "topicScores": {
-        "生活": 0.92
+        "生活": 0.92,
+        "防災": 0.68
       },
       "topics": [
-        "生活"
+        "生活",
+        "防災"
       ],
       "url": "https://www.threads.com/t/DamkVNiFHYW"
     },
     {
-      "agendaRelevance": 0.03,
+      "agendaRelevance": 0.01,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e48c7fca7411ab569c53869910edf216dbb6258f3f288e22948545b1d18bd0d6",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "13457f5c041d1148a518a3aaf8c2c11d505d1bdbca4e7060154898133297bf79",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1601353164679599",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
-      "nature": {
-        "confidence": 0.72,
-        "label": "資訊公告／服務提醒",
-        "reason": "僅通知直播暫停並提醒防颱，屬一般提醒。",
-        "type": "public_information"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-10T06:35:50.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅公告直播暫停並提醒防颱，無政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "今晚龍介直播暫停一次\n請大家注意防颱⚠️",
       "topicScores": {
-        "生活": 0.98
+        "生活": 0.98,
+        "防災": 0.72
       },
       "topics": [
-        "生活"
+        "生活",
+        "防災"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid0LWLskBmhFS1B2dNqxZA3vcV89Y6s5oDtsS6YxcHn9ih4XLBn3iiXXPfRMfydJoM9l"
     },
     {
-      "agendaRelevance": 0.35,
+      "agendaRelevance": 0.56,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c076a59bf5680677b8242a6559d05f9094e26de2f9559c6ca7ddf88b287ae900",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "13f72f6c9ef98e3e74a26aa4c504ff1332ab9e49cedd41b7636b9aba4e784a91",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DamCIEKyNDj/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/eb151460bc06906b2647.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "反映路面水溝蓋致騎車摔倒，並要求限期改善。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-10T01:41:16+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "重述民眾陳情與會勘改善，並非回應他方觀點。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
-        "交通": 0.86,
-        "生活": 0.42
+        "交通": 0.94,
+        "生活": 0.67
       },
       "topics": [
         "交通",
@@ -488,68 +497,66 @@
       "url": "https://www.instagram.com/p/DamCIEKyNDj/"
     },
     {
-      "agendaRelevance": 0.42,
+      "agendaRelevance": 0.56,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "3904904a3e563467b241a01bfd4451a321711b3a6af7392951769a262264cf1f",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "805e3346ab5e05c8f974d55e5defb10e3b7577a42acffadf5944068f7e5ff94a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1601197178028531",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/de39ff517be89f718c30.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "反映路面水溝蓋致摔車並要求改善，屬民怨究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-10T01:34:40.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "只是轉述水溝蓋摔車陳情與會勘結果，屬民生交通議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
-        "交通": 0.72,
-        "治安": 0.38,
-        "生活": 0.55
+        "交通": 0.94,
+        "生活": 0.67
       },
       "topics": [
         "交通",
-        "生活",
-        "治安"
+        "生活"
       ],
       "url": "https://www.facebook.com/reel/2264686147667456/"
     },
     {
-      "agendaRelevance": 0.32,
+      "agendaRelevance": 0.59,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "44c4e676a76b30562064cf1269d75b27fe8b860d1bc68bf514447ebf687afc9d",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "d11f05ddc4318a15d3b37015826fb84e90060c1ab190b4f225ebacfcbbfdb80b",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DamA53DDwN2",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/88751a498bfb540d4d06.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.76,
-        "label": "施政成果／行政進度",
-        "reason": "回應水溝蓋致摔車陳情並要求改善，屬現場會勘處理。",
-        "type": "administrative_update"
-      },
       "platform": "threads",
       "postedAt": "2026-07-10T01:30:42+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動轉述網友陳情水溝蓋害騎士摔倒，屬地方交通維修問題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:網友陳情：台南崑山科大附近「水溝蓋」讓很多人騎車都摔倒...林燕祝議員已現場會勘要求限期改善",
       "topicScores": {
-        "交通": 0.9,
-        "生活": 0.55
+        "交通": 0.94,
+        "生活": 0.7
       },
       "topics": [
         "交通",
@@ -558,64 +565,66 @@
       "url": "https://www.threads.com/t/DamA53DDwN2"
     },
     {
-      "agendaRelevance": 0.06,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "5f83a31019fff0d31e1bf123f75caf52985c05d5693bb6253515026c78bd549d",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "678f21abf24643075ef6cdca71348a8b3e54ae8c48dffa5a38fb38ba6b506a0f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1600609431420639",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/a21342a76e47fe36b3cb.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "立場表態",
-        "reason": "僅表達支持防颱作為，未提出具體政策內容。",
-        "type": "position_statement"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-09T08:38:09.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "單純呼籲蔣萬安防颱警戒，屬災防提醒非回應他人。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "支持蔣萬安防颱上緊發條",
       "topicScores": {
-        "防災": 0.89
+        "生活": 0.23,
+        "防災": 0.91
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
       "url": "https://www.facebook.com/reel/2586923745075025/"
     },
     {
-      "agendaRelevance": 0.03,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8e3f0afb0bfda549c58bcbf377c635511162e2f0960976a5a33a2014661c9751",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "cb4f64b36cc8cee75bac000f8dbf0b892fe95997c31ac49a8191e385cce37b1a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DakM69KnVWz",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/7b1bba74c681afd508ae.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "立場表態",
-        "reason": "僅表態支持防颱作為，未提出具體政策。",
-        "type": "position_statement"
-      },
       "platform": "threads",
       "postedAt": "2026-07-09T08:36:33+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "單純呼籲蔣萬安防颱警戒，屬災防提醒非回應他人。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:支持蔣萬安防颱上緊發條",
       "topicScores": {
-        "生活": 0.6,
-        "防災": 0.98
+        "生活": 0.23,
+        "防災": 0.91
       },
       "topics": [
         "防災",
@@ -624,38 +633,36 @@
       "url": "https://www.threads.com/t/DakM69KnVWz"
     },
     {
-      "agendaRelevance": 0.06,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "692d24bc3c278378ff44efa3482a54f0a64c99586adbe72b4298fc7a74c648cd",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "4fde1b511966a666eb2c0ac06d06c598cf1dfca94d43d296486f16d5af7c81a4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DakM0zuShY2/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/1eaebf57c69e6aeee47d.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.82,
-        "label": "立場表態",
-        "reason": "僅表態支持防颱作為，未提出具體政策。",
-        "type": "position_statement"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-09T08:36:05+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "單純呼籲蔣萬安防颱警戒，屬災防提醒非回應他人。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "支持蔣萬安防颱上緊發條",
       "topicScores": {
-        "治安": 0.4,
-        "生活": 0.55,
-        "防災": 0.93
+        "生活": 0.23,
+        "防災": 0.91
       },
       "topics": [
         "防災",
-        "生活",
-        "治安"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DakM0zuShY2/"
     },
@@ -663,47 +670,47 @@
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c2c2c361da12a4be04f99ec71af13e1329913859c03ed9bf0b2c6d812a641af7",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "da37a1cd5d3840865e11a0b84cb9c04d1f84e6486a163cef21662ae7bf81012f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Daj-KiVkt_8/",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/de9bd5c436e7d761baeb.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "以直播列舉爭議議題並追問責任，屬批評究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-09T06:28:07+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以直播內容摘要為主，未回應特定對手說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "20260707【本集介紹】\n📌 毒油事件…賴總統喊「該究責就究責」\n📌 2014年黑心油事件爆發..賴清德要求行政院長江宜樺、馬英九道歉...今天「毒油」事件誰該負責？\n📌 立法院三讀通過「延長未成年性侵案追訴期」\n📌 「鞭刑入法」年底出來投公投\n📌 網友陳情：吃感冒藥「毒駕快篩陽性」\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
       "topicScores": {
-        "治安": 0.58,
-        "社福": 0.56,
-        "醫療": 0.6
+        "治安": 0.52,
+        "競選": 0.78,
+        "醫療": 0.5
       },
       "topics": [
-        "醫療",
+        "競選",
         "治安",
-        "社福"
+        "醫療"
       ],
       "url": "https://www.instagram.com/p/Daj-KiVkt_8/"
     },
     {
-      "agendaRelevance": 0.2,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "2cb0fad3ddcd3908dc26f47ba996fb24d9a129e5ab0a7c6e004f94440ca99cb9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "f91b3dfaf0eaaa3753304b5b182d59ff85c32cccbb9c227d13bdafe81a68febf",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1599742421507340",
       "imageAspect": 0.5625,
@@ -711,19 +718,19 @@
       "keywords": [
         "外交"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "指控外交部資料外流，屬揭露與究責性質。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-08T06:11:25.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "批評外交部資料外流，屬究責事件而非回應他說。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "監察院認證外交部資料外流",
       "topicScores": {
-        "兩岸外交": 0.9,
-        "議會監督": 0.72
+        "兩岸外交": 0.88,
+        "議會監督": 0.44
       },
       "topics": [
         "兩岸外交",
@@ -732,14 +739,14 @@
       "url": "https://www.facebook.com/reel/2123244244923625/"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.3,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "834ec3e313ca99a11a0a90cb3f55f8d07da3c77adddb18c4f3d7120a95236c9a",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "68d4428fcfc1e30990ac7e1835c47b82a796259900825e740d6eff443a9021ce",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DahXM8qD0vE",
       "imageAspect": 0.5625,
@@ -747,33 +754,35 @@
       "keywords": [
         "外交"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "批評／究責",
-        "reason": "內容同為外交部資料外流指控，屬批評究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "threads",
       "postedAt": "2026-07-08T06:08:40+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "重述監察院認證外交部資料外流，非回應他方觀點。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:監察院認證外交部資料外流",
       "topicScores": {
-        "兩岸外交": 0.96
+        "兩岸外交": 0.94,
+        "議會監督": 0.81
       },
       "topics": [
-        "兩岸外交"
+        "兩岸外交",
+        "議會監督"
       ],
       "url": "https://www.threads.com/t/DahXM8qD0vE"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "fd191cbc37825414358369955712077ba4a10bdcf8ff239901d0431402a5f8fa",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "09fa2d64dd9d1b84ad78613ec77a56ebe6cf9f9e4e5eb693e7ab7339f4a14a1b",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DahXHgDyQKu/",
       "imageAspect": 0.5625,
@@ -781,311 +790,344 @@
       "keywords": [
         "外交"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "批評／究責",
-        "reason": "僅提及監察院認證外交部資料外流，屬究責批評。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-08T06:08:16+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅陳述監察院認證外交部資料外流，屬揭露事件。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "監察院認證外交部資料外流",
       "topicScores": {
-        "兩岸外交": 0.96
+        "兩岸外交": 0.94,
+        "議會監督": 0.82
       },
       "topics": [
-        "兩岸外交"
+        "兩岸外交",
+        "議會監督"
       ],
       "url": "https://www.instagram.com/p/DahXHgDyQKu/"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.35,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e9455e193b132872423955e4c38486bb77fad115062b07090f320ebde09fc447",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "69ff3b814c843b7956a738c298dc9f01a781f7f8ddf43c2a947bf2c9a3c2993e",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1506976863909479",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/1b890c998e48b07b0ee6.webp",
-      "keywords": [
-        "立法院"
-      ],
-      "nature": {
-        "confidence": 0.74,
-        "label": "競選／動員",
-        "reason": "以節目式條列議題並附捐款與直播連結，屬宣傳動員。",
-        "type": "campaign_mobilization"
-      },
+      "keywords": [],
       "platform": "facebook",
       "postedAt": "2026-07-07T13:16:17.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以毒油、性侵追訴與公投議題評論時事，並附帶競選宣傳。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "【本集介紹】\n📌 毒油事件…賴總統喊「該究責就究責」\n📌 2014年黑心油事件爆發..賴清德要求行政院長江宜樺、馬英九道歉...今天「毒油」事件誰該負責？\n📌 立法院三讀通過「延長未成年性侵案追訴期」\n📌 「鞭刑入法」年底出來投公投\n\n支持龍介線上捐款：https://donate.newebpay.com/062268268/hsiehlungchieh115\n\n龍介的 Tiktok 開放 Call in 👉 https://www.tiktok.com/@longuy1003/live \n👉 Call in 步驟：請至 Tiktok 搜尋「謝龍介」並找到龍介的直播，直播畫面的下方申請「訪客連線」，龍介兄會隨機接通。",
       "topicScores": {
-        "治安": 0.64,
-        "生活": 0.7,
-        "議會監督": 0.56
+        "治安": 0.6,
+        "社福": 0.81,
+        "競選": 0.9,
+        "醫療": 0.69
       },
       "topics": [
-        "生活",
-        "治安",
-        "議會監督"
+        "競選",
+        "社福",
+        "醫療",
+        "治安"
       ],
       "url": "https://www.facebook.com/TEL062268268/videos/1506976863909479/"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "5e0ba3c0dfc69710753fe2fc8e9677c7976c55de34333df08220eb93f10b25db",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "threads:https://www.threads.com/t/DaclH39Er53",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/f0824de08e9e5ddf73d4.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.76,
-        "label": "其他",
-        "reason": "僅有一句案件式短評，無明確公共議題主張。",
-        "type": "other"
-      },
-      "platform": "threads",
-      "postedAt": "2026-07-06T09:34:06+00:00",
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:吳乃仁欠台糖1.7億…才管收12天就獲釋",
-      "topicScores": {
-        "生活": 0.9
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DaclH39Er53"
     },
     {
       "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b32510d5811397d3d675937c2b030329626addf6e2e08ba6f028c849f8b2d520",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5f6ce1a1e401472b59f9604a08bb7772e11b38fa3881f26e3ca8496ded586df0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DaclH39Er53",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f0824de08e9e5ddf73d4.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-06T09:34:06+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅轉述吳乃仁欠款獲釋新聞，未見政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:吳乃仁欠台糖1.7億…才管收12天就獲釋",
+      "topicScores": {
+        "治安": 0.46,
+        "社福": 0.45,
+        "經濟": 0.54
+      },
+      "topics": [
+        "經濟",
+        "治安",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DaclH39Er53"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4362e3dea2184a931a0b19ed0bfeeed2185680dd2e0b768d9ac9a91a3e2858f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Dack-z0SMoE/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/39f012c7ef2f7955781f.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.78,
-        "label": "其他",
-        "reason": "僅為一句政治評論式轉貼，未涉及具體公共政策。",
-        "type": "other"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-06T09:33:41+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅短句評論吳乃仁案，未提出具體政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "吳乃仁欠台糖1.7億…才管收12天就獲釋",
       "topicScores": {
+        "治安": 0.34,
         "生活": 0.88
       },
       "topics": [
-        "生活"
+        "生活",
+        "治安"
       ],
       "url": "https://www.instagram.com/p/Dack-z0SMoE/"
     },
     {
-      "agendaRelevance": 0.15,
+      "agendaRelevance": 0.2,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "fed46e0fd1b918eed61e364bfde0d5f9bf9c9c14782692be28192c6d26b77ccf",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2c819d544b0ee21dd3ccb767ff5db39896118dcafcd37163363bf891118c1c5d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1598083695006546",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/1318f0ef22ea8eef3662.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "以欠款與羈押天數發言，主要是在批評司法處理。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-06T09:30:29.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅提吳乃仁欠款與獲釋爭議，屬一般政治評論非回應他人。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "吳乃仁欠台糖1.7億…才管收12天就獲釋",
       "topicScores": {
-        "治安": 0.66,
-        "經濟": 0.62
+        "治安": 0.74,
+        "社福": 0.61
       },
       "topics": [
         "治安",
-        "經濟"
+        "社福"
       ],
       "url": "https://www.facebook.com/reel/1286320926914797/"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d1a03df9105ea5c185061bdf2307b48a44b0cc5f04dc5d83385a76c47c686474",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "f935d71d2d756dc9a03de07c71db242d0a3b01b9fb230360853ca6659617e231",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-15T09:51:18+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DacLiFfSfC-/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/0380afb06c3b581dcc71.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "批評食安處置反覆，並要求提高標準與公布流向。",
-        "type": "criticism_accountability"
-      },
+      "keywords": [
+        "學校",
+        "校園",
+        "幼兒園"
+      ],
       "platform": "instagram",
       "postedAt": "2026-07-06T05:50:30+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "雖提賴清德，但主要是批評與提出要求，非回應其既有說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "中聯油脂致癌沙拉油事件爆發至今，過了好幾天。今天看到賴清德總統終於在臉書發文，宣示政府「守護民眾食品安全，沒有任何妥協空間」，還說會源頭管理、擴大下架、資訊公開透明、依法究責。\n\n但我必須說，我很失望！\n\n人民等了這麼多天，等到的不是對外說清楚政策為什麼一改再改，也不是更高、更嚴格的食安把關標準，而是一篇重申政府立場的發文。人民真正想知道的是，為什麼一開始的處置標準反反覆覆？為什麼下架原則一改再改？又為什麼要等到事情愈鬧愈大，才一步步提高處置標準？\n\n這幾天，中央一下要求全面下架、全面回收，一下又說「不用太恐慌」，接著又提出20%預防性下架標準，不斷補充解釋。說法愈來愈多，人民卻愈聽愈糊塗。\n\n食安不是在考人民，更不是在賭運氣。政府該做的，是站在保護人民的立場，把標準提高，而不是只守著最低標準。\n\n看到蔣萬安市長採取更嚴格的食安把關措施，我認為，台南應該比照台北，用同樣的標準守護市民。我要求黃偉哲市長比照辦理，維護市民健康：\n\n📍提高預防標準：\n只要涉及問題油品及再製食品，不論使用比例高低，都應先預防性下架，確認安全後再恢復販售，保障民眾飲食安全。\n\n📍全面追查流向：\n持續清查受影響業者，滾動公布最新稽查結果，讓市民清楚知道問題產品流向，而不是靠媒體一點一滴拼湊資訊。\n\n📍全面守護校園食安：\n立即清查學校、幼兒園及團膳供應情形，停用相關產品，並主動向家長公布清查結果，保障孩子飲食安全。\n\n📍保障消費者權益：\n要求業者提出退費、退換貨方案，由市府主動協助民眾處理，不要讓市民一家一家跑、一次一次問。\n\n📍資訊公開透明：\n建立台南市食安查詢專區，即時公布受影響產品、流向、稽查及回收進度，讓市民查得到、看得懂，也能真正放心。",
       "topicScores": {
-        "生活": 0.58,
-        "醫療": 0.83
+        "教育": 0.71,
+        "生活": 0.67,
+        "經濟": 0.63,
+        "醫療": 0.89
       },
       "topics": [
         "醫療",
-        "生活"
+        "教育",
+        "生活",
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DacLiFfSfC-/"
     },
     {
-      "agendaRelevance": 0.7,
+      "agendaRelevance": 0.27,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "51ab7737941c04861407867dc3582647a297d175e258877040ef20b67e157eae",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "85e22d5a35be1f048621ead093453b5c01f39433a3a1817836b747e27a2c2d18",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-15T09:51:18+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DacLbbmD5Xo",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/a50d54b34eb3c58cfe8e.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "主要在批評食安應變與要求更高的稽查、下架與公開。",
-        "type": "criticism_accountability"
-      },
       "platform": "threads",
       "postedAt": "2026-07-06T05:49:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "轉述賴清德發文後自我評論，未針對特定前述主張逐點答覆。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:中聯油脂致癌沙拉油事件爆發至今，過了好幾天。今天看到賴清德總統終於在臉書發文，宣示政府「守護民眾食品安全，沒有任何妥協空間」，還說會源頭管理、擴大下架、資訊公開透明、依法究責。\n\n但我必須說，我很失望！\n\n人民等了這麼多天，等到的不是對外說清楚政策為什麼一改再改，也不是更高、更嚴格的食安把關標準，而是一篇重申政府立場的發文。人民真正想知道的是，為什麼一開始的處置標準反反覆覆？為什麼下架原則一改再改？又為什麼要等到事情愈鬧愈大，才一步步提高處置標準？\n\n這幾天，中央一下要求全面下架、全面回收，一下又說「不用太恐慌」，接著又提出20%預防性下架標準，不斷補充解釋。說法愈來愈多，人民卻愈聽愈糊塗。\n\n食安不是在考人民，更不是在賭運氣。政府該做的，是站在保護人民的立場，把標準提高，而不是只守著最低標準。\n\n看到蔣萬安市長採取更嚴格的食安把關措施，我認為，台南應該比照台北，用同樣的標準守護市民。我要求黃偉哲市長比照辦理，維護市民健康：\n\n📍提高預防標準：\n只要涉及問題油品及再製食品，不論使用比例高低，都應先預防性下架，確認安全後再恢復販售，保障民眾飲食安全。\n\n📍全面追查流向：",
       "topicScores": {
-        "生活": 0.57,
-        "醫療": 0.83
+        "教育": 0.73,
+        "生活": 0.66,
+        "經濟": 0.62,
+        "醫療": 0.9
       },
       "topics": [
         "醫療",
-        "生活"
+        "教育",
+        "生活",
+        "經濟"
       ],
       "url": "https://www.threads.com/t/DacLbbmD5Xo"
     },
     {
-      "agendaRelevance": 0.65,
+      "agendaRelevance": 0.31,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e50b5b27c85ca8356ffdedaace4357fd425a7ec02610c7223b418fdd5ed3a1a2",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "07e209adc7c2bd7831f5352bb2260f12ace68306a42577d9acb03d7e556e2f2a",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-15T09:51:18+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1597946751686907",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/2988076758a1d93ff509.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "批評／究責",
-        "reason": "聚焦食安事件處置失當，並要求市府提高查核與下架標準。",
-        "type": "criticism_accountability"
-      },
+      "keywords": [
+        "學校",
+        "校園",
+        "幼兒園"
+      ],
       "platform": "facebook",
       "postedAt": "2026-07-06T05:44:08.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主軸為批評政府食安作為與要求改進，非回應特定他方論點。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "中聯油脂致癌沙拉油事件爆發至今，過了好幾天。今天看到賴清德總統終於在臉書發文，宣示政府「守護民眾食品安全，沒有任何妥協空間」，還說會源頭管理、擴大下架、資訊公開透明、依法究責。\n\n但我必須說，我很失望！\n\n人民等了這麼多天，等到的不是對外說清楚政策為什麼一改再改，也不是更高、更嚴格的食安把關標準，而是一篇重申政府立場的發文。人民真正想知道的是，為什麼一開始的處置標準反反覆覆？為什麼下架原則一改再改？又為什麼要等到事情愈鬧愈大，才一步步提高處置標準？\n\n這幾天，中央一下要求全面下架、全面回收，一下又說「不用太恐慌」，接著又提出20%預防性下架標準，不斷補充解釋。說法愈來愈多，人民卻愈聽愈糊塗。\n\n食安不是在考人民，更不是在賭運氣。政府該做的，是站在保護人民的立場，把標準提高，而不是只守著最低標準。\n\n看到蔣萬安市長採取更嚴格的食安把關措施，我認為，台南應該比照台北，用同樣的標準守護市民。我要求黃偉哲市長比照辦理，維護市民健康：\n\n📍提高預防標準：\n只要涉及問題油品及再製食品，不論使用比例高低，都應先預防性下架，確認安全後再恢復販售，保障民眾飲食安全。\n\n📍全面追查流向：\n持續清查受影響業者，滾動公布最新稽查結果，讓市民清楚知道問題產品流向，而不是靠媒體一點一滴拼湊資訊。\n\n📍全面守護校園食安：\n立即清查學校、幼兒園及團膳供應情形，停用相關產品，並主動向家長公布清查結果，保障孩子飲食安全。\n\n📍保障消費者權益：\n要求業者提出退費、退換貨方案，由市府主動協助民眾處理，不要讓市民一家一家跑、一次一次問。\n\n📍資訊公開透明：\n建立台南市食安查詢專區，即時公布受影響產品、流向、稽查及回收進度，讓市民查得到、看得懂，也能真正放心。\n\n地方政府不是中央的傳聲筒，更不是中央說一句才動一步。食安管理不能只做到「符合最低標準」，而是要做到「讓人民安心」。\n\n俗話說：「驚驚袂著，等著才會出代誌。」食安沒有藍綠，更不能有南北兩套標準。台北市做得到，台南市沒有理由做不到。\n\n人民每天吃進嘴裡的東西，禁不起政府反反覆覆的改口，更經不起任何一次僥倖。守住食安，就是守住每一個家庭最基本的安心。",
       "topicScores": {
-        "生活": 0.82,
-        "議會監督": 0.6,
-        "醫療": 0.96
+        "教育": 0.72,
+        "生活": 0.68,
+        "經濟": 0.61,
+        "醫療": 0.9
       },
       "topics": [
         "醫療",
+        "教育",
         "生活",
-        "議會監督"
+        "經濟"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid0HTK33V9XAbpL7vKddRELXDCbcFNAGxBEQ9k3cUuG4R6piZ9rK8MXxuKau5Fg4wizl"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.86,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "81ab37506ea031ff8d9246635b46122f28083c1e840dc2ece5bdecb70365a983",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b83bcf0613e69e4843fefb16d6d6cbe7813c36ca99526e79a6dae567cc7dae19",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaaYOr0y8z4/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/6cf3f20d5a0c92d2cb89.webp",
       "keywords": [
-        "育兒"
+        "育兒",
+        "健保"
       ],
-      "nature": {
-        "confidence": 0.91,
-        "label": "政策／政見",
-        "reason": "提出育兒補助與健保免費等具體政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-05T13:03:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張0-6歲健保免費與育兒補助，屬明確社福政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "與賴清德互補！龍介再提台南育兒政策「0-6歲健保免費」、「6-18歲加碼$2500元」 #謝龍介 #台南育兒政策 #賴清德",
       "topicScores": {
-        "教育": 0.57,
-        "生活": 0.24,
-        "社福": 0.86
+        "教育": 0.61,
+        "社福": 0.95,
+        "醫療": 0.54
       },
       "topics": [
         "社福",
         "教育",
-        "生活"
+        "醫療"
       ],
       "url": "https://www.instagram.com/p/DaaYOr0y8z4/"
     },
     {
-      "agendaRelevance": 0.92,
+      "agendaRelevance": 0.86,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "205b56da34af7449787486cb96ae3e7881f26c3a1d6ef034ba298c1d72033969",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5651ad964a5e02d49ec133bfbb5a06ea6772660a914fb9e218719f1ab8873032",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaaX5-xD1K7",
       "imageAspect": 0.5634,
@@ -1094,60 +1136,21 @@
         "育兒",
         "健保"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "政策／政見",
-        "reason": "提出0-6歲健保免費與育兒補助，屬具體福利政見。",
-        "type": "policy_proposal"
-      },
       "platform": "threads",
       "postedAt": "2026-07-05T13:00:25+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "標題為育兒政策，涉及幼兒健保與學齡補助等具體主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:與賴清德互補！龍介再提台南育兒政策「0-6歲健保免費」、「6-18歲加碼$2500元」",
       "topicScores": {
-        "社福": 0.96,
-        "競選": 0.82,
-        "醫療": 0.91
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DaaX5-xD1K7"
-    },
-    {
-      "agendaRelevance": 0.94,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d829a680f350d0428d9f6acdbb0e22ce389cf347fdbc032ca4ebd22bdaf13f20",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "facebook:1597333085081607",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/2f015c173d898d5cabe1.webp",
-      "keywords": [
-        "育兒",
-        "健保"
-      ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "政策／政見",
-        "reason": "明確提出0到18歲育兒與健保補助政策，屬具體政見。",
-        "type": "policy_proposal"
-      },
-      "platform": "facebook",
-      "postedAt": "2026-07-05T12:56:31.000Z",
-      "sourceId": "hsieh-lc-fb",
-      "text": "與賴清德互補！謝龍介再提台南育兒政策「0-6歲健保免費」、「6-18歲加碼$2500元」",
-      "topicScores": {
-        "教育": 0.7,
-        "社福": 0.95,
-        "競選": 0.63,
-        "醫療": 0.88
+        "教育": 0.76,
+        "社福": 0.94,
+        "競選": 0.58,
+        "醫療": 0.9
       },
       "topics": [
         "社福",
@@ -1155,71 +1158,105 @@
         "教育",
         "競選"
       ],
+      "url": "https://www.threads.com/t/DaaX5-xD1K7"
+    },
+    {
+      "agendaRelevance": 0.89,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d60f92f4b5e8328a42c3677e3341c548f00234cb74cd3792b0de6b8a4f87e8a7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1597333085081607",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2f015c173d898d5cabe1.webp",
+      "keywords": [
+        "育兒"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-05T12:56:31.000Z",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "主動提出台南育兒補助與健保免費政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "與賴清德互補！謝龍介再提台南育兒政策「0-6歲健保免費」、「6-18歲加碼$2500元」",
+      "topicScores": {
+        "教育": 0.84,
+        "社福": 0.96
+      },
+      "topics": [
+        "社福",
+        "教育"
+      ],
       "url": "https://www.facebook.com/reel/1581859016642087/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b1591458f4ac0a41018ef5a47aa8ae9bae2918edfdd8069b75e7c57eb9c7b990",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1c2e9751010d3de1fe68c6ad68a753dfa9156f2daf8c319e6def3e2891641892",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaXtZtWJLiN/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/37d14e3d552e3d3f64d1.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.86,
-        "label": "批評／究責",
-        "reason": "以官商勾結、施政失當等語句批評對手。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-04T12:11:19+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是政治攻擊與官商勾結批評，無回應特定對象原說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "會做事的人被調走...台南官商勾結風氣很差 #謝龍介 #台南",
       "topicScores": {
-        "治安": 0.34,
-        "生活": 0.42,
-        "議會監督": 0.58
+        "治安": 0.72,
+        "議會監督": 0.42
       },
       "topics": [
-        "議會監督",
-        "生活",
-        "治安"
+        "治安",
+        "議會監督"
       ],
       "url": "https://www.instagram.com/p/DaXtZtWJLiN/"
     },
     {
-      "agendaRelevance": 0.34,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e43a1ec95415d7e71336d025b9828a71decae0503fb0a00fa59b9811f4f948f4",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8052f53ab6a8826af314b66fbfa822672f6ec32bb146ed949680445e022b5b39",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaXtJgXD4Is",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/d85b1e8d93a636efcc4c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.93,
-        "label": "批評／究責",
-        "reason": "指控官商勾結與地方風氣差，屬批評究責性發言。",
-        "type": "criticism_accountability"
-      },
       "platform": "threads",
       "postedAt": "2026-07-04T12:08:20+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "是在批評台南官商勾結風氣，屬一般攻防而非回應。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:會做事的人被調走...台南官商勾結風氣很差",
       "topicScores": {
-        "治安": 0.77,
-        "議會監督": 0.7
+        "治安": 0.54,
+        "議會監督": 0.3
       },
       "topics": [
         "治安",
@@ -1228,230 +1265,229 @@
       "url": "https://www.threads.com/t/DaXtJgXD4Is"
     },
     {
-      "agendaRelevance": 0.25,
+      "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "f4ea7c1e8f53eb0a37988f4776d84a48e55bc60b1e01aeafa6aebea3d91b1501",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ce490b846868e814db0bad8f6f68d3a0c03290b71aad32009bfc8c85dc44110a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1596426745172241",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/743f71604a714326f541.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "批評／究責",
-        "reason": "指控官商勾結並批評人事調動，屬究責批判。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-04T12:04:20.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅批評台南官商勾結風氣，未回應特定對象說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "會做事的人被調走...台南官商勾結風氣很差",
       "topicScores": {
-        "治安": 0.88,
-        "議會監督": 0.52
+        "治安": 0.86
       },
       "topics": [
-        "治安",
-        "議會監督"
+        "治安"
       ],
       "url": "https://www.facebook.com/reel/1469212474962911/"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8e916f571c4e1da504c1f1176eb98c79b54d3cf159ed3252b4c9131dca90d70f",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "993e5331ffd28e9e08133cf5c4a1b28b95baa9748dc55b9c45b5bab10db6171c",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaVpF6xicFo/",
       "imageAspect": 0.5628,
       "imageUrl": "assets/feed-images/248bee35580fa997a334.webp",
       "keywords": [
-        "AI"
+        "AI",
+        "淹水"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "資訊公告／服務提醒",
-        "reason": "整理直播節目內容與多項時事資訊，屬訊息公告。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-03T16:54:36+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "列出直播節目議題摘要，屬資訊整理與活動內容。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "【本集介紹】\n📌 明（7/4）日盧秀燕市長和連勝文要來台南\n📌 回應網友陳情：重機車主控遭鹽行派出所警亂拔牌\n📌 歡迎大家報名！龍介有在推廣「漢文台語班」\n📌 南僑集團驗出毒沙拉油流入市場...謝龍介：要求政府要加強檢驗\n📌 AIT處長谷立言：打造台灣成無人機蜂巢\n📌 軍公教調薪方案出爐！明年通案調薪4%\n📌 賴清德總統點名批評台北市內湖淹水\n📌 吳乃仁欠台糖1.7億不還遭管收12天\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
       "topicScores": {
-        "交通": 0.24,
-        "教育": 0.31,
-        "治安": 0.42,
-        "經濟": 0.3
+        "教育": 0.44,
+        "治安": 0.56,
+        "經濟": 0.5,
+        "防災": 0.35
       },
       "topics": [
         "治安",
-        "教育",
         "經濟",
-        "交通"
+        "教育",
+        "防災"
       ],
       "url": "https://www.instagram.com/p/DaVpF6xicFo/"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.48,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c4315761c2aae41a5c2f45f0a4e42869bcaea118153608941dd565d798ccaa02",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "24aab23b708646eda5e427fbbde1d54873cc0b0c5f10828e70639add41b4a870",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1535293311655422",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/d3db86c7824c13a42ffb.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "競選／動員",
-        "reason": "內容為節目式宣傳與拉票動員，明顯偏競選。",
-        "type": "campaign_mobilization"
-      },
+      "keywords": [
+        "AI"
+      ],
       "platform": "facebook",
       "postedAt": "2026-07-03T13:19:07.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容為節目資訊與競選宣傳，含治安與食安議題但非回應。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "【本集介紹】\n📌 明（7/4）日盧秀燕市長和連勝文要來台南\n📌 回應網友陳情：重機車主控遭鹽行派出所警亂拔牌\n📌 歡迎大家報名！龍介有在推廣「漢文台語班」\n📌 南僑集團驗出毒沙拉油流入市場...謝龍介：要求政府要加強檢驗\n📌 AIT處長谷立言：打造台灣成無人機蜂巢\n📌 軍公教調薪方案出爐！明年通案調薪4%\n📌 賴清德總統點名批評台北市內湖淹水\n📌 吳乃仁欠台糖1.7億不還遭管收12天\n\n支持龍介線上捐款：https://donate.newebpay.com/062268268/hsiehlungchieh115\n\n龍介的 Tiktok 開放 Call in 👉 https://www.tiktok.com/@longuy1003/live \n👉 Call in 步驟：請至 Tiktok 搜尋「謝龍介」並找到龍介的直播，直播畫面的下方申請「訪客連線」，龍介兄會隨機接通。",
       "topicScores": {
-        "教育": 0.4,
-        "治安": 0.52,
-        "環境": 0.34,
-        "競選": 0.96
+        "教育": 0.42,
+        "治安": 0.7,
+        "競選": 0.95,
+        "經濟": 0.69
       },
       "topics": [
         "競選",
         "治安",
-        "教育",
-        "環境"
+        "經濟",
+        "教育"
       ],
       "url": "https://www.facebook.com/TEL062268268/videos/1535293311655422/"
     },
     {
-      "agendaRelevance": 0.78,
+      "agendaRelevance": 0.63,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "340e00cf22a8ac8891943db72167ba5340f60b3f661196edd6d69acb279802ef",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8c7d887332d440e80b29ca965becaaeb32e77857ae37a4ac1e9e4bc00d3f325d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1595453015269614",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/09d50f8864d24f5f861c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.72,
-        "label": "政策／政見",
-        "reason": "主張無人機預算編列方式，屬具體政策財務建議。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T09:55:08.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主張預算編列方式，屬主動政策表態。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "不要用特別預算！國民黨無人機版本編列成「年度預算」",
       "topicScores": {
-        "兩岸外交": 0.56,
-        "經濟": 0.45
+        "兩岸外交": 0.68,
+        "經濟": 0.78
       },
       "topics": [
-        "兩岸外交",
-        "經濟"
+        "經濟",
+        "兩岸外交"
       ],
       "url": "https://www.facebook.com/reel/950296408036722/"
     },
     {
-      "agendaRelevance": 0.42,
+      "agendaRelevance": 0.66,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "50fa39f7ebbd5092b846f0b1fa20b6eca39187c72b85853047a187be7438cbd9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "363de0a011f29bc08c91e6cab49437f344e5b9c440ca999cdf12c22fb86c4493",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaU49DUkcOF",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/da2e8cefc6750c7f9589.webp",
-      "keywords": [
-        "預算"
-      ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "立場表態",
-        "reason": "表態反對特別預算、主張改列年度預算，屬立場攻防。",
-        "type": "position_statement"
-      },
+      "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-03T09:53:28+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "討論無人機預算編列方式，屬主動政策立場表述。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:不要用特別預算！國民黨無人機版本編列成「年度預算」",
       "topicScores": {
-        "經濟": 0.84,
-        "議會監督": 0.78
+        "兩岸外交": 0.35,
+        "經濟": 0.81
       },
       "topics": [
         "經濟",
-        "議會監督"
+        "兩岸外交"
       ],
       "url": "https://www.threads.com/t/DaU49DUkcOF"
     },
     {
-      "agendaRelevance": 0.7,
+      "agendaRelevance": 0.74,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "f005ba5606641ed3aa5623b01ad6528d62c33f11fe61777c9627d5df033170b9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "988462802372d892c398838c3525b1734fc656f99e08720d2560f7789d1d7731",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaU43wzSdaw/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/67cd1c5a1e74a012ecbc.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.83,
-        "label": "政策／政見",
-        "reason": "主張無人機預算編列方式，屬具體政策意見。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-03T09:53:07+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "討論無人機預算編列方式，屬產業與預算主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "不要用特別預算！國民黨無人機版本編列成「年度預算」",
       "topicScores": {
-        "生活": 0.22,
-        "經濟": 0.93
+        "經濟": 0.92,
+        "防災": 0.42
       },
       "topics": [
         "經濟",
-        "生活"
+        "防災"
       ],
       "url": "https://www.instagram.com/p/DaU43wzSdaw/"
     },
     {
-      "agendaRelevance": 0.86,
+      "agendaRelevance": 0.57,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9546c66e3585519cb6726d1c1530f9e82aa08203ccff8e61508a6e2d2462fbe4",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "09e25d6c5bb69ef35aff2c77a8e2c386df8484189ecf01dab30d9ac3eeff316d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaUdDdJSRSj/",
       "imageAspect": 1.0,
@@ -1459,40 +1495,37 @@
       "keywords": [
         "詐騙",
         "詐欺",
-        "犯罪",
-        "長輩"
+        "犯罪"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "政策／政見",
-        "reason": "明確支持鞭刑公投，屬重大刑罰政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-03T05:54:20+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "支持鞭刑公投，核心是刑罰與治安政策立場。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "我支持鞭刑公投。不是因為我們喜歡重罰，而是台灣人民真的受夠了！\n\n今天，國民黨團提出的「鞭刑公投案」在立院逕付二讀，希望完成程序。年底選舉交由全體國人投票，決定台灣到底要不要增列鞭刑制度，把這項重大政策的選擇權交給人民。\n\n近年來，性侵害、凌虐幼童、重大詐欺案件一再發生，受害的都是最無辜的民眾。看到孩子遭虐待、婦女遭侵犯、長輩一輩子的積蓄被詐騙集團騙光，每一位做父母、做阿公阿嬤的人，心裡都會痛。\n\n鄉親常說：「歹人若無驚，歹代就做袂煞。」當犯罪成本太低、代價不夠重，受害的永遠都是善良守法的人。現行刑事制裁體系，對這些重大犯罪的嚇阻效果，已經不足以回應人民對法律的期待。\n\n因此，我支持透過公投，由全民決定，是否針對性侵害犯罪、凌虐幼童罪、高額詐欺罪、複合型態加重詐欺罪等四類重大犯罪，在法院依法判決後，增列鞭刑作為刑罰一部分。\n\n這不是私刑，更不是情緒治國，而是在法律程序，由人民決定是否建立更完善的刑罰制度。法律除了保障人權，也要保護善良的人。如果一個社會只顧著替加害人找理由，卻忘了受害者流下的眼淚，那就辜負人民期待的公平正義。\n\n龍介始終相信，對好人要有溫暖，對壞人就不能軟手軟腳。讓歹人會驚、會怕，才能讓婦幼更安全、長輩更安心，也讓善良的人相信，這個社會還有正義。",
       "topicScores": {
-        "治安": 0.96,
-        "社福": 0.62,
-        "議會監督": 0.44
+        "治安": 0.97,
+        "生活": 0.46
       },
       "topics": [
         "治安",
-        "社福",
-        "議會監督"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DaUdDdJSRSj/"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.7,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "71af1fafd0ce16841f2a01e0d29e215e27d6e8066864ccc6eaa50fc179b068e5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d12268e5cbd1869898ec6364a04911aa01acfc5f16f9b3c322bb4b8260884c0d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1595297108618538",
       "imageAspect": 1.0,
@@ -1501,37 +1534,40 @@
         "詐騙",
         "詐欺",
         "犯罪",
-        "長輩"
+        "選舉",
+        "投票"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "政策／政見",
-        "reason": "支持鞭刑公投，主張以刑罰制度強化重大犯罪嚇阻。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T05:47:52.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "表態支持鞭刑公投，主題為刑罰與治安。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "我支持鞭刑公投。不是因為我們喜歡重罰，而是台灣人民真的受夠了！\n\n今天，國民黨團提出的「鞭刑公投案」在立院逕付二讀，希望完成程序。年底選舉交由全體國人投票，決定台灣到底要不要增列鞭刑制度，把這項重大政策的選擇權交給人民。\n\n近年來，性侵害、凌虐幼童、重大詐欺案件一再發生，受害的都是最無辜的民眾。看到孩子遭虐待、婦女遭侵犯、長輩一輩子的積蓄被詐騙集團騙光，每一位做父母、做阿公阿嬤的人，心裡都會痛。\n\n鄉親常說：「歹人若無驚，歹代就做袂煞。」當犯罪成本太低、代價不夠重，受害的永遠都是善良守法的人。現行刑事制裁體系，對這些重大犯罪的嚇阻效果，已經不足以回應人民對法律的期待。\n\n因此，我支持透過公投，由全民決定，是否針對性侵害犯罪、凌虐幼童罪、高額詐欺罪、複合型態加重詐欺罪等四類重大犯罪，在法院依法判決後，增列鞭刑作為刑罰一部分。\n\n這不是私刑，更不是情緒治國，而是在法律程序，由人民決定是否建立更完善的刑罰制度。法律除了保障人權，也要保護善良的人。如果一個社會只顧著替加害人找理由，卻忘了受害者流下的眼淚，那就辜負人民期待的公平正義。\n\n龍介始終相信，對好人要有溫暖，對壞人就不能軟手軟腳。讓歹人會驚、會怕，才能讓婦幼更安全、長輩更安心，也讓善良的人相信，這個社會還有正義。",
       "topicScores": {
-        "治安": 0.93,
-        "社福": 0.76
+        "治安": 0.95,
+        "生活": 0.36,
+        "競選": 0.9
       },
       "topics": [
         "治安",
-        "社福"
+        "競選",
+        "生活"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid034QNa9QirQvEsjgRyyZjuXwyrhVpL8FG3Z4C2Rs92FGBtzbuYfiyTA6t8J74Y7LWjl"
     },
     {
-      "agendaRelevance": 0.5,
+      "agendaRelevance": 0.42,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "381b74a171ae3ea7cada93fc10a9c0a981af820112e77230b4d922b1aecc424e",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "8521a80ac8844699cfd36f7f8375ac10d2426311302bc34bafce3ebdf4b9013d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaR7CTfy3DH/",
       "imageAspect": 1.0,
@@ -1540,37 +1576,37 @@
         "豪雨",
         "淹水"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "以內湖淹水為例批評總統前後不一與治水責任。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-02T06:14:07+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評賴清德前後不一，並談治水責任與防洪改善。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "今天看到賴清德總統批評內湖淹水，我真的忍不住想起八年前。\n\n2018年8月南部豪雨成災，台南、高雄多處淹水，當時擔任行政院長的賴清德說：「24小時下六百毫米，哪個城市不會淹？」，還說「批評的人可以去當上帝」。\n\n如今自己當了總統，看到內湖淹水，就開始檢討地方。賴總統，我要勸你一句，不要急著講別人、批評別人，先回頭想想自己當年怎麼說。以前台南淹水，你說是極端降雨、沒有一個城市受得了；現在台北淹水，卻急著把矛頭指向地方政府。\n\n請問，同樣都是人民受災，為什麼你的標準差這麼多？\n\n政治人物最重要的，就是前後一致。不能別人執政時就要求究責，輪到自己執政時卻搬出各種理由替自己開脫。治水不是打嘴鼓，更不是拿來做政治攻防。排水系統夠不夠、滯洪設施足不足、都市開發有沒有超過排水負荷，中央與地方都應該共同面對、共同改善，而不是一出事就急著把責任推給別人。\n\n賴總統，如果2018年的豪雨可以用「哪個城市都會淹」來解釋，那今天的內湖淹水，又憑什麼急著批評別人？\n\n俗話說「講人較會，講自己較袂」。與其忙著嘴別人，不如先想想自己八年前說過的話，人民不是沒有記性，真正經不起檢驗的，不是淹水時說了什麼，而是前後不一、雙重標準的態度。",
       "topicScores": {
-        "生活": 0.3,
-        "議會監督": 0.72,
-        "防災": 0.98
+        "治安": 0.05,
+        "議會監督": 0.74,
+        "防災": 0.97
       },
       "topics": [
         "防災",
         "議會監督",
-        "生活"
+        "治安"
       ],
       "url": "https://www.instagram.com/p/DaR7CTfy3DH/"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.42,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "896bd259aacf157f8bd5fb6da865eb4f22df2f61c6942c8f98badf5bd3bd346d",
+        "classifiedAt": "2026-07-15T09:48:42+00:00",
+        "inputHash": "68a739ff0cddd2d6a51b26e49ca721c90cbc12c0c2c2625828ebbdae36d90b38",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1594423828705866",
       "imageAspect": 1.0,
@@ -1579,23 +1615,25 @@
         "豪雨",
         "淹水"
       ],
-      "nature": {
-        "confidence": 0.94,
-        "label": "批評／究責",
-        "reason": "以淹水事件批評總統前後標準不一，重點在究責與攻防。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-02T06:13:16.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評賴清德前後不一，並談治水責任與防洪改善。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "今天看到賴清德總統批評內湖淹水，我真的忍不住想起八年前。\n\n2018年8月南部豪雨成災，台南、高雄多處淹水，當時擔任行政院長的賴清德說：「24小時下六百毫米，哪個城市不會淹？」，還說「批評的人可以去當上帝」。\n\n如今自己當了總統，看到內湖淹水，就開始檢討地方。賴總統，我要勸你一句，不要急著講別人、批評別人，先回頭想想自己當年怎麼說。以前台南淹水，你說是極端降雨、沒有一個城市受得了；現在台北淹水，卻急著把矛頭指向地方政府。\n\n請問，同樣都是人民受災，為什麼你的標準差這麼多？\n\n政治人物最重要的，就是前後一致。不能別人執政時就要求究責，輪到自己執政時卻搬出各種理由替自己開脫。治水不是打嘴鼓，更不是拿來做政治攻防。排水系統夠不夠、滯洪設施足不足、都市開發有沒有超過排水負荷，中央與地方都應該共同面對、共同改善，而不是一出事就急著把責任推給別人。\n\n賴總統，如果2018年的豪雨可以用「哪個城市都會淹」來解釋，那今天的內湖淹水，又憑什麼急著批評別人？\n\n俗話說「講人較會，講自己較袂」。與其忙著嘴別人，不如先想想自己八年前說過的話，人民不是沒有記性，真正經不起檢驗的，不是淹水時說了什麼，而是前後不一、雙重標準的態度。",
       "topicScores": {
-        "議會監督": 0.58,
-        "防災": 0.93
+        "治安": 0.05,
+        "議會監督": 0.74,
+        "防災": 0.97
       },
       "topics": [
         "防災",
-        "議會監督"
+        "議會監督",
+        "治安"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid02A7VtH7ygfVyXJowu36VMkQfycYYoBrMHm6D7HFh5VUKvGX2uyb1KCF8uMXmgDwPQl"
     },
@@ -1603,77 +1641,77 @@
       "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8f145f42992b59675747cdd6090410d6a762a3e5daf3f5cd433dd303ebcaeb89",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "00f4c36330f8f574678225733ab278eea06d7d96f4594063dc8d7f99cc06e2ee",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1594386995376216",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/fdd2c0ed121760297ac9.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "個人／日常",
-        "reason": "僅表達感謝小額捐款並鼓勵自己，屬個人發文。",
-        "type": "personal_content"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-02T05:08:35.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅為感謝小額捐款與打氣，無具體公共政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "感謝大家！每天都有人小額捐款...龍介會認真打拚",
       "topicScores": {
-        "生活": 0.98
+        "生活": 0.96,
+        "競選": 0.18
       },
       "topics": [
-        "生活"
+        "生活",
+        "競選"
       ],
       "url": "https://www.facebook.com/reel/1790952432079433/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8303be649d68bab3dc4be76856647bc612c6f431d009f934e156e1a7c2c96c48",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "59a7e2ff0f5ca0ae0e98880dc86da0273ea72b49a1599db8bafecb889f3d33e0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaRzQrmSDXe/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/55f0908620d94fb87523.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "競選／動員",
-        "reason": "感謝捐款並呼籲支持者相挺，屬明顯競選動員。",
-        "type": "campaign_mobilization"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-02T05:06:04+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅感謝捐款支持與打拚心情，無公共政策內容。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "感謝大家！每天都有人小額捐款...龍介會認真打拚",
       "topicScores": {
-        "競選": 0.99,
-        "經濟": 0.39
+        "生活": 0.95
       },
       "topics": [
-        "競選",
-        "經濟"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DaRzQrmSDXe/"
     },
     {
-      "agendaRelevance": 0.34,
+      "agendaRelevance": 0.25,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "74432a1c9c47dabcd3dcddf05750be20b8004e660817c1ce2f13c133faacdbca",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a4367a546a24ac3a58996acf3f2be2e192a7525e7916952872e92dbac31055a6",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1593730198775229",
       "imageAspect": 0.5625,
@@ -1681,35 +1719,35 @@
       "keywords": [
         "預算"
       ],
-      "nature": {
-        "confidence": 0.72,
-        "label": "立場表態",
-        "reason": "僅表達對無人機預算編列方式的立場，內容簡短。",
-        "type": "position_statement"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-01T10:08:24.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提到在野黨要求無人機預算編列，屬預算監督。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "在野黨要求無人機要編到一般預算",
       "topicScores": {
-        "經濟": 0.62,
-        "議會監督": 0.88
+        "議會監督": 0.94,
+        "防災": 0.21
       },
       "topics": [
         "議會監督",
-        "經濟"
+        "防災"
       ],
       "url": "https://www.facebook.com/reel/1010329214952432/"
     },
     {
-      "agendaRelevance": 0.69,
+      "agendaRelevance": 0.48,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ca73a723d24e1076d1d98a8d149b628a82a2671cf763fc6b9f4b78ff01ac92f2",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "794295cec0d8f873cb3b7c90bc56aa11a2152c2db94ff1bc179e7145c910e9b4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaPwtYtyQvg/",
       "imageAspect": 0.5634,
@@ -1717,35 +1755,35 @@
       "keywords": [
         "預算"
       ],
-      "nature": {
-        "confidence": 0.72,
-        "label": "政策／政見",
-        "reason": "主張無人機預算編列方式，屬具體預算與政策討論。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-01T10:05:22+00:00",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "提到預算編列與國防資源配置，屬主動政策討論。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "在野黨要求無人機要編到一般預算",
       "topicScores": {
-        "議會監督": 0.86,
-        "防災": 0.33
+        "經濟": 0.52,
+        "議會監督": 0.84
       },
       "topics": [
         "議會監督",
-        "防災"
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DaPwtYtyQvg/"
     },
     {
-      "agendaRelevance": 0.56,
+      "agendaRelevance": 0.72,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ea008b4667993147f10c2da17c4b7e7acea849bfc7ec1f3864bf1d2992517a53",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a63f28a56579c6fed48f717f440e4cd0ec341d42b56d1f1eb3656079fbc54fb5",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaPVGO1yHtD/",
       "imageAspect": 1.0,
@@ -1755,37 +1793,35 @@
         "中小企業",
         "科技"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "聚焦綠能案跳票與包商損失，主要在究責政府與業者。",
-        "type": "criticism_accountability"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-01T06:03:57+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主談光電工程跳票與漁電共生政策衍生產業風險。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "「綠」能國家隊昔日吃銅吃鐵，如今在政黨輪替之前，撈最後一票的，跑路的，終於，紙還是包不了火。\n\n最近，我接獲不少台南地方包商、供應商陳情，大家講的都是同一件事，就是去年爆發的「誠新綠能光電案」，涉及超過10億元的工程款跳票，恐怕已經不是單純工程款問題，而是可能演變成一場地方產業危機。\n\n這些包商不是什麼大財團，也不是上市公司，他們很多都是在地打拚幾十年的中小企業。為了配合政府推動漁電共生政策，投入人力、機具、資金進場施工，如今案場停工、工程款拿不到、貨款收不回。政府口口聲聲說能源轉型，但最後承擔代價的，卻是最基層的地方小包商。\n\n更令人擔心的是，陳情人反映，誠新集團爆發財務危機後，相關核心人士陸續退出原有職務，公司股權、資產也持續異動。過去誠新旗下的三家公司（誠新國際開發、誠新綠能、誠光養殖科技）關係密切，人員、董事、法人股東高度重疊，但因財務危機後已逐步切割，各自獨立營運。\n\n地方甚至傳出部分人士可能已有境外活動，並曾有特定政治接觸等線索。這些內容都有待檢調依法查證，我不預設任何結論，但政府不能因為還在查，就什麼都不做。如果資產一直處分、股權一直移轉、人也長期在境外，等到一切塵埃落定，地方包商還能向誰討公道？\n\n誠新曾是政府推動漁電共生最具代表性的開發商之一，先前規劃的案場供電量達到1.5GW（全為屋頂型），相當於政府漁電共生目標4.4GW的三成五，公司也憑藉與台積電簽訂的20年綠電採購合約，以及近120億元聯貸案，在台南、嘉義大規模開發案場，一度被視為能源轉型的重要指標。",
       "topicScores": {
-        "兩岸外交": 0.3,
-        "環境": 0.84,
-        "經濟": 0.9
+        "環境": 0.77,
+        "經濟": 0.86
       },
       "topics": [
         "經濟",
-        "環境",
-        "兩岸外交"
+        "環境"
       ],
       "url": "https://www.instagram.com/p/DaPVGO1yHtD/"
     },
     {
-      "agendaRelevance": 0.83,
+      "agendaRelevance": 0.82,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "89326114147456db20b9592e225dd471592b369c8f9aa576ca048626a1959e5c",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5bd231aff0fe19392a52593c64459c0d9fa758b288e033ac0488d002a05ec9cf",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1593582105456705",
       "imageAspect": 1.0,
@@ -1799,37 +1835,39 @@
         "審查",
         "監督"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "指控綠能案衍生跳票與監督失靈，並要求政府查明究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-01T05:55:04.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "針對光電案、金流與政策監督提出調查與改革要求。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "「綠」能國家隊昔日吃銅吃鐵，如今在政黨輪替之前，撈最後一票的，跑路的，終於，紙還是包不了火。\n\n最近，我接獲不少台南地方包商、供應商陳情，大家講的都是同一件事，就是去年爆發的「誠新綠能光電案」，涉及超過10億元的工程款跳票，恐怕已經不是單純工程款問題，而是可能演變成一場地方產業危機。\n\n這些包商不是什麼大財團，也不是上市公司，他們很多都是在地打拚幾十年的中小企業。為了配合政府推動漁電共生政策，投入人力、機具、資金進場施工，如今案場停工、工程款拿不到、貨款收不回。政府口口聲聲說能源轉型，但最後承擔代價的，卻是最基層的地方小包商。\n\n更令人擔心的是，陳情人反映，誠新集團爆發財務危機後，相關核心人士陸續退出原有職務，公司股權、資產也持續異動。過去誠新旗下的三家公司（誠新國際開發、誠新綠能、誠光養殖科技）關係密切，人員、董事、法人股東高度重疊，但因財務危機後已逐步切割，各自獨立營運。\n\n地方甚至傳出部分人士可能已有境外活動，並曾有特定政治接觸等線索。這些內容都有待檢調依法查證，我不預設任何結論，但政府不能因為還在查，就什麼都不做。如果資產一直處分、股權一直移轉、人也長期在境外，等到一切塵埃落定，地方包商還能向誰討公道？\n\n誠新曾是政府推動漁電共生最具代表性的開發商之一，先前規劃的案場供電量達到1.5GW（全為屋頂型），相當於政府漁電共生目標4.4GW的三成五，公司也憑藉與台積電簽訂的20年綠電採購合約，以及近120億元聯貸案，在台南、嘉義大規模開發案場，一度被視為能源轉型的重要指標。\n\n然而，農業部、經濟部、台電為杜絕「假養魚、真種電」狀況，實施新制，要求自2025年3月起，案場必須取得「第二階段綠能容許」（有實際放養、養殖實績證明），符合規定，台電才給予併網售電。\n\n誠新旗下300多個案場，多數未達養殖要求，無法取得發電許可，無法併網售電，導致售電收入瞬間中斷，造成資金鏈惡化，最後整個風險全部轉嫁到地方包商、供應商與地主身上。\n\n當初大力推動漁電共生的是政府，如今爆發這麼大的危機，政府到底什麼時候發現問題？有沒有掌握案場狀況？有沒有掌握銀行融資、公司財務及資金流向？還是等到工程停了、包商討不到錢、公司開始改組、資產陸續異動，才驚覺事情已經失控？\n\n這案件不能再以商業糾紛看待。它牽涉的不只是單一公司的經營問題，更涉及政府能源政策的監督責任、金融授信風險，以及數百家地方包商、供應商與地主的權益。如果主管機關現在還沒有危機意識，未來很可能面對的是公司空殼化、資產移轉、債權追不回來，最後所有損失都由地方承擔。\n\n主管機關必須說清楚，要求政府立即採取具體行動，不能再讓事件持續惡化。\n\n一、近120億元聯貸的風險控管是否失靈？\n誠新集團取得近120億元聯貸後，主管機關與銀行團是否持續掌握案場進度、資金流向及財務狀況？何時發現異常？又採取了哪些因應措施？\n\n二、案場停工、工程款跳票，政府為何沒有提前示警？\n多處案場停工、工程款與貨款積欠已持續一段時間，主管機關是否早已掌握風險，卻未及時介入？\n\n三、核心人士退出、股權與資產異動，是否涉及規避債務？\n誠新相關人員陸續卸任，股權及資產持續變動，是否屬正常商業行為？是否影響債權人權益？ \n\n四、是否已有脫產、棄殼或境外規避追償風險？\n陳情反映部分人士可能已有境外活動等線索，是否有脫產嫌疑，目前仍待查證。但主管機關是否已掌握相關情形？採取必要保全措施？\n\n五、漁電共生政策的監督機制是否全面失靈？\n從招商、審查、融資到履約管理，政府是否建立有效監督機制？還是等到問題爆發，才開始亡羊補牢？\n\n調查真相的同時間，也必須立刻啟動應變機制，保護受害者。\n\n一、立即成立跨部會專案小組。\n二、全面清查金流、股權及資產流向，必要時依法採取保全措施。\n三、協助地方包商、供應商保全債權，建立單一協助窗口。\n四、公開說明所有停工案場的現況、融資進度及後續處理方案。\n五、全面檢討漁電共生政策及監督制度，避免相同事件再次發生。\n\n我要再次強調，我們今天站出來，不是要未審先判，也不是要替任何人定罪，而是要政府負起應有的責任，把事情查清楚、把人民的權益保住。\n\n能源轉型不能建立在地方包商血本無歸的代價上，更不能讓政府的監督失靈，成為人民必須承擔的成本。今天我要求的，不只是給地方包商一個交代，更是要求政府給全民一個真相。",
       "topicScores": {
-        "環境": 0.9,
-        "經濟": 0.95,
+        "兩岸外交": 0.22,
+        "環境": 0.86,
+        "經濟": 0.97,
         "議會監督": 0.92
       },
       "topics": [
         "經濟",
         "議會監督",
-        "環境"
+        "環境",
+        "兩岸外交"
       ],
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid0YBfGz1t2SbUTnbQ23enCEy1gki8je62qbDoPX9knZBMWaY1MRC3fMjJEkG1mRTPkl"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.55,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b6dfc5057f6365acf7ee0d8ee3c32bfd26fc6b3d3bc59a41d6ee6ceda7ea2b1c",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "12d1ceba1ce98b59eaa8f77ed593e702928d2bf2d7216657b7d791e9d6d879cc",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaOJgzAkps6/",
       "imageAspect": 1.7778,
@@ -1837,52 +1875,50 @@
       "keywords": [
         "預算"
       ],
-      "nature": {
-        "confidence": 0.86,
-        "label": "資訊公告／服務提醒",
-        "reason": "列出多項時事與民眾陳情，屬節目式資訊整理。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-30T19:03:57+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "整理調查、判決與民怨陳情，屬問題追蹤與質疑。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-ig",
       "text": "【本集介紹】\n📌 調查局大動作！台南前議長郭信良今遭搜索\n📌 台南學甲爐碴案一審宣判！民進黨前中執委郭再欽遭判8年半\n📌 回應網友陳情：保全超時工作、不合理低薪\n📌 游盈隆說「公投綁大選」是必然的趨勢\n📌 沒審總預算？勞動部現在已經花1000多億了\n📌 檢察總長任期4年...代理檢察總長任期「沒有期限」\n📌 網友陳情：重機車主控鹽行派出所警亂拔牌\n📌 藍白提出「無人機」採購版本\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
       "topicScores": {
-        "交通": 0.36,
-        "治安": 0.82,
-        "經濟": 0.48,
-        "議會監督": 0.74
+        "治安": 0.79,
+        "經濟": 0.56,
+        "議會監督": 0.72
       },
       "topics": [
         "治安",
         "議會監督",
-        "經濟",
-        "交通"
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DaOJgzAkps6/"
     },
     {
-      "agendaRelevance": 0.01,
+      "agendaRelevance": 0.0,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "aeadc5750700319065fad76252867d8bd161521d214a834c6db7a8a265a2eb3f",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4699f4105011dc807ed4d97fb0c704ac643088418ed2857a97d9993f3bb9376f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1592995275515388",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
-      "nature": {
-        "confidence": 0.99,
-        "label": "個人／日常",
-        "reason": "貼文內容空白，無可辨識公共議題與政策訊息。",
-        "type": "personal_content"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-30T13:49:09.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容空白，無可辨識公共議題或回應對象。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "",
       "topicScores": {
@@ -1894,66 +1930,66 @@
       "url": "https://www.facebook.com/TEL062268268/posts/pfbid0XuHAzrJw2VmAPTNUqf2PdgL7TFFeesFdUuwWAjgo13X2xnorrLnrpNHw8JYTrthhl"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.35,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "4e86e2ef0cbcadaf6d04a0c429a7b3bad321c51409ba8d6fbf7bcf7e25c7b57d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d20c104682e5a0cf60e61a872ffe2c407f0881c8993b4508c4828c0b9efb795d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1592822555532660",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/a26dd6f37bd978a5ee80.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "批評／究責",
-        "reason": "指控對方隱瞞法規、以口水治水，屬批評究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-06-30T09:34:20.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評民進黨治水作法，屬攻防與監督而非回應特定說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-fb",
       "text": "民進黨不要再「隱瞞法規」用口水來治水",
       "topicScores": {
-        "議會監督": 0.54,
-        "防災": 0.62
+        "議會監督": 0.88,
+        "防災": 0.72
       },
       "topics": [
-        "防災",
-        "議會監督"
+        "議會監督",
+        "防災"
       ],
       "url": "https://www.facebook.com/reel/1569140101494856/"
     },
     {
-      "agendaRelevance": 0.45,
+      "agendaRelevance": 0.3,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d85646bcefd813715b3984375535eb16123675cb8ffaabd96cce61e7422c6fb0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5ae563c3da9adf9f76304f55ec7dbff52a45c45486e476fc148685bd821527f1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:M9N4teDg4ok",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/6ef1bd707f88b36c5a70.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.7,
-        "label": "批評／究責",
-        "reason": "內容看似質詢農業博覽會與政治介入，偏監督與批評。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容為質詢農業博覽會與政治介入，屬議會攻防。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "(Full Subtitles) 20260617 [Long Chieh Interpellation] Politics interfering with agricultural expo...",
       "topicScores": {
-        "文化觀光": 0.58,
-        "經濟": 0.52
+        "文化觀光": 0.77,
+        "經濟": 0.22
       },
       "topics": [
         "文化觀光",
@@ -1962,101 +1998,106 @@
       "url": "https://www.youtube.com/watch?v=M9N4teDg4ok"
     },
     {
-      "agendaRelevance": 0.63,
+      "agendaRelevance": 0.24,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "4de3d9e1786344a9499121d277a0f4a6f2d19b4303755d94e4a924840fc5b1b3",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e891ce1c56f5f544baf3581326142169e220e6b35683ed0f770b9c9f42f4d8e0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:tzxsPMYSQlI",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7d9a620ddbddd0b9016d.webp",
       "keywords": [
+        "質詢",
         "交通"
       ],
-      "nature": {
-        "confidence": 0.91,
-        "label": "批評／究責",
-        "reason": "聚焦交通罰單、檢舉設備與違規申訴問題，屬質詢監督。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "摘要交通罰單與檢舉設備認證質詢，屬監督與民怨整理。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "（全字幕）20260603【龍介質詢】台灣一年交通罰單265億...龍介要求檢舉設備要經過標準局認證！網友陳情：借車違規被吊牌..借出前已善盡告知義務仍申訴無效",
       "topicScores": {
-        "交通": 0.97,
-        "治安": 0.72
+        "交通": 0.74,
+        "生活": 0.18,
+        "議會監督": 0.9
       },
       "topics": [
+        "議會監督",
         "交通",
-        "治安"
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=tzxsPMYSQlI"
     },
     {
-      "agendaRelevance": 0.2,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "78102790f9b35424275a8f9cb2a70bee664979debf020a426f0d9f8837b0fda9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "181394c76d3b1e07a911abee3c608e0833df548776eac6d9db84e6323f38bc29",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:UOWj5jIo6D0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/735c89c469c81035fd9a.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "活動／行程",
-        "reason": "主要是在展示故宮聯名商品與現場體驗，屬活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "談故宮聯名與地方特色，屬活動與文化行銷紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "那天龍介質詢故宮院長要結合台灣地方特色...馬上收到故宮聯名咖啡禮盒！謝龍介現泡故宮咖啡...五朝皇帝包裝超吸睛｜謝龍介",
       "topicScores": {
-        "文化觀光": 0.89
+        "文化觀光": 0.93,
+        "生活": 0.11
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=UOWj5jIo6D0"
     },
     {
-      "agendaRelevance": 0.55,
+      "agendaRelevance": 0.52,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "6227bf0f6268bf5b466578e6cd9db26eafe570b26171462ca28b193b17864182",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "90d4d89b325b4ad1e2ba4b29536d06876478e35ccf905f97455dbcf166873018",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:NpuXfB0CbvY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/cdcb11bbc17024b9fd5a.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.8,
-        "label": "批評／究責",
-        "reason": "討論少子化與青年問題，帶有質詢與政策批評。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "聚焦少子化與年輕人議題，屬人口與社會政策討論。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "(Full Subtitles) 05/26/2026 【Hsieh Lung-chieh Interpellation】 Low Birth Rate: Give Young People t...",
       "topicScores": {
-        "教育": 0.58,
-        "社福": 0.9,
-        "經濟": 0.54
+        "教育": 0.41,
+        "社福": 0.68,
+        "經濟": 0.34
       },
       "topics": [
         "社福",
@@ -2066,192 +2107,196 @@
       "url": "https://www.youtube.com/watch?v=NpuXfB0CbvY"
     },
     {
-      "agendaRelevance": 0.41,
+      "agendaRelevance": 0.42,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "2ed7e98263409f9abd0cd37a0450bbf4d96912cd55fe47fb782e949a8ca92cea",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "120cf01e57640c2de547c16f2e360ed08382f81c72528391109ddab9397cdeae",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:rJ0bgF-rPw0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/6f03ce310a80917cbd04.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.84,
-        "label": "批評／究責",
-        "reason": "聚焦國安會人事與國安議題，屬監督評論。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "討論國安會人事與國安議題，屬主動評論。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "(Full Subtitles) 20260423 [Dragon Media Inquiry] National Security Council Members to be Appointe...",
       "topicScores": {
-        "兩岸外交": 0.95,
-        "治安": 0.54
+        "兩岸外交": 0.94,
+        "議會監督": 0.45
       },
       "topics": [
         "兩岸外交",
-        "治安"
+        "議會監督"
       ],
       "url": "https://www.youtube.com/watch?v=rJ0bgF-rPw0"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "46d90278bbf249ef7c2833a6766c3f4c35d052272010e83b38efb2fe324910b4",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "94b29b408ae7a819a62159b86b9308692e6dc284c63341a87f602f1edd810df8",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-15T09:51:18+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Dw6OYhcKkCs",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f50065c8e7e88d53eed2.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.83,
-        "label": "回應／澄清",
-        "reason": "內容主要回應網友陳情與社會事件，偏回應澄清。",
-        "type": "response_clarification"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅有新聞題材與回應陳情，未指向特定先前觀點，非答覆他方。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "20260703 吳乃仁欠台糖1.7億不還遭管收12天！南僑集團驗出毒沙拉油流入市場...回應網友陳情：重機車主控遭鹽行派出所警亂拔牌.. @longmedia  ｜龍介的直播",
       "topicScores": {
-        "治安": 0.76,
-        "生活": 0.6,
-        "經濟": 0.58
+        "治安": 0.63,
+        "生活": 0.49
       },
       "topics": [
         "治安",
-        "生活",
-        "經濟"
-      ],
-      "url": "https://www.youtube.com/watch?v=Dw6OYhcKkCs"
-    },
-    {
-      "agendaRelevance": 0.33,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c07fa2e2372ef97b862d3ab26c9671969189f8cbe375aceb51c9d0bc4c8e55f9",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "youtube:smAQ05IrLTg",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/be8644b3ffedf0b8a136.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.77,
-        "label": "批評／究責",
-        "reason": "涵蓋無人機採購、爐碴案與搜索事件，偏政治攻防。",
-        "type": "criticism_accountability"
-      },
-      "platform": "youtube",
-      "postedAt": "",
-      "sourceId": "hsieh-lc-yt",
-      "text": "20260630 藍白提出無人機採購版本！台南學甲爐碴案一審宣判！民進黨前中執委郭再欽遭判8年半..台南前議長郭信良今遭搜索！游盈隆說「公投綁大選」是必然的趨勢 @longmedia  ｜龍介的直播",
-      "topicScores": {
-        "兩岸外交": 0.58,
-        "治安": 0.78,
-        "環境": 0.62
-      },
-      "topics": [
-        "治安",
-        "環境",
-        "兩岸外交"
-      ],
-      "url": "https://www.youtube.com/watch?v=smAQ05IrLTg"
-    },
-    {
-      "agendaRelevance": 0.5,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "02bb57841eacfb3cad2e718ee0e82a84926fc8100ce834a3b98d228d93568b77",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "youtube:X6n-8qxFvP8",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/c588a23aaa0b969f28ba.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.82,
-        "label": "批評／究責",
-        "reason": "批評台南治水與特別預算問題，屬施政究責。",
-        "type": "criticism_accountability"
-      },
-      "platform": "youtube",
-      "postedAt": "",
-      "sourceId": "hsieh-lc-yt",
-      "text": "20260626 賴清德台南治水破功？特別愛講財政紀律的賴政府，特別預算編列特別多！二審逆轉，民進黨 4 黨工涉共諜改輕判！ @longmedia  ｜龍介的直播",
-      "topicScores": {
-        "治安": 0.52,
-        "經濟": 0.72,
-        "防災": 0.86
-      },
-      "topics": [
-        "防災",
-        "經濟",
-        "治安"
-      ],
-      "url": "https://www.youtube.com/watch?v=X6n-8qxFvP8"
-    },
-    {
-      "agendaRelevance": 0.38,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c753076ca1dea5fca09868bc92bee8fe1356c7e3be6b8d641e77b0ee8f948ccb",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "youtube:fS6dl9nj3gU",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/1fb92ae87106dcee2807.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.8,
-        "label": "立場表態",
-        "reason": "主要在評論農產品外銷與經費分配，屬立場表態。",
-        "type": "position_statement"
-      },
-      "platform": "youtube",
-      "postedAt": "",
-      "sourceId": "hsieh-lc-yt",
-      "text": "20260623 民進黨連農產品都要意識形態...芒果外銷到法國單價很高？謝龍介：農民才拿到多少？網友問：無人機的經費為何砍掉？謝龍介回應了 @longmedia  ｜龍介的直播",
-      "topicScores": {
-        "兩岸外交": 0.54,
-        "生活": 0.5,
-        "經濟": 0.88
-      },
-      "topics": [
-        "經濟",
-        "兩岸外交",
         "生活"
       ],
-      "url": "https://www.youtube.com/watch?v=fS6dl9nj3gU"
+      "url": "https://www.youtube.com/watch?v=Dw6OYhcKkCs"
     },
     {
       "agendaRelevance": 0.34,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "122143661a2dd6106e2344bba407806ec53ac5d3e24449e40a5edec5b36323e5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "35e6d43d7cfeb320cc42c8c5fd8168c8eae7200cb04e4a8c303d7926172b69be",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:smAQ05IrLTg",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/be8644b3ffedf0b8a136.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "提及爐碴案、無人機採購與地方政案，屬主動時事評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260630 藍白提出無人機採購版本！台南學甲爐碴案一審宣判！民進黨前中執委郭再欽遭判8年半..台南前議長郭信良今遭搜索！游盈隆說「公投綁大選」是必然的趨勢 @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "兩岸外交": 0.22,
+        "治安": 0.24,
+        "環境": 0.58
+      },
+      "topics": [
+        "環境",
+        "治安",
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/watch?v=smAQ05IrLTg"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1218877bba8bcc43f39f6a3581b1a90e18446005fb4040d968b9cf746426d61b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:X6n-8qxFvP8",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/c588a23aaa0b969f28ba.webp",
+      "keywords": [
+        "預算"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "聚焦台南治水與特別預算，屬政策與施政批評。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260626 賴清德台南治水破功？特別愛講財政紀律的賴政府，特別預算編列特別多！二審逆轉，民進黨 4 黨工涉共諜改輕判！ @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "經濟": 0.56,
+        "議會監督": 0.38,
+        "防災": 0.9
+      },
+      "topics": [
+        "防災",
+        "經濟",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/watch?v=X6n-8qxFvP8"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "bc2a36cdaa2bf2788f3a93aff52b60eaccb2b14d13bf38a89409f8d3c1a88ed7",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-15T09:51:18+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fS6dl9nj3gU",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/1fb92ae87106dcee2807.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "回應他方觀點",
+        "reason": "有網友具體提問，且內容明確回應該問句。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260623 民進黨連農產品都要意識形態...芒果外銷到法國單價很高？謝龍介：農民才拿到多少？網友問：無人機的經費為何砍掉？謝龍介回應了 @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "交通": 0.34,
+        "競選": 0.91,
+        "經濟": 0.71
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/watch?v=fS6dl9nj3gU"
+    },
+    {
+      "agendaRelevance": 0.27,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "97a82defcc0c30ad8a6509290e336da83e8cf8abd515869720e84ae5ec5442e0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:n89wJf51Z-Q",
       "imageAspect": 1.7872,
@@ -2259,159 +2304,161 @@
       "keywords": [
         "警察"
       ],
-      "nature": {
-        "confidence": 0.76,
-        "label": "立場表態",
-        "reason": "內容涉及掃毒、海峽論壇與房貸風險，多為時事立場評論。",
-        "type": "position_statement"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "談掃毒、海峽論壇與四貸同堂，屬多項時事評論。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "20260619 端午節快樂！行政院掃毒，警察可進入學校查緝！陸委會點名參加海峽論壇的農業團體，被批白色恐怖！股市火熱，央行示警「四貸同堂」危機... @longmedia  ｜龍介的直播",
       "topicScores": {
-        "兩岸外交": 0.74,
-        "治安": 0.66,
-        "經濟": 0.76
+        "住宅": 0.31,
+        "兩岸外交": 0.55,
+        "治安": 0.44,
+        "經濟": 0.39
       },
       "topics": [
-        "經濟",
         "兩岸外交",
-        "治安"
+        "治安",
+        "經濟",
+        "住宅"
       ],
       "url": "https://www.youtube.com/watch?v=n89wJf51Z-Q"
     },
     {
-      "agendaRelevance": 0.31,
+      "agendaRelevance": 0.72,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c733a8b40fafd69f98a8403bd727eb832418c400a16352d1bec2451b79fa1d85",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "089035af5ad63834eb3d7cc4f8c71d5541133ea89f020dc2b3067c89fd3f15f6",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:rtqFcL548Ew",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/86ba65a7a0fef692d4c9.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.72,
-        "label": "批評／究責",
-        "reason": "片段提及官員調動與官商腐敗，屬批評究責語氣。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "談公車調度與官員貪腐問題，屬主動揭弊與交通議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "The people who get things done are being transferred away... Corruption between officials and bus...",
       "topicScores": {
-        "交通": 0.66,
-        "治安": 0.7,
-        "經濟": 0.56
+        "交通": 0.84,
+        "治安": 0.56,
+        "議會監督": 0.47
       },
       "topics": [
-        "治安",
         "交通",
-        "經濟"
+        "治安",
+        "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/rtqFcL548Ew"
     },
     {
-      "agendaRelevance": 0.58,
+      "agendaRelevance": 0.68,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9a5f25e04ef897edbb9f222fa9e1c2b4361d851ee484943d908d4db58df092f2",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d8f861be34981bc1bb23a8c952763715db421cb54a9475a34b26789241327afa",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:GZqzAyKvML4",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/6012e7896103cbde098c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.67,
-        "label": "施政成果／行政進度",
-        "reason": "談農產品外銷與設備升級，屬農業經濟成果宣傳。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主打農民設備升級與鳳梨、釋迦外銷，屬農業經濟宣傳。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Farmers have upgraded their equipment! Confident in pineapple sugar apple exports #XieLongJie #Ta...",
       "topicScores": {
-        "文化觀光": 0.32,
-        "經濟": 0.78
+        "生活": 0.42,
+        "經濟": 0.87
       },
       "topics": [
         "經濟",
-        "文化觀光"
+        "生活"
       ],
       "url": "https://www.youtube.com/shorts/GZqzAyKvML4"
     },
     {
-      "agendaRelevance": 0.55,
+      "agendaRelevance": 0.61,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "eadcb5c715fca61177f647e14b5a8ccf168a8fe6fb2237fbe907172993a64e03",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "6d6ce834fc498c9a3dd5b133da6a06fc28f723b6771b3bfac4a471f5e3ffbace",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:c0VyOmhajgI",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/6744c5b6d2247120a054.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.93,
-        "label": "批評／究責",
-        "reason": "批評特別預算改編入年度預算，重點在財政監督。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評特別預算、主張國防經費編入年度預算，屬政策攻防。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Stop Using Special Budgets! KMT's Drone Initiative Incorporated into the \"Annual Budget\"",
       "topicScores": {
-        "經濟": 0.48,
-        "議會監督": 0.9
+        "競選": 0.88,
+        "經濟": 0.58
       },
       "topics": [
-        "議會監督",
+        "競選",
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/c0VyOmhajgI"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "baa8899c14d4b40cbee4435f0225be01b05f79bd0af6df9fd8ed4c7456dff4b3",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4f77b59219574f4532b63c4bd32cc37d9f39209da2f2784be9e0448827983609",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:u4L1uTdp8DU",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/41f97f63ad191d649d38.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "競選／動員",
-        "reason": "感謝捐款並喊話支持，明顯是選舉動員。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "感謝小額捐款並喊話支持者，主要是競選動員。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Thank you all! People are sending small donations every day... Lung-chieh will work hard for you.",
       "topicScores": {
-        "生活": 0.26,
-        "競選": 0.92
+        "生活": 0.33,
+        "競選": 0.93
       },
       "topics": [
         "競選",
@@ -2423,97 +2470,99 @@
       "agendaRelevance": 0.5,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "2cd3176c957155065459a6bacf4574a19e9e4047c1f49f8f05688d0bf2e4cd1b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "75a283e575cd18341a77ee1853071202a3936e8d19244fc2edc3f21f73144d38",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:NgI-wyul5Ow",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/8c9f8743243621916c96.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "批評／究責",
-        "reason": "內容為要求無人機經費納入總預算，屬預算監督爭點。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "談政黨要求無人機預算納入總預算，屬政策攻防。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Opposition parties demand drone funding be included in the general budget",
       "topicScores": {
-        "經濟": 0.4,
-        "議會監督": 0.91
+        "競選": 0.9,
+        "經濟": 0.63
       },
       "topics": [
-        "議會監督",
+        "競選",
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/NgI-wyul5Ow"
     },
     {
-      "agendaRelevance": 0.8,
+      "agendaRelevance": 0.68,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "5b4c9d210e48a4b2689c1253d16100ec7b1b635982ca6bee792f250c4896d0e5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d345d5a09c00e7b234d5c4ae50d491bc79aea8a03af1e6fc8736a0e604247da4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:9Sr4VDTJ-8s",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/81d34836a2bb888eb7bc.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.68,
-        "label": "政策／政見",
-        "reason": "標題顯示在談育兒政策與免費健康相關方案，屬政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "標題顯示主動提出台南育兒政策，屬政策宣示。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Complementing Lai Ching-te! Hsieh Lung-chieh proposes new Tainan childcare policy: \"Free health i...",
       "topicScores": {
-        "教育": 0.6,
-        "社福": 0.86
+        "教育": 0.58,
+        "社福": 0.74,
+        "醫療": 0.68
       },
       "topics": [
         "社福",
+        "醫療",
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/9Sr4VDTJ-8s"
     },
     {
-      "agendaRelevance": 0.38,
+      "agendaRelevance": 0.16,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c8d3607d7942089ce7fe52e22e83f504d7033b0818543c71b082d3cd96622be0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1907edb7e06cbaa160ee5e7b7c3f801462a8da594e5f5880b2bfb8e20280935f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:_th7BqJPOmg",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/016cfd7353c2cd478995.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.91,
-        "label": "批評／究責",
-        "reason": "影片標題指向質詢與監督議題，屬究責性內容。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "質詢檢察總長屬監督問政，非回應特定他方說法。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "2-week deadline approaching! 6/17 Long-Chieh questions \"indefinite acting Prosecutor-General\"... ...",
       "topicScores": {
         "治安": 0.56,
-        "議會監督": 0.95
+        "議會監督": 0.9
       },
       "topics": [
         "議會監督",
@@ -2522,63 +2571,65 @@
       "url": "https://www.youtube.com/watch?v=_th7BqJPOmg"
     },
     {
-      "agendaRelevance": 0.01,
+      "agendaRelevance": 0.03,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "bfaea044435b0c6c30cccc3b5507aa5f54c6f591a5610ad92fc8f5e0b23133ce",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1bd1245faab71774054d9f5e6f3e7e44caf8fa1845b4c6e8810612b287b7a06b",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:OiMlq70hKec",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/45f5f8f3e9a74bed98a6.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.7,
-        "label": "其他",
-        "reason": "只是案件翻譯式標題，未呈現明確政策或立場。",
-        "type": "other"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅重述吳乃仁欠款獲釋新聞。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Wu Nai-jen owed Taiwan Sugar 170 million; released after only 12 days in custody",
       "topicScores": {
-        "生活": 0.86
+        "治安": 0.45,
+        "生活": 0.72
       },
       "topics": [
-        "生活"
+        "生活",
+        "治安"
       ],
       "url": "https://www.youtube.com/shorts/OiMlq70hKec"
     },
     {
-      "agendaRelevance": 0.03,
+      "agendaRelevance": 0.08,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e03cdc5e73a99aaf061c969f35ce98a4a0e70b994dc42ed367e8a2d6d1480592",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a240fa8bc481557e2387b5ab4a4c0d2f0cb4da0ffdef6bd34d415b2bef84ef0d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:9-GNnjcwWfE",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/b9af36a0f04e17c44fdd.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.92,
-        "label": "其他",
-        "reason": "僅見直播節目名稱，未呈現具體公共議題內容。",
-        "type": "other"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "僅為直播節目標題，未見具體公共政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "20260707 談天說地論台灣 @longmedia  ｜龍介的直播",
       "topicScores": {
-        "生活": 0.7
+        "生活": 0.88
       },
       "topics": [
         "生活"
@@ -2586,96 +2637,100 @@
       "url": "https://www.youtube.com/watch?v=9-GNnjcwWfE"
     },
     {
-      "agendaRelevance": 0.2,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0d3a643ddaaaa3389d36236a1a473cbcdc03af0e9a7536374b82a6d81faaa01d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b0ef969fa69bab7d9ef68740d2986e934f36d385743ba6b631f7bf4b36f54249",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:YDqJYvvvp1M",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/9a3652cc7820726ab07a.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "批評／究責",
-        "reason": "標題指向外交部資料外流，屬監督與究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題僅述監察院認證外交部資料外流。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Control Yuan Confirms Ministry of Foreign Affairs Data Leak",
       "topicScores": {
-        "兩岸外交": 0.97
+        "兩岸外交": 0.95,
+        "議會監督": 0.82
       },
       "topics": [
-        "兩岸外交"
+        "兩岸外交",
+        "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/YDqJYvvvp1M"
     },
     {
-      "agendaRelevance": 0.04,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b12ce7eaae92e674daf0369476cf1d7e28557998569c44c04367f5d07056c9b0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "530d740dba278df6a9c15cb027546043986d78157bca145df69615984500b043",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:fn8UjqRl-3Q",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/de3eac2e22b74b0131be.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.86,
-        "label": "立場表態",
-        "reason": "僅表達支持防颱作為，屬立場表態。",
-        "type": "position_statement"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動表態支持市長防颱作為，屬防災與市政宣傳。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Supporting Chiang Wan-an's Proactive Approach to Typhoon Preparedness",
       "topicScores": {
+        "交通": 0.32,
         "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "交通"
       ],
       "url": "https://www.youtube.com/shorts/fn8UjqRl-3Q"
     },
     {
-      "agendaRelevance": 0.14,
+      "agendaRelevance": 0.57,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9c433241bc8cf812533a21f608ac5569d0522347c81fdc681c8871fdd1cbdeb4",
+        "classifiedAt": "2026-07-15T09:51:03+00:00",
+        "inputHash": "7f81704431f73fee9fa1d9be68fa210bcd3fbbffbe9556b1f40d534473552955",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Y1ENjX5hYPo",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/9178a796cef6b86fa518.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.7,
-        "label": "回應／澄清",
-        "reason": "內容是民眾陳情路口設施造成事故，屬問題回報。",
-        "type": "response_clarification"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是水溝蓋致摔車的陳情與改善訴求，屬交通安全。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Citizen Complaint: \"Drain Covers\" Near Kun Shan University in Tainan Causing Frequent Motorcycle ...",
       "topicScores": {
-        "交通": 0.88,
-        "生活": 0.5
+        "交通": 0.93,
+        "生活": 0.66
       },
       "topics": [
         "交通",
@@ -2684,31 +2739,31 @@
       "url": "https://www.youtube.com/shorts/Y1ENjX5hYPo"
     },
     {
-      "agendaRelevance": 0.01,
+      "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ab3d1191cdc14c027b1a7e22ff9fd17d98f135622b30fb71e3f00e4f307b8d4d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "554da5182d30a82a8406376341bd499e23ffd459dc4308af6f98db9b6f56b885",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:fZBpYWV7FEk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/265fc6b22bfee6cb8553.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.93,
-        "label": "個人／日常",
-        "reason": "以感性人生觀為主，未討論具體公共政策。",
-        "type": "personal_content"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "抒發人際連結與社會感受，未涉公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "Empathy is essential! In today's utilitarian society... human connections are fading away. #Hsieh...",
       "topicScores": {
-        "生活": 0.94
+        "生活": 0.98
       },
       "topics": [
         "生活"
@@ -2716,32 +2771,32 @@
       "url": "https://www.youtube.com/shorts/fZBpYWV7FEk"
     },
     {
-      "agendaRelevance": 0.05,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "12f4f3cdf70725a30e1934f8f83af0d0a478fd7a78e7a078fb5c33aec6065191",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "48fece6b218ab16790f5899643f7b6323948d0a5fe3689cb6cd5aece06b49b42",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:9Qkl6lAm_Rc",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/cb929881b93869967983.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.82,
-        "label": "個人／日常",
-        "reason": "僅為直播標題，缺乏明確公共政策內容。",
-        "type": "personal_content"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅是直播節目標題，未見具體政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "20260714 談天說地論臺灣 @longmedia  ｜龍介的直播",
       "topicScores": {
-        "生活": 0.62,
-        "競選": 0.58
+        "生活": 0.79,
+        "競選": 0.6
       },
       "topics": [
         "生活",
@@ -2750,36 +2805,34 @@
       "url": "https://www.youtube.com/watch?v=9Qkl6lAm_Rc"
     },
     {
-      "agendaRelevance": 0.56,
+      "agendaRelevance": 0.15,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "45936f87250ed6fac0157283ce3f8370f45eb97cbf761031bf52ce5a8fecf942",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7ca2ac391aac996f851489f7494ccc6deaa0139ede5d438c87ae227b8ec930e3",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:FyXS6PGdKDI",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/f80f8103c1f9724e00b6.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.94,
-        "label": "批評／究責",
-        "reason": "延續對毒油與官員責任的批評，重點在究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "批評食安與癌症油事件，屬主動發表意見，非回應特定對手。",
+        "type": "self_initiated"
+      },
       "sourceId": "hsieh-lc-yt",
       "text": "These are the kind of officials we have! From the outbreak of the cancer-causing oil until now......",
       "topicScores": {
-        "議會監督": 0.8,
-        "醫療": 0.85
+        "醫療": 0.87
       },
       "topics": [
-        "醫療",
-        "議會監督"
+        "醫療"
       ],
       "url": "https://www.youtube.com/shorts/FyXS6PGdKDI"
     }

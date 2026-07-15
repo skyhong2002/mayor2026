@@ -2,32 +2,32 @@
   "count": 6,
   "posts": [
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.14,
       "candidateId": "lin-yi-feng",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ddc80887aacbfa0d08761447e0593fc43b40de66b7bac7fae71f3c1c66b32a1b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "f33fd60f130b1b491062ce474643196b49faf3e986fdfad67367e6d98853625b",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Jtmc4usxwEw",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7a98e351438446b9d0ac.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.86,
-        "label": "競選／動員",
-        "reason": "詢問某人近來努力什麼，語氣像競選宣傳。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.78,
+        "label": "主動發文",
+        "reason": "僅以提問式文案帶出個人形象，未見具體公共政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "lin-yf-yt",
       "text": "這些日子這段時間，豐哥為了什麼而努力？",
       "topicScores": {
-        "生活": 0.22,
-        "競選": 0.88
+        "生活": 0.46,
+        "競選": 0.68
       },
       "topics": [
         "競選",
@@ -36,66 +36,66 @@
       "url": "https://www.youtube.com/watch?v=Jtmc4usxwEw"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.1,
       "candidateId": "lin-yi-feng",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "403d6967837ce3c5fae5df4e32ca857673bcb2a6c84c9ec044e8ea7dcd7450fe",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "3f904ae882afcfee17cb13b2fa6bd4f893c7c89e99d7b950a3523e17e5f2f2c9",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:434D5EeQdE0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/129b11f849be1a2fdb20.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.62,
-        "label": "回應／澄清",
-        "reason": "僅表示被針對，較像回應或澄清而非政策。",
-        "type": "response_clarification"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.89,
+        "label": "主動發文",
+        "reason": "只說遭針對，屬政治受害敘事，未提出具體議程。",
+        "type": "self_initiated"
+      },
       "sourceId": "lin-yf-yt",
       "text": "我們不只一次被針對了！",
       "topicScores": {
-        "治安": 0.46,
-        "競選": 0.37
+        "生活": 0.32,
+        "競選": 0.72
       },
       "topics": [
-        "治安",
-        "競選"
+        "競選",
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=434D5EeQdE0"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.12,
       "candidateId": "lin-yi-feng",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ed95ddd09da6e4d3852430481202b7635c7beb1c43f1b2c41d64b139a38713fc",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "331e1e55a9467e2315f225aed64d7f9179af3a17b436a4fcabd8c9666c3a84d5",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:3AGdvZllYss",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/350c9142c156c8455cab.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.68,
-        "label": "批評／究責",
-        "reason": "質疑頻繁辦電音趴，焦點在活動政策與爭議。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "在問為何辦電音派對，重點是活動與形象話題。",
+        "type": "self_initiated"
+      },
       "sourceId": "lin-yf-yt",
       "text": "虧雞為何要一直舉辦電音趴呢？",
       "topicScores": {
-        "文化觀光": 0.8,
-        "競選": 0.34
+        "文化觀光": 0.82,
+        "競選": 0.61
       },
       "topics": [
         "文化觀光",
@@ -104,14 +104,14 @@
       "url": "https://www.youtube.com/watch?v=3AGdvZllYss"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.05,
       "candidateId": "lin-yi-feng",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "edbb73fab9f91f2d63cd79257239c628c0fc3612ecef6fdea789d7606d148260",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1c436df0e135fcde81f57f88c1936cfc4cc87a897afe2cb629c2faf73425ae5c",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:EZbqmR8-k6Y",
       "imageAspect": 1.7872,
@@ -119,78 +119,82 @@
       "keywords": [
         "音樂"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "資訊公告／服務提醒",
-        "reason": "公告電音活動時間、地點與免費入場資訊。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳免費電音活動與場次資訊，屬活動公告。",
+        "type": "self_initiated"
+      },
       "sourceId": "lin-yf-yt",
       "text": "11.25 Crazy Friday全球百大電音趴！【天馬戲創作劇團】最瘋最狂最嗨的音樂節!台南&新營雙主場❗️全部免費入場~",
       "topicScores": {
-        "文化觀光": 0.96
+        "文化觀光": 0.98,
+        "生活": 0.25
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=EZbqmR8-k6Y"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "lin-yi-feng",
-      "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8a40c714b8896a1d779a174101961b5b2832dd39041b45e1ff855b35e3409327",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
-      },
-      "id": "youtube:XRRIZkctqH0",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/b4a78455ea423f591b50.webp",
-      "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "資訊公告／服務提醒",
-        "reason": "宣傳電音活動與演出陣容，屬活動資訊公告。",
-        "type": "public_information"
-      },
-      "platform": "youtube",
-      "postedAt": "",
-      "sourceId": "lin-yf-yt",
-      "text": "11.25 Crazy Friday！電音趴重磅登場！全球百大DJ亮相！臺南新營雙主場！",
-      "topicScores": {
-        "文化觀光": 0.95
-      },
-      "topics": [
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/watch?v=XRRIZkctqH0"
     },
     {
       "agendaRelevance": 0.05,
       "candidateId": "lin-yi-feng",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "fa72f82333483a39215060e47de0075cd46f9f8fd256adf925f7aa1d952e7574",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ef213f5defd3c6dd386a6129b06f88a1ccbb467acc9a51a955d4db74dc58b533",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:XRRIZkctqH0",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/b4a78455ea423f591b50.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳電音趴與DJ陣容，屬活動行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lin-yf-yt",
+      "text": "11.25 Crazy Friday！電音趴重磅登場！全球百大DJ亮相！臺南新營雙主場！",
+      "topicScores": {
+        "文化觀光": 0.97,
+        "生活": 0.2
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=XRRIZkctqH0"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "lin-yi-feng",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "c89147dd71ffaea0e6109482675dee2c6764a5fe36a0bb1068500b784fd3bf82",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:Z99HH5gi1tY",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/d0a76576e120381a6b5c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "資訊公告／服務提醒",
-        "reason": "僅提到鹽水夜市，缺乏公共議題內容。",
-        "type": "public_information"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為地名或生活場景標示，無明確公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "lin-yf-yt",
       "text": "鹽水夜市",
       "topicScores": {

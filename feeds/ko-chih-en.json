@@ -2,14 +2,14 @@
   "count": 69,
   "posts": [
     {
-      "agendaRelevance": 0.74,
+      "agendaRelevance": 0.7,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "57f3a71f24dfbaa41e992578cd67c54c85dcef57309cfca351e262126d0188d2",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "dde88a8882b366b56613022b1effe4a7a2aa4836a4a41c27eaa438928a8d238e",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaxEhFkiRB2",
       "imageAspect": 1.3348,
@@ -20,37 +20,35 @@
         "AI",
         "防災"
       ],
-      "nature": {
-        "confidence": 0.77,
-        "label": "施政成果／行政進度",
-        "reason": "參訪無人機企業並連結產業與城市治理，屬施政推動說明。",
-        "type": "administrative_update"
-      },
       "platform": "threads",
       "postedAt": "2026-07-14T08:33:12+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參訪無人機科技公司，主談產業應用與城市治理。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:高雄不只製造無人機，更要掌握無人機的「大腦」。\n\n來到「藏識科技」參訪，我聽取團隊介紹，也實際體驗無人機模擬系統，更讓我思考，如何協助高雄在地企業，將軟體技術真正運用在無人機產業與智慧城市發展。\n\n藏識科技研發的，正是無人機最核心的「大腦」。他們從 GIS 地理資訊、三維圖資起家，逐步投入自主飛行控制、地面任務導控、AI 多機協同與模擬訓練等技術。他們更將國土測繪、防災應變、消防救災等應用導入公共治理，幫助第一線人員更快掌握資訊、更安全地完成任務。\n\n目前，藏識科技已與內政部國土測繪中心、桃園市水利局、台北市及高雄市消防局等多個公部門合作，建置多維度服務平台與模擬系統。令人敬佩的是，任念志總經理將獲得的盈餘，又全部投入下一階段的研發工作。\n\n任總經理笑稱，藏識不像公司，倒像是一間「瘋狂實驗室」。在我眼中，這群夥伴更是一群頑固的夢想家——他們賺錢的目的不是為了私利，而是為了台灣無人機產業鏈的健全發展。這正是台灣最需要的新創精神。\n\n我一直認為，無人機產業真正的競爭力，絕不能只停留在「整機製造」，更在於飛控、空間資訊、AI 演算與軟硬體整合的能力。",
       "topicScores": {
-        "交通": 0.34,
-        "經濟": 0.83,
-        "防災": 0.74
+        "經濟": 0.81,
+        "防災": 0.77
       },
       "topics": [
         "經濟",
-        "防災",
-        "交通"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DaxEhFkiRB2"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.82,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e1ed13eefd26640457e85b83be87070b3163686040a9b45026adf85c06dae0e4",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "88349de5ad880d0a97873883f0cf94e82dea64e39445e9d0679a36e96f40a9bb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaxAx0Fkfao/",
       "imageAspect": 1.3348,
@@ -63,37 +61,37 @@
         "AI",
         "防災"
       ],
-      "nature": {
-        "confidence": 0.77,
-        "label": "施政成果／行政進度",
-        "reason": "以參訪企業談無人機產業與政策方向，兼具產業布局。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-14T08:00:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主談無人機產業政策、法規鬆綁與資源配置。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "高雄不只製造無人機，更要掌握無人機的「大腦」。\n\n來到 #藏識科技 參訪，我聽取團隊介紹，也實際體驗無人機模擬系統，更讓我思考，如何協助高雄在地企業，將軟體技術真正運用在無人機產業與智慧城市發展。\n\n藏識科技研發的，正是無人機最核心的「大腦」。他們從 GIS 地理資訊、三維圖資起家，逐步投入自主飛行控制、地面任務導控、AI 多機協同與模擬訓練等技術。他們更將國土測繪、防災應變、消防救災等應用導入公共治理，幫助第一線人員更快掌握資訊、更安全地完成任務。\n\n目前，藏識科技已與內政部國土測繪中心、桃園市水利局、台北市及高雄市消防局等多個公部門合作，建置多維度服務平台與模擬系統。令人敬佩的是，任念志總經理將獲得的盈餘，又全部投入下一階段的研發工作。\n\n任總經理笑稱，藏識不像公司，倒像是一間「瘋狂實驗室」。在我眼中，這群夥伴更是一群頑固的夢想家——他們賺錢的目的不是為了私利，而是為了台灣無人機產業鏈的健全發展。這正是台灣最需要的新創精神。\n\n我一直認為，無人機產業真正的競爭力，絕不能只停留在「整機製造」，更在於飛控、空間資訊、AI 演算與軟硬體整合的能力。台灣過去的 PC、半導體與工具機傳奇，靠的就是無數個隱形冠軍、中小企業密切協作，構成產業鏈。台灣要發展無人機，我們更不能忽略這項產業脈絡。\n\n因此我認為，未來的無人機政策，必須將資源更精準地投入給從事研發與應用的中小企業，而非全部分配給指標性的整機大廠。\n\n除了投入資源，政府更要扮演「引路人」的角色。我們應勇於開放場域、鬆綁法規，在兼顧飛安、資安與國安的前提下，提供穩定且具前瞻性的沙盒，讓更多像藏識科技一樣的優秀團隊能在高雄扎根、成長，並培養更多專業人才。\n\n高雄要發展無人機產業，不能只做代工，更要掌握核心技術。我們要串聯大學、研究單位、新創企業與製造業，讓高雄成為人才培育、技術驗證與商業應用的重要基地。\n\n不只製造無人機，更要打造無人機的「大腦」。讓下一個具有國際競爭力的產業，從高雄出發！",
       "topicScores": {
-        "環境": 0.68,
+        "交通": 0.55,
         "經濟": 0.9,
-        "防災": 0.71
+        "防災": 0.72
       },
       "topics": [
         "經濟",
         "防災",
-        "環境"
+        "交通"
       ],
       "url": "https://www.instagram.com/p/DaxAx0Fkfao/"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.82,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0d42cc4e3a9fd1ca9265fcc16c7498dfd9da824c14c53ec9805a1317f13e951d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "47186a7bd37a93b8e9bbd7d15156b461711889ea033cbe006a17210118d44e48",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1588104072669973",
       "imageAspect": 1.3348,
@@ -104,39 +102,40 @@
         "科技",
         "半導體",
         "AI",
-        "防災"
+        "防災",
+        "大學"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "政策／政見",
-        "reason": "主張無人機政策、沙盒法規與研發資源配置，屬具體政策。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-14T08:00:27.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主談無人機產業政策、研發資源配置與法規鬆綁。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "高雄不只製造無人機，更要掌握無人機的「大腦」。\n\n來到 #藏識科技 參訪，我聽取團隊介紹，也實際體驗無人機模擬系統，更讓我思考，如何協助高雄在地企業，將軟體技術真正運用在無人機產業與智慧城市發展。\n\n藏識科技研發的，正是無人機最核心的「大腦」。他們從 GIS 地理資訊、三維圖資起家，逐步投入自主飛行控制、地面任務導控、AI 多機協同與模擬訓練等技術。他們更將國土測繪、防災應變、消防救災等應用導入公共治理，幫助第一線人員更快掌握資訊、更安全地完成任務。\n\n目前，藏識科技已與內政部國土測繪中心、桃園市水利局、台北市及高雄市消防局等多個公部門合作，建置多維度服務平台與模擬系統。令人敬佩的是，任念志總經理將獲得的盈餘，又全部投入下一階段的研發工作。\n\n任總經理笑稱，藏識不像公司，倒像是一間「瘋狂實驗室」。在我眼中，這群夥伴更是一群頑固的夢想家——他們賺錢的目的不是為了私利，而是為了台灣無人機產業鏈的健全發展。這正是台灣最需要的新創精神。\n\n我一直認為，無人機產業真正的競爭力，絕不能只停留在「整機製造」，更在於飛控、空間資訊、AI 演算與軟硬體整合的能力。台灣過去的 PC、半導體與工具機傳奇，靠的就是無數個隱形冠軍、中小企業密切協作，構成產業鏈。台灣要發展無人機，我們更不能忽略這項產業脈絡。\n\n因此我認為，未來的無人機政策，必須將資源更精準地投入給從事研發與應用的中小企業，而非全部分配給指標性的整機大廠。\n\n除了投入資源，政府更要扮演「引路人」的角色。我們應勇於開放場域、鬆綁法規，在兼顧飛安、資安與國安的前提下，提供穩定且具前瞻性的沙盒，讓更多像藏識科技一樣的優秀團隊能在高雄扎根、成長，並培養更多專業人才。\n\n高雄要發展無人機產業，不能只做代工，更要掌握核心技術。我們要串聯大學、研究單位、新創企業與製造業，讓高雄成為人才培育、技術驗證與商業應用的重要基地。\n\n不只製造無人機，更要打造無人機的「大腦」。讓下一個具有國際競爭力的產業，從高雄出發！",
       "topicScores": {
-        "環境": 0.68,
-        "經濟": 0.9,
-        "防災": 0.72
+        "教育": 0.4,
+        "經濟": 0.84,
+        "防災": 0.58
       },
       "topics": [
         "經濟",
         "防災",
-        "環境"
+        "教育"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02mVEYFTrp1zKjc2Xrh1YXmvDfVejADPH1Ew1Ho8aDU3cNUpt5fHVfMKVevbqiXTUgl"
     },
     {
-      "agendaRelevance": 0.15,
+      "agendaRelevance": 0.12,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "18471625a7efcee54572c862ae3ba4fb3101b4668a315d869c4cb1ef2d0c60ad",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7c578e0d05ee1e254a42fee9e38436f39633bcb703eeec948d553f8fbece7ab8",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1587983952681985",
       "imageAspect": 1.0,
@@ -145,37 +144,37 @@
         "選舉",
         "投票"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "立場表態",
-        "reason": "主要是在表態支持多項公投，並非施政政策主張。",
-        "type": "position_statement"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-14T04:03:28.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主要是公投攻防與動員，屬政治倡議非具體施政議程。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今院會聚焦：安樂死公投案逕付二讀\n\n今院會中朝野攻防的焦點無疑是「公投綁年底選舉」，為了落實直接民主，藍白陣營推動攸關民生與社會正義的公投案。\n\n藍白攜手！公投提案最新進度：\n之前已逕付二讀：國民黨主推的 「#鞭刑公投」、「#反廢死公投」，以及民眾黨主推的「#移轉投票」、「#交通罰鍰專款專用」共4案。\n\n今日院會再將2案逕付二讀：國民黨提出「#重啟核電公投」及民眾黨提出 「#安樂死公投」。 \n\n為凝聚黨內共識，今國民黨團召開黨團大會，針對安樂死、核電、鞭刑打詐等公投議題進行內部討論。其中，安樂死是否應合法化，台灣社會已辯論超過40年。支持者主張，人民除了擁有生存權，也應享有生命自主權；當面對無法治癒、極度痛苦且無法改善的病況時，是否能夠有尊嚴地結束生命，應由當事人自己決定。\n\n然而，反對者則認為生命具有不可替代的價值，人類無權主動終結生命。許多宗教團體及重視傳統倫理價值者也憂心，一旦安樂死合法化，相關標準可能逐步放寬，甚至遭到濫用的風險，讓經濟弱勢、重病患者或高齡者因不願成為家庭負擔而被迫做出選擇。\n\n雙方的辯論不會有交集的可能，使得這項議題始終存在高度爭議，也成為社會必須共同面對的艱難課題。\n\n另一「鞭刑公投」也是處於強烈民意和法治人權價值之間的拉鋸，多位具法學背景的民眾黨立委認為，相關制度涉及憲法、人權及刑罰正當性等重大爭議，應以審慎態度面對。\n\n基於藍白合作，無論如何在野黨對於後續公投案的推進，一定誠意協商、達成共識，接下來一個月的協商冷凍期，朝野之間將持續溝通，在野黨也會努力讓公投順利成案。\n\n面對重大政策分歧，最好的方式不是替人民做決定，而是把決定權交給人民。\n讓人民自己作主，讓民主真正落實。\n\n#立法院\n#公投",
       "topicScores": {
-        "生活": 0.83,
-        "競選": 0.72,
-        "醫療": 0.8
+        "治安": 0.2,
+        "生活": 0.48,
+        "競選": 0.74
       },
       "topics": [
+        "競選",
         "生活",
-        "醫療",
-        "競選"
+        "治安"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid027t6AsnHxcvRv5D4MVXpfCQx8vRZr3k93cLt19e7rLZ6Qii8ivH9jKLReeUYbTnbil"
     },
     {
-      "agendaRelevance": 0.68,
+      "agendaRelevance": 0.73,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "557eb33e32b0ff44cce8d43ded669e7531fa816a5ef17adc50bbcce10c97a5eb",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "deaccbecc50a799fdde1abb9d38397eb0401f2b1803caf661097f8dd1f4c847f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1587211292759251",
       "imageAspect": 1.5013,
@@ -191,66 +190,66 @@
         "委員會",
         "立法院"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "批評／究責",
-        "reason": "集中批評教育部管教與校園制度失能，要求檢討責任。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-13T04:51:20.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "聚焦校園管教失靈與教育部制度批評，屬教育政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "「寬容已成台灣教育的慢性毒藥」，孰令致之？\n\n今天在立法院教育委員會，看到了一位心碎父親的身影。看著楊爸爸帶著滿身的傷痛，親自站上最高民意殿堂，用血淚控訴當前「#學生輔導管教」早已失靈的殘酷真相，內心真的有萬般不捨。特別趨前向楊爸爸致上慰問，請他好好保重，更希望楊同學的不幸，是台灣校園悲劇的最後一位犧牲者。\n\n然而，失能的體制如果不改，悲劇真能就此終結嗎？\n\n恰巧昨一則新聞：一名國中生因遲到被罰寫課文，家長竟控告學校與老師，要求國家賠償140萬元！雖然最後被法官駁回，但不禁要問：萬一今天遇到的是不同見解的法官呢？第一線的老師要如何賠？事實上，這絕非特例，早已發生教師因管教學生被投訴、提告，有些只能花錢和解、吞下委屈的案例！更早之前，有學生曠課被記警告，提訴願後被撤銷，隨後教育部乾脆規定「學生出缺席狀況，不得加以懲處」。\n\n學生的受教權益當然必須百分之百維護，且並非要恢復過去威權式的懲罰，因為懲罰從來不是教育的真正目的。然而，教育不該是一昧的縱容！如果一個孩子長期曠課、學分嚴重不足，經輔導後卻毫無改善，學校卻連「有條件的留級或重讀」機制都沒有，那我們根本不是在保護他，而是在剝奪他導正、真正受教的機會！尤其面對行為嚴重偏差、甚至帶有暴力傾向，隨意對著師長同學叫囂、甚至用三字經當眾羞辱老師的學生——試問教育部，到底給了學校什麼樣的管教工具？\n\n面對基層教師的不安和無力，張廖次長說：「教師無需懼怕對學生進行正當管教」，聽在第一線基層教師耳裡，既心酸又諷刺！試問這幾年教育部給基層教師何種支持？為什麼教師會採取「防禦性教學」？為什麼管教學生、稍一不慎就會動輒得咎？就會無端進入「校事會議」接受無情的調查和折磨？\n\n這套愈走愈偏的制度，已經在高中職現場結出了最苦澀的惡果。第一線老師沉痛表示：有些學生不交作業、上課睡覺、甚至隨意翹課、缺考不及格，通知家長也無用處。加上高中端也早已取消留級制度，導致高中職的畢業率逐年下降，例如113學年度，高中職畢業率下滑到90.3%，約有1萬 6,510人無法畢業。教育部卻說「畢業率不等同未完成高中學業，以後仍可回校補修」，如此說法實避重就輕、掩耳盜鈴，因高中沒畢業一樣能取得「修業證明」報考大學，「如今在台灣，拿大學畢業證書，可能比拿高中畢業證書還容易！」因為大學端缺學生，要「落榜」才是更難的事，不是嗎？\n\n當體制放任程度不足、對行為失控的孩子一路大開綠燈，這不是愛護，而是對台灣下一代集體競爭力的致命傷害！\n\n教育失敗，是整個國家的失敗；校園失序，更將是全民受害！\n\n曾幾何時，「寬容」兩個字，竟然成了台灣教育的慢性毒藥？這是第一線高中職校長和老師們最沉痛的告白。中央的主政者，還要裝睡到什麼時候？!\n\n#台灣教育\n#校園失序\n#教育部",
       "topicScores": {
         "教育": 0.98,
-        "議會監督": 0.88
+        "生活": 0.27,
+        "議會監督": 0.79
       },
       "topics": [
         "教育",
-        "議會監督"
+        "議會監督",
+        "生活"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0cJqSYgRfeZUGGWZcyo15tVcBcRv1CfQU3dhB4NiHWYH29cxx5eB1E7Aj5XmDBjRUl"
     },
     {
-      "agendaRelevance": 0.41,
+      "agendaRelevance": 0.58,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "9359ec44357273c95c472c55763446b1a07844c779570cdecf969d02674f237d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "0a9732928c064744d02adb552f0597e221d1aaeb468042b92c60e000113ca6fa",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DasFsViG_TT/",
       "imageAspect": 0.8027,
       "imageUrl": "assets/feed-images/3cc61d11d0a0005e705a.webp",
       "keywords": [
+        "文化",
+        "美食",
         "產業",
         "創業",
         "商圈",
-        "科技",
-        "文化",
-        "美食"
+        "科技"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "活動／行程",
-        "reason": "出席店家開幕並談地方創生與返鄉創業。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-12T10:31:44+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "聚焦青年返鄉創業與地方創生，兼具觀光經濟。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "我來到 #彌陀 參加「品馨牛排 彌陀總店」重新開幕，和年輕創業者聊聊，也深刻感受到高雄海線青年返鄉打拚的熱情與勇氣。\n\n「品馨牛排」的 #吳懿恆 執行長一直有個夢想，就是希望透過美食，讓更多人走進彌陀、認識彌陀。\n\n他將在地漁產融入排餐，推出招牌「比臉大虱目魚肚排」，打造全台最有海味的牛排館；到活化老宅、成立「港馨合苑」，結合地方文化與創意料理，串聯在地產業與商圈，希望讓更多年輕人願意回到家鄉發展。\n\n令人敬佩的是，即使去年遭遇火災，懿恆仍沒有放棄，反而投入更多心力與資源重新出發，將店面全面升級，希望繼續為彌陀、為海線創造更多可能。\n\n我始終相信，#地方創生 從來不只是開一家店，而是讓年輕人留下來，讓更多人願意走進來。高雄的未來不只在科技園區，也在每一位願意返鄉創業、深耕地方的年輕人身上。\n\n我也希望未來的高雄，有更多像懿恆這樣的青年創業者，可以在家鄉找到舞台。讓夢想生根發芽，讓更多孩子願意返鄉，讓高雄成為一座可以工作生活、也可以實現夢想的城市。\n\n最後，祝福品馨牛排開幕大吉、生意興隆，讓更多人透過一份用心的排餐，認識彌陀、愛上彌陀。\n\n#繞著高雄跑",
       "topicScores": {
-        "文化觀光": 0.8,
-        "生活": 0.54,
-        "經濟": 0.86
+        "文化觀光": 0.9,
+        "經濟": 0.71
       },
       "topics": [
-        "經濟",
         "文化觀光",
-        "生活"
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DasFsViG_TT/"
     },
@@ -258,24 +257,24 @@
       "agendaRelevance": 0.0,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1a71f20ee77a571fa79e318022dd9eb945351f33ef1884124fd5248a3b29da1f",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ac4d569393d9273b5f60fbc2b0289ad72d28a43bde69881d9eff0a60e05ca342",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DarjMzhGdUz",
       "imageAspect": 0.7361,
       "imageUrl": "assets/feed-images/8d984b4328582b41171c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.99,
-        "label": "個人／日常",
-        "reason": "僅說明被分配到彌陀，未含實質議題。",
-        "type": "personal_content"
-      },
       "platform": "threads",
       "postedAt": "2026-07-12T05:05:52+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是被分配地區的資訊，無公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:我同時發了兩篇貼文\n你被分配到的是：彌陀。",
       "topicScores": {
@@ -290,24 +289,24 @@
       "agendaRelevance": 0.0,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "bc706a1fb0fabb8c48b82a199cdcc841a8551b44abfcf2a9c1f7fedd1a00b342",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e5abe1835b21a0a5dfdc39508feb3d8bb3f3b806e4486c567b86ee002e907b87",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DarjKCLCea8",
       "imageAspect": 0.6557,
       "imageUrl": "assets/feed-images/71696c48b339fd862139.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.99,
-        "label": "個人／日常",
-        "reason": "僅說明被分配到永安，未含實質議題。",
-        "type": "personal_content"
-      },
       "platform": "threads",
       "postedAt": "2026-07-12T05:05:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是被分配地區的資訊，無公共議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:我同時發了兩篇貼文\n你被分配到的是：永安。",
       "topicScores": {
@@ -319,14 +318,14 @@
       "url": "https://www.threads.com/t/DarjKCLCea8"
     },
     {
-      "agendaRelevance": 0.46,
+      "agendaRelevance": 0.69,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "23fb86cf1911534a386403ff895b718ac8567a12bbe5a583d98f1bb73cd5d766",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "16b48d0817a3457aef738de3029c4e3c5603303573c7753508f9a9a38f3e35b6",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DargPgaE3Vc/",
       "imageAspect": 1.5,
@@ -336,35 +335,35 @@
         "選手",
         "賽事"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "參與體育會與跆拳道賽開幕，並談運動設施補強。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-12T04:40:04+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參與體育活動並主張補足運動設施，屬施政方向。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天與 方信淵-高雄市議員 宋立彬 高雄市議員 及參選人 黃韻涵 先來到 #永安，參加「永安體育會會員大會」，和許多鄉親朋友相聚。\n\n體育會最大的宗旨，就是希望大家身體健康、生活快樂。但如果要讓鄉親養成運動習慣，除了熱情，更需要場地與資源的支持。相較於市區較完善的運動設施，永安等原高雄縣區在運動空間與公共設施上，仍有許多努力的空間。\n\n大家都期待，未來永安也能擁有屬於自己的運動中心，讓長輩、青年、孩子有更好的運動環境。未來，我也會持續努力，讓市府資源分配更加均衡，讓海線地區獲得更多照顧。\n\n接著來到 #左營 海青工商，參加「高雄市主委盃全國跆拳道錦標賽」開幕典禮，為所有選手加油打氣。\n\n感謝 #高雄市體育總會跆拳道發展委員會 主委 李眉蓁 的邀請，也謝謝眉蓁長期支持高雄跆拳道發展。\n\n孩子們在一次又一次的訓練中，學習專注、紀律與尊重，也學會面對輸贏、接受挑戰。很多時候，勇敢站上場接受挑戰，比獎牌本身更加珍貴；而每一次全力以赴，都是成長最重要的養分。\n\n未來，我也會持續支持基層體育發展，完善運動場館與訓練環境，照顧教練與選手權益，讓更多高雄孩子能從校園、社團、地方賽事一路站上全國，甚至走向世界。\n\n運動不只是競技，更是一座城市的生活方式。\n\n希望高雄的孩子能勇敢追逐夢想、在舞台發光發熱；也希望長輩們能夠健康樂活、享受幸福人生。我會打造一座更健康、更有活力的城市，實現 #三代共好 高雄。\n\n#高雄 #體育 #運動 #樂活 #城市",
       "topicScores": {
-        "住宅": 0.61,
+        "生活": 0.74,
         "體育": 0.96
       },
       "topics": [
         "體育",
-        "住宅"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DargPgaE3Vc/"
     },
     {
-      "agendaRelevance": 0.33,
+      "agendaRelevance": 0.55,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c6763d9de44c18b801aea4423a902c56c09c7b1d4f3ee26e86bc4c3f9328e9e0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2425545026b8c31137007d19027bcacdb519bd9b0cab3b63c84e34ee427a9eb7",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/Dapw6hJidOz",
       "imageAspect": 1.3333,
@@ -375,24 +374,24 @@
         "長輩",
         "照顧"
       ],
-      "nature": {
-        "confidence": 0.79,
-        "label": "回應／澄清",
-        "reason": "以颱風行程受阻下，轉述與里長交流地方需求並回應災情。",
-        "type": "response_clarification"
-      },
       "platform": "threads",
       "postedAt": "2026-07-11T12:27:13+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "藉颱風行程談地方建設與未來市政合作願景。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:今天高雄市停班停課，許多行程被取消，但我仍前往鳳山區與多位里長交流地方建設與基層需求，也傾聽第一線最真實的聲音。\n\n里長是最了解地方的人，無論是交通、排水、環境清潔、長輩照顧，社區大小事都是里長最早發現、最先處理。未來我也會與所有基層夥伴攜手合作，把地方的需求帶進市政，讓政策更貼近市民生活。\n\n今天高雄因應颱風停班停課，所幸風雨未帶來重大災情，僅零星傳出招牌掉落、路樹倒塌等。不過，我與團隊仍持續掌握各地狀況，並關心相關災後復原進度。\n\n另外，市府宣布，明天高雄山區五行政區（六龜、甲仙、茂林、桃源、那瑪夏）因雨量達標，宣布停班停課。市府也已預防性撤離逾千人，感謝所有投入防災工作的第一線同仁的辛勞與付出。\n\n最後提醒大家，根據中央氣象署預報，今天下午至明晚，高雄局部地區仍可能出現6級平均風及8級以上陣風。颱風動態仍持續變化，也提醒鄉親朋友不要掉以輕心，持續留意最新氣象資訊，做好防颱準備、注意外出安全。\n\n希望這次颱風能夠平安通過，高雄不要再有災情，大家一起平安度過。",
       "topicScores": {
-        "交通": 0.54,
-        "環境": 0.51,
-        "社福": 0.43,
-        "議會監督": 0.62
+        "交通": 0.62,
+        "環境": 0.58,
+        "社福": 0.56,
+        "競選": 0.74
       },
       "topics": [
-        "議會監督",
+        "競選",
         "交通",
         "環境",
         "社福"
@@ -400,14 +399,14 @@
       "url": "https://www.threads.com/t/Dapw6hJidOz"
     },
     {
-      "agendaRelevance": 0.6,
+      "agendaRelevance": 0.22,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "47ebdbe81c7a5344b550f2a96c886acedba476fdfa8f00f588b7f53b8814a343",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "70f8ba8639f16af62ad4894610086a44cb57f13f04e9e596651519800c6a867f",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DapuaqSkwVT/",
       "imageAspect": 1.3333,
@@ -417,90 +416,82 @@
         "防災",
         "停班停課",
         "災情",
-        "環境",
-        "長輩",
-        "照顧"
+        "環境"
       ],
-      "nature": {
-        "confidence": 0.86,
-        "label": "活動／行程",
-        "reason": "以颱風後拜會里長、關心災後與地方需求為主。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-11T12:05:26+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以颱風停班與災情關心為主，屬防災與地方巡訪。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天高雄市停班停課，許多行程被取消，但我仍前往鳳山區與多位里長交流地方建設與基層需求，也傾聽第一線最真實的聲音。\n\n里長是最了解地方的人，無論是交通、排水、環境清潔、長輩照顧，社區大小事都是里長最早發現、最先處理。未來我也會與所有基層夥伴攜手合作，把地方的需求帶進市政，讓政策更貼近市民生活。\n\n今天高雄因應颱風停班停課，所幸風雨未帶來重大災情，僅零星傳出招牌掉落、路樹倒塌等。不過，我與團隊仍持續掌握各地狀況，並關心相關災後復原進度。\n\n另外，市府宣布，明天高雄山區五行政區（六龜、甲仙、茂林、桃源、那瑪夏）因雨量達標，宣布停班停課。市府也已預防性撤離逾千人，感謝所有投入防災工作的第一線同仁的辛勞與付出。\n\n最後提醒大家，根據中央氣象署預報，今天下午至明晚，高雄局部地區仍可能出現6級平均風及8級以上陣風。颱風動態仍持續變化，也提醒鄉親朋友不要掉以輕心，持續留意最新氣象資訊，做好防颱準備、注意外出安全。\n\n希望這次颱風能夠平安通過，高雄不要再有災情，大家一起平安度過。\n\n#高雄 #平安",
       "topicScores": {
-        "住宅": 0.72,
-        "環境": 0.71,
-        "社福": 0.64,
-        "防災": 0.88
+        "住宅": 0.54,
+        "環境": 0.72,
+        "防災": 0.94
       },
       "topics": [
         "防災",
-        "住宅",
         "環境",
-        "社福"
+        "住宅"
       ],
       "url": "https://www.instagram.com/p/DapuaqSkwVT/"
     },
     {
-      "agendaRelevance": 0.32,
+      "agendaRelevance": 0.22,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "42f2f177ddd1791838fe61471f01e1fe671f7a19b60198b253f51c2be9f6ddfb",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "3f849c2f2ceaf530de1bfb855a5428d468120ee933c8e1f1aada6e934624499e",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1585893802891000",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/e6af6c5099f5bdd84bc8.webp",
       "keywords": [
-        "颱風",
-        "防災",
-        "停班停課",
-        "災情",
-        "環境",
         "交通",
         "長輩",
-        "照顧"
+        "照顧",
+        "環境"
       ],
-      "nature": {
-        "confidence": 0.82,
-        "label": "立場表態",
-        "reason": "借颱風行程談地方需求與市政合作，屬立場與方向表態。",
-        "type": "position_statement"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-11T12:05:22.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以颱風期間走訪里長與地方需求交流為主，屬活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天高雄市停班停課，許多行程被取消，但我仍前往鳳山區與多位里長交流地方建設與基層需求，也傾聽第一線最真實的聲音。\n\n里長是最了解地方的人，無論是交通、排水、環境清潔、長輩照顧，社區大小事都是里長最早發現、最先處理。未來我也會與所有基層夥伴攜手合作，把地方的需求帶進市政，讓政策更貼近市民生活。\n\n今天高雄因應颱風停班停課，所幸風雨未帶來重大災情，僅零星傳出招牌掉落、路樹倒塌等。不過，我與團隊仍持續掌握各地狀況，並關心相關災後復原進度。\n\n另外，市府宣布，明天高雄山區五行政區（六龜、甲仙、茂林、桃源、那瑪夏）因雨量達標，宣布停班停課。市府也已預防性撤離逾千人，感謝所有投入防災工作的第一線同仁的辛勞與付出。\n\n最後提醒大家，根據中央氣象署預報，今天下午至明晚，高雄局部地區仍可能出現6級平均風及8級以上陣風。颱風動態仍持續變化，也提醒鄉親朋友不要掉以輕心，持續留意最新氣象資訊，做好防颱準備、注意外出安全。\n\n希望這次颱風能夠平安通過，高雄不要再有災情，大家一起平安度過。\n\n#高雄 #平安",
       "topicScores": {
-        "交通": 0.55,
-        "環境": 0.56,
-        "社福": 0.5,
-        "防災": 0.78
+        "交通": 0.51,
+        "環境": 0.47,
+        "生活": 0.62,
+        "社福": 0.49
       },
       "topics": [
-        "防災",
-        "環境",
+        "生活",
         "交通",
-        "社福"
+        "社福",
+        "環境"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02CT2qFkMuKsixKMWLGD8oaWf2roWr32rYpknz3UKv1MhZ24LBFKqX9gkw6c6DGJjwl"
     },
     {
-      "agendaRelevance": 0.11,
+      "agendaRelevance": 0.08,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1d3b1539e088a2d16315e49926ac50f01026adbb37688d03cc832f85df24ea15",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "57066ad656b60eb4cad99335a338a8ee334a42fed231a13094a78e4380935529",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DanIVExEzmE/",
       "imageAspect": 1.3086,
@@ -509,74 +500,71 @@
         "颱風",
         "停班停課"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "活動／行程",
-        "reason": "主要是參與平安宴行程，兼述颱風前撤下看板。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-10T11:54:08+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主要是參與平安宴與撤看板防颱，屬活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "風雨來臨前，行程依然不停歇。\n\n今晚與 #黃香菽 議員、#童燕珍 議員候選人，一同參加三民區正安宮平安宴，與鄉親相聚，也誠心祈求國泰民安、風調雨順。\n\n因應颱風可能帶來的強風，團隊也已提前將容易受影響的看板暫時撤下，希望將風險降到最低。\n\n明天颱風預計影響高雄，市府也已宣布停班停課。無論藍綠，不少民代、議員今晚都出席平安宴，大家共同為高雄祈福，盼望颱風平安度過，鄉親一切平安。\n\n#祈福 #高雄 #平安",
       "topicScores": {
-        "文化觀光": 0.62,
-        "競選": 0.3,
-        "防災": 0.77
+        "文化觀光": 0.36,
+        "生活": 0.28,
+        "防災": 0.71
       },
       "topics": [
         "防災",
         "文化觀光",
-        "競選"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DanIVExEzmE/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.72,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ae3142467dcc061bf68fd461193c39887d7d4a6f2d8d79aef9f136cf82dfc44e",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "04d0facbaeddfb507f630fec2308bf157495c28864c0e82c017c556c36e4051c",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1585099542970426",
       "imageAspect": 1.3093,
       "imageUrl": "assets/feed-images/a3139bc3e79210af7547.webp",
-      "keywords": [
-        "颱風",
-        "停班停課"
-      ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "活動／行程",
-        "reason": "描述參加平安宴與祈福行程，並附帶防颱安排。",
-        "type": "event_activity"
-      },
+      "keywords": [],
       "platform": "facebook",
       "postedAt": "2026-07-10T11:54:05.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參加平安宴與撤看板祈福，屬競選行程與動員。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "風雨來臨前，行程依然不停歇。\n\n今晚與 #黃香菽 議員、#童燕珍 議員候選人，一同參加三民區正安宮平安宴，與鄉親相聚，也誠心祈求國泰民安、風調雨順。\n\n因應颱風可能帶來的強風，團隊也已提前將容易受影響的看板暫時撤下，希望將風險降到最低。\n\n明天颱風預計影響高雄，市府也已宣布停班停課。無論藍綠，不少民代、議員今晚都出席平安宴，大家共同為高雄祈福，盼望颱風平安度過，鄉親一切平安。\n\n#祈福 #高雄 #平安",
       "topicScores": {
-        "生活": 0.78,
-        "防災": 0.99
+        "生活": 0.56,
+        "競選": 0.97
       },
       "topics": [
-        "防災",
+        "競選",
         "生活"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02DLguKcMJShAmFiFfUXd4FCjWC9qZq6QWeWvAg8UH8Z7e3WbPcMCCxJ86zSkNzJ1pl"
     },
     {
-      "agendaRelevance": 0.1,
+      "agendaRelevance": 0.14,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "67c06bdcaf7a285912e1f7251513e164d6b39f3bc859b79b4740999617c10092",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "9bda68c34f9e717633084bb48b0df38966cffa4e22d3a0ee5f5692ebc43d5ef8",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/Dam-JgGFM3B",
       "imageAspect": 1.0,
@@ -586,18 +574,18 @@
         "土石流",
         "災情"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "資訊公告／服務提醒",
-        "reason": "內容為颱風停班停課公告與防災提醒。",
-        "type": "public_information"
-      },
       "platform": "threads",
       "postedAt": "2026-07-10T10:25:09+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是颱風停班停課與防颱提醒，無明確回應對象。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
-        "生活": 0.69,
+        "生活": 0.27,
         "防災": 0.99
       },
       "topics": [
@@ -607,14 +595,14 @@
       "url": "https://www.threads.com/t/Dam-JgGFM3B"
     },
     {
-      "agendaRelevance": 0.1,
+      "agendaRelevance": 0.14,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "14999bc4842854c25479b1f55272b1b36d7044d132aeb3dc2ef819160db6e816",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "19a661529367bf5bec175f326be554ee815f7b7423e7018fab33292fd2ed0d15",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Dam93k2zVZR/",
       "imageAspect": 1.0,
@@ -624,18 +612,18 @@
         "土石流",
         "災情"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "資訊公告／服務提醒",
-        "reason": "發布颱風停班停課與防颱注意事項。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-10T10:25:05+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為颱風停班停課與防颱提醒，未回應特定他方。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
-        "生活": 0.72,
+        "生活": 0.27,
         "防災": 0.99
       },
       "topics": [
@@ -648,11 +636,11 @@
       "agendaRelevance": 0.07,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1466bb1a5a7cf3d129fa69607e39a087d19fba34b68661dbf7d30c4eec4179eb",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7a3ebbc0a66c5bfadde89885a15cbd72509338e97b0f68ba5a1d56d36e4d48ac",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1585045182975862",
       "imageAspect": 1.0,
@@ -662,18 +650,18 @@
         "土石流",
         "災情"
       ],
-      "nature": {
-        "confidence": 0.99,
-        "label": "資訊公告／服務提醒",
-        "reason": "公告停班停課並提醒防颱注意事項，屬公共資訊。",
-        "type": "public_information"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-10T10:22:26.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布停班停課並提醒防颱，屬災防通知。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "各位市民朋友晚安。\n\n‼️因 #巴威颱風 來襲，高雄市政府宣布，明（11）日全市停止上班、停止上課。請市民朋友提前做好防颱準備，並隨時留意最新氣象及災情資訊。\n\n隨著颱風逐漸接近，高雄風雨預計將增強，山區及低窪地區更須提高警覺。提醒大家檢查住家周邊排水情形，固定招牌、盆栽及戶外懸掛物；山區嚴防溪水暴漲、坍方落石及土石流，沿海與空曠地區也要注意強風影響。\n\n請大家非必要勿外出，更避免前往山區、溪流、河床及海邊等高風險地區，照顧好家中的長輩與孩子，彼此關心、互相提醒。\n\n颱風動態仍可能持續變化，我與團隊將持續掌握各地狀況，密切關注風雨及可能的災情發展。我們一同做好準備、守護家園，平安度過這次颱風。",
       "topicScores": {
-        "生活": 0.82,
+        "生活": 0.68,
         "防災": 0.99
       },
       "topics": [
@@ -683,14 +671,14 @@
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0ssg5tRuCxbABwuWM2awqCRA3VP6wzea74LebAEDLm1Q3nL6SLgUApdJb7N4PQCUql"
     },
     {
-      "agendaRelevance": 0.1,
+      "agendaRelevance": 0.16,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "380889568e4574454fde588b3d0250556174b37c812aea9a9903845fb763ade7",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2d6559c9fea7bbf60653f08c432353bd86935bcdc622ffc6fe617b7c7cef894a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DamxrHyz5mZ/",
       "imageAspect": 1.0,
@@ -699,39 +687,37 @@
         "颱風",
         "停班停課",
         "大雨",
-        "土石流",
-        "交通",
-        "道路"
+        "土石流"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "資訊公告／服務提醒",
-        "reason": "公告山區停班停課與防颱避險提醒。",
-        "type": "public_information"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-10T08:36:13+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告山區停班停課並提醒避險，屬防災資訊。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今晚高雄山區雨勢增強，請鄉親務必留意安全！\n\n根據中央氣象署最新資訊，今（10）日晚間高雄市山區雨量預測已達停班停課標準。市府宣布，為維護山區民眾安全：\n\n📍桃源、那瑪夏、茂林、六龜及甲仙區\n⏰今（10）日晚間6時起停止上班、停止上課。\n\n隨著颱風逐漸接近，山區可能出現較大雨勢，請鄉親提高警覺，嚴防溪水暴漲、土石鬆動、坍方落石及土石流，也請避免前往山區、溪流及河床等高風險地區。若有外出需求，務必事先掌握道路及交通狀況。\n\n颱風動態與雨勢仍可能持續變化，請大家隨時留意中央氣象署及市府發布的最新資訊，提高警覺、注意安全。希望高雄平安渡過本次颱風。",
       "topicScores": {
-        "交通": 0.51,
+        "生活": 0.24,
         "防災": 0.99
       },
       "topics": [
         "防災",
-        "交通"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/DamxrHyz5mZ/"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.12,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b6ad9932303ff95fe96bcdfd78007872f65763c9d5bfb480d62b2777e97bd0d4",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "bea594899fc39e8d017199a92e71fb7273e41b631f70b5000f5f50863aec32a9",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DamxkRXifBX",
       "imageAspect": 1.0,
@@ -744,19 +730,19 @@
         "交通",
         "道路"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "資訊公告／服務提醒",
-        "reason": "主軸為颱風警報、停班停課與避災提醒。",
-        "type": "public_information"
-      },
       "platform": "threads",
       "postedAt": "2026-07-10T08:35:12+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是颱風停班停課與山區安全提醒，無回應特定他方。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:今晚高雄山區雨勢增強，請鄉親務必留意安全！\n\n根據中央氣象署最新資訊，今（10）日晚間高雄市山區雨量預測已達停班停課標準。市府宣布，為維護山區民眾安全：\n\n📍桃源、那瑪夏、茂林、六龜及甲仙區\n⏰今（10）日晚間6時起停止上班、停止上課。\n\n隨著颱風逐漸接近，山區可能出現較大雨勢，請鄉親提高警覺，嚴防溪水暴漲、土石鬆動、坍方落石及土石流，也請避免前往山區、溪流及河床等高風險地區。若有外出需求，務必事先掌握道路及交通狀況。\n\n颱風動態與雨勢仍可能持續變化，請大家隨時留意中央氣象署及市府發布的最新資訊，提高警覺、注意安全。希望高雄平安渡過本次颱風。",
       "topicScores": {
-        "交通": 0.4,
-        "生活": 0.52,
+        "交通": 0.54,
+        "生活": 0.68,
         "防災": 0.99
       },
       "topics": [
@@ -767,14 +753,14 @@
       "url": "https://www.threads.com/t/DamxkRXifBX"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.1,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "448632dcb2ab4a134f4bf2d02c2aa91eaa7788eab090e00f5f9d0e3964baa4c8",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1a18c3d488fc1ee06906fb1bbc1e36f7d59ec4ad7a405ce0a58e15e03286f775",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DamY1-dGbO3",
       "imageAspect": 1.0,
@@ -786,19 +772,19 @@
         "土石流",
         "強降雨"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "資訊公告／服務提醒",
-        "reason": "重點是高溫、強風與颱風防災提醒，屬資訊公告。",
-        "type": "public_information"
-      },
       "platform": "threads",
       "postedAt": "2026-07-10T04:59:10+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容聚焦高溫、強風與防颱準備，屬災防提醒。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:高雄今早依舊炎熱，但隨颱風逐漸接近，天氣變化將越來越明顯，請大家務必提前做好防颱準備。\n\n受到颱風外圍環流影響，今（10）日高雄市發布高溫橙色燈號，有連續出現攝氏36度高溫的機率。提醒需要長時間在戶外工作的朋友，務必多補充水分、適時休息，避免中暑及熱傷害，也要多關心家中長輩與孩童。\n\n根據中央氣象署陸上強風特報，明（11）日高雄部分地區可能出現平均風力6級以上、或陣風8級以上的強風。請大家提前固定招牌、盆栽及戶外懸掛物，行經沿海、空曠地區時，也要特別注意安全。\n\n隨著颱風接近，低窪地區請留意短延時強降雨可能造成的積淹水，預先檢查排水孔、清理住家周邊溝渠，並備妥沙包或防水閘門；山區未來幾天也要嚴防豪大雨，避免前往溪流、山區道路及容易發生落石、土石流的地區。\n\n颱風動態仍可能持續變化，請鄉親隨時留意氣象及市府發布的最新資訊。防颱準備多一分，安全就多一分。讓我們一同做好準備、彼此提醒，平安度過這次颱風。",
       "topicScores": {
-        "生活": 0.7,
-        "防災": 0.99
+        "生活": 0.84,
+        "防災": 0.98
       },
       "topics": [
         "防災",
@@ -807,14 +793,14 @@
       "url": "https://www.threads.com/t/DamY1-dGbO3"
     },
     {
-      "agendaRelevance": 0.62,
+      "agendaRelevance": 0.52,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "65be2fcb2589f07b8920d1eaf6d26acbe205928c2ea8e3aac0743c2d529a3719",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "b04a7b633c22a3d16676d563452f61cfbbc247b699162437fd95b179b005392d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DakkQwnk41i/",
       "imageAspect": 1.3348,
@@ -823,41 +809,37 @@
         "運動",
         "選手",
         "球場",
-        "賽事",
-        "產業",
-        "教育"
+        "賽事"
       ],
-      "nature": {
-        "confidence": 0.84,
-        "label": "施政成果／行政進度",
-        "reason": "內容聚焦體育政策、場館與選手培育等市政方向。",
-        "type": "administrative_update"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-09T12:00:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要談體育政策與未來施政方向，屬主動政見。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天很高興受邀參加 #高雄市體育總會 會員代表大會。特別感謝許文宗理事長的邀請，許理事長不只是高雄體育界的重要推手，也是我在政大教育系的學長。更要感謝所有體育界的好朋友，長年投入基層耕耘，陪伴一代又一代選手成長，大家的努力，都是高雄體育不斷向前的重要力量。\n\n高雄是一座充滿熱情的城市，這份熱情，也展現在每一位運動員揮灑汗水的球場、田徑場、泳池等運動場域中。\n\n我常說，體育政策需要有人推動，而高雄體育界最重要的推手，就是體育總會與各單項協會。多年來，大家串聯各項運動發展，陪伴選手一路成長，也是高雄體育持續進步的重要力量。\n\n我始終認為，體育預算、場館維護與選手權益，不能只是口號，而是需要一步一步扎實落實。無論是在中央爭取法規與預算，或是未來推動市政，我都會全力完善高雄各區運動場館的軟硬體設施，打造更安全、更友善的運動環境，同時強化選手培育體系，讓更多高雄子弟站上全國、站上世界，持續為高雄爭光。\n\n未來，我也希望邀請體育總會及各單項協會代表共同參與體育政策白皮書的修訂，讓第一線教練與選手的意見真正納入市政決策。同時推動行政減壓，簡化補助申請與核銷流程，讓各協會把更多心力放在選手培訓與賽事推廣。\n\n我也會積極爭取更多國內外大型賽事來到高雄，包括近年風靡全球的 Hyrox 等新興運動賽事，提升高雄的國際能見度，帶動運動產業發展，朝台灣運動首都的目標穩健邁進。\n\n#高雄 #體育 #運動 #城市發展",
       "topicScores": {
-        "教育": 0.53,
-        "經濟": 0.56,
+        "競選": 0.86,
         "體育": 0.99
       },
       "topics": [
         "體育",
-        "經濟",
-        "教育"
+        "競選"
       ],
       "url": "https://www.instagram.com/p/DakkQwnk41i/"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.58,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "34361be576e4990ae73d782ae5d572d033eca42159fd2a8327119c83742135b5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "c30320705bdd259f2a8225638d48668851e670dd7abfe889dd05309f01ebdc30",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1584312576382456",
       "imageAspect": 1.3318,
@@ -868,33 +850,35 @@
         "球場",
         "賽事"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "內容為受邀出席體育總會會員代表大會，屬活動行程與發言。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-09T12:00:24.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "出席體育總會大會並談場館、預算與賽事推動。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天很高興受邀參加 #高雄市體育總會 會員代表大會。特別感謝許文宗理事長的邀請，許理事長不只是高雄體育界的重要推手，也是我在政大教育系的學長。更要感謝所有體育界的好朋友，長年投入基層耕耘，陪伴一代又一代選手成長，大家的努力，都是高雄體育不斷向前的重要力量。\n\n高雄是一座充滿熱情的城市，這份熱情，也展現在每一位運動員揮灑汗水的球場、田徑場、泳池等運動場域中。\n\n我常說，體育政策需要有人推動，而高雄體育界最重要的推手，就是體育總會與各單項協會。多年來，大家串聯各項運動發展，陪伴選手一路成長，也是高雄體育持續進步的重要力量。\n\n我始終認為，體育預算、場館維護與選手權益，不能只是口號，而是需要一步一步扎實落實。無論是在中央爭取法規與預算，或是未來推動市政，我都會全力完善高雄各區運動場館的軟硬體設施，打造更安全、更友善的運動環境，同時強化選手培育體系，讓更多高雄子弟站上全國、站上世界，持續為高雄爭光。\n\n未來，我也希望邀請體育總會及各單項協會代表共同參與體育政策白皮書的修訂，讓第一線教練與選手的意見真正納入市政決策。同時推動行政減壓，簡化補助申請與核銷流程，讓各協會把更多心力放在選手培訓與賽事推廣。\n\n我也會積極爭取更多國內外大型賽事來到高雄，包括近年風靡全球的 Hyrox 等新興運動賽事，提升高雄的國際能見度，帶動運動產業發展，朝台灣運動首都的目標穩健邁進。\n\n#高雄 #體育 #運動 #城市發展",
       "topicScores": {
+        "文化觀光": 0.41,
         "體育": 0.97
       },
       "topics": [
-        "體育"
+        "體育",
+        "文化觀光"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02jHZj98jfiPyehTcrrRno65HMp2FuSUFJaDKXFdZVTChWHQRSiv2gmQscpUDtEVTNl"
     },
     {
-      "agendaRelevance": 0.86,
+      "agendaRelevance": 0.89,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "cad51eafbe22f119019036fef0dd41f4d952c15bc10e090996747a8c3324f01b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "2903b86d0e5a6c32b98275958ece9caae08fee9279c942ff8e653f1f65f0eabb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1584133563067024",
       "imageAspect": 1.0,
@@ -914,35 +898,37 @@
         "公聽會",
         "立法院"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "批評／究責",
-        "reason": "批評中央減編教育經費並主張修法補漏洞，屬明確究責與監督。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-09T06:42:25.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提教育經費修法主張，內容具體且可作施政議程。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "財劃法放權，中央卻對教育「超減」345億！別讓孩子的未來淪為政治角力的犧牲品\n\n今天教文委員會舉辦了《#教育經費編列與管理法》修法公聽會。很榮幸，我所提出的修法版本，在會中得到與會專家和教師代表的肯定與支持。\n這場修法迫在眉睫，因為我們正眼睜睜看著國家的教育根基受到嚴重衝擊。\n\n中央「#超減」345億：數字背後的教育災難\n《#財劃法》修法的本意，是希望中央將部份的錢、權下放地方。中央按比例可減少155億元教育經費分擔。沒想到，行政院竟然「大手筆」一口氣砍掉500億的教育經費分擔！等於「超減」高達 345億元。如果地方未及時填補或無力負擔，這對台灣的教育現場來說，恐將是一場災難。\n受到衝擊的層面有多大？\n\n•    基礎建設大失血：115年度國中小學的基本教育設施硬生生被減編100億元，包括學校的照明設備、營養午餐的品質，以及攸關數位落差的資訊教育。\n•    弱勢與多元教育遭殃：中央更減少了包括實驗教育、社區大學、藝術教育、幼兒園設備、無障礙校園環境、偏鄉地區、新住民以及國中小弱勢生等共79個計畫、總計約76億元的補助。\n\n中央一邊喊著「教育不能省」，一邊卻片面減編、把責任無情轉嫁給地方。這樣的體制漏洞，我們不能無視！\n\n為了杜絕中央片面減編、卸責，我率先提出修法版本（已於6/5順利經院會一讀），修法兩大重點：\n\n1.    明定中央編列下限：為了穩定教育發展的財源，落實法定保障的精神，明確規範中央教育經費編列的下限，不得低於中央決算歲入淨額的12.9%，確立各級政府該負起責任，不能說砍就砍。\n2.    防堵地方規避漏洞：為了防範部分地方政府採取「高編預算、減少執行」的手段，刻意節省教育支出，甚至把結餘款滾存到地方教育發展基金後，再用特定名目私自併入府庫、挪作他用，增訂明確的處罰要件，唯有建立課責機制，才能真正落實教育經費專款專用。\n\n排除專業聲音：教育經費審議淪為黑箱一言堂\n教育財源穩定，台灣的教育才能走得遠。二十多年前，許多民間教育團體和家長代表奔走呼籲，朝野放下政治歧見，共同完成《教育經費編列與管理法》修法，這是台灣教育立法的典範。\n\n遺憾的是，實施二十多年後，當年「法定保障」的美意如今被嚴重扭曲，更令人挫折的是，行政院把「教育經費基準委員會」原有的教師、家長和校長團體代表，以「不續聘」的方式通通排除！\n\n這種做法完全是大開民主倒車，把應該公開透明的經費分擔機制，降格成閉門造車的黑箱與一言堂。\n\n響應民間呼籲：教育不能成為政治角力的犧牲\n正因目睹當前教育經費編列的亂象，由振鐸學會領銜的 20 多個民間團體、150 位教師與家長，在6/27舉辦「重建教育經費保障」論壇，呼籲「教育不能成為政治角力的犧牲品」，期盼朝野能再度攜手修法。\n\n當天我人在高雄不克出席，但為了表達對民間團體最實質的支持，特別指派助理全程參與、傾聽民意。我承諾：將全力在立法院推動《教育經費編列與管理法》的修法，把被沒收的聲音找回來，把被「超減」的345億元搶救回來！\n#教育經費\n#修法\n#搶救回來",
       "topicScores": {
         "教育": 0.99,
-        "議會監督": 0.84
+        "經濟": 0.45,
+        "議會監督": 0.91
       },
       "topics": [
         "教育",
-        "議會監督"
+        "議會監督",
+        "經濟"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02pM1gjhi6F4gKukPeYoZ5n3pjk6pMHk7W35DcGkE7eMqgQjiAd2T5b7ssd6AiAigdl"
     },
     {
-      "agendaRelevance": 0.9,
+      "agendaRelevance": 0.84,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "81b373666f05aa34a92b6cc44b5d91786e990941006cd906b70489a347e73cd7",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "566460f66a3a83d1b2c1febb9c1b804db22ceeeaf59c7800a4cc6932e8a23f69",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/Dag6Ob4GTzw",
       "imageAspect": 0.9591,
@@ -954,19 +940,19 @@
         "科技",
         "AI"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "政策／政見",
-        "reason": "明確宣示推動AI教育與人才培育的施政方向。",
-        "type": "policy_proposal"
-      },
       "platform": "threads",
       "postedAt": "2026-07-08T01:55:25+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出高雄AI教育與人才培育的施政方向。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:打造高雄成為全民 AI 實戰力的城市\n\nAI 已經改變我們的生活，也正在改變未來的競爭力。\n\n高雄不能只發展 AI 產業，更要培養會運用 AI 的人才。我希望，不論是孩子、老師、勞工、中小企業，甚至退休長輩，都有機會學習 AI、善用 AI，讓科技真正成為每個人的助力。\n\n未來，我將從四個方向推動 AI 教育與人才培育：",
       "topicScores": {
-        "教育": 0.92,
-        "經濟": 0.63
+        "教育": 0.97,
+        "經濟": 0.55
       },
       "topics": [
         "教育",
@@ -975,14 +961,14 @@
       "url": "https://www.threads.com/t/Dag6Ob4GTzw"
     },
     {
-      "agendaRelevance": 0.93,
+      "agendaRelevance": 0.9,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "91617dfac92c5ab5c9e38c234050aa27bddc7da4836b9a49544c5c5bd3a11ea2",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "81fc98e85cc265a87d02568b958906a61a57355631d263fa808597dece513b9a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1583160079831039",
       "imageAspect": 0.9593,
@@ -999,37 +985,35 @@
         "科技",
         "AI"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "政策／政見",
-        "reason": "提出AI教育與人才培育四方向方案，屬具體政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-08T01:46:30.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出AI教育與人才培育政策，具明確施政內容。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "打造高雄成為全民 AI 實戰力的城市\n\nAI 已經改變我們的生活，也正在改變未來的競爭力。\n高雄不能只發展 AI 產業，更要培養會運用 AI 的人才。我希望，不論是孩子、老師、勞工、中小企業，甚至退休長輩，都有機會學習 AI、善用 AI，讓科技真正成為每個人的助力。\n未來，我將從四個方向推動 AI 教育與人才培育：\n\n一、普及化：讓每個人都有學 AI 的機會\n高雄 6 到 18 歲的孩子，都應該擁有平等接觸 AI 的機會。我們將提供免費 AI 教育資源，在校園導入 AI 學習助理，縮短城鄉落差。\n除了學生，我們也要照顧不同世代的需求。長輩累積了一輩子的經驗，不該因科技而被埋沒。我們將開設 AI 課程，協助他們把生活經驗轉化成 AI 指令，讓經驗值變成生產值；也將針對勞工與中小企業推出實作課程，讓更多人跟上 AI 時代。\n\n二、應用化：讓 AI 成為解決問題的能力\n學習不能只停留在課堂，我們將針對市府公開資訊，結合專題學習與黑客松競賽，鼓勵學生運用 AI 解決交通、防災、社區服務等在地議題，讓學習走出教室，也讓創意真正落地。\n\n三、接軌化：讓學習與產業沒有落差\n產業到位，人才也要跟著補足，透過提供 AI 進修補助，推動符合產業需求的培訓課程，也鼓勵企業重視 AI 技能，讓學生在校所學能與職場接軌，提升高雄的人才競爭力。\n\n四、永續化：建立長期可累積的 AI 教育體系\n把時間還給老師，才能成就更好的教學品質。我們會先用 AI 協助減少繁瑣的行政作業，讓老師能專注於教學。同時依照不同學習階段規劃完整課程，從國小的數位素養、國中的資料判讀，到高中、大學的實作開發，讓 AI 能力一路累積，成為高雄下一代最重要的競爭力。\n\n我希望讓 AI 成為高雄人的工具，讓孩子更有競爭力、青年更有發展、中小企業更有效率、長輩也能安心跟上時代。讓高雄成為一座人人都有 AI 能力、人人都能掌握未來機會的城市。\n\n#AI #教育 #競爭力 #未來",
       "topicScores": {
-        "教育": 0.95,
-        "生活": 0.46,
-        "經濟": 0.67
+        "教育": 0.92,
+        "經濟": 0.78
       },
       "topics": [
         "教育",
-        "經濟",
-        "生活"
+        "經濟"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0nLhqX5pGxkyTHPAXRAcLBFJWB1hjyPWiuJMtTXQNDes64EczbhWPX6WPTy3HuqD1l"
     },
     {
-      "agendaRelevance": 0.62,
+      "agendaRelevance": 0.88,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "61eaac50152f3043d18982dea038cd30e98ea762bdabdf2404f0ffcbc53a2038",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "c21c8e65b471230157f814347e7b1d17324c0c75e8e0a452021f641079c094fe",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1582382459908801",
       "imageAspect": 1.0,
@@ -1037,39 +1021,35 @@
       "keywords": [
         "醫療"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "批評／究責",
-        "reason": "以毒油事件批評政府應變與追溯制度不足，要求改革。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-07T05:30:14.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動評論毒油食安事件，聚焦追溯、通報與制度改革。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "近日 #毒油事件 引發 #全民憂心 ，最令人不安的，不只是產品本身出了問題，而是整個食安管理機制是否真的發揮作用。\n\n如果有問題產品從出貨到被全面揭露，中間存在資訊揭露延遲、追溯效率不足，甚至讓學校、軍隊、長照機構、醫療院所、以及一般家庭都受到影響，那麼人民有權要求政府說清楚，究竟問題出在哪裡？還有哪些產品受到影響？又有哪些改善措施正在進行？\n\n人民最不能接受的，不是政府承認有問題，而是在重大食安事件發生時，資訊不夠透明、應變速度不夠快，讓社會充滿猜測與不安；這不是賴總統一句震怒究責、卓揆保證積極處理，就能澆熄民眾與家長的怒火。\n\n1300公噸毒油、全台流竄90天，如果政府早已掌握相關流向，就應該以保障民眾健康為最高原則，第一時間公開資訊、迅速清查、積極下架，而不是讓民眾自行判斷哪些產品能買、哪些不能吃，食品安全不應建立在僥倖，更不能以任何理由降低應有的防護標準。\n\n此外，這次事件也凸顯食安追溯制度仍有檢討空間，制度存在的目的，就是在危機發生時能迅速掌握流向、降低風險，而不是等到事件擴大後，才開始亡羊補牢。如果追溯、回收、通報等機制無法及時發揮作用，就有必要全面檢討並提出具體改革。\n\n食安沒有黨派顏色之分，究責更不能雙標，過去民進黨在野時發生毒油事件，「行政院長下台」喊得震天價響，如今執政後，發生一樣的問題，試問誰該下台、誰來負責?\n\n無論誰執政，人民期待的都只有一件事，就是真相公開、責任釐清、制度改革；食安不是口號，而是每位國人每天都會面對的基本權利，國人真正需要的，不是事後震怒，而是事前預防，更不該推諉責任，而是勇於承擔。\n#毒油\n#食安\n#國人健康",
       "topicScores": {
-        "生活": 0.78,
-        "經濟": 0.55,
-        "議會監督": 0.76,
-        "醫療": 0.98
+        "生活": 0.82,
+        "醫療": 0.95
       },
       "topics": [
         "醫療",
-        "生活",
-        "議會監督",
-        "經濟"
+        "生活"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0RixktNJaix7XsHWoMe6nd8nGQvG7pb8xyArQcugTfn2DS2e8PqvYCSt8AkRCquNul"
     },
     {
-      "agendaRelevance": 0.93,
+      "agendaRelevance": 0.79,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "db4c536f9a5fa49e444c6d0235bba3e0599dfc9ccc1990fcc64ce316646e2c2c",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "6a0fe98223a0dc38f6d227a81200a3bbaa31419f087c1adcbbdea07e98678ac4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/Dacbcl9HZrx/",
       "imageAspect": 1.5,
@@ -1081,37 +1061,37 @@
         "育兒",
         "照顧"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "政策／政見",
-        "reason": "聚焦幼教、托育、融合教育與少子化對策，屬明確政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-06T08:09:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "聚焦幼教、托育與育兒政策，屬主動政策論述。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "孩子有人顧，家長才敢生；老師有人挺，高雄才留得住下一代。\n\n幼兒園，往往是孩子接觸團體生活的第一站。\n今天，我特別與中華國際幼兒文教聯合總會黃祈榮總會長、中華民國兒童教保聯合總會蔣叔融總會長、高雄市兒童教保協會陳俊良理事長，以及多位長期在基層打拚的教保界先進齊聚座談。我們針對第一線幼兒教育、教保人員權益、少子化衝擊、托育政策、融合教育與早療支持等議題，聽取最真實的基層心聲。\n\n交流過程中，我聽到了許多亟待政府正視的聲音：\n第一，重視親師生的權益，調查機制應兼顧公平。家長申訴機制當然重要，但現行的調查制度必須更具同理心與公平性。我們絕不能讓最終「查無違法」的教保人員，在漫長的調查程序中，承受名譽受損與沉重的行政精神壓力。守護孩子尊嚴的同時，也必須捍衛老師的清白。\n\n第二，融合教育不能淪為空談，資源必須同步到位。融合教育是正確的進步方向，但絕對不能只是把慢飛天使或有特殊需求的幼兒送進一般班級，卻沒有同步配置足夠的特教人力、專業支持與早療資源。中央與地方政府必須投入更多資源，否則空有「融合」之名，實際上卻是把所有的照顧壓力，沉重地壓在第一線教保人員的身上。\n\n第三，迎戰少子化海嘯，法規必須鬆綁、輔導轉型。面對少子化衝擊，許多私立幼兒園正面臨招生困難、經營成本攀升與人才流失的三重海嘯。部分有心轉型投入長者照護、推動「青銀共好」的園所，卻往往受限於僵化的空間與制度法規，寸步難行。政府應該扮演協助轉型的引路人，而非墨守成規的絆腳石。\n\n我的理念始終如一：孩子的安全要有制度保障，家長的安心要有政府支撐，而第一線教育工作者，更需要一個公平、專業且溫暖的制度作為後盾。\n\n這些基層的真知灼見，我會全力帶進中央修法與地方政策的討論。從申訴調查制度的精進、融合教育與早療資源的實質挹注，到少子化下園所的轉型輔導，每一項都需要中央、地方與第一線共同努力。\n\n未來，我也會把這些意見納入高雄打造友善育兒城市的重要政策。從育兒三箭、臨托喘息服務、托育量能提升，到教保人才支持及特殊需求家庭照顧，高雄不能只是鼓勵年輕人「願意生」，更要讓每個家庭真正敢生、敢養、住得起，也托得安心。\n\n把幼教顧好，就是把家庭顧好。\n\n一座城市能不能留住年輕人，不只看工作、交通和居住環境，更要看孩子出生後，有沒有一套願意接住家庭的支持系統。\n\n讓孩子被友善照顧、讓家長能安心打拚、讓老師有尊嚴支持、讓每個家庭都看到希望——這樣的高雄，才能真正留住我們的下一代。",
       "topicScores": {
-        "住宅": 0.55,
-        "教育": 0.97,
-        "社福": 0.9
+        "教育": 0.96,
+        "生活": 0.71,
+        "社福": 0.82
       },
       "topics": [
         "教育",
         "社福",
-        "住宅"
+        "生活"
       ],
       "url": "https://www.instagram.com/p/Dacbcl9HZrx/"
     },
     {
-      "agendaRelevance": 0.95,
+      "agendaRelevance": 0.92,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "6503bf8765f74fe7bdf4f7e74b14fc38925e3edea3a338e1226038a580195092",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8523f32e016765328d04d8ea06ae04c94a655d950f968b3356641314d951debd",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1581592659987781",
       "imageAspect": 1.5013,
@@ -1123,37 +1103,35 @@
         "育兒",
         "照顧"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "政策／政見",
-        "reason": "聚焦幼教、托育、融合教育與少子化轉型，屬明確政策主張。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-06T08:09:25.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動與幼教界座談，提出托育、融合教育與轉型政策。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "孩子有人顧，家長才敢生；老師有人挺，高雄才留得住下一代。\n\n幼兒園，往往是孩子接觸團體生活的第一站。\n今天，我特別與中華國際幼兒文教聯合總會黃祈榮總會長、中華民國兒童教保聯合總會蔣叔融總會長、高雄市兒童教保協會陳俊良理事長，以及多位長期在基層打拚的教保界先進齊聚座談。我們針對第一線幼兒教育、教保人員權益、少子化衝擊、托育政策、融合教育與早療支持等議題，聽取最真實的基層心聲。\n\n交流過程中，我聽到了許多亟待政府正視的聲音：\n第一，重視親師生的權益，調查機制應兼顧公平。家長申訴機制當然重要，但現行的調查制度必須更具同理心與公平性。我們絕不能讓最終「查無違法」的教保人員，在漫長的調查程序中，承受名譽受損與沉重的行政精神壓力。守護孩子尊嚴的同時，也必須捍衛老師的清白。\n\n第二，融合教育不能淪為空談，資源必須同步到位。融合教育是正確的進步方向，但絕對不能只是把慢飛天使或有特殊需求的幼兒送進一般班級，卻沒有同步配置足夠的特教人力、專業支持與早療資源。中央與地方政府必須投入更多資源，否則空有「融合」之名，實際上卻是把所有的照顧壓力，沉重地壓在第一線教保人員的身上。\n\n第三，迎戰少子化海嘯，法規必須鬆綁、輔導轉型。面對少子化衝擊，許多私立幼兒園正面臨招生困難、經營成本攀升與人才流失的三重海嘯。部分有心轉型投入長者照護、推動「青銀共好」的園所，卻往往受限於僵化的空間與制度法規，寸步難行。政府應該扮演協助轉型的引路人，而非墨守成規的絆腳石。\n\n我的理念始終如一：孩子的安全要有制度保障，家長的安心要有政府支撐，而第一線教育工作者，更需要一個公平、專業且溫暖的制度作為後盾。\n\n這些基層的真知灼見，我會全力帶進中央修法與地方政策的討論。從申訴調查制度的精進、融合教育與早療資源的實質挹注，到少子化下園所的轉型輔導，每一項都需要中央、地方與第一線共同努力。\n\n未來，我也會把這些意見納入高雄打造友善育兒城市的重要政策。從育兒三箭、臨托喘息服務、托育量能提升，到教保人才支持及特殊需求家庭照顧，高雄不能只是鼓勵年輕人「願意生」，更要讓每個家庭真正敢生、敢養、住得起，也托得安心。\n\n把幼教顧好，就是把家庭顧好。\n\n一座城市能不能留住年輕人，不只看工作、交通和居住環境，更要看孩子出生後，有沒有一套願意接住家庭的支持系統。\n\n讓孩子被友善照顧、讓家長能安心打拚、讓老師有尊嚴支持、讓每個家庭都看到希望——這樣的高雄，才能真正留住我們的下一代。",
       "topicScores": {
-        "住宅": 0.72,
-        "教育": 0.98,
-        "社福": 0.89
+        "教育": 0.97,
+        "社福": 0.78
       },
       "topics": [
         "教育",
-        "社福",
-        "住宅"
+        "社福"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0zF29vSaPfmjkjzbNzdA6ZBQVvbJqssbNppC81NdUihVSpifpjvpmZsHuHSq7yhBYl"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.34,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "7215bedc7bc3384056c670c37919ed3feff42677b9a15403b7f2ca11edc0650f",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d4097c6b9e4a0ddb49a1f056ba492e9d01d3b707610910183bd7c05952b72c90",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1581373130009734",
       "imageAspect": 0.5625,
@@ -1162,19 +1140,19 @@
         "美食",
         "攤商"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "活動／行程",
-        "reason": "主要是夜市走訪與農產互贈，偏活動紀錄與城市行銷。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-06T01:53:10.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動到六合夜市走訪宣傳，內容偏觀光與農產行銷。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "張善政市長特別南下高雄，我們一起走進 #六合夜市，感受港都最獨特的人情味。\n\n我帶著「高雄芒果」、「旗美水蓮」，和張市長交換「桃園水蜜桃」，用行動力挺農民。一路上，我們也品嚐許多夜市美食，從熟悉的香氣到攤商熱情的招呼，都是最道地的高雄味。\n\n對我來說，六合夜市是充滿回憶的「發跡之地」。重回這裡，看見鄉親的鼓勵，心裡格外感動，相信張市長也感受到高雄人的熱情。\n\n歡迎全台的朋友來六合夜市走走，吃一口高雄美食、逛一晚港都夜景，感受這座城市最迷人的夜晚！\n\n#繞著高雄跑 #柯志恩 #張善政",
       "topicScores": {
-        "文化觀光": 0.84,
-        "經濟": 0.6
+        "文化觀光": 0.93,
+        "經濟": 0.72
       },
       "topics": [
         "文化觀光",
@@ -1183,14 +1161,14 @@
       "url": "https://www.facebook.com/reel/1345261140379368/"
     },
     {
-      "agendaRelevance": 0.66,
+      "agendaRelevance": 0.91,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8bfc7016feb156a42ad8bbd78d08089838e61f7323973a699dacf00df6f97932",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "dcd688c2cdf0758bc4b4508f76a169ce1cb279d471df19d2ac590c9793165ef1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaaP3GSGZ94",
       "imageAspect": 1.5,
@@ -1201,20 +1179,20 @@
         "就業",
         "捷運"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "競選／動員",
-        "reason": "內容為後援會造勢，並提出鳳山發展、捷運與產業園區等政見。",
-        "type": "campaign_mobilization"
-      },
       "platform": "threads",
       "postedAt": "2026-07-05T11:49:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "後援會造勢並提出鳳山發展與建設主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:迎向藍天不是回頭路，走回「新潮流」的派系分贓才是真悲劇！\n\n今天參加鳳山後援會成立大會，現場湧入超過三千位鄉親，讓我非常感動。特別感謝 #王金平院長、蕭漢俊總幹事，以及所有議員、超過五十位在地里長和支持我的朋友一路相挺。\n\n四年前的今天，我提著一個皮箱回到高雄。從那一天起，我就決定留下來，因為既然承諾了高雄，就要一步一腳印，把承諾做到。\n\n這四年，我走遍高雄38個行政區，走破三雙鞋，也把高雄深深走進心裡。尤其是鳳山，始終給我最多溫暖，也讓我更堅定，一定要用行動回報大家的期待。\n\n鳳山是高雄人口最多的行政區，更應該成為帶動高雄發展的新引擎。空中鳳城的活化、捷運建設的加速、中崙產業園區的後續發展，都要想方設法真正帶動產業、創造就業，讓年輕人看見未來。",
       "topicScores": {
-        "交通": 0.65,
-        "競選": 0.98,
-        "經濟": 0.82
+        "交通": 0.68,
+        "競選": 0.99,
+        "經濟": 0.74
       },
       "topics": [
         "競選",
@@ -1224,14 +1202,14 @@
       "url": "https://www.threads.com/t/DaaP3GSGZ94"
     },
     {
-      "agendaRelevance": 0.21,
+      "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "784fae673da62f39bfd2385090b77a723e93acd23fd15218eadd81c775fa732b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a86fde7898f196d6407b2965127d2051720c4d85111b4379b8e2338c2052c623",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaaJsPiE-XZ/",
       "imageAspect": 1.5019,
@@ -1239,43 +1217,41 @@
       "keywords": [
         "參選",
         "後援會",
+        "監督",
         "產業",
-        "就業",
-        "長輩"
+        "就業"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "競選／動員",
-        "reason": "以後援會造勢與號召支持為主，夾帶政見但重點仍是競選。",
-        "type": "campaign_mobilization"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-05T10:55:55+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以造勢與批評派系為主，重點是選戰動員。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "迎向藍天不是回頭路，走回「新潮流」的派系分贓才是真悲劇！\n\n今天參加鳳山後援會成立大會，現場湧入超過三千位鄉親，讓我非常感動。特別感謝 #王金平 院長、 #蕭漢俊 總幹事，以及所有議員、超過五十位在地里長和支持我的朋友一路相挺。\n\n四年前的今天，我提著一個皮箱回到高雄。從那一天起，我就決定留下來，因為既然承諾了高雄，就要一步一腳印，把承諾做到。\n\n這四年，我走遍高雄38個行政區，走破三雙鞋，也把高雄深深走進心裡。尤其是鳳山，始終給我最多溫暖，也讓我更堅定，一定要用行動回報大家的期待。\n\n鳳山是高雄人口最多的行政區，更應該成為帶動高雄發展的新引擎。空中鳳城的活化、捷運建設的加速、中崙產業園區的後續發展，都要想方設法真正帶動產業、創造就業，讓年輕人看見未來。\n\n高雄必須迎向世界的新潮流，但絕不能走回讓民進黨新潮流派系分贓、利益分配的老路。而政黨輪替，就是要讓權力重新受到監督，讓政府真正對人民負責，讓高雄找回公平、效率與希望。\n\n身為兩個孩子的母親，我希望打造一座讓孩子願意留下、青年願意返鄉、長輩安心安老的城市。\n\n今天站在鳳山，我看到比四年前更多、更熱情的支持者，這代表越來越多人相信，高雄值得一個新的開始。\n\n接下來，我會繼續全力以赴，也拜託大家成為柯志恩的分身，把這份相信傳遞出去，支持所有一起打拚的議員夥伴，讓我們共同改變高雄。\n\n讓高雄走向世界，讓世界看見高雄！\n\n高雄加油！台灣加油！中華民國加油！\n\n#高雄 #鳳山 #有志一同 #後援會 #圓滿 \n台灣公道伯 王金平 劉德林 高雄市議員 鍾易仲  高雄市議員 高雄市議員 鄭安秝 高雄市議員李雅靜 參選人 #陳奕蓁",
       "topicScores": {
-        "住宅": 0.68,
-        "社福": 0.6,
-        "競選": 0.99,
-        "經濟": 0.72
+        "競選": 0.98,
+        "經濟": 0.54,
+        "議會監督": 0.62
       },
       "topics": [
         "競選",
-        "經濟",
-        "住宅",
-        "社福"
+        "議會監督",
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DaaJsPiE-XZ/"
     },
     {
-      "agendaRelevance": 0.9,
+      "agendaRelevance": 0.92,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "6841318d6d6b28d3b001ed18f2995dd3099395580f2ae29cfe14f7a256f91d16",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "002274a219e563dcb9e4451fab000d97a7ed53aea6bd937523c4549d7ead6177",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1580820033398377",
       "imageAspect": 1.5013,
@@ -1287,39 +1263,37 @@
         "就業",
         "捷運"
       ],
-      "nature": {
-        "confidence": 0.98,
-        "label": "競選／動員",
-        "reason": "以後援會造勢為主，搭配政黨攻防與城市願景宣傳。",
-        "type": "campaign_mobilization"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-05T10:55:45.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "競選造勢場合，主打高雄發展願景與政黨輪替。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "迎向藍天不是回頭路，走回「新潮流」的派系分贓才是真悲劇！\n\n今天參加鳳山後援會成立大會，現場湧入超過三千位鄉親，讓我非常感動。特別感謝 #王金平 院長、 #蕭漢俊 總幹事，以及所有議員、超過五十位在地里長和支持我的朋友一路相挺。\n\n四年前的今天，我提著一個皮箱回到南部。從那一天起，我就決定留下來，因為既然承諾了高雄，就要一步一腳印，把承諾做到。\n\n這四年，我走遍高雄38個行政區，走破三雙鞋，也把高雄深深走進心裡。尤其是鳳山，始終給我最多溫暖，也讓我更堅定，一定要用行動回報大家的期待。\n\n鳳山是高雄人口最多的行政區，更應該成為帶動高雄發展的新引擎。空中鳳城的活化、捷運建設的加速、中崙產業園區的後續發展，都要想方設法真正帶動產業、創造就業，讓年輕人看見未來。\n\n高雄必須迎向世界的新潮流，但絕不能走回讓民進黨新潮流派系分贓、利益分配的老路。而政黨輪替，就是要讓權力重新受到監督，讓政府真正對人民負責，讓高雄找回公平、效率與希望。\n\n身為兩個孩子的母親，我希望打造一座讓孩子願意留下、青年願意返鄉、長輩安心安老的城市。\n\n今天站在鳳山，我看到比四年前更多、更熱情的支持者，這代表越來越多人相信，高雄值得一個新的開始。\n\n接下來，我會繼續全力以赴，也拜託大家成為柯志恩的分身，把這份相信傳遞出去，支持所有一起打拚的議員夥伴，讓我們共同改變高雄。\n\n讓高雄走向世界，讓世界看見高雄！\n\n高雄加油！台灣加油！中華民國加油！\n\n#高雄 #鳳山 #有志一同 #後援會 #圓滿 \n台灣公道伯 王金平 劉德林 高雄市議員 鍾易仲  高雄市議員 高雄市議員 鄭安秝 高雄市議員李雅靜 參選人 #陳奕蓁",
       "topicScores": {
-        "交通": 0.76,
-        "住宅": 0.65,
+        "交通": 0.68,
         "競選": 0.97,
-        "經濟": 0.79
+        "經濟": 0.71
       },
       "topics": [
         "競選",
         "經濟",
-        "交通",
-        "住宅"
+        "交通"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02eBpdL8iUVZrjWa12Xafux6HNpZYEshZUG6xwnSDphnuJrpco9yfTqoYXsUK5qUksl"
     },
     {
-      "agendaRelevance": 0.87,
+      "agendaRelevance": 0.82,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "0996d43bd965d560230ae7ca6d658ef1ca9d19b722a39b939df6274b1029e352",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "3a1dd44bde2282c9869c072874a7c9fd1bc2897564752e3ab22e172b723f58e0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaXldMoDG9H/",
       "imageAspect": 1.2513,
@@ -1338,73 +1312,69 @@
         "居住正義",
         "商圈"
       ],
-      "nature": {
-        "confidence": 0.9,
-        "label": "政策／政見",
-        "reason": "提出長照、育兒與居住正義等具體主張，屬明確政策藍圖。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-05T01:24:33+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出長照、育兒與可負擔住宅等具體政見。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天小組長座談來到三民區，感謝近千位黨員幹部與鄉親朋友熱情參與，給予我最溫暖的支持與鼓勵。\n\n特別感謝一路陪伴我走過這四年的夥伴，無論是黃啟川、侯彩鳳、陳菁徽、童燕珍、葛姵瑩、黃柏霖，還是總是在每個行程現場都能看見身影的黃香菽議員，因為有大家並肩作戰，讓我更有信心迎接未來的挑戰。\n\n這四年來，我走遍高雄每個角落，也更深刻感受到三民區正面臨人口流失、高齡化、少子化與房價高漲等嚴峻挑戰；不僅65歲以上人口已超過22%，高雄縣市合併15年來，三民區人口已減少超過2萬6千人，年輕人面對高房價與育兒壓力，愈來愈不敢生、也愈來愈難留下來。\n\n因此，我主張擴大長照與喘息服務、增加敬老卡福利、強化陪同就醫與疫苗補助；同時加碼生育津貼、推動育兒喘息券、育嬰不扣薪及職場托育政策，讓年輕人敢結婚、敢生育、養得起孩子。\n\n在居住正義方面，我也提出推動可負擔住宅與婚育住宅，增加青年社宅供給，讓認真工作的年輕人有機會在三民安居樂業，而不是被高房價逼離家鄉。\n\n三民區還有許多長年懸而未決的問題，包括民族社區都更、肉品市場轉型、中都磚窯廠活化、高雄車站周邊發展及商圈振興等議題，這些不只是地方建設，更攸關三民區未來十年、二十年的發展方向，我也會和議員攜手、積極的來推動。\n\n四年前的結果，是我持續努力的動力；這四年來，我沒有離開高雄，而是一步一腳印深耕地方，用行動證明對高雄的承諾；我的第一份工作是跟著世界跑，而我最大的心願，是讓高雄成為讓世界看見、跟著高雄跑的國際城市。\n\n讓三民贏、高雄就贏，未來我會繼續和大家站在一起，攜手打拚，讓三民更進步、讓高雄更好，讓下一代擁有更光明的未來。\n\n#高雄 #三民 #有志一同",
       "topicScores": {
-        "住宅": 0.84,
-        "社福": 0.91,
-        "經濟": 0.7,
-        "議會監督": 0.46
+        "住宅": 0.88,
+        "社福": 0.9,
+        "經濟": 0.72
       },
       "topics": [
         "社福",
         "住宅",
-        "經濟",
-        "議會監督"
+        "經濟"
       ],
       "url": "https://www.instagram.com/p/DaXldMoDG9H/"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.83,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c999dffd803a201c3405f7344e1fdfdab18ee921011b25753e07e1a7d8c78f40",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a39e2624b3645a00bdcdd6543a5e6082f2f18c1c8e02b00302055114c130462e",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaZBKgUE5GT",
       "imageAspect": 1.25,
       "imageUrl": "assets/feed-images/8e6b52f24953ad96e2cd.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "競選／動員",
-        "reason": "以支持者集會與表達參選決心為主，重點在選舉動員而非政策。",
-        "type": "campaign_mobilization"
-      },
       "platform": "threads",
       "postedAt": "2026-07-05T00:22:08+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "參與保安宮活動並強調高雄發展與支持。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:昨天來到三民區的「覆鼎金保安宮」，感謝近千位鄉親朋友熱情參與，給予我最溫暖的支持與鼓勵。\n\n四年前的結果，是我持續努力的動力；這四年來，我沒有離開高雄，而是一步一腳印深耕地方，用行動證明對高雄的承諾。\n\n我的第一份工作是繞著世界跑，而我最大的心願，是讓「世界繞著高雄跑」，讓高雄成為一流的國際城市。\n\n讓三民贏、高雄就贏，未來我會繼續和大家站在一起，攜手打拚，讓三民更進步、讓高雄更好！",
       "topicScores": {
-        "生活": 0.45,
-        "競選": 0.95
+        "競選": 0.99
       },
       "topics": [
-        "競選",
-        "生活"
+        "競選"
       ],
       "url": "https://www.threads.com/t/DaZBKgUE5GT"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.22,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "fdcb493bad7af88b89cb301009c1b6440d24c9e4ec8f5834828f2be7245fc262",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7cf6cd2e74f6d1b7466f3d04bc907e6f50c1f4889de5e765d24a7ff86bb07e2c",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaZAjNskyyC",
       "imageAspect": 1.25,
@@ -1412,37 +1382,35 @@
       "keywords": [
         "學校"
       ],
-      "nature": {
-        "confidence": 0.88,
-        "label": "活動／行程",
-        "reason": "參與民主學校座談並鼓勵青年投入公共事務，屬活動分享與理念交流。",
-        "type": "event_activity"
-      },
       "platform": "threads",
       "postedAt": "2026-07-05T00:16:46+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "出席民主學校座談，內容偏鼓勵青年參與。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:很高興參與由羅智強 @debate.locc 委員創辦的「 民主學校 」第八屆課程座談，這也是民主學校首次移師高雄舉辦；看到這麼多年輕朋友關心公共事務、勇於參與社會，讓我對台灣的未來充滿期待。\n\n我和大家分享自己的從政歷程，也談到一路走來的體會；投入公共事務最重要的，不是完美的條件，而是熱情、創意與行動力，人生的每一段歷練，都是未來服務社會最珍貴的養分，即使曾經遭遇挫折與失敗，也不要因此退縮，因為「你可以輸，但不可以怕」。\n\n我常說，年輕人不一定要加入哪個政黨，但一定要關心公共事務，無論是擔任幕僚、投入政策研究、參與社會倡議，或站上第一線服務人民，每個人都能成為改變社會的重要力量。\n\n看到現場充滿理想與能量的年輕世代，我更加相信，高雄與台灣的未來掌握在年輕世代手中；也許十年後，在場的許多人都將成為各領域的重要人才，甚至成為帶領國家前進的關鍵力量。\n\n最後我也鼓勵大家，一定要把握時間、青春、以及實現夢想的機會，不要害怕挑戰，勇敢跨出第一步，投入公共事務、參與社會改變，讓自己成為未來引領時代潮流的人。",
       "topicScores": {
-        "教育": 0.83,
-        "生活": 0.4,
-        "競選": 0.7
+        "教育": 0.91,
+        "生活": 0.62
       },
       "topics": [
         "教育",
-        "競選",
         "生活"
       ],
       "url": "https://www.threads.com/t/DaZAjNskyyC"
     },
     {
-      "agendaRelevance": 0.15,
+      "agendaRelevance": 0.78,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "57335d8c1aff0ae167f1417e65f14a69f2fce1531a87be4099a072293b91cb3d",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "c7f71f4ca49bbe902afb857f871aec8bb90197292e63db6354da9a4e3c6ecb27",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "threads:https://www.threads.com/t/DaZASxbk-jY",
       "imageAspect": 0.8136,
@@ -1452,35 +1420,33 @@
         "提名",
         "選戰"
       ],
-      "nature": {
-        "confidence": 0.99,
-        "label": "競選／動員",
-        "reason": "回顧選戰經歷並宣示四年後再戰，明顯是競選動員。",
-        "type": "campaign_mobilization"
-      },
       "platform": "threads",
       "postedAt": "2026-07-05T00:14:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "回顧選舉歷程並表態未來持續參選。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:四年前的7/5清晨，我拉著一只行李箱奔赴高雄，距離6/29獲得中常會提名僅有數日。\n來不及多想，匆匆整理行囊，便義無反顧投入2022高雄市長選舉，那一場既無資源又不被看好的艱困選戰。\n\n2022選舉結果：輸、不意外，但短短不到四個月，我走遍高雄38個行政區，走破了3雙鞋，也走進了無數高雄人的心裡。\n\n53萬張選票，是市民朋友給我的肯定；不僅守住藍營基本盤，也和本黨議員共同搶下29席的成績。\n\n然而，比起選票，更令我難忘的，是高雄人的包容、熱情與義氣。尤其謝票時，許多支持者紅著眼眶對我說：「加油，我們都支持妳，挺妳到底」，讓我忍不住哽咽，那絕非落敗的不甘，而是被高雄人的愛與溫暖深深觸動。選舉可以結束，但我不能轉身離開。\n\n因為高雄不只是我奮鬥的城市，高雄更成為柯志恩生命中的責任與牽掛。\n\n所以，我告訴大家:「我要留下來」、「四年後的選舉，一定會有柯志恩的角色」。",
       "topicScores": {
-        "生活": 0.3,
         "競選": 0.99
       },
       "topics": [
-        "競選",
-        "生活"
+        "競選"
       ],
       "url": "https://www.threads.com/t/DaZASxbk-jY"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.9,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "722499ed31eac8d20590759504469119f816f71788460ff08d0885090ea6be7a",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "753b9fea00f1f7d83562657503e9e2cad9e97d9529229d1a87b8957e9db113bd",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1580423380104709",
       "imageAspect": 0.8141,
@@ -1490,19 +1456,19 @@
         "提名",
         "選戰"
       ],
-      "nature": {
-        "confidence": 0.99,
-        "label": "競選／動員",
-        "reason": "回顧選戰與號召支持，核心是再度參選動員。",
-        "type": "campaign_mobilization"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-05T00:00:24.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "整篇回顧選戰與再戰宣示，明顯為競選動員。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "四年前的7/5清晨，我拉著一只行李箱奔赴高雄，距離6/29獲得中常會提名僅有數日。來不及多想，匆匆整理行囊，便義無反顧投入2022高雄市長選舉---那一場既無資源又不被看好的艱困選戰。\n\n2022選舉結果--輸、不意外，但短短不到四個月，我走遍高雄38個行政區，走破了3雙鞋，也走進了無數高雄人的心裡。\n\n53萬張選票，是市民朋友給我的肯定；不僅守住藍營基本盤，也和本黨議員共同搶下29席的成績。\n\n然而，比起選票，更令我難忘的，是高雄人的包容、熱情與義氣。尤其謝票時，許多支持者紅著眼眶對我說：「加油，我們都支持妳，挺妳到底」，讓我忍不住哽咽，那絕非落敗的不甘，而是被高雄人的愛與溫暖深深觸動。選舉可以結束，但我不能轉身離開。因為高雄不只是我奮鬥的城市，高雄更成為柯志恩生命中的責任與牽掛。\n\n所以，我告訴大家:「我要留下來」、「四年後的選舉，一定會有柯志恩的角色」。\n\n四年來不分晴雨寒暑，高雄的山、海、河、港，都留下了我與基層同在的足跡。從桃源、那瑪夏的原鄉部落，到甲仙、六龜的純樸山城；看過美濃的稻浪、杉林的瓜果，也走過大樹的鳳梨園與大寮廣闊的農田；吹過旗津的海風，聽過彌陀、永安漁港黃昏出海的馬達聲；見證岡山、路竹產業發展的韌性，也體會楠梓、橋頭科技廊帶的新活力；走進鳳山、三民的市場街區，感受最真實的人間煙火。\n\n無論是熱鬧的廟會或平安宴，還是偏鄉和眷村的家門裡，我看見升斗小民為生活努力打拚的身影，也聽見許多人對家庭、對下一代、對高雄未來的期許與夢想。這些聲音，始終縈繞腦海，也時刻激勵我，為了市民的盼望和這座美麗的海洋城市，我必須加倍努力，奮勇向前。\n\n在長期由綠營執政的土地上扎根並不容易。面對綠營的抹黑、攻擊與各種冷言冷語，我從不氣餒、也從未感到挫折，因選舉教會我：把腳下磨人的砂礫，化作讓自己站得更高的踏腳石。\n\n如今回頭再看四年前，那個拉著行李箱、帶著幾分忐忑與未知出發的背影，早已走過風雨，也走過考驗。如今，初心未變，只有滿滿的感恩，與更堅定、強大的信心！\n\n四年前，我是帶著勇氣回到高雄的北漂者；四年後，高雄已成為我用生命守護的家園。\n\n謝謝所有高雄鄉親，謝謝大家一路上給我的疼惜、包容與信任。這條路因為有大家的愛，讓我走得無比溫暖；也因為有你們，讓我更堅定地相信，我們一定會成功勝選 ！\n\n高雄的命運掌握在所有市民手裡，偉大的城市絕不是哪一黨一派的禁臠。今年11月28日，讓我們一起改變成真，因為高雄值得更好，而我們，早就準備好了！\n\n#四年前\n#高雄\n#我們早就準備好了",
       "topicScores": {
         "生活": 0.42,
-        "競選": 0.98
+        "競選": 0.99
       },
       "topics": [
         "競選",
@@ -1511,14 +1477,14 @@
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid026hq2qXYi9vrWEyQCiaq5UD1CfpdpsKCtJM1DEdiJkTTGg3Kp2h8yBoaGsF6nVnuel"
     },
     {
-      "agendaRelevance": 0.94,
+      "agendaRelevance": 0.84,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "184f1aacc60ab4cbc6209dff15d5ff40d21ffa96af2162f40b1e1d67d336b526",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "676b21a0663647114025383810b285754e27df320cd951bdd5f2d5ee1bfe9f54",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579944890152558",
       "imageAspect": 1.25,
@@ -1534,42 +1500,41 @@
         "房價",
         "社宅",
         "都更",
-        "居住正義",
-        "商圈"
+        "居住正義"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "政策／政見",
-        "reason": "明確提出長照、生育、住宅等施政主張，可作為議程。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-04T11:00:38.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出長照、住宅與地方發展政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天小組長座談來到三民區，感謝近千位黨員幹部與鄉親朋友熱情參與，給予我最溫暖的支持與鼓勵。\n\n特別感謝一路陪伴我走過這四年的夥伴，無論是黃啟川、侯彩鳳、 陳菁徽、#童燕珍、#葛姵瑩 、黃柏霖，還是總是在每個行程現場都能看見身影的微笑香蕉-黃香菽議員，因為有大家並肩作戰，讓我更有信心迎接未來的挑戰。\n\n這四年來，我走遍高雄每個角落，也更深刻感受到三民區作為高雄人口次多的行政區，正面臨人口流失、高齡化、少子化與房價高漲等嚴峻挑戰；不僅65歲以上人口已超過22%，高雄縣市合併15年來，三民區人口已減少超過2萬6千人，年輕人面對高房價與育兒壓力，愈來愈不敢生、也愈來愈難留下來。\n\n因此，我主張擴大長照與喘息服務、增加敬老卡福利、強化陪同就醫與疫苗補助；同時加碼生育津貼、推動育兒喘息券、育嬰不扣薪及職場托育政策，讓年輕人敢結婚、敢生育、養得起孩子。\n\n在居住正義方面，我也提出推動可負擔住宅與婚育住宅，增加青年社宅供給，讓認真工作的年輕人有機會在三民安居樂業，而不是被高房價逼離家鄉。\n\n三民區還有許多長年懸而未決的問題，包括民族社區都更、肉品市場轉型、中都磚窯廠活化、高雄車站周邊發展及商圈振興等議題，這些不只是地方建設，更攸關三民區未來十年、二十年的發展方向，我也會和議員攜手、積極的來推動。\n\n四年前的結果，是我持續努力的動力；這四年來，我沒有離開高雄，而是一步一腳印深耕地方，用行動證明對高雄的承諾；我的第一份工作是跟著世界跑，而我最大的心願，是讓高雄成為讓世界看見、跟著高雄跑的國際城市。\n\n讓三民贏、高雄就贏，未來我會繼續和大家站在一起，攜手打拚，讓三民更進步、讓高雄更好，讓下一代擁有更光明的未來。\n\n#高雄 #三民 #有志一同",
       "topicScores": {
-        "住宅": 0.88,
-        "社福": 0.9,
-        "經濟": 0.45,
-        "議會監督": 0.7
+        "住宅": 0.91,
+        "生活": 0.72,
+        "社福": 0.92,
+        "議會監督": 0.47
       },
       "topics": [
         "社福",
         "住宅",
-        "議會監督",
-        "經濟"
+        "生活",
+        "議會監督"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02qFycnavBTvekCrQ7b1nLmz24DUvjZDktNUEYXTkGQcSzUuEaP6ejFnyerhgHoSVwl"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.67,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "10afdbafe0b6758eb0dadc7be40e4f35433924582951d4e9d89c3161725bd8ad",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "26a93ffef101ad8c53e2a6010ff8dca606342a543404465a56b00f6818e8c984",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaXKDAtCW_K/",
       "imageAspect": 1.2513,
@@ -1588,21 +1553,21 @@
         "文化",
         "觀光"
       ],
-      "nature": {
-        "confidence": 0.84,
-        "label": "政策／政見",
-        "reason": "談高屏共好與照顧、就業、產業整合，偏政策願景。",
-        "type": "policy_proposal"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-04T07:06:51+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主談高屏共榮、長照醫療與就業轉型等方向。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "午間來到「高雄市屏東縣同鄉會第十六屆第二次會員代表會議」，與鄉親們共同見證及祝賀新任理事長及其團隊，能夠順利接棒、持續凝聚旅高屏東人的力量。\n\n每次來到 #高雄市屏東縣同鄉會 ，都有一種回到「屏東人娘家」的親切感；看到來自故鄉的鄉親，更能感受到大家在高雄落地生根、努力打拚的不容易。\n\n屏東是故鄉，高雄是打拚的家，在我們的共同生活圈裡，應朝著「同心前行、高屏共贏」的方向努力，彼此攜手推動交通、醫療、就業、產業及觀光整合。\n\n高雄的產業升級，可以帶動屏東青年留在南部發展；屏東豐富的農漁產品、原鄉文化與觀光資源，也能透過高雄的市場、港口及國際連結走向世界，共同打造屬於南台灣的品牌。\n\n在市政推動上，我也希望讓旅高屏東長輩獲得更完善的長照、醫療與社福服務；讓在高雄打拚的屏東青年擁有更好的職訓、就業與創業支持；協助屏東鄉親經營的店家與中小企業推動數位轉型、商圈行銷及異業合作，讓老店有新客人、新創有新市場。\n\n期待未來能與大家一起努力，讓旅高屏東長輩獲得更完善的照顧，也讓在高雄打拚的年輕人有更多就業與創業機會，共同實現「高屏一家親，未來一起拚」的理念。\n\n#柯志恩 #高雄 #屏東 #一家親",
       "topicScores": {
-        "文化觀光": 0.58,
-        "社福": 0.78,
-        "經濟": 0.68,
-        "醫療": 0.77
+        "文化觀光": 0.52,
+        "社福": 0.82,
+        "經濟": 0.69,
+        "醫療": 0.8
       },
       "topics": [
         "社福",
@@ -1613,64 +1578,64 @@
       "url": "https://www.instagram.com/p/DaXKDAtCW_K/"
     },
     {
-      "agendaRelevance": 0.86,
+      "agendaRelevance": 0.72,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "26c2bec9432b2d93a23d486cc7eb22df35971b6684b140167fda14069273706f",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "6690979542ee255444eb027ea3cfca7eb6ec213c82a40545d0f2fa7f949b6068",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579800700166977",
       "imageAspect": 1.25,
       "imageUrl": "assets/feed-images/67943a3ff89e5bc9dc36.webp",
       "keywords": [
+        "醫療",
         "社福",
         "長照",
         "長輩",
         "照顧",
         "交通",
-        "醫療",
         "產業",
         "就業",
         "中小企業",
         "創業",
         "商圈"
       ],
-      "nature": {
-        "confidence": 0.84,
-        "label": "政策／政見",
-        "reason": "談高屏整合與交通、醫療、就業等合作方向，屬政策構想。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-04T07:01:10.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動談高屏合作與交通醫療社福整合。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "午間來到「高雄市屏東縣同鄉會第十六屆第二次會員代表會議」，與鄉親們共同見證及祝賀新任理事長及其團隊，能夠順利接棒、持續凝聚旅高屏東人的力量。\n\n每次來到 #高雄市屏東縣同鄉會 ，都有一種回到「屏東人娘家」的親切感；看到來自故鄉的鄉親，更能感受到大家在高雄落地生根、努力打拚的不容易。\n\n屏東是故鄉，高雄是打拚的家，在我們的共同生活圈裡，應朝著「同心前行、高屏共贏」的方向努力，彼此攜手推動交通、醫療、就業、產業及觀光整合。\n\n高雄的產業升級，可以帶動屏東青年留在南部發展；屏東豐富的農漁產品、原鄉文化與觀光資源，也能透過高雄的市場、港口及國際連結走向世界，共同打造屬於南台灣的品牌。\n\n在市政推動上，我也希望讓旅高屏東長輩獲得更完善的長照、醫療與社福服務；讓在高雄打拚的屏東青年擁有更好的職訓、就業與創業支持；協助屏東鄉親經營的店家與中小企業推動數位轉型、商圈行銷及異業合作，讓老店有新客人、新創有新市場。\n\n期待未來能與大家一起努力，讓旅高屏東長輩獲得更完善的照顧，也讓在高雄打拚的年輕人有更多就業與創業機會，共同實現「高屏一家親，未來一起拚」的理念。\n\n#柯志恩 #高雄 #屏東 #一家親",
       "topicScores": {
-        "交通": 0.72,
-        "社福": 0.73,
-        "經濟": 0.66,
-        "醫療": 0.7
+        "交通": 0.7,
+        "社福": 0.8,
+        "經濟": 0.68,
+        "醫療": 0.83
       },
       "topics": [
+        "醫療",
         "社福",
         "交通",
-        "醫療",
         "經濟"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02VHNEcUwAPn1rpUdTmh4uUx3Qnr8Hm7UvyQDVkYbKTNHUL85K22rmPUdk4dRoHS5Nl"
     },
     {
-      "agendaRelevance": 0.14,
+      "agendaRelevance": 0.28,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d413de84241ae359593ecc2c85a73619b7c203384be62f4ea3fe391c6c6375c4",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a21ed629ae85bf76b15a6c10868710b5b3152dc3bb101065c525f65a22e72af2",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaW95rOE15u/",
       "imageAspect": 1.2513,
@@ -1678,19 +1643,19 @@
       "keywords": [
         "學校"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "活動／行程",
-        "reason": "內容為民主學校座談分享與勉勵年輕人參與公共事務。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-04T05:15:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為民主學校座談與青年參與公共事務分享。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "很高興參與由 羅智強委員創辦的「 #民主學校 」第八屆課程座談，這也是民主學校首次移師高雄舉辦；看到這麼多年輕朋友關心公共事務、勇於參與社會，讓我對台灣的未來充滿期待。\n\n我和大家分享自己的從政歷程，也談到一路走來的體會；投入公共事務最重要的，不是完美的條件，而是熱情、創意與行動力，人生的每一段歷練，都是未來服務社會最珍貴的養分，即使曾經遭遇挫折與失敗，也不要因此退縮，因為「你可以輸，但不可以怕」。\n\n我常說，年輕人不一定要加入哪個政黨，但一定要關心公共事務，無論是擔任幕僚、投入政策研究、參與社會倡議，或站上第一線服務人民，每個人都能成為改變社會的重要力量。\n\n看到現場充滿理想與能量的年輕世代，我更加相信，高雄與台灣的未來掌握在年輕世代手中；也許十年後，在場的許多人都將成為各領域的重要人才，甚至成為帶領國家前進的關鍵力量。\n\n最後我也鼓勵大家，一定要把握時間、青春、以及實現夢想的機會，不要害怕挑戰，勇敢跨出第一步，投入公共事務、參與社會改變，讓自己成為未來引領時代潮流的人。\n\n#高雄 #有志一同 #ai #造浪者",
       "topicScores": {
         "教育": 0.93,
-        "競選": 0.54
+        "競選": 0.58
       },
       "topics": [
         "教育",
@@ -1699,14 +1664,14 @@
       "url": "https://www.instagram.com/p/DaW95rOE15u/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1121700bc698cdd6850c7ea19961cddcd5eb52d1bb9912a15c2991fb196f7b39",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "bbd1ace697b8ccf841757a51650d97e7080ba133d2dc74e944326f090f8bf17a",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579736700173377",
       "imageAspect": 1.25,
@@ -1714,35 +1679,37 @@
       "keywords": [
         "學校"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "內容為參與民主學校座談並勉勵青年，屬活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-04T05:15:03.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主要是民主學校座談與勉勵青年參與公共事務。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "很高興參與由 羅智強委員創辦的「 #民主學校 」第八屆課程座談，這也是民主學校首次移師高雄舉辦；看到這麼多年輕朋友關心公共事務、勇於參與社會，讓我對台灣的未來充滿期待。\n\n我和大家分享自己的從政歷程，也談到一路走來的體會；投入公共事務最重要的，不是完美的條件，而是熱情、創意與行動力，人生的每一段歷練，都是未來服務社會最珍貴的養分，即使曾經遭遇挫折與失敗，也不要因此退縮，因為「你可以輸，但不可以怕」。\n\n我常說，年輕人不一定要加入哪個政黨，但一定要關心公共事務，無論是擔任幕僚、投入政策研究、參與社會倡議，或站上第一線服務人民，每個人都能成為改變社會的重要力量。\n\n看到現場充滿理想與能量的年輕世代，我更加相信，高雄與台灣的未來掌握在年輕世代手中；也許十年後，在場的許多人都將成為各領域的重要人才，甚至成為帶領國家前進的關鍵力量。\n\n最後我也鼓勵大家，一定要把握時間、青春、以及實現夢想的機會，不要害怕挑戰，勇敢跨出第一步，投入公共事務、參與社會改變，讓自己成為未來引領時代潮流的人。\n\n#高雄 #有志一同 #ai #造浪者",
       "topicScores": {
-        "教育": 0.72,
-        "生活": 0.34
+        "教育": 0.83,
+        "生活": 0.38,
+        "競選": 0.31
       },
       "topics": [
         "教育",
-        "生活"
+        "生活",
+        "競選"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0FqHCi3mAUtXNsAMWcdNuhRKoCELEBoFpQQzv5vi3qk5cK1tQareBVEnfS6XFxqhMl"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.44,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "d340df592f9cdbb4f43c2c2e56157b7a2a6e0cd0543e2e0a9092df60febbfb3b",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8bb47374441dc6caa80e5cc7acbee52ffe18bc07457a39a94b42796096a77339",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaWtu6hE-2A/",
       "imageAspect": 1.3348,
@@ -1752,19 +1719,19 @@
         "歷史",
         "照顧"
       ],
-      "nature": {
-        "confidence": 0.94,
-        "label": "活動／行程",
-        "reason": "出席慶祝活動並談眷村文化與榮眷照顧。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-04T02:53:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "參與慶祝活動並談眷村保存與榮民照顧。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天參加「黃復興成軍七十周年及再造成功慶祝活動」，與許多榮民榮眷、退伍軍人及各界好友一起見證黃復興七十年的光榮歷程，也向所有為國家奉獻青春與熱血的前輩致上最深敬意。\n\n適逢七七抗戰89周年、抗戰勝利81周年，回顧1937年盧溝橋事變揭開全面抗戰序幕，無數先烈犧牲奉獻，才換來今日得來不易的和平與自由，我們更應珍惜歷史、銘記歷史，將保家衛國的精神代代傳承。\n\n高雄擁有深厚的國軍與眷村文化底蘊，陸軍官校在鳳山、海軍官校在左營、空軍官校在岡山，更保存全國規模最大的眷村文化資產；無論是黃埔新村、左營海軍眷村、醒村或樂群村，都承載著許多榮民榮眷的生命故事，也是高雄珍貴的歷史記憶。\n\n特別感謝 劉德林 高雄市議員 長期推動七七抗戰勝利紀念碑設立與修復工作，我也曾參與修復完成儀式，更深刻感受到守護歷史記憶的重要；今天談「再造成功」，就是七十年精神的再出發，過去守護的是忠誠、紀律與服務，未來更要把這份精神延續下去，讓榮民榮眷獲得更完善的照顧，讓中華民國的核心價值持續發揚。\n\n未來，我會持續努力推動榮民榮眷服務工作，強化與退輔會、榮服處及地方社團的合作，也會持續爭取眷村文化與相關紀念設施的保存維護，讓下一代知道，高雄不只是港都，更是一座由國軍、眷村與榮民榮眷共同守護、共同打造的城市。",
       "topicScores": {
         "文化觀光": 0.88,
-        "社福": 0.75
+        "社福": 0.73
       },
       "topics": [
         "文化觀光",
@@ -1773,14 +1740,14 @@
       "url": "https://www.instagram.com/p/DaWtu6hE-2A/"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.42,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "1668f42fdb09ac9ca90f78333abbd9d6b777e3524a527eb3f19389dd21c7deff",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "9b842641639519057618b56eaace89456d9275f2bec7055e9102e7ba6744fe01",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579651786848535",
       "imageAspect": 1.3318,
@@ -1790,37 +1757,35 @@
         "歷史",
         "照顧"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "活動／行程",
-        "reason": "出席黃復興慶祝活動並談眷村文化與榮民照顧。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-04T02:53:46.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "出席紀念活動並談眷村保存與榮眷照顧，偏活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天參加「黃復興成軍七十周年及再造成功慶祝活動」，與許多榮民榮眷、退伍軍人及各界好友一起見證黃復興七十年的光榮歷程，也向所有為國家奉獻青春與熱血的前輩致上最深敬意。\n\n適逢七七抗戰89周年、抗戰勝利81周年，回顧1937年盧溝橋事變揭開全面抗戰序幕，無數先烈犧牲奉獻，才換來今日得來不易的和平與自由，我們更應珍惜歷史、銘記歷史，將保家衛國的精神代代傳承。\n\n高雄擁有深厚的國軍與眷村文化底蘊，陸軍官校在鳳山、海軍官校在左營、空軍官校在岡山，更保存全國規模最大的眷村文化資產；無論是黃埔新村、左營海軍眷村、醒村或樂群村，都承載著許多榮民榮眷的生命故事，也是高雄珍貴的歷史記憶。\n\n特別感謝 劉德林 高雄市議員 長期推動七七抗戰勝利紀念碑設立與修復工作，我也曾參與修復完成儀式，更深刻感受到守護歷史記憶的重要；今天談「再造成功」，就是七十年精神的再出發，過去守護的是忠誠、紀律與服務，未來更要把這份精神延續下去，讓榮民榮眷獲得更完善的照顧，讓中華民國的核心價值持續發揚。\n\n未來，我會持續努力推動榮民榮眷服務工作，強化與退輔會、榮服處及地方社團的合作，也會持續爭取眷村文化與相關紀念設施的保存維護，讓下一代知道，高雄不只是港都，更是一座由國軍、眷村與榮民榮眷共同守護、共同打造的城市。",
       "topicScores": {
-        "兩岸外交": 0.42,
-        "文化觀光": 0.71,
-        "社福": 0.38
+        "文化觀光": 0.72,
+        "社福": 0.6
       },
       "topics": [
         "文化觀光",
-        "兩岸外交",
         "社福"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02dPjaMNaUszNfn3LK7FyqbnujK2bvMK6PNRBqvQWSxTVbcAtyDx6ykosd2mRQvE2tl"
     },
     {
-      "agendaRelevance": 0.16,
+      "agendaRelevance": 0.31,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "e45b681fa2b6e319ee3c38b564cba09e15bfab1606e81a86e9ceba9fced256b7",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "4f142c0617b70be08db27e98e5079a79f6e42d31e4a80e0c26710d553a916008",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaVP6WMjxp7/",
       "imageAspect": 1.3348,
@@ -1829,40 +1794,37 @@
         "交通",
         "道路",
         "治安",
-        "警察",
-        "照顧"
+        "警察"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "活動／行程",
-        "reason": "主要是參加義交義警餐會並表達感謝，屬活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-03T13:14:04+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是感謝義交義警並提改善裝備與保障。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天晚上接連參加「高雄市交通義勇警察大隊鹽埕中隊聯誼餐會」以及「鼓山義警中隊聯誼餐會」，向長年默默守護高雄交通與治安的義交、義警夥伴表達感謝。\n\n高雄近年活動越來越多，駁二、大港橋等景點每逢假日、演唱會或大型活動，總是吸引大量人潮。而每一次活動順利進行的背後，都少不了義交夥伴站在路口指揮交通、協助疏導車流；此外，道路施工時，也經常能看見大家堅守崗位的身影。\n\n近年高雄的「義交協勤費」與「民間派遣費」終於完成調整，這是對大家付出的肯定，也是照顧義交的重要一步。未來，我也希望持續爭取更完善的裝備、防護措施與健康照顧，讓每一位義交夥伴都能更安心執勤。\n\n隨後也來到鼓山義警中隊，身為鼓山區的居民，我要向所有長期投入治安工作的義警夥伴致意。協助警方維護地方治安、支援重大勤務，或是在社區默默守護鄉親，你們都是警察最重要的夥伴。\n\n一座安全、宜居的城市，不只有警察努力，也依靠義警、義交，以及許多默默奉獻的志工共同守護。政府也應持續做好大家的後盾，提供更完善的保障與照顧，讓每一位投入公共服務的夥伴都沒有後顧之憂。\n\n最後，謝謝所有義警、義交夥伴，無論烈日風雨，始終站在第一線守護高雄。因為有你們的付出，市民才能安心生活，也讓高雄成為一座更安全、更有溫度的城市。\n\n#高雄 #鹽埕 #義交 #鼓山 #義警\n\n下港的囝仔, 蔡金晏\n吳利成議員粉絲團\n陳美雅 服務團隊",
       "topicScores": {
-        "交通": 0.82,
-        "治安": 0.8,
-        "社福": 0.66
+        "交通": 0.93,
+        "治安": 0.86
       },
       "topics": [
         "交通",
-        "治安",
-        "社福"
+        "治安"
       ],
       "url": "https://www.instagram.com/p/DaVP6WMjxp7/"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.44,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "a3f62dbab570d1df88f1c5ab90e1270a5219af974098d9a6d8a3c2db40a90deb",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "88b22e98aefb3389c46b0ac86b6dd1aa7b377c1d3c804e2e114fcb51d6b0a9fb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1579149426898771",
       "imageAspect": 1.3318,
@@ -1873,35 +1835,37 @@
         "治安",
         "警察"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "活動／行程",
-        "reason": "參加義交義警聯誼餐會，重點在交通與治安服務致意。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T13:13:57.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "感謝義交義警並提裝備與保障，屬活動紀錄兼政策訴求。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天晚上接連參加「高雄市交通義勇警察大隊鹽埕中隊聯誼餐會」以及「鼓山義警中隊聯誼餐會」，向長年默默守護高雄交通與治安的義交、義警夥伴表達感謝。\n\n高雄近年活動越來越多，駁二、大港橋等景點每逢假日、演唱會或大型活動，總是吸引大量人潮。而每一次活動順利進行的背後，都少不了義交夥伴站在路口指揮交通、協助疏導車流；此外，道路施工時，也經常能看見大家堅守崗位的身影。\n\n近年高雄的「義交協勤費」與「民間派遣費」終於完成調整，這是對大家付出的肯定，也是照顧義交的重要一步。未來，我也希望持續爭取更完善的裝備、防護措施與健康照顧，讓每一位義交夥伴都能更安心執勤。\n\n隨後也來到鼓山義警中隊，身為鼓山區的居民，我要向所有長期投入治安工作的義警夥伴致意。協助警方維護地方治安、支援重大勤務，或是在社區默默守護鄉親，你們都是警察最重要的夥伴。\n\n一座安全、宜居的城市，不只有警察努力，也依靠義警、義交，以及許多默默奉獻的志工共同守護。政府也應持續做好大家的後盾，提供更完善的保障與照顧，讓每一位投入公共服務的夥伴都沒有後顧之憂。\n\n最後，謝謝所有義警、義交夥伴，無論烈日風雨，始終站在第一線守護高雄。因為有你們的付出，市民才能安心生活，也讓高雄成為一座更安全、更有溫度的城市。\n\n#高雄 #鹽埕 #義交 #鼓山 #義警\n\n下港的囝仔, 蔡金晏\n吳利成議員粉絲團\n陳美雅 服務團隊",
       "topicScores": {
-        "交通": 0.89,
-        "治安": 0.76
+        "交通": 0.9,
+        "治安": 0.85,
+        "生活": 0.56
       },
       "topics": [
         "交通",
-        "治安"
+        "治安",
+        "生活"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02vSddeXhjGams8CeBLToN7WY47YByg5qTmuBoJ5Rs9odCKGEjE6A4tHteA9K1ZiFtl"
     },
     {
-      "agendaRelevance": 0.93,
+      "agendaRelevance": 0.9,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "cad91d3047af11371a98ea83c6b8731a4cb886137b1a8ee6971d1783f2e89a85",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "a3ab79980f3c01b7a0842d61bc0839ebce82c00a3cf8a9874e3b0106a99360eb",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1578977556915958",
       "imageAspect": 1.0,
@@ -1910,25 +1874,23 @@
         "照顧",
         "產業"
       ],
-      "nature": {
-        "confidence": 0.97,
-        "label": "政策／政見",
-        "reason": "明確提出提高勞退提撥率的修法主張，屬具體政策倡議。",
-        "type": "policy_proposal"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T09:00:52.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "明確主張提高勞退提撥率並推修法，屬具體政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今年勞動節，#高雄市產業總工會 號召上千名勞工走上街頭，為更好的退休生活發聲。我當日也到場和勞工朋友站在一起，親耳聽見了大家訴求「#勞退要提高」、「#逐年調高勞退新制雇主提撥率」的聲音。\n\n勞工退休保障不足的問題已久，支持不能僅止於口頭聲援。所以我在活動結束後立即著手研擬法案，並在6月就正式提出法律修正案，明確主張將勞工退休金提撥率從現行的6%逐年提高到9%。這是我聽見勞工真實需求後，最具體的行動。\n\n好的政策需要延續與深化，我會繼續全力推動這項修法，讓勞工朋友退休後生活能更有依靠。未來無論擔任什麼角色，我都會持續督促法案進度，並與勞工朋友堅定的站在一起。這是我打造「#宜居高雄」的重要一環——讓每一位勞工都被看見、被尊重、被照顧。\n\n讓我們一起努力，讓高雄成為全台灣對勞工最友善、最有溫度的城市！\n#勞工退休條例\n#勞工權益",
       "topicScores": {
-        "社福": 0.95,
-        "競選": 0.43,
-        "經濟": 0.6
+        "社福": 0.97,
+        "經濟": 0.7
       },
       "topics": [
         "社福",
-        "經濟",
-        "競選"
+        "經濟"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid02JL6GqZeA4vGqzYNE7jXpomGbrGy4NpwmZFSwZM2FSp7d8cnZmBq1bweuGQLmhdm4l"
     },
@@ -1936,11 +1898,11 @@
       "agendaRelevance": 0.88,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "28e6d9ba49f2e25b9c37f78eb2531c053e2d25cb33d891792d0d2dfa2a7e5bb0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "25fbc8e3bcb737eaba8d97f65c3b215f4b58fb0bf055cabb0ab2b1c055f7ff3c",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1578804563599924",
       "imageAspect": 1.3318,
@@ -1953,37 +1915,35 @@
         "立法院",
         "監督"
       ],
-      "nature": {
-        "confidence": 0.92,
-        "label": "批評／究責",
-        "reason": "內容聚焦無人機條例、預算監督與批評執政黨預算操作。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-03T04:15:31.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "重點在無人機條例、產業政策與國會監督，屬立法主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "好久不見好姊妹— #張麗善 縣長，她特別來到立法院為農民朋友推銷最好吃的 #雲林花生 ！請大家繼續支持本土的優質農產品，跟我們一起力挺台灣農業！\n\n除了推廣在地農產，今天的院會，也有重大進展：\n一、今院會將「鞭刑公投案」逕付二讀。未來是否將鞭刑入法，交由多數民意決定，讓社會的聲音真正被聽見。\n\n二、攸關國家戰略的《無人機條例》草案（包含行政院版、國民黨團版、民眾黨團版）今天也全數一讀、付委審查。為了發展無人機產業，打造台灣第二座護國神山，國民黨團提出了更優於行政院的版本，重點如下：\n\n1.拒絕高風險區零組件：首創「五大核心組件（如飛控系統、導航晶片、通訊模組等）禁用高風險區零組件」規定。要求申請政府補助與採購的業者，必須通過資安與供應鏈安全雙重認證。\n\n2.嚴格防弊重罰：針對提供假資料、私下使用未認證零組件的廠商，明定「撤銷資格、追回補助並重罰」。情節重大者（如洩密、駭客），最高可判處10年有期徒刑。\n\n3.落實實質國產化：防堵過往國防採購的「拼裝車」與假國產化流弊！明訂採購案在2年內國產化比例須達50%，4年內必須達到80%。\n\n4.強化國會監督：只要單一採購合約超過新台幣1億元，國防部就必須向立法院提出書面報告，並逐年提交「採購進度、國產化比例、缺失改進」等執行成果。\n\n5.回歸常態預算審查：我們堅持以「常態年度預算」取代「特別預算」（分 6 年編列，每年400億）。不僅總額2,400億元比政院版多出300億元，更要求逐年審查、監督成效。此舉是為了避免賴政府一再濫用特別預算、逃避監督，絕不能讓國家公帑淪為特定廠商或「綠友友」的私人提款機，失去帶動產業發展的初衷。\n\n發展無人機產業是國家戰略的重中之重，這不僅攸關國防與資安，更是帶動地方產業轉型升級的關鍵引擎。\n\n在野黨堅持嚴格審查預算、要求落實實質的國產化指標，不只是為國家安全建構無死角的防護網，更是要確保人民的每一分納稅錢，都能真正用在刀口上——實實在在地扶植本土產業，為台灣創造更多高附加價值的優質就業機會！\n\n#在地農產品\n#鞭刑公投案\n#無人機條例",
       "topicScores": {
-        "治安": 0.78,
-        "經濟": 0.9,
-        "議會監督": 0.87
+        "經濟": 0.86,
+        "議會監督": 0.84
       },
       "topics": [
         "經濟",
-        "議會監督",
-        "治安"
+        "議會監督"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0qVr7sYfioM1rkhqYwkuUXHWVqGKnPQxf5ivwkjaFUVxZMzSLxyG7HsTuC7bxtdX6l"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.38,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "c14b1c890acb02ee1ed4d7bd5f46a682000bcf84f4574545d85fa9a8f32dce40",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "cbfb8e70140b6b27b6abf4b91b80b0c2ba288ae7d310f010489efe5d8f796faf",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaSvusjk3PD/",
       "imageAspect": 1.2513,
@@ -1991,39 +1951,40 @@
       "keywords": [
         "觀光",
         "美食",
-        "攤商"
+        "攤商",
+        "競選"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "夜市拜訪與城市交流行程為主，帶到觀光與庶民經濟。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-07-02T13:54:22+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動出席夜市活動，談觀光、攤商生計與競選訴求。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今晚很高興與桃園市長 張善政 一起來到 #六合夜市，感受高雄最熱鬧、最有人情味的夜晚，也和許多攤商、鄉親朋友相見歡。\n\n我們特別交換兩座城市的代表性農特產品。我送上近期最熱門的「旗美有機水蓮」以及正值產季的「高雄優質芒果」，善政市長則帶來「桃園拉拉山水蜜桃」，我們一起用行動支持台灣農民，也象徵高雄與桃園的交流情誼。他手捧水果，幽默地拿我的競選口號開玩笑，大讚「這顆不一樣」讓現場笑聲不斷。\n\n在六合夜市主委 #莊其章 的帶領下，我們品嚐了知名的「 #莊記海產粥 」，也走訪許多攤位，沿途受到不少鄉親熱情歡迎。許多支持者主動合照、攤商邀請簽名，甚至準備芭樂、木瓜牛奶等小吃替我們加油打氣，展現高雄人的熱情與溫暖。\n\n六合夜市不只是觀光景點，更承載著在地店家的努力與高雄的城市記憶。每一攤、每一味，都代表著一個家庭、一份生計，也吸引著來自各地的旅客認識高雄。\n\n未來，我會繼續一步一腳印走遍高雄各個行政區，傾聽市民的聲音，提出更具體的政策與願景，和大家一起努力，讓高雄變得更好。\n\n謝謝今晚所有熱情的攤商朋友與鄉親，也歡迎大家有空多到六合夜市走走，品嚐最道地的高雄美食，感受港都最迷人的夜晚！\n\n#高雄 #六合夜市 #這柯不一樣",
       "topicScores": {
-        "文化觀光": 0.81,
-        "生活": 0.63,
-        "經濟": 0.62
+        "文化觀光": 0.93,
+        "競選": 0.79,
+        "經濟": 0.84
       },
       "topics": [
         "文化觀光",
-        "生活",
-        "經濟"
+        "經濟",
+        "競選"
       ],
       "url": "https://www.instagram.com/p/DaSvusjk3PD/"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.3,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "33973c92e76b27bbd5e924847eb745d652ca1544d01f85aa8ba920efc13a7b29",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "f42292e5cc4ba89ff595c30d10db3bb6f883b1d973f202bdb26258f804a38650",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1578278216985892",
       "imageAspect": 1.25,
@@ -2033,121 +1994,121 @@
         "美食",
         "攤商"
       ],
-      "nature": {
-        "confidence": 0.91,
-        "label": "活動／行程",
-        "reason": "主要是在夜市與市長交流、走訪攤商，偏活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-02T13:54:14.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以夜市拜訪、農產交流與觀光推廣為主，偏活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今晚很高興與桃園市長 張善政 一起來到 #六合夜市，感受高雄最熱鬧、最有人情味的夜晚，也和許多攤商、鄉親朋友相見歡。\n\n我們特別交換兩座城市的代表性農特產品。我送上近期最熱門的「旗美有機水蓮」以及正值產季的「高雄優質芒果」，善政市長則帶來「桃園拉拉山水蜜桃」，我們一起用行動支持台灣農民，也象徵高雄與桃園的交流情誼。他手捧水果，幽默地拿我的競選口號開玩笑，大讚「這顆不一樣」讓現場笑聲不斷。\n\n在六合夜市主委 #莊其章 的帶領下，我們品嚐了知名的「 #莊記海產粥 」，也走訪許多攤位，沿途受到不少鄉親熱情歡迎。許多支持者主動合照、攤商邀請簽名，甚至準備芭樂、木瓜牛奶等小吃替我們加油打氣，展現高雄人的熱情與溫暖。\n\n六合夜市不只是觀光景點，更承載著在地店家的努力與高雄的城市記憶。每一攤、每一味，都代表著一個家庭、一份生計，也吸引著來自各地的旅客認識高雄。\n\n未來，我會繼續一步一腳印走遍高雄各個行政區，傾聽市民的聲音，提出更具體的政策與願景，和大家一起努力，讓高雄變得更好。\n\n謝謝今晚所有熱情的攤商朋友與鄉親，也歡迎大家有空多到六合夜市走走，品嚐最道地的高雄美食，感受港都最迷人的夜晚！\n\n#高雄 #六合夜市 #這柯不一樣",
       "topicScores": {
-        "文化觀光": 0.83,
-        "生活": 0.62,
-        "經濟": 0.48
+        "文化觀光": 0.65,
+        "生活": 0.7,
+        "經濟": 0.45
       },
       "topics": [
-        "文化觀光",
         "生活",
+        "文化觀光",
         "經濟"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0gj39PKMjXTRpjJbMZT47QANfYeBFRGgAu93fPDZzbTzq1UCqMY2pswjzSA87rCFsl"
     },
     {
-      "agendaRelevance": 0.45,
+      "agendaRelevance": 0.35,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "a11993e1dba73df600fdf2659d24e709c7862ab95102c1a1d8df85195c20300a",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "af8a0498f9dd690deca03fed70089cdda0b082e253e69194553914c99566141d",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "facebook:1577984533681927",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/3737b234bb21741c0523.webp",
       "keywords": [
-        "教育",
         "預算",
         "委員會",
-        "審查"
+        "審查",
+        "教育",
+        "文化"
       ],
-      "nature": {
-        "confidence": 0.74,
-        "label": "批評／究責",
-        "reason": "聚焦文化部預算審查爭執，屬議會監督情境。",
-        "type": "criticism_accountability"
-      },
       "platform": "facebook",
       "postedAt": "2026-07-02T05:46:51.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述文化部預算審查爭執，屬議會場域紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-fb",
       "text": "今天審查文化部預算，朝野立委爆發爭執，可說是本屆教文委員會最火爆的一次，大家需要冷靜，盡量聚焦預算項目吧……\n\n#文化部\n#教育文化委員會",
       "topicScores": {
-        "教育": 0.95,
-        "議會監督": 0.93
+        "教育": 0.88,
+        "文化觀光": 0.42,
+        "議會監督": 0.96
       },
       "topics": [
+        "議會監督",
         "教育",
-        "議會監督"
+        "文化觀光"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0KmXemdA8mmSY12GfaAZygFwiqBiCn1WNVZQN8eUR7fdHUNQVFiPXzvcGwZUf6SBzl"
     },
     {
-      "agendaRelevance": 0.38,
+      "agendaRelevance": 0.72,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "049b1e38211264959821e2292fc3666bf29b857f18e87caf755bfaa4ab9e77d0",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "eb13c1f3fd912e50adc6c4f2994a4d72d72ebd73e131b1a7eb21fe5af5607816",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaMmofGGhQ0/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/1d752c2b2a64790d8b33.webp",
       "keywords": [
-        "節慶",
-        "觀光",
         "經濟",
         "產業",
         "防災",
-        "捷運"
+        "節慶",
+        "觀光"
       ],
-      "nature": {
-        "confidence": 0.95,
-        "label": "活動／行程",
-        "reason": "主要是出席漁民節活動，並提到漁業、觀光接駁與防災改善。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-30T04:39:26+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "談漁業生計、天災衝擊與觀光接駁車規劃。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "午間來到 #林園漁會 的漁民節慶祝活動，與辛勤打拚的漁民朋友相聚，也祝福所有漁民朋友漁獲豐收、平安順利。\n\n林園擁有豐富的漁業資源，無論是近海捕撈、養殖漁業，或是漁產運銷，每一位漁民朋友都以勤奮與打拚，為市民提供優質的水產品，也撐起許多家庭生計；因為有大家的用心付出、為地方漁業經濟打拚，讓我們的「黑金（烏魚）」與「白金（鰻苗、虱目魚苗）」得以聞名全台，漁業蓬勃發展。\n\n近年因天災衝擊，不少漁民朋友也面臨養殖及生產上的挑戰，未來我也會持續重視漁民權益、協助產業升級、強化防災韌性；並在捷運開通前，推動「假日觀光主題接駁車」，開設「捷運小港站直達林園各景點」的觀光中巴，把人潮帶進林園、促進在地觀光發展，為大家的生計來打拚。\n\n#高雄 #林園 #漁民節 #表揚",
       "topicScores": {
-        "交通": 0.61,
-        "文化觀光": 0.79,
-        "經濟": 0.74,
-        "防災": 0.71
+        "文化觀光": 0.71,
+        "經濟": 0.88,
+        "防災": 0.86
       },
       "topics": [
-        "文化觀光",
         "經濟",
         "防災",
-        "交通"
+        "文化觀光"
       ],
       "url": "https://www.instagram.com/p/DaMmofGGhQ0/"
     },
     {
-      "agendaRelevance": 0.42,
+      "agendaRelevance": 0.7,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "430161d6632b3b380c167437eec7e54d556c264c6ec40402ac2b637211b99f94",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "932d833d298a73f2fc0c797f21be9c039ee1a82486c9f220e42a3a9d16f48ff4",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaIZOy4mrB-/",
       "imageAspect": 1.4981,
@@ -2156,31 +2117,31 @@
         "長輩",
         "弱勢",
         "補助",
-        "攤商",
         "豪雨",
         "防災",
-        "大雨"
+        "大雨",
+        "攤商"
       ],
-      "nature": {
-        "confidence": 0.93,
-        "label": "活動／行程",
-        "reason": "以參加協會會員大會與市場平安宴為主，並談公益、農損及市場改善。",
-        "type": "event_activity"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-28T13:25:22+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動談公益合作、農損災後復原與市場設施改善。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "今天高雄大小活動不少，很開心來到「 #高雄市周文王慈善協會 」會員大會，和許多長期投入公益服務的夥伴相聚。\n\n謝謝尤洧晶理事長，也特別感謝創會理事長歐信良等好朋友，多年來帶領協會深耕地方，陪伴弱勢家庭、關懷長輩、投入公益。謝謝大家默默付出，讓高雄多了一份溫暖。\n\n政府有制度，但民間才有速度與溫度。未來若有機會擔任市長，我會讓公益團體、志工、里鄰系統與政府建立更有效率的合作機制，讓每一份善心更快送到需要幫助的人身邊。\n\n隨後來到「#鳳農市場」參加平安宴，和許多農民、攤商及鄉親朋友齊聚一堂。\n\n鳳農市場不只是鳳山重要的果菜批發市場，更串起了產地農民、批發商、攤商、餐飲業者，以及每天上市場買菜的家庭，是高雄民生供應鏈的第一線。\n\n這幾天豪雨重創高雄農業，許多農民面臨農損，市場同樣感受最深。根據農業部統計，截至6月27日上午，全國農業產物及民間設施損失約9527萬元，其中高雄就占了約4925萬元，占全國超過一半，是目前農損最嚴重的縣市。\n\n一場大雨過後，青菜、水果價格的波動，背後代表的是農家的收成、攤商的生計，也是每個家庭每天過日子的壓力。\n\n勘災只是開始，更重要的是緊接的災後復原工作。讓農民盡快完成查報、取得補助、順利復耕；此外，我也會持續關注市場環境的改善，完善排水、照明、卸貨、停車等基礎設施，讓攤商做生意更安心、市民買菜更放心。\n\n市政不是只有大型建設，更要把基層最關心的事情做好，讓治水、防災、市場改善與農業韌性真正落實，改善農民、攤商與市民每天的生活。\n\n最後，謝謝周文王慈善協會所有公益夥伴長年投入地方服務，也感謝鳳農市場的攤商朋友守護高雄人的餐桌。無論是默默付出的志工，還是每天辛苦做生意的農民、攤商，都是高雄最重要的力量。祝福大家平安健康、生意興隆，一起讓高雄越來越好！\n\n#高雄 #柯志恩 #日常",
       "topicScores": {
-        "生活": 0.55,
-        "社福": 0.83,
-        "經濟": 0.77,
-        "防災": 0.72
+        "生活": 0.62,
+        "社福": 0.86,
+        "經濟": 0.78,
+        "防災": 0.8
       },
       "topics": [
         "社福",
-        "經濟",
         "防災",
+        "經濟",
         "生活"
       ],
       "url": "https://www.instagram.com/p/DaIZOy4mrB-/"
@@ -2189,98 +2150,96 @@
       "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "f75bf76b4379f027abdb8f03000080d5c85919d6c372856c3652935ef5ecff89",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "741988d89dd47730da5926e5f7dbeabfb9933aed46598b1dbda801ca2cec7b44",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DaHDzF1kVRv/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/3fac2489bf18381ddf06.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.91,
-        "label": "回應／澄清",
-        "reason": "主要是回應外界對水蓮受災的質疑，借農友說明豪雨農損。",
-        "type": "response_clarification"
-      },
       "platform": "instagram",
       "postedAt": "2026-06-28T00:59:26+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "回應豪雨對水蓮農損與綠營攻擊，屬議題澄清。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-ig",
       "text": "前幾天我到美濃勘災，有種植水蓮的農友向我陳情，表達豪雨導致農損嚴重，沒想到卻引來綠營及綠媒鋪天蓋地的攻擊。\n\n到底水蓮遇到豪雨會不會造成損害？水蓮種在水裡就不怕水災？讓專業的青農直接說給你聽。\n\nfeat. 競辦發言人黃騰憲 、在地水蓮青農\n\n#水蓮 #野蓮 #高雄 #美濃",
       "topicScores": {
-        "教育": 0.42,
-        "環境": 0.82,
-        "經濟": 0.79
+        "治安": 0.42,
+        "環境": 0.91,
+        "經濟": 0.76
       },
       "topics": [
         "環境",
         "經濟",
-        "教育"
+        "治安"
       ],
       "url": "https://www.instagram.com/p/DaHDzF1kVRv/"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.28,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "aa4c9da062d754691c3723710c4d4fb8fcd751c3ccf9a166a0f23ad962d70c75",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "1aada2b025fc3eeeea4847d5709931b6a56efbef959b1cfe0d9d69ff7dff73d7",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:NLcegJWKLyQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/4f2d25ef8740177be38c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.94,
-        "label": "競選／動員",
-        "reason": "以四年前承諾與持續在場強調個人參選形象，屬競選式宣傳。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提及四年前承諾與仍在此，屬競選式自我宣示。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "Four years ago I made a promise in Fongshan, and four years later I am still here.",
       "topicScores": {
-        "生活": 0.75,
-        "競選": 0.97
+        "競選": 0.96
       },
       "topics": [
-        "競選",
-        "生活"
+        "競選"
       ],
       "url": "https://www.youtube.com/watch?v=NLcegJWKLyQ"
     },
     {
-      "agendaRelevance": 0.05,
+      "agendaRelevance": 0.1,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "8a23dac8445b0b27b1b68e41bdec544f06db7b23b3969c37644d4c2f10b9ea63",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7e0c793584d2d80404ca4fe8b485b8392f3c3c3add3e1741c46599161944d2ad",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:YBf9H2Sh4yM",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8957e2c64fe1d6a283b7.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.83,
-        "label": "競選／動員",
-        "reason": "描述候選人被一句話感動，重點在選舉敘事而非政策。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "只是在描述四年前一句話引發情緒，未見回應特定他人主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "A single sentence from four years ago left Ke Chih-en choked up.",
       "topicScores": {
-        "競選": 0.86
+        "競選": 0.88
       },
       "topics": [
         "競選"
@@ -2288,32 +2247,32 @@
       "url": "https://www.youtube.com/watch?v=YBf9H2Sh4yM"
     },
     {
-      "agendaRelevance": 0.93,
+      "agendaRelevance": 0.86,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "3ae405a3b8804ca56fa7b7e1cd55b22c4de832d096f28fb843f4693cd270bcdf",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "7d0da1491f1b63d7a6d2ada1a7ae04ab4933343e036b7301f09d3829d83d4683",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:AYXNZ83Rjkc",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/3d3668beaf3310fe4eb3.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.96,
-        "label": "政策／政見",
-        "reason": "主談育兒補助與托育政策，屬明確可作施政主張。",
-        "type": "policy_proposal"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動介紹托育與補助政策，屬明確政策主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "[Childcare and Childcare Policies] Taiwan's first \"Respite Voucher\" program, with subsidies up to...",
       "topicScores": {
-        "教育": 0.76,
-        "社福": 0.95
+        "教育": 0.45,
+        "社福": 0.82
       },
       "topics": [
         "社福",
@@ -2322,99 +2281,99 @@
       "url": "https://www.youtube.com/watch?v=AYXNZ83Rjkc"
     },
     {
-      "agendaRelevance": 0.9,
+      "agendaRelevance": 0.84,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "4ff91bebda4bbf389583e86c76e2a50f56f49cfcc975a557ab845c3a1467b349",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5510e5ef24e42181c4b3a41ceab09c9972c841d36506ecf6c8fa774a40e32cd9",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:V5gf27_VBm0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8cc9198c38ebdd7d0d5f.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.93,
-        "label": "政策／政見",
-        "reason": "提出勞動政策改革與改善勞動環境，屬具體政見。",
-        "type": "policy_proposal"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出勞工政策與職場改革，屬施政主張。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "[Labor Policy] Ko Chih-en proposed five \"firsts in the country\" to transform the labor environmen...",
       "topicScores": {
-        "社福": 0.76,
-        "經濟": 0.88
+        "生活": 0.31,
+        "社福": 0.74,
+        "經濟": 0.68
       },
       "topics": [
+        "社福",
         "經濟",
-        "社福"
+        "生活"
       ],
       "url": "https://www.youtube.com/watch?v=V5gf27_VBm0"
     },
     {
-      "agendaRelevance": 0.2,
+      "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "cb5f456c243ce74e4fc78b267b56dc76d5c331b106815458cb03dd1ec579d127",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e54f36712254bffaa45b1dced9a9c28632a69f16a394fececfc4d2adfdf1da57",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:RMngx7GTXUQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/66bf1f8a4462b0cd50b7.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "活動／行程",
-        "reason": "內容為原民音樂活動出席與致詞，重點在活動紀錄。",
-        "type": "event_activity"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為原住民音樂活動與致詞，屬活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "[Music for You Tribal Concert] Ke Zhien: \"The Zhi family\" are all \"one family\". I will take good ...",
       "topicScores": {
-        "文化觀光": 0.9,
-        "競選": 0.72
+        "文化觀光": 0.93
       },
       "topics": [
-        "文化觀光",
-        "競選"
+        "文化觀光"
       ],
       "url": "https://www.youtube.com/watch?v=RMngx7GTXUQ"
     },
     {
-      "agendaRelevance": 0.62,
+      "agendaRelevance": 0.22,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ae7bf2dab9093f36fa4b8c2d21dd54874909c2c80f7168732a1f350c2f669e62",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d830f9b86d125c8a69133f38067580d7e76ea67a156ba62d28a1f94831fcc811",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:AZR1sq_-9D0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/64a882a678f29e72197c.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.8,
-        "label": "政策／政見",
-        "reason": "標示政策說明會，屬競選期間的政策訴求與發表。",
-        "type": "policy_proposal"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "政策說明會與多位候選人同台，屬競選動員。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "【守護民主 人民作主】政策說明會 #柯志恩 #謝龍介 #黃國昌 #鄭麗文 #歷史哥",
       "topicScores": {
-        "競選": 0.93
+        "競選": 0.95
       },
       "topics": [
         "競選"
@@ -2422,80 +2381,80 @@
       "url": "https://www.youtube.com/watch?v=AZR1sq_-9D0"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.14,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "3dce10443e17ebbf4345e77238c13518da7715a754f176966876610c3de77abd",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "f9f51a2c8ea00b7e0e7c71c1af7f9c4f300032ce5879d22054ab260154298cd1",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:LikZVn211W4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/3af7d53600530f7413a0.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.9,
-        "label": "競選／動員",
-        "reason": "以跑行程地點為主，屬選戰拜票或宣傳活動。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅為掃街行程紀錄，屬競選活動。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "【繞著高雄跑】美濃！",
       "topicScores": {
-        "生活": 0.54,
-        "競選": 0.88
+        "競選": 0.94
       },
       "topics": [
-        "競選",
-        "生活"
+        "競選"
       ],
       "url": "https://www.youtube.com/watch?v=LikZVn211W4"
     },
     {
-      "agendaRelevance": 0.08,
+      "agendaRelevance": 0.12,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "ff538b121bac3106a2b13bb2fea572b869ccca3c8d477541abab0a1c2554fdac",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "f78edd53344d33efb696e21f75bb65c5b037b6abe0e1acb78676d12743c6f1da",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:z3lxlUmVf18",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/8d1eb5a3e7639108fd3a.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.88,
-        "label": "回應／澄清",
-        "reason": "僅標示時事回應記者會，未見具體公共議題內容。",
-        "type": "response_clarification"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "僅標示時事回應記者會，未見具體回應對象內容。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "【時事回應】記者會",
       "topicScores": {
-        "生活": 0.7
+        "生活": 0.2,
+        "競選": 0.44
       },
       "topics": [
+        "競選",
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=z3lxlUmVf18"
     },
     {
-      "agendaRelevance": 0.15,
+      "agendaRelevance": 0.2,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "46acf7a7fb7e680e9583e82e7dae45bb72ff303b3c4a1ea2d24382b591654701",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "5ca36bea3395d12752803302cab0ae60560d8c2b378f4845e006db0f12181873",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:hwZdW25UfhQ",
       "imageAspect": 1.7872,
@@ -2503,18 +2462,18 @@
       "keywords": [
         "掃街"
       ],
-      "nature": {
-        "confidence": 0.96,
-        "label": "競選／動員",
-        "reason": "車隊掃街明顯屬選舉動員與拜票活動。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "車隊掃街與人物同框，屬競選造勢。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "【大旗美鄉親好！ 車隊掃街 feat. 柯志恩&林義迪&李四川】#林義迪#李四川#柯志恩",
       "topicScores": {
-        "競選": 0.95
+        "競選": 0.96
       },
       "topics": [
         "競選"
@@ -2522,31 +2481,31 @@
       "url": "https://www.youtube.com/watch?v=hwZdW25UfhQ"
     },
     {
-      "agendaRelevance": 0.22,
+      "agendaRelevance": 0.2,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "58ae06f2c9bdea1c8bbc81f17b62316368f71121e765b0609b988bec869149d9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "993cd1ce4bea38f6f0f6e3156418496cc57f87309fcdb3b44ac18ce3a3ff87cd",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:PWhwAZav8Jk",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f1cc40f6081f36921b8d.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.97,
-        "label": "競選／動員",
-        "reason": "誓師大會與發布會屬選戰動員宣傳。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "誓師大會發布會，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "【南方響起誓師大會】發布記者會",
       "topicScores": {
-        "競選": 0.95
+        "競選": 0.94
       },
       "topics": [
         "競選"
@@ -2554,67 +2513,67 @@
       "url": "https://www.youtube.com/watch?v=PWhwAZav8Jk"
     },
     {
-      "agendaRelevance": 0.48,
+      "agendaRelevance": 0.73,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "b29fe43cf6209214411f4432229e0df1ea1606f6d137e37ca25b136a50e235a9",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ca101a9701a1235fb631dd1e8347b45937ef23062679f038ec3b1c37b0f84f0e",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:_SwF9YE7KFo",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/59b4162f7912466cfee4.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.87,
-        "label": "批評／究責",
-        "reason": "聚焦學生輔導與管教政策檢討，帶有監督質疑意味。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "討論學生輔導與管教政策檢討，屬教育政策議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "When Will the Comprehensive Review of Student Counseling and Discipline Policies Begin?",
       "topicScores": {
-        "教育": 0.93,
-        "社福": 0.64
+        "教育": 0.87,
+        "治安": 0.25
       },
       "topics": [
         "教育",
-        "社福"
+        "治安"
       ],
       "url": "https://www.youtube.com/shorts/_SwF9YE7KFo"
     },
     {
-      "agendaRelevance": 0.34,
+      "agendaRelevance": 0.72,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "49389d066bd06696c5e07e4b4bdc3f903e199f6d7cd3c1eee0f2752baea762f5",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "e638ea3290bae506147d25dac27ecb7b373a71a9ec72b25e9e4782f7b534fd70",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:JENn7l4C_mo",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/a37bf1f976a02cce3f33.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.84,
-        "label": "施政成果／行政進度",
-        "reason": "赴美濃勘災並關心農損，屬災後查察與行政處理。",
-        "type": "administrative_update"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "實地勘災並談農損，屬防災與災後影響。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "I visited Meinong to assess flood damage and heard from farmers about the devastating impact of t...",
       "topicScores": {
-        "環境": 0.55,
-        "經濟": 0.78,
-        "防災": 0.95
+        "環境": 0.38,
+        "經濟": 0.45,
+        "防災": 0.9
       },
       "topics": [
         "防災",
@@ -2624,32 +2583,32 @@
       "url": "https://www.youtube.com/shorts/JENn7l4C_mo"
     },
     {
-      "agendaRelevance": 0.5,
+      "agendaRelevance": 0.8,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "faa783a8d1c010a9b23cb69105d33e95076c3641c74001594242e63e4c5935b6",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "fc98ff65594c6fb786f90228b40390c2f17f0103878ef61b33e019912d6eb031",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:wiM2wa1raEU",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/85066611b20c783b74d1.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.91,
-        "label": "批評／究責",
-        "reason": "針對校園毒品與分級管制提出質疑，重在究責。",
-        "type": "criticism_accountability"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評校園毒品處理與安全政策，屬教育治安議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "The Executive Yuan is reportedly pushing for \"Level 5 security\" to address campus drug issues; ir...",
       "topicScores": {
-        "教育": 0.9,
-        "治安": 0.84
+        "教育": 0.89,
+        "治安": 0.52
       },
       "topics": [
         "教育",
@@ -2658,65 +2617,63 @@
       "url": "https://www.youtube.com/shorts/wiM2wa1raEU"
     },
     {
-      "agendaRelevance": 0.12,
+      "agendaRelevance": 0.24,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "df055201a3e1d8b6cfb61b8585451f82b567e5efb4c22b2caf8c9c64b029b623",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "05f95b5820ee8937f6d5e5ceecfa2d97a1c2d65b0b8063f62154ba33c2af76d8",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:IFq6b27uKfk",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/f30f876490cc4a8928f5.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.95,
-        "label": "競選／動員",
-        "reason": "強調四年耕耘與努力，典型競選自我宣傳。",
-        "type": "campaign_mobilization"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "強調四年深耕與努力，典型競選自我宣傳。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "\"This time it's not about luck, we're relying on hard work!\" For four years, I've lived in and de...",
       "topicScores": {
-        "生活": 0.58,
-        "競選": 0.96
+        "競選": 0.95
       },
       "topics": [
-        "競選",
-        "生活"
+        "競選"
       ],
       "url": "https://www.youtube.com/shorts/IFq6b27uKfk"
     },
     {
-      "agendaRelevance": 0.28,
+      "agendaRelevance": 0.58,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-07-15T08:54:42+00:00",
-        "inputHash": "586a42436f45cf55b20963bb9c196cb06803d377652192db3db6f1a9b4759df1",
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "d12f4fdd7c5f88a89628074a78d22920e7d0682e59102f9c0a1164d1f40addf0",
         "method": "ai",
         "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v2"
+        "rubricVersion": "content-v4"
       },
       "id": "youtube:RyY94bQmKEw",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/8ef6f39fb6d99bc7eab7.webp",
       "keywords": [],
-      "nature": {
-        "confidence": 0.84,
-        "label": "立場表態",
-        "reason": "以紀錄片引出教育現象觀感，偏向態度表述。",
-        "type": "position_statement"
-      },
       "platform": "youtube",
       "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容聚焦校園教育困境與紀錄片，屬教育議題。",
+        "type": "self_initiated"
+      },
       "sourceId": "ko-ce-yt",
       "text": "The documentary \"Iron Fist Education\" poignantly portrays the helplessness of countless school te...",
       "topicScores": {
-        "教育": 0.93
+        "教育": 0.86
       },
       "topics": [
         "教育"
