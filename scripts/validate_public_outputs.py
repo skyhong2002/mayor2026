@@ -136,6 +136,7 @@ def validate_count_consistency(errors: list[str]) -> None:
 def validate_qualitative_schema(errors: list[str]) -> None:
     try:
         policy = read_json(API_DIR / "policy-match.json")
+        topic_index = read_json(API_DIR / "topic-index.json")
     except (OSError, json.JSONDecodeError):
         return
     valid_natures = {
@@ -158,6 +159,9 @@ def validate_qualitative_schema(errors: list[str]) -> None:
             errors.append(f"post {post.get('id')} has invalid nature confidence: {confidence!r}")
         if (post.get("classification") or {}).get("method") != "ai":
             errors.append(f"post {post.get('id')} was not classified by AI")
+    for post in topic_index.get("posts", []):
+        if post.get("nature") not in valid_natures:
+            errors.append(f"topic index post {post.get('id')} has invalid nature: {post.get('nature')!r}")
     if not policy.get("questions") or not isinstance(policy.get("candidates"), list):
         errors.append("policy-match.json has no questions or candidate vectors")
 

@@ -44,12 +44,13 @@ def build_topic_index(posts: list[dict[str, Any]]) -> None:
             "candidateId": post["candidate_id"],
             "postedAt": post.get("posted_at") or None,
             "topicScores": post.get("topic_scores") or {},
+            "nature": (post.get("nature") or {}).get("type") or "other",
         }
         for post in posts
     ]
     feed_common.save_json_atomic(
         API_DIR / "topic-index.json",
-        {"version": 1, "count": len(rows), "fallbackTopic": classify_topics.FALLBACK_TOPIC, "posts": rows},
+        {"version": 2, "count": len(rows), "fallbackTopic": classify_topics.FALLBACK_TOPIC, "posts": rows},
     )
 
 
