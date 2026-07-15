@@ -1,41 +1,28 @@
 {
-  "actionCounts": {
-    "administrative_update": 73,
-    "clarification": 14,
-    "criticism": 26,
-    "mobilization": 120,
-    "other": 392,
-    "personal_content": 107,
-    "policy_proposal": 185,
-    "position_statement": 31,
-    "public_information": 121
+  "natureCounts": {
+    "administrative_update": 118,
+    "campaign_mobilization": 120,
+    "criticism_accountability": 78,
+    "event_activity": 127,
+    "other": 23,
+    "personal_content": 88,
+    "policy_proposal": 123,
+    "position_statement": 40,
+    "public_information": 119,
+    "response_clarification": 10
   },
-  "actionLabels": {
-    "administrative_update": "行政進度",
-    "clarification": "回應澄清",
-    "criticism": "批評究責",
-    "mobilization": "動員宣傳",
-    "other": "其他／待細分",
+  "natureLabels": {
+    "administrative_update": "施政成果／行政進度",
+    "campaign_mobilization": "競選／動員",
+    "criticism_accountability": "批評／究責",
+    "event_activity": "活動／行程",
+    "other": "其他",
     "personal_content": "個人／日常",
-    "policy_proposal": "政策倡議",
+    "policy_proposal": "政策／政見",
     "position_statement": "立場表態",
-    "public_information": "資訊轉達"
+    "public_information": "資訊公告／服務提醒",
+    "response_clarification": "回應／澄清"
   },
-  "needsReviewCount": 705,
   "postCount": 846,
-  "triggerCounts": {
-    "direct_response": 1,
-    "external_event": 142,
-    "routine": 65,
-    "self_initiated": 161,
-    "unclear": 477
-  },
-  "triggerLabels": {
-    "direct_response": "直接回應",
-    "external_event": "外部事件驅動",
-    "routine": "例行發布",
-    "self_initiated": "自主議程",
-    "unclear": "待確認"
-  },
-  "version": 1
+  "version": 2
 }

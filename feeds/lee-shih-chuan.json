@@ -2,22 +2,14 @@
   "count": 45,
   "posts": [
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.96,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e5ac8a253392aaea2e3ffabc2d7ece627feeecb0e5e57ffec94377987ccee38a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaxL3PYCASs",
       "imageAspect": 0.5634,
@@ -26,47 +18,37 @@
         "經濟",
         "產業",
         "科技",
-        "AI",
-        "電競"
+        "AI"
       ],
+      "nature": {
+        "confidence": 0.94,
+        "label": "政策／政見",
+        "reason": "直接提出產業四箭，屬清楚可作政見的政策主張。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-14T09:38:18+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n\n工作留在新北，人才就會留在新北。",
       "topicScores": {
-        "經濟": 0.8889,
-        "體育": 0.1111
+        "教育": 0.37,
+        "經濟": 0.96
       },
       "topics": [
         "經濟",
-        "體育"
+        "教育"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DaxL3PYCASs"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.95,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8b1c8d2ca36a1b7c450a63a1bbbbe35fdfed01b50c95c11ab32e47252d878e23",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaxL0Zzsi39/",
       "imageAspect": 0.5625,
@@ -75,47 +57,37 @@
         "經濟",
         "產業",
         "科技",
-        "AI",
-        "電競"
+        "AI"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "政策／政見",
+        "reason": "明確提出產業四箭與招商布局，屬具體產業政策主張。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-14T09:37:47+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n\n工作留在新北，人才就會留在新北。",
       "topicScores": {
-        "經濟": 0.8889,
-        "體育": 0.1111
+        "生活": 0.57,
+        "經濟": 0.98
       },
       "topics": [
         "經濟",
-        "體育"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DaxL0Zzsi39/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.97,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ab45931005c342bd18d803e10acd1fb5a4f8d8d53cdee046c0d7983505cf68fd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1584386199965301",
       "imageAspect": 0.5625,
@@ -124,88 +96,71 @@
         "經濟",
         "產業",
         "科技",
-        "AI",
-        "電競"
+        "AI"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "提出產業四箭作為城市發展主張，屬明確政策政見。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-13T23:30:58.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "新北市擁有全台最大的製造業基礎與最完整的科技產業聚落，缺的不是實力，是下一步的路。\n所以我提出產業四箭：AI 廊帶、產業專區倍增、無人機產業、AI 電競新經濟，一箭一箭把路射出去。\n工作留在新北，人才就會留在新北。",
       "topicScores": {
-        "經濟": 0.8889,
-        "體育": 0.1111
+        "生活": 0.52,
+        "經濟": 0.97
       },
       "topics": [
         "經濟",
-        "體育"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/reel/1647628232993395/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c2970b86455988660582bc41a9b8536df7bdee4b4b5e6bd84de0788372f50494",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1583590336711554",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/62d28b2d0b4793253dee.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.87,
+        "label": "個人／日常",
+        "reason": "以製茶職人故事為主，屬個人感性分享與地方風土。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-12T23:31:10.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "拿了一輩子鐵鎚的手，這一天甩不動一盤茶葉。\n86 歲的黃文雄大師說，製茶打瞌睡，會被一百多度的鐵板燙醒——說實在，功夫沒有一樣是舒服練成的。\n茶是一葉一葉炒出來的；新北的職人，我一個一個顧。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.88,
+        "經濟": 0.5
       },
       "topics": [
-        "生活"
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/1535251371402180/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ee4eb775eebe461d9b65d81e718b799f6b354e159b0aef5a205d0528e02dd842",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1581662320237689",
       "imageAspect": 1.0,
@@ -215,42 +170,35 @@
         "防災",
         "土石流"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "轉述停班停課資訊並提醒避災，主要是防災公告。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-10T14:53:35.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "巴威還沒走。新北市政府已公告：明天（7/11）持續停止上班、停止上課。\n\n風雨還在，低窪地區留意積淹水、山區留意土石流，儘量避免靠近海邊、溪邊。\n\n向每一位連續兩天仍守在應變中心的防災人員致敬。\n\n大家平安，比什麼都重要。",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.78,
+        "防災": 0.98
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "淹水、土石流",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02GoJoXuoHruSjJky6k3ry39KiUJsGAdVitwQDW9tmvuaWS6oqFsJrLj9iktp69To9l&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "最新資訊"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "d27c1706f6508f5519a5e527730f13d61526f6fb994feb05ee39f94fa1d89df0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1580819110322010",
       "imageAspect": 1.0,
@@ -258,132 +206,103 @@
       "keywords": [
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告停班停課並提醒做好防颱準備。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T14:03:33.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "新北市政府已公告：明天（7/10）停止上班上課。\n\n請大家做好防颱準備：門窗關好，非必要儘量避免出門，留意颱風最新資訊。\n\n大家平安，比什麼都重要。",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.7,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0cBJD63sWiEm178rAmyAVg7WHwKTkxQ66mt6cKZgSz9b1pL2y2gkEvifdsoNWg2yEl&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.34,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3aa485860e28a27165b11ed72df629015cc385fb0aafff3d286c755a27f41fc6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1580351197035468",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/0d7006a8e57e5fdd5413.webp",
       "keywords": [
-        "捷運",
-        "長輩",
         "觀光"
       ],
+      "nature": {
+        "confidence": 0.63,
+        "label": "競選／動員",
+        "reason": "以觀光工廠集章活動號召民眾參與，偏活動推廣。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T00:30:33.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "我蓋了一輩子，蓋橋、蓋路、蓋捷運。\n這次想邀請大家也來蓋：一本新北職人 Passport，18 家觀光工廠，18 個章。\n小朋友動手做，長輩出門走，看的都是職人的手藝。\n硬的我來蓋，這 18 個章，換你們來蓋。",
       "topicScores": {
-        "交通": 0.3333,
-        "文化觀光": 0.3333,
-        "社福": 0.3333
+        "文化觀光": 0.92
       },
       "topics": [
-        "交通",
-        "社福",
         "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/999750219486852/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9fad64a221dfafb7c390188248cddf8287b0d7c2040177bc5f96799cf5be8579",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Dahxsr5mJLE/",
       "imageAspect": 0.8,
       "imageUrl": "assets/feed-images/855f848b993cb12d5355.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.7,
+        "label": "施政成果／行政進度",
+        "reason": "回顧雙溪荷花田改造成果，屬施政紀錄與地方建設。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T10:00:05+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "說實在，雙溪種荷花這件事，我當初也有參與。\n那時候做副市長，里長來找我談經費。\n那天再回去，我忍不住拍下這朵荷花，因為荒蕪的農地已經變成超過7公頃的新北最大荷花田園區。\n\n里長摘了顆蓮子叫我剝開吃。\n幾十年了，我頭一次這樣吃，真的很清甜。\n\n田開滿花，人一批一批進來。\n凡走過總會留下痕跡。該做的，我們繼續做。\n\n#川流來了 #李四川 #新北市  #雙溪 #雙溪荷花季 荷花",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.78,
+        "環境": 0.6
       },
       "topics": [
-        "生活"
+        "文化觀光",
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/Dahxsr5mJLE/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.93,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ff308496243a14c89a35e1ab2795d6c0f25d8102880939f63d8d643e08181cd8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1579844003752854",
       "imageAspect": 1.0,
@@ -393,150 +312,104 @@
         "產業",
         "科技",
         "AI",
-        "電競",
         "交通",
-        "捷運",
-        "銀髮"
+        "捷運"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "政策／政見",
+        "reason": "提出產業四箭與交通、產業、電競等具體施政方向。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-08T09:50:51.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "今天在寶高智慧園區，一位進駐廠商的副總跟我說：「他們的工程師，凌晨兩點想到一個 idea，就直接開車進辦公室」\n\n我聽了很有感。AI 的競爭是全球的，但工程師的生活，是在一個城市裡過的。\n\n說實在，人才不是用口號留下來的。他要有地方做研發，公司要有地方擴產，下班要有捷運可以搭，凌晨兩點門要打得開。\n\n一個城市能不能留住人才，看它接不接得住凌晨兩點。\n\n所以我提出產業四箭：\n\n第一箭，AI 科技廊帶。興建蘆社大橋，不只是一條橋，而是銜接北士科與新北產業聚落的整體交通規劃，串起台64、台65，讓研發、製造、應用、出口在新北一條龍。\n\n第二箭，產業專區倍增。推動淡海二、三期與五股交流道周邊開發，產業專區只租不售，政府蓋標準廠房，讓企業進得來、留得住。\n\n第三箭，無人機產業起飛。新北有超過50家無人機重點廠商，我們要做台灣無人機產業發展中心。\n\n第四箭，AI 電競新經濟。成立第二間電競基地，同時拓展銀髮電競，讓年輕人的興趣，變成接軌世界的產業。\n\n我做工程整整40年，很清楚一件事：橋要一墩一墩蓋，產業鏈要一節一節接。\n\n蘆社大橋不只是一座橋，是新北下一個30年的起點。\n\n產業留在新北，人才留在新北，工作留在新北。\n\n新北的凌晨兩點，有人開車進辦公室。\n\n新北的下一個30年，有人已經開始蓋。",
       "topicScores": {
-        "交通": 0.1,
-        "社福": 0.05,
-        "經濟": 0.7,
-        "體育": 0.15
+        "交通": 0.86,
+        "文化觀光": 0.55,
+        "經濟": 0.96
       },
       "topics": [
         "經濟",
-        "體育",
         "交通",
-        "社福"
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0YFbRwVFR4WYbBKbtaVZzyCYB3HiLd83SeuiTvu2z14d5t7QAd3iTpx2KZLzj4NK5l&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "應該"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.02,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9460e44877df8edfa5be2de832defe48afd19b845f31fcd7c507a2168e30ef78",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DahHuHriFKl",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/623677637ab7a31c5d40.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "個人／日常",
+        "reason": "內容為寵物展與毛小孩日常，未涉公共政策。",
+        "type": "personal_content"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T03:54:29+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:去了寵物展，抱了一整天的毛小孩。\n\n推動寵物嘉年華、友善城市指數、陪同洽公，只因為毛寶貝的事，就是家裡的事。\n\n家人在的地方，就應該能一起變得更好。",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.94
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DahHuHriFKl"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "應該"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.02,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "83a84e490951e6ea3c3cf1f513da04816fdc1be34405cab64c9c3e306a68561d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DahHsMXsGzV/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/3d7ac59deff0f97b6ed2.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.93,
+        "label": "個人／日常",
+        "reason": "僅分享逛寵物展與抱毛小孩的日常感想。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T03:54:27+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "去了寵物展，抱了一整天的毛小孩。\n\n推動寵物嘉年華、友善城市指數、陪同洽公，只因為毛寶貝的事，就是家裡的事。\n\n家人在的地方，就應該能一起變得更好。",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.98
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DahHsMXsGzV/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "政策"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.83,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c1472bd039aabfea540371078e7a9a38543e3f54589f027a4abe32bbd14fe9e6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1578910620512859",
       "imageAspect": 1.0,
@@ -545,298 +418,229 @@
         "文化",
         "觀光",
         "旅遊",
-        "長輩",
         "產業"
       ],
+      "nature": {
+        "confidence": 0.82,
+        "label": "政策／政見",
+        "reason": "提出職人護照與觀光工廠串聯，屬具體政策構想。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-07T10:00:01.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "我一直尊敬每一個行業認真做事的人。今天在五股，我公布「新北職人 Passport」政策。 \n\n很多人不知道，我開過麵包店，我自己也烘烤過鳳梨酥跟鳳凰酥。\n\n今天到維格餅家，跟董事長、跟來校外教學的小朋友一起做鳳梨酥。有小朋友一眼認出我，喊「是川伯！」還拉著同學一起來打招呼。我幫旁邊的妹妹包餡、壓模，大家做出台灣、元寶、鳳梨的形狀，做得很開心。\n\n說實在，烘焙這一行不簡單。整個烤焙過程都在高溫裡，每一道工序都不能馬虎。以前我在麵包店做最多的工作是洗盤、洗攪拌桶——攪拌桶只要留一點油渣，蛋白放進去就打不發。成敗，常常就在你看不見的地方。\n\n一間觀光工廠，裝得下職人的手藝，也裝得下一家人的假日。\n\n所以有了「新北職人 Passport」：\n\n串聯 18 家觀光工廠跟產業文化館，一本護照就能入館體驗、集章換紀念品，18 館走完再送限量職人禮。\n\n小朋友可以做職涯探索，長輩可以透過導覽跟手作課程走出家門、動手動腦，讓觀光工廠成為新北最有代表性的親子旅遊品牌。\n\n把每一個細節做到位，就是職人精神。做糕餅是這樣，把一個城市做好，也是這樣。",
       "topicScores": {
-        "文化觀光": 0.7143,
-        "社福": 0.1429,
-        "經濟": 0.1429
+        "教育": 0.62,
+        "文化觀光": 0.91,
+        "經濟": 0.52
       },
       "topics": [
         "文化觀光",
-        "社福",
+        "教育",
         "經濟"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0tCM7AumAWmWHQoKdWUCAThmE3dr2UAFrZp9Ci94HtGqHhm8wEHki2UGJuaz7pWgel&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.28,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "40ec9c1b8d57f8854c06a5ce7b30328e7afd4fa01cdaf20f9b81a80760d97470",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1578733083863946",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/bca0067aca9c0e6233fc.webp",
-      "keywords": [
-        "選舉"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.86,
+        "label": "批評／究責",
+        "reason": "以選舉橋諷刺對手，重點在攻防與工程成果比較。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-07T04:00:05.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "「選舉橋」，選舉浮起來，選完沉下去，這句嘲諷講了十幾年。\n\n我們找齊三個五十億，把橋蓋了出來；現在輝達進北士科、臺智雲進淡水，淡海二、三期就是下一步。\n\n會沉的是口號，蓋起來的是橋。",
       "topicScores": {
-        "競選": 1.0
+        "交通": 0.91,
+        "經濟": 0.72
       },
       "topics": [
-        "競選"
+        "交通",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/1007756985304477/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.92,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "71c963a6367d1faeeb1180a4a914277dc7cd4ca4e24e535e2c2e33cad192df24",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DacYMTbiMzp",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/1766abba63ac86ed7e42.webp",
       "keywords": [
-        "醫院",
-        "照顧"
+        "照顧",
+        "醫院"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "內容是再次提出新北市立毛小孩醫院的政策主張。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-06T07:41:54+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:我要在新北要蓋一間市立毛小孩醫院，認養登記後看診免費、只收藥費。鼓勵認養取代購買，也讓認養的人，減輕負擔。\n\n毛小孩是我們的家人。\n\n蓋一間毛小孩的醫院，就是好好照顧我們的家人。",
       "topicScores": {
-        "社福": 0.3333,
-        "醫療": 0.6667
+        "生活": 0.56,
+        "社福": 0.82,
+        "醫療": 0.79
       },
       "topics": [
+        "社福",
         "醫療",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DacYMTbiMzp"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.92,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "5d055d02141aa4ec58dabca04822a6df783f8fbd03e436f085e3d62593e99793",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DacYLvQM9cX/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/4eb9840ec15ba6d35a95.webp",
       "keywords": [
-        "醫院",
-        "照顧"
+        "照顧",
+        "醫院"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "直接提出新北市立毛小孩醫院的具體政策構想。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-06T07:41:40+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "我要在新北要蓋一間市立毛小孩醫院，認養登記後看診免費、只收藥費。鼓勵認養取代購買，也讓認養的人，減輕負擔。\n\n毛小孩是我們的家人。\n\n蓋一間毛小孩的醫院，就是好好照顧我們的家人。",
       "topicScores": {
-        "社福": 0.3333,
-        "醫療": 0.6667
+        "生活": 0.57,
+        "社福": 0.82,
+        "醫療": 0.8
       },
       "topics": [
+        "社福",
         "醫療",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DacYLvQM9cX/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "政策"
-        ],
-        "public_information": [
-          "開放"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.9,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "df03b1837ce8adbcbc8499b365f8f4f617fd1509788f72a5f38a9a0061b8afdd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DacMe9yE2xJ",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/1ad455733fec74d2f00d.webp",
       "keywords": [
         "醫療",
-        "醫院",
-        "市集"
+        "醫院"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "政策／政見",
+        "reason": "以寵物友善城市為主軸，提出三項具體政策措施。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-06T05:58:46+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:新北是全台毛寶貝最多的城市，將近 36 萬隻犬貓。\n\n我常常在想——一座城市走得多前面，看的是牠怎麼對待這些生命。\n\n上一次我提了六大動保政策，從寵物醫院、生命紀念館到食品管理，得到不少飼主和動保團體的肯定。今天，我再往前走一步，提三件事：\n\n一、推動寵物可陪同洽公。\n在不影響公共秩序和安全的前提下，逐步開放特定場域。很多人辦結婚登記，也想帶著貓咪、狗狗一起留個紀念——人生重要的時刻，讓牠陪在身邊。\n\n二、每年辦一次新北寵物嘉年華。\n認養、市集、免費健檢、才藝互動，讓毛孩真正走進城市的公共生活。\n\n三、建立寵物友善城市指數。\n每一區的寵物設施、友善店家、認養、醫療，一項一項盤出來。哪一區還不夠，一目了然，就從那裡開始補。\n\n我是做工程的。管一條路、一座橋，靠的不是感覺，是一張逐項檢查、改得動的表。毛寶貝友善，我想用同一套方法做。\n\n說實在，毛寶貝已經是我們的家人。\n愛牠，靠愛心。顧牠，靠制度。\n家人，也是這座城市的市民。\n\n硬的我繼續蓋，軟的我繼續顧。",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "醫療": 0.6667
+        "生活": 0.59,
+        "社福": 0.91,
+        "醫療": 0.84
       },
       "topics": [
+        "社福",
         "醫療",
-        "文化觀光"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DacMe9yE2xJ"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "政策"
-        ],
-        "public_information": [
-          "開放"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.91,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3dac511239ec4d2d38905b42c04570e728a6f6e1bb5f7d8751995c519215cca0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DacMcrPmLca/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/6c6e180ca8ce7c52fb1a.webp",
       "keywords": [
         "醫療",
-        "醫院",
-        "市集"
+        "醫院"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "政策／政見",
+        "reason": "提出寵物可陪同洽公、嘉年華與友善城市指數等政策。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-06T05:58:29+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "新北是全台毛寶貝最多的城市，將近 36 萬隻犬貓。\n\n我常常在想——一座城市走得多前面，看的是牠怎麼對待這些生命。\n\n上一次我提了六大動保政策，從寵物醫院、生命紀念館到食品管理，得到不少飼主和動保團體的肯定。今天，我再往前走一步，提三件事：\n\n一、推動寵物可陪同洽公。\n在不影響公共秩序和安全的前提下，逐步開放特定場域。很多人辦結婚登記，也想帶著貓咪、狗狗一起留個紀念——人生重要的時刻，讓牠陪在身邊。\n\n二、每年辦一次新北寵物嘉年華。\n認養、市集、免費健檢、才藝互動，讓毛孩真正走進城市的公共生活。\n\n三、建立寵物友善城市指數。\n每一區的寵物設施、友善店家、認養、醫療，一項一項盤出來。哪一區還不夠，一目了然，就從那裡開始補。\n\n我是做工程的。管一條路、一座橋，靠的不是感覺，是一張逐項檢查、改得動的表。毛寶貝友善，我想用同一套方法做。\n\n說實在，毛寶貝已經是我們的家人。\n愛牠，靠愛心。顧牠，靠制度。\n家人，也是這座城市的市民。\n\n硬的我繼續蓋，軟的我繼續顧。",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "醫療": 0.6667
+        "生活": 0.6,
+        "社福": 0.93,
+        "醫療": 0.85
       },
       "topics": [
+        "社福",
         "醫療",
-        "文化觀光"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DacMcrPmLca/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.9,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b7c11422e29bf10f92e7e80700bf47cb9683d7a0bb287cb257b848222048b921",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1577873813949873",
       "imageAspect": 0.5625,
@@ -845,195 +649,143 @@
         "醫院",
         "照顧"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "政策／政見",
+        "reason": "明確提出蓋市立毛小孩醫院與免費看診構想。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-06T04:48:03.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "我要在新北要蓋一間市立毛小孩醫院，認養登記後看診免費、只收藥費。鼓勵認養取代購買，也讓認養的人，減輕負擔。\n\n毛小孩是我們的家人。\n\n蓋一間毛小孩的醫院，就是好好照顧我們的家人。",
       "topicScores": {
-        "社福": 0.3333,
-        "醫療": 0.6667
+        "社福": 0.83,
+        "醫療": 0.9
       },
       "topics": [
         "醫療",
         "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/1014965654445301/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "家人"
-        ],
-        "policy_proposal": [
-          "政策"
-        ],
-        "public_information": [
-          "開放"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.95,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "09fb92fb1e3338a8fde490ed4629d0ba1eaec74d335dbc0913a28f49a28e689e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1577178137352774",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/99b7864c9ef49baa93ba.webp",
-      "keywords": [
-        "醫療",
-        "醫院",
-        "市集"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "提出寵物友善與指標制度等具體政策，屬明確政見。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-05T10:00:09.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "新北是全台毛寶貝最多的城市，將近 36 萬隻犬貓。\n\n我常常在想——一座城市走得多前面，看的是牠怎麼對待這些生命。\n\n上一次我提了六大動保政策，從寵物醫院、生命紀念館到食品管理，得到不少飼主和動保團體的肯定。今天，我再往前走一步，提三件事：\n\n一、推動寵物可陪同洽公。\n在不影響公共秩序和安全的前提下，逐步開放特定場域。很多人辦結婚登記，也想帶著貓咪、狗狗一起留個紀念——人生重要的時刻，讓牠陪在身邊。\n\n二、每年辦一次新北寵物嘉年華。\n認養、市集、免費健檢、才藝互動，讓毛孩真正走進城市的公共生活。\n\n三、建立寵物友善城市指數。\n每一區的寵物設施、友善店家、認養、醫療，一項一項盤出來。哪一區還不夠，一目了然，就從那裡開始補。\n\n我是做工程的。管一條路、一座橋，靠的不是感覺，是一張逐項檢查、改得動的表。毛寶貝友善，我想用同一套方法做。\n\n說實在，毛寶貝已經是我們的家人。\n愛牠，靠愛心。顧牠，靠制度。\n\n家人，也是這座城市的市民。\n硬的我繼續蓋，軟的我繼續顧。",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "醫療": 0.6667
+        "生活": 0.72,
+        "社福": 0.94,
+        "經濟": 0.55
       },
       "topics": [
-        "醫療",
-        "文化觀光"
+        "社福",
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02RhsHHQwNVSkiMVrqu2EnJEkAWNJnezfLdPwVz8Dge1CAvgjFf2huMYRKFHvFposTl&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.93,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "23192b731326524e977bb21c37b81b060a2f7b050c78480779875aae8b4c9d00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaZW8u_iOf5",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/60f53be412a8bb5eac28.webp",
       "keywords": [
         "校園",
-        "教師",
-        "AI"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "政策／政見",
+        "reason": "明確提出AI進校園、班班25人與教師諮商加碼等教育政見。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-05T03:34:04+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:一個拿鐵鎚的人，以前在校門口蓋天橋，讓孩子平安上學；今天，要讓 AI 走進教室。\n\nAI 進校園、推動班班 25 人、提高教師免費心理諮商次數——這是我給新北孩子的三根鋼筋。\n\n老師顧孩子，我來顧老師。",
       "topicScores": {
-        "教育": 0.5,
-        "經濟": 0.5
+        "教育": 0.98
       },
       "topics": [
-        "教育",
-        "經濟"
+        "教育"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaZW8u_iOf5"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.96,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cbae49f898e5f53a3fbb13b13ac8cb692392f35832cc9a4c9db8235f9dbeb7e3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaZW7VksTYk/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/f2b760672955e6478139.webp",
       "keywords": [
         "校園",
-        "教師",
-        "AI"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "直接提出AI進校園、班級人數與教師諮商等教育政見。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-05T03:34:03+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "一個拿鐵鎚的人，以前在校門口蓋天橋，讓孩子平安上學；今天，要讓 AI 走進教室。\n\nAI 進校園、推動班班 25 人、提高教師免費心理諮商次數——這是我給新北孩子的三根鋼筋。\n\n老師顧孩子，我來顧老師。",
       "topicScores": {
-        "教育": 0.5,
-        "經濟": 0.5
+        "教育": 0.97,
+        "生活": 0.58
       },
       "topics": [
         "教育",
-        "經濟"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaZW7VksTYk/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.28,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "659e4f96a0ec31b4e54462868fdf4adb966fa5385d343e7068155191c63ed8f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaZJTDUs3Gv/",
       "imageAspect": 0.5634,
@@ -1041,130 +793,106 @@
       "keywords": [
         "選手"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "立場表態",
+        "reason": "內容偏向看賽事與表態場館重要性，非具體政策。",
+        "type": "position_statement"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-05T01:33:30+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "看台上的選手，柔中帶剛，看得我比誰都認真。\n給他們最好的場館是硬功夫，陪他們一路走下去是軟實力——這也是我想做的市政。\n硬的我繼續蓋，軟的我繼續顧。",
       "topicScores": {
-        "體育": 1.0
+        "文化觀光": 0.55,
+        "體育": 0.95
       },
       "topics": [
-        "體育"
+        "體育",
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaZJTDUs3Gv/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.9,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "702926cf9fe2582e30edce3db6ea43f480ce6ec6158e942920b87cbc44c97b8e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1576868720717049",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/c3871ae71bee98128725.webp",
       "keywords": [
         "校園",
-        "教師",
-        "AI"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.94,
+        "label": "政策／政見",
+        "reason": "提出AI進校園、班級人數與教師諮商次數，屬具體教育政見。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-05T01:30:27.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "一個拿鐵鎚的人，以前在校門口蓋天橋，讓孩子平安上學；今天，要讓 AI 走進教室。\nAI 進校園、推動班班 25 人、提高教師免費心理諮商次數——這是我給新北孩子的三根鋼筋。\n老師顧孩子，我來顧老師。",
       "topicScores": {
-        "教育": 0.5,
-        "經濟": 0.5
+        "教育": 0.96,
+        "社福": 0.62
       },
       "topics": [
         "教育",
-        "經濟"
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/4253091554951644/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7401376b80e842b1df17b3e7b614b11294d986eec406e11e9755a8839005711f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaX7SOese_k/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/b57ffb5a99e5dfce3c70.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "個人／日常",
+        "reason": "以個人感受與土地記憶為主，沒有明確公共政策。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-04T14:11:56+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "撒網的手，跟我小時候捕飛魚，不太一樣。\n但討海人的囝仔，跟靠山靠海的族人，都有同樣的精神。\n我們都是靠這片土地過日子的人——我承諾的原力新北，讓大家的根，扎得更深。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.53,
+        "生活": 0.76
       },
       "topics": [
-        "生活"
+        "生活",
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaX7SOese_k/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.35,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e575646d708a7d9c0cfd10a069a8817da5170ff6f23667d5240a4edf33018868",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1576296234107631",
       "imageAspect": 0.5625,
@@ -1172,170 +900,137 @@
       "keywords": [
         "選手"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "立場表態",
+        "reason": "以場館建設與陪伴選手表達市政方向，偏理念性表態。",
+        "type": "position_statement"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-04T10:00:38.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "看台上的選手，柔中帶剛，看得我比誰都認真。\n給他們最好的場館是硬功夫，陪他們一路走下去是軟實力——這也是我想做的市政。\n硬的我繼續蓋，軟的我繼續顧。",
       "topicScores": {
-        "體育": 1.0
+        "體育": 0.95
       },
       "topics": [
         "體育"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/997485189540815/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1e61190d921541fd4d54d1e68a8f94049f79b871d0a39a12aa5c1ddbbd5b38df",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1575976460806275",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/e83aa896597b7f18c92a.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "競選／動員",
+        "reason": "以族群、土地與「原力新北」號召支持，屬競選訴求。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-04T01:00:35.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "撒網的手，跟我小時候捕飛魚，不太一樣。\n但討海人的囝仔，跟靠山靠海的族人，都有同樣的精神。\n我們都是靠這片土地過日子的人——我承諾的原力新北，讓大家的根，扎得更深。",
       "topicScores": {
-        "生活": 1.0
+        "住宅": 0.45,
+        "文化觀光": 0.7,
+        "競選": 0.72
       },
       "topics": [
-        "生活"
+        "競選",
+        "文化觀光",
+        "住宅"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/2539943519786287/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.03,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "231eb779c13231ef6d14db330abd9f590e295dee6a37585bc2714e0c6f996e07",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaUphZaCKT8",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/fc994060b7537ba834d2.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.96,
+        "label": "個人／日常",
+        "reason": "以拍攝雙溪荷花與旅遊感想為主，偏個人日常分享。",
+        "type": "personal_content"
+      },
       "platform": "threads",
       "postedAt": "2026-07-03T07:40:48+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:我做工程整整四十年，拿慣鐵鎚；這一天在雙溪，我拿的是手機。\n\n蹲在荷花池邊喬角度、剝生蓮子直接送嘴，雙溪這個「荷所在」，是值得所有人來的好所在，讓我拍到忘記回程。\n\n蓋三環三線的手，也拍雙溪的荷花。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.95,
+        "生活": 0.8
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaUphZaCKT8"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.04,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1b5fa09866efdf5155161f49a38215e83d5797ebd88ca5e8d0c3a9fa31fb8760",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaUpebOMs6Q/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/6626006e175972e0a04d.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.93,
+        "label": "個人／日常",
+        "reason": "單純分享瑞芳拍照與地方景點感想，屬個人日常。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-03T07:39:36+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "我做工程整整四十年，拿慣鐵鎚；這一天在雙溪，我拿的是手機。\n\n蹲在荷花池邊喬角度、剝生蓮子直接送嘴，雙溪這個「荷所在」，是值得所有人來的好所在，讓我拍到忘記回程。\n\n蓋三環三線的手，也拍雙溪的荷花。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.84,
+        "生活": 0.59
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaUpebOMs6Q/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ],
-        "policy_proposal": [
-          "政策"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.97,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "22f70d4d164cdaf520263d13585b02b1c801ec92bf653256e50673c6f89bbc16",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaUI6MOk6mJ",
       "imageAspect": 1.0,
@@ -1346,55 +1041,37 @@
         "校園",
         "國小",
         "課後",
-        "教師",
-        "AI",
-        "照顧"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "完整闡述教育政策方向與具體作法，屬明確施政主張。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-03T02:53:36+00:00",
       "sourceId": "lee-sc-threads",
-      "targets": [],
       "text": "@hammer__lee:昨天，我公布了我的教育政策。\n說實在，我能有今天，是因為讀書的時候，有老師拉了我一把。\n\n我在岡山農工讀書，家裡沒有錢。那時候學校開課後輔導，老師們願意花時間，把我們這二、三十個想升學的孩子留下來上課。對一個小琉球來的窮孩子，那不是普通課後輔導，是一條翻身的路。\n\n後來我考上台北工專。我一直記得那位教學組長。他讓我知道，一個孩子只要有人拉一把，人生真的會不一樣。\n\n而最常伸出那隻手的，就是老師。\n那，誰來拉老師一把？\n\n侯友宜市長這些年改善師生比、推動導師減課、建立教師支持制度，方向完全正確。我要站在這基礎上繼續做三件事：\n✏️ 打造AI校園\n先讓AI進老師的備課桌，再讓AI陪孩子學習。讓AI是老師的助手，不是取代老師。\n✏️ 推動班班25人\n115學年度國小每班降到28人，這是侯市長做到的。28到25，少的是人數，多的是每個孩子被看見。\n✏️ 教師心理支持加碼\n老師也是人，也會累。提高免費心理諮商次數，把照顧老師的心當成正式的市政工作。\n\n我在校園周圍蓋過天橋，也蓋了一輩子的橋和路。但我知道，一個城市真正的地基，是教育。\n\n五十年前，有一位老師做了我的貴人。\n現在，換我做老師的靠山。",
       "topicScores": {
-        "教育": 0.6667,
-        "社福": 0.0667,
-        "經濟": 0.2667
+        "教育": 0.99,
+        "生活": 0.63
       },
       "topics": [
         "教育",
-        "經濟",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DaUI6MOk6mJ"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ],
-        "policy_proposal": [
-          "政策"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.95,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c1619570ae9bc82925dfc76b0fba79c1555995d315aed5f460ab41abff24f8b4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaUICrnmKiN/",
       "imageAspect": 0.8,
@@ -1405,96 +1082,71 @@
         "校園",
         "國小",
         "課後",
-        "教師",
-        "AI",
-        "照顧"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "政策／政見",
+        "reason": "完整提出教育政策，包括AI校園、班班25人與教師支持。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-03T02:46:03+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "昨天，我公布了我的教育政策。\n\n說實在，我能有今天，是因為讀書的時候，有老師拉了我一把。\n\n我在岡山農工讀書，家裡沒有錢。那時候學校開課後輔導，老師們願意花時間，把我們這二、三十個想升學的孩子留下來上課。對一個小琉球來的窮孩子，那不是普通的課後輔導，那是一條翻身的路。\n\n後來我考上台北工專。我一直記得那位教學組長。他讓我知道，一個孩子只要有人拉一把，人生真的會不一樣。\n\n而最常伸出那隻手的，就是老師。\n那，誰來拉老師一把？\n\n侯友宜市長這些年改善師生比、推動導師減課、建立教師支持制度，方向完全正確。我要站在這個基礎上，繼續做三件事：\n\n✏️ 打造AI校園：\n先讓AI進老師的備課桌，再讓AI陪孩子學習。讓AI是老師的助手，不是取代老師。\n\n✏️ 推動班班25人：\n115學年度國小每班降到28人，這是侯市長做到的。28到25，少的是人數，多的是每個孩子被看見。\n\n✏️ 教師心理支持加碼：\n老師也是人，也會累。提高免費心理諮商次數，把照顧老師的心，當成正式的市政工作。\n\n我在校園周圍蓋過天橋，也蓋了一輩子的橋和路。但我知道，一個城市真正的地基，是教育。\n\n五十年前，有一位老師做了我的貴人。\n現在，換我做老師的靠山。",
       "topicScores": {
-        "教育": 0.6667,
-        "社福": 0.0667,
-        "經濟": 0.2667
+        "教育": 0.98,
+        "生活": 0.55
       },
       "topics": [
         "教育",
-        "經濟",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DaUICrnmKiN/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.02,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cd4cb2dca474d33fd78d4a790c5778b616219581516e2a1a93badec283ed8aa3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1575069390896982",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/d59b8067a03e886fc368.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "個人／日常",
+        "reason": "分享拍攝雙溪荷花的個人日常，無公共政策內容。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-03T01:01:15.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "我做工程整整四十年，拿慣鐵鎚；這一天在雙溪，我拿的是手機。\n\n蹲在荷花池邊喬角度、剝生蓮子直接送嘴，雙溪這個「荷所在」，是值得所有人來的好所在，讓我拍到忘記回程。\n\n蓋三環三線的手，也拍雙溪的荷花。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.92,
+        "生活": 0.62
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/1006795908913648/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ],
-        "policy_proposal": [
-          "政策"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.95,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "82c3d0890ef0b1e5bd69fd3185470070d0ab402392f1771e635a28b51615d664",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1574559194281335",
       "imageAspect": 1.0,
@@ -1505,93 +1157,71 @@
         "校園",
         "國小",
         "課後",
-        "教師",
-        "AI",
-        "照顧"
+        "教師"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "政策／政見",
+        "reason": "明確提出教育政策與具體作法，主軸是教育施政主張。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-02T11:31:04.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "今天，我公布了我的教育政策。\n\n說實在，我能有今天，是因為讀書的時候，有老師拉了我一把。\n\n我在岡山農工讀書，家裡沒有錢。那時候學校開課後輔導，老師們願意花時間，把我們這二、三十個想升學的孩子留下來上課。對一個小琉球來的窮孩子，那不是普通的課後輔導，那是一條翻身的路。\n\n後來我考上台北工專。我一直記得那位教學組長。他讓我知道，一個孩子只要有人拉一把，人生真的會不一樣。\n\n而最常伸出那隻手的，就是老師。\n那，誰來拉老師一把？\n\n侯友宜市長這些年改善師生比、推動導師減課、建立教師支持制度，方向完全正確。我要站在這個基礎上，繼續做三件事：\n\n✏️ 打造AI校園：\n先讓AI進老師的備課桌，再讓AI陪孩子學習。讓AI是老師的助手，不是取代老師。\n\n✏️ 推動班班25人：\n115學年度國小每班降到28人，這是侯市長做到的。28到25，少的是人數，多的是每個孩子被看見。\n\n✏️ 教師心理支持加碼：\n老師也是人，也會累。提高免費心理諮商次數，把照顧老師的心，當成正式的市政工作。\n\n我在校園周圍蓋過天橋，也蓋了一輩子的橋和路。但我知道，一個城市真正的地基，是教育。\n\n五十年前，有一位老師做了我的貴人。\n現在，換我做老師的靠山。",
       "topicScores": {
-        "教育": 0.6667,
-        "社福": 0.0667,
-        "經濟": 0.2667
+        "教育": 0.99,
+        "生活": 0.78
       },
       "topics": [
         "教育",
-        "經濟",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid04CMvyZVyACRTn4KMw8Cy6cMSwByqPhA33WeidbGdPF2ZYbRfJB7FpyNMNirA13xAl&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.54,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "4a7e3f26c7b189f97e89a52424ab8b31333ffe13e3607054dca172e110a5eba7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1574189264318328",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/7be4a6e1448a97de5a4e.webp",
-      "keywords": [
-        "預算"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.82,
+        "label": "施政成果／行政進度",
+        "reason": "重點在漁會活動與漁港冷鏈建設的施政成果。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-02T01:00:45.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "昨天我來到貢寮漁會的漁民節活動，感觸很深。\n\n小時候跟阿公抓飛魚的時候，我沒想過有一天，會回來為漁港蓋冷鏈。\n\n這筆配合款，侯友宜市長早就編好，就等把最後一步補上——該編的預算，我來扛。\n\n討海人的囝仔，我懂海，新北的漁民我來顧。",
       "topicScores": {
-        "議會監督": 1.0
+        "文化觀光": 0.73,
+        "經濟": 0.66
       },
       "topics": [
-        "議會監督"
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/2247524666001758/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.06,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "6dea655223efed5de9602a8c54706d0a4e7485b7218b1f3b841ac5a00b4b8edc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaPwJtQmHHy/",
       "imageAspect": 0.8,
@@ -1599,42 +1229,35 @@
       "keywords": [
         "觀光"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "個人／日常",
+        "reason": "主要是個人遊覽十三層與地方觀光感想，非政策內容。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-01T10:00:05+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "瑞芳這片山，我做工程那些年常跑。\n說實在，看到黃金山城，心裡很有感觸，順手就拍了下來。\n\n十三層1933年就在那裡，提煉金屬的選煉廠，順著山勢一層一層疊上去，廢煙道拉了整整兩公里，在山裡忽隱忽現。當年的黃金山城，後來礦沒了，人走了，但廠還在，就是一個時代留下來的痕跡。\n\n我做工程做了四十年，最清楚一件事：\n凡走過，必留下痕跡。\n\n2019 年點了燈，晚上六點到九點，金黃色的光把它重新照出來。雖然是舊的東西，照亮它，人就願意再來看一次。\n\n往上的路彎彎曲曲，那時候一段一段把路拓寬，跑了不知道幾趟。路通了、橋好了，想來觀光的人，車子不會回堵。\n\n有機會經過，千萬別錯過。\n\n#川流來了 #李四川 #新北市 #瑞芳十三層 #水湳洞",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.95,
+        "生活": 0.58
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaPwJtQmHHy/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.86,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "13abcf03f391c04926104bf890de9a38865e25a9e6cb7ab1219d4384a4039cfe",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1573625541041367",
       "imageAspect": 1.5013,
@@ -1642,42 +1265,37 @@
       "keywords": [
         "預算"
       ],
+      "nature": {
+        "confidence": 0.79,
+        "label": "政策／政見",
+        "reason": "主談區內道路與預算彈性調整，屬具體施政主張。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T09:18:50.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "今天雙溪川友會成立，來了滿滿的里長跟鄉親。\n\n我們有一位貴賓是一位101歲的阿嬤，親自到場，她握著我的手，要我一定要選上。她的手很有力。做工程四十年，我很少這麼清楚地感覺到——這一切到底是為了誰。\n\n其實我跟雙溪認識很久了。當年萬善同納骨塔的執照卡了整整十幾年，後來我跟在地里長一起，把困難一個一個排掉，讓祖先順利進塔。那不是我一個人的功勞，是大家的。\n\n今天一開始，里長聯誼會會長簡德福就熱情帶我去雙溪荷花園，教我怎麼吃蓮子、賞荷花，我也發揮業餘興趣，教大家拍照要用九宮格、畫面留三分之一，結果被回一句「太難了吧」，全場都笑了。（大家也幫我鑑定，我拍的蓮花還可以嗎？）\n\n我這陣子跑基層，有很深的感觸。里長把在地的問題看出來，我把專業跟技術接上去。\n\n新北很大，從板橋開上來要45分鐘。雙溪的事，還是在地人最懂。哪條路壞了、哪裡卡住了，他們一出門就看到。\n\n同樣一條路，板橋可能三萬人走，山裡可能三百人走。編預算的時候，錢一開始很自然會往人多的地方去。\n\n可是即使路有大有小，市民沒有大小。未來區公所的預算我會讓它更有彈性，那條三百人走的路，一樣要鋪到平。\n\n侯市長打下的基礎，我接著做。雙溪這麼好的山、這麼好的水，值得最好的建設。\n\n路有大有小，市民沒有大小。",
       "topicScores": {
-        "議會監督": 1.0
+        "交通": 0.88,
+        "住宅": 0.2,
+        "議會監督": 0.35
       },
       "topics": [
-        "議會監督"
+        "交通",
+        "議會監督",
+        "住宅"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid07Rz4dk8n6Y9iQK3USC87np512euSjpyx664WtFvA4ohtbz1rHxSq3wvokhApvMW5l&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.58,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f0d5131d241380b1a73b5fb2d5627ecac598e3004e4c1b136d5804ede299ab2e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1573318267738761",
       "imageAspect": 0.5625,
@@ -1686,42 +1304,33 @@
         "捷運",
         "通勤"
       ],
+      "nature": {
+        "confidence": 0.94,
+        "label": "施政成果／行政進度",
+        "reason": "以三鶯線通車與捷運里程突破為主，屬交通建設成果。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T01:01:01.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "三鶯線通車這天，新北捷運正式突破 100 公里、全國第一。 \n\n朱立倫市長打基礎、 侯友宜市長把它蓋成，三環六線這一棒，現在換我。 \n\n下一步，雙北30分鐘通勤網，我接著蓋。",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.98
       },
       "topics": [
         "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/987621664036579/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.72,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "84ae4977162cfea56ca5997003e613500370525b9796e9534e2bc1079b6f3aa7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaM3g3TmAMH/",
       "imageAspect": 1.5,
@@ -1731,42 +1340,35 @@
         "台鐵",
         "機場"
       ],
+      "nature": {
+        "confidence": 0.91,
+        "label": "施政成果／行政進度",
+        "reason": "主軸是三鶯線通車與捷運建設成果，並延伸城市串聯效益。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-30T07:06:56+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "今天，三鶯線通車。圖紙上的數字，今天成了腳下的路。\n\n跨過高速公路、跨過台鐵、跨過大漢溪，一條三鶯線，是這樣一寸一寸精密計算，一步一腳印蓋出來的。\n\n朱立倫朱立倫市長奠基， 侯友宜市長接棒，八年把它一條一條完成，市政本來就是這樣，一棒接一棒。\n\n侯市長今天很客氣，說這條線、還有旁邊的美術館，都有我留下的身影。其實這不是哪一個人的功勞——是中央、捷運局、新北市府同仁、施工團隊，在缺料、在戰爭原物料短缺的底下，趕出來的。當年一起拚三鶯線的同事們，今天也都回來了，這才是新北的底氣。\n\n侯市長有一番談話，我很認同：「下一棒，要越了解新北、越懂工程的，繼續接。」\n\n對於我這個一輩子的工程人而言，每一次捷運工程，都是務實面對「時間」、「成本」、「安全係數」等各種數字，我們需要懂這些數字，才能把它一寸一寸做出來。\n\n再往下看，三鶯線往南串桃園機場，往北的南北環雙北合作完成。一條線，把新北接上基隆、台北、桃園。這不只是一條捷運，是把整個北台灣，連成一個共同的生活圈。\n\n該蓋的，前面的人蓋了。 \n該接的，我接著做。",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.98,
+        "文化觀光": 0.54
       },
       "topics": [
-        "交通"
+        "交通",
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaM3g3TmAMH/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.6,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a3bd8a279e7ce492bcaf504e01a10fac7a432fcc28615bb1f72638ba45f6fb6e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1572572051146716",
       "imageAspect": 1.5013,
@@ -1776,294 +1378,227 @@
         "台鐵",
         "機場"
       ],
+      "nature": {
+        "confidence": 0.88,
+        "label": "施政成果／行政進度",
+        "reason": "以三鶯線通車回顧工程成果，並延伸北台灣軌道連結。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-30T06:40:53.000Z",
       "sourceId": "lee-sc-fb",
-      "targets": [],
       "text": "今天，三鶯線通車。圖紙上的數字，今天成了腳下的路。\n\n跨過高速公路、跨過台鐵、跨過大漢溪，一條三鶯線，是這樣一寸一寸精密計算，一步一腳印蓋出來的。\n\n朱立倫朱立倫市長奠基， 侯友宜市長接棒，八年把它一條一條完成，市政本來就是這樣，一棒接一棒。\n\n侯市長今天很客氣，說這條線、還有旁邊的美術館，都有我留下的身影。其實這不是哪一個人的功勞——是中央、捷運局、新北市府同仁、施工團隊，在缺料、在戰爭原物料短缺的底下，趕出來的。當年一起拚三鶯線的同事們，今天也都回來了，這才是新北的底氣。\n\n侯市長有一番談話，我很認同：「下一棒，要越了解新北、越懂工程的，繼續接。」\n\n對於我這個一輩子的工程人而言，每一次捷運工程，都是務實面對「時間」、「成本」、「安全係數」等各種數字，我們需要懂這些數字，才能把它一寸一寸做出來。\n\n再往下看，三鶯線往南串桃園機場，往北的南北環雙北合作完成。一條線，把新北接上基隆、台北、桃園。這不只是一條捷運，是把整個北台灣，連成一個共同的生活圈。\n\n該蓋的，前面的人蓋了。 \n該接的，我接著做。",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.98,
+        "文化觀光": 0.55
       },
       "topics": [
-        "交通"
+        "交通",
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02b3spi23k9kUVnqMf3SqYmeYxxErqhxJgBHobhGY4mnekQLk828SGskFhrqu4rMR5l&id=100051818071280"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7b31685c18316f2af3eb482a32ef53acdc2cc8d78bf2ab15367f0991ef7b262b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaKmMGhM5mD/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/dd3dd43666d5029a9053.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.83,
+        "label": "個人／日常",
+        "reason": "分享早年賣麵包與老餅舖手藝，屬個人回憶與城市人情。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-29T09:57:45+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "民國70幾年，我跟太太開過開過麵包店，機器切吐司那行的辛苦，也讓我鬧出過一些笑話。 \n\n新北有太多做了幾十年的老餅舖，老師傅守的不只是手藝，是一整條街的人情味。 \n\n老師傅的手藝，就是城市的名片。",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.88,
+        "生活": 0.76
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaKmMGhM5mD/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "政策",
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.98,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e9e4afd7d68b0ca967abc5b850e62c3d9b4c95a869e3df3eb843b9f000da4641",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaHYhbkMnp3/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fd2dcf80fcbaec60b6e8.webp",
       "keywords": [
-        "運動",
-        "選手",
-        "賽事",
-        "奧運",
-        "文化",
-        "音樂",
         "住宅",
         "社會住宅",
         "租金",
-        "創業",
-        "青創",
-        "照顧"
+        "文化",
+        "音樂",
+        "運動",
+        "選手",
+        "賽事",
+        "奧運"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "政策／政見",
+        "reason": "明確公布原住民政策，包含社宅、補貼、文化、青年與運動方案。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-28T06:00:10+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "昨天，我和族人朋友一起公布了我的原住民政策。\n\n北原山貓一開唱，全場就熱起來了。遇到他們開玩笑，把〈沒什麼了不起〉現場改了詞，唱「李四川真的了不起」，說實在，被這樣的傳奇樂團虧一下，我反而很開心，因為這代表族人把我當自己人。\n\n既然是自己人，我就講真的，原住民族要的從來不是被照顧，是一座站得上去的舞台。\n\n我想起有一年在貢寮的海洋音樂祭，我代替朱立倫市長頒獎，在台下站了大概半天。\n\n等到念第一名，我才發現，從第一名到第十名，幾乎都是原住民的孩子。歌聲、創作，一個比一個厲害。\n\n我那時候就在想：比賽只有第一名能簽約，那剩下這九個一樣有才華的孩子，他們的舞台在哪裡？\n\n所以今天我提出「原力新北・共榮未來」，四個原力一條一條來：\n\n【安居原力】我會新建原住民自己的社會住宅，擴大租金補貼。在都市打拚，先有一個安穩的家。\n\n【文化原力】原力廣場是侯市長開的頭，我接著把它做大，讓祭典、研習一年比一年豐富。文化有根，族人才站得穩。\n\n【青年原力】成立青年團、設青創基地。年輕人要創業，政府幫你扶第一把。讓青年有夢，敢做夢。\n\n【運動原力】我們原住民拿奧運獎牌的比例那麼高，天份不能被埋沒。國內賽事獎金，我提高到 18 萬，讓孩子從小就敢拚。\n\n所以我講的四個原力，每一個都是一座舞台——讓族人安居、讓文化扎根、讓青年圓夢、讓選手發光。\n\n因為原民好，新北就好；原力強，新北更強。",
       "topicScores": {
-        "住宅": 0.2143,
-        "文化觀光": 0.2857,
-        "社福": 0.0714,
-        "經濟": 0.1429,
-        "體育": 0.2857
+        "住宅": 0.9,
+        "教育": 0.6,
+        "文化觀光": 0.88,
+        "體育": 0.62
       },
       "topics": [
-        "體育",
-        "文化觀光",
         "住宅",
-        "經濟",
-        "社福"
+        "文化觀光",
+        "體育",
+        "教育"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DaHYhbkMnp3/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "必須"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.94,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1f9bd106fda083ff1877ca2d78e9ecf5946332d3d50d330fc42b5d3da96d06b1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaHW-mrsvTk/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/247cd9233840f8cd1df8.webp",
       "keywords": [
-        "氣候",
-        "治水",
         "淹水",
         "防災",
         "大雨",
-        "AI",
-        "塞車",
-        "醫院",
-        "健身"
+        "氣候",
+        "治水"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "政策／政見",
+        "reason": "提出新北治水三道防線與智慧防汛，屬具體政策主張。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-28T04:09:50+00:00",
       "sourceId": "lee-sc-ig-main",
-      "targets": [],
       "text": "今天行程來到永和川友會，永和這個地方，我結緣得很早，心裡很多感慨。\n\n昨天耕莘醫院鄒院長還告訴我說：「副市長，國光路做起來以後，這條路淹水就少很多了。」我聽了，腦海裡不是得意，而是跟時間賽跑的壓力。\n\n過去我們的考驗是施工時會被罵塞車，水利局的同仁即使趕工，仍被罵到不行，我鼓勵他們說一句：「撐一下，就過去了」，最後讓永和的防汛能夠順利改善。\n\n不過現在的我們，又要面對極端氣候這個重大考驗，我們必須在極端的時間壓迫下，打贏治水這場仗——治水就是這樣一種工，永遠要跟時間賽跑。\n\n像這幾天的雨，又把我心裡那根弦拉得緊緊的，一個下午、三個鐘頭，把三天的雨倒下來，超過了現在排水系統撐得住的標準。\n\n極端氣候不會跟我們客氣，它可能會一年比一年難，所以就算永和這些年守住了，我一刻都不敢大意，面對老天爺，我們永遠要戒慎恐懼。家裡進過水的鄉親，那個半夜搬東西、隔天清淤泥的累，那種累，我懂。\n\n所以，我特別想講一句話，感謝一群平常看不到的人，不管在台北、在新北，每一次大雨，水利、環保和防汛的同仁，每分鐘都在搶時間。半夜守在抽水站、雨下得最大的時候，別人往家裡跑，他們往外面衝。\n\n所以未來在新北，我的治水，要築三道防線。\n\n第一道，雨還沒來的時候，落實透保水設施。\n十年前，全國第一個透水保水自治條例，是我在新北推動的。下一步，我要讓它真正長在這座城市的每一塊地上：新開發的基地，都要會自己留住水、慢慢放；每一條側溝、每一段下水道，雨季前一定先清淤；該擴的滯洪池擴、該換的老舊抽水機組換，防災最值錢的工，全都在雨還沒落下之前。\n\n第二道，雨正在下的時候，強化 AI 智慧防汛。\n全時監測、AI 即時判斷、即時推播：哪個低窪點水位開始漲，系統先一步知道；哪條路快積水，訊息直接告知市民。\n\n第三道，雨停了之後，針對性補強。\n水退，不是結束，是下一次的開始。哪裡積過水，找出真正的瓶頸，該補強的，資源馬上進場。每一場大雨，都要讓這座城市多學到一點東西，讓下一次，更穩一點。\n\n我做一輩子工程，最懂一個道理：治水就像健身，要當時間的朋友。也最瞭解市府防汛同仁的辛勞。\n\n我會一直挺那些風雨中替我們搶時間的人，一起扛住壓力。",
       "topicScores": {
-        "交通": 0.0667,
-        "環境": 0.4,
-        "經濟": 0.1333,
-        "醫療": 0.0667,
-        "防災": 0.2667,
-        "體育": 0.0667
+        "環境": 0.78,
+        "防災": 0.97
       },
       "topics": [
-        "環境",
         "防災",
-        "經濟",
-        "交通",
-        "醫療",
-        "體育"
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "大雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaHW-mrsvTk/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "投票"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "35b8ab6c9f949df8a5a705a795c41d1aaa2c2a0f06efa32fde1f021cc1b46ada",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:fEjKmg409Y4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/11c0d7089fe9054b6b16.webp",
       "keywords": [
-        "投票",
-        "罷免"
+        "投票"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "競選／動員",
+        "reason": "勸導明天投票，明顯屬罷免投票前的動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lee-sc-yt",
-      "targets": [],
       "text": "請看完再決定明天是否去投票！【川伯心裡話】高雄市副市長李四川，罷免投票前最後談話。",
       "topicScores": {
-        "競選": 0.6667,
-        "議會監督": 0.3333
+        "生活": 0.42,
+        "競選": 0.98
       },
       "topics": [
         "競選",
-        "議會監督"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=fEjKmg409Y4"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.03,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "095f3e24efaa45631a6e7a5a9ca263755cd5e7d2b88401a4e94a6d20cb51c2a0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:4o4K8b2INzA",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/874204411c38a6d18846.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.77,
+        "label": "個人／日常",
+        "reason": "以母親與城市的小故事為主，偏個人敘事。",
+        "type": "personal_content"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lee-sc-yt",
-      "targets": [],
       "text": "李四川副市長分享一個母親與城市的小故事",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.72,
+        "社福": 0.41
       },
       "topics": [
-        "生活"
+        "生活",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=4o4K8b2INzA"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.42,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7942e3df9ddb24675b419ef2ba343c31159833f755448d585227a10ae2a31e68",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:Kwttv7z5LJs",
       "imageAspect": 1.7872,
@@ -2071,64 +1606,60 @@
       "keywords": [
         "補助"
       ],
+      "nature": {
+        "confidence": 0.73,
+        "label": "資訊公告／服務提醒",
+        "reason": "介紹急難紓困補助資訊，屬服務與政策宣導。",
+        "type": "public_information"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lee-sc-yt",
-      "targets": [],
       "text": "【川伯來雄課】EP.1 急難紓困補助，第一線基層之聲",
       "topicScores": {
-        "社福": 1.0
+        "生活": 0.47,
+        "社福": 0.84
       },
       "topics": [
-        "社福"
+        "社福",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=Kwttv7z5LJs"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.36,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7b8125c25753bfffd7a53e52bd538c0bf9e4bb343b029ff0ca7d4d9a19d08950",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:zbCgAsP1D10",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/785ee6560dfdb3d10e44.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.84,
+        "label": "施政成果／行政進度",
+        "reason": "呈現清淤工程進度，屬施政成果紀錄。",
+        "type": "administrative_update"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "lee-sc-yt",
-      "targets": [],
       "text": "幸福川清淤工程全紀錄",
       "topicScores": {
-        "生活": 1.0
+        "環境": 0.83,
+        "生活": 0.32,
+        "防災": 0.38
       },
       "topics": [
+        "環境",
+        "防災",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=zbCgAsP1D10"
     }
   ],

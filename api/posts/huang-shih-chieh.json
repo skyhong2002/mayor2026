@@ -22,68 +22,53 @@
   "count": 66,
   "posts": [
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.25,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "2fd63461e6ab06bd68f387b838f7fce7b2bb850c0fd56101ddf06433c8721dd8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DawbK2bk4tX/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b6a976e6398dcb0282cb.webp",
       "keywords": [
-        "攤商",
-        "競總"
+        "競總",
+        "攤商"
       ],
+      "nature": {
+        "confidence": 0.91,
+        "label": "競選／動員",
+        "reason": "市場拜票兼顧拉票與形象經營，未提出具體政策。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-14T06:23:51+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "早安，中壢！一天的活力，就從中壢青果市場開始🍎🥬\n\n天還沒亮，我和中壢區戰隊彭俊豪 @pengwintaoyuan 、黃崇真 @cchuang_0223 、魏筠 @weiyunin 、張曉昀 @vina.lovezhongli 議員，一起來到中壢青果市場向攤商老闆、採買的鄉親們請安問好🙋🏻‍♂️\n\n我也要特別感謝競總主委范振修資政、中華民國青果商業同業公會全國聯合會榮譽理事長林賴玉英里長、桃園市蔬菜批發從業人員職業工會羅茂松理事長的陪同，給我滿滿的力量！\n\n走進市場，聽著充滿中氣的叫賣聲、感受大家蓬勃的朝氣，這就是桃園最真實、最有溫度的日常。除了巧遇各區來採購的老朋友，也有許多新朋友，給我溫暖的笑容跟鼓勵💖\n\n我是黃世杰，請大家放心，我會全力以赴，讓我們的家鄉桃園，成為更宜居更幸福的城市。\n\n掃完市場好餓，大家有推薦早餐要吃什麼嗎～",
       "topicScores": {
-        "競選": 0.5,
-        "經濟": 0.5
+        "生活": 0.74,
+        "競選": 0.8,
+        "經濟": 0.61
       },
       "topics": [
-        "經濟",
-        "競選"
+        "競選",
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DawbK2bk4tX/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3f641183507cb19cc0567126d2a741447b0242db2af2285d11f6e56d6b7eb1e9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DawbL85k7bx",
       "imageAspect": 1.0,
@@ -91,129 +76,103 @@
       "keywords": [
         "攤商"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "活動／行程",
+        "reason": "重點是市場掃街與問候，屬行程紀錄。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-14T02:32:03+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:早安，中壢！一天的活力，就從中壢青果市場開始🍎🥬\n\n天還沒亮，我和中壢戰隊彭俊豪 @pengwintaoyuan 、黃崇真 @cchuang_0223 、魏筠 @weiyunin 、張曉昀 @vina.lovezhongli 議員，一起來到中壢青果市場向攤商老闆、採買的鄉親們請安問好🙋🏻‍♂️\n\n走進市場，聽著充滿中氣的叫賣聲、感受大家蓬勃的朝氣，這就是桃園最真實、最有溫度的日常。除了巧遇各區來採購的老朋友，也有許多新朋友，給我溫暖的笑容跟鼓勵💖\n\n我是黃世杰，請大家放心，我會全力以赴，讓我們的家鄉桃園，成為更宜居更幸福的城市。\n\n掃完市場好餓，大家有推薦早餐要吃什麼嗎～",
       "topicScores": {
-        "經濟": 1.0
+        "生活": 0.86,
+        "經濟": 0.6
       },
       "topics": [
+        "生活",
         "經濟"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/DawbL85k7bx"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.24,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e80304874c269ccc0736b5402e8bd992672f44b82d43dfdef13726f5297c5f22",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1545926686981864",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/0e250aa792418b40bcd5.webp",
       "keywords": [
-        "攤商",
-        "競總"
+        "攤商"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "競選／動員",
+        "reason": "市場掃街問候與造勢感強，主要是選舉行程。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-14T02:24:41.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "早安，中壢！一天的活力，就從中壢青果市場開始🍎🥬\n\n天還沒亮，我和中壢區戰隊 彭俊豪、黃崇真 Huang Chung-Chen、魏筠、張曉昀議員，一起來到中壢青果市場向攤商老闆、採買的鄉親們請安問好🙋🏻‍♂️\n\n我也要特別感謝競總主委范振修資政、中華民國青果商業同業公會全國聯合會榮譽理事長林賴玉英里長、桃園市蔬菜批發從業人員職業工會羅茂松理事長的陪同，給我滿滿的力量！\n\n走進市場，聽著充滿中氣的叫賣聲、感受大家蓬勃的朝氣，這就是桃園最真實、最有溫度的日常。除了巧遇各區來採購的老朋友，也有許多新朋友，給我溫暖的笑容跟鼓勵💖\n\n我是黃世杰，請大家放心，我會全力以赴，讓我們的家鄉桃園，成為更宜居更幸福的城市。\n\n掃完市場好餓，大家有推薦早餐要吃什麼嗎～",
       "topicScores": {
-        "競選": 0.5,
-        "經濟": 0.5
+        "生活": 0.86,
+        "經濟": 0.61
       },
       "topics": [
-        "經濟",
-        "競選"
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0bb1RVpitEv1ao5iZpwWKqGmb6xpzyZGHbj3aRKFfD8JprRHoD94e4hmAqpXJqVawl"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ea5baa3ae09921d05f0bc24a9cb7ded607082c760a60aa30f28fcdf0241acc7d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dav4NhUExI3",
       "imageAspect": 0.7143,
       "imageUrl": "assets/feed-images/96843c77504a13450635.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.94,
+        "label": "活動／行程",
+        "reason": "僅是清晨出發前往市場的行程訊息。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-13T21:28:34+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:早安☀️\n五點出發\n等等中壢青果市場見！",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.95
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/Dav4NhUExI3"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.78,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "dea2fb3712c3955d180c9a3593e801b1cc80d6222f7a8e47c12d92a412425bfa",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DavIqmKE9om/",
       "imageAspect": 1.5047,
@@ -221,42 +180,37 @@
       "keywords": [
         "氣候"
       ],
+      "nature": {
+        "confidence": 0.88,
+        "label": "施政成果／行政進度",
+        "reason": "談阿姆坪防淤隧道與供水、抗極端氣候的建設成果。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-13T14:43:29+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "2017年，我在桃園市政府服務，見證了阿姆坪防淤隧道的開端。\n\n2023年，我在立委任內，也就是這張照片裡，參與竣工典禮，見證台灣水利史上重要的一頁。\n\n這項前瞻基礎建設，大幅提升了石門水庫的防淤與蓄水能力，更穩定了大桃園的供水。現在的桃園，面對極端氣候不再只能被動承受，而是真正有備而來。\n\n城市的進步，需要長遠的眼光跟魄力。\n\n黃世杰也會用同樣的態度跟精神，傾聽第一線民意，用專業的城市治理，為桃園的下一個十年、二十年打好基礎！",
       "topicScores": {
-        "環境": 1.0
+        "環境": 0.77,
+        "經濟": 0.55,
+        "防災": 0.93
       },
       "topics": [
-        "環境"
+        "防災",
+        "環境",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DavIqmKE9om/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.88,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a73017dbd09dcc42cf5628b83e272f8e971d94aedaec4c97c70a20a75ddc6c52",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DavIrkPkzyt",
       "imageAspect": 1.5047,
@@ -264,48 +218,37 @@
       "keywords": [
         "氣候"
       ],
+      "nature": {
+        "confidence": 0.89,
+        "label": "施政成果／行政進度",
+        "reason": "談防淤隧道完工與供水、防災效益，屬建設成果。",
+        "type": "administrative_update"
+      },
       "platform": "threads",
       "postedAt": "2026-07-13T14:31:06+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:2017年，我在桃園市政府服務，見證了阿姆坪防淤隧道的開端。\n\n2023年，我在立委任內，也就是這張照片裡，參與竣工典禮，見證台灣水利史上重要的一頁。\n\n這項前瞻基礎建設，大幅提升了石門水庫的防淤與蓄水能力，更穩定了大桃園的供水。現在的桃園，面對極端氣候不再只能被動承受，而是真正有備而來。\n\n城市的進步，需要長遠的眼光跟魄力。\n\n黃世杰也會用同樣的態度跟精神，傾聽第一線民意，用專業的城市治理，為桃園的下一個十年、二十年打好基礎！",
       "topicScores": {
-        "環境": 1.0
+        "交通": 0.44,
+        "環境": 0.92,
+        "防災": 0.95
       },
       "topics": [
-        "環境"
+        "防災",
+        "環境",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DavIrkPkzyt"
     },
     {
-      "actionEvidence": {
-        "criticism": [
-          "質疑"
-        ],
-        "policy_proposal": [
-          "應該",
-          "計畫"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "批評究責"
-      ],
-      "actions": [
-        "policy_proposal",
-        "criticism"
-      ],
+      "agendaRelevance": 0.68,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "4b168cf56a913601c6f597741dcf84ad700865f16a69bb2f57d79d9888bb5fac",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1545545873686612",
       "imageAspect": 1.5013,
@@ -314,223 +257,179 @@
         "颱風",
         "氣候"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "說明防淤隧道成果與水庫治理成效，屬施政成果。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-13T14:28:05.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "巴威颱風帶來豐沛雨量，這幾天，不少市民朋友專程到石門水庫，觀看洩洪的壯觀景象。而在磅礡水勢之下，阿姆坪防淤隧道也正默默進行啟用以來的第7次沖淤工作。\n\n數字會說話，阿姆坪防淤隧道啟用至今，累計沖淤量已達112.5萬立方公尺，相當於近10萬輛標準砂石車的運量，實質為國家省下超過5.6億元清淤費用。\n\n許多老桃園人應該還記得，2004年艾利颱風侵襲，石門水庫嚴重淤積，桃園因此停水整整18天。那次慘痛的記憶，讓我們深刻體會到，那些平時不被關注的水利建設，才是守護城市命脈的關鍵。\n\n看到蔡英文 Tsai Ing-wen小英總統發文，世杰心裡有很深的感觸。2017年，阿姆坪防淤隧道被納入前瞻基礎建設計畫，投入超過70億經費。這項工程不僅大幅提升石門水庫的防禦與清淤能力，擴增有效蓄水空間，更延長了水庫壽命，穩定了大桃園的供水。\n\n此刻的桃園，面對極端氣候不再只是被動承受，而是真正有備而來。這也證明了，推動國家級的重要建設，往往需要極大的遠見、魄力與耐心。或許很多人已經淡忘，當年堅持推動計畫的團隊背負了多少質疑。但時間會證明，重大的公共建設，終能超越紛擾，為人民的生活帶來美好的轉變。\n\n我始終相信，桃園的未來，需要的是這樣的態度跟精神，這也是世杰對家鄉的承諾。\n\n我是黃世杰，我會持續在第一線，傾聽市民的聲音，用專業的城市治理，打造更令人心動的桃園，為下一個十年、二十年的桃園，提前做好準備！",
       "topicScores": {
-        "環境": 0.3333,
-        "防災": 0.6667
+        "環境": 0.72,
+        "經濟": 0.58,
+        "防災": 0.86
       },
       "topics": [
         "防災",
-        "環境"
+        "環境",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0wniw3UuxZKFDpirUUsHJHGj2fDtd43dZcCtpAY4xAMQmx7mC5E7wC2qU6XXGqaK7l"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.16,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b8d4dbc9e0f3bb15fc2c04c2ead2a2533ece3b753d4d8b6f651421ad9851344f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Daun-ZdGr6_",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/8dacfc73e87a524642b4.webp",
       "keywords": [
-        "攤商",
-        "掃街"
+        "攤商"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "競選／動員",
+        "reason": "主要在號召掃街行程，屬選舉動員性貼文。",
+        "type": "campaign_mobilization"
+      },
       "platform": "threads",
       "postedAt": "2026-07-13T09:45:19+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
       "topicScores": {
-        "競選": 0.5,
-        "經濟": 0.5
+        "生活": 0.52,
+        "經濟": 0.58
       },
       "topics": [
         "經濟",
-        "競選"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Daun-ZdGr6_"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9d6ee0704b183f6edb22196572e3cbbab08352e93b135be835244e3198e9cfe9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Daun5LAzVtj/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/d66b49cd59bbdb0d3804.webp",
       "keywords": [
-        "攤商",
-        "掃街"
+        "攤商"
       ],
+      "nature": {
+        "confidence": 0.92,
+        "label": "活動／行程",
+        "reason": "主要是市場掃街行程預告，帶到市場功能與在地日常。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-13T09:45:12+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
       "topicScores": {
-        "競選": 0.5,
-        "經濟": 0.5
+        "生活": 0.58,
+        "經濟": 0.69
       },
       "topics": [
         "經濟",
-        "競選"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/Daun5LAzVtj/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3003d1e21dfc0dbc902151861c64d2aaaf038b626ee1d1afb759291d544e3422",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1545370173704182",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/24b224ecb9894dc33214.webp",
       "keywords": [
-        "攤商",
-        "掃街"
+        "攤商"
       ],
+      "nature": {
+        "confidence": 0.91,
+        "label": "競選／動員",
+        "reason": "號召隔日掃街，屬典型選舉動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-13T09:43:43.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "明日清晨5:30，動起來！中壢青果市場掃街！\n\n中壢青果市場是桃園重要的農產集散與採買中心，每天都有最新鮮的蔬果從這裡送往各地，承載著許多攤商、農友與家庭的日常。\n\n期待明天在中壢青果市場與大家相會！心中壢，動起來💖",
       "topicScores": {
-        "競選": 0.5,
-        "經濟": 0.5
+        "生活": 0.84,
+        "經濟": 0.52
       },
       "topics": [
-        "經濟",
-        "競選"
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid036Qo7SGwp8f9mXMtqD7e9JK41LMr43QZeFeLwtCwwHXrMKUcbVYGdNzk9SHeYEi7hl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "aebfa183eb282d782665b988c8dea3f04992e95a51742bd160935d1b2d440fb6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DauCyfkiR2h",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.92,
+        "label": "個人／日常",
+        "reason": "單純開箱在地美食，沒有公共政策或議題。",
+        "type": "personal_content"
+      },
       "platform": "threads",
       "postedAt": "2026-07-13T04:20:23+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.94,
+        "經濟": 0.46
       },
       "topics": [
-        "生活"
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DauCyfkiR2h"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "14946bc829ab8730f82092836fdf0b3735cc86a92abaf953524c0fa566bb00d9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DauB1npT7cH/",
       "imageAspect": 0.5625,
@@ -538,42 +437,35 @@
       "keywords": [
         "美食"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "活動／行程",
+        "reason": "以美食開箱與店家介紹為主，屬日常分享。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-13T04:12:35+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "跟著感杰走｜八德爆汁湯包開箱😋\n\n跟著呂林小鳳議員 @siaofonglin 和世杰的腳步，一起深入八德，朝聖在地人激推的人氣湯包！\n\n熱騰騰的湯包一口咬下，鮮甜湯汁瞬間湧出，搭配皮薄餡滿的口感，看世杰吃到狂點頭，就知道有多好吃🤤\n\n八德在地人激推的「香納多鮮肉湯包」，現包、現蒸，每一籠都是真材實料👍🏻 有機會來到八德，別忘了來嚐嚐這一口接一口、讓人停不下來的在地好滋味！\n\n📍 美食傳送門\n香納多鮮肉湯包（桃園市八德區福國北街78號）\n\n下一站去哪裡？留言推薦桃園必吃美食給世杰，一起跟著感杰走，探索桃園的在地好味道！",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.74,
+        "生活": 0.83
       },
       "topics": [
+        "生活",
         "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DauB1npT7cH/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.65,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "bd128d3ec5d13cc375912ddd259b6f4dee7594668fed4169e9148501c3fd28db",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dasi0JsE_FV",
       "imageAspect": 1.3324,
@@ -581,42 +473,37 @@
       "keywords": [
         "經濟"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "競選／動員",
+        "reason": "藉社團典禮強調參政願景與服務桃園，帶有競選宣示。",
+        "type": "campaign_mobilization"
+      },
       "platform": "threads",
       "postedAt": "2026-07-12T14:21:45+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:今天世杰出席國際獅子會300B 5區總監交接典禮！看著這麼多長期深耕社區的獅友，聽到大家高喊「We Serve」，心裡非常感動也非常感謝。桃園能夠愈來愈好，正是因為有獅友們這樣長期深耕、默默付出、不求回報的力量。\n\n其實這也是我一直以來的信念，真正讓城市變好的，就是像獅友們這樣長期在地深耕、默默付出的公民力量。未來如果有機會為桃園服務，我希望能站在這樣的基礎上，把大家的心聲、各行各業的智慧，真正納入市政決策，讓桃園的經濟更好、發展更進步。",
       "topicScores": {
-        "經濟": 1.0
+        "生活": 0.41,
+        "競選": 0.87,
+        "經濟": 0.58
       },
       "topics": [
-        "經濟"
+        "競選",
+        "經濟",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Dasi0JsE_FV"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.68,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "888ae5baf3251ba5cb1a6d2daa7b5019ecc856e231e9697450aad8540f8e4098",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DasizTBE1ow/",
       "imageAspect": 1.3324,
@@ -624,53 +511,37 @@
       "keywords": [
         "經濟"
       ],
+      "nature": {
+        "confidence": 0.89,
+        "label": "競選／動員",
+        "reason": "以未來服務桃園與納入市政決策作為競選式宣示。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-12T14:21:40+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "今天世杰出席國際獅子會300B 5區總監交接典禮！看著這麼多長期深耕社區的獅友，聽到大家高喊「We Serve」，心裡非常感動也非常感謝。桃園能夠愈來愈好，正是因為有獅友們這樣長期深耕、默默付出、不求回報的力量。\n\n首先要恭喜我的好朋友楊嘉俊總監功成身退。這些年來他用心投入會務，凡事親力親為，包括每年去海邊淨灘，我都能看到他捲起袖子揮汗付出。這樣的堅持，為大家樹立了非常好的典範。\n\n接下來，要承擔重任的是我另一位好朋友郭承敬總監。大家可以發現，他的觸角非常廣，包括家長會、廠協會、宗親會，還有許多公益活動，幾乎都會看到他的身影。相信在他的帶領之下，獅友們會繼續在桃園寫下更多溫暖的故事。\n\n其實這也是我一直以來的信念，真正讓城市變好的，就是像獅友們這樣長期在地深耕、默默付出的公民力量。未來如果有機會為桃園服務，我希望能站在這樣的基礎上，把大家的心聲、各行各業的智慧，真正納入市政決策，讓桃園的經濟更好、發展更進步。\n\n今天我也代表賴清德總統致贈中堂，表達總統對新任總監、所有獅友的祝福。\n\n祝福300 B5區會務昌隆，持續為桃園帶來更多正面影響💖",
       "topicScores": {
-        "經濟": 1.0
+        "生活": 0.44,
+        "競選": 0.92,
+        "經濟": 0.7
       },
       "topics": [
-        "經濟"
+        "競選",
+        "經濟",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DasizTBE1ow/"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "搶修"
-        ],
-        "personal_content": [
-          "日常"
-        ],
-        "public_information": [
-          "提醒",
-          "警戒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e9149f70df6a232b183652f9d5f394a7ab9e4c41e5cc252e3a885b20cf96e78b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DapvWrXiUnz",
       "imageAspect": null,
@@ -682,57 +553,39 @@
         "道路",
         "垃圾"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是颱風停班停課、道路、停電與垃圾收運提醒。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-11T12:13:36+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:桃園市7/12（日）復興區停止上班上課，其餘各區照常上班及上課。\n\n這次的風雨讓復興區受創嚴重，特別是大利幹部落、義興部落，三條聯外道路發生大面積崩塌，區內仍有多處持續發布土石流紅色警戒及黃色警戒，請周邊居民務必提高警覺、注意自身安全。也呼籲所有市民朋友，非必要請暫時不要前往山區活動。\n\n桃園市內有部分地區停電，台電人員正冒著風雨全力搶修，請受影響的市民耐心等候，感謝第一線搶修人員，期盼平安順利完成任務。\n\n另外，石門水庫上午已啟動溢洪道放水，特別提醒大家，停止洩洪前，請不要進入石門水庫下游河道、水域、溪床及相關警戒區域，以維護自身安全。\n\n這兩天因颱風停止垃圾收運，明天（7/12）將在原時段加班清運，協助市民整理家園，感謝辛苦的清潔隊同仁，大家辛苦了。\n\n待颱風離開後，災後的修復與重建工作正要開始，需要各單位通力合作，以最快的速度協助災區復原，讓市民朋友早日恢復安穩的日常生活。天佑桃園，大家平安！",
       "topicScores": {
-        "交通": 0.125,
-        "環境": 0.125,
-        "防災": 0.75
+        "交通": 0.7,
+        "環境": 0.55,
+        "生活": 0.64,
+        "防災": 0.98
       },
       "topics": [
         "防災",
         "交通",
+        "生活",
         "環境"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、警戒、土石流、停電",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DapvWrXiUnz"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "搶修"
-        ],
-        "personal_content": [
-          "日常"
-        ],
-        "public_information": [
-          "提醒",
-          "警戒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3a1285df7a57d456c5d2303e5833545869be962e96b96f72beaac0ea31c7f173",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1543905233850676",
       "imageAspect": null,
@@ -741,49 +594,39 @@
         "颱風",
         "警戒",
         "土石流",
-        "道路",
         "垃圾"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "說明停班停課、道路受損與放水警戒，屬災後資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-11T12:13:20.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "桃園市7/12（日）復興區停止上班上課，其餘各區照常上班及上課。\n\n這次的風雨讓復興區受創嚴重，特別是大利幹部落、義興部落，三條聯外道路發生大面積崩塌，區內仍有多處持續發布土石流紅色警戒及黃色警戒，請周邊居民務必提高警覺、注意自身安全。也呼籲所有市民朋友，非必要請暫時不要前往山區活動。\n\n桃園市內有部分地區停電，台電人員正冒著風雨全力搶修，請受影響的市民耐心等候，感謝第一線搶修人員，期盼平安順利完成任務。\n\n另外，石門水庫上午已啟動溢洪道放水，特別提醒大家，停止洩洪前，請不要進入石門水庫下游河道、水域、溪床及相關警戒區域，以維護自身安全。\n\n這兩天因颱風停止垃圾收運，明天（7/12）將在原時段加班清運，協助市民整理家園，感謝辛苦的清潔隊同仁，大家辛苦了。\n\n待颱風離開後，災後的修復與重建工作正要開始，需要各單位通力合作，以最快的速度協助災區復原，讓市民朋友早日恢復安穩的日常生活。天佑桃園，大家平安！",
       "topicScores": {
-        "交通": 0.125,
-        "環境": 0.125,
-        "防災": 0.75
+        "環境": 0.62,
+        "生活": 0.78,
+        "防災": 0.99
       },
       "topics": [
         "防災",
-        "交通",
+        "生活",
         "環境"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、警戒、土石流、停電",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0Qc6NgABxUMex9CKKP6mnzJp4UFRwWBfsBDZcJZ4KtM6hS1xT7wMsqpFBGUwyr5S1l"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.06,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "37c717030bb2aceb00ae78dc9ac5f545a9305dafd97f1e3a27997629783f0183",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1543117320596134",
       "imageAspect": null,
@@ -791,42 +634,35 @@
       "keywords": [
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告停班停課並感謝守崗人員，核心仍是防災資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-10T12:01:39.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "【桃園市7/11（六）停止上班上課】\n\n巴威颱風減弱為中度，但是暴風範圍不容小覷，中央氣象署已針對桃園發布陸上颱風警報、陸上強風特報，明天可能有9-11級陣風。\n\n請外出的市民，尤其是騎車的朋友，一定要留意安全，小心慢行！\n\n在我們安心待在家的同時，感謝警消、醫護、國軍、台電及在颱風天仍堅守崗位的同仁，持續守護市民。有您們真好，謝謝你們💪",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.86,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02bVsajNS1fDytAgtHyYssTbYR6md5LT4CNmCJGUX4mZWdFPkfhurwJjiUqb7tx6wul"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "46bb116d23459eef561f868e9206d92ae265a6a3260fa7e4084b87232d60d4ec",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DanJHMfCbo3",
       "imageAspect": null,
@@ -834,124 +670,105 @@
       "keywords": [
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告桃園停班停課並提醒行車安全與防颱。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-10T12:00:57+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:【桃園市7/11（六）停止上班上課】\n\n巴威颱風減弱為中度，但是暴風範圍不容小覷，中央氣象署已針對桃園發布陸上颱風警報、陸上強風特報，明天可能有9-11級陣風。\n\n請外出的市民，尤其是騎車的朋友，一定要留意安全，小心慢行！\n\n在我們安心待在家的同時，感謝警消、醫護、國軍、台電及在颱風天仍堅守崗位的同仁，持續守護市民。有您們真好，謝謝你們💪",
       "topicScores": {
-        "防災": 1.0
+        "交通": 0.44,
+        "生活": 0.6,
+        "防災": 0.97
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DanJHMfCbo3"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f99d057aadacc2f679613ba508228714ac26d3bfd29df52e4ae96212b0981b95",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dakkm0xCbrV",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "宣布停班停課並提醒民眾減少外出，屬防災訊息。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-09T12:03:28+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.62,
+        "防災": 0.98
       },
       "topics": [
+        "防災",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Dakkm0xCbrV"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "42f1486edcb7dc54c828961d9563a6c45304feb485a064a13deb126548cbf506",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1542333297341203",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告停班停課並提醒防颱，屬防災資訊通知。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T12:03:17.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "桃園市7/10（五）停止上班上課。\n\n請大家減少不必要的外出，好好待在家，做好防颱準備，安全第一🙏",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.74,
+        "防災": 0.98
       },
       "topics": [
+        "防災",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02YGgjjXY6kjovpDWgj3QxnEVBqYUVBr9brr9UaeDQf3VsDRqqj9EVJ4kFGhgdpni5l"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a2cd01721dde622234e1a6e83c4b197488a5f29e646a960a467a96c5477f4732",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DakGU8QCYny",
       "imageAspect": null,
@@ -961,42 +778,35 @@
         "豪雨",
         "災情"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是颱風警報與防颱提醒，屬公共安全公告。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-09T07:38:53+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.7,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、災情、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DakGU8QCYny"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9746d461c279e9b37072f26a40a2545b437a1b85e47fa9fbd4aa96bab59259b9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DakGLnEk2Gj/",
       "imageAspect": 1.0,
@@ -1006,42 +816,35 @@
         "豪雨",
         "災情"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "內容是颱風警報與防颱準備提醒，屬公告資訊。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-09T07:37:38+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.74,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、災情、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DakGLnEk2Gj/"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.06,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a96b7503bf8738b720c991b18eab9907b2229a85f7e4b7a7d9ce697b686060ee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1542182604022939",
       "imageAspect": 1.0,
@@ -1051,42 +854,35 @@
         "豪雨",
         "災情"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "內容是颱風警報與防颱步驟提醒，屬防災公告。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T07:35:33.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "🌀 強颱巴威逼近，提醒大家提前做好防颱準備⚠️\n\n中央氣象署已發布海上颱風警報及強風特報，並預計於明天清晨發布陸上颱風警報。\n\n目前預估，明晚至週六將是颱風影響最明顯的時段，桃園可能出現強風豪雨，請市民朋友提高警覺，提早完成各項防颱準備。\n\n⚠️ 防颱重點提醒：\n✔️ 備妥防颱物資\n✔️ 固定戶外物品\n✔️ 清理排水設施\n✔️ 避免前往危險區域\n✔️ 有災情請撥打 1999，緊急狀況請撥打 119\n\n請大家持續留意最新天氣資訊，互相提醒、注意安全，一起平安度過這次颱風🙏🏻",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.7,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、災情、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0dpxyrpfBoZnzmFo7o4KDwUy2ow8TV6oJkM3v33PaRcui36mnR3QEksEaTM6fuybml"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "522575877a35df50c1dc9cda364e8fb1cdaa6baf5812842c82b30663166a3cd9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaiUWaqCTvY",
       "imageAspect": null,
@@ -1094,43 +890,35 @@
       "keywords": [
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是提醒市民提前防颱，屬公告提醒。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T15:02:57+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:強颱巴威來襲🌀世杰提醒桃園的市民朋友，請提前做好防颱準備！\n\n這次中央氣象署預報一出來，大家都很緊張，巴威颱風將是25年來半徑最大的強颱，將在本週五晚間、週六白天最接近台灣，預計為北部帶來強勁風雨。\n\n請市民朋友務必密切關注颱風動向，多一分準備，就能少一分損失。\n\n黃世杰，關心您💖",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.72,
+        "防災": 0.98
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DaiUWaqCTvY"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒",
-          "專線"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0906b14c95e67d816f900ed53ab0005cc6d09517963d939ac67cd6b8998a17df",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaiULrVk3hj/",
       "imageAspect": 1.0,
@@ -1141,43 +929,35 @@
         "災害",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是颱風防災提醒與物資準備，屬災害通知非政策主張。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T15:01:30+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "強颱巴威來襲🌀世杰提醒桃園的市民朋友，請提前做好防颱準備！\n\n這次中央氣象署 @cwa_weather 的預報一出來，大家都很緊張，巴威颱風將是25年來半徑最大的強颱，將在本週五晚間、週六白天最接近台灣，預計為北部帶來強勁風雨。\n\n請市民朋友務必密切關注颱風動向，多一分準備，就能少一分損失。\n\n✅備妥3天份防災物資，包括：糧食、飲水、電池、常備藥品等\n✅加固招牌、門窗、盆栽等懸掛物\n✅提前清理雨水溝及排水管，保持溝渠暢通\n✅避免前往山區、沿海、溪邊活動，安全第一\n✅請農民朋友及早完成防颱準備，降低可能的災害風險\n✅低窪地區如有防水需求，請向里長登記領取沙包\n✅遇到積淹水或緊急狀況，請撥打1999市民專線\n\n黃世杰，關心您💖",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.76,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、淹水、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaiULrVk3hj/"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒",
-          "專線"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.07,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "6f11cd453cb7cae08910c1936fd1e1e7280728176a8b34557085da5a9c10b389",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1541588870748979",
       "imageAspect": 1.0,
@@ -1188,42 +968,37 @@
         "災害",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "以颱風防災準備、沙包與報案資訊為主。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-08T13:03:11.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "強颱巴威來襲🌀世杰提醒桃園的市民朋友，請提前做好防颱準備！\n\n這次報天氣 - 中央氣象署的預報一出來，大家都很緊張，巴威颱風是25年來半徑最大的強颱，預計在本週五晚間、週六白天最接近台灣，可能會為北部帶來強勁的風雨。\n\n請市民朋友務必密切關注颱風動向，多一分準備，就能少一分損失。\n\n✅備妥3天份防災物資，包括：糧食、飲水、電池、常備藥品等\n✅加固招牌、門窗、盆栽等懸掛物\n✅提前清理雨水溝及排水管，保持溝渠暢通\n✅避免前往山區、沿海、溪邊活動，安全第一\n✅請農民朋友及早完成防颱準備，降低可能的災害風險\n✅低窪地區如有防水需求，請向里長登記領取沙包\n✅遇到積淹水或緊急狀況，請撥打1999市民專線\n\n黃世杰，關心您💖",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.72,
+        "社福": 0.2,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、淹水、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02eRhAgp8Fkng3RHP9yZU39c8R1dsQJWCtp8Z8vh4Xyysic7v1hPQUoNQQxoMRbF2Ml"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "5f11a1303079df7e79085cc250086e7a27264adfbe540a9ef49f033e00417369",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DahvRyemmCK",
       "imageAspect": 1.0,
@@ -1232,99 +1007,77 @@
         "大學",
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "僅轉述分科測驗延期與考生日程更新，偏公告通知。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T09:39:01+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:🚨因應巴威颱風，分科測驗延至7/13-7/14\n\n中央氣象署分科預估週五、六風雨最為顯著，為了保障全體考生與試務人員的安全，大學招聯會今天正式決議，分科測驗順延兩天。\n\n我知道，面對升學重要挑戰，分科改期一定會打亂原本的節奏，甚至會有點焦慮。分科測驗\n\n請各位分科戰士深呼吸、不要慌張，好好利用這兩天做最後衝刺，調整好作息，一定能發揮最強實力💪分科\n\n📅日程更新\n考試日期｜7/13 (一)、7/14 (二)\n成績公布｜8/03 (一)\n志願登記｜8/05 (三) 至8/08 (六)\n放榜日期｜8/17 (一)",
       "topicScores": {
-        "教育": 0.5,
-        "防災": 0.5
+        "教育": 0.98,
+        "防災": 0.84
       },
       "topics": [
         "教育",
         "防災"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DahvRyemmCK"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.58,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a1c39d0ad7c43b8d58a8f229fc5c4a8388f116444d20231d5e625001771061c9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DahvPLhzRLm/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/7e32ec391a4c23989bed.webp",
       "keywords": [
-        "交通",
-        "通勤",
         "教育",
         "大學",
-        "颱風",
-        "環境"
+        "交通",
+        "通勤",
+        "颱風"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告分科測驗延期，並提醒交通疏導與颱風後清運。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T09:38:52+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "🚨因應巴威颱風，分科測驗延至7/13-7/14\n\n中央氣象署預估週五、六風雨最為顯著，為了保障全體考生與試務人員的安全，大學招聯會今天正式決議，分科測驗順延兩天。\n\n我知道，面對升學重要挑戰，改期一定會打亂原本的節奏，甚至會有點焦慮。\n\n請各位分科戰士深呼吸、不要慌張，好好利用這兩天做最後衝刺，調整好作息，一定能發揮最強實力💪\n\n我也要提醒大家，考試時間從週末調整至平日，早上出門可能會遇上通勤車潮，請務必提早規劃交通路線與出門時間。\n\n呼籲市府交通局，務必提前規劃尖峰時段的交通疏導與大眾運輸班次，環保局與教育局也應在颱風過境後，全力清運考場周邊倒塌樹木與積水，確保給孩子們一個安全、無障礙的應考環境。\n\n📅日程更新\n考試日期｜7/13 (一)、7/14 (二)\n成績公布｜8/03 (一)\n志願登記｜8/05 (三) 至8/08 (六)\n放榜日期｜8/17 (一)",
       "topicScores": {
-        "交通": 0.4444,
-        "教育": 0.2222,
-        "環境": 0.1111,
-        "防災": 0.2222
+        "交通": 0.93,
+        "教育": 0.96,
+        "防災": 0.87
       },
       "topics": [
-        "交通",
         "教育",
-        "防災",
-        "環境"
+        "交通",
+        "防災"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DahvPLhzRLm/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "必須",
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.94,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cbbcfa1f03526ffde977042470e4d7e4723c13632b5210533ea242cb5ba46cc8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DahIO-7iXgp",
       "imageAspect": null,
@@ -1335,43 +1088,35 @@
         "道路",
         "人行道"
       ],
+      "nature": {
+        "confidence": 0.92,
+        "label": "政策／政見",
+        "reason": "主打人本交通改革、白皮書簽署與候選人承諾。",
+        "type": "policy_proposal"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T03:57:50+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:身為三歲孩子的父親，每次牽著小朋友走在人行道上，都能深刻體會每位家長心中的擔憂。讓孩子快樂出門、平安回家，不只是我和所有家長共同的心願，更是作為政治人物，最基本的承諾與責任。\n\n一早我出席下一代人本交通促進會記者會，和台北市長候選人沈伯洋委員 @pumashen 、新北市長候選人蘇巧慧委員 @su.chiaohui 、宜蘭縣長候選人林國漳律師 @lin.kuo.chang ，一同簽署交通改善承諾白皮書，向市民朋友承諾，北台灣交通革新，我們一起來做！\n\n桃園的交通改革，不能停留在頭痛醫頭、腳痛醫腳的個案思維，要成為真正進步的城市，必須建立系統性的整體規劃。\n\n日前我提出推動公車營運轉型、優先改善道路設計。接下來，我將進一步聚焦市民最痛心的問題，全面推動改革，包括人行空間、學區通行安全及偏鄉交通平權等，都是我勤跑地方時，最常收到的意見。\n\n每一項交通改革，都守護著一個家庭的未來。\n\n我是黃世杰，我會以人本交通作為施政方向，讓桃園成為一座孩子安心上學、家長放心生活、市民朋友安全通行的宜居城市！",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.97,
+        "競選": 0.82
       },
       "topics": [
-        "交通"
+        "交通",
+        "競選"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DahIO-7iXgp"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "必須",
-          "提出"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.92,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "fedb28fa511417fcfa32635c24c4d9b97840e32714dcc022a059b278c107da9d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DahHs87k92z/",
       "imageAspect": 1.5,
@@ -1381,52 +1126,39 @@
         "捷運",
         "公車",
         "道路",
-        "人行道",
-        "環境"
+        "人行道"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "政策／政見",
+        "reason": "主張以人本交通推動整體改革，屬具體施政方向。",
+        "type": "policy_proposal"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T03:53:13+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "身為三歲孩子的父親，每次牽著小朋友走在人行道上，都能深刻體會每位家長心中的擔憂。讓孩子快樂出門、平安回家，不只是我和所有家長共同的心願，更是作為政治人物，最基本的承諾與責任。\n\n一早我出席下一代人本交通促進會 @nextgenwalkers 記者會，和台北市長候選人沈伯洋委員 @pumashen 、新北市長候選人蘇巧慧委員 @su.chiaohui 、宜蘭縣長候選人林國漳律師 @lin.kuo.chang ，一同簽署交通改善承諾白皮書，向市民朋友承諾，北台灣交通革新，我們一起來做！\n\n桃園的交通改革，不能停留在頭痛醫頭、腳痛醫腳的個案思維，要成為真正進步的城市，必須建立系統性的整體規劃。\n\n日前我已提出推動公車營運轉型、優先改善道路設計。接下來，我將進一步聚焦市民最痛心的問題，全面推動改革，包括人行空間、學區通行安全及偏鄉交通平權等，都是我勤跑地方時，最常收到的意見。\n\n交通建設，必須搭配良好的跨域治理，包括捷運三鶯線將延伸到桃園八德，大眾運輸銜接、場站周邊人行安全及交通秩序，都需要跨縣市協作。未來，我會攜手中央及周邊縣市，打造更好的交通環境。\n\n每一項交通改革，都守護著一個家庭的未來。\n\n我是黃世杰，我會以人本交通作為施政方向，讓桃園成為一座孩子安心上學、家長放心生活、市民朋友安全通行的宜居城市！",
       "topicScores": {
-        "交通": 0.9333,
-        "環境": 0.0667
+        "交通": 0.95,
+        "生活": 0.7,
+        "競選": 0.66
       },
       "topics": [
         "交通",
-        "環境"
+        "生活",
+        "競選"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DahHs87k92z/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "午餐"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "個人／日常"
-      ],
-      "actions": [
-        "public_information",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.56,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "574a3f2e1b9ffdecdb1b10187e21a95a081dbfb489c8dcef136eaff1cb11ac8b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dag3F3KCdvv",
       "imageAspect": null,
@@ -1435,171 +1167,139 @@
         "教育",
         "校園"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "批評／究責",
+        "reason": "針對校園午餐油品事件追問市府清查與揭露責任。",
+        "type": "criticism_accountability"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T01:28:02+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:請張善政市府停止政治操作，立刻公布使用問題油品的13校，並公開校園午餐油品調查過程！\n\n張市長日前在臉書發文，表示教育局與各校聯繫、查詢食材登錄平台重複驗證後，確認16家外訂餐盒廠商及食材供應商均未使用問題批號食用油，要桃園家長們放心。\n\n7/6傍晚我提醒張市府，要求教育局公開清查期間、清查對象、比對方式、供餐廠商、食材供應商、逐校清查狀態，讓家長安心。\n\n當天晚上我就被張市府扣帽子，說我政治攻防、幫中央洗地。\n\n結果不到一天，7/7中午媒體爆出，張善政市府確認有13校受影響，首波32家業者下架逾1.2萬公斤問題油品。另根據市府資料，目前已累積下架2.1萬公斤。\n\n不只證明我的推論完全合理，也證實真正被政治操作的，是孩子吃進嘴裡的食安，以及家長最基本的知情權。\n\n我們要問張善政市府：如果前期已經查清楚，為什麼後來會出現13校受影響？這是食材平台資料不足？還是教育局一開始沒有逐批號、逐單據、逐校核對？\n\n張市府可能會聲稱這是滾動清查，但是如果資料尚未完備，市府就不應把「目前暫未查到」說成「均未使用」。\n\n（1/2）",
       "topicScores": {
-        "教育": 1.0
+        "教育": 0.9,
+        "社福": 0.62,
+        "議會監督": 0.78
       },
       "topics": [
-        "教育"
+        "教育",
+        "議會監督",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Dag3F3KCdvv"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0b09d467a2d44ca4a30c93464fac699a6a037b1f9c186ea3026f3e16df6ee63b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DafXO2cGiOS",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/9d62931bd085b1f69d06.webp",
-      "keywords": [
-        "國安"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.93,
+        "label": "活動／行程",
+        "reason": "內容是重述出席扶輪活動與致詞，屬行程紀錄。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-07T11:30:25+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:同為扶輪人，深深瞭解「超我服務」從不只是一句口號，而是大家長年投入公益、關懷社會的實際行動。\n\n每一位扶輪夥伴的付出，都是讓地方更美好、讓社會更溫暖的重要力量。\n\n非常榮幸受邀出席國際扶輪3502地區迎新交接晚會，恭喜高國安總監榮任新職，未來將帶領團隊凝聚更多能量，讓扶輪精神持續在地方扎根、發揮深遠影響！",
       "topicScores": {
-        "兩岸外交": 1.0
+        "文化觀光": 0.82,
+        "社福": 0.61
       },
       "topics": [
-        "兩岸外交"
+        "文化觀光",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DafXO2cGiOS"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "d2b0b49cf074c1cd631b93889dcaec46c3d8416cf75cb28e5b088480501d778b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DafXL0jpp2B/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/2997dbe82719f7d43c81.webp",
-      "keywords": [
-        "國安"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "出席扶輪交接晚會並致賀，屬活動紀錄與社團交流。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-07T11:30:18+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "同為扶輪人，深深瞭解「超我服務」從不只是一句口號，而是大家長年投入公益、關懷社會的實際行動。每一位扶輪夥伴的付出，都是讓地方更美好、讓社會更溫暖的重要力量。\n\n非常榮幸受邀出席國際扶輪3502地區迎新交接晚會，恭喜高國安總監榮任新職，未來將以國際扶輪年度主題「創造持恆的影響」（Create Lasting Impact）為願景，帶領團隊凝聚更多能量，讓扶輪精神持續在地方扎根、發揮深遠影響。\n\n2026，對台灣的扶輪社是重要的一年。國際扶輪年會睽違32年重返台灣，不僅讓來自世界各地的夥伴，看見我們的熱情與軟實力，更展現了扶輪人跨越國界、攜手服務的精神。\n\n感謝所有扶輪先進長年為桃園默默耕耘與奉獻，祝福大家會務昌隆、社務蒸蒸日上，攜手把更多愛與善，傳遞到城市的每一個角落💖",
       "topicScores": {
-        "兩岸外交": 1.0
+        "文化觀光": 0.84,
+        "社福": 0.62
       },
       "topics": [
-        "兩岸外交"
+        "文化觀光",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DafXL0jpp2B/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "2c35af9fb638aa12daab6afeecf06bdf4aeb1d558d4a69ea1d49737dd7661892",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1540639540843912",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/9b5a26a77c984d721e8a.webp",
-      "keywords": [
-        "國安"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.94,
+        "label": "活動／行程",
+        "reason": "出席扶輪交接晚會並致詞，屬社團活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-07T11:29:40.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "同為扶輪人，深深瞭解「超我服務」從不只是一句口號，而是大家長年投入公益、關懷社會的實際行動。每一位扶輪夥伴的付出，都是讓地方更美好、讓社會更溫暖的重要力量。\n\n非常榮幸受邀出席國際扶輪3502地區迎新交接晚會，恭喜高國安總監榮任新職，未來將以國際扶輪年度主題「創造持恆的影響」（Create Lasting Impact）為願景，帶領團隊凝聚更多能量，讓扶輪精神持續在地方扎根、發揮深遠影響。\n\n2026，對台灣的扶輪社是重要的一年。國際扶輪年會睽違32年重返台灣，不僅讓來自世界各地的夥伴，看見我們的熱情與軟實力，更展現了扶輪人跨越國界、攜手服務的精神。\n\n感謝所有扶輪先進長年為桃園默默耕耘與奉獻，祝福大家會務昌隆、社務蒸蒸日上，攜手把更多愛與善，傳遞到城市的每一個角落💖",
       "topicScores": {
-        "兩岸外交": 1.0
+        "文化觀光": 0.8,
+        "生活": 0.65
       },
       "topics": [
-        "兩岸外交"
+        "文化觀光",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0jmQvvLB4MvTBodFsXdPc8uYsnc1FEdtsTgvQPkGDHyWP8TtaJXrKb5h3r7rBtD46l"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.34,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "703b57e173c00652d96118401f445135cb00169318c91086f8742e1551587f3f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaeVASPiRhD",
       "imageAspect": null,
@@ -1608,42 +1308,37 @@
         "公車",
         "通勤"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "競選／動員",
+        "reason": "與前則相同，重點是公車廣告曝光與個人宣傳。",
+        "type": "campaign_mobilization"
+      },
       "platform": "threads",
       "postedAt": "2026-07-07T01:51:42+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:大家早安☀️我的公車廣告已在上週正式亮相囉🚌\n\n希望每天陪伴大家通勤、陪伴大家出發，在城市的各個角落，一起迎接嶄新的每一天。\n\n期待在桃園的每個角落與大家相遇，看到別忘了拍張照跟我分享📸\n\n心桃園，動起來💖",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.62,
+        "生活": 0.58,
+        "競選": 0.92
       },
       "topics": [
-        "交通"
+        "競選",
+        "交通",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/DaeVASPiRhD"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.34,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9f699b9eb168c2ee8524edc002262719296ebccfb1f144e5eb5335e86f03aea4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaeUzWOpjqO/",
       "imageAspect": 0.5625,
@@ -1652,96 +1347,71 @@
         "公車",
         "通勤"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "競選／動員",
+        "reason": "主要是公車廣告亮相與打招呼，屬選舉宣傳而非政策。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-07T01:50:12+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "大家早安☀️我的公車廣告已在上週正式亮相囉🚌\n\n希望每天陪伴大家通勤、陪伴大家出發，在城市的各個角落，一起迎接嶄新的每一天。\n\n期待在桃園的每個角落與大家相遇，看到別忘了拍張照跟我分享📸\n\n心桃園，動起來💖",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.62,
+        "生活": 0.58,
+        "競選": 0.92
       },
       "topics": [
-        "交通"
+        "競選",
+        "交通",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DaeUzWOpjqO/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.2,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ed781c12e60574809e938c1e2b96b6686bfb60e894e27c092a3876e22ddd4d62",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1540293977545135",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/44232cd18324b009e623.webp",
-      "keywords": [
-        "公車",
-        "通勤"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.96,
+        "label": "競選／動員",
+        "reason": "公車廣告亮相並呼籲互動，明顯帶有宣傳動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-07T01:48:54.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "大家早安☀️我的公車廣告已在上週正式亮相囉🚌\n\n希望每天陪伴大家通勤、陪伴大家出發，在城市的各個角落，一起迎接嶄新的每一天。\n\n期待在桃園的每個角落與大家相遇，看到別忘了拍張照跟我分享📸\n\n心桃園，動起來💖",
       "topicScores": {
-        "交通": 1.0
+        "生活": 0.6,
+        "競選": 0.92
       },
       "topics": [
-        "交通"
+        "競選",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "早安",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/reel/1344094904498217/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "午餐"
-        ],
-        "policy_proposal": [
-          "應該"
-        ],
-        "position_statement": [
-          "認為"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "立場表態",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "position_statement",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.43,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1b4e6eb4a9de4536823135f1b758073e8af220150b93b838e4ba4dca31fe25fc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DacrkrYCeYe",
       "imageAspect": null,
@@ -1750,52 +1420,37 @@
         "教育",
         "校園"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "批評／究責",
+        "reason": "主軸是追查食安事件並要求市府說明校園午餐清查。",
+        "type": "criticism_accountability"
+      },
       "platform": "threads",
       "postedAt": "2026-07-06T10:30:25+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:中聯油食安事件，中央已公布產品名單，並要求相關油品停產、加工產品預防性下架。對於引發疑慮的源頭，依法咎責、絕不寬貸。\n\n張善政市長日前表示，「教育局與各校聯繫確認從源頭查證供應商使用情況，再經查詢食材登平台重複驗證後，確認本市16家外訂餐盒廠商及食材供應商均未使用上開批號的食用油。」\n\n面對市府說法，我認為還有疑慮，市府應該向市民釋疑：\n\n我比對其他縣市稽查流程，發現一些差異。以台北、台中為例，一開始到賣場查核，跟桃園一樣未見違規產品。後來，台北、台中教育局，深入校園做逐單比對清查，才翻出隱藏的問題，目前台北清查到42校、新北50校、台中39校。\n\n如果市府只「查詢平台」，卻未「逐校核對批號」，這樣的嚴謹度，恐怕很難取信於家長，也無法安撫市民恐懼。\n\n家長需要的不是一句「均無使用」，而是可查證的校園午餐油品回溯報告。教育局應公開清查期間、清查對象、比對方式、供餐廠商、食材供應商、逐校清查狀態等，並主動通知家長。\n\n必要時，也應擴大清查範圍。\n\n守護食安，沒有任何妥協空間。\n\n中央追查源頭，市府的責任，就是顧好大家的餐桌。務必要把名單轉化成看得懂、查得到、用得上的保護機制，讓市民放心！",
       "topicScores": {
-        "教育": 1.0
+        "教育": 0.94,
+        "治安": 0.62,
+        "醫療": 0.91
       },
       "topics": [
-        "教育"
+        "教育",
+        "醫療",
+        "治安"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.threads.com/t/DacrkrYCeYe"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "午餐"
-        ],
-        "policy_proposal": [
-          "應該"
-        ],
-        "position_statement": [
-          "認為"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "立場表態",
-        "個人／日常"
-      ],
-      "actions": [
-        "policy_proposal",
-        "position_statement",
-        "personal_content"
-      ],
+      "agendaRelevance": 0.7,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3dd95b98fefe412a4ec23d4a69808b11f9b05ec19e8d48c32cb863867c624b3d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1539726510935215",
       "imageAspect": null,
@@ -1804,83 +1459,71 @@
         "教育",
         "校園"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "批評／究責",
+        "reason": "針對食安事件質疑市府查核不足，並要求更嚴格清查。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-06T10:25:32.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "中聯油食安事件，中央已經公布產品名單，並要求相關油品停產、加工產品預防性下架。對於引發疑慮的源頭，將依法咎責、絕不寬貸。\n\n張善政市長日前表示，「教育局與各校聯繫確認從源頭查證供應商使用情況，再經查詢食材登平台重複驗證後，確認本市16家外訂餐盒廠商及食材供應商均未使用上開批號的食用油。」\n\n面對桃園市政府的說法，我們認為還有疑慮，市政府應該向市民釋疑：\n\n我比對其他縣市稽查流程，發現一些差異。以台北、台中為例，一開始到賣場現場查核，跟桃園一樣未見違規產品。後來，台北、台中的教育局，深入校園做逐單比對清查，才翻出隱藏的問題，目前台北清查到42校、新北50校、台中39校。\n\n如果桃園市政府只「查詢平台」，卻未「逐校核對批號」，這樣的嚴謹度，恐怕很難取信於家長，也無法安撫市民的恐懼。\n\n家長需要的不是一句「均無使用」，而是可查證的校園午餐油品回溯報告。教育局應公開清查期間、清查對象、比對方式、供餐廠商、食材供應商、逐校清查狀態等，並主動通知家長。\n\n必要時，也應再擴大清查範圍。\n\n守護食安，沒有任何妥協的空間。\n\n中央追查源頭，而桃園市政府的責任，就是顧好大家的餐桌。務必要把名單轉化成看得懂、查得到、用得上的保護機制，讓市民放心，讓桃園做得更好！",
       "topicScores": {
-        "教育": 1.0
+        "教育": 0.74,
+        "生活": 0.68,
+        "議會監督": 0.7,
+        "醫療": 0.92
       },
       "topics": [
-        "教育"
+        "醫療",
+        "教育",
+        "議會監督",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0yvZhfRfacYNgbVa5ype9rjQL5b98iGo6evapRmcu5vSjZ42iy4fwpp5u5AZsYz3Gl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "521cadce26cd3e81b0850f508c44338c453fe388531cf3ec3e85df5fe43f353a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaaODOcCbmv",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.93,
+        "label": "個人／日常",
+        "reason": "內容僅為短句表情式發文，無明確公共議題。",
+        "type": "personal_content"
+      },
       "platform": "threads",
       "postedAt": "2026-07-05T11:33:58+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:有帽子的人在哪邊🙋",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.88
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaaODOcCbmv"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.84,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "56a66a81b4fe5f2a235ec28dd33d0a31c19300d3db8393bc0b0d78668b2ca23e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaZ6nt5Cb-X",
       "imageAspect": null,
@@ -1890,160 +1533,119 @@
         "連任",
         "長輩"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "為議員連任造勢並訴求宜居安居，屬明顯選舉動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "threads",
       "postedAt": "2026-07-05T08:44:11+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:下午，我來到八德，全力相挺許家睿議員 @cjcheerup 繼續高票連任💪\n\n今天是家睿的台南同鄉會曁旅桃之友後援會成立大會。看著台下滿滿熱情的市民朋友，我覺得非常感動。家睿當年隻身從台南來北部打拚，把最精華的青春、最專業的表現，毫無保留奉獻給八德，奉獻給桃園。\n\n就像在座每一位旅桃同鄉會的前輩，就像這幾年移居的新桃園人。無論大家來自何方，選擇在這塊土地落腳，選擇成為桃園人，大家的期待很簡單，就是要讓家庭宜居宜業，讓下一代過得更幸福！\n\n改變桃園，需要翻轉的勇氣，更需要制衡的力量。\n\n請大家把力量給世杰、給家睿，讓我們作伙疼惜長輩、呵護孩子、支持更多和我們一樣的年輕世代！讓進步加倍，每個人都能在這裡安居樂業❤️",
       "topicScores": {
-        "社福": 0.3333,
-        "競選": 0.6667
+        "社福": 0.72,
+        "競選": 0.98
       },
       "topics": [
         "競選",
         "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaZ6nt5Cb-X"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.48,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "83e856e1ef1555af0c38adae56970ad73c17160eda3db24c917a9b154b9c0246",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaZ6LI5kwWu/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/98e1a525629849145914.webp",
       "keywords": [
-        "議會",
-        "監督",
         "教育",
         "學校",
-        "後援會",
-        "連任",
-        "交通",
-        "長輩"
+        "交通"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "競選／動員",
+        "reason": "以議員連任造勢並宣傳其政績，主旨是選舉動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-05T08:40:19+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "下午，我來到八德，全力相挺許家睿議員 @cjcheerup 繼續高票連任💪\n\n今天是家睿的台南同鄉會曁旅桃之友後援會成立大會。看著台下滿滿熱情的市民朋友，我覺得非常感動。家睿當年隻身從台南來北部打拚，把最精華的青春、最專業的表現，毫無保留奉獻給八德，奉獻給桃園。\n\n就像在座每一位旅桃同鄉會的前輩，就像這幾年移居的新桃園人。無論大家來自何方，選擇在這塊土地落腳，選擇成為桃園人，大家的期待很簡單，就是要讓家庭宜居宜業，讓下一代過得更幸福！\n\n桃園要向前，不能只靠口號，更需要能在第一線為市民把關的戰將。\n\n家睿這幾年在八德的成績，大家都看在眼裡。他很注重教育，為孩子爭取超過1億經費，協助超過13所學校改善各項硬體設備。他也非常關心市民的生活，包括推動人本交通、改善都市排水，都積極為大家把關。\n\n家睿雖然年輕，但他已經扛起重任，擔任民進黨桃園市議會黨團總召。要讓「心桃園 動起來」，我需要家睿在議會做最堅實的後盾。未來的桃園市政，我們更需要他用最強力的監督，替市民做更多！\n\n改變桃園，需要翻轉的勇氣，更需要制衡的力量。\n\n請大家把力量給世杰、給家睿，讓我們作伙疼惜長輩、呵護孩子、支持更多和我們一樣的年輕世代！讓進步加倍，每個人都能在這裡安居樂業❤️",
       "topicScores": {
-        "交通": 0.1111,
-        "教育": 0.2222,
-        "社福": 0.1111,
-        "競選": 0.2222,
-        "議會監督": 0.3333
+        "交通": 0.56,
+        "教育": 0.75,
+        "環境": 0.55
       },
       "topics": [
-        "議會監督",
         "教育",
-        "競選",
         "交通",
-        "社福"
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaZ6LI5kwWu/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "5023c6d06e739ee356216eb2a7a311b3ca2758208c8bec694ccb99b313dee249",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1538795811028285",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/fa16baa86927b03eb745.webp",
       "keywords": [
-        "議會",
-        "監督",
-        "教育",
-        "學校",
         "後援會",
         "連任",
-        "交通",
-        "長輩"
+        "教育",
+        "學校",
+        "交通"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "競選／動員",
+        "reason": "替議員拉票並列舉政績，核心是輔選與動員支持。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-05T08:37:42.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "下午，我來到八德，全力相挺許家睿 Hsu Chia-Jui議員繼續高票連任💪\n\n今天是家睿的台南同鄉會曁旅桃之友後援會成立大會。看著台下滿滿熱情的市民朋友，我覺得非常感動。家睿當年隻身從台南來北部打拚，把最精華的青春、最專業的表現，毫無保留奉獻給八德，奉獻給桃園。\n\n就像在座每一位旅桃同鄉會的前輩，就像這幾年移居的新桃園人。無論大家來自何方，選擇在這塊土地落腳，選擇成為桃園人，大家的期待很簡單，就是要讓家庭宜居宜業，讓下一代過得更幸福！\n\n桃園要向前，不能只靠口號，更需要能在第一線為市民把關的戰將。\n\n家睿這幾年在八德的成績，大家都看在眼裡。他很注重教育，為孩子爭取超過1億經費，協助超過13所學校改善各項硬體設備。他也非常關心市民的生活，包括推動人本交通、改善都市排水，都積極為大家把關。\n\n家睿雖然年輕，但他已經扛起重任，擔任民進黨桃園市議會黨團總召。要讓「心桃園 動起來」，我需要家睿在議會做最堅實的後盾。未來的桃園市政，我們更需要他用最強力的監督，替市民做更多！\n\n改變桃園，需要翻轉的勇氣，更需要制衡的力量。\n\n請大家把力量給世杰、給家睿，讓我們作伙疼惜長輩、呵護孩子、支持更多和我們一樣的年輕世代！讓進步加倍，每個人都能在這裡安居樂業❤️",
       "topicScores": {
-        "交通": 0.1111,
-        "教育": 0.2222,
-        "社福": 0.1111,
-        "競選": 0.2222,
-        "議會監督": 0.3333
+        "交通": 0.7,
+        "教育": 0.86,
+        "環境": 0.52,
+        "競選": 0.94
       },
       "topics": [
-        "議會監督",
-        "教育",
         "競選",
+        "教育",
         "交通",
-        "社福"
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0XsCoHmL7Yjwha3C9bcAQJ4xYXtsdV6jYucvPS5LzNwZ41xqeEhRoFen6XBMvoEyRl"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f8279231a68d586bf329ec59717e044e797f062345ec914d1015d8b57904e54b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaZe5bUkzaL/",
       "imageAspect": 1.5,
@@ -2051,42 +1653,37 @@
       "keywords": [
         "生態"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "主要是在宣傳羊稠步道甲蟲季活動與親子出遊資訊。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-05T04:48:04+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "爸爸媽媽看過來！羊稠步道甲蟲季好好玩，趁孩子放暑假，一起來和大自然互動吧🪲\n\n每年這個季節，是蘆竹羊稠步道的獨角仙、鍬形蟲派對時間！作為全台百大必訪步道，據說山林間還有許多隱藏版的保育類動物，生態非常豐富。\n\n今天有很多親子檔一起來參與，步道洋溢著小朋友們開心的笑聲😆我下次也一定要帶小孩來玩！\n\n非常感謝用心守護家鄉、復育生態的羊稠社區發展協會、羊稠里辦公處，這十年努力有成，不僅打造社區特色，連外縣市的家長都慕名而來，不僅是蘆竹之光、也是桃園之光！\n\n活動一路到7/12（日），詳情請搜尋👉羊稠俱樂部！\n\n世杰也要提醒大家，這兩天天氣炎熱，請大家外出都要記得防曬、多補充水分，以免中暑喔💦",
       "topicScores": {
-        "環境": 1.0
+        "文化觀光": 0.86,
+        "環境": 0.78,
+        "生活": 0.6
       },
       "topics": [
-        "環境"
+        "文化觀光",
+        "環境",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DaZe5bUkzaL/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "77c7e6f52b2cb53bb43ebe60dd878aabf6b24fa91a26868ed51ee11fdc6f79a2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaZe6YTE2Hi",
       "imageAspect": 1.5,
@@ -2094,42 +1691,35 @@
       "keywords": [
         "生態"
       ],
+      "nature": {
+        "confidence": 0.73,
+        "label": "施政成果／行政進度",
+        "reason": "介紹步道甲蟲季與社區生態成果，偏地方特色活動宣傳。",
+        "type": "administrative_update"
+      },
       "platform": "threads",
       "postedAt": "2026-07-05T04:42:04+00:00",
       "sourceId": "huang-sj-threads",
-      "targets": [],
       "text": "@schuanglawyer:爸爸媽媽看過來！羊稠步道甲蟲季好好玩，趁孩子放暑假，一起來和大自然互動吧🪲\n\n每年這個季節，是蘆竹羊稠步道的獨角仙、鍬形蟲派對時間！作為全台百大必訪步道，據說山林間還有許多隱藏版的保育類動物，生態非常豐富。\n\n非常感謝用心守護家鄉、復育生態的羊稠社區發展協會、羊稠里辦公處，這十年努力有成，不僅打造社區特色，連外縣市的家長都慕名而來，不僅是蘆竹之光、也是桃園之光！",
       "topicScores": {
-        "環境": 1.0
+        "文化觀光": 0.9,
+        "環境": 0.87
       },
       "topics": [
+        "文化觀光",
         "環境"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/DaZe6YTE2Hi"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c59130cc554dea8eaf97f592e1e4b4f5695603b5ea4822a9e1b3a331f88ee7d6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1538655484375651",
       "imageAspect": 1.4975,
@@ -2137,91 +1727,74 @@
       "keywords": [
         "生態"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "活動／行程",
+        "reason": "主要是甲蟲季活動紀錄與親子出遊宣傳。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-05T04:38:15.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "爸爸媽媽看過來！羊稠步道甲蟲季好好玩，趁孩子放暑假，一起來和大自然互動吧🪲\n\n每年這個季節，是蘆竹羊稠步道的獨角仙、鍬形蟲派對時間！作為全台百大必訪步道，據說山林間還有許多隱藏版的保育類動物，生態非常豐富。\n\n今天有很多親子檔一起來參與，步道洋溢著小朋友們開心的笑聲😆我下次也一定要帶小孩來玩！\n\n非常感謝用心守護家鄉、復育生態的羊稠社區發展協會、羊稠里辦公處，這十年努力有成，不僅打造社區特色，連外縣市的家長都慕名而來，不僅是蘆竹之光、也是桃園之光！\n\n活動一路到7/12（日），詳情請看👉羊稠俱樂部！\n\n世杰也要提醒大家，這兩天天氣炎熱，請大家外出都要記得防曬、多補充水分，以免中暑喔💦",
       "topicScores": {
-        "環境": 1.0
+        "文化觀光": 0.76,
+        "環境": 0.92,
+        "生活": 0.6
       },
       "topics": [
-        "環境"
+        "環境",
+        "文化觀光",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0211FRepKp96Sn6pcnyXiBFMgtkm6woWYHR1FUo2peovUmQ7SRyq2eFNfK4gNvTeGLl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.39,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1feeb6bcfe8d76e277c4af80f5edbd9e4acaf7b47847fc2f483193a3e18b2092",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaXbm2zk1-P/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/0700866231725f92f9bb.webp",
       "keywords": [
         "觀光",
-        "交通",
-        "攤商"
+        "交通"
       ],
+      "nature": {
+        "confidence": 0.91,
+        "label": "活動／行程",
+        "reason": "出席蓮花季開幕與農產活動，並提及未來行銷與交通配套。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-04T09:34:44+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "🪷 夏日觀音，蓮花季到！\n\n今天和桃園市議員候選人張佩芸 @guanyinmelody 一起出席「2026桃園蓮花季開幕式暨西瓜評鑑暨超級大南瓜頒獎典禮」，與鄉親、攤商朋友面對面交流，也品嚐了觀音在地盛產的香甜西瓜🍉感受桃園農業最鮮甜的滋味。\n\n觀音不只有優質農產，更擁有豐富的休閒農業資源。每年夏天蓮花盛開，吸引許多民眾前來賞花、體驗農村風光，是展現桃園農業與觀光魅力的重要品牌。\n\n未來，我希望完善交通配套、強化整體行銷，串聯觀音的休閒農業、在地農產與觀光景點，讓更多人走進觀音，讓桃園蓮花季成為「越在地、越國際」的品牌，吸引更多國內外旅客認識觀音、愛上桃園。\n\n這個週末，桃園隊持續動起來💖",
       "topicScores": {
-        "交通": 0.25,
-        "文化觀光": 0.5,
-        "經濟": 0.25
+        "交通": 0.61,
+        "文化觀光": 0.82
       },
       "topics": [
         "文化觀光",
-        "交通",
-        "經濟"
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaXbm2zk1-P/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.74,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "740797ed7f730344325456159d7e26b05d2f683d31ea3db0b1a9c0f6955bf8c9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1537962251111641",
       "imageAspect": 1.3318,
@@ -2231,340 +1804,248 @@
         "交通",
         "攤商"
       ],
+      "nature": {
+        "confidence": 0.82,
+        "label": "政策／政見",
+        "reason": "提出完善交通與行銷串聯觀音觀光農業，屬具體發展主張。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-04T09:32:23.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "🪷 夏日觀音，蓮花季到！\n\n今天和桃園市議員候選人張佩芸您同行一起出席「2026桃園蓮花季開幕式暨西瓜評鑑暨超級大南瓜頒獎典禮」，與鄉親、攤商朋友面對面交流，也品嚐了觀音在地盛產的香甜西瓜🍉感受桃園農業最鮮甜的滋味。\n\n觀音不只有優質農產，更擁有豐富的休閒農業資源。每年夏天蓮花盛開，吸引許多民眾前來賞花、體驗農村風光，是展現桃園農業與觀光魅力的重要品牌。\n\n未來，我希望完善交通配套、強化整體行銷，串聯觀音的休閒農業、在地農產與觀光景點，讓更多人走進觀音，讓桃園蓮花季成為「越在地、越國際」的品牌，吸引更多國內外旅客認識觀音、愛上桃園。\n\n這個週末，桃園隊持續動起來💖",
       "topicScores": {
-        "交通": 0.25,
-        "文化觀光": 0.5,
-        "經濟": 0.25
+        "交通": 0.77,
+        "文化觀光": 0.9,
+        "經濟": 0.72
       },
       "topics": [
         "文化觀光",
         "交通",
         "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02UkTfH8LwfWTobQeN5ENyc5hdQZjHEKWmK6PfDfH7ZeEoqFGfSEbQBRWA8SEhHTmil"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.06,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "94ec047c6cc8a690f0794c83998bd340a744bd535b8676350958ffcc57920935",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaVAATEk5wE/",
       "imageAspect": 1.5,
       "imageUrl": "assets/feed-images/1827c961b9e3bb6fde10.webp",
-      "keywords": [
-        "長輩",
-        "參香",
-        "運動"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.96,
+        "label": "活動／行程",
+        "reason": "記錄一早拜廟、市場與公園行程，屬基層拜訪活動。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-03T10:55:04+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "今早不到六點就出門☀️在八德度過非常充實的上午！\n\n感謝呂林小鳳 @siaofonglin 議員帶路，一早先到大湳森林公園，向運動的長輩們請安問好。接著前往大湳福成宮、八德同興宮參香祈福，和市民朋友面對面交流。再走進八德的採買中心「大湳市場」，感受濃厚的人情味。\n\n感謝八德鄉親們給我滿滿的熱情跟鼓勵，我也承諾大家，一定會讓「心八德 動起來」💖\n\n深入基層、傾聽每位市民的聲音，是每天最重要的事。\n世杰會繼續走遍十三區，跟所有桃園人站在一起！",
       "topicScores": {
-        "社福": 0.3333,
-        "競選": 0.3333,
-        "體育": 0.3333
+        "生活": 0.82
       },
       "topics": [
-        "社福",
-        "競選",
-        "體育"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaVAATEk5wE/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1abfeccf333584a54c72538b1a88b6c3fa50cf748e2b7d392d37a72ffa5955ac",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1537115671196299",
       "imageAspect": 1.4975,
       "imageUrl": "assets/feed-images/4d00be48e84f2422ad7a.webp",
-      "keywords": [
-        "長輩",
-        "參香",
-        "運動"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.93,
+        "label": "活動／行程",
+        "reason": "行程紀錄為走訪廟宇、市場與基層拜會，未提具體政策。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-03T10:53:21.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "今早不到六點就出門☀️在八德度過非常充實的上午！\n\n感謝市議員呂林小鳳帶路，一早先到大湳森林公園，向運動的長輩們請安問好。接著前往大湳福成宮、八德同興宮參香祈福，和市民朋友面對面交流。再走進八德的採買中心「大湳市場」，感受濃厚的人情味。\n\n感謝八德鄉親們給我滿滿的熱情跟鼓勵，我也承諾大家，一定會讓「心八德 動起來」💖\n\n深入基層、傾聽每位市民的聲音，是每天最重要的事。\n世杰會繼續走遍十三區，跟所有桃園人站在一起！",
       "topicScores": {
-        "社福": 0.3333,
-        "競選": 0.3333,
-        "體育": 0.3333
+        "生活": 0.96
       },
       "topics": [
-        "社福",
-        "競選",
-        "體育"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid08YXZsXBamJRU2qmZRopBZAPaY6tUYpA1aho65LBUGtxdCp29zkbjA98k5LBJakU4l"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.17,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3be30ab1b49a3c16c7524bba67396e011684490c1d1eb3c6b02e65c32bcd1389",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaSYQK9sdoX/",
       "imageAspect": 0.5626,
       "imageUrl": "assets/feed-images/f137cb81d78aa5ea3aa3.webp",
       "keywords": [
-        "消防",
         "災害",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "活動／行程",
+        "reason": "內容是消防員體驗與防災闖關活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-02T10:30:09+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "著裝！世杰的一日消防員體驗 🚒\n\n穿上厚重的消防裝備，雖然才跑一圈，就已經感受到第一線消防、義消夥伴們的辛苦。\n\n我和小朋友們一起學習正確的 CPR 步驟，有趣的闖關活動，讓防災種子從小扎根，是建立社區防災韌性的重要一步。\n\n謝謝用心主辦的張雅琳委員 @ngalimtw 、協辦的蘆竹義消，讓家長跟孩子一起參與深具意義的體驗。平日多一分準備，災害時才能把傷害降到最低。\n\n再次感謝所有默默守護桃園安全的消防與義消弟兄姐妹，有您真好，大家辛苦了❤️",
       "topicScores": {
-        "治安": 0.5714,
-        "防災": 0.4286
+        "生活": 0.6,
+        "防災": 0.95
       },
       "topics": [
-        "治安",
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaSYQK9sdoX/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.2,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7e7beb551e7be1159327b0252cbe6b375ac6f9d425fcc45618865ea5bc32becf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1536225674618632",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/bbc51a3d1031f7a4a59e.webp",
       "keywords": [
-        "消防",
         "災害",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "活動／行程",
+        "reason": "內容是消防體驗活動與防災教育紀錄，偏活動性質。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-02T10:27:23.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "著裝！世杰的一日消防員體驗 🚒\n\n穿上厚重的消防裝備，雖然才跑一圈，就已經感受到第一線消防、義消夥伴們的辛苦。\n\n我和小朋友們一起學習正確的 CPR 步驟，有趣的闖關活動，讓防災種子從小扎根，是建立社區防災韌性的重要一步。\n\n謝謝用心主辦的張雅琳 Ngalim Tiunn委員、協辦的蘆竹義消，讓家長跟孩子一起參與深具意義的體驗。平日多一分準備，災害時才能把傷害降到最低。\n\n再次感謝所有默默守護桃園安全的消防與義消弟兄姐妹，有您真好，大家辛苦了❤️",
       "topicScores": {
-        "治安": 0.5714,
-        "防災": 0.4286
+        "生活": 0.75,
+        "防災": 0.93
       },
       "topics": [
-        "治安",
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/2076671819865514/"
     },
     {
-      "actionEvidence": {
-        "criticism": [
-          "質疑"
-        ],
-        "policy_proposal": [
-          "應該",
-          "必須"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "批評究責"
-      ],
-      "actions": [
-        "policy_proposal",
-        "criticism"
-      ],
+      "agendaRelevance": 0.4,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ed42c8e50e3c055fc56f35b773cc1ee59567457c362e9db10fb9c9a14295ed11",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1535524801355386",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [
         "治安",
-        "警察",
-        "環境",
-        "教育",
-        "經濟"
+        "警察"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "批評／究責",
+        "reason": "針對毒駕、討債與執法失當提出治安批評與究責。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T13:40:19.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "桃園近日亂象叢生，包括：毒駕嫌犯橫衝直撞危害無辜、暴力討債集團在社區橫行，甚至連執法單位，都被質疑對非法衝突視若無睹。\n\n當市民對治安信心產生動搖，對執法嚴謹度出現質疑時，這是一個重大警訊：桃園市政府必須立即以更積極的作為，奪回治安主導權，重新找回城市安定感。\n\n我要再重申一次，面對黑幫暴力討債行為，必須確保暴力零容忍，沒有任何妥協空間！\n\n尤其第一時間，更不容許模糊地帶。必須以保護被害人為首要目標，即時且強力制止暴力行為。對於少數有錯誤觀念的同仁，應該強化教育訓練，才能避免重演，不僅造成市民的誤解與不安，也抹煞了大部分警察同仁日夜維護治安的辛勞。\n\n桃園正處於高速成長關鍵期，經濟要發展，治安必須先穩固。我的目標是打造一個「治安第一、市民安心」的升級版桃園。\n\n讓市民生活在不必恐懼的環境中，是地方政府最核心的職責。\n\n這是一場重拾城市秩序與正義的總體檢，為了桃園的未來，我們全力以赴，絕不退縮！",
       "topicScores": {
-        "教育": 0.1111,
-        "治安": 0.6667,
-        "環境": 0.1111,
-        "經濟": 0.1111
+        "治安": 0.96,
+        "生活": 0.62
       },
       "topics": [
         "治安",
-        "環境",
-        "教育",
-        "經濟"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0ERoshd6C5XS5GYMkoL9WnkmtndAsY8amF4mCzSPSyQ9dxu2hszeHw89wWL7dF7yNl"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.14,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "6cb59e7c735474886d2b41441c9534f09684b92e9bd58dc6eda3f14032e53383",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaP_U7Ty966/",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/628ce8213639b3dc3033.webp",
-      "keywords": [
-        "主視覺"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.94,
+        "label": "活動／行程",
+        "reason": "參加漁民節並與漁民互動，屬節慶活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-01T12:13:33+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "祝福全天下最辛勞的漁民朋友，漁民節快樂🌊\n\n世杰來到熟悉的永安漁港、竹圍漁港，和漁民朋友齊聚一堂，共同歡慶漁民節！\n\n我的阿公以賣魚維生，所以我對漁業的辛勞與困境感同身受，也一直關心沿海鄉親的生活與發展。\n\n我的主視覺，其實就是家鄉海面上的夕照🌅這不僅是最美麗的家鄉意象，更代表著世杰想從家鄉出發、翻轉桃園的決心！\n\n點亮沿海、守護漁民朋友、展現桃園海岸魅力，一起讓「心桃園，動起來」💖",
       "topicScores": {
-        "競選": 1.0
+        "文化觀光": 0.55,
+        "生活": 0.72,
+        "經濟": 0.51
       },
       "topics": [
-        "競選"
+        "生活",
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "節快樂",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DaP_U7Ty966/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8ac251fc37e457c75fed167d3fb6ad97ae7d68de2cb9b0655e664d6d2f59adb6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1535464418028091",
       "imageAspect": 0.5625,
@@ -2572,42 +2053,37 @@
       "keywords": [
         "主視覺"
       ],
+      "nature": {
+        "confidence": 0.78,
+        "label": "活動／行程",
+        "reason": "主要是漁民節活動與漁港走訪，並帶到競選意象與沿海發展。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T12:11:28.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "祝福全天下最辛勞的漁民朋友，漁民節快樂🌊\n\n世杰來到熟悉的永安漁港、竹圍漁港，和漁民朋友齊聚一堂，共同歡慶漁民節！\n\n我的阿公以賣魚維生，所以我對漁業的辛勞與困境感同身受，也一直關心沿海鄉親的生活與發展。\n\n我的主視覺，其實就是家鄉海面上的夕照🌅這不僅是最美麗的家鄉意象，更代表著世杰想從家鄉出發、翻轉桃園的決心！\n\n點亮沿海、守護漁民朋友、展現桃園海岸魅力，一起讓「心桃園，動起來」💖",
       "topicScores": {
-        "競選": 1.0
+        "文化觀光": 0.62,
+        "競選": 0.82,
+        "經濟": 0.44
       },
       "topics": [
-        "競選"
+        "競選",
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "節快樂",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/reel/1466515325247139/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "競選"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.93,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a54bd695989bf9f43d0761dc3ba7514bd485cf284b7eaea1fd7dec81f9b51996",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaK9mQLBMOY/",
       "imageAspect": 0.5626,
@@ -2616,42 +2092,33 @@
         "競選",
         "主視覺"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "競選／動員",
+        "reason": "直接公布競選主軸與主視覺，屬明確選舉宣傳。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-29T13:23:12+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "今天公布「心桃園 動起來」競選主軸跟主視覺！\n\n未來，桃園隊將攜手打造，讓市民感到幸福、驕傲的心動桃園💖\n\n我特別準備了手翻書，是跑起來的世杰！大家覺得怎麼樣？",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.99
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaK9mQLBMOY/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "競選"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.94,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3461c9caefa71f573525ef44e4732ac02fd40d8a8f6da241569da32cd944c952",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1533746388199894",
       "imageAspect": 0.5625,
@@ -2660,47 +2127,33 @@
         "競選",
         "主視覺"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "競選／動員",
+        "reason": "直接公布競選主軸與主視覺，屬明確選戰動員內容。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-29T13:22:14.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "今天公布「心桃園 動起來」競選主軸跟主視覺！\n\n未來，桃園隊將攜手打造，讓市民感到幸福、驕傲的心動桃園💖\n\n我特別準備了手翻書，是跑起來的世杰！大家覺得怎麼樣？",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.98
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/2020384041910098/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "競選"
-        ],
-        "policy_proposal": [
-          "政見"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.92,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "65a2d50d6b0103214591a8211f3017142b8f07e085071f8287818aa0db14a79d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaKAXqtk3Xq/",
       "imageAspect": 1.0,
@@ -2710,47 +2163,33 @@
         "選戰",
         "主視覺"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "競選／動員",
+        "reason": "正式宣布競選主視覺並號召支持，屬選戰動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-29T04:26:37+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "心桃園 動起來 💖 𝟮𝟬𝟮𝟲 讓我來！\n\n今天，我正式宣布競選主視覺，桃園的群山、稻田、海洋、天空，交織成美麗的綠藍色，代表這塊土地的生命力，也象徵多元族群共榮的遼闊胸襟，我們要帶領城市走向國際，讓世界看見桃園無可限量的活力。\n\n每日緩緩灑落的粉橘色，是傍晚最溫柔的暖陽，代表我們炙熱的真心，以及對這片土地的承諾。我們心繫桃園、踏實耕耘，讓暖陽照亮城市每個角落。\n\n我是土生土長的桃園子弟，我期待，這座城市會因為我們的團結與努力，開始發生改變。我們有能力、也有責任，為下一代創造更美好的生活，更值得期待的未來！\n\n今天，站在我身邊的，是一群最認真、最熱血、最深耕基層的桃園隊夥伴。我們有理想、有經驗、有衝勁，更有對桃園毫無保留的愛。\n\n自從投入選戰以來，感謝所有桃園隊夥伴們，提供非常多重要意見。未來，我們將陸續推出各項重要政見，展現我們守護家鄉的決心。\n\n心桃園、動起來，我們一起找回心動的桃園！",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.99
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DaKAXqtk3Xq/"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "競選"
-        ],
-        "policy_proposal": [
-          "政見"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.95,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "6982ddead87eb1f789e87f71421f929b67fe1d6dc4d0290f2430f49da2798009",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1533414751566391",
       "imageAspect": 1.0,
@@ -2760,317 +2199,250 @@
         "選戰",
         "主視覺"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "整篇在宣布競選主視覺並鋪陳選戰理念與政見。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-29T04:24:00.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "心桃園 動起來 💖 𝟮𝟬𝟮𝟲 讓我來！\n\n今天，我正式宣布競選主視覺，桃園的群山、稻田、海洋、天空，交織成美麗的綠藍色，代表這塊土地的生命力，也象徵多元族群共榮的遼闊胸襟，我們要帶領城市走向國際，讓世界看見桃園無可限量的活力。\n\n每日緩緩灑落的粉橘色，是傍晚最溫柔的暖陽，代表我們炙熱的真心，以及對這片土地的承諾。我們心繫桃園、踏實耕耘，讓暖陽照亮城市每個角落。\n\n我是土生土長的桃園子弟，我期待，這座城市會因為我們的團結與努力，開始發生改變。我們有能力、也有責任，為下一代創造更美好的生活，更值得期待的未來！\n\n今天，站在我身邊的，是一群最認真、最熱血、最深耕基層的桃園隊夥伴。我們有理想、有經驗、有衝勁，更有對桃園毫無保留的愛。\n\n自從投入選戰以來，感謝所有桃園隊夥伴們，提供非常多重要意見。未來，我們將陸續推出各項重要政見，展現我們守護家鄉的決心。\n\n心桃園、動起來，我們一起找回心動的桃園！",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.99
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0YigBhaE26gFC9y8mf6c63YFxXjRLEnx65cwsDvRA4BHHc9xiDkyVtW6FD54Hqh2Bl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.01,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "54cf132e1883886c9e3959d2711b5ee14e4a306ae6b02f075951dc982af1fc51",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1533324994908700",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/8f5c5c9e947076e8288c.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.99,
+        "label": "個人／日常",
+        "reason": "內容空白，無法辨識公共議題，僅視為生活類。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-29T01:42:20.000Z",
       "sourceId": "huang-sj-fb",
-      "targets": [],
       "text": "",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/SCHuangLawyer/posts/1488376992600847:1488376992600847"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "政見"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.62,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a40e4ec148c0462d088079e4929048220372c6a3a8463c30f50641684c79f262",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaIemCDk3_e/",
       "imageAspect": 1.3348,
       "imageUrl": "assets/feed-images/102236e7031cf44bcd7c.webp",
-      "keywords": [
-        "敬老"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "競選／動員",
+        "reason": "回應地方行程與政見回饋，核心仍是選舉訴求與催票。",
+        "type": "campaign_mobilization"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-28T14:14:46+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "這幾天跑地方行程，收到很多市民朋友對愛心敬老政見的回饋，感謝大家的鼓勵與意見！\n\n讓桃園更好、讓家鄉持續進步，是我們共同的心願。\n\n我會持續深耕基層，用新世代的創意跟行動力，為桃園注入新活力。讓我們攜手努力，一起拚出桃園的新時代💪",
       "topicScores": {
-        "社福": 1.0
+        "競選": 0.95
       },
       "topics": [
-        "社福"
+        "競選"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.instagram.com/p/DaIemCDk3_e/"
     },
     {
-      "actionEvidence": {
-        "criticism": [
-          "質疑"
-        ]
-      },
-      "actionLabels": [
-        "批評究責"
-      ],
-      "actions": [
-        "criticism"
-      ],
+      "agendaRelevance": 0.2,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "6bf18740b3538c52cfb034f40343b56eb8951d8be3650dfaee8e0ab198903fce",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaH0fOhzOIo/",
       "imageAspect": 0.5634,
       "imageUrl": "assets/feed-images/3682d0a5319e9a30f1bd.webp",
       "keywords": [
-        "文化",
-        "大雨"
+        "文化"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "批評／究責",
+        "reason": "批評市府辦活動失誤與卸責，重點在究責而非政策。",
+        "type": "criticism_accountability"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-28T08:06:12+00:00",
       "sourceId": "huang-sj-ig",
-      "targets": [],
       "text": "東京佼成管樂團受邀來桃園，在大雨中登台演出，連基本雨備都沒有。\n\n「什麼時候會知道桃園市政府有辦活動？搞砸了被罵的時候」，有網友這樣評價張善政領導的市府。\n\n這三年多來，每當面對市民質疑，市府第一時間不是檢討，而是使出「慣用卸責四步驟」，一概否認到底、認錯叫基層扛、拉前朝來救援、找側翼帶風向。\n\n直到丟臉丟到國外、樂手表達不滿，文化局才公開道歉。這更是張市府三年多來，首次為主辦活動出包公開致歉。",
       "topicScores": {
-        "文化觀光": 0.5,
-        "防災": 0.5
+        "文化觀光": 0.74,
+        "議會監督": 0.66
       },
       "topics": [
         "文化觀光",
-        "防災"
+        "議會監督"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "大雨",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaH0fOhzOIo/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "867eba75b5454dfe14204b0233b2727a979a35c167273e8b07be5975f2d7f05a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:yvtfQTqDXCU",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/7e2e14e350d8a36679ab.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.9,
+        "label": "其他",
+        "reason": "內容無法辨識為公共議題，僅見零散文字。",
+        "type": "other"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "huang-sj-yt",
-      "targets": [],
       "text": "超級英雄1 23A",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.96
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=yvtfQTqDXCU"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "68acdf6c839f3570616e29b7c955d7b6b69df499ff1a2690f5388e875deafb1a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:FCOjSVYfddI",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/dbb4884a0b719cc23d49.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.95,
+        "label": "其他",
+        "reason": "遊戲攻略內容，與公共議題無關。",
+        "type": "other"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "huang-sj-yt",
-      "targets": [],
       "text": "FFXV 三鐘經無腦打法",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.97
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=FCOjSVYfddI"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ab17b070b8d0c24e90d7bb9251e0524b967a882ccaf7a05881ddcbc42303e428",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:GnieeaSDAsM",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/0e5143e2bd2fa0ecc322.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "其他",
+        "reason": "僅有日期文字，無可判斷公共議題。",
+        "type": "other"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "huang-sj-yt",
-      "targets": [],
       "text": "2月 11日, 2008年",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=GnieeaSDAsM"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "50c22e9536e28a6480833ce2f79d2c7028f84af246ea510e04b1710df40c1e3d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:BiVk1Lu5YK4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/5525730cd9b40b6d6c2f.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.95,
+        "label": "個人／日常",
+        "reason": "僅是影片標題，未顯示任何公共議題。",
+        "type": "personal_content"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "huang-sj-yt",
-      "targets": [],
       "text": "我的影片",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=BiVk1Lu5YK4"
     }
   ],

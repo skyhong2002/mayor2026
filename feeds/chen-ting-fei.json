@@ -2,357 +2,278 @@
   "count": 86,
   "posts": [
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出",
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.93,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "95ce3b7f7f2739c674c5d3dc489c55eec485efd2b5e291067612b2077e81c433",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Daw5oVTE6dy",
       "imageAspect": 1.3284,
       "imageUrl": "assets/feed-images/3efab9e16aaac7a9c5e5.webp",
       "keywords": [
         "豪雨",
-        "淹水",
-        "治水"
+        "淹水"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "要求檢測排水並改善淹水，屬明確治水與行政處理。",
+        "type": "administrative_update"
+      },
       "platform": "threads",
       "postedAt": "2026-07-14T06:58:04+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【草湖寮重劃區排水問題不能拖！要求一週內全面檢測、找出淹水源頭】\n　　　　\n亭妃接獲梅花里長林思萍、鳳凰里長施文瑞反映，安南區草湖寮重劃區每逢豪雨就排水不良，不僅重劃區內積水，更影響周邊梅花里、鳳凰里及大安里的居民。\n　　　　　　\n我立即邀集台南市政府水利局、工務局、地政局及安南區公所辦理現地會勘，並與地方里長一同關心地方需求，要求相關單位 一週內完成排水系統全面檢測，找出問題根源。\n　　　　　　　\n✅ 全面檢測排水系統，釐清是否有設計缺失、排水瓶頸、箱涵未貫通或高低差配置不當等問題。\n✅ 針對檢測結果提出具體改善方案，從源頭解決積淹水問題。\n✅ 避免未來重劃區持續開發後，不透水面積增加，讓淹水風險更加惡化。\n　　　　　　　\n治水不能等，更不能等到淹水才補救。我會持續督促中央與地方共同合作，找出問題、徹底改善，讓鄉親不再為豪雨淹水所苦。\n　　　　　　　　\n#陳亭妃 #安南區 #草湖寮重劃區 #治水 #排水改善",
       "topicScores": {
-        "環境": 0.2222,
-        "防災": 0.7778
+        "住宅": 0.72,
+        "議會監督": 0.58,
+        "防災": 0.98
       },
       "topics": [
         "防災",
-        "環境"
+        "住宅",
+        "議會監督"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/Daw5oVTE6dy"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出",
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.72,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b09477a194cfc3aa7add5bd36c5067a39b08e242b21a27fb227248cd8df850a2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1592684905552765",
       "imageAspect": 1.3288,
       "imageUrl": "assets/feed-images/799b40363a63666b3480.webp",
       "keywords": [
         "豪雨",
-        "淹水",
-        "治水"
+        "淹水"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "針對重劃區排水積淹水要求檢測改善，屬治水行政追蹤。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-14T06:58:02.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【草湖寮重劃區排水問題不能拖！要求一週內全面檢測、找出淹水源頭】\n　　　　\n亭妃接獲梅花里長林思萍、鳳凰里長施文瑞反映，安南區草湖寮重劃區每逢豪雨就排水不良，不僅重劃區內積水，更影響周邊梅花里、鳳凰里及大安里的居民。\n　　　　　　\n我立即邀集台南市政府水利局、工務局、地政局及安南區公所辦理現地會勘，並與地方里長一同關心地方需求，要求相關單位 一週內完成排水系統全面檢測，找出問題根源。\n　　　　　　　\n✅ 全面檢測排水系統，釐清是否有設計缺失、排水瓶頸、箱涵未貫通或高低差配置不當等問題。\n✅ 針對檢測結果提出具體改善方案，從源頭解決積淹水問題。\n✅ 避免未來重劃區持續開發後，不透水面積增加，讓淹水風險更加惡化。\n　　　　　　　\n治水不能等，更不能等到淹水才補救。我會持續督促中央與地方共同合作，找出問題、徹底改善，讓鄉親不再為豪雨淹水所苦。\n　　　　　　　　\n#陳亭妃 #安南區 #草湖寮重劃區 #治水 #排水改善",
       "topicScores": {
-        "環境": 0.2222,
-        "防災": 0.7778
+        "交通": 0.56,
+        "住宅": 0.74,
+        "防災": 0.97
       },
       "topics": [
         "防災",
-        "環境"
+        "住宅",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid024AqTw654xxZDUy3igpksXvU41MwLB5gwjnC1ZEhhajM2Ek799pQtbhkMhJtPhvEVl"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "提出",
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.62,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f273dd4c068f4a5c775237933a4f3264f959db3af8b24da0c0dc645b39a769e3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Daw5nRak9r4/",
       "imageAspect": 1.3284,
       "imageUrl": "assets/feed-images/b519d794933e1bb34e5c.webp",
       "keywords": [
+        "治水",
         "豪雨",
-        "淹水",
-        "治水"
+        "淹水"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "施政成果／行政進度",
+        "reason": "聚焦重劃區淹水與排水改善，屬地方治水進度。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-14T06:57:57+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【草湖寮重劃區排水問題不能拖！要求一週內全面檢測、找出淹水源頭】\n　　　　\n亭妃接獲梅花里長林思萍、鳳凰里長施文瑞反映，安南區草湖寮重劃區每逢豪雨就排水不良，不僅重劃區內積水，更影響周邊梅花里、鳳凰里及大安里的居民。\n　　　　　　\n我立即邀集台南市政府水利局、工務局、地政局及安南區公所辦理現地會勘，並與地方里長一同關心地方需求，要求相關單位 一週內完成排水系統全面檢測，找出問題根源。\n　　　　　　　\n✅ 全面檢測排水系統，釐清是否有設計缺失、排水瓶頸、箱涵未貫通或高低差配置不當等問題。\n✅ 針對檢測結果提出具體改善方案，從源頭解決積淹水問題。\n✅ 避免未來重劃區持續開發後，不透水面積增加，讓淹水風險更加惡化。\n　　　　　　　\n治水不能等，更不能等到淹水才補救。我會持續督促中央與地方共同合作，找出問題、徹底改善，讓鄉親不再為豪雨淹水所苦。\n　　　　　　　　\n#陳亭妃 #安南區 #草湖寮重劃區 #治水 #排水改善",
       "topicScores": {
-        "環境": 0.2222,
-        "防災": 0.7778
+        "住宅": 0.72,
+        "環境": 0.94,
+        "防災": 0.92
       },
       "topics": [
+        "環境",
         "防災",
-        "環境"
+        "住宅"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/Daw5nRak9r4/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c10eb3bf131e27d86b81cf0d134a25ce265b067b2970600782137d1e0c21b19c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DasFEepE1Mz",
       "imageAspect": 1.7763,
       "imageUrl": "assets/feed-images/3875479de468220864e4.webp",
       "keywords": [
         "文化",
-        "美食",
-        "參選"
+        "美食"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "活動／行程",
+        "reason": "主要是在出席辦桌宴活動並宣揚台南飲食文化。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-12T10:01:50+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:2026十二生肖滿吉宴，品味台南、傳承辦桌文化！ 🍽️\n\n亭妃很開心受邀參加由總舖師盧正治舉辦的「2026十二生肖滿吉宴」，現場王定宇委員、陳皇宇議員、許又仁議員參選人、老同事陳柏惟都一起來熱鬧開桌，一道道充滿巧思的辦桌料理，不僅展現總舖師的精湛手藝，更把台南深厚的飲食文化與人情味完整呈現。\n\n台南不只是美食之都，更是一座擁有豐富文化底蘊的城市。辦桌文化承載著世代傳承的情感與記憶，每一道佳餚都是對土地的熱愛，也是台南最珍貴的文化資產。\n\n期待未來一起努力，讓台南的美食、美學與文化持續發光發熱，走向國際。\n\n#台南美食之都\n#辦桌文化\n#十二生肖滿吉宴\n#總舖師盧正治\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 0.9091,
-        "競選": 0.0909
+        "文化觀光": 0.96
       },
       "topics": [
-        "文化觀光",
-        "競選"
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/DasFEepE1Mz"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "競選"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c7ea834e53a65f8759ffc6f07a4b859e75ae99b71c1b2d8c0d6f67e4f4df8a4e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1591165839038005",
       "imageAspect": 1.7771,
       "imageUrl": "assets/feed-images/012876db88ea5911d8e6.webp",
       "keywords": [
         "文化",
-        "美食",
-        "競選",
-        "參選"
+        "美食"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "活動／行程",
+        "reason": "內容為出席辦桌宴活動並推廣台南飲食文化。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-12T10:01:47.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "2026十二生肖滿吉宴，品味台南、傳承辦桌文化！ 🍽️\n\n亭妃很開心受邀參加由總舖師盧正治舉辦的「2026十二生肖滿吉宴」，現場 王定宇  委員、 #陳皇宇 議員、 許又仁競選總部  議員參選人、老同事 #陳柏惟 都一起來熱鬧開桌，一道道充滿巧思的辦桌料理，不僅展現總舖師的精湛手藝，更把台南深厚的飲食文化與人情味完整呈現。\n\n台南不只是美食之都，更是一座擁有豐富文化底蘊的城市。辦桌文化承載著世代傳承的情感與記憶，每一道佳餚都是對土地的熱愛，也是台南最珍貴的文化資產。\n\n期待未來一起努力，讓台南的美食、美學與文化持續發光發熱，走向國際。\n\n#台南美食之都\n#辦桌文化\n#十二生肖滿吉宴\n#總舖師盧正治\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 0.8333,
-        "競選": 0.1667
+        "文化觀光": 0.96,
+        "生活": 0.78
       },
       "topics": [
         "文化觀光",
-        "競選"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid069Q7Q9Kv6Ymi1X5YKBddLPzPc7HjawTawtQATF96deFoYMKxSVmQVM25DWqfnXAxl"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.33,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b5fdf9cd2a92ff737ce21ac18ecf88e5ec1111cacf8e04861642fa907756287e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DasFDMwE-e5/",
       "imageAspect": 1.7763,
       "imageUrl": "assets/feed-images/1e2dec3d5b6d777c982b.webp",
       "keywords": [
         "文化",
-        "美食",
-        "參選"
+        "美食"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "出席辦桌宴活動，重點在文化飲食與地方特色。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-12T10:01:41+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "2026十二生肖滿吉宴，品味台南、傳承辦桌文化！ 🍽️\n\n亭妃很開心受邀參加由總舖師盧正治舉辦的「2026十二生肖滿吉宴」，現場王定宇委員、陳皇宇議員、許又仁議員參選人、老同事陳柏惟都一起來熱鬧開桌，一道道充滿巧思的辦桌料理，不僅展現總舖師的精湛手藝，更把台南深厚的飲食文化與人情味完整呈現。\n\n台南不只是美食之都，更是一座擁有豐富文化底蘊的城市。辦桌文化承載著世代傳承的情感與記憶，每一道佳餚都是對土地的熱愛，也是台南最珍貴的文化資產。\n\n期待未來一起努力，讓台南的美食、美學與文化持續發光發熱，走向國際。\n\n#台南美食之都\n#辦桌文化\n#十二生肖滿吉宴\n#總舖師盧正治\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 0.9091,
-        "競選": 0.0909
+        "文化觀光": 0.97,
+        "生活": 0.58
       },
       "topics": [
         "文化觀光",
-        "競選"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DasFDMwE-e5/"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "請注意",
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.75,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3232474fa28414afca103c1585cedd42d109c8007b4df458470146d87dd75672",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DapmVgDT-4Q/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/45bbecc2535f6ca5d5eb.webp",
       "keywords": [
         "垃圾",
-        "資源回收",
-        "颱風"
+        "資源回收"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "提供颱風期間垃圾收運異動資訊，屬市民服務公告。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-11T10:55:17+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【妃妃提醒｜7/12（日）臺南垃圾收運資訊】\n\n受到颱風影響，為避免市民朋友連續3天無法倒垃圾，臺南市環保局明天（7/12）安排 22個行政區加班收運一般垃圾，不收資源回收，請大家留意各區收運時間。\n\n✅ 加班收運22區： 北區、東區、南區、大內、山上、中西、仁德、左鎮、永康、玉井、安平、安南、官田、南化、後壁、麻豆、新化、楠西、龍崎、歸仁、關廟、鹽水。\n\n❌ 其餘15區暫停收運。\n\n請鄉親朋友把握收運時間。風雨雖然逐漸趨緩，外出仍請注意安全，也請持續留意市府最新公告。\n\n#陳亭妃 #妃妃提醒 #垃圾收運 #防颱 #臺南",
       "topicScores": {
-        "環境": 0.8333,
-        "防災": 0.1667
+        "環境": 0.84,
+        "生活": 0.9
       },
       "topics": [
-        "環境",
-        "防災"
+        "生活",
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DapmVgDT-4Q/"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "請注意",
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.09,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b082dc9e888318c348784a75282abcfaa2dc5c3ce41814bd46da7b630e3ab7ff",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DapmWmYE3rt",
       "imageAspect": 1.0,
@@ -362,92 +283,74 @@
         "資源回收",
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告颱風後垃圾收運安排，屬市政資訊提醒。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-11T10:54:57+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【妃妃提醒｜7/12（日）臺南垃圾收運資訊】\n\n受到颱風影響，為避免市民朋友連續3天無法倒垃圾，臺南市環保局明天（7/12）安排 22個行政區加班收運一般垃圾，不收資源回收，請大家留意各區收運時間。\n\n✅ 加班收運22區： 北區、東區、南區、大內、山上、中西、仁德、左鎮、永康、玉井、安平、安南、官田、南化、後壁、麻豆、新化、楠西、龍崎、歸仁、關廟、鹽水。\n\n❌ 其餘15區暫停收運。\n\n請鄉親朋友把握收運時間。風雨雖然逐漸趨緩，外出仍請注意安全，也請持續留意市府最新公告。\n\n#陳亭妃 #妃妃提醒 #垃圾收運 #防颱 #臺南",
       "topicScores": {
-        "環境": 0.8333,
-        "防災": 0.1667
+        "環境": 0.88,
+        "生活": 0.95,
+        "防災": 0.86
       },
       "topics": [
+        "生活",
         "環境",
         "防災"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DapmWmYE3rt"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "請注意",
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1121a50b2aa6a9efd57112c246aaf75ed17fc60377f607d4152a96c75e128cc5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1590379422449980",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/fffeba603b38ec216877.webp",
       "keywords": [
         "垃圾",
-        "資源回收",
-        "颱風"
+        "資源回收"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告颱風後垃圾收運安排，屬市政資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-11T10:54:56.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【妃妃提醒｜7/12（日）臺南垃圾收運資訊】\n\n受到颱風影響，為避免市民朋友連續3天無法倒垃圾，臺南市環保局明天（7/12）安排 22個行政區加班收運一般垃圾，不收資源回收，請大家留意各區收運時間。\n\n✅ 加班收運22區： 北區、東區、南區、大內、山上、中西、仁德、左鎮、永康、玉井、安平、安南、官田、南化、後壁、麻豆、新化、楠西、龍崎、歸仁、關廟、鹽水。\n\n❌ 其餘15區暫停收運。\n\n請鄉親朋友把握收運時間。風雨雖然逐漸趨緩，外出仍請注意安全，也請持續留意市府最新公告。\n\n#陳亭妃 #妃妃提醒 #垃圾收運 #防颱 #臺南",
       "topicScores": {
-        "環境": 0.8333,
-        "防災": 0.1667
+        "環境": 0.78,
+        "生活": 0.86
       },
       "topics": [
-        "環境",
-        "防災"
+        "生活",
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02dnLyWSZjcKupxqScConWADZ5nqghEPrcvUsepnuUCkkzy2XmYU6SGdsgChyz6cnFl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "44c148b0f741d7a03cd8bde2e8013ea62ba8369ff796e70c017d433a8c638965",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Dao3nCWzHkU/",
       "imageAspect": 1.3333,
@@ -456,42 +359,35 @@
         "颱風",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "資訊公告／服務提醒",
+        "reason": "只是回報颱風現況並提醒注意防災，非政策主張。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-11T04:06:58+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "大家還好嗎？亭妃早上6:30出門到現在，目前台南的狀況還OK，但是防災絕對不能掉以輕心喔！\n\n#巴威颱風 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.66,
+        "防災": 0.98
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/Dao3nCWzHkU/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.03,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0a9a4bb3546618c4ae475da85448a4dbdbf95d07aea841436b88e9162037b2f2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dao3n75kxeH",
       "imageAspect": 1.3333,
@@ -500,42 +396,33 @@
         "颱風",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "資訊公告／服務提醒",
+        "reason": "內容是颱風期間的平安關懷與防災提醒。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-11T04:06:37+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:大家還好嗎？亭妃早上6:30出門到現在，目前台南的狀況還OK，但是防災絕對不能掉以輕心喔！\n\n#巴威颱風 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "防災": 0.97
       },
       "topics": [
         "防災"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/Dao3n75kxeH"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "4181162897a8455e1f02add9f64c5d2b09f1dae5844c879a8d9e77cb06df955a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1590156102472312",
       "imageAspect": 1.3333,
@@ -544,43 +431,35 @@
         "颱風",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "資訊公告／服務提醒",
+        "reason": "僅報告台南現況並提醒持續防災。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-11T04:06:36.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "大家還好嗎？亭妃早上6:30出門到現在，目前台南的狀況還OK，但是防災絕對不能掉以輕心喔！\n\n#巴威颱風 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.74,
+        "防災": 0.98
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0MmjSzNxF7hjXRkfG1GaHYRQz8xfs2Zd1xfnJRcrHXrST1jSrS8Cpexmw9hzps9v6l"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒",
-          "停班停課"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "022c31a219dfe0e5e17bdac150d5760cd21a27daf9d5c4d950360f9afb34cff1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Dam3lgKznNK/",
       "imageAspect": 1.0,
@@ -590,43 +469,35 @@
         "防災",
         "停班停課"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "與前述相同，屬停班停課及防颱資訊公告。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-10T09:28:25+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.65,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、停班停課、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/Dam3lgKznNK/"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒",
-          "停班停課"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "72c2c50c2ce8f277e7afaab1766768974c24af57f49fe1c6889d531ac29987d5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dam3mhBkxh8",
       "imageAspect": 1.0,
@@ -636,43 +507,35 @@
         "防災",
         "停班停課"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "發布停班停課與防颱提醒，屬災害資訊公告，非政策主張。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-10T09:27:57+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.68,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、停班停課、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/Dam3mhBkxh8"
     },
     {
-      "actionEvidence": {
-        "public_information": [
-          "提醒",
-          "停班停課"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達"
-      ],
-      "actions": [
-        "public_information"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "13a23005a078a3edaed9ebcda7b73dd00dc6cdc2a86221484cc30f6bcf812773",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1589519105869345",
       "imageAspect": 1.0,
@@ -682,42 +545,35 @@
         "防災",
         "停班停課"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "宣布停班停課並提醒防颱，屬防災公告而非政策主張。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-10T09:27:55.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【台南7/11（六）停止上班、停止上課】\n　　　　\n根據中央氣象署發布的中度颱風巴威警報及風力預報，今晚起至明（7/11）日，台南沿海地區最大陣風將達9至10級，已達停班停課標準。為維護市民朋友安全，台南市政府宣布 7月11日（星期六）停止上班、停止上課。\n　　　　　　　　　\n提醒所有鄉親，今晚開始風雨將逐漸增強，請務必提前完成防颱準備，減少非必要外出，並將住家周邊容易被強風吹落的物品妥善固定或收置，持續留意中央氣象署及台南市政府最新防災資訊。\n　　　　　\n🙏 平安最重要，祝福大家都能平安度過這次颱風。\n　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.91,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、停班停課、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0gdafAJNufdkPi5QoUTLjappdzBGKS1VhymiNmwya9NNrkQ5NcTpDtHEzgAjQLGFml"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8e6ffce73960071f609b0881f7bea11a84f47ee5131ff16a71de9650172dea4c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DamvfAoTCCd/",
       "imageAspect": 1.0,
@@ -726,42 +582,35 @@
         "颱風",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "重點是颱風警報下的防災提醒與資訊公告。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-10T08:17:31+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【巴威颱風陸警發布｜今晚6點後風雨將明顯增強】\n　　　　\n中央氣象署已發布巴威颱風陸上颱風警報，預估今晚6點後風雨將逐漸增強，請大家務必提高警覺，提前完成各項防颱準備。\n　　　　　　\n✅ 固定招牌、盆栽及戶外易掉落物品\n✅ 檢查門窗、排水溝是否暢通\n✅ 備妥飲水、乾糧、手電筒及常備藥品\n✅ 非必要請減少外出，避免前往海邊、河川及山區\n✅ 持續留意中央氣象署及市府最新防颱資訊\n　　　　\n亭妃也會持續關注颱風動態，與中央及市府保持密切聯繫，掌握各項防災應變工作。\n　　　　\n防颱多一分準備，就少一分風險。🙏💪\n　　　　　　　\n#陳亭妃 #台南 #巴威颱風 #防颱準備 #平安第一",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.64,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DamvfAoTCCd/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.07,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "be85096e07681522f5114402ddad52e32c57af190c33e689d02008cf52e3b43d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DamvgJTk17N",
       "imageAspect": 1.0,
@@ -770,189 +619,137 @@
         "颱風",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "重點在颱風警報與防颱措施提醒，屬防災公告。",
+        "type": "public_information"
+      },
       "platform": "threads",
       "postedAt": "2026-07-10T08:17:11+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【巴威颱風陸警發布｜今晚6點後風雨將明顯增強】\n　　　　\n中央氣象署已發布巴威颱風陸上颱風警報，預估今晚6點後風雨將逐漸增強，請大家務必提高警覺，提前完成各項防颱準備。\n　　　　　　\n✅ 固定招牌、盆栽及戶外易掉落物品\n✅ 檢查門窗、排水溝是否暢通\n✅ 備妥飲水、乾糧、手電筒及常備藥品\n✅ 非必要請減少外出，避免前往海邊、河川及山區\n✅ 持續留意中央氣象署及市府最新防颱資訊\n　　　　\n亭妃也會持續關注颱風動態，與中央及市府保持密切聯繫，掌握各項防災應變工作。\n　　　　\n防颱多一分準備，就少一分風險。🙏💪\n　　　　　　　\n#陳亭妃 #台南 #巴威颱風 #防颱準備 #平安第一",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.66,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DamvgJTk17N"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0819cce54e5b57763dd7bc354e2cb246179313789b49729224a6f004326e622e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DakTK96k3V0",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/b07e69850b9e3045d465.webp",
-      "keywords": [
-        "商圈",
-        "美食",
-        "監督"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.78,
+        "label": "立場表態",
+        "reason": "聚焦食安與守護健康，主軸是立場表態與宣示。",
+        "type": "position_statement"
+      },
       "platform": "threads",
       "postedAt": "2026-07-09T09:31:07+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "經濟": 0.3333,
-        "議會監督": 0.3333
+        "生活": 0.8,
+        "醫療": 0.87
       },
       "topics": [
-        "經濟",
-        "文化觀光",
-        "議會監督"
+        "醫療",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DakTK96k3V0"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.21,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3ff039e8fb38b8f09523442627f0530a8901f260f8f5bf17333725cfb40d8d6b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1588706815950574",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/dde13aaec766c381fc7c.webp",
-      "keywords": [
-        "商圈",
-        "美食",
-        "監督"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.85,
+        "label": "活動／行程",
+        "reason": "參與食安宣示活動，重點是活動紀錄與表態。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T09:31:05.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "經濟": 0.3333,
-        "議會監督": 0.3333
+        "生活": 0.58,
+        "社福": 0.62
       },
       "topics": [
-        "經濟",
-        "文化觀光",
-        "議會監督"
+        "社福",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02396YN42qwqMAuYaujWvT2w1kBJJoA3qFVsEFVkF4XDbajXx7BdRpqKLMd2Q4RyiYl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "69f584cc1982f8f59f0b4b54ba2131e4c6092393caf07eafc53d7877aa3b5765",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DakTJpsE2wT/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/ed3cd07fd63819d77f5f.webp",
-      "keywords": [
-        "商圈",
-        "美食",
-        "監督"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.86,
+        "label": "活動／行程",
+        "reason": "參與食安宣示活動並見證簽署，重點在活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-09T09:30:59+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【食安沒有妥協的空間，守護市民健康是最重要的責任】\n　　　　\n食品安全，是每一位市民最關心的事，更是政府責無旁貸的使命。\n　　　　　\n因應中聯大豆沙拉油苯駢芘超標事件，亭妃今天參與了由台南市長黃偉哲所主持的「堅守全民食用安全，落實食品自主管理」宣示活動，見證食品相關公協會、餐飲業者、商圈及食品通路共同簽署「不提供、不使用問題批號油品及其加工製品」自主管理宣言，從源頭把關，共同守護市民食安。\n　　　　　　　　\n唯有政府積極稽查、業者落實自主管理、全民共同監督，才能建立讓消費者安心的食品安全防線。\n　　　　　　　\n台南是必比登美食區，也是小吃最受歡迎的地方，我們一定要大家協力合作共同強化食品追溯、流向管理及查核機制，因為食安沒有僥倖，更不允許有任何漏洞，守護大家的健康，是中央與地方共同的責任。\n　　　　　　　\n#陳亭妃 #食安把關 #食品安全 #守護市民健康 #台南安心吃",
       "topicScores": {
-        "文化觀光": 0.3333,
-        "經濟": 0.3333,
-        "議會監督": 0.3333
+        "生活": 0.58,
+        "社福": 0.62
       },
       "topics": [
-        "經濟",
-        "文化觀光",
-        "議會監督"
+        "社福",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DakTJpsE2wT/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.78,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cdb1f3c0eaa7092517d220a70afcffa9e29580fdef5cd743dae6bc27debf181b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DakBUKNE0Rq/",
       "imageAspect": 1.5,
@@ -961,47 +758,37 @@
         "交通",
         "公車",
         "道路",
-        "通勤",
-        "長輩"
+        "通勤"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "介紹小黃公車上線與公共運輸擴充，屬具體施政主張。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-09T06:55:40+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
-        "交通": 0.8889,
-        "社福": 0.1111
+        "交通": 0.98,
+        "生活": 0.7
       },
       "topics": [
         "交通",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DakBUKNE0Rq/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.71,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ca8739ab430a3822fba71e68d4ab7d3f1de893f4217fd8555b2b73d5ded455dd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DakBVmukzl9",
       "imageAspect": 1.5,
@@ -1013,44 +800,37 @@
         "通勤",
         "長輩"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "施政成果／行政進度",
+        "reason": "報告小黃公車上線與公共運輸改善，屬施政成果。",
+        "type": "administrative_update"
+      },
       "platform": "threads",
       "postedAt": "2026-07-09T06:55:17+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
-        "交通": 0.8889,
-        "社福": 0.1111
+        "交通": 0.96,
+        "教育": 0.68,
+        "社福": 0.72
       },
       "topics": [
         "交通",
-        "社福"
+        "社福",
+        "教育"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DakBVmukzl9"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "日常"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.79,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "dca36fe4786b3069015c67750688f425683597a02eca72659ba62c77047a5fa6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1588623655958890",
       "imageAspect": 1.5013,
@@ -1059,47 +839,37 @@
         "交通",
         "公車",
         "道路",
-        "通勤",
-        "長輩"
+        "通勤"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "介紹小黃公車上線成果，屬交通施政進度說明。",
+        "type": "administrative_update"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-09T06:55:15.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【綠33、綠34正式上線！完善大台南公共運輸，讓幸福更靠近！🚌】\n　　　　\n交通建設，不只是道路，更是每一位市民生活便利的重要基礎。\n　　　　　\n今天很高興出席「大台南小黃公車綠33、綠34上線記者會」，見證台南公共運輸再向前邁進一步！綠33、綠34正式上路後，將串聯更多生活聚落，讓長輩就醫、學生通學、鄉親採買及日常通勤更加便利，以公車票價享有計程車等級的貼心服務，持續補足偏鄉公共運輸最後一哩路。\n　　　　　\n未來，我也會持續爭取中央與地方資源，推動更完整的交通路網，讓台南的公共運輸更便利、更友善、更有溫度，打造真正宜居、宜行的幸福城市。\n　　　　　　\n#大台南小黃公車\n#綠33綠34正式上線\n#完善公共運輸\n#交通建設\n#台南向前行",
       "topicScores": {
-        "交通": 0.8889,
-        "社福": 0.1111
+        "交通": 0.98,
+        "生活": 0.72
       },
       "topics": [
         "交通",
-        "社福"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02EPdJczaExSRbjAMqrqwrWx6pKbR5s3cdRWDZYqmkYGrcZkUuhebpBd1kdE8EHaixl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8d3f4d3c9d9958caabd94984d133fb2316aa799e49e43f89df3fc15f4d9daec8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Dah3bq_zfQX/",
       "imageAspect": 1.0,
@@ -1110,51 +880,47 @@
         "淹水",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "內容全篇為颱風防災措施與安全提醒，屬防災公告。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-08T12:29:35+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "📢【巴威颱風即將來襲，請提前做好防颱準備！】\n　　　　　\n根據中央氣象署預報，巴威颱風逐漸接近台灣，未來幾天風雨將逐漸增強，請鄉親朋友務必提高警覺，提早做好各項防颱措施。\n　　　　　　　\n✅ 加強固定招牌、盆栽及戶外物品，避免強風吹落。\n✅ 提前檢查排水溝是否暢通，降低積淹水風險。\n✅ 備妥飲水、乾糧、手電筒及常備藥品等防災物資。\n✅ 豪雨、強風期間避免前往海邊、河川及山區活動，注意自身安全。\n　　　　　　\n亭妃也會持續密切關注颱風最新動態，與中央、市府保持聯繫，掌握各項防災應變措施，全力守護市民朋友的安全。\n　　　　\n🙏 願大家都平安！\n　　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃關心您",
       "topicScores": {
-        "防災": 1.0
+        "防災": 0.99
       },
       "topics": [
         "防災"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、淹水、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/Dah3bq_zfQX/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9a0dd70637f855a2de4ae8752691f6119d239ab9641184f14d84bf50c67f0491",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dah3cdqlIDR",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/0d42286843b1e8bf14a3.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "其他",
+        "reason": "內容不完整，無法判定具體公共議題。",
+        "type": "other"
+      },
       "platform": "threads",
       "postedAt": "2026-07-08T10:50:22+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:",
       "topicScores": {
         "生活": 1.0
@@ -1162,31 +928,17 @@
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Dah3cdqlIDR"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b18788b5130677724a8b5aa09dbed6bcbe9ea7df671b6f3e119f70d081a36d43",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1587937272694195",
       "imageAspect": 1.0,
@@ -1197,42 +949,35 @@
         "淹水",
         "防災"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是颱風防災提醒與安全注意事項，屬防災公告。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-08T10:50:21.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "📢【巴威颱風即將來襲，請提前做好防颱準備！】\n　　　　　\n根據中央氣象署預報，巴威颱風逐漸接近台灣，未來幾天風雨將逐漸增強，請鄉親朋友務必提高警覺，提早做好各項防颱措施。\n　　　　　　　\n✅ 加強固定招牌、盆栽及戶外物品，避免強風吹落。\n✅ 提前檢查排水溝是否暢通，降低積淹水風險。\n✅ 備妥飲水、乾糧、手電筒及常備藥品等防災物資。\n✅ 豪雨、強風期間避免前往海邊、河川及山區活動，注意自身安全。\n　　　　　　\n亭妃也會持續密切關注颱風最新動態，與中央、市府保持聯繫，掌握各項防災應變措施，全力守護市民朋友的安全。\n　　　　\n🙏 願大家都平安！\n　　　　　　\n#巴威颱風 #防颱準備 #注意安全 #台南 #陳亭妃關心您",
       "topicScores": {
-        "防災": 1.0
+        "生活": 0.82,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、淹水、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02bCQ4cUPsSShtmzbgf2kiVyjZd2MpanrqdFRsZKUmdMTuzEC5sqEUDywcDN4YVRG3l"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "17f47a821a8b32d1c224cd4b02fd88db732219ecee19083a8d147d0a5c92ce73",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/Dae1pouE5ql",
       "imageAspect": 1.0,
@@ -1241,42 +986,35 @@
         "觀光",
         "美食"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "內容為芒果節記者會與活動邀請，重點是行程宣傳。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-07T06:36:58+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:亭妃今天來到左鎮參加「台南國際芒果節🥭－芒著甜 焙出幸福派對」記者會，7/11邀請全國好朋友一起到台南，品嚐最香甜、最當季的台灣芒果！\n　　　　　　\n台南是全台重要的芒果產區，而左鎮更孕育出風味獨特、品質優良的在地芒果。今年活動結合烘焙、美食與創意料理，讓芒果不只是水果，更化身一道道令人驚豔的特色佳餚，展現台南農產與觀光的多元魅力。\n　　　　　\n📍7/11 左鎮｜芒著甜・焙出幸福派對 \n活動地點：左鎮驛站\n活動時間：09:00－16:00\n　　　　　　　　\n亭妃也要邀請大家，把握芒果最香甜的季節，來左鎮走走，品嚐新鮮芒果、支持在地農民，用行動支持台灣優質農業，讓更多人看見台南、愛上台南！\n　　　　　　　\n台南芒果，甜在嘴裡、暖在心裡！ 🥭💛\n　　　　　　　　\n#台南國際芒果節\n#左鎮芒果節\n#支持在地農民\n#台南尚甜\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.86,
+        "經濟": 0.52
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/Dae1pouE5ql"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "81de7269c596d25cc7ea91f0a44f2c07ce8ae5dba3143de726de4b33242928ed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1586880312799891",
       "imageAspect": 1.0,
@@ -1285,42 +1023,35 @@
         "觀光",
         "美食"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "內容為芒果節記者會與活動邀請，重點是行程宣傳。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-07T06:36:55.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "亭妃今天來到左鎮參加「台南國際芒果節🥭－芒著甜 焙出幸福派對」記者會，7/11邀請全國好朋友一起到台南，品嚐最香甜、最當季的台灣芒果！\n　　　　　　\n台南是全台重要的芒果產區，而左鎮更孕育出風味獨特、品質優良的在地芒果。今年活動結合烘焙、美食與創意料理，讓芒果不只是水果，更化身一道道令人驚豔的特色佳餚，展現台南農產與觀光的多元魅力。\n　　　　　\n📍7/11 左鎮｜芒著甜・焙出幸福派對 \n活動地點：左鎮驛站\n活動時間：09:00－16:00\n　　　　　　　　\n亭妃也要邀請大家，把握芒果最香甜的季節，來左鎮走走，品嚐新鮮芒果、支持在地農民，用行動支持台灣優質農業，讓更多人看見台南、愛上台南！\n　　　　　　　\n台南芒果，甜在嘴裡、暖在心裡！ 🥭💛\n　　　　　　　　\n#台南國際芒果節\n#左鎮芒果節\n#支持在地農民\n#台南尚甜\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.86,
+        "經濟": 0.52
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid034GcvGj4A298ENMMqcQBntMeZfGXF4HppB5vqGHtKdiohEy1veW2p2Y2fdxt5zRfFl"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9da5936350aa50b919d219adc92e10eefd913f37e794c8cd58a500f5aa5f9b70",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/Dae1n-dE6eh/",
       "imageAspect": 1.0,
@@ -1329,345 +1060,247 @@
         "觀光",
         "美食"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "內容為芒果節記者會與活動邀請，重點是行程宣傳。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-07T06:36:48+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "亭妃今天來到左鎮參加「台南國際芒果節🥭－芒著甜 焙出幸福派對」記者會，7/11邀請全國好朋友一起到台南，品嚐最香甜、最當季的台灣芒果！\n　　　　　　\n台南是全台重要的芒果產區，而左鎮更孕育出風味獨特、品質優良的在地芒果。今年活動結合烘焙、美食與創意料理，讓芒果不只是水果，更化身一道道令人驚豔的特色佳餚，展現台南農產與觀光的多元魅力。\n　　　　　\n📍7/11 左鎮｜芒著甜・焙出幸福派對 \n活動地點：左鎮驛站\n活動時間：09:00－16:00\n　　　　　　　　\n亭妃也要邀請大家，把握芒果最香甜的季節，來左鎮走走，品嚐新鮮芒果、支持在地農民，用行動支持台灣優質農業，讓更多人看見台南、愛上台南！\n　　　　　　　\n台南芒果，甜在嘴裡、暖在心裡！ 🥭💛\n　　　　　　　　\n#台南國際芒果節\n#左鎮芒果節\n#支持在地農民\n#台南尚甜\n#陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.86,
+        "經濟": 0.52
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/Dae1n-dE6eh/"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "市府團隊"
-        ],
-        "policy_proposal": [
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.88,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "957b2283699f23afa5b6631d76a6a76a875034899951cd3043dce40cba58a482",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaczGkVkxAV/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/54d24a1545b19c8cbb7f.webp",
       "keywords": [
-        "治水",
         "豪雨",
         "淹水",
-        "預算",
-        "委員會",
-        "立法院",
-        "經濟"
+        "治水"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "施政成果／行政進度",
+        "reason": "針對豪雨積淹水提出治水工程檢討與推進進度。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-06T11:39:24+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "【治水不能等，改善要加快！】\n\n0626豪雨造成台南多處積淹水，我今天和立法院經濟委員會邀集經濟部、水利署及市府團隊到第一線會勘，針對三爺溪、六塊寮排水、安中抽水站及後壁菁寮排水，逐案檢討、逐案拍板改善。\n\n✅ 三爺溪短、中、長期治理方案正式啟動 \n✅ 六塊寮抽水站加速推動，提升排洪能力 \n✅ 安中抽水站擴大收集範圍，改善安南易淹水問題 \n✅ 菁寮排水二、三期工程加速銜接，力拚明年汛期前見效\n\n治水不能等到災後才檢討，更要趕在下一場豪雨來臨前做好準備。我會持續爭取中央預算、緊盯工程進度，要求中央與地方共同合作，加速完成各項治水建設，守護鄉親生命財產安全。\n\n#治水不能等 #守護台南 #陳亭妃",
       "topicScores": {
-        "環境": 0.3077,
-        "經濟": 0.1538,
-        "議會監督": 0.2308,
-        "防災": 0.3077
+        "環境": 0.67,
+        "防災": 0.98
       },
       "topics": [
-        "環境",
         "防災",
-        "議會監督",
-        "經濟"
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaczGkVkxAV/"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "市府團隊"
-        ],
-        "policy_proposal": [
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.87,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0d68fed64b96709d36e011fe9469bb83f2cfe1b5ec29fc8efbbf4153d9004be7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaczHxbE72a",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/3b3a895eecdc0b74d584.webp",
       "keywords": [
-        "治水",
         "豪雨",
         "淹水",
-        "預算",
-        "委員會",
-        "立法院",
-        "經濟"
+        "治水"
       ],
+      "nature": {
+        "confidence": 0.94,
+        "label": "施政成果／行政進度",
+        "reason": "同樣是豪雨後的治水會勘與工程改善進度說明。",
+        "type": "administrative_update"
+      },
       "platform": "threads",
       "postedAt": "2026-07-06T11:36:23+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:【治水不能等，改善要加快！】\n\n0626豪雨造成台南多處積淹水，我今天和立法院經濟委員會邀集經濟部、水利署及市府團隊到第一線會勘，針對三爺溪、六塊寮排水、安中抽水站及後壁菁寮排水，逐案檢討、逐案拍板改善。\n\n✅ 三爺溪短、中、長期治理方案正式啟動 \n✅ 六塊寮抽水站加速推動，提升排洪能力 \n✅ 安中抽水站擴大收集範圍，改善安南易淹水問題 \n✅ 菁寮排水二、三期工程加速銜接，力拚明年汛期前見效\n\n治水不能等到災後才檢討，更要趕在下一場豪雨來臨前做好準備。我會持續爭取中央預算、緊盯工程進度，要求中央與地方共同合作，加速完成各項治水建設，守護鄉親生命財產安全。\n\n#治水不能等 #守護台南",
       "topicScores": {
-        "環境": 0.3077,
-        "經濟": 0.1538,
-        "議會監督": 0.2308,
-        "防災": 0.3077
+        "環境": 0.68,
+        "防災": 0.98
       },
       "topics": [
-        "環境",
         "防災",
-        "議會監督",
-        "經濟"
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.threads.com/t/DaczHxbE72a"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "市府團隊"
-        ],
-        "policy_proposal": [
-          "方案"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.88,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cfbc2fe6db26c60bd92aa2cb6ae4bdd3a54d493c196f4eb2e58c78d808b9d910",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1586161256205130",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/8138932fc788be076207.webp",
       "keywords": [
-        "治水",
         "豪雨",
         "淹水",
-        "預算",
-        "委員會",
-        "立法院",
-        "經濟"
+        "治水"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "政策／政見",
+        "reason": "聚焦治水工程與排水改善，屬明確防災政策主張。",
+        "type": "policy_proposal"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-06T11:36:20.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【治水不能等，改善要加快！】\n\n0626豪雨造成台南多處積淹水，我今天和立法院經濟委員會邀集經濟部、水利署及市府團隊到第一線會勘，針對三爺溪、六塊寮排水、安中抽水站及後壁菁寮排水，逐案檢討、逐案拍板改善。\n\n✅ 三爺溪短、中、長期治理方案正式啟動 \n✅ 六塊寮抽水站加速推動，提升排洪能力 \n✅ 安中抽水站擴大收集範圍，改善安南易淹水問題 \n✅ 菁寮排水二、三期工程加速銜接，力拚明年汛期前見效\n\n治水不能等到災後才檢討，更要趕在下一場豪雨來臨前做好準備。我會持續爭取中央預算、緊盯工程進度，要求中央與地方共同合作，加速完成各項治水建設，守護鄉親生命財產安全。\n\n#治水不能等 #守護台南 #陳亭妃",
       "topicScores": {
-        "環境": 0.3077,
-        "經濟": 0.1538,
-        "議會監督": 0.2308,
-        "防災": 0.3077
+        "交通": 0.37,
+        "環境": 0.44,
+        "防災": 0.95
       },
       "topics": [
-        "環境",
         "防災",
-        "議會監督",
-        "經濟"
+        "環境",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0mRQgQUaxQEsuR84mjWAPG5VwS6JtzQ8wRFS54toZwg7nsNxHYu87XbJbs5LxmuLRl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f983fcd417cfd7592135feb049797fdbe10c96b179f0ba0b454efcf69022087a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1584969249657664",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/71734f5b73568a53d328.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "個人／日常",
+        "reason": "僅以做菜照片式口吻分享日常，無公共議題。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-05T03:43:35.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "夠認真吧！猜猜我在做什麼好料的？😋",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/reel/1693931468536296/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a774e9ce48d69939f80606c61bb5ccbb303d9e7aeae7ae42d3e5dd67b70ff636",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaZYNPfk3xh",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/66c8bbb2576a6142319f.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.95,
+        "label": "個人／日常",
+        "reason": "僅為輕鬆自問自答，未談公共事務。",
+        "type": "personal_content"
+      },
       "platform": "threads",
       "postedAt": "2026-07-05T03:43:31+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:夠認真吧！猜猜我在做什麼好料的？😋",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.97
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaZYNPfk3xh"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7aa5c28f17c4260251c505d30f215da74298ebdfc2a9cc9b3c17049f36128552",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaZYBJAzP7s/",
       "imageAspect": 1.7778,
       "imageUrl": "assets/feed-images/4a79cb5321c4682aa722.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.99,
+        "label": "個人／日常",
+        "reason": "僅以日常口吻分享近況，未談公共議題。",
+        "type": "personal_content"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-05T03:43:20+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "夠認真吧！猜猜我在做什麼好料的？😋",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.98
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaZYBJAzP7s/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "815912892572e96fa77def0eff5b36e9e8ccfa00b6324888cb08f6a7dd281eac",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaW25yDEzd8",
       "imageAspect": 1.7751,
@@ -1676,42 +1309,35 @@
         "運動",
         "選手"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "活動／行程",
+        "reason": "出席新市區運動會並祝福選手，屬活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-07-04T04:13:59+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:睽違20年，新市區運動會熱鬧登場！ 🏃‍♀️🏃‍♂️\n\n祝福所有參賽選手都能發揮最佳實力，享受比賽、平安完賽，大家加油！❤️\n\n#新市區運動會 #全民運動 #健康城市 #台南 #陳亭妃",
       "topicScores": {
-        "體育": 1.0
+        "生活": 0.6,
+        "體育": 0.99
       },
       "topics": [
-        "體育"
+        "體育",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaW25yDEzd8"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "721f7119c8eef950d1484836387e6f9c64ae5ac38afa8c9c2a2ce2292e4e9197",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1584109959743593",
       "imageAspect": 1.7771,
@@ -1720,42 +1346,35 @@
         "運動",
         "選手"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "活動／行程",
+        "reason": "主要是出席運動會祝福選手，屬活動紀錄。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-04T04:13:56.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "睽違20年，新市區運動會熱鬧登場！ 🏃‍♀️🏃‍♂️\n\n祝福所有參賽選手都能發揮最佳實力，享受比賽、平安完賽，大家加油！❤️\n\n#新市區運動會 #全民運動 #健康城市 #台南 #陳亭妃",
       "topicScores": {
-        "體育": 1.0
+        "生活": 0.6,
+        "體育": 0.98
       },
       "topics": [
-        "體育"
+        "體育",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02tvPcLmsq9RPJQnqbpVbgbEjxgwktQLp33okYaJbpJAJNFAwKBBZkk3Qp6HHeaPj3l"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9a05d95c22ab87a07b1a74e21d31717b9e2e09ae6d374f9e71b1f91ed08326cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaW24fok83N/",
       "imageAspect": 1.7751,
@@ -1764,42 +1383,35 @@
         "運動",
         "選手"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "活動／行程",
+        "reason": "祝賀運動會與選手表現，屬賽事活動貼文。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-07-04T04:13:52+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "睽違20年，新市區運動會熱鬧登場！ 🏃‍♀️🏃‍♂️\n\n祝福所有參賽選手都能發揮最佳實力，享受比賽、平安完賽，大家加油！❤️\n\n#新市區運動會 #全民運動 #健康城市 #台南 #陳亭妃",
       "topicScores": {
-        "體育": 1.0
+        "生活": 0.32,
+        "體育": 0.98
       },
       "topics": [
-        "體育"
+        "體育",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaW24fok83N/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "必須"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.42,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "47a26edd6c2a4d00d2c66a8bde2a56a940d7046042f0ced86ad6cb840b822b73",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1583344249820164",
       "imageAspect": 1.7778,
@@ -1808,42 +1420,35 @@
         "中共",
         "主權"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "批評／究責",
+        "reason": "批評藍白封殺譴責中國提案，屬明確政治攻防。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-03T08:30:37.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "遺憾！民進黨團今天正式提案譴責中國《民族團結進步促進法》忽視民主，居然被國、民兩黨封殺\n\n中國《民族團結進步促進法》已經在7/1正式上路，未來將在實質上以法律手段威脅全世界的民主夥伴與公民，並藉由散播恐懼以成功在國際社會達到寒蟬效應的目的。\n\n然而今天，民進黨團正式對此提案譴責中國這種與世界民主潮流背道而馳的行徑，卻非常遺憾地遭到藍白兩黨予以封殺。這不僅是台灣身為一個主權獨立、自由多元的國家價值的大打折，也是助長中共威權擴張、打壓異己人權手段的惡行。\n\n台灣必須提高警覺！不能讓我們一直以來引以為傲的自由與人權，被中國以各種手段打壓破壞！\n\n我們站在第一線，捍衛台灣的民主、自由與人權！\n\n#民主自由 #守護台灣 #反對威權擴張 #捍衛國家主權 #陳亭妃",
       "topicScores": {
-        "兩岸外交": 1.0
+        "兩岸外交": 0.98,
+        "議會監督": 0.82
       },
       "topics": [
-        "兩岸外交"
+        "兩岸外交",
+        "議會監督"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02qT7hqFuCAHGx3hzR6cnnHzLCzeCwM4zJkSLSuAVGMtJv8T5soLwM8RR9GYsKZrksl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7d134232fdadcdafaa1ab0443a1c6e947094d664d09a13f9debace6524b1ca91",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1582703783217544",
       "imageAspect": 0.6983,
@@ -1852,42 +1457,37 @@
         "豪雨",
         "災害"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告文蛤災損現金救助與申請期限，屬救助資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-02T14:49:00.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "❤️妃妃報報❤️\n ⚠️陳亭妃成功爭取⚠️\n\n台南市北門區、將軍區、七股區及安南區「魚塭養殖─文蛤」的災損公告了！\n台南市為0625豪雨農業天然災害現金救助地區。\n\n申請時間：7／3～7／16\n請大家告訴大家這個消息！同時這次例假日也可以受理申請！\n\n受災的文蛤漁民朋友們記得把握時間申請\n亭妃會持續為大家發聲、爭取更多權益！",
       "topicScores": {
-        "防災": 1.0
+        "社福": 0.22,
+        "經濟": 0.66,
+        "防災": 0.95
       },
       "topics": [
-        "防災"
+        "防災",
+        "經濟",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "豪雨",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02ZvMLTer4y6qBxCH7e9T7UZzEAaUMec8WxmqGVHuWWLwmocXsGgQWB3PvYMU1vW4jl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.1,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "03f08771c699afc9c75a830894977d9449bc72ca7fba2b3d7a5644635d88da73",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1581759883311934",
       "imageAspect": 0.6915,
@@ -1896,151 +1496,112 @@
         "颱風",
         "災害"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "公告文旦柚天然災害現金救助與申請資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T12:23:17.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "❤️妃妃報報❤️\n⚠️陳亭妃成功爭取⚠️\n\n台南市文旦柚的災損公告了！\n台南市為114年丹娜絲颱風(延續性災損)農業天然災害現金救助地區。\n\n申請時間：7／2～7／15\n請大家告訴大家這個消息！同時這次例假日也可以受理申請！\n\n受災的文旦柚農朋友們記得把握時間申請\n亭妃會持續為大家發聲、爭取更多權益！",
       "topicScores": {
-        "防災": 1.0
+        "經濟": 0.72,
+        "防災": 0.96
       },
       "topics": [
-        "防災"
+        "防災",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0XQ1ayJQEPEgNrNChweYauCYSn6QTLLpvESwVua5zwYYSQL4HRyEZDq7AWjY1hMdUl"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ],
-        "policy_proposal": [
-          "必須"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "動員宣傳"
-      ],
-      "actions": [
-        "policy_proposal",
-        "mobilization"
-      ],
+      "agendaRelevance": 0.55,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "40e9512869e91f1936eefa15272905e9c70110734b79d0f84eb3e0e149170f56",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1581579923329930",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [
-        "文化",
-        "教育",
-        "主權"
+        "主權",
+        "文化"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "立場表態",
+        "reason": "主要針對中國新法與台灣民主自由提出立場反對。",
+        "type": "position_statement"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T07:31:02.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "【民主沒有「只能一種聲音」】\n　　　　\n中國《民族團結進步促進法》今天（7/1）正式上路，表面上以「民族團結」為名，實際上卻是透過法律手段，強化威權統治、消滅多元文化與不同聲音，要求人民只能接受單一價值、單一思想，這不是真正的團結，而是強制同化。\n　　　\n台灣一路走來，最珍貴的資產就是民主。我們尊重不同族群、不同文化、不同信仰，也保障每一位人民自由表達意見的權利。多元、包容、相互尊重，才是台灣的核心價值；而不是透過法律消滅差異、壓制異己。\n　　　\n更令人憂心的是，這項法律恐怕不只適用於中國境內，更可能成為中國擴大「長臂管轄」、跨境打壓的新工具。近年來，中國對台灣的各種政治、法律與行政施壓已超過百項，未來不排除將影響赴中求學、經商、交流的國人，甚至對國際社會、企業及個人施加壓力，製造寒蟬效應。\n　　　　\n面對威權擴張，我們必須提高警覺。支持政府持續建立風險預警、強化全民識讀能力與公務人員教育訓練、完善跨境援助保護機制，並持續與理念相近國家攜手合作，共同反制中國對民主與人權的打壓。\n　　　　\n守護台灣，不只是政府的責任，更需要全體國人的團結與警覺。期待朝野不分黨派，在守護民主、自由、人權與國家主權的共同目標下攜手努力，讓台灣持續站穩民主陣營，也讓世界看見民主台灣的堅持。\n　　　　\n#民主自由\n#守護台灣\n#反對威權擴張\n#陳亭妃",
       "topicScores": {
-        "兩岸外交": 0.25,
-        "教育": 0.25,
-        "文化觀光": 0.5
+        "兩岸外交": 0.82,
+        "文化觀光": 0.42
       },
       "topics": [
-        "文化觀光",
-        "教育",
-        "兩岸外交"
+        "兩岸外交",
+        "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.68,
-        "evidence": "貼文主動提出政策或立場，未偵測到明確回應對象",
-        "label": "自主議程",
-        "type": "self_initiated"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02u6sh6ELCGWc6W2GPwWVCHJ9yV9iG8KcJLPknCkMbahJVbKVAurpuuALRC3UfMsG5l"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "必須"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議"
-      ],
-      "actions": [
-        "policy_proposal"
-      ],
+      "agendaRelevance": 0.9,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "de9c260ad69ef0bbc49142746713283ac5ee0354fff0ab99bbc24cfd04a80fbd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1581493676671888",
       "imageAspect": 1.5013,
       "imageUrl": "assets/feed-images/da4414965a8b14c97990.webp",
       "keywords": [
+        "淹水",
         "氣候",
-        "治水",
-        "質詢",
-        "預算",
-        "立法院",
-        "經濟",
-        "淹水"
+        "治水"
       ],
+      "nature": {
+        "confidence": 0.89,
+        "label": "批評／究責",
+        "reason": "聚焦治水、堤防加高與經費爭取，明顯是追蹤究責與推動改善。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2026-07-01T05:11:29.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "治水不能等！亭妃強勢促加高三爺溪堤防，並成功爭取首波9億治理六塊寮排水解決淹水之苦！\n\n極端氣候大考驗，防洪標準必須全面升級！0626暴雨導致三爺溪水位幾近溢堤，外水過高讓內水根本不敢抽，仁德區與東區居民陷入驚慌。亭妃今天在立法院強力質詢，要求中央與地方合作加高堤防，並已排定 7月6日 邀集經濟部長實地會勘，手把手緊盯改善進度！\n\n針對安南區與安定區的六塊寮排水沉痾，亭妃多次深入災區來回涉水尋找解方，成功向中央爭取「硬擠」出首波近 9 億元經費，全面啟動「五大改善工程」，包含上下游護岸治理、新建抽水站、怡安段左岸改建及安定區治理等，從上游到下游系統化根治。\n\n治水工程絕不能出現斷層！亭妃會持續追蹤第二期預算，用關鍵治理徹底翻轉治水體質，給台南鄉親們一個踏實有感、安全無虞的家園！\n\n#陳亭妃 #行動派立委 #三爺溪加高堤防 #六塊寮排水 \n#成功爭取9億 #最後一哩路 #關鍵治理 #發展大台南",
       "topicScores": {
-        "環境": 0.4444,
-        "經濟": 0.1111,
-        "議會監督": 0.3333,
-        "防災": 0.1111
+        "交通": 0.36,
+        "環境": 0.7,
+        "防災": 0.98
       },
       "topics": [
+        "防災",
         "環境",
-        "議會監督",
-        "經濟",
-        "防災"
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02UuJjHYUgs6W3aUzR6HLu24Arp48346URiYMHV8s4p8VPsi77jA6FXDVwnzKNgMfXl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0f4db13abad1b85fb466380048e4f6bdf5b24e6e6b74c34c6a2ea3a08b94371c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaNDtlWlEcx",
       "imageAspect": 1.0,
@@ -2052,42 +1613,33 @@
         "美食",
         "歷史"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "活動／行程",
+        "reason": "參加歌唱比賽活動並談城市文化定位，重點是活動出席。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-06-30T08:53:31+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:**用歌聲凝聚情感，用文化連結城市。**🎤🎶\n　　　\n今天很高興受邀參加臺南市美食曁藝術協會第一屆議長盃圓夢卡拉OK歌唱大賽。\n　　　\n臺南不只是歷史文化古都，更擁有深厚的人文底蘊、豐富的美食文化，以及源源不絕的藝術能量。未來，我希望與大家一起努力，讓臺南不只是美食之都、文化藝術之都，更成為一座充滿音樂魅力的音樂之都。\n　　　　\n#音樂之都 #文化藝術之都 #美食之都 #台南 #陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.96
       },
       "topics": [
         "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.threads.com/t/DaNDtlWlEcx"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.14,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ae2d2ca870af5d70d7a97e35f239fde97985d90c7df4ba840220716ae60e3e7d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1580739123414010",
       "imageAspect": 1.0,
@@ -2099,42 +1651,33 @@
         "美食",
         "歷史"
       ],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "受邀參加歌唱比賽，內容以活動致詞與城市文化願景為主。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-30T08:53:30.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "**用歌聲凝聚情感，用文化連結城市。**🎤🎶\n　　　\n今天很高興受邀參加臺南市美食曁藝術協會第一屆議長盃圓夢卡拉OK歌唱大賽。\n　　　\n臺南不只是歷史文化古都，更擁有深厚的人文底蘊、豐富的美食文化，以及源源不絕的藝術能量。未來，我希望與大家一起努力，讓臺南不只是美食之都、文化藝術之都，更成為一座充滿音樂魅力的音樂之都。\n　　　　\n#音樂之都 #文化藝術之都 #美食之都 #台南 #陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.9
       },
       "topics": [
         "文化觀光"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid0jgppY7ZDrKTVYqQt76Pgw4gPDJuGD97kavaeoTRPz8y7vU1MZtjRkSo9bLwktc1Ll"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.14,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "ae68fce436d91633d72d4043fa6f06ce8ee42104954748c6a46e9cfc821c28cf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaNDsqSTRZ6/",
       "imageAspect": 1.0,
@@ -2146,109 +1689,74 @@
         "美食",
         "歷史"
       ],
+      "nature": {
+        "confidence": 0.94,
+        "label": "活動／行程",
+        "reason": "參加歌唱比賽並談城市文化發展，重點是活動出席。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-30T08:53:25+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "**用歌聲凝聚情感，用文化連結城市。**🎤🎶\n　　　\n今天很高興受邀參加臺南市美食曁藝術協會第一屆議長盃圓夢卡拉OK歌唱大賽。\n　　　\n臺南不只是歷史文化古都，更擁有深厚的人文底蘊、豐富的美食文化，以及源源不絕的藝術能量。未來，我希望與大家一起努力，讓臺南不只是美食之都、文化藝術之都，更成為一座充滿音樂魅力的音樂之都。\n　　　　\n#音樂之都 #文化藝術之都 #美食之都 #台南 #陳亭妃",
       "topicScores": {
-        "文化觀光": 1.0
+        "文化觀光": 0.84,
+        "生活": 0.37
       },
       "topics": [
-        "文化觀光"
+        "文化觀光",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaNDsqSTRZ6/"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "勘災"
-        ],
-        "policy_proposal": [
-          "提出"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.41,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "50576d13f825f2151e9c8abfd8b14f67406982ddad68d8944f75ec09a0b572cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1580099413477981",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/e16e837d7a2fcfb553b6.webp",
       "keywords": [
         "豪雨",
-        "淹水",
-        "補助"
+        "淹水"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "資訊公告／服務提醒",
+        "reason": "整理豪雨補助與減免資訊，屬災後申請提醒公告。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-29T14:53:38.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "📢【豪雨受災補助一次看｜亭妃提醒符合資格鄉親儘速申請】\n\n近日豪雨造成台南多處積淹水，亭妃除了持續前往各地勘災、爭取中央與地方全力協助，也提醒符合資格的鄉親，務必把握各項補助申請期限，善用政府資源，減輕災後負擔。\n\n✅ 住家淹水補助 🔹淹水50公分以上： 每戶可申請中央2萬元＋台南市1萬5,000元。 🔹淹水15至50公分： 每戶可申請台南市慰助金1萬元。\n\n📌請先拍照存證（水痕、淹水高度），並備妥身分證、居住證明及存摺影本，向所在地區公所提出申請。\n\n🚗 泡水車慰助 📅受理期間：6/29－7/28 🚘汽車每輛1萬5,000元 🛵機車每輛2,000元\n\n🏪 營業場所補助 有營業登記且淹水50公分以上： 每戶可申請中央2萬元＋台南市1萬5,000元。淹水15至50公分：每戶可申請1萬元，另有受災企業貸款利息補貼及相關稅務減免。\n\n🏠 稅捐減免 ✔️房屋淹水50公分以上：115年一期房屋稅全免。 ✔️淹水15至50公分：115年一期房屋稅減半。 ✔️另有地價稅、牌照稅、所得稅等多項減免，可依規定提出申請。\n\n🙏亭妃提醒，請務必保留淹水照片及相關證明文件，符合資格的鄉親儘速向所在地區公所或相關機關提出申請。\n如果對申請資格或流程有任何疑問，也歡迎與亭妃服務處聯繫，我們會全力協助大家，一起度過災後復原的每一步。\n\n#豪雨補助 #淹水救助 #泡水車補助 #災後復原 #台南",
       "topicScores": {
-        "社福": 0.3,
-        "防災": 0.7
+        "生活": 0.85,
+        "經濟": 0.57,
+        "防災": 0.98
       },
       "topics": [
         "防災",
-        "社福"
+        "生活",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid026ip1r7hafjtCn5wiuknRSiC6WJkyNvnwj4VFeNfjNm3n8zVob9nV4MJ2v8szGK6el"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "勘災"
-        ],
-        "policy_proposal": [
-          "提出"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.24,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "9a551803639eab1bf55b0c5f7c3d1ab9e1c7d90891aedb9d90b28de9591472ae",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaLIHKnzGTW/",
       "imageAspect": 1.3333,
@@ -2258,44 +1766,37 @@
         "淹水",
         "補助"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "資訊公告／服務提醒",
+        "reason": "提供豪雨受災補助與申請方式，屬災後資訊公告。",
+        "type": "public_information"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-29T14:53:31+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "📢【豪雨受災補助一次看｜亭妃提醒符合資格鄉親儘速申請】\n\n近日豪雨造成台南多處積淹水，亭妃除了持續前往各地勘災、爭取中央與地方全力協助，也提醒符合資格的鄉親，務必把握各項補助申請期限，善用政府資源，減輕災後負擔。\n\n✅ 住家淹水補助 🔹淹水50公分以上： 每戶可申請中央2萬元＋台南市1萬5,000元。 🔹淹水15至50公分： 每戶可申請台南市慰助金1萬元。\n\n📌請先拍照存證（水痕、淹水高度），並備妥身分證、居住證明及存摺影本，向所在地區公所提出申請。\n\n🚗 泡水車慰助 📅受理期間：6/29－7/28 🚘汽車每輛1萬5,000元 🛵機車每輛2,000元\n\n🏪 營業場所補助 有營業登記且淹水50公分以上： 每戶可申請中央2萬元＋台南市1萬5,000元。淹水15至50公分：每戶可申請1萬元，另有受災企業貸款利息補貼及相關稅務減免。\n\n🏠 稅捐減免 ✔️房屋淹水50公分以上：115年一期房屋稅全免。 ✔️淹水15至50公分：115年一期房屋稅減半。 ✔️另有地價稅、牌照稅、所得稅等多項減免，可依規定提出申請。\n\n🙏亭妃提醒，請務必保留淹水照片及相關證明文件，符合資格的鄉親儘速向所在地區公所或相關機關提出申請。\n如果對申請資格或流程有任何疑問，也歡迎與亭妃服務處聯繫，我們會全力協助大家，一起度過災後復原的每一步。\n\n#豪雨補助 #淹水救助 #泡水車補助 #災後復原 #台南",
       "topicScores": {
-        "社福": 0.3,
-        "防災": 0.7
+        "生活": 0.3,
+        "社福": 0.63,
+        "防災": 0.95
       },
       "topics": [
         "防災",
-        "社福"
+        "社福",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaLIHKnzGTW/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "回憶"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "dd27593e118693593b598dc8707be02bd44bb3f7451e7aad298d74055d1c1a8e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaKYSOHz8St/",
       "imageAspect": 1.7778,
@@ -2309,44 +1810,37 @@
         "市集",
         "產業"
       ],
+      "nature": {
+        "confidence": 0.96,
+        "label": "活動／行程",
+        "reason": "宣傳葫蘆埤活動與台南旅遊，屬觀光活動推廣。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-29T07:56:12+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "🌞【葫蘆埤玩埤一夏 清涼一夏玩台南！】💦\n　　　　\n暑假來了，最適合安排一趟台南輕旅行！\n　　　　\n今天很開心參加「葫蘆埤玩埤一夏」活動宣傳記者會，邀請全國朋友一起走進官田葫蘆埤，感受台南最具特色的湖畔風光，體驗豐富有趣的親子活動、市集、美食及水域遊憩，留下滿滿的夏日回憶。\n　　　　　\n台南不只有深厚的歷史文化，更擁有豐富的自然景觀與在地特色。透過一場場精彩活動，讓更多人看見台南、走進台南，也帶動地方觀光與產業發展。\n　　　　　　　　\n📍葫蘆埤玩埤一夏\n一起來玩埤、玩水、玩市集，感受台南夏日魅力！\n　　　　　　　　\n#葫蘆埤玩埤一夏 #官田 #台南觀光 #親子旅遊 #夏日活動",
       "topicScores": {
-        "文化觀光": 0.8889,
-        "經濟": 0.1111
+        "文化觀光": 0.9,
+        "生活": 0.28,
+        "經濟": 0.54
       },
       "topics": [
         "文化觀光",
-        "經濟"
+        "經濟",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DaKYSOHz8St/"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "回憶"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "0622dbedf51c0d235bf0f34d38f837798c473b319f84057def72260c55f89cde",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "threads:https://www.threads.com/t/DaKYS-rlC6n",
       "imageAspect": 1.7778,
@@ -2357,47 +1851,37 @@
         "旅遊",
         "美食",
         "歷史",
-        "市集",
-        "產業"
+        "市集"
       ],
+      "nature": {
+        "confidence": 0.97,
+        "label": "活動／行程",
+        "reason": "為觀光活動宣傳記者會造勢，重點在行程與活動介紹。",
+        "type": "event_activity"
+      },
       "platform": "threads",
       "postedAt": "2026-06-29T07:55:40+00:00",
       "sourceId": "chen-tf-threads",
-      "targets": [],
       "text": "@chen_tingfei:🌞【葫蘆埤玩埤一夏 清涼一夏玩台南！】💦\n　　　　\n暑假來了，最適合安排一趟台南輕旅行！\n　　　　\n今天很開心參加「葫蘆埤玩埤一夏」活動宣傳記者會，邀請全國朋友一起走進官田葫蘆埤，感受台南最具特色的湖畔風光，體驗豐富有趣的親子活動、市集、美食及水域遊憩，留下滿滿的夏日回憶。\n　　　　　\n台南不只有深厚的歷史文化，更擁有豐富的自然景觀與在地特色。透過一場場精彩活動，讓更多人看見台南、走進台南，也帶動地方觀光與產業發展。\n　　　　　　　　\n📍葫蘆埤玩埤一夏\n一起來玩埤、玩水、玩市集，感受台南夏日魅力！\n　　　　　　　　\n#葫蘆埤玩埤一夏 #官田 #台南觀光 #親子旅遊 #夏日活動",
       "topicScores": {
-        "文化觀光": 0.8889,
-        "經濟": 0.1111
+        "文化觀光": 0.97,
+        "社福": 0.64
       },
       "topics": [
         "文化觀光",
-        "經濟"
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.threads.com/t/DaKYS-rlC6n"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "回憶"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.26,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1aa0aaf50dbc88dcb0688965d6c65576d1a5ddb1606d8a5abb4f01a2a6b6d843",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:1579819870172602",
       "imageAspect": 1.7778,
@@ -2408,193 +1892,148 @@
         "旅遊",
         "美食",
         "歷史",
-        "市集",
-        "產業"
+        "市集"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "活動／行程",
+        "reason": "主要為觀光活動宣傳與出席記者會，提及台南旅遊與地方產業。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-29T07:55:39.000Z",
       "sourceId": "chen-tf-fb",
-      "targets": [],
       "text": "🌞【葫蘆埤玩埤一夏 清涼一夏玩台南！】💦\n　　　　\n暑假來了，最適合安排一趟台南輕旅行！\n　　　　\n今天很開心參加「葫蘆埤玩埤一夏」活動宣傳記者會，邀請全國朋友一起走進官田葫蘆埤，感受台南最具特色的湖畔風光，體驗豐富有趣的親子活動、市集、美食及水域遊憩，留下滿滿的夏日回憶。\n　　　　　\n台南不只有深厚的歷史文化，更擁有豐富的自然景觀與在地特色。透過一場場精彩活動，讓更多人看見台南、走進台南，也帶動地方觀光與產業發展。\n　　　　　　　　\n📍葫蘆埤玩埤一夏\n一起來玩埤、玩水、玩市集，感受台南夏日魅力！\n　　　　　　　　\n#葫蘆埤玩埤一夏 #官田 #台南觀光 #親子旅遊 #夏日活動",
       "topicScores": {
-        "文化觀光": 0.8889,
-        "經濟": 0.1111
+        "文化觀光": 0.98,
+        "生活": 0.6
       },
       "topics": [
         "文化觀光",
-        "經濟"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "一起來",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/fififans/posts/pfbid02EYUE1zsP7o3wWFp6DGkqizyYksSD7LURfgwntQL1qQHPYWK41LZrZ9234toWQs7Vl"
     },
     {
-      "actionEvidence": {
-        "mobilization": [
-          "支持"
-        ]
-      },
-      "actionLabels": [
-        "動員宣傳"
-      ],
-      "actions": [
-        "mobilization"
-      ],
+      "agendaRelevance": 0.22,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e8832a4a6a7ff2754eb316d889eab2f5fe30a83621d95f3616b1ee11da2fa9cc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaEzU9AEntU/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/0bace3bea48a6f225120.webp",
-      "keywords": [
-        "照顧"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.95,
+        "label": "活動／行程",
+        "reason": "出席芒果節開幕並行銷農產，重在活動與地方推廣。",
+        "type": "event_activity"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-27T03:56:27+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "香約臺南，仲夏芒幸福！🥭\n\n一年一度的臺南國際芒果節熱鬧登場！今天很高興與市長黃偉哲及各界貴賓共同參與開幕，一起向全國、向世界推薦最香甜、最優質的臺南芒果。\n\n臺南是全台最重要的芒果產區，從玉井、楠西、南化、左鎮、大內到官田，每一顆芒果都凝聚著農民一整年的辛勞與堅持。今年芒果品質優異、香甜多汁，希望透過國際芒果節，讓更多人品嚐臺南的好滋味，也為農民拓展更多通路、創造更好的收益。\n\n亭妃也會持續在中央協助爭取農業資源、拓展國內外行銷通路，讓臺南優質農產品走向世界，照顧農民、守護農業，一步一步把臺南的品牌擦得更亮。\n\n歡迎大家一起來臺南，吃芒果、遊臺南，感受最甜蜜的夏日滋味！🥭☀️\n\n#臺南國際芒果節 #香約臺南 #臺南芒果 #支持在地農業 #陳亭妃",
       "topicScores": {
-        "社福": 1.0
+        "文化觀光": 0.63,
+        "生活": 0.34,
+        "經濟": 0.68
       },
       "topics": [
-        "社福"
+        "經濟",
+        "文化觀光",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "歡迎大家",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.instagram.com/p/DaEzU9AEntU/"
     },
     {
-      "actionEvidence": {
-        "policy_proposal": [
-          "應該"
-        ],
-        "public_information": [
-          "警戒"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "資訊轉達"
-      ],
-      "actions": [
-        "policy_proposal",
-        "public_information"
-      ],
+      "agendaRelevance": 0.41,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "628922da813db23c185b6c080199153aa69ae55398691740a5ed52b3e9b11885",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaCL0NPk5id/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/ca3d6bf8fe49cf69be98.webp",
       "keywords": [
         "豪雨",
-        "警戒",
-        "氣候"
+        "警戒"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "施政成果／行政進度",
+        "reason": "勘查積水點與防洪設施，說明防災處理進度。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-26T03:32:43+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "全力守護市民安全\n\n亭妃在勘查一些積水點之後，立即與市長再一同前往 北門、仁德、喜樹灣裡 等地，實地了解抽水站與滯洪池、三爺溪的防洪功能，是否應該要加強、加大標準，才能應付目前的極端氣候，並要求相關單位持續提高警戒、加速應變，全力降低豪雨對居民生活的影響。",
       "topicScores": {
-        "環境": 0.3333,
-        "防災": 0.6667
+        "交通": 0.22,
+        "生活": 0.38,
+        "防災": 0.96
       },
       "topics": [
         "防災",
-        "環境"
+        "生活",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "豪雨、警戒",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaCL0NPk5id/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.44,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c6c1e2c5ebfe32f982b100bd8876444da6902111bec4f7ddadd8641be0c98d56",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaB1K19k-Rd/",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/0e750f65335282f59683.webp",
       "keywords": [
-        "治水",
         "豪雨"
       ],
+      "nature": {
+        "confidence": 0.92,
+        "label": "施政成果／行政進度",
+        "reason": "到災區了解排水與水位，並表達爭取治水經費。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-26T00:14:49+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "亭妃接著前往將軍區馬沙溝、北門蘆竹溝瞭解狀況，實地瞭解水位變化及排水設施運作情形，與水利單位交換意見，掌握第一線狀況。\n\n面對豪雨帶來的挑戰，更要持續盤點問題、加速改善。亭妃會把地方的需求帶回中央，全力爭取治水經費，督促相關工程如期推動，讓鄉親的生命財產安全獲得更完善的保障。\n\n亭妃接著前往將軍區馬沙溝、北門蘆竹溝瞭解狀況，實地瞭解水位變化及排水設施運作情形，與水利單位交換意見，掌握第一線狀況。\n\n面對豪雨帶來的挑戰，更要持續盤點問題、加速改善。亭妃會把地方的需求帶回中央，全力爭取治水經費，督促相關工程如期推動，讓鄉親的生命財產安全獲得更完善的保障。",
       "topicScores": {
-        "環境": 0.5,
-        "防災": 0.5
+        "生活": 0.34,
+        "防災": 0.97
       },
       "topics": [
-        "環境",
-        "防災"
+        "防災",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "豪雨",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaB1K19k-Rd/"
     },
     {
-      "actionEvidence": {
-        "administrative_update": [
-          "勘災"
-        ],
-        "policy_proposal": [
-          "計畫"
-        ]
-      },
-      "actionLabels": [
-        "政策倡議",
-        "行政進度"
-      ],
-      "actions": [
-        "policy_proposal",
-        "administrative_update"
-      ],
+      "agendaRelevance": 0.43,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "db223b40065adcc8570fd519475040aca7f17ed4372c9c92a3d1c5f1528487df",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaBwTgZkyvf/",
       "imageAspect": 1.3333,
@@ -2602,91 +2041,69 @@
       "keywords": [
         "豪雨",
         "淹水",
-        "災情",
-        "治水",
-        "預算"
+        "災情"
       ],
+      "nature": {
+        "confidence": 0.92,
+        "label": "施政成果／行政進度",
+        "reason": "內容為豪雨勘災與治水工程進度追蹤。",
+        "type": "administrative_update"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-25T23:33:07+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "豪雨不斷，亭妃一早前往安南區勘災，從六塊寮排水、安中路一段、長溪路一段，到十三佃、土城等地，實地了解積淹水情形，並向地方居民關心災情、掌握第一線狀況。\n\n去年會勘後，亭妃便積極向中央爭取治水經費。目前部分治水預算已陸續到位，部分工程已辦理招標但是流標，也有部分計畫仍在核定程序中。亭妃會持續緊盯每一項工程進度，督促相關單位加速推動，讓治水建設儘早完成，降低淹水風險，真正讓市民朋友有感。",
       "topicScores": {
-        "環境": 0.375,
-        "議會監督": 0.125,
-        "防災": 0.5
+        "生活": 0.28,
+        "防災": 0.97
       },
       "topics": [
         "防災",
-        "環境",
-        "議會監督"
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "豪雨、淹水、災情",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.instagram.com/p/DaBwTgZkyvf/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "d833a4989d85dfb89463c27e17b3391ff8117e3299397b214525314a963b0b66",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "instagram:https://www.instagram.com/p/DaBEx2RzGa2/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/8125d37dbe90bae10a3f.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "其他",
+        "reason": "貼文內容空白，無法判定具體議題。",
+        "type": "other"
+      },
       "platform": "instagram",
       "postedAt": "2026-06-25T17:12:00+00:00",
       "sourceId": "chen-tf-ig",
-      "targets": [],
       "text": "",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.instagram.com/p/DaBEx2RzGa2/"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.06,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "373da0d8724c1413d0d1ab5664c63c0cad5f0bf973790c7d67a59e9552832f89",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:27692710693653937",
       "imageAspect": 1.0,
@@ -2697,165 +2114,133 @@
         "大雨",
         "強降雨"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "資訊公告／服務提醒",
+        "reason": "主要是豪雨與安全提醒，屬災防與行車注意公告。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2026-06-09T05:26:27.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "⚠️鋒面前緣正逐漸通過南部地區！\n　　　　　\n目前受到西南風、鋒面雲帶及季風低壓影響，台南各地午後至傍晚有局部大雨或短時強降雨發生的機會。\n　　　　　\n請大家務必留意天氣動態，外出時注意行車安全，慎防低能見度、雷擊及瞬間強陣風；沿海、低窪地區及溪河周邊民眾，也請提高警覺，留意積淹水及溪水暴漲情形。\n　　　　　　\n若非必要，請避免前往山區、河川及易淹水路段，並隨時關注最新氣象資訊。\n　　　　　\n亭妃也會持續關注天候變化與各地狀況，守護市民朋友的安全。\n　　　　\n#注意豪大雨\n#行車注意安全\n#陳亭妃",
       "topicScores": {
-        "防災": 1.0
+        "交通": 0.72,
+        "防災": 0.99
       },
       "topics": [
-        "防災"
+        "防災",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "大雨、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid02wAMHsx1duSvQ4iNpsgDghWhzT5Ss2zSV2Q1TqMNfKLjBeDgkfmvws9Bfj55rAuGJl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "23e5f3bd2834bcee0dfe98efbcb9f9f45c1125552d54cfb38742fe3aedc85cc4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:7193305804021060",
       "imageAspect": 0.7504,
       "imageUrl": "assets/feed-images/e6dd0891824b80caf772.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.7,
+        "label": "活動／行程",
+        "reason": "僅稱讚志工，較像活動致意而非政策。",
+        "type": "event_activity"
+      },
       "platform": "facebook",
       "postedAt": "2023-11-12T03:04:00.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "台南志工讚！",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.57,
+        "社福": 0.8
       },
       "topics": [
+        "社福",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid034iPiJrFfbZWvMgG79otS7vhNMuoW9Unefr5LhRDWDXdRXSz2WS5NTGPW9oae5Bv9l"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "986c5dc5cf470d58ba0146976478cbc7c511a3abf4b8ac476531555442ae9b32",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:5926167997401520",
       "imageAspect": 1.3333,
       "imageUrl": "assets/feed-images/be4ab075b406e79194fe.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "個人／日常",
+        "reason": "純屬日常店家或商品分享，無公共議題。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2022-11-01T14:45:58.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "琳琅滿目，各種手機配件全都有哦！",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.96
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid02vigkvKebjnNWUz2XCfzEz7EcSAtQbC442HXjncEG79zixf8zeu15EhTQmoKNQ9Jil"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "84119214715534cf031f468783a75786c16afbf4d96ba55a4d742bb5a39aa035",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:5619668371384819",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.99,
+        "label": "其他",
+        "reason": "內容空白，無法辨識公共議題或政策主張。",
+        "type": "other"
+      },
       "platform": "facebook",
       "postedAt": "2022-07-19T08:46:15.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.99
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid0CSp13SzcLtsfVkjjpvRjn7txf9aJ5DgJqQgmLLiVFWS9xkodSocgViN2KFiZ4qZXl"
     },
     {
-      "actionEvidence": {
-        "personal_content": [
-          "午餐"
-        ]
-      },
-      "actionLabels": [
-        "個人／日常"
-      ],
-      "actions": [
-        "personal_content"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f209849a5e91f6e78dba5be32d55504562c596cdd7d3e46b95f71b5e942e5d84",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:5575645525787104",
       "imageAspect": 1.7778,
@@ -2864,124 +2249,105 @@
         "鐵路",
         "高鐵"
       ],
+      "nature": {
+        "confidence": 0.98,
+        "label": "個人／日常",
+        "reason": "僅分享趕行程與搭高鐵吃便當，屬日常紀錄。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2022-07-04T04:55:18.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "午安！\n早上衝衝衝跑行程，現在要坐高鐵北上，鐵路便當就是我午餐✌️",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.95,
+        "生活": 0.8
       },
       "topics": [
-        "交通"
+        "交通",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.72,
-        "evidence": "行程",
-        "label": "例行發布",
-        "type": "routine"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid02CzhXMQUdzpnWtGTS4KEjFK7MrZeqyDTkNAQhU28fnb9jr6qixbDegNm3SWhNjei5l"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "89acd8833b0f9183bd11ce0062e134e83e541c7fb27d571633a93ba37e171205",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:5572790572739266",
       "imageAspect": 1.3318,
       "imageUrl": "assets/feed-images/ca369e1c188e594b0e7f.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.96,
+        "label": "批評／究責",
+        "reason": "批評中國以不實資料傷害芒果，並表態支持果農。",
+        "type": "criticism_accountability"
+      },
       "platform": "facebook",
       "postedAt": "2022-07-03T05:01:36.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "抗議中國用不科學的資料來傷害我們台灣的芒果，用「行動」～力挺我們的果農￼￼！",
       "topicScores": {
-        "生活": 1.0
+        "兩岸外交": 0.92,
+        "社福": 0.5,
+        "經濟": 0.86
       },
       "topics": [
-        "生活"
+        "兩岸外交",
+        "經濟",
+        "社福"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid0Wr5JCPzztoBaTb3ubAkH4N2Vsy16gXVaiEXEBtPuhwdURspFPFsZ3w9YPJp99Vxl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "dbcafbee6e8178a34461c09f4e0f21f1275b8ec6a14520017be48aa04fff2743",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:4950420804976249",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "主軸是宣傳公投立場與動員支持，屬競選式訴求。",
+        "type": "campaign_mobilization"
+      },
       "platform": "facebook",
       "postedAt": "2021-12-16T06:26:01.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "過去一個月來，我從溪南到溪北，從海線到山區，用滿滿的行動力和堅持，宣傳公投四個不同意，「這就是對台灣的堅持」！",
       "topicScores": {
-        "生活": 1.0
+        "兩岸外交": 0.62,
+        "競選": 0.98
       },
       "topics": [
-        "生活"
+        "競選",
+        "兩岸外交"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid02wP8PffKGXS6QBpvYJLAUYT3Ff1RJrxZYJYGAdnJrxUsmuu2iCfsfvRckM9LVERPql"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.0,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8455a708bed8a2e607bb95c4ef703fafbd8ad8ae2755d89888bb9f9062bd0928",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:4921530207865309",
       "imageAspect": 0.7504,
@@ -2989,83 +2355,69 @@
       "keywords": [
         "高鐵"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "個人／日常",
+        "reason": "僅提到趕高鐵，屬個人行程分享。",
+        "type": "personal_content"
+      },
       "platform": "facebook",
       "postedAt": "2021-12-07T21:59:41.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "敖早！飛奔趕著高鐵￼",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.98,
+        "生活": 0.72
       },
       "topics": [
-        "交通"
+        "交通",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid0np7bRn4CndLngMGFXizbSzECGsNcnQf5bBDroX3MupeNG9imbgpfwHnMgvheJwebl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.05,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "d587fe1b5ac3a28aaed44d3694d743310d281e1eec4b64595e3cda2b7d3df0c3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:4901164946568502",
       "imageAspect": null,
       "imageUrl": null,
       "keywords": [],
+      "nature": {
+        "confidence": 0.72,
+        "label": "資訊公告／服務提醒",
+        "reason": "介紹府城傳統糕餅受喜愛，偏地方文化分享。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2021-12-01T23:23:35.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "咱府城的傳統糕餅，就連總統也相當喜歡喔",
       "topicScores": {
-        "生活": 1.0
+        "文化觀光": 0.86,
+        "生活": 0.72
       },
       "topics": [
+        "文化觀光",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid0zPKUi91xho6Rby93SjCk4MPTK1ygXmbeiu3wG9JovqZmENfUUJpNoN321pgQW76rl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "68815b15f7700138cfafb4e40f40024b93b4f6ee75814c77f136c8a5fee75a6c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "facebook:4896012363750427",
       "imageAspect": null,
@@ -3073,335 +2425,277 @@
       "keywords": [
         "長輩"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "資訊公告／服務提醒",
+        "reason": "宣布市民相談室開張，屬服務據點公告與便民資訊。",
+        "type": "public_information"
+      },
       "platform": "facebook",
       "postedAt": "2021-11-30T11:58:44.000Z",
       "sourceId": "chen-tf-fb-profile",
-      "targets": [],
       "text": "市民相談室正式開張，歡迎長輩好友們有空常來坐💪💪💪",
       "topicScores": {
-        "社福": 1.0
+        "生活": 0.68,
+        "社福": 0.77
       },
       "topics": [
-        "社福"
+        "社福",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.facebook.com/fififamily/posts/pfbid02qxVaNYHU3wbwcneYzKXB97Xfe2FJr1wq3QXEJ6DPi1rmyXVeNU1E6p3jhGQ1E1vcl"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.28,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c6ec1ccab1c49ec0ea026787a2951b0b27b7eff9392df39d8fc18fb0f0433560",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:vgILwzZsivk",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/6a0030b8a8420c748679.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.91,
+        "label": "批評／究責",
+        "reason": "聚焦中東戰火對物價民生衝擊，主要是要求機關作為。",
+        "type": "criticism_accountability"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "中東戰火衝擊民生！亭妃要求公平會，不要讓消費者當受害者",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.42,
+        "經濟": 0.77
       },
       "topics": [
+        "經濟",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=vgILwzZsivk"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.33,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c91c567498c10dee8caf9cd79c2f7fdab3fc4e80eff7cfd7a825571d7a6b3060",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:AcsdCk-Rn7w",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f4ef4a253ed695805e25.webp",
-      "keywords": [
-        "科技"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.82,
+        "label": "批評／究責",
+        "reason": "針對糖廠轉型與下一步規劃提出要求，屬監督與追問。",
+        "type": "criticism_accountability"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "新營糖廠轉型親子共融科技體驗，亭妃要求同步討論下一步規劃",
       "topicScores": {
-        "經濟": 1.0
+        "教育": 0.35,
+        "文化觀光": 0.39,
+        "生活": 0.28
       },
       "topics": [
-        "經濟"
+        "文化觀光",
+        "教育",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=AcsdCk-Rn7w"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.34,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "f0dc40f51ec3a2442d01fcbb68c4e5ad7ddba145efc924049660c0f907aabf01",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:EHcVz1m-Vso",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/6d56079f265067561128.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.84,
+        "label": "批評／究責",
+        "reason": "討論電纜地下化工程分工與權責，重點在質詢與釐清。",
+        "type": "criticism_accountability"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "電纜地下化導入民間工程量能，亭妃要求台電釐清權利義務框架",
       "topicScores": {
-        "生活": 1.0
+        "交通": 0.39,
+        "生活": 0.26,
+        "經濟": 0.32
       },
       "topics": [
+        "交通",
+        "經濟",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=EHcVz1m-Vso"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.62,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "1b246dff20570b81a47519a01a339ad7745a7e746f61e3ad232853341e2d2f28",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:ZbMmTCDgA1Y",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/3b9fa4a12d676f657c78.webp",
-      "keywords": [
-        "質詢"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.88,
+        "label": "批評／究責",
+        "reason": "主題是捷運路網與工程發包進度，屬施政督促。",
+        "type": "criticism_accountability"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "陳亭妃質詢力促南捷路網加速，工程會4月現勘、拚藍線一期10月發包",
       "topicScores": {
-        "議會監督": 1.0
+        "交通": 0.94
       },
       "topics": [
-        "議會監督"
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=ZbMmTCDgA1Y"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.74,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "69d6f59e768a907b445ab70e85a553da0a31fb9f7d5c40adff6639cc1c316f31",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:pORl7wjspxg",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/f00864e32c26b64d7091.webp",
-      "keywords": [
-        "補助"
-      ],
+      "keywords": [],
+      "nature": {
+        "confidence": 0.7,
+        "label": "政策／政見",
+        "reason": "強調產官溝通與專案補助輔導，屬具體政策與制度建議。",
+        "type": "policy_proposal"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "杜絕資訊落差！陳亭妃：產官溝通平台要更全面，專案補助輔導要更到位",
       "topicScores": {
-        "社福": 1.0
+        "教育": 0.23,
+        "生活": 0.22,
+        "經濟": 0.61
       },
       "topics": [
-        "社福"
+        "經濟",
+        "教育",
+        "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=pORl7wjspxg"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.04,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "c56d5a5e5092de2972b3a8922b0d3bf3db8123379781d7670eda582bba94d1e1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:xHWwofMqqis",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/08d15b412f5ffb32b6fe.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "鐵馬感恩之旅屬選舉行程與動員活動。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【LIVE直播】01/29妃妃鐵馬溫暖感恩之旅",
       "topicScores": {
-        "生活": 1.0
+        "交通": 0.2,
+        "競選": 0.95
       },
       "topics": [
-        "生活"
+        "競選",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=xHWwofMqqis"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.04,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "b2b997cec29280ead6e1caa07857dd8ad2e20eb1c6945cb22e76555d551d24ec",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:oeSsVIipWwE",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/3b3bd987ce89eb70f405.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "鐵馬感恩之旅續篇，主要是競選行程宣傳。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【LIVE直播】妃妃鐵馬part2溫暖感恩之旅",
       "topicScores": {
-        "生活": 1.0
+        "交通": 0.2,
+        "競選": 0.95
       },
       "topics": [
-        "生活"
+        "競選",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=oeSsVIipWwE"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.03,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "485f95fa287a127fb036c55c121a44c3e7e7f6bbc831459a01b90bb241d30c68",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:0pAd_QCeovM",
       "imageAspect": 1.7872,
@@ -3409,42 +2703,33 @@
       "keywords": [
         "民調"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "競選／動員",
+        "reason": "明示市長電話民調與關鍵一戰，屬典型競選動員。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【LIVE直播】‼️就是今晚，關鍵一戰！‼️📞 台南市長電話民調 1/14（今天晚上）正式登場 📞EP2",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.99
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=0pAd_QCeovM"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.03,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7aef6b4040ce64e279a12251e8b707b0b1e08bb004d4907122fb5f525ac26786",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:53RGSlxrv38",
       "imageAspect": 1.7872,
@@ -3452,83 +2737,67 @@
       "keywords": [
         "民調"
       ],
+      "nature": {
+        "confidence": 0.99,
+        "label": "競選／動員",
+        "reason": "明示民調登場與關鍵一戰，屬選舉動員內容。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【LIVE直播】‼️就是今晚，關鍵一戰！‼️📞 台南市長電話民調 1/14（今天晚上）正式登場 📞EP1",
       "topicScores": {
-        "競選": 1.0
+        "競選": 0.99
       },
       "topics": [
         "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=53RGSlxrv38"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.04,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "8a929f24d1ef888a5d095d0d595c8acba9e6c7dd615e3296c9bd2b6307f4d554",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:YVu4LdFdwi4",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/04940dbe43dab5508dc3.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.98,
+        "label": "競選／動員",
+        "reason": "行動政府鐵馬活動帶有競選宣傳與行程性質。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【LIVE直播】亭妃正式啟動1/1到1/11 🚴‍♀️【行動政府・行動正能量】以「女力・鐵馬精神」騎行台南-1/11 EP2",
       "topicScores": {
-        "生活": 1.0
+        "交通": 0.2,
+        "競選": 0.97
       },
       "topics": [
-        "生活"
+        "競選",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=YVu4LdFdwi4"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.88,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "cac926a741a93ba104f720ce9a1ec3156af9367af7ec1666e9fe14c936b0513e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:2jh4hVIupy4",
       "imageAspect": 0.6661,
@@ -3539,44 +2808,37 @@
         "防災",
         "治水"
       ],
+      "nature": {
+        "confidence": 0.86,
+        "label": "施政成果／行政進度",
+        "reason": "聚焦颱風淹水、抽水與治水及防災演練，屬具體施政進度。",
+        "type": "administrative_update"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "颱風汛期台南淹水怎辦？陳亭妃緊盯抽水機調度、治水進度與智慧防災演練！",
       "topicScores": {
-        "環境": 0.25,
-        "防災": 0.75
+        "交通": 0.7,
+        "環境": 0.66,
+        "防災": 0.98
       },
       "topics": [
         "防災",
+        "交通",
         "環境"
       ],
-      "trigger": {
-        "confidence": 0.84,
-        "evidence": "颱風、淹水",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.youtube.com/shorts/2jh4hVIupy4"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.9,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e17bca39091655655e0e430cbfb7afcbd9a560d4b48d923ea97ae1924bef518a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:MGwouUp2qKU",
       "imageAspect": 0.6661,
@@ -3585,83 +2847,69 @@
         "防災",
         "土石流"
       ],
+      "nature": {
+        "confidence": 0.84,
+        "label": "政策／政見",
+        "reason": "主張強化山區土石流防災韌性，屬明確政策要求。",
+        "type": "policy_proposal"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "陳亭妃要求農業部 加強台南山區土石流防災韌性！",
       "topicScores": {
-        "防災": 1.0
+        "環境": 0.65,
+        "防災": 0.96
       },
       "topics": [
-        "防災"
+        "防災",
+        "環境"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "土石流",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.youtube.com/shorts/MGwouUp2qKU"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.42,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "e4097f03b695b2159ae4a7863171b8f0a3f050518053b8753f0afdb618bf7b1f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:vf1u4zUUWpM",
       "imageAspect": 0.6661,
       "imageUrl": "assets/feed-images/66c5b6c37b426ac1a771.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.82,
+        "label": "立場表態",
+        "reason": "主要在表達對國家能源安全的關切與立場。",
+        "type": "position_statement"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "咱的油氣能撐多久？陳亭妃關切國家能源安全！",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.55,
+        "經濟": 0.78
       },
       "topics": [
+        "經濟",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/shorts/vf1u4zUUWpM"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.74,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "fae493ce614c898bf23066be506fe7b80186c41f86c9b493b6ab951df2177fe8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:1bWOczmPVJ8",
       "imageAspect": 0.6661,
@@ -3669,42 +2917,35 @@
       "keywords": [
         "捷運"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "批評／究責",
+        "reason": "批評台南捷運卡關與串聯不足，屬究責式公共議題評論。",
+        "type": "criticism_accountability"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【台南捷運卡關！】陳亭妃：沒串聯哪來運量？！別再鬼打牆！",
       "topicScores": {
-        "交通": 1.0
+        "交通": 0.98,
+        "經濟": 0.55
       },
       "topics": [
-        "交通"
+        "交通",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/shorts/1bWOczmPVJ8"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.93,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "3043e5df8fdcbac76623cf72e8d8daed3b8abb75c4f1e0e07f7caa97784ff8bd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:mvB-zkt79mI",
       "imageAspect": 0.6661,
@@ -3712,206 +2953,167 @@
       "keywords": [
         "氣候"
       ],
+      "nature": {
+        "confidence": 0.9,
+        "label": "政策／政見",
+        "reason": "主張將氣候變遷納入農災救助，屬具體政策訴求。",
+        "type": "policy_proposal"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "【蜂農快撐不住！】陳亭妃強力爭取：氣候變遷納入農災救助！",
       "topicScores": {
-        "環境": 1.0
+        "環境": 0.8,
+        "社福": 0.74,
+        "經濟": 0.7
       },
       "topics": [
-        "環境"
+        "環境",
+        "社福",
+        "經濟"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/shorts/mvB-zkt79mI"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a979fdcc2d1a44e32c1630ec4de399973a781b067527998b4da4cbefa1fcc1e7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:aBMHXImtrZ0",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/0370866b4ba6396e2558.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.62,
+        "label": "立場表態",
+        "reason": "僅標語式表達行動政府與邊緣化，未見具體公共議題。",
+        "type": "position_statement"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt-2",
-      "targets": [],
       "text": "行動政府 解決邊緣化",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.92
       },
       "topics": [
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=aBMHXImtrZ0"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.15,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "5c7fb11152cd35cba55333fe186ac522f66a955e7b94146cde48151cc911aeeb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:sHdbKhm0cWQ",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/cc1a02b8e5c587b769d8.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.78,
+        "label": "競選／動員",
+        "reason": "以人物形象與稱號包裝宣傳，偏向競選形象露出。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt-2",
-      "targets": [],
       "text": "《台南自己的女兒》陳亭妃委員講話",
       "topicScores": {
-        "生活": 1.0
+        "競選": 0.93
       },
       "topics": [
-        "生活"
+        "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=sHdbKhm0cWQ"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.14,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "7d4931453b9835bcd20247d007f9404e25100a2cbc1cc8701f63e8e3c6ce7e08",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:7Cq1BrEik0w",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/ab0fc0bcb7f3d7607bc7.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.77,
+        "label": "競選／動員",
+        "reason": "以個人故事與阿嬤互動進行形象宣傳，屬競選內容。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt-2",
-      "targets": [],
       "text": "《台南自己的女兒》亭妃與阿嬤",
       "topicScores": {
-        "生活": 1.0
+        "生活": 0.45,
+        "競選": 0.92
       },
       "topics": [
+        "競選",
         "生活"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=7Cq1BrEik0w"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "bf8206575ae9fe82700326f18e8846ad6ed47299653614f4810de92fb860c202",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:j59lsXC9d5k",
       "imageAspect": 1.7872,
       "imageUrl": "assets/feed-images/d2592805c322c55221ae.webp",
       "keywords": [],
+      "nature": {
+        "confidence": 0.76,
+        "label": "競選／動員",
+        "reason": "僅以個人品牌名稱呈現，屬候選人宣傳素材。",
+        "type": "campaign_mobilization"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt-2",
-      "targets": [],
       "text": "《台南自己的女兒》陳亭妃",
       "topicScores": {
-        "生活": 1.0
+        "競選": 0.92
       },
       "topics": [
-        "生活"
+        "競選"
       ],
-      "trigger": {
-        "confidence": 0.35,
-        "evidence": "沒有足夠文字證據判斷觸發原因",
-        "label": "待確認",
-        "type": "unclear"
-      },
       "url": "https://www.youtube.com/watch?v=j59lsXC9d5k"
     },
     {
-      "actionEvidence": {
-        "other": [
-          "規則未找到更明確的溝通行動，需人工複核"
-        ]
-      },
-      "actionLabels": [
-        "其他／待細分"
-      ],
-      "actions": [
-        "other"
-      ],
+      "agendaRelevance": 0.14,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "method": "rules",
-        "needsReview": true,
-        "rubricVersion": "context-v1"
+        "classifiedAt": "2026-07-15T08:54:42+00:00",
+        "inputHash": "a5e686891e09ab2a3174877d2691000588461559483ece0dfca9b9308568f668",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v2"
       },
       "id": "youtube:CTgXB4u4Ew8",
       "imageAspect": 0.6661,
@@ -3919,23 +3121,26 @@
       "keywords": [
         "颱風"
       ],
+      "nature": {
+        "confidence": 0.93,
+        "label": "資訊公告／服務提醒",
+        "reason": "颱風期間供電提醒與韌性宣導，偏資訊公告。",
+        "type": "public_information"
+      },
       "platform": "youtube",
       "postedAt": "",
       "sourceId": "chen-tf-yt",
-      "targets": [],
       "text": "颱風襲台 陳亭妃力促台電：全面提升台南供電韌性！",
       "topicScores": {
-        "防災": 1.0
+        "交通": 0.56,
+        "生活": 0.7,
+        "防災": 0.96
       },
       "topics": [
-        "防災"
+        "防災",
+        "生活",
+        "交通"
       ],
-      "trigger": {
-        "confidence": 0.78,
-        "evidence": "颱風",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
       "url": "https://www.youtube.com/shorts/CTgXB4u4Ew8"
     }
   ],
