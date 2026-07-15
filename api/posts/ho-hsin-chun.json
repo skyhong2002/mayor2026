@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 80,
+  "count": 81,
   "posts": [
     {
       "actionEvidence": {
@@ -3669,6 +3669,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/watch?v=ws1pqLoKZ6c"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:mfMWkzdBVCA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/bb1a90088dca59bfdc8d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "ho-hc-yt",
+      "targets": [],
+      "text": "清水的人文魅力 藏在每一幅畫裡！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/mfMWkzdBVCA"
     }
   ],
   "version": 1

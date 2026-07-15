@@ -19,8 +19,49 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 64,
+  "count": 66,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "shen-poyang",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daxr6_YyWMb/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/edb8ac12986ffeec330a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T14:25:13+00:00",
+      "sourceId": "shen-ig-personal",
+      "targets": [],
+      "text": "我還在北大教書，\n剛好今天有學生要口試，就搭上最近開通的三鶯線回北大，也來開箱一下我的研究室～",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Daxr6_YyWMb/"
+    },
     {
       "actionEvidence": {
         "policy_proposal": [
@@ -3079,6 +3120,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/J4K5ee8df44"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "shen-poyang",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:xPFtdeju3-o",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/70c3ccceda5f4dfc29c9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "shen-yt-personal",
+      "targets": [],
+      "text": "走向國際！團隊升級！沈伯洋訪美記者會",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/watch?v=xPFtdeju3-o"
     }
   ],
   "version": 1

@@ -1,6 +1,47 @@
 {
-  "count": 71,
+  "count": 73,
   "posts": [
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DazH0lyEjUt",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5b476049aa7581ffb0d9.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T03:41:34+00:00",
+      "sourceId": "su-ch-threads",
+      "targets": [],
+      "text": "@su.chiaohui:昨天孩子們練舞到很晚，早上很早就集合著裝。今天我是又開心又驕傲的媽媽。",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DazH0lyEjUt"
+    },
     {
       "actionEvidence": {
         "other": [
@@ -3451,6 +3492,47 @@
         "type": "unclear"
       },
       "url": "https://www.youtube.com/shorts/gXjMOPa-RVs"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "youtube:WIMHwJ_zfas",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/591803700cb50584a093.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "sourceId": "su-ch-yt",
+      "targets": [],
+      "text": "今天我是又開心又驕傲的媽媽！",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.youtube.com/shorts/WIMHwJ_zfas"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

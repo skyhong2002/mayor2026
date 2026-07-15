@@ -13,6 +13,47 @@
       "actions": [
         "other"
       ],
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "threads:https://www.threads.com/t/DazH0lyEjUt",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5b476049aa7581ffb0d9.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T03:41:34+00:00",
+      "sourceId": "su-ch-threads",
+      "targets": [],
+      "text": "@su.chiaohui:昨天孩子們練舞到很晚，早上很早就集合著裝。今天我是又開心又驕傲的媽媽。",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.threads.com/t/DazH0lyEjUt"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
       "candidateId": "hsieh-lung-chieh",
       "classification": {
         "method": "rules",
@@ -41,6 +82,47 @@
         "type": "unclear"
       },
       "url": "https://www.instagram.com/p/Dax1XA4ygMk/"
+    },
+    {
+      "actionEvidence": {
+        "other": [
+          "規則未找到更明確的溝通行動，需人工複核"
+        ]
+      },
+      "actionLabels": [
+        "其他／待細分"
+      ],
+      "actions": [
+        "other"
+      ],
+      "candidateId": "shen-poyang",
+      "classification": {
+        "method": "rules",
+        "needsReview": true,
+        "rubricVersion": "context-v1"
+      },
+      "id": "instagram:https://www.instagram.com/p/Daxr6_YyWMb/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/edb8ac12986ffeec330a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-14T14:25:13+00:00",
+      "sourceId": "shen-ig-personal",
+      "targets": [],
+      "text": "我還在北大教書，\n剛好今天有學生要口試，就搭上最近開通的三鶯線回北大，也來開箱一下我的研究室～",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "trigger": {
+        "confidence": 0.35,
+        "evidence": "沒有足夠文字證據判斷觸發原因",
+        "label": "待確認",
+        "type": "unclear"
+      },
+      "url": "https://www.instagram.com/p/Daxr6_YyWMb/"
     },
     {
       "actionEvidence": {
@@ -4848,124 +4930,6 @@
         "type": "external_event"
       },
       "url": "https://www.instagram.com/p/Dapt9-xoHpy/"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "市府團隊",
-          "搶修"
-        ],
-        "mobilization": [
-          "支持"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度",
-        "動員宣傳"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update",
-        "mobilization"
-      ],
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1795259361963288",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/8a81c007dec48b918f8e.webp",
-      "keywords": [
-        "颱風",
-        "豪雨",
-        "災情",
-        "垃圾",
-        "道路"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-11T12:01:23.000Z",
-      "sourceId": "chang-sc-fb",
-      "targets": [],
-      "text": "桃園市明（7/12）日 #復興區停止上班上課  其餘地區照常上班上課。\n\n雖然巴威颱風暴風圈預計今晚深夜離開台灣，但外圍環流仍將持續為復興區帶來大豪雨至超大豪雨等級降雨，這兩天已預防性撤離745人，收容135人，稍早也將華陵里2戶7人撤離並完成安置；另外針對大溪崁津部落也已全數完成疏散。\n\n在超大豪雨的侵襲下，復興區部分道路發生損壞情況，我們與區公所保持密切聯繫，能搶修的先搶修，較嚴重的也會等天氣較穩定後，儘快展開修復工作，讓居民能夠儘快返回家園，恢復正常通行。\n\n一整天下來，桃園累計已超過五萬戶曾停電，感謝台電同仁冒著風雨全力搶修，讓多數地區都能在短時間內恢復供電。我也在應變會議中一再提醒所有投入外勤工作的市府同仁及各單位夥伴，救災重要，大家自身安全更重要。\n\n另外，垃圾收運因颱風已停收兩日，明天（7/12）將於原時段加班清運。特別感謝清潔隊同仁及工會的支持，也請大家配合做好垃圾分類，不要隨意棄置垃圾，一起讓市容盡快恢復正常。\n\n截至目前，桃園整體災情都在掌握與處理當中，颱風雖然逐漸遠離，但山區雨勢仍大，請大家非必要避免前往山區及海邊活動，避免讓自己遭遇危險。\n\n市府團隊會持續守視各地狀況，妥善做好各項應變與復原工作，也請大家留意最新天氣資訊，共同平安度過這次颱風。",
-      "topicScores": {
-        "交通": 0.0833,
-        "環境": 0.25,
-        "防災": 0.6667
-      },
-      "topics": [
-        "防災",
-        "環境",
-        "交通"
-      ],
-      "trigger": {
-        "confidence": 0.95,
-        "evidence": "颱風、豪雨、災情、停電",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/SanCheng624/posts/pfbid02GrhAQCCJdyrYyaNJyxHNvpqrF9C9qQF8ynQ5LMpz2Z5w9KJxcyMr4pYrrXfX3w4Fl"
-    },
-    {
-      "actionEvidence": {
-        "administrative_update": [
-          "市府團隊"
-        ],
-        "public_information": [
-          "提醒"
-        ]
-      },
-      "actionLabels": [
-        "資訊轉達",
-        "行政進度"
-      ],
-      "actions": [
-        "public_information",
-        "administrative_update"
-      ],
-      "candidateId": "chiang-wanan",
-      "classification": {
-        "method": "rules",
-        "needsReview": false,
-        "rubricVersion": "context-v1"
-      },
-      "id": "facebook:1580540270102591",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/6040100853165f0449de.webp",
-      "keywords": [
-        "交通",
-        "道路",
-        "颱風",
-        "淹水",
-        "大學"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-11T12:00:31.000Z",
-      "sourceId": "chiang-wa-fb",
-      "targets": [],
-      "text": "市民朋友晚安！\n\n#巴威颱風 逐漸遠離臺灣，根據中央氣象署最新預報資料，並經基北北桃四市討論共識，我宣布臺北市明天（7/12）正常上班上課。\n\n根據氣象團隊資訊，巴威颱風暴風圈範圍略為縮小，持續朝西北方向快速移動，預估今天深夜到明天凌晨，有機會脫離暴風圈範圍。\n\n雖然颱風影響逐漸減弱，市府團隊仍持續堅守崗位，全力投入各項復原工作。\n\n截至今天，市府已累積動員27,758人次、7,031車次，持續加強溝渠及易積淹水地點巡檢與清疏作業，避免雜物堵塞、確保排水順暢；同時也加強道路巡查，即時清除斷枝殘幹，維持道路及排水系統正常運作。\n\n另外，我也指示環保局全面展開復舊工作，動員人力加速恢復市容。尤其是要優先清理主要道路及大學分科測驗考場周邊，讓市民朋友及考生都能在明天恢復正常生活與交通秩序。\n\n提醒市民朋友，今天晚間風勢及雨勢仍有一定影響，請持續留意最新氣象資訊，外出務必注意安全。\n\n市府團隊會持續努力，以最快速度恢復市容、守護市民安全。",
-      "topicScores": {
-        "交通": 0.4444,
-        "教育": 0.1111,
-        "防災": 0.4444
-      },
-      "topics": [
-        "交通",
-        "防災",
-        "教育"
-      ],
-      "trigger": {
-        "confidence": 0.9,
-        "evidence": "颱風、淹水、中央氣象署",
-        "label": "外部事件驅動",
-        "type": "external_event"
-      },
-      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0pfFc1EvpPq2ZHU9b6gMmMZiNpWHAv3fPiAFxpENwSPWzRimgu49BQ4BQmTNNUNwwl"
     }
   ],
   "version": 1
