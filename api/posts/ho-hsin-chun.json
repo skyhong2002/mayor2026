@@ -19,8 +19,46 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 81,
+  "count": 83,
   "posts": [
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "b99c62b0541848496630bbf4e2ca913a8d18e564053c9c987a3f6d8d15651894",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da1ex3SGYWp",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-16T01:39:39+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評台中食安稽查與非洲豬瘟防疫，屬主動究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:中聯生產的油品驗出致癌物超標，民眾恐慌、相關產品下架回收，中下游關聯產業，無辜食品加工、餐飲小吃店家損失慘重，黑心無良廠商必須重懲。\n\n食安關係國人健康，更牽涉整體食品供應鏈的系統性管理，但所有控管都須建基於完善的「源頭管理」，源頭稽查是第一步。昨天，台中市議員公布市府公文，資料顯示，中聯油脂2022年到2025年共稽查6次，直到事件爆發前，真正抽驗油品只有1次，是在2年多前的2024年4月26日，市民各界正在等待市府的回應。\n\n我們更不禁回想，台中去年爆發非洲豬瘟，養豬場的廚餘蒸煮紀錄稽查、輕忽檢體採樣、疫情調查不確實，釀成當時全國買不到台灣豬的風暴，所幸中央及時進駐台中，與地方攜手合作防疫，才能一起度過難關，過程都歷歷在目。\n\n我要呼籲盧市長，先請放下心中那份競逐大位的罣礙與執念，以台中市民的安全健康為最大考量。食安從沒任何僥倖空間，不會有藍綠，更沒有中央、地方之分，人民期待政府一體、攜手聯防合作，從原料製品到市民餐桌，守住食品安全的每一道防線。",
+      "topicScores": {
+        "治安": 0.74,
+        "環境": 0.88,
+        "經濟": 0.7
+      },
+      "topics": [
+        "環境",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da1ex3SGYWp"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "ho-hsin-chun",
@@ -2926,6 +2964,40 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/mfMWkzdBVCA"
+    },
+    {
+      "agendaRelevance": 0.36,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "88a4b5773f7a3f8057b89d4deaef719100373bb2a5f337c914f896ff68390508",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:S5QvH_Csqy8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e58b73b5f9b27564bc3c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "僅題示市政行程，未見明確政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "六星市政168這次來到南區！",
+      "topicScores": {
+        "生活": 0.9,
+        "競選": 0.55
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/S5QvH_Csqy8"
     }
   ],
   "version": 1

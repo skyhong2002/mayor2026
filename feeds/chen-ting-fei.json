@@ -1,6 +1,70 @@
 {
-  "count": 86,
+  "count": 89,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "1b56a9185e94c87a53faf52ee726556249e20a6a9d367b651b646f8e4a1dae4a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da1QDTxzLFS/",
+      "imageAspect": 0.7505,
+      "imageUrl": "assets/feed-images/e99384d927fc99968ad8.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-15T23:31:32+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅簡短問候，沒有公共議題內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "早安！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Da1QDTxzLFS/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "db67246ce246d98ecb611c69b0be9deb28faf8a47f9f106046bf04c145cd85e2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da1QEWfk9CK",
+      "imageAspect": 0.7505,
+      "imageUrl": "assets/feed-images/9799cfb4efa41a7f5476.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-15T23:31:06+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅回覆早安，屬日常問候。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:早安！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da1QEWfk9CK"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "chen-ting-fei",
@@ -3125,6 +3189,44 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/CTgXB4u4Ew8"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "a14a1c823e0300782f248d8594a126586460ba440f817527753ec2c316e02121",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8oVwEF8Cmh8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6e33d4fc6a5c56527078.webp",
+      "keywords": [
+        "科技"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主打五分車與糖廠園區規劃，屬觀光發展政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-yt",
+      "text": "台南新亮點！陳亭妃推五分車串聯卸鹽台 打造新營糖廠親子科技共榮區",
+      "topicScores": {
+        "交通": 0.55,
+        "文化觀光": 0.94,
+        "經濟": 0.57
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/8oVwEF8Cmh8"
     }
   ],
   "title": "陳亭妃（臺南市）貼文更新",

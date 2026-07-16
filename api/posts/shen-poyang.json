@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 69,
+  "count": 70,
   "posts": [
     {
       "agendaRelevance": 0.18,
@@ -2508,6 +2508,42 @@
         "兩岸外交"
       ],
       "url": "https://www.youtube.com/watch?v=xPFtdeju3-o"
+    },
+    {
+      "agendaRelevance": 0.77,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "19abae9fe4309cb4dbd99beb9e4863dcd4b4572fd6fc3a8b959bb1fab150f3e7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1DXr1Njptcc",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/7d6f36043f978daf26ff.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標示運動政策記者會，屬主動發布政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "「你的市長 你的主場」沈伯洋公布運動政策記者會",
+      "topicScores": {
+        "競選": 0.95,
+        "體育": 0.86
+      },
+      "topics": [
+        "競選",
+        "體育"
+      ],
+      "url": "https://www.youtube.com/watch?v=1DXr1Njptcc"
     }
   ],
   "version": 1
