@@ -1,6 +1,110 @@
 {
-  "count": 83,
+  "count": 88,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "206a6a315d42f0e2486f3bfe03a7ccde2061c1dc47413ae9b4f36dcfcc6a12d3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1606284500853132",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/890ad7cbb35773cc67c8.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-16T10:31:57.000Z",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "反映改裝車噪音並安排會勘，屬地方生活問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "臺南永康區中華二路、中華路晚上常有改裝車噪音..林燕祝議員已安排會勘  林燕祝",
+      "topicScores": {
+        "治安": 0.91,
+        "生活": 0.78
+      },
+      "topics": [
+        "治安",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/909334881505428/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "768b4e8e51476fc896b78a783d55dd940af74a34d90987eeb8aba75cc0fd31b8",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-16T16:03:06+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da2Z5uSkZ1m",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4b800d583bff3fa00e06.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-16T10:16:18+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅述噪音與會勘，無他方具體主張；非回應其觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:台南永康區中華二路、中華路晚上常有改裝車噪音...林燕祝議員已安排會勘",
+      "topicScores": {
+        "交通": 0.67,
+        "治安": 0.94
+      },
+      "topics": [
+        "治安",
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/Da2Z5uSkZ1m"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "da562d7a5297d86149172980969e734893e581fd88d63df6aa394c2183ced418",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1606144194200496",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4c3814790bdc7a8aefce.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-16T06:21:49.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以參選口號表態，屬競選訴求而非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "用蘇南成馬上辦的精神，只做一任為台南拚一個改變",
+      "topicScores": {
+        "生活": 0.31,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1326492199697551/"
+    },
     {
       "agendaRelevance": 0.75,
       "candidateId": "hsieh-lung-chieh",
@@ -177,6 +281,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DaxmAyTD_Of"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "9af0f7c2de245ac3f170563dc095641a94f3a032d775c43e5411e64e747f28f0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:2929353227425841",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/004b72e18d0f9c52bd11.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-14T13:17:23.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為直播標題，未見具體公共議題主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "20260714 談天說地論臺灣 ｜龍介的直播",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/2929353227425841/"
     },
     {
       "agendaRelevance": 0.4,
@@ -2976,6 +3112,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/jWLjvodYsYE"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "ad250ca2599a29d7107899438636b7026f79f3ab76786485251a36288cec5e3b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fyMG3bCFXtU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/0c3696db78c394dead16.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容是夜間改裝車噪音陳情，屬一般問題反映。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Frequent modified vehicle noise at night on Zhonghua 2nd Road and Zhonghua Road, Yongkang Distric...",
+      "topicScores": {
+        "治安": 0.78,
+        "生活": 0.74
+      },
+      "topics": [
+        "治安",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/fyMG3bCFXtU"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

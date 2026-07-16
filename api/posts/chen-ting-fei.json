@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/e7ee7f4f2ce82a9fc9c5.webp",
+    "avatarUrl": "assets/source-avatars/eb0688ada4707967674c.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "chen-ting-fei",
@@ -19,8 +19,48 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 89,
+  "count": 91,
   "posts": [
+    {
+      "agendaRelevance": 0.73,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "d3d55b5e0b748d061191f4fdcf12065e7a08699f1e3e6266aa90870726d8fcba",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1594213358733253",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/75bc1343758f2ac848ab.webp",
+      "keywords": [
+        "質詢",
+        "立法院",
+        "國防"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-16T02:09:26.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "在立院質詢無人載具採購條例，屬主動監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "立法院質詢ING\n「國防自主無人載具採購特別條例」",
+      "topicScores": {
+        "兩岸外交": 0.4,
+        "經濟": 0.34,
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督",
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid0S3kXx3o2Umw1ePabpRF8AMLYosxMAQP6sLtkV1UwijZEX2R7xgDVfJ8xEUyoF4xXl"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",
@@ -84,6 +124,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Da1QEWfk9CK"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "1363fb3700958a41110eb4db086c1a3ceb6b98726a3d11c1fa7628a86dbe844c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1594131665408089",
+      "imageAspect": 0.7504,
+      "imageUrl": "assets/feed-images/67b4cae73d1ae4394dac.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-15T23:31:05.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅單純問候早安，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "早安！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid0gc48Qsefhxt2CDFqCvQn5TkogLVtPFKp5pH9m44GhWE3rGUAhnh7Z4mjfBGPwTjcl"
     },
     {
       "agendaRelevance": 0.72,

@@ -1,6 +1,49 @@
 {
-  "count": 48,
+  "count": 49,
   "posts": [
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "f9fef21225453adc1bed375a3c577f44c6dcaa5174e595ba8399f1060f67e576",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1065892136120518",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/d7ee2d1eb4b130c51bc9.webp",
+      "keywords": [
+        "議會",
+        "都更",
+        "捷運",
+        "育兒"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-16T06:51:38.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "施政報告說明市府政策與成果，屬主動施政溝通。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "市民朋友午安！\n今天下午，我到臺北市議會進行施政報告。\n\n針對大家關心的議題，包含北士科AI創新中心、都更八箭、捷運六線齊發2.0、友善育兒、無菸城市等政策，向全體市民及議員說明臺北市政府的施政成果。\n\n歡迎大家加入直播，一起關心臺北市！",
+      "topicScores": {
+        "交通": 0.77,
+        "住宅": 0.78,
+        "社福": 0.76,
+        "議會監督": 0.93
+      },
+      "topics": [
+        "議會監督",
+        "住宅",
+        "交通",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/videos/1065892136120518/"
+    },
     {
       "agendaRelevance": 0.34,
       "candidateId": "chiang-wanan",

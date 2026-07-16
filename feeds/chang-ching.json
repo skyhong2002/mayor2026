@@ -1,6 +1,40 @@
 {
-  "count": 25,
+  "count": 26,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chang-ching",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "6acfade7c8db6590c027508153dc6173ea395ee9d8b1c47781756005e8dd0185",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:921965250935004",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/cacdbf1114f617bda090.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-15T12:00:05.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "是影片引導討論行政院角色，非回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-ching-party-fb",
+      "text": "📌 同一個行政院，為什麼有人批評，也有人力挺？\n\n同一個政府，為什麼社會評價會如此兩極？\n\n司法改革黨主席 張靜律師 在影片中分享他的看法。\n\n他認為，在現行憲政制度下，行政院在法律公布程序中扮演重要角色。如果相關程序無法完成，將影響法律後續的公布與施行，也因此引發許多政治與法律上的討論。\n\n⚠️ 主席認為，制度如何運作，不只影響政治，更直接關係到人民的權益。\n\n你認為，行政院在憲政體制中應該扮演什麼角色？\n\n歡迎留言討論 👇\n\n#司法改革黨 #張靜律師 #行政院 #憲法 #司法改革 #熱門話題 #留言討論",
+      "topicScores": {
+        "生活": 0.52,
+        "議會監督": 0.79
+      },
+      "topics": [
+        "議會監督",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1812387386803072/"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "chang-ching",
