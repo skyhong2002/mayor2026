@@ -19,7 +19,7 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 107,
+  "count": 108,
   "posts": [
     {
       "agendaRelevance": 0.22,
@@ -98,13 +98,52 @@
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0iqFSqPrx8GfzWptKezyZvLFz11uFUxVBB4x2ZjbgopmHxmeZRxJjUWVoHBh3jfgtl"
     },
     {
-      "agendaRelevance": 0.84,
+      "agendaRelevance": 0.9,
       "candidateId": "lai-jui-lung",
       "classification": {
-        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "classifiedAt": "2026-07-16T22:03:19+00:00",
+        "inputHash": "fadb0f920cb6405bb07b228d43c54e91f528df48eab1253ac3bc961044bf52c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da2eot5yxIs/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/b21f84ce0210b6cae5c0.webp",
+      "keywords": [
+        "薪資",
+        "補助",
+        "質詢",
+        "立法院"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-16T10:58:08+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動宣傳爭取勞保補助調升，涉及工會勞工福利與行政事務費。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "成功爭取 工會勞保行政事務費調高！\n\n工會夥伴每天在第一線處理投保、權益諮詢，業務龐大。為減輕基層負擔，今年三月在立法院總質詢時，我當面向 @t.ai_good 卓榮泰院長反映困境，強力要求調升「勞保行政事務費」，並獲得院長及部長的正面回應。\n\n經過這段時間的持續爭取，行政院今天正式宣布，自明年（2027年）元旦起，勞保補助將由每人每月14元調高至16元。此外，針對僅參加災保者，行政院這次也同步將補助從每人每月3元調高至4元，全面減輕基層負擔。\n\n這次調整預估有近4,000家工會受惠，將協助工會提升會務人員薪資，讓大家能更安心推動各項勞工服務，成為勞工朋友最堅實的後盾。\n\n一路走來，我始終和勞工朋友站在一起。未來我一定會全力以赴，強化工會能量，建構更完善的勞工保護傘，和大家一起打拚，讓高雄更繁榮、更進步！",
+      "topicScores": {
+        "社福": 0.84,
+        "經濟": 0.89,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "經濟",
+        "社福",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/Da2eot5yxIs/"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-16T22:03:19+00:00",
         "inputHash": "fc45ef0391a30d7cd4ab2f4f65ade2b674d721dffee7724d7a7aa879f62a5087",
-        "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-07-16T16:03:06+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
         "rubricVersion": "content-v4"
@@ -113,28 +152,30 @@
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/9a5f522090adfc41ea15.webp",
       "keywords": [
+        "薪資",
         "補助",
-        "薪資"
+        "質詢",
+        "立法院"
       ],
       "platform": "threads",
       "postedAt": "2026-07-16T10:50:48+00:00",
       "postingIntent": {
-        "confidence": 0.88,
+        "confidence": 0.96,
         "label": "主動發文",
-        "reason": "有對院長反映，但主要在宣傳爭取成果，非答覆特定他方說法。",
+        "reason": "主動宣傳爭取勞保補助調升，涉及工會勞工福利與行政事務費。",
         "type": "self_initiated"
       },
       "sourceId": "lai-jl-threads",
       "text": "@zenolai:成功爭取 工會勞保行政事務費調高！\n\n工會夥伴每天在第一線處理投保、權益諮詢，業務龐大。為減輕基層負擔，今年三月在立法院總質詢時，我當面向 @t.ai_good 卓榮泰院長反映困境，強力要求調升「勞保行政事務費」，並獲得院長及部長的正面回應。\n\n經過這段時間的持續爭取，行政院今天正式宣布，自明年（2027年）元旦起，勞保補助將由每人每月14元調高至16元。此外，針對僅參加災保者，行政院這次也同步將補助從每人每月3元調高至4元，全面減輕基層負擔。\n\n這次調整預估有近4,000家工會受惠，將協助工會提升會務人員薪資，讓大家能更安心推動各項勞工服務，成為勞工朋友最堅實的後盾。\n\n一路走來，我始終和勞工朋友站在一起。未來我一定會全力以赴，強化工會能量，建構更完善的勞工保護傘，和大家一起打拚，讓高雄更繁榮、更進步！",
       "topicScores": {
-        "社福": 0.95,
-        "經濟": 0.78,
-        "防災": 0.58
+        "社福": 0.84,
+        "經濟": 0.89,
+        "議會監督": 0.72
       },
       "topics": [
-        "社福",
         "經濟",
-        "防災"
+        "社福",
+        "議會監督"
       ],
       "url": "https://www.threads.com/t/Da2d2qzid1s"
     },

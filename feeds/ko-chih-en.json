@@ -1,6 +1,45 @@
 {
-  "count": 80,
+  "count": 81,
   "posts": [
+    {
+      "agendaRelevance": 0.68,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-16T22:03:11+00:00",
+        "inputHash": "f12667430da462483aac0b564f082229ba367afa6bc2eca9150ea1a9cf4c85a7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da2uNKHExBB/",
+      "imageAspect": 1.3319,
+      "imageUrl": "assets/feed-images/51f64b845aa3c80779b5.webp",
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "災情",
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-16T13:13:43+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主要談豪雨淹水、排水防洪與治水關切，屬地方防災主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "今晚來到 #田寮區 西德里義民爺亭，參加「修繕謝土法會暨祈福平安宴」，與百桌鄉親一同祈福，現場溫馨又熱鬧。\n\n與鄉親一起圍桌吃平安、話家常，共同見證義民爺亭修繕完成。這不只是建築的修復，更是地方居民共同守護文化、延續信仰的重要成果。\n\n再次回到田寮，讓我想起上個月豪雨帶來的災情。\n\n當時我與李亞築議員在黃萬春里長陪同下，前往當地關心二仁溪淹水、田寮交流道周邊搶修及地方受災情況，也承諾會持續督促相關單位正視二仁溪淤積、排水與防洪問題。\n\n義民爺守護鄉土，田寮鄉親也始終用同樣的心意守護彼此。\n\n未來，我也會繼續關心田寮的治水與地方建設，持續走進基層、傾聽鄉親的聲音。我和你們站在一起，讓高雄變得更好。",
+      "topicScores": {
+        "文化觀光": 0.66,
+        "防災": 0.93
+      },
+      "topics": [
+        "防災",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Da2uNKHExBB/"
+    },
     {
       "agendaRelevance": 0.58,
       "candidateId": "ko-chih-en",

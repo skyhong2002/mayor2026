@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-17 00:03:06"
+        "最近一次執行心跳：2026-07-17 06:03:19"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：947",
+        "已收錄貼文：957",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：92 ms"
+        "耗時：29 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-07-17 00:01:01",
+        "最新抓取時間：2026-07-17 06:02:59",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-07-17 00:01:13",
         "本月已花費：$3.08 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 56.2h, next at 2026-07-19T00:12:14+00:00; ~$3.08 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 55.3h, next at 2026-07-18T23:17:14+00:00; ~$3.08 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,17 +77,17 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-17T00:03:06+08:00",
+  "generatedAt": "2026-07-17T06:03:19+08:00",
   "metrics": {
     "candidates": 14,
-    "latestPostAt": "2026-07-16T15:46:08.000Z",
+    "latestPostAt": "2026-07-16T16:01:31+00:00",
     "postsByPlatform": {
       "facebook": 325,
-      "instagram": 245,
-      "threads": 159,
+      "instagram": 254,
+      "threads": 160,
       "youtube": 218
     },
-    "totalPosts": 947,
+    "totalPosts": 957,
     "watchAccounts": 81
   },
   "overall": {

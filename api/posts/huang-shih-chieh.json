@@ -19,8 +19,49 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 79,
+  "count": 81,
   "posts": [
+    {
+      "agendaRelevance": 0.38,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T22:03:11+00:00",
+        "inputHash": "26f556136b6efad9ea4ec8e28dbf1c57ae537b2f0b874eeecf35dba05ffc0b43",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da2vVg8kx87/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/446ed1ddb7f03cdd55ea.webp",
+      "keywords": [
+        "棒球",
+        "球隊",
+        "球場",
+        "冠軍",
+        "文化",
+        "觀光"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-16T13:29:26+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "討論棒球結合地方文化觀光，屬活動觀察與城市品牌想像。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "今天與陳治文議員一同參加樂天桃猿「大溪區民日」，迎神轎、迎聖帝公，也見證大溪文化盛事「大溪大禧」與棒球結合的熱鬧盛況。\n\n看到在地文化走進球場，也讓我想起，曾經的桃猿，不只是一支職棒球隊，更是桃園最具代表性的城市品牌。\n\n過去，桃園市政府不只是管理球場，更積極投入桃園國際棒球場的整建與改善，推動「桃園挺桃猿」，市長也常出席開幕戰、總冠軍活動，讓球隊與城市緊密連結。球迷不只是進場看球，更以「10號隊友」為榮，因為大家都相信，桃猿就是桃園，桃園就是桃猿。\n\n今天參加樂天桃猿大溪區民日，看到棒球與大溪大禧、地方文化結合，也讓人再次思考：如果一支城市球隊能和地方活動、商圈及文化有更多連結，將有機會讓更多人因為棒球認識桃園，也因為桃園愛上棒球！\n\n未來我希望有機會讓桃園市政府能重新成為球隊最堅強的夥伴，讓球賽結合各區特色活動、地方文化與觀光，讓棒球走進每一個行政區，也讓更多人因為桃猿認識桃園、因為桃園愛上桃猿💖",
+      "topicScores": {
+        "文化觀光": 0.73,
+        "體育": 0.97
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Da2vVg8kx87/"
+    },
     {
       "agendaRelevance": 0.47,
       "candidateId": "huang-shih-chieh",
@@ -141,6 +182,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Da2Fz_lmpXA"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-16T22:03:11+00:00",
+        "inputHash": "6d2f18c6b78c005f2efbf880224d8646c8bc8a44c996e978523b5c900ce7d64d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da2FvZOzQUK/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/a118bc4e4660e6477d4e.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-16T07:20:37+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是市場掃街行程通知，屬選區活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "明天早上9:00，動起來！龜山市場掃街✨\n\n市場，是最能感受在地日常的地方。明天「動起來」掃街列車將來到龜山站，期待和攤商老闆、採買鄉親面對面交流！\n\n期待明早和大家相遇！心龜山，動起來💖",
+      "topicScores": {
+        "交通": 0.31,
+        "生活": 0.95
+      },
+      "topics": [
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/Da2FvZOzQUK/"
     },
     {
       "agendaRelevance": 0.07,
