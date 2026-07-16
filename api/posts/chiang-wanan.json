@@ -19,7 +19,7 @@
     "name": "蔣萬安",
     "party": "國民黨"
   },
-  "count": 47,
+  "count": 48,
   "posts": [
     {
       "agendaRelevance": 0.34,
@@ -1775,6 +1775,42 @@
         "社福"
       ],
       "url": "https://www.youtube.com/shorts/n4mw6eEvH5k"
+    },
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-16T10:01:26+00:00",
+        "inputHash": "53e25d82ad1b2a298df4acf13847ec88d8d486b11ca40270e73eb98076e3bf06",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:b1W1mA6DX7M",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/8db5f73b68b760ccbbbd.webp",
+      "keywords": [
+        "議會"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為市長赴議會施政報告紀錄，屬例行監督場合。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-yt",
+      "text": "1150716蔣萬安市長赴議會施政報告",
+      "topicScores": {
+        "生活": 0.45,
+        "議會監督": 0.98
+      },
+      "topics": [
+        "議會監督",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=b1W1mA6DX7M"
     }
   ],
   "version": 1

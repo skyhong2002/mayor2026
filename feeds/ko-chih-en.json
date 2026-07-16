@@ -1,6 +1,46 @@
 {
-  "count": 74,
+  "count": 76,
   "posts": [
+    {
+      "agendaRelevance": 0.66,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-16T10:01:26+00:00",
+        "inputHash": "640c91a0290153e88a7e1d7caece798acd04c28c5c1cebf76817019a57a4b948",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da2LB3ZidRG",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9b669cf733d38009c6f7.webp",
+      "keywords": [
+        "預算",
+        "罷免",
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-16T08:07:06+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "批評TaiwanPlus預算與採購，屬對行政機關的監督質詢。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:TaiwanPlus 宣傳失焦、預算執行低落且濫用限制性招標 \n耗資數十億的 TaiwanPlus 國際能見度低落，書面報告竟拿「颱風、地震、捷運攻擊、罷免案」等事件作為「流量增加」的成績，這難道是台灣要向國際宣傳的形象？此外，TaiwanPlus 預算執行率極差，不僅延宕至今年5月仍執行不完、最後繳回1,800萬，更有大量採購案濫用《政府採購法》第22條第1項第14款進行限制性招標。我文化部必須於一週內，交出所有以限制性招標辦理的採購項目清單、金額與正當理由，嚴格追究預算流向！",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "經濟": 0.54,
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da2LB3ZidRG"
+    },
     {
       "agendaRelevance": 0.84,
       "candidateId": "ko-chih-en",
@@ -2865,6 +2905,42 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/wVq0VRFvPUY"
+    },
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-16T10:01:26+00:00",
+        "inputHash": "c629f3c25414c517c867b792a196ecc2979f204c0640edfac83442829b11d318",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:FpaulvyMmEY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6e11025350f93d1a190a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評TaiwanPlus預算執行與採購問題，屬監督與施政檢討。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "TaiwanPlus Lacks Focus, Underperforms on Budget Execution, and Abuses Restricted Tendering",
+      "topicScores": {
+        "文化觀光": 0.85,
+        "經濟": 0.56,
+        "議會監督": 0.97
+      },
+      "topics": [
+        "議會監督",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/FpaulvyMmEY"
     }
   ],
   "title": "柯志恩（高雄市）貼文更新",
