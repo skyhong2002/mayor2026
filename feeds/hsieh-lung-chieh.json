@@ -1,6 +1,40 @@
 {
-  "count": 92,
+  "count": 95,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-17T16:03:43+00:00",
+        "inputHash": "626567175f8bc9a0d1432a659079de7e58083e3c11bc7779360437cfb77e1867",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da47K9-SN6R/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/c500bcba49db15a58d9a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-17T09:45:41+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張追究致癌油責任並帶有政治標籤，屬自發攻防非回覆他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "「致癌油」最該被追究責任的是你卓榮泰院長 #謝龍介 #卓榮泰 #致癌油 #民進黨",
+      "topicScores": {
+        "競選": 0.72,
+        "醫療": 0.9
+      },
+      "topics": [
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/Da47K9-SN6R/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -36,10 +70,10 @@
       "url": "https://www.threads.com/t/Da46tP4D0Tk"
     },
     {
-      "agendaRelevance": 0.78,
+      "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-17T04:00:59+00:00",
+        "classifiedAt": "2026-07-17T16:03:43+00:00",
         "inputHash": "c5385d390b03df7f9dedfbd8ba8c66eaed0e5088ec75963cf1e09f37f5a0007c",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -54,17 +88,17 @@
       "platform": "threads",
       "postedAt": "2026-07-17T03:48:54+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "批評卓榮泰處理致癌油風暴與道歉甩鍋，屬公共衛生與究責攻防。",
+        "reason": "批評卓榮泰處理致癌油風暴與責任歸屬，屬政治攻防非回應他方觀點。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:卓榮泰院長，你早知如此，何必當初？\n\n當初在專案報告質詢時，我呼籲你為了致癌油風暴向全國老百姓道歉，結果你擺出什麼架子？死都不肯！\n\n現在眼看輿論炸鍋、發言人又火上加油，你才心不甘情不願出來道歉。大家都看得很清楚，你只是在做危機處理，根本不是真心認錯！\n\n最惡質的是，你竟然在聲明第三點埋下伏筆，說要追究無法即時有效查處的「行政責任」，其實就是要甩鍋給地方政府！\n\n以道歉為名，行鬥爭之實，實在有夠惡質，而且第一時間拖延，無法有效查處的元兇，要追究，也是先追究你卓榮泰自己！\n\n7月3日，是誰叫衛福部「再想想」的？ 就是你卓榮泰！\n\n7月9日是誰在行政院會上，公開修理台中市政府為什麼「搶快」公布的？ 也是你本人！\n\n地方政府顧老百姓的健康，不顧壓力拚命查、拚命揭發，你中央不幫忙就算了，還嫌人家太快公布，現在火燒大了，又回過頭來怪地方沒查好？天底下哪有這種道理！\n\n「好事中央攬、壞事地方扛」，假道歉，真甩鍋，台灣人絕對聽不下去！",
       "topicScores": {
-        "治安": 0.22,
-        "議會監督": 0.86,
-        "醫療": 0.95
+        "治安": 0.35,
+        "議會監督": 0.88,
+        "醫療": 0.92
       },
       "topics": [
         "醫療",
@@ -72,6 +106,44 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/Da4SXbgkv7r"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-17T16:03:43+00:00",
+        "inputHash": "778cb65556ab524b1d36080ff6031e20a73bdd4cd65f50035d52e4c5e0b38e33",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da4SVBlyv0d/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/f71b905a81eeef8fb350.webp",
+      "keywords": [
+        "質詢"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-17T03:48:46+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "批評卓榮泰處理致癌油風暴與責任歸屬，屬政治攻防非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "卓榮泰院長，你早知如此，何必當初？\n\n當初在專案報告質詢時，我呼籲你為了致癌油風暴向全國老百姓道歉，結果你擺出什麼架子？死都不肯！\n\n現在眼看輿論炸鍋、發言人又火上加油，你才心不甘情不願出來道歉。大家都看得很清楚，你只是在做危機處理，根本不是真心認錯！\n\n最惡質的是，你竟然在聲明第三點埋下伏筆，說要追究無法即時有效查處的「行政責任」，其實就是要甩鍋給地方政府！\n\n以道歉為名，行鬥爭之實，實在有夠惡質，而且第一時間拖延，無法有效查處的元兇，要追究，也是先追究你卓榮泰自己！\n\n7月3日，是誰叫衛福部「再想想」的？ 就是你卓榮泰！\n\n7月9日是誰在行政院會上，公開修理台中市政府為什麼「搶快」公布的？ 也是你本人！\n\n地方政府顧老百姓的健康，不顧壓力拚命查、拚命揭發，你中央不幫忙就算了，還嫌人家太快公布，現在火燒大了，又回過頭來怪地方沒查好？天底下哪有這種道理！\n\n「好事中央攬、壞事地方扛」，假道歉，真甩鍋，台灣人絕對聽不下去！",
+      "topicScores": {
+        "治安": 0.35,
+        "議會監督": 0.88,
+        "醫療": 0.92
+      },
+      "topics": [
+        "醫療",
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.instagram.com/p/Da4SVBlyv0d/"
     },
     {
       "agendaRelevance": 0.28,
@@ -3254,10 +3326,10 @@
       "url": "https://www.youtube.com/shorts/fyMG3bCFXtU"
     },
     {
-      "agendaRelevance": 0.15,
+      "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "classifiedAt": "2026-07-17T16:03:43+00:00",
         "inputHash": "a63c8653cdbf4ee3ef8ba31f161dd8eb826cee28538d88a6ca06abc7011cf955",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -3272,20 +3344,56 @@
       "postingIntent": {
         "confidence": 0.97,
         "label": "主動發文",
-        "reason": "以標題指控卓榮泰，屬政治攻防，未見回應特定對方觀點。",
+        "reason": "主張追究致癌油責任並帶有政治標籤，屬自發攻防非回覆他人。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-yt",
       "text": "「致癌油」最該被追究責任的是你卓榮泰院長 #謝龍介 #卓榮泰 #致癌油 #民進黨",
       "topicScores": {
-        "生活": 0.7,
-        "醫療": 0.89
+        "競選": 0.72,
+        "醫療": 0.9
       },
       "topics": [
         "醫療",
-        "生活"
+        "競選"
       ],
       "url": "https://www.youtube.com/shorts/x0Ak4B3im2A"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-17T16:03:28+00:00",
+        "inputHash": "9851ba713430c6fea638e90a53e39fcdca25dfde81a5146ee8720ac3686f3cec",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:EkAV87guuuM",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/4769b6cc4d0eef2cb0ee.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "看似直播節目預告，未見回應他方具體觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260717 談天說地論台灣 @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "兩岸外交": 0.42,
+        "生活": 0.86,
+        "議會監督": 0.52
+      },
+      "topics": [
+        "生活",
+        "議會監督",
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/watch?v=EkAV87guuuM"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

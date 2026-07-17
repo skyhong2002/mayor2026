@@ -1,5 +1,5 @@
 {
-  "count": 95,
+  "count": 96,
   "posts": [
     {
       "agendaRelevance": 0.14,
@@ -34,6 +34,46 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/Da4ryHbGS05"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-17T16:03:28+00:00",
+        "inputHash": "ba32fbe85b180bbe0e8a7a7f83250888145806b8af73a867f8772aad58bcfaf2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da4Yar0yUEI/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/9e227b7d4c33d9aa3820.webp",
+      "keywords": [
+        "敬老",
+        "營養午餐",
+        "國中"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-17T04:44:03+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動提出營養午餐與敬老卡等競選政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "不少人都戲稱我在這選舉期間，成為「許願池」。\n\n我提出的政見，無論是營養午餐免費、敬老愛心卡擴大使用...等等，市府都會跟進。\n\n年初我提出 國中小營養午餐免費，很高興看到市府朝這個方向努力。現在，我也希望再往前一步，把每位孩子的午餐餐標提高到 80 元，希望讓孩子吃得健康、吃得安心。",
+      "topicScores": {
+        "教育": 0.84,
+        "生活": 0.58,
+        "社福": 0.89
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Da4Yar0yUEI/"
     },
     {
       "agendaRelevance": 0.7,
