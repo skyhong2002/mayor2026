@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 92,
+  "count": 93,
   "posts": [
     {
       "agendaRelevance": 0.9,
@@ -3332,6 +3332,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=ffEJ6xwd4Z4"
+    },
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-17T04:00:59+00:00",
+        "inputHash": "5a874d6798f56d6d9680988c230f9749f338fbe36794734faac02bf5a61d8aa5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:RER9BMbaelI",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/2ec93042594aafebbcff.webp",
+      "keywords": [
+        "球場"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主題為球場升級與夏令營追夢，涉及體育場館與青少年活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "球場升級夢想不缺席 從夏令營勇敢開始追夢！",
+      "topicScores": {
+        "教育": 0.74,
+        "體育": 0.92
+      },
+      "topics": [
+        "體育",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/RER9BMbaelI"
     }
   ],
   "version": 1

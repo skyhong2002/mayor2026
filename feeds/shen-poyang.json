@@ -1,5 +1,5 @@
 {
-  "count": 79,
+  "count": 80,
   "posts": [
     {
       "agendaRelevance": 0.22,
@@ -2866,6 +2866,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=GbrlZ-yi68g"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-17T04:00:59+00:00",
+        "inputHash": "f67b7e023910e2fbc3fe3d8c5670f2dcccbbea6b076f8a6ff26874bc8de86843",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3B7iNmILMU8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8209309955799aebb637.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.86,
+        "label": "主動發文",
+        "reason": "內容提及世足與地方人物訪談，屬體育與一般介紹，不是回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Hitchhiker | \"Uncle Zuo\" Shih Ming-chin is here! Discussing the World Cup and fostering a ...",
+      "topicScores": {
+        "文化觀光": 0.56,
+        "體育": 0.67
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/3B7iNmILMU8"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

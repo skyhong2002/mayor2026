@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 108,
+  "count": 109,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-17T04:00:59+00:00",
+        "inputHash": "e22492e8b6605c1b4afaac0231e1a405440402158e443ff4fa77fbc17ca4614c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da4QQ9skSul",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c2dce905f07612ce41ab.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-17T03:30:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅提到世界Emoji日，屬日常分享，無公共政策討論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:今天是世界Emoji日 😁🤨👏💚🍍🥭👍🎤⚾️",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da4QQ9skSul"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "lai-jui-lung",
