@@ -1,6 +1,78 @@
 {
-  "count": 93,
+  "count": 95,
   "posts": [
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "29e6c612978206016a9c8bd5a6103296200267d32273aed4fe8ddd6e79c0eb87",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da4ryHbGS05",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "選舉"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-17T07:31:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳選舉官網與活動資訊，屬競選動員而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:民進黨選舉官網正式上線，最新消息、政策內容、活動資訊都能在網站一次看。除了縣市首長之外，各個區域的議員資訊也能在網站上看見！\n\n歡迎大家來逛逛，也分享給更多朋友，一起關心台灣、關心未來。\n\nhttps://teamtaiwan.dpp.org.tw/",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Da4ryHbGS05"
+    },
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "ab752eb684060d85aaff12c3a7eee8eca9e20cd8d220688c4db109c70bb8e5bf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da4YgD6j5xH",
+      "imageAspect": 0.5624,
+      "imageUrl": "assets/feed-images/1fad28d6dc9d84116322.webp",
+      "keywords": [
+        "營養午餐",
+        "國中",
+        "敬老"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-17T04:43:34+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動提出營養午餐加碼與孩子飲食政策，具體且可作施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:不少朋友都笑說，我在這次選舉變成了「許願池」😂\n\n從營養午餐免費，到敬老愛心卡擴大使用，只要是對市民有幫助的政策，我提出後看到市府願意跟進，我都樂見其成。畢竟，不管是誰提出，市民受惠才是最重要的。\n\n今年初，我率先提出 國中小營養午餐免費，現在想再往前一步，希望把每位孩子的午餐餐標提高到 80 元。\n\n孩子正在發育，午餐不能只是吃得飽，更要吃得健康、吃得安心。讓孩子吃得更好，就是我們對下一代最實在的投資。",
+      "topicScores": {
+        "教育": 0.93,
+        "社福": 0.71
+      },
+      "topics": [
+        "教育",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/Da4YgD6j5xH"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ho-hsin-chun",

@@ -1,6 +1,42 @@
 {
-  "count": 81,
+  "count": 82,
   "posts": [
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "ec1df2ed633e450e39abd0a643012cac85ba676831d300f60035eb0b035acb74",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da47hqniQ57",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-17T09:48:33+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "號召反毒油遊行並批評政府，屬議題動員與攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:7月25日，反毒油、站出來！\n\n食安是政府最基本的責任，人民有權要求安心的餐桌。面對食安危機，政府不能迴避，更不能讓民眾承擔風險。\n\n過去，我們站出來反萊豬、反核食。今天，我們更要站出來反毒油。不論執政的是誰，只要守不住人民的食安，我們就不能沉默。\n\n7月25日，關心食安的民眾將走上凱道，要求政府正視問題、負起責任。我也呼籲中央不要再卸責，而應正面回應人民對食安的憂慮，拿出具體作為，重建人民對政府的信任。\n\n食安沒有藍綠，只有是非。人民的健康，更不容任何妥協。",
+      "topicScores": {
+        "生活": 0.72,
+        "競選": 0.78,
+        "醫療": 0.91
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da47hqniQ57"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "ko-chih-en",

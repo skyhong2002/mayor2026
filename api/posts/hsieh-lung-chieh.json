@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 90,
+  "count": 92,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "4c6256d08cdbadc3bf6937386b804da13769aeb6723aa2cc7a4b929c1915f35d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da46tP4D0Tk",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/950d2673ea1093f173f8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-17T09:42:21+00:00",
+      "postingIntent": {
+        "confidence": 0.89,
+        "label": "主動發文",
+        "reason": "僅指責卓榮泰追責，未回應任何具體先前說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:「致癌油」最該被追究責任的是你 卓榮泰 院長",
+      "topicScores": {
+        "治安": 0.62,
+        "醫療": 0.78
+      },
+      "topics": [
+        "醫療",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/Da46tP4D0Tk"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "hsieh-lung-chieh",
@@ -3238,6 +3272,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/fyMG3bCFXtU"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "a63c8653cdbf4ee3ef8ba31f161dd8eb826cee28538d88a6ca06abc7011cf955",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:x0Ak4B3im2A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/9b87a503b493a3f99834.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以標題指控卓榮泰，屬政治攻防，未見回應特定對方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "「致癌油」最該被追究責任的是你卓榮泰院長 #謝龍介 #卓榮泰 #致癌油 #民進黨",
+      "topicScores": {
+        "生活": 0.7,
+        "醫療": 0.89
+      },
+      "topics": [
+        "醫療",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/x0Ak4B3im2A"
     }
   ],
   "version": 1

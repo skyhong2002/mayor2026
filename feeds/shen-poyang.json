@@ -1,6 +1,116 @@
 {
-  "count": 80,
+  "count": 83,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "5dbe09f8ab20232846b3b6809d469aa1ad5722dc35dbbed6f4cf6b6a370aaaa3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da4ouoEEW4u",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/5e0eed126181ce78e268.webp",
+      "keywords": [
+        "文化",
+        "電影"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-17T07:04:18+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "轉載市場與公園行程，屬活動公告與日常行程分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:伯洋周末出沒行程！歡迎大家一起來跟伯洋打招呼！\n\n7/18（六）\n08:50\n📍三水街市場、直興市場\n\n7/18（六）\n13:00\n林子揚議員—永樂市場文化產業走訪\n📍永樂市場\n\n7/19（日）\n08:50\n📍謙和市場\n\n7/19（日）\n19:00\n何孟樺議員—星空電影院\n📍大港墘公園",
+      "topicScores": {
+        "文化觀光": 0.73,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Da4ouoEEW4u"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "58985d60ef2d961e4af1303898c3b0cd0d27d10c1263748cd1b8db4634f9037d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da4ol7WkmCk/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d52d0414ac21f197c678.webp",
+      "keywords": [
+        "文化",
+        "電影"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-17T07:03:09+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅為週末市場與活動行程公告，屬一般生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "伯洋周末出沒行程！歡迎大家一起來跟伯洋打招呼！\n\n7/18（六）\n08:50\n📍三水街市場、直興市場\n\n7/18（六）\n13:00\n林子揚議員—永樂市場文化產業走訪\n📍永樂市場\n\n7/19（日）\n08:50\n📍謙和市場\n\n7/19（日）\n19:00\n何孟樺議員—星空電影院\n📍大港墘公園",
+      "topicScores": {
+        "文化觀光": 0.73,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Da4ol7WkmCk/"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-17T10:01:11+00:00",
+        "inputHash": "407e9a9633f0594aba5bda86553eab5e5d5026935a5d081691947c44cd1f4276",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da4J3h7SqYo/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ccb6eee47c3bf1f341c2.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-17T02:39:05+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹運動人物與世界盃內容，主要是節目宣傳與運動話題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "台北順風車 | 「左盃」石明謹來了！聊世界盃、讓孩子從小培養運動熱情，完整影片到我YT看喔～",
+      "topicScores": {
+        "文化觀光": 0.42,
+        "體育": 0.91
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Da4J3h7SqYo/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "shen-poyang",
