@@ -1,6 +1,75 @@
 {
-  "count": 111,
+  "count": 113,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "26902b57608a11b7b31c5d40054fa1f33c07660485cbdac08872c1724680f134",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da8EmIbnwoG",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/021e1f0ad2b754bf24f4.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-18T15:05:35+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是提醒國際冰淇淋日與活動，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:明天是國際冰淇淋日，大家快來「大港閱冰」！減肥就留到…🍧🤤",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da8EmIbnwoG"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "69d2a060e96b5111901370273d34259a11470a7e4d7fdb8dbbfbb5fe0417c8ad",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7qxdaiUeJ",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/81f9658cc6f968f9e9b1.webp",
+      "keywords": [
+        "歷史",
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T11:19:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是冰品市集活動開幕與在地農產宣傳，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:「大港閱冰」🍧！最消暑的冰品市集嘉年華正式開攤！ \n\n今天開幕特別邀請到日本大胃王Angela佐藤和Iku老師，和我們一起現場製作超澎湃的在地大碗公冰。把六龜金煌芒果、旗山香蕉等滿滿的高雄優質水果鋪在冰上，再淋上岡山蜂蜜，這口滿載歷史記憶的滋味，絕對是夏日最頂級的享受。\n\n🍧2026大港閱冰活動資訊🍧\n時間｜7/18 ㊅－7/19 ㊐⁣ 15:00－20:00⁣\n地點｜新濱．駅前廣場（哈瑪星站 2 號出口）",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "經濟": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da7qxdaiUeJ"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",

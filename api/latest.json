@@ -2,6 +2,297 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "26902b57608a11b7b31c5d40054fa1f33c07660485cbdac08872c1724680f134",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da8EmIbnwoG",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/021e1f0ad2b754bf24f4.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-18T15:05:35+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是提醒國際冰淇淋日與活動，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:明天是國際冰淇淋日，大家快來「大港閱冰」！減肥就留到…🍧🤤",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da8EmIbnwoG"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "d415ca38a9bdf9cece6e621c3ffa2f00f20c9af0fd8953cd288b0adb9d1291f1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da8BUeflEik",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "足球"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T14:36:54+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅紀錄台北市足球營結業式，屬活動分享非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:台北市陽光足球營結業式～\n恭喜每一位完成課程的小朋友！",
+      "topicScores": {
+        "體育": 0.98
+      },
+      "topics": [
+        "體育"
+      ],
+      "url": "https://www.threads.com/t/Da8BUeflEik"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "7cf70b2eae462fde5e43279f29b83d5d37ef34ce83edfe6bc2c5b7c1f8d63803",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da79HXqiW8d",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/802b4dc6c0e2a6eafd7e.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-18T14:00:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以廟口開講訴求參選市長，屬明確競選與政治承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:35場廟口開講，今晚從大樹出發。\n\n站在廟口，看著滿滿的鄉親，我心裡只有感動。\n\n四年前，我的第一場廟口開講在三鳳宮，那天下著雨，謝龍介 龍介兄站在我身旁；四年後，第一場廟口開講，我們依然並肩站在這裡。謝謝一路相挺，也謝謝每一位始終相信我的鄉親。\n\n我把第一場選在大樹，因為我希望，高雄未來的市長，就像一棵大樹。\n\n為市民遮風擋雨，讓長輩安心、年輕人放心、孩子有希望，讓大家都能在樹下安心泡茶，過著踏實幸福的日子。\n\n我是南部的孩子，回到高雄，不是來做官，而是回來服務。\n\n四年前，我沒有離開；這四年，我一直深耕高雄。今晚，我也在神明面前向大家承諾，如果有機會服務高雄，我一定說到做到，把對鄉親的承諾，一件一件完成。\n\n請給我一個機會，讓我像大樹一樣，守護高雄，讓世界看見高雄，讓高雄走向世界。\n\n下週二，我們甲仙見！",
+      "topicScores": {
+        "生活": 0.55,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da79HXqiW8d"
+    },
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "288a8817156e66b6dad41a50f2ad1d33fd8c5dee7ad2a50d75249774a82508ed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da78KfHGROG",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/7ca5447c161df0c19b99.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T13:51:51+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主談海洋教育、親水場域與海岸文化保存，並附活動宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:謝謝今天超過一千組的大小水獺一起嗨翻淡水，把「水獺媽媽樂園」變身海底世界！🐠🐬🦀\n\n新北145公里的海岸線，是最天然的海洋教育與遊憩基地，未來，我希望能推動更多海洋教育、親水場域，同時也要保存在地的漁業與漁村文化，讓大家一起親近海洋、喜歡海洋、愛護海洋💙🌊\n\n下週水獺媽媽樂園要繼續前進汐止囉！歡迎大小水獺一起來玩！\n\n📍水獺媽媽樂園 汐止場｜免費入場✨\n時間｜7/25（六）09:00-16:00\n地點｜秀峰高中—體育館（汐止區忠孝東路201號）",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "環境": 0.72
+      },
+      "topics": [
+        "文化觀光",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/Da78KfHGROG"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "aa7cd258d1a5b42be0a89d236b7b3a6736832270bd5931a6c7dbea193bb91a11",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7480SCSUK",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "機場",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T13:23:46+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主張大園發展、航空城徵收照顧與市政建設，屬競選施政訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:下午來到我非常熟悉的大園，跟市民致意時，許多並肩作戰的畫面湧上心頭。\n\n從終結天空斷橋、全面重鋪台61，到為了航空城徵收戶一起到政府門口陳情，這些都是我和游吾和議員 @youwuhe 、里長、市民頭家共同打拚的印記。\n\n這幾年，大園的變化非常快。從航空城、機場周邊建設到產業發展，都讓大園成為桃園最重要的發展核心之一。發展得愈快，愈需要懂地方的人，把真實的聲音帶進市府。\n\n像是長期在第一線，捍衛航空城徵收戶權益的游吾和議員，讓配合國家重大建設的人民，獲得更公平合理的照顧。沿海出身的世杰，即使在法務部期間，只要地方有需求，我也持續協助反映跟協調，一直跟大家站在一起。\n\n世杰感謝大園的栽培牽成，接下來，我會全力以赴前進市政府，為大家做更多！讓心大園 動起來💖",
+      "topicScores": {
+        "交通": 0.86,
+        "住宅": 0.68,
+        "經濟": 0.84
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/Da7480SCSUK"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "5a895a24991cde9a876b441db15bd79aaacb9924dc115b78ad463ced3bd18c31",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7x8W8FBrx",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-18T12:22:33+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享參加陀螺比賽的個人經驗，屬日常活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:再次回歸成為陀螺戰士，\n參加 @sheng.wen.dw 舉辦的戰鬥陀螺比賽。\n\n雖然直接車輪戰\n但我真的超開心的\n陀螺戰士最開心的是\n就是有人可以對戰！\n\nThree two one，\nGo ~  Shoot！",
+      "topicScores": {
+        "生活": 0.62,
+        "體育": 0.99
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da7x8W8FBrx"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "69d2a060e96b5111901370273d34259a11470a7e4d7fdb8dbbfbb5fe0417c8ad",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7qxdaiUeJ",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/81f9658cc6f968f9e9b1.webp",
+      "keywords": [
+        "歷史",
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T11:19:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是冰品市集活動開幕與在地農產宣傳，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:「大港閱冰」🍧！最消暑的冰品市集嘉年華正式開攤！ \n\n今天開幕特別邀請到日本大胃王Angela佐藤和Iku老師，和我們一起現場製作超澎湃的在地大碗公冰。把六龜金煌芒果、旗山香蕉等滿滿的高雄優質水果鋪在冰上，再淋上岡山蜂蜜，這口滿載歷史記憶的滋味，絕對是夏日最頂級的享受。\n\n🍧2026大港閱冰活動資訊🍧\n時間｜7/18 ㊅－7/19 ㊐⁣ 15:00－20:00⁣\n地點｜新濱．駅前廣場（哈瑪星站 2 號出口）",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "經濟": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da7qxdaiUeJ"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-18T16:01:04+00:00",
+        "inputHash": "8bc841dffc8adc330d15bce513339a73a4b31aa1ba4f6aa974ba2bfddcbc5ec6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7nJgMCcQ9",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "長輩",
+        "敬老",
+        "交通",
+        "教育",
+        "國小",
+        "垃圾"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-18T10:48:13+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "提出敬老卡、垃圾隨袋徵收與建設主張，屬明確政見宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:世杰和桃園隊議員的第一場基層座談會！從平鎮啟動🏃\n\n王珮毓議員 @peiyuwangpeiyu 是我復旦學妹，過去擔任國小老師和市民代表，跟我一樣曾在桃園市府服務。珮毓的歷練不僅深入基層，也熟悉政府運作，問政犀利精準，是大家最肯定的市民發言人🎤\n\n這些年來，珮毓大力爭取交通、教育等建設，讓平鎮持續升級。但是平鎮是全市人口第三多的行政區，各項需求都非常迫切，除了需要有珮毓為市民發聲，也需要更積極、更懂桃園、更有行動力的市長，一起建設平鎮。\n\n像是珮毓多次向市府反映敬老愛心卡的問題，每月居然只有1%長輩能把點數用完。\n\n世杰和珮毓六月推出聯合政見，要增加敬老愛心卡點數、可以累積至年底，並擴大到農漁會、超商超市、醫院診所使用。今天看到張善政市長跟進我政見的其中一小部分，說要規劃在農會使用，很感動他終於聽見市民的心聲！\n\n至於大家關心的「垃圾處理費隨袋徵收」，我也當場向鄉親承諾，在尚未取得廣大桃園市民共識前，絕不會貿然推動。\n\n跟現場的大家約好了，共下來拚！心平鎮 動起來💖",
+      "topicScores": {
+        "交通": 0.82,
+        "教育": 0.72,
+        "環境": 0.66,
+        "社福": 0.89
+      },
+      "topics": [
+        "社福",
+        "交通",
+        "教育",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/Da7nJgMCcQ9"
+    },
+    {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3536,306 +3827,6 @@
         "經濟"
       ],
       "url": "https://www.threads.com/t/Da1ex3SGYWp"
-    },
-    {
-      "agendaRelevance": 0.66,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-07-16T16:02:38+00:00",
-        "inputHash": "445fb3644132f3aff4762c240727aeaba8ade96430fce15f5caa3ffe92eca124",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1631627784993296",
-      "imageAspect": 1.6212,
-      "imageUrl": "assets/feed-images/9711fc7e73c35d10b296.webp",
-      "keywords": [
-        "防疫"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-16T01:37:39.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "批評食安稽查與市府作為，屬究責監督非回應特定對方。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-fb",
-      "text": "中聯生產的油品驗出致癌物超標，民眾恐慌、相關產品下架回收，中下游關聯產業，無辜食品加工、餐飲小吃店家損失慘重，黑心無良廠商必須重懲。\n\n食安關係國人健康，更牽涉整體食品供應鏈的系統性管理，但所有控管都須建基於完善的「源頭管理」，源頭稽查是第一步。昨天，台中市議員公布市府公文，資料顯示，中聯油脂2022年到2025年共稽查6次，直到事件爆發前，真正抽驗油品只有1次，是在2年多前的2024年4月26日，市民各界正在等待市府的回應。\n\n我們更不禁回想，台中去年爆發非洲豬瘟，養豬場的廚餘蒸煮紀錄稽查、輕忽檢體採樣、疫情調查不確實，釀成當時全國買不到台灣豬的風暴，所幸中央及時進駐台中，與地方攜手合作防疫，才能一起度過難關，過程都歷歷在目。\n\n我要呼籲盧市長，先請放下心中那份競逐大位的罣礙與執念，以台中市民的安全健康為最大考量。食安從沒任何僥倖空間，不會有藍綠，更沒有中央、地方之分，人民期待政府一體、攜手聯防合作，從原料製品到市民餐桌，守住食品安全的每一道防線。",
-      "topicScores": {
-        "治安": 0.62,
-        "環境": 0.84,
-        "議會監督": 0.73,
-        "醫療": 0.92
-      },
-      "topics": [
-        "醫療",
-        "環境",
-        "議會監督",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/94achun/posts/pfbid0PC5aEbrv9EfVGEaHeXVHX2KfcpLgUZUwU6gJbqj3DhUw4WfCNXgWaEsoLmPjuqaLl"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-07-16T04:03:19+00:00",
-        "inputHash": "1b56a9185e94c87a53faf52ee726556249e20a6a9d367b651b646f8e4a1dae4a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Da1QDTxzLFS/",
-      "imageAspect": 0.7505,
-      "imageUrl": "assets/feed-images/e99384d927fc99968ad8.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-07-15T23:31:32+00:00",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "僅簡短問候，沒有公共議題內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-ig",
-      "text": "早安！",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Da1QDTxzLFS/"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-07-16T04:03:19+00:00",
-        "inputHash": "db67246ce246d98ecb611c69b0be9deb28faf8a47f9f106046bf04c145cd85e2",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da1QEWfk9CK",
-      "imageAspect": 0.7505,
-      "imageUrl": "assets/feed-images/9799cfb4efa41a7f5476.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-15T23:31:06+00:00",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "僅回覆早安，屬日常問候。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-threads",
-      "text": "@chen_tingfei:早安！",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Da1QEWfk9CK"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-07-16T16:02:38+00:00",
-        "inputHash": "1363fb3700958a41110eb4db086c1a3ceb6b98726a3d11c1fa7628a86dbe844c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1594131665408089",
-      "imageAspect": 0.7504,
-      "imageUrl": "assets/feed-images/67b4cae73d1ae4394dac.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-15T23:31:05.000Z",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "僅單純問候早安，無公共政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "早安！",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid0gc48Qsefhxt2CDFqCvQn5TkogLVtPFKp5pH9m44GhWE3rGUAhnh7Z4mjfBGPwTjcl"
-    },
-    {
-      "agendaRelevance": 0.62,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-07-15T16:01:05+00:00",
-        "inputHash": "6545871c5edc360ebee1c27ceed6f7d0227f2a99f413d03857450416f8deb5b3",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da0QXTNieCY",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "交通",
-        "淹水",
-        "觀光",
-        "產業",
-        "商圈"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-15T14:14:26+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主談旗津輪渡站翻新、綠能渡輪與治水工程，屬施政成果與建設宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai 🔁:這幾年，旗津真的變得不一樣了。從輪渡站全面翻新到改善積淹水，我們一步步把基礎建設做好。\n\n週末有空，來旗津走走吧，親自感受這座美麗港灣的蛻變！你有多久沒搭渡輪來旗津吹吹海風了？\n\n當船身緩緩靠岸，迎面而來的不再是過去擁擠老舊的通道，而是一座灑滿溫暖陽光、由古典紅磚與現代鋼骨交織而成的明亮大廳。時隔將近三十年，旗津輪渡站終於脫胎換骨，換上全新的美麗門面迎接每一位旅客。這份嶄新的港灣氣息，是我們長年為旗津規劃打拚的一項美好成果。\n\n要讓旗津真正走向國際，不能只靠單點的修飾，而是需要整體港灣的寬廣視野。這幾年，我們啟動了總經費4.9億元的「灣區大港·旗津領航」計畫，以輪渡站的空間改造為起點，串聯整體觀光與產業的升級，並一路陪著在地商圈挺過疫情的低谷。\n\n在硬體升級之外，我們也從不同面向著手改善旗津的體質。在交通體驗上，我們推動逐步引進沒有廢氣味的綠能電動渡輪，讓未來的海風更加純淨；在看不見的基礎建設上，我們更是做實、做透。為了實質改善旗津長年的積淹水問題，我們啟動了涵蓋全島、總經費2.7億元的治水防洪工程。每當狂風暴雨來襲前，盯緊抽水站的運作，是我們對市民最堅定的承諾。因為只有先讓大家住得安心，才能大步去談城市的未來。— @zenolai — Wed, 24 Jun 2026 10:46:30 GMT",
-      "topicScores": {
-        "交通": 0.82,
-        "文化觀光": 0.67,
-        "經濟": 0.58,
-        "防災": 0.79
-      },
-      "topics": [
-        "交通",
-        "防災",
-        "文化觀光",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/Da0QXTNieCY"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-15T16:01:05+00:00",
-        "inputHash": "b2e1a5504dbd6c01978091e6b6d1d0b3f37fdffb80e5520108421b2e96d310e4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da0KgPKGs4I",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5634eef5b2b0b46fb692.webp",
-      "keywords": [
-        "豪雨",
-        "災害"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-15T13:23:14+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "公告豪雨農損現金救助與申請資訊，屬災害救助通知。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:在大溪種植木瓜的農民朋友們請注意‼️\n\n上個月底的豪雨，造成許多作物受損。農業部昨日（7/14）正式公告，大溪區的木瓜列入0625豪雨農業天然災害現金救助項目。\n\n請農友們互相提醒，記得在時限內，到區公所完成申請喔！",
-      "topicScores": {
-        "生活": 0.22,
-        "經濟": 0.68,
-        "防災": 0.82
-      },
-      "topics": [
-        "防災",
-        "經濟",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Da0KgPKGs4I"
-    },
-    {
-      "agendaRelevance": 0.28,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-16T04:03:19+00:00",
-        "inputHash": "a5d9c9077d8ddb24efd9668d4d7f65f6a1102931241d2caa3f0c329f48d3c501",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Da0KfEXzUkI/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/dc3ba284d682fb027666.webp",
-      "keywords": [
-        "豪雨",
-        "災害",
-        "產業"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-15T13:23:08+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "公告豪雨農損救助資訊，屬災害通知非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "在大溪種植木瓜的農民朋友們請注意‼️\n\n上個月底的豪雨，造成許多作物受損。農業部昨日（7/14）正式公告，大溪區的木瓜列入0625豪雨農業天然災害現金救助項目。\n\n請農友們互相提醒，記得在時限內，到區公所完成申請喔！\n\n❇️適用地區：桃園市大溪區\n❇️救助作物：木瓜\n❇️救助額度：每公頃14萬元\n❇️受理期間：7/15-28（假日照常受理）\n❇️申請資格\n❶ 符合《農業天然災害救助辦法》第五條規定之農民\n❷ 辦理救助項目損失率達20%以上者，依救助額度予以救助\n\n📷農友們可以下載「農產業天然災害現地照相 APP」，拍攝農損遠景、近景、不同角度照片，並上傳系統作為認定依據",
-      "topicScores": {
-        "經濟": 0.72,
-        "防災": 0.96
-      },
-      "topics": [
-        "防災",
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/Da0KfEXzUkI/"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-07-16T04:03:19+00:00",
-        "inputHash": "2a6302c1ab4446fb05d2ebd46f718096818ad69ce748d971aea00ccd8992aea3",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Da0JytfoF5s/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/d1b74314add1a79b556b.webp",
-      "keywords": [
-        "教育",
-        "大學",
-        "運動",
-        "選手",
-        "賽事",
-        "電競"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-15T13:17:03+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "考察電競系所並主張增加資源，屬教育與體育政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "今天立法院教育及文化委員會來到臺中考察，來到僑光與弘光二所科技大學電競系所，現場氣氛熱絡，沒想到運動部部長李洋/Lee Yang和我們臺中在地立委羅廷瑋還現場來了一場精彩的電競PK！\n\n回想 6、7 年前臺灣電競剛起步時，面臨法規與預算卡關，啟臣當時也曾感到擔憂。然而，臺灣業界的積極與選手的超群實力，在當年近乎沒有公部門資源的情況下，還是憑實力站上了國際舞台，令人無比敬佩！\n這讓我們深刻有感，如果公部門的力道再加強，在政策、預算、場館與賽事上給予更多資源，臺灣電競絕對能邁向世界頂尖！尤其，臺灣擁有全球領先的半導體與AI產業優勢，若將電競視為科技產業鏈的關鍵一環，這將是臺灣在國際舞台上提高能見度的絕佳管道。\n\n未來，啟臣會持續努力，讓政府成為最堅實的後盾，為年輕人打造更完善的運動環境，在各個運動比賽項目的選手培育持續向下紮根，讓臺灣的軟硬實力在世界發光發熱！\n\n#教育是政府最值得的投資\n#紮根下一代希望永遠在\n#臺中WAY #清新味 #運動味\n#臺中啟程 #打造旗艦城",
-      "topicScores": {
-        "教育": 0.86,
-        "競選": 0.77,
-        "體育": 0.63
-      },
-      "topics": [
-        "教育",
-        "競選",
-        "體育"
-      ],
-      "url": "https://www.instagram.com/p/Da0JytfoF5s/"
     }
   ],
   "version": 1
