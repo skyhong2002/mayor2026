@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 110,
+  "count": 111,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-18T10:03:28+00:00",
+        "inputHash": "4143f98219cc3f8ec9bd6e79b201da70123606f347dfc8bcf169ecb131fec0ed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da7UrHVkYyp",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/0a6764f5331369005121.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-18T08:06:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅分享下雨天喝茶的日常感受，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:下雨天，來杯現泡的六龜山茶，真香🍵",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da7UrHVkYyp"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",
