@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/c008e07b1ca53d5941ac.webp",
+    "avatarUrl": "assets/source-avatars/612bb30c1206e05ec56d.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 95,
+  "count": 98,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:02:41+00:00",
+        "inputHash": "6936ddc8c5b767195b5497a04771e9c2a57a7f45c2b52e4c497dabac00cdf134",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1408303611115973",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/161d2235108398426ab6.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-17T13:18:39.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提供捐款與直播連結，屬競選動員宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "支持龍介線上捐款：https://donate.newebpay.com/062268268/hsiehlungchieh115\n\n龍介的 Tiktok 開放 Call in 👉 https://www.tiktok.com/@longuy1003/live \n👉 Call in 步驟：請至 Tiktok 搜尋「謝龍介」並找到龍介的直播，直播畫面的下方申請「訪客連線」，龍介兄會隨機接通。",
+      "topicScores": {
+        "生活": 0.95,
+        "競選": 0.92
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1408303611115973/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
@@ -93,7 +127,43 @@
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-17T16:03:43+00:00",
+        "classifiedAt": "2026-07-18T22:02:41+00:00",
+        "inputHash": "4b3cad00b38de0800bb656e2cdc4aabbf7dffd3b3b6b58f8c13336eb6e12dc3a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1607093200772262",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/295c52fe1da330732c24.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-17T09:38:21.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "只是在批評致癌油事件究責對象，屬攻防而非政策提案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "「致癌油」最該被追究責任的是你 卓榮泰 院長",
+      "topicScores": {
+        "治安": 0.4,
+        "經濟": 0.54,
+        "醫療": 0.86
+      },
+      "topics": [
+        "醫療",
+        "經濟",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/reel/1043595208155602/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:03:00+00:00",
         "inputHash": "c5385d390b03df7f9dedfbd8ba8c66eaed0e5088ec75963cf1e09f37f5a0007c",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -102,27 +172,25 @@
       "id": "threads:https://www.threads.com/t/Da4SXbgkv7r",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/b674fa95f1c38dff6131.webp",
-      "keywords": [
-        "質詢"
-      ],
+      "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-17T03:48:54+00:00",
       "postingIntent": {
         "confidence": 0.98,
         "label": "主動發文",
-        "reason": "批評卓榮泰處理致癌油風暴與責任歸屬，屬政治攻防非回應他方觀點。",
+        "reason": "批評卓榮泰對食安事件道歉與甩鍋，屬回應攻防非新政策主張。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:卓榮泰院長，你早知如此，何必當初？\n\n當初在專案報告質詢時，我呼籲你為了致癌油風暴向全國老百姓道歉，結果你擺出什麼架子？死都不肯！\n\n現在眼看輿論炸鍋、發言人又火上加油，你才心不甘情不願出來道歉。大家都看得很清楚，你只是在做危機處理，根本不是真心認錯！\n\n最惡質的是，你竟然在聲明第三點埋下伏筆，說要追究無法即時有效查處的「行政責任」，其實就是要甩鍋給地方政府！\n\n以道歉為名，行鬥爭之實，實在有夠惡質，而且第一時間拖延，無法有效查處的元兇，要追究，也是先追究你卓榮泰自己！\n\n7月3日，是誰叫衛福部「再想想」的？ 就是你卓榮泰！\n\n7月9日是誰在行政院會上，公開修理台中市政府為什麼「搶快」公布的？ 也是你本人！\n\n地方政府顧老百姓的健康，不顧壓力拚命查、拚命揭發，你中央不幫忙就算了，還嫌人家太快公布，現在火燒大了，又回過頭來怪地方沒查好？天底下哪有這種道理！\n\n「好事中央攬、壞事地方扛」，假道歉，真甩鍋，台灣人絕對聽不下去！",
       "topicScores": {
-        "治安": 0.35,
-        "議會監督": 0.88,
-        "醫療": 0.92
+        "治安": 0.25,
+        "生活": 0.68,
+        "社福": 0.74
       },
       "topics": [
-        "醫療",
-        "議會監督",
+        "社福",
+        "生活",
         "治安"
       ],
       "url": "https://www.threads.com/t/Da4SXbgkv7r"
@@ -131,7 +199,7 @@
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-17T16:03:43+00:00",
+        "classifiedAt": "2026-07-18T22:03:00+00:00",
         "inputHash": "778cb65556ab524b1d36080ff6031e20a73bdd4cd65f50035d52e4c5e0b38e33",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -140,30 +208,64 @@
       "id": "instagram:https://www.instagram.com/p/Da4SVBlyv0d/",
       "imageAspect": 1.0,
       "imageUrl": "assets/feed-images/f71b905a81eeef8fb350.webp",
-      "keywords": [
-        "質詢"
-      ],
+      "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-07-17T03:48:46+00:00",
       "postingIntent": {
         "confidence": 0.98,
         "label": "主動發文",
-        "reason": "批評卓榮泰處理致癌油風暴與責任歸屬，屬政治攻防非回應他方觀點。",
+        "reason": "批評卓榮泰對食安事件道歉與甩鍋，屬回應攻防非新政策主張。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-ig",
       "text": "卓榮泰院長，你早知如此，何必當初？\n\n當初在專案報告質詢時，我呼籲你為了致癌油風暴向全國老百姓道歉，結果你擺出什麼架子？死都不肯！\n\n現在眼看輿論炸鍋、發言人又火上加油，你才心不甘情不願出來道歉。大家都看得很清楚，你只是在做危機處理，根本不是真心認錯！\n\n最惡質的是，你竟然在聲明第三點埋下伏筆，說要追究無法即時有效查處的「行政責任」，其實就是要甩鍋給地方政府！\n\n以道歉為名，行鬥爭之實，實在有夠惡質，而且第一時間拖延，無法有效查處的元兇，要追究，也是先追究你卓榮泰自己！\n\n7月3日，是誰叫衛福部「再想想」的？ 就是你卓榮泰！\n\n7月9日是誰在行政院會上，公開修理台中市政府為什麼「搶快」公布的？ 也是你本人！\n\n地方政府顧老百姓的健康，不顧壓力拚命查、拚命揭發，你中央不幫忙就算了，還嫌人家太快公布，現在火燒大了，又回過頭來怪地方沒查好？天底下哪有這種道理！\n\n「好事中央攬、壞事地方扛」，假道歉，真甩鍋，台灣人絕對聽不下去！",
       "topicScores": {
-        "治安": 0.35,
-        "議會監督": 0.88,
-        "醫療": 0.92
+        "治安": 0.25,
+        "生活": 0.68,
+        "社福": 0.74
       },
       "topics": [
-        "醫療",
-        "議會監督",
+        "社福",
+        "生活",
         "治安"
       ],
       "url": "https://www.instagram.com/p/Da4SVBlyv0d/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:03:00+00:00",
+        "inputHash": "c0c204191c050818a6f274c5a8274700f32c286ed07fd8b59b7bd7d8744ef8e2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1606907260790856",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/942f9f7d679fc75e97c8.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-17T03:47:53.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "批評卓榮泰對食安事件道歉與甩鍋，屬回應攻防非新政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "卓榮泰院長，你早知如此，何必當初？\n\n當初在專案報告質詢時，我呼籲你為了致癌油風暴向全國老百姓道歉，結果你擺出什麼架子？死都不肯！\n\n現在眼看輿論炸鍋、發言人又火上加油，你才心不甘情不願出來道歉。大家都看得很清楚，你只是在做危機處理，根本不是真心認錯！\n\n最惡質的是，你竟然在聲明第三點埋下伏筆，說要追究無法即時有效查處的「行政責任」，其實就是要甩鍋給地方政府！\n\n以道歉為名，行鬥爭之實，實在有夠惡質，而且第一時間拖延，無法有效查處的元兇，要追究，也是先追究你卓榮泰自己！\n\n7月3日，是誰叫衛福部「再想想」的？ 就是你卓榮泰！\n\n7月9日是誰在行政院會上，公開修理台中市政府為什麼「搶快」公布的？ 也是你本人！\n\n地方政府顧老百姓的健康，不顧壓力拚命查、拚命揭發，你中央不幫忙就算了，還嫌人家太快公布，現在火燒大了，又回過頭來怪地方沒查好？天底下哪有這種道理！\n\n「好事中央攬、壞事地方扛」，假道歉，真甩鍋，台灣人絕對聽不下去！",
+      "topicScores": {
+        "治安": 0.25,
+        "生活": 0.68,
+        "社福": 0.74
+      },
+      "topics": [
+        "社福",
+        "生活",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid02PQJzWYmiNL1yJ2Hyi3G54oCkEEZGWuNQn9hyBy7fp5WCpaXiaF4VtedgvB71DUWFl"
     },
     {
       "agendaRelevance": 0.28,

@@ -1,11 +1,51 @@
 {
-  "count": 98,
+  "count": 101,
   "posts": [
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.74,
       "candidateId": "ho-hsin-chun",
       "classification": {
-        "classifiedAt": "2026-07-18T04:01:09+00:00",
+        "classifiedAt": "2026-07-18T22:02:41+00:00",
+        "inputHash": "9d8b47c1fdcfef1c150f984533d8bd129b2baddf6bf8194a6e37c7c52c3e0000",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1633359941486747",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ff368ae82d8894371c3b.webp",
+      "keywords": [
+        "國防",
+        "產業",
+        "投資"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-18T04:00:30.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張發展無人機國防與爭取訂單，屬自提政策與產業願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "無人機是全球國防發展的重要趨勢，世界各國都在投資，台灣不能錯過這波需求。\n\n台中擁有發展無人機的供應鏈底蘊，未來國防特別預算通過後，我會與中央應攜手爭取國際訂單，強化國防能量，帶動台中產業發展！",
+      "topicScores": {
+        "兩岸外交": 0.79,
+        "競選": 0.91,
+        "經濟": 0.73
+      },
+      "topics": [
+        "競選",
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1708082363764333/"
+    },
+    {
+      "agendaRelevance": 0.23,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:03:00+00:00",
         "inputHash": "ff24c1eebbfa6b04262cbee0fc39addbfdb8476f2997ba03c61c5509ce79eb77",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -14,28 +54,100 @@
       "id": "threads:https://www.threads.com/t/Da6ku39GUJk",
       "imageAspect": 1.6489,
       "imageUrl": "assets/feed-images/07a0cee8a27f70be946c.webp",
-      "keywords": [],
+      "keywords": [
+        "補助"
+      ],
       "platform": "threads",
       "postedAt": "2026-07-18T01:07:52+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.97,
         "label": "主動發文",
-        "reason": "聚焦食安稽查、地方施政失職與市長責任，屬明確政策攻防。",
+        "reason": "主談台中油品食安稽查與市府責任，未回應特定他人觀點。",
         "type": "self_initiated"
       },
       "sourceId": "ho-hc-threads",
       "text": "@a_chun1973:食安不是政治，食安是市民日常生活的大問題，第一線稽查就是身為市長的職責。\n\n此時上街頭，就能解決問題？保障食安，源頭稽查才是關鍵。\n\n盧執政台中8年來，抽驗中聯油品＂唯一一次＂的時間落在2年多前2024年4月底，還是中央補助地方的稽查專案！盧市長，這記錄明明白白，市府記錄在案，妳卻選擇上街頭、不回應、矇眼直指中央負責，當手指向別人時，有好幾隻手指是指向自己的。\n\n盧市長油品8年只抽驗1次，跟其他縣市稽查次數相比少到不能再少。江副院長跟我競選台中市長，前幾天盧市長曾把市長桌牌送給你，市長職位不是私相授受，是由台中市民決定，食安是市政，市民睜著眼睛看，江副院長怎麼看這8年來只驗一次油品？你接受盧市府這樣不及格的源頭稽查？\n\n我再強調一次，去年台中爆發非洲豬瘟，中央地方合作抗疫，好不容易度過難關走出來。這次油品食安也一樣，要以台中市民的安全健康為最大考量，食安不存在僥倖空間，不分藍綠、更沒有中央、地方之別，人民期待政府一體、攜手聯防合作，從原料製品到市民餐桌，守住食品安全的每一道防線。",
       "topicScores": {
-        "治安": 0.55,
-        "議會監督": 0.86,
-        "醫療": 0.83
+        "生活": 0.58,
+        "社福": 0.64,
+        "經濟": 0.21
       },
       "topics": [
-        "議會監督",
-        "醫療",
-        "治安"
+        "社福",
+        "生活",
+        "經濟"
       ],
       "url": "https://www.threads.com/t/Da6ku39GUJk"
+    },
+    {
+      "agendaRelevance": 0.23,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:03:00+00:00",
+        "inputHash": "a250578df86f89d5ce4a78cea0db29b2626fda792a94631418f182cbbc5b6312",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1633269514829123",
+      "imageAspect": 1.6497,
+      "imageUrl": "assets/feed-images/44c994c742a9d441c675.webp",
+      "keywords": [
+        "補助"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-18T01:03:31.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主談台中油品食安稽查與市府責任，未回應特定他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "食安不是政治，食安是市民日常生活的大問題，第一線稽查就是身為市長的職責。\n\n此時上街頭，就能解決問題？保障食安，源頭稽查才是關鍵。\n\n盧執政台中8年來，抽驗中聯油品＂唯一一次＂的時間落在2年多前2024年4月底，還是中央補助地方的稽查專案！盧市長，這記錄明明白白，市府記錄在案，妳卻選擇上街頭、不回應、矇眼直指中央負責，當手指向別人時，有好幾隻手指是指向自己的。\n\n盧市長油品8年只抽驗1次，跟其他縣市稽查次數相比少到不能再少。江副院長跟我競選台中市長，前幾天盧市長曾把市長桌牌送給你，市長職位不是私相授受，是由台中市民決定，食安是市政，市民睜著眼睛看，江副院長怎麼看這8年來只驗一次油品？你接受盧市府這樣不及格的源頭稽查？\n\n我再強調一次，去年台中爆發非洲豬瘟，中央地方合作抗疫，好不容易度過難關走出來。這次油品食安也一樣，要以台中市民的安全健康為最大考量，食安不存在僥倖空間，不分藍綠、更沒有中央、地方之別，人民期待政府一體、攜手聯防合作，從原料製品到市民餐桌，守住食品安全的每一道防線。",
+      "topicScores": {
+        "生活": 0.58,
+        "社福": 0.64,
+        "經濟": 0.21
+      },
+      "topics": [
+        "社福",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02mrrrf18nsRjjjrztdR8uXrzPccjGbzySzysvNYsHY565VE1xxzok6T671rD1gaDCl"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-18T22:02:41+00:00",
+        "inputHash": "248e8958a90c807ec26a82d97fd64e198f98cb6cc60810ba77571170a3bc10cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1632775214878553",
+      "imageAspect": 0.7069,
+      "imageUrl": "assets/feed-images/b385d319e29cf6fd3096.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-17T11:00:06.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳巡迴說明會並主動分享市政願景，屬競選活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "＃168巡迴說明會 即將來到 #神岡 📣\n\n下周一我將與 周永鴻 台中市議員、 蕭隆澤 及陳映辰一起來到神岡，和大家面對面交流，分享我對台中未來的六星市政願景。\n\n誠摯邀請大家一起來聊聊，大家的意見都是我未來施政的重要參考，期待到時與你相見！\n\n📌168巡迴說明會神岡場\n時間：7月20日（一）晚上六點\n地點：神岡萬興宮（神岡區昌平路五段337號）\n\n＃心存大台中\n＃市長換欣_台中創新",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02zBCmaerdLc9U6Xr1zimkbT8X9dxfGquXyLGD2q2CegahutUc5BFdAEkqq2ZfsXccl"
     },
     {
       "agendaRelevance": 0.14,
