@@ -1,6 +1,76 @@
 {
-  "count": 94,
+  "count": 96,
   "posts": [
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-19T16:01:09+00:00",
+        "inputHash": "316e580731346a6c9129aead2237f8dffae500f1faf903831fb4d4500c088fb1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da-ci7RiUqz",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1921b0ef484c78547cfa.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-19T13:13:17+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述到宮廟參香與節慶祝壽，屬生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:今晚來到「旗山天后宮」 ，恰逢天赦日、虎爺聖誕與天貺節，三喜相逢，格外有福氣。\n\n很多鄉親都已經知道我是農曆「媽祖生」，特別再跟大家分享一件事，我生肖屬虎！所以，來到旗山天后宮向媽祖參香、向金虎將軍祝壽，對我來說格外有緣，也別具意義。",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "生活": 0.24
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da-ci7RiUqz"
+    },
+    {
+      "agendaRelevance": 0.41,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-19T16:01:09+00:00",
+        "inputHash": "64e6f450e1f3abc96f98312f519f34989a7206310ae765232e575ae2710bdc8c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da-cR2wCVs9",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/5a451b5594d1ceaeaca0.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-19T13:10:58+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以市民座談談鼓山鹽埕未來，帶有競選與地方願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:我希望鼓山充滿青年、孩童的笑聲，也希望鹽埕再次找回昔日榮景。\n\n今天下午和 鼓山、鹽埕千位市民朋友座談，看到許多在地里長到場相挺，讓我非常感動。\n\n因為我自己就住在鼓山，能在生活的地方，和大家一起談高雄的未來，對我而言格外有意義。",
+      "topicScores": {
+        "住宅": 0.6,
+        "生活": 0.18,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "住宅",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da-cR2wCVs9"
+    },
     {
       "agendaRelevance": 0.33,
       "candidateId": "ko-chih-en",
