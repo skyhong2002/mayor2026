@@ -34,7 +34,7 @@
               <span class="status-badge status-degraded">部分異常</span>
               <strong>核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。</strong>
             </div>
-            <p>快照時間 2026-07-19T06:03:00+08:00</p>
+            <p>快照時間 2026-07-19T12:03:33+08:00</p>
             <div class="feed-links">
               <a href="../api/status.json">Status JSON</a>
               <a href="../feeds/">RSS</a>
@@ -69,7 +69,7 @@
             
       <article class="status-metric-card">
         <span>已收錄貼文</span>
-        <strong>1044</strong>
+        <strong>1056</strong>
         <p>social_candidates.jsonl</p>
       </article>
     
@@ -100,7 +100,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>定期 pipeline 已產生公開資料快照。</p>
-        <ul class="status-detail-list"><li>最近一次執行心跳：2026-07-19 06:03:00</li></ul>
+        <ul class="status-detail-list"><li>最近一次執行心跳：2026-07-19 12:03:33</li></ul>
       </article>
     
 
@@ -110,7 +110,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>candidates.json 有 14 位候選人，sources.json 有 65 個監看帳號。</p>
-        <ul class="status-detail-list"><li>已收錄貼文：1044</li><li>監看帳號：81</li></ul>
+        <ul class="status-detail-list"><li>已收錄貼文：1056</li><li>監看帳號：81</li></ul>
       </article>
     
 
@@ -120,7 +120,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>http://127.0.0.1:1200 回應 正常。</p>
-        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：15 ms</li></ul>
+        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：10 ms</li></ul>
       </article>
     
 
@@ -130,7 +130,7 @@
           <span class="status-badge status-degraded">部分異常</span>
         </div>
         <p>14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 20 個錯誤。</p>
-        <ul class="status-detail-list"><li>最新抓取時間：2026-07-19 06:01:02</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
+        <ul class="status-detail-list"><li>最新抓取時間：2026-07-19 12:03:11</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
       </article>
     
 
@@ -140,7 +140,7 @@
           <span class="status-badge status-paused">節流中</span>
         </div>
         <p>17 個 Facebook 來源。 目前依預算 pacing 暫停開 run。</p>
-        <ul class="status-detail-list"><li>最近成功 run：2026-07-19 06:01:13</li><li>本月已花費：$3.31 / 目標 $4.75</li><li>單次預估花費：$0.26</li><li>pacing 判斷：not due yet (pace ~every 55.8h, next at 2026-07-21T05:48:33+00:00; ~$3.31 of $4.75 spent)</li></ul>
+        <ul class="status-detail-list"><li>最近成功 run：2026-07-19 06:01:13</li><li>本月已花費：$3.31 / 目標 $4.75</li><li>單次預估花費：$0.26</li><li>pacing 判斷：not due yet (pace ~every 54.7h, next at 2026-07-21T04:44:29+00:00; ~$3.31 of $4.75 spent)</li></ul>
       </article>
     
 
@@ -150,7 +150,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>14 個 YouTube 來源；最新抓取批次目前 0 個錯誤。</p>
-        <ul class="status-detail-list"><li>已收錄影片：224</li></ul>
+        <ul class="status-detail-list"><li>已收錄影片：225</li></ul>
       </article>
     
 
@@ -196,7 +196,7 @@
             <tr>
               <th scope="row">Instagram</th>
               <td>14</td>
-              <td>14</td>
+              <td>17</td>
               <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
@@ -204,7 +204,7 @@
             <tr>
               <th scope="row">Threads</th>
               <td>11</td>
-              <td>6</td>
+              <td>3</td>
               <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
@@ -241,6 +241,33 @@
           </div>
           <div class="status-error-list">
             
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-07-19T04:02:03+00:00 · Instagram</span>
+                <strong>陳亭妃（chen-tf-ig）</strong>
+              </div>
+              <p>rsshub fetch failed: HTTP 503: FetchError: [GET] &amp;quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&amp;quot;: 400 Bad Request</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-07-19T04:01:08+00:00 · Instagram</span>
+                <strong>黃世杰（huang-sj-ig）</strong>
+              </div>
+              <p>rsshub fetch failed: HTTP 503: FetchError: [GET] &amp;quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&amp;quot;: 400 Bad Request</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-07-19T04:00:28+00:00 · Instagram</span>
+                <strong>蘇巧慧（su-ch-ig）</strong>
+              </div>
+              <p>rsshub fetch failed: HTTP 503: FetchError: [GET] &amp;quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&amp;quot;: 400 Bad Request</p>
+            </article>
+            
+
             <article class="status-error-item">
               <div>
                 <span class="feed-latest-meta">2026-07-18T22:00:09+00:00 · Instagram</span>
@@ -389,33 +416,6 @@
               <div>
                 <span class="feed-latest-meta">2026-07-12T16:00:10+00:00 · Threads</span>
                 <strong>謝龍介（hsieh-lc-threads）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 502: error code: 502</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-07-12T16:00:09+00:00 · Threads</span>
-                <strong>陳亭妃（chen-tf-threads）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 502: error code: 502</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-07-12T16:00:08+00:00 · Threads</span>
-                <strong>江啟臣（chiang-cc-threads）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 502: error code: 502</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-07-12T16:00:08+00:00 · Threads</span>
-                <strong>何欣純（ho-hc-threads）</strong>
               </div>
               <p>rsshub fetch failed: HTTP 502: error code: 502</p>
             </article>

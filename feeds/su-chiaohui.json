@@ -1,6 +1,47 @@
 {
-  "count": 96,
+  "count": 97,
   "posts": [
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-19T04:03:24+00:00",
+        "inputHash": "d7f3a1e82635ac9009f6513759eb71ccb7bfde91186e6581f7d5f1dfd8ddf375",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da9KaOtCvZz",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/f2da5c7cca65c98cbe21.webp",
+      "keywords": [
+        "醫療",
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-19T01:15:35+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動談選舉訴求與新北、新莊施政方向，未回應特定他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:我們要讓資深的 @241wish2199 李余典留在議會，把經驗傳承下去，也要讓更多像 @dalewinchen242 陳岱吟一樣，優秀的新世代人才加入，一起為新北打拚。\n\n我會繼續打造更好的新北，不但要全面提升三重的醫療、交通與生活品質，身為新莊女兒，我也會擦亮新莊招牌，讓新莊的在地特色被更多人看見！",
+      "topicScores": {
+        "交通": 0.78,
+        "生活": 0.72,
+        "競選": 0.98,
+        "醫療": 0.88
+      },
+      "topics": [
+        "競選",
+        "醫療",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Da9KaOtCvZz"
+    },
     {
       "agendaRelevance": 0.42,
       "candidateId": "su-chiaohui",
