@@ -1,6 +1,42 @@
 {
-  "count": 98,
+  "count": 100,
   "posts": [
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-19T10:00:56+00:00",
+        "inputHash": "83aac67a18199ba4f6adcd703ccc581c30ab7179e40e001845b8671ebd3ae72b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da90ScZD4xH",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/246ab467d4bbe9d70433.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-19T07:21:58+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以毒油為由號召上街抗議，屬事件動員而非回應特定說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:逼我吃毒油就是逼我上街頭！7月25日下午6點為食安上凱道",
+      "topicScores": {
+        "治安": 0.45,
+        "環境": 0.9,
+        "競選": 0.76
+      },
+      "topics": [
+        "環境",
+        "競選",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/Da90ScZD4xH"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "hsieh-lung-chieh",
@@ -3496,6 +3532,40 @@
         "兩岸外交"
       ],
       "url": "https://www.youtube.com/watch?v=EkAV87guuuM"
+    },
+    {
+      "agendaRelevance": 0.13,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-19T10:00:56+00:00",
+        "inputHash": "9eacbf4872ff284f428067d159f6fa63b35c062eef03a1f8f33706f6ada94edb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:58mQddSLc-w",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/10ebd439830f88e0c0fa.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅有反毒油抗議與集會號召，未回應任何具體他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Forcing me to eat toxic oil is forcing me to take to the streets! July 25th, 6 PM, I'll be on Ket...",
+      "topicScores": {
+        "環境": 0.91,
+        "競選": 0.74
+      },
+      "topics": [
+        "環境",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/58mQddSLc-w"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

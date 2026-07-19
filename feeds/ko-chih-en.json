@@ -1,6 +1,43 @@
 {
-  "count": 93,
+  "count": 94,
   "posts": [
+    {
+      "agendaRelevance": 0.33,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-19T10:00:56+00:00",
+        "inputHash": "5df1f4d87f01ffda5e125ea72cec3aa78f0df5aca9adb2c391394bba1c79332c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da9m-vgIGLC",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/511e876e9d10ab4e77eb.webp",
+      "keywords": [
+        "文化",
+        "音樂"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-19T05:25:17+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以廟口那卡西做地方宣傳與造勢，屬文化活動與選戰行程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:「柯志恩 高雄那卡西」載著台灣的人情味，唱遍全高雄！\n\n不論山區、海線、農村或市區，我們會把在地文化與歡樂，直接帶到鄉親的家門口。\n\n政治無須劍拔弩張，也可以貼近民心。柯志恩來跟你面對面，透過音樂拉進距離，我們一邊唱歌，一邊把在地的政策、未來願景說給你聽！\n\n#廟口那卡西 7月18日至10月17日，相招來聽歌，我們廟口見！",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "競選": 0.83
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Da9m-vgIGLC"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "ko-chih-en",
