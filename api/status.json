@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-20 00:01:16"
+        "最近一次執行心跳：2026-07-20 06:03:33"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：1073",
+        "已收錄貼文：1082",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：29 ms"
+        "耗時：12 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-07-20 00:00:56",
+        "最新抓取時間：2026-07-20 06:03:13",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-07-19 06:01:13",
         "本月已花費：$3.31 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 52.6h, next at 2026-07-21T02:36:56+00:00; ~$3.31 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 51.5h, next at 2026-07-21T01:32:34+00:00; ~$3.31 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,17 +77,17 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-20T00:01:16+08:00",
+  "generatedAt": "2026-07-20T06:03:33+08:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-07-19T14:49:40+00:00",
     "postsByPlatform": {
       "facebook": 359,
-      "instagram": 281,
+      "instagram": 290,
       "threads": 207,
       "youtube": 226
     },
-    "totalPosts": 1073,
+    "totalPosts": 1082,
     "watchAccounts": 81
   },
   "overall": {
@@ -96,27 +96,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 502: error code: 502",
-      "platform": "threads",
-      "recordedAt": "2026-07-12T16:00:10+00:00",
-      "sourceId": "hsieh-lc-threads",
-      "sourceName": "謝龍介（hsieh-lc-threads）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 502: error code: 502",
-      "platform": "threads",
-      "recordedAt": "2026-07-12T16:00:10+00:00",
-      "sourceId": "lai-jl-threads",
-      "sourceName": "賴瑞隆（lai-jl-threads）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 502: error code: 502",
-      "platform": "threads",
-      "recordedAt": "2026-07-12T16:00:11+00:00",
-      "sourceId": "ko-ce-threads",
-      "sourceName": "柯志恩（ko-ce-threads）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=wanan.chiang&quot;: 429 Too Many Requests",
       "platform": "instagram",
@@ -235,6 +214,27 @@
       "recordedAt": "2026-07-19T04:02:03+00:00",
       "sourceId": "chen-tf-ig",
       "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-19T22:00:25+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-19T22:01:07+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-19T22:02:02+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -248,16 +248,16 @@
         "status": "ok"
       },
       {
-        "currentErrors": 17,
+        "currentErrors": 20,
         "platform": "instagram",
         "sources": 14,
         "status": "degraded"
       },
       {
-        "currentErrors": 3,
+        "currentErrors": 0,
         "platform": "threads",
         "sources": 11,
-        "status": "degraded"
+        "status": "ok"
       },
       {
         "currentErrors": 0,

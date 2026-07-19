@@ -19,8 +19,84 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 100,
+  "count": 102,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-19T22:03:25+00:00",
+        "inputHash": "b601eae669f564c03edb26a6d44f52bdf4be3bc7199b0ced796e1a2f8e3438de",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-19T22:03:33+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da-d-aKEplY/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/da90e329cdfa6f020ac0.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-19T13:26:58+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅列陳情、會勘與事件，未明確對應他方既有說法；主旨非回應特定觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "【本集介紹】\n📌 回應網友陳情：台南永康區中華二路、中華路晚上常有改裝車噪音..林燕祝議員已安排會勘\n📌 回應網友陳情：台南中正路、海安路口水溝蓋容易摔車...蔡宗豪議員現場會勘並要求改善\n📌 20260714龍介質詢「致癌油事件」行政院長卓榮泰「不肯道歉」\n📌 台南1歲童才送托2天「頭部瘀青、吐血」亡\n📌 台南城西焚化爐掩埋場遭指排黑水...環保局長：屬實就下台\n📌 網友陳情：台南台江大道與開安路的待轉格很小，停兩台就滿了...剩下就被檢舉...謝龍介：已請安南區李中岑議員去會勘\n📌 網友陳情：文賢路242巷與文賢一路路口 要增加一個紅綠燈...謝龍介：已請蔡宗豪議員會勘改善\n📌 國民黨號召為食安725上凱道\n📌 國家檔案曝光！黃偉哲、王定宇被揭曾當「抓耙仔」\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
+      "topicScores": {
+        "交通": 0.8,
+        "治安": 0.62,
+        "環境": 0.55,
+        "醫療": 0.54
+      },
+      "topics": [
+        "交通",
+        "治安",
+        "環境",
+        "醫療"
+      ],
+      "url": "https://www.instagram.com/p/Da-d-aKEplY/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-19T22:03:25+00:00",
+        "inputHash": "a6b4172239a5568646ae9763953f9ec483aa0f187cc25ad09f193c421c91863b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da90ookyCXu/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2ef0fe1309baef9d6912.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-19T07:24:56+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "號召上街反毒油，屬食安抗議與動員，非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "逼我吃毒油就是逼我上街頭！7月25日下午6點為食安上凱道 #謝龍介 #致癌油",
+      "topicScores": {
+        "生活": 0.7,
+        "社福": 0.88,
+        "經濟": 0.65
+      },
+      "topics": [
+        "社福",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Da90ookyCXu/"
+    },
     {
       "agendaRelevance": 0.14,
       "candidateId": "hsieh-lung-chieh",
