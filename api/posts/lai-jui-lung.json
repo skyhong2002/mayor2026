@@ -19,7 +19,7 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 117,
+  "count": 119,
   "posts": [
     {
       "agendaRelevance": 0.08,
@@ -4302,6 +4302,70 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/REp-S-QokT8"
+    },
+    {
+      "agendaRelevance": 0.34,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "6693e485459d3edd9978612b1971362ed73b72c16a2bff6c1dc80abe8555942b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:mja1rAX0uPA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/871ff4c6ad8cc59c6ee2.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以市長推薦候選人並訴求接棒，屬明顯競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "陳其邁市長真情推薦，賴瑞隆是帶領高雄繼續轉型、進步繁榮最好人選！",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/mja1rAX0uPA"
+    },
+    {
+      "agendaRelevance": 0.32,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "297abbaab4267e057b8f6935787d4fb2c7889d0bbe1ef59cea8f4fde2f2f3e12",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:S7XKqa8OeK0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/2bd4b07e19142117ac59.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "強調延續執政與支持候選人，主要是選舉動員而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "高雄關鍵下一棒交給賴瑞隆！延續綠色執政好成績！",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/S7XKqa8OeK0"
     }
   ],
   "version": 1

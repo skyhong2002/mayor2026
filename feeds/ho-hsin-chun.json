@@ -1,5 +1,5 @@
 {
-  "count": 107,
+  "count": 110,
   "posts": [
     {
       "agendaRelevance": 0.16,
@@ -3852,6 +3852,110 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/Cn9TlONhKVQ"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "3fc24e00edd895c59a53462d1ce76e8b11ca4ff3c4f606f2fca910508077cf86",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:LMpwlnYMpiw",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/93bda68dca5623d86130.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主打食安抽驗制度漏洞與補強，屬主動提出的公共安全治理議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "食安不是政治！何欣純 盧市府8年只抽驗1次油品？制度漏洞該補起來",
+      "topicScores": {
+        "治安": 0.42,
+        "醫療": 0.86
+      },
+      "topics": [
+        "醫療",
+        "治安"
+      ],
+      "url": "https://www.youtube.com/watch?v=LMpwlnYMpiw"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "356659b96ad2d454982886f02eaaffc1b77a505b16e141e6c3004d4817d1d3fe",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:wFX06KWqT2g",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/6f390fbb997af6f727bf.webp",
+      "keywords": [
+        "產業"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出168產業升級政策，明確屬經濟發展議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純推168政策｜打造台中產業升級新藍圖",
+      "topicScores": {
+        "經濟": 0.87
+      },
+      "topics": [
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/watch?v=wFX06KWqT2g"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "98d09ff5d0151aaa26492e5cc8c0bed74c8e91554b090bb6190b93a703f135a2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:aOCHUcJ_x8s",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/425c0585fff67cd817c3.webp",
+      "keywords": [
+        "營養午餐"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張免費營養午餐不分公私立，屬教育與社福政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "免費營養午餐 不該分公私立！",
+      "topicScores": {
+        "教育": 0.93,
+        "社福": 0.83
+      },
+      "topics": [
+        "教育",
+        "社福"
+      ],
+      "url": "https://www.youtube.com/shorts/aOCHUcJ_x8s"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

@@ -19,8 +19,44 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 102,
+  "count": 104,
   "posts": [
+    {
+      "agendaRelevance": 0.89,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "4f580d3425e121cd91850a1149353b45c09230034bf4743573db9f31654a51b5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da_wbTVDqsy",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/433c672ef6dbfc5d686a.webp",
+      "keywords": [
+        "住宅"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T01:26:18+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "主動談新青安結束後房貸壓力與可負擔住宅構想，屬住宅政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:新青安3.0利息補貼結束後，還款壓力大增...龍介提以「建造成本」賣給市民的可負擔住宅",
+      "topicScores": {
+        "住宅": 0.96,
+        "經濟": 0.72
+      },
+      "topics": [
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da_wbTVDqsy"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
@@ -3662,6 +3698,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/58mQddSLc-w"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "cadfbea868c1c9416c132d0ccb149da60857b04c4406799ff96253f4a60ad176",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:GzxSn0d75jQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6371ee50dc2b4816b117.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "內容談新青安3.0後房貸壓力與龍介提案，屬住宅政策討論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Mortgage repayment burden spikes after New Youth Housing 3.0 subsidy ends... Lung Chieh proposes ...",
+      "topicScores": {
+        "住宅": 0.95,
+        "經濟": 0.68
+      },
+      "topics": [
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/GzxSn0d75jQ"
     }
   ],
   "version": 1

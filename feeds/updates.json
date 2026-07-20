@@ -2,6 +2,44 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.89,
+      "candidateId": "hsieh-lung-chieh",
+      "candidate_id": "hsieh-lung-chieh",
+      "candidate_name": "謝龍介",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "4f580d3425e121cd91850a1149353b45c09230034bf4743573db9f31654a51b5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Da_wbTVDqsy",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/433c672ef6dbfc5d686a.webp",
+      "keywords": [
+        "住宅"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T01:26:18+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "主動談新青安結束後房貸壓力與可負擔住宅構想，屬住宅政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:新青安3.0利息補貼結束後，還款壓力大增...龍介提以「建造成本」賣給市民的可負擔住宅",
+      "topicScores": {
+        "住宅": 0.96,
+        "經濟": 0.72
+      },
+      "topics": [
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Da_wbTVDqsy"
+    },
+    {
       "agendaRelevance": 0.16,
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
@@ -3922,45 +3960,6 @@
         "文化觀光"
       ],
       "url": "https://www.threads.com/t/Da4ouoEEW4u"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "candidate_id": "shen-poyang",
-      "candidate_name": "沈伯洋",
-      "classification": {
-        "classifiedAt": "2026-07-17T10:01:11+00:00",
-        "inputHash": "58985d60ef2d961e4af1303898c3b0cd0d27d10c1263748cd1b8db4634f9037d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Da4ol7WkmCk/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d52d0414ac21f197c678.webp",
-      "keywords": [
-        "文化",
-        "電影"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-17T07:03:09+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅為週末市場與活動行程公告，屬一般生活與活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "伯洋周末出沒行程！歡迎大家一起來跟伯洋打招呼！\n\n7/18（六）\n08:50\n📍三水街市場、直興市場\n\n7/18（六）\n13:00\n林子揚議員—永樂市場文化產業走訪\n📍永樂市場\n\n7/19（日）\n08:50\n📍謙和市場\n\n7/19（日）\n19:00\n何孟樺議員—星空電影院\n📍大港墘公園",
-      "topicScores": {
-        "文化觀光": 0.73,
-        "生活": 0.92
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.instagram.com/p/Da4ol7WkmCk/"
     }
   ],
   "title": "2026 市長官方來源觀測站",

@@ -19,7 +19,7 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 99,
+  "count": 100,
   "posts": [
     {
       "agendaRelevance": 0.04,
@@ -3858,6 +3858,40 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/FpaulvyMmEY"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-20T04:00:55+00:00",
+        "inputHash": "ee325642a447602761b11d9acbdb2b8b57032d4117ba1c1ed69fbf2d197b1e34",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:MZDOiZPhkzo",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/8d3220392e366bc00a30.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以守護食安搭配凱道集結，重點在競選動員而非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "守護食安、守護下一代，725凱道見！",
+      "topicScores": {
+        "社福": 0.55,
+        "競選": 0.84
+      },
+      "topics": [
+        "競選",
+        "社福"
+      ],
+      "url": "https://www.youtube.com/watch?v=MZDOiZPhkzo"
     }
   ],
   "version": 1
