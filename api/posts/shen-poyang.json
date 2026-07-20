@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 97,
+  "count": 98,
   "posts": [
     {
       "agendaRelevance": 0.78,
@@ -3542,6 +3542,42 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/3B7iNmILMU8"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "4fbb8f92991a42fbb4d04202eb98286e09990338a66709ba3629707f23c2690b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:4NwAhwKo8J4",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/7cfc145c0a7b6c0e8fc0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "在委員會抗議國防採購分工，屬議會監督與軍購議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "A strong protest! Why are Minister Gu and I in the Economics Committee? Defense procurement shoul...",
+      "topicScores": {
+        "經濟": 0.95,
+        "議會監督": 0.91,
+        "防災": 0.58
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "防災"
+      ],
+      "url": "https://www.youtube.com/watch?v=4NwAhwKo8J4"
     }
   ],
   "version": 1

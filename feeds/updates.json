@@ -2,6 +2,156 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.22,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "429f8f139dd1f0a6ee6cdfdbf3c10a70fb45968f0f1c98404f8ab75f0bf1822c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAgfR2GuaS",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/58d33b093f126152dc13.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T08:26:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "屬於掃街拜票與選舉動員，主軸是競選活動而非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上9:00，動起來！龍潭市場掃街✨\n\n龍潭市場是在地鄉親採買的重要據點，也是陪伴龍潭超過50年的在地市場，充滿濃濃的客庄特色！\n\n期待明早龍潭市場相會！心龍潭，動起來💖",
+      "topicScores": {
+        "生活": 0.41,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAgfR2GuaS"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ko-chih-en",
+      "candidate_id": "ko-chih-en",
+      "candidate_name": "柯志恩",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "15a2bee14e268d85dca58d1724ac2727f34caa92af124355b9045af3ef57bf18",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbALlBpCe2i",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/859534c8dfedcae34ba1.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-20T05:24:03+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "針對毒油食安風暴，主張檢視制度與源頭管理以強化食品安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:近期毒油食安風暴，政府更應持續檢視制度設計與源頭管理，廣納學界專業意見，強化預警與治理能力，才能真正提升民眾對食品安全的信心",
+      "topicScores": {
+        "環境": 0.83,
+        "生活": 0.74,
+        "經濟": 0.52
+      },
+      "topics": [
+        "環境",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbALlBpCe2i"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "candidate_id": "lai-jui-lung",
+      "candidate_name": "賴瑞隆",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "7944719be7986837783c653523315c976ac2f91da33dc6920bc35f4c396c96d6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAIg8XHx2F",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a42fc3d06aa8f8bbde5e.webp",
+      "keywords": [
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T04:56:47+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "邀請民眾到六龜喝茶逛市集，主要是地方觀光宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:歡迎大家到六龜喝杯好茶、逛市集，認識山城最美的風景與人情！",
+      "topicScores": {
+        "文化觀光": 0.95,
+        "生活": 0.22
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAIg8XHx2F"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "03c115965264ac27db3a7e8669913bed673bdebd8fff2b8dc6e15f97073b027b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAF6-Bk5fa",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/2281101c2e660e0c6d61.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-20T04:34:05+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為2026桃園隊宣傳與候選人動員，屬明顯競選貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:桃園隊，全壘打💪🏻\n\n昨天全代會，全台縣市首長候選人接下戰旗，台灣隊集結；今天，就來和大家介紹2026桃園隊！\n\n每一位夥伴都帶著對地方的承諾、對市民的責任，站上第一線，為桃園打拚。\n\n從沿海到山城，從都會到鄉村、到客庄、到部落，世杰會與27位議員候選人並肩同行，深入每一個行政區，傾聽每一個聲音，努力把桃園變得更好。\n\n讓我們攜手打造令人心動的桃園，讓城市再次動起來！\n\n心桃園，動起來💖",
+      "topicScores": {
+        "生活": 0.34,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAF6-Bk5fa"
+    },
+    {
       "agendaRelevance": 0.89,
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
@@ -3811,155 +3961,6 @@
         "競選"
       ],
       "url": "https://www.instagram.com/p/Da47K9-SN6R/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-17T10:01:11+00:00",
-        "inputHash": "4c6256d08cdbadc3bf6937386b804da13769aeb6723aa2cc7a4b929c1915f35d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da46tP4D0Tk",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/950d2673ea1093f173f8.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-17T09:42:21+00:00",
-      "postingIntent": {
-        "confidence": 0.89,
-        "label": "主動發文",
-        "reason": "僅指責卓榮泰追責，未回應任何具體先前說法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:「致癌油」最該被追究責任的是你 卓榮泰 院長",
-      "topicScores": {
-        "治安": 0.62,
-        "醫療": 0.78
-      },
-      "topics": [
-        "醫療",
-        "治安"
-      ],
-      "url": "https://www.threads.com/t/Da46tP4D0Tk"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-18T22:02:41+00:00",
-        "inputHash": "4b3cad00b38de0800bb656e2cdc4aabbf7dffd3b3b6b58f8c13336eb6e12dc3a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1607093200772262",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/295c52fe1da330732c24.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-17T09:38:21.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "只是在批評致癌油事件究責對象，屬攻防而非政策提案。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "「致癌油」最該被追究責任的是你 卓榮泰 院長",
-      "topicScores": {
-        "治安": 0.4,
-        "經濟": 0.54,
-        "醫療": 0.86
-      },
-      "topics": [
-        "醫療",
-        "經濟",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/reel/1043595208155602/"
-    },
-    {
-      "agendaRelevance": 0.14,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-07-17T10:01:11+00:00",
-        "inputHash": "29e6c612978206016a9c8bd5a6103296200267d32273aed4fe8ddd6e79c0eb87",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da4ryHbGS05",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "選舉"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-17T07:31:00+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "宣傳選舉官網與活動資訊，屬競選動員而非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:民進黨選舉官網正式上線，最新消息、政策內容、活動資訊都能在網站一次看。除了縣市首長之外，各個區域的議員資訊也能在網站上看見！\n\n歡迎大家來逛逛，也分享給更多朋友，一起關心台灣、關心未來。\n\nhttps://teamtaiwan.dpp.org.tw/",
-      "topicScores": {
-        "競選": 0.98
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Da4ryHbGS05"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "candidate_id": "shen-poyang",
-      "candidate_name": "沈伯洋",
-      "classification": {
-        "classifiedAt": "2026-07-17T10:01:11+00:00",
-        "inputHash": "5dbe09f8ab20232846b3b6809d469aa1ad5722dc35dbbed6f4cf6b6a370aaaa3",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Da4ouoEEW4u",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5e0eed126181ce78e268.webp",
-      "keywords": [
-        "文化",
-        "電影"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-17T07:04:18+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "轉載市場與公園行程，屬活動公告與日常行程分享。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:伯洋周末出沒行程！歡迎大家一起來跟伯洋打招呼！\n\n7/18（六）\n08:50\n📍三水街市場、直興市場\n\n7/18（六）\n13:00\n林子揚議員—永樂市場文化產業走訪\n📍永樂市場\n\n7/19（日）\n08:50\n📍謙和市場\n\n7/19（日）\n19:00\n何孟樺議員—星空電影院\n📍大港墘公園",
-      "topicScores": {
-        "文化觀光": 0.73,
-        "生活": 0.92
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/Da4ouoEEW4u"
     }
   ],
   "title": "2026 市長官方來源觀測站",

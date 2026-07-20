@@ -19,8 +19,44 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 119,
+  "count": 120,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "7944719be7986837783c653523315c976ac2f91da33dc6920bc35f4c396c96d6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAIg8XHx2F",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a42fc3d06aa8f8bbde5e.webp",
+      "keywords": [
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T04:56:47+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "邀請民眾到六龜喝茶逛市集，主要是地方觀光宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:歡迎大家到六龜喝杯好茶、逛市集，認識山城最美的風景與人情！",
+      "topicScores": {
+        "文化觀光": 0.95,
+        "生活": 0.22
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAIg8XHx2F"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lai-jui-lung",

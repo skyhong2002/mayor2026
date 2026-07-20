@@ -19,8 +19,44 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 100,
+  "count": 102,
   "posts": [
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "15a2bee14e268d85dca58d1724ac2727f34caa92af124355b9045af3ef57bf18",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbALlBpCe2i",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/859534c8dfedcae34ba1.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-20T05:24:03+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "針對毒油食安風暴，主張檢視制度與源頭管理以強化食品安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:近期毒油食安風暴，政府更應持續檢視制度設計與源頭管理，廣納學界專業意見，強化預警與治理能力，才能真正提升民眾對食品安全的信心",
+      "topicScores": {
+        "環境": 0.83,
+        "生活": 0.74,
+        "經濟": 0.52
+      },
+      "topics": [
+        "環境",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbALlBpCe2i"
+    },
     {
       "agendaRelevance": 0.04,
       "candidateId": "ko-chih-en",
@@ -3892,6 +3928,40 @@
         "社福"
       ],
       "url": "https://www.youtube.com/watch?v=MZDOiZPhkzo"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "486a40ce1a9c1affc13b79cbbaddfde88fce1cd5aecf5f7254b6951a13c6db7d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:z2y3-dtKPls",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/10086dcf0e5e11228c5f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "談毒油食安危機與政府制度檢討，屬明確食品安全訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "In light of the recent toxic oil food safety crisis, the government must continuously review syst...",
+      "topicScores": {
+        "環境": 0.88,
+        "生活": 0.72
+      },
+      "topics": [
+        "環境",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/z2y3-dtKPls"
     }
   ],
   "version": 1

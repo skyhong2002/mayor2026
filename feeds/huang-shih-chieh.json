@@ -1,6 +1,76 @@
 {
-  "count": 92,
+  "count": 94,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "429f8f139dd1f0a6ee6cdfdbf3c10a70fb45968f0f1c98404f8ab75f0bf1822c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAgfR2GuaS",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/58d33b093f126152dc13.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T08:26:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "屬於掃街拜票與選舉動員，主軸是競選活動而非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上9:00，動起來！龍潭市場掃街✨\n\n龍潭市場是在地鄉親採買的重要據點，也是陪伴龍潭超過50年的在地市場，充滿濃濃的客庄特色！\n\n期待明早龍潭市場相會！心龍潭，動起來💖",
+      "topicScores": {
+        "生活": 0.41,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAgfR2GuaS"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "03c115965264ac27db3a7e8669913bed673bdebd8fff2b8dc6e15f97073b027b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbAF6-Bk5fa",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/2281101c2e660e0c6d61.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-20T04:34:05+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為2026桃園隊宣傳與候選人動員，屬明顯競選貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:桃園隊，全壘打💪🏻\n\n昨天全代會，全台縣市首長候選人接下戰旗，台灣隊集結；今天，就來和大家介紹2026桃園隊！\n\n每一位夥伴都帶著對地方的承諾、對市民的責任，站上第一線，為桃園打拚。\n\n從沿海到山城，從都會到鄉村、到客庄、到部落，世杰會與27位議員候選人並肩同行，深入每一個行政區，傾聽每一個聲音，努力把桃園變得更好。\n\n讓我們攜手打造令人心動的桃園，讓城市再次動起來！\n\n心桃園，動起來💖",
+      "topicScores": {
+        "生活": 0.34,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbAF6-Bk5fa"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "huang-shih-chieh",
