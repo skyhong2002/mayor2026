@@ -1,6 +1,74 @@
 {
-  "count": 104,
+  "count": 108,
   "posts": [
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "86dfe6bf41436354358f926a5355ec94a0ed06bccd2e8b2da00ffb76a6acbd2e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbA8p3cyUEo/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/3e7b2cecf1b1235ba9fa.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-20T12:32:52+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "聚焦交通罰單申訴與責任歸屬，屬公共交通議題批評。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "罰單開錯撤銷誰負責？台南交通罰單平均每100張申訴有17張申訴通過 #盧崑福 #台南",
+      "topicScores": {
+        "交通": 0.97
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/DbA8p3cyUEo/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "4725f4aa8aa3f3b163854108067bba222e55361e3d86292831a5ea3987b1f0dc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbA7yAVj_Wi",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9008f6ec489b9437816f.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T12:25:19+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是在批評台南交通罰單申訴情況，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:罰單開錯撤銷誰負責？台南交通罰單平均每100張申訴有17張申訴通過",
+      "topicScores": {
+        "交通": 0.97
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbA7yAVj_Wi"
+    },
     {
       "agendaRelevance": 0.89,
       "candidateId": "hsieh-lung-chieh",
@@ -36,6 +104,42 @@
         "經濟"
       ],
       "url": "https://www.threads.com/t/Da_wbTVDqsy"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "ba0f657a20f1e16895bff8515aa037b9c8b7cd3b719a77d4ea03c2683f0be5b0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Da_wSDDSxcz/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/be7b250386a23586868f.webp",
+      "keywords": [
+        "住宅"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-20T01:25:50+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張以建造成本提供可負擔住宅，屬具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "新青安3.0利息補貼結束後，還款壓力大增...龍介提以「建造成本」賣給市民的可負擔住宅",
+      "topicScores": {
+        "住宅": 0.95,
+        "經濟": 0.62
+      },
+      "topics": [
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Da_wSDDSxcz/"
     },
     {
       "agendaRelevance": 0.22,
@@ -3712,6 +3816,38 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/GzxSn0d75jQ"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "f7b6e989ae145c1805a9f3f2d67dd44c6fe23d18d22f653a90138bad4eb636e3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:dOOtG6dRaTE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4533b9d019842b85105d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主題是台南錯誤交通罰單責任，屬議題評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Who is Responsible for Revoking Incorrect Traffic Tickets? In Tainan, 17 Out of Every 100 Traffic...",
+      "topicScores": {
+        "交通": 0.98
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/dOOtG6dRaTE"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

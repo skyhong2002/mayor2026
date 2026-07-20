@@ -19,8 +19,47 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 98,
+  "count": 100,
   "posts": [
+    {
+      "agendaRelevance": 0.38,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "b528b1da8cd51624a072832e684033bbd48a2de690897522c0104b89fed60777",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbBKyZSgEZr",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/e4ce4b75f4898bdfacd2.webp",
+      "keywords": [
+        "競選",
+        "參選",
+        "後援會",
+        "外交"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-20T14:37:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動談訪美與國際交流，並提及競選後援會，非回應他方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:已經在飛機上了。\n這趟訪美，我的目標很明確，\n把台北的問題帶出去，\n把世界的答案帶回來。\n\n我們會拜會美國主要城市，\n從台北經驗跟世界一線城市交流，\n也會參與美國的競選後援會成立，\n匯聚旅美台灣人的力量，\n聊一聊對台北的想像。\n\n自從參選以來，\n我持續思考，\n是什麼元素構成我們對「台北」的認識？\n\n台北是首都，\n首都是國際城，\n台北的文化、歷史、產業還有移動的人們，\n就是我們參與國際交流的資本，\n也是突破外交困境的關鍵。\n\n我們會持續說該說的話，\n持續行動，讓世界認識台灣。",
+      "topicScores": {
+        "兩岸外交": 0.89,
+        "競選": 0.92
+      },
+      "topics": [
+        "競選",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DbBKyZSgEZr"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "shen-poyang",
@@ -3578,6 +3617,40 @@
         "防災"
       ],
       "url": "https://www.youtube.com/watch?v=4NwAhwKo8J4"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "d10b888cb0d1de84f94b598dae795be8177b2d52bf9b319202c3bcb32d02e981",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xhUbGeF3ENo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/5cf63fe83ccaa3a8e110.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "描述走訪市場與互動感謝，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "市場的聲音，是最真實的在地呼吸。這週末我在萬華三水街市場、直興市場、大稻埕永樂市場，還有雙連謙和市場，見到非常多鄉親，感謝大家的加油、餵食！",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "生活": 0.88
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/xhUbGeF3ENo"
     }
   ],
   "version": 1

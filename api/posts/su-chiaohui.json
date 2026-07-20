@@ -19,8 +19,44 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 98,
+  "count": 100,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "c71c159e5fe4f9c2bf784bea8702d67a0d6953bc8834fbfae5ee31d5dbe847a8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbA1hmlDnec",
+      "imageAspect": 0.7025,
+      "imageUrl": "assets/feed-images/e3e5a6158296c5c67342.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-20T11:30:03+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳皮克敏實體活動與揪團同樂，屬活動邀約非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:皮友們～汐止水獺媽媽樂園集合啦！📢\n\n今年四月的Party Walk，我和超過8000位皮友，一起走了3億步，好多人都在敲碗下一次🤣 \n\n這一次，我要邀請大家一起走到禮拜六的汐止水獺媽媽樂園！皮友們，一起帶著你的皮克敏配件來玩吧🤩\n\n點入連結，一起走向水獺媽媽樂園汐止場🌱 https://pikminbloom.onelink.me/pWSt/raxjupys",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "生活": 0.98,
+        "體育": 0.72
+      },
+      "topics": [
+        "生活",
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbA1hmlDnec"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "su-chiaohui",
@@ -3658,6 +3694,38 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/m9in8HDrHPU"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "e21a6308670f6a1fd4376398d9983672e96c5a2e2dabaf7925dd08280c9d845c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:yEXKnL7IrZs",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/c130b4850a83b5a57c0c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "兒童故事標題，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "[Otter Mom's Bedtime Stories] I Have a Question, But I'm Afraid to Ask | Expressing Yourself Brav...",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=yEXKnL7IrZs"
     }
   ],
   "version": 1
