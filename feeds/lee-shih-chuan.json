@@ -1,6 +1,83 @@
 {
-  "count": 62,
+  "count": 65,
   "posts": [
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "c2e24d9a8ad173a415f9a01144c2142eb58a4c78d9d5270b24d581daf1a6a93b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1589606182776636",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/9c3411ee43e8b0e24ee6.webp",
+      "keywords": [
+        "道路",
+        "選舉",
+        "醫院",
+        "急診"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-20T08:34:31.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出道路、園區、醫院三項淡水建設政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "做了 40 年工程，沒想到出來選舉，這幾個月被抹黑的，比 40 年加起來還多。\n\n我太太問過我：「你有後悔嗎？」\n\n我說，沒後悔。\n\n上週末在淡水，近千位鄉親把會場坐到門外都是人。看著大家在大熱天舉手喊聲，我更確定這個答案。\n\n說實在，一個人做到這個年紀，圖的不是位子。你有能力、有經驗，就應該為社會付出。人這一生，最重要的是為地方留下什麼。\n\n我要為淡水留下的，很具體——\n\n一條路：淡北道路加速完工，接上大度路，進台北不用再塞。\n\n一個園區：淡海新市鎮二、三期引進科學園區，年輕人在淡水就能上班。\n\n一間醫院：照顧長輩，也顧淡水、三芝、石門的急診需求。\n\n朱立倫市長、 侯友宜市長奠的基礎，下一棒我來接，一棒接一棒。\n\n選舉會過去，醫院跟道路會留下來。\n\n這就是我沒後悔的原因。",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.96,
+        "經濟": 0.75,
+        "醫療": 0.92
+      },
+      "topics": [
+        "交通",
+        "競選",
+        "醫療",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0WmDTfhrCKBmXVgjtpmxvty3s9L2vYDspZd1RJtDkPMhqBvU1jKEaQJ5DtiyZXmszl&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "498d0cb6b6c43ec046fb6ed079115ec7c5d47baf90bc4c0136d8281eb925f40e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1589416669462254",
+      "imageAspect": 0.5611,
+      "imageUrl": "assets/feed-images/98ee64417b13844bdc33.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-20T02:30:25.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "訴求追查食用油來源與食安問題，未回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "十二年前，有些人講過一些重話。\n\n今天，我們不講重話，只求一句實話：這個油，到底怎麼來的？現在的油，到底可以吃了沒？\n\n致癌油到現在，沒有答案。\n\n做工程的人都知道，查不出原因，就修不好問題。食安也一樣。\n\n7 月 25 日，凱道見。\n\n同一把尺，量當年，也量今天。",
+      "topicScores": {
+        "生活": 0.62,
+        "社福": 0.34
+      },
+      "topics": [
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/reel/4071964709600897/"
+    },
     {
       "agendaRelevance": 0.62,
       "candidateId": "lee-shih-chuan",
@@ -70,6 +147,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Da-G8uCicW6"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "f9de29bec223628d4ff16126843095a4dce1d2831daa6b3ad2ebd24a94085c63",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1588827342854520",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/19d9135dc46d93943e4f.webp",
+      "keywords": [
+        "馬拉松"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-19T09:50:43.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是路跑活動紀錄，並提及引進更多IP活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "在貢寮，大家追火車。\n今天在微風運河，大家追動畫。\n\n一早到《膽大黨》路跑現場，很多朋友嚇一跳，說捕獲野生川伯。說實在，我本來就常在河濱走，只是今天多背了一隻「高速婆婆」——活動的報名贈品，很有創意，她就這樣跟了我一整路。\n\n主辦方問我是「宇宙人否定派」還是「幽靈否定派」，我開玩笑說我是相信外星人派。 畢竟做工程的人本來就要相信——很多事情在做出來之前，大家都說不可能。\n\n新北的路跑底子是一路累積來的。\n\n貢寮、雙溪的鐵道馬拉松辦了很多年，證明一件事：把活動辦好，人自然會來。今天新北有了年輕人喜歡的動畫 IP，河濱整個不一樣。\n\n下一步我想做的，就是讓更多這樣的 IP 願意來新北辦活動。場地有、經驗有、河濱這麼大，缺的只是有人把它們接起來。\n\n城市要有活力，不是用喊的。\n年輕人願意來，才算數。",
+      "topicScores": {
+        "文化觀光": 0.81,
+        "體育": 0.93
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02MLWVKAPMJYpvcWXDC6LwTvvwCMLniKzjFu6aycmNNoFbV8smCCimhSoYDnZg5uNil&id=100051818071280"
     },
     {
       "agendaRelevance": 0.91,

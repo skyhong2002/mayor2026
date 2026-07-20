@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/6758e73a31554159906e.webp",
+    "avatarUrl": "assets/source-avatars/fa91d9b6ec7a5d91d5d7.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,88 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 112,
+  "count": 115,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "dd44f0dab233025b59b69658897e89011f269565d985a4cd0653015232daf737",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1635169181305823",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/14aba9c900cb0d9de609.webp",
+      "keywords": [
+        "育兒",
+        "長輩",
+        "照顧",
+        "創業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-20T11:00:28.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出育兒、青年創業與長輩照護福利政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "海線向前走，大小福利都要有！\n\n從生兒育兒、青年創業，到長輩照護，我都提出相應的福利政策，希望減輕大家負擔，把台中市民從小照顧到老。\n\n「六星市政168巡迴說明會」持續走進各區，一步步向大家報告我的市政願景，也傾聽更多在地聲音與建議。\n\n一步一腳印，一區一區認真走，和大家一起讓台中欣欣向榮！\n\n#心存大台中\n#市長換欣_台中創新",
+      "topicScores": {
+        "社福": 0.93,
+        "經濟": 0.71
+      },
+      "topics": [
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1657869042666982/"
+    },
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "e34042d00e9484c8fe92bb93132acdc6724503628b18c62eb5909bb63ded98ca",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1634943424661732",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/cbefe683368ff43e06a5.webp",
+      "keywords": [
+        "補助",
+        "津貼",
+        "創業",
+        "青創"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-20T04:17:58.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確列出生育津貼與青創基地政策，屬施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "台中有許多年輕人口，減輕他們生活負擔、支持他們追逐夢想，是我的施政目標。\n\n未來我將推動：\n✅ 生育津貼加倍、坐月子補助5萬元👉減輕年輕父母負擔\n✅ 盤點台中閒置空間，打造青創基地👉提供青年創業、辦公空間\n\n從成家到創業，給年輕人更多支持，打造一座讓年輕人敢生、敢拚、敢追夢的城市！",
+      "topicScores": {
+        "住宅": 0.44,
+        "社福": 0.96,
+        "經濟": 0.86
+      },
+      "topics": [
+        "社福",
+        "經濟",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/1407846951207998/"
+    },
     {
       "agendaRelevance": 0.16,
       "candidateId": "ho-hsin-chun",
@@ -54,6 +134,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Da-ni62DujZ"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-20T22:02:41+00:00",
+        "inputHash": "dfd9125d741d7cc750ebf7925e808d36e48b3cd524bf8fcebfdef5493180bc96",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1634499124706162",
+      "imageAspect": 1.755,
+      "imageUrl": "assets/feed-images/1dde67e05b6bf7cb934a.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-19T14:43:07.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅有競選口號與表態，沒有具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "市長換欣，台中創新！\n\n懷抱服務台中市民的心，我全力以赴，台中一定可以更好！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/4282635472048909/"
     },
     {
       "agendaRelevance": 0.77,
