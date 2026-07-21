@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 117,
+  "count": 118,
   "posts": [
     {
       "agendaRelevance": 0.38,
@@ -4228,6 +4228,40 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/mAugWfjEKeU"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "28f9e743559e9e7ac8f772bcb2286901887ac4f0b7b27cfcb6851b4a19f4c0ab",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8Z0b24V_v1M",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/8ca132d3bdb50986544a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "影片標題為長者健康祝福，屬政策宣傳或活動式內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "阿純送祝福祝 推長者健康政策守護每位爸爸 !",
+      "topicScores": {
+        "生活": 0.7,
+        "社福": 0.9
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=8Z0b24V_v1M"
     }
   ],
   "version": 1

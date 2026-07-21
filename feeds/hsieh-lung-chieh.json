@@ -1,6 +1,150 @@
 {
-  "count": 111,
+  "count": 117,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "3a13872ee281b5f1ab6571a98c73172c636ed7ead3bf2f7bf083ea611f0a8d39",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbDPSaREQbn",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/add9b5a60d9308fbd17f.webp",
+      "keywords": [
+        "國防"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-21T09:53:41+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅重述國防部採購爭議，未見回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:衛浴福麥公司得標國防部炸藥採購案「無法履約」",
+      "topicScores": {
+        "兩岸外交": 0.36,
+        "治安": 0.92
+      },
+      "topics": [
+        "治安",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DbDPSaREQbn"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "fb9bce9d6290968b758dca01a1215ea9260419e91e41ca72ce94665cfd28b48f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbDPLZRSp0C/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3b552b16876b68f2349c.webp",
+      "keywords": [
+        "國防"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-21T09:53:06+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅標題式提及國防部採購爭議，屬事件評論非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "衛浴福麥公司得標國防部炸藥採購案「無法履約」",
+      "topicScores": {
+        "兩岸外交": 0.36,
+        "治安": 0.92
+      },
+      "topics": [
+        "治安",
+        "兩岸外交"
+      ],
+      "url": "https://www.instagram.com/p/DbDPLZRSp0C/"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "84bb8899be2aa09f824c59d6014ab6d06f50eea1f07928b3e3bc610e28242cea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbCvnOuAUvF",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b12df3e981fd1fa4f904.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-21T05:16:54+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "針對致癌油調查發聲，屬對事件的批評而非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:致癌油調查21天還沒有結果？人民走上街頭不是沒有原因的",
+      "topicScores": {
+        "治安": 0.4,
+        "環境": 0.84,
+        "社福": 0.9
+      },
+      "topics": [
+        "社福",
+        "環境",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DbCvnOuAUvF"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "55fca1afd9ae40f09db494fd419bfe3f50bad4dd4d127565bd6e6fb65dc5cfef",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbCvWUoyMiK/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2f15548c54df8521f1b1.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-21T05:16:20+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "針對致癌油調查延宕發聲，屬事件批評非回應特定對方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "致癌油調查21天還沒有結果？人民走上街頭不是沒有原因的",
+      "topicScores": {
+        "治安": 0.4,
+        "環境": 0.84,
+        "社福": 0.9
+      },
+      "topics": [
+        "社福",
+        "環境",
+        "治安"
+      ],
+      "url": "https://www.instagram.com/p/DbCvWUoyMiK/"
+    },
     {
       "agendaRelevance": 0.83,
       "candidateId": "hsieh-lung-chieh",
@@ -3956,6 +4100,76 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/dOOtG6dRaTE"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "e950b3243e4295163e934ec4a289ba9b7a37f01b22ff51c3a892c2917cf97f77",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:aJ7fls4DLRU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b43d0f95270fb5773d6b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅是國防部爆炸物採購爭議標題，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Fu-Mai Company Wins Ministry of National Defense Explosives Contract but \"Cannot Fulfill Obligati...",
+      "topicScores": {
+        "兩岸外交": 0.36,
+        "治安": 0.92
+      },
+      "topics": [
+        "治安",
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/shorts/aJ7fls4DLRU"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "e35f150f9a7ccda9b60060548b79a88eba982363d38b71ea3aca8d3fb83aec47",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xGRVCL1Pw6E",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d2d8969b9b40f1d42def.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "聚焦食安與調查延宕的時事評論，非回應特定對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "No Results After 21 Days of Investigating Carcinogenic Oil? There’s a Reason People Are Taking to...",
+      "topicScores": {
+        "治安": 0.35,
+        "環境": 0.88,
+        "社福": 0.74
+      },
+      "topics": [
+        "環境",
+        "社福",
+        "治安"
+      ],
+      "url": "https://www.youtube.com/shorts/xGRVCL1Pw6E"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

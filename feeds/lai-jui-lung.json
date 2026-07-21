@@ -1,6 +1,74 @@
 {
-  "count": 124,
+  "count": 129,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "3988a30c7e628b664eaf580282e2ab5df90fcaf7b981eb8cc825fa672abc2183",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbCroKVyKDA/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/d7ee822cb64ffee62117.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-21T04:42:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳節目與主持人，屬一般生活娛樂內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "歡迎收看隆鳳有約！ 最美主持人 @im_meifen",
+      "topicScores": {
+        "文化觀光": 0.65,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DbCroKVyKDA/"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "a981513aa65ce3ffc0916b39f42df6df9fd2032a9e538ba9e3b9909d8f87a2f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbCrlz3Efju",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/2c72f7cbaf8e973c231a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-21T04:41:43+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳節目與主持人，屬一般生活娛樂內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:歡迎收看隆鳳有約！ 最美主持人 @im_meifen",
+      "topicScores": {
+        "文化觀光": 0.65,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbCrlz3Efju"
+    },
     {
       "agendaRelevance": 0.69,
       "candidateId": "lai-jui-lung",
@@ -4531,6 +4599,108 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/S7XKqa8OeK0"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "e2f527c1dd137be62e41605f0c5b82ee8cf025cf4f20b4dd5708776c9e2e7a08",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:qJNokIBGOBw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ca0176f8bc4bbef64f1c.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確主張算力布局與高雄產業發展，屬政策型內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "AI時代，算力就是國力！佈局高雄下一個黃金十年。#南方崛起邁向國際 #TheRisingSouth #KaohsiungForTheWorld",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "經濟": 0.95
+      },
+      "topics": [
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/qJNokIBGOBw"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "9d96904378cfb72103487df5aa2e8654568561ab5ceb32ea2183c251a8cc0398",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:L3Srbo0yo1o",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b160bd7d9be290e91b6a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "總統到場祝福與選舉氣氛，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "小英總統一來，高雄鄉親的熱情真的擋都擋不住！有蔡英文總統的支持，也有大家滿滿的祝福，這一局，我們一起包中！",
+      "topicScores": {
+        "生活": 0.7,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/L3Srbo0yo1o"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-21T10:03:24+00:00",
+        "inputHash": "cd0d96f6c4874b71349cbf21baa061a624e239a867bd264dafb1fac47bb4af46",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:QP2HyVBtxAU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ab861c2e82dd469a3020.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "屬於輕鬆玩笑式留言，未涉及具體公共議題或回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "你們是在跟太陽比誰比較熱情嗎！😆",
+      "topicScores": {
+        "生活": 0.93
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/QP2HyVBtxAU"
     }
   ],
   "title": "賴瑞隆（高雄市）貼文更新",
