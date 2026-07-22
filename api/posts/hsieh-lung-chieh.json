@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 119,
+  "count": 121,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T16:01:05+00:00",
+        "inputHash": "ed9d34534dae7937b41b754db74e6b0f273a8d4b93ca437f9eaefed1a19d5498",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbF1CB3GA_V",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/e36979038a36d2a07f41.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-22T10:01:59+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "轉述網友陳情並到場會勘要求改善，屬地方問題處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友陳情：台南中正路、海安路口水溝蓋容易摔車...蔡宗豪議員現場會勘並要求改善",
+      "topicScores": {
+        "交通": 0.88,
+        "議會監督": 0.76
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbF1CB3GA_V"
+    },
     {
       "agendaRelevance": 0.42,
       "candidateId": "hsieh-lung-chieh",
@@ -4258,6 +4292,40 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/onBLuUx5PWg"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T16:01:05+00:00",
+        "inputHash": "7d771e52ac7f9502967a53031304609b259e92cf9b0be341eeb6e52d899c6103",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Ni6h2U8Z59U",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4e4d50892163511f158d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "描述民眾陳情與現場改善問題，非回應特定他方論點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Public Complaint: Slippery Drain Covers at Tainan’s Zhongzheng and Haian Intersection Cause Accid...",
+      "topicScores": {
+        "交通": 0.83,
+        "議會監督": 0.7
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/Ni6h2U8Z59U"
     }
   ],
   "version": 1

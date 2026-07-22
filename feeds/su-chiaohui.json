@@ -1,6 +1,78 @@
 {
-  "count": 109,
+  "count": 112,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-22T16:01:05+00:00",
+        "inputHash": "1f45de4ccc0441bc01c7a97bce4fdfed5e26385136b423dd5fadda7cd4c14d5d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbGQ7yHEqCf",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/aa6a3ed5f3bd24841a33.webp",
+      "keywords": [
+        "後援會"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-22T14:06:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主打後援會成立與新北市長選戰訴求，並提城市觀光形象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新時代、新市長✨感謝所有屏東鄉親相挺，我的第一個新北市長後援會「屏東同鄉後援會」 正式成立！\n\n屏東，是我認識公共事務的起點。從蘇貞昌縣長、蘇嘉全縣長，再到曹啟鴻縣長、潘孟安縣長、周春米縣長，歷任屏東縣長一棒接一棒，讓我們看到：首長的觀念正確、價值正確，城市就能大步前進！\n\n繼續拚、繼續衝！我會用新時代的新觀念，讓新北29區衛星變繁星，每一區都有自己的特色，每一區都是閃亮的星星，打造「在地人認同、外地人喜歡」的新北！",
+      "topicScores": {
+        "文化觀光": 0.71,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbGQ7yHEqCf"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-22T16:01:05+00:00",
+        "inputHash": "021ebbe85eefdab851058e87adb6b358c9bc9437bb40ae00ad440ca62f06f58b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbGG0m3GcvR",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/cc0528eab6f1714991e0.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-22T12:37:23+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "訴求商圈補助與觀光人潮，屬競選式政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:商圈補助三倍、照顧加倍！希望可以帶動新北觀光人潮，打造新北城市觀光品牌✨",
+      "topicScores": {
+        "文化觀光": 0.92,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbGG0m3GcvR"
+    },
     {
       "agendaRelevance": 0.15,
       "candidateId": "su-chiaohui",
@@ -4074,6 +4146,38 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/watch?v=BVBnaR5u5XI"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-22T16:01:05+00:00",
+        "inputHash": "9c962b9ea22fee5a1dfd7277ec9c4daa1a803bc66017103b70eb37b96e6a0dd1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:GcfMh-uU01M",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ede4ca7abbe9787d5f6f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅為市長後援會成立的競選宣傳，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Chiao-hui's First New Taipei City Mayoral Support Committee Officially Established!",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/GcfMh-uU01M"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",
