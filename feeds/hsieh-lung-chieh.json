@@ -1,6 +1,38 @@
 {
-  "count": 121,
+  "count": 126,
   "posts": [
+    {
+      "agendaRelevance": 0.4,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "c286ba039651bb57ae7455560ad8a544127d0de983da719314be3891e3080748",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1611084297039819",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/5193c9cbcb41d7d1fa4f.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-22T10:04:56.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "轉述民眾陳情路口水溝蓋危險並要求改善，屬主動反映問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友陳情：台南中正路、海安路口水溝蓋容易摔車...蔡宗豪議員現場會勘並要求改善",
+      "topicScores": {
+        "交通": 0.86
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.facebook.com/reel/1502741485226557/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
@@ -34,6 +66,74 @@
         "議會監督"
       ],
       "url": "https://www.threads.com/t/DbF1CB3GA_V"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "2f9a5569764c51463117019383631fbde9ee4363fa47f5d8d5c86b90817a6612",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbF07YQyjeM/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/45ec6a37f917eff6a1e4.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-22T10:01:28+00:00",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "回應網友陳情水溝蓋摔車，現場會勘要求改善道路安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "網友陳情：台南中正路、海安路口水溝蓋容易摔車...蔡宗豪議員現場會勘並要求改善",
+      "topicScores": {
+        "交通": 0.84
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/DbF07YQyjeM/"
+    },
+    {
+      "agendaRelevance": 0.32,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "32b5e251e71cad2a360f296f170664551303273cfe5b757c032958edc3310ae9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbFdfGuysEi/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/f65a7099bbea62c39876.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-22T06:36:47+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "批評台南交通開罰亂象，屬一般究責與議題評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "台南交通開罰亂象！很多人受了委屈也不講 #盧崑福 #台南市議員 #台南",
+      "topicScores": {
+        "交通": 0.94,
+        "議會監督": 0.58
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/DbFdfGuysEi/"
     },
     {
       "agendaRelevance": 0.42,
@@ -70,6 +170,74 @@
         "議會監督"
       ],
       "url": "https://www.threads.com/t/DbFcfmyj4DC"
+    },
+    {
+      "agendaRelevance": 0.31,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "4bbffe932afdd0fd76052fb020a3bbab91b74f91384d12a3fac581ca01bb11e9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610968560384726",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/9a92fef7892f4eea3fcf.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-22T06:25:00.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主題是台南交通開罰爭議，屬一般批評非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "台南交通開罰亂象！很多人受了委屈也不講",
+      "topicScores": {
+        "交通": 0.95,
+        "議會監督": 0.5
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/reel/1020859014022955/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "625fa075c5eeb050234a145102bcc708e41403a0eb1750ae9b6d650f31df0a56",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610403770441205",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-21T13:10:41.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅說明直播因廟會行程暫停，屬日常公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "龍介兄因廟會行程\n今天直播暫停一次\n各位龍友們🐉我們下集見",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid02qGrrrcfhCpXNjpoRf66H9KEy39d7uLbQ181hxGSyyxvyHqVcHAUygTJ935BTPvRBl"
     },
     {
       "agendaRelevance": 0.18,

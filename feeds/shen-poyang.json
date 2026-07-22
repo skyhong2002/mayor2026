@@ -1,6 +1,44 @@
 {
-  "count": 103,
+  "count": 105,
   "posts": [
+    {
+      "agendaRelevance": 0.34,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "4c66c4548273ddb263f5a7136e1227f269217648e901852f42c6c9c5f79e9bdb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122107278129329310",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/4fe3f94b8e6e2f915233.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-22T02:08:17.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容是海外交流與城市綠化經驗分享，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "人在海外，反而更能感受到台灣人的連結。\n⠀\n南加州爾灣是我的第二個家。2011到2017年間，我在這裡生活，也常和台美人社群往來。大家會在購物中心停車場交換粽子、滷牛腱，把家鄉的味道送到彼此手上。\n⠀\n此行，我和聖馬利諾市前市長黃文谷（Steven Huang），交流都市綠化與樹木保護經驗。當地透過公開程序，由保險公司、專家、民間團體與市政府共同維護樹木，這套制度值得台北借鏡。\n⠀\n想起當年，我也曾在美國住處種下三棵樹。得知新住戶至今仍細心照顧，心裡很感激。樹要長大，需要長期照顧；城市要進步，也需要經驗不斷累積。\n⠀\n晚上我也和洛杉磯台北經濟文化辦事處馬博元處長及僑界代表交流，甚至吃到道地的台灣菜和芋圓冰，見了許多熱情的僑界前輩，還有我們台灣19歲的火球新星蘇嵐鴻。謝謝僑胞長年在海外打拚，在各行各業發光發熱，持續為台灣發聲、累積國際支持。\n⠀\n我會帶著南加州給我的養分、僑界的智慧與台人打拚的精神，繼續為台灣，也為台北努力。",
+      "topicScores": {
+        "兩岸外交": 0.74,
+        "文化觀光": 0.58,
+        "環境": 0.77
+      },
+      "topics": [
+        "環境",
+        "兩岸外交",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0Xtk3f1cGrc4zyLjEuVPWJu1MqKcn46fJvDXaa8ZgoVgnksLc1UReWvV81c9qnMhXl"
+    },
     {
       "agendaRelevance": 0.38,
       "candidateId": "shen-poyang",
@@ -151,6 +189,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Da-hb9hFA3B"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-22T22:04:33+00:00",
+        "inputHash": "63bfd6e3f273b3aaeefbe32e8c17071c8f27acde156fa3d2492f7f19d205c7cb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175265372410654",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/5bdfad3284b79df03d32.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-19T12:53:19.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為授旗後合照與團隊動員，主要是選舉宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "今天授旗結束大家說要自拍，\n問誰有手機，\n我剛好有帶，\n就變這樣了⋯\n⠀\n我常跟家人說，\n在我們這個年紀還能交到新朋友不容易。\n但從立法院的51戰隊，\n到今年台北隊的26位戰友，\n現在還有我身邊這18位，\n大家一起在台灣不同的地方打拼。\n⠀\n為的只有一個目標，\n就是我們心愛的台灣！",
+      "topicScores": {
+        "生活": 0.36,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid02qirPxrJ49svMNRg3dQopmzzcSXrBYrWcrnoo7D5qiKjQXHhTKMqs2nn8nKFjsVLtl"
     },
     {
       "agendaRelevance": 0.52,

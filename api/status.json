@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-23 00:01:11"
+        "最近一次執行心跳：2026-07-23 06:04:54"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：1198",
+        "已收錄貼文：1235",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：14 ms"
+        "耗時：16 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-07-23 00:00:50",
+        "最新抓取時間：2026-07-23 06:03:09",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -45,10 +45,10 @@
     },
     {
       "details": [
-        "最近成功 run：2026-07-21 06:01:11",
-        "本月已花費：$3.55 / 目標 $4.75",
+        "最近成功 run：2026-07-23 06:03:20",
+        "本月已花費：$3.79 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 47.6h, next at 2026-07-22T21:36:55+00:00; ~$3.55 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 57.6h, next at 2026-07-25T07:38:24+00:00; ~$3.79 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,17 +77,17 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-23T00:01:11+08:00",
+  "generatedAt": "2026-07-23T06:04:54+08:00",
   "metrics": {
     "candidates": 14,
-    "latestPostAt": "2026-07-22T14:06:53+00:00",
+    "latestPostAt": "2026-07-22T14:42:00.000Z",
     "postsByPlatform": {
-      "facebook": 393,
-      "instagram": 307,
+      "facebook": 425,
+      "instagram": 312,
       "threads": 241,
       "youtube": 257
     },
-    "totalPosts": 1198,
+    "totalPosts": 1235,
     "watchAccounts": 81
   },
   "overall": {
@@ -96,27 +96,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hsiehlungchieh&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-18T10:02:20+00:00",
-      "sourceId": "hsieh-lc-ig",
-      "sourceName": "謝龍介（hsieh-lc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=marklin_ceo&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-18T10:02:36+00:00",
-      "sourceId": "lin-yf-ig",
-      "sourceName": "林義豐（lin-yf-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=zenolai&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-18T10:02:47+00:00",
-      "sourceId": "lai-jl-ig",
-      "sourceName": "賴瑞隆（lai-jl-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=prof.kochihen&quot;: 429 Too Many Requests",
       "platform": "instagram",
@@ -233,6 +212,27 @@
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 400 Bad Request",
       "platform": "instagram",
       "recordedAt": "2026-07-22T04:02:10+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-22T22:00:27+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-22T22:01:08+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-22T22:02:04+00:00",
       "sourceId": "chen-tf-ig",
       "sourceName": "陳亭妃（chen-tf-ig）"
     }
