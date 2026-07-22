@@ -19,8 +19,44 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 120,
+  "count": 122,
   "posts": [
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "83f10354a96c63b476cf4ccc74a0e84edf72b7882f1788551c0eb0936e1ea379",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbFxv96CQQd",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/054072c752bf960d3d68.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-22T09:33:16+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "提出中部食安聯防、稽查與檢驗量能等具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:今天我與苗栗縣長候選人陳品安 @vote4pinan 、彰化縣長候選人陳素月 @sayyessayhi 、及南投縣長候選人温世政  @wen_shih_cheng ，提出中彰投苗保障食安共同3主張 ：\n\n✅成立「中部縣市食安聯防治理平台」，建立單一窗口通報機制\n✅增加食安預算、強化稽查密度、提高抽驗頻率次數\n✅結合中部地區產官學研資源，增強食安檢驗量能\n\n未來我們要讓中彰投苗從「各自把關」走向「區域聯防」，用更即時的通報、更嚴密的稽查、更充足的檢驗量能，共同守護中台灣鄉親每一天的飲食安全。",
+      "topicScores": {
+        "環境": 0.62,
+        "社福": 0.87,
+        "經濟": 0.58
+      },
+      "topics": [
+        "社福",
+        "環境",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbFxv96CQQd"
+    },
     {
       "agendaRelevance": 0.38,
       "candidateId": "ho-hsin-chun",
@@ -4332,6 +4368,44 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/z9_FXLvBLSc"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "cf25bc50741ba40daf3f4ed056ad4839bf88afe9b933bff8ad7e53fa872623e6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:c7-5gvaxz_E",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/d6667f17644deedf68f0.webp",
+      "keywords": [
+        "長輩"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題為開講活動紀錄，涉及食安、青年局與長輩福利。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純神岡開講！食安 青年局 長輩福利一次看",
+      "topicScores": {
+        "教育": 0.61,
+        "生活": 0.58,
+        "社福": 0.74
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=c7-5gvaxz_E"
     }
   ],
   "version": 1

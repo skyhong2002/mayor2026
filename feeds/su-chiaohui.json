@@ -1,6 +1,38 @@
 {
-  "count": 108,
+  "count": 109,
   "posts": [
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "1f6a0fe238f0f0aed3b1f368238ff55c699cc90b1703152d52e56402b1bc73e1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbFbYTOGdtg",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/af8d33edd5f2df3a2088.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-22T06:17:47+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張改善消防員備勤環境與待遇，屬公共福利訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:中央地方一起合作，讓消防員備勤環境更好，讓消防員待遇更好！",
+      "topicScores": {
+        "社福": 0.93
+      },
+      "topics": [
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DbFbYTOGdtg"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "su-chiaohui",

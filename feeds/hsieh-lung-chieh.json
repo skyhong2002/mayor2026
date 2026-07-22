@@ -1,6 +1,42 @@
 {
-  "count": 117,
+  "count": 119,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "485bf22beab83d632486d29888bd94f8c803c13ef7560f851bb6f251266cb3ee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbFcfmyj4DC",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5e43afdd582c321a66ad.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-22T06:27:53+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評台南交通開罰亂象，屬交通治理與究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:台南交通開罰亂象！很多人受了委屈也不講",
+      "topicScores": {
+        "交通": 0.96,
+        "議會監督": 0.66
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbFcfmyj4DC"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -4170,6 +4206,38 @@
         "治安"
       ],
       "url": "https://www.youtube.com/shorts/xGRVCL1Pw6E"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "fef4f52c9afd13acd2d77483d2a9d6e6a6a6d7ea8f9266459892f021a5d39afd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:onBLuUx5PWg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4a9b2ca2ea55db277cda.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主題是台南交通開罰亂象，屬交通議題評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Tainan Traffic Ticket Chaos! Many Suffer in Silence #LuKunFu #TainanCityCouncilor #Tainan",
+      "topicScores": {
+        "交通": 0.99
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/onBLuUx5PWg"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

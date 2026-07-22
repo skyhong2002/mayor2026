@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 132,
+  "count": 133,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-22T10:01:08+00:00",
+        "inputHash": "b187bea4821975a73a13a8705da13e72ffc3161bdb0103527714f04b010432bb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbF01PYH8bZ",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f936c73b697e60d45930.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-22T10:00:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為替候選人站台打氣與選舉動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:心桃園動起來！\n\n@schuanglawyer 黃世杰是優秀的客家子弟，我也是客家女婿。過去我們是並肩作戰的好戰友，現在我們更要為了城市的未來，在各自的家鄉全力打拚。\n\n高雄繼續拚，心桃園動起來，我們一起努力，台灣一定贏！",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbF01PYH8bZ"
+    },
     {
       "agendaRelevance": 0.7,
       "candidateId": "lai-jui-lung",
