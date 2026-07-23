@@ -1,6 +1,44 @@
 {
-  "count": 126,
+  "count": 128,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "871c21cc64f5227ec1b09694370abe8d589db637ac3d969e85bd0d2e5eda03e4",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-23T10:01:13+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbH939bj8Lu",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d6538c12fa9ecd210dfc.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T05:57:59+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅見@標記與評論政黨，未明確指向他方先前具體說法；非回應式。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:少吃炸雞防致癌油？譴責民進黨這種消極的說法",
+      "topicScores": {
+        "生活": 0.82,
+        "競選": 0.43,
+        "醫療": 0.55
+      },
+      "topics": [
+        "生活",
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbH939bj8Lu"
+    },
     {
       "agendaRelevance": 0.4,
       "candidateId": "hsieh-lung-chieh",
@@ -4474,6 +4512,44 @@
         "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/Ni6h2U8Z59U"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "11d468decd9a9adb592ea99ca19b5193f9ef73b73fa841c39fb033c3fa7801c0",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-23T10:01:13+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:tO3ihH-Le0A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/88c18f4d1b1bac8dddfc.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅為標題式評論與譴責，未可辨識回覆特定他方具體主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Eat Less Fried Chicken to Avoid Carcinogenic Oil? Condemning the DPP’s Passive Narrative #HsiehLu...",
+      "topicScores": {
+        "生活": 0.82,
+        "競選": 0.43,
+        "醫療": 0.55
+      },
+      "topics": [
+        "生活",
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/tO3ihH-Le0A"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

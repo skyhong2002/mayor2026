@@ -2,6 +2,429 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.22,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "b81eb0c7d203da271619d55e6384d8d04c35c04672fd22e92b34c3e2a8a58375",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIYmKvk0pz",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/e08653c9481a76d1417e.webp",
+      "keywords": [
+        "文化",
+        "美食"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T09:51:11+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳台南辦桌文化與觀光活動，屬活動行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:夏季的台南，就是最有味道的季節！☀️🍽️\n　　　　\n「台南總鋪師 四季辦桌－夏季場」開賣囉！台南最引以為傲的辦桌文化再次精彩登場。\n　　　　\n辦桌不只是美食，更是台南的人情味、職人精神與地方文化的展現。台南一年四季都有豐富的漁產與農產，從在地的當季食材，加上總鋪師精湛的料理手藝，每一道菜都蘊含著台南的故事，也讓更多人認識這座城市最道地的飲食文化。\n　　　　　　　\n誠摯邀請大家一起來台南，品嚐最有台灣味、最有台南味的辦桌料理，用美食感受這座城市的熱情與魅力，也一起支持在地農漁產、支持總鋪師，讓台南的好味道持續傳承下去！\n　　　　\n#台南總鋪師四季辦桌\n#夏季場開賣\n#辦桌文化\n#支持在地農漁產\n#陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.97,
+        "社福": 0.4,
+        "經濟": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DbIYmKvk0pz"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "abd38ac3e6931e2f826ad4cd96512b01e821db61e5774d370c0bbadf312b1208",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIXK-nCQjq",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/04c4bdb5cbfba5492254.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T09:38:44+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅是到市場拜訪宣傳，沒有回應特定對象或政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:龍岡的朋友在哪裡👋🏻明早忠貞市場見！",
+      "topicScores": {
+        "生活": 0.88,
+        "競選": 0.61
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbIXK-nCQjq"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "9b1b48d11571f5ceb8ca458eb1577fb2723a759b4d11f324c8df1cb12cb89c2f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIW69tGeaM",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/9c2b9c8562a8a6408fe6.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T09:36:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為與夥伴掃街並報告政見願景，屬主動競選發文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:和 @easyhigh_dpp 張錦豪、@bihua_tw 蔡美華一起衝！也和汐止鄉親報告我們的政見願景！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbIW69tGeaM"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "e2256c798c777a9519081b5031771dae95ef2c019bc6c951f6d190d83769b04f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIWOg0mfxh",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/7ba83b646cb870c3e372.webp",
+      "keywords": [
+        "教育",
+        "生態"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T09:30:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是親子食農教育活動宣傳，屬活動資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:🚜🌾《小小農夫大冒險》親子食農教育體驗 \n邀請親子一起來玩！\n\n透過親手製作、走入農園、認識作物生長與農產加工等體驗，帶領親子從土地到餐桌，一步步探索食物的旅程，了解農民的辛勞，培養珍惜食物、友善土地及支持在地農業的觀念，讓食農教育不只是知識，更是一場充滿樂趣的生活體驗。\n\n活動亮點：\n✨ 農食教育體驗\n✨ 割稻飯風味餐\n✨ 小小烘焙師手作\n✨ 農園生態探索\n✨ 咖啡製程\n\n📅 活動日期｜8月9日（日）\n🕦 活動時間｜12:00－16:00\n📍 活動地點｜竹仔坑社區發展協會（台中市大里區健民里山腳巷4號）\n💰 活動費用｜免費（名額有限，額滿為止）\n\n👉 立即報名：https://www.beclass.com/rid=30527716a5f2c94b08d8",
+      "topicScores": {
+        "教育": 0.96,
+        "環境": 0.54,
+        "生活": 0.62
+      },
+      "topics": [
+        "教育",
+        "生活",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/DbIWOg0mfxh"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "fe5b32158892a93895346ea6fb970568384855293559fc1ba33dc456b0c9210f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbINTICDBM4",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d89b4a40fa985fbc5394.webp",
+      "keywords": [
+        "治安",
+        "綠地"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T08:12:30+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動分享赴爾灣交流治安與綠地經驗，非回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:這趟回到我住過六年的爾灣，受到鄉親、爾灣市政團隊的熱烈歡迎，就像回到第二個家。\n\n爾灣是全美連續21年治安最好的城市，這次交流了社區治安、公園綠地、都市森林等等，我會把這些經驗帶回台北！",
+      "topicScores": {
+        "交通": 0.42,
+        "治安": 0.97,
+        "環境": 0.72
+      },
+      "topics": [
+        "治安",
+        "環境",
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbINTICDBM4"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "a338b1ad80eb9515549582e5e788387b90de1eb8e37cfbc575db171fbe0a7dbc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIF96fkh6M",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d3992a9101ca439ebc13.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T07:08:37+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅分享與漫寶互動及相遇期待，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:每年都見的漫寶！今天特別偷偷邀請漫寶，希望未來有機會在新北和漫寶相遇！😍",
+      "topicScores": {
+        "生活": 0.94
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbIF96fkh6M"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "2b60568c88c1d6720d9bf31129835e5c858312631f17918860f5b2023f321efd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIDy-KiXeI",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "經濟",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T06:49:26+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評預算凍結並主張支持無人機產業，屬主動政策立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:【支持無人機產業，反對桃園未來被凍結】\n\n無人機，是這個時代最重要的戰略產業之一，也是桃園最有機會的下一個舞台。但今天，世杰的心情非常沉重。\n\n行政院去年10月訂定了為期6年、總經費442億元的「無人載具產業發展統籌型計畫」，要把台灣打造成「無人機民主供應鏈」的亞太中心，目標在2030年帶動產值突破400億元。這是一個攸關國防自主、產業升級，還有數萬個工作機會的長期布局。\n\n然而，國民黨立法院黨團先是提案要求暫停、刪減這筆預算，在遭到產業界強烈反彈後，昨天又改口要求「全數凍結」。今天立法院經濟委員會的公聽會上，連受邀的無人機業者都憂心忡忡，直言政策一旦反覆，投入資金、設備與人力都會綁手綁腳。經濟部也示警，這將直接衝擊國內267家供應鏈廠商，甚至連救災用的無人機發展都被牽連。\n\n我要很坦白地說，對這樣的結果，我深感遺憾，也無法認同。\n\n桃園有最好的產業聚落，又是陸海空樞紐，本該在這波浪潮裡站上第一排。但中央的產業計畫如果被空轉，地方再有心也難為。\n\n(1/2)",
+      "topicScores": {
+        "競選": 0.64,
+        "經濟": 0.96,
+        "防災": 0.66
+      },
+      "topics": [
+        "經濟",
+        "防災",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbIDy-KiXeI"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "88c6f95086c27beda112d3bfb26484f5953fb7497002f575bb2932b89ddd137f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbH98wak5pN",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/b0543e8efa94defa7b29.webp",
+      "keywords": [
+        "交通",
+        "捷運",
+        "醫院",
+        "急診",
+        "產業",
+        "科技",
+        "AI"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T05:58:20+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出新北大巨蛋、產業園區與醫院等施政構想，非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:侯友宜市長已經宣布，新北大巨蛋「落腳樹林」。\n\n很多人問我：川伯，你有把握嗎？\n\n說實在，畫一顆蛋很快，孵一顆蛋很難。\n\n台北小巨蛋，我從興建就參與；台北大巨蛋卡關的時候，是我在副市長任內一關一關解開，讓它完工啟用——現在演唱會、大賽事都辦得起來。\n\n一顆蛋會卡在哪裡，我不用猜，因為我都走過。\n\n侯友宜市長講過，軌道建設靠的是專業、務實，一棒接一棒的堅持。巨蛋也是一樣。下一個階段，我接棒，如期如質，一步一步蓋起來。\n\n而且新北不是只蓋一顆蛋——樹林、鶯歌、三峽、土城的交通跟產業一起做，讓溪南長出一座「巨蛋城」。\n\n淡水的鄉親，你們也在我的圖上。淡海二、三期做高科技園區，蓋一間淡海醫院，急診、復健、長輩照護，就近就有。再加上蘆社大橋跟捷運路網，把 AI 產業從北士科一路接進新北。\n\n南有巨蛋城，北有科學城。\n這不是口號，是工程圖。\n而我這輩子，就是把工程圖變成真的。",
+      "topicScores": {
+        "交通": 0.68,
+        "住宅": 0.72,
+        "經濟": 0.57,
+        "醫療": 0.61
+      },
+      "topics": [
+        "住宅",
+        "交通",
+        "醫療",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbH98wak5pN"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "871c21cc64f5227ec1b09694370abe8d589db637ac3d969e85bd0d2e5eda03e4",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-23T10:01:13+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbH939bj8Lu",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d6538c12fa9ecd210dfc.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T05:57:59+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅見@標記與評論政黨，未明確指向他方先前具體說法；非回應式。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:少吃炸雞防致癌油？譴責民進黨這種消極的說法",
+      "topicScores": {
+        "生活": 0.82,
+        "競選": 0.43,
+        "醫療": 0.55
+      },
+      "topics": [
+        "生活",
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbH939bj8Lu"
+    },
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "836effc7407d37e0622ac70f55edd875e56c0347a2d26443062d30262fec7652",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbH4m3HiaEQ",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/af855711c6d6e334caba.webp",
+      "keywords": [
+        "產業",
+        "交通",
+        "觀光"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T05:11:40+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容在介紹議員政績與地方建設願景，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:上午我來到中壢大崙，出席張曉昀議員 @vina.lovezhongli 舉辦的基層座談會👍現場有一位年輕朋友，特別從平鎮走了一小時過來，為了親自幫曉昀、世杰加油打氣，這份心意讓人非常感動！\n\n曉昀一直非常拚，上任不到四年，大家最熟悉的「中壢大姊姊」已經爭取7,000萬建設經費，一步一腳印為地方扎穩根基。他也特別關心，在場很多長輩的孩子都到外縣市工作，但中壢不該只是一座回家睡覺的過夜城市，我們要讓在地子弟，能在自己的家鄉找到高薪、有前景的好工作。\n\n面對全球競爭，桃園要成為下一代產業創新的城市。曉昀看到產業轉型的契機，推動桃園智慧產業學院，希望協助企業進行低碳化、智慧化的雙軸轉型，提升競爭力。\n\n曉昀長期關注中壢交通，追蹤各項建設計劃，希望交通更順暢。積極提升中壢觀光、休閒農業發展。連毛小孩的權益都照顧到，目前已經爭取到三座寵物公園，要讓大家生活更方便、更幸福。\n\n曉昀敢衝敢拚，總是第一時間把市民心聲帶進議會。但要讓中壢更好，我們需要一位傾聽在地、勇於任事的市長，跟優質的曉昀攜手合作，全面加速中壢發展！\n\n中壢是南桃園發展引擎，中壢進步，就是南桃園的前進！我們一起努力，讓心中壢 動起來💖",
+      "topicScores": {
+        "交通": 0.67,
+        "文化觀光": 0.66,
+        "生活": 0.58,
+        "經濟": 0.79
+      },
+      "topics": [
+        "經濟",
+        "交通",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbH4m3HiaEQ"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "711cb83d5aeff7c3f3bf265faa2f32f88fa103cc79d3b22429f233605b5c9a44",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbH4Eqsk19x",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/35f108e63e4beb18ccbd.webp",
+      "keywords": [
+        "交通",
+        "道路",
+        "環境",
+        "生態",
+        "永續",
+        "觀光"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T05:07:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出漁光島道路與生態兼顧方案，具政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:【兼顧觀光發展，也守護漁光島生態】\n　　　　\n漁光島近年成為台南重要的觀光景點，每逢大型活動，人潮、車潮湧入，交通壅塞問題也越來越明顯。\n　　　　　　　　\n今天亭妃邀集林業及自然保育署、港務公司及台南市政府相關單位到現場會勘，就是希望找出兼顧交通改善與保安林生態保護的最佳方案。\n　　　　\n北側道路因保安林解編審查遲未完成，導致工程無法推動。我要求各單位不要再只是公文往返，兩週內完成跨單位技術對接，針對生態、排水、道路安全等疑慮逐一修正，並優化道路設計，將對樹木及環境的影響降到最低，力拚第三次審查一次通過。\n　　　　　　\n發展觀光不能犧牲環境，保護生態也不能讓地方停滯。我會持續協調中央與地方，讓漁光島擁有更安全、更順暢、更永續的交通環境，兼顧居民生活品質，也讓更多遊客安心來到這片美麗的海岸。\n　　　　　　　\n#陳亭妃  #漁光島 #安平 #交通建設 #生態保育 觀光發展",
+      "topicScores": {
+        "交通": 0.95,
+        "文化觀光": 0.74,
+        "環境": 0.9
+      },
+      "topics": [
+        "交通",
+        "環境",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbH4Eqsk19x"
+    },
+    {
       "agendaRelevance": 0.01,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3423,446 +3846,6 @@
         "教育"
       ],
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0DhE4YXBCeN3V49RWS3GKB2RbJfwvHSReuBP7c94kGxpfPAHRzC716CdqQPCKGHkLl"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-07-20T16:03:25+00:00",
-        "inputHash": "c71c159e5fe4f9c2bf784bea8702d67a0d6953bc8834fbfae5ee31d5dbe847a8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbA1hmlDnec",
-      "imageAspect": 0.7025,
-      "imageUrl": "assets/feed-images/e3e5a6158296c5c67342.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-20T11:30:03+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "宣傳皮克敏實體活動與揪團同樂，屬活動邀約非政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:皮友們～汐止水獺媽媽樂園集合啦！📢\n\n今年四月的Party Walk，我和超過8000位皮友，一起走了3億步，好多人都在敲碗下一次🤣 \n\n這一次，我要邀請大家一起走到禮拜六的汐止水獺媽媽樂園！皮友們，一起帶著你的皮克敏配件來玩吧🤩\n\n點入連結，一起走向水獺媽媽樂園汐止場🌱 https://pikminbloom.onelink.me/pWSt/raxjupys",
-      "topicScores": {
-        "文化觀光": 0.41,
-        "生活": 0.98,
-        "體育": 0.72
-      },
-      "topics": [
-        "生活",
-        "體育",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/DbA1hmlDnec"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "dd44f0dab233025b59b69658897e89011f269565d985a4cd0653015232daf737",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1635169181305823",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/14aba9c900cb0d9de609.webp",
-      "keywords": [
-        "育兒",
-        "長輩",
-        "照顧",
-        "創業"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T11:00:28.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "提出育兒、青年創業與長輩照護福利政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-fb",
-      "text": "海線向前走，大小福利都要有！\n\n從生兒育兒、青年創業，到長輩照護，我都提出相應的福利政策，希望減輕大家負擔，把台中市民從小照顧到老。\n\n「六星市政168巡迴說明會」持續走進各區，一步步向大家報告我的市政願景，也傾聽更多在地聲音與建議。\n\n一步一腳印，一區一區認真走，和大家一起讓台中欣欣向榮！\n\n#心存大台中\n#市長換欣_台中創新",
-      "topicScores": {
-        "社福": 0.93,
-        "經濟": 0.71
-      },
-      "topics": [
-        "社福",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/reel/1657869042666982/"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "e5c9290e43fbf07466058aaf67b49c385bd984d43d73590f0add396034e02559",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:122107119879329310",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/e6e0a1225a650554b2c8.webp",
-      "keywords": [
-        "育兒",
-        "照顧",
-        "電影"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T10:49:14.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主講親子活動與家庭一站通，屬育兒城市政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "今晚，你家的小朋友放電完畢了嗎？⁣\n⁣\n昨晚受何孟樺議員邀請，與大小朋友一起在大港墘公園欣賞《藍色小精靈大電影》，我穿上恐龍裝登場，看到孩子們的笑容，就是最棒的回報！⁣\n⁣\n何孟樺議員這一系列星空電影院，把港湖地區的公園、球場、廣場，都變成孩子學習的舞台。其實我之前非常意外，何議員居然才當第一屆而已，因為他的市政整理太專業了！市政有很多瑣碎的細節，只有把資料分析做好，才有辦法找出問題。我相信監督市政的責任必須託付給會找問題的人。⁣\n⁣\n⁣\n《藍色小精靈大電影》傳達了一個很棒的理念：每個人獨有的特質與能力，都能在團隊中找到屬於自己的位置。這也是一座城市最珍貴的價值，不是只追求少數人的成功，而是讓每一個人都能找到屬於自己的舞台。⁣\n⁣\n為孩子搭建舞台、讓孩子敢於做夢、給孩子空間練習，這些是政策能落實的責任。⁣\n⁣\n⁣\n養育下一代，從來不只是家人的孤軍奮戰，城市必須提供足夠的友善空間，讓親子共學的活動能自然發生。我們希望生活在台北的每一個孩子，有地方體驗、有資源學習，而最根本的是要去照顧在第一線照顧孩子的人。⁣\n⁣\n我提出的「家庭一站通」就是從家長的需求出發，終結孤獨育兒的困境。營造友善親子的城市環境，我們繼續努力。⁣\n⁣\n#你的市長沈伯洋",
-      "topicScores": {
-        "教育": 0.77,
-        "文化觀光": 0.74,
-        "社福": 0.82
-      },
-      "topics": [
-        "社福",
-        "教育",
-        "文化觀光"
-      ],
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0JLyW57NXiYS9rDADF13g586iaT7dAmcAEqZekoRwJ7cWw2ZxAeLAdrLvd8j2v3Rnl"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "79797adefd4bcc2203bc6f89b278839e1944649b034b7d792a5c66888d4aa8a1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1602936707854826",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/6b637a41636d73478f62.webp",
-      "keywords": [
-        "醫療",
-        "醫院",
-        "產業",
-        "就業",
-        "科技",
-        "AI",
-        "教育"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T10:40:20.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動提出蘆洲、淡水、樹林的醫療、都計與產業發展構想。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "和蘆洲、淡水、樹林一起前進，讓新北各區變成點點繁星！\n\n顏蔚慈 始終站在 #蘆洲 第一線，認真傾聽大家的聲音。而重大建設一定要尊重地方民意，如果鄉親不願三重果菜市場遷移到蘆洲，我們也絕對不會同意搬遷。未來，我也會和蔚慈加速推動蘆洲南北側都市計畫，全力興建蘆洲醫院，讓在地的醫療更完善、生活更便利。\n\n在 #淡水 ，新北市議員鄭宇恩 長期深耕在地，從教育、交通到醫療，每一步都陪伴著淡水成長。未來，我們除了持續推動淡海醫療園區，也要將新的科技帶入淡海新市鎮，結合機器人、自駕車、無人機等新興科技產業，打造淡海科技聚落，創造更多在地就業機會。\n\n回到 #樹林，和 廖宜琨 新北市議員 一起細數這十年來中央地方攜手完成的建設成果。如果我有機會進到新北市府服務，我們會一起加速推動柑園整體開發，打造 #AI科技園區，串聯智慧工業廊帶。同時活化 #山佳鐵道文化，讓科技、產業與文化共同帶動樹林再升級。\n\n我會繼續帶領新北隊，讓每個行政區都發展出自己的特色，一起打造更進步、更溫暖的城市，共同迎向新時代！",
-      "topicScores": {
-        "住宅": 0.66,
-        "教育": 0.67,
-        "經濟": 0.8,
-        "醫療": 0.89
-      },
-      "topics": [
-        "醫療",
-        "經濟",
-        "教育",
-        "住宅"
-      ],
-      "url": "https://www.facebook.com/reel/3112330288971566/"
-    },
-    {
-      "agendaRelevance": 0.28,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "f9b47e1084a9bad3a5e54eadd1baf0df02cdf778a067bde19de008bff7f1248d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1597726121715310",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "豪雨",
-        "災害"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T10:01:36.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "公告豪雨農損救助資訊，屬災後通知而非政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "❤️妃妃報報❤️\n ⚠️陳亭妃成功爭取⚠️\n\n台南市善化區、新市區、安定區、安南區胡(芝)麻的災損公告了！\n\n台南市善化區、新市區、安定區、安南區為115年0625豪雨農業天然災害現金救助地區。\n申請時間：7／21～8／3\n請大家告訴大家這個消息！同時這次例假日也可以受理申請！\n受災的胡(芝)麻農民朋友們記得把握時間申請！\n\n亭妃會持續為大家發聲、爭取更多權益！",
-      "topicScores": {
-        "經濟": 0.7,
-        "防災": 0.95
-      },
-      "topics": [
-        "防災",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid02Bha87ueoufG2woXNZ2Ln2bwzNaRKk3menPwyE5ruRZPdTGrRtFHNo3p1XgWyC9Kzl"
-    },
-    {
-      "agendaRelevance": 0.73,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "11020e6c10a842afe34007d916cc7ab0b3d366cd843f6c9477d5095db2dcdf92",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1592995692180811",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/ba6c9f3c96c677591a2a.webp",
-      "keywords": [
-        "空氣品質",
-        "淨零"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T09:01:01.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "向中研院院長請教食安與能源政策，屬主動表達政策看法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "今日中研院院長陳建仁到教委會進行業務報告，由於陳院長過去擁有豐富的政治經歷，外界事前對其接任後是否能維持中研院的超然獨立與學術中立，提出不少關注與疑慮；我樂見陳院長持續以專業為台灣學術發展貢獻心力，也當面期許他務必堅守中研院的獨立性與學術中立。對此，陳院長也做出承諾，未來我們將持續檢視是否真正落實。\n\n近期國人關心食安議題，我也向陳院長請教相關看法。他坦言，近期事件反映出通報與管理機制仍有值得檢討、精進之處。我認為，政府除了妥善處理個案，更應持續檢視制度設計與源頭管理，廣納學界專業意見，強化預警與治理能力，才能真正提升民眾對食品安全的信心。\n\n在能源政策方面，我特別詢問，過去一向主張非核的陳院長，在當前政府重新評估核能政策的情況下，是否也將新核能技術納入未來規劃；隨著政府已重啟核電評估及SMR（小型模組化反應爐）相關研究，我認為中研院也應將新核能科技納入淨零科研的重要方向，以科學角度提供國家更完整的能源選項。\n\n此外，2050淨零排放一直是陳院長關注的重要政策，但從目前減碳進度來看，距離既定目標仍有努力空間；如今政府進一步提高2030年減碳目標，更需要提出更具體、更務實的能源配套與科技策略，才能兼顧供電穩定、減碳效益與國家競爭力。\n\n國人最在意的，是能源轉型不能只停留在口號，而是要有完整規劃與科學依據，兼顧供電安全、空氣品質與減碳目標。我期待中研院持續發揮科研能量，為台灣提出更具前瞻性的能源政策建議，也希望政府以更務實的態度回應人民的期待。\n\n#中研院\n#食安\n#能源政策",
-      "topicScores": {
-        "教育": 0.82,
-        "環境": 0.74,
-        "醫療": 0.79
-      },
-      "topics": [
-        "教育",
-        "醫療",
-        "環境"
-      ],
-      "url": "https://www.facebook.com/KoChihEn/posts/pfbid02uHuwTQMSpj2so892wKSZe4vDYsCHy5TsuNSUsdBwuQWxDHaiYtvATaiTaoBJVsGFl"
-    },
-    {
-      "agendaRelevance": 0.83,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "c2e24d9a8ad173a415f9a01144c2142eb58a4c78d9d5270b24d581daf1a6a93b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1589606182776636",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/9c3411ee43e8b0e24ee6.webp",
-      "keywords": [
-        "道路",
-        "選舉",
-        "醫院",
-        "急診"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T08:34:31.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動提出道路、園區、醫院三項淡水建設政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "做了 40 年工程，沒想到出來選舉，這幾個月被抹黑的，比 40 年加起來還多。\n\n我太太問過我：「你有後悔嗎？」\n\n我說，沒後悔。\n\n上週末在淡水，近千位鄉親把會場坐到門外都是人。看著大家在大熱天舉手喊聲，我更確定這個答案。\n\n說實在，一個人做到這個年紀，圖的不是位子。你有能力、有經驗，就應該為社會付出。人這一生，最重要的是為地方留下什麼。\n\n我要為淡水留下的，很具體——\n\n一條路：淡北道路加速完工，接上大度路，進台北不用再塞。\n\n一個園區：淡海新市鎮二、三期引進科學園區，年輕人在淡水就能上班。\n\n一間醫院：照顧長輩，也顧淡水、三芝、石門的急診需求。\n\n朱立倫市長、 侯友宜市長奠的基礎，下一棒我來接，一棒接一棒。\n\n選舉會過去，醫院跟道路會留下來。\n\n這就是我沒後悔的原因。",
-      "topicScores": {
-        "交通": 0.98,
-        "競選": 0.96,
-        "經濟": 0.75,
-        "醫療": 0.92
-      },
-      "topics": [
-        "交通",
-        "競選",
-        "醫療",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0WmDTfhrCKBmXVgjtpmxvty3s9L2vYDspZd1RJtDkPMhqBvU1jKEaQJ5DtiyZXmszl&id=100051818071280"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-20T10:01:05+00:00",
-        "inputHash": "429f8f139dd1f0a6ee6cdfdbf3c10a70fb45968f0f1c98404f8ab75f0bf1822c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbAgfR2GuaS",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/58d33b093f126152dc13.webp",
-      "keywords": [
-        "掃街"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-20T08:26:14+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "屬於掃街拜票與選舉動員，主軸是競選活動而非具體施政主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:明天早上9:00，動起來！龍潭市場掃街✨\n\n龍潭市場是在地鄉親採買的重要據點，也是陪伴龍潭超過50年的在地市場，充滿濃濃的客庄特色！\n\n期待明早龍潭市場相會！心龍潭，動起來💖",
-      "topicScores": {
-        "生活": 0.41,
-        "競選": 0.98
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbAgfR2GuaS"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "5d97f17ba0ba8d06f9405887f67f396927c751e76732a8311c9c5e6000c3e617",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1550932916481241",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/6455e619a07ee36fba15.webp",
-      "keywords": [
-        "掃街"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T08:25:31.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "單純公布市場掃街行程與造勢，非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "明天早上9:00，動起來！龍潭市場掃街✨\n\n龍潭市場是在地鄉親採買的重要據點，也是陪伴龍潭超過50年的在地市場，充滿濃濃的客庄特色！\n\n期待明早龍潭市場相會！心龍潭，動起來💖",
-      "topicScores": {
-        "生活": 0.95,
-        "競選": 0.97
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02ZgiDnaUtibEDNa9CyMXfiMh7zYFFJFucSdy35QakzJL2SbfSzjATPokbrpeEPjtl"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-07-20T16:03:25+00:00",
-        "inputHash": "e8eb5b5a62cb3c8f79fb3752df3f45671eafdba53e01740e757fb21ed4cfb40d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbAfx21IJLb/",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/0b5c1a135e9a96895572.webp",
-      "keywords": [
-        "交通",
-        "捷運",
-        "道路",
-        "機場",
-        "產業",
-        "住宅"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-20T08:20:03+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "談太平發展、交通建設與產業規劃，屬主動政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "太平區是臺中土地面積第二大區，集結了機械、精密製造、五金加工、農業等產業，也是臺中主要住宅區之一，近年來人口數飛速成長；啟臣受接勵向前 我是佳恬議員邀請，一起走訪太平地方，傾聽第一線市民鄉親的心聲，我們的共同目標，就是要讓整個太平區，都變成大家眼中的「蛋黃區」，讓每個人都能感受到 #旗艦級 的 #幸福生活 ❤️\n\n盧市長執政八年打下好基礎，讓市民感受到 #幸福臺中 #新好生活 ，未來的臺中，我們只能進步、不能退步！臺中不只要幸福宜居，城市軟硬體更要再升級，啟程邁向國際、成為世界級的 #旗艦城市✈️\n\n啟臣提出政策願景，不亂開選舉支票。太平要發展，交通是關鍵，不管是道路延伸或拓寬、捷運藍線延伸太平，都是大家期待完成的建設；工廠區域規劃，工業區使用需求，甚至是大家對臺中機場營運規劃的期待，都是未來啟臣當選是市長後，必須牢記在心的地方聲音。請大家給啟臣機會，我承諾過的一定做到！11月28日一定要全力相挺，讓我能與黃佳恬議員一起努力，要讓太平更加幸福宜居、更要讓臺中被全世界看見、讓各位感受到身為臺中人的光榮與驕傲✨\n\n#臺中啟程 #打造旗艦城 #太平區 #幸福加恬 #臺中味 #TaichungWay",
-      "topicScores": {
-        "交通": 0.81,
-        "住宅": 0.56,
-        "經濟": 0.7
-      },
-      "topics": [
-        "交通",
-        "經濟",
-        "住宅"
-      ],
-      "url": "https://www.instagram.com/p/DbAfx21IJLb/"
-    },
-    {
-      "agendaRelevance": 0.81,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-07-20T22:02:41+00:00",
-        "inputHash": "f77127b8e47bfd305f6871b0f304d82a525421f6828087dda482173ee1a11dcd",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1568428914643924",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/ed32cd516335a37c58ef.webp",
-      "keywords": [
-        "交通",
-        "捷運",
-        "道路",
-        "機場",
-        "產業",
-        "住宅"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-20T08:19:58.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "提出太平交通、工業區與機場規劃等發展方向。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "太平區是臺中土地面積第二大區，集結了機械、精密製造、五金加工、農業等產業，也是臺中主要住宅區之一，近年來人口數飛速成長；啟臣受接勵向前 我是佳恬議員邀請，一起走訪太平地方，傾聽第一線市民鄉親的心聲，我們的共同目標，就是要讓整個太平區，都變成大家眼中的「蛋黃區」，讓每個人都能感受到 #旗艦級 的 #幸福生活 ❤️\n\n盧市長執政八年打下好基礎，讓市民感受到 #幸福臺中 #新好生活 ，未來的臺中，我們只能進步、不能退步！臺中不只要幸福宜居，城市軟硬體更要再升級，啟程邁向國際、成為世界級的 #旗艦城市✈️\n\n啟臣提出政策願景，不亂開選舉支票。太平要發展，交通是關鍵，不管是道路延伸或拓寬、捷運藍線延伸太平，都是大家期待完成的建設；工廠區域規劃，工業區使用需求，甚至是大家對臺中機場營運規劃的期待，都是未來啟臣當選是市長後，必須牢記在心的地方聲音。請大家給啟臣機會，我承諾過的一定做到！11月28日一定要全力相挺，讓我能與黃佳恬議員一起努力，要讓太平更加幸福宜居、更要讓臺中被全世界看見、讓各位感受到身為臺中人的光榮與驕傲✨\n\n#臺中啟程 #打造旗艦城 #太平區 #幸福加恬 #臺中味 #TaichungWay",
-      "topicScores": {
-        "交通": 0.86,
-        "住宅": 0.64,
-        "文化觀光": 0.62,
-        "經濟": 0.78
-      },
-      "topics": [
-        "交通",
-        "經濟",
-        "住宅",
-        "文化觀光"
-      ],
-      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0C7i3BvMAWe8ct7WP5oHMJd4bQeZ4CiHDcXDKsLmT715cWCFyR9xYgwc1APoKGbZZl"
     }
   ],
   "version": 1

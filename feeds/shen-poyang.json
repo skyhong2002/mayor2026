@@ -1,6 +1,45 @@
 {
-  "count": 107,
+  "count": 108,
   "posts": [
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-23T10:01:02+00:00",
+        "inputHash": "fe5b32158892a93895346ea6fb970568384855293559fc1ba33dc456b0c9210f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbINTICDBM4",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d89b4a40fa985fbc5394.webp",
+      "keywords": [
+        "治安",
+        "綠地"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T08:12:30+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動分享赴爾灣交流治安與綠地經驗，非回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:這趟回到我住過六年的爾灣，受到鄉親、爾灣市政團隊的熱烈歡迎，就像回到第二個家。\n\n爾灣是全美連續21年治安最好的城市，這次交流了社區治安、公園綠地、都市森林等等，我會把這些經驗帶回台北！",
+      "topicScores": {
+        "交通": 0.42,
+        "治安": 0.97,
+        "環境": 0.72
+      },
+      "topics": [
+        "治安",
+        "環境",
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbINTICDBM4"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "shen-poyang",
