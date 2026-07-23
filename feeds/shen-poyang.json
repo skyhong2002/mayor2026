@@ -1,6 +1,74 @@
 {
-  "count": 105,
+  "count": 107,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-23T04:01:11+00:00",
+        "inputHash": "19906665be6f1351c87081e4a91b85b83693fba12a9eb02a684beba716493759",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbHnNOnlJYy",
+      "imageAspect": 1.8898,
+      "imageUrl": "assets/feed-images/6d0d23d578d8b8c0d01d.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-23T02:39:37+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述觀賞比賽與李灝宇全壘打，屬一般生活性貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:晚上十點半到飯店，\n打開電視，\n就看到李灝宇的名字，\n三分全壘打！\n\n今天美國ESPN播這場耶，\n祈禱勝利打點！",
+      "topicScores": {
+        "生活": 0.54,
+        "體育": 0.98
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbHnNOnlJYy"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-23T04:01:11+00:00",
+        "inputHash": "0ba90750b15b149bebb8d8d75ddca04a5861f92bbef82e0aef366e0fc4bd3804",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbGUF9WSYKi/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1c61dd16088e5f1b7b8f.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-22T14:34:44+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享洛杉磯見聞與美食感想，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "之前我說過，台北就像一碗剉冰，\n沒想到來到洛杉磯，鄉親真的端上一大碗芋圓剉冰~",
+      "topicScores": {
+        "文化觀光": 0.91,
+        "生活": 0.68
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbGUF9WSYKi/"
+    },
     {
       "agendaRelevance": 0.34,
       "candidateId": "shen-poyang",

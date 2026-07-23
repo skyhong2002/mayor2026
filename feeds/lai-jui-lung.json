@@ -1,6 +1,42 @@
 {
-  "count": 134,
+  "count": 135,
   "posts": [
+    {
+      "agendaRelevance": 0.41,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-23T04:01:11+00:00",
+        "inputHash": "36da0ed91693168bb9daee17af6975beb46d8598b3c51dbbeba71180ffa6c50f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbHbgw8joly",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/0048a651bd2726bdc04c.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T00:57:28+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以AI治理城市為主軸，屬泛政策口號，未具體提出可施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:運用AI治理解決城市問題，迎向智慧新時代！\n\n#南方崛起邁向國際 #TheRisingSouth #KaohsiungForTheWorld",
+      "topicScores": {
+        "生活": 0.64,
+        "經濟": 0.58
+      },
+      "topics": [
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbHbgw8joly"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lai-jui-lung",
