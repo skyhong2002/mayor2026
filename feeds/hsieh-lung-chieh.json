@@ -1,6 +1,40 @@
 {
-  "count": 128,
+  "count": 129,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-23T16:03:34+00:00",
+        "inputHash": "0ae9b88820103d4e12fba1c7a660dfd2a4737bca10ad3a317421dbdd828e067d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbH-llRyZ6i/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3497599d5f84ce139ac0.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-23T06:04:15+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是譴責民進黨對致癌油的消極說法，屬政治批評。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "少吃炸雞防致癌油？譴責民進黨這種消極的說法 #謝龍介 #民進黨 #致癌油 #毒油 #中聯油脂",
+      "topicScores": {
+        "環境": 0.7,
+        "生活": 0.58
+      },
+      "topics": [
+        "環境",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbH-llRyZ6i/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",

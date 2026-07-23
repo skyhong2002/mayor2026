@@ -1,6 +1,43 @@
 {
-  "count": 108,
+  "count": 109,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-23T16:03:34+00:00",
+        "inputHash": "4caa1a3b6551583ae15ba8416d229aaa998511f4f2ee9b2f160b44b74291dd52",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbIwaH6gBxx",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/e5d27114c1c857ae96af.webp",
+      "keywords": [
+        "選舉",
+        "後援會"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-23T13:21:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動宣傳海外後援會與參選動機，屬競選動員並談台灣安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:第一場的海外後援會\n美西後援會正式成立！\n\n謝謝超過 300 位旅美台灣人到場，\n有大家一路鼓勵，\n我才有勇氣走進政治、\n投入台北市長選舉。\n\n首都沒有韌性，\n對國家發展絕非正常。\n\n身為台灣人，\n面臨威脅，\n沒有做不做的疑慮，\n一定是要站出來的。\n\n無論身在台灣或海外，\n我們都在自己的位置上為台灣努力。",
+      "topicScores": {
+        "兩岸外交": 0.83,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DbIwaH6gBxx"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "shen-poyang",
