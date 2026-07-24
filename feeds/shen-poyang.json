@@ -1,6 +1,42 @@
 {
-  "count": 112,
+  "count": 113,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-24T10:03:20+00:00",
+        "inputHash": "81e7d5386fd834ebed603fa4fed7b4e306e89849a45ba41f954d5cc9cbb39cbd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbKb66wESa8",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-24T04:58:43+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述赴美交流見聞，主談城市規劃與文化場館參訪。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:赴美交流第二天，我們走進洛杉磯市中心，從 Grand Avenue 的公共建設、文化場館，一路看見一座城市如何累積數十年的規劃。",
+      "topicScores": {
+        "文化觀光": 0.75,
+        "生活": 0.52
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbKb66wESa8"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "shen-poyang",
