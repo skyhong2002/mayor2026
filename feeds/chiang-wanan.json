@@ -1,6 +1,42 @@
 {
-  "count": 54,
+  "count": 55,
   "posts": [
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-24T22:02:21+00:00",
+        "inputHash": "f238d58537d21d4c3c54e947948da38bce7bd02d18f6c8cc15a0511bd536f31f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1591017752388176",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d971beb8b0c6eea909f3.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-24T11:46:52.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "屬反毒油凱道動員，主要是集會號召非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "逼我吃毒油，就是逼我上街頭。\n反毒油、護食安，不分黨派、不分年齡、不分職業；\n就在明晚，我們一起站出來，讓政府聽見人民的怒吼！\n\n7月25日(六) 17:00 準時集結\n凱達格蘭大道，不見不散。",
+      "topicScores": {
+        "環境": 0.54,
+        "生活": 0.95,
+        "社福": 0.62
+      },
+      "topics": [
+        "生活",
+        "社福",
+        "環境"
+      ],
+      "url": "https://www.facebook.com/reel/1393487142695449/"
+    },
     {
       "agendaRelevance": 0.67,
       "candidateId": "chiang-wanan",

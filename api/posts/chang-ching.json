@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/0dd7e69c32ec892a069f.webp",
+    "avatarUrl": "assets/source-avatars/987d7a52a26c86d8054e.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "chang-ching",
@@ -19,8 +19,42 @@
     "name": "張靜",
     "party": "司法改革黨"
   },
-  "count": 33,
+  "count": 34,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chang-ching",
+      "classification": {
+        "classifiedAt": "2026-07-24T22:02:21+00:00",
+        "inputHash": "6222737dfe69fa5a37dcddcae2b37a91e36bcae5bfccb289cc1aac5bf50b491f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:2925104721170088",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d7b4221ebca4e7a5b059.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-24T02:13:45.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是反毒油車隊遊行活動公告，屬動員通知。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-ching-party-fb",
+      "text": "2026/7/24(五)司法改革黨高雄反毒油車隊遊行活動~",
+      "topicScores": {
+        "生活": 0.99,
+        "競選": 0.72
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/100093646137173/videos/2925104721170088/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "chang-ching",
