@@ -19,8 +19,44 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 118,
+  "count": 120,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-24T04:01:04+00:00",
+        "inputHash": "cc253d2e405306eaa03e1817575c1919e79f67833a12ba5b696bb7121c9f93d1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbKDGamkrGK",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/af8718139303571c3ba3.webp",
+      "keywords": [
+        "表演"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-24T01:24:15+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主辦親子活動宣傳與場次資訊，無回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:上週六，我和小水獺們一起在淡水認識海洋，也學習愛護海洋，把水獺媽媽樂園變身海底世界！\n\n明天水獺媽媽樂園要繼續前進✨汐止啦！一樣有滿滿的闖關遊戲和表演等著大家！我會在10:45到現場和大家一起玩哦😍\n\n📍水獺媽媽樂園 汐止場｜免費入場\n時間｜7/25（六）09:00-16:00\n地點｜秀峰高中體育館（汐止區忠孝東路201號）",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "生活": 0.77
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbKDGamkrGK"
+    },
     {
       "agendaRelevance": 0.63,
       "candidateId": "su-chiaohui",
@@ -4419,6 +4455,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/GcfMh-uU01M"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-24T04:01:04+00:00",
+        "inputHash": "cd91de24e32cd8b7faa09bc877ec5fc2da069ffdac6e0c78aba82592afcec4b3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:a6al2k09DHw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/a9f83671be4355eadd87.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題僅描述活動內容，無具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Otter Mom's Wonderland Transforms Into an Underwater World?!🐠🦀🐬",
+      "topicScores": {
+        "文化觀光": 0.63,
+        "生活": 0.94
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/a6al2k09DHw"
     }
   ],
   "version": 1
