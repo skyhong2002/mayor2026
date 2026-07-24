@@ -19,8 +19,42 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 113,
+  "count": 115,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-24T16:01:08+00:00",
+        "inputHash": "6e00cb5c4ae6f7f7cffcd80f0b43f10d4a978d1a3ef60696a58cefe0eda7e9a4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbLlFCZEiBl/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/2654b5b845f227acea6a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-24T15:38:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳訪美期間的Podcast內容與個人介紹，屬主動曝光非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "美國出訪期間\n想更認識沈伯洋？\n\n先把這三集 Podcast 收藏起來。\n\n📍台灣通勤第一品牌EP55\n從求學到走入政治\n\n📍馬力歐陪你喝一杯S8EP169\n台北哪裡卡住了？來聽聽我的解法\n\n📍人間動物園S3EP173\n從黨校體系走上非典型法律路\n\n訪美期間，\n從通勤、城市、人生，一起聊聊我在想什麼。",
+      "topicScores": {
+        "生活": 0.6,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbLlFCZEiBl/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "shen-poyang",
@@ -56,6 +90,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbKb66wESa8"
+    },
+    {
+      "agendaRelevance": 0.45,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-24T16:01:08+00:00",
+        "inputHash": "063de8f337659a3fd1422140ab09728724b4830b0f19339ba108e9f7a68ac442",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbKbnZlyyKB/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/095061bc228eb3105d9f.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-24T04:57:45+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述洛杉磯市中心公共建設與文化場館參訪，屬行程觀察。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "赴美交流第二天，我們走進洛杉磯市中心，從 Grand Avenue 的公共建設、文化場館，一路看見一座城市如何累積數十年的規劃。",
+      "topicScores": {
+        "交通": 0.42,
+        "文化觀光": 0.76
+      },
+      "topics": [
+        "文化觀光",
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/DbKbnZlyyKB/"
     },
     {
       "agendaRelevance": 0.18,
