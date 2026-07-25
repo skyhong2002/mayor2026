@@ -1,6 +1,38 @@
 {
-  "count": 56,
+  "count": 57,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-25T22:03:24+00:00",
+        "inputHash": "b101c773bf23867b32387e78f999950b6e5b4119f33d7da08818aede229ff503",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbN3mFmGQbm/",
+      "imageAspect": 1.5019,
+      "imageUrl": "assets/feed-images/439fdbc0337a13f6f33a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-25T12:58:20+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅表達反毒油與食安支持，未見具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-ig",
+      "text": "反毒油，護食安\n謝謝每一位勇敢的臺灣人！",
+      "topicScores": {
+        "生活": 0.78
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbN3mFmGQbm/"
+    },
     {
       "agendaRelevance": 0.15,
       "candidateId": "chiang-wanan",
