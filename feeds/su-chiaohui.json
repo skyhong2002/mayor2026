@@ -1,6 +1,40 @@
 {
-  "count": 127,
+  "count": 128,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "c5a64c3a4c4c91c5fc760afcf47fa2d26b8753bf87301d11c3137910ccf5ecb9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbM3zTVkvFt",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/18a50f482d0b4538ba41.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-25T03:41:06+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹水獺活動與場次資訊，屬活動公告而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:還沒中午，大小水獺已經塞爆體育館啦！\n活動到今天下午四點！快到汐止秀峰高中一起玩❤️",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "生活": 0.84
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbM3zTVkvFt"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "su-chiaohui",

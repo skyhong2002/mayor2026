@@ -1,6 +1,42 @@
 {
-  "count": 138,
+  "count": 141,
   "posts": [
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "ce5816625b377b14c5295a161058228dd31f0a0e1e5b6b085e72b4c983184916",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbMwWJqDSCJ",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/33ea7269117bbfc43700.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-25T02:39:06+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "提出食安三主張，屬主動政策訴求，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:守護食安必須做出行動，而非上街作秀。\n\n我和南投縣長候選人 温世政 @wen_shih_cheng 、苗栗縣長候選人 陳品安 @vote4pinan 以及彰化縣長候選人 陳素月 @sayyessayhi 共同提出「中彰投苗保障食安3主張」 。",
+      "topicScores": {
+        "生活": 0.62,
+        "社福": 0.7,
+        "競選": 0.88
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbMwWJqDSCJ"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "ho-hsin-chun",
@@ -4979,6 +5015,86 @@
         "社福"
       ],
       "url": "https://www.youtube.com/shorts/cXWB4uoH4ho"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "91cd94b8a6656561ad53b8e6a5ee9302eaea28514159b55474340fc217296bf6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:wKfxTuVONAA",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/5ec9ac270524b3c42223.webp",
+      "keywords": [
+        "照顧"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標題主打市政願景與照顧各世代，屬主動政見宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純六星市政168打造真正照顧每一代人的台中",
+      "topicScores": {
+        "教育": 0.68,
+        "生活": 0.6,
+        "社福": 0.78,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=wKfxTuVONAA"
+    },
+    {
+      "agendaRelevance": 0.85,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "cdb7b8c1508ab8d64a4936647267239670548cadf403c9fb205f56112b7d6991",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:umwkL9-_e0g",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b16a15c7416198b2550d.webp",
+      "keywords": [
+        "照顧"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "同樣是市政口號式競選宣傳，未見回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "六星市政168 照顧每一代！打造更幸福的台中",
+      "topicScores": {
+        "教育": 0.65,
+        "生活": 0.6,
+        "社福": 0.76,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/umwkL9-_e0g"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

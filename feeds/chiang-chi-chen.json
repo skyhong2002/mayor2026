@@ -1,6 +1,78 @@
 {
-  "count": 95,
+  "count": 97,
   "posts": [
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "09b6a3e66dd66b022a2f3aa36bfdbb0805c94caadff46ecbf6e991481a792236",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbM2qvooLZP/",
+      "imageAspect": 1.5038,
+      "imageUrl": "assets/feed-images/b94c5a42c07959343db4.webp",
+      "keywords": [
+        "提名"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-25T03:30:57+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "縣市長提名候選人集結造勢，屬純競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "我們國民黨19位縣市長提名候選人\n一同啟航💪作伙拚\n\n#臺中啟程 #打造旗艦城\n#臺中升級 #幸福加給 #KMT",
+      "topicScores": {
+        "生活": 0.68,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbM2qvooLZP/"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-07-25T04:03:21+00:00",
+        "inputHash": "c0ef2e793b63a0585bd4f2898505ae3d5d33ab68299ee3ba26ca5dd698b424c6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbLGOIlIMqB/",
+      "imageAspect": 1.4993,
+      "imageUrl": "assets/feed-images/89c3e6aba88629efc7d0.webp",
+      "keywords": [
+        "外交"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-24T11:08:23+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述與加拿大智庫交流及國會外交，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "啟臣結束上午臺中在地行程、傾聽鄉親心聲後，隨即北上主持與加拿大智庫學者的交流午宴。\n\n我們針對國際政經局勢、區域安全與臺加雙邊合作進行了深入探討。無論是走入鄰里解決鄉親的大小事，還是在國會外交第一線為臺灣發聲，啟臣始終維持滿格戰力！立足臺中、走向世界，啟臣會繼續用最強的執行力與國際視野，把在地聲音帶出去，把國際資源引進來，讓大臺中與世界無縫接軌！💪✨\n\n#國會外交 #臺加友好 \n#立足臺中走向世界\n#讓世界看見臺灣",
+      "topicScores": {
+        "兩岸外交": 0.86,
+        "經濟": 0.58
+      },
+      "topics": [
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DbLGOIlIMqB/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "chiang-chi-chen",
