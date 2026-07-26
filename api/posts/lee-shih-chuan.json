@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/e41ef1e867629697d805.webp",
+    "avatarUrl": "assets/source-avatars/668575599ac679d04c88.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,112 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 81,
+  "count": 84,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "156e87e815604b639437fac23607bed4432099b4e40d051a8eca686679ddf752",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1594632595607328",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "地震"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-26T12:43:00.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "地震避難與餘震提醒，屬防災通知而非回應他方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "剛剛發生有感地震，請大家注意自我保護，提防餘震。\n\n先彼此確認平安，記得多打一通電話。\n\n緊急危難請撥打 119 或 1999 市民專線。",
+      "topicScores": {
+        "生活": 0.85,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid056MhNcfWZw83EqQgWTSvvx6yU45WMsbdtEjfnpuKt1VdMzZ9aSdCGZXoE9FbNDGSl&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "c4ab58bd875cc87fe6b44aecb1d73b35ef6fb45a2a4fb7f33994f20dfbb6c345",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1593811619022759",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/d68dfa05f341f0acd739.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-25T12:55:40.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "訴求守護食安並動員上凱道，屬主動倡議與群眾動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "我們站出來了。\n\n守護食安，就是守護每一張餐桌。\n\n今天的凱道，沒有顏色。",
+      "topicScores": {
+        "生活": 0.44,
+        "社福": 0.54
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid037UcgVyzxrzfwfFTMfQNXiHopcsscJktot9tcCtzzNFaRb2HKRnMZyZa3uFAwUXB7l&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "6d5df78b38a7ddff19a038a79c3f2881e970d1eb53ecc0616026169e818f0028",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1593433339060587",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/50e2ce25bd16fd5e41c5.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-25T01:59:48.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "質疑食用油安全並號召上街要求答案，屬主動抗議訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "吃飯沒有顏色。\n油到底可不可以吃？\n今天7 月 25 號 17:00，作伙上凱道，要一個答案。",
+      "topicScores": {
+        "生活": 0.46,
+        "社福": 0.67
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1586857616171045/"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "lee-shih-chuan",

@@ -1,6 +1,42 @@
 {
-  "count": 51,
+  "count": 53,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "76e723b63939e788f55023b27c4d0d2f5fa0184676fe70f11142c9f321c27903",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1807253250763899",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/c1047dd006f2042856cc.webp",
+      "keywords": [
+        "地震"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-26T12:38:38.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "地震通報與安全提醒，屬災害資訊公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-fb",
+      "text": "#地震發生 \n\n稍早北部地區發生規模5.6地震，發生我已請相關單位進行必要的巡查與回報，目前持續彙整各項資訊中，請市民朋友注意餘震，留意安全。\n\n市府已啟動相關應變作業，如有緊急狀況或需要協助，請撥打 119，或透過 1999 市民專線通報。",
+      "topicScores": {
+        "生活": 0.6,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/SanCheng624/posts/pfbid0oGLU3mTqGHyUUc3R8WCkdZ4sfnW3Eoo4xyHC2kntLmhoC5mf1VzFHy3xPvZyy6Tjl"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "chang-san-cheng",
@@ -38,6 +74,44 @@
         "環境"
       ],
       "url": "https://www.instagram.com/p/DbMtLPKlKEP/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "76d2e828f33988b2765a35e20b52825e9254c92c16c366cfab5acdcda904572b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1806079860881238",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/5c5ebecede9915b3a2c1.webp",
+      "keywords": [
+        "產業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-25T02:05:25.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主談植物產業、國際展會與青農發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-fb",
+      "text": "植物，已經成為講品牌、講技術，也講國際市場的新產業，更是適合桃園青農投入的新方向。\n\n去年，我們推動 #植感桃園，希望發展觀葉植物等精緻農業，除了支持青農投入高附加價值、技術密集的新興產業，也希望讓植物走進更多人的生活，讓綠意成為城市的一部分。\n\n一年多來，我們持續與植物產業交流合作，也期待把更多國際資源帶進桃園。\n\n上個月，我帶著桃園青農前往曼谷參加國際植物展售會，與各國植物產業交流，並邀請曼谷國際植物展創辦人Sappasiri Chaovanich來到桃園，讓台灣的植物產業開始和亞洲接軌。\n\n#亞洲植物博覽會 首度移師桃園，就是青農朋友與我們一起努力的成果。\n\n桃園的亞洲植物博覽會還有一個亮點，我們發揮國門的地利優勢，在展場設置 #一站式檢疫服務，希望讓國際交流更方便，也讓更多合作有機會在桃園發生。\n\n2026亞洲植物博覽會即日起至7月26日在 #桃園會展中心展出，集結超過100個植物品牌及桃園青農展攤。\n\n城市的競爭力，也可以來自一片葉子、一株植物背後的創意、技術和品牌。\n如果這個週末還沒有安排，不妨到桃園會展中心走走。說不定回家時，還會想帶一盆植物回去。",
+      "topicScores": {
+        "文化觀光": 0.6,
+        "生活": 0.55,
+        "經濟": 0.88
+      },
+      "topics": [
+        "經濟",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1022825200366747/"
     },
     {
       "agendaRelevance": 0.62,

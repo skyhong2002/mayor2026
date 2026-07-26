@@ -1,6 +1,42 @@
 {
-  "count": 57,
+  "count": 59,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "091de3f96d5b1e64643009b432b145d703be78fa380bf792931e1c40388c7216",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1592742862215665",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "地震"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-26T12:37:29.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "地震警示與通報方式提醒，屬防災公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "市民朋友晚安，剛剛發生有感地震，請市民朋友注意自身安全，當心餘震。\n\n地震發生時，務必謹記三步驟「趴下、掩護、穩住」，盡量避免搭乘電梯，有任何狀況請撥打1999或119通報，我也會持續向大家報告臺北市政府掌握的第一手資訊🙏🏻",
+      "topicScores": {
+        "生活": 0.6,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0v8quuJVStFrj2GjU1dmjRy31Cwat4Jk3rVaXycG8YSPJtsgFpJbX3U7GUjxdkijJl"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "chiang-wanan",
@@ -32,6 +68,40 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DbN3mFmGQbm/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-26T22:02:16+00:00",
+        "inputHash": "cbbbe952b46d021af18458f48685c915d0f6146ef9886251f5e442fb210644eb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1591909748965643",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/b0ac5b91e9c5c4803b28.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-25T12:56:43.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅為標語式表態，未具體談公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "反毒油，護食安\n謝謝每一位勇敢的臺灣人！",
+      "topicScores": {
+        "治安": 0.49,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid08ihN6BvYT1UC5HXxJVGxUPQQgF1jtcWvdQuSe1f1jfngCoYH4vjjdZbYooLRGdbDl"
     },
     {
       "agendaRelevance": 0.15,
