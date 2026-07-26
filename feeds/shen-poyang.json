@@ -1,6 +1,44 @@
 {
-  "count": 121,
+  "count": 122,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-26T16:03:32+00:00",
+        "inputHash": "8dc8a780e86d4e4dfea835b2d64caafc9d36fe8983bb145925902e9056867c41",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbQTlveDCp9",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6f72bc4a49357d0a8c31.webp",
+      "keywords": [
+        "國防"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-26T11:41:24+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主打訪美與市政並陳，屬自我宣傳式發文，未回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:訪美行程緊湊，還是要到國會圖書館！（小孩子才做選擇）\n\n要深耕台灣，也要強化國際連結；\n要談國防，也要談市政。\n小孩子才做選擇，\n我們通通都要做！\n\n#你的市長沈伯洋",
+      "topicScores": {
+        "兩岸外交": 0.86,
+        "生活": 0.74,
+        "競選": 0.77
+      },
+      "topics": [
+        "兩岸外交",
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbQTlveDCp9"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "shen-poyang",
