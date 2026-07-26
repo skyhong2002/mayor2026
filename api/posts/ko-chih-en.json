@@ -19,7 +19,7 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 128,
+  "count": 130,
   "posts": [
     {
       "agendaRelevance": 0.22,
@@ -4953,6 +4953,74 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/hmwuV281UdQ"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-26T10:00:56+00:00",
+        "inputHash": "35101b3ae9cdc290694ea5c0e86daa5cc153118cec454c5b28f74827c1cad8bc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:TObNnqncj0M",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/35c22f6494d94290fc7b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是反政府集會宣傳與食安訴求，非回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "7/25 Take to Ketagalan Boulevard to Protect Food Safety: Over 100,000 People Roar at the Government!",
+      "topicScores": {
+        "生活": 0.55,
+        "社福": 0.7,
+        "競選": 0.87
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/TObNnqncj0M"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-26T10:00:56+00:00",
+        "inputHash": "5711d2b6dbd18bda87311fcca57d875df9d43cbb014d24a7321dfb72a1350616",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:da_3ZRiezKw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d143c3787c1af1c1f050.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是柯文哲造勢內容預告，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Crowds overflow the Ketagalan Boulevard rally on 7/25, hear what Ko has to say!",
+      "topicScores": {
+        "競選": 0.92
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/da_3ZRiezKw"
     }
   ],
   "version": 1
