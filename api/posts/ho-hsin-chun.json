@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 142,
+  "count": 143,
   "posts": [
     {
       "agendaRelevance": 0.05,
@@ -5147,6 +5147,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/umwkL9-_e0g"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-26T04:01:05+00:00",
+        "inputHash": "3b1e27be749dbc8e9be42f3d191f7b5131ab6991f521be25ff16c899f39dbc2e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:qGvScwUGkBg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/f97d9432f81be5d5695f.webp",
+      "keywords": [
+        "經濟"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以匹克球帶動經濟為題，屬運動結合經濟的主題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "匹克球也能拚經濟！?",
+      "topicScores": {
+        "經濟": 0.83,
+        "體育": 0.52
+      },
+      "topics": [
+        "經濟",
+        "體育"
+      ],
+      "url": "https://www.youtube.com/shorts/qGvScwUGkBg"
     }
   ],
   "version": 1

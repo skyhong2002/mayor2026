@@ -1,6 +1,72 @@
 {
-  "count": 132,
+  "count": 135,
   "posts": [
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-26T04:01:05+00:00",
+        "inputHash": "a6de43a5b98f99d1c02646058be3cb76694cac67aa97b0b981b2ddf9eddc8835",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbPNorEgYYc",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/a5e914da90e93e7e9338.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-26T01:30:06+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹金山蹦火仔漁法與出海體驗，屬文化觀光活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:你有看過上千隻青鱗魚，在夜空中隨著火光躍出海面的瞬間嗎？\n\n這次我帶著團隊到金山磺港，跟著漁民一起出航，親身感受北海岸獨一無二、流傳百年的傳統漁法「金山蹦火仔」。",
+      "topicScores": {
+        "文化觀光": 0.95,
+        "生活": 0.46
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbPNorEgYYc"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-26T04:01:05+00:00",
+        "inputHash": "203919b4e337207a4fa9d5bd76d862758b30ad7f33135608272b0b6ef545f5f7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbPCo21mX5P",
+      "imageAspect": 1.332,
+      "imageUrl": "assets/feed-images/ab59876ba45ae3bf6615.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-25T23:54:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅描述今天與議員行程，屬一般活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:今天還沒七點，我已經在瑞芳跟林裔綺議員一起囉～",
+      "topicScores": {
+        "生活": 0.93
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbPCo21mX5P"
+    },
     {
       "agendaRelevance": 0.86,
       "candidateId": "su-chiaohui",
@@ -4907,6 +4973,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/2EMZuYr3V8A"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-26T04:01:05+00:00",
+        "inputHash": "9da1cbd68b1af0b8969d0c8e1aa6126495a2cccf1d2b5e2705f717b8753d62ae",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:nyEbOprTvCY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/fc17600f8496e2bff826.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題介紹金山蹦火傳統漁法，屬文化觀光內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "[Treasure Chest] Jinshan \"Bong-Huo\": A Century-Old Flame Lighting Up the Night Sky",
+      "topicScores": {
+        "文化觀光": 0.92
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/nyEbOprTvCY"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",
