@@ -1,6 +1,40 @@
 {
-  "count": 140,
+  "count": 141,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "52f170d862abda88e61b3e9355f0a16c08c4195cbd19dc8d747041e732f77cd8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbSPB0jmZgT",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/22be647979dc5c71e7cf.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-27T05:39:59+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主述郵局啟用與爭取建設成果，屬活動紀錄與生活服務，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:我和吳琪銘委員為大家爭取的北大特區郵局今天啟用囉！",
+      "topicScores": {
+        "住宅": 0.17,
+        "生活": 0.89
+      },
+      "topics": [
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/DbSPB0jmZgT"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "su-chiaohui",

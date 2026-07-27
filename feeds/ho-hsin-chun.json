@@ -1,6 +1,48 @@
 {
-  "count": 149,
+  "count": 150,
   "posts": [
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "6dc296f9d5ea615af2c7eb70b9afc2bd91d4b335848a47093af86e36f45537f1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbSWrkUjxRd",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/5d735f98f99184547c60.webp",
+      "keywords": [
+        "長輩",
+        "照顧",
+        "運動"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-27T07:01:14+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出台中市政藍圖，涉及照顧、食安、廚餘與運動館等政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:從照顧孩子、支持青年、關心長輩，到改善廚餘處理、興建全民運動館，我都提出具體的規劃，希望讓大家生活更便利、更幸福。\n\n大家最關心的食安，我也會全力把關。地方和中央一定要攜手合作，增加預算、充實人力、提高抽驗頻率，用最高標準守護市民的健康。\n\n接下來，「六星市政168巡迴說明會」還會繼續走遍台中各區，把我的市政藍圖分享給大家，也把鄉親的意見帶回來，一起打造欣欣向榮、更幸福的台中。",
+      "topicScores": {
+        "環境": 0.72,
+        "生活": 0.74,
+        "社福": 0.82,
+        "體育": 0.58
+      },
+      "topics": [
+        "社福",
+        "生活",
+        "環境",
+        "體育"
+      ],
+      "url": "https://www.threads.com/t/DbSWrkUjxRd"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "ho-hsin-chun",

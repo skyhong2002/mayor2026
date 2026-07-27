@@ -1,6 +1,79 @@
 {
-  "count": 148,
+  "count": 152,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "c09fc6ca606239cedf483599e8b780608d612ee29809a15d42593e86a10cdfdf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbSojjyD79I",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5f1b1860908c7ea78ce7.webp",
+      "keywords": [
+        "高中",
+        "立法院"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-27T09:24:05+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅是分享高中生參訪立法院並提問投票率，屬一般活動與觀察。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:如何提高投票率？從日本來立法院參訪的高中生澳原紗菜",
+      "topicScores": {
+        "兩岸外交": 0.31,
+        "教育": 0.42,
+        "議會監督": 0.2
+      },
+      "topics": [
+        "教育",
+        "兩岸外交",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbSojjyD79I"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "fdb8ed944cd3feb55f7ab68e09c490d7b2d091b16ee92855b482badf984a56c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbSDs9TEtik",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/8235574ec5742f438617.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-27T04:01:03+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "談國防部炸藥案與廠商違約脫產疑雲，屬事件批評與究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:裝修公司得標國防部炸藥案「違約」…福麥公司已脫產？",
+      "topicScores": {
+        "治安": 0.79,
+        "議會監督": 0.67
+      },
+      "topics": [
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbSDs9TEtik"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -5292,6 +5365,74 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/TmUNLNDOQ2w"
+    },
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "e03c3d76921cb37c3931341e9c0d11f0693cd884c18ea025374275cfe0cf99ae",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3Ld8_fPukUY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/9cc1f038e738ddd30a65.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "標題僅是參訪立法院與提高投票率，未見回應特定對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "How to Increase Voter Turnout? Shana Okihara, a Japanese High School Student Visiting the Legisla...",
+      "topicScores": {
+        "教育": 0.51,
+        "議會監督": 0.21
+      },
+      "topics": [
+        "教育",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/3Ld8_fPukUY"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-27T10:03:32+00:00",
+        "inputHash": "e1fc26bd12d52b602773071467a0728fea3951f3ce82ec673a388d106890cb18",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:pJ4mfkAGx4A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/87156bbdc779efe3f68c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.87,
+        "label": "主動發文",
+        "reason": "僅為國防部採購違約新聞標題，屬事件報導非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Renovation Company Wins Ministry of National Defense Explosives Contract but \"Breaches\" Terms... ...",
+      "topicScores": {
+        "治安": 0.41,
+        "議會監督": 0.26
+      },
+      "topics": [
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/pJ4mfkAGx4A"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",
