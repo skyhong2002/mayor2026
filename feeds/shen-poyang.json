@@ -1,5 +1,5 @@
 {
-  "count": 128,
+  "count": 129,
   "posts": [
     {
       "agendaRelevance": 0.05,
@@ -4666,6 +4666,40 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/xhUbGeF3ENo"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-27T16:01:25+00:00",
+        "inputHash": "98483f2c2a4f2e9eabcebab42f83b1aacb8665a25cda7a1a5bbe247ea3546c39",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8ABqjv2KORs",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4df079a0c78063dcf43c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "與紐約台灣青年交流，屬主動宣傳與意見交換，非回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The nation's capital should lead the way! Discussing ideas with Taiwanese youth in New York: My p...",
+      "topicScores": {
+        "兩岸外交": 0.23,
+        "教育": 0.2
+      },
+      "topics": [
+        "兩岸外交",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/8ABqjv2KORs"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",
