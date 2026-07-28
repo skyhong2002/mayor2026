@@ -1,6 +1,42 @@
 {
-  "count": 152,
+  "count": 153,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "2f1352970f8c335936c6b56b848112b6da63192d7845da1b20a4ff282ee0ef4f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVNhWQkVqk",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T09:24:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是熊本地震的災情關懷與安全提醒，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:日本熊本縣稍早發生規模7.1強震，災情仍在持續確認。\n\n祈願熊本及受影響地區的民眾平安，也提醒正在日本的台灣朋友，隨時留意官方最新資訊、遠離海岸地區，務必注意安全。\n\n為所有受到影響的民眾祈福，願一切平安🙏",
+      "topicScores": {
+        "生活": 0.66,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbVNhWQkVqk"
+    },
     {
       "agendaRelevance": 0.58,
       "candidateId": "lai-jui-lung",

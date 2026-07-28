@@ -19,8 +19,46 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 152,
+  "count": 155,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "8700e9b869678bbffb294d81380082ff6f50450e5f32bef75549d57ba7b3a3e6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVQVuLmdQ2",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "地震",
+        "防災",
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T09:49:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "報導熊本地震並呼籲防災與援助，屬災情通知與關懷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:稍早日本熊本發生芮氏規模7.1強震，中央政府正持續掌握最新災情，並做好支援旅日國人及協助救災的各項準備。\n\n提醒旅居鄰近地區的朋友，務必留意當地政府發布的防災資訊，注意餘震及自身安全。\n\n台灣與日本情誼深厚，每當遭遇天災，總是相互扶持、共度難關。面對這次地震，台灣也已做好提供必要協助的準備，衷心期盼災區民眾一切平安。\n\n🙏\n\nこのたび熊本県で発生した地震に、心よりお見舞い申し上げます。\n\n台湾と日本はこれまでも互いに支え合ってきた大切な友人です。今回も台湾は必要な支援を行う準備を整えています。\n\n被災された皆様のご無事と、一日も早い復旧・復興を心よりお祈り申し上げます。",
+      "topicScores": {
+        "兩岸外交": 0.62,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DbVQVuLmdQ2"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "ho-hsin-chun",
@@ -5538,6 +5576,74 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/gLfeOeG18Os"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "a9e273d98df7458f7d3503c130f0e8e90d62713914ec8453713474a2609509d9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fH0cdpy1LgY",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/aabc6bd4434b45c4b69b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題主打食安改革與民眾健康守護，屬主動政策倡議。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "食安不能等！何欣純提3大改革守護台中🍽️",
+      "topicScores": {
+        "生活": 0.63,
+        "社福": 0.82
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=fH0cdpy1LgY"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "cbb17b84051fd0e31e042e4c86757fdaf325a21511a7bf880d5ec837e7788e28",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:yaxn1QPFqsk",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/826265b8021cffe75da1.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是親子活動宣傳，屬一般生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "玩到捨不得回家！美術園道親子童樂列車太嗨了🚂💦",
+      "topicScores": {
+        "文化觀光": 0.71,
+        "生活": 0.95
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=yaxn1QPFqsk"
     }
   ],
   "version": 1

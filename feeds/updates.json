@@ -2,6 +2,354 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "34f3badb3103ab27912fb76413665390b9496ce7e04b3ee4d47b8329d17cf036",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbVRWekT5U7/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f8e4f6c723b8e968f556.webp",
+      "keywords": [
+        "外交"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-28T09:59:38+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動談台北城市外交與棒球交流，屬對外關係與城市行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "MLB 大都會台灣日，棒球是共同語言，\n也能連結城市與城市之間交流。\n\n這也是我「無限城」城市外交的一環，\n讓台北透過不同方式走向世界。",
+      "topicScores": {
+        "兩岸外交": 0.99,
+        "文化觀光": 0.72
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DbVRWekT5U7/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "8700e9b869678bbffb294d81380082ff6f50450e5f32bef75549d57ba7b3a3e6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVQVuLmdQ2",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "地震",
+        "防災",
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T09:49:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "報導熊本地震並呼籲防災與援助，屬災情通知與關懷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:稍早日本熊本發生芮氏規模7.1強震，中央政府正持續掌握最新災情，並做好支援旅日國人及協助救災的各項準備。\n\n提醒旅居鄰近地區的朋友，務必留意當地政府發布的防災資訊，注意餘震及自身安全。\n\n台灣與日本情誼深厚，每當遭遇天災，總是相互扶持、共度難關。面對這次地震，台灣也已做好提供必要協助的準備，衷心期盼災區民眾一切平安。\n\n🙏\n\nこのたび熊本県で発生した地震に、心よりお見舞い申し上げます。\n\n台湾と日本はこれまでも互いに支え合ってきた大切な友人です。今回も台湾は必要な支援を行う準備を整えています。\n\n被災された皆様のご無事と、一日も早い復旧・復興を心よりお祈り申し上げます。",
+      "topicScores": {
+        "兩岸外交": 0.62,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DbVQVuLmdQ2"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "candidate_id": "lai-jui-lung",
+      "candidate_name": "賴瑞隆",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "2f1352970f8c335936c6b56b848112b6da63192d7845da1b20a4ff282ee0ef4f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVNhWQkVqk",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T09:24:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是熊本地震的災情關懷與安全提醒，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:日本熊本縣稍早發生規模7.1強震，災情仍在持續確認。\n\n祈願熊本及受影響地區的民眾平安，也提醒正在日本的台灣朋友，隨時留意官方最新資訊、遠離海岸地區，務必注意安全。\n\n為所有受到影響的民眾祈福，願一切平安🙏",
+      "topicScores": {
+        "生活": 0.66,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbVNhWQkVqk"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "839b016db0baae9abd002f47a3e0623b7b56bd8b4e4392c0de5cb9ee9551ca57",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVG56RGlgE",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4f0b5003e971da01543b.webp",
+      "keywords": [
+        "經濟",
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T08:26:44+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是市場掃街與活動動員，主要在日常宣傳而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上10:00，動起來！興國市場掃街✨\n\n興國市場曾獲「菜市場界金馬獎」，經濟部五星級優良市集的認證🌟是中壢市區指標性的現代化傳統市場，更是許多鄉親朋友日常採買的好所在！\n\n明天上午興國市場見！心中壢，動起來💖",
+      "topicScores": {
+        "文化觀光": 0.78,
+        "生活": 0.94,
+        "經濟": 0.86
+      },
+      "topics": [
+        "生活",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbVG56RGlgE"
+    },
+    {
+      "agendaRelevance": 0.73,
+      "candidateId": "lee-shih-chuan",
+      "candidate_id": "lee-shih-chuan",
+      "candidate_name": "李四川",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "f1b64f1fe764ab5f31d025a971b095a926d9dcbe4d46f734d452d84490ac3a13",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVB2G7k-bb",
+      "imageAspect": 1.1663,
+      "imageUrl": "assets/feed-images/e3ba5822b404e9501573.webp",
+      "keywords": [
+        "攤商"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T07:42:31+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "到果菜市場拜訪並談農藥殘留查驗，重點在食安與市場管理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:今天透早四點半，天還沒亮，我就來到新北果菜市場，向攤商們和買菜民眾問聲好。\n\n凌晨四點半的新北，沒有在夢中，已經在出貨中。\n\n鄉親很直接，一見到我就讚聲，這就是新北人最樸實的樣子，話不多，但很夠力。\n\n我在新北市板橋果菜批發市場發展協會理事長郭瑮銓陪同下，向攤商和民眾逐一問候，也受邀透過廣播系統，向全體攤商致敬。我常說，有攤商在，市民才有新鮮蔬果可以吃。真的，有你們真好。\n\n福德宮主委蔡鴻誠，帶我到土地公廟參拜，更陪我一步一步走完整個批發市場，還有板橋區市議員參選人鄧凱勛及多位在地里長陪伴，說實在，這份感動就是我一整天行程的補帖。\n\n這一趟，我聽見了一個問題。\n\n新北果菜公司抽驗到一批進口白蘿蔔檢出農藥「可尼丁」殘留量超標5倍，好在新北果菜公司第一時間攔查，銷毀了200公斤，在拍賣前全數攔下銷毀。\n\n果菜公司說了一句實話，邊境查驗是抽批，不是逐批。攔得住自己這一車，攔不住別人那一車。地方守得住末端，但守不住國門。\n\n中央必須與地方一起嚴格防範，更應該好好說明，到底來源出什麼問題？\n攤商做的是良心生意，不該讓他們替別人的疏漏背責任。\n\n新北人幾點起床，這座城市就幾點開工，而我，就幾點到。",
+      "topicScores": {
+        "環境": 0.88,
+        "社福": 0.71,
+        "經濟": 0.68
+      },
+      "topics": [
+        "環境",
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbVB2G7k-bb"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "21f30d70f6866e4d22d4b0b1a4086b2a76de05c881b4e345b958479433c9339b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUywMQie_g",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/251946cdaf6f467a8cd0.webp",
+      "keywords": [
+        "毒品",
+        "幫派"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T05:30:38+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動談毒駕修法與安全承諾，屬明確公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:今天立法院三讀通過「道交條例」修正：毒駕或拒測者一率吊銷駕照，致人重傷者終身不得考照。\n\n世杰身為一位父親，非常清楚家長內心最深處的擔憂。我們不只擔心孩子在校園裡受毒品影響，更害怕有一天，當我們走在路上、接送小孩回家的途中，無辜的家人會成為毒駕悲劇下的受害者。\n\n過去，在我擔任法務部次長任內，成功推動依托咪酯升級為二級毒品。今年五月底，我針對日益嚴重的毒駕問題，進一步提出改善毒駕四大主張。\n\n除了今日三讀的道交條例，我提出的許多項建議，也被行政院、司法院採納，陸續提出修法草案。六月底，依托咪酯正式升級為一級毒品，涉及製造、運輸、販賣，最重可判處死刑，個人施用最重可判5年。\n\n這是大家共同推動社會進步的證明，但距離徹底根絕毒害，還有很長的路要走。我會持續緊盯這四項主張，全力守護桃園安全。\n\n我也要在此呼籲不分朝野委員，全力支持相關法案及預算。給下一代無毒成長環境，守護全國人民的安全，是我們跨越黨派、共同捍衛的底線！\n\n修法只是第一步，落實執法與防範未然，更是接下來的硬仗。\n\n桃園絕不能成為毒品與幫派的破口。\n\n我是黃世杰。\n\n桃園選世杰，家庭更安全。",
+      "topicScores": {
+        "交通": 0.98,
+        "治安": 0.74,
+        "競選": 0.84
+      },
+      "topics": [
+        "交通",
+        "競選",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DbUywMQie_g"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "ko-chih-en",
+      "candidate_id": "ko-chih-en",
+      "candidate_name": "柯志恩",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "1caf1a930fc2525b7c1983e7c0b510b695f5ee9697a1f5f25a204b8832e8812e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUyjBxidKV",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/87bc2aefc9dca5b973de.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T05:28:50+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動發布高雄交通改革政見，屬明確施政議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:高雄的交通應該以市民為本，讓每個人安心通行、平安回家。\n\n今天我舉辦「雄好行，高雄行」交通改革政見記者會，正式提出四大交通政見方向：行人更安全、機車更友善、交通更智慧、運輸更便利。\n\n高雄每天有超過百萬人出門，上班上學、接送孩子、騎車買菜。但很多人心裡都有同樣的感受：走在路上不方便，也不夠安全；機車族更常覺得，整座城市的交通設計，好像從來不是為他們準備的。這些日常的不便看似小事，卻是每個高雄人每天切身面對的事。\n\n因此，今天我正式提出四項交通改革承諾。",
+      "topicScores": {
+        "交通": 0.99,
+        "競選": 0.82
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbUyjBxidKV"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "f57b920188598f1f6a14f951cf8527f2772dd7469faef51456f8ef142b4014ee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUwYSokiBw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2eafbd7d3848daa1fb5a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T05:13:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動宣布105市道改善工程開工，核心是道路交通建設。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:105市道蜿蜒段改善工程今天正式動工！",
+      "topicScores": {
+        "交通": 0.95
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbUwYSokiBw"
+    },
+    {
+      "agendaRelevance": 0.46,
+      "candidateId": "hsieh-lung-chieh",
+      "candidate_id": "hsieh-lung-chieh",
+      "candidate_name": "謝龍介",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "5b6b2e7d1e0096c9e994f8077f919195b1d33a036ff95565e94b188a58da36c7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUuM-1j_pn",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/e2ddee1523819403f0db.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T04:50:52+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "批評毒油處理與究責，重點在監督行政與食安爭議。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:毒油真相沒交代，卓榮泰下台！賴清德內閣改組！\n\n今天，龍介與國民黨台南市議員共同召開記者會，替台南鄉親、替全台灣人民討一個交代。\n\n食用油無所不在，不管吃葷、吃素，學校營養午餐、國軍伙食、外食便當，攏總離不開油。如今驗出一級致癌物苯駢芘，政府調查半天，責任東推西推，卻連污染源到底從哪裡來，都講不清楚。\n\n更離譜的是，真相還沒查明，行政院就急著讓五百多項產品重新上架。龍介要問：這是在驚人民吃到毒油，還是在驚業者賠太多？其他廠商照規矩做都沒問題，為什麼中央對中聯特別優待？背後到底有沒有人關說、有沒有門神，全部都要查清楚！\n\n連高雄市長陳其邁都在會議上追問，當初「含量未達20%可以不下架」，到底是誰拍板？結果中央互相推諉，沒人敢答覆，更沒人敢負責！\n\n725那天，人民已經走上凱道，用最直接的方式發出怒吼。大家要的不是政治口水，只是真相、道歉，以及有人負責。\n\n結果人民上街之後，賴清德政府還是不知反省，不僅對人民冷嘲熱諷，調查報告依舊輕描淡寫；污染源沒有答案，卻急著讓產品恢復上架。這不是回應民意，是把人民的憤怒當耳邊風！\n\n人民已經站出來，政府若還是聽不見，就代表這個內閣已經失去人民信任。",
+      "topicScores": {
+        "社福": 0.58,
+        "經濟": 0.83,
+        "議會監督": 0.81
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DbUuM-1j_pn"
+    },
+    {
       "agendaRelevance": 0.58,
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
@@ -3674,356 +4022,6 @@
         "環境"
       ],
       "url": "https://www.instagram.com/p/DbMtLPKlKEP/"
-    },
-    {
-      "agendaRelevance": 0.62,
-      "candidateId": "chang-san-cheng",
-      "candidate_id": "chang-san-cheng",
-      "candidate_name": "張善政",
-      "classification": {
-        "classifiedAt": "2026-07-26T22:02:16+00:00",
-        "inputHash": "76d2e828f33988b2765a35e20b52825e9254c92c16c366cfab5acdcda904572b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1806079860881238",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/5c5ebecede9915b3a2c1.webp",
-      "keywords": [
-        "產業"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-25T02:05:25.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主談植物產業、國際展會與青農發展。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-sc-fb",
-      "text": "植物，已經成為講品牌、講技術，也講國際市場的新產業，更是適合桃園青農投入的新方向。\n\n去年，我們推動 #植感桃園，希望發展觀葉植物等精緻農業，除了支持青農投入高附加價值、技術密集的新興產業，也希望讓植物走進更多人的生活，讓綠意成為城市的一部分。\n\n一年多來，我們持續與植物產業交流合作，也期待把更多國際資源帶進桃園。\n\n上個月，我帶著桃園青農前往曼谷參加國際植物展售會，與各國植物產業交流，並邀請曼谷國際植物展創辦人Sappasiri Chaovanich來到桃園，讓台灣的植物產業開始和亞洲接軌。\n\n#亞洲植物博覽會 首度移師桃園，就是青農朋友與我們一起努力的成果。\n\n桃園的亞洲植物博覽會還有一個亮點，我們發揮國門的地利優勢，在展場設置 #一站式檢疫服務，希望讓國際交流更方便，也讓更多合作有機會在桃園發生。\n\n2026亞洲植物博覽會即日起至7月26日在 #桃園會展中心展出，集結超過100個植物品牌及桃園青農展攤。\n\n城市的競爭力，也可以來自一片葉子、一株植物背後的創意、技術和品牌。\n如果這個週末還沒有安排，不妨到桃園會展中心走走。說不定回家時，還會想帶一盆植物回去。",
-      "topicScores": {
-        "文化觀光": 0.6,
-        "生活": 0.55,
-        "經濟": 0.88
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1022825200366747/"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "lee-shih-chuan",
-      "candidate_id": "lee-shih-chuan",
-      "candidate_name": "李四川",
-      "classification": {
-        "classifiedAt": "2026-07-26T22:02:16+00:00",
-        "inputHash": "6d5df78b38a7ddff19a038a79c3f2881e970d1eb53ecc0616026169e818f0028",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1593433339060587",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/50e2ce25bd16fd5e41c5.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-25T01:59:48.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "質疑食用油安全並號召上街要求答案，屬主動抗議訴求。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "吃飯沒有顏色。\n油到底可不可以吃？\n今天7 月 25 號 17:00，作伙上凱道，要一個答案。",
-      "topicScores": {
-        "生活": 0.46,
-        "社福": 0.67
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1586857616171045/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-25T04:03:21+00:00",
-        "inputHash": "a2ddea7fa8845440c5a4ac5d2388faf80d54100613a7387ea6a935f9fc0cfc53",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbMqreHkuSn",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5fd89e78cf0bd18e4376.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-25T01:46:10+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "重複凱道集結與要求究責，屬食安抗議動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:毒油事件至今，人民等不到賴政府的謙卑反省，也等不到一句有誠意的道歉。\n\n就是今天，請各位好朋友們一起站出來，走上凱道，要求民進黨政府把食安真相說清楚、把責任交代明白，該負責就負責，該下台就下台，向全台灣人民說一句「失禮！」\n\n傍晚，龍介在凱道與大家見面！作伙為食安、為家人、為孩子討一個公道！",
-      "topicScores": {
-        "社福": 0.86,
-        "競選": 0.95
-      },
-      "topics": [
-        "競選",
-        "社福"
-      ],
-      "url": "https://www.threads.com/t/DbMqreHkuSn"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-25T04:03:21+00:00",
-        "inputHash": "5d9314cfbac23af7612afb3afe1171e450086eb0c1945b21478ef54783b72a9c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbMqpUDSI1D/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/cebfe1150fbd4851a241.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-07-25T01:46:03+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "號召上凱道追食安責任，重點在抗議與動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "毒油事件至今，人民等不到賴政府的謙卑反省，也等不到一句有誠意的道歉。\n\n就是今天，請各位好朋友們一起站出來，走上凱道，要求民進黨政府把食安真相說清楚、把責任交代明白，該負責就負責，該下台就下台，向全台灣人民說一句「失禮！」\n\n傍晚，龍介在凱道與大家見面！作伙為食安、為家人、為孩子討一個公道！",
-      "topicScores": {
-        "治安": 0.58,
-        "社福": 0.84,
-        "競選": 0.93
-      },
-      "topics": [
-        "競選",
-        "社福",
-        "治安"
-      ],
-      "url": "https://www.instagram.com/p/DbMqpUDSI1D/"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-26T22:02:16+00:00",
-        "inputHash": "d8a73364a5d2892e935e0890a796b0f74b48444a892bddacc22a5f4c914b9a34",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1613232320158350",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5d518d4422a49a28d4a5.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-25T01:44:57.000Z",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "以毒油事件號召上凱道，屬回應式攻防動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "毒油事件至今，人民等不到賴政府的謙卑反省，也等不到一句有誠意的道歉。\n\n就是今天，請各位好朋友們一起站出來，走上凱道，要求民進黨政府把食安真相說清楚、把責任交代明白，該負責就負責，該下台就下台，向全台灣人民說一句「失禮！」\n\n傍晚，龍介在凱道與大家見面！作伙為食安、為家人、為孩子討一個公道！",
-      "topicScores": {
-        "社福": 0.78,
-        "競選": 0.7,
-        "醫療": 0.76
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "競選"
-      ],
-      "url": "https://www.facebook.com/TEL062268268/posts/pfbid0ZgGyjKJ89XG4Nv5jS2Gw2FMknSUymvM1MKHo7VU6CnZDfvuCXr7CQxuJXzT2xLJel"
-    },
-    {
-      "agendaRelevance": 0.84,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-07-25T04:03:21+00:00",
-        "inputHash": "4e9a33c8779bbbb26158d487009931a8f1607df0f81a7e90e20e874fd1e03e3c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbMencSkbwV/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/56104a1e9e9c68e2ea5c.webp",
-      "keywords": [
-        "教育",
-        "敬老"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-25T00:00:47+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "提出都更、YouBike、敬老卡與教育示範區等市政政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "昨晚廟口開講來到 #前金萬興宮 ，雖然下著雨，但看著大家穿著雨衣、撐著傘一路相挺，始終沒有離開，真的非常感動。\n\n前金區雖然不大，卻是高雄的重要核心，過去從金融重鎮、議會所在地，到大立商圈與愛河沿岸，承載著許多高雄人的記憶與榮光。\n\n隨著國賓飯店拆除、市議會遷移及人口老化，前金也面臨新的挑戰；所以我提出老屋重建、都市更新及YouBike前30分鐘免費、敬老卡點數增加到1000點、喘息券48小時等政策，希望讓前金再次風華再現、鄉親都能安居樂業。\n\n高雄的中央公園在前金，這裡有歷史、有文化，也有我童年的回憶；我希望未來的前金不只是「鍍金」，而是孩子在這裡生活都能發光發熱，所以我要把前金打造為教育示範區，讓每個孩子在此都能適性發展。\n\n我站在祖師爺面前，向所有鄉親承諾，未來一定與議員、里長攜手打拚，守護高雄、建設高雄，讓前金風華再現，讓高雄的春天從前金重新出發。\n\n今天我也將前往 #凱道 ，與關心 #食安 的民眾站在一起。十年前，台灣曾因地溝油事件震驚社會，十年後，面對癌油爭議，人民依然必須走上街頭發聲；為了我們的孩子、為了家人的健康，當沉默無法換來改變，就一起將怒吼喊出來。我們凱道見！\n\n#高雄 #前金 #有志一同\n高雄市議員 許采蓁 參選人 黃裕庭/傾聽民意，庭進議會\n謝謝助講來賓也是高雄女兒 柳采葳",
-      "topicScores": {
-        "交通": 0.68,
-        "住宅": 0.89,
-        "教育": 0.84,
-        "社福": 0.71
-      },
-      "topics": [
-        "住宅",
-        "教育",
-        "社福",
-        "交通"
-      ],
-      "url": "https://www.instagram.com/p/DbMencSkbwV/"
-    },
-    {
-      "agendaRelevance": 0.24,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-07-25T04:03:21+00:00",
-        "inputHash": "3d85323668e237fbb647f98bcecdf899b25b34f1934de7fa36b0298feb650f68",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbLzKaKkmZR/",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/e52643a6b99b5df1c8d1.webp",
-      "keywords": [
-        "交通",
-        "高鐵"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-24T17:41:36+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "節目內容多為毒油與民怨回應，兼列多項市政雜項。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "【本集介紹】\n📌 拒吃毒油！明天 725 為食安上凱道\n📌 今天立法院通過「未來帳號」\n📌 致癌油事件都還「沒真相」就要重新上架？\n📌 張景森宣布退出民進黨\n📌 韓國瑜曾提出「環島高鐵」全台一日生活圈\n📌 有內幕？裝修公司得標國防部RDX炸藥案「無法履約」\n📌 網友陳情：東門路三段與中華東路三段十字路口路很爛...曾培雅議員週一去會勘\n📌 台南交通罰單每申訴100件「有17件申訴通過」\n📌 網友陳情：臺南市中西區西賢6街13巷地板舖地磚，地板地沉下陷出很大問題...已請蔡宗豪議員安排會勘\n📌 網友Call in：新營車站前路面不平...已請蔡育輝議員協助處理\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
-      "topicScores": {
-        "交通": 0.63,
-        "治安": 0.58,
-        "競選": 0.95
-      },
-      "topics": [
-        "競選",
-        "交通",
-        "治安"
-      ],
-      "url": "https://www.instagram.com/p/DbLzKaKkmZR/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "shen-poyang",
-      "candidate_id": "shen-poyang",
-      "candidate_name": "沈伯洋",
-      "classification": {
-        "classifiedAt": "2026-07-24T16:01:08+00:00",
-        "inputHash": "6e00cb5c4ae6f7f7cffcd80f0b43f10d4a978d1a3ef60696a58cefe0eda7e9a4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbLlFCZEiBl/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/2654b5b845f227acea6a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-07-24T15:38:00+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "宣傳訪美期間的Podcast內容與個人介紹，屬主動曝光非回應他人。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "美國出訪期間\n想更認識沈伯洋？\n\n先把這三集 Podcast 收藏起來。\n\n📍台灣通勤第一品牌EP55\n從求學到走入政治\n\n📍馬力歐陪你喝一杯S8EP169\n台北哪裡卡住了？來聽聽我的解法\n\n📍人間動物園S3EP173\n從黨校體系走上非典型法律路\n\n訪美期間，\n從通勤、城市、人生，一起聊聊我在想什麼。",
-      "topicScores": {
-        "生活": 0.6,
-        "競選": 0.97
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbLlFCZEiBl/"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-07-25T04:03:21+00:00",
-        "inputHash": "60c54acc5fb3ab9c6a1c8665467de53551f6150168e5f9e541e56ec43ed6b796",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbLZmd2CQ0s/",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/8edbf4100842dccbfe11.webp",
-      "keywords": [
-        "參選",
-        "長輩",
-        "照顧"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-24T13:57:43+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "出席同鄉會交接與表態，內容以活動紀錄和支持為主。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "今晚很高興與 韓國瑜 院長及30位議員與議員參選人，一同出席 #旅高同鄉會 理事長聯誼會總會長交接。與來自各地、在高雄落地生根的鄉親相聚。感謝洪俊德總會長任內凝聚各縣市旅高同鄉會的向心力，也祝福新任陳佳田總會長順利接棒，延續這份互助互愛的精神，陳總會長，長期以來熱心公益，必定能繼續帶領旅高同鄉會理事長聯誼會，照顧所有旅居高雄的會員，讓每一位旅居高雄的鄉親，都能感受到家的溫暖。\n\n韓院長說，我們的社會就是一個「五同」的社會：求學階段的「同學」、「同年」，職場上的「同事」、同個姓氏的「同宗」、還有同在一個地區生活的「同鄉」，其中「同鄉」更是我們最重要的社會基礎。\n\n回想我年少時期，許多的長輩篳路藍縷，從不同的地方來到我們高雄打拚，抱持沒有退路的念頭，一路往前打拚。擔任民意代表後，有機會與高雄在海外的同鄉交流，聽到他們如何追逐夢想，在世界各地開花結果，這就是我們台灣人的骨氣和精神。\n\n我常說，高雄是一個熱情且溫暖的城市，無論你來自何處，在這裡一定能找到你的位置，而市長最重要的任務，就是照顧好每一個住在這座城市的人，而韓院長過去擔任市長，用「路平、燈亮、水溝通」，把市民的小事當作市府大事的精神，更是時常提醒著我，一定要把民意擺在第一位。\n\n再次感謝韓院長以及旅高同鄉會的親友們對我的鼓勵，我會繼續加油，讓高雄在歷任市長打下的基礎上，帶領高雄繼續往前、走進世界，讓高雄成為所有人心中最好的夢想海港！\n\n#高雄 #夢想海港 #世界雄心",
-      "topicScores": {
-        "生活": 0.6,
-        "社福": 0.77,
-        "競選": 0.94
-      },
-      "topics": [
-        "競選",
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbLZmd2CQ0s/"
     }
   ],
   "title": "2026 市長官方來源觀測站",

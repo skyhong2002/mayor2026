@@ -1,6 +1,38 @@
 {
-  "count": 142,
+  "count": 143,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "f57b920188598f1f6a14f951cf8527f2772dd7469faef51456f8ef142b4014ee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUwYSokiBw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2eafbd7d3848daa1fb5a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T05:13:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動宣布105市道改善工程開工，核心是道路交通建設。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:105市道蜿蜒段改善工程今天正式動工！",
+      "topicScores": {
+        "交通": 0.95
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbUwYSokiBw"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "su-chiaohui",

@@ -1,6 +1,42 @@
 {
-  "count": 130,
+  "count": 131,
   "posts": [
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-28T10:01:02+00:00",
+        "inputHash": "34f3badb3103ab27912fb76413665390b9496ce7e04b3ee4d47b8329d17cf036",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbVRWekT5U7/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f8e4f6c723b8e968f556.webp",
+      "keywords": [
+        "外交"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-28T09:59:38+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動談台北城市外交與棒球交流，屬對外關係與城市行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "MLB 大都會台灣日，棒球是共同語言，\n也能連結城市與城市之間交流。\n\n這也是我「無限城」城市外交的一環，\n讓台北透過不同方式走向世界。",
+      "topicScores": {
+        "兩岸外交": 0.99,
+        "文化觀光": 0.72
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DbVRWekT5U7/"
+    },
     {
       "agendaRelevance": 0.42,
       "candidateId": "shen-poyang",
