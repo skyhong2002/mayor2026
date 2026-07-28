@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-29 00:03:02"
+        "最近一次執行心跳：2026-07-29 06:03:45"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：27 ms"
+        "耗時：15 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-07-29 00:00:40",
+        "最新抓取時間：2026-07-29 06:03:33",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-07-29 00:00:53",
         "本月已花費：$4.49 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 78.4h, next at 2026-07-31T22:25:35+00:00; ~$4.49 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 72.5h, next at 2026-07-31T16:31:48+00:00; ~$4.49 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,7 +77,7 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-29T00:03:02+08:00",
+  "generatedAt": "2026-07-29T06:03:45+08:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-07-28T14:53:37.000Z",
@@ -96,104 +96,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:00:28+00:00",
-      "sourceId": "su-ch-ig",
-      "sourceName": "蘇巧慧（su-ch-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hammer__lee&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:00:44+00:00",
-      "sourceId": "lee-sc-ig-main",
-      "sourceName": "李四川（lee-sc-ig-main）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hammer_lee0201&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:00:55+00:00",
-      "sourceId": "lee-sc-ig-old",
-      "sourceName": "李四川（lee-sc-ig-old）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:01:10+00:00",
-      "sourceId": "huang-sj-ig",
-      "sourceName": "黃世杰（huang-sj-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=sancheng624&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:01:25+00:00",
-      "sourceId": "chang-sc-ig",
-      "sourceName": "張善政（chang-sc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=a_chun1973&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:01:36+00:00",
-      "sourceId": "ho-hc-ig",
-      "sourceName": "何欣純（ho-hc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=taichungjohnny&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:01:51+00:00",
-      "sourceId": "chiang-cc-ig",
-      "sourceName": "江啟臣（chiang-cc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:02:06+00:00",
-      "sourceId": "chen-tf-ig",
-      "sourceName": "陳亭妃（chen-tf-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hsiehlungchieh&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:02:21+00:00",
-      "sourceId": "hsieh-lc-ig",
-      "sourceName": "謝龍介（hsieh-lc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=marklin_ceo&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:02:37+00:00",
-      "sourceId": "lin-yf-ig",
-      "sourceName": "林義豐（lin-yf-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=zenolai&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:02:48+00:00",
-      "sourceId": "lai-jl-ig",
-      "sourceName": "賴瑞隆（lai-jl-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=prof.kochihen&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T10:03:06+00:00",
-      "sourceId": "ko-ce-ig",
-      "sourceName": "柯志恩（ko-ce-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=pumashen&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-27T16:00:10+00:00",
-      "sourceId": "shen-ig-personal",
-      "sourceName": "沈伯洋（shen-ig-personal）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 400 Bad Request",
-      "platform": "instagram",
-      "recordedAt": "2026-07-28T04:00:25+00:00",
-      "sourceId": "su-ch-ig",
-      "sourceName": "蘇巧慧（su-ch-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 400 Bad Request",
       "platform": "instagram",
@@ -233,6 +135,104 @@
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=prof.kochihen&quot;: 429 Too Many Requests",
       "platform": "instagram",
       "recordedAt": "2026-07-28T04:02:54+00:00",
+      "sourceId": "ko-ce-ig",
+      "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=pumashen&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:00:09+00:00",
+      "sourceId": "shen-ig-personal",
+      "sourceName": "沈伯洋（shen-ig-personal）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=wanan.chiang&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:00:25+00:00",
+      "sourceId": "chiang-wa-ig",
+      "sourceName": "蔣萬安（chiang-wa-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:00:41+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hammer__lee&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:00:56+00:00",
+      "sourceId": "lee-sc-ig-main",
+      "sourceName": "李四川（lee-sc-ig-main）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hammer_lee0201&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:01:08+00:00",
+      "sourceId": "lee-sc-ig-old",
+      "sourceName": "李四川（lee-sc-ig-old）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:01:23+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=sancheng624&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:01:39+00:00",
+      "sourceId": "chang-sc-ig",
+      "sourceName": "張善政（chang-sc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=a_chun1973&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:01:51+00:00",
+      "sourceId": "ho-hc-ig",
+      "sourceName": "何欣純（ho-hc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=taichungjohnny&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:02:06+00:00",
+      "sourceId": "chiang-cc-ig",
+      "sourceName": "江啟臣（chiang-cc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:02:21+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=hsiehlungchieh&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:02:36+00:00",
+      "sourceId": "hsieh-lc-ig",
+      "sourceName": "謝龍介（hsieh-lc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=marklin_ceo&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:02:51+00:00",
+      "sourceId": "lin-yf-ig",
+      "sourceName": "林義豐（lin-yf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=zenolai&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:03:02+00:00",
+      "sourceId": "lai-jl-ig",
+      "sourceName": "賴瑞隆（lai-jl-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=prof.kochihen&quot;: 429 Too Many Requests",
+      "platform": "instagram",
+      "recordedAt": "2026-07-28T22:03:21+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
     }
