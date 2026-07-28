@@ -19,8 +19,48 @@
     "name": "張善政",
     "party": "國民黨"
   },
-  "count": 53,
+  "count": 54,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "d31f4c5ecb1d56ba3ac7cdf14d72f845f9fd6407d00f9cd4350df53da7acdc7e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1808638310625393",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/b337f285664b491120d5.webp",
+      "keywords": [
+        "運動",
+        "冠軍",
+        "文化",
+        "音樂",
+        "美食"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T04:31:30.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主談音樂節結合球星與城市行銷，屬活動推廣。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-fb",
+      "text": "兩屆NBA灌籃大賽冠軍 #ZachLaVine 即將來到桃園！\n\n去年我們邀請Karl-Anthony Towns，今年再把LaVine帶到 #珍珠海岸國際音樂節。\n\n我們希望，珍珠海岸國際音樂節是一場把海港、音樂、運動和多元文化串在一起的夏日盛會，讓每一位來到桃園的旅客，都能感受到這座城市的多元魅力。\n\n這次除了球星交流賽、公益活動之外，我們也會安排LaVine 走進桃園，體驗在地文化、美食與城市風景，藉由他的造訪，讓更多國際友人認識桃園。\n\n這個週末，歡迎大家一起到竹圍漁港，吹吹海風、聽音樂，也近距離一睹NBA 灌籃王的風采。",
+      "topicScores": {
+        "文化觀光": 0.87,
+        "體育": 0.91
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/SanCheng624/posts/pfbid0KaQJn1N9GU7FowS7A8DL9hfktB9JtHsjR1ofccynSNryUtBWJK3oj3gQ2KGKKV4sl"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "chang-san-cheng",

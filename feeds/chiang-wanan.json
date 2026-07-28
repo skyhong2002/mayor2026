@@ -1,6 +1,42 @@
 {
-  "count": 59,
+  "count": 60,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "1603d41f77bcdeee33ca4ffab8ef5b3b21149b4e26143799f091fd21c691c940",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1594458825377402",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T13:31:20.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "為熊本地震祈福並提城市交流，屬災後關懷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "為熊本祈福🙏🏻\n\n今天下午，日本熊本縣發生強震，我代表臺北市向熊本的朋友致上最誠摯的關懷，祈願大家一切平安。\n\n熊本一直是臺北重要的城市夥伴。\n今年1月，熊本縣木村敬知事訪問臺北，當時我們針對青少年交流、運用直航班機促進經濟產業合作，以及交通對策等議題深入交換意見，也期待未來持續深化雙方交流。\n\n天災無情，但城市之間的情誼深厚。\n只要有臺北市可以協助的地方，我們一定全力提供必要的協助。",
+      "topicScores": {
+        "兩岸外交": 0.92,
+        "生活": 0.6,
+        "防災": 0.84
+      },
+      "topics": [
+        "兩岸外交",
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02gurwJT1P2evobb7CRLsBmV9fQv5D4pwEPzYnLQoaFwVLdpXLCZg4bANPFeSfL69ul"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "chiang-wanan",

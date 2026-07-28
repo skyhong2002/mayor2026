@@ -1,6 +1,106 @@
 {
-  "count": 153,
+  "count": 159,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "abc92449b7ff99a8b0cb1f7b21a12f05a754a7df86a590ce47b4e202c5fefbb7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1412282544073672",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/224b0083a06ffb2e5032.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T13:16:44.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為節目或貼文標題，無具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "20260728 談天論地論臺灣",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1412282544073672/"
+    },
+    {
+      "agendaRelevance": 0.56,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "083c70074162538a0f07c434601e98c31e49c07d26261723a78906862299b156",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1616032879878294",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2dd77e7412feb114b6e1.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T10:57:19.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評台南弊案與政風失靈，屬究責監督發文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "臺南弊案一堆，政風處淪把風處？黃偉哲：政風處是中央派的",
+      "topicScores": {
+        "治安": 0.62,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/reel/1195323212787066/"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "332d77f7e57b7094f4583648c0fcd839e68e0d32bf50841b1a8e4f1655aedd0d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVVF5tErD1",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3caa308e5e81e3a97dea.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T10:30:44+00:00",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "指稱臺南弊案並質疑政風處，屬批評監督非回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:臺南弊案一堆，政風處淪把風處？黃偉哲：政風處是中央派的",
+      "topicScores": {
+        "治安": 0.41,
+        "議會監督": 0.87
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DbVVF5tErD1"
+    },
     {
       "agendaRelevance": 0.46,
       "candidateId": "hsieh-lung-chieh",
@@ -36,6 +136,44 @@
         "社福"
       ],
       "url": "https://www.threads.com/t/DbUuM-1j_pn"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "923b3f38e08d13426a4d9d71a6cd49d88592ce0abb06a8396ca82fd263547c26",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1615811169900465",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ccb336632333bf1efd55.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T04:47:21.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動追究毒油事件與政府責任，屬公共衛生與議政監督訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "毒油真相沒交代，卓榮泰下台！賴清德內閣改組！\n\n今天，龍介與國民黨台南市議員共同召開記者會，替台南鄉親、替全台灣人民討一個交代。\n\n食用油無所不在，不管吃葷、吃素，學校營養午餐、國軍伙食、外食便當，攏總離不開油。如今驗出一級致癌物苯駢芘，政府調查半天，責任東推西推，卻連污染源到底從哪裡來，都講不清楚。\n\n更離譜的是，真相還沒查明，行政院就急著讓五百多項產品重新上架。龍介要問：這是在驚人民吃到毒油，還是在驚業者賠太多？其他廠商照規矩做都沒問題，為什麼中央對中聯特別優待？背後到底有沒有人關說、有沒有門神，全部都要查清楚！\n\n連高雄市長陳其邁都在會議上追問，當初「含量未達20%可以不下架」，到底是誰拍板？結果中央互相推諉，沒人敢答覆，更沒人敢負責！\n\n725那天，人民已經走上凱道，用最直接的方式發出怒吼。大家要的不是政治口水，只是真相、道歉，以及有人負責。\n\n結果人民上街之後，賴清德政府還是不知反省，不僅對人民冷嘲熱諷，調查報告依舊輕描淡寫；污染源沒有答案，卻急著讓產品恢復上架。這不是回應民意，是把人民的憤怒當耳邊風！\n\n人民已經站出來，政府若還是聽不見，就代表這個內閣已經失去人民信任。所以，龍介今天要和台南的議員們再次共同呼籲：\n\n賴清德向人民道歉！\n卓榮泰即刻下台！\n行政院全面改組！\n毒油真相徹查到底！\n\n台灣人厚道，但不是好欺負。政府若繼續護航、繼續敷衍，龍介一定跟所有鄉親站作伙，追到底、查到底！",
+      "topicScores": {
+        "生活": 0.4,
+        "社福": 0.61,
+        "議會監督": 0.84,
+        "醫療": 0.74
+      },
+      "topics": [
+        "議會監督",
+        "醫療",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid07YSYhzVbtv7LiVgi8n8vkNVZFe6jR5zdMgmJp4mARrPtujvW72CyHJcZt3uP1zYyl"
     },
     {
       "agendaRelevance": 0.08,
@@ -5469,6 +5607,72 @@
         "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/pJ4mfkAGx4A"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "54bd4c019ee84c0f2579661718b8c2b6d9921e4b8e6669810019f59ffc266ccd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:SGURJJ8Izow",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/43ceec7fce92d311f3ee.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅為直播節目名稱，未見具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260728 談天論地論臺灣 @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=SGURJJ8Izow"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "4d4b1ce055a59b42792b315562e26bec2cf8841875d71bcf8befd51de5d8304a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:AOlesuq2kew",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8402ded0742450145b83.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題指涉臺南弊案與反貪質疑，屬監督批評。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "A Flood of Corruption Scandals in Tainan: Has the Anti-Corruption Office Become a Lookout? Huang ...",
+      "topicScores": {
+        "治安": 0.4,
+        "議會監督": 0.88
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.youtube.com/shorts/AOlesuq2kew"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

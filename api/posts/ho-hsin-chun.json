@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/dbd808e8f24e1d0cf1c7.webp",
+    "avatarUrl": "assets/source-avatars/27c051edf36015b9dfd4.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,42 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 155,
+  "count": 159,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "cdc9109569fc745c27c0619ac16d5cc02730d609b059c2323358356f4b435a16",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbVqGSJGRbb",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T13:34:15+00:00",
+      "postingIntent": {
+        "confidence": 0.89,
+        "label": "主動發文",
+        "reason": "文字偏向職責提醒與政治格言，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:職位、職務、職責\n一言一行、一舉一動\n留友看、留市民看！",
+      "topicScores": {
+        "生活": 0.72,
+        "議會監督": 0.46
+      },
+      "topics": [
+        "生活",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbVqGSJGRbb"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "ho-hsin-chun",
@@ -60,6 +94,44 @@
       "url": "https://www.threads.com/t/DbVQVuLmdQ2"
     },
     {
+      "agendaRelevance": 0.14,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "39cff81f5b93ac1998399cacb0241d9d8513f4e4e0f4a0cc64a58a36c33c8298",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1641780597311348",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "地震",
+        "防災",
+        "災情"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T09:46:13.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "熊本地震災情通知與慰問，非回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "稍早日本熊本發生芮氏規模7.1強震，中央政府正持續掌握最新災情，並做好支援旅日國人及協助救災的各項準備。\n\n提醒旅居鄰近地區的朋友，務必留意當地政府發布的防災資訊，注意餘震及自身安全。\n\n台灣與日本情誼深厚，每當遭遇天災，總是相互扶持、共度難關。面對這次地震，台灣也已做好提供必要協助的準備，衷心期盼災區民眾一切平安。\n\nこのたび熊本県で発生した地震に、心よりお見舞い申し上げます。\n\n台湾と日本はこれまでも互いに支え合ってきた大切な友人です。今回も台湾は必要な支援を行う準備を整えています。\n\n被災された皆様のご無事と、一日も早い復旧・復興を心よりお祈り申し上げます。",
+      "topicScores": {
+        "兩岸外交": 0.62,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "兩岸外交"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid08XtL4bV4DkUGEwXkJEZyEaCUSun4p37L1UjDZYLZ7diTbQrjR9pWzFS1gtHg2zTcl"
+    },
+    {
       "agendaRelevance": 0.28,
       "candidateId": "ho-hsin-chun",
       "classification": {
@@ -95,6 +167,73 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/DbUkZuLGawP"
+    },
+    {
+      "agendaRelevance": 0.48,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "a4cd8b5eddefb1b3c6df7c66882b57d46589ce576c5fe6bd8262a8ad98c21d7e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1641549730667768",
+      "imageAspect": 1.39,
+      "imageUrl": "assets/feed-images/2253d24444100f224d3e.webp",
+      "keywords": [
+        "議會",
+        "監督"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-28T03:22:20.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "批評市長規避監督並呼籲誠實面對議員質疑。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "一個意圖推諉卸責、規避監督的市長，是所有問題的根源！\n\n台中市議會昨天發生了衝突，起因是來自於盧市長到現在仍想要規避，八年市長任內只抽驗一次中聯油品的行政怠惰與失職。\n\n我要譴責任何形式的暴力，更要呼籲盧市長誠實面對所有市民與議員的質疑。\n\n議員代表台中市民監督市政，不容許任何形式的暴力、威脅、與行動限制。雖然盧市長任期只剩下短短五個月，但所有議員發言跟監督的權利，都該被充分尊重，不容打折、更不容許逃避。",
+      "topicScores": {
+        "議會監督": 0.95
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02gGBeEXd8k5cb6mYMAdxsw5REpPh38JdfDVrNKD53nSiPAvko5AcfEto6Cqinb6b8l"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T16:02:07+00:00",
+        "inputHash": "7e3d2fd76494e00f6fe90acb641137fb1dbd259174a7cb34dcbce51a94441691",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1641180607371347",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/9c1d8e1e8d5e76adf6c5.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-27T16:51:56.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享廟口吃蘑菇的日常生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "好吃的蘑菇🍄‍🟫好大的蘑菇🍄‍🟫\n\n今天上午到豐原城隍廟祝壽大典上香，\n因為城隍爺廟在市場裡面，\n看到好大顆的蘑菇🍄‍🟫好開心😀！買！\n\n今天晚上11點參加台中城隍爺廟祝壽大典，\n回到家雖然已經快半夜12點，\n但還是等不及趕快把大蘑菇烤來吃，\n真的是太好吃了😋\n加一點蒜油，加一點萬用胡椒粉就很好吃了😋",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02todf6VuvcUJNQWJgY9c7BroQwhyTGmyLA7bF9bfGhqpunJX2wgB2bnAgcGX269o3l"
     },
     {
       "agendaRelevance": 0.93,
