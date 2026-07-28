@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 151,
+  "count": 152,
   "posts": [
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-28T04:03:20+00:00",
+        "inputHash": "f15d91ed2e28e9115666376419e60f0567a7974bd553bd76685803cd36bcecaa",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUmTkLEgdT",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/6e245ef95cbe6943db5a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-28T03:42:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "屬感謝支持與表態參選，偏競選動員而非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:各界夥伴站出來相挺，感謝大家一路支持，我會一步一腳印，為高雄努力💪",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbUmTkLEgdT"
+    },
     {
       "agendaRelevance": 0.58,
       "candidateId": "lai-jui-lung",

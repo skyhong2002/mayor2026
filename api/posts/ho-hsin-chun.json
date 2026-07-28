@@ -19,8 +19,45 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 150,
+  "count": 152,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T04:03:20+00:00",
+        "inputHash": "21cfce32591bb1dd8dd778c8bfd9b8b70991157022252a6683e0384d60416550",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbUkZuLGawP",
+      "imageAspect": 1.3889,
+      "imageUrl": "assets/feed-images/38f70b50475d14c275ef.webp",
+      "keywords": [
+        "議會",
+        "監督"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-28T03:25:14+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主軸是議會衝突與監督市長失職，屬究責發言。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:一個意圖推諉卸責、規避監督的市長，是所有問題的根源！\n\n台中市議會昨天發生了衝突，起因是來自於盧市長到現在仍想要規避，八年市長任內只抽驗一次中聯油品的行政怠惰與失職。\n\n我要譴責任何形式的暴力，更要呼籲盧市長誠實面對所有市民與議員的質疑。\n議員代表台中市民監督市政，不容許任何形式的暴力、威脅、與行動限制。雖然盧市長任期只剩下短短五個月，但所有議員發言跟監督的權利，都該被充分尊重，不容打折、更不容許逃避。",
+      "topicScores": {
+        "治安": 0.6,
+        "議會監督": 0.93
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DbUkZuLGawP"
+    },
     {
       "agendaRelevance": 0.93,
       "candidateId": "ho-hsin-chun",
@@ -5465,6 +5502,42 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/ybBD-g36fHY"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-28T04:03:20+00:00",
+        "inputHash": "5152bc17fd9a08ceb1d059dc50ee4aaaf017f1da96b38b39e2d123dba3083ee4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:gLfeOeG18Os",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/fb319256926b7c931b47.webp",
+      "keywords": [
+        "國小"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "內容是國小操場改善的活動標題，屬工程紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "建平國小操場改善！何欣純跑道 排水一次做好",
+      "topicScores": {
+        "教育": 0.76,
+        "生活": 0.7
+      },
+      "topics": [
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/gLfeOeG18Os"
     }
   ],
   "version": 1
