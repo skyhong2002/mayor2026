@@ -1,6 +1,38 @@
 {
-  "count": 146,
+  "count": 148,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "b8e0d42cc2c25526ebf2fc9f549a33438fb36ff8f4e450b226a5103b3f717764",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbXlRjmEXfW",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/bd121be5a33b4dcdda3b.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-29T07:30:35+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅轉述作家語句，未涉及公共政策或回應特定主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:作家楊双子說「永和就是答案！」",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbXlRjmEXfW"
+    },
     {
       "agendaRelevance": 0.88,
       "candidateId": "su-chiaohui",
@@ -5443,6 +5475,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=qC6K4QU_djo"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "7aa4ce71fa18dd4b442006f27f6747881e159880ec84092bc3c7ea9a6cea5901",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:9EDAy06--4U",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/41980a97b69fcbfc51dc.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為日常式口號，未涉及具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "So, it turns out Yonghe is the answer!",
+      "topicScores": {
+        "生活": 1.0
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/9EDAy06--4U"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 159,
+  "count": 161,
   "posts": [
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "9b780d0d5408a5eae2f4d8b4a3834bcba1588c16e579e9922d163bd02e71fd11",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbX13TMEnsm",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/be4786fa5c9545019b31.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-29T09:55:35+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動批評臺南貪瀆起訴偏少，屬究責與治安司法議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:臺南弊案那麼多，辦的那麼少？近五年平均一年才送一件貪瀆起訴",
+      "topicScores": {
+        "治安": 0.9,
+        "議會監督": 0.82
+      },
+      "topics": [
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbX13TMEnsm"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "hsieh-lung-chieh",
@@ -5693,6 +5727,40 @@
         "治安"
       ],
       "url": "https://www.youtube.com/shorts/AOlesuq2kew"
+    },
+    {
+      "agendaRelevance": 0.68,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "183a66ee83f5bc74764ecabbb0f9f72de3570b4e57472f38ea1c3a9ee46b8b0e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xwNIKTBAMuQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/72cb732e0b329c7277c7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動談臺南貪瀆案件與起訴數，屬究責批評。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "So Many Corruption Scandals in Tainan, So Few Prosecutions? Only One Graft Case Indicted Per Year...",
+      "topicScores": {
+        "治安": 0.9,
+        "議會監督": 0.81
+      },
+      "topics": [
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/xwNIKTBAMuQ"
     }
   ],
   "version": 1

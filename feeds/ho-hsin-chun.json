@@ -1,6 +1,44 @@
 {
-  "count": 160,
+  "count": 162,
   "posts": [
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "53493bc3ef3c89edb471c8ffcbb298ecaba5b32dcdc2b00449013f6452935c06",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbXeNg6mSYc",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/31688a87afbcc7adfae5.webp",
+      "keywords": [
+        "催票"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-29T06:30:30+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出廚餘處理與食安預算政策，並結合選舉拉票訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:盧市府做不到的，就交給我來完成！\n\n針對很多市民關心的廚餘問題，未來我會加強分流去化、補助建置廚餘機，一步一步解決問題。在食安方面，我主張投入更多預算與人力，提高抽驗頻率，用最嚴格的標準守護市民健康。\n\n懇請大家支持何欣純，幫我拉票、催票，11月28日站出來，用手中的一票，讓台中迎向欣未來。",
+      "topicScores": {
+        "環境": 0.87,
+        "競選": 0.96,
+        "醫療": 0.84
+      },
+      "topics": [
+        "競選",
+        "環境",
+        "醫療"
+      ],
+      "url": "https://www.threads.com/t/DbXeNg6mSYc"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "ho-hsin-chun",
@@ -5797,6 +5835,46 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/ZJDHftJ8YSo"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-29T10:01:17+00:00",
+        "inputHash": "8d9a31c0b1a4eb7692e22e9f064631f603a13eef3601efa558c346be641df40a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:YbeshcBRrIM",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/9689f8d8de7b394236b8.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主打地方建設、農產與運動館政見，並帶有競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "新社不能被忘記！何欣純168市政 挺香菇農 蓋全民運動館 照顧每個世代！",
+      "topicScores": {
+        "文化觀光": 0.48,
+        "競選": 0.95,
+        "經濟": 0.57,
+        "體育": 0.74
+      },
+      "topics": [
+        "競選",
+        "體育",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=YbeshcBRrIM"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",
