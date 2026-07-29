@@ -1,6 +1,82 @@
 {
-  "count": 159,
+  "count": 162,
   "posts": [
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-29T16:03:33+00:00",
+        "inputHash": "860144a02c1fa64ba4e6df94a9fea29a5515bc20ad8cf76c041816e47650e10c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbX7OdfiUkK",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/904367255a5b02cf9b3a.webp",
+      "keywords": [
+        "產業",
+        "科技",
+        "AI"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-29T10:43:39+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動主張結合AI與智慧科技促進產業升級，屬明確經濟政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:高雄具備多元產業條件，更要結合AI與智慧科技，帶動產業升級、創造新機會！\n\n#南方崛起邁向國際 #TheRisingSouth #KaohsiungForTheWorld",
+      "topicScores": {
+        "生活": 0.25,
+        "經濟": 0.9
+      },
+      "topics": [
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbX7OdfiUkK"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-29T16:03:33+00:00",
+        "inputHash": "a253c56173c150c54563df626d4cc09d179950b3ddcc22c172bdbdf4bb3c973b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbX59GXgAou/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/aa2b6283d023a2dba664.webp",
+      "keywords": [
+        "產業",
+        "科技",
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-29T10:31:47+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主軸是高雄產業升級與AI應用，屬方向性願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "高雄具備多元產業條件，更要結合AI與智慧科技，帶動產業升級、創造新機會！\n\n#南方崛起邁向國際 #TheRisingSouth #KaohsiungForTheWorld",
+      "topicScores": {
+        "生活": 0.62,
+        "經濟": 0.82
+      },
+      "topics": [
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbX59GXgAou/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "lai-jui-lung",
@@ -151,6 +227,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbVNhWQkVqk"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-29T16:03:33+00:00",
+        "inputHash": "d5b07c06658ae2fad816d09ccf18b04bf5d51bea2fe264b4cd2d501a635b87fc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbUl2fTFE4U/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/48ba7dd8cd9438f037f4.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-28T03:46:49+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "感謝支持並表態為高雄努力，屬競選式動員，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "各界夥伴站出來相挺，感謝大家一路支持，我會一步一腳印，為高雄努力💪",
+      "topicScores": {
+        "生活": 0.2,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbUl2fTFE4U/"
     },
     {
       "agendaRelevance": 0.58,

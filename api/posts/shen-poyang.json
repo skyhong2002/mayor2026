@@ -19,8 +19,42 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 137,
+  "count": 138,
   "posts": [
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-29T16:03:33+00:00",
+        "inputHash": "cbce2f96a74206abe85bf9f80c210ea04943c70c192ccbc2538c36989a96feea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbX9JFDyo3y/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d606da16eab6a0d4f5b5.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-07-29T11:00:53+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動談城市規劃與台北發展，屬政策願景，非回應他人說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "由在美台灣建築師帶路，我們實際走過紐約核心地區。城市規劃必須有全盤規劃與完善配套，把世界的經驗帶回台北，一起讓台北變得更好。",
+      "topicScores": {
+        "交通": 0.82,
+        "住宅": 0.44
+      },
+      "topics": [
+        "交通",
+        "住宅"
+      ],
+      "url": "https://www.instagram.com/p/DbX9JFDyo3y/"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
