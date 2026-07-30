@@ -1,6 +1,44 @@
 {
-  "count": 38,
+  "count": 39,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "chang-ching",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "cb88bbd70a9ef51087fb8fc9c464912ed876a231c5ee5b1c8dbbad37a5fac35f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:935831686215027",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "犯罪"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-30T03:48:46.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "號召參與司法正義活動，屬倡議動員而非回應特定對手。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-ching-party-fb",
+      "text": "司法改革黨長期關注司法改革、被害人權益保障及人民對公平正義的期待。\n\n司法不只是審判犯罪者，更應重視受害者與家屬在司法程序中的處境，建立讓人民安心的司法制度。\n\n8月1日「81凱道集結 爭司法正義」活動，將針對人民安全、司法正義及被害人權益等議題發聲。\n\n本黨邀請北部地區黨員朋友及關心司法改革的民眾踴躍參與，一同為人民安全與司法正義站出來！",
+      "topicScores": {
+        "治安": 0.84,
+        "生活": 0.62,
+        "社福": 0.88
+      },
+      "topics": [
+        "社福",
+        "治安",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02UjP7NdGRFNoiz8kCfcMDzBRkDFd6FJRH8aEfRzeSRVn6wJCK6NA2CudKq6Eoo9Q6l&id=100093646137173"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "chang-ching",

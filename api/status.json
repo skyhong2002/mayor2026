@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-07-30 12:01:02"
+        "最近一次執行心跳：2026-07-30 18:05:27"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：1555",
+        "已收錄貼文：1608",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：22 ms"
+        "耗時：67 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-07-30 12:00:44",
+        "最新抓取時間：2026-07-30 18:03:29",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -45,10 +45,10 @@
     },
     {
       "details": [
-        "最近成功 run：2026-07-29 00:00:53",
-        "本月已花費：$4.49 / 目標 $4.75",
+        "最近成功 run：2026-07-30 18:03:42",
+        "本月已花費：$4.74 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 43.1h, next at 2026-07-30T11:09:05+00:00; ~$4.49 of $4.75 spent)"
+        "pacing 判斷：monthly budget target reached (~$4.74 of $4.75, run costs ~$0.26); waiting for next month"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：296"
+        "已收錄影片：298"
       ],
       "id": "youtube",
       "label": "正常",
@@ -77,17 +77,17 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-07-30T12:01:02+08:00",
+  "generatedAt": "2026-07-30T18:05:27+08:00",
   "metrics": {
     "candidates": 14,
-    "latestPostAt": "2026-07-30T01:13:56+00:00",
+    "latestPostAt": "2026-07-30T10:00:29.000Z",
     "postsByPlatform": {
-      "facebook": 523,
-      "instagram": 382,
-      "threads": 354,
-      "youtube": 296
+      "facebook": 554,
+      "instagram": 395,
+      "threads": 361,
+      "youtube": 298
     },
-    "totalPosts": 1555,
+    "totalPosts": 1608,
     "watchAccounts": 81
   },
   "overall": {
@@ -96,27 +96,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads RSSHub。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=zenolai&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-28T04:02:39+00:00",
-      "sourceId": "lai-jl-ig",
-      "sourceName": "賴瑞隆（lai-jl-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=prof.kochihen&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-28T04:02:54+00:00",
-      "sourceId": "ko-ce-ig",
-      "sourceName": "柯志恩（ko-ce-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=pumashen&quot;: 429 Too Many Requests",
-      "platform": "instagram",
-      "recordedAt": "2026-07-28T22:00:09+00:00",
-      "sourceId": "shen-ig-personal",
-      "sourceName": "沈伯洋（shen-ig-personal）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=wanan.chiang&quot;: 429 Too Many Requests",
       "platform": "instagram",
@@ -235,6 +214,27 @@
       "recordedAt": "2026-07-29T16:03:06+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=su.chiaohui&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-30T10:00:37+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=schuanglawyer&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-30T10:01:18+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [GET] &quot;https://www.instagram.com/api/v1/users/web_profile_info/?username=chen_tingfei&quot;: 400 Bad Request",
+      "platform": "instagram",
+      "recordedAt": "2026-07-30T10:02:23+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
     }
   ],
   "site": "https://mayor2026.observe.tw",

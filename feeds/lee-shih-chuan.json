@@ -1,6 +1,77 @@
 {
-  "count": 96,
+  "count": 100,
   "posts": [
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "15670cf53a544aaa65a5a66e3d401b0432c0b0fdf50c31b987f45e8550836441",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbaDskqkyqM",
+      "imageAspect": 0.7502,
+      "imageUrl": "assets/feed-images/80bd9233adb6215b79ee.webp",
+      "keywords": [
+        "醫療",
+        "醫院"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-30T06:34:53+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動提出五大醫療政見，並提到跨市觀光廊帶。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:一個簽名，她帶在手機殼上，整整兩個月沒拆。\n\n前陣子我替一位鄉親在手機殼上簽名，本來想說她過幾天換殼就沒了。沒想到兩個月後再遇到，還在。你說，新北人可不可愛？\n\n說真的，這種感動我放在心裡，忘不掉。\n\n今天到三峽，參加無極三清宮的祝壽福宴，宮主陪著我一桌一桌向鄉親打招呼，好多朋友給我鼓勵，讓我更有動力繼續拚。\n\n前陣子我提出五大醫療政見。說實在，三峽、鶯歌、樹林這幾年人口一直增加，我的作法是用 BOT 把時間省下來，哪一區缺，就補哪一區——協助恩主公醫院擴建、強化土城醫療園區、建構高齡醫療照護中心。目標很簡單：讓溪南的鄉親看病，不用再往外跑。\n\n幾天前我也提出「大漢溪縱貫線」，從大稻埕一路串到土城，往南可以接桃園、往北可以接基隆。\n\n這條線的起點在台北，主要路段在新北。這種跨市的線，要兩邊都熟的人才接得起來。\n\n有人把我的名字帶在身上兩個月，這是一種期待。\n\n這條路，我一條一條接起來。",
+      "topicScores": {
+        "文化觀光": 0.78,
+        "生活": 0.62,
+        "醫療": 0.95
+      },
+      "topics": [
+        "醫療",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbaDskqkyqM"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "ff6a59b528235d5f6e0a680f08c39e860d5c7fff2f0d49f467bbc05a141f6352",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1597826111954643",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/dc880e07c4dd080aef9e.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-30T04:12:43.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅抒發與孩子互動及未來願景，無具體公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "40 年來我沒在工地輸過。\n上週末，差點輸給一群小朋友。\n水會乾，笑聲不會。\n下一個想蓋的，是一個會有笑聲的地方。",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1322602183192298/"
+    },
     {
       "agendaRelevance": 0.85,
       "candidateId": "lee-shih-chuan",
@@ -39,6 +110,45 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DbYUbZlmIHj/"
+    },
+    {
+      "agendaRelevance": 0.71,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "38804a55431b035815620d2a13fd1f1c159da66856238de66c7998d651cc6b05",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1597261995344388",
+      "imageAspect": 0.7508,
+      "imageUrl": "assets/feed-images/5b5069245170b6fc96da.webp",
+      "keywords": [
+        "醫療",
+        "醫院"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-29T12:56:22.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動提出五大醫療政見與交通構想，屬明確施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "一個簽名，她帶在手機殼上，整整兩個月沒拆。\n\n前陣子我替一位鄉親在手機殼上簽名，本來想說她過幾天換殼就沒了。沒想到兩個月後再遇到，還在。你說，新北人可不可愛？\n\n說真的，這種感動我放在心裡，忘不掉。\n\n今天到三峽，參加無極三清宮的祝壽福宴，宮主陪著我一桌一桌向鄉親打招呼，好多朋友給我鼓勵，讓我更有動力繼續拚。\n\n前陣子我提出五大醫療政見。說實在，三峽、鶯歌、樹林這幾年人口一直增加，我的作法是用 BOT 把時間省下來，哪一區缺，就補哪一區——協助恩主公醫院擴建、強化土城醫療園區、建構高齡醫療照護中心。目標很簡單：讓溪南的鄉親看病，不用再往外跑。\n\n幾天前我也提出「大漢溪縱貫線」，從大稻埕一路串到土城，往南可以接桃園、往北可以接基隆。\n\n這條線的起點在台北，主要路段在新北。這種跨市的線，要兩邊都熟的人才接得起來。\n\n有人把我的名字帶在身上兩個月，這是一種期待。\n\n這條路，我一條一條接起來。",
+      "topicScores": {
+        "交通": 0.64,
+        "生活": 0.74,
+        "醫療": 0.9
+      },
+      "topics": [
+        "醫療",
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid025mEjMiecqQ78CsQRwBJVm8iouviXWtGZkBG7tHpeP6n1ckC5NvhG7xxTchzEjopFl&id=100051818071280"
     },
     {
       "agendaRelevance": 0.91,
@@ -115,6 +225,43 @@
         "社福"
       ],
       "url": "https://www.instagram.com/p/DbXTjx5mAPW/"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "3019aab119a52227de9619729a0609988ba06da650dc4e53032aea6714178cc8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1596950015375586",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/dbc9e4932ecb4d29b492.webp",
+      "keywords": [
+        "醫師",
+        "補助"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-29T04:52:14.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出孕產補助與心理照護方案，屬具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "說實在，這次的「好孕政策」，是從一個很土的問題開始想的——一個家庭決定要生小孩，接下來要面對的不是一件事，是一長串的事。\n\n產檢要不要加做？高齡了誰幫我追蹤？凍了好幾年的卵，解凍要花多少錢？生完之後情緒掉下去，誰接得住？\n\n所以，我提出四個「安心」。\n\n安心檢：產前遺傳性疾病篩檢加碼補助，最高 3000 元。\n\n安心孕：妊娠糖尿病、妊娠高血壓、孕期憂鬱納入重點照護，有專人持續追蹤、必要時轉介。\n\n安心生：解凍卵補助，從 3 萬提高到 6 萬。這項補助新北是全國第一個做的，我要把它加倍。\n\n安心養：心理照護往前延伸到孕期，加碼 3 次免費心理諮商。\n\n很謝謝  陳菁徽 委員。她是婦產科醫師，也是不孕症權威。這一兩個星期，她跟我們來回討論了很多次——政策不能只有辦公室想的，還要有診間裡看到的。\n\n我是做工程的人，我不會假裝我懂懷孕。但我懂一件事，一條路卡在哪一段最痛苦，補助就要補在那一段。\n\n橋蓋慢了可以趕。\n\n一個孕期，趕不回來。",
+      "topicScores": {
+        "社福": 0.78,
+        "醫療": 0.96
+      },
+      "topics": [
+        "醫療",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0UGByxcsoMb7Mf4VUseB6osHDEueTG7jbhcMzhxcswabDpbjr8EwVka3nxjKnVVYRl&id=100051818071280"
     },
     {
       "agendaRelevance": 0.84,

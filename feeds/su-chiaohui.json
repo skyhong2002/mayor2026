@@ -1,5 +1,5 @@
 {
-  "count": 150,
+  "count": 152,
   "posts": [
     {
       "agendaRelevance": 0.05,
@@ -34,6 +34,44 @@
       "url": "https://www.threads.com/t/DbZeyrtknOk"
     },
     {
+      "agendaRelevance": 0.78,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "84f118a5ff0c01c27e2d158abbedb281f211d9f7b0b5ff97d6d1493912fbbb86",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610528453762318",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/59430bc6afb3b062327f.webp",
+      "keywords": [
+        "社宅"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-30T01:00:52.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明北大郵局啟用與社宅規劃，屬主動政績宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "北大特區郵局正式啟用🎉\n\n2018年我接獲 #北大特區聯合策進會 的陳情後，就和吳琪銘委員積極爭取北大特區設置郵局。感謝中華郵政公司的大力支持，投入近3.2億元經費興建這棟複合式建築。歷經大家多年努力，郵局終於在今年完工，並且在本週正式啟用，開始服務北大特區的鄉親！\n\n這裡不僅提供便利又完善的郵政服務，未來也會有商店、規劃社宅功能，讓大家有更舒適的生活環境。\n\n我會繼續帶領新北隊努力，為鄉親打造更多好建設，一起讓新北各區的生活機能步步升級！",
+      "topicScores": {
+        "交通": 0.62,
+        "住宅": 0.57,
+        "生活": 0.72
+      },
+      "topics": [
+        "生活",
+        "交通",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/2308104299725915/"
+    },
+    {
       "agendaRelevance": 0.05,
       "candidateId": "su-chiaohui",
       "classification": {
@@ -64,6 +102,43 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbXlRjmEXfW"
+    },
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T10:04:53+00:00",
+        "inputHash": "0633f31bf5f18a29973210f495fbc9ca7707371b041bcec6ec08be71ae1bb7dd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610185870463243",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d8baa8d4e9db3a75c4b1.webp",
+      "keywords": [
+        "文化",
+        "美食"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-29T07:30:08.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "與作家聚會談永和美食與城市願景，偏文化生活交流。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "作家楊双子說「永和就是答案！」\n\n我和一群住在永和的文字人相聚，大家從美食脈絡、聊到文化、再暢談城市願景！\n\n楊双子和我團隊中的青年幕僚更開啟了一場永和美食大對決！不只有 海運茶坊 、K珈琲小売所 、共緬之-緬甸奶茶 還有胡椒餅、雞蛋糕等在地美食！\n\n永和匯聚各方文化，各個族群在這裡自然交織、多元共融，豐富的層次正是台灣社會最珍貴也最理想的模樣。原來，永和就是答案！\n\n（和大家談得太開心，一不小心聊太多，未完待續🤣敬請期待！）",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "生活": 0.6
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1579935593725149/"
     },
     {
       "agendaRelevance": 0.88,
