@@ -19,8 +19,42 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 147,
+  "count": 150,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "13cc29544f1c946ebcee73362ae53bd9228250eeaf6a70ad261e300ee27b21af",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbaz5GvFP9r",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c1c71628382edd047f2c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T13:36:02+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動談訪美成果與對台北助益，屬政務宣傳，非回應他人說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:這次訪美短短8天，行程超緊湊，\n我們把世界的連結建立起來，\n也帶回台北痛點的解方。\n\n未來也會繼續從世界取經，為台北加速。",
+      "topicScores": {
+        "兩岸外交": 0.89,
+        "競選": 0.54
+      },
+      "topics": [
+        "兩岸外交",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dbaz5GvFP9r"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "shen-poyang",
@@ -5403,6 +5437,70 @@
         "教育"
       ],
       "url": "https://www.youtube.com/watch?v=gWhnc3Z289A"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "95112c21d834bcdbb68d35ddf9a0caa45a3b62244e8eaeaca7665f2d87f324c5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:dHgLUt24Nhs",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/37761ea4c4af80290383.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅是學日文與動漫閒聊，無公共議題或政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "As an anime nerd, it’s only logical to learn some Japanese from Ben-san. I’ve got a phrase I want...",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/dHgLUt24Nhs"
+    },
+    {
+      "agendaRelevance": 0.4,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "18bc66527d569e5931cdb05eb6720fbdfb18002b5269d3f20bfd15fe57769e74",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:2BB-sWLbiZA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3cb80c808cbfed2cc0d4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動宣傳訪美行程與國際連結成果，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Our intense 8-day trip to the U.S. successfully built global connections and brought home solutio...",
+      "topicScores": {
+        "兩岸外交": 0.9
+      },
+      "topics": [
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/shorts/2BB-sWLbiZA"
     }
   ],
   "version": 1

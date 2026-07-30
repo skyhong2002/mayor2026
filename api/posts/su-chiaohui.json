@@ -19,8 +19,44 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 152,
+  "count": 154,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "92da2867e125dd0800a21a6c687db6e450e5a79369c78e1c602617c253851ec8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbamIVzj4mZ",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/f7063f52a4920d625198.webp",
+      "keywords": [
+        "國小"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-30T11:35:47+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為親子活動與活動邀約，屬一般生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:這幾次到🎡水獺媽媽樂園和小水獺們玩，最受歡迎的活動居然是⋯大家一起把超大拼圖弄亂🤣\n\n想加入我們「弄亂任務」的小水獺，這禮拜日（8/2）鶯歌國小見囉！",
+      "topicScores": {
+        "教育": 0.62,
+        "生活": 0.84
+      },
+      "topics": [
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DbamIVzj4mZ"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "su-chiaohui",
@@ -5666,6 +5702,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/r5w1T6biIBw"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "df56943aaca46c07e54c0c9b9feede52a66f4248438a7c7c20da34cb437296e6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Nsm8XueQ7_0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e1aea1c3a2ba3d91f7a7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是拼圖活動標題，屬活動紀錄與生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "The Giant Puzzle Mess-Up Mission🧩",
+      "topicScores": {
+        "教育": 0.64,
+        "生活": 0.8
+      },
+      "topics": [
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/Nsm8XueQ7_0"
     }
   ],
   "version": 1

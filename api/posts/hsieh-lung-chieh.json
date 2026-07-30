@@ -19,8 +19,40 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 172,
+  "count": 174,
   "posts": [
+    {
+      "agendaRelevance": 0.81,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "3b137acd70474ff295388576f2599fe01e3be2a454fee2b11d188d9384044e29",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbac7DXDq5M",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4feb34c241449adbfc57.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T10:15:22+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "反映路面坎坷並安排會勘，屬主動處理交通問題的政務。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:民眾陳情：東門路與中華東路路面坎坷，曾培雅議員&amp;參選人歐政豪完成會勘",
+      "topicScores": {
+        "交通": 0.95
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/Dbac7DXDq5M"
+    },
     {
       "agendaRelevance": 0.15,
       "candidateId": "hsieh-lung-chieh",
@@ -6157,6 +6189,38 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/iKcNKgpagG0"
+    },
+    {
+      "agendaRelevance": 0.8,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "841b5f2cda7ba3e542d412f6a982d6aa4ba59004906281e8e8d940c413cb5c0c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Y9RAJ0w3Z38",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e38e12354254f5c7a864.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容是民眾陳情道路不平與議員會勘，屬交通問題處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Public Complaint: Uneven Road Surface at Dongmen Rd and Zhonghua E. Rd, Councilwoman Tseng Pei-ya...",
+      "topicScores": {
+        "交通": 0.94
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/Y9RAJ0w3Z38"
     }
   ],
   "version": 1

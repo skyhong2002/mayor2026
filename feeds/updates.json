@@ -2,6 +2,114 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.42,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "13cc29544f1c946ebcee73362ae53bd9228250eeaf6a70ad261e300ee27b21af",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbaz5GvFP9r",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c1c71628382edd047f2c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T13:36:02+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動談訪美成果與對台北助益，屬政務宣傳，非回應他人說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:這次訪美短短8天，行程超緊湊，\n我們把世界的連結建立起來，\n也帶回台北痛點的解方。\n\n未來也會繼續從世界取經，為台北加速。",
+      "topicScores": {
+        "兩岸外交": 0.89,
+        "競選": 0.54
+      },
+      "topics": [
+        "兩岸外交",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dbaz5GvFP9r"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "92da2867e125dd0800a21a6c687db6e450e5a79369c78e1c602617c253851ec8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbamIVzj4mZ",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/f7063f52a4920d625198.webp",
+      "keywords": [
+        "國小"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-30T11:35:47+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為親子活動與活動邀約，屬一般生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:這幾次到🎡水獺媽媽樂園和小水獺們玩，最受歡迎的活動居然是⋯大家一起把超大拼圖弄亂🤣\n\n想加入我們「弄亂任務」的小水獺，這禮拜日（8/2）鶯歌國小見囉！",
+      "topicScores": {
+        "教育": 0.62,
+        "生活": 0.84
+      },
+      "topics": [
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DbamIVzj4mZ"
+    },
+    {
+      "agendaRelevance": 0.81,
+      "candidateId": "hsieh-lung-chieh",
+      "candidate_id": "hsieh-lung-chieh",
+      "candidate_name": "謝龍介",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "3b137acd70474ff295388576f2599fe01e3be2a454fee2b11d188d9384044e29",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbac7DXDq5M",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4feb34c241449adbfc57.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T10:15:22+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "反映路面坎坷並安排會勘，屬主動處理交通問題的政務。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:民眾陳情：東門路與中華東路路面坎坷，曾培雅議員&amp;參選人歐政豪完成會勘",
+      "topicScores": {
+        "交通": 0.95
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/Dbac7DXDq5M"
+    },
+    {
       "agendaRelevance": 0.05,
       "candidateId": "ho-hsin-chun",
       "candidate_id": "ho-hsin-chun",
@@ -3831,126 +3939,6 @@
         "兩岸外交"
       ],
       "url": "https://www.facebook.com/94achun/posts/pfbid08XtL4bV4DkUGEwXkJEZyEaCUSun4p37L1UjDZYLZ7diTbQrjR9pWzFS1gtHg2zTcl"
-    },
-    {
-      "agendaRelevance": 0.92,
-      "candidateId": "lai-jui-lung",
-      "candidate_id": "lai-jui-lung",
-      "candidate_name": "賴瑞隆",
-      "classification": {
-        "classifiedAt": "2026-07-28T16:02:07+00:00",
-        "inputHash": "a62059024b9bc08841c523a91256e545fc10ca0cd975df84e65d07fee950110b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1621056059376058",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/3a577f6e13ecc5e24edc.webp",
-      "keywords": [
-        "交通",
-        "道路",
-        "警察",
-        "毒品"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-28T09:25:29.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動公布毒駕修法內容，屬明確交通與治安政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-fb",
-      "text": "毒駕零容忍！《道路交通管理處罰條例》部分條文修正案三讀通過！\n\n近年新興毒品氾濫，毒駕肇事案件頻傳，每一起事故，都可能摧毀一個家庭。\n\n為阻止吸毒者開車上路，我與16位立委共同提出修法，從駕駛資格、罰鍰、車輛沒入及重新考照等面向，建立更完整的「毒駕零容忍」防護網：\n\n✅ 毒駕初犯，直接吊銷駕照\n吸毒本身就是違法行為，不能再比照酒駕僅吊扣駕照。未來經檢測確認吸食毒品或管制藥品者，將直接吊銷駕照。\n\n✅ 確認吸毒，從源頭廢止駕照\n經警察及檢驗機關確認吸食毒品者，即使尚未實際駕車，也將廢止駕照，避免在藥效影響下開車釀成悲劇。\n\n✅ 拒絕檢測，強制沒入車輛\n拒絕接受毒品檢測者，將強制沒入所駕駛的汽機車，避免以拒檢規避責任。\n\n✅ 吊照期間仍違法上路，加重處罰\n毒駕遭吊銷駕照後仍無照駕駛，將提高加罰金額至新臺幣3萬6千元，累犯加罰沒有上限，並強制沒入車輛。\n\n✅ 同車乘客負有勸阻責任\n成年乘客若明知駕駛人吸毒卻未勸阻，也將納入連坐處罰，透過周邊監督共同阻止毒駕發生。\n\n✅ 完成戒癮治療，才能重新考照\n因毒駕或吸毒遭吊銷駕照者，未來必須完成防制教育、戒癮治療或毒品危害講習，並通過考驗及觀察期，確認無再犯風險後，才能重新取得駕照。\n\n每一條被毒駕奪走的生命，都是無數家庭永遠的痛。我們不能等悲劇發生後才追究責任，必須用更嚴格的法律，從源頭阻止毒駕上路。\n\n感謝跨黨派立委、交通部及警政署共同支持。法案通過後，我也會持續監督毒品快篩、採驗程序、戒癮評估及執法配套，確保修法真正落實。\n\n毒駕零容忍，我們會全力守護每一位用路人的安全！",
-      "topicScores": {
-        "交通": 0.98,
-        "治安": 0.68
-      },
-      "topics": [
-        "交通",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/zenolai2/posts/pfbid0dBJJfnGTWKUMFe1gzvFokZHdKPeSwMUYMUfb1TL76gUKAKUCLRNqXzisnNmuZCMGl"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "lai-jui-lung",
-      "candidate_id": "lai-jui-lung",
-      "candidate_name": "賴瑞隆",
-      "classification": {
-        "classifiedAt": "2026-07-28T10:01:02+00:00",
-        "inputHash": "2f1352970f8c335936c6b56b848112b6da63192d7845da1b20a4ff282ee0ef4f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbVNhWQkVqk",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "災情"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-28T09:24:32+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅是熊本地震的災情關懷與安全提醒，非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:日本熊本縣稍早發生規模7.1強震，災情仍在持續確認。\n\n祈願熊本及受影響地區的民眾平安，也提醒正在日本的台灣朋友，隨時留意官方最新資訊、遠離海岸地區，務必注意安全。\n\n為所有受到影響的民眾祈福，願一切平安🙏",
-      "topicScores": {
-        "生活": 0.66,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbVNhWQkVqk"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "huang-shih-chieh",
-      "candidate_id": "huang-shih-chieh",
-      "candidate_name": "黃世杰",
-      "classification": {
-        "classifiedAt": "2026-07-28T10:01:02+00:00",
-        "inputHash": "839b016db0baae9abd002f47a3e0623b7b56bd8b4e4392c0de5cb9ee9551ca57",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbVG56RGlgE",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/4f0b5003e971da01543b.webp",
-      "keywords": [
-        "經濟",
-        "市集"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-28T08:26:44+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "內容是市場掃街與活動動員，主要在日常宣傳而非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:明天早上10:00，動起來！興國市場掃街✨\n\n興國市場曾獲「菜市場界金馬獎」，經濟部五星級優良市集的認證🌟是中壢市區指標性的現代化傳統市場，更是許多鄉親朋友日常採買的好所在！\n\n明天上午興國市場見！心中壢，動起來💖",
-      "topicScores": {
-        "文化觀光": 0.78,
-        "生活": 0.94,
-        "經濟": 0.86
-      },
-      "topics": [
-        "生活",
-        "經濟",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/DbVG56RGlgE"
     }
   ],
   "title": "2026 市長官方來源觀測站",
