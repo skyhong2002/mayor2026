@@ -1,6 +1,49 @@
 {
-  "count": 163,
+  "count": 165,
   "posts": [
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "73cf09a88537a4f73bd90e7158bddf2cf8ac138f14376649719df14e9f16973f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbZecwTmZs4",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/791523f7bf26b4d9edcb.webp",
+      "keywords": [
+        "議會",
+        "法案",
+        "垃圾",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-30T01:09:25+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主要質疑市府油品抽驗、食安與議員是否失職，屬主動究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:8年只抽驗一次中聯油品，江副院長認為這樣的盧市府及格嗎？\n\n江副院長總是出現在電視敲槌、出現在盧市長的左右兩側，但只要一碰到盧市府的市政問題，兒虐、性侵、非洲豬瘟、廚餘垃圾、油品食安….，你就神隱不吭聲，就連攸關台中產業轉型升級的無人機法案，你也選擇閃躲，不發聲、不出席、不投票，台中產業大重傷。\n\n我再問，盧市長在議會公然說市府抽驗廠商油品，「得」不是「必須」，沒有強制性，江副院長你的態度是什麼？",
+      "topicScores": {
+        "治安": 0.58,
+        "環境": 0.62,
+        "經濟": 0.53,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "環境",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbZecwTmZs4"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ho-hsin-chun",
@@ -5909,6 +5952,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/oGpAEnUwTYQ"
+    },
+    {
+      "agendaRelevance": 0.48,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "a3030889523d1f9d398d0cbc0569acd7fc44365a6afadd349d3024365864c95f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:F3fMePxxI4A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3ed53998522c90d009e7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "標題僅顯示回應鄉親關切，未見具體回應對象與政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "神岡鄉親最關心的事 何欣純回應了！",
+      "topicScores": {
+        "生活": 0.7,
+        "社福": 0.45,
+        "議會監督": 0.55
+      },
+      "topics": [
+        "生活",
+        "議會監督",
+        "社福"
+      ],
+      "url": "https://www.youtube.com/shorts/F3fMePxxI4A"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

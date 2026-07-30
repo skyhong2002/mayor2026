@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 138,
+  "count": 139,
   "posts": [
     {
       "agendaRelevance": 0.78,
@@ -5062,6 +5062,42 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/8ABqjv2KORs"
+    },
+    {
+      "agendaRelevance": 0.56,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "dd82b2c2d078ef86066535c5ab78baf7b20d920b1c50558dbe47d1fa770f97b8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:gWhnc3Z289A",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/a50dd58222e14c5c373a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是訪美成果記者會，主軸為對外交流與城市發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "沈伯洋訪美成果記者會｜從世界取經，為台北加速！",
+      "topicScores": {
+        "兩岸外交": 0.71,
+        "教育": 0.41,
+        "文化觀光": 0.44
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/watch?v=gWhnc3Z289A"
     }
   ],
   "version": 1

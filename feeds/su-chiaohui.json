@@ -1,6 +1,38 @@
 {
-  "count": 148,
+  "count": 150,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "b38031b39b35fa981fe4e3834e56bd339ec2ae1261ae5efa83704f1bae309588",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbZeyrtknOk",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/828d4167e64e851a9255.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T01:13:56+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅宣布北大特區郵局啟用，屬一般生活資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:北大特區郵局正式啟用🎉",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbZeyrtknOk"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "su-chiaohui",
@@ -5507,6 +5539,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/9EDAy06--4U"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "aefc1d3a02d618ce1ddd10b8fcca987df4359294afd4c77025fa1c95fd0af758",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:r5w1T6biIBw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e0ea54eb36c71470017c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為郵局開幕英文標示，屬活動公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Grand Opening of the Beida Special District Post Office🎉",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/r5w1T6biIBw"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

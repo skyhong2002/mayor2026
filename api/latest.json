@@ -2,6 +2,81 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "b38031b39b35fa981fe4e3834e56bd339ec2ae1261ae5efa83704f1bae309588",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbZeyrtknOk",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/828d4167e64e851a9255.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-07-30T01:13:56+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅宣布北大特區郵局啟用，屬一般生活資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:北大特區郵局正式啟用🎉",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbZeyrtknOk"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "73cf09a88537a4f73bd90e7158bddf2cf8ac138f14376649719df14e9f16973f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbZecwTmZs4",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/791523f7bf26b4d9edcb.webp",
+      "keywords": [
+        "議會",
+        "法案",
+        "垃圾",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-30T01:09:25+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主要質疑市府油品抽驗、食安與議員是否失職，屬主動究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:8年只抽驗一次中聯油品，江副院長認為這樣的盧市府及格嗎？\n\n江副院長總是出現在電視敲槌、出現在盧市長的左右兩側，但只要一碰到盧市府的市政問題，兒虐、性侵、非洲豬瘟、廚餘垃圾、油品食安….，你就神隱不吭聲，就連攸關台中產業轉型升級的無人機法案，你也選擇閃躲，不發聲、不出席、不投票，台中產業大重傷。\n\n我再問，盧市長在議會公然說市府抽驗廠商油品，「得」不是「必須」，沒有強制性，江副院長你的態度是什麼？",
+      "topicScores": {
+        "治安": 0.58,
+        "環境": 0.62,
+        "經濟": 0.53,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "環境",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbZecwTmZs4"
+    },
+    {
       "agendaRelevance": 0.85,
       "candidateId": "lee-shih-chuan",
       "classification": {
@@ -3692,87 +3767,6 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbRj2mbk55Z"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-07-26T16:03:32+00:00",
-        "inputHash": "e87828684eda92c762dfffaad06bd00825ab2c45807fe6a7e2d87b2cb9a91bfb",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbQt4cAiauN",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/a9c84447875afa8f5f44.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-26T15:31:06+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "只是岡山廟口開講與地方情感描述，偏選舉行程。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:岡山對我而言，每到這裡，就有回家的感覺；而它的未來，將是高雄起飛的關鍵引擎。\n\n今晚來到岡山「前峰龍峰宮」舉辦「廟口開講」。謝謝高雄女婿-羅智強 @debate.locc 委員的助講，也感謝鄉親的熱情相挺，我們歡唱跳舞、暢聊高雄的未來，一起度過美好的夜晚。\n\n以前我搭國光或統聯回到南部，岡山是高速公路的最後一個收費站。每當到了岡山，就知道快到家了。因此這裡對我來說，就是一種回家的感覺。\n\n但現在，我對岡山有更多夢想、更多藍圖。",
-      "topicScores": {
-        "文化觀光": 0.78,
-        "競選": 0.96
-      },
-      "topics": [
-        "競選",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/DbQt4cAiauN"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-07-26T22:02:16+00:00",
-        "inputHash": "51884a93101422d8a20c6ddafb4ce4f735227c689b0c834da4326580d7d287e0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1619536162861381",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/660e195c1044e7aa91ab.webp",
-      "keywords": [
-        "托育",
-        "育兒",
-        "弱勢",
-        "照顧",
-        "產業",
-        "科技",
-        "醫療",
-        "租金"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-26T14:33:22.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "多場拜訪活動中提出托育、醫療與漁業建設方向。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-fb",
-      "text": "選戰腳步日漸逼近，把握每一場行程，向不同領域的夥伴請益，一起為高雄的人才培育、產業發展與公益服務打拚。\n\n📣岡山行天宮參拜\n\n來到岡山行天宮，恭祝威靈天元君聖誕千秋、神威顯赫！感謝蔡嘉臻會長、周文元總幹事及宮廟幹部用心推動廟務，延續地方信仰與庄頭感情。祈求神明庇佑地方平安、百業興旺，鄉親闔家安康。\n\n📣岡山福德慈善會會員大會\n\n岡山福德慈善會成立近40年，長期投入急難救助、清寒獎學金、偏鄉義診及物資援助，在鄉親需要幫助時及時伸出援手。\n\n感謝鄭金城理事長與全體理監事、志工的付出，也恭喜侯國輝理事長接下重任，祝福會務順利、公益服務持續推展。\n\n育兒、樂齡及弱勢照顧，我也會做得更完善，讓更多需要幫助的家庭獲得支持。\n\n📣高雄市大仁科技大學校友會會員大會\n\n適逢大仁科大創校60週年，60歲生日快樂！\n\n大仁科大多年來培育許多醫療、職安、幼保等領域人才，鄭志民理事長及高雄市校友會也長期凝聚校友情誼。感謝大家不僅在專業領域發揮所長，也為南台灣發展貢獻心力。\n\n接下來我也將推動智慧醫療、完善托育及職場安全，創造更多發展機會，讓各領域專業在高雄扎根。\n\n📣高雄市魚類商業同業公會會員代表大會\n\n天還沒亮，許多漁業夥伴就已經開始忙碌。從漁獲拍賣、批發到冷鏈運輸，每一個環節，都維繫著高雄水產品的供應與市場運作。\n\n感謝陳信豐理事長、劉建雄總幹事及公會幹部，多年來協助會員、串聯業界，為高雄漁業打拚。\n\n從擔任高雄市海洋局長到進入立法院，我始終關心海洋政策與漁業第一線的工作需求，也爭取前鎮漁港81億元改造計畫，改善港區環境、魚市場及冷鏈設施。針對多功能水產品運銷中心的租金、空間規劃及作業動線，也會協助中央、地方及業界溝通，讓建設更符合實際作業需求。\n\n一天的行程告一段落，但為高雄打拚的腳步不會停下來。我會繼續和各界並肩努力，讓高雄持續進步，成為更宜居、更有溫度的城市。\n\n黃彥毓 前鎮小港 我願意 陳慧文 高雄市議員 高雄市議員郭建盟 黃文志 高雄市議員 黃秋媖-動保議員 尹立 左營楠梓市議員參選人 蔡秉璁 高雄向前衝 黃捷 服務團隊 高雄市議會副議長曾俊傑 服務團隊李雅慧 高雄市議員 服務團隊 林志誠-高雄市議員 服務團隊",
-      "topicScores": {
-        "住宅": 0.45,
-        "社福": 0.8,
-        "經濟": 0.72,
-        "醫療": 0.64
-      },
-      "topics": [
-        "社福",
-        "經濟",
-        "醫療",
-        "住宅"
-      ],
-      "url": "https://www.facebook.com/zenolai2/posts/pfbid02KWoAodHDX1fmsTfopuqFkHdQ77Coo3E6Lfm2tddi3MPBiZb2iJvVajRsywvNRRwTl"
     }
   ],
   "version": 1
