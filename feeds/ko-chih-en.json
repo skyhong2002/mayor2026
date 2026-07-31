@@ -1,6 +1,51 @@
 {
-  "count": 154,
+  "count": 156,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "a63d9097f1056d8b06b82a261f78315ff86ac762debb2586b40ff40237c590bf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbapExxE5hg/",
+      "imageAspect": 1.3348,
+      "imageUrl": "assets/feed-images/171b89842bf680f67d93.webp",
+      "keywords": [
+        "長照",
+        "老人",
+        "長輩",
+        "敬老",
+        "照顧",
+        "醫療",
+        "交通",
+        "台鐵"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-30T12:01:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張調整敬老卡、就醫接駁與敬老金，屬具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "今日來到 #高雄市茄萣老人福利協進會 ，和許多長輩朋友見面聊天，也感謝協進會長期辦理各項關懷與聯誼活動，讓長輩們有更多交流陪伴的機會。\n\n#茄萣 是一個充滿人情味的海線小鎮，許多長輩一輩子靠海討生活、養育家庭，也為高雄的發展打下基礎；年輕時替社會打拚，到了晚年，他們最簡單的期待，就是生活方便一點、看病容易一點。\n\n然而，茄萣是 #高齡化 相當明顯的行政區，65歲以上人口已接近全區兩成，老化指數超過200；由於位處高雄北端、交通不便，許多長輩就醫往往需要轉乘多種交通工具，即使區內已有衛生所、日照中心及長照資源，較大型醫療需求仍須前往路竹、岡山甚至高雄市區。\n\n因此，敬老政策不能只用市中心的角度思考，對茄萣、永安、彌陀等海線地區長輩而言，交通接駁與跨區就醫才是真正的生活課題。\n\n所以我主張讓敬老政策更貼近需求：\n\n✅ 敬老卡每月點數由600點提高至1000點，未用完可累積。\n✅ 擴大使用範圍，提高台鐵及醫療折抵額度，讓敬老卡成為真正的生活卡。\n✅ 加碼重陽敬老金，減輕長輩面對通膨的生活壓力。\n✅ 推動智慧敬老手環，結合健康監測、定位與緊急求救功能，守護長輩安全。\n\n今天的高雄，是上一代用雙手與汗水一步步打拚出來的；敬老不只是照顧長輩，更是感謝他們對城市的付出；未來我會持續努力，讓長輩少一點不便、多一點自主，出得了門、看得到醫生、過得有尊嚴，共同打造更友善、更幸福的高雄。\n\n#柯志恩 #高雄 #敬老 #政策",
+      "topicScores": {
+        "交通": 0.79,
+        "社福": 0.97,
+        "醫療": 0.86
+      },
+      "topics": [
+        "社福",
+        "醫療",
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/DbapExxE5hg/"
+    },
     {
       "agendaRelevance": 0.86,
       "candidateId": "ko-chih-en",
@@ -5941,6 +5986,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/da_3ZRiezKw"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "53b28436771f2bf914f7755d42ef9587fba354d56972067bde34be79c4a78466",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:if-MDiF_Jvg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/69e2706da3fb64473a0e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "內容為夜市探訪與活動紀錄，未見回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Mayor Chang San-cheng makes a special trip south to Kaohsiung as we explore #LiuheNightMarket to ...",
+      "topicScores": {
+        "文化觀光": 0.94,
+        "生活": 0.62
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/if-MDiF_Jvg"
     }
   ],
   "title": "柯志恩（高雄市）貼文更新",

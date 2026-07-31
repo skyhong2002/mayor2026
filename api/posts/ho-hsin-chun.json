@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 170,
+  "count": 172,
   "posts": [
     {
       "agendaRelevance": 0.05,
@@ -6191,6 +6191,74 @@
         "社福"
       ],
       "url": "https://www.youtube.com/shorts/F3fMePxxI4A"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "2a01015cc988543ece3b9e637a76dddf87da60b4f0e74fda8176f27e729e7de4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Yv6NydulYgU",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/bf049009e599b65ff5f9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "標題談東勢產業發展與山城藍圖，屬主動提出發展方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "東勢要發展不只可以靠水果！何欣純提出山城新藍圖",
+      "topicScores": {
+        "文化觀光": 0.68,
+        "經濟": 0.7
+      },
+      "topics": [
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=Yv6NydulYgU"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "e7cbf1cbf201f8bcee947b014dfe2b88b5f60b54b79fd1f42f1b730ceddb312c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:f3VKGDX7L8U",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7a39741b57b417854598.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "標題為選舉力挺與城市主張，明顯屬競選發文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "林佳龍力挺何欣純接棒！台中不能空轉 讓城市\"重欣\"向前",
+      "topicScores": {
+        "競選": 0.98,
+        "經濟": 0.52
+      },
+      "topics": [
+        "競選",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/f3VKGDX7L8U"
     }
   ],
   "version": 1

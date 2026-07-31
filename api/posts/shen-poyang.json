@@ -19,8 +19,44 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 150,
+  "count": 152,
   "posts": [
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "870b3871dcb72d424cb8924cb9f1b1a2deb97b070d1da930788855c5917ae015",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dba9420yrqr/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f9be28664cc089ad172f.webp",
+      "keywords": [
+        "動漫"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-30T15:07:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享學日文與影片導流，屬日常生活與宣傳，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "身為一個動漫宅，\n跟Ben桑學個日文也是很合理的。\n\n我也有準備一句想學的日文，\n大家覺得這樣給過嗎？\n\n邀請大家到「Ben桑日本漫談」YT看完整影片！",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "生活": 0.88
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dba9420yrqr/"
+    },
     {
       "agendaRelevance": 0.42,
       "candidateId": "shen-poyang",
@@ -54,6 +90,47 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/Dbaz5GvFP9r"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-31T04:03:47+00:00",
+        "inputHash": "923a7f75bf54ef72546927460d16d51ee235b835ec0ebefbbbdb4b8786af2fdd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbaxKCGSI6q/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1206c4ce136902366163.webp",
+      "keywords": [
+        "交通",
+        "都更",
+        "產業",
+        "投資"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-30T13:12:21+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動談訪美成果與台北交通、都更、投資等施政方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "這次訪美短短8天，行程超緊湊，\n我們把世界的連結建立起來，\n也帶回台北痛點的解方，\n樹蔭計畫、交通零死亡、都更、人才回流、產業投資......\n未來會繼續讓台北無縫與國際接軌。\n\n從世界取經，為台北加速。",
+      "topicScores": {
+        "交通": 0.91,
+        "住宅": 0.89,
+        "經濟": 0.76
+      },
+      "topics": [
+        "交通",
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DbaxKCGSI6q/"
     },
     {
       "agendaRelevance": 0.78,
