@@ -1,6 +1,42 @@
 {
-  "count": 154,
+  "count": 156,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "6c68ae6b065e3ba1e5b7e7fc56e14e2a0d1eedb097690561c9ef290cd176796e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbcmQcBkl2N",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/c7dd62140489e719f6ea.webp",
+      "keywords": [
+        "奧運"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-31T06:15:53+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "分享奧運拳擊選手與政治人物互相鼓勵的內容，偏活動宣傳與競選形象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:奧運拳擊金牌得主 @boxing_ting 林郁婷：\n\n「我人生中的低潮，當時大家看到都閃很遠，巧慧卻公開為我發聲。」\n\n「我們一起努力，希望我們可以在各自的主場拿到金牌！」",
+      "topicScores": {
+        "競選": 0.72,
+        "體育": 0.94
+      },
+      "topics": [
+        "體育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbcmQcBkl2N"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "su-chiaohui",
@@ -5716,6 +5752,38 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/Nsm8XueQ7_0"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "be419fe9ebc26a8ef0c797c0cb03187232dc1a32707a5f69afcff140a17ba3ed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:C3Hxhe2v8KE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/04cd64f18aca72acfc2e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是奧運拳擊得主受訪摘錄，僅屬體育人物故事。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Olympic Boxing Gold Medalist Lin Yu-ting: \"During the lowest point in my life, when everyone else...",
+      "topicScores": {
+        "體育": 0.98
+      },
+      "topics": [
+        "體育"
+      ],
+      "url": "https://www.youtube.com/shorts/C3Hxhe2v8KE"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

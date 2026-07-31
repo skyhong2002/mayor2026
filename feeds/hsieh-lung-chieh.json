@@ -1,6 +1,78 @@
 {
-  "count": 175,
+  "count": 178,
   "posts": [
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "d3b4d6d47158420d54651a7d2a3c2e0372269f6ead8d3ca5d055bb492f4767a7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbcxvXdj7Kr",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/784bd09793430ba441e3.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-31T07:56:13+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "陳情與維修交通號誌完成，主題明確是道路交通設施處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:民眾陳情：麻豆國中門口交通號誌故障！尤淨寬於7月20日會同交通局檢修完成",
+      "topicScores": {
+        "交通": 0.96
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DbcxvXdj7Kr"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "d4ce140ff2cfb22ef54de7e2f647ff0db9d88ea3d5f3ab4578da45a6a86c8b48",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbcYFGvjx9F",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/067a4c6b99ae42113624.webp",
+      "keywords": [
+        "疫苗"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-31T04:11:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評衛福部食安黑箱與行政失當，屬究責監督而非回應他方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:核彈級的食安黑箱內幕爆發！\n\n賴總統，你到底要躲到什麼時候，什麼時候才要站出來給台灣人民一個交代？\n\n中聯油脂致癌毒油案爆出的內幕，已經是動搖國本的核彈級醜聞。我們衛福部竟然關起門來，找已經被收押的嫌犯總經理一起開會。食安官員等同法官、檢察官，居然跟被告坐在一起，這不是政治門神在指導黑心廠商串證，什麼才是串證？這不是包庇，什麼才是包庇？這種敗壞綱紀的事在行政院底下發生，賴總統難道不用徹查嗎？\n\n更驚人的是，衛福部事後立刻把會議紀錄和發言內容全部封存，完全不敢見光。他們口口聲聲說是「保護專家」，這根本是拿專家當擋箭牌，掩蓋放水黑心廠商的政治責任，從當初的疫苗、3+11到現在的致癌毒油，民進黨只要蓋牌，就一定有見不得人的勾結！\n\n最離譜的是，衛福部就是在這場會議中拍板「加工品含問題油20%以上才要下架」，連民進黨自家的高雄市長陳其邁都忍不住開砲，直言讀書到現在沒聽過這種標準！衛福部說，嫌犯總經理只是前半段列席說明，後半段沒參與討論，是「專家」的決定，那如果站得住腳，為什麼連專家是誰，都不能揭露？",
+      "topicScores": {
+        "社福": 0.89,
+        "議會監督": 0.71,
+        "醫療": 0.82
+      },
+      "topics": [
+        "社福",
+        "醫療",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbcYFGvjx9F"
+    },
     {
       "agendaRelevance": 0.81,
       "candidateId": "hsieh-lung-chieh",
@@ -6235,6 +6307,38 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/Y9RAJ0w3Z38"
+    },
+    {
+      "agendaRelevance": 0.5,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "8202fcdbcd991c010bbf01a330bf7f30849edd143bef91e608216904c446e3a9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:RaWn1lHdEWg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/c8fd13379e1dc110460f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是轉述學校門口號誌故障與修復，屬交通設施通報。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Public complaint: Traffic signal at the entrance of Madou Junior High School was malfunctioning! ...",
+      "topicScores": {
+        "交通": 0.97
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/RaWn1lHdEWg"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

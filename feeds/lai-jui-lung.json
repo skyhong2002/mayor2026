@@ -1,6 +1,42 @@
 {
-  "count": 169,
+  "count": 170,
   "posts": [
+    {
+      "agendaRelevance": 0.52,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-07-31T10:00:57+00:00",
+        "inputHash": "da66195ce66179562ab9113b38670d7b5be415586029e51dbd44933eb469c6d1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbcYjOan_Eb",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f29ab14585b9fe0c6c6f.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-31T04:15:42+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "宣傳新住民與多元友善城市，屬社福與文化包容訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:新住民挺高雄，共創友善城市，讓多元文化遍地開花！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "社福": 0.9
+      },
+      "topics": [
+        "社福",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbcYjOan_Eb"
+    },
     {
       "agendaRelevance": 0.33,
       "candidateId": "lai-jui-lung",
