@@ -1,6 +1,44 @@
 {
-  "count": 178,
+  "count": 181,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T16:00:57+00:00",
+        "inputHash": "532151552758e38d340abb1a98accbbdf4448d957673b0dc453f0c418cf698e1",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-31T16:01:10+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbdDFcYFzTq",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f26ccf1ffe564a4296f1.webp",
+      "keywords": [
+        "預算"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-07-31T10:27:17+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅見@標記；未明確辨識對象先前說法，非回應反駁其觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:龍介沒有擋過國防預算！請走正道找健全的公司",
+      "topicScores": {
+        "競選": 0.54,
+        "議會監督": 0.86
+      },
+      "topics": [
+        "議會監督",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbdDFcYFzTq"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "hsieh-lung-chieh",
@@ -6339,6 +6377,74 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/RaWn1lHdEWg"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T16:00:57+00:00",
+        "inputHash": "a2f0889fd6a6d543087116e9c25095d57f588bc7bbc5270214dbcf9e572bb7ea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:7pewMs0Y1NE",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/56aa9a52fdd8078803ae.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅為直播節目標題，未見具體公共議題或政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260731 談天說地論臺灣 @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=7pewMs0Y1NE"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-07-31T16:00:57+00:00",
+        "inputHash": "5272b41cda83e253fbc6d5d352928ee1902aaeda846ccfb9e90a12a4ecf67b8a",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-07-31T16:01:10+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:R1mMEmrK6Kw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3faabda49affdf89f79b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅見標題式陳述；缺具體對方說法與回應目的，非responsive。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Lung-chieh Has Never Blocked Defense Budgets! Please Follow the Proper Channels and Find Reputabl...",
+      "topicScores": {
+        "兩岸外交": 0.47,
+        "議會監督": 0.88
+      },
+      "topics": [
+        "議會監督",
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/shorts/R1mMEmrK6Kw"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",
