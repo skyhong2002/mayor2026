@@ -2,6 +2,232 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "62230d19abd325ba059ddc3210c2bddd5df6f9e08d4f3403d87b744a58d2349f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfglD3lGBf",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/957d8e1cb278fd924609.webp",
+      "keywords": [
+        "後援會",
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-01T09:23:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布公開行程與造勢活動，主要是競選宣傳與文化活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:明天歡迎大家和伯洋到處走走！\n\n8/2（日）⁣⁣\n⁣⁣\n09:00⁣⁣\n📍太平市場⁣⁣\n⁣⁣\n14:00⁣⁣\n跟鍾佩玲 台北市議員一起\n沈伯洋市長後援會座談會⁣⁣\n📍承德區民活動中心⁣⁣\n⁣⁣\n15:00⁣⁣\n跟許淑華Hsu Shu-Hua一起\n記憶倉庫・文化創生：台灣文化力與國際對話⁣⁣\n📍三井倉庫／台灣記憶倉庫⁣⁣\n⁣⁣\n18:00⁣⁣\n跟林亮君一起\n紙風車劇團公益場《蕃薯森林奇遇記》⁣⁣\n📍花博公園入口廣場",
+      "topicScores": {
+        "文化觀光": 0.79,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbfglD3lGBf"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "hsieh-lung-chieh",
+      "candidate_id": "hsieh-lung-chieh",
+      "candidate_name": "謝龍介",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "369a7cbde4094df306bfe8ad8730323c81fa21e9a699a3293ea1adb7657eabea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbfa_pZD8na",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8620c5c585bb87fb259e.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-01T08:35:04+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確表態支持特定候選人，屬選舉動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:台南市山地原住民唯一支持 辛晴晴",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dbfa_pZD8na"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "452440f140c4166e4502d5b48b44e45e52888da24e9d232ec73b96981c649b19",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfSsqqkiV6",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/fc9623ea7741d02b4e2d.webp",
+      "keywords": [
+        "表演"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-01T07:23:27+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳親子活動與明日見面場次，屬活動紀錄非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:水獺媽媽樂園汐止場大成功！明天我們在鶯歌國小一起繼續玩！\n\n樂園開跑一個多月以來，每一場都和滿滿的大小朋友一起同樂，現在我們更組成了「拼圖弄亂小隊」，還有小水獺鐵粉場場都來報到！\n\n明天水獺媽媽我會在 10:15 到鶯歌國小跟大家見面，還有精彩魔術秀和劇場表演，各位小水獺們準備好一起大玩特玩了嗎✨✨",
+      "topicScores": {
+        "文化觀光": 0.95,
+        "生活": 0.72
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbfSsqqkiV6"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ko-chih-en",
+      "candidate_id": "ko-chih-en",
+      "candidate_name": "柯志恩",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "e067fe464a3c666bbfd409405eee1aba46b8d26c3e0e5940530d154464798089",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfPCaNiVMr",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/caa34e0909a59c7646fe.webp",
+      "keywords": [
+        "文化",
+        "照顧"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-01T06:50:12+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "正式提出原住民族政策，涵蓋文化、安居與青年返鄉。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:今天是8月1日「原住民族日」，我正式提出我的「原住民族政策」。\n\n文化，是原住民族最珍貴的資產，也是高雄這座多元城市最重要的根基。讓文化扎根、青年返鄉、族人安居，是我對高雄原住民族朋友的承諾。\n\n我始終相信，高雄的原住民族政策，不能只照顧三個原鄉，更要看見每一位在這座城市生活、打拚的族人。無論身在部落或都市，都應該享有同樣被重視、被支持的機會。",
+      "topicScores": {
+        "住宅": 0.69,
+        "文化觀光": 0.88,
+        "社福": 0.78,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "社福",
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/DbfPCaNiVMr"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "4dfb54719d27c73fd4a1c208247935d6abd6266420a649aaf036a2b00ccf25a1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfBocgCea_",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/499fc03e28572d115ef1.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-01T04:53:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主打跑市場與傳達發展願景，核心是選舉宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:心桃園，動起來！這一個月以來，我和桃園隊跑了桃園各區市場，傾聽最基層的聲音✨\n\n我會持續把市場走透，讓更多市民認識世杰、了解我對桃園發展的願景。\n\n每一雙溫暖的手、每一份「好彩頭」與加油打氣，都是我繼續前進的最大動力！\n\n我會繼續衝，一起為桃園拚出更好的未來💪🏻",
+      "topicScores": {
+        "競選": 0.97,
+        "經濟": 0.57
+      },
+      "topics": [
+        "競選",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbfBocgCea_"
+    },
+    {
+      "agendaRelevance": 0.43,
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "29d947a0c5076f4a440ac6468094791b94c56fd6aa09edeefb6fc6c6b1510c85",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfBh5emYGe",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-01T04:52:10+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "批評市長與副院長並提出市政願景，屬競選式施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:台中市是286萬台中市民的家，不是任何人政治鬥爭的工具。\n\n我們要呼籲盧市長，剩下的最後五個月任期，回歸市政、盡好一個市長的責任；也呼籲江副院長回歸市政辯論，提出可以和我競爭的具體市政願景，不要淪為盧市長政治鬥爭的棋子。\n\n台中市政的確需要加速，因為過去幾年已經停滯太久、市民已經等待太久，2026.11.28正是台中重新大步前進的契機！\n\n市長換欣，台中創新！",
+      "topicScores": {
+        "競選": 0.93,
+        "議會監督": 0.77
+      },
+      "topics": [
+        "競選",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DbfBh5emYGe"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
@@ -3742,243 +3968,6 @@
         "生活"
       ],
       "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0YVuPzpwdShPkbps347aRxxpSgZtMvXRrzFsCV3nGHPa1hXohis5AtLZ9Nk9Dt9rl"
-    },
-    {
-      "agendaRelevance": 0.86,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "e39195eaa3131be4ce4f73314815a3752c69029b5324b51cc1e5ae12b893f3ac",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1601091564704557",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/7135ec0252321944233b.webp",
-      "keywords": [
-        "經濟",
-        "產業",
-        "教育"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-30T04:24:41.000Z",
-      "postingIntent": {
-        "confidence": 0.93,
-        "label": "主動發文",
-        "reason": "主張電競專法與促進法，屬明確政策倡議，非回應特定他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "韓國能，台灣為什麼不能？——打破多頭馬車，用專法點亮台灣電競未來！\n\n今天教育及文化委員會審查「#電子競技運動發展專法」，本該是一場理性的政策思辨，現場卻因朝野針鋒相對、氣氛火爆，導致 #李洋 部長無法表達意見，對此感到遺憾。\n\n電競運動從2018年雅加達亞運列為示範項目、第19屆杭州亞運成為正式奪牌項目，到今年第20屆名古屋亞運，電競已是貨真價實的正式競賽。面對國際潮流，國人與產業都在問：政府到底做了什麼準備？\n\n遺憾的是，目前只看到「政策零散、部會權責多頭馬車」，例如運動部管競技、數發部管數位產業、經濟部管產業發展、教育部管人才培育，這種疊床架屋的架構，讓人不禁質疑：政府真的有心把電競納入國家的運動競技與產業發展體系嗎？\n\n看看韓國，早在2012年就制定了《#電子競技振興法》，從基礎設施、國際賽事、人才培育成全面規範，這才是政府挺電競該有的戰略態度！雖然民進黨立委認為訂定專法是否會有「獨厚單一運動」的疑慮，但韓國針對具有文化主體性與競爭優勢的運動，訂定相關專法，例如《韓式摔跤振興法》、《圍棋振興法》及《跆拳道振興法》等。專法不是特權，而是聚焦國家優勢的戰略武器！\n\n今天委員會無法順利進行逐條討論，殊為可惜。如果運動部與民進黨立委認為不應以「#電子競技」單一運動項目訂定「基本法」，則民眾黨團提出以「促進法」為名，不失為可行之計。我支持以「促進法」的形式，為電競運動與產業發展注入國家級的推動力。\n\n韓國能透過專法強化選手權益、擴大經費補助與國際交流，成功打造電競王國。韓國能，台灣為什麼不能？ 我期盼運動部審慎思考、勇敢提出更積極的因應做法，將電競明確定位為國家系統性振興的戰略項目，別讓台灣的電競人才在多頭馬車的內耗中失去熱忱與競爭力！\n#運動部\n#電子競技運動\n#電競",
-      "topicScores": {
-        "教育": 0.66,
-        "競選": 0.83,
-        "經濟": 0.72
-      },
-      "topics": [
-        "競選",
-        "經濟",
-        "教育"
-      ],
-      "url": "https://www.facebook.com/KoChihEn/posts/pfbid05G5YBbPrYtyGgbarDaX6wBiMDffa7bEDqAk5CPCkqZTtAX3VxHKaJwaCwAmKUwKdl"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "lee-shih-chuan",
-      "candidate_id": "lee-shih-chuan",
-      "candidate_name": "李四川",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "ff6a59b528235d5f6e0a680f08c39e860d5c7fff2f0d49f467bbc05a141f6352",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1597826111954643",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/dc880e07c4dd080aef9e.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-07-30T04:12:43.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅抒發與孩子互動及未來願景，無具體公共政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "40 年來我沒在工地輸過。\n上週末，差點輸給一群小朋友。\n水會乾，笑聲不會。\n下一個想蓋的，是一個會有笑聲的地方。",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1322602183192298/"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "chang-ching",
-      "candidate_id": "chang-ching",
-      "candidate_name": "張靜",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "cb88bbd70a9ef51087fb8fc9c464912ed876a231c5ee5b1c8dbbad37a5fac35f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:935831686215027",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "犯罪"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-30T03:48:46.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "號召參與司法正義活動，屬倡議動員而非回應特定對手。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-ching-party-fb",
-      "text": "司法改革黨長期關注司法改革、被害人權益保障及人民對公平正義的期待。\n\n司法不只是審判犯罪者，更應重視受害者與家屬在司法程序中的處境，建立讓人民安心的司法制度。\n\n8月1日「81凱道集結 爭司法正義」活動，將針對人民安全、司法正義及被害人權益等議題發聲。\n\n本黨邀請北部地區黨員朋友及關心司法改革的民眾踴躍參與，一同為人民安全與司法正義站出來！",
-      "topicScores": {
-        "治安": 0.84,
-        "生活": 0.62,
-        "社福": 0.88
-      },
-      "topics": [
-        "社福",
-        "治安",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02UjP7NdGRFNoiz8kCfcMDzBRkDFd6FJRH8aEfRzeSRVn6wJCK6NA2CudKq6Eoo9Q6l&id=100093646137173"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "su-chiaohui",
-      "candidate_id": "su-chiaohui",
-      "candidate_name": "蘇巧慧",
-      "classification": {
-        "classifiedAt": "2026-07-30T04:00:56+00:00",
-        "inputHash": "b38031b39b35fa981fe4e3834e56bd339ec2ae1261ae5efa83704f1bae309588",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbZeyrtknOk",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/828d4167e64e851a9255.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-30T01:13:56+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅宣布北大特區郵局啟用，屬一般生活資訊。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:北大特區郵局正式啟用🎉",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbZeyrtknOk"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-07-30T04:00:56+00:00",
-        "inputHash": "73cf09a88537a4f73bd90e7158bddf2cf8ac138f14376649719df14e9f16973f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbZecwTmZs4",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/791523f7bf26b4d9edcb.webp",
-      "keywords": [
-        "議會",
-        "法案",
-        "垃圾",
-        "產業"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-07-30T01:09:25+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "主要質疑市府油品抽驗、食安與議員是否失職，屬主動究責。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:8年只抽驗一次中聯油品，江副院長認為這樣的盧市府及格嗎？\n\n江副院長總是出現在電視敲槌、出現在盧市長的左右兩側，但只要一碰到盧市府的市政問題，兒虐、性侵、非洲豬瘟、廚餘垃圾、油品食安….，你就神隱不吭聲，就連攸關台中產業轉型升級的無人機法案，你也選擇閃躲，不發聲、不出席、不投票，台中產業大重傷。\n\n我再問，盧市長在議會公然說市府抽驗廠商油品，「得」不是「必須」，沒有強制性，江副院長你的態度是什麼？",
-      "topicScores": {
-        "治安": 0.58,
-        "環境": 0.62,
-        "經濟": 0.53,
-        "議會監督": 0.9
-      },
-      "topics": [
-        "議會監督",
-        "環境",
-        "治安",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DbZecwTmZs4"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "4437c8aedeef27f562d4171ecfaf2c7b41b12b7a54a12419e721badf16ba2054",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1643315490491192",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/dd34106f17a36950d635.webp",
-      "keywords": [
-        "議會",
-        "法案",
-        "產業"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-07-30T01:05:34.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "批評議員對食安與產業法案失職，屬政治攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-fb",
-      "text": "8年只抽驗一次中聯油品，江副院長認為這樣的盧市府及格嗎？\n\n江副院長總是出現在電視敲槌、出現在盧市長的左右兩側，但只要一碰到盧市府的市政問題，兒虐、性侵、非洲豬瘟、廚餘垃圾、油品食安….，你就神隱不吭聲，就連攸關台中產業轉型升級的無人機法案，你也選擇閃躲，不發聲、不出席、不投票，台中產業大重傷。\n\n我再問，盧市長在議會公然說市府抽驗廠商油品，「得」不是「必須」，沒有強制性，江副院長你的態度是什麼？",
-      "topicScores": {
-        "治安": 0.52,
-        "經濟": 0.74,
-        "議會監督": 0.88
-      },
-      "topics": [
-        "議會監督",
-        "經濟",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/94achun/posts/pfbid0nizevYQvBMWGza2jc32wFbXynhpYE1QNNrbAYwidVvqJHkfZGc5EBXwAqS5Y58L7l"
     }
   ],
   "title": "2026 市長官方來源觀測站",

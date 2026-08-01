@@ -19,8 +19,40 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 187,
+  "count": 189,
   "posts": [
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "369a7cbde4094df306bfe8ad8730323c81fa21e9a699a3293ea1adb7657eabea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbfa_pZD8na",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8620c5c585bb87fb259e.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-01T08:35:04+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確表態支持特定候選人，屬選舉動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:台南市山地原住民唯一支持 辛晴晴",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dbfa_pZD8na"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "hsieh-lung-chieh",
@@ -6671,6 +6703,38 @@
         "兩岸外交"
       ],
       "url": "https://www.youtube.com/shorts/R1mMEmrK6Kw"
+    },
+    {
+      "agendaRelevance": 0.98,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "53fd3b0b061a30f9957d7b687c9adef9bce40a1ebcb23e626e1b939c2465e893",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:EeK8MNxvGBc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3abda09a1dcc25cc7e7f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題直接表述對候選人的支持，屬明確選舉宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "The Only Candidate Supported for Tainan City Mountain Indigenous People: Hsin Ching-Ching #HsiehL...",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/EeK8MNxvGBc"
     }
   ],
   "version": 1

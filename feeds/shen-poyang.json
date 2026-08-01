@@ -1,6 +1,43 @@
 {
-  "count": 159,
+  "count": 161,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "62230d19abd325ba059ddc3210c2bddd5df6f9e08d4f3403d87b744a58d2349f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbfglD3lGBf",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/957d8e1cb278fd924609.webp",
+      "keywords": [
+        "後援會",
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-01T09:23:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布公開行程與造勢活動，主要是競選宣傳與文化活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:明天歡迎大家和伯洋到處走走！\n\n8/2（日）⁣⁣\n⁣⁣\n09:00⁣⁣\n📍太平市場⁣⁣\n⁣⁣\n14:00⁣⁣\n跟鍾佩玲 台北市議員一起\n沈伯洋市長後援會座談會⁣⁣\n📍承德區民活動中心⁣⁣\n⁣⁣\n15:00⁣⁣\n跟許淑華Hsu Shu-Hua一起\n記憶倉庫・文化創生：台灣文化力與國際對話⁣⁣\n📍三井倉庫／台灣記憶倉庫⁣⁣\n⁣⁣\n18:00⁣⁣\n跟林亮君一起\n紙風車劇團公益場《蕃薯森林奇遇記》⁣⁣\n📍花博公園入口廣場",
+      "topicScores": {
+        "文化觀光": 0.79,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DbfglD3lGBf"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
@@ -5832,6 +5869,40 @@
         "兩岸外交"
       ],
       "url": "https://www.youtube.com/shorts/2BB-sWLbiZA"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "0aa2acc0107cd24d0ab5e7ba15c31fa2b84a8f083f54a2be83262e56fd8e74d1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:LoEueYBpsME",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/845437867501804a2361.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "唱歌與拜票式活動紀錄，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Singing with the folks in Wanhua—wishing everyone the best with the song \"This Year Will Surely B...",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "競選": 0.86
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/LoEueYBpsME"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",
