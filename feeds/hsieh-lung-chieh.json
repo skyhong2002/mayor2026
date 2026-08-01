@@ -1,14 +1,80 @@
 {
-  "count": 184,
+  "count": 187,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T04:02:10+00:00",
+        "inputHash": "086d8bb3b5aa26b59865286860b1d25c7a9395a0936d083ac883ff0a7b91c4fb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:894874966549666",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/48e45f971a119bff7d28.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-31T13:19:15.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅為日常談話標題，未見公共議題內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "20260731 談天說地論臺灣",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/894874966549666/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-31T16:00:57+00:00",
+        "classifiedAt": "2026-08-01T04:02:33+00:00",
+        "inputHash": "b4a8ff5d06929a0e0e2f55dc7cf77c89e1e02352be7503a53e0e6e6968f8e21e",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-01T04:02:34+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1618642302950685",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ea9ba1b719a86253f690.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-07-31T10:38:03.000Z",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "僅有@標記；未見明確他方先前說法，也非主要回應澄清。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "龍介沒有擋過國防預算！請走正道找健全的公司",
+      "topicScores": {
+        "競選": 0.86
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1086360170567272/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T04:02:33+00:00",
         "inputHash": "532151552758e38d340abb1a98accbbdf4448d957673b0dc453f0c418cf698e1",
         "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-07-31T16:01:10+00:00",
+        "intentVerifiedAt": "2026-08-01T04:02:34+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
         "rubricVersion": "content-v4"
@@ -16,25 +82,21 @@
       "id": "threads:https://www.threads.com/t/DbdDFcYFzTq",
       "imageAspect": 0.5625,
       "imageUrl": "assets/feed-images/f26ccf1ffe564a4296f1.webp",
-      "keywords": [
-        "預算"
-      ],
+      "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-31T10:27:17+00:00",
       "postingIntent": {
-        "confidence": 0.97,
+        "confidence": 0.94,
         "label": "主動發文",
-        "reason": "僅見@標記；未明確辨識對象先前說法，非回應反駁其觀點。",
+        "reason": "僅有@標記；未見明確他方先前說法，也非主要回應澄清。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:龍介沒有擋過國防預算！請走正道找健全的公司",
       "topicScores": {
-        "競選": 0.54,
-        "議會監督": 0.86
+        "競選": 0.86
       },
       "topics": [
-        "議會監督",
         "競選"
       ],
       "url": "https://www.threads.com/t/DbdDFcYFzTq"
@@ -43,8 +105,10 @@
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-07-31T22:03:28+00:00",
+        "classifiedAt": "2026-08-01T04:02:33+00:00",
         "inputHash": "24f4f1f828add07a36f0a1508988d230319cd2685119c90327bb36bc8ae0edf3",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-01T04:02:34+00:00",
         "method": "ai",
         "model": "gpt-5.4-mini",
         "rubricVersion": "content-v4"
@@ -56,20 +120,18 @@
       "platform": "instagram",
       "postedAt": "2026-07-31T10:26:51+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.94,
         "label": "主動發文",
-        "reason": "僅一句反駁國防預算爭議，未見具體政策主張。",
+        "reason": "僅有@標記；未見明確他方先前說法，也非主要回應澄清。",
         "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-ig",
       "text": "龍介沒有擋過國防預算！請走正道找健全的公司",
       "topicScores": {
-        "經濟": 0.54,
-        "防災": 0.33
+        "競選": 0.86
       },
       "topics": [
-        "經濟",
-        "防災"
+        "競選"
       ],
       "url": "https://www.instagram.com/p/DbdC7pryY-H/"
     },
@@ -142,6 +204,42 @@
         "交通"
       ],
       "url": "https://www.threads.com/t/DbcxvXdj7Kr"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T04:02:10+00:00",
+        "inputHash": "7d77e45aa728c9444564ad0682c00d42aec490828afb698da7312885ea401174",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1618545362960379",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/02fe8bb853a48d13bc31.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-07-31T07:52:18.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "記錄民眾陳情與交通號誌修復，屬行政處理紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "民眾陳情：麻豆國中門口交通號誌故障！尤淨寬於7月20日會同交通局檢修完成",
+      "topicScores": {
+        "交通": 0.96,
+        "生活": 0.61
+      },
+      "topics": [
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/2120013595393224/"
     },
     {
       "agendaRelevance": 0.62,
