@@ -1,6 +1,44 @@
 {
-  "count": 66,
+  "count": 67,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "70202427421c28a57dfcb35fefa10664908a6f3569ced2f5a402583f7f3529a0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbfsbyFNdlm/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7aa51201de8632e912d3.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-01T11:08:05+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹民權大橋改建後的景觀橋與遊憩功能，屬建設成果宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-ig",
+      "text": "臺北河岸新地標「天際之眼」正式亮相！✨\n\n民權大橋改建完成，施工期間使用的交通棧橋也華麗轉身，成為串聯觀山河濱公園與彩虹河濱公園的全新景觀橋。\n\n在這裡，可以欣賞基隆河夜景、遠眺臺北101，更是近距離欣賞飛機起降的絕佳位置！✈️🌃\n\n歡迎大家到「天際之眼」散步、騎單車、拍照看風景，一起來解鎖臺北全新的水岸視角！",
+      "topicScores": {
+        "交通": 0.85,
+        "文化觀光": 0.83,
+        "生活": 0.76
+      },
+      "topics": [
+        "交通",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbfsbyFNdlm/"
+    },
     {
       "agendaRelevance": 0.92,
       "candidateId": "chiang-wanan",

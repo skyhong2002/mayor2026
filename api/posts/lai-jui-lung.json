@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 175,
+  "count": 177,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "f00378faf2ec0b8cea6c92a0f0b8feabdf27a548fd15f70a75fb94ab4369b4b8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbf3tB9CWZA",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/588d125df2558e8157c3.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-01T12:45:32+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "只是行程走訪與感謝地方人士，未提具體議題主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:從市區的三民、沿海的梓官，再到北高雄的岡山，今天一整天，感受到各地滿滿的熱情與期待。\n\n傾聽在地的聲音，照顧好每一位為生活打拚的人，是我推動市政最堅定的責任。\n\n非常感謝三民區黃文良里長主席、梓官區蔡登財會長、岡山區蔡錫琛里長主席的號召，以及所有挺身而出的會長、里長與好朋友們。大家真摯的笑容與信任，是對城市願景最大的認同，給了我無比的信心！",
+      "topicScores": {
+        "生活": 0.7
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbf3tB9CWZA"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lai-jui-lung",
@@ -90,6 +122,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbecsSnk1oB"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "497148e2c016bab935d82c577bd69d7c2b2908baff05afb211e22b69f0ff839e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbebUxuy4uW/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/16f70c3b7408a516a694.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-07-31T23:30:05+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以原民日與文化傳承標語為主，屬文化宣示非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "八一原民日，Sa’icelen！珍惜文化底蘊，延續世代傳承！\n\n#用文化點亮這座城市",
+      "topicScores": {
+        "文化觀光": 0.95
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DbebUxuy4uW/"
     },
     {
       "agendaRelevance": 0.34,

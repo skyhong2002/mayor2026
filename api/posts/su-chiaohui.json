@@ -19,8 +19,47 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 165,
+  "count": 167,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "5c08c19a141b6c3c7a57a415c6a4a4ada19b1baa0adde19635e4f3679f5836d0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbf35-Rmahj",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/49a329b7f729d5f4d790.webp",
+      "keywords": [
+        "美食",
+        "市集"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-01T12:47:18+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參與納涼祭並描述市集與農特產，主要是活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:一起來三峽納涼祭感受在地滿滿熱情！\n\n茶、蜂蜜、綠竹筍 是我們熟知的「三峽納涼三寶」，不僅享譽全國，更是展現在地農民長年用心耕耘的成果。\n\n今天很高興參加納涼祭，感謝三峽農會用心籌辦，讓活動一年比一年精彩。老街下午就擠滿人潮，大家一邊逛市集、一邊品嚐在地美食，也認識地方的農特產品。逛老街時，我還遇到好多可愛的小水獺，也約好明天一起到鶯歌國小玩水獺媽媽樂園！",
+      "topicScores": {
+        "文化觀光": 0.8,
+        "生活": 0.86,
+        "經濟": 0.52
+      },
+      "topics": [
+        "生活",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Dbf35-Rmahj"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "su-chiaohui",
@@ -6122,6 +6161,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/Js0g2YhUmQ0"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "d9cc251aa7ed1ec8d60523280821847efb507bbd5722c5b9876acb37b59f2910",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:vuqze5JJoEo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d0e12a005455a270c25d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅述活動成功，屬地方活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "水獺媽媽樂園汐止場大成功！",
+      "topicScores": {
+        "文化觀光": 0.81,
+        "生活": 0.79
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/vuqze5JJoEo"
     }
   ],
   "version": 1

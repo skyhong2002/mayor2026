@@ -1,6 +1,38 @@
 {
-  "count": 189,
+  "count": 190,
   "posts": [
+    {
+      "agendaRelevance": 0.96,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-01T16:03:29+00:00",
+        "inputHash": "82c4f81fb3deb5fcdc6209072312f5340e614bf693e07474ff8f176f2b10bd95",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbfbhlJS0kQ/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9098f7fd262b9123ecf5.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-01T08:40:31+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "單純競選動員與支持特定候選人，沒有其他公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "台南市山地原住民唯一支持 辛晴晴 #謝龍介 #國民黨 #台南市議員 #原住民議員 #台南 辛晴晴",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DbfbhlJS0kQ/"
+    },
     {
       "agendaRelevance": 0.95,
       "candidateId": "hsieh-lung-chieh",
