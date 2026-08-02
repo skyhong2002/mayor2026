@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/d4edd972739e0aa2b290.webp",
+    "avatarUrl": "assets/source-avatars/3e745fd1a487bf0b8ce0.webp",
     "city": "taoyuan",
     "cityLabel": "桃園市",
     "id": "huang-shih-chieh",
@@ -19,7 +19,7 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 155,
+  "count": 156,
   "posts": [
     {
       "agendaRelevance": 0.06,
@@ -56,6 +56,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbiMHpAGj81"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-02T22:01:38+00:00",
+        "inputHash": "2d2456cec30f47f780dfb0fe6f2732a5a023f9456b64419cfde05c08d8ccdb08",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1561872732053926",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/6ebed6667c8846d38e79.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-02T10:15:09.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳掃街與市場行程，屬競選動員兼活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-fb",
+      "text": "明天傍晚17:30，動起來！八德東勇黃昏市場掃街✨\n\n東勇黃昏市場位在熱鬧的大湳商圈周邊，各式新鮮食材、熟食小吃選擇豐富，是許多八德鄉親下班後採買晚餐、添購日常食材的好去處！\n\n明天17:30相約東勇黃昏市場！心八德，動起來💖",
+      "topicScores": {
+        "生活": 0.4,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02mdKtTLhehorj8prEDTBSCp9WT7fHSrwkEY4jpQkbgy1J6JqroJWBGD6MKt5K9vNvl"
     },
     {
       "agendaRelevance": 0.85,
