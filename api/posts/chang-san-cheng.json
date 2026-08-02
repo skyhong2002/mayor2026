@@ -19,8 +19,48 @@
     "name": "張善政",
     "party": "國民黨"
   },
-  "count": 59,
+  "count": 60,
   "posts": [
+    {
+      "agendaRelevance": 0.33,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-08-02T10:03:30+00:00",
+        "inputHash": "10a114f9c63c86761c19bcc8e515f32b134472f5332330ed5ec5bd4602a3ae3c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbhgYEeEmL0/",
+      "imageAspect": 0.5646,
+      "imageUrl": "assets/feed-images/d049c5f8922e7a9633b2.webp",
+      "keywords": [
+        "藝術",
+        "音樂",
+        "美食",
+        "籃球",
+        "冠軍"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-02T04:00:36+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是音樂節與活動宣傳，兼及觀光與體育元素。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-ig",
+      "text": "#2026珍珠海岸國際音樂節 今晚是玖壹壹壓軸，歡迎歌迷繼續相約竹圍漁港！\n\n這個週末，竹圍漁港化身最熱鬧的濱海舞台。\n昨天第一天湧入12萬人次欣賞盧廣仲、周湯豪、芒果醬等眾多受年輕人喜愛的藝人演出；體育也是珍珠海岸音樂節的獨家元素，我們邀請兩屆NBA灌籃大賽冠軍 #ZachLaVine 親臨現場，與球迷朋友近距離互動，帶來國際級籃球魅力。\n\n同場舉行的 #桃園鐵玫瑰熱音賞，也為音樂新秀提供發光舞台。今年吸引來自11個國家與地區、328組音樂人報名參賽，展現台灣音樂創作的豐沛能量。\n\n今天，珍珠海岸國際音樂節精彩持續，多位國際藝人與國內人氣歌手將接力登台演出，還有更多精彩活動，邀請大家一起參與。\n\n歡迎大家來到竹圍漁港，同步走訪桃園地景藝術節，欣賞海岸藝術、品嚐在地美食、聆聽精彩音樂，一起享受美好的週末時光！",
+      "topicScores": {
+        "文化觀光": 0.95,
+        "體育": 0.74
+      },
+      "topics": [
+        "文化觀光",
+        "體育"
+      ],
+      "url": "https://www.instagram.com/p/DbhgYEeEmL0/"
+    },
     {
       "agendaRelevance": 0.6,
       "candidateId": "chang-san-cheng",

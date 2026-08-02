@@ -19,8 +19,42 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 178,
+  "count": 180,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-02T10:03:30+00:00",
+        "inputHash": "938f614b88f3ba051e2c4d7a22c97c07e9a3892d89191e3a0c72e3385f10ccea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbhhQ_JkeQF",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/6b888b9bf2adc0407762.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-02T04:07:57+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅為水上運動熱身畫面，無政策或回應內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:水上運動前先熱身，@einn.chiu 教練提醒我要再蹲低一點！\n\n@lim.fi.him",
+      "topicScores": {
+        "體育": 0.91
+      },
+      "topics": [
+        "體育"
+      ],
+      "url": "https://www.threads.com/t/DbhhQ_JkeQF"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "lai-jui-lung",
@@ -56,6 +90,40 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DbhJiVqn6KR"
+    },
+    {
+      "agendaRelevance": 0.68,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-02T10:03:30+00:00",
+        "inputHash": "94181793c0038dec7c1a842447da70b6ebc4cb344d9a63f0a87936ef5bfd323e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbhIbuWSZ8y/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/17c4cfd1a98738881bc8.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-02T00:40:27+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "開箱運動中心並主張推動一區一運動中心。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "和 @chenchimai 其邁市長、 @leeyang0812 李洋部長一起開箱三民運動中心，各位鄉親準備好一起動起來了嗎？未來我會持續推動「一區一運動中心」，讓高雄處處充滿健康活力！",
+      "topicScores": {
+        "體育": 0.94
+      },
+      "topics": [
+        "體育"
+      ],
+      "url": "https://www.instagram.com/p/DbhIbuWSZ8y/"
     },
     {
       "agendaRelevance": 0.05,
