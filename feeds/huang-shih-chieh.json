@@ -1,6 +1,40 @@
 {
-  "count": 151,
+  "count": 152,
   "posts": [
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-02T04:01:05+00:00",
+        "inputHash": "8ae3712dc3eac9504880f2f6ac2d217c3302cd298be2b0e371526094c1c96986",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbhFbiIkhSq",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/e16f4250a9d79c8ba68c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-02T00:04:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述跑行程、掃市場與拉票，屬競選動員與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:一早07:00到新屋，這陣子天天在不同區跑行程、掃市場，今天趕快把握時間回來讓大家看一下😆\n\n感謝鄉親幫我驗收，真的有瘦、當煞猛打拚喔！",
+      "topicScores": {
+        "生活": 0.35,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbhFbiIkhSq"
+    },
     {
       "agendaRelevance": 0.74,
       "candidateId": "huang-shih-chieh",

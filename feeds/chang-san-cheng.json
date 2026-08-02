@@ -1,5 +1,5 @@
 {
-  "count": 58,
+  "count": 59,
   "posts": [
     {
       "agendaRelevance": 0.6,
@@ -2259,6 +2259,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/Al6GBY1G9eY"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-08-02T04:01:05+00:00",
+        "inputHash": "f5330e7cc44b595ad8e22065461fa00644fb53453387a6e9d84b21d2b4a9ff98",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:SjxkMls6cic",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/c5843320e0f890d0e425.webp",
+      "keywords": [
+        "音樂"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳音樂節與邀請民眾到場，屬活動公告與觀光推廣。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-yt",
+      "text": "#2026珍珠海岸國際音樂節 今晚是玖壹壹壓軸，歡迎歌迷繼續相約竹圍漁港！",
+      "topicScores": {
+        "文化觀光": 0.96,
+        "生活": 0.45
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/SjxkMls6cic"
     }
   ],
   "title": "張善政（桃園市）貼文更新",

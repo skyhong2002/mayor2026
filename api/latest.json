@@ -2,6 +2,110 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-02T04:01:05+00:00",
+        "inputHash": "94317867b473c79dbd557442d2ebbbb085f7dbbbb90a3d5bc0498b55999a277d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbhZKlREv2E",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/44084b55929dbe705fb9.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-02T02:57:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "掃市場拜票與感謝支持，屬競選行程紀錄，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:一早和翁震州、林秉宥、吳奕萱、陳岱吟到新莊裕民市場和鄉親好朋友問好！\n\n感謝大家的熱情支持！今天也是行程滿滿滿，繼續衝！",
+      "topicScores": {
+        "生活": 0.42,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbhZKlREv2E"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-02T04:01:05+00:00",
+        "inputHash": "6ba755818b80b7708cb8c73f9aa5f1c4fab67da5d795876bd7eaa8b59e7423c9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbhJiVqn6KR",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/31e2017c417eea0a5b83.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-02T00:40:40+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "開箱運動中心並主張一區一運動中心，屬主動政策訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:和 @chenchimai 其邁市長、 leeyang0812 李洋部長一起開箱三民運動中心，各位鄉親準備好一起動起來了嗎？未來我會持續推動「一區一運動中心」，讓高雄處處充滿健康活力！",
+      "topicScores": {
+        "競選": 0.89,
+        "體育": 0.98
+      },
+      "topics": [
+        "體育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbhJiVqn6KR"
+    },
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-02T04:01:05+00:00",
+        "inputHash": "8ae3712dc3eac9504880f2f6ac2d217c3302cd298be2b0e371526094c1c96986",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbhFbiIkhSq",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/e16f4250a9d79c8ba68c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-02T00:04:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述跑行程、掃市場與拉票，屬競選動員與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:一早07:00到新屋，這陣子天天在不同區跑行程、掃市場，今天趕快把握時間回來讓大家看一下😆\n\n感謝鄉親幫我驗收，真的有瘦、當煞猛打拚喔！",
+      "topicScores": {
+        "生活": 0.35,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbhFbiIkhSq"
+    },
+    {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3668,125 +3772,6 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/94achun/posts/pfbid0WvPsv2Cg44BFsZZgYXbqyqGDCELPhEmV7NgPRvoNx6BXKDvf6SwtVqqLDqbJs2k7l"
-    },
-    {
-      "agendaRelevance": 0.24,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "5dfcfa0446aebcdf0e814b754305a157c5853d4c7881b0a4f09165c26e52e766",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbaY8uxEiFi",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/6dfee82509c6b6839f74.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-07-30T09:40:38+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "出席民主聯誼活動並喊出市政方向，屬活動紀錄兼競選宣示。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:日前與 @dragonforpeople 林佳龍部長出席大屯區民主聯誼會 39週年慶祝活動，一同見證台中民主運動的歷程，也向民主前輩們表達敬意。\n\n謝謝佳龍部長與各位民主前輩的支持，這份信任我會用具體政績與行動來回應。\n\n未來我會大力推動 #六星市政 ，嚴格把關食品安全，讓台中成為讓市民可以安心生活的城市。",
-      "topicScores": {
-        "環境": 0.68,
-        "生活": 0.7,
-        "競選": 0.58
-      },
-      "topics": [
-        "生活",
-        "環境",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DbaY8uxEiFi"
-    },
-    {
-      "agendaRelevance": 0.24,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "3adafe292841a5eedcc218162bd964d47e3505cce6c4d4cf81a4dffb21ffe813",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbaY27KvIeW/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/757321ef06651b71588d.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-07-30T09:40:13+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "出席民主聯誼活動並喊出市政方向，屬活動紀錄兼競選宣示。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-ig",
-      "text": "日前與 @dragonforpeople 林佳龍部長出席 #大屯區民主聯誼會 39週年慶祝活動，一同見證台中民主運動的歷程，也向民主前輩們表達敬意。\n\n謝謝佳龍部長與各位民主前輩的支持，這份信任我會用具體政績與行動來回應。\n\n未來我會大力推動 #六星市政 ，嚴格把關食品安全，讓台中成為讓市民可以安心生活的城市。",
-      "topicScores": {
-        "環境": 0.68,
-        "生活": 0.7,
-        "競選": 0.58
-      },
-      "topics": [
-        "生活",
-        "環境",
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/DbaY27KvIeW/"
-    },
-    {
-      "agendaRelevance": 0.86,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-07-30T10:04:53+00:00",
-        "inputHash": "39b98bc587a214526c487703c58951ce033974b83e9d164d040d7883eddcd465",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbaQLxDG56b/",
-      "imageAspect": 0.9693,
-      "imageUrl": "assets/feed-images/d1caf245b1ff26139add.webp",
-      "keywords": [
-        "產業",
-        "就業",
-        "科技",
-        "補助",
-        "津貼",
-        "照顧",
-        "環境",
-        "淨零",
-        "碳排",
-        "氣候"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-07-30T08:24:02+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動提出勞工安置、轉型媒合與公正轉型等具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "台苯宣布高雄林園廠將自10月1日停產，恐影響160多位第一線勞工權益，我在得知消息後表達關切，並提出如何照顧石化業勞工與推動傳統產業轉型的「四大訴求與行動計畫」，承諾將與石化產業勞工展開面對面對談，以實際行動幫助基層勞工。\n\n感謝高雄市石化產業總工會肯定，立即邀請我於8月6日召開「石化產業研討會議」，共商討論針對產業轉型發展及石化業可能減產與關廠情形下，政府可如何支援勞工並傾聽勞工心聲。\n\n半年前信昌化工林園廠傳出大規模裁員時，我即察覺石化廠關廠、停產恐陸續發生，當時就曾與多個石化產業工會進行擴大座談，當時我提出，勞動部的「僱用安定措施」應將石化業也納入，如今將近半年過去，勞動部還是沒有動作，希望勞動部將石化業盡速納入。\n\n許多石化產業的勞工告訴我，當前石化產業經營情況相當險峻，繼台苯之後，可能還有其他未爆彈，現在石化業勞工人人自危，即便想轉入其他石化企業，也無工作機會，不是人事產線都縮編，就是遇缺不補。\n\n因此我針對如何照顧石化業勞工與推動傳統產業轉型，具體提出「四大訴求與行動計畫」：\n\n1.台苯安置方案：加碼保障中高齡員工\n\n台苯透過處分資產已順利回收約 19 億元現金，發放法定資遣費只是最低底線！對於年資高、再就業困難的中高齡老員工，資方必須給予額外的生活津貼或退休加碼，給予奉獻半生的老員工應有的尊嚴與保障。\n\n2.推動「廠區轉型，內部留用」\n\n台苯宣布未來將聚焦能源貿易與再生能源。資方應優先開辦「內部轉型培訓專案」，讓有留任意願的員工免費受訓、無縫接軌新事業。未來我若有機會帶領高雄，也會給予善盡 CSR（企業社會責任）的企業更多政策與租稅獎勵！\n\n3.成立「林園石化轉型人才媒合專區」\n\n林園廠員工擁有頂尖的化工、設備維護與工安專業。市府勞工局與經發局不能被動等待！我們要在林園設立媒合專區，辦理客製化轉職會，主動對接高值化特化與高科技產業，幫優秀技術人才找新出路。\n\n4.爭取中央碳費挹注，打造「公正轉型安全網」\n\n「產業淨零轉型，不能遺落任何一個勞工家庭！」 高雄承擔了全國最多的碳排與轉型陣痛。未來我若有機會帶領高雄，會依據《氣候變遷因應法》的「公正轉型」精神，全力向中央環境部爭取碳費與「溫室氣體管理基金」專案補助，撥入「高雄市勞工權益基金」，成立專戶！\n\n這筆專款將直接用於：\n\n‧關廠衝擊勞工的過渡期生活補助\n‧子女教育補助與心理諮商\n‧綠領轉職培訓津貼\n\n喊口號解決不了生計問題，做實事才能給高雄人安心的未來。\n\n政府的責任，是引導產業走向高值化，同時在轉型風暴中為勞工撐起一把堅固的保護傘。我會持續站在第一線，與所有勞工兄弟姊妹同行！",
-      "topicScores": {
-        "環境": 0.74,
-        "社福": 0.88,
-        "經濟": 0.89
-      },
-      "topics": [
-        "經濟",
-        "社福",
-        "環境"
-      ],
-      "url": "https://www.instagram.com/p/DbaQLxDG56b/"
     }
   ],
   "version": 1
