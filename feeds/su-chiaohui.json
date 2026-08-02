@@ -1,6 +1,76 @@
 {
-  "count": 169,
+  "count": 172,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-02T16:00:59+00:00",
+        "inputHash": "5404a278c3e9953d4db2381e7f8880f5b2d9d235d0f88e3107de0aa1dfde0d16",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbiiMHPj02_",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/de4234be536c9d88fe23.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-02T13:35:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "號召新北隊集結與衝刺，明顯是競選動員文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新北隊持續集結！中和、板橋、林口向前衝！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbiiMHPj02_"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-02T16:00:59+00:00",
+        "inputHash": "6e901a138c533290d2664ad37a6f9e85db12b6c745dfa61276a7ec3085a4cebe",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbiYHYkmeFd",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/4f149b0eedf11ce58557.webp",
+      "keywords": [
+        "長輩"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-02T12:07:14+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "感謝議員邀請並談長輩與孩子福祉，屬形象與競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:感謝 @evalynchen 陳乃瑜、@robin750215 翁震州議員的邀請！繼續一起加油，讓長輩健康生活、讓孩子快樂成長，讓新北成為全齡共好的幸福城市。",
+      "topicScores": {
+        "教育": 0.69,
+        "社福": 0.74,
+        "競選": 0.85
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DbiYHYkmeFd"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "su-chiaohui",
@@ -6247,6 +6317,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/vuqze5JJoEo"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-02T16:00:59+00:00",
+        "inputHash": "af4bdb6bc41fa4d522bd11f3c013920cb1707715726d5195034f308e2d9c0f3c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:g9U_Fl85cGg",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/b78bdcf1f52807bcb904.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容為情緒／自我成長主題，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "[Otter Mommy's Little Chats] Kind of Like It | Emotional Transformation | Self-Awareness | Cognit...",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=g9U_Fl85cGg"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

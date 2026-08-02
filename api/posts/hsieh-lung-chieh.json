@@ -19,8 +19,40 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 191,
+  "count": 193,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-02T16:00:59+00:00",
+        "inputHash": "649dc6324826f7abe13f13ade89f6ede591e68d113eb5bf316cb7db24d428110",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbigC4oj9Fl",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/301fb62aacae6b12bb5a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-02T13:19:33+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "喊出藍白合翻轉台南，屬選舉訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:藍白合翻轉大台南！為台南注入新血",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbigC4oj9Fl"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "hsieh-lung-chieh",
@@ -6810,6 +6842,38 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/EeK8MNxvGBc"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-02T16:00:59+00:00",
+        "inputHash": "228650c26566260b2a807d02f6ea5ddd15fbfab90709a100dde81b2768016760",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:m42IUyuyJq8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e61906b83cb156f44c64.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題直接是翻轉台南與注入新血，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Blue-White Coalition to Flip Greater Tainan! Injecting New Blood into Tainan #HsiehLungchieh #Tai...",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/m42IUyuyJq8"
     }
   ],
   "version": 1
