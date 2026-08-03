@@ -1,6 +1,41 @@
 {
-  "count": 137,
+  "count": 138,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-03T22:03:37+00:00",
+        "inputHash": "91a478b2b3217ab4f5c374f209eda319423f3d862cab80a2f843ea3e6171b999",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbk1laBzlFK/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/f4f69c63bc8c2e6877fc.webp",
+      "keywords": [
+        "文化",
+        "歷史"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-03T11:03:51+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是博物館交接典禮致意，屬活動紀錄非政策倡議。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "亭妃今天出席國立臺灣歷史博物館卸、新任館長交接典禮。\n　　　　\n感謝卸任館長 #張隆志 任內對臺灣歷史文化保存與推廣的努力，也祝福新任館長 #謝仕淵 接棒順利，持續讓更多人認識臺灣、走進歷史，讓文化的力量不斷延續。\n　　　　　　\n#臺灣歷史博物館 #文化傳承 #陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.91
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Dbk1laBzlFK/"
+    },
     {
       "agendaRelevance": 0.19,
       "candidateId": "chen-ting-fei",
