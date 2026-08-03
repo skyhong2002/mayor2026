@@ -1,6 +1,40 @@
 {
-  "count": 185,
+  "count": 186,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-03T16:01:45+00:00",
+        "inputHash": "9023c8401cb9e0215dad75fda9013c7ca6b61c74bc79935326b90991248c6149",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DblGhrPH7dg",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/151dcaf9e55192c5c114.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-03T13:31:18+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "分享美濃湖合照與團結宣示，偏形象經營而非具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:美濃湖的好風景，加上和 @einn.chiu 議瑩委員的好默契，我們會繼續同心讓高雄越來越好！\n\n@lim.fi.him",
+      "topicScores": {
+        "文化觀光": 0.62,
+        "競選": 0.84
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DblGhrPH7dg"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "lai-jui-lung",
