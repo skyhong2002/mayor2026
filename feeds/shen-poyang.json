@@ -1,6 +1,40 @@
 {
-  "count": 173,
+  "count": 174,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-03T10:01:16+00:00",
+        "inputHash": "5b484b29c74cf0c32f592a934c6d60e67c5427deabf394ed0b4ddb74acf4601a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbkUlhtkQdK",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-03T06:14:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "單純宣傳夜市活動與時間地點，無政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:明天晚上，做伙踅夜市！\n⠀\n8/4（二）\n18:50\n📍饒河街夜市",
+      "topicScores": {
+        "文化觀光": 0.98,
+        "生活": 0.76
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbkUlhtkQdK"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
