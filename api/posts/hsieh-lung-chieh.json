@@ -19,8 +19,40 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 193,
+  "count": 194,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-03T04:03:46+00:00",
+        "inputHash": "5940bdd4ce5c7cc13212f88ec3a1a80604b0716de1a610495b2cb77eb274213f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbihhKSSfd1/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/91df00bbb3502500a335.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-02T13:36:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "藍白合與拉抬人選，明顯是選舉口號。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "藍白合翻轉大台南！為台南注入新血 #謝龍介 #台南 #黃國昌 #藍白合 #陳詩薇",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DbihhKSSfd1/"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "hsieh-lung-chieh",
