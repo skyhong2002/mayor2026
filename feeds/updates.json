@@ -2,6 +2,44 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-04T22:01:19+00:00",
+        "inputHash": "abd8b86a1769f060ad315bdb05cd1da4d2bcb00ccca3194f90d6d9d39f1d7d50",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbn9wmJlIEF",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "美食"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-04T16:12:23+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享個人夜市經歷與感謝支持，屬生活與活動感言，非回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:我小時候\n就住在饒河夜市附近\n一天到晚在裡面晃\n⠀\n但我從來沒有走那麼久過XD\n⠀\n謝謝大家的熱情和美食\n以及\n來自世界各國朋友的鼓勵\n⠀\n台北要順\n睡飽也很重要喔\n⠀\n我愛大家",
+      "topicScores": {
+        "文化觀光": 0.71,
+        "生活": 0.98
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Dbn9wmJlIEF"
+    },
+    {
       "agendaRelevance": 0.75,
       "candidateId": "ko-chih-en",
       "candidate_id": "ko-chih-en",
@@ -3844,40 +3882,6 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbhZKlREv2E"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "su-chiaohui",
-      "candidate_id": "su-chiaohui",
-      "candidate_name": "蘇巧慧",
-      "classification": {
-        "classifiedAt": "2026-08-03T04:03:46+00:00",
-        "inputHash": "163f1671f54eb9cdf96daa1a10447d9fea431a7f41df7ee0351bb80dd6088e15",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbhY8_gpPUY/",
-      "imageAspect": 0.5626,
-      "imageUrl": "assets/feed-images/4136fd353de9ff2ab7cf.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-02T02:55:54+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅是市場掃街問候與行程紀錄，無具體公共主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "一早和 #翁震州、#林秉宥、#吳奕萱、#陳岱吟 到新莊裕民市場和鄉親好朋友問好！\n\n感謝大家的熱情支持！今天也是行程滿滿滿，繼續衝！",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbhY8_gpPUY/"
     }
   ],
   "title": "2026 市長官方來源觀測站",
