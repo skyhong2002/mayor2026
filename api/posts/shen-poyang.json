@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 183,
+  "count": 185,
   "posts": [
     {
       "agendaRelevance": 0.12,
@@ -6674,6 +6674,72 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=JMIS9oAd7sQ"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "eeb477430c1bdb72b73012f51faccbf2be075c2751e0b441aa86f633e924f666",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:cQRzNld48Gk",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f0ffe85eb23a00d5dfb0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "僅有影片標題，無法辨識公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The Best Place in Taiwan to Tell Jokes Is.........",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/cQRzNld48Gk"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "4681d1d066d281b7b717fe80af3649e2172d0f116178ec66787c53e2732dc17c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:-eUrHoe3OO4",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7df3df33f380e91a14c5.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.7,
+        "label": "主動發文",
+        "reason": "標題暗示台北改變與城市活化，內容不足以明確判定。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "This change starts with your life. I’m going to get a stagnant Taipei moving again, ensuring a sm...",
+      "topicScores": {
+        "交通": 0.38,
+        "生活": 0.7
+      },
+      "topics": [
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/-eUrHoe3OO4"
     }
   ],
   "version": 1

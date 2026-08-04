@@ -1,6 +1,104 @@
 {
-  "count": 188,
+  "count": 192,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "41b4e3d988a5084cc1f9ca62db03b30cdcbaa4427cc23e3301885d6045c57f27",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbng8mZn-mF",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6bd5ded07325091babd8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-04T12:00:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅轉貼唱歌心得與標註朋友，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:她們唱得好聽，我唱得很投入，這樣算有過關嗎？\n\n@einn.chiu @lim.fi.him",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbng8mZn-mF"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "96d481d62d48749a7cac795dcb38383b522b5fd7ddd792507c416e5cc8477f34",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbnfkU_SZuR/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3c760a8d418d649aab8d.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-04T12:00:26+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為唱歌合影的日常貼文，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "她們唱得好聽，我唱得很投入，這樣算有過關嗎？\n\n@einn.chiu @lim.fi.him",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbnfkU_SZuR/"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "b74d04a98776eccfa1538b607969d8c91aa04918a22812c88cf2fb1a0b88801b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbmw6YeAZtw/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/529cce16c21321852b8b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-04T05:00:54+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "發布防空演習通知與配合事項，屬防災公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "高雄市2026城鎮韌性（防空）演習！\n\n這週五（8月7日）早上10點到10點半，高雄、台南、屏東將同步進行防空演習。\n\n聽到警報或手機簡訊請勿驚慌，並配合以下管制：\n\n🔺平面道路車輛：請立即靠邊停車，駕駛與乘客須「下車」配合引導就近避難。\n\n🔺國道車輛：可正常行駛，但「下交流道後」須配合地方管制。\n\n🔺室內人員：請暫停活動並關閉門窗。避難請記住「地下優於地上、室內優於室外」。\n\n特別提醒，如果不配合演習管制，依法最高會被開罰15萬元罰鍰，請務必配合指揮！10:30聽到解除警報後，即可恢復正常活動。\n\n大家可以掃描圖卡下方的 QR Code 下載「警政服務APP」，平時先了解附近的避難位置。有重要行程的朋友記得避開這半小時，也請幫忙把圖卡傳到家族群組提醒長輩喔！",
+      "topicScores": {
+        "生活": 0.45,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dbmw6YeAZtw/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "lai-jui-lung",
@@ -6899,6 +6997,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/B8JnZuGCDcE"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "eab45c485652054014555311d4dbaae0a11c38dffb70d05a7bef91f6f18cbbdf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:P9vm2lYKGfQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/cdf50ad45a13ca297854.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "揭匾活動與祝福訊息，屬活動紀錄而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "本館龍池宮揭匾圓滿完成！感謝蕭美琴副總統帶來祝福，願高雄平安順利、越來越好！",
+      "topicScores": {
+        "文化觀光": 0.63,
+        "生活": 0.52
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/P9vm2lYKGfQ"
     }
   ],
   "title": "賴瑞隆（高雄市）貼文更新",
