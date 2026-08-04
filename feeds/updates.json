@@ -2,6 +2,43 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "a35410814e4742425dcb1f6c0898b5f85a07d326a687503da95ff3f4e7da4ce0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbmaWolEw3D",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "競選",
+        "主視覺"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-04T01:43:45+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為競選主視覺公開與市長參選宣傳，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:我的競選主視覺，今天大公開！\n\n讓台北順起來。\nFuture Soon. \n\n你的市長 沈伯洋",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbmaWolEw3D"
+    },
+    {
       "agendaRelevance": 0.22,
       "candidateId": "lai-jui-lung",
       "candidate_id": "lai-jui-lung",
@@ -3856,44 +3893,6 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Dbftq29moIN"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-08-01T16:03:29+00:00",
-        "inputHash": "d479f30d75000e6fecf08a530693d36360514a484388a95ee9b1f252e7cedfec",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbftoSESBm7/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/f7f485a954ea3bf7c0f2.webp",
-      "keywords": [
-        "競選"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-01T11:19:34+00:00",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "以競選委員會授證與團結拚勝選為主，屬動員性貼文。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-ig",
-      "text": "今天是我的競選委員會授證大會，由蘇嘉全前院長擔任總召集人、蔡其昌總召擔任副召集人，集結黨公職、地方幹部及所有支持者，團結一心、全力拚勝選。\n\n一路走來，我始終相信，台中的進步不是一個人的力量，而是大家共同努力的成果。這座城市值得一個更有效率、更有溫度、更具前瞻視野的市政團隊。\n\n團結欣台中，全力拚勝選，11/28一起打造更好的台中。",
-      "topicScores": {
-        "生活": 0.64,
-        "競選": 0.98
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbftoSESBm7/"
     }
   ],
   "title": "2026 市長官方來源觀測站",

@@ -1,6 +1,41 @@
 {
-  "count": 179,
+  "count": 182,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "a35410814e4742425dcb1f6c0898b5f85a07d326a687503da95ff3f4e7da4ce0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbmaWolEw3D",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "競選",
+        "主視覺"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-04T01:43:45+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為競選主視覺公開與市長參選宣傳，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:我的競選主視覺，今天大公開！\n\n讓台北順起來。\nFuture Soon. \n\n你的市長 沈伯洋",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbmaWolEw3D"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
@@ -6518,6 +6553,73 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/qHpLW3TAG4E"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "7bc87c5d4df1660dd768b9a0481464373445d9de122ef9aab5008004a7eef828",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xqi7z9rfiaM",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/b5d10a5ec5ce2e89f9e4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "標題為台北市長選舉主視覺揭露，核心是競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Smooth & Steady | Kuma Shen 2026 Campaign Key Visual Reveal Concept Animation | Taipei May...",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=xqi7z9rfiaM"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "e2c23e6250e56f3353ba48f48a5fdf6d72cda096279801b88b675be0dbe185d9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:JMIS9oAd7sQ",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/08bc3c1a0ccf747ddf6c.webp",
+      "keywords": [
+        "競選",
+        "主視覺"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是競選主視覺公布記者會，屬選舉宣傳活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "競選主視覺公佈記者會",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=JMIS9oAd7sQ"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",
