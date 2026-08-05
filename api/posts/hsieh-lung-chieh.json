@@ -19,8 +19,76 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 203,
+  "count": 206,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "43b87e290b7b9939888eea141fb431700886bde80f42222ca0bf67e49db0da70",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbp1_s1S17G/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6290f24ecb6ef12cd5d8.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-05T09:44:45+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅轉述民眾陳情與議員會勘改善，屬個案處理紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "網友陳情：台江大道跟開安路口待轉格太小…李中岑議員已會勘研議改善",
+      "topicScores": {
+        "交通": 0.97,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/Dbp1_s1S17G/"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "2332dd1819e826e559112037bb5ce10c1be9e2969b9c2cc785406eaea5df552e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbp2GaWkvmL",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/03d081ebfb0e8b832f05.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-05T09:43:59+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "同為陳情與會勘改善紀錄，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友陳情：台江大道跟開安路口待轉格太小…李中岑議員已會勘研議改善",
+      "topicScores": {
+        "交通": 0.97,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/Dbp2GaWkvmL"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "hsieh-lung-chieh",
@@ -7230,6 +7298,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=Zr4hDFt7tCs"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "b1e77316f390c9ac12b85480bacd5ec4fd9322b14e5ccc7e2fe20c0d4c873bbb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fPIo2gZCUPk",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ac10ea0f54c29e9ecc7c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "反映路口左轉槽太小的民怨並指向議會處理，屬交通與監督議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Netizen Complaint: Left-turn Box at Taijiang Blvd and Kaian Rd Intersection is Too Small… Council...",
+      "topicScores": {
+        "交通": 0.97,
+        "議會監督": 0.41
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/fPIo2gZCUPk"
     }
   ],
   "version": 1

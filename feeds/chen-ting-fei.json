@@ -1,6 +1,121 @@
 {
-  "count": 138,
+  "count": 141,
   "posts": [
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "fe679e4f2ff283e51b9059f90fae9a1d978222436a29f5b66cdc6d010cc98ccb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbp1UqJgNpu/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/44b0a01be24fa105acee.webp",
+      "keywords": [
+        "文化",
+        "藝術"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-05T09:37:10+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "出席戲曲藝術館開館並談文化傳承，偏活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "鑼鼓響起，傳統戲曲的魅力無可取代！\n　　　　　\n來到「戲巢藝術館」營運開館儀式，一進現場就被濃濃的歌仔戲氣氛深深吸引。特別感謝明華園戲劇總團的陳勝福總團長，以及永遠的「無敵小生」孫翠鳳老師，長期以來對台灣傳統藝術的推廣與付出，讓更多人能近距離感受戲曲文化之美。\n 　　　　　　 \n藝術館正式開幕，未來這裡不僅是傳承文化的新基地，更將成為台灣戲曲的亮點，我們有信心，台灣傳統戲曲文化從台南出發，放眼全世界❤️\n　　　　　　　\n#陳亭妃 #戲巢藝術館 #明華園戲劇總團 #孫翠鳳 #傳統戲曲 #文化傳承",
+      "topicScores": {
+        "文化觀光": 0.95
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Dbp1UqJgNpu/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "3a0d120790e62e03bc5da45e752c3f85595187dadd73862686558531a7d4cb7c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbpRSSCTDRC/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/d5de25130e1ac2716745.webp",
+      "keywords": [
+        "交通",
+        "公車",
+        "長輩"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-05T04:22:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳小黃公車上線，重點在偏鄉交通便利。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "大台南小黃公車再升級！🚕\n　　　　\n亭妃今天和大家一起迎接 黃3、黃16、黃23 正式上線，讓偏鄉交通更便利，長輩就醫、學生通學、鄉親採買都更加方便。期盼能縮短城鄉距離，讓每位市民都享有平等的交通服務。一起打造更便利、更宜居的大台南！💛\n　　　　　　　\n#大台南小黃公車 #公共運輸 #交通更便利 #台南向前行 #陳亭妃",
+      "topicScores": {
+        "交通": 0.96,
+        "生活": 0.56,
+        "社福": 0.68
+      },
+      "topics": [
+        "交通",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbpRSSCTDRC/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "fd64e5a33ca9d06673de950f4546de970c71b6f55cad00995163390491de27f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbpRTJvEyXJ",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/83c8b3f1ba8fa49de7b7.webp",
+      "keywords": [
+        "交通",
+        "公車",
+        "長輩"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-05T04:22:22+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "同為小黃公車上線宣傳，主軸是交通改善。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:大台南小黃公車再升級！🚕\n　　　　\n亭妃今天和大家一起迎接 黃3、黃16、黃23 正式上線，讓偏鄉交通更便利，長輩就醫、學生通學、鄉親採買都更加方便。期盼能縮短城鄉距離，讓每位市民都享有平等的交通服務。一起打造更便利、更宜居的大台南！💛\n　　　　　　　\n#大台南小黃公車 #公共運輸 #交通更便利 #台南向前行 #陳亭妃",
+      "topicScores": {
+        "交通": 0.96,
+        "生活": 0.56,
+        "社福": 0.68
+      },
+      "topics": [
+        "交通",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbpRTJvEyXJ"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",

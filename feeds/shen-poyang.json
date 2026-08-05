@@ -1,6 +1,38 @@
 {
-  "count": 188,
+  "count": 190,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "954495035df5da6a6acbdeb1fa3ce40c30b0d8812a6e1988b9f3a8fb6a981a3b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbpZkZ-kUFX",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/bfac91f3961b9b0b84b8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-05T05:35:00+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享掃街後吃油飯與請店家勿受負評影響，屬日常動態。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:昨晚掃街\n我比團隊吃的還多\n大家真的辛苦了\n所以今天中午買…\n東發號的油飯給同仁～\n⠀\n昨天在店家留下簽名\n意外引起一些波瀾\n⠀\n大家政治立場不一致\n在網路上吵吵鬧鬧\n都很正常\n⠀\n但不要因為這樣\n到評論區刷負評\n影響辛苦的店家\n⠀\n身為油飯愛好者\n我先去吃油飯了",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbpZkZ-kUFX"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
@@ -6822,6 +6854,40 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/-eUrHoe3OO4"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "d4a6746512c77de56c4d519e568c4528dcb78c46e319ba8d9b204ef9a91b4aeb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:sFvKXjGIbLs",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/377bf9e7cdb4be33b419.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹內湖夜市美食導覽，屬觀光生活內容，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Join Gao Chia-yu for a Food Tour of the Neihu 737 Night Market.",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "生活": 0.22
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/sFvKXjGIbLs"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",
