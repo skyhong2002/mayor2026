@@ -1,5 +1,5 @@
 {
-  "count": 187,
+  "count": 189,
   "posts": [
     {
       "agendaRelevance": 0.96,
@@ -6778,6 +6778,78 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/4Sy4DCH7-8o"
+    },
+    {
+      "agendaRelevance": 0.54,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-05T04:01:33+00:00",
+        "inputHash": "59c26491c76555a98ed3b511cb3b9e3b4c509d568049f7e511e81c754a3ca59a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:wOaUegvAWS4",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/b3ee78670008939b6787.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主題是捷運藍線與食安升級的地方巡訪，屬主動政務宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "中科 逢甲商圈 捷運藍線 食安全面升級！何欣純168巡迴這次到西屯",
+      "topicScores": {
+        "交通": 0.89,
+        "環境": 0.62,
+        "生活": 0.55
+      },
+      "topics": [
+        "交通",
+        "環境",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=wOaUegvAWS4"
+    },
+    {
+      "agendaRelevance": 0.46,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-05T04:01:33+00:00",
+        "inputHash": "5d243f6957f9fe08395c98f61331816c4dd91c5244450ba6ed87ffb764d8621d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:yHD4VlRKkmI",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/169bf4806834b990768b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要在介紹地方景點與打造城市新亮點，偏觀光行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "豐原竟藏著這麼美的地方！打造台中新亮點",
+      "topicScores": {
+        "文化觀光": 0.96,
+        "生活": 0.54
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/yHD4VlRKkmI"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",
