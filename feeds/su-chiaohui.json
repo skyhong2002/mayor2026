@@ -1,6 +1,41 @@
 {
-  "count": 188,
+  "count": 189,
   "posts": [
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-05T16:01:14+00:00",
+        "inputHash": "1c8375706ea8e41736f841d467d81151d562d824a8ee51097aa18472af234bee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbqMjUsGcRN",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/5469ab49dc85672d7f31.webp",
+      "keywords": [
+        "住宅",
+        "都更"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-05T13:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出都更與住宅政見，明確屬住宅政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:🏠 巧慧提出「都更與住宅政見」！全力加速新北都更，讓街廓更美麗、市民更安居！ \n\n#新時代 #新市長 #蘇巧慧",
+      "topicScores": {
+        "住宅": 0.98
+      },
+      "topics": [
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/DbqMjUsGcRN"
+    },
     {
       "agendaRelevance": 0.85,
       "candidateId": "su-chiaohui",
