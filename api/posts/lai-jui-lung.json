@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/07dca080ba74ddb99ed0.webp",
+    "avatarUrl": "assets/source-avatars/f8a3613353e5b337dada.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "lai-jui-lung",
@@ -19,8 +19,80 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 193,
+  "count": 197,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "28c76dcdad248d35bee78582f5c925c872145be30b40290ac23b0d1be69c6743",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1628203951994602",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7aba470d844c4cd3e1d7.webp",
+      "keywords": [
+        "後援會",
+        "凍蒜"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-05T10:49:22.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述後援會氣氛與支持聲量，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "上週末的後援會，掌聲很大聲、凍蒜更大聲，讓我信心十足，這條路有大家同行，越走越有力！",
+      "topicScores": {
+        "生活": 0.42,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/27854710900838308/"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "df478fc5a01192624e0af126a4885db88c3218097221e33411f98e0cd78fc9c8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbp9f4FguzT/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/9ff6cce317ee4df9bba3.webp",
+      "keywords": [
+        "後援會",
+        "凍蒜"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-05T10:49:19+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為後援會造勢與選舉動員，明顯屬競選。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "上週末的後援會，掌聲很大聲、凍蒜更大聲，讓我信心十足，這條路有大家同行，越走越有力！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/Dbp9f4FguzT/"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "lai-jui-lung",
@@ -62,6 +134,80 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbpGL3bief_"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "92017a468a501516c98550ceab1d8623515252312b0d3df17ab27d0796a9de97",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1627840908697573",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/7e2117358397b11a7ddf.webp",
+      "keywords": [
+        "交通",
+        "公車",
+        "產業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-05T00:45:35.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以公車廣告和看板造勢，並提出競選式市政願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "高雄隊，全面啟動！🚌\n\n「南方崛起 邁向國際」公車廣告上路囉，我與議員夥伴的聯合看板也陸續亮相，代表高雄隊已經整隊出發，要用最大的團結，為高雄拚最好的未來！\n\n公車每天陪伴市民朋友日常通行，就像載著高雄持續向前。未來，我會以「拚產業、留人才、強交通、顧生活」四大目標，接棒其邁市長打下的基礎，讓城市的進步持續深化。\n\n看到瑞隆廣告公車或高雄隊看板，歡迎拍照打卡分享！一起拚市政延續、議會過半，讓高雄不斷向前、邁向國際！",
+      "topicScores": {
+        "交通": 0.53,
+        "生活": 0.45,
+        "競選": 0.98,
+        "經濟": 0.52
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/zenolai2/posts/pfbid02ZxfPmnZZj6UP6Xx3xo1eHGtkuWAu8kCeKiBmck73jP46SfRuPBCPYcMWJS3XF9Sal"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "c99911a15e98edd228a4287012e4e6038e48fbf0c59f9378904b93ed718c3102",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1627370962077901",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1fa9deb6c947c101fca8.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-04T12:09:12.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅分享唱歌互動，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "她們唱得好聽，我唱得很投入，這樣算有過關嗎？\n\n登真-邱議瑩 林慧欣",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/27726007210390291/"
     },
     {
       "agendaRelevance": 0.01,

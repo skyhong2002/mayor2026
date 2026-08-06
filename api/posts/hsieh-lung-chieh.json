@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/b131d05f228f77dc4f5c.webp",
+    "avatarUrl": "assets/source-avatars/b83d96bb98f8bbf914b8.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 206,
+  "count": 209,
   "posts": [
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "41efa5aa42ff581dc796fa84469e6b572285853ccf80edbeaa155e160c9bf401",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1622891132525802",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/00b0f07f28ca1721e83c.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-05T09:45:38.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "提及陳情與會勘改善路口待轉格，屬交通問題處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友陳情：台江大道跟開安路口待轉格太小…李中岑議員已會勘研議改善",
+      "topicScores": {
+        "交通": 0.96,
+        "議會監督": 0.7
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/reel/2385621158911396/"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
@@ -88,6 +122,80 @@
         "議會監督"
       ],
       "url": "https://www.threads.com/t/Dbp2GaWkvmL"
+    },
+    {
+      "agendaRelevance": 0.33,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "d649804dc8f8cea1caccd10e5bc9f00c30aa5643ba97dadd5378e20feb08da43",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-06T04:05:46+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1341469271022820",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/ba60352e4a66644def79.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-04T13:24:10.000Z",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅見回應網友字樣，未辨識具體他方觀點與答覆目的，三項不成立。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "【本集介紹】\n📌 回應網友：奇美博物館前交通改善預計年底完工！\n📌 台糖通報爭議，高檢署主任檢察官：通報是法定義務...\n📌 中聯員工：豆子爛爛的、這批真的不對勁，高層選擇繼續\n出貨！\n📌 檢調要針對廠商是否有申請理賠去查！\n📌 政府超徵，要還稅於民！\n\n支持龍介線上捐款：https://donate.newebpay.com/062268268/hsiehlungchieh115",
+      "topicScores": {
+        "交通": 0.7,
+        "生活": 0.52,
+        "經濟": 0.74,
+        "議會監督": 0.79
+      },
+      "topics": [
+        "議會監督",
+        "經濟",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1341469271022820/"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T04:05:03+00:00",
+        "inputHash": "b07373347bd6526039ce9aa86a6bd19bd22e5cd3ac039626fab7acdd67e8f67d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:2290031048200750",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/b27f703c3a1b0e61f563.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-04T09:08:12.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是候選人路口宣講行程紀錄，屬競選活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "市長候選人路口宣講-安平區\n8月4日\n建平路、永華路口",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/2290031048200750/"
     },
     {
       "agendaRelevance": 0.82,
