@@ -1,6 +1,74 @@
 {
-  "count": 197,
+  "count": 199,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-06T10:00:57+00:00",
+        "inputHash": "073173c23e867a19b617ca2b8a062c6d10b6bee06129c8ba430b7013d9648932",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbsKnYvlEpf",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/0bdbdeb89fd9914ac41a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-06T07:21:41+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅公告明日行程與地點，無具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:明天早上一起來公園、市場走走～\n\n8/7（五）\n\n06:05\n📍青年公園\n\n08:20\n📍國光市場（國興市場）",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbsKnYvlEpf"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-06T10:00:57+00:00",
+        "inputHash": "649cc557f90bf920aadf988a7ec02997d3d80e563b5afff3387ee2b70e5432fd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbr7pmCkTal",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/1f6a7b4d7fa03e627ed2.webp",
+      "keywords": [
+        "投票"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-06T05:10:54+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主打監票與守護民主的選舉動員，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:請大家成為台北的眼睛！\n⠀\n過往很多投票的鬼故事\n也間接地形成\n我們現在的投票制度\n台灣的投票史\n就是民主史⠀\n⠀\n這個制度得來不易\n值得你我守護\n⠀\n11月28日\n大家一起來成為\n台北的眼睛！\n一起來監票！\n⠀\n如果你認同台灣民主值得守護\n歡迎加入我的官方Line\n報名成為「巡洋監兵」\n一起守護台灣！",
+      "topicScores": {
+        "治安": 0.45,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/Dbr7pmCkTal"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "shen-poyang",
