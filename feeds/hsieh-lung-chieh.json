@@ -1,6 +1,42 @@
 {
-  "count": 211,
+  "count": 213,
   "posts": [
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T22:03:31+00:00",
+        "inputHash": "6955fe8a82271ff691c15797dc67318a7274f98212497239d15466e24bbfb5e2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbs2GfkSAow/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/32a535c4a535dc54bec8.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-06T13:42:12+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主張普發一萬與還稅於民，明確屬公共政策攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "去年超徵稅收！在野黨提再「普發一萬」 #謝龍介 #陳冠諭 #普發一萬",
+      "topicScores": {
+        "生活": 0.65,
+        "社福": 0.88,
+        "經濟": 0.94
+      },
+      "topics": [
+        "經濟",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dbs2GfkSAow/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -34,6 +70,46 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Dbs0di-j4c4"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T22:03:31+00:00",
+        "inputHash": "a69bcd60aed38a58faaae77d8f7bc9c489f44da98d83776f15e6091f3f166c69",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-06T22:03:44+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbsTu6Pksia/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/7c69c977efafcbf5001b.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-06T08:42:36+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "雖提及回應網友，但未具體指向他方說法，主旨偏新聞/事件整理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "20260804【本集介紹】\n📌 回應網友：奇美博物館前交通改善預計年底完工！\n📌 台糖通報爭議，高檢署主任檢察官：通報是法定義務...\n📌 中聯員工：豆子爛爛的、這批真的不對勁，高層選擇繼續\n出貨！\n📌 檢調要針對廠商是否有申請理賠去查！\n📌 政府超徵，要還稅於民！",
+      "topicScores": {
+        "交通": 0.82,
+        "生活": 0.56,
+        "經濟": 0.58
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbsTu6Pksia/"
     },
     {
       "agendaRelevance": 0.62,
