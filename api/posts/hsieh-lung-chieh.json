@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 209,
+  "count": 211,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T16:02:05+00:00",
+        "inputHash": "ad9a87c15556557e9a048bb569d210baded8aaf390881b85b8a222f068ba1676",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbs0di-j4c4",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/879a471a324abbff4d3e.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-06T13:27:41+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅轉述超徵稅收與普發一萬議題，未見回應特定對手說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:去年超徵稅收！在野黨提再「普發一萬」",
+      "topicScores": {
+        "生活": 0.55,
+        "經濟": 0.88
+      },
+      "topics": [
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbs0di-j4c4"
+    },
     {
       "agendaRelevance": 0.62,
       "candidateId": "hsieh-lung-chieh",
@@ -7440,6 +7474,38 @@
         "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/fPIo2gZCUPk"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-06T16:02:05+00:00",
+        "inputHash": "66c15775c59055dab07f137988ddb73172280e00100e024250243ae9311eb47e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:nXGoacLuX4k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/2efa9caac4d892064580.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題僅談超徵稅收與普發現金，屬一般政治議題評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "去年超徵稅收！在野黨提再「普發一萬」 #謝龍介 #陳冠諭 #普發一萬",
+      "topicScores": {
+        "經濟": 0.92
+      },
+      "topics": [
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/nXGoacLuX4k"
     }
   ],
   "version": 1

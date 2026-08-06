@@ -19,7 +19,7 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 188,
+  "count": 190,
   "posts": [
     {
       "agendaRelevance": 0.11,
@@ -7304,6 +7304,76 @@
         "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/zF5bSJr74t8"
+    },
+    {
+      "agendaRelevance": 0.11,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-06T16:02:05+00:00",
+        "inputHash": "87476b3ec16abe4ec3368a4f95c1de45fdfb4bf83b8104ba07965a6432f0988c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:v7yKMHAjIQM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/5848cb96f4ff65fe8a2c.webp",
+      "keywords": [
+        "照顧"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "漁民節活動紀錄與承諾照顧漁民，屬活動宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "#小港區漁會 漁民節活動。柯老師承諾：照顧漁民，讓大家安心出海、放心生活、滿載而歸。#柯志恩 #繞著高雄跑 #漁民節",
+      "topicScores": {
+        "社福": 0.71,
+        "經濟": 0.63
+      },
+      "topics": [
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/v7yKMHAjIQM"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-06T16:02:05+00:00",
+        "inputHash": "913d0f3bdf4e3b9b6ba26e25a55344751fbc85454ae8f28c4f53889db1ff022c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:bVat6NGrrvU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/0eed0e748d86742aff40.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "KMT女性聯誼與廟口談話，主要為競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "KMT Women Unite! Ke Chih-en: Women Hold Up Half the Sky! #KeChien #TempleTalk #Nanzi #Kaohsiung",
+      "topicScores": {
+        "文化觀光": 0.6,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/bVat6NGrrvU"
     }
   ],
   "version": 1
