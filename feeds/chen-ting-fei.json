@@ -1,6 +1,38 @@
 {
-  "count": 145,
+  "count": 146,
   "posts": [
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "4642c70e79e7de3ac52a2eb328310e4557ae1e8c7786645b20993acc88ea7391",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1612209686933620",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-06T10:34:40.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "直接喊出勝選口號，明顯為選戰動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "2026要贏！2028更要贏！\n\n#林志展主委\n#陳怡珍執行長\n#周嘉韋副執行長\n#李宗翰副執行長",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid02sm8qgH76DFAmhi77DAXMFhupYmfMjWWzYehkXpfmEdFN71ztyCZSfMJqNgp9adgnl"
+    },
     {
       "agendaRelevance": 0.35,
       "candidateId": "chen-ting-fei",

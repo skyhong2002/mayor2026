@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/b83d96bb98f8bbf914b8.webp",
+    "avatarUrl": "assets/source-avatars/348009316b7ba6927ea1.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,79 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 215,
+  "count": 220,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "7951476dc8497d6384cd105cd0475a3e5cbe6e8ab7339cbd4f144fb1e8922b16",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1745807940097914",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/09928c31a0b43d73f2b2.webp",
+      "keywords": [
+        "疫苗",
+        "兩岸"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-07T13:23:47.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "節目介紹列出疫苗、兩岸與普發現金議題，屬內容預告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "【本集介紹】\n📌 慈濟採購新冠疫苗遭詐騙10億\n📌 台語讀古詩很有感情！龍介用台語吟 李商隱《夜雨寄北》\n📌 龍介在推廣祖先留下來的「漢文台語」\n📌 兩岸關係緊張！兵員不足？網友問：研發及專長替代役取消？法源在哪裡？\n📌 超徵稅收「普發一萬」一讀已經通過\n\n支持龍介線上捐款：https://donate.newebpay.com/062268268/hsiehlungchieh115\n\n龍介的 Tiktok 開放 Call in 👉 https://www.tiktok.com/@longuy1003/live \n👉 Call in 步驟：請至 Tiktok 搜尋「謝龍介」並找到龍介的直播，直播畫面的下方申請「訪客連線」，龍介兄會隨機接通。",
+      "topicScores": {
+        "兩岸外交": 0.55,
+        "經濟": 0.58,
+        "醫療": 0.76
+      },
+      "topics": [
+        "醫療",
+        "經濟",
+        "兩岸外交"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1745807940097914/"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "3cce3955ef126041ef5641040b987566ebd57318a032ccf930fb2d4d5059c988",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1624410672373848",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/40253151c61fa55d39a6.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-07T03:30:21.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張普發一萬、還稅於民，屬明確經濟訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "「普發一萬」一讀通過！與其被亂花，不如還稅於民",
+      "topicScores": {
+        "經濟": 0.95
+      },
+      "topics": [
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/2104312180294189/"
+    },
     {
       "agendaRelevance": 0.78,
       "candidateId": "hsieh-lung-chieh",
@@ -54,6 +125,40 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DbuUTb5iC1Y"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "2deb3e255ff25c65d53bf4ffce4efbf306f9a547a2023649a4e8413060739980",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbuUHN6SL_0/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4b53cc4256e2f17cec33.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-07T03:23:39+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅提普發一萬與還稅於民立場，屬一般政策表態。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "「普發一萬」一讀通過！與其被亂花，不如還稅於民",
+      "topicScores": {
+        "生活": 0.7,
+        "經濟": 0.88
+      },
+      "topics": [
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbuUHN6SL_0/"
     },
     {
       "agendaRelevance": 0.78,
@@ -124,6 +229,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Dbs0di-j4c4"
+    },
+    {
+      "agendaRelevance": 0.65,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "7263e47e69cac6546f53cd4f02c6475c1e289724106d25c190a8116530a758a3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1623893055758943",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/063c587d1c3866c4fe2e.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-06T13:07:26.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "討論超徵稅收與普發現金，屬財政政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "去年超徵稅收！在野黨提再「普發一萬」",
+      "topicScores": {
+        "經濟": 0.93
+      },
+      "topics": [
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1614376540045261/"
     },
     {
       "agendaRelevance": 0.22,
@@ -7648,6 +7785,47 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/T6EJCw83-zI"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "a034b7cb6ea0998136df4b41ed0a5b3d1896c46b738c41b6d3cddaa7d453ca93",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:zAGVcdceV_g",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/3b5932edab75ce749ef1.webp",
+      "keywords": [
+        "疫苗",
+        "兩岸"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "內容混合疫苗詐騙、兵員與台語推廣，偏時事雜談非明確政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260807 慈濟基金會採購新冠疫苗遭詐騙10億...龍介在推廣祖先留下來的「漢文台語」！兩岸關係緊張！兵員不足？網友問：研發及專長替代役取消？法源在哪裡？  @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "兩岸外交": 0.71,
+        "教育": 0.68,
+        "生活": 0.56,
+        "醫療": 0.96
+      },
+      "topics": [
+        "醫療",
+        "兩岸外交",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=zAGVcdceV_g"
     }
   ],
   "version": 1
