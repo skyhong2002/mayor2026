@@ -1,6 +1,41 @@
 {
-  "count": 198,
+  "count": 202,
   "posts": [
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "39f6c3e229d4e5fbf016f2e3d767aedc839d28c7c9d6e07c06daf623db1bb431",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbuAUiXH2IE",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/61f5612b841bec61920a.webp",
+      "keywords": [
+        "教育",
+        "雙語"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-07T00:30:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張加倍投資雙語教育，明確提出教育政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:加倍投資雙語教育，讓高雄的孩子更有自信，勇敢邁向國際✈️",
+      "topicScores": {
+        "教育": 0.99
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DbuAUiXH2IE"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lai-jui-lung",
@@ -7259,6 +7294,113 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/P9vm2lYKGfQ"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "948f812bf507ed6460c6d36000ee8aa5ea56c4c987491c347485e0894c63e3a5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fddVIx1fs0I",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/addea10d2dd7eca8ff87.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述前往滯洪池視察水情，屬防災應變紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "6月26日清晨從鎮州抽水站離開後，我也再前往寶業里滯洪池視察水情。",
+      "topicScores": {
+        "環境": 0.56,
+        "防災": 0.96
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "url": "https://www.youtube.com/shorts/fddVIx1fs0I"
+    },
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "d49c70d1f99be8fb578c09d19764545a99d06598d23c46c68786e6df85843b57",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:68-9-LwEOL8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8376cce96a309021ec4a.webp",
+      "keywords": [
+        "豪雨",
+        "防災",
+        "警戒"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "強調豪雨防災與抽水站整備，屬災害應變紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "0625豪雨影響高雄，防災工作必須保持警戒。我和其邁市長趕到鯤洲抽水站，確認現場狀況，讓應變更即時，把風險降到最低。",
+      "topicScores": {
+        "交通": 0.45,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/68-9-LwEOL8"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "93395fc4740326df2fe72d3812b8379697adec8deb78d4725b172bdf2cf6abea",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:bejob2KrX3w",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/0d3170c499f5e9212dc8.webp",
+      "keywords": [
+        "颱風",
+        "大雨"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明颱風豪雨下視察抽水站與防汛整備，屬防災紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "0625米克拉颱風外圍環流帶來持續性大雨，我和其邁市長也在第一時間趕到旗山溪洲抽水站，確認水情與防汛整備狀況。",
+      "topicScores": {
+        "防災": 0.98
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/bejob2KrX3w"
     }
   ],
   "title": "賴瑞隆（高雄市）貼文更新",

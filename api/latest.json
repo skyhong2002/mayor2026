@@ -2,6 +2,111 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.78,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "a50bdcaa5a5ddc55c42051f87b428a63ee7c072747e84a45a06352ab8acb6248",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbuUTb5iC1Y",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/667cb6814177180ed3aa.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-07T03:24:55+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張普發一萬、還稅於民，屬明確財政與經濟立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:「普發一萬」一讀通過！與其被亂花，不如還稅於民",
+      "topicScores": {
+        "競選": 0.52,
+        "經濟": 0.96
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbuUTb5iC1Y"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "1e0dcfe6250487c3671272d8817941877d56cc79b5d54e674be3c2df913351d3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbuIsEslH8f",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/9051f230c5f4d64cde9d.webp",
+      "keywords": [
+        "籃球"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-07T01:43:19+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述打球、學飛盤與拜訪市場，屬日常活動與互動分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:大家也太早起了吧！！！\n⠀\n打籃球我沒問題，\n但柔軟度我不行！\n⠀\n不過，\n今天被青年公園民眾，\n開發了一個新技能，\n就是飛盤\n第一次丟歪，\n結果大姐一教，\n馬上學會，\n太會教了啦！\n⠀\n謝謝鄉親的熱情，\n讓整個公園充滿活力！\n⠀\n樹超多，走起來舒適涼快～\n接下來的國光市場，\n又遇到更多支持者，\n真的很謝謝大家的溫暖～",
+      "topicScores": {
+        "生活": 0.86,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbuIsEslH8f"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-07T04:00:54+00:00",
+        "inputHash": "39f6c3e229d4e5fbf016f2e3d767aedc839d28c7c9d6e07c06daf623db1bb431",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbuAUiXH2IE",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/61f5612b841bec61920a.webp",
+      "keywords": [
+        "教育",
+        "雙語"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-07T00:30:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張加倍投資雙語教育，明確提出教育政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:加倍投資雙語教育，讓高雄的孩子更有自信，勇敢邁向國際✈️",
+      "topicScores": {
+        "教育": 0.99
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DbuAUiXH2IE"
+    },
+    {
       "agendaRelevance": 0.01,
       "candidateId": "ho-hsin-chun",
       "classification": {
@@ -3609,128 +3714,6 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbpRTJvEyXJ"
-    },
-    {
-      "agendaRelevance": 0.76,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-06T04:05:03+00:00",
-        "inputHash": "08c6f13124132644bd9ade143ba004fa9dd2e9ed1c353323951aa985b9c40713",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1611111427043446",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/43a656fa0677b6e976e4.webp",
-      "keywords": [
-        "交通",
-        "公車",
-        "長輩"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-05T04:22:21.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動宣傳小黃公車上線，重點在偏鄉交通服務改善。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "大台南小黃公車再升級！🚕\n　　　　\n亭妃今天和大家一起迎接 黃3、黃16、黃23 正式上線，讓偏鄉交通更便利，長輩就醫、學生通學、鄉親採買都更加方便。期盼能縮短城鄉距離，讓每位市民都享有平等的交通服務。一起打造更便利、更宜居的大台南！💛\n　　　　　　　\n#大台南小黃公車 #公共運輸 #交通更便利 #台南向前行 #陳亭妃",
-      "topicScores": {
-        "交通": 0.95,
-        "生活": 0.56,
-        "社福": 0.72
-      },
-      "topics": [
-        "交通",
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid07xoLrmqTACuxWRi69ZxTjxE2wyFmHfPfseU6ncrVsAdgCz52H6koCni7foANiPzbl"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-05T04:01:33+00:00",
-        "inputHash": "7ccb0be80290826866624739ece40f8ac2d59f85a7a43fdd6fcfc8816523cd40",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbpNZBDid80",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/2021def6cba6ec4e3dca.webp",
-      "keywords": [
-        "環境",
-        "氣候",
-        "補助",
-        "照顧",
-        "中小企業"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-05T03:48:13+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動提出農民高溫防護制度與補助方案，屬具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:農民抗高溫 世杰來照顧🌞\n\n我一直在想，在這片無遮蔽物的農田裡，該如何照顧在大太陽下耕作的農民朋友，讓更多人可以更安心的工作，守護北部糧倉的未來跟發展。\n\n近年來，極端高溫已成為常態風險，在戶外或高溫環境工作的人，面臨極大的挑戰，對於農民更是首當其衝。\n\n世杰出身農家，絕對是最了解農業跟農民需求的人，我到新屋區與在地青農交流，並實地了解農民高溫作業情形，邀請佳翰、佳叡兩兄弟一同體驗水冷服。\n\n兩兄弟試穿水冷服以後，都說涼快很多，在這種天氣非常實用！我和陳睿生議員、張佩芸議員候選人 @guanyinmelody ，也現場體驗，真的有感降溫🧊\n\n面對抗高溫調適，勞動部已針對勞工發布《改善安全衛生設施及器具補助作業要點》，受理中小企業及自營作業者申請高溫防護設施與個人防護具，但卻因農民不屬於勞保勞工，導致無法適用。\n\n我是黃世杰，我要推動建立「農民高溫安全與氣候調適制度」。\n\n補助個人穿戴式防熱裝備、降溫設施、智慧環控系統，以三大面向建構完整支持體系，協助在地農民採購抗高溫設備，未來作為地方政府因應氣候變遷及保障農業勞動安全的示範模式，守護農民安全與權益。",
-      "topicScores": {
-        "環境": 0.92,
-        "社福": 0.7,
-        "經濟": 0.55
-      },
-      "topics": [
-        "環境",
-        "社福",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DbpNZBDid80"
-    },
-    {
-      "agendaRelevance": 0.93,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-05T10:03:43+00:00",
-        "inputHash": "ca7b24cd31d4401426484ed17499487c9d8f59f2ec529480aabadbbae661cab7",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbpM5PPk-OZ/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/62c4a7105d5094ce9942.webp",
-      "keywords": [
-        "環境",
-        "氣候",
-        "中小企業"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-05T03:43:54+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出農民高溫安全與氣候調適制度，具體政策主張明確。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "農民抗高溫 世杰來照顧🌞\n\n我一直在想，在這片無遮蔽物的農田裡，該如何照顧在大太陽下耕作的農民朋友，讓更多人可以更安心的工作，守護北部糧倉的未來跟發展。\n\n近年來，極端高溫已成為常態風險，在戶外或高溫環境工作的人，面臨極大的挑戰，對於農民更是首當其衝。\n\n世杰出身農家，絕對是最了解農業跟農民需求的人，我到新屋區與在地青農交流，並實地了解農民高溫作業情形，邀請佳翰、佳叡兩兄弟一同體驗水冷服。\n\n兩兄弟試穿水冷服以後，都說涼快很多，在這種天氣非常實用！我和 #陳睿生 議員、張佩芸議員候選人 @guanyinmelody ，也現場體驗，真的有感降溫🧊\n\n面對抗高溫調適，勞動部已針對勞工發布《改善安全衛生設施及器具補助作業要點》，受理中小企業及自營作業者申請高溫防護設施與個人防護具，但卻因農民不屬於勞保勞工，導致無法適用。\n\n我是黃世杰，我要推動建立「農民高溫安全與氣候調適制度」：\n\n🔊 個人穿戴式防熱裝備補助\n風扇衣（空調服）、水冷服（冰水循環衣）補助\n\n🔊 設施降溫補助\n移動式大型水冷扇補助\n\n🔊 智慧環控補助\n微霧降溫與遮蔭系統、智慧環控微氣候系統補助\n\n以三大面向建構完整支持體系，協助在地農民採購抗高溫設備，未來作為地方政府因應氣候變遷及保障農業勞動安全的示範模式，守護農民安全與權益。",
-      "topicScores": {
-        "環境": 0.9,
-        "生活": 0.6,
-        "經濟": 0.73
-      },
-      "topics": [
-        "環境",
-        "經濟",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbpM5PPk-OZ/"
     }
   ],
   "version": 1
