@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 209,
+  "count": 211,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-08T10:03:20+00:00",
+        "inputHash": "1f93126fe07a538fe8d9de721b181a01699e19260bbdd41ac021285ddd5d2e3c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbxLbMLkeNa",
+      "imageAspect": 1.5444,
+      "imageUrl": "assets/feed-images/611463a5f23dd4094a8a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-08T06:04:57+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "純屬生活趣味貼文，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:蜜蜂來了！我不怕！\n大崗山的夏天，連鹹酥雞都要淋上蜂蜜才對味🍯\n\n（減肥是明天的事…）",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbxLbMLkeNa"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lai-jui-lung",
@@ -54,6 +86,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbwbgdNEf02"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-08T10:03:20+00:00",
+        "inputHash": "cda996c908342cf9bf1a3fd6fd4429b7d88389d0c9312a7d2a63232d1699b59c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbwbR0Ny7tk/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/46025243c7df6c9bf841.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-07T23:05:01+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "僅是陪孩子閱讀玩樂的宣傳語，未見具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "奶爸連線，陪孩子看見世界無限！一起讀、一起玩、一起為高雄孩子打開通往世界的大門。",
+      "topicScores": {
+        "教育": 0.55,
+        "生活": 0.87
+      },
+      "topics": [
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/DbwbR0Ny7tk/"
     },
     {
       "agendaRelevance": 0.46,

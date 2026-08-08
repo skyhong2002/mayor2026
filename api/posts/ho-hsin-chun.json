@@ -19,8 +19,51 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 217,
+  "count": 219,
   "posts": [
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-08T10:03:20+00:00",
+        "inputHash": "44bbce9c75eda667b751f9730c13fe1ffb5beddabd3d2039a5922393de7f7028",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbxYXaqGXf1",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/287ad41b4c1342fe2dbf.webp",
+      "keywords": [
+        "托育",
+        "老人",
+        "補助",
+        "津貼",
+        "照顧",
+        "就業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-08T07:58:02+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "列出勞健檢、職訓、托育與老人補助，為主動福利政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:所有的照護者，都辛苦了！不論你是在外打拚，或是全職照顧家庭，因為有你們的付出，這座城市才能持續向前。\n\n為了照顧辛勞的爸爸們，我提出一系列福利政策，希望守護你們身體健康、減輕照護負擔，讓大家都能安心打拚、放心陪伴家人：\n\n✅提高勞工健檢補助　\n✅加碼職訓名額及補助\n✅協助中高齡勞工投入就業市場\n✅0~6歲嬰幼兒津貼\n✅加強托育資源\n✅持續老人健保補助\n\n無論你是爸爸還是媽媽，或是辛苦照料父母的兒女，我都會持續推動更多有感福利，成為大家最可靠的後盾，再次祝大家父親節快樂！",
+      "topicScores": {
+        "教育": 0.52,
+        "社福": 0.95,
+        "經濟": 0.44
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DbxYXaqGXf1"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "ho-hsin-chun",
@@ -7908,6 +7951,40 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/vXA3hEzS2kY"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-08T10:03:20+00:00",
+        "inputHash": "0d3b0f7507bc716346dd3bc93306c899e84354c7f930449c0997f8e99fb8910b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:HyJcYMYWO1A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/20c2ef06794e1ff0730d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題是父親節與健康守護，屬形象宣傳非具體議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "父親節快樂！何欣純守護爸爸健康 就是最好的禮物❤️",
+      "topicScores": {
+        "生活": 0.7,
+        "醫療": 0.86
+      },
+      "topics": [
+        "醫療",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/HyJcYMYWO1A"
     }
   ],
   "version": 1

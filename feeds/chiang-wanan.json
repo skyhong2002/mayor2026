@@ -1,6 +1,48 @@
 {
-  "count": 71,
+  "count": 72,
   "posts": [
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-08-08T10:03:20+00:00",
+        "inputHash": "32ef953ec777b8c5d15436af93245406c3455e6dcf8eff0b70969941177a0e30",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbxbVC2GZdY/",
+      "imageAspect": 1.4963,
+      "imageUrl": "assets/feed-images/38ca0ca1e3c017fbb7a5.webp",
+      "keywords": [
+        "颱風",
+        "災害",
+        "交通",
+        "捷運",
+        "停車"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T08:23:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動說明防颱會報與工地、河濱管制措施，屬具體市政作為。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-ig",
+      "text": "市民朋友午安。\n受到 #白海豚颱風 外圍環流影響，臺北市各地已經出現強風和間歇陣雨。今天早上，我先到臺北市災害應變中心（EOC）主持防颱工作會報；下午再到臺北雙星工區視察工地塔吊、圍籬及相關設施加強固定，要求做好防風、防墜措施。\n\n目前臺北市區已出現7至9級陣風，局部空曠地區更可能出現10級強陣風。我要求公園處、都發局、建管處、交通局、警察局、捷運局、捷運公司、各區公所等單位嚴陣以待，隨時因應強風可能帶來的災害。同時，也要求都發局、工務局及勞動局，再次督促各建築工地全面檢查圍籬、塔吊等設施，確實做好固定及防護。\n\n目前，基隆河中山橋以下及淡水河沿線（新3-2華翠至淡6敦煌）已經實施＃只出不進 管制，今晚8點起將陸續關閉疏散門及越堤坡道。停放在河濱公園堤外停車場的車輛，請儘速駛離，也請大家避免前往河濱區域活動。\n\n提醒市民朋友，檢查住家周邊及排水狀況、固定好陽台盆栽及懸掛物並確認防水閘門操作狀況。入夜風雨漸大，請大家盡量避免外出，務必注意安全！\n\n過去幾天，市府各單位總動員，持續進行防救災資源盤點、排水溝渠清疏，以及低窪、易致災地點巡檢等各項防颱工作，臺北隊會持續嚴陣以待、守護市民安全。",
+      "topicScores": {
+        "交通": 0.58,
+        "住宅": 0.42,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "交通",
+        "住宅"
+      ],
+      "url": "https://www.instagram.com/p/DbxbVC2GZdY/"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "chiang-wanan",
