@@ -143,6 +143,44 @@
     },
     {
       "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T22:01:05+00:00",
+        "inputHash": "504a5364fa01e970be8011403aa075356ec6e50ccab555ac619796beedf01f0f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbx71D_yJxY/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d853ca7b03d9acfcb624.webp",
+      "keywords": [
+        "強降雨"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T13:08:03+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "公告行程延期與天候安全提醒，屬活動異動與防災訊息。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "【明日行程異動說明】\n⠀\n由於明日天氣預報顯示，上午仍可能有較強降雨與強風，為顧及鄉親朋友與團隊夥伴的安全，原定前往玉成公園福德宮、成德市場等行程，我們決定先行延期。\n⠀\n對於原本期待在南港與伯洋見面的朋友們，我們深感抱歉，也誠摯感謝大家的體諒。團隊將盡快重新安排時間，讓伯洋到南港當面向大家致意。\n⠀\n也提醒明日仍需外出或前往參與活動的朋友們，務必留意天候與交通狀況！",
+      "topicScores": {
+        "生活": 0.93,
+        "競選": 0.42,
+        "防災": 0.66
+      },
+      "topics": [
+        "生活",
+        "防災",
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/Dbx71D_yJxY/"
+    },
+    {
+      "agendaRelevance": 0.12,
       "candidateId": "lee-shih-chuan",
       "classification": {
         "classifiedAt": "2026-08-08T16:00:56+00:00",
@@ -467,6 +505,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbxRyzUEy8C"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T22:01:05+00:00",
+        "inputHash": "83f3f5a6db7bb5ec43df80de468a63609392b50c0fb88156439a3a8ac714a292",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbxRGlfyrzF/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/a78db6168734b947170a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T07:00:28+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣布夜市行程取消並提醒風雨安全，屬活動通知與防災提醒。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "⚠️行程取消通知⚠️⁣\n⁣\n因應風雨漸增，考量民眾、媒體人員及團隊同仁安全，⁣\n⁣\n今晚（8/8 18:50⁣）寧夏夜市行程將先行取消，謝謝大家的支持與諒解！⁣\n⁣\n也請大家注意移動、行進間的安全，並盡量避免出門！",
+      "topicScores": {
+        "生活": 0.92,
+        "競選": 0.38,
+        "防災": 0.7
+      },
+      "topics": [
+        "生活",
+        "防災",
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DbxRGlfyrzF/"
     },
     {
       "agendaRelevance": 0.02,
@@ -3606,86 +3680,6 @@
         "教育"
       ],
       "url": "https://www.instagram.com/p/Dbspm0-E6fr/"
-    },
-    {
-      "agendaRelevance": 0.92,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-06T16:02:05+00:00",
-        "inputHash": "26f117faec1613e2713d5e2123971d57250a75fb0384b7ae995665fe10756cb4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbso9nViSEb",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "運動",
-        "身障",
-        "環境"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-06T11:46:51+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出運動平權與無障礙親海設施等具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-threads",
-      "text": "@hammer__lee:今天在金山中角灣，我自己也下去試了衝浪。\n\n說實在，光是趴穩就不容易。\n\n但那個下午，我看最久的不是海。是輪椅怎麼走過那一段沙子。\n\n沙是軟的，輪子一壓就陷。要下到水邊那短短一段路，對很多人來說是走不過去的。\n\n勇氣他們自己有。缺的，是一條進得去的路。\n\n所以今天，我提出「運動平權 2.0」。\n\n一、國民運動中心設置身障運動專區\n新北的國民運動中心，是這十幾年一座一座蓋起來的。硬體有了，下一步是把不同障別用得到的器材補齊、把無障礙動線做順、把專業指導配上。不是把人隔開，是把設備補到位。\n\n二、打造輪椅友善的運動環境\n從入口、停車、通行動線、觀賽席位到器材設施，全面盤點改善。進得去、動得了、看得到比賽——這三件事，一件都不能少。\n\n三、打造無障礙親海環境\n中角灣這一段沙灘，還有新北其他的海岸，設置無障礙木棧道，改善輪椅的通行動線，接上輪椅衝浪跟其他適應體育活動。\n\n海洋無障礙，運動零距離。\n\n無障礙不是讓身障朋友「進得來」，是讓他們待得住。\n\n我鋪了一輩子的路。這一條，要鋪到海邊。",
-      "topicScores": {
-        "環境": 0.68,
-        "社福": 0.89,
-        "體育": 0.98
-      },
-      "topics": [
-        "體育",
-        "社福",
-        "環境"
-      ],
-      "url": "https://www.threads.com/t/Dbso9nViSEb"
-    },
-    {
-      "agendaRelevance": 0.86,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-06T22:03:31+00:00",
-        "inputHash": "fe9be6f45a529f0414dc0815810eded3bc2e132baab570c12ecdf8a27d862e58",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbso8JWmKD8/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/a49d6827e9ee8f6eccff.webp",
-      "keywords": [
-        "運動",
-        "身障",
-        "環境"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-06T11:46:41+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出運動平權與無障礙親海設施的具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-ig-main",
-      "text": "今天在金山中角灣，我自己也下去試了衝浪。\n\n說實在，光是趴穩就不容易。\n\n但那個下午，我看最久的不是海。是輪椅怎麼走過那一段沙子。\n\n沙是軟的，輪子一壓就陷。要下到水邊那短短一段路，對很多人來說是走不過去的。\n\n勇氣他們自己有。缺的，是一條進得去的路。\n\n所以今天，我提出「運動平權 2.0」。\n\n一、國民運動中心設置身障運動專區\n新北的國民運動中心，是這十幾年一座一座蓋起來的。硬體有了，下一步是把不同障別用得到的器材補齊、把無障礙動線做順、把專業指導配上。不是把人隔開，是把設備補到位。\n\n二、打造輪椅友善的運動環境\n從入口、停車、通行動線、觀賽席位到器材設施，全面盤點改善。進得去、動得了、看得到比賽——這三件事，一件都不能少。\n\n三、打造無障礙親海環境\n中角灣這一段沙灘，還有新北其他的海岸，設置無障礙木棧道，改善輪椅的通行動線，接上輪椅衝浪跟其他適應體育活動。\n\n海洋無障礙，運動零距離。\n\n無障礙不是讓身障朋友「進得來」，是讓他們待得住。\n\n我鋪了一輩子的路。這一條，要鋪到海邊。",
-      "topicScores": {
-        "環境": 0.64,
-        "社福": 0.91,
-        "體育": 0.97
-      },
-      "topics": [
-        "體育",
-        "社福",
-        "環境"
-      ],
-      "url": "https://www.instagram.com/p/Dbso8JWmKD8/"
     }
   ],
   "version": 1
