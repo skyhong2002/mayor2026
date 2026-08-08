@@ -1,6 +1,40 @@
 {
-  "count": 211,
+  "count": 212,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-08T16:00:56+00:00",
+        "inputHash": "005917f2e86dabaf30f55cdfc918f47df618b2e77bfee0ead3d10bc823e47b6a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbxq9vZiVZ8",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/ac69e2513263bc7d497a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-08T10:40:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "到咖啡店出任務並表態挺台灣高雄，屬選舉動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:隆隆出任務！\n\n前幾天在 Threads 上被點名，今天就到Miss Mimi Coffee報到啦！\n\n因為這面白牆，讓我們在高雄相遇。謝謝Sophia以及今天來到現場的大家，我們繼續一起挺台灣、挺高雄！",
+      "topicScores": {
+        "生活": 0.42,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbxq9vZiVZ8"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",

@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 222,
+  "count": 224,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-08T16:00:56+00:00",
+        "inputHash": "e5781614867dc46eab8caa8abbf68ac1c92576b629f0d0be135bfc2725bbeb86",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbyAddyjz3G",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d0595fcfd8e2d5434956.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-08T13:48:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "推薦市議員參選人，內容以選舉宣傳為主。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DbyAddyjz3G"
+    },
     {
       "agendaRelevance": 0.93,
       "candidateId": "hsieh-lung-chieh",
@@ -7906,6 +7940,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=zAGVcdceV_g"
+    },
+    {
+      "agendaRelevance": 0.32,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-08T16:00:56+00:00",
+        "inputHash": "b7137f77bf6867e6b39ac908b9eb9645c0fce41f9ffa6129db862863fa06da98",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Qs18bPNEgKc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6cbc734a1aab4044550d.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅是推薦參選人，屬純競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/Qs18bPNEgKc"
     }
   ],
   "version": 1
