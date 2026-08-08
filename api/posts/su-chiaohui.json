@@ -19,8 +19,44 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 207,
+  "count": 209,
   "posts": [
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "234dc8be4bc1a8126dc0eeeee7938e05c1501c611a37f76dd38175736362a37c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbwvc13kec9",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1432f20ba00757e4ff6d.webp",
+      "keywords": [
+        "照顧"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-08T02:00:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以父親節祝福帶出育兒與照顧政策承諾，屬主動提出政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:祝福全天下的爸爸們 父親節快樂 🎉\n\n不論是準爸爸、正在為孩子打拚的爸爸，還是需要我們好好守護的爸爸。\n\n我都會用更完善的照顧政策，做不同世代的父親們最強後盾！",
+      "topicScores": {
+        "生活": 0.61,
+        "社福": 0.67
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbwvc13kec9"
+    },
     {
       "agendaRelevance": 0.14,
       "candidateId": "su-chiaohui",
@@ -7665,6 +7701,44 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/I7JqF8J9QFc"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "ea083cef3d876b9ac2ca2acc3f707389079fccadf152af93f3f0233170e8cdee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:bFJg37yPt4c",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/6786d37bd97ae6ce72e2.webp",
+      "keywords": [
+        "環境"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "為兒童繪本介紹，屬親子教育與生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "水獺媽媽巧巧話】新來的小怪物｜寵物陪伴｜環境適應｜兒童繪本",
+      "topicScores": {
+        "教育": 0.88,
+        "環境": 0.63,
+        "生活": 0.74
+      },
+      "topics": [
+        "教育",
+        "生活",
+        "環境"
+      ],
+      "url": "https://www.youtube.com/watch?v=bFJg37yPt4c"
     }
   ],
   "version": 1

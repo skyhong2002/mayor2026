@@ -1,6 +1,42 @@
 {
-  "count": 215,
+  "count": 217,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "887d95261e75ba0a894dfbf5a15e7aeefc02988762e2247f1efa735726a06859",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbw37gckWjf",
+      "imageAspect": 0.5614,
+      "imageUrl": "assets/feed-images/1e0a57ed6b8591371cbe.webp",
+      "keywords": [
+        "照顧"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-08T03:14:46+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是父親節追思父親的個人敘事，沒有公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:父親節，想爸爸...\n\n前陣子，在一場座談會上，一位阿叔拿出43年前爸爸、媽媽一起參加婚宴出現在老影片。\n\n短短十幾秒的畫面，我卻看了好久。\n\n爸爸在我讀國小時就離開了，留下來的照片、影像真的不多。那天突然看到影片，年輕的爸爸站在媽媽身邊，我一下子好像又變回那個有爸爸疼的小女孩。\n\n今天父親節，特別想他。\n\n爸爸很早就不在了，我是長女，就必須承擔多一點，照顧媽媽弟弟多一點。\n\n一路走過來，我沒有覺得自己特別勇敢，沒有人可以站在前面，就學著自己站到前面。\n\n如果今天還能再跟爸爸說一句話，我想告訴他：\n\n爸爸，你可以安心。你不在以後，我有努力把這個家顧好。\n\n爸爸離開好久了，但他留給我的愛，一直都在。\n\n我要祝福全天下的爸爸，平安、健康、父親節快樂。\n\n而和我一樣的，就只能在心裡跟爸爸說父親節快樂\n\n爸爸，謝謝你的保佑🙏",
+      "topicScores": {
+        "生活": 0.98,
+        "社福": 0.42
+      },
+      "topics": [
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/Dbw37gckWjf"
+    },
     {
       "agendaRelevance": 0.0,
       "candidateId": "ho-hsin-chun",
@@ -7816,6 +7852,42 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/YqUS7Z92_hg"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "b2eec0b6bca912edcfc1cbf14f1966dfed28c81cddc2b518fa285a87c3a527e5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:vXA3hEzS2kY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/af236f2caf2705efe459.webp",
+      "keywords": [
+        "經濟"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主題是活動帶動地方經濟與觀光，屬主動政策宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純力挺台中濱海祭！帶動地方經濟 讓海線更有活力",
+      "topicScores": {
+        "文化觀光": 0.84,
+        "經濟": 0.91
+      },
+      "topics": [
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/vXA3hEzS2kY"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

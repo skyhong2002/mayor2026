@@ -19,8 +19,72 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 209,
+  "count": 212,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "9e04bf7ce8d655ba8cad9dd64133b66c9ca1788fdc68f03d4511649da45a60e0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DbwqjbJE1k8",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-08T01:17:43+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容與個人育兒經驗及父親節祝福有關，無回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:一日重返補習班崗位！\n只是這次教的是「新手爸爸101」！\n⠀\n泡配方奶時\n加粉和水的順序\n還是可能因品牌而異，\n提醒大家使用前\n還是要參閱罐身上的說明！\n⠀\n祝福大家，父親節快樂！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DbwqjbJE1k8"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "50ee35ff85b10d18368d8821095fae97597370eede5ebaff154a17db8faf830f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbwp7iry19u/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b0875fa25a0d407ba70a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T01:16:11+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "父親節日常分享與育兒小提醒，未涉及公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "一日重返補習班崗位！\n只是這次教得是「新手爸爸101」！\n⠀\n泡配方奶時\n加粉和水的順序\n還是可能因品牌而異，\n提醒大家使用前\n還是要參閱罐身上的說明！\n⠀\n祝福大家，父親節快樂！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dbwp7iry19u/"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "shen-poyang",
@@ -7556,6 +7620,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/9dltpz_QvsA"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "c67202f647ef0151dad32f3d7e2c075672c22f918f845b0b4530dd5654cf8ecc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Um-gUH5YU2Y",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6a77c9a87c067bde6b2f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題僅為育兒日常內容，無公共議題或回應對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Back to Cram School for a Day! New Dad 101",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/Um-gUH5YU2Y"
     }
   ],
   "version": 1
