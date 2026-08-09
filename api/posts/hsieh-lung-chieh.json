@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 227,
+  "count": 229,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T16:01:08+00:00",
+        "inputHash": "278c9f4491fe7075b6e02695b7bd7f436552ee0500bc1cd5e6e04d93400d3199",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db0ghE4D3D7",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/fe7af85112408bf82f39.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-09T13:07:23+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "針對毒油事件批評行政院作為，非回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:毒油事件行政院如果願意辦...檢調不知道收押多少人了",
+      "topicScores": {
+        "治安": 0.41,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/Db0ghE4D3D7"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -8086,6 +8120,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/Qs18bPNEgKc"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T16:01:08+00:00",
+        "inputHash": "66cc57327f74da2409b41d307533d757b5a2fefa57852b19637708c418b5ff81",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xX63B9kK4tw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/779258959b20c21ddcce.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "評論毒油事件並批評行政院，未見回應特定對象說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "毒油事件行政院如果願意辦...檢調不知道收押多少人了 #中聯油脂 #謝龍介 #行政院",
+      "topicScores": {
+        "治安": 0.61,
+        "議會監督": 0.66
+      },
+      "topics": [
+        "議會監督",
+        "治安"
+      ],
+      "url": "https://www.youtube.com/shorts/xX63B9kK4tw"
     }
   ],
   "version": 1
