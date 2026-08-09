@@ -1,6 +1,40 @@
 {
-  "count": 223,
+  "count": 224,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-09T10:00:55+00:00",
+        "inputHash": "9e3fd0cf79765aeeace7d229124e5f7691bae432b0bcfc0f7adf703a0bd51197",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbz5YCBGdTh",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/972fa4e58f1d21c99b11.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-09T07:24:57+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "內容是防空演習與網路降速公告，屬防災提醒非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:⚠️ 中部朋友請注意！\n\n明天8/10（一）14:30～15:00 將進行「2026城鎮韌性（防空）演習」。\n\n演習期間，為測試行動網路受阻時的應變能力，苗栗、台中、彰化、南投、雲林、嘉義縣市的行動網路將降速，手機主要保留語音通話及簡訊功能，固網不受影響。\n\n如果發現手機網路變慢，**不用緊張！**這是演習的一環。\n也請大家幫忙分享提醒親朋好友，一起支持演練、提升防衛韌性，守護我們的家園💪🇹🇼",
+      "topicScores": {
+        "生活": 0.69,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dbz5YCBGdTh"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ho-hsin-chun",

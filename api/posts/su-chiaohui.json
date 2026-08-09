@@ -19,8 +19,83 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 217,
+  "count": 220,
   "posts": [
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-09T10:00:55+00:00",
+        "inputHash": "984ec3f5499466aae8f7416cc288403a8c7f7ea443e8416968ec356444f25b0c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db0BGQmktq3",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/700d6cddc55039d0665c.webp",
+      "keywords": [
+        "住宅",
+        "都更"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-09T08:32:37+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出都更局、青年育兒宅等住宅政見，屬競選政見宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新時代、新市長✨ 感謝住宅產業相挺！巧慧當市長，全力加速新北都更！推動20年青年育兒宅！\n\n我當市長，會立即成立「都市更新局」，加速城市翻新，我也會照顧各族群的居住環境，讓新北成為安居樂業的首選城市！\n\n我要和大家一起，用新時代的新觀念、新技術，解決過去的難題，創造更多不可能。做伙拚、做伙贏 ！",
+      "topicScores": {
+        "住宅": 0.99,
+        "競選": 0.98
+      },
+      "topics": [
+        "住宅",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db0BGQmktq3"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-09T10:00:55+00:00",
+        "inputHash": "9f31d4e29e7552bc44eb4c5766ff81932b312b1e5e5152ba60a6d4b7228d1a70",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dbzn6fmkowe",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/0a50d9530ff9db4e5f22.webp",
+      "keywords": [
+        "颱風"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-09T04:52:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是里鄰活動紀錄並提醒颱風風險，非回應特定他人說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:感謝土城樂利里 #吳麗美 里長邀請我出席里鄰活動，結束後順便在活動中心旁邊的市場買點菜，行程結束回家煮～\n\n但還是要提醒大家，受到 #白海豚 颱風影響，新北部分地區風雨較大，請大家避免前往山區、海邊活動，也不要在河流、溪澗或低窪地區逗留。",
+      "topicScores": {
+        "生活": 0.78,
+        "社福": 0.54,
+        "防災": 0.96
+      },
+      "topics": [
+        "防災",
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/Dbzn6fmkowe"
+    },
     {
       "agendaRelevance": 0.84,
       "candidateId": "su-chiaohui",
@@ -8056,6 +8131,40 @@
         "環境"
       ],
       "url": "https://www.youtube.com/watch?v=bFJg37yPt4c"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-09T10:00:55+00:00",
+        "inputHash": "37a2c0da9d28fed679490cec12dd4b10ea790417a9c1e0073dbc78100aad8266",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:dJ1WjyZegAY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/2abbb1258947c8270a3e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題直接主張推動新北都更與青年家庭住宅，屬明確政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Full Speed Ahead on New Taipei Urban Renewal! Promoting 20-Year Youth and Family Housing!",
+      "topicScores": {
+        "住宅": 0.98,
+        "競選": 0.97
+      },
+      "topics": [
+        "住宅",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/dJ1WjyZegAY"
     }
   ],
   "version": 1
