@@ -1,6 +1,232 @@
 {
-  "count": 212,
+  "count": 218,
   "posts": [
+    {
+      "agendaRelevance": 0.79,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "3b0648953db8a86667e3dd9bbc9bc43f348bcd907517e07db9b14fce00a1ca71",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1631394031675594",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/a604586dac59fed6d8a0.webp",
+      "keywords": [
+        "競選",
+        "連任",
+        "競總",
+        "交通",
+        "觀光"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T02:58:02.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "競總成立場合中主打農業、交通與觀光發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "大旗美打頭陣，高雄隊首場競總正式登場！\n\n一早來到 林富寶 高雄市議員 議員競選總部成立大會，超過兩千名鄉親到場力挺。這份熱情，就是對他多年服務地方最直接的肯定。\n\n富寶是大旗美資深議員，對九區的地方需求相當熟悉。農民遇到風災，他第一時間協助爭取農損；從農路、野溪整治，到台86線延伸內門、台84線延伸甲仙、國道10號延伸，以及公托、敬老卡等育兒與長輩照顧，這些年他都持續在議會替地方爭取。\n\n議員在第一線反映地方需求，民進黨立委在中央做後盾，協助爭取預算與資源。未來，我也會和議會、中央繼續合作，推動東高雄的農業、交通與觀光發展。\n\n11月28日，議員支持林富寶高票連任，市長支持賴瑞隆，議會拚過半！一起為高雄繼續打拚！\n\n登真-邱議瑩 李柏毅 拚搏未來 黃捷 余政憲 邱俊憲 高雄市議員 簡煥宗 高雄市議員",
+      "topicScores": {
+        "交通": 0.69,
+        "文化觀光": 0.58,
+        "競選": 0.96,
+        "經濟": 0.73
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "交通",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/zenolai2/posts/pfbid02ypnyBLdbEqutaP5ZbwZvFPa4ACuZFgEwC5bNkUG4E1jUQbc77Mb7uxjoj6TXrkeFl"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "364b19495cad79d9ca5f161953c46f207a9d5e0bb2c39c7537ae34fe74fbbc42",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1631273491687648",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1a3f9e33f173d99555f0.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T23:02:03.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅描述繪本桌遊活動與現場氣氛。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "有繪本、有桌遊，還有大人小孩一整場的笑聲！",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "生活": 0.86
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/1760548625393827/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "9bb4a625cb6d1469f844c56aeee78332386c140d949069a88113e5831788b65f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Dby_zDuEuCv",
+      "imageAspect": 0.5623,
+      "imageUrl": "assets/feed-images/bf3944e88fca6e8d28a3.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-08T23:01:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "重複活動現場描述，無回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:有繪本、有桌遊，還有大人小孩一整場的笑聲！",
+      "topicScores": {
+        "教育": 0.68,
+        "文化觀光": 0.82,
+        "生活": 0.6
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Dby_zDuEuCv"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "3911a0017b9e59c477d8257ce3822115e72e497a7f6d44266bf69d75b457ef2f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dby_tdcSt-W/",
+      "imageAspect": 0.5623,
+      "imageUrl": "assets/feed-images/3e9f0af0a38cc39fab92.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T23:01:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅描述繪本與桌遊活動，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "有繪本、有桌遊，還有大人小孩一整場的笑聲！",
+      "topicScores": {
+        "教育": 0.7,
+        "文化觀光": 0.82,
+        "生活": 0.65
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dby_tdcSt-W/"
+    },
+    {
+      "agendaRelevance": 0.33,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "46eab7a1c87c8a3442200a2f651bfc3677ad165b4441700be11cd7a6d63d4f03",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1631003541714643",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/a66084412175a635ff0c.webp",
+      "keywords": [
+        "市集"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T15:18:38.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "行程以農產推廣與宮廟參拜、地方服務為主。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "今天一早到鳳山區農會農夫市集，感謝鄉親的熱情支持！也要特別謝謝歐國南理事長、潘建仲總幹事和農會團隊，在農產供銷與推廣上的用心，把高雄優質農產介紹給更多人。\n\n本週適逢關聖帝君聖誕，這幾天分別到高雄意誠堂、中東武聖殿及東照山關帝廟參加平安宴，謝謝洪榮豊主委、洪平森主委、潘献有主委的邀請，恭祝關聖帝君萬壽無疆、神威顯赫，庇佑高雄風調雨順、百業興旺。\n\n到大社田仔頂集興宮參拜，恭祝田府元帥聖誕千秋，謝謝李水龍主委，祈願四境平安、八時無災。\n\n里長當里民的後盾，市長就要當里長的靠山。謝謝前鎮區黃伯雄區長、里長聯誼會王進亨主席和所有里長，總是在第一線處理地方大小事。未來我會做里長們最堅定的靠山，和大家一起把高雄照顧好。\n\n祝福所有辛苦的爸爸與代父職者們，父親節快樂！\n\n高雄小金剛許智傑 邱俊憲 高雄市議員 黃彥毓 前鎮小港 我願意 @陳慧文  張勝富 高雄市議員 江瑞鴻   高雄市議員 陳致中 Chih-Chung Chen 黃敬雅 Huang Ching-Ya 登真-邱議瑩 服務團隊黃捷 服務團隊 湯詠瑜 詠瑜新選擇 服務團隊 高雄市議員郭建盟 服務團隊 黃文益 高雄市議員 服務團隊 黃飛鳳 高雄市議員 服務團隊",
+      "topicScores": {
+        "文化觀光": 0.43,
+        "生活": 0.62,
+        "經濟": 0.78
+      },
+      "topics": [
+        "經濟",
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/zenolai2/posts/pfbid02eqxNWSuMGrD3GnYWZa8RotSiqZZxBGkH426qaFQbKFqmwt7Wkxf2cG9eTKbVsDMFl"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "525da972a40fc1bb83b3ef3afea04bdff8a75469cb67de9ea82815a7692e15f8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dbx5a6tledi/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/8fcb4444455f94ecb38a.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T12:47:31+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹高雄機廠轉型與親子遊憩，屬建設宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "台鐵高雄機廠大變身！孩子放電的新基地開張啦🚂\n\n鐵道文化、遊樂設施一次滿足，大朋友小朋友都能玩得盡興！",
+      "topicScores": {
+        "教育": 0.62,
+        "文化觀光": 0.9,
+        "生活": 0.6
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dbx5a6tledi/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "lai-jui-lung",

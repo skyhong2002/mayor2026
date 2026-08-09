@@ -1,6 +1,76 @@
 {
-  "count": 149,
+  "count": 153,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "13f6b1baace8198ad4b1712adba4674a0e8087208d850ea2ccf1762c9ea579e8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbzDqskDzHL/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/817032717be13090d4de.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T23:35:41+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "介紹歸仁釋迦，偏地方農產宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "你有看過跟臉一樣大的釋迦嗎？這就是我們驕傲的歸仁釋迦。\n\n#歸仁釋迦 #農業 #陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.55,
+        "生活": 0.9,
+        "經濟": 0.45
+      },
+      "topics": [
+        "生活",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DbzDqskDzHL/"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "a75347e5957e6a6cc0f7d637d67619ed28fd9ccb8a80966d7172a971344af2c8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1614427773378478",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/4726639e22ad7e895695.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T23:35:37.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以在地農產釋迦作分享，重點是地方生活風景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "你有看過跟臉一樣大的釋迦嗎？這就是我們驕傲的歸仁釋迦。\n\n#歸仁釋迦 #農業 #陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.45,
+        "生活": 0.84
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid03Nf2hp765WFsPDir5X6LR8xLcqQuNHxoQomyAvuJCBPERGzPMPmsJgt5uxpN4gpUl"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "chen-ting-fei",
@@ -34,6 +104,40 @@
         "文化觀光"
       ],
       "url": "https://www.instagram.com/p/DbxlVvLAm6h/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "84c25d20fecf54d23605bb44187b8b89093e0bc1bbc5c08aa13f50a0d4282fc1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1613935830094339",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/98d5a39d2f06670a2ca2.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T09:51:09.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄七股海鮮節活動與親子同樂情景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "因為颱風延期了兩次，終於在父親節這天，七股海鮮節順利登場！\n\n最開心的，就是看到大人小孩一起下水摸蛤蠣、親近大自然，孩子們臉上的笑容，就是最可愛的風景！\n\n七股的海鮮、七股的陽光，更有滿滿的人情味。希望每年都能和大家一起來七股，玩得開心、吃得滿足，把台南最美好的夏日回憶帶回家！\n\n#七股海鮮節 #父親節快樂 #七股 #台南 #親子同樂 #陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.76,
+        "生活": 0.68
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid02EHRFCr97d17Rt71HPKRpCx5ukT8oy6JusprEZ6Vbks4bxtAHcHVu4NZG24xrpjb3l"
     },
     {
       "agendaRelevance": 0.05,
@@ -98,6 +202,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbxGwjRE3YA"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "fcc3c404427e10c009f5941bcc420cd0b80bb02d5344d905c54abc51a4664bdd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1613784463442809",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1fc8ae51e6ce44143456.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T05:24:10.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "單純父親節祝福，未涉公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "每一位爸爸，都是家庭最堅實的依靠，也是孩子心中最溫暖的英雄。\n　　　　　\n祝福所有辛苦打拚、默默付出的爸爸們，父親節快樂！願平安健康、幸福相伴，每一天都充滿笑容。\n　　　　　　\n#父親節快樂 #陳亭妃",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid032hEGaCr85KDJkWs8pvPN1VXp8TeB1YwuYQ5EFwbMetWWMbus2vc3fRPAvhMiNsqNl"
     },
     {
       "agendaRelevance": 0.92,

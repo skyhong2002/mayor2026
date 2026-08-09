@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/3c1d130577e949d94e09.webp",
+    "avatarUrl": "assets/source-avatars/80e87d8b65e0344f3374.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,118 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 219,
+  "count": 223,
   "posts": [
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "73ec11f015b4e776a50e2a2af1cd6442322cff1a98cd54f0d82d2d791c048fbf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1652515816237826",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/afb7a2aa1e36e887f3c5.webp",
+      "keywords": [
+        "敬老",
+        "社會福利",
+        "補助",
+        "照顧",
+        "營養午餐"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T04:00:57.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確提出福利政策清單作為市長競選主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "盧秀燕做半套的社會福利，就交給何欣純來完成！\n\n不論是學生營養午餐升級、敬老愛心卡加碼、生育補助加倍或是成立青年局，台中市民每個人生階段，我都已經規劃好相應的福利政策。\n\n台中市民值得更好的照顧，也值得一位真正願意兌現承諾的「欣」市長！\n\n#心存大台中\n#市長換欣_台中創新",
+      "topicScores": {
+        "教育": 0.75,
+        "社福": 0.95,
+        "競選": 0.92
+      },
+      "topics": [
+        "社福",
+        "競選",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1452109920000949/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "e432146990d02ab6bceb5732dd20d5d16cdedbf5132343cf5cc811c1ab63bd3e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1652515119571229",
+      "imageAspect": 0.6345,
+      "imageUrl": "assets/feed-images/f3392f7ff22c119cb716.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T03:59:53.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "活動因天候取消的公告，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "原訂今日下午辦理的親子童樂列車活動，由於天氣狀況不穩定，多方考量之下決定暫時取消。\n\n活動順延至8/30。\n造成困擾還請見諒！",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid0UuKvmaoUuy8mvYfBGchrox4Kjpnec79SzFHCHXS3dn3BGgNW92YtV2qD9kagacr3l"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "4a484c598f6dda876b33f4daabef088913a75a0f33276a24a5e019012e502f48",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1652377152918359",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ce9b573dd003bce24d99.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T00:01:01.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告防空演習與降速措施，屬防災提醒。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "中部朋友請注意！\n8/10(一) 14:30~15:00將舉行「2026城鎮韌性(防空)演習」！\n\n為考驗國軍在行動網路受阻時的應變能力，中部地區（苗栗縣、台中市、彰化縣、南投縣、雲林縣、嘉義縣、嘉義市）演習期間行動網路將會降速，手機僅剩語音通話及簡訊功能，固網則不受影響。\n\n請大家幫忙轉傳圖卡，提醒親朋好友屆時不用驚慌，一起支持國軍演練，守護我們共同的家園。",
+      "topicScores": {
+        "交通": 0.56,
+        "生活": 0.52,
+        "防災": 0.96
+      },
+      "topics": [
+        "防災",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02iii6tJWS23H1kp7VmeC7DfmfVoC6G6nyYX4uKYAV571FvC12hez7TgYzUyDLN5Erl"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "ho-hsin-chun",
@@ -7985,6 +8095,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/HyJcYMYWO1A"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "3b918991b810ddac382ddd89e2fd8c882351817f8368775a27ebc3884f9a186b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:6WTgYzo0fPQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/267c29b961b42c82f06b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題為巡迴宣講與合作訴求，屬選舉宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "六星市政168巡迴北區 沙鹿 何欣純中央地方合作讓台中更進步 !",
+      "topicScores": {
+        "生活": 0.4,
+        "競選": 0.9,
+        "經濟": 0.55
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/6WTgYzo0fPQ"
     }
   ],
   "version": 1

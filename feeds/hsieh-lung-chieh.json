@@ -1,6 +1,42 @@
 {
-  "count": 224,
+  "count": 227,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "bdb62edb86900024bca513f7e2cfe5778628e05dcf9985cbe4b2847036565e3c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbyBDx-Slxf/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/ef4876336c4655749dad.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-08T13:54:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "為市議員參選人站台，屬選舉動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
+      "topicScores": {
+        "生活": 0.4,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbyBDx-Slxf/"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
@@ -34,6 +70,40 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DbyAddyjz3G"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "9b93c8c199738c77b0fc538dd1efd578cf03f0d55d198fa69fd891dff7b041d0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1625624848919097",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/0089ad2aae9fe8337007.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T13:42:27.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "屬政治人物推薦參選人，內容重在競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1612961953676619/"
     },
     {
       "agendaRelevance": 0.93,
@@ -114,6 +184,48 @@
         "住宅"
       ],
       "url": "https://www.instagram.com/p/Dbwyb2aSc6N/"
+    },
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "a6960ad02e398ae2ff87973c11e7488d8c394e06ee3db67749fea08a4e853ab9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1625234258958156",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/30bd68a20938ed4ba668.webp",
+      "keywords": [
+        "老人",
+        "津貼",
+        "健保"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T02:25:46.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出育兒津貼、健保免費與買房補助等具體政策承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "爸爸的愛，未必攏講出口，毋過一肩扛起家庭、一步一步為囝仔拚未來💪\n\n龍介除了祝福，更承諾讓爸爸們實質減負：\n📌爭取孩子成長津貼：0-18歲月月領5000元，6-18歲每月加碼2500元\n📌0-6歲健保免費\n📌65歲老人健保免費 #不排富\n📌生孩子，幫你買房子（敬請期待）\n\n感謝每一位用心打拚的爸爸，您辛苦了，父親節快樂！",
+      "topicScores": {
+        "住宅": 0.74,
+        "社福": 0.92,
+        "競選": 0.61,
+        "醫療": 0.88
+      },
+      "topics": [
+        "社福",
+        "醫療",
+        "住宅",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid02TM7q6xVUefxHEEJznQTpM67u3SBgZCtvuNrmiHNhiBBDX2EqknhyA556NoYzeATvl"
     },
     {
       "agendaRelevance": 0.08,

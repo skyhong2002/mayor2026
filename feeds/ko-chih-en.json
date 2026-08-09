@@ -1,6 +1,82 @@
 {
-  "count": 207,
+  "count": 212,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "a7a32addc6bdbab035a05393fabe5550bd261914dec6d656934f32b91d678760",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DbzLu4fCXdR/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/5b81c653af58f1f7dffa.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-09T00:46:34+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳蜂蜜文化節與在地農產，偏地方行銷。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "大崗山 #龍眼蜂蜜文化節，除了吃就是買，用行動支持在地優質農產！\nwith #李亞築 #黃韻涵。\n\n李亞築 高雄市議員 服務處 黃韻涵 \n\n#柯志恩 #繞著高雄跑 #農產品",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "生活": 0.58,
+        "經濟": 0.72
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DbzLu4fCXdR/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "b8dbb425cd8f63a94f00aff7c4fef8bbf13f88238b059a3e776862ef665ca638",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1609622963851417",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/8a92d0ab38af7ba43426.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T00:46:13.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳蜂蜜文化節並鼓勵購買在地農產，屬活動與地方產業支持。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "大崗山 #龍眼蜂蜜文化節，除了吃就是買，用行動支持在地優質農產！\nwith #李亞築 #黃韻涵。\n\n李亞築 高雄市議員 服務處 黃韻涵 \n\n#柯志恩 #繞著高雄跑 #農產品",
+      "topicScores": {
+        "文化觀光": 0.77,
+        "生活": 0.42,
+        "經濟": 0.66
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1378864100525186/"
+    },
     {
       "agendaRelevance": 0.11,
       "candidateId": "ko-chih-en",
@@ -34,6 +110,38 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DbxYuDfjCNS/"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "e54fb87daac10397678a502990444864bbc2822b1d81297a896d0e885130002a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1609045427242504",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3b980c6d1632e76e371d.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T08:01:24.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅提及親自開車辦事與節日行程，未見具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "我親自開車載著小助理們，為了在88節做「這件事」！#柯志恩 #有志一同 #繞著高雄跑",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1021275644048936/"
     },
     {
       "agendaRelevance": 0.7,
@@ -75,6 +183,51 @@
         "教育"
       ],
       "url": "https://www.instagram.com/p/DbxF0RKk8Om/"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "c809248f0655186e93bbe1d58d183f562bbee94f5f07447127c0b118f122b35c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1608953183918395",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/733281813584bdd79dc2.webp",
+      "keywords": [
+        "文化",
+        "觀光",
+        "旅遊",
+        "環境",
+        "氣候",
+        "教育"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-08T05:15:51.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "談蜂蜜產業、觀光串聯與農業行銷，帶有地方產業政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "一滴龍眼蜜，凝聚大崗山的風土，也是蜂農辛苦的結晶。\n\n今天是父親節，很高興再次來到 #大崗山龍眼蜂蜜文化節 ，和許多農民及鄉親相聚。首先祝福所有爸爸們， #父親節快樂 ！\n\n去年我也來參加活動，大崗山龍眼蜜的好品質讓我印象深刻，當時一口氣買了幾十罐蜂蜜，帶回去給辦公室同仁、同事及親友一起分享。優質的高雄農產品，當然要用行動支持！\n\n這次，我和 #李亞築 議員、#黃韻涵 參選人一起逛攤位，三位女子看到琳瑯滿目的在地好物，簡直愛不釋手，最後每個人都是整手戰利品、滿載而歸。支持在地農產，就是要直接買起來！\n\n大崗山龍眼蜜是高雄最具代表性的農特產品之一。今年高雄龍眼蜂蜜評鑑共有6位蜂農獲得特等獎，大崗山地區的蜂農更是歷年評鑑的常勝軍，品質有目共睹。\n\n但這一滴蜜，今年得來更加不容易。\n\n高雄蜂蜜產量約占全國一成二，產值近4億元；今年受到高溫少雨、暖冬等氣候影響，荔枝、龍眼開花不穩，甚至出現「有花無蜜」的情況，蜂蜜產量也受到衝擊。更要感謝蜂農朋友克服氣候挑戰，在艱困環境下依然守住品質、拿下佳績。\n\n大崗山地區有優質龍眼蜜、宗教文化、自然景觀，更有許多值得被看見的農業品牌。未來應該把這些資源串聯起來，把活動的人潮變成地方的商機。農業、觀光、文化與青年返鄉形成正向循環。\n\n我會持續和農會、農民及鄉親站在一起，從品牌行銷、電商通路，到食農教育、農村旅遊，讓更多人認識、走進大崗山，也讓辛苦生產的農民得到更好的回報。\n\n讓大崗山龍眼蜜，不只是高雄人的驕傲，更成為代表台灣、走向世界的好味道。",
+      "topicScores": {
+        "教育": 0.41,
+        "文化觀光": 0.76,
+        "環境": 0.56,
+        "經濟": 0.78
+      },
+      "topics": [
+        "經濟",
+        "文化觀光",
+        "環境",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0Rw6v5yatsjvYTfnqv5DsxgBs8NkJrgua7ys19x18XomLwp6RNn7wPGSexMYntK5Bl"
     },
     {
       "agendaRelevance": 0.18,
@@ -8006,6 +8159,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/33smRxb7_iI"
+    },
+    {
+      "agendaRelevance": 0.11,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-09T04:04:56+00:00",
+        "inputHash": "e655af47290148cebb2a43d6c189d03107df70402b96fbf19dfaab7a8ceae5fc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:s9COQZYl1kU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/0f0fa25c5054c8210fcf.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳大崗山蜂蜜文化節與消費支持。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Dagangshan #LonganHoneyCulturalFestival: all about eating and shopping! Support quality local pro...",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "生活": 0.5,
+        "經濟": 0.62
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/s9COQZYl1kU"
     }
   ],
   "title": "柯志恩（高雄市）貼文更新",
