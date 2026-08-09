@@ -1,6 +1,80 @@
 {
-  "count": 229,
+  "count": 231,
   "posts": [
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T22:17:10+00:00",
+        "inputHash": "5f368a8a0b8123437db2476136c6d27b2943659e6ce37ba8ab148d7d2f99e61c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db0hzScEhDv/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/32713e6b0249125282ba.webp",
+      "keywords": [
+        "兩岸"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-09T13:19:13+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "以直播節目預告為主，僅零散提到兩岸與稅收議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "20260807【本集介紹】\n📌 慈濟採購新冠疫苗遭詐騙10億\n📌 台語讀古詩很有感情！龍介用台語吟 李商隱《夜雨寄北》\n📌 龍介在推廣祖先留下來的「漢文台語」\n📌 兩岸關係緊張！兵員不足？網友問：研發及專長替代役取消？法源在哪裡？\n📌 超徵稅收「普發一萬」一讀已經通過\n\n#龍介直播 #謝龍介 #龍介仙 #台南 #台語",
+      "topicScores": {
+        "兩岸外交": 0.71,
+        "生活": 0.54,
+        "競選": 0.91,
+        "經濟": 0.62
+      },
+      "topics": [
+        "競選",
+        "兩岸外交",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db0hzScEhDv/"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-09T22:17:10+00:00",
+        "inputHash": "8209d0fd67ad31b51b5319d435f660ba7ef3d14f11b0e318d95cfdd2b7da6c6c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db0g0UwyNKg/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/23e8b9ccaa03a4a708e2.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-09T13:09:49+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "批評毒油事件處理，屬究責式評論，非回應特定說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "毒油事件行政院如果願意辦...檢調不知道收押多少人了 #中聯油脂 #謝龍介 #行政院",
+      "topicScores": {
+        "經濟": 0.68,
+        "議會監督": 0.63
+      },
+      "topics": [
+        "經濟",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/Db0g0UwyNKg/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "hsieh-lung-chieh",
