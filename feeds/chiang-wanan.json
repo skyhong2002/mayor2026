@@ -1,5 +1,5 @@
 {
-  "count": 74,
+  "count": 75,
   "posts": [
     {
       "agendaRelevance": 0.18,
@@ -39,6 +39,47 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/Db0jbLpNxXx/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a5bc26ea094f3649d29f6d6169b17ff6d9e7862786eca880f1589fa6f5b54de7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1604837347672883",
+      "imageAspect": 1.4944,
+      "imageUrl": "assets/feed-images/748c35d55ba19ac20226.webp",
+      "keywords": [
+        "颱風",
+        "災害",
+        "強降雨",
+        "災情"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T13:33:00.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "颱風防災、抽水整備與提醒市民注意安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "市民朋友晚安！\n\n#白海豚颱風 已經減弱為輕度颱風，暴風半徑縮小至200公里，逐漸遠離臺灣。雖然中央氣象署並未針對白海豚颱風發布陸上警報，臺北隊依然嚴陣以待。\n\n今天一早，我再次前往臺北市災害應變中心（EOC）主持防颱會議，要求各局處隨時掌握狀況、即時應變；下午，我也到內湖區成功路四段，實地視察邊坡整治情形，確認周邊安全。\n\n隨著風雨逐漸趨緩，臺北隊已經全力展開復舊工作。\n\n這次白海豚颱風帶來的災情以路樹傾倒、建築物受損為主，工務局、都發局、環保局持續派員搶修、清理，希望用最快速度恢復市容，讓市民朋友安心恢復正常生活。\n\n颱風逐漸遠離，但水氣仍多，明後天預估還有短延時強降雨。\n提醒市民朋友，上班、上學記得攜帶雨具，也請持續留意天氣變化、注意自身安全。",
+      "topicScores": {
+        "交通": 0.64,
+        "生活": 0.62,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02UMSLPeoL5anrEKvnGNQefNVGvYQ91XPywzqrQS3Lg8zwH8jSypp4mR7KXw2g2ysEl"
     },
     {
       "agendaRelevance": 0.78,

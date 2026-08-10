@@ -1,6 +1,108 @@
 {
-  "count": 231,
+  "count": 237,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "1c18a9ba771415ef58405b1291fd496442c1db43794344cc498abe0aa497aaaf",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-10T16:38:38+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1627111488770433",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1edf26b7baaf1465616a.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T09:32:36.000Z",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "僅見標題轉述與政見陳述，未辨識明確他方主張供回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友直球對決：憑什麼當臺南市長…龍介拋三大市政目標",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1829842265049695/"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "51c55db65ba9cc1481f2abb8f54144460aa522f6c84e8396b458d89e62d210c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2sbntkTRl",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b60f86201476d19e1dd5.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T09:29:36+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅呈現競選標題，非回應特定對象的說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
+      "topicScores": {
+        "競選": 0.95
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db2sbntkTRl"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "fe3f2db55dc3883d7728fdfd3dd87a7ec1875e7d326d1cc7aa1ee4c434a0f487",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2sQ_XSie2/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/dcc27fb46eda9b7aa00b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T09:28:42+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題僅是競選式市長宣傳，未見回應他人具體觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
+      "topicScores": {
+        "生活": 0.32,
+        "競選": 0.95,
+        "經濟": 0.34
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2sQ_XSie2/"
+    },
     {
       "agendaRelevance": 0.15,
       "candidateId": "hsieh-lung-chieh",
@@ -108,6 +210,42 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/Db0ghE4D3D7"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8bc2ac9705a5104485551ffb250054af6d06fd9cecf256dcacea436fc93348cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1626431165505132",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/c1f5f1b20460624c6713.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T13:03:50.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "批評毒油事件處理與司法究責，屬攻防評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "毒油事件行政院如果願意辦...檢調不知道收押多少人了",
+      "topicScores": {
+        "治安": 0.6,
+        "經濟": 0.55,
+        "議會監督": 0.82
+      },
+      "topics": [
+        "議會監督",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1327250769622253/"
     },
     {
       "agendaRelevance": 0.18,
@@ -8208,6 +8346,76 @@
         "治安"
       ],
       "url": "https://www.youtube.com/shorts/xX63B9kK4tw"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8cd6aa1d462c195d366a9abd5e9e0f026593acc6a941a7457b51308ac1159eab",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:sA87t6pNIoY",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/9762240d5c6e427bed3d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "為議會質詢爆炸案，聚焦工安究責與公共安全監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "(Full Subtitles) 07/20/2026 [Interpellation by Lung-chieh] Fumai Renovation Company Explosives Bi...",
+      "topicScores": {
+        "治安": 0.86,
+        "經濟": 0.42,
+        "議會監督": 0.97
+      },
+      "topics": [
+        "議會監督",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/watch?v=sA87t6pNIoY"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "43277ca73d963a6904ae6b8d9365bff22ddb5867b041b494fe7e4bfd4ae54158",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:7kqZtNcA-UA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/94e5648e21cd4cd7b07e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是市長競選宣傳，主打政見發表與拉票。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Netizens Go Head-to-Head: Why Should You Be Mayor of Tainan? Long-Chieh Presents Three Key Munici...",
+      "topicScores": {
+        "生活": 0.35,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/7kqZtNcA-UA"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

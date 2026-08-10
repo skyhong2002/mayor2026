@@ -2,6 +2,2039 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.28,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "cbcc110779168c1e817803da287f91bfba0f00229cab87b630d6025449b310d3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109092817329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/22d0591265527976f055.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T15:15:42.000Z",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "與議員同框聽市政建言，偏選舉行程與宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "玲洋出擊！我跟 鍾佩玲 台北市議員 一起感受士林北投的熱情，聆聽鄉親的市政建言，也承諾，繼續守護我們深愛的台北。",
+      "topicScores": {
+        "生活": 0.44,
+        "競選": 0.9
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/4386889391529192/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "5c3ab627affbc9e69dff979f73fe76392810f2eec838acaae1ff543f2dae963b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1632657228215941",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/f46fffac55c79a6bb9e1.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T14:15:50.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "出席廚藝活動並主張培育人才與保障餐飲勞動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "晚上參加高雄市易牙廚藝學會主辦的「廚光之夜」。易牙美食節邁入第29屆，每年都有許多餐飲科學生參加競賽、切磋廚藝。\n\n恭喜今天獲獎的同學，也謝謝易牙祖師府甘冠珽值年爐主、學會理監事與各位師傅，持續提供年輕學子交流學習的機會，把「飲水思源、尊師重道」的易牙精神傳承下去。 \n\n高雄有豐富的山海物產，也有許多優秀的餐飲職人。未來，我會繼續支持廚藝人才培育與餐飲從業人員的勞動保障，把高雄的好味道、好手藝介紹給更多人。\n\n祝福易牙祖師府香火鼎盛，祝各位師傅爐火興旺、生意興隆，同學們學有所成！\n\n黃捷 服務團隊 黃敬雅 Huang Ching-Ya 服務團隊",
+      "topicScores": {
+        "教育": 0.87,
+        "文化觀光": 0.9,
+        "經濟": 0.72
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/zenolai2/posts/pfbid0WvWZPWurjUN8X54rpYsTS4sRk3r8X2dcfA7kz2frQ1WdTG8oosjquWCFBuG95dbtl"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "6e9c93c2212753fda1ceafbc2c967f0acd31718661232feaf714383475237bd2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db3CyUjk1Lq",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/0eda39a35fcca425024e.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T12:44:55+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "轉貼新莊見面會與個人回憶，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:新莊這條路，我走了將近二十年。\n\n今天舉辦新莊川友會見面會，一千六百多人特別撥空前來，每一雙手我都握緊緊，你們的期待，我都聽到了。\n\n新莊八十多位里長，來了八成左右，包括里長聯誼會長林阿元、西盛里長等等，過去和他們的好感情，彼此都記得。\n\n當中還有一位里長，是我在衛工處當處長時的同仁，退休後，他就在新莊服務，老戰友相見，默契是依舊的。\n\n我要和大家分享一個小故事，民國96年10月，柯羅莎颱風襲台，我剛上任台北縣的工務局長，那時新莊中原里淹了大水，我調動將近二十台抽水馬達，才將水抽乾。\n\n水都還淹到腳踝，家裡的東西全泡爛。鄉親第一句話不是抱怨，是泡茶給我喝。其實該說抱歉的是我們。\n\n新莊就是如此簡單淳樸的地方，是新北之福。\n\n但福氣歸福氣，該討的權益還是得討。例如國影二期，從109年到現在，蘇院長當年說要全額負擔，整整六年過去，離動工還是遙遙無期。\n\n我的想法很簡單：如果中央不做，新北自己做。該蓋的，我來蓋。\n\n副都心、頭前重劃，我都經手過。侯市長已經推動的塭仔圳重劃，下一棒交給我來完成。這是我在行的，交給我，我的目標，是要讓年輕人在地就業。\n\n新莊這二十年，我都在。",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db3CyUjk1Lq"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8aabab8d3d230a4a742942640cf13511a9024ed531cdeaec0c07bcbbcb71266a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db3CqzAmEIJ/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/850de73b52cd5ef3f959.webp",
+      "keywords": [
+        "都更",
+        "就業"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T12:43:54+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張蓋國影二期、都更與年輕人在地就業，屬具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "新莊這條路，我走了將近二十年。\n\n今天舉辦新莊川友會見面會，一千六百多人特別撥空前來，每一雙手我都握緊緊，你們的期待，我都聽到了。\n\n新莊八十多位里長，來了八成左右，包括里長聯誼會長林阿元、西盛里長等等，過去和他們的好感情，彼此都記得。\n\n當中還有一位里長，是我在衛工處當處長時的同仁，退休後，他就在新莊服務，老戰友相見，默契是依舊的。\n\n我要和大家分享一個小故事，民國96年10月，柯羅莎颱風襲台，我剛上任台北縣的工務局長，那時新莊中原里淹了大水，我調動將近二十台抽水馬達，才將水抽乾。\n\n水都還淹到腳踝，家裡的東西全泡爛。鄉親第一句話不是抱怨，是泡茶給我喝。其實該說抱歉的是我們。\n\n新莊就是如此簡單淳樸的地方，是新北之福。\n\n但福氣歸福氣，該討的權益還是得討。例如國影二期，從109年到現在，蘇院長當年說要全額負擔，整整六年過去，離動工還是遙遙無期。\n\n我的想法很簡單：如果中央不做，新北自己做。該蓋的，我來蓋。\n\n副都心、頭前重劃，我都經手過。侯市長已經推動的塭仔圳重劃，下一棒交給我來完成。這是我在行的，交給我，我的目標，是要讓年輕人在地就業。\n\n新莊這二十年，我都在。該蓋的，我接著蓋，該都更的，我來更新。",
+      "topicScores": {
+        "交通": 0.65,
+        "住宅": 0.86,
+        "經濟": 0.83,
+        "議會監督": 0.52
+      },
+      "topics": [
+        "住宅",
+        "經濟",
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/Db3CqzAmEIJ/"
+    },
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "977d1b7d05f603dd80087cd334203428d82d0e227c6bd35e37997f9f0b92164c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109080619329310",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/f342e7da09d12814bf4f.webp",
+      "keywords": [
+        "文化",
+        "觀光",
+        "美食",
+        "人行道",
+        "都更",
+        "危老"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T12:34:15.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張商圈改造、行人安全與老屋更新，具體政策明確。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "商圈升級，讓台灣感性繼續感動世界。⁣\n⁣\n台灣的芒果冰驚艷韓國偶像，讓世界認識台灣。永康商圈的芒果冰、鼎泰豐、文創品牌和Café都深深吸引外國觀光客，可是，商圈 30 年來未曾全面改造，行人跟車流爭道，老屋也在等待維護。⁣\n⁣\n我跟何博文 Ho Po-wen副秘書長、大安文山小隊的王閔生 台北市議員、簡舒培、劉品妡和陳聖文 SHENG一起，拜訪永康國際商圈協進會、永福社區發展協會、洛杉磯台美商會的代表以及在地居民，一一爬梳改善方案。⁣\n⁣\n⁣\n邊走邊吃，是外國人體驗台灣美食文化的重點，我提出引進內政部國土署的「街道醫生」計畫，重新設計車流、駕駛視角與人行道。唯有確保行人安全，才能推動巷弄文化，讓老商圈兼顧美感與安全。⁣\n⁣\n台灣感性的經典元素，少不了台式老屋。我建議三軌並行：結構無虞的老宅，以「老宅延壽方案」改善美化；結構受損的危老建築，導入保險機制，提高重建誘因；須都更老屋，要有退場機制，避免長期卡關淪為「殭屍都更」。⁣\n⁣\n我想打造的台北，是一座「為人設計」的溫暖城市。全面振興巷弄文化，一起守護商圈、老屋與美食，這些屬於台北的驕傲。⁣\n⁣\n⁣\n#台北順起來⁣\n#你的市長沈伯洋",
+      "topicScores": {
+        "交通": 0.78,
+        "住宅": 0.64,
+        "文化觀光": 0.95
+      },
+      "topics": [
+        "文化觀光",
+        "交通",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0q73g6W6VkTHFHdfJfD589X7jg3LfJejxTHmBvGPUgV6RvGA4gtk6TXfRaz6nKnpl"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "f5b98540110ed2a5f466867026caf7be2f933104544c565c0449a22a689c448f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db3AWFOGUMz",
+      "imageAspect": 1.5038,
+      "imageUrl": "assets/feed-images/42230116ea0be8f0b3fd.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T12:23:35+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談新北政見與國際情勢交流，屬主動競選與施政表述。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:今天和 @keelung_linyuchang 右昌大哥見面，我們不只討論新北的政見，也交流國際情勢、關心各項國內議題，右昌大哥更特別和我分享他在基隆的城市治理經驗，基隆鄰近新北，兩個城市有許多合作和競爭的地方，他的經驗對我來說非常珍貴。\n\n右昌大哥即將再前往美國為台灣打拚💪🏼，我也會帶著大家的力量繼續努力！",
+      "topicScores": {
+        "兩岸外交": 0.63,
+        "競選": 0.95,
+        "經濟": 0.54
+      },
+      "topics": [
+        "競選",
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Db3AWFOGUMz"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "afb36fd1daab59851d74e80182ad3b616048393e4e2b1bdb800f58e8a9b805d8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2_8A7pONl/",
+      "imageAspect": 1.5038,
+      "imageUrl": "assets/feed-images/48370f120993a0e9df78.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T12:20:16+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談新北政見、城市治理與國際情勢，屬主動提出施政方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "今天和右昌大哥見面，我們不只討論新北的政見，也交流國際情勢、關心各項國內議題，右昌大哥更特別和我分享他在基隆的城市治理經驗，基隆鄰近新北，兩個城市有許多合作和競爭的地方，他的經驗對我來說非常珍貴。\n\n右昌大哥即將再前往美國為台灣打拚💪🏼，我也會帶著大家的力量繼續努力！",
+      "topicScores": {
+        "兩岸外交": 0.63,
+        "競選": 0.95,
+        "經濟": 0.56
+      },
+      "topics": [
+        "競選",
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db2_8A7pONl/"
+    },
+    {
+      "agendaRelevance": 0.21,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "09bf851ed0964c481f4f00573058f8d2b350c4cded00945ab4f29fe90a867881",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1620700322745131",
+      "imageAspect": 1.5037,
+      "imageUrl": "assets/feed-images/a2e61a1b57dad93337c9.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T12:19:09.000Z",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "僅是會面談政見與國際情勢，未回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "今天和 林右昌UChange右昌大哥見面，我們不只討論新北的政見，也交流國際情勢、關心各項國內議題，右昌大哥更特別和我分享他在基隆的城市治理經驗，基隆鄰近新北，兩個城市有許多合作和競爭的地方，他的經驗對我來說非常珍貴。\n\n右昌大哥即將再前往美國為台灣打拚💪🏼，我也會帶著大家的力量繼續努力！",
+      "topicScores": {
+        "兩岸外交": 0.41,
+        "生活": 0.69,
+        "競選": 0.82
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "兩岸外交"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0uD1et6CZzF9698tTjPeFRQij7zCm6sJFWsyB2TZirSqY3RvkqYM5BnHK7JT1vu7ml"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "ff7b1fa4c71011cc464eda021a54bb13f622588f2df00914eb21b342748008f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db23lAHkzdX",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/c0da350db533474b8b1a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T11:06:58+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容為動土典禮紀錄，著重地方建設與環境改善。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:今天來到玉井，參加玉井區多功能活動中心新建工程動土典禮！\n　　　　　\n從一紙藍圖到今天正式動土，代表玉井又往前邁進了一步。未來有了更完善的多功能空間，不只提供鄉親休閒、活動使用，也能成為大家交流、凝聚感情的重要所在。\n　　　　　　　　　　\n一步一腳印，把地方需要的建設一項一項完成，讓玉井的生活環境越來越好！\n　　　　\n#陳亭妃 #玉井 #多功能活動中心 #地方建設",
+      "topicScores": {
+        "住宅": 0.45,
+        "生活": 0.9
+      },
+      "topics": [
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/Db23lAHkzdX"
+    },
+    {
+      "agendaRelevance": 0.66,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "40aaf619452bd2922225e0527cc030b0fc4f369b1b5ba2a4ab25601bd24ad07d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1615664359921486",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/699ed603b26f6ac1b7dd.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T11:06:56.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "動土典禮介紹活動中心新建，屬地方建設推動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "今天來到玉井，參加玉井區多功能活動中心新建工程動土典禮！\n　　　　　\n從一紙藍圖到今天正式動土，代表玉井又往前邁進了一步。未來有了更完善的多功能空間，不只提供鄉親休閒、活動使用，也能成為大家交流、凝聚感情的重要所在。\n　　　　　　　　　　\n一步一腳印，把地方需要的建設一項一項完成，讓玉井的生活環境越來越好！\n　　　　\n#陳亭妃 #玉井 #多功能活動中心 #地方建設",
+      "topicScores": {
+        "住宅": 0.68,
+        "生活": 0.73
+      },
+      "topics": [
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid021C5hSAkLMB1tguWy3pefJRQhFL7VzpbkkB1wzq3bDWgmMFX22P1MGi2eRh2hmbVYl"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "fd0c921e54da7f8684b56631a91b35a102dc1793f39c07fe25631b2622c468e1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db23j3ikwHN/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/ad4f3b986bf08ba45afa.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T11:06:51+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "出席活動中心動土典禮，重點在地方建設與生活環境。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "今天來到玉井，參加玉井區多功能活動中心新建工程動土典禮！\n　　　　　\n從一紙藍圖到今天正式動土，代表玉井又往前邁進了一步。未來有了更完善的多功能空間，不只提供鄉親休閒、活動使用，也能成為大家交流、凝聚感情的重要所在。\n　　　　　　　　　　\n一步一腳印，把地方需要的建設一項一項完成，讓玉井的生活環境越來越好！\n　　　　\n#陳亭妃 #玉井 #多功能活動中心 #地方建設",
+      "topicScores": {
+        "住宅": 0.45,
+        "生活": 0.9
+      },
+      "topics": [
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.instagram.com/p/Db23j3ikwHN/"
+    },
+    {
+      "agendaRelevance": 0.16,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "d59fe9f448dfa2ea0b4faab01601b79041f204260243bdf993cb69f6d22b12ad",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1653682709454470",
+      "imageAspect": 0.7139,
+      "imageUrl": "assets/feed-images/771c99a4f0cc06255f05.webp",
+      "keywords": [
+        "表演",
+        "觀光",
+        "美食",
+        "市集",
+        "詐騙"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T11:00:04.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳民俗團演出與市集活動，屬活動公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "#烏日 的朋友請注意， 這禮拜天 #九天民俗技藝團 要來烏日演出啦🥁\n\n暑假還沒玩夠嗎？周末一起來烏日，看九天精彩演出、玩親子遊戲、逛市集，一次通通滿足！\n\n🍿 美食、文創、遊戲餐車市集\n🎪 繽紛馬戲嘉年華\n🍾 酒瓶套圈圈、推酒杯大賽\n🎨 故事親子手作\n⭕️ 趣味扭蛋轉轉轉\n\n還有digi@反詐騙宣導，寓教於樂，讓孩子玩得開心、大人也收穫滿滿！\n\n▪️活動日期：2026年8月16日（日）\n▪️活動地點：烏日啤酒觀光工廠（烏日區光日路與大同路口）\n\n歡迎大小朋友一起來，吃美食、玩遊戲、看表演，享受歡樂夏日時光❤️\n\n#親子童樂列車",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "治安": 0.36,
+        "生活": 0.86
+      },
+      "topics": [
+        "文化觀光",
+        "生活",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid0ew6AQRv2BHfvXZ59m9bUrDvSWii8JLchsCtUSFQGNYo15iGZvbYS7m9XrRk13tfnl"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "1b7347bfc880240de79eb96bbfcf29854d2e02b335f230cab8a65fd87951d146",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2ybuiid1_",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/4dbff8b49d8fa81f574e.webp",
+      "keywords": [
+        "教育",
+        "教師"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-10T10:22:01+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動對教育團體提出政見與承諾，屬競選式教育主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:教師是夥伴！攜手打造高雄優質教育環境。\n\n今天「高雄市教育產業工會」何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！",
+      "topicScores": {
+        "教育": 0.98,
+        "競選": 0.86
+      },
+      "topics": [
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db2ybuiid1_"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "3cb419d46ce3c25a9effdcafc96d90a052767febb7b630a043b45384bccfc995",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1632498351565162",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c57fbc71e6f7e0ae85bd.webp",
+      "keywords": [
+        "淹水",
+        "環境",
+        "治水",
+        "觀光"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T10:21:36.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談抽水站完工、治水經費與提升旗津排水及環境。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "中洲漁港抽水站完工！\n市民關心的事，我全力以赴！\n\n上午收到郭美伶里長傳來的影片，中洲漁港抽水站已順利完工，並在大潮期間實際啟動抽水、發揮功能，有效提升排水能力，改善過去容易積淹水的問題。\n\n為了讓鄉親住得更安心，先前我向中央積極爭取2.7億元治水經費，持續強化地方排水韌性；同時結合4.7億元「旗津領航計畫」，從基礎建設到觀光環境，一步一步讓旗津變得更好。\n\n未來，我會繼續和大家站在一起，繼續打拼，把旗津顧好、把高雄顧好！",
+      "topicScores": {
+        "住宅": 0.74,
+        "文化觀光": 0.61,
+        "環境": 0.88,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "環境",
+        "住宅",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/zenolai2/posts/pfbid0QBYAwxxhAr4GwHeqxr2XB9o4Wfp9b4311ZcoBC8b9kTd7iYjhedrbxXDjmfMxESQl"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "ae4717a06c381e4d36c57386ff1ab6c2fbcb1de4b4921a4ffc214736ec46e4cc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2xvC-E-nf/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/6a8795e7f740bffb48c3.webp",
+      "keywords": [
+        "教育",
+        "學校",
+        "校園",
+        "課後",
+        "教師"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T10:15:57+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動提出教育承諾與多項教育政見，屬明確施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "教師是夥伴！攜手打造高雄優質教育環境。\n\n今天 #高雄市教育產業工會 何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！\n\n對於「增聘教師助理員與學生助理員」，因涉及組織編制、定位與財務核銷的複雜性，必須由教育局與財主單位研議後再與工會溝通，不能流於口號；但針對專業「心理師、社工師」的補足，此攸關學生輔導強化，必積極推動！\n\n近日傳出特教生攻擊老師事件，突顯特教助理員欠缺、寒暑假空窗期、身障課後照顧班人力與鐘點費過低等困境，尤其「普特融合」不能只靠第一線教師單打獨鬥。未來必須補足第一線防護與人力、健全校園安全配套，並合理編列學校基礎設施維修預算（如老舊監視器與設備更新），讓學校有能力、安全地照顧每一個孩子。\n\n教育不能靠華而不實的政見包裝或口號，高雄的孩子需要的是扎實的競爭力！未來教育局將是隨時為教師服務、聽取第一線聲音的最佳溝通窗口。讓我們一起翻轉高雄教育，為下一代打造更好的學習環境！\n\n希望高雄教育更好的家長和老師、校長，請相信並支持 #柯志恩 !",
+      "topicScores": {
+        "教育": 0.98,
+        "治安": 0.5
+      },
+      "topics": [
+        "教育",
+        "治安"
+      ],
+      "url": "https://www.instagram.com/p/Db2xvC-E-nf/"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "2f4ea9e99987d20a367bdc3ba9d8e45b85004f6962fb0e2e3ebd4b38082f9f88",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610787350401645",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/35122a18a54ee0223633.webp",
+      "keywords": [
+        "教育",
+        "學校",
+        "校園",
+        "課後",
+        "教師"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T10:15:50.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "回應教育工會訴求並提出多項教育政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "教師是夥伴！攜手打造高雄優質教育環境。\n\n今天 #高雄市教育產業工會 何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！\n\n對於「增聘教師助理員與學生助理員」，因涉及組織編制、定位與財務核銷的複雜性，必須由教育局與財主單位研議後再與工會溝通，不能流於口號；但針對專業「心理師、社工師」的補足，此攸關學生輔導強化，必積極推動！\n\n近日傳出特教生攻擊老師事件，突顯特教助理員欠缺、寒暑假空窗期、身障課後照顧班人力與鐘點費過低等困境，尤其「普特融合」不能只靠第一線教師單打獨鬥。未來必須補足第一線防護與人力、健全校園安全配套，並合理編列學校基礎設施維修預算（如老舊監視器與設備更新），讓學校有能力、安全地照顧每一個孩子。\n\n#教育 不能靠華而不實的政見包裝或口號，高雄的孩子需要的是扎實的競爭力！未來教育局將是隨時為教師服務、聽取第一線聲音的最佳溝通窗口。讓我們一起翻轉高雄教育，為下一代打造更好的學習環境！\n\n希望高雄教育更好的家長和老師、校長，請相信並支持 #柯志恩 !",
+      "topicScores": {
+        "教育": 0.99,
+        "治安": 0.57
+      },
+      "topics": [
+        "教育",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid075FknXSS1NGb2Zbju95MENu214kpzWCKh1oHeFbWDG7zw4q85ziDykHuXDf3b8SAl"
+    },
+    {
+      "agendaRelevance": 0.26,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "917da263153bab80e48e91c5e0291e31898237cb80ced513439d347868a531ba",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109067809329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6fbb003c68f816dbcc8d.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T10:02:14.000Z",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "介紹青年參政者，重點在人物造勢與選舉布局。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "郭凡 才 26 歲，他是典型的青年返鄉參政，也是苗栗客庄人，留學後返台累積幕僚歷練，現在自己進廚房！",
+      "topicScores": {
+        "生活": 0.61,
+        "競選": 0.94
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1523488099004270/"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "1c18a9ba771415ef58405b1291fd496442c1db43794344cc498abe0aa497aaaf",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-10T16:38:38+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1627111488770433",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1edf26b7baaf1465616a.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T09:32:36.000Z",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "僅見標題轉述與政見陳述，未辨識明確他方主張供回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友直球對決：憑什麼當臺南市長…龍介拋三大市政目標",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1829842265049695/"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "51c55db65ba9cc1481f2abb8f54144460aa522f6c84e8396b458d89e62d210c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2sbntkTRl",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b60f86201476d19e1dd5.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T09:29:36+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅呈現競選標題，非回應特定對象的說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
+      "topicScores": {
+        "競選": 0.95
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db2sbntkTRl"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "fe3f2db55dc3883d7728fdfd3dd87a7ec1875e7d326d1cc7aa1ee4c434a0f487",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2sQ_XSie2/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/dcc27fb46eda9b7aa00b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T09:28:42+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題僅是競選式市長宣傳，未見回應他人具體觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
+      "topicScores": {
+        "生活": 0.32,
+        "競選": 0.95,
+        "經濟": 0.34
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2sQ_XSie2/"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "f541d71bf0d7311375977161ee21127f19dd75c97cdfacfd8a24d24aca0ce65f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2r90Zid_c",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/59340c6ff66a7edf3306.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T09:25:30+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "僅有口號式標語，未見具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:捍衛教拳👊🏻",
+      "topicScores": {
+        "教育": 0.77,
+        "競選": 0.74
+      },
+      "topics": [
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db2r90Zid_c"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "b88b7ff9cbb709e5e4eff9e8070289cc4524189fcfb405553f56b6f22459d181",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-10T16:38:38+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2pY0eDR25",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9ef126455b986f209941.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T09:03:29+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅見自述與情緒，無他方具體主張，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:孩子哭著問：\n媽媽為什麼都不來看我？\n\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。",
+      "topicScores": {
+        "生活": 0.7,
+        "社福": 0.91
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2pY0eDR25"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "374872ca9d630f2ea60bea5b8a76b8304ee0dcf46a20ec4dc357ee604e8bad09",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2pVNuyNZG/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2b922e0ad65088c8300a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T09:03:13+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談母子關係與陪伴孩子，屬家庭生活與情感分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "孩子哭著問：\n媽媽為什麼都不來看我？\n\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。\n\n多撥出時間陪伴孩子，我們一起成長，謝謝孩子！",
+      "topicScores": {
+        "生活": 0.72,
+        "社福": 0.92
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2pVNuyNZG/"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "78fb1760b929481a1b4cb648ad4a02f902af042ee66511548718e678b9375e15",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1653606356128772",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/e8fd1a585480cd279fee.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T08:57:51.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "談母子陪伴與親子關係，屬家庭生活與社福情境。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "孩子哭著問：\n媽媽為什麼都不來看我？\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。\n多撥出時間陪伴孩子，我們一起成長，謝謝孩子！",
+      "topicScores": {
+        "社福": 0.98
+      },
+      "topics": [
+        "社福"
+      ],
+      "url": "https://www.facebook.com/reel/27357923633886634/"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "ffa9ca60a6b96de85469686b29efe894b0086668c20650be4fb461a153776e03",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1607673234303264",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2bd3246db7ec3b007abc.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T08:48:35.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "簡短勉勵學弟，屬日常感性發文，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "他沒來，課本來了。\n這條路我走過。剩下的，換你走。加油，學弟。",
+      "topicScores": {
+        "教育": 0.55,
+        "生活": 0.84
+      },
+      "topics": [
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1380935840507074/"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "c869f482d1243baab104be93651d5b2da12b314aa14bb595bb8d59ebc56961d2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2ndHOCHUq",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/c8d197f63e2e9552d956.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T08:46:54+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是對學弟的勉勵話語，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:他沒來，課本來了。\n\n這條路我走過。剩下的，換你走。加油，學弟。",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2ndHOCHUq"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "50646a90b113218b2ea4035baf4519da4f3cf18737d94e2a47f67175dbe84556",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2nbBUMC67/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/8139961c404b37051fdd.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T08:46:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以課本與學弟打氣為內容，屬日常勉勵。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "他沒來，課本來了。\n\n這條路我走過。剩下的，換你走。加油，學弟。",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2nbBUMC67/"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "c1cafdd629d118e1e6c6122cd537548819753542bba4998758e3c6760cf92ab6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2l1XxGr6c",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/26cc26359b154811339a.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-10T08:31:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "掃街拜票與市場行程宣傳，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
+      "topicScores": {
+        "生活": 0.54,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2l1XxGr6c"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "45cb8aab5004f8528a2d11e08ef83ba8a7cd01a2aee642627a8e2bc39d04f39f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2lvw8zgqA/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/15c310fff07bec51ccd8.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T08:31:50+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以掃街拜票與在地市場為主，屬競選動員非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
+      "topicScores": {
+        "生活": 0.57,
+        "競選": 0.95,
+        "經濟": 0.52
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db2lvw8zgqA/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "1629e8e945bca0ddbd32af749c73e4759d2695bb13e899f1bdf67a3d62f5041d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1568711958036670",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/54e458dec3ce75a77e46.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T08:30:08.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "清晨掃街拜票與市場走訪，主要是競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-fb",
+      "text": "明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
+      "topicScores": {
+        "生活": 0.86,
+        "競選": 0.97,
+        "經濟": 0.3
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid028rTW4pmHt86dkMXdKhHEELRbKHE3s9Jj3tnqXvrbfY2V5RyHbn1xd4KBHqgnYv4cl"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "7b91b5dfa56107420cf6cb5cdb37f6ec233207f4704023fe0102e06f835e7ac0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2jZ2XSLZt/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/56a22adc99c56227ac31.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T08:10:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "夜市見面邀約，屬活動宣傳與日常互動，無具體公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "就等你下班～⁣\n欲來去輕輕鬆鬆彼个夜市～⁣\n⁣\n明晚再做伙來踅一下夜市，希望可以見到大家！⁣\n⁣\n8/11（二）⁣\n17:20⁣\n📍雙城街夜市",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2jZ2XSLZt/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "dddafa897daed22701644db44efb70199746fd1ae7a766d0d91a3be15822e587",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2haX-FJaj",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/633db40d9532f43aa322.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T07:53:17+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是轉貼夜市活動邀約，未回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:就等你下班～⁣\n欲來去輕輕鬆鬆彼个夜市～⁣\n⁣\n明晚再做伙來踅一下夜市，希望可以見到大家！⁣\n⁣\n8/11（二）⁣\n17:20⁣\n📍雙城街夜市",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2haX-FJaj"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "6370437829fadd4fcb58c2c9b2f5c7b1955ec4832fd1ce42fcf243e657aee3c0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175439844660654",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/422fd9f214142152c7f9.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T07:00:17.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享逛文博會與親子日常，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "來文博會\n支持創作者！\n⠀\n剛好女兒也喜歡各種\n有設計感的東西\n所以我跟女兒約好一起逛\n⠀\n但因為麻糬太興奮\n可能覺得好不容易\n有時間一起出去\n結果快到現場的時候\n他就睡著了…\n⠀\n結果變成抱著麻糬逛文博\nXD",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "生活": 0.89
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid0S7v3rWanTvjid4oBFq9Wze5d3ieEd2L4fqm7FTbMuPbFxPfQ9gHGyj4K3ZRgfVgql"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "59aa12109255fca0ecb0f4f3c954f70b579bdd0c89acda2c5c7ce201cec2259d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2bT2FkXIw",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/22b2d51f43456675413b.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T06:59:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享逛文博會與親子日常，屬活動紀錄非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:來文博會\n支持創作者！\n⠀\n剛好女兒也喜歡各種\n有設計感的東西\n所以我跟女兒約好一起逛\n⠀\n但因為麻糬太興奮\n可能覺得好不容易\n有時間一起出去\n結果快到現場的時候\n他就睡著了…\n⠀\n結果變成抱著麻糬逛文博\nXD",
+      "topicScores": {
+        "文化觀光": 0.92,
+        "生活": 0.78
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2bT2FkXIw"
+    },
+    {
+      "agendaRelevance": 0.54,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "32d1939e94f3e205dfa3596bc85b8ea1a8eb84ab60aabeab329115371b509cc7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1607579690979285",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/2ad70fda0f348a57e610.webp",
+      "keywords": [
+        "颱風",
+        "都更"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T06:57:42.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "回顧淹水經驗並談國影二期與重劃建設，帶有選戰主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "新莊這條路，我走了將近二十年。\n\n今天舉辦新莊川友會見面會，一千六百多人特別撥空前來，每一雙手我都握緊緊，你們的期待，我都聽到了。\n\n新莊八十多位里長，來了八成左右，包括里長聯誼會長林阿元、西盛里長等等，過去和他們的好感情，彼此都記得。\n\n當中還有一位里長，是我在衛工處當處長時的同仁，退休後，他就在新莊服務，老戰友相見，默契是依舊的。\n\n我要和大家分享一個小故事，民國96年10月，柯羅莎颱風襲台，我剛上任台北縣的工務局長，那時新莊中原里淹了大水，我調動將近二十台抽水馬達，才將水抽乾。\n\n水都還淹到腳踝，家裡的東西全泡爛。鄉親第一句話不是抱怨，是泡茶給我喝。其實該說抱歉的是我們。\n\n新莊就是如此簡單淳樸的地方，是新北之福。\n\n但福氣歸福氣，該討的權益還是得討。例如國影二期，從109年到現在，蘇院長當年說要全額負擔，整整六年過去，離動工還是遙遙無期。\n\n我的想法很簡單：如果中央不做，新北自己做。該蓋的，我來蓋。\n\n副都心、頭前重劃，我都經手過。侯市長已經推動的塭仔圳重劃，下一棒交給我來完成。這是我在行的，交給我，我的目標，是要讓年輕人在地就業。\n\n新莊這二十年，我都在。該蓋的，我接著蓋，該都更的，我來更新。",
+      "topicScores": {
+        "交通": 0.43,
+        "住宅": 0.62,
+        "競選": 0.84,
+        "防災": 0.79
+      },
+      "topics": [
+        "競選",
+        "防災",
+        "住宅",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ZPTx1axgYFtGGSvpM2eDdMNTa2WErLuKcHiAfzNdYCHHpM2YaMCPq7FiSGhtrzUFl&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a5dc7ae346aeca2e1b1e267492b191bea21142db543df64cd35242c471015736",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2YAOZoEtH/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/ce057d7f87755b1fdc13.webp",
+      "keywords": [
+        "托育",
+        "育兒",
+        "補助",
+        "停車",
+        "自行車",
+        "疫苗"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T06:31:06+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出臺中育兒新政，涵蓋托育、補助與親子友善措施。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "育兒友善再升級 幸福生育向前行👶🏻✨\n面對少子化挑戰，啟臣今天正式推出 ＃臺中親子味13項全方位育兒新政！從備孕、懷孕、生產到育兒，我們要給爸媽最實在的依靠，讓臺中成為全臺灣最溫暖的旗艦育兒城市！\n\n在托育支援方面，未來將成立由市長召集的 #婦幼發展委員會 進行跨局處整合，並逐步補足育嬰留停給付至100%，同時加碼準公托補助至每月3,000元，更推出 #臨托預約APP 實現一鍵輕鬆預約。\n\n為了做爸媽最強的神隊友，我們將產後心理諮商擴大至 #父母各3次 ，到宅月嫂補助提高至40小時，全面補助孕婦RSV疫苗與嬰幼兒腸病毒疫苗，並提供AMH檢測與擴大凍卵補助。\n\n在外出友善環境上，不僅提供親子車位免費停車4小時，#好孕專車乘車補助 延長至產後一年，更將普及 #親子小白宮 廁所，並率先試辦附設安全座椅的共享 #袋鼠車 公共自行車，讓親子共乘更安全便利。\n\n啟臣會用最堅強的團隊與執行力，實現「託付對的人，育兒不費神」，讓年輕人在臺中安心成家、幸福安居！\n\n#臺中升級幸福加給 #打造臺中旗艦城 #臺中親子味 #育兒友善再升級幸福生育向前行 #託付對的人育兒不費神 #袋鼠車",
+      "topicScores": {
+        "交通": 0.68,
+        "住宅": 0.72,
+        "社福": 0.96,
+        "醫療": 0.64
+      },
+      "topics": [
+        "社福",
+        "住宅",
+        "交通",
+        "醫療"
+      ],
+      "url": "https://www.instagram.com/p/Db2YAOZoEtH/"
+    },
+    {
+      "agendaRelevance": 0.94,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "901d4da5f082a241aa82262b5c7abab74a2b13be3b3a596729d448abd829371e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1586095709543911",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/7ed978e85a9c1ed185ee.webp",
+      "keywords": [
+        "托育",
+        "育兒",
+        "補助"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T06:30:59.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出完整育兒新政，涵蓋托育、補助與友善措施。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-fb",
+      "text": "育兒友善再升級 幸福生育向前行👶🏻✨\n面對少子化挑戰，啟臣今天正式推出 ＃臺中親子味13項全方位育兒新政！從備孕、懷孕、生產到育兒，我們要給爸媽最實在的依靠，讓臺中成為全臺灣最溫暖的旗艦育兒城市！\n\n在托育支援方面，未來將成立由市長召集的 #婦幼發展委員會 進行跨局處整合，並逐步補足育嬰留停給付至100%，同時加碼準公托補助至每月3,000元，更推出 #臨托預約APP 實現一鍵輕鬆預約。\n\n為了做爸媽最強的神隊友，我們將產後心理諮商擴大至 #父母各3次 ，到宅月嫂補助提高至40小時，全面補助孕婦RSV疫苗與嬰幼兒腸病毒疫苗，並提供AMH檢測與擴大凍卵補助。\n\n在外出友善環境上，不僅提供親子車位免費停車4小時，#好孕專車乘車補助 延長至產後一年，更將普及 #親子小白宮 廁所，並率先試辦附設安全座椅的共享 #袋鼠車 公共自行車，讓親子共乘更安全便利。\n\n啟臣會用最堅強的團隊與執行力，實現「託付對的人，育兒不費神」，讓年輕人在臺中安心成家、幸福安居！\n\n#臺中升級幸福加給 #打造臺中旗艦城 #臺中親子味 #育兒友善再升級幸福生育向前行 #託付對的人育兒不費神 #袋鼠車",
+      "topicScores": {
+        "住宅": 0.61,
+        "生活": 0.84,
+        "社福": 0.97
+      },
+      "topics": [
+        "社福",
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02jz6kSCcHQLJeKTWr28sNaYx2XsaEH8pYKZ1JXpBrHXD1oMJDQTa5smqjwNPYg8Esl"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "0c254fd65cdc2f385ce900f02c05c489e288d1efe04aeec3bb1f96d082ff454a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2U0vUCP5k",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/6bdabf6cb1effcae7d41.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T06:04:11+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享義消家庭喜訊，屬生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:上一次見面，這對義消夫婦還是新婚。\n\n三月他拿結婚證書找我簽名，最近換他爸爸拿著手機跑過來，說孩子出生了。\n\n同一家人，半年遇到兩次。新北這麼大，緣分這麼近。\n\n恭喜你。從這一天開始，你多了一個身分——而這個身分，沒有卸任的一天。",
+      "topicScores": {
+        "生活": 0.94
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2U0vUCP5k"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "584650153f0e02e2d997b8d88821cb9bd2d6096c060ea6a17d58aaff10f62612",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2UyoXM55q/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/d09d907abb68d40cbc63.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T06:03:41+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "祝賀義消家庭添新成員，屬人際互動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "上一次見面，這對義消夫婦還是新婚。\n\n三月他拿結婚證書找我簽名，最近換他爸爸拿著手機跑過來，說孩子出生了。\n\n同一家人，半年遇到兩次。新北這麼大，緣分這麼近。\n\n恭喜你。從這一天開始，你多了一個身分——而這個身分，沒有卸任的一天。",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2UyoXM55q/"
+    },
+    {
+      "agendaRelevance": 0.16,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "4be3dda9244e4d79f15c9447b86c32046d31e61ddbddb0442409b9ca9faf1ce2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2M0IME6E-",
+      "imageAspect": 1.3348,
+      "imageUrl": "assets/feed-images/a88a76e769058d3e4c98.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-10T04:53:18+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享廟會慶典與社頭活動，屬文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:大溪普濟堂關聖帝君聖誕慶典圓滿落幕，世杰陸續來到各社頭福宴，和大家相聚，也向長年為慶典付出的社頭夥伴表達感謝。\n\n「迎六月廿四」是大溪人的第二個過年，而社頭更是這項百年文化能夠一代接一代傳承的重要力量。從遶境前的籌備、陣頭操演，到慶典期間大家不分日夜的投入，每一份付出，都讓大溪珍貴的文化持續傳承。\n\n謝謝每一位為關聖帝君聖誕慶典付出的夥伴，因為大家共同守護，才有一年比一年精彩的聖帝公聖誕慶典！\n\n世杰也會繼續和大家一起支持在地信仰與社頭文化，讓大溪的香火、文化與情感，代代傳承、聲聲不息✨",
+      "topicScores": {
+        "文化觀光": 0.96
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Db2M0IME6E-"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a1867ee557863500bf3d807a41f9171185dce5fda879499608c924a74095a4d8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2MyyskyiZ/",
+      "imageAspect": 1.3348,
+      "imageUrl": "assets/feed-images/b945458e764ec92e33b6.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T04:53:09+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "報導普濟堂慶典與社頭文化，偏活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "大溪普濟堂關聖帝君聖誕慶典圓滿落幕，世杰陸續來到各社頭福宴，和大家相聚，也向長年為慶典付出的社頭夥伴表達感謝。\n\n「迎六月廿四」是大溪人的第二個過年，而社頭更是這項百年文化能夠一代接一代傳承的重要力量。從遶境前的籌備、陣頭操演，到慶典期間大家不分日夜的投入，每一份付出，都讓大溪珍貴的文化持續傳承。\n\n謝謝每一位為關聖帝君聖誕慶典付出的夥伴，因為大家共同守護，才有一年比一年精彩的聖帝公聖誕慶典！\n\n世杰也會繼續和大家一起支持在地信仰與社頭文化，讓大溪的香火、文化與情感，代代傳承、聲聲不息✨",
+      "topicScores": {
+        "文化觀光": 0.96
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Db2MyyskyiZ/"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "08ad8199e1967234c36c1b34eeabc9986647fc86c1f38b9160b8eee1c6ab7583",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1568585298049336",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/e2df1e36bdb21188841e.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T04:50:52.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述廟會慶典與社頭文化傳承，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-fb",
+      "text": "大溪普濟堂關聖帝君聖誕慶典圓滿落幕，世杰陸續來到各社頭福宴，和大家相聚，也向長年為慶典付出的社頭夥伴表達感謝。\n\n「迎六月廿四」是大溪人的第二個過年，而社頭更是這項百年文化能夠一代接一代傳承的重要力量。從遶境前的籌備、陣頭操演，到慶典期間大家不分日夜的投入，每一份付出，都讓大溪珍貴的文化持續傳承。\n\n謝謝每一位為關聖帝君聖誕慶典付出的夥伴，因為大家共同守護，才有一年比一年精彩的聖帝公聖誕慶典！\n\n世杰也會繼續和大家一起支持在地信仰與社頭文化，讓大溪的香火、文化與情感，代代傳承、聲聲不息✨",
+      "topicScores": {
+        "文化觀光": 0.98,
+        "生活": 0.58
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid02awteyPt5ED2PyFB6ySfkLGQQ9qrxWi7tgX43wqJXj9dp9iebcHP3voNE7wMKVijHl"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "473fc3240db5999a6ff932b46c5c01c742c42a3f12d24bd9415d91588c29fea6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2K0ThE1n-/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/869d9722273b63904f42.webp",
+      "keywords": [
+        "歷史"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T04:35:53+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "出席宗教交接典禮並致意，屬活動紀錄與祝賀。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "一棒接一棒，讓善念在高雄延續！\n\n今天受邀參加高雄市佛教會第13、14屆理事長交接就職典禮，共同見證近80年歷史的重要時刻。\n\n感謝圓戒法師八年來承擔重任，凝聚佛教界力量，持續推動教育、公益與浴佛祈福；也恭喜大慧法師接任新理事長，以更開闊的視野連結青年世代、科技發展與國際交流。\n\n從圓戒法師到大慧法師的交接，更像是一份使命的延續，佛教界長期投入慈善、教育與社會服務，正是支撐城市向前的重要基石。\n\n在紛擾快速的時代裡，慈悲與包容更顯珍貴，這也提醒所有從事公共事務的人，始終以服務人民為念，以理解取代對立，讓社會多一分和諧、多一分善意。\n\n祝福高雄市佛教會法脈綿延、會務興隆，也祝福圓戒法師、大慧法師及諸山長老福慧圓滿、法體康健，共同為高雄祈願平安順遂、祥和安定。",
+      "topicScores": {
+        "文化觀光": 0.6,
+        "生活": 0.74
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Db2K0ThE1n-/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "0b59674f9f169034564f24ca54d939dafdcb5f6a1239067420d0785eb9a4c6f9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1610589247088122",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/fba6cb46266791d2a6d8.webp",
+      "keywords": [
+        "歷史"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T04:32:46.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "出席佛教會交接典禮，屬活動紀錄與祝福。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "一棒接一棒，讓善念在高雄延續！\n\n今天受邀參加 #高雄市佛教會 第13、14屆理事長交接就職典禮，共同見證近80年歷史的重要時刻。\n\n感謝 圓戒法師八年來承擔重任，凝聚佛教界力量，持續推動教育、公益與浴佛祈福；也恭喜大慧法師接任新理事長，以更開闊的視野連結青年世代、科技發展與國際交流。\n\n從 #圓戒法師 到 #大慧法師 的交接，更像是一份使命的延續，佛教界長期投入慈善、教育與社會服務，正是支撐城市向前的重要基石。\n\n在紛擾快速的時代裡，慈悲與包容更顯珍貴，這也提醒所有從事公共事務的人，始終以服務人民為念，以理解取代對立，讓社會多一分和諧、多一分善意。\n\n祝福高雄市佛教會法脈綿延、會務興隆，也祝福圓戒法師、大慧法師及諸山長老福慧圓滿、法體康健，共同為高雄祈願平安順遂、祥和安定。\n#高雄 #佛教 #平安順遂 #祥和安定",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "生活": 0.7,
+        "社福": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid078K7WCa7zuhEcq4Lo98sX2vPw3itLkr5moMY1i96BBrHrD7frqTHMSUcf1XohDHml"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "f30b070e157260d0243c235180f323ed329133e3b1f01782342d0b1d0129dbf8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db2Dwe4kSd8",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2fe0034ef4ed9cd2fa6d.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T03:34:11+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "號召捐血與公益活動，屬社福宣傳非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:捐血不用披風，也能當英雄！\n@huangjie_official",
+      "topicScores": {
+        "生活": 0.58,
+        "社福": 0.92
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db2Dwe4kSd8"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "46476465653c304c80b0160b688d8c7264972183e8c70d756d1ee993458c708e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2Dm0BSED3/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7f5ddfc2951b9440583b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T03:33:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "號召捐血與公益活動，屬社福宣傳非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "捐血不用披風，也能當英雄！\n@huangjie_official",
+      "topicScores": {
+        "生活": 0.58,
+        "社福": 0.92
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2Dm0BSED3/"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "5b3293ad0bb3238ee88dcd32ac13b50163e0ff38c581c217730ab4f4a49345ab",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1632277281587269",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3827fafab4dbd1bcf572.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T03:32:46.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以捐血鼓勵行善，屬生活宣導非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "捐血不用披風，也能當英雄！ 黃捷",
+      "topicScores": {
+        "生活": 0.78,
+        "社福": 0.86
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/2049675202344806/"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "99836bfc22f0782b09ddcd8448c6b5fc8a4f7aa3c9994deba2954cf010b051cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db2C_HkIKYi/",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/fbc4cf2a6394a276b164.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T03:27:27+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告防空演習管制與配合事項，屬防災提醒非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "🚨演習提醒🚨\n今天8/10 （一）下午14:30-15:00臺中市實施城鎮韌性防空演習 ，實施30分鐘人車管制。\n⚠️ 啟臣特別提醒大家\n1️⃣ 人車管制：行車請靠邊停放，人員務必下車，配合引導就近避難，切勿在戶外逗留。\n2️⃣ 新增網路降速演練：為貼近情境，演習期間行動上網（如行動支付、視訊）可能降速或暫停，一般通話、簡訊與室內Wi-Fi則不受影響。\n\n請大家務必配合管制的指揮引導，若未配合者將依《民防法》處3萬至15萬元罰鍰。請市民朋友互相提醒，提早規劃下午行程、注意安全！",
+      "topicScores": {
+        "生活": 0.56,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db2C_HkIKYi/"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8be35308dcb5b4babff7261b4f531e8b7e92bcb0b01601430ec27134d27f27cc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1586000892886726",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/1d626aaa98711d79704b.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T03:27:24.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣導防空演習管制與注意事項，屬公告提醒。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-fb",
+      "text": "🚨演習提醒🚨\n今天8/10 （一）下午14:30-15:00臺中市實施城鎮韌性防空演習 ，實施30分鐘人車管制。\n⚠️ 啟臣特別提醒大家\n1️⃣ 人車管制：行車請靠邊停放，人員務必下車，配合引導就近避難，切勿在戶外逗留。\n2️⃣ 新增網路降速演練：為貼近情境，演習期間行動上網（如行動支付、視訊）可能降速或暫停，一般通話、簡訊與室內Wi-Fi則不受影響。\n\n請大家務必配合管制的指揮引導，若未配合者將依《民防法》處3萬至15萬元罰鍰。請市民朋友互相提醒，提早規劃下午行程、注意安全！",
+      "topicScores": {
+        "生活": 0.82,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0CGtn6J1xALKLsceRvsPS3MCyQ6kMtqd42DTt8TKSgWmTS7ziTQFc5fjRi55H3okfl"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "96eb7dab06d65d8a939f18ca89c7ece4883a980afeebfd5813d6aa17cb0ff68b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db1yKpbkrfu",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/dce88fa8820d77b3467a.webp",
+      "keywords": [
+        "文化",
+        "表演"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-10T01:00:35+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以劇團與文化傳承包裝人物形象，屬競選式宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:「讓值得信任的蘇巧慧，成為我們的後盾」、「因為這個人會為你思考」。\n\n2012年創立「風神寶寶兒童劇團」的陳昭賢，成功融合歌仔戲、本土文化與現代舞台劇表演，讓傳統戲曲在孩子的世界裡生根發芽。\n\n她和蘇巧慧一樣，一直在為台灣的下一代努力，希望可以「做更好、做更多」。",
+      "topicScores": {
+        "教育": 0.57,
+        "文化觀光": 0.89,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/Db1yKpbkrfu"
+    },
+    {
+      "agendaRelevance": 0.33,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "3c58f17eb68918d99716537eb0376064b8892711e0dfc212ebb8df8989107760",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1620016289480201",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a5aeb527dde95108948c.webp",
+      "keywords": [
+        "文化",
+        "表演"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T01:00:31.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以兒童劇團與下一代為例，偏競選形象與文化教育。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "「讓值得信任的蘇巧慧，成為我們的後盾」、「因為這個人會為你思考」。\n\n2012年創立 風神寶寶兒童劇團 的陳昭賢，成功融合歌仔戲、本土文化與現代舞台劇表演，讓傳統戲曲在孩子的世界裡生根發芽。\n\n她和蘇巧慧一樣，一直在為台灣的下一代努力，希望可以「做更好、做更多」。",
+      "topicScores": {
+        "教育": 0.72,
+        "文化觀光": 0.82,
+        "競選": 0.76
+      },
+      "topics": [
+        "文化觀光",
+        "競選",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/986658157721145/"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "bf722a5f8964ef48e94a8a1d54e29b1517f5561d969c0587fe0142af6c121705",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db1yHt2TWFX/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d97eb5ca194bd1cbe0de.webp",
+      "keywords": [
+        "文化",
+        "表演"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T01:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以人物故事結合形象宣傳與競選支持，非回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "「讓值得信任的蘇巧慧，成為我們的後盾」、「因為這個人會為你思考」。\n\n2012年創立 @fengshenbaobao #風神寶寶兒童劇團 的陳昭賢，成功融合歌仔戲、本土文化與現代舞台劇表演，讓傳統戲曲在孩子的世界裡生根發芽。\n\n她和蘇巧慧一樣，一直在為台灣的下一代努力，希望可以「做更好、做更多」。",
+      "topicScores": {
+        "教育": 0.58,
+        "文化觀光": 0.88,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/Db1yHt2TWFX/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "9ca7b5946d85c5673cd7fdd0a8e244fa913910c1367ad6e55d71a7c66b5af7a3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db1x2NJFITc",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/03ec1537e81340cde325.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-10T00:58:30+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享與母親的私生活回憶，未涉及公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:跟弘儀哥聊天，總是勾出我的心內話！\n\n這一段我跟媽媽的故事，已經好久好久以前了，卻又好像昨天的事，謝謝媽媽。",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db1x2NJFITc"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "1c7da0d5586bab6f2936e74bd440029e51345fd22a5b925379ce97e2485ba06e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db1xnUYywlR/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d82dbc1067399e5b2c80.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-10T00:56:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "與來賓聊天回憶母親故事，屬個人情感內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "跟弘儀哥聊天，總是勾出我的心內話！\n\n這一段我跟媽媽的故事，已經好久好久以前了，卻又好像昨天的事，謝謝媽媽。",
+      "topicScores": {
+        "生活": 0.93
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db1xnUYywlR/"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "c2964f0f6a644b12f4d754cf0b99d236ce00edafeb23792ef2290880ed33e370",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1653315289491212",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b676e5ff99077fd2b391.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T00:51:01.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享與母親的個人回憶，未涉公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "跟弘儀哥聊天，總是勾出我的心內話！\n這一段我跟媽媽的故事，已經好久好久以前了，卻又好像昨天的事，謝謝媽媽。",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1227270346211375/"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a98ada3ae6d9676eb1aa5f8cb2359195dcd84ca2044eeca858d93ecd9c0ec525",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1609992513814462",
+      "imageAspect": 1.0019,
+      "imageUrl": "assets/feed-images/a03d25e3e34dea817e60.webp",
+      "keywords": [
+        "音樂"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-10T00:00:02.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布競選活動場次與來賓資訊，屬動員宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "柯志恩「#廟口那卡西」場次預告\n歡迎相招來聽歌👊\n\n阿蓮場\n📍時間｜8月11日（二）晚上7點開始\n📍地點｜阿蓮薦善堂 (阿蓮區民族路206巷26號)\n📍主持人/歌手｜#陳昭瑋\n📍與會來賓｜高雄市議員 #李亞築 \n\n左營場 （音樂會）\n📍時間｜8月14日（五）晚上7點半開始\n📍地點｜左營新莊天后宮廣場(左營區自由三路178巷2號)\n📍主持人/歌手｜甜心魔王 #蘇宥蓉\n📍特別來賓｜立法委員 ＃陳菁徽\n📍與會來賓｜高雄市議員 #白喬茵、#李眉蓁、#李雅芬、#陳玫娟、#陳麗珍\n\n鹽埕場（音樂會）\n📍時間｜8月15日（六）晚上7點半開始\n📍地點｜鹽埕區文武聖殿(鹽埕區富野路170號)\n📍主持人/歌手｜台語歌手 #王瑞霞 #林濬揚\n📍特別來賓｜立法委員 ＃王鴻薇\n📍與會來賓｜高雄市議員 #蔡金晏 #陳美雅\n\n柯志恩官方 Facebook全程直播。",
+      "topicScores": {
+        "文化觀光": 0.83,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0NG9JVF8aEc7xNruYiHfZuQTZZAFTe2H6zjQoeVHx61kZpRQX1vdzJh2QPerfWfWBl"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "142ffccd9f0583c62422f822677b224b599000c74602896b56925ef6d98cbee2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1607375744333013",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a6907bded4eac321ca6c.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T23:30:31.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享義消家庭喜訊，純日常生活貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "上一次見面，這對義消夫婦還是新婚。\n三月他拿結婚證書找我簽名，最近換他爸爸拿著手機跑過來，說孩子出生了。\n同一家人，半年遇到兩次。新北這麼大，緣分這麼近。\n恭喜你。從這一天開始，你多了一個身分——而這個身分，沒有卸任的一天。",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1300283936493439/"
+    },
+    {
       "agendaRelevance": 0.18,
       "candidateId": "chiang-chi-chen",
       "classification": {
@@ -46,6 +2079,49 @@
     },
     {
       "agendaRelevance": 0.18,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "882126264c0ce402d834f89fdf1950d34e2a09d99fabc2d867b73b32eece68f4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1585602539593228",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/45b3ae4adccf8ef4aa13.webp",
+      "keywords": [
+        "文化",
+        "教育",
+        "弱勢",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T15:11:58.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "走訪宮廟與地方活動，內容以行程紀錄為主。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-fb",
+      "text": "啟臣持續走訪地方基層，下午先後在大里杙福興宮、梧棲真武宮與鄉親們見面，感受最溫暖的 #臺中味，最後回到熟悉的豐原感受 #家鄉味，參與樂天宮關聖帝君聖誕福宴，與鄉親好友齊聚一堂，一起吃頓團圓飯，共霑神恩、共享福氣。\n\n關聖帝君忠誠守信、勇於擔當的精神，始終是我們做人處事的典範，也是啟臣從事公共事務以來始終景仰、時時自我勉勵的精神。\n\n樂天宮長期推動文化、教育及公益關懷工作，舉辦書法比賽、發放獎學金，也透過發放白米等方式照顧弱勢鄉親，效法關公精神，實踐在地公益服務。\n\n與鄉親打招呼席間，驚喜巧遇「后里的女兒」—歌手翁鈺鈞，她在舞臺上的精彩演出，讓臺下許多鄉親也熱情舉起手板應援，我也立刻化身歌迷，開心與她合影留念❤️祝福她持續在舞台上綻放光彩，用后里好聲音持續感動更多朋友！\n\n啟臣也會不忘初心、持續「以民為本」，傾聽民意，將 #臺中升級、 #幸福加給，讓臺中成為共榮共好的 #幸福旗艦城 💪\n\n#臺中啟程 #打造旗艦城\n#臺中味 #文化味",
+      "topicScores": {
+        "教育": 0.65,
+        "文化觀光": 0.8,
+        "生活": 0.74,
+        "社福": 0.62
+      },
+      "topics": [
+        "文化觀光",
+        "生活",
+        "教育",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0PHfS7hTkCP5DwwxtaTcYWKy8riaptL6yiM35nqcyx27ehVpvBMTg8KFx1G8N1cWnl"
+    },
+    {
+      "agendaRelevance": 0.18,
       "candidateId": "chiang-wanan",
       "classification": {
         "classifiedAt": "2026-08-09T22:17:10+00:00",
@@ -82,6 +2158,47 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/Db0jbLpNxXx/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a5bc26ea094f3649d29f6d6169b17ff6d9e7862786eca880f1589fa6f5b54de7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1604837347672883",
+      "imageAspect": 1.4944,
+      "imageUrl": "assets/feed-images/748c35d55ba19ac20226.webp",
+      "keywords": [
+        "颱風",
+        "災害",
+        "強降雨",
+        "災情"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T13:33:00.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "颱風防災、抽水整備與提醒市民注意安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "市民朋友晚安！\n\n#白海豚颱風 已經減弱為輕度颱風，暴風半徑縮小至200公里，逐漸遠離臺灣。雖然中央氣象署並未針對白海豚颱風發布陸上警報，臺北隊依然嚴陣以待。\n\n今天一早，我再次前往臺北市災害應變中心（EOC）主持防颱會議，要求各局處隨時掌握狀況、即時應變；下午，我也到內湖區成功路四段，實地視察邊坡整治情形，確認周邊安全。\n\n隨著風雨逐漸趨緩，臺北隊已經全力展開復舊工作。\n\n這次白海豚颱風帶來的災情以路樹傾倒、建築物受損為主，工務局、都發局、環保局持續派員搶修、清理，希望用最快速度恢復市容，讓市民朋友安心恢復正常生活。\n\n颱風逐漸遠離，但水氣仍多，明後天預估還有短延時強降雨。\n提醒市民朋友，上班、上學記得攜帶雨具，也請持續留意天氣變化、注意自身安全。",
+      "topicScores": {
+        "交通": 0.64,
+        "生活": 0.62,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02UMSLPeoL5anrEKvnGNQefNVGvYQ91XPywzqrQS3Lg8zwH8jSypp4mR7KXw2g2ysEl"
     },
     {
       "agendaRelevance": 0.93,
@@ -209,6 +2326,49 @@
       "url": "https://www.threads.com/t/Db0hJcfgo0x"
     },
     {
+      "agendaRelevance": 0.9,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "9ae1acb804fddbe577eaf6a972568229ddcefea819614e14e23744b274c5cb8e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1619901242825039",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/dc9890a769668248bdf6.webp",
+      "keywords": [
+        "醫療",
+        "產業",
+        "AI",
+        "觀光"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T13:11:56.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出醫療園區、產業聚落與海岸計畫等具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "新世代一起拚！讓北海岸更好、新北持續進步！\n\n我和游明諺認識許久，從幕僚時期開始，他就認真投入公共服務、為鄉親打拚。這些年來，他更長期扎根淡水、八里、三芝、石門，把自己的時間和心力都奉獻給地方。\n\n未來，我們會一起推動興建 #淡海醫療園區，讓三芝、石門的鄉親享有更方便、更近距離的醫療資源。我也會在淡海新市鎮二期打造 #智慧科學產業聚落，發展AI、智慧自駕、機器人等新興產業，創造更多在地工作機會，帶動淡海地區持續發展！\n\n北海岸還有得天獨厚的山海風景，我也會推動 #新皇冠海岸計畫，從「善用海洋、建設路廊、活化場館」三大方向，串聯八里、淡水、三芝、石門一路到東北角的山海資源，讓北海岸成為更好玩、也更具國際吸引力的觀光品牌！\n\n我會繼續帶著新北隊努力，力拚 #議員全壘打，有更多會做事的新世代進入議會，讓新北市29區持續進步！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "競選": 0.86,
+        "經濟": 0.81,
+        "醫療": 0.93
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid08Abap5BiTZpSXmSBTevsYZUEE92dKvXemcg67HGzo8SZzFskNzngLZK22paS7hXvl"
+    },
+    {
       "agendaRelevance": 0.22,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
@@ -275,6 +2435,42 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/Db0ghE4D3D7"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8bc2ac9705a5104485551ffb250054af6d06fd9cecf256dcacea436fc93348cd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1626431165505132",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/c1f5f1b20460624c6713.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T13:03:50.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "批評毒油事件處理與司法究責，屬攻防評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "毒油事件行政院如果願意辦...檢調不知道收押多少人了",
+      "topicScores": {
+        "治安": 0.6,
+        "經濟": 0.55,
+        "議會監督": 0.82
+      },
+      "topics": [
+        "議會監督",
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1327250769622253/"
     },
     {
       "agendaRelevance": 0.03,
@@ -385,6 +2581,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db0RNWQk0lD"
+    },
+    {
+      "agendaRelevance": 0.31,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a868c7a5978ecf4c6ed096c065934ee02c3d3c427c68ce396af21b46aa0906a6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1614803350007587",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/6f112db239a3c8c7588a.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-09T10:53:10.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是競總整隊與選戰動員，非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "台南隊團結整隊 穩定向前出發！\n\n市長、議員候選人，以及中央、地方各世代的力量團結集結，確認競選總部組織架構，大家只有一個共同目標—為台南打拚、為市民拚未來！\n\n由總統 賴清德 擔任名譽主任委員，象徵台南市政一棒接一棒，台南市長 黃偉哲 擔任主任委員，並由立委 賴惠員 台南挺惠的 、郭國文 、林宜瑾 、林俊憲 、#王定宇，以及市議會議長 邱莉莉 擔任副主任委員，總幹事由 林志展 擔任，執行總幹事由 陳怡珍 擔任，副總幹事則由議員及議員侯選人擔任。\n\n9月5、6日也將與市黨部共同舉辦「一代、二代、三代、四代祖孫同樂會」，讓政治不只有嚴肅的議題，更有溫暖、歡笑與不同世代的參與。\n\n台南隊，準備好了！ 2026要贏、2028更要贏！\n\n#台南隊 #團結向前 #咱作伙寫歷史 #台南400年第一女市長",
+      "topicScores": {
+        "生活": 0.54,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid033S9dT66emEvAL1Je9UP4vsnWvynxMNYPRaR43PM9cKddajeQbp2n9xHLm6QJ3v79l"
     },
     {
       "agendaRelevance": 0.98,
@@ -1423,2270 +3655,6 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/zenolai2/posts/pfbid02eqxNWSuMGrD3GnYWZa8RotSiqZZxBGkH426qaFQbKFqmwt7Wkxf2cG9eTKbVsDMFl"
-    },
-    {
-      "agendaRelevance": 0.62,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "d52476ed2d6e3d285d45292cc1f677398cc92275a4f69cb1bb6d5fd9d6714acb",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:122108899401329310",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/94f13a42907418f7d770.webp",
-      "keywords": [
-        "產業"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T15:07:11.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "分享咖啡行程並談城市規劃與人才產業布局。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "有規劃的城市就像精品咖啡，喝了餘韻無窮，好評會再訪。⁣\n⁣\n今天是父親節，其實，我和 王孝維 議員有個共同點，就是對家庭的需求很敏銳。他長期推動企業的友善措施、守護市民的好孕專車，也把關小朋友的營養午餐。⁣\n⁣\n我在「王孝維 Cafe」的溫馨空間，跟議員和多位里長一起，為內湖鄉親手沖幸福咖啡，交換市政意見。⁣\n⁣\n擁有好的民代，就像疲憊時有朋友端上一杯順口的咖啡。⁣\n⁣\n⁣\n在咖啡香中，我向大家分享「生態系市政」。台灣精品咖啡能走向國際，因為成功串聯了精緻農業、跨國行銷、專業咖啡師到大眾的飲用習慣。市政也是如此，必須從人才培育、產業支援到生活環境，像生態系一樣整體規劃。⁣\n⁣\n地方政府的責任，是給人才與產業一個「留下來」的理由，在此共榮。⁣\n⁣\n台北從不缺資源，缺的是有遠見的規劃。未來的日子，請讓我們「台北隊」來專業擘劃，讓這座城市像精品咖啡一樣，有層次，且餘韻無窮。⁣\n⁣\n⁣\n#台北順起來⁣\n#你的市長沈伯洋",
-      "topicScores": {
-        "文化觀光": 0.49,
-        "競選": 0.86,
-        "經濟": 0.55
-      },
-      "topics": [
-        "競選",
-        "經濟",
-        "文化觀光"
-      ],
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02wemHzE2a4Rd6pSveWj8UzfBdJj7hheY8b4D5Z4C6dHP1YU4WEUnm2vMDxgRmVakFl"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "bdb62edb86900024bca513f7e2cfe5778628e05dcf9985cbe4b2847036565e3c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbyBDx-Slxf/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/ef4876336c4655749dad.webp",
-      "keywords": [
-        "參選"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T13:54:32+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "為市議員參選人站台，屬選舉動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
-      "topicScores": {
-        "生活": 0.4,
-        "競選": 0.97
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbyBDx-Slxf/"
-    },
-    {
-      "agendaRelevance": 0.28,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "e5781614867dc46eab8caa8abbf68ac1c92576b629f0d0be135bfc2725bbeb86",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbyAddyjz3G",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/d0595fcfd8e2d5434956.webp",
-      "keywords": [
-        "參選"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T13:48:47+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "推薦市議員參選人，內容以選舉宣傳為主。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
-      "topicScores": {
-        "競選": 0.97
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DbyAddyjz3G"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "64b4bbb585cf3ee8beef271550fd1fef37dd8cb5fef3011a17240242b5158021",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbyAMvBk5vE",
-      "imageAspect": 1.3348,
-      "imageUrl": "assets/feed-images/77f9a22dbb4ca8979b58.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T13:46:06+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "描述參加聯歡會與父親節祝福，屬活動紀錄與生活互動。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:下午一場大雨，大家都還好嗎？幸好傍晚天公作美，讓各里的聯歡會順利登場！\n\n我和市民朋友一起跳舞、聊天、同樂，看到現場滿滿的人潮，感受桃園最棒的活力與人情味💪\n\n今天是八八節，現場遇到好多牽著孫子、帶著孩子來參加活動的阿公和爸爸們，大家辛苦了！我要祝福所有肩負父親角色的朋友們，父親節快樂❤️\n\n風雨過後，更珍惜每一次相聚。謝謝大家的熱情，讓我們一起為更好的桃園打拚！",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbyAMvBk5vE"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "24310a8eebfbaed9db102907df9c8477de869dd8761ba4f1f109ebe295c1a47d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbyALxVk7N-/",
-      "imageAspect": 1.3348,
-      "imageUrl": "assets/feed-images/7c5a3d69ca7690b1129d.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T13:46:00+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "分享聯歡會與父親節活動紀錄，無政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "下午一場大雨，大家都還好嗎？幸好傍晚天公作美，讓各里的聯歡會順利登場！\n\n我和市民朋友一起跳舞、聊天、同樂，看到現場滿滿的人潮，感受桃園最棒的活力與人情味💪\n\n今天是八八節，現場遇到好多牽著孫子、帶著孩子來參加活動的阿公和爸爸們，大家辛苦了！我要祝福所有肩負父親角色的朋友們，父親節快樂❤️\n\n風雨過後，更珍惜每一次相聚。謝謝大家的熱情，讓我們一起為更好的桃園打拚！",
-      "topicScores": {
-        "生活": 0.92
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbyALxVk7N-/"
-    },
-    {
-      "agendaRelevance": 0.84,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "f8e706c5d01fe2da9bc610ab744934a2aea9d67893db8384e950befed0dad53e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbyAEKuGcIb",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/3aef33e9d4a3b09ad6ca.webp",
-      "keywords": [
-        "醫療",
-        "經濟",
-        "產業",
-        "就業",
-        "科技"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T13:44:56+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "談高齡照護、醫療資源串接與長輩生活升級的政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:今天我到「高齡健康產業博覽會」，瞭解如何將創新力量導入產業，也看見跨界合作的無限可能！\n\n經濟部、農業部用新技術、新觀念，打造高齡友善的照顧環境，民間企業也把智慧科技落實到照護環境當中。\n\n而這些好技術要由政府大力串接到東北角、北海岸等醫療資源相對匱乏的地區，讓長輩享受更完善的照護，也創造在地就業機會，達成政府、民間企業、市民朋友三贏！\n\n我已經提出多項照顧長輩的具體政見，未來，我會全力推動新北高齡生活與醫療照護再升級，讓長輩生活得更健康、更智慧❤️",
-      "topicScores": {
-        "生活": 0.58,
-        "經濟": 0.63,
-        "醫療": 0.88
-      },
-      "topics": [
-        "醫療",
-        "經濟",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbyAEKuGcIb"
-    },
-    {
-      "agendaRelevance": 0.04,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "cf02135bc988c989a1e58781a0772273f5137fdcfa8c41b2b3f8dd196ca915d6",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1567198004854732",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/d7e8686a46f42941b807.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T13:44:51.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "聯歡會與父親節互動紀錄，屬活動與日常分享。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "下午一場大雨，大家都還好嗎？幸好傍晚天公作美，讓各里的聯歡會順利登場！\n\n我和市民朋友一起跳舞、聊天、同樂，看到現場滿滿的人潮，感受桃園最棒的活力與人情味💪\n\n今天是八八節，現場遇到好多牽著孫子、帶著孩子來參加活動的阿公和爸爸們，大家辛苦了！我要祝福所有肩負父親角色的朋友們，父親節快樂❤️\n\n風雨過後，更珍惜每一次相聚。謝謝大家的熱情，讓我們一起為更好的桃園打拚！",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid07FxRzgV3U1trNUUgED8zTtwZFdGBQvSHqNt9U4k9Lx4Dh441s7WvVYkZ4XS9mJuPl"
-    },
-    {
-      "agendaRelevance": 0.24,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "9b93c8c199738c77b0fc538dd1efd578cf03f0d55d198fa69fd891dff7b041d0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1625624848919097",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/0089ad2aae9fe8337007.webp",
-      "keywords": [
-        "參選"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T13:42:27.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "屬政治人物推薦參選人，內容重在競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "龍介向大家推薦認真的年輕人！台南市南區、安平區市議員參選人 陳冠諭",
-      "topicScores": {
-        "競選": 0.98
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.facebook.com/reel/1612961953676619/"
-    },
-    {
-      "agendaRelevance": 0.92,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "b8989451f7e4cf46bcd7991da46505015d1391c7758405ce41f61ffc6944dfea",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbx_MwyCb5V/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/e9123671be2abd865383.webp",
-      "keywords": [
-        "醫療",
-        "長照",
-        "長輩",
-        "敬老",
-        "補助",
-        "照顧",
-        "教育"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T13:37:24+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動提出高齡照護政見與補助規劃，聚焦長照與醫療照顧。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "導入新觀念、新技術 讓長輩生活更健康、更智慧！\n\n今天我到 #高齡健康產業博覽會，瞭解如何將創新力量導入高齡健康產業，也看見跨界合作的無限可能！\n\n現場有經濟部 展出 #智慧創新輔具，用新技術改善長者行動不便；農業部推廣「綠色照顧」與「食農教育」等新觀念，打造高齡友善的照顧環境，甚至是民間企業也透過智慧急救裝備、行動輔具、AI跌倒偵測系統等，把智慧科技落實到照護環境當中。\n\n我認為，這些好技術要由政府大力串接，將 #智慧照顧 帶到東北角、北海岸等醫療資源相對匱乏的地區，不但讓長輩享受更完善的照護，也能創造在地就業機會，達成政府、民間企業、市民朋友三贏！\n\n針對長輩照顧，我提出 #敬老卡升級、#假牙補助、提高長照量能與補助、居家服務和輔具一次到位、獨居照顧與失智篩檢智慧化等具體政見。未來，我會全力推動新北高齡生活與醫療照護再升級，讓長輩們都能在新北生活得更健康、更智慧！",
-      "topicScores": {
-        "教育": 0.5,
-        "社福": 0.94,
-        "醫療": 0.97
-      },
-      "topics": [
-        "醫療",
-        "社福",
-        "教育"
-      ],
-      "url": "https://www.instagram.com/p/Dbx_MwyCb5V/"
-    },
-    {
-      "agendaRelevance": 0.96,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "a9308b9eabba94e6af9017700f2b3d52801132f3f849ace900cb9d3fade509ce",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1619093566239140",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/dbba5b9c3bea845f217f.webp",
-      "keywords": [
-        "醫療",
-        "長照",
-        "長輩",
-        "敬老",
-        "補助",
-        "照顧",
-        "經濟",
-        "產業",
-        "就業",
-        "科技",
-        "AI",
-        "教育"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T13:35:02.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動提出高齡照顧政見，聚焦長照、醫療與補助措施。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "導入新觀念、新技術 讓長輩生活更健康、更智慧！\n\n今天我到 #高齡健康產業博覽會，瞭解如何將創新力量導入高齡健康產業，也看見跨界合作的無限可能！\n\n現場有 經濟部 展出 #智慧創新輔具，用新技術改善長者行動不便；農業部 推廣「綠色照顧」與「食農教育」等新觀念，打造高齡友善的照顧環境，甚至是民間企業也透過智慧急救裝備、行動輔具、AI跌倒偵測系統等，把智慧科技落實到照護環境當中。\n\n我認為，這些好技術要由政府大力串接，將 #智慧照顧 帶到東北角、北海岸等醫療資源相對匱乏的地區，不但讓長輩享受更完善的照護，也能創造在地就業機會，達成政府、民間企業、市民朋友三贏！\n\n針對長輩照顧，我提出 #敬老卡升級、#假牙補助、#提高長照量能與補助、#居家服務和輔具一次到位、#獨居照顧與失智篩檢智慧化 等具體政見。未來，我會全力推動新北高齡生活與醫療照護再升級，讓長輩們都能在新北生活得更健康、更智慧！",
-      "topicScores": {
-        "教育": 0.41,
-        "社福": 0.92,
-        "經濟": 0.63,
-        "醫療": 0.96
-      },
-      "topics": [
-        "醫療",
-        "社福",
-        "經濟",
-        "教育"
-      ],
-      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0EU84Bw1C2prGoDf99h3FqjgvVMk3pgB6wSwmqaiXMDRWS6kXgFuTQdteBcnuZkU9l"
-    },
-    {
-      "agendaRelevance": 0.04,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "eba48a5d20e07b196a56e197e95be6e93208eb43b2a14285011a829f7106451d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbx74FLlDou",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T13:08:20+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "宣布行程延期並提醒天候交通，屬活動異動與生活資訊。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:【明日行程異動說明】\n⠀\n由於明日天氣預報顯示，上午仍可能有較強降雨與強風，為顧及鄉親朋友與團隊夥伴的安全，原定前往玉成公園福德宮、成德市場等行程，我們決定先行延期。\n⠀\n對於原本期待在南港與伯洋見面的朋友們，我們深感抱歉，也誠摯感謝大家的體諒。團隊將盡快重新安排時間，讓伯洋到南港當面向大家致意。\n⠀\n也提醒明日仍需外出或前往參與活動的朋友們，務必留意天候與交通狀況！",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Dbx74FLlDou"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T22:01:05+00:00",
-        "inputHash": "504a5364fa01e970be8011403aa075356ec6e50ccab555ac619796beedf01f0f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbx71D_yJxY/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d853ca7b03d9acfcb624.webp",
-      "keywords": [
-        "強降雨"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T13:08:03+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "公告行程延期與天候安全提醒，屬活動異動與防災訊息。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "【明日行程異動說明】\n⠀\n由於明日天氣預報顯示，上午仍可能有較強降雨與強風，為顧及鄉親朋友與團隊夥伴的安全，原定前往玉成公園福德宮、成德市場等行程，我們決定先行延期。\n⠀\n對於原本期待在南港與伯洋見面的朋友們，我們深感抱歉，也誠摯感謝大家的體諒。團隊將盡快重新安排時間，讓伯洋到南港當面向大家致意。\n⠀\n也提醒明日仍需外出或前往參與活動的朋友們，務必留意天候與交通狀況！",
-      "topicScores": {
-        "生活": 0.93,
-        "競選": 0.42,
-        "防災": 0.66
-      },
-      "topics": [
-        "生活",
-        "防災",
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/Dbx71D_yJxY/"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "0ac1c5bd69dab5fdc3ee481e9ac2c340a7c7efb755e8ce382e4dec455452a049",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbx44CAMLy1/",
-      "imageAspect": 0.5626,
-      "imageUrl": "assets/feed-images/5fbfa1606f8c3016f2dc.webp",
-      "keywords": [
-        "市集"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T12:54:36+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "談市場歧視與口音尊重，屬生活性社會評論。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-ig-main",
-      "text": "有人問她，為什麼要嫁來台灣。我想說，沒有人是外人。\n\n我在網路上看到一支影片，龜吼漁夫市集的黎小姐，正在跟客人介紹那尾劍蝦新不新鮮，話講到一半被打斷——「你講國語就好，不要講台語。」\n\n接下來的追問更難聽：為什麼要來台灣？為什麼要嫁來台灣？\n\n她的女兒為了保護媽媽，把影片放上網。女兒說，這是歧視。只講了一句：「不管什麼人，妳不可以這樣子說啊。」\n\n說實在，這句話講得比很多大人都清楚。\n黎小姐我見過。\n\n今年六月我到龜吼市場，就是向她買螃蟹的，她跟我介紹海鮮時，講得又快又順，哪一尾今天上的、哪一尾要怎麼煮，全都在她腦子裡。臨走前我們一起合照，我還跟她拿了一張名片，說好下次再去找她。\n\n她從越南嫁來台灣二十六年。二十六年，她的台語是在市場裡、在一尾一尾魚的旁邊學起來的。\n\n從越南嫁過來的、從印尼嫁過來的、從對岸嫁過來的，站的都是同一個市場，賣的都是同一片海。\n\n在市場，看的是秤，不是口音。\n她的口音沒有什麼要改的。魚新不新鮮，是她要負責的事；口音標不標準，從來就不是。\n\n這幾年，有些人太習慣先問一個人從哪裡來，再決定要怎麼跟他講話。\n\n政治的對立，不要帶到人家的攤子上。\n\n我是討海人的孩子，我知道站在攤子後面是什麼滋味。天沒亮就要到，站一整天，手一整天是濕的。能撐二十六年的人，不需要跟任何人證明她是誰。\n\n黎小姐，妳沒有錯。妳的女兒很勇敢，她也沒有錯。\n\n下次去龜吼，我還是要找妳。\n\n站在新北攤子後面的人，沒有一個是外人。",
-      "topicScores": {
-        "兩岸外交": 0.52,
-        "文化觀光": 0.78,
-        "生活": 0.62
-      },
-      "topics": [
-        "文化觀光",
-        "生活",
-        "兩岸外交"
-      ],
-      "url": "https://www.instagram.com/p/Dbx44CAMLy1/"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "8a235a9cc3fc9e7e2b0745e6e7588bfe077075ae121e3a2739669fe7b282b007",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbx5AGrCJ2Q",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/2fa0d7f263fca7a49469.webp",
-      "keywords": [
-        "市集"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T12:54:35+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "借市場歧視事件談移民與口音尊重，屬價值評論非具體政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-threads",
-      "text": "@hammer__lee:有人問她，為什麼要嫁來台灣。我想說，沒有人是外人。\n\n我在網路上看到一支影片，龜吼漁夫市集的黎小姐，正在跟客人介紹那尾劍蝦新不新鮮，話講到一半被打斷——「你講國語就好，不要講台語。」\n\n接下來的追問更難聽：為什麼要來台灣？為什麼要嫁來台灣？\n\n她的女兒為了保護媽媽，把影片放上網。女兒說，這是歧視。只講了一句：「不管什麼人，妳不可以這樣子說啊。」\n\n說實在，這句話講得比很多大人都清楚。\n黎小姐我見過。\n\n今年六月我到龜吼市場，就是向她買螃蟹的，她跟我介紹海鮮時，講得又快又順，哪一尾今天上的、哪一尾要怎麼煮，全都在她腦子裡。臨走前我們一起合照，我還跟她拿了一張名片，說好下次再去找她。\n\n她從越南嫁來台灣二十六年。二十六年，她的台語是在市場裡、在一尾一尾魚的旁邊學起來的。\n\n從越南嫁過來的、從印尼嫁過來的、從對岸嫁過來的，站的都是同一個市場，賣的都是同一片海。\n\n在市場，看的是秤，不是口音。\n她的口音沒有什麼要改的。魚新不新鮮，是她要負責的事；口音標不標準，從來就不是。",
-      "topicScores": {
-        "文化觀光": 0.83,
-        "生活": 0.72
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Dbx5AGrCJ2Q"
-    },
-    {
-      "agendaRelevance": 0.15,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "525da972a40fc1bb83b3ef3afea04bdff8a75469cb67de9ea82815a7692e15f8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbx5a6tledi/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/8fcb4444455f94ecb38a.webp",
-      "keywords": [
-        "文化"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T12:47:31+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "介紹高雄機廠轉型與親子遊憩，屬建設宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-ig",
-      "text": "台鐵高雄機廠大變身！孩子放電的新基地開張啦🚂\n\n鐵道文化、遊樂設施一次滿足，大朋友小朋友都能玩得盡興！",
-      "topicScores": {
-        "教育": 0.62,
-        "文化觀光": 0.9,
-        "生活": 0.6
-      },
-      "topics": [
-        "文化觀光",
-        "教育",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Dbx5a6tledi/"
-    },
-    {
-      "agendaRelevance": 0.42,
-      "candidateId": "chang-ching",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "97545cfc2b77a6060d1ddac245875d9ee930dc385f1f34441ca300446bd31791",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:943868842077978",
-      "imageAspect": 0.5573,
-      "imageUrl": "assets/feed-images/170e8f4bc24661e0703d.webp",
-      "keywords": [
-        "教育",
-        "校園",
-        "照顧"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T12:33:34.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以教育經歷與照顧孩子初心為主，帶有參選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-ching-party-fb",
-      "text": "♥️30多年教育初心，5000多個孩子的成長記憶——張烱春：孩子長大了，我的初心沒有變\n\n今天父親節感觸良多：\n🍀一個人從事教育30多年，真正留下來的，從來不只是一本本畢業紀念冊。而是一張張熟悉的臉、一聲「園長爸爸」，以及多年後在街上偶然相遇時，那句：「所長(園長)爸爸，我還記得您！」\n\n♥️司法改革黨秘書長張烱春，師範教育體系畢業後，投入幼兒教育，先後開立加恩托兒所、創辦馬禮蘭幼稚園，一路陪伴孩子成長。\n\n🍀30多年教育歲月，畢業的孩子超過5,000人。有些孩子來自一般家庭，也有些孩子的家庭經濟並不寬裕。\n\n🍀曾經設立獎學金，也曾協助清貧家庭的孩子安心就學。\n因為我一直相信：\n教育，不應該因為家庭的經濟條件而有差別。\n\n🍀當年牽著小手走進校園的孩子，如今很多都已經成家立業、成為社會上的大人。\n\n♥️而最讓人感動的是——\n多年後走在路上，孩子們依然會認出這位當年的「所長爸爸、園長爸爸」。\n\n🍀這份記憶，不是選舉造勢可以換來的。\n\n🍀那是30多年，一天一天陪伴孩子累積出來的信任。\n\n🍀從教育孩子，到今天關心社會；從照顧一個孩子，到希望守護更多家庭。\n\n🍀孩子會長大，時代會改變，但愛孩子、願意為下一代努力的初心，不應該改變。\n\n張烱春：\n從教育現場走出來，帶著30多年的教育初心，繼續為下一代努力。\n\n2026/8/8敬祝父親節快樂\n\n#張烱春\n#司法改革黨\n#教育30年\n#幼兒教育\n#守護下一代",
-      "topicScores": {
-        "教育": 0.99,
-        "生活": 0.7,
-        "社福": 0.56
-      },
-      "topics": [
-        "教育",
-        "生活",
-        "社福"
-      ],
-      "url": "https://www.facebook.com/reel/3545197608987411/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "3116707e3f1149a484ed799c020041a436537514382bca7afee0570c5b44b93a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxwkwHJFqD/",
-      "imageAspect": 0.5626,
-      "imageUrl": "assets/feed-images/2e546bc2fa00e78a688b.webp",
-      "keywords": [
-        "選舉"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T11:33:48+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "反駁選舉抹黑並澄清里長互動，屬競選攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "國民黨議員候選人又在扭曲造謠了！\n\n我和樹林中山里里長 #簡炎輝 十多年的交情，兩人非常熟識，常常互開玩笑。簡炎輝里長致詞時也稱讚我基層服務紮實、為樹林爭取很多建設，還為我大力拉票。\n\n但國民黨為了選舉利益，竟然抹黑我不讓里長講話？\n\n今天是父親節，我實在不想與國民黨針鋒相對，所以只好放上現場的影片，來打臉國民黨意圖挑撥基層感情的言論。",
-      "topicScores": {
-        "競選": 0.9,
-        "議會監督": 0.55
-      },
-      "topics": [
-        "競選",
-        "議會監督"
-      ],
-      "url": "https://www.instagram.com/p/DbxwkwHJFqD/"
-    },
-    {
-      "agendaRelevance": 0.62,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "7dc89db0e5eea7111eaf3d205cfd6d77bc448bf6ff6272ec1d546822ce0e6fb0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbxw06PEoHV",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/b4c0e2c363db722960b5.webp",
-      "keywords": [
-        "選舉"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T11:32:22+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "反擊國民黨抹黑並說明現場互動，主要是選舉攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:國民黨議員候選人又在扭曲造謠了！\n\n我和樹林中山里里長簡炎輝十多年的交情，兩人非常熟識，常常互開玩笑。簡炎輝里長致詞時也稱讚我基層服務紮實、為樹林爭取很多建設，還為我大力拉票。\n\n但國民黨為了選舉利益，竟然抹黑我不讓里長講話？\n\n今天是父親節，我實在不想與國民黨針鋒相對，所以只好放上現場的影片，來打臉國民黨意圖挑撥基層感情的言論。",
-      "topicScores": {
-        "競選": 0.95,
-        "議會監督": 0.44
-      },
-      "topics": [
-        "競選",
-        "議會監督"
-      ],
-      "url": "https://www.threads.com/t/Dbxw06PEoHV"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "28d909c41760894a305675704421beee17d7048ca4ed137e56c7dffdb51164a8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1619006766247820",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/308e48a8c82489f77501.webp",
-      "keywords": [
-        "選舉"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T11:26:57.000Z",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "回應選舉抹黑與拉票爭議，屬競選攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "國民黨議員候選人又在扭曲造謠了！\n\n我和樹林中山里里長 #簡炎輝 十多年的交情，兩人非常熟識，常常互開玩笑。簡炎輝里長致詞時也稱讚我基層服務紮實、為樹林爭取很多建設，還為我大力拉票。\n\n但國民黨為了選舉利益，竟然抹黑我不讓里長講話？\n\n今天是父親節，我實在不想與國民黨針鋒相對，所以只好放上現場的影片，來打臉國民黨意圖挑撥基層感情的言論。",
-      "topicScores": {
-        "競選": 0.98,
-        "議會監督": 0.52
-      },
-      "topics": [
-        "競選",
-        "議會監督"
-      ],
-      "url": "https://www.facebook.com/reel/4378541049033376/"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "e21c7e6e733c8555780f23d853afeef557f1f22da8366b70fc7a669e074e8dcf",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:122108885325329310",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/79cdfe2d490fe6b96155.webp",
-      "keywords": [
-        "強降雨"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T11:00:11.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "公告行程延期，主因天候安全考量。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "【明日行程異動說明】\n⠀\n由於明日天氣預報顯示，上午仍可能有較強降雨與強風，為顧及鄉親朋友與團隊夥伴的安全，原定前往玉成公園福德宮、成德市場等行程，我們決定先行延期。\n⠀\n對於原本期待在南港與伯洋見面的朋友們，我們深感抱歉，也誠摯感謝大家的體諒。團隊將盡快重新安排時間，讓伯洋到南港當面向大家致意。\n⠀\n也提醒明日仍需外出或前往參與活動的朋友們，務必留意天候與交通狀況！",
-      "topicScores": {
-        "生活": 0.96,
-        "防災": 0.42
-      },
-      "topics": [
-        "生活",
-        "防災"
-      ],
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02np8eY8wa8nrkbjW3r6xuzZAXHCK2fmMvjs3yxA2sDFBBGYuytNzvFx9gB2hfhCsfl"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-08T16:00:56+00:00",
-        "inputHash": "005917f2e86dabaf30f55cdfc918f47df618b2e77bfee0ead3d10bc823e47b6a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbxq9vZiVZ8",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/ac69e2513263bc7d497a.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T10:40:33+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "到咖啡店出任務並表態挺台灣高雄，屬選舉動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:隆隆出任務！\n\n前幾天在 Threads 上被點名，今天就到Miss Mimi Coffee報到啦！\n\n因為這面白牆，讓我們在高雄相遇。謝謝Sophia以及今天來到現場的大家，我們繼續一起挺台灣、挺高雄！",
-      "topicScores": {
-        "生活": 0.42,
-        "競選": 0.96
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Dbxq9vZiVZ8"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "0552007113800e9d7666d899cee9cf2c16c9877f8b578011eeef00477c43e917",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1606042851132969",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/24bdb031d3c9abf47290.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T10:14:31.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "談市場歧視與新住民尊重，屬生活社會評論。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "有人問她，為什麼要嫁來台灣。我想說，沒有人是外人。\n\n我在網路上看到一支影片，龜吼漁夫市集的黎小姐，正在跟客人介紹那尾劍蝦新不新鮮，話講到一半被打斷——「你講國語就好，不要講台語。」\n\n接下來的追問更難聽：為什麼要來台灣？為什麼要嫁來台灣？\n\n她的女兒為了保護媽媽，把影片放上網。女兒說，這是歧視。只講了一句：「不管什麼人，妳不可以這樣子說啊。」\n\n說實在，這句話講得比很多大人都清楚。\n\n黎小姐我見過。\n\n今年六月我到龜吼市場，就是向她買螃蟹的，她跟我介紹海鮮時，講得又快又順，哪一尾今天上的、哪一尾要怎麼煮，全都在她腦子裡。臨走前我們一起合照，我還跟她拿了一張名片，說好下次再去找她。\n\n她從越南嫁來台灣二十六年。二十六年，她的台語是在市場裡、在一尾一尾魚的旁邊學起來的。\n\n從越南嫁過來的、從印尼嫁過來的、從對岸嫁過來的，站的都是同一個市場，賣的都是同一片海。\n\n在市場，看的是秤，不是口音。\n\n她的口音沒有什麼要改的。魚新不新鮮，是她要負責的事；口音標不標準，從來就不是。\n\n這幾年，有些人太習慣先問一個人從哪裡來，再決定要怎麼跟他講話。\n\n政治的對立，不要帶到人家的攤子上。\n\n我是討海人的孩子，我知道站在攤子後面是什麼滋味。天沒亮就要到，站一整天，手一整天是濕的。能撐二十六年的人，不需要跟任何人證明她是誰。\n\n黎小姐，妳沒有錯。妳的女兒很勇敢，她也沒有錯。\n\n下次去龜吼，我還是要找妳。\n\n站在新北攤子後面的人，沒有一個是外人。",
-      "topicScores": {
-        "兩岸外交": 0.4,
-        "生活": 0.87,
-        "社福": 0.55
-      },
-      "topics": [
-        "生活",
-        "社福",
-        "兩岸外交"
-      ],
-      "url": "https://www.facebook.com/reel/1050974554320330/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "7c2e23fee9334ba58d33847527cc3a6d3f9a5f53c3da40db3eb20be069ce6fee",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxlVvLAm6h/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/10d726d608208f3056b7.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T09:51:28+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "以七股海鮮節活動與親子同樂為主，偏活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-ig",
-      "text": "因為颱風延期了兩次，終於在父親節這天，七股海鮮節順利登場！\n\n最開心的，就是看到大人小孩一起下水摸蛤蠣、親近大自然，孩子們臉上的笑容，就是最可愛的風景！\n\n七股的海鮮、七股的陽光，更有滿滿的人情味。希望每年都能和大家一起來七股，玩得開心、吃得滿足，把台南最美好的夏日回憶帶回家！\n\n#七股海鮮節 #父親節快樂 #七股 #台南 #親子同樂 #陳亭妃",
-      "topicScores": {
-        "文化觀光": 0.83,
-        "生活": 0.85
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.instagram.com/p/DbxlVvLAm6h/"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "84c25d20fecf54d23605bb44187b8b89093e0bc1bbc5c08aa13f50a0d4282fc1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1613935830094339",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/98d5a39d2f06670a2ca2.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T09:51:09.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "記錄七股海鮮節活動與親子同樂情景。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "因為颱風延期了兩次，終於在父親節這天，七股海鮮節順利登場！\n\n最開心的，就是看到大人小孩一起下水摸蛤蠣、親近大自然，孩子們臉上的笑容，就是最可愛的風景！\n\n七股的海鮮、七股的陽光，更有滿滿的人情味。希望每年都能和大家一起來七股，玩得開心、吃得滿足，把台南最美好的夏日回憶帶回家！\n\n#七股海鮮節 #父親節快樂 #七股 #台南 #親子同樂 #陳亭妃",
-      "topicScores": {
-        "文化觀光": 0.76,
-        "生活": 0.68
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid02EHRFCr97d17Rt71HPKRpCx5ukT8oy6JusprEZ6Vbks4bxtAHcHVu4NZG24xrpjb3l"
-    },
-    {
-      "agendaRelevance": 0.78,
-      "candidateId": "chiang-wanan",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "ccdc1de645cde8df0eb40885b64f7477c02f5e3d575b3edb56254073f51036a2",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1603798437776774",
-      "imageAspect": 1.4937,
-      "imageUrl": "assets/feed-images/5294afb3d23dcca07f2b.webp",
-      "keywords": [
-        "颱風",
-        "災害",
-        "交通",
-        "捷運",
-        "停車"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T09:24:16.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "颱風防災應變與工地、河川管制措施說明。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-wa-fb",
-      "text": "市民朋友午安。\n\n受到 #白海豚颱風 外圍環流影響，臺北市各地已經出現強風和間歇陣雨。今天早上，我先到臺北市災害應變中心（EOC）主持防颱工作會報；下午再到臺北雙星工區視察工地塔吊、圍籬及相關設施加強固定，要求做好防風、防墜措施。\n\n目前臺北市區已出現7至9級陣風，局部空曠地區更可能出現10級強陣風。我要求公園處、都發局、建管處、交通局、警察局、捷運局、捷運公司、各區公所等單位嚴陣以待，隨時因應強風可能帶來的災害。同時，也要求都發局、工務局及勞動局，再次督促各建築工地全面檢查圍籬、塔吊等設施，確實做好固定及防護。\n\n目前，基隆河中山橋以下及淡水河沿線（新3-2華翠至淡6敦煌）已經實施＃只出不進 管制，今晚8點起將陸續關閉疏散門及越堤坡道。停放在河濱公園堤外停車場的車輛，請儘速駛離，也請大家避免前往河濱區域活動。\n\n提醒市民朋友，檢查住家周邊及排水狀況、固定好陽台盆栽及懸掛物並確認防水閘門操作狀況。入夜風雨漸大，請大家盡量避免外出，務必注意安全！\n\n過去幾天，市府各單位總動員，持續進行防救災資源盤點、排水溝渠清疏，以及低窪、易致災地點巡檢等各項防颱工作，臺北隊會持續嚴陣以待、守護市民安全。",
-      "topicScores": {
-        "交通": 0.48,
-        "住宅": 0.39,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "交通",
-        "住宅"
-      ],
-      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0Q322nTAyEuhM4k5e1yEFXi25JtMbaPEW3JTNUqPZApsCN9TcPL4SvQPd3CVWzcKCl"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "6f12b6b839a4cb3e7c0efafd86b58eda71555a272f5c9da958edf4b70230757c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxdytDoP--/",
-      "imageAspect": 1.784,
-      "imageUrl": "assets/feed-images/1356dbd5d2d3b81ca2c6.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T08:45:29+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主要是父親節活動紀錄與祝福，未提出明確政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "臺中爸氣集合！\n感謝每一位築起城市安全的技師爸爸們💪\n祝全天下辛苦的爸爸們，父親節快樂❤️\n\n臺中市土木技師公會、臺中市結構技師公會與逢甲校友會共同主辦的「爸氣集合 出發工程冒險島」公益嘉年華。啟臣在現場看到好多技師爸爸帶著家人寶眷一起同樂，場面非常熱鬧！\n\n技師朋友們不僅是家庭裡最堅實的靠山、幸福支柱，更是支撐我們這座城市建設、守護公共安全不可或缺的力量。從土木、結構、水保、地質、水利到建築，每一項工程建設的背後，都有專業技師默默守護、把關安全。\n\n連過父親節，技師爸爸們都不忘結合專業，帶著小朋友展開「工程冒險」，用寓教於樂的方式讓大家認識工程與安全知識，真的非常佩服大家的熱情與用心！再次感謝所有技師爸爸與寶眷們的付出，也祝大家都有一個幸福、健康、快樂的父親節！❤️\n\n大家今天打算怎麼幫爸爸過節呢？歡迎下面留言跟大家一起分享！👇\n\n#臺中啟程 #打造旗艦城 \n#父親節快樂 \n#爸氣集合出發工程冒險島 \n#技師爸爸加油 #城市安全的靠山",
-      "topicScores": {
-        "文化觀光": 0.72,
-        "生活": 0.78
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.instagram.com/p/DbxdytDoP--/"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "98514bad05db18683291f9849300915c6ba6451288160dca0685a12d3c49e9f1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1584517169701765",
-      "imageAspect": 1.7771,
-      "imageUrl": "assets/feed-images/38ffa78b1573ba918b68.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T08:45:22.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "參加父親節公益嘉年華與致意，屬活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "臺中爸氣集合！\n感謝每一位築起城市安全的技師爸爸們💪\n祝全天下辛苦的爸爸們，父親節快樂❤️\n\n臺中市土木技師公會、臺中市結構技師公會與逢甲校友會共同主辦的「爸氣集合 出發工程冒險島」公益嘉年華。啟臣在現場看到好多技師爸爸帶著家人寶眷一起同樂，場面非常熱鬧！\n\n技師朋友們不僅是家庭裡最堅實的靠山、幸福支柱，更是支撐我們這座城市建設、守護公共安全不可或缺的力量。從土木、結構、水保、地質、水利到建築，每一項工程建設的背後，都有專業技師默默守護、把關安全。\n\n連過父親節，技師爸爸們都不忘結合專業，帶著小朋友展開「工程冒險」，用寓教於樂的方式讓大家認識工程與安全知識，真的非常佩服大家的熱情與用心！再次感謝所有技師爸爸與寶眷們的付出，也祝大家都有一個幸福、健康、快樂的父親節！❤️\n\n大家今天打算怎麼幫爸爸過節呢？歡迎下面留言跟大家一起分享！👇\n\n#臺中啟程 #打造旗艦城 \n#父親節快樂 \n#爸氣集合出發工程冒險島 \n#技師爸爸加油 #城市安全的靠山",
-      "topicScores": {
-        "文化觀光": 0.44,
-        "生活": 0.86
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0j58gNfBYtwRVWKzEBKxNp4GqV4sfst86Q81n5L5vi4mA49P1oi4pEhXMAiigKVErl"
-    },
-    {
-      "agendaRelevance": 0.74,
-      "candidateId": "chiang-wanan",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "32ef953ec777b8c5d15436af93245406c3455e6dcf8eff0b70969941177a0e30",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxbVC2GZdY/",
-      "imageAspect": 1.4963,
-      "imageUrl": "assets/feed-images/38ca0ca1e3c017fbb7a5.webp",
-      "keywords": [
-        "颱風",
-        "災害",
-        "交通",
-        "捷運",
-        "停車"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T08:23:58+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動說明防颱會報與工地、河濱管制措施，屬具體市政作為。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-wa-ig",
-      "text": "市民朋友午安。\n受到 #白海豚颱風 外圍環流影響，臺北市各地已經出現強風和間歇陣雨。今天早上，我先到臺北市災害應變中心（EOC）主持防颱工作會報；下午再到臺北雙星工區視察工地塔吊、圍籬及相關設施加強固定，要求做好防風、防墜措施。\n\n目前臺北市區已出現7至9級陣風，局部空曠地區更可能出現10級強陣風。我要求公園處、都發局、建管處、交通局、警察局、捷運局、捷運公司、各區公所等單位嚴陣以待，隨時因應強風可能帶來的災害。同時，也要求都發局、工務局及勞動局，再次督促各建築工地全面檢查圍籬、塔吊等設施，確實做好固定及防護。\n\n目前，基隆河中山橋以下及淡水河沿線（新3-2華翠至淡6敦煌）已經實施＃只出不進 管制，今晚8點起將陸續關閉疏散門及越堤坡道。停放在河濱公園堤外停車場的車輛，請儘速駛離，也請大家避免前往河濱區域活動。\n\n提醒市民朋友，檢查住家周邊及排水狀況、固定好陽台盆栽及懸掛物並確認防水閘門操作狀況。入夜風雨漸大，請大家盡量避免外出，務必注意安全！\n\n過去幾天，市府各單位總動員，持續進行防救災資源盤點、排水溝渠清疏，以及低窪、易致災地點巡檢等各項防颱工作，臺北隊會持續嚴陣以待、守護市民安全。",
-      "topicScores": {
-        "交通": 0.58,
-        "住宅": 0.42,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "交通",
-        "住宅"
-      ],
-      "url": "https://www.instagram.com/p/DbxbVC2GZdY/"
-    },
-    {
-      "agendaRelevance": 0.11,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "a0dd9308869f605fdac1562ff70f847a1cc12dbcf2152109a92384d355645d4c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxYuDfjCNS/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/cfc748831f5c9e4b8a0a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T08:01:31+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "內容像父親節宣傳與行程紀錄，沒有明確政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "我親自開車載著小助理們，為了在88節做「這件事」！#柯志恩 #有志一同 #繞著高雄跑",
-      "topicScores": {
-        "生活": 0.6,
-        "競選": 0.9
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbxYuDfjCNS/"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "e54fb87daac10397678a502990444864bbc2822b1d81297a896d0e885130002a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1609045427242504",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/3b980c6d1632e76e371d.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T08:01:24.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅提及親自開車辦事與節日行程，未見具體公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "我親自開車載著小助理們，為了在88節做「這件事」！#柯志恩 #有志一同 #繞著高雄跑",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1021275644048936/"
-    },
-    {
-      "agendaRelevance": 0.82,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "44bbce9c75eda667b751f9730c13fe1ffb5beddabd3d2039a5922393de7f7028",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxYXaqGXf1",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/287ad41b4c1342fe2dbf.webp",
-      "keywords": [
-        "托育",
-        "老人",
-        "補助",
-        "津貼",
-        "照顧",
-        "就業"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T07:58:02+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "列出勞健檢、職訓、托育與老人補助，為主動福利政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:所有的照護者，都辛苦了！不論你是在外打拚，或是全職照顧家庭，因為有你們的付出，這座城市才能持續向前。\n\n為了照顧辛勞的爸爸們，我提出一系列福利政策，希望守護你們身體健康、減輕照護負擔，讓大家都能安心打拚、放心陪伴家人：\n\n✅提高勞工健檢補助　\n✅加碼職訓名額及補助\n✅協助中高齡勞工投入就業市場\n✅0~6歲嬰幼兒津貼\n✅加強托育資源\n✅持續老人健保補助\n\n無論你是爸爸還是媽媽，或是辛苦照料父母的兒女，我都會持續推動更多有感福利，成為大家最可靠的後盾，再次祝大家父親節快樂！",
-      "topicScores": {
-        "教育": 0.52,
-        "社福": 0.95,
-        "經濟": 0.44
-      },
-      "topics": [
-        "社福",
-        "教育",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DbxYXaqGXf1"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "6dcf0ced40126f1296f86f3f2979f5a906dd7ba87a935a28b3351feb939ddbcb",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxRyzUEy8C",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5e865466bf75e3e6caa0.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T07:00:37+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "颱風影響下宣布行程取消並提醒安全，屬災害通知非回應他人。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:⚠️行程取消通知⚠️⁣\n⁣\n因應風雨漸增，考量民眾、媒體人員及團隊同仁安全，⁣\n⁣\n今晚（8/8 18:50⁣）寧夏夜市行程將先行取消，謝謝大家的支持與諒解！⁣\n⁣\n也請大家注意移動、行進間的安全，並盡量避免出門！",
-      "topicScores": {
-        "生活": 0.82,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbxRyzUEy8C"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T22:01:05+00:00",
-        "inputHash": "83f3f5a6db7bb5ec43df80de468a63609392b50c0fb88156439a3a8ac714a292",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxRGlfyrzF/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/a78db6168734b947170a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T07:00:28+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "宣布夜市行程取消並提醒風雨安全，屬活動通知與防災提醒。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "⚠️行程取消通知⚠️⁣\n⁣\n因應風雨漸增，考量民眾、媒體人員及團隊同仁安全，⁣\n⁣\n今晚（8/8 18:50⁣）寧夏夜市行程將先行取消，謝謝大家的支持與諒解！⁣\n⁣\n也請大家注意移動、行進間的安全，並盡量避免出門！",
-      "topicScores": {
-        "生活": 0.92,
-        "競選": 0.38,
-        "防災": 0.7
-      },
-      "topics": [
-        "生活",
-        "防災",
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/DbxRGlfyrzF/"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "f1ace1e3d478af525f41007d4da691670558a1cd05c0c868953577d784053486",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:122108869149329310",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/56d910cf19af206335f3.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T07:00:24.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "行程取消通知並提醒民眾注意風雨安全。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "⚠️行程取消通知⚠️⁣\n⁣\n因應風雨漸增，考量民眾、媒體人員及團隊同仁安全，⁣\n⁣\n今晚（8/8 18:50⁣）寧夏夜市行程將先行取消，謝謝大家的支持與諒解！⁣\n⁣\n也請大家注意移動、行進間的安全，並盡量避免出門！",
-      "topicScores": {
-        "生活": 0.97,
-        "防災": 0.49
-      },
-      "topics": [
-        "生活",
-        "防災"
-      ],
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0hUjw5y37ex3dGp2ALahV8sKnWCic9ZqEnSPtSgxEGTtbAuP2m2QGsj6JjkQDivxGl"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "1f93126fe07a538fe8d9de721b181a01699e19260bbdd41ac021285ddd5d2e3c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxLbMLkeNa",
-      "imageAspect": 1.5444,
-      "imageUrl": "assets/feed-images/611463a5f23dd4094a8a.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T06:04:57+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "純屬生活趣味貼文，沒有公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:蜜蜂來了！我不怕！\n大崗山的夏天，連鹹酥雞都要淋上蜂蜜才對味🍯\n\n（減肥是明天的事…）",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbxLbMLkeNa"
-    },
-    {
-      "agendaRelevance": 0.76,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "86b2c1f1ff980a2b69e03284ba6db64c3ef734f545b8911ef8537c311392f4d2",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxLNVgk-_I",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/0b242fba9cf4424dd795.webp",
-      "keywords": [
-        "托育"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T06:03:04+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "內容與前則相同，主軸是育兒福利與托育政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-threads",
-      "text": "@hammer__lee:這個父親節，對我來說是特別的。因為有一個好消息，不是給我的，但我比誰都開心。\n\n今年跑遍新北二十九區，遇到的人多，故事也多。一對義消夫妻的兩件人生大事——從結婚到生子，就這麼剛好，我都遇上了。\n\n恭喜你們。初為人父那天的心情，我到現在都記得。\n\n三月的時候，他們拿著當年由我當證人的結婚證書來找我簽名留念，當時我特別記錄下來，分享給大家。\n\n新北這麼大，天地這麼寬，卻能三番兩次遇到同一家人。父親節前夕，我遇到這對夫妻的爸爸，他拿著手機裡孫子的照片跑過來：「川伯，我兒子結婚時你當證人，後來在義消聚會又碰上一起拍照，昨天小孩出生了！」\n\n有緣人，講的是彼此祝福。\n\n說實在，我當下心情很複雜。一是恭喜祝福，二是感動彼此有緣，三是想起多年前我當爸爸的那一天。\n\n恭喜這位義消弟兄。從這一天開始，你多了一個身分，而這個身分，沒有卸任的一天。\n\n你會看著他笑，跟著他哭。陪著他長大，也陪著自己長大。為了他更勇敢，也變得無所畏懼。因為爸爸這兩個字，一旦被喊出來，就是一輩子。\n\n這幾個月，我陸續提出好孕專車延長、運動中心試辦免費臨托、興建室內大型親子館、企業托育等。",
-      "topicScores": {
-        "生活": 0.8,
-        "社福": 0.87
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbxLNVgk-_I"
-    },
-    {
-      "agendaRelevance": 0.78,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "0472f6524f3f7f5510e7c0beecf464752adc5c3cf03a49051033fb23a89c15d5",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxLGHoM5Wb/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/6b8fc58ba61408d8db88.webp",
-      "keywords": [
-        "托育"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T06:02:16+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "分享父親節故事並帶出好孕、托育等政見，屬主動提政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-ig-main",
-      "text": "這個父親節，對我來說是特別的。因為有一個好消息，不是給我的，但我比誰都開心。\n\n今年跑遍新北二十九區，遇到的人多，故事也多。一對義消夫妻的兩件人生大事——從結婚到生子，就這麼剛好，我都遇上了。\n\n恭喜你們。初為人父那天的心情，我到現在都記得。\n\n三月的時候，他們拿著當年由我當證人的結婚證書來找我簽名留念，當時我特別記錄下來，分享給大家。\n\n新北這麼大，天地這麼寬，卻能三番兩次遇到同一家人。父親節前夕，我遇到這對夫妻的爸爸，他拿著手機裡孫子的照片跑過來：「川伯，我兒子結婚時你當證人，後來在義消聚會又碰上一起拍照，昨天小孩出生了！」\n\n有緣人，講的是彼此祝福。\n\n說實在，我當下心情很複雜。一是恭喜祝福，二是感動彼此有緣，三是想起多年前我當爸爸的那一天。\n\n恭喜這位義消弟兄。從這一天開始，你多了一個身分，而這個身分，沒有卸任的一天。\n\n你會看著他笑，跟著他哭。陪著他長大，也陪著自己長大。為了他更勇敢，也變得無所畏懼。因為爸爸這兩個字，一旦被喊出來，就是一輩子。\n\n這幾個月，我陸續提出好孕專車延長、運動中心試辦免費臨托、興建室內大型親子館、企業托育等。\n\n這些政見的起點，其實就是我當年剛當上爸爸的那份心情——又興奮，又有壓力。\n\n我想起我的孩子來到我們夫妻身邊，是我這輩子最幸福的事。\n\n「爸爸」這個詞有重量，在我身上擔了好多年。這個重量我拿不掉，但我可以想辦法，讓它輕一點。\n\n兒子對我來說，依舊是孩子。我盼他健康順利，也盼所有的爸爸，別忘了對自己好一點。\n\n從當爸爸的那一天開始——責任是一輩子的，幸福也是一輩子的。\n\n父親節快樂。",
-      "topicScores": {
-        "生活": 0.8,
-        "社福": 0.88
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbxLGHoM5Wb/"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "f832d7234bf4f042f8fcf3305a72494d9d5ee88b775a650d3c7e6503ba4b1a3a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxGvlkTfRI/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/5f582567e1b79000554c.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T05:24:28+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅是父親節祝福，沒有公共政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-ig",
-      "text": "每一位爸爸，都是家庭最堅實的依靠，也是孩子心中最溫暖的英雄。\n　　　　　\n祝福所有辛苦打拚、默默付出的爸爸們，父親節快樂！願平安健康、幸福相伴，每一天都充滿笑容。\n　　　　　　\n#父親節快樂 #陳亭妃",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbxGvlkTfRI/"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "74a178a5b79317d2d980a4d09b8449c8e2cb12834714e4d718d0367d60922f75",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxGwjRE3YA",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/b387ef4d9360767017a8.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T05:24:11+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "內容為父親節祝福，屬一般生活貼文。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-threads",
-      "text": "@chen_tingfei:每一位爸爸，都是家庭最堅實的依靠，也是孩子心中最溫暖的英雄。\n　　　　　\n祝福所有辛苦打拚、默默付出的爸爸們，父親節快樂！願平安健康、幸福相伴，每一天都充滿笑容。\n　　　　　　\n#父親節快樂 #陳亭妃",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbxGwjRE3YA"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "fcc3c404427e10c009f5941bcc420cd0b80bb02d5344d905c54abc51a4664bdd",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1613784463442809",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/1fc8ae51e6ce44143456.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T05:24:10.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "單純父親節祝福，未涉公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "每一位爸爸，都是家庭最堅實的依靠，也是孩子心中最溫暖的英雄。\n　　　　　\n祝福所有辛苦打拚、默默付出的爸爸們，父親節快樂！願平安健康、幸福相伴，每一天都充滿笑容。\n　　　　　　\n#父親節快樂 #陳亭妃",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid032hEGaCr85KDJkWs8pvPN1VXp8TeB1YwuYQ5EFwbMetWWMbus2vc3fRPAvhMiNsqNl"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "898897113854ab38d6ef72c1723232fbed9e6f45213005dd9f6ab6582013f981",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:10175423091120654",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/19300e7a7758a183783a.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T05:21:04.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅分享父親節禮物與家庭趣事。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-personal",
-      "text": "這些都是麻糬今年給我的父親節禮物！\n那張「三個爸爸」，\n只有一個是真的爸爸，\n其他是假的，\n我猜到最後才猜對 XD",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/pumashen/posts/pfbid027YLVwro5HoiwEsXHUAfCkZ3yDZKBQKDuwow7jgj4Do61fqBsgGnMgtHg2U9UH8pbl"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "08d3c4c421a6ef108bacb9dd91a9e8b8a2b1fdedbcc0b641f90c929a881dedc5",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbxF0RKk8Om/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/18697e4fd75389bdcb2c.webp",
-      "keywords": [
-        "文化",
-        "觀光",
-        "旅遊",
-        "教育"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T05:15:59+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主談農產行銷、農村旅遊與品牌通路，屬地方發展主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "一滴龍眼蜜，凝聚大崗山的風土，也是蜂農辛苦的結晶。\n\n今天是父親節，很高興再次來到 #大崗山龍眼蜂蜜文化節 ，和許多農民及鄉親相聚。首先祝福所有爸爸們， #父親節快樂 ！\n\n去年我也來參加活動，大崗山龍眼蜜的好品質讓我印象深刻，當時一口氣買了幾十罐蜂蜜，帶回去給辦公室同仁、同事及親友一起分享。優質的高雄農產品，當然要用行動支持！\n\n這次，我和 #李亞築 議員、#黃韻涵 參選人一起逛攤位，三位女子看到琳瑯滿目的在地好物，簡直愛不釋手，最後每個人都是整手戰利品、滿載而歸。支持在地農產，就是要直接買起來！\n\n大崗山龍眼蜜是高雄最具代表性的農特產品之一。今年高雄龍眼蜂蜜評鑑共有6位蜂農獲得特等獎，大崗山地區的蜂農更是歷年評鑑的常勝軍，品質有目共睹。\n\n但這一滴蜜，今年得來更加不容易。\n\n高雄蜂蜜產量約占全國一成二，產值近4億元；今年受到高溫少雨、暖冬等氣候影響，荔枝、龍眼開花不穩，甚至出現「有花無蜜」的情況，蜂蜜產量也受到衝擊。更要感謝蜂農朋友克服氣候挑戰，在艱困環境下依然守住品質、拿下佳績。\n\n大崗山地區有優質龍眼蜜、宗教文化、自然景觀，更有許多值得被看見的農業品牌。未來應該把這些資源串聯起來，把活動的人潮變成地方的商機。農業、觀光、文化與青年返鄉形成正向循環。\n\n我會持續和農會、農民及鄉親站在一起，從品牌行銷、電商通路，到食農教育、農村旅遊，讓更多人認識、走進大崗山，也讓辛苦生產的農民得到更好的回報。\n\n讓大崗山龍眼蜜，不只是高雄人的驕傲，更成為代表台灣、走向世界的好味道。",
-      "topicScores": {
-        "教育": 0.45,
-        "文化觀光": 0.8,
-        "經濟": 0.83
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "教育"
-      ],
-      "url": "https://www.instagram.com/p/DbxF0RKk8Om/"
-    },
-    {
-      "agendaRelevance": 0.55,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "c809248f0655186e93bbe1d58d183f562bbee94f5f07447127c0b118f122b35c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1608953183918395",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/733281813584bdd79dc2.webp",
-      "keywords": [
-        "文化",
-        "觀光",
-        "旅遊",
-        "環境",
-        "氣候",
-        "教育"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T05:15:51.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "談蜂蜜產業、觀光串聯與農業行銷，帶有地方產業政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "一滴龍眼蜜，凝聚大崗山的風土，也是蜂農辛苦的結晶。\n\n今天是父親節，很高興再次來到 #大崗山龍眼蜂蜜文化節 ，和許多農民及鄉親相聚。首先祝福所有爸爸們， #父親節快樂 ！\n\n去年我也來參加活動，大崗山龍眼蜜的好品質讓我印象深刻，當時一口氣買了幾十罐蜂蜜，帶回去給辦公室同仁、同事及親友一起分享。優質的高雄農產品，當然要用行動支持！\n\n這次，我和 #李亞築 議員、#黃韻涵 參選人一起逛攤位，三位女子看到琳瑯滿目的在地好物，簡直愛不釋手，最後每個人都是整手戰利品、滿載而歸。支持在地農產，就是要直接買起來！\n\n大崗山龍眼蜜是高雄最具代表性的農特產品之一。今年高雄龍眼蜂蜜評鑑共有6位蜂農獲得特等獎，大崗山地區的蜂農更是歷年評鑑的常勝軍，品質有目共睹。\n\n但這一滴蜜，今年得來更加不容易。\n\n高雄蜂蜜產量約占全國一成二，產值近4億元；今年受到高溫少雨、暖冬等氣候影響，荔枝、龍眼開花不穩，甚至出現「有花無蜜」的情況，蜂蜜產量也受到衝擊。更要感謝蜂農朋友克服氣候挑戰，在艱困環境下依然守住品質、拿下佳績。\n\n大崗山地區有優質龍眼蜜、宗教文化、自然景觀，更有許多值得被看見的農業品牌。未來應該把這些資源串聯起來，把活動的人潮變成地方的商機。農業、觀光、文化與青年返鄉形成正向循環。\n\n我會持續和農會、農民及鄉親站在一起，從品牌行銷、電商通路，到食農教育、農村旅遊，讓更多人認識、走進大崗山，也讓辛苦生產的農民得到更好的回報。\n\n讓大崗山龍眼蜜，不只是高雄人的驕傲，更成為代表台灣、走向世界的好味道。",
-      "topicScores": {
-        "教育": 0.41,
-        "文化觀光": 0.76,
-        "環境": 0.56,
-        "經濟": 0.78
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "環境",
-        "教育"
-      ],
-      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0Rw6v5yatsjvYTfnqv5DsxgBs8NkJrgua7ys19x18XomLwp6RNn7wPGSexMYntK5Bl"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "2925adacf407bcfdfd7a9d88a5932c200d3cee7bd6f5ab82865492fe88d31636",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbxEO-ykTlY",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/47175ad7d0272bc79472.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T05:02:07+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "分享市場簽名、父親節互動與日常行程，未回應特定他人觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:在成功市場簽名\n居然簽到一本教科書\n瞬間重返\n補習班老師和大學教授\n\n成功市場還在改建中\n來聽在地的心聲\n也收到許多父親節祝福\n\n我女兒怕我今天沒空\n昨晚先送三張畫當禮物\n今天一早又把我挖起來\n強制給我剩下的畫 XD\n\n祝大家父親節快樂！",
-      "topicScores": {
-        "文化觀光": 0.35,
-        "生活": 0.9
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/DbxEO-ykTlY"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "887d95261e75ba0a894dfbf5a15e7aeefc02988762e2247f1efa735726a06859",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbw37gckWjf",
-      "imageAspect": 0.5614,
-      "imageUrl": "assets/feed-images/1e0a57ed6b8591371cbe.webp",
-      "keywords": [
-        "照顧"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T03:14:46+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主要是父親節追思父親的個人敘事，沒有公共政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:父親節，想爸爸...\n\n前陣子，在一場座談會上，一位阿叔拿出43年前爸爸、媽媽一起參加婚宴出現在老影片。\n\n短短十幾秒的畫面，我卻看了好久。\n\n爸爸在我讀國小時就離開了，留下來的照片、影像真的不多。那天突然看到影片，年輕的爸爸站在媽媽身邊，我一下子好像又變回那個有爸爸疼的小女孩。\n\n今天父親節，特別想他。\n\n爸爸很早就不在了，我是長女，就必須承擔多一點，照顧媽媽弟弟多一點。\n\n一路走過來，我沒有覺得自己特別勇敢，沒有人可以站在前面，就學著自己站到前面。\n\n如果今天還能再跟爸爸說一句話，我想告訴他：\n\n爸爸，你可以安心。你不在以後，我有努力把這個家顧好。\n\n爸爸離開好久了，但他留給我的愛，一直都在。\n\n我要祝福全天下的爸爸，平安、健康、父親節快樂。\n\n而和我一樣的，就只能在心裡跟爸爸說父親節快樂\n\n爸爸，謝謝你的保佑🙏",
-      "topicScores": {
-        "生活": 0.98,
-        "社福": 0.42
-      },
-      "topics": [
-        "生活",
-        "社福"
-      ],
-      "url": "https://www.threads.com/t/Dbw37gckWjf"
-    },
-    {
-      "agendaRelevance": 0.93,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "311a81e3a2bf0b1a0a02239bca6d0d905430b7166ba5cb2e32ee775e81c83c5c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbwydxzEsOl",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d878317898415d2a91e6.webp",
-      "keywords": [
-        "老人",
-        "津貼",
-        "健保"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T02:26:52+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "明列育兒津貼、健保與購屋主張，屬具體施政承諾。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:爸爸的愛，未必攏講出口，毋過一肩扛起家庭、一步一步為囝仔拚未來💪\n\n龍介除了祝福，更承諾讓爸爸們實質減負：\n📌爭取孩子成長津貼：0-18歲月月領5000元，6-18歲每月加碼2500元\n📌0-6歲健保免費\n📌65歲老人健保免費 #不排富\n📌生孩子，幫你買房子（敬請期待）\n\n感謝每一位用心打拚的爸爸，您辛苦了，父親節快樂！",
-      "topicScores": {
-        "住宅": 0.73,
-        "社福": 0.94,
-        "醫療": 0.62
-      },
-      "topics": [
-        "社福",
-        "住宅",
-        "醫療"
-      ],
-      "url": "https://www.threads.com/t/DbwydxzEsOl"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "9bcb76c2723ab532781b4ad9e52ef1699d48e1f57ad473c6bbb6c033e230d65e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbwyb2aSc6N/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/1e81ecf374f0728dac50.webp",
-      "keywords": [
-        "老人",
-        "津貼",
-        "健保"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T02:26:47+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出育兒津貼、健保、購屋與生育補助等完整政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "爸爸的愛，未必攏講出口，毋過一肩扛起家庭、一步一步為囝仔拚未來💪\n\n龍介除了祝福，更承諾讓爸爸們實質減負：\n📌爭取孩子成長津貼：0-18歲月月領5000元，6-18歲每月加碼2500元\n📌0-6歲健保免費\n📌65歲老人健保免費 #不排富\n📌生孩子，幫你買房子（敬請期待）\n\n感謝每一位用心打拚的爸爸，您辛苦了，父親節快樂！",
-      "topicScores": {
-        "住宅": 0.72,
-        "社福": 0.94,
-        "醫療": 0.82
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "住宅"
-      ],
-      "url": "https://www.instagram.com/p/Dbwyb2aSc6N/"
-    },
-    {
-      "agendaRelevance": 0.83,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "a6960ad02e398ae2ff87973c11e7488d8c394e06ee3db67749fea08a4e853ab9",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1625234258958156",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/30bd68a20938ed4ba668.webp",
-      "keywords": [
-        "老人",
-        "津貼",
-        "健保"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T02:25:46.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出育兒津貼、健保免費與買房補助等具體政策承諾。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "爸爸的愛，未必攏講出口，毋過一肩扛起家庭、一步一步為囝仔拚未來💪\n\n龍介除了祝福，更承諾讓爸爸們實質減負：\n📌爭取孩子成長津貼：0-18歲月月領5000元，6-18歲每月加碼2500元\n📌0-6歲健保免費\n📌65歲老人健保免費 #不排富\n📌生孩子，幫你買房子（敬請期待）\n\n感謝每一位用心打拚的爸爸，您辛苦了，父親節快樂！",
-      "topicScores": {
-        "住宅": 0.74,
-        "社福": 0.92,
-        "競選": 0.61,
-        "醫療": 0.88
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "住宅",
-        "競選"
-      ],
-      "url": "https://www.facebook.com/TEL062268268/posts/pfbid02TM7q6xVUefxHEEJznQTpM67u3SBgZCtvuNrmiHNhiBBDX2EqknhyA556NoYzeATvl"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "b0fc9b6b9691b3519cac6ec4cfb0ade27e199dd1833726d576f93d7cb9644e3d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1618380576310439",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d66cd7b0c0a2ffa3c65c.webp",
-      "keywords": [
-        "照顧"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T02:00:50.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅父親節祝福並帶到照顧承諾，無具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "祝福全天下的爸爸們 #父親節快樂 🎉\n\n不論是準爸爸、正在為孩子打拚的爸爸，還是需要我們好好守護的爸爸。\n\n我都會用更完善的照顧政策，做不同世代的父親們最強後盾！",
-      "topicScores": {
-        "生活": 0.95,
-        "社福": 0.48
-      },
-      "topics": [
-        "生活",
-        "社福"
-      ],
-      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0vq3KAt7Do6bfKEATUatf4Gph9Z9xH57QMKBUjrcCpGQtDLNXoQt1J2TPua7uA9adl"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "234dc8be4bc1a8126dc0eeeee7938e05c1501c611a37f76dd38175736362a37c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Dbwvc13kec9",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/1432f20ba00757e4ff6d.webp",
-      "keywords": [
-        "照顧"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-08T02:00:31+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以父親節祝福帶出育兒與照顧政策承諾，屬主動提出政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:祝福全天下的爸爸們 父親節快樂 🎉\n\n不論是準爸爸、正在為孩子打拚的爸爸，還是需要我們好好守護的爸爸。\n\n我都會用更完善的照顧政策，做不同世代的父親們最強後盾！",
-      "topicScores": {
-        "生活": 0.61,
-        "社福": 0.67
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Dbwvc13kec9"
-    },
-    {
-      "agendaRelevance": 0.85,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "c93f1bc0d7ec577ea16b52e9e1e6edbcea851ceaa3b0787e3d2308cad9d19cf9",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DbwvdpwiZAB/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/fbf401ededd6bb866c8b.webp",
-      "keywords": [
-        "照顧"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T02:00:06+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以父親節提出照顧政策與托育支持，屬主動政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "祝福全天下的爸爸們 #父親節快樂 🎉\n\n不論是準爸爸、正在為孩子打拚的爸爸，還是需要我們好好守護的爸爸。\n\n我都會用更完善的照顧政策，做不同世代的父親們最強後盾！",
-      "topicScores": {
-        "生活": 0.72,
-        "社福": 0.96
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DbwvdpwiZAB/"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "bd6daa5d98b23215c360611bb92366e9d401fe12015cef79e0536aabe29048b4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1605748117829109",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/2ad657b9d417c6976986.webp",
-      "keywords": [
-        "托育",
-        "運動"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T01:30:04.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "從父職經驗延伸托育與親子政策，屬政見主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "這個父親節，對我來說是特別的。因為有一個好消息，不是給我的，但我比誰都開心。\n\n今年跑遍新北二十九區，遇到的人多，故事也多。一對義消夫妻的兩件人生大事——從結婚到生子，就這麼剛好，我都遇上了。\n\n恭喜你們。初為人父那天的心情，我到現在都記得。\n\n三月的時候，他們拿著當年由我當證人的結婚證書來找我簽名留念，當時我特別記錄下來，分享給大家。\n\n新北這麼大，天地這麼寬，卻能三番兩次遇到同一家人。父親節前夕，我遇到這對夫妻的爸爸，他拿著手機裡孫子的照片跑過來：「川伯，我兒子結婚時你當證人，後來在義消聚會又碰上一起拍照，昨天小孩出生了！」\n\n有緣人，講的是彼此祝福。\n\n說實在，我當下心情很複雜。一是恭喜祝福，二是感動彼此有緣，三是想起多年前我當爸爸的那一天。\n\n恭喜這位義消弟兄。從這一天開始，你多了一個身分，而這個身分，沒有卸任的一天。\n\n你會看著他笑，跟著他哭。陪著他長大，也陪著自己長大。為了他更勇敢，也變得無所畏懼。因為爸爸這兩個字，一旦被喊出來，就是一輩子。\n\n這幾個月，我陸續提出好孕專車延長、運動中心試辦免費臨托、興建室內大型親子館、企業托育等。\n\n這些政見的起點，其實就是我當年剛當上爸爸的那份心情——又興奮，又有壓力。\n\n我想起我的孩子來到我們夫妻身邊，是我這輩子最幸福的事。\n\n「爸爸」這個詞有重量，在我身上擔了好多年。這個重量我拿不掉，但我可以想辦法，讓它輕一點。\n\n兒子對我來說，依舊是孩子。我盼他健康順利，也盼所有的爸爸，別忘了對自己好一點。\n\n從當爸爸的那一天開始——責任是一輩子的，幸福也是一輩子的。\n\n父親節快樂。",
-      "topicScores": {
-        "住宅": 0.55,
-        "社福": 0.88,
-        "體育": 0.4
-      },
-      "topics": [
-        "社福",
-        "住宅",
-        "體育"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ZMHDV4azHpcXAWL6YcCiFfZkqPUNi6GQhT9UeftACFgSUt3TD19a91DuBM3DGpVXl&id=100051818071280"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "9e0cfd932f3d90c7f06f04f51a0ff69e1bdeb34de9b97717b88825cb7eee3869",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbwrOzWifwY",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/3615c53b0f3041c95b6d.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T01:23:39+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "以父親節抒情並帶到個人從政心情，缺少具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:我永遠記得結婚那天，爸爸對我說的一句話：「再想一下，前面這個男人是不是你真要嫁的人，如果還有一絲猶豫，我們倆轉身就跑，不用管其他人了……」\n\n那不是一句玩笑，而是一位父親送給女兒最大的底氣。\n\n他成長於保守的年代，卻給了女兒最開明的觀念。他希望我勇敢做自己，不必迎合別人的期待，也不用害怕世俗的眼光。真正重要的，是忠於自己的選擇，並為自己的決定負責。\n\n也因為如此，從求學、教書，到投入公共服務、走進政治，我始終告訴自己，要獨立思考、正直做人，勇敢走自己相信的路。\n\n爸爸一生，每一份工作都全力以赴，勤懇踏實，認真盡責，他留給我的，不是財富，而是一生都用不完的人生資產----正直、良善、熱忱、勇敢。\n\n今年父親節，我會帶著爸爸教給我的一切，繼續秉持誠懇、真誠的初心，努力為 #高雄38個行政區 拚幸福，不辜負每一份期待。\n\n爸爸，我真的很想您。謝謝您給我的愛、信任與支持，我會努力走好每一步，謹記您的教誨，一定做讓您驕傲與欣慰的女兒。",
-      "topicScores": {
-        "生活": 0.89,
-        "競選": 0.56
-      },
-      "topics": [
-        "生活",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DbwrOzWifwY"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "9e04bf7ce8d655ba8cad9dd64133b66c9ca1788fdc68f03d4511649da45a60e0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbwqjbJE1k8",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T01:17:43+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "內容與個人育兒經驗及父親節祝福有關，無回應他人觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:一日重返補習班崗位！\n只是這次教的是「新手爸爸101」！\n⠀\n泡配方奶時\n加粉和水的順序\n還是可能因品牌而異，\n提醒大家使用前\n還是要參閱罐身上的說明！\n⠀\n祝福大家，父親節快樂！",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbwqjbJE1k8"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "50ee35ff85b10d18368d8821095fae97597370eede5ebaff154a17db8faf830f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbwp7iry19u/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/b0875fa25a0d407ba70a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T01:16:11+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "父親節日常分享與育兒小提醒，未涉及公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "一日重返補習班崗位！\n只是這次教得是「新手爸爸101」！\n⠀\n泡配方奶時\n加粉和水的順序\n還是可能因品牌而異，\n提醒大家使用前\n還是要參閱罐身上的說明！\n⠀\n祝福大家，父親節快樂！",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Dbwp7iry19u/"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "411aca851322a455f14d22944294cfe1a9ff458aa78f10dd90a6276fa0d8d67f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbwk9QgoBe_/",
-      "imageAspect": 0.8,
-      "imageUrl": "assets/feed-images/fc6381de1bd3911a80e0.webp",
-      "keywords": [
-        "托嬰",
-        "育兒",
-        "補助",
-        "津貼",
-        "醫療",
-        "疫苗"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T00:28:51+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "明確提出托育、停車、醫療與心理諮商等育兒政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "父親節這一天，啟臣除了想向每一位爸爸說聲謝謝，也更希望未來的臺中，能成為一座讓爸爸安心工作，也能放心陪孩子長大的城市。\n\n我也是兩個孩子的父親，能深刻感受養育孩子的辛苦。所以未來，我們要讓臺中的育兒支持更完整。\n\n從加碼準公共托嬰、育兒津貼，到推出臨托預約APP、鼓勵企業設置共托，當爸爸媽媽臨時有需要時，能更容易找到幫手。\n\n帶孩子出門，也要更方便。我們要推動親子友善停車、全面設置育兒友善廁所，讓家長帶孩子出門時，不再為了換尿布、找廁所、停車位傷腦筋。 \n\n對於想要成為爸爸媽媽的家庭，我們就要開始陪伴協助。從AMH健康檢測、醫療凍卵補助，到孕期、嬰幼兒疫苗，以及產後父母心理諮商，一步一步把支持做得更完整。\n\n祝福所有正在準備當爸爸、學習當爸爸、努力當爸爸、一路為家庭撐起一片天的所有爸爸們，父親節快樂！\n\n#育兒友善城市再升級\n#臺中升級 #幸福加給\n#幸福啟程",
-      "topicScores": {
-        "生活": 0.86,
-        "社福": 0.97,
-        "醫療": 0.71
-      },
-      "topics": [
-        "社福",
-        "生活",
-        "醫療"
-      ],
-      "url": "https://www.instagram.com/p/Dbwk9QgoBe_/"
-    },
-    {
-      "agendaRelevance": 0.89,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "70ecc2384f315df2ae69a8c1aa9d9f77a0d3a5ba09d2727ec108d65586815b51",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1584246233062192",
-      "imageAspect": 0.8,
-      "imageUrl": "assets/feed-images/780afc35dc352b20c87e.webp",
-      "keywords": [
-        "托嬰",
-        "育兒",
-        "補助",
-        "津貼",
-        "醫療",
-        "疫苗",
-        "停車"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T00:28:47.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出育兒支持政策，涵蓋托育、醫療與友善設施。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "#父親節 這一天，啟臣除了想向每一位爸爸說聲謝謝，也更希望未來的臺中，能成為一座讓爸爸安心工作，也能放心陪孩子長大的城市。\n\n我也是兩個孩子的父親，能深刻感受養育孩子的辛苦。所以未來，我們要讓臺中的育兒支持更完整。\n\n從加碼準公共托嬰、育兒津貼，到推出臨托預約APP、鼓勵企業設置共托，當爸爸媽媽臨時有需要時，能更容易找到幫手。\n\n帶孩子出門，也要更方便。我們要推動親子友善停車、全面設置育兒友善廁所，讓家長帶孩子出門時，不再為了換尿布、找廁所、停車位傷腦筋。 \n\n對於想要成為爸爸媽媽的家庭，我們就要開始陪伴協助。從AMH健康檢測、醫療凍卵補助，到孕期、嬰幼兒疫苗，以及產後父母心理諮商，一步一步把支持做得更完整。\n\n祝福所有正在準備當爸爸、學習當爸爸、努力當爸爸、一路為家庭撐起一片天的所有爸爸們，父親節快樂！\n\n#育兒友善城市再升級\n#臺中升級 #幸福加給\n#幸福啟程",
-      "topicScores": {
-        "交通": 0.47,
-        "住宅": 0.58,
-        "社福": 0.93,
-        "醫療": 0.74
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "住宅",
-        "交通"
-      ],
-      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02yVMV3GHhzNaS5QTfnDsvNmjJRWHhRhsegM5RZtT5rLcbpEfviqdtWgvQpnSagDNcl"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "b5a4ab872ee3f2ec4d908b1be12a5eaf40424c84faf369ffd80d37475d31e238",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbwiBD9HxXm",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/96b1d06742672640dfa9.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-08T00:03:08+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "全文為父親節感性祝福與個人家庭回憶，非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:直到自己成為父親，才發現原來幸福那麼簡單，有時候行程排得滿滿，能陪伴孩子的時間並不多，但也正因如此，更珍惜每一次牽著孩子的手、一起吃飯、一起玩的平凡時光，我就像孩子的永遠不會長大的大玩伴。\n\n與其說是我陪伴孩子，其實是孩子一直在陪伴我，只要兒子一個笑容，就能讓我一天工作的疲憊瞬間消失，兒子的一句爸爸，就讓我想變得更勇敢，想把更好的未來留給孩子。\n\n今天是父親節，不只是向爸爸說一聲謝謝，世杰要向所有爸爸獻上最深的祝福，祝全天下爸爸，父親節快樂 💖",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbwiBD9HxXm"
-    },
-    {
-      "agendaRelevance": 0.83,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-08T10:03:20+00:00",
-        "inputHash": "2288768f8fd6f83903b5126dcc16c1173e308de29525ca1de0b62539cf130147",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dbwh8o-T4z9/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/6d4433038e44293c02a6.webp",
-      "keywords": [
-        "托育",
-        "托嬰",
-        "育兒"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-08T00:02:59+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出桃園育兒環境與托育地圖等政策，屬施政主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "直到自己成為父親，才發現原來幸福那麼簡單，有時候行程排得滿滿，能陪伴孩子的時間並不多，但也正因如此，更珍惜每一次牽著孩子的手、一起吃飯、一起玩的平凡時光，我就像孩子的永遠不會長大的大玩伴。\n\n與其說是我陪伴孩子，其實是孩子一直在陪伴我，只要兒子一個笑容，就能讓我一天工作的疲憊瞬間消失，兒子的一句爸爸，就讓我想變得更勇敢，想把更好的未來留給孩子。\n\n我明白愈來愈多年輕人選擇在桃園成家立業，也了解對於桃園育兒環境的焦慮，不只有世杰獨自在面對，所以我想翻轉桃園的育兒環境，打造一站式「透明托育地圖」，並全面盤點並轉型低度利用的公共空間，成為「公設民營托嬰中心」或「社區公共托育家園」，讓家長不需要孤軍奮鬥，為了家長與孩子們，我也會陸續提出相關政見，成為家長的最佳後盾，育兒神隊友👍\n\n今天是父親節，不只是向爸爸說一聲謝謝，世杰要向所有爸爸獻上最深的祝福，祝全天下爸爸，父親節快樂 💖",
-      "topicScores": {
-        "生活": 0.88,
-        "社福": 0.95
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Dbwh8o-T4z9/"
-    },
-    {
-      "agendaRelevance": 0.74,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "b73729addeff62b574eec33f9d7acad0821425a1fb2b69573d42734c98c1868c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1566696611571538",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/cd9919b3963e3ed69383.webp",
-      "keywords": [
-        "托育",
-        "托嬰",
-        "育兒"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T00:02:03.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動談桃園育兒環境與托育政見構想。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "直到自己成為父親，才發現原來幸福那麼簡單，有時候行程排得滿滿，能陪伴孩子的時間並不多，但也正因如此，更珍惜每一次牽著孩子的手、一起吃飯、一起玩的平凡時光，我就像孩子的永遠不會長大的大玩伴。\n\n與其說是我陪伴孩子，其實是孩子一直在陪伴我，只要兒子一個笑容，就能讓我一天工作的疲憊瞬間消失，兒子的一句爸爸，就讓我想變得更勇敢，想把更好的未來留給孩子。\n\n我明白愈來愈多年輕人選擇在桃園成家立業，也了解對於桃園育兒環境的焦慮，不只有世杰獨自在面對，所以我想翻轉桃園的育兒環境，打造一站式「透明托育地圖」，並全面盤點並轉型低度利用的公共空間，成為「公設民營托嬰中心」或「社區公共托育家園」，讓家長不需要孤軍奮鬥，為了家長與孩子們，我也會陸續提出相關政見，成為家長的最佳後盾，育兒神隊友👍\n\n今天是父親節，不只是向爸爸說一聲謝謝，世杰要向所有爸爸獻上最深的祝福，祝全天下爸爸，父親節快樂 💖",
-      "topicScores": {
-        "住宅": 0.44,
-        "教育": 0.62,
-        "社福": 0.91
-      },
-      "topics": [
-        "社福",
-        "教育",
-        "住宅"
-      ],
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid035wwk4R2gJHe7HhkPd6Gri9QNKbPsBHT93FHrXo2VZn5ZLekJ9U3kw5psexNdGWGul"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "chang-ching",
-      "classification": {
-        "classifiedAt": "2026-08-09T04:04:56+00:00",
-        "inputHash": "ff44ccff0d880f81d635ed6fff473dc8745611187d6aa0422016ced3aa82cd02",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:939411062523756",
-      "imageAspect": 0.7525,
-      "imageUrl": "assets/feed-images/261df151593839ebe59c.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-08T00:00:21.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "父親節祝賀文，僅表達對爸爸的感謝，無公共政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-ching-party-fb",
-      "text": "每個在台上談理想的人，\n回到家，也只是爸爸。\n\n在外面，他可能肩負著工作、責任與理想；\n回到家，他只是那個陪孩子玩耍、\n牽著孩子的手、守護家人平安的爸爸。\n\n父親不一定總是把愛說出口，\n但那些默默付出的日常，\n早已成為孩子成長記憶裡最溫暖的一部分。\n\n今天，讓我們把掌聲留給每一位努力守護家庭的爸爸。❤️\n\n祝全天下的爸爸們\n父親節快樂！\n\n司法改革黨 敬賀",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ZYXduwKmv4xxXLpYVKYHLTmNtMRpZQCqixi5s8vJuXUvb5Ewq3vdURGqCPBS1Wb1l&id=100093646137173"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "58fba7efe973ad3cdd4eb225f3c7fe0cc899477c27f5f48b66bc2bf53658bcb4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DbwbgdNEf02",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/10fa5e72b41977cda8a8.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-07T23:06:17+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "內容是陪孩子閱讀與玩耍的活動式宣傳，非明確政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:奶爸連線，陪孩子看見世界無限！一起讀、一起玩、一起為高雄孩子打開通往世界的大門。",
-      "topicScores": {
-        "教育": 0.89,
-        "生活": 0.71
-      },
-      "topics": [
-        "教育",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DbwbgdNEf02"
     }
   ],
   "version": 1
