@@ -1,5 +1,5 @@
 {
-  "count": 227,
+  "count": 228,
   "posts": [
     {
       "agendaRelevance": 0.02,
@@ -32,6 +32,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db4SW-lH8MN"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-11T10:03:24+00:00",
+        "inputHash": "432f4f72f77200766e3a4741bfe8b3fffd3d1801549901a8d61388f55e49e937",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db4Q9MwRjZV/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2a63e4a70ada5583898f.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-11T00:20:03+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "分享行程感想與互動紀錄，無具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "簽到白牆，吃到檸檬塔，喝到「台灣的味道」，遇到可愛狗狗，還收到這麼多好朋友的鼓勵，簡直是太感動了，隆隆出任務，成功！",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db4Q9MwRjZV/"
     },
     {
       "agendaRelevance": 0.62,
