@@ -1,6 +1,38 @@
 {
-  "count": 226,
+  "count": 227,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-11T04:00:51+00:00",
+        "inputHash": "e55f54649aebc493f7f50690f0df9c20a5902a219cae62b00288f9156851402e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db4SW-lH8MN",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b89b3e6b942223253a76.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-11T00:20:17+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅分享簽到、食物與互動感想，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:簽到白牆，吃到檸檬塔，喝到「台灣的味道」，遇到可愛狗狗，還收到這麼多好朋友的鼓勵，簡直是太感動了，隆隆出任務，成功！",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db4SW-lH8MN"
+    },
     {
       "agendaRelevance": 0.62,
       "candidateId": "lai-jui-lung",
