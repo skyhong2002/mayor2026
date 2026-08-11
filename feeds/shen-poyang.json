@@ -1,6 +1,80 @@
 {
-  "count": 233,
+  "count": 236,
   "posts": [
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-11T16:01:04+00:00",
+        "inputHash": "ac08b5a15c1b36eb19a498fd701f5e19de2088377a58dab5d90ff6b43298a1d0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db5qSJHlD1P",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "長輩"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-11T13:08:31+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出HEART政策願景，聚焦市政與民生需求，屬競選政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:一座好的城市，\n是讓每個人都感覺得到：\n「台北，有把我放在心上。」\n⠀\n而今天，\n我也用「心」來回應大家的期待。\n⠀\n空間、時間、陪伴、機會、韌性。\n五個字，組成 HEART，心。\n⠀\n台北市民想要的沒有很複雜。\n⠀\n只是希望上班不要一直卡、\n養小孩不要這麼累、\n有人為長輩著想、\n有機會追夢、\n市政反應有人處理，\n台北市能夠接住每一個人。\n⠀⠀\n這是我的政策願景，也是我對家鄉的期待。",
+      "topicScores": {
+        "生活": 0.86,
+        "社福": 0.73,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/Db5qSJHlD1P"
+    },
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-11T16:01:04+00:00",
+        "inputHash": "58916b24dfe24233de9b4d4a107f082caa8d90e59656f6976e6821224ffccea5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db5jk9OFKDn",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/71e3360a5bb56a33ace7.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-11T12:09:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "市場掃街與致謝紀錄，屬競選活動與互動，非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:在晴光市場就先看到大家排隊支持\n謝謝大家，真的有嚇到。\n\n然後最意外的是，\n遇到兩位以前讀過我刑法書的讀者。\n\n一個後來考上律師，\n一個考上司法官。\n\n以前坐在書桌前寫書的時候，\n真的不會想到有一天，\n會在市場掃街遇到讀者跟我講這些。\n\n老師魂突然被喚醒 XD\n\n還收到市場老闆送的花\n\n今天唯一的遺憾是時間真的不夠，\n雙城街還沒走到。\n\n今晚沒有見到的市民朋友，\n我一定會再回來！",
+      "topicScores": {
+        "生活": 0.7,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db5jk9OFKDn"
+    },
     {
       "agendaRelevance": 0.97,
       "candidateId": "shen-poyang",
@@ -8372,6 +8446,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/p9fjwMu_2Dk"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-11T16:01:04+00:00",
+        "inputHash": "d0c1a15dadd8a4ac36c6d0b0bf203e6b51db62449e6528245f57d4cc7af59208",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:OU4H7v-jRo8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/08c259eb96268a6806c7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標題為政策願景摘要，屬主動提出市政理念。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Five Policy Visions: \"Space, Time, Companionship, Opportunity, Resilience.\" Together, they spell ...",
+      "topicScores": {
+        "生活": 0.88,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/OU4H7v-jRo8"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

@@ -1,6 +1,38 @@
 {
-  "count": 228,
+  "count": 229,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-11T16:01:04+00:00",
+        "inputHash": "d66d5e1f9ccc5a177a45446cbc0c8beb5858c3abfffd01b15aedfe177ef28cb1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db5ch40H2L9",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/933fe5bf411c13429bce.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-11T11:08:24+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "感謝支持與爭取認同，屬競選動員與表態。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:謝謝各位的認證！走遍高雄、聽進大家的聲音，也請放心把高雄交給我，我會一步一腳印，帶領高雄向前邁進。",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db5ch40H2L9"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",
