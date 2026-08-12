@@ -19,8 +19,46 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 242,
+  "count": 245,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T10:01:24+00:00",
+        "inputHash": "679d89fe3b695c6f006066ce4e5322f92194b7bda92735bacd0f02c386891213",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db72LeNkXkq",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/a6c19752965ea22443fb.webp",
+      "keywords": [
+        "疫苗"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-12T09:31:00+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "指控高端疫苗爭議，未見回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
+      "topicScores": {
+        "治安": 0.55,
+        "競選": 0.66,
+        "醫療": 0.92
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/Db72LeNkXkq"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "hsieh-lung-chieh",
@@ -8612,6 +8650,76 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/7kqZtNcA-UA"
+    },
+    {
+      "agendaRelevance": 0.52,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T10:01:24+00:00",
+        "inputHash": "fdea608fa0e9f001a5368b2031c39ac49309cdc87c04958b6b50443afa936515",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:832IBvZ4Y94",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/25b1580cd5ce90befc82.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "為議會質詢食安議題，屬主動監督非回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "(Full Subtitles) 07/20/2026 [Interpellation by Lung-chieh] Poor handling of toxic oil food safety...",
+      "topicScores": {
+        "生活": 0.45,
+        "議會監督": 0.78,
+        "醫療": 0.94
+      },
+      "topics": [
+        "醫療",
+        "議會監督",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=832IBvZ4Y94"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T10:01:24+00:00",
+        "inputHash": "19c35d08cd05dc5818cf408d119db238ced11296af8f182d69982c766cc07d23",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:l27umjmJc3k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/76e8713a6e3047a2d8e1.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "延續疫苗死亡指控，但未明確回應特定前文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Has the DPP forgotten? Nearly 20,000 lives lost after they championed the Medigen vaccine",
+      "topicScores": {
+        "競選": 0.69,
+        "醫療": 0.95
+      },
+      "topics": [
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/l27umjmJc3k"
     }
   ],
   "version": 1

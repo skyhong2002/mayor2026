@@ -1,6 +1,44 @@
 {
-  "count": 240,
+  "count": 242,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T10:01:24+00:00",
+        "inputHash": "78188f9176e5a7b23e7b37b2c8adbbd068461e8629856b1fadc0ac7038e00b9a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db7Wy9Jkq0S",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/d2750d4bbb95d1e27728.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-12T04:57:18+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹三鶯線沿線美食旅遊，屬宣傳活動內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:今天要由蘇巧慧三個發言人來開箱 「蘇巧慧三鶯線口袋美食」！\n\n歡迎大家一起搭上三鶯線，從三峽玩到鶯歌，跟著我們的路線吃喝玩樂，感受的在地的迷人魅力❤️\n\n片尾還有彩蛋唷！",
+      "topicScores": {
+        "交通": 0.61,
+        "文化觀光": 0.9,
+        "生活": 0.5
+      },
+      "topics": [
+        "文化觀光",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db7Wy9Jkq0S"
+    },
     {
       "agendaRelevance": 0.92,
       "candidateId": "su-chiaohui",
@@ -8901,6 +8939,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/EbXDsSH3UKc"
+    },
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T10:01:24+00:00",
+        "inputHash": "1e6bb98013e32607111dc094bcc9c6377f32b7e0aeb4e65af7bf5bab52a93be2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:5ghpFrb-sug",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/6983a3acd81a638813c3.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標題為美食推薦開箱影片，屬活動內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Three Spokespeople Unbox Su Tseng-chang's Sanying Line Food Recommendations!",
+      "topicScores": {
+        "文化觀光": 0.89,
+        "生活": 0.54
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=5ghpFrb-sug"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",
