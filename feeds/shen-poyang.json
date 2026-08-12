@@ -1,5 +1,5 @@
 {
-  "count": 242,
+  "count": 244,
   "posts": [
     {
       "agendaRelevance": 0.12,
@@ -8711,6 +8711,76 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/OU4H7v-jRo8"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "683ba0246597b5509f2c9bf0c91adeecc98fa81b7d4dc108a2ac1a1d62796d42",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:i5zByHt6esg",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/06214fbc365068846e76.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "發布五大政見，內容指向城市治理與教育等具體主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "沈伯洋「HEART」五大政見正式發布，從城市的空間、機會、陪伴、韌性與時間，全面打造台北的市政生態系！",
+      "topicScores": {
+        "住宅": 0.36,
+        "教育": 0.88,
+        "社福": 0.52,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "教育",
+        "社福",
+        "住宅"
+      ],
+      "url": "https://www.youtube.com/watch?v=i5zByHt6esg"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "a494a1e150660679a45fcad375b8c2f712c629ae5d34b616db34c8cc072ecb61",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:z-s3FmHcBuc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/181ceeec0462f81904e5.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容為競選背書與稱讚，未見具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Thanks to These Three Key Influential Figures for Endorsing Enoch Shen: Hear the Professional Per...",
+      "topicScores": {
+        "競選": 0.92
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/z-s3FmHcBuc"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

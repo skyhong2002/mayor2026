@@ -1,6 +1,38 @@
 {
-  "count": 242,
+  "count": 243,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "a49117110d892237469208966be75ae55dfbc3529270fd59a19ef42ac091cf40",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8LMG1GaA8",
+      "imageAspect": 1.5097,
+      "imageUrl": "assets/feed-images/5aa6a361269435902f0f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T12:34:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標語式挺選人貼文，未見具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:行動。溫度。創新。\n何欣純，台中純！",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db8LMG1GaA8"
+    },
     {
       "agendaRelevance": 0.95,
       "candidateId": "ho-hsin-chun",

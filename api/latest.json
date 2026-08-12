@@ -2,6 +2,187 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.18,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "0417c0622231fbd4bafda93f07a3bc1bca52c0878ac9fdcb3b180fa77023709e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8TWlEDRVb",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4935dca766c251eca722.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T13:45:53+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳逛夜市行程與拜票，屬競選活動並涉夜市生活。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:和巧慧一起逛夜市！\n\n就在明天晚上，我將前往「三重三和夜市」 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00 \n📍三重三和夜市（三重區重新路一段89號）",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "生活": 0.72,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db8TWlEDRVb"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "a49117110d892237469208966be75ae55dfbc3529270fd59a19ef42ac091cf40",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8LMG1GaA8",
+      "imageAspect": 1.5097,
+      "imageUrl": "assets/feed-images/5aa6a361269435902f0f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T12:34:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標語式挺選人貼文，未見具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:行動。溫度。創新。\n何欣純，台中純！",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db8LMG1GaA8"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "e9cc619ff0fa81ea01a0169774e3c577f51e9db7fd4943c401bc5ad5d9c3a966",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8Gm8imUbb",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ddd01c86b74a24342343.webp",
+      "keywords": [
+        "教育"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-12T11:54:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出挺教育與產學串連，屬明確政策與競選主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新時代、新市長！巧慧挺教育！\n串連產學資源，做新北師生最強後盾💪🏻",
+      "topicScores": {
+        "教育": 0.98,
+        "競選": 0.94
+      },
+      "topics": [
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db8Gm8imUbb"
+    },
+    {
+      "agendaRelevance": 0.67,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "21c765fa8d939ac0ba70e771c91d383d323e47252adff49d6eb2d82998425faf",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8DhFkCfyj",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T11:27:30+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "指控張善政延宕台積電進駐並要求交代進度，屬究責監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:造成台積電進駐桃園延宕，張善政不應該自己裝死，卻讓網軍洗地！\n\n昨天，我發文要求張市長為施政怠惰，導致台積電進駐桃園延宕三年多道歉。很遺憾，一整天過去，等不到張市長回應，反而是我的社群有大量留言湧入，開始洗大家的記憶。\n\n但我不會被混著大量網軍假帳號的留言嚇到，因為桃園這三年多的損失是真的、桃園人的憤慨更是千真萬確。\n\n黃世杰要二問張善政：你曾公開表示，會盤點適合地點及方案，提供竹科管理局及台積電評估，請問方案跟進度在哪？請張市府把公文跟資料攤開來，市民有知的權利！",
+      "topicScores": {
+        "競選": 0.56,
+        "經濟": 0.84,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db8DhFkCfyj"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "416e41513c3aa6c5338c567feee1f025129620662d79375ffb12eb198befcc01",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db79gf5Cb-t",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ed77567dcfeaf067c71e.webp",
+      "keywords": [
+        "產業",
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-12T10:34:59+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出大南方計畫，主打產業、交通與生活發展，具政策輪廓。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:地理上，高雄在南方；歷史上，高雄一直站在最前方。\n\n今天 @dpp_taiwan 民進黨「行動中常會」來到高雄，我正式提出 #大南方計畫，拚產業、留人才、強交通、顧生活，帶領高雄迎接下一個黃金十年。\n\n同時發布 #高雄大聯盟 召集令，與所有議員夥伴並肩作戰，拚市長勝選、議會過半。\n\n咱若團結，就能守護高雄的根、打開高雄的路，走向世界。\n\n2026，我們一起迎接高雄的勝利！\n\n@william_chingte @chenchimai",
+      "topicScores": {
+        "交通": 0.9,
+        "生活": 0.84,
+        "競選": 0.98,
+        "經濟": 0.94
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db79gf5Cb-t"
+    },
+    {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
@@ -3606,182 +3787,6 @@
         "教育"
       ],
       "url": "https://www.facebook.com/reel/1380935840507074/"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "c869f482d1243baab104be93651d5b2da12b314aa14bb595bb8d59ebc56961d2",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2ndHOCHUq",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/c8d197f63e2e9552d956.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-10T08:46:54+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅是對學弟的勉勵話語，無公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-threads",
-      "text": "@hammer__lee:他沒來，課本來了。\n\n這條路我走過。剩下的，換你走。加油，學弟。",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db2ndHOCHUq"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "50646a90b113218b2ea4035baf4519da4f3cf18737d94e2a47f67175dbe84556",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db2nbBUMC67/",
-      "imageAspect": 0.5626,
-      "imageUrl": "assets/feed-images/8139961c404b37051fdd.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-10T08:46:32+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以課本與學弟打氣為內容，屬日常勉勵。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-ig-main",
-      "text": "他沒來，課本來了。\n\n這條路我走過。剩下的，換你走。加油，學弟。",
-      "topicScores": {
-        "生活": 0.96
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Db2nbBUMC67/"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "c1cafdd629d118e1e6c6122cd537548819753542bba4998758e3c6760cf92ab6",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2l1XxGr6c",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/26cc26359b154811339a.webp",
-      "keywords": [
-        "掃街"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-10T08:31:56+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "掃街拜票與市場行程宣傳，屬競選動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
-      "topicScores": {
-        "生活": 0.54,
-        "競選": 0.95
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db2l1XxGr6c"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "45cb8aab5004f8528a2d11e08ef83ba8a7cd01a2aee642627a8e2bc39d04f39f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db2lvw8zgqA/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/15c310fff07bec51ccd8.webp",
-      "keywords": [
-        "掃街"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-10T08:31:50+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以掃街拜票與在地市場為主，屬競選動員非政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
-      "topicScores": {
-        "生活": 0.57,
-        "競選": 0.95,
-        "經濟": 0.52
-      },
-      "topics": [
-        "競選",
-        "生活",
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/Db2lvw8zgqA/"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "1629e8e945bca0ddbd32af749c73e4759d2695bb13e899f1bdf67a3d62f5041d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1568711958036670",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/54e458dec3ce75a77e46.webp",
-      "keywords": [
-        "掃街"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T08:30:08.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "清晨掃街拜票與市場走訪，主要是競選動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "明天早上7:30，動起來！平鎮山仔頂市場掃街✨\n\n山仔頂市場是在地鄉親熟悉的傳統早市，從生鮮蔬果、肉品雜貨，到客家水粄、粉漿蛋餅等多元傳統小吃，充滿許多山仔頂人熟悉的滋味！\n\n平鎮的朋友明早7:30山仔頂市場見！心平鎮，動起來💖",
-      "topicScores": {
-        "生活": 0.86,
-        "競選": 0.97,
-        "經濟": 0.3
-      },
-      "topics": [
-        "競選",
-        "生活",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid028rTW4pmHt86dkMXdKhHEELRbKHE3s9Jj3tnqXvrbfY2V5RyHbn1xd4KBHqgnYv4cl"
     }
   ],
   "version": 1

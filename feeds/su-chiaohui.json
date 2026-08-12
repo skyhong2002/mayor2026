@@ -1,6 +1,78 @@
 {
-  "count": 242,
+  "count": 244,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "0417c0622231fbd4bafda93f07a3bc1bca52c0878ac9fdcb3b180fa77023709e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8TWlEDRVb",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4935dca766c251eca722.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T13:45:53+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳逛夜市行程與拜票，屬競選活動並涉夜市生活。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:和巧慧一起逛夜市！\n\n就在明天晚上，我將前往「三重三和夜市」 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00 \n📍三重三和夜市（三重區重新路一段89號）",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "生活": 0.72,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db8TWlEDRVb"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "e9cc619ff0fa81ea01a0169774e3c577f51e9db7fd4943c401bc5ad5d9c3a966",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db8Gm8imUbb",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ddd01c86b74a24342343.webp",
+      "keywords": [
+        "教育"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-12T11:54:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出挺教育與產學串連，屬明確政策與競選主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新時代、新市長！巧慧挺教育！\n串連產學資源，做新北師生最強後盾💪🏻",
+      "topicScores": {
+        "教育": 0.98,
+        "競選": 0.94
+      },
+      "topics": [
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db8Gm8imUbb"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "su-chiaohui",
