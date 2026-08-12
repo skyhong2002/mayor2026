@@ -1,6 +1,48 @@
 {
-  "count": 236,
+  "count": 240,
   "posts": [
+    {
+      "agendaRelevance": 0.97,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "71e827f234ae6453b56b38c83f46b607a13e0c69d0500b245f6c27ca105ce051",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109201459329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/dbb9c5ba00b7360a4d5f.webp",
+      "keywords": [
+        "參選",
+        "長輩",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-11T13:24:20.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確提出市長參選政見與五大政策願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "今天，我提出了五大政策願景：「空間、時間、陪伴、機會、韌性。」\n⠀\n他們合起來，就是 HEART，心。\n⠀\n我希望這顆心，裝得下正在養家的父母、努力追夢的年輕人、需要照顧的長輩，也裝得下每一個曾經覺得自己被城市漏掉、感到孤單的人。讓每個人都能感受到：這座城市，是我的城市。\n⠀\n這是我的政策願景，也是我對家鄉的期待。\n⠀\n參選以來，我分析了三百萬筆1999資料、議員質詢，也走遍台北十二個行政區。\n一路上，我看見台北市民最簡單、也最真實的期待，就是：「希望生活可以順一點。」\n⠀\n用心，讓台北順起來。\n⠀\n我是沈伯洋，\n請讓我成為你的市長。",
+      "topicScores": {
+        "交通": 0.72,
+        "住宅": 0.78,
+        "社福": 0.85,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "住宅",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/reel/4587571754847684/"
+    },
     {
       "agendaRelevance": 0.93,
       "candidateId": "shen-poyang",
@@ -38,6 +80,76 @@
         "社福"
       ],
       "url": "https://www.threads.com/t/Db5qSJHlD1P"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "795846e26bd18665f016c58ff09a94082c4cd1595a18cf2c3183d19ccbd01b0d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db5qDVJSei5/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/96797cf390c0d6be1596.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-11T13:07:50+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出台北市政願景與民眾需求，屬競選式政策宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "一座好的城市，是讓每個人都感覺得到：\n「台北，有把我放在心上。」\n⠀\n而今天，我也用「心」來回應大家的期待。\n⠀\n空間、時間、陪伴、機會、韌性。\n五個字，組成 HEART，心。\n⠀\n台北市民想要的沒有很複雜。\n⠀\n只是希望上班不要一直卡、\n養小孩不要這麼累、\n有人為長輩著想、\n有機會追夢、\n市政反應有人處理，\n台北市能夠接住每一個人。\n⠀⠀\n這是我的政策願景，也是我對家鄉的期待。",
+      "topicScores": {
+        "生活": 0.74,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db5qDVJSei5/"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "dd01af7e19771741fb58157c590616d6b5029c1da82e99897693c8ac1efc8992",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175449393995654",
+      "imageAspect": 1.7771,
+      "imageUrl": "assets/feed-images/798023bcb37984eb2ecd.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-11T12:13:44.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "市場掃街拜票與互動紀錄，帶有競選動員色彩。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "在晴光市場就先看到大家排隊支持\n謝謝大家，真的有嚇到。\n\n然後最意外的是，\n遇到兩位以前讀過我刑法書的讀者。\n\n一個後來考上律師，\n一個考上司法官。\n\n以前坐在書桌前寫書的時候，\n真的不會想到有一天，\n會在市場掃街遇到讀者跟我講這些。\n\n老師魂突然被喚醒 XD\n\n還收到市場老闆送的花\n\n今天唯一的遺憾是時間真的不夠，\n雙城街還沒走到。\n\n今晚沒有見到的市民朋友，\n我一定會再回來！",
+      "topicScores": {
+        "生活": 0.8,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid0NQLR4v1sYJoMNUWYX8KpaBTFWxL4Sh5V8ZCDfmemTbX8ZEGUA7wVKeLB2J2g3aEol"
     },
     {
       "agendaRelevance": 0.25,
@@ -155,6 +267,49 @@
         "住宅"
       ],
       "url": "https://www.threads.com/t/Db4nc_PEVlS"
+    },
+    {
+      "agendaRelevance": 0.96,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "e4f66e70e7d30c9116bf13bf5942df2343ed1baf5f37242631f7e9cc2372cad5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109136197329310",
+      "imageAspect": 1.5019,
+      "imageUrl": "assets/feed-images/730bd202bed598b891f6.webp",
+      "keywords": [
+        "交通",
+        "住宅",
+        "詐騙",
+        "犯罪"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-11T03:16:12.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出台北施政問題與具體政策方案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "台北，卡住了。⁣⁣⁣\n⠀⁣⁣⁣\n早上，交通卡住了。⁣⁣⁣\n大雨一來，水溝卡住了。⁣⁣⁣\n長輩想申請一台電梯，申請書卡在一個又一個政府網頁裡。⁣⁣⁣\n打 1999 想陳情街頭髒亂——連市政，也卡住了。⁣⁣⁣\n⠀⁣⁣⁣\n台北，是全台灣資源最多的城市。⁣⁣⁣\n可是住在這裡的人，共同的感覺卻是：卡住了。⁣⁣⁣\n⠀⁣⁣⁣\n這個市府不是沒做事。⁣⁣⁣\n樹生病了，就砍掉；淹水了，才發沙包；出了事，只會開罰單。⁣⁣⁣\n市政府，只剩下貼OK繃的能力。⁣⁣⁣\n⠀⁣⁣⁣\n可是台北需要的，從來不是OK繃。⁣⁣⁣\n⠀⁣⁣⁣\n決定參選以來，我分析了300萬筆的市民專線陳情資料，走遍台北12個行政區。⁣⁣⁣\n⁣⁣\n⁣今天，我把這些故事濃縮成五個問題。⁣⁣\n⁣⁣\n⁣⁣\n⇡ 空間 Habitat ⇡⁣⁣\n　\n台北，是不是越來越熱了？⁣⁣⁣\n台北的天際線，為什麼是鐵皮的顏色？⁣⁣⁣\n台北的山，明明那麼近，入口，為什麼感覺那麼遠？⁣⁣\n⁣⁣\n我要推動婚育宅、青年宅，⁣⁣⁣\n把台北的樹救回來，⁣⁣⁣\n兩河流域計畫，台北山徑計畫。⁣⁣⁣\n⠀⁣⁣⁣\n把空間，還給台北人。⁣⁣⁣\n⁣⁣\n⁣⁣\n⇡ 機會 Empower ⇡⁣⁣\n　\n⁣我想問年輕朋友們：⁣⁣⁣\n你有多久，沒有認真談過自己的夢想了？⁣⁣\n⁣⁣\n我要設立城市基金、擴大青年圓夢基金。⁣四十五歲以上的新創與轉職支持，台北，陪你跑。⁣⁣⁣\n⁣⁣\n把機會，還給台北人。⁣⁣⁣\n⁣⁣\n⁣\n⁣ ⇡ 陪伴 Accompany ⇡⁣⁣\n　\n⁣蔣市長上任的時候，承諾要幫老公寓裝電梯。⁣⁣⁣\n八萬多棟老公寓，申請的案件到去年底，⁣只有78件，連千分之一都不到。⁣⁣⁣\n⁣⁣\n那些申請文件掛在網路上，⁣⁣\n對阿公阿嬤來說，⁣⁣⁣\n比家裡那個樓梯，還要陡。⁣⁣⁣\n⠀⁣⁣⁣\n台北市的老宅延壽計畫，我會和中央全力合作，認真執行，⁣⁣⁣\n⁣⁣\n成立行動服務團，⁣⁣⁣\n把政府，送到長輩的家門口。⁣⁣⁣\n⁣⁣\n把陪伴，還給台北人。⁣⁣⁣\n⁣\n⁣\n⇡ 韌性 Resilience ⇡⁣⁣\n　\n有一位市民跟我說過一句話，我到現在都忘不掉。⁣⁣⁣\n⁣⁣\n他說：台北，屋老、設施老，管理的思維，更老。⁣⁣⁣可是台北，明明可以更好。\n　\n我要用都市設計，⁣⁣\n努力達成交通零死亡；⁣⁣⁣\n讓住宅扛得住下一場極端的雨；⁣⁣⁣\n　\n成立詐騙防治中心，⁣⁣\n擋住每一種新型的犯罪。⁣⁣⁣\n⁣\n把安心，還給台北人。⁣⁣\n⁣\n⁣\n⇡ 時間 Time ⇡⁣⁣⁣\n　\n一對責任制的夫妻，給我看他們的LINE。⁣每天最常出現的一句話，是「你幾點下班？」⁣⁣\n⁣⁣⁣\n為了喬：今天誰去接小孩。⁣⁣\n⁣⁣\n我的目標很具體：⁣⁣\n每一天，為台北人省下三十分鐘。\n家長喘息服務，⁣讓每個家長，每個禮拜，⁣至少有一段時間，可以完整地照顧自己。⁣⁣⁣\n⠀⁣⁣⁣\n把時間，還給台北人。⁣⁣⁣\n把驕傲，還給台北人。⁣\n⁣\n⁣⁣\n「空間。機會。陪伴。韌性。時間。」⁣⁣⁣\n⁣⁣\n這五個願景的英文，合起來，就是—HEART，心。⁣⁣⁣\n⁣⁣\n這顆心，要裝得下所有人。⁣⁣⁣\n裝得下每一個在這座城市裡，曾經覺得自己被漏掉的人。⁣⁣⁣\n⁣⁣\n一座城市的文明，不只看它對多數人多好，也要看它有沒有把少數人放在心上。⁣⁣⁣\n⁣⁣\n用心，城市就會順；⁣⁣\n順了，人就會留；⁣⁣\n人留下來，台北，就活起來。⁣⁣⁣\n⁣⁣\n有心就能做到，有愛就能做好！⁣⁣⁣\n⁣⁣⁣\n⁣⁣\n我是沈伯洋，⁣⁣⁣\n請讓我成為你的市長。⁣⁣⁣\n⁣⁣⁣\n⁣⁣⁣\n#台北順起來⁣⁣⁣\n#你的市長沈伯洋",
+      "topicScores": {
+        "交通": 0.9,
+        "住宅": 0.88,
+        "治安": 0.65,
+        "環境": 0.84
+      },
+      "topics": [
+        "交通",
+        "住宅",
+        "環境",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0LAhjgM9PZrdNoZLCDFgQKK85XDGVDEXHikYVQhETyzXYSCKTZokj12CuHnRiaci1l"
     },
     {
       "agendaRelevance": 0.28,

@@ -1,6 +1,40 @@
 {
-  "count": 229,
+  "count": 232,
   "posts": [
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "79872c223acfcef6305cc51de23c42a93346ebf32bb63a2b61fbb4f2f5c7f527",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1633374378144226",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/8d719db302950752ad07.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-11T11:08:37.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅表達感謝與請託支持，未回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "謝謝各位的認證！走遍高雄、聽進大家的聲音，也請放心把高雄交給我，我會一步一腳印，帶領高雄向前邁進。",
+      "topicScores": {
+        "生活": 0.72,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/27841692192151895/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "lai-jui-lung",
@@ -32,6 +66,72 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/Db5ch40H2L9"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "b29e212e6c1b73dc8fbd998e9692b4f53891598583765828b4d2b267cc354ac5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db5bCTMS6jg/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/da2f4d1c30f615f4521b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-11T11:08:09+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅表達感謝支持與參選意志，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "謝謝各位的認證！走遍高雄、聽進大家的聲音，也請放心把高雄交給我，我會一步一腳印，帶領高雄向前邁進。",
+      "topicScores": {
+        "生活": 0.52,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db5bCTMS6jg/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-12T04:04:49+00:00",
+        "inputHash": "12036e0857cb34daacc38d3046cc36e675f9fbc5f702ec3ca65a902dffa2c540",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1633016938179970",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3b291a672c4ff3d06a85.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-11T00:20:29.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述跑行程與互動心得，屬日常活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-fb",
+      "text": "簽到白牆，吃到檸檬塔，喝到「台灣的味道」，遇到可愛狗狗，還收到這麼多好朋友的鼓勵，簡直是太感動了，隆隆出任務，成功！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1589681832534527/"
     },
     {
       "agendaRelevance": 0.02,
