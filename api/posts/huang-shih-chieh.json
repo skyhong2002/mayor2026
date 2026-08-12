@@ -19,8 +19,42 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 226,
+  "count": 228,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "9ad02bdacb13291b4443a5602db60d0022ed39ae29e2aed6ac849d5e01de0e92",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-12T22:03:47+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db9BHQBk8w3",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/1e868831fb942b85200f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T20:25:58+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅見@帳號標記與問候，未見具體他方說法、也非答覆反駁。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:早安，清晨4:00的桃園漁市場🐟",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db9BHQBk8w3"
+    },
     {
       "agendaRelevance": 0.67,
       "candidateId": "huang-shih-chieh",
@@ -94,6 +128,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db7w1vBEwhZ"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "ac4ed9352db4e1e918c854af8af77d339266912b27f69704a8eabdf733a8cea4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7w0rkE2U6/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/443b16e186d8cf99f774.webp",
+      "keywords": [
+        "攤商"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T08:44:11+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "凌晨走訪市場並致意攤商，偏活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "明天凌晨4:00，動起來！漁市場、果菜市場接力走透透✨\n\n從新鮮漁貨到生鮮蔬果，凌晨時分正是市場最忙碌的時刻，也是許多攤商、工作夥伴一天開始打拚的時間！明天清晨，世杰和大家一起迎接桃園最早的活力💪🏻\n\n桃園漁市場、果菜市場見！心桃園，動起來💖",
+      "topicScores": {
+        "生活": 0.83,
+        "經濟": 0.55
+      },
+      "topics": [
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db7w0rkE2U6/"
     },
     {
       "agendaRelevance": 0.89,

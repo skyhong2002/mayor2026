@@ -19,8 +19,45 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 232,
+  "count": 233,
   "posts": [
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "0f04feec3c41ad26aab44d8f109d4709e258faf8c0e4965cfc1d40309d860fa8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db75KtjDXMZ/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3738d02036dcc22c5ec7.webp",
+      "keywords": [
+        "照顧",
+        "教育"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T09:57:55+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出孩童教育與長者照顧的政策訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "給孩子最好的教育，給長者最好的照顧和尊嚴，讓阿蓮人驕傲地說出「我阿蓮，我驕傲」。\n#廟卡那卡西 #高雄 #阿蓮 #柯志恩",
+      "topicScores": {
+        "教育": 0.76,
+        "社福": 0.94
+      },
+      "topics": [
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/Db75KtjDXMZ/"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ko-chih-en",

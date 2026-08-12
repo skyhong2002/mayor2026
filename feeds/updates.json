@@ -2,6 +2,42 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "9ad02bdacb13291b4443a5602db60d0022ed39ae29e2aed6ac849d5e01de0e92",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-12T22:03:47+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db9BHQBk8w3",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/1e868831fb942b85200f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-12T20:25:58+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅見@帳號標記與問候，未見具體他方說法、也非答覆反駁。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:早安，清晨4:00的桃園漁市場🐟",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db9BHQBk8w3"
+    },
+    {
       "agendaRelevance": 0.18,
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
@@ -38,6 +74,42 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db8TWlEDRVb"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "8abbdd6b18c108f19ac61b448352b65e3ec608f49b69a999616bd79d4c38bf33",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db8QvayJvoB/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1b923a5f48b2e45b0f63.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T13:45:07+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "夜市拜訪與見面活動公告，未回應特定說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "和巧慧一起逛夜市！\n\n就在明天晚上，我將前往三重 #三和夜市 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00 \n📍三重三和夜市（三重區重新路一段89號）",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "生活": 0.7
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db8QvayJvoB/"
     },
     {
       "agendaRelevance": 0.12,
@@ -110,6 +182,48 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/Db8Gm8imUbb"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "7a4c3137ea5fc6a1d0fb6d25b08b2b5b6ac7ccdcfb23401233d8013db824b30e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db8FvQACb2R/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/17148b5a9ea502e1894f.webp",
+      "keywords": [
+        "教育",
+        "學校",
+        "校園",
+        "產業",
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T11:46:57+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確提出教育政策主張與施政作法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "巧慧挺 #教育！串連 #產學資源 做新北師生最強後盾💪🏻\n\n① 結合山海城鄉特色與資源，推動「全國遊學團」，深化適性教育\n\n② 對接產業界，升級軟硬體、強化AI技職課程，畢業就能接軌職場\n\n③ 串連產學資源，偏遠學校轉型實驗學校、樂齡教室，促使校園與社區共榮發展\n\n④ 補足輔導資源，簡化行政程序，減輕第一線負擔\n\n⑤ 校園事件分流，成立「專責辦公室」，確保調查專業，強化親師溝通與互信\n\n⑥ 加碼補助食安設備、推動食農教育，讓孩子吃得新鮮健康，同時培養土地認同\n\n我當市長，不僅要讓每一位孩子適性發展，也會充分支持老師及家長。串連學校、產業與社區資源，我會是大家的最強後盾！\n\n#新時代 #新市長 #蘇巧慧",
+      "topicScores": {
+        "教育": 0.97,
+        "經濟": 0.68
+      },
+      "topics": [
+        "教育",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db8FvQACb2R/"
     },
     {
       "agendaRelevance": 0.67,
@@ -193,6 +307,45 @@
       "url": "https://www.threads.com/t/Db79gf5Cb-t"
     },
     {
+      "agendaRelevance": 0.7,
+      "candidateId": "ko-chih-en",
+      "candidate_id": "ko-chih-en",
+      "candidate_name": "柯志恩",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "0f04feec3c41ad26aab44d8f109d4709e258faf8c0e4965cfc1d40309d860fa8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db75KtjDXMZ/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3738d02036dcc22c5ec7.webp",
+      "keywords": [
+        "照顧",
+        "教育"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T09:57:55+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出孩童教育與長者照顧的政策訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-ig",
+      "text": "給孩子最好的教育，給長者最好的照顧和尊嚴，讓阿蓮人驕傲地說出「我阿蓮，我驕傲」。\n#廟卡那卡西 #高雄 #阿蓮 #柯志恩",
+      "topicScores": {
+        "教育": 0.76,
+        "社福": 0.94
+      },
+      "topics": [
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/Db75KtjDXMZ/"
+    },
+    {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "candidate_id": "hsieh-lung-chieh",
@@ -231,6 +384,42 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/Db72LeNkXkq"
+    },
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "hsieh-lung-chieh",
+      "candidate_id": "hsieh-lung-chieh",
+      "candidate_name": "謝龍介",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "aafcf119ae6af5dbfb078135c135fd98129de60aed8c79dc39a8485f6614b05c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db72EQtSraE/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/23a7d25397b3f7be863d.webp",
+      "keywords": [
+        "疫苗"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T09:30:19+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "以疫苗與死亡指控民進黨，屬政治攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
+      "topicScores": {
+        "醫療": 0.84
+      },
+      "topics": [
+        "醫療"
+      ],
+      "url": "https://www.instagram.com/p/Db72EQtSraE/"
     },
     {
       "agendaRelevance": 0.12,
@@ -277,6 +466,44 @@
       "url": "https://www.threads.com/t/Db7zOHQkwJB"
     },
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "b06c682189da8b77fc39b158950b86956106062081b04eae070d3654511e2e96",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7zKE3SR-r/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d570adb5f51072c5d557.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T09:04:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是活動公告與交通資訊，無回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "這個週六，歡迎大家一起來 #台灣好生活！⁣\n⁣\n行政院秘書長 #張惇涵 X 文化部部長 #李遠⁣\n沈伯洋也會在現場和大家見面！⁣\n⁣\n➡️時間：08/15(六) 13:30開始報到 14:00正式開始⁣\n➡️地點：臺大醫院國際會議中心(台北市中正區徐州路2號)⁣\n➡️無需另外報名⁣\n⁣\n⁣\n➡️交通建議：⁣\n＊「捷運」：捷運淡水信義線（紅線） 至「台大醫院站」2號出口，直走常德街，穿越中山南路後左轉直走，再右轉徐州路，步行約6至10分鐘可達。⁣\n⁣\n＊「捷運」：板南線（藍線）： 至「善導寺站」2號出口，沿林森南路往南走，遇徐州路右轉，步行約7至10分鐘可達。⁣\n⁣\n＊「公車」：公車仁愛林森路口站： 可搭乘 245、261、270、630、651 等路線，下車後步行約3至5分鐘即可抵達。⁣\n⁣\n＊「自行開車」：地下室（B2~B3）設有收費停車場。因車位有限停滿為止，建議多加利用大眾運輸工具。",
+      "topicScores": {
+        "文化觀光": 0.97,
+        "生活": 0.75
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db7zKE3SR-r/"
+    },
+    {
       "agendaRelevance": 0.14,
       "candidateId": "huang-shih-chieh",
       "candidate_id": "huang-shih-chieh",
@@ -315,6 +542,161 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db7w1vBEwhZ"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "ac4ed9352db4e1e918c854af8af77d339266912b27f69704a8eabdf733a8cea4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7w0rkE2U6/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/443b16e186d8cf99f774.webp",
+      "keywords": [
+        "攤商"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T08:44:11+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "凌晨走訪市場並致意攤商，偏活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "明天凌晨4:00，動起來！漁市場、果菜市場接力走透透✨\n\n從新鮮漁貨到生鮮蔬果，凌晨時分正是市場最忙碌的時刻，也是許多攤商、工作夥伴一天開始打拚的時間！明天清晨，世杰和大家一起迎接桃園最早的活力💪🏻\n\n桃園漁市場、果菜市場見！心桃園，動起來💖",
+      "topicScores": {
+        "生活": 0.83,
+        "經濟": 0.55
+      },
+      "topics": [
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db7w0rkE2U6/"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "chiang-chi-chen",
+      "candidate_id": "chiang-chi-chen",
+      "candidate_name": "江啟臣",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "ede627a27e3b35e7a9b089be5b64c5ee7f17d6d176a60494b8e878d4fa4f1ff7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7u8ifICSn/",
+      "imageAspect": 1.5059,
+      "imageUrl": "assets/feed-images/d076e370ae90e0db292f.webp",
+      "keywords": [
+        "交通",
+        "捷運",
+        "機場",
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T08:27:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "聚焦捷運建設與交通路網擴充，政策性高。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "盧市長開工，我們全力完工！臺中捷運多線齊發🚀今天 #臺中捷運藍線BC11標 正式動工！ 藍線全長25公里，是貫穿海線與市中心最關鍵的黃金大動脈。\n\n盧秀燕市長為地方開啟了第一步，未來啟臣一定會全力爭取補助資源，減輕臺中自籌負擔，並督促工程團隊 #安全第一 #品質至上 ，加速把藍線如期如質完工！\n隨著臺中人口突破286萬，啟臣將持續落實 #打造20分鐘生活圈。不只要力拚藍線通車，更要推動 #山城延伸紅線、 #機場捷運橘線、#屯區環狀紫線 等 #多線齊發，搭配AI智慧交通與快捷轉乘，無縫串聯山海屯城，攜手讓臺中邁向國際旗艦城💪✨\n\n#臺中啟程 #打造旗艦城 #臺中Way #臺中捷運藍線 #多線齊發 #20分鐘生活圈 #幸福臺中啟程國際",
+      "topicScores": {
+        "交通": 0.99,
+        "經濟": 0.69
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/Db7u8ifICSn/"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "chiang-chi-chen",
+      "candidate_id": "chiang-chi-chen",
+      "candidate_name": "江啟臣",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "6579254606916b3eccb6a517628aff43f14619d78dfbf6c5592472b8908e9b59",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7lba9IBtP/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/30a64a9f4a2eb7a8748d.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T07:04:37+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張道路完工、連結新社與觀光效益，屬建設政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "東豐快第三標工程正式合龍，山城鄉親盼望超過20年的 #生命救援線 ，已進入通車倒數！東勢至石岡段預計今年10月完工、11月舉辦路跑體驗、12月正式通車 ；隧道與國道4號立交共構的全線工程，我也會持續督促相關單位，鎖定118年底完工通車的目標全力推進。\n\n過去因政策變動導致工程延宕近十年，但「有心推動，就有方法可以解決」。我們成功向中央爭取經費補助，為臺中市減輕了三分之二的財政負擔，讓工程得以順利邁進。\n\n東豐快不僅是大臺中 #四環一線 高快速路網的最後拼圖，全線通車更只是階段性目標。為了讓經費發揮極致效益，我已要求同步規劃 #連結至新社 ，通車後將可縮短山城往來市區10至20分鐘車程，為在地農業與觀光注入強心針。\n\n未來我會在中央繼續緊盯進度、爭取資源，督促工程務必 #如期如質 完工，早日將這條安全、便捷的回家路交到大家手中！\n\n#東豐快 #臺中啟程 #打造旗艦城 #高快速路網 #四環ㄧ線幸福連線",
+      "topicScores": {
+        "交通": 0.99,
+        "文化觀光": 0.56,
+        "經濟": 0.7
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Db7lba9IBtP/"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "e1924011511a6f47590a40b12e10e5658e07b737dfc9e69422fad5701e720e22",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7gkjDSDZG/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/95604782ce06528e4128.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T06:22:15+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "邀約逛市場吃美食，屬生活與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "你的東門市場必吃清單有哪些？歡迎留言告訴我，或是，明天早上一起去吃吧！⁣\n⁣\n8/13（四）⁣\n⁣\n09:30\n📍東門市場+外攤",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "生活": 0.65
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db7gkjDSDZG/"
     },
     {
       "agendaRelevance": 0.08,
@@ -398,6 +780,93 @@
       "url": "https://www.threads.com/t/Db7gO1vjJD-"
     },
     {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "dcc7517a4c64a9d1f2ec72198dd7517d5620e628db275738efa4a0e0373d8ffd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7gLyASqta/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/296e76a790a2f099d3c9.webp",
+      "keywords": [
+        "敬老",
+        "社會福利",
+        "補助",
+        "照顧",
+        "營養午餐"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T06:19:48+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主打社福與教育福利政見，屬明確施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "盧秀燕做半套的社會福利，就交給何欣純來完成！\n\n不論是學生營養午餐升級、敬老愛心卡加碼、生育補助加倍或是成立青年局，台中市民每個人生階段，我都已經規劃好相應的福利政策。\n\n台中市民值得更好的照顧，也值得一位真正願意兌現承諾的「欣」市長！",
+      "topicScores": {
+        "教育": 0.72,
+        "社福": 0.98
+      },
+      "topics": [
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/Db7gLyASqta/"
+    },
+    {
+      "agendaRelevance": 0.97,
+      "candidateId": "chang-san-cheng",
+      "candidate_id": "chang-san-cheng",
+      "candidate_name": "張善政",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "28c2b55599d384628faaceb0e9a855348f7ca693a72285af030401ebcf24678b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7Zur0wZb7/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/96457d0439468be7e3dd.webp",
+      "keywords": [
+        "教育",
+        "校園",
+        "幼兒園",
+        "營養午餐",
+        "國中",
+        "教師",
+        "補助",
+        "照顧"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T05:22:37+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動公布鮮乳與午餐補助等教育福利政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-ig",
+      "text": "從孩子到老師，桃園持續把教育做得更好\n\n每到開學前夕，除了家長忙著準備新學期，市府也持續檢視校園各項需求，從孩子的學習與營養，到第一線教師的工作支持，一項一項做好準備。\n\n上任以來，我們陸續推動代理教師全聘期、國中小免費營養午餐，以及今年新學期全面上路的免費教科書政策。\n\n從115學年度起，桃園再推出兩項教育福利：\n\n第一，#生生喝鮮乳 擴大至國中生\n桃園自今年2月起推動「生生喝鮮乳」，提供全市2至12歲孩子每週領取鮮乳或豆漿，目前領取率已達七成。\n\n考量國中也是孩子成長發育的重要階段，政策將再擴大至全市約6萬7千名國中生。屆時，全桃園每週可持數位學生證靠卡領取鮮乳或豆漿的孩子將超過28萬人，讓營養照顧從幼兒園一路延伸到國中。\n\n第二，#免費營養午餐 全面支持導師與午餐秘書\n桃園領先六都推動國中小免費營養午餐已逾三年。午餐時間，導師與午餐秘書除了陪伴孩子用餐，也要協助打飯、維持秩序、照顧孩子，這同樣是教育工作的一環。\n\n因此，市府將全額補助全市7,465位公私立國中小班級導師及午餐秘書的餐費，減輕老師負擔，也肯定第一線教育夥伴的付出。\n\n開學在即，我們會繼續把孩子和老師的需求放在心上，孩子安心學習、家長放心，老師也能更專心投入教育工作。",
+      "topicScores": {
+        "教育": 0.99,
+        "社福": 0.79
+      },
+      "topics": [
+        "教育",
+        "社福"
+      ],
+      "url": "https://www.instagram.com/p/Db7Zur0wZb7/"
+    },
+    {
       "agendaRelevance": 0.1,
       "candidateId": "su-chiaohui",
       "candidate_id": "su-chiaohui",
@@ -436,6 +905,44 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db7Wy9Jkq0S"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "b1924b59cd21e7e5a752c22b7178838fd3be6dc8edfb6065e2779ebb59176802",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db7WX_XpK79/",
+      "imageAspect": 0.5622,
+      "imageUrl": "assets/feed-images/22ac670ed720abe11873.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T04:53:34+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹三鶯線沿線美食旅遊，屬行銷活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "今天要由蘇巧慧三個發言人來開箱 #蘇巧慧三鶯線口袋美食\n\n歡迎大家一起搭上三鶯線，從三峽玩到鶯歌，跟著我們的路線吃喝玩樂，感受的在地的迷人魅力❤️\n\n片尾還有彩蛋唷！",
+      "topicScores": {
+        "文化觀光": 0.92,
+        "生活": 0.56
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db7WX_XpK79/"
     },
     {
       "agendaRelevance": 0.89,
@@ -3495,498 +4002,6 @@
         "治安"
       ],
       "url": "https://www.facebook.com/94achun/posts/pfbid0ew6AQRv2BHfvXZ59m9bUrDvSWii8JLchsCtUSFQGNYo15iGZvbYS7m9XrRk13tfnl"
-    },
-    {
-      "agendaRelevance": 0.9,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "1b7347bfc880240de79eb96bbfcf29854d2e02b335f230cab8a65fd87951d146",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2ybuiid1_",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/4dbff8b49d8fa81f574e.webp",
-      "keywords": [
-        "教育",
-        "教師"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-10T10:22:01+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動對教育團體提出政見與承諾，屬競選式教育主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:教師是夥伴！攜手打造高雄優質教育環境。\n\n今天「高雄市教育產業工會」何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！",
-      "topicScores": {
-        "教育": 0.98,
-        "競選": 0.86
-      },
-      "topics": [
-        "教育",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db2ybuiid1_"
-    },
-    {
-      "agendaRelevance": 0.76,
-      "candidateId": "lai-jui-lung",
-      "candidate_id": "lai-jui-lung",
-      "candidate_name": "賴瑞隆",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "3cb419d46ce3c25a9effdcafc96d90a052767febb7b630a043b45384bccfc995",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1632498351565162",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/c57fbc71e6f7e0ae85bd.webp",
-      "keywords": [
-        "淹水",
-        "環境",
-        "治水",
-        "觀光"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T10:21:36.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "談抽水站完工、治水經費與提升旗津排水及環境。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-fb",
-      "text": "中洲漁港抽水站完工！\n市民關心的事，我全力以赴！\n\n上午收到郭美伶里長傳來的影片，中洲漁港抽水站已順利完工，並在大潮期間實際啟動抽水、發揮功能，有效提升排水能力，改善過去容易積淹水的問題。\n\n為了讓鄉親住得更安心，先前我向中央積極爭取2.7億元治水經費，持續強化地方排水韌性；同時結合4.7億元「旗津領航計畫」，從基礎建設到觀光環境，一步一步讓旗津變得更好。\n\n未來，我會繼續和大家站在一起，繼續打拼，把旗津顧好、把高雄顧好！",
-      "topicScores": {
-        "住宅": 0.74,
-        "文化觀光": 0.61,
-        "環境": 0.88,
-        "防災": 0.98
-      },
-      "topics": [
-        "防災",
-        "環境",
-        "住宅",
-        "文化觀光"
-      ],
-      "url": "https://www.facebook.com/zenolai2/posts/pfbid0QBYAwxxhAr4GwHeqxr2XB9o4Wfp9b4311ZcoBC8b9kTd7iYjhedrbxXDjmfMxESQl"
-    },
-    {
-      "agendaRelevance": 0.93,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "ae4717a06c381e4d36c57386ff1ab6c2fbcb1de4b4921a4ffc214736ec46e4cc",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db2xvC-E-nf/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/6a8795e7f740bffb48c3.webp",
-      "keywords": [
-        "教育",
-        "學校",
-        "校園",
-        "課後",
-        "教師"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-10T10:15:57+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動提出教育承諾與多項教育政見，屬明確施政主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "教師是夥伴！攜手打造高雄優質教育環境。\n\n今天 #高雄市教育產業工會 何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！\n\n對於「增聘教師助理員與學生助理員」，因涉及組織編制、定位與財務核銷的複雜性，必須由教育局與財主單位研議後再與工會溝通，不能流於口號；但針對專業「心理師、社工師」的補足，此攸關學生輔導強化，必積極推動！\n\n近日傳出特教生攻擊老師事件，突顯特教助理員欠缺、寒暑假空窗期、身障課後照顧班人力與鐘點費過低等困境，尤其「普特融合」不能只靠第一線教師單打獨鬥。未來必須補足第一線防護與人力、健全校園安全配套，並合理編列學校基礎設施維修預算（如老舊監視器與設備更新），讓學校有能力、安全地照顧每一個孩子。\n\n教育不能靠華而不實的政見包裝或口號，高雄的孩子需要的是扎實的競爭力！未來教育局將是隨時為教師服務、聽取第一線聲音的最佳溝通窗口。讓我們一起翻轉高雄教育，為下一代打造更好的學習環境！\n\n希望高雄教育更好的家長和老師、校長，請相信並支持 #柯志恩 !",
-      "topicScores": {
-        "教育": 0.98,
-        "治安": 0.5
-      },
-      "topics": [
-        "教育",
-        "治安"
-      ],
-      "url": "https://www.instagram.com/p/Db2xvC-E-nf/"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "2f4ea9e99987d20a367bdc3ba9d8e45b85004f6962fb0e2e3ebd4b38082f9f88",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1610787350401645",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/35122a18a54ee0223633.webp",
-      "keywords": [
-        "教育",
-        "學校",
-        "校園",
-        "課後",
-        "教師"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T10:15:50.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "回應教育工會訴求並提出多項教育政策方向。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "教師是夥伴！攜手打造高雄優質教育環境。\n\n今天 #高雄市教育產業工會 何耿旭理事長及15位核心幹部來訪，同時邀請我簽署教育承諾書，面對高教產的六大教育訴求，我秉持「政治需要真誠，政策更需要務實」的態度，絕不亂開空頭支票，但一定盡最大努力和誠意，實現我的教育政策，讓高雄成為六都中的教育示範城市!\n\n關於工會提出包括「逐年降低班級人數」、「建置第三方公正調處機制以減少親師內耗」、「力行行政減量與研議調降授課節數」、「調降特教生師比」，以及每年定期召開「教育圓桌會議」等訴求，這些理念與我的教育政見方向完全一致。若能當選高雄市長，必大幅增加教育支出，逐步推進落實！\n\n對於「增聘教師助理員與學生助理員」，因涉及組織編制、定位與財務核銷的複雜性，必須由教育局與財主單位研議後再與工會溝通，不能流於口號；但針對專業「心理師、社工師」的補足，此攸關學生輔導強化，必積極推動！\n\n近日傳出特教生攻擊老師事件，突顯特教助理員欠缺、寒暑假空窗期、身障課後照顧班人力與鐘點費過低等困境，尤其「普特融合」不能只靠第一線教師單打獨鬥。未來必須補足第一線防護與人力、健全校園安全配套，並合理編列學校基礎設施維修預算（如老舊監視器與設備更新），讓學校有能力、安全地照顧每一個孩子。\n\n#教育 不能靠華而不實的政見包裝或口號，高雄的孩子需要的是扎實的競爭力！未來教育局將是隨時為教師服務、聽取第一線聲音的最佳溝通窗口。讓我們一起翻轉高雄教育，為下一代打造更好的學習環境！\n\n希望高雄教育更好的家長和老師、校長，請相信並支持 #柯志恩 !",
-      "topicScores": {
-        "教育": 0.99,
-        "治安": 0.57
-      },
-      "topics": [
-        "教育",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/KoChihEn/posts/pfbid075FknXSS1NGb2Zbju95MENu214kpzWCKh1oHeFbWDG7zw4q85ziDykHuXDf3b8SAl"
-    },
-    {
-      "agendaRelevance": 0.26,
-      "candidateId": "shen-poyang",
-      "candidate_id": "shen-poyang",
-      "candidate_name": "沈伯洋",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "917da263153bab80e48e91c5e0291e31898237cb80ced513439d347868a531ba",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:122109067809329310",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/6fbb003c68f816dbcc8d.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T10:02:14.000Z",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "介紹青年參政者，重點在人物造勢與選舉布局。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "郭凡 才 26 歲，他是典型的青年返鄉參政，也是苗栗客庄人，留學後返台累積幕僚歷練，現在自己進廚房！",
-      "topicScores": {
-        "生活": 0.61,
-        "競選": 0.94
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1523488099004270/"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "1c18a9ba771415ef58405b1291fd496442c1db43794344cc498abe0aa497aaaf",
-        "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-08-10T16:38:38+00:00",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1627111488770433",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/1edf26b7baaf1465616a.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T09:32:36.000Z",
-      "postingIntent": {
-        "confidence": 0.92,
-        "label": "主動發文",
-        "reason": "僅見標題轉述與政見陳述，未辨識明確他方主張供回應。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "網友直球對決：憑什麼當臺南市長…龍介拋三大市政目標",
-      "topicScores": {
-        "競選": 0.96
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.facebook.com/reel/1829842265049695/"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "51c55db65ba9cc1481f2abb8f54144460aa522f6c84e8396b458d89e62d210c1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2sbntkTRl",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/b60f86201476d19e1dd5.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-10T09:29:36+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "僅呈現競選標題，非回應特定對象的說法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
-      "topicScores": {
-        "競選": 0.95
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db2sbntkTRl"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "hsieh-lung-chieh",
-      "candidate_id": "hsieh-lung-chieh",
-      "candidate_name": "謝龍介",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "fe3f2db55dc3883d7728fdfd3dd87a7ec1875e7d326d1cc7aa1ee4c434a0f487",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db2sQ_XSie2/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/dcc27fb46eda9b7aa00b.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-10T09:28:42+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "標題僅是競選式市長宣傳，未見回應他人具體觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "網友直球對決：憑什麼當臺南市長龍介拋三大市政目標",
-      "topicScores": {
-        "生活": 0.32,
-        "競選": 0.95,
-        "經濟": 0.34
-      },
-      "topics": [
-        "競選",
-        "經濟",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Db2sQ_XSie2/"
-    },
-    {
-      "agendaRelevance": 0.55,
-      "candidateId": "ko-chih-en",
-      "candidate_id": "ko-chih-en",
-      "candidate_name": "柯志恩",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "f541d71bf0d7311375977161ee21127f19dd75c97cdfacfd8a24d24aca0ce65f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2r90Zid_c",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/59340c6ff66a7edf3306.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-10T09:25:30+00:00",
-      "postingIntent": {
-        "confidence": 0.9,
-        "label": "主動發文",
-        "reason": "僅有口號式標語，未見具體政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:捍衛教拳👊🏻",
-      "topicScores": {
-        "教育": 0.77,
-        "競選": 0.74
-      },
-      "topics": [
-        "教育",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db2r90Zid_c"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "b88b7ff9cbb709e5e4eff9e8070289cc4524189fcfb405553f56b6f22459d181",
-        "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-08-10T16:38:38+00:00",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db2pY0eDR25",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/9ef126455b986f209941.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-10T09:03:29+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "僅見自述與情緒，無他方具體主張，非回應他人觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:孩子哭著問：\n媽媽為什麼都不來看我？\n\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。",
-      "topicScores": {
-        "生活": 0.7,
-        "社福": 0.91
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db2pY0eDR25"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "374872ca9d630f2ea60bea5b8a76b8304ee0dcf46a20ec4dc357ee604e8bad09",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db2pVNuyNZG/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/2b922e0ad65088c8300a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-10T09:03:13+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "談母子關係與陪伴孩子，屬家庭生活與情感分享。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-ig",
-      "text": "孩子哭著問：\n媽媽為什麼都不來看我？\n\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。\n\n多撥出時間陪伴孩子，我們一起成長，謝謝孩子！",
-      "topicScores": {
-        "生活": 0.72,
-        "社福": 0.92
-      },
-      "topics": [
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Db2pVNuyNZG/"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "ho-hsin-chun",
-      "candidate_id": "ho-hsin-chun",
-      "candidate_name": "何欣純",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "78fb1760b929481a1b4cb648ad4a02f902af042ee66511548718e678b9375e15",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1653606356128772",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/e8fd1a585480cd279fee.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T08:57:51.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "談母子陪伴與親子關係，屬家庭生活與社福情境。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-fb",
-      "text": "孩子哭著問：\n媽媽為什麼都不來看我？\n我知道媽媽跟我不親的那個情景，如果又重現的話，我會非常傷心難過。\n多撥出時間陪伴孩子，我們一起成長，謝謝孩子！",
-      "topicScores": {
-        "社福": 0.98
-      },
-      "topics": [
-        "社福"
-      ],
-      "url": "https://www.facebook.com/reel/27357923633886634/"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "lee-shih-chuan",
-      "candidate_id": "lee-shih-chuan",
-      "candidate_name": "李四川",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "ffa9ca60a6b96de85469686b29efe894b0086668c20650be4fb461a153776e03",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1607673234303264",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/2bd3246db7ec3b007abc.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-10T08:48:35.000Z",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "簡短勉勵學弟，屬日常感性發文，無公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "他沒來，課本來了。\n這條路我走過。剩下的，換你走。加油，學弟。",
-      "topicScores": {
-        "教育": 0.55,
-        "生活": 0.84
-      },
-      "topics": [
-        "生活",
-        "教育"
-      ],
-      "url": "https://www.facebook.com/reel/1380935840507074/"
     }
   ],
   "title": "2026 市長官方來源觀測站",

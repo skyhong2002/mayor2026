@@ -1,5 +1,5 @@
 {
-  "count": 245,
+  "count": 246,
   "posts": [
     {
       "agendaRelevance": 0.28,
@@ -38,6 +38,40 @@
         "治安"
       ],
       "url": "https://www.threads.com/t/Db72LeNkXkq"
+    },
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-12T22:03:34+00:00",
+        "inputHash": "aafcf119ae6af5dbfb078135c135fd98129de60aed8c79dc39a8485f6614b05c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db72EQtSraE/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/23a7d25397b3f7be863d.webp",
+      "keywords": [
+        "疫苗"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-12T09:30:19+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "以疫苗與死亡指控民進黨，屬政治攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
+      "topicScores": {
+        "醫療": 0.84
+      },
+      "topics": [
+        "醫療"
+      ],
+      "url": "https://www.instagram.com/p/Db72EQtSraE/"
     },
     {
       "agendaRelevance": 0.68,
