@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 233,
+  "count": 234,
   "posts": [
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-13T04:00:52+00:00",
+        "inputHash": "1817faab0bbdd0f532cb9a66f9342183560ccf71db5e9002c6f3949ef7b8c380",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db9h7CQH6UW",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/89b8298eab15f6729ea6.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T01:12:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以總統市長推薦賴瑞隆為主，明顯屬競選造勢。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:@william_chingte 賴清德總統、 @chenchimai 陳其邁市長真情推薦！高雄下一棒，賴瑞隆準備好了💪\n\n#南方崛起邁向國際",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Db9h7CQH6UW"
+    },
     {
       "agendaRelevance": 0.88,
       "candidateId": "lai-jui-lung",

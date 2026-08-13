@@ -19,8 +19,45 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 244,
+  "count": 246,
   "posts": [
+    {
+      "agendaRelevance": 0.21,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T04:00:52+00:00",
+        "inputHash": "3c5e6b5b295afc6c40dc522ae4453dcc6e958c80dbb483dcf778bdb7747dd176",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db9dsSDmRnH",
+      "imageAspect": 0.7129,
+      "imageUrl": "assets/feed-images/d1e28a4cb3c84251657d.webp",
+      "keywords": [
+        "表演",
+        "觀光"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-13T00:35:28+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "公告週末親子活動資訊，屬活動宣傳與生活資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:想問問大家，本週六日有空嗎？\n\n這個週末，兩場親子活動接力登場！不論是玩水消暑、親子遊戲，還是精彩表演，都幫大家準備好了，趕快揪親朋好友一起來玩！\n\n🎪 親子童樂列車－夏日沁涼水派對\n▪️日期：2026年8月15日（六） \n▪️地點：水安宮前廣場（台中市南屯區文心路一段515號）\n\n🎪 鼓動台中親子嘉年華－九天民俗技藝團\n▪️日期：2026年8月16日（日）\n▪️地點：烏日啤酒觀光工廠（烏日區光日路與大同路口）\n\n歡迎大小朋友一起來，留下屬於夏天的快樂回憶！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "生活": 0.62
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db9dsSDmRnH"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "ho-hsin-chun",
@@ -8872,6 +8909,40 @@
         "議會監督"
       ],
       "url": "https://www.youtube.com/shorts/vLl42sUYlWY"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T04:00:52+00:00",
+        "inputHash": "ae28818be3bd6390a70144684bd0d4d4d78197a56bec3636bb3a46d925a6d8d6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ILOGJRFCD2I",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6c42ae9dadfed7d2ac06.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "談陪孩子玩與特色公園，屬一般生活與親子內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "陪孩子玩再久也願意！台中需要更多特色公園 讓孩子開心放電",
+      "topicScores": {
+        "住宅": 0.11,
+        "生活": 0.92
+      },
+      "topics": [
+        "生活",
+        "住宅"
+      ],
+      "url": "https://www.youtube.com/shorts/ILOGJRFCD2I"
     }
   ],
   "version": 1
