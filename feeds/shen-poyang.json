@@ -1,6 +1,115 @@
 {
-  "count": 250,
+  "count": 258,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "7ffa537798c24f7cd42930f2ce07617903cfecd6283dc7e1cf41c4dcd8995b50",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db--aNBFA00",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/2a67d7b90418b90b72c8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T14:40:35+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是零食會與見面活動心得，屬競選互動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:今天突然被Q\n唱了好幾首歌\n⠀\n今天晚上的零食會\n北高連線大成功！\n⠀\n謝謝來到現場的朋友們\n實體見到大家真的超開心\n零食會好久沒有實體活動了\n是我今天的充電行程！",
+      "topicScores": {
+        "文化觀光": 0.18,
+        "生活": 0.15,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db--aNBFA00"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "49033dbcc8f78f25b248f4a5237188304d782507644ba30393444d6d555d3994",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109404295329310",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/7bf994728612176ffc1c.webp",
+      "keywords": [
+        "租金",
+        "攤商"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T13:10:49.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "討論市場改建與攤商搬遷影響，屬地方民生議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "東門市場陪著台北人近百年。\n⠀\n參選前我就常來這裡買菜。再走進市場，除了熟悉的味道，也來聽聽攤商對改建、中繼市場最實際的擔心。\n⠀\n接下來約有45攤要陸續進駐中繼市場，交通貨運動線、店家位置、客流是否影響，都要先規劃好。\n⠀\n而裝修、搬遷造成的營業影響，市府要合理協助；未來新市場的配攤、租金、動線規劃，以及原攤商如何回來，更要說清楚，不能再發生大龍市場改建完產生的人潮斷流等問題。\n⠀\n城市要更新，但也把最珍貴的東西好好保存。\n⠀\n我希望能讓老店撐得過中繼期、回得了新市場，也讓東門市場熟悉的味道和人情味，繼續留在台北。\n⠀\n謝謝今天陪我走市場的台北隊夥伴，王閔生 台北市議員、簡舒培、市議員 劉耀仁、洪婉臻議員；劉品妡、馬郁雯 Wendy、中正‧萬華 張銘祐議員參選人，里長、自治會、攤商和每一位停下來跟我說話的朋友。\n⠀\n市場裡每一句話、每一個問題，都是未來市政不能漏掉的事。",
+      "topicScores": {
+        "住宅": 0.42,
+        "生活": 0.84,
+        "經濟": 0.31
+      },
+      "topics": [
+        "生活",
+        "住宅",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid034xin5dPNsKPQwhh8VSxYnFrTmwPzn3EKj5JUFxPGQda7pPPAaAHedgpcwZMu3dnwl"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "3df90233a8b2ee1618b161dc0e7cc6bcc5181a5c5940e5e8c18df085802defc7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109394893329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/15ad350f3b295cf8842a.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T11:03:27.000Z",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "僅稱讚議員擅長找市政問題，沒有具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "說到挖掘市政問題，很多人會想到資深又可靠的簡舒培議員。我們會一起努力，找回記憶中充滿人情味的老台北！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "生活": 0.56
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/2104975343439012/"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
@@ -34,6 +143,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db-YM_mFDc-"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "af44168d89a6e270e2b562d36355f55ab5c87b472d9f15b299ac7d1ad6389c96",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db-Xf4ryebo/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2549ee11153b611cb55b.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-13T09:02:35+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅分享家人逛文博的日常，無公共政策或回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "上禮拜難得抓到空檔，一家人一起去文博逛逛～",
+      "topicScores": {
+        "文化觀光": 0.98,
+        "生活": 0.92
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db-Xf4ryebo/"
     },
     {
       "agendaRelevance": 0.12,
@@ -72,6 +215,111 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db-KFUGFCRB"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "b05c769e1b1749f9bde97d8d776a6812363dd7ae63e3ea2a676456f1052a6f97",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db-KBYNyYOi/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ea7ab2284b47f6996c08.webp",
+      "keywords": [
+        "表演",
+        "運動"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-13T07:03:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主打掃街與活動行程，屬競選宣傳非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "明天，伯洋將出沒天母及榮星花園。\n一起來開啟這個週末吧！\n⠀\n8/14（五）\n07:00\n📍天母運動公園\n⠀\n19:00\n📍顏若芳議員—火之星火舞表演",
+      "topicScores": {
+        "文化觀光": 0.26,
+        "競選": 0.98,
+        "體育": 0.22
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "體育"
+      ],
+      "url": "https://www.instagram.com/p/Db-KBYNyYOi/"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "13bd9f6b65fe2d5725d24b615255c33520c78e5ac1681ebdd17a9670b8bc56f9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109374769329310",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4f7974304d1efc8fe4cc.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T07:02:21.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "公告週末行程與造勢活動，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "明天，伯洋將出沒天母及榮星花園。\n一起來開啟這個週末吧！\n⠀\n8/14（五）\n07:00\n📍天母運動公園\n⠀\n19:00\n📍顏若芳議員—火之星火舞表演",
+      "topicScores": {
+        "生活": 0.4,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02D1V9f42J9mTTTZTQNrbWVXjXmQ6d5nwAS6RJjno3zwt5rwfb3ixnYX6h8ZURm8hql"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "7507f77f62e05f749338bb2cb6396dd2ef7f7b5397c16382a762dedd932cf91e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175463702835654",
+      "imageAspect": 1.7771,
+      "imageUrl": "assets/feed-images/dc9f918558238425e1b1.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T05:42:51.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "描述市場掃街與與民互動，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "參選前\n我和家人就很常來東門市場\n買丸仔或蛤仔\n最常的就是跟爸爸一起吃\n羅媽媽米粉湯\n\n現在再走進來\n買菜變成掃街\n用不同的身分\n走進同一個熟悉的市場\n感覺真的十分特別\n\n早上一掃就掃了三個小時\n一路被餵食、收到鳳梨、\n新住民老闆娘\n拉著我合照、簽名\n真的謝謝大家今天的熱情！\n\n我應該過幾天又會去買菜了XD",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid034S9Ctt4UvfsykMPWrMSdmD2XQzfwX5mwvu1DNkvCbdnMosVRMxJHvLicLK4jTsNbl"
     },
     {
       "agendaRelevance": 0.08,
@@ -8996,6 +9244,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/S8qt_bdFZZY"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "5623dfbcdd44bfd686860c2853edec2f4658b3841b5c7767a65efd6ff97cec93",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:r6S-SxCJB4g",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7ee06aa804d706b53bca.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.85,
+        "label": "主動發文",
+        "reason": "內容僅述市政問題偵察，未見回應特定對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "When it comes to uncovering municipal issues, many think of the experienced and reliable Councilo...",
+      "topicScores": {
+        "生活": 0.9,
+        "議會監督": 0.36
+      },
+      "topics": [
+        "生活",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/r6S-SxCJB4g"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

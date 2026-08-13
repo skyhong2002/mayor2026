@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/1a271cc5ec1b25042423.webp",
+    "avatarUrl": "assets/source-avatars/4209aa816cd38f69783d.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,45 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 249,
+  "count": 253,
   "posts": [
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "47e3ae0f813ec51f758af2c357401636a24bc5a557968913dee74d20c0456faa",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1656386015850806",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/293f7041c477cd6be4f5.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T08:30:17.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "承諾推動捷運綠線延伸，是具體交通政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "🚇 中彰聯手，綠線延伸！\n\n我和 陳素月SayYes  、黃柏瑜 共同承諾，未來四年內推動 #捷運綠線延伸 動工，並全力拚完工！\n\n綠線向北延伸大坑、向南延伸彰化，串起中彰生活圈，加速交通建設、帶動區域發展。\n\n盧秀燕、王惠美做不到，我們來！\n\n#有欣加素\n#中彰合作加速行動",
+      "topicScores": {
+        "交通": 0.98,
+        "經濟": 0.35
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/2089258625003879/"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "ho-hsin-chun",
@@ -54,6 +91,77 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/Db-IAupGeS9"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "c080dc1f21c9cb9bb6563131c975ae79a4f2f0a8b242edff8c2153d285475f61",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1656318422524232",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/cabb608bb2ecdde350bb.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T06:30:02.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅公告見面行程與交流，屬一般活動宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "欣純今晚將來到一中街商圈！\n\n今晚7:30，我會到一中街和大家見面，沿街走走、跟大家聊聊天，也聽聽市民對台中的期待。\n\n歡迎台中純派一起來，今晚我們一中街不見不散❤️",
+      "topicScores": {
+        "生活": 0.91,
+        "競選": 0.42
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02aVuCAsB1o8UpQnusWdUAD6K6RU1C9HciFLXwLMA6EQyRaXFUQLk18CAUCZJt2Fn2l"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "317416af553f0466f80eef184cf5ce85bf85f275b0ee6e17bb4124eacdb962fc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db9-W73SAmM/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a322c04a84848c47f069.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-13T05:21:19+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出捷運延伸與中彰生活圈串聯的建設主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "🚇 中彰聯手，綠線延伸！\n\n我和陳素月、黃柏瑜共同承諾，未來四年內推動 #捷運綠線延伸 動工，並全力拚完工！\n\n綠線向北延伸大坑、向南延伸彰化，串起中彰生活圈，加速交通建設、帶動區域發展。\n\n盧秀燕、王惠美做不到，我們來！",
+      "topicScores": {
+        "交通": 0.98,
+        "生活": 0.22
+      },
+      "topics": [
+        "交通",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Db9-W73SAmM/"
     },
     {
       "agendaRelevance": 0.93,
@@ -97,6 +205,44 @@
         "經濟"
       ],
       "url": "https://www.threads.com/t/Db9-BlFmWX4"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "f1b19734b5a9eb490c4a6c812eba2e2d5790fb5e14a6fc2eb2b5a7b4032d4c75",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1656273042528770",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/30b37471f428b00e91f8.webp",
+      "keywords": [
+        "交通",
+        "捷運",
+        "機場"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T05:08:17.000Z",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "提出捷運綠線延伸與交通建設承諾，屬明確政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "綠線延伸大坑 何欣純承諾：四年內一定動工、力拚完工！！\n\n盧秀燕做不到的，交給何欣純來做；王惠美做不到的，交給陳素月來做！\n\n我跟 陳素月SayYes 黃柏瑜 ，以及台中、彰化兩地議會夥伴共同向選民承諾：未來我們會在四年內讓 #捷運綠線延伸 動工，並且力拚完工。\n\n台中捷運不能再等！下一任市長，就是要用行動與效率，把捷運路網一條一條往前推。\n\n我承諾，首任四年全力推進捷運綠線延伸：\n➡️ 向北延伸大坑，一定動工、力拚完工！\n➡️ 向南延伸彰化，中彰聯手、加速推進！\n\n台中、彰化早已是共同生活圈，交通建設更不能被行政界線切開。未來我們台中將與彰化攜手，加速地方行政程序、積極與中央協調，同時持續推進橘線機場捷運，完善大中部捷運路網。\n\n中彰聯手，讓捷運跨越大肚溪，讓生活圈真正連起來！\n\n#有欣加素\n#中彰合作加速行動",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.84
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02iojeYGhmbsaWUoBdr4kyN6ABdWBCR7Y7bDgTvFgMH3Vz91uBWBXrTvQkaKN9NEpzl"
     },
     {
       "agendaRelevance": 0.21,

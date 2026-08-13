@@ -1,6 +1,40 @@
 {
-  "count": 249,
+  "count": 252,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "f659f25b047f3ed63ea61d9878ba7f33987344920a1a11ed12334c2fafaf0a85",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1629655881849327",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/290ba54b935397f2ffcc.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-13T09:08:06.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "內容是對特定案件的爆料式標題，未見回應他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "詐慈濟10億女律師筆記本驚見「DPP 100萬」",
+      "topicScores": {
+        "治安": 0.88,
+        "社福": 0.42
+      },
+      "topics": [
+        "治安",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/reel/1603268844810714/"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "hsieh-lung-chieh",
@@ -34,6 +68,76 @@
         "醫療"
       ],
       "url": "https://www.threads.com/t/Db-XkeLmMWi"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "5248ce56dcbdc571b5ba3cb07c8dda94affe171d38eddc548fa6a66001c0cb63",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/Db-XgREy3vp/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4b05ab4372c1c0fff583.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-13T09:00:55+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以弊案爆料文字呈現，屬攻防指控，非回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "詐慈濟10億女律師筆記本驚見「DPP 100萬」",
+      "topicScores": {
+        "治安": 0.82,
+        "競選": 0.9
+      },
+      "topics": [
+        "競選",
+        "治安"
+      ],
+      "url": "https://www.instagram.com/p/Db-XgREy3vp/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "035b222dea6c4d37e97df35c6e08af116414405437180b5f540a0f7d826c673c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1628813168600265",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/109f0a05e7e4fe06d744.webp",
+      "keywords": [
+        "疫苗"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-12T09:40:43.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "指控高端疫苗與死亡相關，屬爭議攻防而非政策提案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
+      "topicScores": {
+        "治安": 0.34,
+        "醫療": 0.93
+      },
+      "topics": [
+        "醫療",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/reel/3349811355223007/"
     },
     {
       "agendaRelevance": 0.28,
