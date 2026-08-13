@@ -1,6 +1,117 @@
 {
-  "count": 246,
+  "count": 250,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "5906709d28dcba4f1e183f24a3fb24dca4b936da600b43eb10eab37109563bed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-YM_mFDc-",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T09:06:44+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享家人逛文博的日常，屬生活與文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:上禮拜難得抓到空檔，一家人一起去文博逛逛～",
+      "topicScores": {
+        "文化觀光": 0.98,
+        "生活": 0.78
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db-YM_mFDc-"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "b9905924a1d7d5dc62367d48d896ed3cfe5be9f567ea9a07b979728b94b830d2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-KFUGFCRB",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "表演"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-13T07:03:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告明日掃街與活動行程，屬競選動員與活動宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:明天，伯洋將出沒天母及榮星花園。\n一起來開啟這個週末吧！\n⠀\n8/14（五）\n07:00\n📍天母運動公園\n⠀\n19:00\n📍顏若芳議員—火之星火舞表演",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "生活": 0.52,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db-KFUGFCRB"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "f1dd05152e0656c16673045b99d15ffbbd4c531913601b81861d07b751201764",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-AjwJkUzO",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/58cf007c358eb93ca7dd.webp",
+      "keywords": [
+        "參選",
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-13T05:40:08+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述參選前後逛市場與掃街經驗，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:參選前\n我和家人就很常來東門市場\n買丸仔或蛤仔\n最常的就是跟爸爸一起吃\n羅媽媽米粉湯\n\n現在再走進來\n買菜變成掃街\n用不同的身分\n走進同一個熟悉的市場\n感覺真的十分特別\n\n早上一掃就掃了三個小時\n一路被餵食、收到鳳梨、\n新住民老闆娘\n拉著我合照、簽名\n真的謝謝大家今天的熱情！\n\n我應該過幾天又會去買菜了XD",
+      "topicScores": {
+        "文化觀光": 0.55,
+        "生活": 0.9,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Db-AjwJkUzO"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
@@ -8851,6 +8962,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/z-s3FmHcBuc"
+    },
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "c0506ce0ac3bf8bf5046ea6b387565ddcba52e14dde4b7b805fff1febad271a8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:S8qt_bdFZZY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e9dd59c0b06859862c14.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "影片主打臺北升級與交通建設，屬政策宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Upgraded: We Are Ready!",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.95
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/S8qt_bdFZZY"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

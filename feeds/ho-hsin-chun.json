@@ -1,6 +1,83 @@
 {
-  "count": 246,
+  "count": 249,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "b1b0db2bfae31bc39e133e109a98e363f74d22d89e418618d44278956c357c81",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-IAupGeS9",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/639bc493054f0833609f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T06:45:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳一中街見面與傾聽期待，屬競選活動安排。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:大啊今晚下班後會不會剛好有空？\n\n7:30，我會到一中街和大家見面，沿街走走、跟大家聊聊天，也聽聽市民對台中的期待。\n\n歡迎台中純派一起來，一中街不見不散❤️",
+      "topicScores": {
+        "生活": 0.76,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/Db-IAupGeS9"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "1d52d6b647188184961b2f1f82e4aec9447b39bb788a5ef228ecb10fb2419853",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db9-BlFmWX4",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/b09c5b815d17d6c6268a.webp",
+      "keywords": [
+        "交通",
+        "捷運",
+        "公車",
+        "人行道",
+        "機場",
+        "議會"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-13T05:17:59+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出捷運延伸與跨縣市交通建設，屬明確施政承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:台中的交通狀況，是市民最常和我反應、和我抱怨的事情。捷運路網不便、公車愛來不來、人行道、標線、紅綠燈...種種問題，我都深切放在心上！\n\n要修正的事情很多，我們一件一件來！\n\n首先，我們用行動與效率，把捷運路網一條一條往前推。\n\n今天我跟 @sayyessayhi 陳素月 @poyu.h95 黃柏瑜 ，以及台中、彰化兩地議會夥伴共同向選民承諾：\n首任四年全力推進捷運綠線延伸\n➡️ 向北延伸大坑，一定動工、力拚完工！\n➡️ 向南延伸彰化，中彰聯手、加速推進！\n\n台中、彰化早已是共同生活圈，交通建設更不能被行政界線切開。未來我們台中將與彰化攜手，加速地方行政程序、積極與中央協調，同時持續推進橘線機場捷運，完善大中部捷運路網。\n\n中彰聯手，讓捷運跨越大肚溪，讓生活圈真正連起來！",
+      "topicScores": {
+        "交通": 0.99,
+        "經濟": 0.32,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "交通",
+        "議會監督",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/Db9-BlFmWX4"
+    },
     {
       "agendaRelevance": 0.21,
       "candidateId": "ho-hsin-chun",
@@ -8923,6 +9000,42 @@
         "住宅"
       ],
       "url": "https://www.youtube.com/shorts/ILOGJRFCD2I"
+    },
+    {
+      "agendaRelevance": 0.89,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "81a0819b4e36b99f62315d39c265da6e5410208446e72d1f0614144f430dbadb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:DfpQ6P5gEFY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ddd39910ae4dc14ccd5f.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主題為中彰捷運綠線延伸，屬具體交通政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純×陳素月強強聯手！中彰捷運綠線延伸 加速成真🚇 @sayyessayyhi",
+      "topicScores": {
+        "交通": 0.99,
+        "競選": 0.96
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/DfpQ6P5gEFY"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

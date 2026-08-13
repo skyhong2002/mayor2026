@@ -1,6 +1,40 @@
 {
-  "count": 246,
+  "count": 249,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "4491a248f6a0c3dd6f6c1c43f8c7f4da37c7c4d30ba2ae4466dc99b9db1a7f56",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-XkeLmMWi",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ad30bc0a63ae893c9dcb.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T09:01:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以疑似貪瀆指控做標題，屬政治攻防非回應他方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:詐慈濟10億女律師筆記本驚見「DPP 100萬」",
+      "topicScores": {
+        "治安": 0.98,
+        "醫療": 0.45
+      },
+      "topics": [
+        "治安",
+        "醫療"
+      ],
+      "url": "https://www.threads.com/t/Db-XkeLmMWi"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
@@ -8734,6 +8768,76 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/l27umjmJc3k"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "efbbbc1c32e519c655103e7159995eedeea4239e304feef0adaeb8ba59db5a16",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-13T10:01:05+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:w_TtIv3fr0A",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/d6e6e5e0817d6c606151.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "未見明確他方、其先前具體說法，亦非直接答覆/反駁；僅為質詢題目。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "(Full Subtitles) 07/29/2026 [Longjie Interpellation] DPP core cadre smuggling in Mainland China? ...",
+      "topicScores": {
+        "兩岸外交": 0.52,
+        "議會監督": 0.46
+      },
+      "topics": [
+        "兩岸外交",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/watch?v=w_TtIv3fr0A"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "9fb4b74e72a6b5ce66982c918b5ff7287232002d159e5237b336b7be70ea11ad",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:I0JLraaPZ-E",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/07fb82bfb93f2df5732c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題聚焦詐騙與金流爭議，屬事件報導非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "$1 Billion Tzu Chi Fraud: Female Lawyer's Notebook Reveals \"DPP 1 Million\" Entry",
+      "topicScores": {
+        "治安": 0.92,
+        "經濟": 0.38
+      },
+      "topics": [
+        "治安",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/I0JLraaPZ-E"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",

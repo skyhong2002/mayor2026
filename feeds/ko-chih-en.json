@@ -1,6 +1,40 @@
 {
-  "count": 234,
+  "count": 235,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "0bb9f4f697f7d8460eedcd044272dce06a1d023b006f0e4185d0adef46d078d2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/Db-LrYMCWuK",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/a2f758c8b1f07d2b4586.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-13T07:17:17+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "以後勁溪死魚為主，屬環境議題評論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:比起北戴河，我更關心後勁溪的死魚。",
+      "topicScores": {
+        "兩岸外交": 0.2,
+        "環境": 0.94
+      },
+      "topics": [
+        "環境",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/Db-LrYMCWuK"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
