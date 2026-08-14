@@ -19,8 +19,78 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 265,
+  "count": 268,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "f957109d78d5a7fdd569b82c8897aba21af74b93bcbee6733167a5330b500ef4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcBpig8lC_I",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T15:35:57+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "介紹台北日常與文化活動，未回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:「你現在在台北\n很難找到這樣燙手的心了。\n⠀\n出生大稻埕的作家郭松棻\n有一句話是這麼說的。」\n⠀\n在HEART發表會後，\n我們訪談了資深媒體人、\n文化工作者，\n以及幾位台北市民。\n⠀\nHEART，\n就是台北市民的日常生活。",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "生活": 0.78
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcBpig8lC_I"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "af0e972020804bf8e8a2f22217147afee14d58ed6e3800cbc25f610281b21589",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcBbf_OFIsP",
+      "imageAspect": 0.5624,
+      "imageUrl": "assets/feed-images/a51917663ffa156c8c6f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T13:33:16+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄火舞活動與現場互動，偏活動宣傳與競選造勢。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:親眼看到台灣之光\n「即將成真火舞團」\n現場火舞演出\n⠀\n上台參加勇氣考驗\n我幫若芳喊「準備好了」喊很大聲\n然後換我，其實滿緊張\n幕僚可能更緊張哈哈\n⠀\n好險我有看飛龍在天\n順利通過考驗！",
+      "topicScores": {
+        "文化觀光": 0.91,
+        "競選": 0.86
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcBbf_OFIsP"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "shen-poyang",
@@ -9537,6 +9607,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/ARYOJgRtx_w"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "322bd2dfa3c9ff61295f8def994f081b8f6e001eb82ebe66de52386953c22653",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ST8J9LniZJM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8ffa9780e2deae80bad8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹台北發表會與訪談內容，未回應特定說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "\"It's hard to find such a burning heart in Taipei these days.\" After the HEART presentation, we i...",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "生活": 0.67
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/ST8J9LniZJM"
     }
   ],
   "version": 1

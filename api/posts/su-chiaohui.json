@@ -19,8 +19,81 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 257,
+  "count": 260,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "bdcdd2ad25d57dee1823a4b6e39b62232108d71e0f71376589c7409bcab67ba0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcBV3Tokm8K",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/0130502e078955d3366f.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T12:47:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "單純宣傳水獺媽媽樂園活動資訊，屬活動公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:水獺媽媽樂園雙和場就在週日！大小水獺快來中和國小集合！🦦❤️\n\n留言區有完整樂園資訊！",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "生活": 0.64
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcBV3Tokm8K"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "b20f71963e63afb742c19e0301b27e8342d3a57e8942de018679015b32d3bb99",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcBEJw9EiXr",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/54a369e0b1bb0d30c88d.webp",
+      "keywords": [
+        "教育",
+        "育兒"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T10:09:45+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動提出教育、輔導與食安政策，屬明確施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:我希望透過教育打開孩子的想像力，讓孩子的世界更寬廣。串連產學資源，讓每一位孩子找到自己的舞台。\n\n我們也要增加輔導量能、成立專責辦公室，更要顧好食品安全與品質，做校長、老師與家長的最強靠山。\n\n挺新北未來✨ 一起加油！讓新北成為育兒家庭安居樂業的首選城市！\n\n#新時代 #新市長 #蘇巧慧",
+      "topicScores": {
+        "教育": 0.95,
+        "生活": 0.56,
+        "社福": 0.83
+      },
+      "topics": [
+        "教育",
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcBEJw9EiXr"
+    },
     {
       "agendaRelevance": 0.83,
       "candidateId": "su-chiaohui",
@@ -9564,6 +9637,40 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/ej4MR1VDJUU"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "b8c42f50c869f25dbb1cccf94eaa6b8188161f65341cf370f5b8f622bee28496",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:LSTVANpFw6A",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/858325667152bd81a98c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "直接主打教育政見，明確屬候選人施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Support New Taipei's Future! Chiao-hui's Education Policy",
+      "topicScores": {
+        "教育": 0.98,
+        "競選": 0.88
+      },
+      "topics": [
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/LSTVANpFw6A"
     }
   ],
   "version": 1
