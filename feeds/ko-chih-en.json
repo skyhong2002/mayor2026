@@ -1,6 +1,40 @@
 {
-  "count": 239,
+  "count": 242,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "ca2d5066360f223296c0b886abf42fe8c15409df5240ed8df690db03e8d91812",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAWItuidV6",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/0cad8e415832e48e968d.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T03:27:36+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "在反駁首都稅說法並批評對手，屬攻防而非政策提案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:「3％首都稅」根本不存在！小賴別再耍無賴。",
+      "topicScores": {
+        "經濟": 0.35,
+        "議會監督": 0.91
+      },
+      "topics": [
+        "議會監督",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcAWItuidV6"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "ko-chih-en",
@@ -9199,6 +9233,74 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/50Nscb9UOJE"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "9aa302adebbdd616bb3dc30a6c6dfbe3cd0721428a7a4f7862a8ffc32b68cae5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:QzJPimb8A_M",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/09bac98b93bf6c097382.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主要是選舉攻擊與派系批評，非具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "No matter who is up to bat, I will strike out the \"New Tide\" faction for sure.",
+      "topicScores": {
+        "競選": 0.98,
+        "議會監督": 0.55
+      },
+      "topics": [
+        "競選",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/QzJPimb8A_M"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "aa83efdb79c2aa5a150f7e969a8670f86e18886919fdcc05e1aba9d61829004d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:oH-KtDdkhG0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8d34f38914efba3d24dc.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "是在反駁首都稅不存在的說法，屬回應式攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "The \"3% Capital Tax\" doesn't even exist! Stop acting shameless, Lai.",
+      "topicScores": {
+        "經濟": 0.58,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/oH-KtDdkhG0"
     }
   ],
   "title": "柯志恩（高雄市）貼文更新",

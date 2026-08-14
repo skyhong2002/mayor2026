@@ -19,8 +19,78 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 252,
+  "count": 255,
   "posts": [
+    {
+      "agendaRelevance": 0.8,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "fda81d06ceaee9a46dc1574b2080279a66f9028e90babdaa5038f6051d05869f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAS0E8nF20",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/996f69d7ea28fc06a64e.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T02:58:10+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "表態若當選將取消科技執法與交通輔導員，屬交通政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:若當選臺南市長！不再設置科技執法、交通違規輔導員",
+      "topicScores": {
+        "交通": 0.96,
+        "治安": 0.41
+      },
+      "topics": [
+        "交通",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DcAS0E8nF20"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "495bb02dca5d58149e7b18fdde0438bd0ca8cd10912b17730e8e2d84431be789",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcADX8MEmN2",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/23dd1d924c8bba8ebe5c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T00:43:13+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容是空軍節致敬與祝賀，屬節日慰勉非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:814空軍節，龍介向每一位空軍弟兄姊妹，致上最高敬意🫡\n\n從飛行員、地勤，到雷達、防空與後勤人員，感謝大家日夜堅守崗位，顧的是台灣這片天，守的是咱人民的平安。\n\n祝大家 #空軍節快樂，平安起飛、平安回家！",
+      "topicScores": {
+        "兩岸外交": 0.29,
+        "生活": 0.72
+      },
+      "topics": [
+        "生活",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DcADX8MEmN2"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "hsieh-lung-chieh",
@@ -8962,6 +9032,40 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/I0JLraaPZ-E"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "5502c35e7a35acaf1f51641565ac6e49af8159e566cf897df5a0987b4ae588dc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Hh5xSCAScMQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/9135c30943b983dcfd8d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主張取消科技執法與輔導員，屬競選交通政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "If Elected Mayor of Tainan! No More Tech Enforcement or Traffic Violation Counselors",
+      "topicScores": {
+        "交通": 0.97,
+        "競選": 0.87
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/Hh5xSCAScMQ"
     }
   ],
   "version": 1

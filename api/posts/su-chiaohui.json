@@ -19,8 +19,50 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 254,
+  "count": 256,
   "posts": [
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "4bec93cfc780ade606de33377e256324a3d53e95ae2c43fcb0de61683106a08d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAQXmFmbGU",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/7cfa0de3f262ed9c6694.webp",
+      "keywords": [
+        "後援會",
+        "長輩",
+        "大學"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T02:36:46+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主談視光醫療、長輩配鏡與市長政見，屬競選政策宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:感謝許多驗光人員、眼鏡與視光產業的好朋友，為我成立後援會，大家都是我多年的好戰友！\n\n過去這段時間，我們一起合作完成：\n\n✅ 舉辦多場長輩公益配鏡活動\n✅ 推動「隱形眼鏡安全管理」\n✅ 催生馬偕醫學大學設立北台灣第一個醫大視光學系\n✅ 培育更多專業人才\n\n未來我當市長，不但會延續現行的好政策，也會加強市府與眼科院所及驗光所的合作，為長輩媒合適當✨視力輔具，同時加強宣導，配戴隱形眼鏡須有✨眼科處方箋或驗光報告單，確保配戴經過專業評估。\n\n產業再發展、照護再升級！讓專業人才在新北發揮所長，守護市民的用眼健康！",
+      "topicScores": {
+        "教育": 0.72,
+        "社福": 0.81,
+        "競選": 0.86,
+        "醫療": 0.93
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DcAQXmFmbGU"
+    },
     {
       "agendaRelevance": 0.04,
       "candidateId": "su-chiaohui",
@@ -9446,6 +9488,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/watch?v=5ghpFrb-sug"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "5b12525738e619cf4b0480db2a17be4c2b57c8cd555b5462355885d8023e7fbd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ej4MR1VDJUU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/2742f2b0c759fb57c71a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "感謝夜市支持與前進動員，屬活動式宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Thanks to the warmth of Sanchong Sanhe Night Market! Moving full speed ahead!",
+      "topicScores": {
+        "文化觀光": 0.3,
+        "生活": 0.89
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/ej4MR1VDJUU"
     }
   ],
   "version": 1

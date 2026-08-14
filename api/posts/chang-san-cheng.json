@@ -19,7 +19,7 @@
     "name": "張善政",
     "party": "國民黨"
   },
-  "count": 73,
+  "count": 74,
   "posts": [
     {
       "agendaRelevance": 0.78,
@@ -2916,6 +2916,42 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/fnzN-QRIdy0"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-08-14T04:00:55+00:00",
+        "inputHash": "2e18b3e23b9cb9714bf76556dd586d2a4b8e25cb78e7a0d450931f09ffb0a050",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1eeSmFC9oAo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/759683886c85f6f007d4.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主打桃園首條捷運與市民願景，屬明確交通政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-yt",
+      "text": "為市民努力前進，期待年底搭上桃園自建的第一條捷運！",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.83
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/1eeSmFC9oAo"
     }
   ],
   "version": 1
