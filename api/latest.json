@@ -2,6 +2,618 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.55,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "80415e44db5387e8ce3b5852eca16c18c35a9f8f55485d0253fc2551759d9060",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcA95zhCbQt",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/7b5fee42b3f89ebd2097.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T09:14:39+00:00",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "主動澄清無人機預算與謠言，屬政策攻防而非回應特定前文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:634億元無人機預算全數通過，謠言不攻自破！",
+      "topicScores": {
+        "競選": 0.9,
+        "經濟": 0.78
+      },
+      "topics": [
+        "競選",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcA95zhCbQt"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "8276e1e44a17fd7fd765c85f57ba0ad43b04d630c08e66aa4e72db92f1be7f4e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcA7u7YCuNz/",
+      "imageAspect": 0.75,
+      "imageUrl": "assets/feed-images/da267c4cec2db510343d.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T08:56:13+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "批評財劃法影響高雄，屬選戰式攻防與究責。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "要選高雄市長的人，為何總是聽從台北黨意，配合國民黨表決，三振高雄市民的權益？\n\n新版《財劃法》讓高雄損失了200億，別再欺騙高雄市民了！",
+      "topicScores": {
+        "競選": 0.91,
+        "經濟": 0.84,
+        "議會監督": 0.7
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "議會監督"
+      ],
+      "url": "https://www.instagram.com/p/DcA7u7YCuNz/"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "1888ef4a4069d40e33c70e87f9c632e26c4f523b955e72dd6336d322307b17f0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcA7RZfEtii",
+      "imageAspect": 0.7512,
+      "imageUrl": "assets/feed-images/2b752caf560a8e04bdc4.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T08:53:45+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動批評財劃法影響高雄財源，並帶有選舉攻防意味。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:要選高雄市長的人，為何總是聽從台北黨意，配合國民黨表決，三振高雄市民的權益？\n\n新版《財劃法》讓高雄損失了200億，別再欺騙高雄市民了！",
+      "topicScores": {
+        "競選": 0.94,
+        "經濟": 0.98
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcA7RZfEtii"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "786dfae58f585649fc47a4ddee7338ff58bc8cbba289fbd3d4cc33f4d8ea46fc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcA3TRXFEFU",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/42c712c47c07deb29e55.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T08:16:57+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "轉貼週末行程與拜會活動，主要是競選行程公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:本週末繼續跑遍台北，希望可以見到你！\n\n8/15（六）\n\n09:30\n📍唭哩岸慈生宮\n\n10:15\n📍金龍市場\n\n13:00\n📍跟張銘祐一起｜艋舺世代童樂會｜柳鄉里區民活動中心（萬華區柳鄉里環河南路二段102號）\n\n14:00\n📍跟張惇涵與李遠一起｜台灣好生活｜臺大醫院國際會議中心（中正區徐州路2號）\n\n16:30\n📍跟賴俊翰一起｜大稻埕走讀 一路向北到南芳｜南京西路迪化街口\n\n—————————\n8/16（日）\n\n09:00\n📍松山奉天宮、中坡福德市場\n\n16:20\n📍跟陳賢蔚一起｜看見台北未來大師論壇｜中正高中（北投區文林北路77號）",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcA3TRXFEFU"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "2162a62619e7195aacd9c672aef1315e8f4befd4f290fe4d9a4dca8115ed7b4b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcA2zOUkhyu/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c31bc925789aa2fce72a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T08:12:37+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布週末行程與造勢拜票，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "本週末繼續跑遍台北，希望可以見到你！\n\n8/15（六）\n\n09:30\n📍唭哩岸慈生宮\n\n10:15\n📍金龍市場\n\n13:00\n📍跟張銘祐一起｜艋舺世代童樂會｜柳鄉里區民活動中心（萬華區柳鄉里環河南路二段102號）\n\n14:00\n📍跟張惇涵與李遠一起｜台灣好生活｜臺大醫院國際會議中心（中正區徐州路2號）\n\n16:30\n📍跟賴俊翰一起｜大稻埕走讀 一路向北到南芳｜南京西路迪化街口\n\n—————————\n8/16（日）\n\n09:00\n📍松山奉天宮、中坡福德市場\n\n16:20\n📍跟陳賢蔚一起｜看見台北未來大師論壇｜中正高中（北投區文林北路77號）",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DcA2zOUkhyu/"
+    },
+    {
+      "agendaRelevance": 0.54,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "e0d5cb812b8933e20df41933baf37641035965cb95c2bf883e1ce8cd825b9ed5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcA0itcEq5D",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d88a20a5ffefc0f9823e.webp",
+      "keywords": [
+        "歷史"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T07:52:52+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "延續慰安婦紀念與對日賠償主張，屬主動倡議。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:8月14日，是國際慰安婦日。\n\n今天，台南市慰安婦人權平等促進協會舉辦「慰安婦紀念日追思會」，邀請嘉義大學陳希宜教授與青年世代對談，從人權、性別與歷史記憶出發，思考這段歷史該如何繼續傳承。\n\n我們紀念慰安婦，不是為了延續仇恨，而是要記住戰爭曾經對女性造成的傷害，更不能讓錯誤的歷史再次發生。\n\n協會理事長童小芸提到，慰安婦銅像至今仍找不到適當的落腳處。這也提醒我們，對於這段歷史的保存與紀念，台灣還有很多該做、卻沒有做的事。\n\n龍介再次呼籲政府，推動慰安婦名譽恢復與補償相關立法、成立慰安婦基金會，要求日本政府正式道歉、賠償，也應設置正式的人權紀念碑與紀念空間，讓這段歷史被好好記住。\n\n青年朋友今天說得很好：這一代有責任承接歷史的真相，讓悲劇不再重演。\n\n我始終相信，我們追求和平，但和平不能沒有正義；我們可以向前走，但不能假裝過去沒有發生。\n\n阿嬤們終其一生沒有等到的公道，我們不能替她們放棄。",
+      "topicScores": {
+        "兩岸外交": 0.88,
+        "文化觀光": 0.46,
+        "社福": 0.41
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DcA0itcEq5D"
+    },
+    {
+      "agendaRelevance": 0.54,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "737aee9043ba013bc4bcb7a58dd6b9a09464a952310c00fa0419ae557f2a996d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcA0gnHSNgh/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4ff957f084af8e692cef.webp",
+      "keywords": [
+        "歷史"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T07:52:44+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "談慰安婦紀念、立法與對日道歉賠償，屬歷史與外交議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "8月14日，是國際慰安婦日。\n\n今天，台南市慰安婦人權平等促進協會舉辦「慰安婦紀念日追思會」，邀請嘉義大學陳希宜教授與青年世代對談，從人權、性別與歷史記憶出發，思考這段歷史該如何繼續傳承。\n\n我們紀念慰安婦，不是為了延續仇恨，而是要記住戰爭曾經對女性造成的傷害，更不能讓錯誤的歷史再次發生。\n\n協會理事長童小芸提到，慰安婦銅像至今仍找不到適當的落腳處。這也提醒我們，對於這段歷史的保存與紀念，台灣還有很多該做、卻沒有做的事。\n\n龍介再次呼籲政府，推動慰安婦名譽恢復與補償相關立法、成立慰安婦基金會，要求日本政府正式道歉、賠償，也應設置正式的人權紀念碑與紀念空間，讓這段歷史被好好記住。\n\n青年朋友今天說得很好：這一代有責任承接歷史的真相，讓悲劇不再重演。\n\n我始終相信，我們追求和平，但和平不能沒有正義；我們可以向前走，但不能假裝過去沒有發生。\n\n阿嬤們終其一生沒有等到的公道，我們不能替她們放棄。",
+      "topicScores": {
+        "兩岸外交": 0.88,
+        "文化觀光": 0.46,
+        "社福": 0.41
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光",
+        "社福"
+      ],
+      "url": "https://www.instagram.com/p/DcA0gnHSNgh/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "8700876b47fed7760dbd173773af1a47f2c56f370e8ee58a7d1501e75fc248ee",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcArdlQmWBI",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/b5f353a1032847000037.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T06:33:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "號召消費支持店家與拉票，屬選戰宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:偷偷跟大家說🤫\n欣好店家距離100家的目標已經不遠了\n下一家就等你加入喔❤️\n\n邀請大家踴躍到欣好店家消費，用行動支持在地好店，也別忘了說出通關密語「我是台中純派」，就能獲得限定貼紙！\n\n台中純派一起加油，讓「欣希望」遍佈山海屯市🎉",
+      "topicScores": {
+        "生活": 0.48,
+        "競選": 0.98,
+        "經濟": 0.46
+      },
+      "topics": [
+        "競選",
+        "生活",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcArdlQmWBI"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "4c280e5fe5b2dde4dffaf772d77c61700a33b0c2b474ecf0bec4d31a5947b6fb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAd6c7DmvA",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/30af214cc4dd162d5703.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T04:35:09+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "說明運動驛站資訊，未回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:最近很紅的運動驛站，\n到底是什麼？\n有誰可以用？\n誰來管理？\n\n這次影片，\n一次回答大家\n最想知道的問題！",
+      "topicScores": {
+        "生活": 0.84
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcAd6c7DmvA"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "6123bd973bc9655ba33cb472fbea57300b0fa636627091003663ba22c507c100",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAdwYkSmgi/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/8d82f82dcbad20389691.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T04:34:47+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹運動驛站用途與管理，屬資訊說明非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "最近很紅的 #運動驛站，\n到底是什麼？\n有誰可以用？\n誰來管理？\n\n這次影片，\n一次回答大家\n最想知道的問題！",
+      "topicScores": {
+        "生活": 0.84
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcAdwYkSmgi/"
+    },
+    {
+      "agendaRelevance": 0.87,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "800e26f4cb2f8238f50676df736d63d7ad47ae8e739cc3cb88c834dc13a2b6e1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAcqnNH5cZ/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/4dd5cb016ad497f026e7.webp",
+      "keywords": [
+        "交通",
+        "經濟",
+        "產業",
+        "科技",
+        "半導體"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T04:24:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張推動台39線南延，內容具體且屬施政規劃。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "打通大南方交通命脈，台39線南延加速衝刺\n\n南部半導體S廊帶是決定高雄未來發展的經濟命脈，為了確保路網超前部署，今天我特別召集交通部和公路局召開座談會。總經費高達463億元的台39線南延至仁武段工程，將能大幅紓解國道車流，串聯各大科技園區，成為大南方最重要的產業運輸走廊。\n\n高雄的產業升級正在跟時間賽跑，我在會中請中央務必全力縮短各項作業期程。目前由高市府代辦的優先路段已經率先啟動，我們將和中央攜手，全力朝向121年全線通車的目標邁進。\n\n交通建設從來不只是冰冷的水泥工程，它是大家平安回家的路，也是撐起城市轉型的最強後盾。高雄的進步是一棒接一棒累積出來的，我們會用最高的效率緊盯建設進度，帶領高雄大聯盟繼續大步向前，為市民朋友打造更便捷的交通環境！",
+      "topicScores": {
+        "交通": 0.94,
+        "經濟": 0.84
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DcAcqnNH5cZ/"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "22e6bda7dc67fe74657034fa621658b2e91f36de44fb2d792cd8e604c4264bb0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAbkA-Dflq/",
+      "imageAspect": 0.5631,
+      "imageUrl": "assets/feed-images/be351619e39ea0356141.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T04:15:13+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "聚焦東豐快工程進度與通車時程，屬具體交通政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-ig",
+      "text": "等了20年，東豐快第三標工程正式合龍❗️\n「東勢-石岡」今年底通車、118年底全線通車🎉\n\n東豐快第三標工程正式合龍，山城鄉親盼望超過20年的＃生命救援線 ，已進入通車倒數！東勢至石岡段預計今年10月完工、12月正式通車 。\n\n過去因政策變動導致工程延宕近十年，更造成預算暴增百億，但「有心推動，就有方法可以解決」。啟臣成功向中央爭取經費補助，為臺中市減輕了三分之二的財政負擔，讓工程得以順利邁進。\n\n東豐快是大臺中 #四環一線 高快速路網的最後拼圖，啟臣會持續繼續緊盯進度、爭取資源，督促工程務必 #如期如質 完工，早日將這條安全、便捷的回家路交到大家手中！\n\n#臺中啟程 #打造旗艦城 #高快速路網 #四環ㄧ線幸福連線 #東豐快",
+      "topicScores": {
+        "交通": 0.98,
+        "經濟": 0.68,
+        "防災": 0.41
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "防災"
+      ],
+      "url": "https://www.instagram.com/p/DcAbkA-Dflq/"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "c2f704c7be0cf46d8b0e8398fc98b3081e19b5a74c22ed965d26c6793354e41c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAadUuCUcQ",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/78a7358cee1046dc55a1.webp",
+      "keywords": [
+        "攤商",
+        "文化",
+        "美食"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T04:04:56+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "延續南門市場再生與觀光定位，屬主動政策宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:早安！南門市場🔆世杰來到桃園人最熟悉的灶跤（tsàu-kha），市民朋友非常熱情，說有在節目上看到我，一定要給我大大的鼓勵！\n\n南門市場承載許多老桃園人的回憶，去年底歷經嚴重火災，雖然逐漸恢復人潮與活力，但重建的速度還是要努力加快，讓市場早日找回榮光。\n\n因為在意的事情相同，所以就算是新朋友、互動也像老朋友。有位攤商夥伴握著我的手，請我一定要加油，一定要改變桃園、讓桃園變得不一樣💪\n\n世杰會跟大家一起努力，打造南門市場成為桃園的文化美食地標，成為帶動桃園舊城再生的一個重要起點！讓心桃園，動起來💖",
+      "topicScores": {
+        "文化觀光": 0.79,
+        "生活": 0.62,
+        "經濟": 0.82
+      },
+      "topics": [
+        "經濟",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcAadUuCUcQ"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "784666baac382c419bcb51f46d327646302efeb3806fdca2970660883f2ecf4e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAaWmpEe9L",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/66ceeaf51d960948132e.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-14T04:04:00+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動指控對手配合黨意害高雄預算與建設延宕，屬競選攻防。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:📣請柯委員以高雄為念、以台灣為念，君子務本，本立而道生\n\n柯志恩委員，您是要選高雄市長的人，為何總是聽從台北黨意，配合國民黨表決，三振高雄市民的權益呢？\n\n國民黨拒審總預算，導致高雄捷運、遷村計畫和治水防洪工程受到延宕，這時候您在哪裡？\n\n國民黨強推財劃法，獨厚台北首都預算增加3%，造成對高雄嚴重不平局面時，您又在哪裡？\n\n而最令人無法接受的，是柯志恩委員非但沒有和高雄站在一起，還以國民黨政策會執行長的身分，主導了這版對高雄極不公平的《財劃法》。\n\n📣對財經不專業，也無法迴避犧牲高雄的事實\n\n這20多年來我始終跟高雄在一起，與高雄立委們為高雄爭取超過6,000億的建設經費，我們比誰都清楚，高雄好不容易拚出來的建設預算，一分一毫都不能退讓。\n\n高雄的蛻變，不該被政治利益犧牲。不管面對多少政治操作和扭曲，我們高雄隊都會以最堅定的行動力，帶領大南方繼續大步向前。",
+      "topicScores": {
+        "交通": 0.82,
+        "競選": 0.96,
+        "經濟": 0.97,
+        "防災": 0.8
+      },
+      "topics": [
+        "經濟",
+        "競選",
+        "交通",
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DcAaWmpEe9L"
+    },
+    {
+      "agendaRelevance": 0.6,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "c0a22f6a1b970fd420cdb617124bf25d22ef9593eaf59296fa83b97172e8537e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAaMkdE3Xa/",
+      "imageAspect": 1.5019,
+      "imageUrl": "assets/feed-images/25bb061bedf75616cf85.webp",
+      "keywords": [
+        "攤商",
+        "文化",
+        "美食"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T04:02:41+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談南門市場重建與打造文化美食地標，屬地方治理主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "早安！南門市場🔆世杰來到桃園人最熟悉的灶跤（tsàu-kha），市民朋友非常熱情，說有在節目上看到我，一定要給我大大的鼓勵！\n\n南門市場承載許多老桃園人的回憶，去年底歷經嚴重火災，雖然逐漸恢復人潮與活力，但重建的速度還是要努力加快，讓市場早日找回榮光。\n\n因為在意的事情相同，所以就算是新朋友、互動也像老朋友。有位攤商夥伴握著我的手，請我一定要加油，一定要改變桃園、讓桃園變得不一樣💪\n\n感謝余信憲議員 @yu.councilor 、黃瓊慧議員 @qn_taiwan 、李光達議員 @lee_kung_da 、黃家齊議員 @jack790218 、李柏瑟議員候選人 @leeposhe_taoyuanmama 、南門市場自治會鄭秀美會長、南門市場自治會郭添成總幹事、南昌東街熊福秋會長、前文化街自治會陳忠榮會長、南華里林獻堂里長、長美里林秀貞里長與南昌西街管委會溫宜鎮委員，作伙來支持相挺！\n\n世杰會跟大家一起努力，打造南門市場成為桃園的文化美食地標，成為帶動桃園舊城再生的一個重要起點！讓心桃園，動起來💖",
+      "topicScores": {
+        "文化觀光": 0.79,
+        "生活": 0.62,
+        "經濟": 0.82
+      },
+      "topics": [
+        "經濟",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcAaMkdE3Xa/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "05a2816172f6f3b3acb28fbd80bdaaaa95a669fc26865dbaff6695fbcd984d01",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcAaJn_kWuU",
+      "imageAspect": 1.165,
+      "imageUrl": "assets/feed-images/7b7283f497fca5578045.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-14T04:02:14+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "感謝支持者並提年底戰役，明顯是競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:傍晚來到熟悉的一中街，沿路遇到許多熱情的攤商與年輕朋友，感謝大家的餵食和鼓勵，我會持續努力拚年底這場戰役。\n\n謝謝下班後特地過來和我打招呼的純派，以及直接加入隊伍成為志工的純派夥伴，你們就是改變台中的力量！",
+      "topicScores": {
+        "生活": 0.52,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcAaJn_kWuU"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "32f9d7abac41d8172336f6e44330f53c25ea45d9c729e9227d016117a53913e9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAaIvBEVfN/",
+      "imageAspect": 1.165,
+      "imageUrl": "assets/feed-images/b356c190d12e14216b2a.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T04:02:09+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "在一中街拜票並號召支持者，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "傍晚來到熟悉的一中街，沿路遇到許多熱情的攤商與年輕朋友，感謝大家的餵食和鼓勵，我會持續努力拚年底這場戰役。\n\n謝謝下班後特地過來和我打招呼的純派，以及直接加入隊伍成為志工的純派夥伴，你們就是改變台中的力量！",
+      "topicScores": {
+        "生活": 0.52,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcAaIvBEVfN/"
+    },
+    {
       "agendaRelevance": 0.42,
       "candidateId": "ko-chih-en",
       "classification": {
@@ -144,6 +756,80 @@
       "url": "https://www.threads.com/t/DcAS0E8nF20"
     },
     {
+      "agendaRelevance": 0.34,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "df3caff9f612c29c7d29468cd7706e89c1dfdfe4c95c704cc22d3fd9008bda48",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcASvbWyIqy/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ca5c9387115b5f0a07ba.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T02:57:55+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出反科技執法政見，但語氣偏選舉口號。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "若當選臺南市長！不再設置科技執法、交通違規輔導員",
+      "topicScores": {
+        "交通": 0.82,
+        "治安": 0.46,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "治安"
+      ],
+      "url": "https://www.instagram.com/p/DcASvbWyIqy/"
+    },
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "446d9e4172ef67d8c40232f74a55fbb16b0fee41ca930a94edf1f9b221f48044",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAShH-MeF9/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/554bc00505f3394209a4.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T02:57:46+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主張改善八里交通與就業條件，屬地方發展訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "八里缺的不是風景，是一個不用天天過橋去上班的理由。\n\n說實在，路接出去，工作才留得下來。八里的下一步，我接著做。 顯示較少",
+      "topicScores": {
+        "交通": 0.55,
+        "住宅": 0.32,
+        "經濟": 0.66
+      },
+      "topics": [
+        "經濟",
+        "交通",
+        "住宅"
+      ],
+      "url": "https://www.instagram.com/p/DcAShH-MeF9/"
+    },
+    {
       "agendaRelevance": 0.24,
       "candidateId": "huang-shih-chieh",
       "classification": {
@@ -181,6 +867,45 @@
         "教育"
       ],
       "url": "https://www.threads.com/t/DcASjABmm1k"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "3141b88607d47071a5124bbaa0c1388f0c6eae23120dce5dfcb65fa66425e1ce",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcASacVzvSk/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/e060e59b7018c09170e0.webp",
+      "keywords": [
+        "交通",
+        "公車"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T02:55:40+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "分享上節目談交通與生活故事，偏宣傳互動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "好朋友聊天，就是這麼真實🔥\n\n和好朋友陳培瑜委員 @peiyu901 一起上《貴在真實》，從桃園人很有感的「幽靈公車」、交通問題，一路聊到以前的學生生活，還有不少平常比較少和大家分享的小故事😆\n\n📌 今晚 8/14（五）18:30\nYT頻道94要客訴《貴在真實》線上見！\n\n聽說這還是讓貴雅 @qqfanquei 講話最溫柔的一集？！\n今晚一起來看看，我們到底聊了什麼！",
+      "topicScores": {
+        "交通": 0.78,
+        "生活": 0.58,
+        "競選": 0.74
+      },
+      "topics": [
+        "交通",
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcASacVzvSk/"
     },
     {
       "agendaRelevance": 0.83,
@@ -223,6 +948,48 @@
         "教育"
       ],
       "url": "https://www.threads.com/t/DcAQXmFmbGU"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "b370ec2db84a0b2468cadb2e62ac620e32398d28de3705cb35f52083cf463898",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcAOzujiUwI/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/9dd716b306f7bb37fea2.webp",
+      "keywords": [
+        "後援會",
+        "長輩",
+        "大學"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T02:23:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出視力照護與專業合作政策，並結合競選主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "感謝許多驗光人員、眼鏡與視光產業的好朋友，為我成立後援會，大家都是我多年的好戰友！\n\n過去這段時間，我們一起合作完成：\n\n✅ 舉辦多場長輩公益配鏡活動\n✅ 推動「隱形眼鏡安全管理」\n✅ 催生馬偕醫學大學設立北台灣第一個醫大視光學系\n✅ 培育更多專業人才\n\n未來我當市長，不但會延續現行的好政策，也會加強市府與眼科院所及驗光所的合作，為長輩媒合適當 #視力輔具，同時加強宣導，配戴隱形眼鏡須有「眼科處方箋或驗光報告單」，確保配戴經過專業評估。\n\n產業再發展、照護再升級！讓專業人才在新北發揮所長，守護市民的用眼健康！",
+      "topicScores": {
+        "教育": 0.55,
+        "社福": 0.77,
+        "競選": 0.88,
+        "醫療": 0.93
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "社福",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/DcAOzujiUwI/"
     },
     {
       "agendaRelevance": 0.02,
@@ -294,6 +1061,76 @@
         "兩岸外交"
       ],
       "url": "https://www.threads.com/t/DcADX8MEmN2"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "c90f884bc655e2a3bc5bdb0c55374393a7072b358553efb498ecaa87f4f981c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcADVfgyg_U/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/61adec9a58f1244b25d0.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T00:43:06+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅祝賀空軍節並致敬軍人，屬節日性貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "814空軍節，龍介向每一位空軍弟兄姊妹，致上最高敬意🫡\n\n從飛行員、地勤，到雷達、防空與後勤人員，感謝大家日夜堅守崗位，顧的是台灣這片天，守的是咱人民的平安。\n\n祝大家 #空軍節快樂，平安起飛、平安回家！",
+      "topicScores": {
+        "兩岸外交": 0.34,
+        "生活": 0.83
+      },
+      "topics": [
+        "生活",
+        "兩岸外交"
+      ],
+      "url": "https://www.instagram.com/p/DcADVfgyg_U/"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "1a1c702bae9273cc25e321b674ff46b77769dd2704a47caf16f076e2589ac4c5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcADJ8RycdI/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/38e8f8433302e69a5493.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-14T00:42:30+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張捷運綠線延伸並承諾任內動工，政策明確。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "捷運綠線延伸往北大坑、往南彰化！\n\n何欣純第一任內一定動工 力拚完工！",
+      "topicScores": {
+        "交通": 0.96,
+        "經濟": 0.52
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DcADJ8RycdI/"
     },
     {
       "agendaRelevance": 0.88,
@@ -2825,858 +3662,6 @@
         "生活"
       ],
       "url": "https://www.facebook.com/reel/1424479086213414/"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "9ad02bdacb13291b4443a5602db60d0022ed39ae29e2aed6ac849d5e01de0e92",
-        "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-08-12T22:03:47+00:00",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db9BHQBk8w3",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/1e868831fb942b85200f.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-12T20:25:58+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "僅見@帳號標記與問候，未見具體他方說法、也非答覆反駁。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:早安，清晨4:00的桃園漁市場🐟",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db9BHQBk8w3"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "02b9ed9539b3758ccd0f19d3242221e236e9848e1df88fcaae32224f040ce954",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1622450972570066",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d4d1b1ac829465b5754c.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T13:46:18.000Z",
-      "postingIntent": {
-        "confidence": 1.0,
-        "label": "主動發文",
-        "reason": "夜市請安問好與邀約，屬日常拜票活動。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "和巧慧一起逛夜市！\n\n就在明天晚上，我將前往三重 #三和夜市 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00    \n📍三重三和夜市（三重區重新路一段89號）",
-      "topicScores": {
-        "生活": 0.94,
-        "競選": 0.5
-      },
-      "topics": [
-        "生活",
-        "競選"
-      ],
-      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0ygiSvyX31T3H8Xhibx25aPvod1QxNbXYyz2Z4yhiJJZbhjyQ9qs9TZ8MFJwTyUybl"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "0417c0622231fbd4bafda93f07a3bc1bca52c0878ac9fdcb3b180fa77023709e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db8TWlEDRVb",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/4935dca766c251eca722.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-12T13:45:53+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "宣傳逛夜市行程與拜票，屬競選活動並涉夜市生活。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:和巧慧一起逛夜市！\n\n就在明天晚上，我將前往「三重三和夜市」 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00 \n📍三重三和夜市（三重區重新路一段89號）",
-      "topicScores": {
-        "文化觀光": 0.86,
-        "生活": 0.72,
-        "競選": 0.95
-      },
-      "topics": [
-        "競選",
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db8TWlEDRVb"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "8abbdd6b18c108f19ac61b448352b65e3ec608f49b69a999616bd79d4c38bf33",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db8QvayJvoB/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/1b923a5f48b2e45b0f63.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T13:45:07+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "夜市拜訪與見面活動公告，未回應特定說法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "和巧慧一起逛夜市！\n\n就在明天晚上，我將前往三重 #三和夜市 和大家請安問好！\n\n歡迎各位鄉親來巧遇，一起為我們加油！\n\n✨做伙踅夜市！\n📅8/13（四） 20:00 \n📍三重三和夜市（三重區重新路一段89號）",
-      "topicScores": {
-        "文化觀光": 0.72,
-        "生活": 0.7
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Db8QvayJvoB/"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "a49117110d892237469208966be75ae55dfbc3529270fd59a19ef42ac091cf40",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db8LMG1GaA8",
-      "imageAspect": 1.5097,
-      "imageUrl": "assets/feed-images/5aa6a361269435902f0f.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-12T12:34:32+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "標語式挺選人貼文，未見具體政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:行動。溫度。創新。\n何欣純，台中純！",
-      "topicScores": {
-        "競選": 0.96
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db8LMG1GaA8"
-    },
-    {
-      "agendaRelevance": 0.82,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "e9cc619ff0fa81ea01a0169774e3c577f51e9db7fd4943c401bc5ad5d9c3a966",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db8Gm8imUbb",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/ddd01c86b74a24342343.webp",
-      "keywords": [
-        "教育"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-12T11:54:31+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出挺教育與產學串連，屬明確政策與競選主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:新時代、新市長！巧慧挺教育！\n串連產學資源，做新北師生最強後盾💪🏻",
-      "topicScores": {
-        "教育": 0.98,
-        "競選": 0.94
-      },
-      "topics": [
-        "教育",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db8Gm8imUbb"
-    },
-    {
-      "agendaRelevance": 0.93,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "7a4c3137ea5fc6a1d0fb6d25b08b2b5b6ac7ccdcfb23401233d8013db824b30e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db8FvQACb2R/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/17148b5a9ea502e1894f.webp",
-      "keywords": [
-        "教育",
-        "學校",
-        "校園",
-        "產業",
-        "AI"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T11:46:57+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "明確提出教育政策主張與施政作法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "巧慧挺 #教育！串連 #產學資源 做新北師生最強後盾💪🏻\n\n① 結合山海城鄉特色與資源，推動「全國遊學團」，深化適性教育\n\n② 對接產業界，升級軟硬體、強化AI技職課程，畢業就能接軌職場\n\n③ 串連產學資源，偏遠學校轉型實驗學校、樂齡教室，促使校園與社區共榮發展\n\n④ 補足輔導資源，簡化行政程序，減輕第一線負擔\n\n⑤ 校園事件分流，成立「專責辦公室」，確保調查專業，強化親師溝通與互信\n\n⑥ 加碼補助食安設備、推動食農教育，讓孩子吃得新鮮健康，同時培養土地認同\n\n我當市長，不僅要讓每一位孩子適性發展，也會充分支持老師及家長。串連學校、產業與社區資源，我會是大家的最強後盾！\n\n#新時代 #新市長 #蘇巧慧",
-      "topicScores": {
-        "教育": 0.97,
-        "經濟": 0.68
-      },
-      "topics": [
-        "教育",
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/Db8FvQACb2R/"
-    },
-    {
-      "agendaRelevance": 0.67,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "21c765fa8d939ac0ba70e771c91d383d323e47252adff49d6eb2d82998425faf",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db8DhFkCfyj",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-12T11:27:30+00:00",
-      "postingIntent": {
-        "confidence": 0.93,
-        "label": "主動發文",
-        "reason": "指控張善政延宕台積電進駐並要求交代進度，屬究責監督。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:造成台積電進駐桃園延宕，張善政不應該自己裝死，卻讓網軍洗地！\n\n昨天，我發文要求張市長為施政怠惰，導致台積電進駐桃園延宕三年多道歉。很遺憾，一整天過去，等不到張市長回應，反而是我的社群有大量留言湧入，開始洗大家的記憶。\n\n但我不會被混著大量網軍假帳號的留言嚇到，因為桃園這三年多的損失是真的、桃園人的憤慨更是千真萬確。\n\n黃世杰要二問張善政：你曾公開表示，會盤點適合地點及方案，提供竹科管理局及台積電評估，請問方案跟進度在哪？請張市府把公文跟資料攤開來，市民有知的權利！",
-      "topicScores": {
-        "競選": 0.56,
-        "經濟": 0.84,
-        "議會監督": 0.9
-      },
-      "topics": [
-        "議會監督",
-        "經濟",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/Db8DhFkCfyj"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "chang-ching",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "df121493e2cfdd2b66cbffbf8cd004c5a65ae965c14c72a19f228e2e8c739385",
-        "intentVerificationVersion": "responsive-v1",
-        "intentVerifiedAt": "2026-08-13T16:05:28+00:00",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:946795488451980",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/acdecfa33f77abf8b8d2.webp",
-      "keywords": [
-        "法案",
-        "立法院"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T11:00:00.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "僅轉述張靜說法並提問，未明確回應其前述主張，三項不成立。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-ching-party-fb",
-      "text": "📌 立法院真的「被罷工」了嗎？\n\n很多人以為，只要立法院表決通過，事情就結束了。\n\n但實際上，法案通過後，還有後續的憲政程序要完成。\n\n那麼，如果立法院通過的法律遲遲無法產生預期效果，甚至讓立法院原本可以行使的權力受到限制，這算是什麼？\n\n司法改革黨主席 **張靜律師** 在影片中直言：\n\n👉 「立法院是絕對被罷工了。」\n\n這究竟是在描述一種政治現象，還是在反映憲政制度中的法律問題？\n\n⚠️ 立法院通過的法案，應該更快落實？\n還是現行的憲政程序本來就有它存在的必要？\n\n你怎麼看？\n歡迎留言說說你的看法 👇\n\n#司法改革黨 #張靜律師 #立法院 #憲政 #制度 #法律 #留言 #熱門話題",
-      "topicScores": {
-        "生活": 0.42,
-        "議會監督": 0.84
-      },
-      "topics": [
-        "議會監督",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1659704875096626/"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "416e41513c3aa6c5338c567feee1f025129620662d79375ffb12eb198befcc01",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db79gf5Cb-t",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/ed77567dcfeaf067c71e.webp",
-      "keywords": [
-        "產業",
-        "交通"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-12T10:34:59+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出大南方計畫，主打產業、交通與生活發展，具政策輪廓。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:地理上，高雄在南方；歷史上，高雄一直站在最前方。\n\n今天 @dpp_taiwan 民進黨「行動中常會」來到高雄，我正式提出 #大南方計畫，拚產業、留人才、強交通、顧生活，帶領高雄迎接下一個黃金十年。\n\n同時發布 #高雄大聯盟 召集令，與所有議員夥伴並肩作戰，拚市長勝選、議會過半。\n\n咱若團結，就能守護高雄的根、打開高雄的路，走向世界。\n\n2026，我們一起迎接高雄的勝利！\n\n@william_chingte @chenchimai",
-      "topicScores": {
-        "交通": 0.9,
-        "生活": 0.84,
-        "競選": 0.98,
-        "經濟": 0.94
-      },
-      "topics": [
-        "競選",
-        "經濟",
-        "交通",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db79gf5Cb-t"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "0f04feec3c41ad26aab44d8f109d4709e258faf8c0e4965cfc1d40309d860fa8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db75KtjDXMZ/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/3738d02036dcc22c5ec7.webp",
-      "keywords": [
-        "照顧",
-        "教育"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T09:57:55+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "提出孩童教育與長者照顧的政策訴求。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "給孩子最好的教育，給長者最好的照顧和尊嚴，讓阿蓮人驕傲地說出「我阿蓮，我驕傲」。\n#廟卡那卡西 #高雄 #阿蓮 #柯志恩",
-      "topicScores": {
-        "教育": 0.76,
-        "社福": 0.94
-      },
-      "topics": [
-        "社福",
-        "教育"
-      ],
-      "url": "https://www.instagram.com/p/Db75KtjDXMZ/"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "c6920775ba509e52dfd947bc2e4c24ad6132ad7851b7dbb162c75b80f702ab19",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1612495496897497",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/163d72de0d171642f050.webp",
-      "keywords": [
-        "教育",
-        "照顧"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T09:57:09.000Z",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "以教育與長者照顧做形象訴求，但沒有具體政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "給孩子最好的教育，給長者最好的照顧和尊嚴，讓阿蓮人驕傲地說出「我阿蓮，我驕傲」。\n#廟卡那卡西 #高雄 #阿蓮 #柯志恩",
-      "topicScores": {
-        "教育": 0.68,
-        "生活": 0.41,
-        "社福": 0.62
-      },
-      "topics": [
-        "教育",
-        "社福",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/1075250855227332/"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "035b222dea6c4d37e97df35c6e08af116414405437180b5f540a0f7d826c673c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1628813168600265",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/109f0a05e7e4fe06d744.webp",
-      "keywords": [
-        "疫苗"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T09:40:43.000Z",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "指控高端疫苗與死亡相關，屬爭議攻防而非政策提案。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
-      "topicScores": {
-        "治安": 0.34,
-        "醫療": 0.93
-      },
-      "topics": [
-        "醫療",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/reel/3349811355223007/"
-    },
-    {
-      "agendaRelevance": 0.28,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T10:01:24+00:00",
-        "inputHash": "679d89fe3b695c6f006066ce4e5322f92194b7bda92735bacd0f02c386891213",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db72LeNkXkq",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/a6c19752965ea22443fb.webp",
-      "keywords": [
-        "疫苗"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-12T09:31:00+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "指控高端疫苗爭議，未見回應特定他方說法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
-      "topicScores": {
-        "治安": 0.55,
-        "競選": 0.66,
-        "醫療": 0.92
-      },
-      "topics": [
-        "醫療",
-        "競選",
-        "治安"
-      ],
-      "url": "https://www.threads.com/t/Db72LeNkXkq"
-    },
-    {
-      "agendaRelevance": 0.25,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "aafcf119ae6af5dbfb078135c135fd98129de60aed8c79dc39a8485f6614b05c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db72EQtSraE/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/23a7d25397b3f7be863d.webp",
-      "keywords": [
-        "疫苗"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T09:30:19+00:00",
-      "postingIntent": {
-        "confidence": 0.94,
-        "label": "主動發文",
-        "reason": "以疫苗與死亡指控民進黨，屬政治攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "民進黨都忘記了嗎？當年護航高端疫苗近2萬人喪命",
-      "topicScores": {
-        "醫療": 0.84
-      },
-      "topics": [
-        "醫療"
-      ],
-      "url": "https://www.instagram.com/p/Db72EQtSraE/"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-12T10:01:24+00:00",
-        "inputHash": "0f44d9d15ced093962923c32a247e17688e44b028f3bb16628fee7b651b694be",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db7zOHQkwJB",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/dee742654c12d1257a97.webp",
-      "keywords": [
-        "文化",
-        "交通",
-        "捷運",
-        "公車",
-        "停車"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-12T09:05:07+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主辦活動與交通資訊公告，未回應他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:這個週六，歡迎大家一起來 #台灣好生活！⁣\n⁣\n行政院秘書長 #張惇涵 X 文化部部長 #李遠⁣\n沈伯洋也會在現場和大家見面！⁣\n⁣\n➡️時間：08/15(六) 13:30開始報到 14:00正式開始⁣\n➡️地點：臺大醫院國際會議中心(台北市中正區徐州路2號)⁣\n➡️無需另外報名⁣\n⁣\n⁣\n➡️交通建議：⁣\n＊「捷運」：捷運淡水信義線（紅線） 至「台大醫院站」2號出口，直走常德街，穿越中山南路後左轉直走，再右轉徐州路，步行約6至10分鐘可達。⁣\n⁣\n＊「捷運」：板南線（藍線）： 至「善導寺站」2號出口，沿林森南路往南走，遇徐州路右轉，步行約7至10分鐘可達。⁣\n⁣\n＊「公車」：公車仁愛林森路口站： 可搭乘 245、261、270、630、651 等路線，下車後步行約3至5分鐘即可抵達。⁣\n⁣\n＊「自行開車」：地下室（B2~B3）設有收費停車場。因車位有限停滿為止，建議多加利用大眾運輸工具。",
-      "topicScores": {
-        "交通": 0.72,
-        "文化觀光": 0.83,
-        "生活": 0.58
-      },
-      "topics": [
-        "文化觀光",
-        "交通",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db7zOHQkwJB"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "b06c682189da8b77fc39b158950b86956106062081b04eae070d3654511e2e96",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db7zKE3SR-r/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/d570adb5f51072c5d557.webp",
-      "keywords": [
-        "文化"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T09:04:58+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主要是活動公告與交通資訊，無回應他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "這個週六，歡迎大家一起來 #台灣好生活！⁣\n⁣\n行政院秘書長 #張惇涵 X 文化部部長 #李遠⁣\n沈伯洋也會在現場和大家見面！⁣\n⁣\n➡️時間：08/15(六) 13:30開始報到 14:00正式開始⁣\n➡️地點：臺大醫院國際會議中心(台北市中正區徐州路2號)⁣\n➡️無需另外報名⁣\n⁣\n⁣\n➡️交通建議：⁣\n＊「捷運」：捷運淡水信義線（紅線） 至「台大醫院站」2號出口，直走常德街，穿越中山南路後左轉直走，再右轉徐州路，步行約6至10分鐘可達。⁣\n⁣\n＊「捷運」：板南線（藍線）： 至「善導寺站」2號出口，沿林森南路往南走，遇徐州路右轉，步行約7至10分鐘可達。⁣\n⁣\n＊「公車」：公車仁愛林森路口站： 可搭乘 245、261、270、630、651 等路線，下車後步行約3至5分鐘即可抵達。⁣\n⁣\n＊「自行開車」：地下室（B2~B3）設有收費停車場。因車位有限停滿為止，建議多加利用大眾運輸工具。",
-      "topicScores": {
-        "文化觀光": 0.97,
-        "生活": 0.75
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Db7zKE3SR-r/"
-    },
-    {
-      "agendaRelevance": 0.14,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T10:01:24+00:00",
-        "inputHash": "dcb94dfe1b99f9b77f511b75dedb5b49678a1b7b16a85467f8e72262befcf152",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/Db7w1vBEwhZ",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/2c9bea2fb5612c675396.webp",
-      "keywords": [
-        "攤商"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-12T08:44:18+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "走訪漁市果菜市場的行程宣傳，非回應式發文。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:明天凌晨4:00，動起來！漁市場、果菜市場接力走透透✨\n\n從新鮮漁貨到生鮮蔬果，凌晨時分正是市場最忙碌的時刻，也是許多攤商、工作夥伴一天開始打拚的時間！明天清晨，世杰和大家一起迎接桃園最早的活力💪🏻\n\n桃園漁市場、果菜市場見！心桃園，動起來💖",
-      "topicScores": {
-        "文化觀光": 0.6,
-        "生活": 0.55,
-        "經濟": 0.76
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Db7w1vBEwhZ"
-    },
-    {
-      "agendaRelevance": 0.14,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "ac4ed9352db4e1e918c854af8af77d339266912b27f69704a8eabdf733a8cea4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db7w0rkE2U6/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/443b16e186d8cf99f774.webp",
-      "keywords": [
-        "攤商"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T08:44:11+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "凌晨走訪市場並致意攤商，偏活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "明天凌晨4:00，動起來！漁市場、果菜市場接力走透透✨\n\n從新鮮漁貨到生鮮蔬果，凌晨時分正是市場最忙碌的時刻，也是許多攤商、工作夥伴一天開始打拚的時間！明天清晨，世杰和大家一起迎接桃園最早的活力💪🏻\n\n桃園漁市場、果菜市場見！心桃園，動起來💖",
-      "topicScores": {
-        "生活": 0.83,
-        "經濟": 0.55
-      },
-      "topics": [
-        "生活",
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/Db7w0rkE2U6/"
-    },
-    {
-      "agendaRelevance": 0.28,
-      "candidateId": "chang-ching",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "d4f0ca6b3eaf7c5d4fc64143606bb47ee44d7213bf64a127582d1871baeccf0d",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:947036681761194",
-      "imageAspect": 0.665,
-      "imageUrl": "assets/feed-images/1e6f9f90a58c25ae08a8.webp",
-      "keywords": [
-        "選舉",
-        "治安",
-        "犯罪"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T08:38:08.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主打治安與2026選舉布局，重點是競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-ching-party-fb",
-      "text": "【犯罪零容忍，治安紅不讓】🚨\n\n2026，讓改革力量走進地方。\n\n司法改革黨主席張靜，將帶領司法改革黨的地方團隊，從高雄出發，走進台中、新北，將司法改革的理念帶進地方政治。\n\n我們相信，改革不能只停留在法庭與口號裡。\n\n人民要的，是更安全的生活、更公平的社會，以及真正能夠為人民發聲的民意代表。\n\n因此，2026地方選舉，司法改革黨將由主席張靜領軍，與各地夥伴共同投入地方布局：\n\n🔹 張靜｜司法改革黨主席\n　2026高雄市長推派人選\n\n🔹 張烱春｜司法改革黨秘書長、台中黨部主委\n　2026台中市大雅、潭子、神岡區市議員推派人選\n\n🔹 李政憲｜司法改革黨高雄黨部主委\n　2026高雄市前鎮、小港區市議員推派人選\n\n🔹 黃淑珍｜司法改革黨新北黨部主委\n　2026新北市板橋區市議員推派人選\n\n從中央到地方，改革不能缺席。\n從司法到治安，人民的聲音不能沉默。\n\n🚨 犯罪零容忍，治安紅不讓\n⚖️ 落實司法改革，還給人民公道\n🏙️ 讓改革力量走進地方\n\n2026，讓改革力量走進地方。\n讓人民的聲音，被真正聽見。\n\n👉 2026，請支持司法改革黨！\n\n#司法改革黨\n#2026地方選舉\n#犯罪零容忍治安紅不讓\n#讓改革力量走進地方\n#讓人民的聲音被真正聽見",
-      "topicScores": {
-        "治安": 0.95,
-        "競選": 0.98
-      },
-      "topics": [
-        "競選",
-        "治安"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid037mzPNciSnMgjh93ZnMoeYbXv3CGFPJE5m38EjTFvayrX78rKATe2U7yPUN4J6CyJl&id=100093646137173"
-    },
-    {
-      "agendaRelevance": 0.9,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "ede627a27e3b35e7a9b089be5b64c5ee7f17d6d176a60494b8e878d4fa4f1ff7",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db7u8ifICSn/",
-      "imageAspect": 1.5059,
-      "imageUrl": "assets/feed-images/d076e370ae90e0db292f.webp",
-      "keywords": [
-        "交通",
-        "捷運",
-        "機場",
-        "AI"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T08:27:47+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "聚焦捷運建設與交通路網擴充，政策性高。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "盧市長開工，我們全力完工！臺中捷運多線齊發🚀今天 #臺中捷運藍線BC11標 正式動工！ 藍線全長25公里，是貫穿海線與市中心最關鍵的黃金大動脈。\n\n盧秀燕市長為地方開啟了第一步，未來啟臣一定會全力爭取補助資源，減輕臺中自籌負擔，並督促工程團隊 #安全第一 #品質至上 ，加速把藍線如期如質完工！\n隨著臺中人口突破286萬，啟臣將持續落實 #打造20分鐘生活圈。不只要力拚藍線通車，更要推動 #山城延伸紅線、 #機場捷運橘線、#屯區環狀紫線 等 #多線齊發，搭配AI智慧交通與快捷轉乘，無縫串聯山海屯城，攜手讓臺中邁向國際旗艦城💪✨\n\n#臺中啟程 #打造旗艦城 #臺中Way #臺中捷運藍線 #多線齊發 #20分鐘生活圈 #幸福臺中啟程國際",
-      "topicScores": {
-        "交通": 0.99,
-        "經濟": 0.69
-      },
-      "topics": [
-        "交通",
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/Db7u8ifICSn/"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "cb162ef393c00498787c1c0e9ca6793db81cb6a4307c50039076ff86bf77a417",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1587867526033396",
-      "imageAspect": 1.5051,
-      "imageUrl": "assets/feed-images/01fce51c887f0ca44db3.webp",
-      "keywords": [
-        "交通",
-        "捷運",
-        "機場",
-        "AI"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-12T08:27:40.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動宣傳捷運藍線動工與後續路網規劃，屬交通建設議程。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "盧市長開工，我們全力完工！臺中捷運多線齊發🚀今天 #臺中捷運藍線BC11標 正式動工！ 藍線全長25公里，是貫穿海線與市中心最關鍵的黃金大動脈。\n\n盧秀燕市長為地方開啟了第一步，未來啟臣一定會全力爭取補助資源，減輕臺中自籌負擔，並督促工程團隊 #安全第一 #品質至上 ，加速把藍線如期如質完工！\n隨著臺中人口突破286萬，啟臣將持續落實 #打造20分鐘生活圈。不只要力拚藍線通車，更要推動 #山城延伸紅線、 #機場捷運橘線、#屯區環狀紫線 等 #多線齊發，搭配AI智慧交通與快捷轉乘，無縫串聯山海屯城，攜手讓臺中邁向國際旗艦城💪✨\n\n#臺中啟程 #打造旗艦城 #臺中Way #臺中捷運藍線 #多線齊發 #20分鐘生活圈 #幸福臺中啟程國際",
-      "topicScores": {
-        "交通": 0.99,
-        "經濟": 0.52
-      },
-      "topics": [
-        "交通",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid0BzjRBEsi87yr8uYTGVeCK44xuViato57wCFhsyTqtiGBRVv5EwJgXpAVaikAoQLXl"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-12T22:03:34+00:00",
-        "inputHash": "6579254606916b3eccb6a517628aff43f14619d78dfbf6c5592472b8908e9b59",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/Db7lba9IBtP/",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/30a64a9f4a2eb7a8748d.webp",
-      "keywords": [
-        "觀光"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-12T07:04:37+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主張道路完工、連結新社與觀光效益，屬建設政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "東豐快第三標工程正式合龍，山城鄉親盼望超過20年的 #生命救援線 ，已進入通車倒數！東勢至石岡段預計今年10月完工、11月舉辦路跑體驗、12月正式通車 ；隧道與國道4號立交共構的全線工程，我也會持續督促相關單位，鎖定118年底完工通車的目標全力推進。\n\n過去因政策變動導致工程延宕近十年，但「有心推動，就有方法可以解決」。我們成功向中央爭取經費補助，為臺中市減輕了三分之二的財政負擔，讓工程得以順利邁進。\n\n東豐快不僅是大臺中 #四環一線 高快速路網的最後拼圖，全線通車更只是階段性目標。為了讓經費發揮極致效益，我已要求同步規劃 #連結至新社 ，通車後將可縮短山城往來市區10至20分鐘車程，為在地農業與觀光注入強心針。\n\n未來我會在中央繼續緊盯進度、爭取資源，督促工程務必 #如期如質 完工，早日將這條安全、便捷的回家路交到大家手中！\n\n#東豐快 #臺中啟程 #打造旗艦城 #高快速路網 #四環ㄧ線幸福連線",
-      "topicScores": {
-        "交通": 0.99,
-        "文化觀光": 0.56,
-        "經濟": 0.7
-      },
-      "topics": [
-        "交通",
-        "經濟",
-        "文化觀光"
-      ],
-      "url": "https://www.instagram.com/p/Db7lba9IBtP/"
     }
   ],
   "version": 1
