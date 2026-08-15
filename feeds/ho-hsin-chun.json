@@ -1,6 +1,40 @@
 {
-  "count": 271,
+  "count": 272,
   "posts": [
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-15T22:03:18+00:00",
+        "inputHash": "4d859080296fe9291e85d869aaf14f427c021d36a2dbcaa4e2f399bdcc318625",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcEBqxkvW2U/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/0aca9c5d147df5b397f3.webp",
+      "keywords": [
+        "催票"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-15T13:45:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確呼籲催票與宣傳候選人，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "台中大街小巷如果看到何欣純，公車、廣告、文宣品...或是本人，拜託拍下來留言給我，一起幫忙分享+宣傳+催票，謝謝台中、謝謝您！❤❤",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DcEBqxkvW2U/"
+    },
     {
       "agendaRelevance": 0.22,
       "candidateId": "ho-hsin-chun",

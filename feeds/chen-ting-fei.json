@@ -1,6 +1,40 @@
 {
-  "count": 169,
+  "count": 170,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-15T22:03:18+00:00",
+        "inputHash": "2652ec45935d558ecf50506c4de42482532aa372dba9062971c0f91167c28687",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcDO10QkzAk/",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/f4b66b1d9267c027b56e.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-15T06:26:40+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主要是捐血宣導與活動記錄，沒有政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "熱血❤️台灣·捐血❤️台南\n\n之前幾次亭妃要捐血，都因為體重過輕，沒辦法完成。這一次為了要響應賴清德主席以及台南市黨部所號召的「挽袖捐血」，亭妃特別「增重」，終於完成首次捐血。\n\n謝謝新營捐血中心護理師與志工的辛苦，在血荒的當務之急，呼籲大家「挽袖捐血」❤️",
+      "topicScores": {
+        "生活": 0.55,
+        "社福": 0.82
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcDO10QkzAk/"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",
