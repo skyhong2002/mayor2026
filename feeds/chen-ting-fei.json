@@ -1,6 +1,77 @@
 {
-  "count": 167,
+  "count": 169,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-15T04:04:29+00:00",
+        "inputHash": "c54cfb79601fc4f9af19a1e18c9a19cdbc3cd42cc0ce4550b35e70f020b96a43",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1619732922847963",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/e607444b757e060096a7.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-15T02:31:03.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹台南做十六歲古禮與廟宇文化，純屬文化生活分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "台南做十六歲，是台南特有小孩「轉大人」的古禮，只要有做過16歲的每一位，跟台南一定有淵源！\n#開隆宮\n#七娘媽生",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "生活": 0.76
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid035M113SdbwC85kBxoCJ4Up7vj6wCWTLR64QCGkaa9mqvSxGCqgM7SNk6RwQ5w9K4Sl"
+    },
+    {
+      "agendaRelevance": 0.48,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-15T04:04:29+00:00",
+        "inputHash": "3e6410598303e2e85e248e8f883d635fd81683b2d64e21a9a35d6380c87da9ef",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1619245666230022",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "預算",
+        "立法院"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-14T13:43:29.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "談總預算通過與明年預算進度，屬主動監督與議會發言。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "今天8/14終於通過今年的總預算，就在最後4個多月，真的創了立法院的新紀錄，明年預算馬上送進來了，不知什麼時候會過？",
+      "topicScores": {
+        "經濟": 0.55,
+        "議會監督": 0.92
+      },
+      "topics": [
+        "議會監督",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid0x7XTADbRVtpJuNqui1uN8EDeZaSoy5yB1jv8NXLgP2fYB5iddXCnsUehP9YmzyGml"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
