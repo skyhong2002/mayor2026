@@ -19,8 +19,42 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 184,
+  "count": 185,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "9991dce89f58ba45d4346471d81d6f359e9669c59ef7dc1f23723eece3d8001f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcEEW4xk3p8",
+      "imageAspect": 1.0876,
+      "imageUrl": "assets/feed-images/57a13d5b7290f9372218.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-15T14:08:46+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是描述看煙火活動與雙北互動，無具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:今晚我在新北三重忠孝碼頭，看台北大稻埕煙火。\n\n這就是雙北共治的展現。",
+      "topicScores": {
+        "文化觀光": 0.74,
+        "生活": 0.43
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcEEW4xk3p8"
+    },
     {
       "agendaRelevance": 0.79,
       "candidateId": "lee-shih-chuan",

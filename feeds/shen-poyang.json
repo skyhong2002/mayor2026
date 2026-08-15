@@ -1,6 +1,40 @@
 {
-  "count": 277,
+  "count": 279,
   "posts": [
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "ded5813c3543fa9dc6fbfe0c90a749036b2e2cbd36c2c1c73c6de2de3cfc613d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcEQC4sS9i1/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2794f39cec0c08c6a235.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-15T15:52:02+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "質疑台北市政府卡政策，屬主動究責與監督發言。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "中央把政策做好了，那台北到底在卡什麼？",
+      "topicScores": {
+        "生活": 0.45,
+        "議會監督": 0.9
+      },
+      "topics": [
+        "議會監督",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcEQC4sS9i1/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
@@ -9953,6 +9987,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/ST8J9LniZJM"
+    },
+    {
+      "agendaRelevance": 0.61,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "65e7996578229570f2ea16776085025d60e0299fce1a6191f800008f3964bfd6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:_g06ChTB6TE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7e133a45f34e177b8661.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "直接質疑台北市政卡關，屬主動批評與監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The central government has set the policy, so what exactly is holding Taipei back?",
+      "topicScores": {
+        "交通": 0.95,
+        "議會監督": 0.91
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/_g06ChTB6TE"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",

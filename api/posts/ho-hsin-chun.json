@@ -19,8 +19,42 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 269,
+  "count": 271,
   "posts": [
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "e059e980d988d4e1ea6ea797b66b9f6f90109322bb752fce149a1cde43e768c2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcD5wLHlFIV",
+      "imageAspect": 1.768,
+      "imageUrl": "assets/feed-images/1176e23d1bfcddfb4134.webp",
+      "keywords": [
+        "催票"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-15T12:36:27+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "呼籲看到何欣純就拍照分享催票，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:台中大街小巷如果看到何欣純，公車、廣告、文宣品...或是本人，拜託拍下來留言給我，一起幫忙分享+宣傳+催票，謝謝台中、謝謝您！❤❤",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcD5wLHlFIV"
+    },
     {
       "agendaRelevance": 0.14,
       "candidateId": "ho-hsin-chun",
@@ -9769,6 +9803,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/NWAdybPydDQ"
+    },
+    {
+      "agendaRelevance": 0.23,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "31ddb83520183925e7a4caf9907a61a92cfa9a0ad10bba2795c1109bf6020ea9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:OFttuZ4dDnQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/10178b73d0664f62e209.webp",
+      "keywords": [
+        "催票"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是宣傳催票，屬選舉動員而非政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "台中大街小巷如果看到何欣純，公車、廣告、文宣品...或是本人，一起幫忙分享+宣傳+催票，謝謝台中、謝謝您！❤❤",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/OFttuZ4dDnQ"
     }
   ],
   "version": 1
