@@ -1,6 +1,42 @@
 {
-  "count": 170,
+  "count": 172,
   "posts": [
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-16T10:01:19+00:00",
+        "inputHash": "104ddb75dd1f9dcb5f8ea7bc9df9da7279b3536aa3560eecab5dcd28a79c05d2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFmn-2EwQj",
+      "imageAspect": 1.3289,
+      "imageUrl": "assets/feed-images/24c6a91362041cc52b89.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-16T04:27:26+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出勞工訓練、福利與工作環境改善，屬明確政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:勞工百工百業力挺，作伙挺亭妃！\n\n我也是勞工子弟，從小看著爸爸在東菜市賣水果、晚上到夜市賣棉被，一步一腳印走到今天。\n\n所以我更知道，勞工要的不是漂亮的政治支票，而是政府真正聽得見、做得到。\n\n如果有機會擔任市長，我要做大家的「勞工市長」！讓勞工政策不再大鍋菜，從訓練、福利到工作環境，一項一項改善，持續為大家打拚。\n\n謝謝五大總工會、做工行善團，以及百工百業的夥伴相挺！\n\n讓我們作伙寫歷史，迎接台南400年來第一位女市長！\n\n#陳亭妃 #勞工市長 #百工百業力挺",
+      "topicScores": {
+        "生活": 0.45,
+        "社福": 0.9,
+        "經濟": 0.82
+      },
+      "topics": [
+        "社福",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcFmn-2EwQj"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
@@ -6192,6 +6228,43 @@
         "醫療"
       ],
       "url": "https://www.youtube.com/watch?v=def_D9jXjqk"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-16T10:01:19+00:00",
+        "inputHash": "59d0c27c6d965f90270e79f148ca6ede257820e35e4a02743b899c42bcf80a56",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:pJjaC0I4W_E",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f96a8f7e4373e4e7e98c.webp",
+      "keywords": [
+        "豪雨",
+        "中小企業"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "強調豪雨受災認列與協助企業，屬災後救助與產業處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-yt",
+      "text": "台南仁德工業區豪雨受創！陳亭妃力爭認列災區 全力協助中小企業！",
+      "topicScores": {
+        "經濟": 0.75,
+        "防災": 0.95
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/pJjaC0I4W_E"
     }
   ],
   "title": "陳亭妃（臺南市）貼文更新",
