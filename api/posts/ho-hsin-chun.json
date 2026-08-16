@@ -19,8 +19,44 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 272,
+  "count": 274,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "002c509024a9cffbdaa17c9224286d88508537576b9ac87e0f722383cb6b65a5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFcMKKDNtw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9271237cb7399e4808f9.webp",
+      "keywords": [
+        "音樂"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T02:58:12+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以個人回顧照片與選舉、音樂季經歷為主，偏形象分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:助理偷偷翻出我過去的照片，從嬰兒時期、留學英國、第一次選立委，到後來舉辦音樂季，每張都是珍貴又難忘的回憶\n\n一起來看看，那些年的何欣純吧！",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFcMKKDNtw"
+    },
     {
       "agendaRelevance": 0.95,
       "candidateId": "ho-hsin-chun",
@@ -9871,6 +9907,42 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/OFttuZ4dDnQ"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "c3999e4c71858d243649c2d7711bac78f40f481283624761941ddc11af2dcb86",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3sQBoNPxcss",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/59c9d169a8e217889799.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動談大肚建設與發展，涵蓋居住、交通與地方經濟。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "📍 168來到大肚！大肚的建設與發展我這樣看",
+      "topicScores": {
+        "交通": 0.58,
+        "住宅": 0.61,
+        "經濟": 0.75
+      },
+      "topics": [
+        "經濟",
+        "住宅",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/3sQBoNPxcss"
     }
   ],
   "version": 1

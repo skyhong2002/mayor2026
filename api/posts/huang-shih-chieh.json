@@ -19,8 +19,74 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 255,
+  "count": 257,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "542705e593e6ed718c1c8247c33ba21f530f656f517c8d55171aac63b58fb468",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFQCSdEzs7",
+      "imageAspect": 1.3337,
+      "imageUrl": "assets/feed-images/b6b551bcdaeac64704ad.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-16T01:10:03+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "屬晨間運動與參拜行程紀錄，未提出具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:週日早安，五酒桶山動起來⛰️🌿\n\n一早6:30來到五酒桶山步道，和晨間運動的山友們打招呼！感謝大家一早的熱情與鼓勵，用滿滿活力開啟新的一天💪🏻\n\n接著來到南天宮參拜祈福，祈求桃園大發展、蘆竹大進步！世杰會繼續走進蘆竹、走遍桃園各個角落，一步一腳印傾聽大家的聲音！\n\n心蘆竹，動起來💖",
+      "topicScores": {
+        "文化觀光": 0.42,
+        "生活": 0.87
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFQCSdEzs7"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "befb2724463fae1f076d0a571c5f2d66052c4ed07a6c7be8d3326f5843fb0347",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFBvarEqho",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/3167f464d603aab8da40.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-15T23:05:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅打招呼分享登山步道早安，屬日常互動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:早安！週日一早6:30我們在五酒桶山步道口與登山好朋友問好🌿",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcFBvarEqho"
+    },
     {
       "agendaRelevance": 0.67,
       "candidateId": "huang-shih-chieh",

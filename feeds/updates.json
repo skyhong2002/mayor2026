@@ -3,6 +3,191 @@
   "posts": [
     {
       "agendaRelevance": 0.62,
+      "candidateId": "su-chiaohui",
+      "candidate_id": "su-chiaohui",
+      "candidate_name": "蘇巧慧",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "d280992ae6834b0ca38c28da330fdcdf6ea43ffabb50bcae2636e620bf6bd67a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFjf6SjZ8K",
+      "imageAspect": 1.5038,
+      "imageUrl": "assets/feed-images/a19298877a4bce565727.webp",
+      "keywords": [
+        "交通",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T04:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動與佳龍部長交流新北交通、產業發展與國際交流願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:我和 @dragonforpeople 佳龍部長見面，一邊享用著佳龍部長特別預備的油庫口麵線、香腸，一邊交流著台灣、新北的各項議題。\n\n部長特別和我分享他對於新北交通的願景，我們也針對台灣的產業發展、國際交流等議題有了許多討論。\n\n感謝佳龍部長的分享，我會繼續努力，我們繼續一起為台灣打拚！",
+      "topicScores": {
+        "交通": 0.78,
+        "兩岸外交": 0.57,
+        "經濟": 0.52
+      },
+      "topics": [
+        "交通",
+        "兩岸外交",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcFjf6SjZ8K"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "ho-hsin-chun",
+      "candidate_id": "ho-hsin-chun",
+      "candidate_name": "何欣純",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "002c509024a9cffbdaa17c9224286d88508537576b9ac87e0f722383cb6b65a5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFcMKKDNtw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/9271237cb7399e4808f9.webp",
+      "keywords": [
+        "音樂"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T02:58:12+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以個人回顧照片與選舉、音樂季經歷為主，偏形象分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:助理偷偷翻出我過去的照片，從嬰兒時期、留學英國、第一次選立委，到後來舉辦音樂季，每張都是珍貴又難忘的回憶\n\n一起來看看，那些年的何欣純吧！",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFcMKKDNtw"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "candidate_id": "lai-jui-lung",
+      "candidate_name": "賴瑞隆",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "8cedad1910aa54acdd1510341097d3fb7e535e60af388788a7da91d4bdcb5763",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFZmLEiUiV",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/42d8f312d55b86ff6937.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T02:34:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是邀請感受排灣文化，屬文化展示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:djavadjavai，一起感受排灣文化的繽紛與活力！",
+      "topicScores": {
+        "文化觀光": 0.95
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFZmLEiUiV"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "542705e593e6ed718c1c8247c33ba21f530f656f517c8d55171aac63b58fb468",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFQCSdEzs7",
+      "imageAspect": 1.3337,
+      "imageUrl": "assets/feed-images/b6b551bcdaeac64704ad.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-16T01:10:03+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "屬晨間運動與參拜行程紀錄，未提出具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:週日早安，五酒桶山動起來⛰️🌿\n\n一早6:30來到五酒桶山步道，和晨間運動的山友們打招呼！感謝大家一早的熱情與鼓勵，用滿滿活力開啟新的一天💪🏻\n\n接著來到南天宮參拜祈福，祈求桃園大發展、蘆竹大進步！世杰會繼續走進蘆竹、走遍桃園各個角落，一步一腳印傾聽大家的聲音！\n\n心蘆竹，動起來💖",
+      "topicScores": {
+        "文化觀光": 0.42,
+        "生活": 0.87
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFQCSdEzs7"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "huang-shih-chieh",
+      "candidate_id": "huang-shih-chieh",
+      "candidate_name": "黃世杰",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "befb2724463fae1f076d0a571c5f2d66052c4ed07a6c7be8d3326f5843fb0347",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFBvarEqho",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/3167f464d603aab8da40.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-15T23:05:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅打招呼分享登山步道早安，屬日常互動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:早安！週日一早6:30我們在五酒桶山步道口與登山好朋友問好🌿",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcFBvarEqho"
+    },
+    {
+      "agendaRelevance": 0.62,
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
       "candidate_name": "沈伯洋",
@@ -3839,204 +4024,6 @@
         "經濟"
       ],
       "url": "https://www.facebook.com/zenolai2/posts/pfbid033QQTNVVxnW49VegbU4mVM7FLJHUYna4GVuskGPTvG1reN1dpVXBPRZ3G5s51bZ5tl"
-    },
-    {
-      "agendaRelevance": 0.74,
-      "candidateId": "chiang-chi-chen",
-      "candidate_id": "chiang-chi-chen",
-      "candidate_name": "江啟臣",
-      "classification": {
-        "classifiedAt": "2026-08-15T04:04:29+00:00",
-        "inputHash": "9b371fa224f49d2f0feaa498df5ca3e82d923afb235de9fd9fbb21ef2a7bc1a9",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1589450859208396",
-      "imageAspect": 0.5635,
-      "imageUrl": "assets/feed-images/10bec5d630897dfc1ab9.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-14T04:15:28.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "聚焦東豐快工程進度與通車時程，屬具體交通建設主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "等了20年，東豐快第三標工程正式合龍❗️\n「東勢-石岡」今年底通車、118年底全線通車🎉\n\n東豐快第三標工程正式合龍，山城鄉親盼望超過20年的＃生命救援線 ，已進入通車倒數！東勢至石岡段預計今年10月完工、12月正式通車 。\n\n過去因政策變動導致工程延宕近十年，更造成預算暴增百億，但「有心推動，就有方法可以解決」。啟臣成功向中央爭取經費補助，為臺中市減輕了三分之二的財政負擔，讓工程得以順利邁進。\n\n東豐快是大臺中 #四環一線 高快速路網的最後拼圖，啟臣會持續繼續緊盯進度、爭取資源，督促工程務必 #如期如質 完工，早日將這條安全、便捷的回家路交到大家手中！\n\n#臺中啟程 #打造旗艦城 #高快速路網 #四環ㄧ線幸福連線 #東豐快",
-      "topicScores": {
-        "交通": 0.99
-      },
-      "topics": [
-        "交通"
-      ],
-      "url": "https://www.facebook.com/reel/1611980940433454/"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "chiang-chi-chen",
-      "candidate_id": "chiang-chi-chen",
-      "candidate_name": "江啟臣",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "22e6bda7dc67fe74657034fa621658b2e91f36de44fb2d792cd8e604c4264bb0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcAbkA-Dflq/",
-      "imageAspect": 0.5631,
-      "imageUrl": "assets/feed-images/be351619e39ea0356141.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-14T04:15:13+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "聚焦東豐快工程進度與通車時程，屬具體交通政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "等了20年，東豐快第三標工程正式合龍❗️\n「東勢-石岡」今年底通車、118年底全線通車🎉\n\n東豐快第三標工程正式合龍，山城鄉親盼望超過20年的＃生命救援線 ，已進入通車倒數！東勢至石岡段預計今年10月完工、12月正式通車 。\n\n過去因政策變動導致工程延宕近十年，更造成預算暴增百億，但「有心推動，就有方法可以解決」。啟臣成功向中央爭取經費補助，為臺中市減輕了三分之二的財政負擔，讓工程得以順利邁進。\n\n東豐快是大臺中 #四環一線 高快速路網的最後拼圖，啟臣會持續繼續緊盯進度、爭取資源，督促工程務必 #如期如質 完工，早日將這條安全、便捷的回家路交到大家手中！\n\n#臺中啟程 #打造旗艦城 #高快速路網 #四環ㄧ線幸福連線 #東豐快",
-      "topicScores": {
-        "交通": 0.98,
-        "經濟": 0.68,
-        "防災": 0.41
-      },
-      "topics": [
-        "交通",
-        "經濟",
-        "防災"
-      ],
-      "url": "https://www.instagram.com/p/DcAbkA-Dflq/"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "huang-shih-chieh",
-      "candidate_id": "huang-shih-chieh",
-      "candidate_name": "黃世杰",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "c2f704c7be0cf46d8b0e8398fc98b3081e19b5a74c22ed965d26c6793354e41c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DcAadUuCUcQ",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/78a7358cee1046dc55a1.webp",
-      "keywords": [
-        "攤商",
-        "文化",
-        "美食"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-14T04:04:56+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "延續南門市場再生與觀光定位，屬主動政策宣示。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:早安！南門市場🔆世杰來到桃園人最熟悉的灶跤（tsàu-kha），市民朋友非常熱情，說有在節目上看到我，一定要給我大大的鼓勵！\n\n南門市場承載許多老桃園人的回憶，去年底歷經嚴重火災，雖然逐漸恢復人潮與活力，但重建的速度還是要努力加快，讓市場早日找回榮光。\n\n因為在意的事情相同，所以就算是新朋友、互動也像老朋友。有位攤商夥伴握著我的手，請我一定要加油，一定要改變桃園、讓桃園變得不一樣💪\n\n世杰會跟大家一起努力，打造南門市場成為桃園的文化美食地標，成為帶動桃園舊城再生的一個重要起點！讓心桃園，動起來💖",
-      "topicScores": {
-        "文化觀光": 0.79,
-        "生活": 0.62,
-        "經濟": 0.82
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DcAadUuCUcQ"
-    },
-    {
-      "agendaRelevance": 0.9,
-      "candidateId": "lai-jui-lung",
-      "candidate_id": "lai-jui-lung",
-      "candidate_name": "賴瑞隆",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "784666baac382c419bcb51f46d327646302efeb3806fdca2970660883f2ecf4e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DcAaWmpEe9L",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/66ceeaf51d960948132e.webp",
-      "keywords": [
-        "捷運"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-14T04:04:00+00:00",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "主動指控對手配合黨意害高雄預算與建設延宕，屬競選攻防。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-threads",
-      "text": "@zenolai:📣請柯委員以高雄為念、以台灣為念，君子務本，本立而道生\n\n柯志恩委員，您是要選高雄市長的人，為何總是聽從台北黨意，配合國民黨表決，三振高雄市民的權益呢？\n\n國民黨拒審總預算，導致高雄捷運、遷村計畫和治水防洪工程受到延宕，這時候您在哪裡？\n\n國民黨強推財劃法，獨厚台北首都預算增加3%，造成對高雄嚴重不平局面時，您又在哪裡？\n\n而最令人無法接受的，是柯志恩委員非但沒有和高雄站在一起，還以國民黨政策會執行長的身分，主導了這版對高雄極不公平的《財劃法》。\n\n📣對財經不專業，也無法迴避犧牲高雄的事實\n\n這20多年來我始終跟高雄在一起，與高雄立委們為高雄爭取超過6,000億的建設經費，我們比誰都清楚，高雄好不容易拚出來的建設預算，一分一毫都不能退讓。\n\n高雄的蛻變，不該被政治利益犧牲。不管面對多少政治操作和扭曲，我們高雄隊都會以最堅定的行動力，帶領大南方繼續大步向前。",
-      "topicScores": {
-        "交通": 0.82,
-        "競選": 0.96,
-        "經濟": 0.97,
-        "防災": 0.8
-      },
-      "topics": [
-        "經濟",
-        "競選",
-        "交通",
-        "防災"
-      ],
-      "url": "https://www.threads.com/t/DcAaWmpEe9L"
-    },
-    {
-      "agendaRelevance": 0.6,
-      "candidateId": "huang-shih-chieh",
-      "candidate_id": "huang-shih-chieh",
-      "candidate_name": "黃世杰",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "c0a22f6a1b970fd420cdb617124bf25d22ef9593eaf59296fa83b97172e8537e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcAaMkdE3Xa/",
-      "imageAspect": 1.5019,
-      "imageUrl": "assets/feed-images/25bb061bedf75616cf85.webp",
-      "keywords": [
-        "攤商",
-        "文化",
-        "美食"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-14T04:02:41+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "談南門市場重建與打造文化美食地標，屬地方治理主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "早安！南門市場🔆世杰來到桃園人最熟悉的灶跤（tsàu-kha），市民朋友非常熱情，說有在節目上看到我，一定要給我大大的鼓勵！\n\n南門市場承載許多老桃園人的回憶，去年底歷經嚴重火災，雖然逐漸恢復人潮與活力，但重建的速度還是要努力加快，讓市場早日找回榮光。\n\n因為在意的事情相同，所以就算是新朋友、互動也像老朋友。有位攤商夥伴握著我的手，請我一定要加油，一定要改變桃園、讓桃園變得不一樣💪\n\n感謝余信憲議員 @yu.councilor 、黃瓊慧議員 @qn_taiwan 、李光達議員 @lee_kung_da 、黃家齊議員 @jack790218 、李柏瑟議員候選人 @leeposhe_taoyuanmama 、南門市場自治會鄭秀美會長、南門市場自治會郭添成總幹事、南昌東街熊福秋會長、前文化街自治會陳忠榮會長、南華里林獻堂里長、長美里林秀貞里長與南昌西街管委會溫宜鎮委員，作伙來支持相挺！\n\n世杰會跟大家一起努力，打造南門市場成為桃園的文化美食地標，成為帶動桃園舊城再生的一個重要起點！讓心桃園，動起來💖",
-      "topicScores": {
-        "文化觀光": 0.79,
-        "生活": 0.62,
-        "經濟": 0.82
-      },
-      "topics": [
-        "經濟",
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DcAaMkdE3Xa/"
     }
   ],
   "title": "2026 市長官方來源觀測站",

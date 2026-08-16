@@ -1,6 +1,40 @@
 {
-  "count": 251,
+  "count": 252,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-16T04:01:23+00:00",
+        "inputHash": "8cedad1910aa54acdd1510341097d3fb7e535e60af388788a7da91d4bdcb5763",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcFZmLEiUiV",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/42d8f312d55b86ff6937.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T02:34:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "只是邀請感受排灣文化，屬文化展示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:djavadjavai，一起感受排灣文化的繽紛與活力！",
+      "topicScores": {
+        "文化觀光": 0.95
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcFZmLEiUiV"
+    },
     {
       "agendaRelevance": 0.0,
       "candidateId": "lai-jui-lung",
