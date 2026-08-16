@@ -1,6 +1,118 @@
 {
-  "count": 264,
+  "count": 268,
   "posts": [
+    {
+      "agendaRelevance": 0.25,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T16:05:17+00:00",
+        "inputHash": "2bb3ab53272399395cbab7c707cc556addbf18e7d7fad0ebe983518da0fbb3fd",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcGkXtnSlVG/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/72db6e3ede7621dcad50.webp",
+      "keywords": [
+        "教育",
+        "營養午餐",
+        "國中"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-16T13:27:20+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "轉述營養午餐陳情，主軸是向教育局反映問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "網友陳情：台南市國中營養午餐變三菜一湯，比免費前少一樣菜...龍介兄週一詢問教育局 #謝龍介 #台南營養午餐",
+      "topicScores": {
+        "教育": 0.88,
+        "生活": 0.6
+      },
+      "topics": [
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcGkXtnSlVG/"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T16:05:17+00:00",
+        "inputHash": "3012a6fe04735d1c2474e26fff4bf3368f589b5ceaa3717a91b47846348decbe",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcGkCo2D1uc",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d2b2bb2308a684aabb5c.webp",
+      "keywords": [
+        "教育",
+        "營養午餐",
+        "國中"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-16T13:24:26+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "僅反映網友陳情午餐問題，未回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友陳情：台南市國中營養午餐變三菜一湯，比免費前少一樣菜...龍介兄週一詢問教育局",
+      "topicScores": {
+        "教育": 0.88,
+        "生活": 0.57
+      },
+      "topics": [
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcGkCo2D1uc"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T16:05:17+00:00",
+        "inputHash": "70e127cfd0f4ea7d44f280532d00d857c5d1c3389fe2de477df1784d5b515724",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1632449578236624",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/2364dcf5668bf6def883.webp",
+      "keywords": [
+        "教育",
+        "營養午餐",
+        "國中"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-16T13:21:37.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "轉述網友陳情並表示將詢問教育局，屬自發性反映校園午餐問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友陳情：台南市國中營養午餐變三菜一湯，比免費前少一樣菜...龍介兄週一詢問教育局",
+      "topicScores": {
+        "教育": 0.93
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1321278051059218/"
+    },
     {
       "agendaRelevance": 0.3,
       "candidateId": "hsieh-lung-chieh",
@@ -9389,6 +9501,38 @@
         "兩岸外交"
       ],
       "url": "https://www.youtube.com/watch?v=nRMv2VsVt4A"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-16T16:05:17+00:00",
+        "inputHash": "538683d808d8ab2243281b7fadee376cc7aa5d7dba6f87780c181bf45d93aa36",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:b-b0M4mMTus",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/f9e41984aeb28f586efe.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "只是轉述網友對學校營養午餐的抱怨。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Netizen complaint: Tainan junior high school lunches reduced to three dishes and one soup, one di...",
+      "topicScores": {
+        "教育": 0.91
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/b-b0M4mMTus"
     }
   ],
   "title": "謝龍介（臺南市）貼文更新",
