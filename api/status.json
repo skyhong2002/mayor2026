@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-18 00:15:15"
+        "最近一次執行心跳：2026-08-18 06:14:57"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：2700",
+        "已收錄貼文：2701",
         "監看帳號：81"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：113 ms"
+        "耗時：138 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-18 00:01:08",
+        "最新抓取時間：2026-08-18 06:00:52",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-08-17 00:03:41",
         "本月已花費：$2.19 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 34.3h, next at 2026-08-18T02:22:07+00:00; ~$2.19 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 33.7h, next at 2026-08-18T01:46:13+00:00; ~$2.19 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,17 +77,17 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-08-18T00:15:15+08:00",
+  "generatedAt": "2026-08-18T06:14:57+08:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-08-17T14:59:28+00:00",
     "postsByPlatform": {
       "facebook": 840,
-      "instagram": 748,
+      "instagram": 749,
       "threads": 675,
       "youtube": 437
     },
-    "totalPosts": 2700,
+    "totalPosts": 2701,
     "watchAccounts": 81
   },
   "overall": {
@@ -96,104 +96,6 @@
     "summary": "核心 pipeline 有產出；需要注意：YouTube yt-dlp。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:12:04+00:00",
-      "sourceId": "chen-tf-yt",
-      "sourceName": "陳亭妃（chen-tf-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:13:04+00:00",
-      "sourceId": "chen-tf-yt-2",
-      "sourceName": "陳亭妃（chen-tf-yt-2）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:14:04+00:00",
-      "sourceId": "hsieh-lc-yt",
-      "sourceName": "謝龍介（hsieh-lc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCAbvXdpn460E7CtcjO7KuJA']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:15:04+00:00",
-      "sourceId": "lin-yf-yt",
-      "sourceName": "林義豐（lin-yf-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:16:04+00:00",
-      "sourceId": "lai-jl-yt",
-      "sourceName": "賴瑞隆（lai-jl-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T10:17:04+00:00",
-      "sourceId": "ko-ce-yt",
-      "sourceName": "柯志恩（ko-ce-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@PumaShen']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:02:09+00:00",
-      "sourceId": "shen-yt-personal",
-      "sourceName": "沈伯洋（shen-yt-personal）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:03:09+00:00",
-      "sourceId": "chiang-wa-yt",
-      "sourceName": "蔣萬安（chiang-wa-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:04:09+00:00",
-      "sourceId": "su-ch-yt",
-      "sourceName": "蘇巧慧（su-ch-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCfS5UhHzM8rjH5DnYuVCw5w']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:05:09+00:00",
-      "sourceId": "lee-sc-yt",
-      "sourceName": "李四川（lee-sc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC7mnxOvJmztdSfFpOp8BkjQ']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:06:09+00:00",
-      "sourceId": "huang-sj-yt",
-      "sourceName": "黃世杰（huang-sj-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@taoyuansango']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:07:09+00:00",
-      "sourceId": "chang-sc-yt",
-      "sourceName": "張善政（chang-sc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:08:09+00:00",
-      "sourceId": "ho-hc-yt",
-      "sourceName": "何欣純（ho-hc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/user/kesing168']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T16:09:09+00:00",
-      "sourceId": "chiang-cc-yt",
-      "sourceName": "江啟臣（chiang-cc-yt）"
-    },
     {
       "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 60 seconds",
       "platform": "youtube",
@@ -233,6 +135,104 @@
       "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 60 seconds",
       "platform": "youtube",
       "recordedAt": "2026-08-17T16:15:09+00:00",
+      "sourceId": "ko-ce-yt",
+      "sourceName": "柯志恩（ko-ce-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@PumaShen']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:01:53+00:00",
+      "sourceId": "shen-yt-personal",
+      "sourceName": "沈伯洋（shen-yt-personal）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:02:53+00:00",
+      "sourceId": "chiang-wa-yt",
+      "sourceName": "蔣萬安（chiang-wa-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:03:53+00:00",
+      "sourceId": "su-ch-yt",
+      "sourceName": "蘇巧慧（su-ch-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCfS5UhHzM8rjH5DnYuVCw5w']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:04:53+00:00",
+      "sourceId": "lee-sc-yt",
+      "sourceName": "李四川（lee-sc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC7mnxOvJmztdSfFpOp8BkjQ']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:05:53+00:00",
+      "sourceId": "huang-sj-yt",
+      "sourceName": "黃世杰（huang-sj-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@taoyuansango']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:06:53+00:00",
+      "sourceId": "chang-sc-yt",
+      "sourceName": "張善政（chang-sc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:07:53+00:00",
+      "sourceId": "ho-hc-yt",
+      "sourceName": "何欣純（ho-hc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/user/kesing168']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:08:53+00:00",
+      "sourceId": "chiang-cc-yt",
+      "sourceName": "江啟臣（chiang-cc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:09:53+00:00",
+      "sourceId": "chen-tf-yt",
+      "sourceName": "陳亭妃（chen-tf-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:10:53+00:00",
+      "sourceId": "chen-tf-yt-2",
+      "sourceName": "陳亭妃（chen-tf-yt-2）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:11:53+00:00",
+      "sourceId": "hsieh-lc-yt",
+      "sourceName": "謝龍介（hsieh-lc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCAbvXdpn460E7CtcjO7KuJA']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:12:53+00:00",
+      "sourceId": "lin-yf-yt",
+      "sourceName": "林義豐（lin-yf-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:13:53+00:00",
+      "sourceId": "lai-jl-yt",
+      "sourceName": "賴瑞隆（lai-jl-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 60 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-17T22:14:53+00:00",
       "sourceId": "ko-ce-yt",
       "sourceName": "柯志恩（ko-ce-yt）"
     }

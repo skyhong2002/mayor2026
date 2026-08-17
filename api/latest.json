@@ -756,6 +756,40 @@
       "url": "https://www.threads.com/t/DcIdGlWlL4_"
     },
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-17T22:14:54+00:00",
+        "inputHash": "21ed4eee1326ba4862b41dcc0f950b78a687863a48039dc4d34e340fdc1565fe",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcIcefnSJdU/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/535eb68ed63d032a4b43.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-17T07:01:17+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳夜市逛街活動，屬生活與文化觀光，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "明晚一起逛夜市~\n⠀\n8/18（二）\n⠀\n19:30\n📍寧夏夜市",
+      "topicScores": {
+        "文化觀光": 0.89,
+        "生活": 0.71
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcIcefnSJdU/"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",
       "classification": {
@@ -3757,38 +3791,6 @@
         "生活"
       ],
       "url": "https://www.facebook.com/fififans/posts/pfbid0255GzFx8RMyNQbJ7Qq5bPqR6UUK4mZgyqBsTvNjjdebjSCao5xe92oVzWK3ahP8Dml"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-16T16:05:17+00:00",
-        "inputHash": "429ce562e4882d2dc1cfd664543079ad47cf5fc2956f5042c1eaf23356c8448f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcFCRiBzMTE/",
-      "imageAspect": 0.5623,
-      "imageUrl": "assets/feed-images/3b66c0f7561a069ebc1a.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-15T23:10:23+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "僅是清晨步道打招呼的行程截圖，無政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "早安！週日一早6:30我們在五酒桶山步道口與登山好朋友問好🌿\n\n許清順議員 @scs3242288 \n胡家智議員候選人 @huchiachih￼",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DcFCRiBzMTE/"
     }
   ],
   "version": 1
