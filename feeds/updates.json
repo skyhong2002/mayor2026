@@ -965,6 +965,40 @@
       "url": "https://www.facebook.com/reel/1747940803078377/"
     },
     {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "candidate_id": "shen-poyang",
+      "candidate_name": "沈伯洋",
+      "classification": {
+        "classifiedAt": "2026-08-17T04:01:36+00:00",
+        "inputHash": "c32e6aab345cee51c5eaf4ea8ed2e47143265a6a80ca5d6879d70f66c39b271a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcGaHAUSDGt/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f23c6b206ca18ddec7d7.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-16T12:00:13+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享與網紅合拍影片的心情，屬日常互動，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "看 @dr.agree88 影片那麼久，\n竟然有機會\n跟他一起拍片！\n⠀\n興奮到前一天\n睡不著哈哈哈\n⠀\n一見面就先來個\n默契大考驗，\n大家猜猜\n我表現如何？",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcGaHAUSDGt/"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "candidate_id": "shen-poyang",
@@ -3962,51 +3996,6 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DcDVcXoGKtQ/"
-    },
-    {
-      "agendaRelevance": 0.88,
-      "candidateId": "su-chiaohui",
-      "candidate_id": "su-chiaohui",
-      "candidate_name": "蘇巧慧",
-      "classification": {
-        "classifiedAt": "2026-08-15T10:00:55+00:00",
-        "inputHash": "a2e38eb0fd3d2b8c2827c2f8147f13f30c10030c929bff9214e481feafcb41e3",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DcDUqq1GX2F",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/d66e3f417ae3509a5fc9.webp",
-      "keywords": [
-        "文化",
-        "產業",
-        "科技",
-        "AI"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-15T07:12:02+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出雲林日、農特產推廣與AI技職交流等競選政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:感謝千位雲林鄉親相挺巧慧！新北、雲林一起進步、一起贏！\n\n新北是全國雲林同鄉最多的城市，80萬雲林鄉親選擇在這裡落地深根，一起推動新北的進步。而我在新北服務超過十年期間，也和大家一起努力，今天非常感謝大家站出來相挺！\n\n未來，我不只要在新北舉辦✨雲林日，大力推廣雲林的農特產和文化，讓更多新北鄉親認識雲林優秀的好產品、好文化。我和 @liu.cn.ko 劉建國雲林縣長候選人也要共同合作 ✨AI技職人才交流計劃，串連新北、雲林的科技產官學界，帶動兩座城市產業再升級，打造智慧城市！\n\n「在地人的好所在、出外人的新故鄉。」這是我對新北市民朋友的承諾，也是我們的共同願景。新時代、新北市，蘇巧慧會是最好的新市長，帶領新北更進步！",
-      "topicScores": {
-        "教育": 0.61,
-        "文化觀光": 0.72,
-        "競選": 0.98,
-        "經濟": 0.64
-      },
-      "topics": [
-        "競選",
-        "文化觀光",
-        "經濟",
-        "教育"
-      ],
-      "url": "https://www.threads.com/t/DcDUqq1GX2F"
     }
   ],
   "title": "2026 市長官方來源觀測站",

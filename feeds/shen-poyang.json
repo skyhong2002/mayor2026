@@ -1,5 +1,5 @@
 {
-  "count": 289,
+  "count": 290,
   "posts": [
     {
       "agendaRelevance": 0.9,
@@ -104,6 +104,38 @@
         "生活"
       ],
       "url": "https://www.facebook.com/reel/1747940803078377/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-17T04:01:36+00:00",
+        "inputHash": "c32e6aab345cee51c5eaf4ea8ed2e47143265a6a80ca5d6879d70f66c39b271a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcGaHAUSDGt/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f23c6b206ca18ddec7d7.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-16T12:00:13+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享與網紅合拍影片的心情，屬日常互動，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "看 @dr.agree88 影片那麼久，\n竟然有機會\n跟他一起拍片！\n⠀\n興奮到前一天\n睡不著哈哈哈\n⠀\n一見面就先來個\n默契大考驗，\n大家猜猜\n我表現如何？",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcGaHAUSDGt/"
     },
     {
       "agendaRelevance": 0.82,
