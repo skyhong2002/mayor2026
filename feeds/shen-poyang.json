@@ -1,6 +1,40 @@
 {
-  "count": 292,
+  "count": 293,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-17T16:15:10+00:00",
+        "inputHash": "f99b578517db27ed4cd0b6b184de3207bf914bdb6459f446b83d09a587a324dc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcI_cXWACOj",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/10210b93b2b614f5a530.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-17T12:03:44+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是出外景與猜嘉賓的日常互動，無具體公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:今天助理安排我出外景，\n大家猜猜看\n跟我合體的\n「沈秘嘉賓」是誰？",
+      "topicScores": {
+        "文化觀光": 0.41,
+        "生活": 0.87
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcI_cXWACOj"
+    },
     {
       "agendaRelevance": 0.86,
       "candidateId": "shen-poyang",
