@@ -19,8 +19,45 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 286,
+  "count": 288,
   "posts": [
+    {
+      "agendaRelevance": 0.46,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "be2d06e84d797872d50bac369195ca47ae9acee6c0e2ec34061d3008cd925506",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcN8NEqkRm6",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6e9e06dd6e92b16b877f.webp",
+      "keywords": [
+        "校園",
+        "毒品"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-19T10:09:58+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "回應校園毒品疑慮並主張擴大防堵，屬主動提出治安與校園安全作法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:網友擔心毒品進入校園…需要再擴大防堵",
+      "topicScores": {
+        "教育": 0.84,
+        "治安": 0.63
+      },
+      "topics": [
+        "教育",
+        "治安"
+      ],
+      "url": "https://www.threads.com/t/DcN8NEqkRm6"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "hsieh-lung-chieh",
@@ -10174,6 +10211,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/EMAFO1CTTf8"
+    },
+    {
+      "agendaRelevance": 0.41,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "c8a3dcb62029baf02589c058fd3efc348e91b0f51f2fcaaa7d52039918015786",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:0qY-upXtB6o",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/c9fc8df391f2516e7166.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "談校園毒品防堵措施，屬主動提出校安與教育議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Netizens Concerned About Drugs Entering Schools… More Comprehensive Prevention Measures Needed",
+      "topicScores": {
+        "教育": 0.83,
+        "治安": 0.65
+      },
+      "topics": [
+        "教育",
+        "治安"
+      ],
+      "url": "https://www.youtube.com/shorts/0qY-upXtB6o"
     }
   ],
   "version": 1

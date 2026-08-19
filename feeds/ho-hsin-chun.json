@@ -1,6 +1,38 @@
 {
-  "count": 298,
+  "count": 300,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "6b88049cebccd5d2ebe864fc328a8ff03132531cc14dc4b3b1e767781b9c996a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcOPwwPGJHU",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/a16025037aeafe4f7cda.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-19T13:01:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是七夕日常抒發，沒有公共政策或議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:七夕快樂！！\n日常生活，每天真實，謝謝洗衣機、謝謝你！",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcOPwwPGJHU"
+    },
     {
       "agendaRelevance": 0.7,
       "candidateId": "ho-hsin-chun",
@@ -10796,6 +10828,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/rP83puEtO10"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "e5b3b61ba17b182b499945d8ac65b31081a4dd027fa5875d3717bf5962acd54e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:YTyCaZNNnu4",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/65daa08f241d19b54921.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為七夕日常貼文，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "七夕快樂！！日常生活，每天真實，謝謝洗衣機、謝謝你！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/YTyCaZNNnu4"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

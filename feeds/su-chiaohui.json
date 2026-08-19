@@ -1,6 +1,48 @@
 {
-  "count": 302,
+  "count": 304,
   "posts": [
+    {
+      "agendaRelevance": 0.94,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "60006c1ed714b0ac8d96c8b0805134a1460e790b8b0cffb920cd903af1087d9b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcOT3KGGZwE",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/ef90923d6265f8e44498.webp",
+      "keywords": [
+        "長照",
+        "補助",
+        "津貼",
+        "照顧",
+        "醫療"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-19T13:36:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動公布長照政見，核心在照顧津貼、補助與醫療長照銜接。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:照顧照顧者！做照顧者最堅強的後盾！\n\n非常感謝今天許多長照產業界的好朋友站出來相挺！我也正式和大家報告我的長照政見：\n\n✅ 加發津貼\n加碼照顧照顧者！未來我會針對職業照顧者加發夜間、緊急及困難照顧津貼，給長照從業人員最實質的幫助。\n\n✅ 補助進修\n為了幫助照顧者提升自我專業能力，我將針對職業照顧者補助進修和攻讀學位，為市民朋友培養更多優秀的照顧人才。\n\n✅ 行政簡化\n減輕照顧者和機構的行政負擔，讓優秀的照顧人力可以將最大的心力投入在照顧服務。\n\n✅ 一次到位\n未來我會配合長照3.0，加強醫療與長照銜接，由市府投入專案預算讓居家服務和輔具一次到位，同時帶入 #專業復能，讓照顧持續不間斷。\n\n新時代的新北市，新北隊會是最有能力，帶領各行各業在新北加速發展、更加茁壯的最好選擇。",
+      "topicScores": {
+        "社福": 0.99,
+        "競選": 0.93,
+        "醫療": 0.67
+      },
+      "topics": [
+        "社福",
+        "競選",
+        "醫療"
+      ],
+      "url": "https://www.threads.com/t/DcOT3KGGZwE"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "su-chiaohui",
@@ -11226,6 +11268,42 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/5qdL41HLzRk"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "fa99fa1d8528cb3a5fafe5cce5919b1a8acc6177bbfe0c8dcafb887e16bd37a7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ToccteJrlnE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/c97c5d90905740d6babc.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "感謝夜市朋友並喊話前進，屬活動致意與競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Thanks to my good friends at Lehua Night Market in Yonghe! Let’s charge forward together!",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "競選": 0.71,
+        "經濟": 0.74
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/ToccteJrlnE"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

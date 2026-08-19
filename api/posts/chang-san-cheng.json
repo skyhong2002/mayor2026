@@ -19,7 +19,7 @@
     "name": "張善政",
     "party": "國民黨"
   },
-  "count": 74,
+  "count": 75,
   "posts": [
     {
       "agendaRelevance": 0.78,
@@ -2952,6 +2952,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/1eeSmFC9oAo"
+    },
+    {
+      "agendaRelevance": 0.87,
+      "candidateId": "chang-san-cheng",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "f1e742dfb2760528204a84d15804d47621873cb9e5f9e0ac3e09393872c76339",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1oQtEHe9eaY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7ebb46b15e7bb6e56527.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動說明捷運棕線工程進度，明確屬交通建設議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-sc-yt",
+      "text": "從先期工程到機電系統簽約，#捷運棕線 一步步往前走。",
+      "topicScores": {
+        "交通": 0.99
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/1oQtEHe9eaY"
     }
   ],
   "version": 1
