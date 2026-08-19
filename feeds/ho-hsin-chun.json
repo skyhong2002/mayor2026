@@ -1,6 +1,38 @@
 {
-  "count": 300,
+  "count": 301,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-19T22:03:23+00:00",
+        "inputHash": "6a0fa7c90e6f3e5af4f8d4699eb4a39f967fae7b2e7171bdb03365f7b3be295b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcOQCM8PsI0/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/63f72fb594b167c73387.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-19T13:03:33+00:00",
+      "postingIntent": {
+        "confidence": 1.0,
+        "label": "主動發文",
+        "reason": "僅七夕日常感謝洗衣機，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "七夕快樂！！\n日常生活，每天真實，謝謝洗衣機、謝謝你！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcOQCM8PsI0/"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "ho-hsin-chun",
