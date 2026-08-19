@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/4cdcaf4a2f526ce84ad4.webp",
+    "avatarUrl": "assets/source-avatars/ed27a491da44ab8b7580.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,190 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 196,
+  "count": 201,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "74778ca1884739f7b80b680bcf2f0b5c7230d5ed7766d3ab653b44e1a4989899",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1615482390189015",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/62249fd389e569c30c06.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T05:50:31.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出住得起的房子、臨托與好孕專車等政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "七夕情人節快樂。\n\n說實在，四十年前，我跟太太當年在一起的時候，什麼都沒有。\n\n那個年代，年輕人成家，靠的大概就是一股傻勁。你敢，你就往前走。\n\n現在不一樣了。我遇過很多年輕朋友，不是不想，是不敢。\n\n我想，成家也好、不成家也好，那都是自己的選擇。愛情這件事，不需要別人來教。\n\n但我一直覺得，成家不該只靠勇氣。\n\n所以年底如果有機會回到新北，我會推動年輕伴侶住得起的房子。運動中心的免費臨托要做起來，一次兩個小時，讓爸爸媽媽有時間做回兩個人。好孕專車延長到孩子滿一歲。大型的室內親子館，也要蓋。\n\n我不會告訴任何人要怎麼過日子。\n\n做工程的人只有一件事會做——把路鋪平，讓想走的人走得過去。\n\n七夕快樂。",
+      "topicScores": {
+        "交通": 0.74,
+        "住宅": 0.9,
+        "社福": 0.84
+      },
+      "topics": [
+        "住宅",
+        "社福",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02L6zY7MLo8GkaCtL83fXHbStzPQTFvoPZSB32mVLnz3c7LiJRiaQEG5hU2fQX9Aoql&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "0ef480f3888c7f42dc05c41a416654be72296d51995d071be899c7e891e25a9e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1615269610210293",
+      "imageAspect": 0.5621,
+      "imageUrl": "assets/feed-images/6af18a7a86286437853c.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-18T23:31:17.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述挖筍與農作日常，屬純生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "挖了四十年的地，都是為了打地基\n第一次挖筍，挖三次才起來\n畫面可以複製貼上，農友的凌晨沒有快捷鍵",
+      "topicScores": {
+        "生活": 0.93
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1047958198206796/"
+    },
+    {
+      "agendaRelevance": 0.46,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "5ad43b688723d055260b428a012c594e9c7f5f9e48318bd98bdef10f6f7cada5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1614911226912798",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/8416485e45a25096773d.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-18T14:05:05.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談道路、排水與大巨蛋、AI招商經驗，屬政績與城市敘事。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "那條你每天回家會經過的路。\n\n那盞照著巷口的燈。\n\n下大雨的時候，把水帶走的那條水溝。\n\n這些事做好了，未必有人注意。\n\n工程人，講起來毋是佇乎鎂光燈。\n\n新北大巨蛋要怎麼完成？在台北市大巨蛋那幾年，公安、結構、鄰里，沒有一關好過，但每一關都過了。\n\n新北怎麼面對 AI 時代？輝達那一年，我們團隊跟對方每週視訊，整整談了將近一年。\n\n這些事教會我的，不是「我很行」。\n\n是一座城市會卡在哪裡，我大概都走過一遍了。\n\n新北的下一段路，我知道怎麼鋪。\n\n有人選擇抱怨，我選擇開路。",
+      "topicScores": {
+        "交通": 0.77,
+        "環境": 0.69,
+        "經濟": 0.67
+      },
+      "topics": [
+        "交通",
+        "環境",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1374684874104695/"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "fcf8f8d9881cabdf2bfb65b4ac792b71940cf709f78f55f695d1093161854e75",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcK-haHswGS/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/ad68e89f54853f3b830f.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-18T06:33:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "談道路、排水、大巨蛋與AI招商經驗，屬城市治理主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "那條你每天回家會經過的路。\n\n那盞照著巷口的燈。\n\n下大雨的時候，把水帶走的那條水溝。\n\n這些事做好了，未必有人注意。\n\n工程人，講起來毋是佇乎鎂光燈。\n\n新北大巨蛋要怎麼完成？在台北市大巨蛋那幾年，公安、結構、鄰里，沒有一關好過，但每一關都過了。\n\n新北怎麼面對 AI 時代？輝達那一年，我們團隊跟對方每週視訊，整整談了將近一年。\n\n這些事教會我的，不是「我很行」。\n\n是一座城市會卡在哪裡，我大概都走過一遍了。\n\n新北的下一段路，我知道怎麼鋪。\n\n有人選擇抱怨，我選擇開路。",
+      "topicScores": {
+        "交通": 0.8,
+        "環境": 0.62,
+        "經濟": 0.74
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "環境"
+      ],
+      "url": "https://www.instagram.com/p/DcK-haHswGS/"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "fe792df35bcbe1668319d3f9572b541a45abb15b947b029946eef8f64600e77f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcK-avTiENb",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/99a78494429d6767d6fe.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-18T06:32:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容同談道路、排水、大巨蛋與AI招商，屬施政論述。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:那條你每天回家會經過的路。\n\n那盞照著巷口的燈。\n\n下大雨的時候，把水帶走的那條水溝。\n\n這些事做好了，未必有人注意。\n\n工程人，講起來毋是佇乎鎂光燈。\n\n新北大巨蛋要怎麼完成？在台北市大巨蛋那幾年，公安、結構、鄰里，沒有一關好過，但每一關都過了。\n\n新北怎麼面對 AI 時代？輝達那一年，我們團隊跟對方每週視訊，整整談了將近一年。\n\n這些事教會我的，不是「我很行」。\n\n是一座城市會卡在哪裡，我大概都走過一遍了。\n\n新北的下一段路，我知道怎麼鋪。\n\n有人選擇抱怨，我選擇開路。",
+      "topicScores": {
+        "交通": 0.8,
+        "環境": 0.62,
+        "經濟": 0.74
+      },
+      "topics": [
+        "交通",
+        "經濟",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/DcK-avTiENb"
+    },
     {
       "agendaRelevance": 0.7,
       "candidateId": "lee-shih-chuan",

@@ -1,6 +1,507 @@
 {
-  "count": 294,
+  "count": 314,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "d1c3926d1ff3110e715b3145724076a9aaad6a4feb6b8ac65215d122ce678f09",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcNnCDFP6Ak/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4e2bab4601e209e5acb9.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-19T07:14:50+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "七夕吃喝與店家推薦，屬生活分享兼觀光宣傳，非回應他人觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "七夕要帶大家去吃甜甜！快樂一百年～\n\n這幾年阿姨最希望的就是大家幸福，\n不管一個人、兩個人還是更多人都祝福你開開心心每姨天～\n\n雞婆的我們除了尋找美食偶爾也會幫世人解決煩惱，\n今天有個沈秘嘉賓call in進來說想找情人節禮物，\n我們當然是立刻奉陪～～～\n讓台北順起來～～\n\n很感謝兩間甜點店讓我們瘋狂～\n真的是拍拍手放煙火，\n大家也是有機會一定要去吃真的讚！\n\n@dondonstudio \n紅油炒手專家記得去吃棠棠！\n他們的整模蛋糕也是好吃到嚇嚇叫～\n\n@terra_beantobar \n巧克力愛好者絕不能錯過土然\n如果有親友來訪或要送伴手禮選土然準沒錯！\n\n總之有機會兩間都給他吃起來～～～\n\n美麗花束在臺北也可以請教 @hangoutflower \n姨的挑選～大家都可快樂買安心吃～～",
+      "topicScores": {
+        "文化觀光": 0.67,
+        "生活": 0.94
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DcNnCDFP6Ak/"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "f1b4800ff138898569123ad13335a77abb418c6f0b58b4c3137265e8abf84f4c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcNm_KylNft",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-19T07:04:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅是七夕試吃挑禮物與節日祝福，沒有回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:今天是七夕情人節，\n很煩惱要帶什麼禮物回家\n\n於是請來了陪沈團\n先陪我試吃、\n挑禮物！\n\n變成：陪沈沈團\n哈哈哈哈\n\n也謝謝土然的老闆\n超有耐心的跟我們介紹每樣商品！\n\n祝大家情人節快樂～\n沒有情人\n也要記得愛自己喔！",
+      "topicScores": {
+        "文化觀光": 0.61,
+        "生活": 0.96
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcNm_KylNft"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "2838d3394f8e10291c1b4e3c2e73d4c8bb8ee72405c322cd3a2d496e67626fed",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175514235755654",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1823dbe85a4f25150ab2.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T07:01:46.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "情人節試吃買禮物的日常貼文，無公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "今天是七夕情人節，\n很煩惱要帶什麼禮物回家\n\n於是請來了 陪沈團 \n先陪我試吃、\n挑禮物！\n\n變成：陪沈沈團\n哈哈哈哈\n\n也謝謝 TERRA 土然巧克力專門店 的老闆\n超有耐心的跟我們介紹每樣商品！\n\n祝大家情人節快樂～\n沒有情人\n也要記得愛自己喔！",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1505469691338497/"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "85c9b8a3ae08afcb403dc6db3ecff12425740ef2c813731140c74c0d4d427e01",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcNmWvSy9Fo/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1ed7da4908f0a923c93c.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-19T07:01:23+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享七夕試吃挑禮物與情人節祝福，屬日常生活紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "今天是七夕情人節，\n很煩惱要帶什麼禮物回家\n\n於是請來了 @pws_cupid \n先陪我試吃、\n挑禮物！\n\n變成：陪沈沈團\n哈哈哈哈\n\n也謝謝 @terra_beantobar 的老闆\n超有耐心的跟我們介紹每樣商品！\n\n祝大家情人節快樂～\n沒有情人\n也要記得愛自己喔！",
+      "topicScores": {
+        "文化觀光": 0.64,
+        "生活": 0.96
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DcNmWvSy9Fo/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "38cf4bcc2a7702ac54636c5bd00278acdcfdfb9af057fcb7a89e2f953a7859da",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109944073329310",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/02abff30f9b358268169.webp",
+      "keywords": [
+        "文化",
+        "觀光",
+        "歷史",
+        "經濟",
+        "攤商",
+        "商圈",
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T06:06:44.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主張夜市治理整合與街區串連，屬明確城市政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "寧夏夜市短短300公尺，一年創造超過10億元產值，也承載上百年的台北記憶。⁣\n⠀⁣\n這裡不僅是觀光客必訪的夜市，更是一代又一代攤商的生活。從備料、開攤到深夜收拾，每一盞燈的背後，都是一個家庭的生計，也是台北夜間經濟的重要支柱。⁣\n⠀⁣\n但台北的夜間治理，不能等到問題發生，才由不同局處各自處理。缺工、接班與營運成本，油煙、噪音、垃圾、交通、消防安全及深夜運輸，彼此環環相扣，需要有人統籌協調。⁣\n⠀⁣\n「#夜間市長」可以專責整合各局處，在事情發生前，就協調攤商、居民與交通需求；問題發生後，也要有人迅速接手、負責到底。好的夜市政策，不是讓攤商和居民二選一，而是讓生意、環境、安全與生活品質一起改善。⁣\n⠀⁣\n未來，更要串連大稻埕、赤峰街、中山商圈及建成圓環，讓旅客從寧夏夜市走進城西的歷史與生活，帶動整個街區發展。⁣\n⁣\n⁣\n謝謝寧夏夜市觀光協會林定偉理事長、星明里劉福永里長，以及自治會夥伴和所有攤商的熱情接待。自治會送的帽子，我也一路戴完整場，感受到滿滿的人情味。⁣\n⠀⁣\n顧夜市，就是顧生計、顧文化，也顧台北人的生活。⁣\n⁣\n#台北順起來⁣\n#你的市長沈伯洋",
+      "topicScores": {
+        "交通": 0.66,
+        "文化觀光": 0.84,
+        "經濟": 0.8
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0j9j4YTqVe6fV389iMf9fV5seZC6nCXTknbvqe6nBYmBRHdpkTkKL9CMyK7Grqq3yl"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "34de2391f3405722f7ba48c50b2d73a80b7e1e9bfa8e83c1362859991e5c89b2",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcNPiXdkVFA",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-19T03:39:37+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享校友接待球隊來台比賽，屬交流與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:上個月在美國時，\n我回到住了六年的爾灣\n拜訪Larry Agran 市長\n⠀\n沒想到，\n一個月後\n母校的男籃\n受邀來台灣比賽\nLarry就把我的名片給了他們XD\n⠀\n而且，\n教練竟然和我在讀書時\n還是同一位！\n⠀\n我以前在學校的時候\n就常去看校隊比賽\n這次能夠以校友身分\n歡迎大家來台灣\n對我來說意義非凡。\n⠀\nGo Anteaters!",
+      "topicScores": {
+        "文化觀光": 0.64,
+        "體育": 0.93
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcNPiXdkVFA"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "cbdaf4a68e372a3814ea9c9ebe017229cda46fea8fd3673a8f70ee8c17ef2a57",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175513086170654",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/884eee89af483b181293.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T03:39:20.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享校友球隊來台與母校回憶，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "上個月在美國時，\n我回到住了六年的爾灣\n拜訪Larry Agran 市長\n⠀\n沒想到，\n一個月後\n母校的男籃\n受邀來台灣比賽\nLarry就把我的名片給了他們XD\n⠀\n而且，\n教練竟然和我在讀書時\n還是同一位！\n⠀\n我以前在學校的時候\n就常去看校隊比賽\n這次能夠以校友身分\n歡迎大家來台灣\n對我來說意義非凡。\n⠀\nGo Anteaters!",
+      "topicScores": {
+        "文化觀光": 0.56,
+        "體育": 0.91
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/1865315231507440/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "85ab42dc289c83b18825365fd9e90f54ed7258654d35c98fd93378a2f59b9f61",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcNPZRCy8eF/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/fd8108bd678d5b747f3e.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-19T03:38:51+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "敘述返校友誼與男籃來台交流，重點在校園與體育交流。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "上個月在美國時，\n我回到住了六年的爾灣\n拜訪Larry Agran 市長\n⠀\n沒想到，\n一個月後\n母校的男籃\n受邀來台灣比賽\nLarry就把我的名片給了他們XD\n⠀\n而且，\n教練竟然和我在讀書時\n還是同一位！\n⠀\n我以前在學校的時候\n就常去看校隊比賽\n這次能夠以校友身分\n歡迎大家來台灣\n對我來說意義非凡。\n⠀\nGo Anteaters!",
+      "topicScores": {
+        "兩岸外交": 0.52,
+        "文化觀光": 0.73,
+        "體育": 0.91
+      },
+      "topics": [
+        "體育",
+        "文化觀光",
+        "兩岸外交"
+      ],
+      "url": "https://www.instagram.com/p/DcNPZRCy8eF/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "2ab81be39126abecd95608d3a9159e6b8ca33ddb984eedd2818b8f939bc21dba",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175508665780654",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-18T17:06:49.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以女兒簽名梗宣傳掃街直播，屬競選動員日常。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "半夜回到家\n我老婆跟我說\n今天女兒晚上氣噗噗\n\n我趕緊問發生什麼事\n\n我老婆說\n女兒晚上都在看\n寧夏夜市掃街直播\n\n然後他看到很多人沒有簽到名\n於是一臉擔心，手握拳\n跟我老婆說\n「爸爸怎麼沒有簽！」\n\n「因為今天人比較多喔」\n我老婆說\n\n「不可以，一定要簽！」\n女兒激動地說\n「不然他會投給另外一個人！」\n\n是的\n爸爸下次改進….",
+      "topicScores": {
+        "生活": 0.57,
+        "競選": 0.86
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid02G794R63GCPT6ocyf5wPxdQUuqJK34kkZtHWobny7FK5T5mc74qJaMNnbTm3wqAuBl"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "e2f1e178772e99c896c1de3fce67b2ef835d86855419baeb0c3173840c016236",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcMG7xKFMfn",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-18T17:05:12+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "描述女兒看掃街直播與幫忙簽名，屬競選日常互動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:半夜回到家\n我老婆跟我說\n今天女兒晚上氣噗噗￼\n\n我趕緊問發生什麼事\n\n我老婆說\n女兒晚上都在看\n寧夏夜市掃街直播\n\n然後他看到很多人沒有簽到名\n於是一臉擔心，手握拳\n跟我老婆說\n「爸爸怎麼沒有簽！」\n\n「因為今天人比較多喔」\n我老婆說\n\n「不可以，一定要簽！」\n女兒激動地說\n「不然他會投給另外一個人！」￼￼￼￼￼\n\n是的\n爸爸下次改進….",
+      "topicScores": {
+        "生活": 0.86,
+        "競選": 0.79
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcMG7xKFMfn"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "476a2933cde61db06d2cde3419e2c7e5afa5d2c50479be7de55c64a8d19ac9a3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcL3pc5lEkk",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/d57e86ad49976ab10dd4.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-18T14:51:38+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄夜市掃街簽名與民眾互動，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:上次來寧夏夜市是兩三個月前，\n⠀\n那時候忙到很晚\n跟團隊來吃宵夜\n還想說：\n大家可以多來打個招呼～\n⠀\n結果今天\n一路在各種物品上簽名\n衣服、水壺、背包都還算正常\n存摺跟名牌皮夾出現的時候\n我真的有點抖XD\n⠀\n還有人在二樓幫我加油\n謝謝大家！\n⠀\n最後\n今天有吃到豬血糕\n很好，滿足了！",
+      "topicScores": {
+        "生活": 0.72,
+        "競選": 0.88
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcL3pc5lEkk"
+    },
+    {
+      "agendaRelevance": 0.85,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "351096d12758c8524977933a9cc5171db14e158c58fe0bd0bf940d11cd050353",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109877011329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f1797766d0e0a43a1301.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-18T12:00:17.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出AI補助方案，屬明確青年與數位經濟政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "用台北市不到1%的預算支持青年。\n⠀\n北市府的AI補助，要先修課、自己墊款、事後核銷，補助時間還很短。\n⠀\n我的方案很簡單：固定額度，不限AI、不必繁瑣核銷，支持18到45歲，讓每個人都能自由選擇真正需要的AI工具。",
+      "topicScores": {
+        "教育": 0.67,
+        "經濟": 0.93
+      },
+      "topics": [
+        "經濟",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1575447674255672/"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "869deea874f8f2de3dd78063fd6bec59f1a1ca86354d8ff234d54855c13a7738",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122109863277329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/dd2f22223614c2d731b7.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-18T07:58:53.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "列出青年基金、AI卡與圓夢計畫，為具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "年輕人的第一步，台北來加速。\n⠀\n▻ 第一，城市青年基金，青年畢業領五十萬。\n⠀\n▻ 第二，18-45歲青年AI卡\n⠀\n▻ 第三，台北青年圓夢計畫，八年 20 億，把人才接回台北。\n⠀\n年輕人第一步走得穩，讓下一步跑得更快。",
+      "topicScores": {
+        "教育": 0.86,
+        "經濟": 0.91
+      },
+      "topics": [
+        "經濟",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/3552277984919772/"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "02a8a28aa8fbe14dcd259df7121bc4e4216aea7706a3e2b4ade4c809e127764a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcKhSudkskt/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1828ae7b63da82491357.webp",
+      "keywords": [
+        "投資",
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-18T02:17:05+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明確提出青年基金、AI支持與圓夢計畫等具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "年輕人的第一步，台北來加速。\n⠀\n「Empower 培力與機會」 是我的HEART 五大城市願景之一。\n⠀ 我要做的不是替年輕人決定人生，\n而是讓台北市多給一點支持，\n讓大家敢讀、敢闖、敢試。\n⠀ 今天我提出三項青年政策：\n⠀\n▻ 第一，城市青年基金，青年畢業存五十萬。\n⠀\n鎖定18到22歲台北青年，市府每月提撥1500元，弱勢青年加碼到3000元，搭配個人儲蓄1500元與中央0到18歲政策。\n⠀\n年輕人的第一步，不該卡在「沒有錢、沒有工具、沒有機會」。\n⠀ ▻ 第二，青年AI使用支持方案。\n⠀ AI已經是這一代人的生活工具，\n就不應該只補助特定訂閱方案、特定課程。\n⠀\n我們要建立「台北青年AI使用平台」，\n讓學生依照自己的需求，使用不同AI工具。\n⠀\n▻ 第三，台北青年圓夢計畫，八年 20 億挺夢成真。\n⠀\n打造台北版青年圓夢計畫，8年投入20億，接續中央計畫。 讓台北青年能夠持續到海外實踐理念。\n⠀\n⠀\n我一直認為，投資年輕人，就是投資台北的未來。\n⠀\n讓青年有本金、有工具、有舞台。 也讓更多年輕人，願意把自己的未來留在台北。",
+      "topicScores": {
+        "教育": 0.89,
+        "生活": 0.58,
+        "經濟": 0.63
+      },
+      "topics": [
+        "教育",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcKhSudkskt/"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
@@ -10560,6 +11061,216 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/MhwzFKblRjk"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "f0148a176fbd13ea8aea554de9972688ab290c026dd8041257f452432cb825c4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1iel89CTvhk",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/2daeaab5329584ad2a67.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "記者會標題明顯屬競選造勢，主打年輕人與台北政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "年輕人的第一步 台北來加速記者會｜你的市長 沈伯洋",
+      "topicScores": {
+        "教育": 0.42,
+        "競選": 0.95,
+        "經濟": 0.31
+      },
+      "topics": [
+        "競選",
+        "教育",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/watch?v=1iel89CTvhk"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "9e96ce9ee0ae449dbf6ba6034e4fa8c1d8f2e4b62d2c7480569fe237a8b90714",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:qm7xRNF5Uoc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/145c685b82b80574113b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅是七夕巧克力與重逢的生活化內容，無公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The long-awaited reunion is here! Pei Chen Tuan X Shen Boyang - Qixi Festival Chocolate!",
+      "topicScores": {
+        "文化觀光": 0.25,
+        "生活": 0.97
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/qm7xRNF5Uoc"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "e53f567e7f8f855385b3848ea4c132f66575dbdeb88fb71525d4cd45c4c6426b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:iSt--CjzcTo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/a528dbb66f3c53448d89.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "談校隊來台比賽與教練訪台，屬活動與體育交流。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "My alma mater UCI's men's basketball team was invited to play in Taiwan, and the coach is still t...",
+      "topicScores": {
+        "文化觀光": 0.26,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/iSt--CjzcTo"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "3c2edd973f36a9862b739ace031e4ad3450a424f25bcd499fffa7f72db487b63",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:IEidFTgZY2U",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4cb16f564f42c969924c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主題是用預算支持青年，屬青年社福與政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Supporting Youth with Less Than 1% of Taipei's Budget",
+      "topicScores": {
+        "教育": 0.5,
+        "社福": 0.82,
+        "競選": 0.45
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/IEidFTgZY2U"
+    },
+    {
+      "agendaRelevance": 0.83,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "565c594b2f80f3f27bd5b8f20a3598b744445c9f0f92313d621e1caed5d52a19",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3nsJ9XRYcWA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/55605fe124eb2b82a113.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "明確提出青年補助與數位卡方案，屬具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "A Young Person's First Step, Accelerated by Taipei. Graduates Receive $500,000. AI Card for Youth...",
+      "topicScores": {
+        "教育": 0.86,
+        "社福": 0.71,
+        "競選": 0.58
+      },
+      "topics": [
+        "教育",
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/3nsJ9XRYcWA"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "06ae4004bbdfb9a4fdd05efd81e42c71837e85c501b993db08bd1fc86b228f1a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:RcCbbre-5Pc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3f9da4730c610640d3cd.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "感謝議員並提三井倉庫保存，屬文化與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "From Preserving the Mitsui Warehouse to Fostering Public Dialogue: Thank You, Councilor Hsu Shu-h...",
+      "topicScores": {
+        "文化觀光": 0.71,
+        "議會監督": 0.46
+      },
+      "topics": [
+        "文化觀光",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/RcCbbre-5Pc"
     }
   ],
   "title": "沈伯洋（臺北市）貼文更新",
