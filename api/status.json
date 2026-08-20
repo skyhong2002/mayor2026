@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-21 00:05:22"
+        "最近一次執行心跳：2026-08-21 06:01:11"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：42 ms"
+        "耗時：26 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-21 00:03:04",
+        "最新抓取時間：2026-08-21 06:01:00",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-08-21 00:03:16",
         "本月已花費：$2.69 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 33.6h, next at 2026-08-22T01:37:54+00:00; ~$2.69 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 32.8h, next at 2026-08-22T00:53:57+00:00; ~$2.69 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -77,7 +77,7 @@
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
     }
   ],
-  "generatedAt": "2026-08-21T00:05:22+08:00",
+  "generatedAt": "2026-08-21T06:01:11+08:00",
   "metrics": {
     "candidates": 14,
     "latestPostAt": "2026-08-20T15:18:30.000Z",
