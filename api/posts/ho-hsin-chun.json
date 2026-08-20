@@ -19,8 +19,55 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 301,
+  "count": 303,
   "posts": [
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-20T10:01:16+00:00",
+        "inputHash": "fa070f550b2ab62a1b2f397c59aa78e4943c41c7a3131cee75a13e2b6466efad",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcQGZt0GZ7q",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c649d8f182847c922f42.webp",
+      "keywords": [
+        "育兒",
+        "老人",
+        "長輩",
+        "敬老",
+        "補助",
+        "津貼",
+        "捷運",
+        "產業",
+        "創業",
+        "青創"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-20T06:17:31+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "列出捷運、福利與產業政策，明確作為施政承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:從政之初，我告訴自己要成為一位願意傾聽、願意帶頭打拚、願意站出來守護台中的政治工作者。\n\n如今，這「三個願意」，要化為「三個第一」！\n\n1️⃣ 捷運路網效率第一\n全力推進藍線、綠線延伸、藍線延伸太平、屯區紫線、紅線，橘線首任四年拚動工！\n\n2️⃣ 六星福利第一\n\n💰 市長換欣・普發現金\n盤點財政、首會期爭取追加預算，財政許可、議會支持就推動。\n\n👵 長輩照護\n老人健保補助延續；敬老卡不歸零、擴大通路，計程車單趟提高至200點；補助帶狀疱疹疫苗。\n\n👶 育兒支持\n生育補助加碼、坐月子每胎5萬、0～6歲每月1500元營養津貼、腸病毒疫苗補助；營養午餐「2380大升級」。\n\n🧑‍💻 青年靠山\n成立青年局，提供創業貸款利息、租金補貼，設置青創基地與共享空間。\n\n3️⃣ 產業升級發展第一\n爭取設置「無人機智慧製造中心」，整合研發、測試、資安、非紅供應鏈與人才培育，協助產業升級、接軌國際。\n\n我有政策、有能力，更有決心，距離投票日還有100天，我會一步一步把對台中的承諾化為行動，集結每一份期待改變的力量。",
+      "topicScores": {
+        "交通": 0.92,
+        "社福": 0.95,
+        "經濟": 0.78
+      },
+      "topics": [
+        "社福",
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcQGZt0GZ7q"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "ho-hsin-chun",
@@ -10912,6 +10959,42 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/YTyCaZNNnu4"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-20T10:01:16+00:00",
+        "inputHash": "50a0d96f918868a39878a1c3060adaade227bde40b7e8f79a51cd2d49051a08e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:HDuWEFQ8Peg",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/d162dab076479edd94d7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "活動花絮與現場氣氛描述，屬紀錄性內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "親子同樂超精彩！九天一出場 現場氣氛直接沸騰🔥",
+      "topicScores": {
+        "文化觀光": 0.73,
+        "生活": 0.46,
+        "體育": 0.39
+      },
+      "topics": [
+        "文化觀光",
+        "生活",
+        "體育"
+      ],
+      "url": "https://www.youtube.com/watch?v=HDuWEFQ8Peg"
     }
   ],
   "version": 1
