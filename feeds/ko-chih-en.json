@@ -1,6 +1,40 @@
 {
-  "count": 275,
+  "count": 277,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "d592f65d47664d5d50673740f43ebaec9a152bf0d2e4f8f10db0453056b18289",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcPpk-XjhqD",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/b75a74be5b95b7385d79.webp",
+      "keywords": [
+        "選戰"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-20T02:06:37+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "明顯是選戰倒數與支持動員，未提出具體施政內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:選戰倒數100天，我們一起把夢想實現！\n\n小編翻出4年前我在謝票時的影片。畫面裡的哽咽，是感動，更是我始終放在心上的承諾。\n\n那一天，我對高雄人說：「柯志恩會用下半輩子，回報高雄。」\n4年來，我沒有一刻忘記這句話。\n\n倒數100天，讓我們再次整隊出發，一起把對高雄的愛和夢想，徹底實現！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcPpk-XjhqD"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "ko-chih-en",
@@ -10574,6 +10608,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/iMFa8NyRyK0"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "f5e5086ef2985670bd5f78e0051a4e75f3ec1afd90858556f9956cfe0b87d6b4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:arGRTU7pVrU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7901dd386fffee12cd8f.webp",
+      "keywords": [
+        "選戰"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為選戰口號與動員，沒有回應他人或政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "選戰倒數100天，我們一起把夢想實現！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/arGRTU7pVrU"
     }
   ],
   "title": "柯志恩（高雄市）貼文更新",

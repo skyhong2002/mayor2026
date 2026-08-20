@@ -1,6 +1,44 @@
 {
-  "count": 306,
+  "count": 308,
   "posts": [
+    {
+      "agendaRelevance": 0.48,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "3cfe70ce1a83a4cbea6471d6646ff232d4ec3f5700fca07d5ee6bacb13196f34",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcPp_9iEsBu",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/32588c2c536e5ef1c571.webp",
+      "keywords": [
+        "後援會"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-20T02:10:32+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談視光、眼疾照護與市府合作構想，並夾帶後援會競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:我和視光產業界的好朋友們，一起催生了北台灣第一所醫大視光學系，為台灣培育更多人才，也一起完善隱形眼鏡管理，守護民眾眼睛。現在大家願意站出來為我成立後援會，我非常感動！\n\n許多長輩深受黃斑部病變或白內障等眼疾所苦，未來市府要深化與眼科院所、驗光所的合作，除了提供專業治療，也要主動協助媒合視力輔具，維持日常生活品質。\n\n新時代、新市長✨巧慧當市長，會聚合專業力量，讓人才在新北發光發熱！市民朋友的生活越來越好！",
+      "topicScores": {
+        "生活": 0.4,
+        "競選": 0.89,
+        "醫療": 0.95
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcPp_9iEsBu"
+    },
     {
       "agendaRelevance": 0.94,
       "candidateId": "su-chiaohui",
@@ -11381,6 +11419,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/ToccteJrlnE"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "0e995b49bde5ab79c0796dc4dfe810a0dffed5c24a64885261b242f0fc5d3bc3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:daBEeUKU4UU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3d60856b962253d47b41.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主體是候選人宣傳標語，僅提到人才發光，非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "If Chiao-Hui Becomes Mayor, She Will Let Talent Shine in New Taipei!",
+      "topicScores": {
+        "教育": 0.68,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/daBEeUKU4UU"
     }
   ],
   "title": "蘇巧慧（新北市）貼文更新",

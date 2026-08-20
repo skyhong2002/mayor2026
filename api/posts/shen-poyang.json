@@ -19,8 +19,42 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 315,
+  "count": 317,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "30d5937842736fb5168567101e687ae0c31978b0fd1f93451be1a4ba347c8f28",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcPbSljE0sl",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-20T00:00:48+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容為選戰倒數與動員文宣，主軸是競選造勢非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:人生就像折返跑\n一個人\n從0\n跑到100\n再從100\n跑回0\n⠀\n但 0&nbsp;\n並不是終點\n而是再次出發的起點\n⠀\n所以99天前\n我又站回了0\n⠀\n但是這次\n多了好多雙手\n和笑容\n陪我一起跑\n⠀\n謝謝你們\n陪我一起跑過\n台北的每一個角落\n⠀\n接下來的100天\n讓我們一起跑向\n⠀\n勝利的起點",
+      "topicScores": {
+        "生活": 0.43,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcPbSljE0sl"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
@@ -11325,6 +11359,38 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/xVcb9gSLiRo"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "8c7665afff5079bdf4677d7935c45da4ced1ab6e212d15dc5c10c1e786038a80",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:OnT7zfMSgIU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/fcf05f49db83a51384af.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題是選戰倒數與勝選口號，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "100-Day Countdown: Let’s Race Together Toward the Starting Point of Victory!",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/OnT7zfMSgIU"
     }
   ],
   "version": 1
