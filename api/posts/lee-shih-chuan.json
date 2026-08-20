@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/ed27a491da44ab8b7580.webp",
+    "avatarUrl": "assets/source-avatars/fd6e1706d0099f7ff4d8.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,199 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 203,
+  "count": 208,
   "posts": [
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "251c7477ce3b1f315d80b81fb2761ae323cde9c6ce60f225ed0709c8ff1a1889",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcQlZHMiBIz",
+      "imageAspect": 0.5624,
+      "imageUrl": "assets/feed-images/8c673297c8f08919c2aa.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-20T10:48:38+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容為同一活動與運動訓練感想，非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:說實在，這一天我是去當學生的。\n\n小編幫我把特效開到 100%，我看完只想請他關掉。\n\n特效可以加，實力加不了，只能靠練。\n\n新北的孩子想練，我就讓他們有地方練。",
+      "topicScores": {
+        "教育": 0.6,
+        "生活": 0.72,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DcQlZHMiBIz"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "89472970b24ca59fb1b8f82d16cd38a0b7efc6391087920604c09b07a157b2b4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcQlWdysXan/",
+      "imageAspect": 0.5627,
+      "imageUrl": "assets/feed-images/a6fb3e647e608b28fca5.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-20T10:48:14+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主要談孩子運動訓練場地與自我學習，屬活動式發文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "說實在，這一天我是去當學生的。\n\n小編幫我把特效開到 100%，我看完只想請他關掉。\n\n特效可以加，實力加不了，只能靠練。\n\n新北的孩子想練，我就讓他們有地方練。",
+      "topicScores": {
+        "教育": 0.6,
+        "生活": 0.72,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "生活",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/DcQlWdysXan/"
+    },
+    {
+      "agendaRelevance": 0.26,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "06b28ef6f329254f7a8e84f043a881ca0d730ee95c04d285ae443efcfbc17bfb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1616521856751735",
+      "imageAspect": 0.5621,
+      "imageUrl": "assets/feed-images/f26915e0df8370dcb3cb.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-20T10:40:29.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是看學生訓練與支持練習場地，偏體育與青年培育。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "說實在，這一天我是去當學生的。\n小編幫我把特效開到 100%，我看完只想請他關掉。\n特效可以加，實力加不了，只能靠練。\n新北的孩子想練，我就讓他們有地方練。",
+      "topicScores": {
+        "教育": 0.35,
+        "體育": 0.92
+      },
+      "topics": [
+        "體育",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1950166808998884/"
+    },
+    {
+      "agendaRelevance": 0.74,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "594746ab8f88e137bcdfa11dfde91d6f527065b55f7d73c0f56a7a8daec99c44",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1616367243433863",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/a01ad76f8fa563f52d3f.webp",
+      "keywords": [
+        "都更",
+        "選戰",
+        "地震"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-20T06:54:45.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "談都更、樹林鐵路地下化與巨蛋選址，屬政策與選舉宣示。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "「川伯加油」的手舉牌，真的不輕，但她從泰山跟到樹林。\n\n當年協助她們重建一個家，今天她送我一句加油。\n\n這是一位鄉親，她特別為我做的，不管我走到哪，只要她有時間，都會帶著這個手舉牌，跟著我走。\n\n快二十七年前的 921 大地震，好幾處社區、房屋倒塌，當時因緣際會，我來台北縣，有機會替這位鄉親的自救會來服務，房子倒了，我替她想辦法拚重建，財源不足、都更、協調等，終於在天地搖晃之後，重建他們的家。\n\n二十七年過去，她還記得，願意用行動支持我，我也忘不掉，能幫鄉親找回家，對所有人都要說聲「甘蝦」。\n\n其實話不用多說，光是從眼神和行動，就知道自己過去的那麼一點作為，在別人心裡還留著，我充滿感謝。\n\n今天鄉親替我在樹林以及三峽舉辦川友會，其中我的樹林川友會長，也是里長聯誼會長廖文斌，說起我日前提出的「樹林鐵路地下化」政策，比出大拇指，他說自己很被觸動，我想告訴樹林鄉親，謝謝肯定，我一定說到做到。\n\n新北大巨蛋的選址在樹林，蓋巨蛋這件事我做過，如期如質是基本功，能夠加速推動巨蛋城的願景，我樂在其中。\n\n另外一頭，三峽的鄉親齊聚，有陳志泉會長帶領所有的里長站出來相挺，為我加油。侯市長的市政建設，我一定會接起來，繼續做下去。\n\n選戰倒數一百天，沒有太多儀式，繼續拚就對了。",
+      "topicScores": {
+        "住宅": 0.88,
+        "競選": 0.84,
+        "防災": 0.77
+      },
+      "topics": [
+        "住宅",
+        "競選",
+        "防災"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02vGihvCQHAANHXNT19e7mjeH2kqusR1k2aWwq1hmsZZJefm8KRXwZGL8bNiZAkLEql&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "5b749f97438ea85d287c1483a8511774929233710d8e24d6d20885e4894a5057",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1616165536787367",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/56b03e04b8e63ed7cc1b.webp",
+      "keywords": [
+        "都更",
+        "淹水",
+        "防災",
+        "交通",
+        "捷運",
+        "停車"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T23:30:02.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出都更5夠力方案，聚焦居住安全與防災重建。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "說實在，房子可以等，人不能等。\n\n我走了新北 29 個區。聽到最多的大概是這幾句——房子老了想都更，不知道從哪裡開始；社區想重建，卡在整合、卡在法規、卡在容積；住在危險老屋裡面的，每天提心吊膽。\n\n新北 400 多萬人，全台灣人口最多。房子老了，住在裡面的人也老了。\n\n這幾年侯市長推都更三箭，新北的底子已經打起來了。下一步，我想再往前一步——讓市府從「審都更」，變成「幫都更」。\n\n我提出「都更5夠力」：\n\n📍第一力｜府級整合\n成立府級「都更推動委員會」，市長自己當召集人。城鄉、工務、交通、捷運、地政，通通拉進來一次協調。都更不能再只是局處的事。\n\n📍第二力｜容積檢討\n新北很多都市計畫，是幾十年前訂的。那時候的捷運、人口、產業，跟現在都不一樣。容積要全面重新檢討，成長的紅利要回到城市、回到市民。\n\n📍第三力｜防災優先\n成立「危險建築單一服務窗口」。評估鑑定、法令諮詢、整合重建，市府幫忙處理，評估費用市府補助。防災型都更 2.0 再升級，符合條件的，總容積最高可以到法定容積的兩倍。侯市長任內推動的主幹道沿線都更，我會繼續做下去。\n\n📍第四力｜防洪韌性\n過去講防災，大概都在講防震。但這幾年的雨，大家心裡都有數。滯洪、防洪設施要納進都更獎勵機制，易淹水的老市區，市府的公有地先做示範。\n\n📍第五力｜以地易地\n在侯市長都更二箭 2.0 的基礎上，建立「都更容積調派平台」。基地太小、卡住動不了的，由平台預審、幫忙媒合實施者。容積移出捐給市府的土地，優先變成公園、停車場、滯洪設施。\n\n在我們都更政策記者會，建築師汪俊男、估價師莊濰銓、里長聯誼總會總會長許承煬都來了。許總會長講一句話我很認同：都更的速度一定要快，居住安全才顧得住。\n\n年底如果有機會回到新北，這五件事，我想一件一件把它做起來。\n\n做工程的人最怕一件事——圖畫得漂亮，做不出來。\n\n該做的，就一件一件做。",
+      "topicScores": {
+        "交通": 0.4,
+        "住宅": 0.97,
+        "環境": 0.63,
+        "防災": 0.88
+      },
+      "topics": [
+        "住宅",
+        "防災",
+        "環境",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02NZqj89TJx89X8hrnaFdXE99RnuJSUZtAy4oDegyJyJwRC43zEJ18dvSQXUpzQMQhl&id=100051818071280"
+    },
     {
       "agendaRelevance": 0.38,
       "candidateId": "lee-shih-chuan",

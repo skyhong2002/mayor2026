@@ -1,6 +1,40 @@
 {
-  "count": 303,
+  "count": 306,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "7efd97e609879f572ee1e555eebe164f9ea044b12549e879ace0acf7d9b42b76",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1663092921846782",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/428832c041f6cd93eeb9.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-20T12:43:43.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享豐原美食店家與日常感想，屬生活貼文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "走進豐原，吃進豐原！😁😁\n既在地、又創意！日式煎餃襯著薄脆冰花，煎得漂亮酥脆、好功夫，內餡新鮮飽滿，一口一口卡滋卡滋，推推👍👍\n\n#主餃食光日式脆皮煎餃館 🥟🥟\n#豐原區圓環南路37號 ❤❤\n謝志忠　幫您講話",
+      "topicScores": {
+        "文化觀光": 0.34,
+        "生活": 0.98
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid0V9e5SfGU89GVNzDTVtZ3jbwkMZqgkiN85JjeUhMaK1oa4r74GiRGWJxrZRP9BaNpl"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ho-hsin-chun",
@@ -47,6 +81,56 @@
         "經濟"
       ],
       "url": "https://www.threads.com/t/DcQGZt0GZ7q"
+    },
+    {
+      "agendaRelevance": 0.98,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "2675f0b0827d27e5c59be64a80f7c465dcc6034be2a0712fcc30ed8b0713c05b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1662845491871525",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/ae1a2a2185b0b1ae1c45.webp",
+      "keywords": [
+        "投票",
+        "育兒",
+        "老人",
+        "長輩",
+        "敬老",
+        "補助",
+        "津貼",
+        "捷運",
+        "產業",
+        "創業",
+        "青創"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-20T06:13:44.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出台中施政三大主軸與多項政見，屬明確競選政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "投票倒數100天，何欣純宣誓要拚出台中「三個第一」！\n\n一年前，我告訴大家，我是願意傾聽、願意帶頭打拚、願意站出來守護台中的候選人。\n\n如今，這「三個願意」，要化為真正的行動！\n\n1️⃣ #捷運路網效率第一\n全力推進捷運藍線、綠線延伸大坑彰化、藍線延伸太平、屯區紫線、紅線；捷運橘線力拼首任4年內動工！\n\n2️⃣ #六星福利第一\n▪️市長換欣 普發現金\n上任後將立即盤點市府財政，爭取在市議會第一會期提出追加預算，在財政許可及議會支持下推動台中普發現金\n\n▪️長輩照護\n持續補助老人健保費\n敬老卡擴大使用範圍，每月不歸零，計程車單趟點數提高到200點，農漁會、超商、超市、藥局也可使用\n帶狀皰疹疫苗補助\n\n▪️育兒支持\n坐月子補助每胎五萬\n生育補助加碼加倍\n幼兒腸病毒疫苗補助\n0至6歲每月1500元營養津貼\n營養午餐「2380大升級」：每週2次鮮乳、每週3次新鮮水果、每餐餐標提高至80元\n\n▪️青年靠山\n成立青年局，整合青年政策資源\n提供青年創業貸款利息及租金補貼\n設置青創基地與共享空間\n\n 3️⃣#產業升級發展第一\n爭取中央在台中設置「無人機智慧製造中心」，整合研發、測試場域、資安驗證、非紅供應鏈、國際認證與人才培育，協助傳統產業及中小微企業轉型升級、接軌國際供應鏈。\n\n我有政策、有能力，更有決心，接下來100天，我會一步一步把對台中的承諾化為行動，集結每一份期待改變的力量。\n\n11月28日，一起讓台中有一個真正向前走的新開始！\n\n#心存大台中\n#市長換欣_台中創新",
+      "topicScores": {
+        "交通": 0.89,
+        "社福": 0.94,
+        "競選": 0.99,
+        "經濟": 0.72
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid08Wb4XDcnGPL7yjKFkcQ62sakfQSFSu924vw49qxxFkaEg9GXEKYmFsks8yVnz6xul"
     },
     {
       "agendaRelevance": 0.01,
@@ -111,6 +195,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DcOPwwPGJHU"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "fede6d7ef0ca0f5fe553954ad390c061354fda6b3b6ca3b521edd92dae0069c9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1662169055272502",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/bc297a8dcaebbd205419.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-19T12:46:25.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "七夕日常感謝洗衣機，屬純生活分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "七夕快樂！！\n日常生活，每天真實，謝謝洗衣機、謝謝你！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/2205324363658366/"
     },
     {
       "agendaRelevance": 0.7,
