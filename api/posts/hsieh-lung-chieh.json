@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/e7c41c37716b300c0e29.webp",
+    "avatarUrl": "assets/source-avatars/b2fff173b24887f4652a.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,40 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 303,
+  "count": 305,
   "posts": [
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "4480c9e93376806c9c5e17d688e5912b5eecebd76845ee03a15979e547b5c08f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1039503835381458",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/aec45ae96cd5f72312d1.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T13:16:06.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "僅為節目或貼文標題，無明確公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "20260821 談天說地論臺灣",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1039503835381458/"
+    },
     {
       "agendaRelevance": 0.15,
       "candidateId": "hsieh-lung-chieh",
@@ -90,6 +122,42 @@
         "治安"
       ],
       "url": "https://www.instagram.com/p/DcTAWwAyZ2q/"
+    },
+    {
+      "agendaRelevance": 0.41,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "e20af2dda2c85d18362ae978fb5824a82f52bb68894078481041fb2501e76c16",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:1636525791162336",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a7b6ff082a3598fbfd01.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T09:19:28.000Z",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "回覆陳情空地被設停車場，屬地方設施爭議。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "回覆網友陳情：中西區忠義路一段85巷口空地以前是防空用地，還有兩家民宅，現變成了南市動保處專用的停車場並設置柵欄",
+      "topicScores": {
+        "住宅": 0.55,
+        "環境": 0.43,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "議會監督",
+        "住宅",
+        "環境"
+      ],
+      "url": "https://www.facebook.com/reel/1578727063727373/"
     },
     {
       "agendaRelevance": 0.18,

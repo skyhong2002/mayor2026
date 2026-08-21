@@ -1,6 +1,86 @@
 {
-  "count": 330,
+  "count": 337,
   "posts": [
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "1c8c14cff3489b3d77f0a135a3201eac5ca17d4b6b34893f659ed2fa6d1a878d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122110198347329310",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a22fc06c81bb50f8a01c.webp",
+      "keywords": [
+        "育兒",
+        "補助",
+        "津貼",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T12:33:52.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提及好孕專車、育兒設施與托兒津貼等政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "從爭取好孕專車延長補助，到推動內科企業附設育兒設施與托兒津貼。從親子照顧、通學安全到社區建設， 王孝維議員把地方的每一個需要，都放在心上、做到實處。\n⠀\n未來我們會繼續並肩努力，一起讓港湖更好、讓台北順起來！",
+      "topicScores": {
+        "住宅": 0.42,
+        "教育": 0.74,
+        "社福": 0.95
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/4373627872948236/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "87792ba863d76114e21fc60d839a069f1a2276b7dea44039f26791b37c719ab3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcS4nsKEm6o/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/6c15682b2b38cd84164d.webp",
+      "keywords": [
+        "觀光",
+        "電影"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T08:14:51+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "公布週末拜票與見面行程，屬競選活動與日常安排。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "週末行程，走囉\n⠀\n這兩天天氣不穩，我要來去畫烏龜了～\n⠀\n8/22（六）\n08:50\n📍玉成公園福德宮\n⠀\n18:30\n陳慈慧議員_星空電影院《馴龍高手》\n📍芝山國小風雨操場\n⠀\n8/23（日）\n09:00\n📍濱江市場\n⠀\n17:00\n劉耀仁議員_劉耀仁X沈伯洋見面會\n📍環河福德宮\n⠀\n19:30\n📍臨江街觀光夜市",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "生活": 0.62,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcS4nsKEm6o/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
@@ -40,6 +120,74 @@
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
       "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "c97bc53e1d93ec41284bc9ea88131c676612c575991c7142e7edd737237101e0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122110174371329310",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/936b8b9afb12bf1d02ab.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T08:08:59.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅列出週末行程與見面活動，屬日常公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "週末行程，走囉\n⠀\n這兩天天氣不穩，我要來去畫烏龜了～\n⠀\n8/22（六）\n08:50\n📍玉成公園福德宮\n⠀\n18:30\n陳慈慧議員_星空電影院《馴龍高手》\n📍芝山國小風雨操場\n⠀\n8/23（日）\n09:00\n📍濱江市場\n⠀\n17:00\n劉耀仁議員_劉耀仁X沈伯洋見面會\n📍環河福德宮\n⠀\n19:30\n📍臨江街觀光夜市",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02Yo53xGpBhFyLQ2YSyAnv1QFELBMPywbhBkpQQaL7syPxAMvSg9ZyHxCjaTuhZFEil"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "a2e5f9bedab50096179d84d0fd10686c627a23a27b35b6d5d7211a8a89958f5e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175530958540654",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T06:34:45.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "因大雨取消夜市行程，屬安全公告非政策論述。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "因目前台北市持續發布大雨特報，考量大家安全與場地現況，今晚原定南機場夜市行程將先行取消。\n⠀\n雖然很可惜無法和大家見面，但大家的安全永遠是最重要的。造成不便，請大家見諒，也請留意天氣變化。期待天氣放晴後，再與大家相聚！",
+      "topicScores": {
+        "生活": 0.92,
+        "防災": 0.9
+      },
+      "topics": [
+        "生活",
+        "防災"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid03uu2amqLs7ee9ff2KQGbgejhSXpBVvivwjraiyWFQb1Ypm6xkS5xCtCgKW7DAD6nl"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
         "classifiedAt": "2026-08-21T10:03:23+00:00",
         "inputHash": "347d2a388be1a57f3e9176b328d57d0e775a11bf036830a9d82faee9a03a0b4e",
         "method": "ai",
@@ -67,6 +215,112 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DcStI0zlPQ2"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "33aa55b7e2e5fc800b589435dcc8e56dc1f90704ec80cf2a4bf85a9b4242a166",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcStFbfSvVX/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c91ae11605dbc784d470.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T06:34:08+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "因大雨取消夜市行程並提醒安全，屬公告非回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-ig-personal",
+      "text": "因目前台北市持續發布大雨特報，考量大家安全與場地現況，今晚原定南機場夜市行程將先行取消。\n⠀\n雖然很可惜無法和大家見面，但大家的安全永遠是最重要的。造成不便，請大家見諒，也請留意天氣變化。期待天氣放晴後，再與大家相聚！",
+      "topicScores": {
+        "生活": 0.93,
+        "防災": 0.89
+      },
+      "topics": [
+        "生活",
+        "防災"
+      ],
+      "url": "https://www.instagram.com/p/DcStFbfSvVX/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "a9b53221ddc68ca0a3a12cfa68ed99ae56f5dc14faf6a56001442cf3fdbddb99",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:122110165083329310",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1d022490f80ed420d2c5.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T06:33:40.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "因大雨取消夜市行程，屬天候安全通知。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "因目前台北市持續發布大雨特報，考量大家安全與場地現況，今晚原定南機場夜市行程將先行取消。\n⠀\n雖然很可惜無法和大家見面，但大家的安全永遠是最重要的。造成不便，請大家見諒，也請留意天氣變化。期待天氣放晴後，再與大家相聚！",
+      "topicScores": {
+        "生活": 0.7,
+        "防災": 0.97
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02dvEM8Voqx5PrXFBncMVvtSekn6uXw3YSpgjokAKh2zuKfjyfqyJJbnQssCG1V8NFl"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T22:02:53+00:00",
+        "inputHash": "17d06c74cbfbc04429589494f2977e3a4ee911cc2da9e32c2a76d7d6328ad162",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "facebook:10175529092155654",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-21T00:31:29.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "清晨拜訪與日常互動記錄，未見具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "早上六點的碧湖公園…\n⠀\n大家怎麼都…\n起得那麼早！\n⠀\n明明是我要拜訪大家\n結果變成大家在找我\n真是不好意思！\n⠀\n有姊姊說要看爆炸頭\n看來現在有爆炸頭派\n以及短髮派了",
+      "topicScores": {
+        "生活": 0.95,
+        "競選": 0.56
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid0ZihAwmeb7q1XVuHm4esuwqme72LqEFT8dz13WTXGNsD2NQak95X1qPWRGEhYoiwHl"
     },
     {
       "agendaRelevance": 0.08,
