@@ -1,6 +1,43 @@
 {
-  "count": 306,
+  "count": 308,
   "posts": [
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-21T04:01:04+00:00",
+        "inputHash": "2a1eea994e4093c1884ca030c23d26bc432f2e97b57117b007e377927c058cd6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcSY9P3DXh5",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8b61da1fb1aec2bf1487.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-21T03:38:53+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "批評台中捷運藍線延宕與成本增加，屬主動提出交通市政問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:等了8年，台中捷運藍線還沒看到實質動工。\n\n捷運藍線遲遲沒動工，成本大增、追加預算、交通黑暗期......我們未來要面對的市政問題！",
+      "topicScores": {
+        "交通": 0.99,
+        "經濟": 0.57
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcSY9P3DXh5"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "ho-hsin-chun",
@@ -11091,6 +11128,43 @@
         "體育"
       ],
       "url": "https://www.youtube.com/watch?v=HDuWEFQ8Peg"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-21T04:01:04+00:00",
+        "inputHash": "8dd5988602b828b479b8c695b3a6f4daf0c10a34c73ad085cd571ca756039f77",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:zMXujcOr4jQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/cdc15658ab7d1afca4e9.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "專訪內容聚焦捷運藍線延宕與追加預算，屬主動政策議題表述。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純專訪-等了8年，台中捷運藍線還沒看到實質動工。捷運藍線遲遲沒動工，成本大增、追加預算、交通黑暗期......我們未來要面對的市政問題！",
+      "topicScores": {
+        "交通": 0.99,
+        "經濟": 0.55
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/zMXujcOr4jQ"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",

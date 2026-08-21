@@ -2,6 +2,113 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.84,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-21T04:01:04+00:00",
+        "inputHash": "2a1eea994e4093c1884ca030c23d26bc432f2e97b57117b007e377927c058cd6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcSY9P3DXh5",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8b61da1fb1aec2bf1487.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-21T03:38:53+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "批評台中捷運藍線延宕與成本增加，屬主動提出交通市政問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:等了8年，台中捷運藍線還沒看到實質動工。\n\n捷運藍線遲遲沒動工，成本大增、追加預算、交通黑暗期......我們未來要面對的市政問題！",
+      "topicScores": {
+        "交通": 0.99,
+        "經濟": 0.57
+      },
+      "topics": [
+        "交通",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcSY9P3DXh5"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T04:01:04+00:00",
+        "inputHash": "cccd83d48f50c45ca4a68b81a7a1bc8c4f3f564ae39a1f6a695247456f2890c6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcSDZHrEzlu",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/ca00cab8a3e9d9cf0b7c.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-21T00:29:42+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "晨間拜訪與造型互動，未見具體政策主張，偏日常競選跑行程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:早上六點的碧湖公園…\n⠀\n大家怎麼都…\n起得那麼早！\n⠀\n明明是我要拜訪大家\n結果變成大家在找我\n真是不好意思！\n⠀\n有姊姊說要看爆炸頭\n看來現在有爆炸頭派\n以及短髮派了",
+      "topicScores": {
+        "生活": 0.96,
+        "競選": 0.55
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcSDZHrEzlu"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-21T04:01:04+00:00",
+        "inputHash": "0a508cebf4d23d794d415cd2f7c47ee0e04349f336f9def8e1f3b3cb2e20a396",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcSCRJeEsB6",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/da49a65ea9d11f54b22d.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-21T00:20:10+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "感謝市場支持並喊話團結衝刺，屬選前動員非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:選前99天，清晨四點半出發！感謝板橋果菜市場好朋友們的熱情加油🎉\n\n新北隊一起團結繼續衝！",
+      "topicScores": {
+        "生活": 0.32,
+        "競選": 0.98,
+        "經濟": 0.41
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcSCRJeEsB6"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3648,122 +3755,6 @@
         "競選"
       ],
       "url": "https://www.facebook.com/KoChihEn/posts/pfbid0RSVgSwAFZDKJhy67sGL27uFhP4pSsEcWHg8JZQiM9kL7sL3BaKuiMJLc43zv7P4Nl"
-    },
-    {
-      "agendaRelevance": 0.52,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "369ec558d0db2c092365d21dc6a2b8461ac2e43b57b2dcf64ec6cad2d9a073c4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "facebook:1640444520770545",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/a6bcc9b634612e7108ec.webp",
-      "keywords": [
-        "補助",
-        "照顧",
-        "修法"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-19T05:00:04.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "表揚里長並主張爭取補助與保障，偏基層服務政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-fb",
-      "text": "恭喜210位特優及資深里長，謝謝大家為地方打拚！\n\n今天出席「高雄市115年特優及資深里長表揚大會」，向91位特優里長及119位資深里長獻上祝福。\n\n這次受獎的里長中，有29歲便投入基層服務的年輕世代，也有85歲仍堅守第一線的資深前輩，其中更有人服務地方長達43年。一路走來相當不容易，感謝大家長年為里民奔走，協助處理地方大小事。\n\n里長是市府與市民之間重要的溝通橋梁。從環境改善、社區照顧、防災應變到里民陳情，都需要里長在第一線協助，讓市政工作更貼近地方需求。\n\n過去，我和黨團隊友共同推動修法，將里長事務補助費從每月4萬5千元提高至5萬元。未來，我會持續爭取事務補助、辦公設備、教育訓練及保險等資源，讓里長服務地方時，能有更充足的支持與保障。\n\n再次恭喜所有獲獎里長，我們一起繼續為高雄、為鄉親努力，一同推動高雄邁向下一個黃金十年。\n\n陳其邁 Chen Chi-Mai 登真-邱議瑩 李昆澤 高雄小金剛許智傑 康裕成 高雄市議長 林富寶 高雄市議員何權峰 高雄市議員 邱俊憲 高雄市議員 黃文志 高雄市議員 姐姐的行動力   李喬如 張勝富 高雄市議員 陳慧文 高雄市議員 李雅慧 高雄市議員 鄭孟洳 張漢忠 高雄市議員 高雄市議員 李雨庭 黃飛鳳 高雄市議員 林志誠-高雄市議員 蘇致榮 鳳山阿榮 尹立 左營楠梓市議員參選人 洪村銘 大寮林園要改變 理想青年 張以理 #厝邊阿中張耀中  李柏毅 拚搏未來 服務團隊 黃捷 服務團隊 曾俊傑 服務團隊 林智鴻 高雄市議員 服務團隊",
-      "topicScores": {
-        "社福": 0.91,
-        "議會監督": 0.56
-      },
-      "topics": [
-        "社福",
-        "議會監督"
-      ],
-      "url": "https://www.facebook.com/zenolai2/posts/pfbid0eCW9mStE2abaAFHKgmdxixhGU2U9k593prkyuuJBgtBpm4q9wbLwJQ7XSEBjQVCNl"
-    },
-    {
-      "agendaRelevance": 0.29,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "5f56a925c579dcbb55077ccd87c412b2c2e6964b3417d49c3d79f04bd203d1cc",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "threads:https://www.threads.com/t/DcNWmaJk0KU",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/854b74c43d790976cf28.webp",
-      "keywords": [
-        "交通",
-        "攤商"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-19T04:41:20+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "談市場改建與攤商安置疑慮，屬主動表態非回應他方。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:新明市場承載著無數中壢人的生活記憶，更凝聚了許多攤商朋友一輩子的心血與打拚。\n\n一大早，世杰來到市場向大家道早安，聽見了許多市民頭家最真實的聲音。\n\n面對市場結構安全與改建需求，大家對「中繼市場」仍有許多疑慮與不安，包括二樓美食街未能妥善安置原攤商，以及周邊交通與未來營運等挑戰，導致目前進駐意願不到四成。\n\n這些心聲，世杰和桃園隊夥伴、在地的議員們都深刻體會。\n\n一位稱職的市長，必須走進基層、耐心傾聽，在溝通協調中凝聚最大共識。讓攤商安心做生意、讓市民享有完善的生活機能，全力守護每一個為生活奮鬥的身影💪\n\n世杰會堅定與大家站在一起，讓政策從基層需求出發，打造真正貼近日常的施政！讓心中壢，動起來💖",
-      "topicScores": {
-        "交通": 0.74,
-        "生活": 0.78,
-        "經濟": 0.63
-      },
-      "topics": [
-        "生活",
-        "交通",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DcNWmaJk0KU"
-    },
-    {
-      "agendaRelevance": 0.68,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "45086ec85ef363fe352280bcb56e8de36dcc5af2101f96978570ddd27c760e10",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcNWlTmEx2c/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/c4451afb87de85473eb4.webp",
-      "keywords": [
-        "攤商",
-        "交通"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-19T04:41:14+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "聚焦市場改建、攤商安置與周邊交通，屬地方治理議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "新明市場承載著無數中壢人的生活記憶，更凝聚了許多攤商朋友一輩子的心血與打拚。\n\n一大早，世杰來到市場向大家道早安，聽見了許多市民頭家最真實的聲音。\n\n面對市場結構安全與改建需求，大家對「中繼市場」仍有許多疑慮與不安，包括二樓美食街未能妥善安置原攤商，以及周邊交通與未來營運等挑戰，導致目前進駐意願不到四成。\n\n這些心聲，世杰和桃園隊夥伴、在地的議員們都深刻體會。\n\n一位稱職的市長，必須走進基層、耐心傾聽，在溝通協調中凝聚最大共識。讓攤商安心做生意、讓市民享有完善的生活機能，全力守護每一個為生活奮鬥的身影💪\n\n非常感謝競總主委范振修資政、魏筠議員 @weiyunin 、王珮毓議員 @peiyuwangpeiyu 、彭俊豪議員 @c_peng 、張曉昀議員 @vina.lovezhongli 、黃崇真議員 @cchuang_0223 、舊明里鄒富生前里長、桃園區長美里林秀貞里長、新明市場自治會呂學峰會長，以及每一位願意停下來和我分享意見的鄉親好朋友。\n\n世杰會堅定與大家站在一起，讓政策從基層需求出發，打造真正貼近日常的施政！讓心中壢，動起來💖",
-      "topicScores": {
-        "交通": 0.64,
-        "生活": 0.71,
-        "經濟": 0.77
-      },
-      "topics": [
-        "經濟",
-        "生活",
-        "交通"
-      ],
-      "url": "https://www.instagram.com/p/DcNWlTmEx2c/"
     }
   ],
   "version": 1
