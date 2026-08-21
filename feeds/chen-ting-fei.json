@@ -1,6 +1,38 @@
 {
-  "count": 191,
+  "count": 192,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "d3780c5c38dde294ce82506826bf8b4133011055dba7fb43389ce12568710e2c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcS2fOxTWjz/",
+      "imageAspect": 0.8003,
+      "imageUrl": "assets/feed-images/eea45b8d4412cf0ef35f.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T07:56:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享陪伴小孩的個人故事，無公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "我常常在戶外活動現場，在充氣滑梯陪著小朋友。\n有一次，有一個小女生在滑梯上面猶豫了很久，不敢滑下來。\n\n她媽媽在旁邊喊: 「妹妹，沒關係，妃妃姐姐會陪你!」\n\n她小小聲說:「妃妃姐姐，我怕。」\n\n我說:「沒關係，妃妃姐姐陪你，不要怕。」\n\n她想了 3 秒，閉起眼睛，咚一聲滑下來。\n\n我常常在想，\n這是小孩的世界，那麼大人的世界呢？\n有時候還是需要有人陪你一起承擔恐懼。\n\n「有我在，不要怕。」\n\n這句話，我要學著對更多人說。",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcS2fOxTWjz/"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "chen-ting-fei",

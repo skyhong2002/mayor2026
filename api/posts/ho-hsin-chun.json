@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 308,
+  "count": 310,
   "posts": [
     {
       "agendaRelevance": 0.84,
@@ -57,6 +57,41 @@
         "經濟"
       ],
       "url": "https://www.threads.com/t/DcSY9P3DXh5"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "b1488e30c30e95c00a885d0929d3fc04763f83f2102bd44a17a4bb09be8fe70a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcSY141SevI/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1ea34d218949b100df42.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T03:38:18+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "聚焦捷運藍線延宕與工程成本，屬政策批評與交通議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "等了8年，台中捷運藍線還沒看到實質動工。\n\n捷運藍線遲遲沒動工，成本大增、追加預算、交通黑暗期......我們未來要面對的市政問題！",
+      "topicScores": {
+        "交通": 0.96
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.instagram.com/p/DcSY141SevI/"
     },
     {
       "agendaRelevance": 0.05,
@@ -11185,6 +11220,42 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/zMXujcOr4jQ"
+    },
+    {
+      "agendaRelevance": 0.56,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "fd880186675ae4654798aff0ed2b7532e809a6b30340dae2fa96ed32118704d5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ReILQkzB3XQ",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/e1e6072d4317da9bad67.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "標題提到親子運動館與居住設施，偏城市建設討論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "從2380六星級到親子運動館 何欣純一次講給你聽",
+      "topicScores": {
+        "住宅": 0.7,
+        "體育": 0.78
+      },
+      "topics": [
+        "體育",
+        "住宅"
+      ],
+      "url": "https://www.youtube.com/watch?v=ReILQkzB3XQ"
     }
   ],
   "version": 1

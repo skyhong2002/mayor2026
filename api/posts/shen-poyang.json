@@ -19,8 +19,75 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 326,
+  "count": 329,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "5868a01d74768fb3845251988cb834aea18ac12f421ed963e787a34fe6920a7d",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcS4bNAFLLW",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/dd78b6751ca702a4f8a7.webp",
+      "keywords": [
+        "觀光",
+        "電影"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-21T08:13:07+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "公告週末跑行程與活動場次，主要是活動宣傳，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:週末行程，走囉\n⠀\n這兩天天氣不穩，\n我要來去畫烏龜了～\n⠀\n8/22（六）\n08:50\n📍玉成公園福德宮\n⠀\n18:30\n陳慈慧議員_星空電影院《馴龍高手》\n📍芝山國小風雨操場\n⠀\n8/23（日）\n09:00\n📍濱江市場\n⠀\n17:00\n劉耀仁議員_劉耀仁X沈伯洋見面會\n📍環河福德宮\n⠀\n19:30\n📍臨江街觀光夜市",
+      "topicScores": {
+        "文化觀光": 0.88
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcS4bNAFLLW"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "347d2a388be1a57f3e9176b328d57d0e775a11bf036830a9d82faee9a03a0b4e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcStI0zlPQ2",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/95c5263b1636a21583c7.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-21T06:34:29+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "因大雨取消夜市行程，屬天候公告與行程調整。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:因目前台北市持續發布大雨特報，考量大家安全與場地現況，今晚原定南機場夜市行程將先行取消。\n⠀\n雖然很可惜無法和大家見面，但大家的安全永遠是最重要的。造成不便，請大家見諒，也請留意天氣變化。期待天氣放晴後，再與大家相聚！",
+      "topicScores": {
+        "生活": 0.94
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcStI0zlPQ2"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "shen-poyang",
@@ -11715,6 +11782,38 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/hZ61l6Bv-Ro"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "7d397ecc1e65578c03bd4ce76aa8269bdb10eff0c3bfd39ec2875c9271f9e6be",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8i8RVIWP6NM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/91b693d1c068e7f109b0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題為劇場合作影片，屬文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Councilor Lin Liang-chun x Paper Windmill Theatre",
+      "topicScores": {
+        "文化觀光": 0.84
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/8i8RVIWP6NM"
     }
   ],
   "version": 1

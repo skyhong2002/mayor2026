@@ -1,6 +1,38 @@
 {
-  "count": 277,
+  "count": 278,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "3017994848c3bc4bc543a424fc5acde4846a62b3458db3e4d5858725a09267c5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcSeiOzFT5C/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/97c24f3fa16d040a1018.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T04:27:20+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是勝選動員與選戰口號，非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "全力拚勝選！延續城市光榮，高雄繼續向前✊",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DcSeiOzFT5C/"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "lai-jui-lung",
