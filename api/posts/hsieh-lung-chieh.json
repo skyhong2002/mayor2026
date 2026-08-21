@@ -19,7 +19,7 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 302,
+  "count": 303,
   "posts": [
     {
       "agendaRelevance": 0.15,
@@ -10750,6 +10750,38 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/FqN3YAts9Mc"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-21T16:00:58+00:00",
+        "inputHash": "3015ab0af30f9d0cbd134c6a28342b5e4184063340eb493bdaee1b0790f6686e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:kDbu59DEKFY",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/c283a4d6747137f4de3f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅為直播節目名稱，未見具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260821 談天說地論臺灣  @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=kDbu59DEKFY"
     }
   ],
   "version": 1

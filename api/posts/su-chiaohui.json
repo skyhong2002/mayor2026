@@ -19,8 +19,46 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 320,
+  "count": 322,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-21T16:00:58+00:00",
+        "inputHash": "f80ea7acf5ff4b5117ccbb8b8f99f8d92668a01e73ff523269c2b026495a37eb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcTeuFyEsSE",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/70b489186f84196a7fa0.webp",
+      "keywords": [
+        "國小"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-21T13:51:02+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳親子食農活動與場次資訊，屬活動公告非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:水獺媽媽樂園雙和場大成功🎉 暑假最後一場就在土城！明天千萬別錯過囉！\n\n📍水獺媽媽樂園 土城場\n時間｜8/22（六）09:00-16:00\n地點｜樂利國小樂利廣場（土城區裕生路65號）",
+      "topicScores": {
+        "教育": 0.72,
+        "文化觀光": 0.91,
+        "生活": 0.55
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcTeuFyEsSE"
+    },
     {
       "agendaRelevance": 0.94,
       "candidateId": "su-chiaohui",
@@ -11907,6 +11945,40 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/daBEeUKU4UU"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-21T16:00:58+00:00",
+        "inputHash": "806157780e333fcd6215c69971c2a967f3d9e367f533b8b8bcbb44f9fdba4b5f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:SjlYl-4vY-Q",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3d64ed4c78d8b66b85b6.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是活動宣傳標題，沒有公共政策或議程主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "The Most Fun Otter Mom's Paradise for Summer Break: Last Session Tomorrow (8/22), See You in Tuch...",
+      "topicScores": {
+        "文化觀光": 0.96,
+        "生活": 0.83
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/SjlYl-4vY-Q"
     }
   ],
   "version": 1
