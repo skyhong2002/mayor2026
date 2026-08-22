@@ -47,13 +47,6 @@
     });
   }
 
-  function formatDate(iso) {
-    if (!iso) return "";
-    const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return iso;
-    return date.toLocaleString("zh-TW", { dateStyle: "medium", timeStyle: "short" });
-  }
-
   // Relative time (X秒前/X分鐘前/X小時前/X天前) for post and "最後更新"
   // timestamps — used everywhere content freshness matters, so the reader
   // feels how recent something is instead of parsing an absolute date.

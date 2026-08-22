@@ -6,8 +6,9 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 ## 目前輸出
 
 - 網站首頁：<https://mayor2026.observe.tw/>（六都候選人總覽 + 最新公開發文河道）
-- `/<city>/<candidate>/`：單一候選人跨平台合併時間軸 + 議題比例圖表
-- `/source/`：公開來源列表；`/source/<candidate>/`：帳號清單（含性質與驗證等級）
+- `/source/`：公開來源列表；`/source/<candidate>/`：單一候選人帳號清單（含性質與驗證等級）
+  + 跨平台合併時間軸與議題比例（舊網址 `/<city>/<candidate>/` 已改為轉址到這裡）
+- `/spectrum/`：議題光譜總覽；`/spectrum/<topic>/`：單一議題各候選人比較
 - `/status/`：資料管線狀態（收錄統計、最近一次執行、近期抓取錯誤）
 - `/policy-match/`：匿名選擇市政優先議題，對照候選人自主政策倡議貼文
 - `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）
@@ -46,8 +47,11 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
   一位候選人在同平台可以有多個帳號（例如競選粉專 + 個人粉專），抓取層會全部監看；建站時的候選人頁連結只挑
   信心最高的一個顯示。這份清單目前的內容來自 2026-07-05 的公開來源查證（見同目錄下的查證紀錄 md 檔）。
 - `scripts/build_social_sources.py` 把兩份 CSV 轉成抓取設定 `data/feeds/social_sources.json`。
-- 抓取層目前是骨架（見下方「目前完成度」）：Instagram/Threads 走 RSSHub（預設 `https://rss.observe.tw`），
-  Facebook 走 Apify（這個 RSSHub 實例沒有註冊 `/facebook/*` route，經 curl 驗證過），YouTube 用 yt-dlp，
+- 抓取層：Instagram/Threads 走 RSSHub（預設 `https://rss.observe.tw`，可在 `.env` 用
+  `MAYOR_RSSHUB_BASE` 覆寫；排程機器實際指向本機實例 `http://127.0.0.1:1200`），
+  Facebook 走 Apify（這個 RSSHub 實例沒有註冊 `/facebook/*` route，經 curl 驗證過），YouTube 用 yt-dlp
+  （頻道列表用 flat-playlist，新影片再各補一次 metadata 拿發布時間；舊缺日期資料由每次執行的
+  backfill 逐步補齊），
   官網則是逐候選人 adapter。全部寫入 `data/feeds/social_feed_inbox.jsonl`。
 - `scripts/classify_context.py` 以 OpenAI Responses API 結構化輸出同時判斷議題與發文動機；發文動機只有「主動發文」與
   「回應他方觀點」兩類。初判為回應的貼文會再經第二道 AI 驗證，必須同時辨識他方、他方先前的具體觀點及本篇答覆目的；
@@ -77,8 +81,11 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - [x] 候選人頁議題／發文動機篩選
 - [x] 議題選擇器（以自主政策倡議貼文為依據，附來源與資料不足提示）
 - [x] 靜態站建置、驗證、gh-pages 發布腳本
-- [ ] 官網逐一 adapter（依真實候選人網站結構撰寫，見 `scripts/official_site_adapters/`）
-- [ ] 排程機器（新竹 macOS）的實際串接與 Tailscale 遠端維運
+- [x] 排程機器（新竹 macOS）launchd 串接（每日 00/06/12/18 各跑一次，見 `deploy/github-pages.md`）
+- [x] 貼文圖片快取有效期（預設 60 天，`MAYOR_FEED_IMAGE_MAX_AGE_DAYS` 可調）；過期只移除本地圖片副本，
+      貼文文字紀錄永久保留
+- [ ] 官網逐一 adapter（依真實候選人網站結構撰寫，見 `scripts/official_site_adapters/`；
+      未有 adapter 的官網不計入 `check_source_coverage.py` 的可抓取來源）
 - [ ] LINE OA、LINE OpenChat、Podcast、TikTok、X 帳號目前只顯示在候選人頁連結，尚未接入抓取
 
 ## 建置與發佈

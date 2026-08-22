@@ -8,6 +8,7 @@ personal FB profile are both worth watching, for example.
 
 from __future__ import annotations
 
+import os
 from typing import Any
 
 import feed_common
@@ -15,7 +16,8 @@ import feed_common
 OUTPUT_JSON = feed_common.PROJECT_ROOT / "data" / "feeds" / "social_sources.json"
 GENERATED_BY = "scripts/build_social_sources.py"
 
-DEFAULT_RSSHUB_BASE = "https://rss.observe.tw"
+# feed_common loads .env on import, so MAYOR_RSSHUB_BASE set there applies here.
+DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 
 # Platforms we actually know how to fetch. line_oa/tiktok/x still show up in
 # candidate link lists (see build_public_data.py) but aren't fetched yet.

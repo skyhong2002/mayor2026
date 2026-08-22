@@ -158,15 +158,18 @@ def fetch_source(source: dict[str, Any], *, rsshub_base: str, limit: int) -> lis
     builder = RSSHUB_ROUTE_BUILDERS.get(platform)
     if not builder or not username:
         return []
-    base = source.get("rsshub_base") or rsshub_base
-    url = base.rstrip("/") + builder(username)
+    url = rsshub_base.rstrip("/") + builder(username)
     root = fetch_rss(url)
     return normalize_items(source, root, limit=limit)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--rsshub-base", default=DEFAULT_RSSHUB_BASE)
+    parser.add_argument(
+        "--rsshub-base",
+        default=None,
+        help=f"RSSHub base URL for every source (default: MAYOR_RSSHUB_BASE or per-source value or {DEFAULT_RSSHUB_BASE}).",
+    )
     parser.add_argument("--limit", type=int, default=10, help="Max items to keep per source per run.")
     parser.add_argument("--instagram-interval-hours", type=float, default=DEFAULT_INSTAGRAM_INTERVAL_HOURS)
     parser.add_argument("--full-refresh", action="store_true", help="Ignore per-source fetch intervals.")
@@ -193,8 +196,11 @@ def main() -> int:
             skipped += 1
             continue
 
+        # Explicit CLI flag wins over the MAYOR_RSSHUB_BASE-derived default.
+        # (The per-source rsshub_base field is informational only; it is
+        # regenerated from the same env var every pipeline run.)
         try:
-            rows = fetch_source(source, rsshub_base=args.rsshub_base, limit=args.limit)
+            rows = fetch_source(source, rsshub_base=args.rsshub_base or DEFAULT_RSSHUB_BASE, limit=args.limit)
         except (RuntimeError, urllib.error.URLError, ET.ParseError) as exc:
             record_attempt(fetch_state, source["id"], ok=False, message=str(exc))
             feed_common.record_error(source["id"], f"rsshub fetch failed: {exc}")

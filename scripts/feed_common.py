@@ -163,6 +163,38 @@ def append_jsonl_dedup(path: Path, new_rows: Iterable[dict[str, Any]], *, key: s
     return len(to_append)
 
 
+def fill_jsonl_fields(path: Path, updates: dict[str, dict[str, Any]], *, key: str = "id") -> int:
+    """Fill in missing metadata fields on existing rows, atomically.
+
+    Narrow exception to the append-only rule for the feed JSONLs: rows are
+    never added, removed, or reordered, and a field is only written when the
+    row's current value is empty/absent — used to backfill `posted_at` on
+    YouTube rows fetched before per-video date lookup existed. Returns the
+    number of rows changed.
+    """
+    rows = read_jsonl(path)
+    changed = 0
+    for row in rows:
+        fields = updates.get(row.get(key))
+        if not fields:
+            continue
+        row_changed = False
+        for field, value in fields.items():
+            if value and not row.get(field):
+                row[field] = value
+                row_changed = True
+        changed += row_changed
+    if not changed:
+        return 0
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with tmp.open("w", encoding="utf-8") as handle:
+        for row in rows:
+            handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True))
+            handle.write("\n")
+    tmp.replace(path)
+    return changed
+
+
 def strip_html(text: str) -> str:
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
     text = HTML_TAG_RE.sub("", text)

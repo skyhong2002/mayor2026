@@ -12,8 +12,10 @@ never re-downloaded.
 
 from __future__ import annotations
 
+import datetime as dt
 import hashlib
 import io
+import os
 import re
 import urllib.error
 import urllib.request
@@ -34,6 +36,15 @@ REQUEST_TIMEOUT_SECS = 20
 FEED_IMAGE_MAX_WIDTH = 1200
 AVATAR_SIZE = 320
 WEBP_QUALITY = 82
+
+# Cached post images are evicted once the post is older than this, so
+# site/assets/feed-images/ stays bounded instead of growing with the full
+# post archive (post text is kept forever; only the local image copy goes).
+FEED_IMAGE_MAX_AGE_DAYS = int(os.environ.get("MAYOR_FEED_IMAGE_MAX_AGE_DAYS", "60"))
+# Give up refetching a failing avatar URL after this many attempts (a changed
+# profile URL resets the counter). Keeps permanently dead CDN links from
+# being retried on every pipeline tick.
+AVATAR_MAX_ATTEMPTS = 3
 
 FB_CROP_SIZE_RE = re.compile(r"ctp=s\d+x\d+")
 FB_SOURCE_MAX_RE = re.compile(r"cstp=mx(\d+)x(\d+)")
@@ -104,12 +115,34 @@ def first_image_url(media: list[Any]) -> str:
     return ""
 
 
+def post_age_days(posted_at: str, *, now: dt.datetime) -> float | None:
+    if not posted_at:
+        return None
+    try:
+        posted = dt.datetime.fromisoformat(posted_at)
+    except ValueError:
+        return None
+    if posted.tzinfo is None:
+        posted = posted.replace(tzinfo=dt.timezone.utc)
+    return (now - posted).total_seconds() / 86400
+
+
 def cache_post_images() -> None:
     cache = feed_common.load_json(IMAGE_CACHE_JSON, {})
     posts = feed_common.read_jsonl(feed_common.CANDIDATES_JSONL)
+    now = dt.datetime.now(dt.timezone.utc)
     fetched = 0
+    evicted = 0
     for post in posts:
         post_id = post["id"]
+        age = post_age_days(post.get("posted_at", ""), now=now)
+        too_old = age is not None and age > FEED_IMAGE_MAX_AGE_DAYS
+        if too_old:
+            # Null keeps the "don't refetch" memory; prune removes the file.
+            if cache.get(post_id):
+                cache[post_id] = None
+                evicted += 1
+            continue
         if post_id in cache:
             continue
         url = first_image_url(post.get("media") or [])
@@ -122,7 +155,10 @@ def cache_post_images() -> None:
             fetched += 1
     feed_common.save_json_atomic(IMAGE_CACHE_JSON, cache)
     total = sum(1 for value in cache.values() if value)
-    print(f"fetch_media_cache: {fetched} new post image(s) cached ({total} total).")
+    print(
+        f"fetch_media_cache: {fetched} new post image(s) cached, "
+        f"{evicted} evicted (older than {FEED_IMAGE_MAX_AGE_DAYS} days), {total} total."
+    )
 
 
 def cache_avatars() -> None:
@@ -137,13 +173,20 @@ def cache_avatars() -> None:
         fetch_url = request_larger_avatar(url)
         cached = cache.get(account_id)
         if cached and cached.get("url") == url and cached.get("fetchUrl", url) == fetch_url:
-            continue
+            if cached.get("file"):
+                continue
+            if cached.get("attempts", 0) >= AVATAR_MAX_ATTEMPTS:
+                continue  # permanently failing URL; wait for the profile URL to change
         result = cache_image(fetch_url, AVATARS_DIR, max_width=AVATAR_SIZE, square=True)
         if result:
             cache[account_id] = {"url": url, "fetchUrl": fetch_url, "file": result["file"]}
             fetched += 1
+        else:
+            attempts = (cached or {}).get("attempts", 0) + 1 if cached and cached.get("url") == url else 1
+            cache[account_id] = {"url": url, "fetchUrl": fetch_url, "file": "", "attempts": attempts}
     feed_common.save_json_atomic(AVATAR_CACHE_JSON, cache)
-    print(f"fetch_media_cache: {fetched} new avatar(s) cached ({len(cache)} total).")
+    total = sum(1 for value in cache.values() if value.get("file"))
+    print(f"fetch_media_cache: {fetched} new avatar(s) cached ({total} total).")
 
 
 def prune_orphaned_files() -> None:
@@ -153,7 +196,9 @@ def prune_orphaned_files() -> None:
     watchlist."""
     image_cache = feed_common.load_json(IMAGE_CACHE_JSON, {})
     avatar_cache = feed_common.load_json(AVATAR_CACHE_JSON, {})
-    referenced = {v["file"] for v in image_cache.values() if v} | {v["file"] for v in avatar_cache.values() if v}
+    referenced = {v["file"] for v in image_cache.values() if v and v.get("file")} | {
+        v["file"] for v in avatar_cache.values() if v and v.get("file")
+    }
     removed = 0
     for directory in (FEED_IMAGES_DIR, AVATARS_DIR):
         if not directory.is_dir():

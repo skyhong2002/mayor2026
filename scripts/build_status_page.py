@@ -38,7 +38,10 @@ PIPELINE_RUNTIME_JSON = API_DIR / "pipeline-runtime.json"
 PUBLIC_BASE_URL = os.environ.get("MAYOR_SITE_BASE_URL", "https://mayor2026.observe.tw").rstrip("/")
 RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 RECENT_ERROR_LIMIT = 20
+RECENT_ERROR_DAYS = 7  # errors shown on the page
+CURRENT_ERROR_WINDOW_HOURS = 24  # errors counted as "current" for component health
 FRESH_PIPELINE_HOURS = 4
+STALE_SOURCE_DAYS = 14  # a social source with nothing newer than this gets flagged
 
 STATUS_LABELS = {
     "ok": "正常",
@@ -170,9 +173,23 @@ def build_status() -> dict[str, Any]:
         by_platform[post["platform"]] = by_platform.get(post["platform"], 0) + 1
     latest_post_at = max((p.get("posted_at") or "" for p in posts), default="")
 
+    # Error rows accumulate forever in the JSONL; only a recent window says
+    # anything about current health. "Current" errors (last 24h) drive
+    # component status; the page lists errors from the last 7 days.
     errors = feed_common.read_jsonl(feed_common.ERRORS_JSONL)
-    annotated_errors = annotate_errors(errors, source_by_id)
-    error_platforms = collections.Counter(row["platform"] for row in annotated_errors)
+
+    def errors_within(hours: float) -> list[dict[str, Any]]:
+        cutoff = now - dt.timedelta(hours=hours)
+        kept = []
+        for row in errors:
+            recorded = parse_time(row.get("recorded_at"))
+            if recorded is not None and recorded >= cutoff:
+                kept.append(row)
+        return kept
+
+    annotated_errors = annotate_errors(errors_within(RECENT_ERROR_DAYS * 24), source_by_id)
+    current_errors = annotate_errors(errors_within(CURRENT_ERROR_WINDOW_HOURS), source_by_id)
+    error_platforms = collections.Counter(row["platform"] for row in current_errors)
 
     fetch_state = feed_common.load_json(FETCH_STATE_JSON, {"sources": {}})
     pipeline_runtime = feed_common.load_json(PIPELINE_RUNTIME_JSON, {})
@@ -248,7 +265,7 @@ def build_status() -> dict[str, Any]:
             "degraded" if ig_threads_errors else "ok",
             (
                 f"{watch_platforms.get('instagram', 0)} 個 Instagram、{watch_platforms.get('threads', 0)} 個 "
-                f"Threads 來源；最新抓取批次目前 {ig_threads_errors} 個錯誤。"
+                f"Threads 來源；過去 {CURRENT_ERROR_WINDOW_HOURS} 小時 {ig_threads_errors} 個錯誤。"
             ),
             [
                 f"最新抓取時間：{taipei_label(max_time(last_attempts))}",
@@ -285,7 +302,7 @@ def build_status() -> dict[str, Any]:
         apify_details.append(f"pacing 判斷：{apify.get('reason')}")
     if apify_errors:
         apify_status = "degraded"
-        apify_summary += f" 最新抓取批次有 {apify_errors} 個錯誤。"
+        apify_summary += f" 過去 {CURRENT_ERROR_WINDOW_HOURS} 小時有 {apify_errors} 個錯誤。"
     components.append(component("facebook-apify", "Facebook Apify", apify_status, apify_summary, apify_details))
 
     # --- YouTube yt-dlp -----------------------------------------------------
@@ -295,7 +312,7 @@ def build_status() -> dict[str, Any]:
             "youtube",
             "YouTube yt-dlp",
             "degraded" if youtube_errors else "ok",
-            f"{watch_platforms.get('youtube', 0)} 個 YouTube 來源；最新抓取批次目前 {youtube_errors} 個錯誤。",
+            f"{watch_platforms.get('youtube', 0)} 個 YouTube 來源；過去 {CURRENT_ERROR_WINDOW_HOURS} 小時 {youtube_errors} 個錯誤。",
             [f"已收錄影片：{by_platform.get('youtube', 0)}"],
         )
     )
@@ -310,6 +327,48 @@ def build_status() -> dict[str, Any]:
             "paused" if website_sources and not official_posts else "ok",
             f"{website_sources} 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 {official_posts} 篇。",
             ["official_site_fetcher.py 目前是骨架；每個官網需要個別撰寫解析邏輯才能抓到內容。"],
+        )
+    )
+
+    # --- 來源收錄健康 ---------------------------------------------------
+    # A fetch can "succeed" while a source quietly stops yielding content
+    # (dead page, unscrapeable profile type, dormant account). Surface any
+    # social source that never produced a post, or has nothing recent.
+    newest_by_source: dict[str, str] = {}
+    for post in posts:
+        source_id = str(post.get("source_id") or "")
+        stamp = post.get("posted_at") or post.get("fetched_at") or ""
+        if stamp > newest_by_source.get(source_id, ""):
+            newest_by_source[source_id] = stamp
+    adapter_platforms = {"facebook", "instagram", "threads", "youtube"}
+    social_sources = [s for s in sources if s.get("platform") in adapter_platforms]
+    never_collected: list[str] = []
+    stale_sources: list[str] = []
+    for source in social_sources:
+        source_id = str(source.get("id"))
+        label = f"{source.get('candidate_name') or ''}（{source_id}，{PLATFORM_LABELS.get(source.get('platform'), source.get('platform'))}）"
+        newest = newest_by_source.get(source_id, "")
+        newest_time = parse_time(newest)
+        if not newest:
+            never_collected.append(label)
+        elif newest_time is not None and (now - newest_time).days > STALE_SOURCE_DAYS:
+            stale_sources.append(f"{label}：最新內容 {newest[:10]}")
+    source_health_details = [f"從未收錄：{entry}" for entry in never_collected]
+    source_health_details += [f"逾 {STALE_SOURCE_DAYS} 天：{entry}" for entry in stale_sources]
+    if len(source_health_details) > 10:
+        source_health_details = source_health_details[:10] + [f"…以及另外 {len(source_health_details) - 10} 個來源"]
+    if never_collected or stale_sources:
+        source_health_details.append("可能是帳號停止更新或該帳號型態抓不到內容；查證後請在 watchlist_accounts.csv 修正或停用。")
+    components.append(
+        component(
+            "source-health",
+            "來源收錄健康",
+            "degraded" if never_collected or stale_sources else "ok",
+            (
+                f"{len(social_sources)} 個社群來源中，{len(never_collected)} 個從未收錄過貼文、"
+                f"{len(stale_sources)} 個超過 {STALE_SOURCE_DAYS} 天沒有新內容。"
+            ),
+            source_health_details,
         )
     )
 
@@ -342,6 +401,7 @@ def build_status() -> dict[str, Any]:
             "totalPosts": len(posts),
             "postsByPlatform": by_platform,
             "latestPostAt": latest_post_at or None,
+            "currentErrors": len(current_errors),
         },
         "watchSources": {"platforms": dict(watch_platforms), "platformRows": platform_rows},
         "components": components,
@@ -410,7 +470,7 @@ def render_platform_rows(rows: list[dict[str, Any]]) -> str:
 
 def render_error_list(errors: list[dict[str, Any]]) -> str:
     if not errors:
-        return '<div class="empty-state">近期沒有抓取錯誤。</div>'
+        return f'<div class="empty-state">近 {RECENT_ERROR_DAYS} 天沒有抓取錯誤。</div>'
     items = []
     for row in reversed(errors):
         items.append(
@@ -490,7 +550,7 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
             {render_metric("監看候選人", metrics.get("candidates"), "candidates.json")}
             {render_metric("監看帳號", metrics.get("watchAccounts"), "sources.json")}
             {render_metric("已收錄貼文", metrics.get("totalPosts"), "social_candidates.jsonl")}
-            {render_metric("目前錯誤", len(status["recentErrors"]), "最新抓取批次")}
+            {render_metric("目前錯誤", metrics.get("currentErrors"), f"過去 {CURRENT_ERROR_WINDOW_HOURS} 小時")}
           </div>
         </div>
       </section>
@@ -540,7 +600,7 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
               <p class="section-kicker">Latest Errors</p>
               <h2>最新錯誤</h2>
             </div>
-            <p class="data-date">最多顯示 {RECENT_ERROR_LIMIT} 筆</p>
+            <p class="data-date">近 {RECENT_ERROR_DAYS} 天，最多顯示 {RECENT_ERROR_LIMIT} 筆</p>
           </div>
           <div class="status-error-list">
             {error_list}

@@ -21,7 +21,7 @@ PROFILES = feed_common.load_json(feed_common.SOURCE_PROFILES_JSON, {})
 
 def account_avatar_url(account_id: str) -> str | None:
     cached = AVATAR_CACHE.get(account_id)
-    return f"assets/source-avatars/{cached['file']}" if cached else None
+    return f"assets/source-avatars/{cached['file']}" if cached and cached.get("file") else None
 
 
 def build_candidate_entries(candidates: list[dict[str, str]], accounts_by_candidate: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:

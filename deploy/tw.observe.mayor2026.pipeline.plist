@@ -13,12 +13,6 @@
       <string>cd '/Users/REPLACE_ME/mayor2026' &amp;&amp; /usr/bin/python3 scripts/run_pipeline.py --publish-pages</string>
     </array>
 
-    <key>EnvironmentVariables</key>
-    <dict>
-      <key>MAYOR_OBSERVE_HOME</key>
-      <string>/Users/REPLACE_ME/mayor2026</string>
-    </dict>
-
     <!-- MAYOR_RSSHUB_BASE is intentionally left out here: when this deploys
          beside a machine that already runs RSSHub locally (e.g. the same
          host as Harmonica-in-Taiwan), set MAYOR_RSSHUB_BASE=http://127.0.0.1:1200

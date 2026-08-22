@@ -16,6 +16,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 import tempfile
 import time
 from typing import Any, Callable
@@ -130,23 +131,43 @@ def build_prompt(posts: list[dict[str, Any]]) -> str:
 
 
 def validate_results(payload: dict[str, Any], expected_ids: set[str]) -> list[dict[str, Any]]:
+    """Return the usable subset of the AI output.
+
+    Results with unknown/duplicate ids or invalid fields are dropped rather
+    than failing the whole batch; the caller re-requests whatever is missing.
+    Raises only when nothing in the output is usable.
+    """
     results = payload.get("results")
     if not isinstance(results, list):
         raise ClassificationError("AI output has no results array")
-    ids = [result.get("id") for result in results if isinstance(result, dict)]
-    if len(ids) != len(set(ids)) or set(ids) != expected_ids:
-        raise ClassificationError("AI output ids do not exactly match the requested posts")
+    valid: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    dropped: list[str] = []
     for result in results:
-        if result.get("postingIntent") not in INTENT_LABELS:
-            raise ClassificationError(
-                f"invalid posting intent for {result.get('id')}: {result.get('postingIntent')!r}"
-            )
+        if not isinstance(result, dict):
+            continue
+        result_id = result.get("id")
+        if result_id not in expected_ids or result_id in seen:
+            continue
         topics = result.get("topics")
-        if not isinstance(topics, list) or not topics:
-            raise ClassificationError(f"no topics for {result.get('id')}")
-        if any(item.get("topic") not in TOPIC_LABELS for item in topics):
-            raise ClassificationError(f"invalid topic for {result.get('id')}")
-    return results
+        if (
+            result.get("postingIntent") not in INTENT_LABELS
+            or not isinstance(topics, list)
+            or not topics
+            or any(item.get("topic") not in TOPIC_LABELS for item in topics)
+        ):
+            dropped.append(str(result_id))
+            continue
+        seen.add(result_id)
+        valid.append(result)
+    if dropped:
+        print(
+            f"classify_context: dropped {len(dropped)} invalid AI result(s): {', '.join(dropped[:5])}",
+            file=sys.stderr,
+        )
+    if not valid:
+        raise ClassificationError("AI output contained no usable results")
+    return valid
 
 
 def load_api_key() -> str:
@@ -272,18 +293,26 @@ def build_intent_verification_prompt(posts: list[dict[str, Any]]) -> str:
 def validate_intent_verification_results(
     payload: dict[str, Any], expected_ids: set[str]
 ) -> list[dict[str, Any]]:
+    """Same salvage semantics as validate_results: keep the usable subset,
+    let the caller re-request missing ids, raise only on nothing usable."""
     results = payload.get("results")
     if not isinstance(results, list):
         raise ClassificationError("AI intent verification output has no results array")
-    ids = [result.get("id") for result in results if isinstance(result, dict)]
-    if len(ids) != len(set(ids)) or set(ids) != expected_ids:
-        raise ClassificationError("AI intent verification ids do not exactly match the requested posts")
+    valid: list[dict[str, Any]] = []
+    seen: set[str] = set()
     for result in results:
+        if not isinstance(result, dict):
+            continue
+        result_id = result.get("id")
+        if result_id not in expected_ids or result_id in seen:
+            continue
         if result.get("postingIntent") not in INTENT_LABELS:
-            raise ClassificationError(
-                f"invalid verified posting intent for {result.get('id')}: {result.get('postingIntent')!r}"
-            )
-    return results
+            continue
+        seen.add(result_id)
+        valid.append(result)
+    if not valid:
+        raise ClassificationError("AI intent verification output contained no usable results")
+    return valid
 
 
 def run_intent_verification_batch(
@@ -421,29 +450,47 @@ def run_batch_with_retries(
     model: str,
     runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]],
 ) -> list[dict[str, Any]]:
+    """Runners may return a partial batch (invalid/missing ids are salvaged
+    away); collect what came back and re-request only what's missing, instead
+    of re-running whole batches."""
+    collected: list[dict[str, Any]] = []
+    remaining = list(batch)
     last_error: Exception | None = None
     for attempt in range(1, 3):
         try:
-            return runner(batch, model)
+            results = runner(remaining, model)
         except (ClassificationError, OSError) as exc:
             last_error = exc
             print(
-                f"classify_context: batch of {len(batch)} attempt {attempt}/2 failed: {exc}",
-                file=__import__("sys").stderr,
+                f"classify_context: batch of {len(remaining)} attempt {attempt}/2 failed: {exc}",
+                file=sys.stderr,
             )
             if attempt < 2:
                 time.sleep(5 * attempt)
-    if len(batch) > 1:
-        midpoint = len(batch) // 2
+            continue
+        collected.extend(results)
+        returned_ids = {result["id"] for result in results}
+        remaining = [row for row in remaining if row["id"] not in returned_ids]
+        if not remaining:
+            return collected
         print(
-            f"classify_context: splitting failed batch of {len(batch)} into {midpoint} and {len(batch) - midpoint}.",
-            file=__import__("sys").stderr,
+            f"classify_context: {len(remaining)} id(s) missing from AI output; re-requesting just those.",
+            file=sys.stderr,
+        )
+    if len(remaining) > 1:
+        midpoint = len(remaining) // 2
+        print(
+            f"classify_context: splitting failed batch of {len(remaining)} into {midpoint} and {len(remaining) - midpoint}.",
+            file=sys.stderr,
         )
         return [
-            *run_batch_with_retries(batch[:midpoint], model, runner),
-            *run_batch_with_retries(batch[midpoint:], model, runner),
+            *collected,
+            *run_batch_with_retries(remaining[:midpoint], model, runner),
+            *run_batch_with_retries(remaining[midpoint:], model, runner),
         ]
-    raise ClassificationError(f"AI classification stopped after automatic retries: {last_error}")
+    raise ClassificationError(
+        f"AI classification stopped after automatic retries: {last_error or 'model kept omitting the requested id'}"
+    )
 
 
 def classify_rows(

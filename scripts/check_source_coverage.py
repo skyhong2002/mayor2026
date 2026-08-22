@@ -4,10 +4,19 @@
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 import feed_common
 
-FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube", "website"}
+# `website` is only fetchable per-candidate: official_site_fetcher.py needs a
+# hand-written adapter module for each site, so a website account without one
+# must not be counted as covered.
+FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube"}
+ADAPTERS_DIR = Path(__file__).resolve().parent / "official_site_adapters"
+
+
+def has_site_adapter(candidate_id: str) -> bool:
+    return (ADAPTERS_DIR / f"{candidate_id.replace('-', '_')}.py").is_file()
 
 
 def main() -> int:
@@ -18,7 +27,19 @@ def main() -> int:
     config = feed_common.load_json(feed_common.SOCIAL_SOURCES_JSON, {"sources": []})
     source_ids = {s["id"] for s in config.get("sources", [])}
 
-    fetchable_accounts = [a for a in accounts if a["platform"] in FETCHABLE_PLATFORMS]
+    fetchable_accounts = [
+        a
+        for a in accounts
+        if a["platform"] in FETCHABLE_PLATFORMS
+        or (a["platform"] == "website" and has_site_adapter(a["candidate_id"]))
+    ]
+    sites_without_adapter = [a for a in accounts if a["platform"] == "website" and not has_site_adapter(a["candidate_id"])]
+    if sites_without_adapter:
+        print(
+            f"WARNING: {len(sites_without_adapter)} website account(s) watched but without an adapter "
+            f"(not counted as fetchable): {', '.join(a['account_id'] for a in sites_without_adapter)}",
+            file=sys.stderr,
+        )
     for account in fetchable_accounts:
         if account["account_id"] not in source_ids:
             errors.append(f"active fetchable account missing from social_sources.json: {account['account_id']}")

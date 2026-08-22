@@ -23,9 +23,10 @@ cp deploy/tw.observe.mayor2026.pipeline.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/tw.observe.mayor2026.pipeline.plist
 ```
 
-`StartInterval` 每 30 分鐘跑一次（與 Harmonica-in-Taiwan 相同節奏）。不用擔心打爆平台：
+`StartCalendarInterval` 排在每天 00:00 / 06:00 / 12:00 / 18:00（一天四次）。不用擔心打爆平台：
 pipeline 有 lock 防止重疊執行，抓取層也有各自的節流（Instagram 預設 12 小時抓一次、
-請求之間有延遲），大多數 tick 只會抓 Threads/YouTube 增量並重建站台。
+Facebook Apify 依月預算 pacing、請求之間有延遲），大多數 tick 只會抓增量並重建站台。
+log 寫到 `~/Library/Logs/mayor2026/pipeline.log` 與 `pipeline.err.log`（repo 內的 `logs/` 不再使用）。
 
 ## 遠端維運建議
 
