@@ -13,6 +13,7 @@ import hashlib
 
 import classify_topics
 import feed_common
+import prerender_index
 
 SITE_ROOT = feed_common.PROJECT_ROOT / "site"
 TEMPLATES_DIR = SITE_ROOT / "templates"
@@ -41,7 +42,23 @@ def main() -> int:
     def render(template: str) -> str:
         return stamp_assets(template, version)
 
+    # Prerender the homepage's dynamic sections (stat row, city grid, latest
+    # feed) into static HTML so crawlers without JS see real content; app.js
+    # re-renders the same sections on load and takes over interactivity.
     index_template = render((TEMPLATES_DIR / "index.html").read_text(encoding="utf-8"))
+    empty_sections = {
+        "stat-row": '<div class="stat-row" id="stat-row"></div>',
+        "data-date": '<p class="data-date" id="data-date"></p>',
+        "city-grid": '<div id="city-grid" class="directory-grid">載入中...</div>',
+        "latest-feed": '<div id="latest-feed" class="latest-feed-grid">載入中...</div>',
+    }
+    for section_id, inner_html in prerender_index.render_sections().items():
+        placeholder = empty_sections[section_id]
+        if placeholder not in index_template:
+            raise SystemExit(f"generate_site_pages: index template is missing the #{section_id} placeholder")
+        opening_tag = placeholder[: placeholder.index(">") + 1]
+        closing_tag = "</p>" if placeholder.startswith("<p") else "</div>"
+        index_template = index_template.replace(placeholder, f"{opening_tag}{inner_html}{closing_tag}")
     (SITE_ROOT / "index.html").write_text(index_template, encoding="utf-8")
 
     source_index_template = render((TEMPLATES_DIR / "source-index.html").read_text(encoding="utf-8"))

@@ -111,6 +111,24 @@ def validate_candidate_pages_exist(errors: list[str]) -> None:
                 errors.append(f"missing output for candidate {candidate_id}: {page.relative_to(PROJECT_ROOT)}")
 
 
+def validate_index_prerender(errors: list[str]) -> None:
+    """The homepage must ship with prerendered content — crawlers without JS
+    should never see the '載入中...' placeholders."""
+    index_path = SITE_ROOT / "index.html"
+    if not index_path.exists():
+        return
+    html = index_path.read_text(encoding="utf-8")
+    if "載入中" in html:
+        errors.append("site/index.html still contains a 載入中 placeholder (prerender missing)")
+    for marker, label in (
+        ("stat-card", "stat row"),
+        ("city-card-title", "city grid"),
+        ("feed-latest-excerpt", "latest feed"),
+    ):
+        if marker not in html:
+            errors.append(f"site/index.html has no prerendered {label} ({marker} not found)")
+
+
 def validate_count_consistency(errors: list[str]) -> None:
     try:
         candidates = read_json(API_DIR / "candidates.json")
@@ -182,6 +200,7 @@ def main() -> int:
     validate_json_files(errors)
     validate_asset_references(errors)
     validate_candidate_pages_exist(errors)
+    validate_index_prerender(errors)
     validate_count_consistency(errors)
     validate_qualitative_schema(errors)
 
