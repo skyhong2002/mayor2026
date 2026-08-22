@@ -22,6 +22,38 @@
   "count": 340,
   "posts": [
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-22T16:01:22+00:00",
+        "inputHash": "e5483b7c2f50643e9955fcd8d2d2cebd5df369a6b4e97dff4c5319457fc012a5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Vwknc_JBvzQ",
+      "imageAspect": 0.6667,
+      "imageUrl": "assets/feed-images/d5cf015985dca08e911f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-22T10:22:42+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅有簡短感嘆詞，無可辨識公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "I swear...",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/Vwknc_JBvzQ"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
@@ -86,6 +118,47 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DcVCKfCkZbU"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T16:00:58+00:00",
+        "inputHash": "9cf59bbfdbc4bd30b2c343f0482b096bd744432c3188d0767f231dcf824e95f3",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:E5jfzjBmnKo",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f6a82678d6f4bc3644cc.webp",
+      "keywords": [
+        "育兒",
+        "補助",
+        "津貼",
+        "照顧"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-21T12:35:11+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "列舉育兒、通學安全與社區建設等地方施政成果。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "從爭取好孕專車延長補助，到推動內科企業附設育兒設施與托兒津貼。從親子照顧、通學安全到社區建設，王孝維議員把地方每一個需要，都放在心上、做到實處。⠀未來我們會繼續並肩努力，一起讓港湖更好、讓台北順起來！",
+      "topicScores": {
+        "交通": 0.76,
+        "教育": 0.71,
+        "社福": 0.9
+      },
+      "topics": [
+        "社福",
+        "交通",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/E5jfzjBmnKo"
     },
     {
       "agendaRelevance": 0.76,
@@ -375,6 +448,38 @@
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid02dvEM8Voqx5PrXFBncMVvtSekn6uXw3YSpgjokAKh2zuKfjyfqyJJbnQssCG1V8NFl"
     },
     {
+      "agendaRelevance": 0.2,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-21T10:03:23+00:00",
+        "inputHash": "7d397ecc1e65578c03bd4ce76aa8269bdb10eff0c3bfd39ec2875c9271f9e6be",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8i8RVIWP6NM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/91b693d1c068e7f109b0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-21T05:54:11+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題為劇場合作影片，屬文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Councilor Lin Liang-chun x Paper Windmill Theatre",
+      "topicScores": {
+        "文化觀光": 0.84
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/8i8RVIWP6NM"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
@@ -479,6 +584,40 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0ESvkWEJBR28HZzUdj72MZpwEsn28Na3siVGKnhKPNM7rm6EHas9K7f1JXHhk6S3kl"
+    },
+    {
+      "agendaRelevance": 0.68,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-20T16:04:43+00:00",
+        "inputHash": "0ad3d18f239197aea5f3d50fc0f836eeea0d2238ea6beefc85f3fdc418c7b943",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:hZ61l6Bv-Ro",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/aa85669734e0edb7100c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-20T14:07:54+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主張TTA 2.0設於NTCSP，屬主動提出科技政策與中央溝通。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Advocating for TTA 2.0 to be based in NTCSP, with positive feedback from the central government!",
+      "topicScores": {
+        "兩岸外交": 0.92,
+        "教育": 0.31
+      },
+      "topics": [
+        "兩岸外交",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/hZ61l6Bv-Ro"
     },
     {
       "agendaRelevance": 0.86,
@@ -631,6 +770,38 @@
       "url": "https://www.threads.com/t/DcQEuuMkUaI"
     },
     {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-20T04:01:05+00:00",
+        "inputHash": "8c7665afff5079bdf4677d7935c45da4ced1ab6e212d15dc5c10c1e786038a80",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:OnT7zfMSgIU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/fcf05f49db83a51384af.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-20T00:03:04+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題是選戰倒數與勝選口號，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "100-Day Countdown: Let’s Race Together Toward the Starting Point of Victory!",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/OnT7zfMSgIU"
+    },
+    {
       "agendaRelevance": 0.22,
       "candidateId": "shen-poyang",
       "classification": {
@@ -733,6 +904,40 @@
       "url": "https://www.instagram.com/p/DcPaJ_Eyd0f/"
     },
     {
+      "agendaRelevance": 0.35,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T16:01:37+00:00",
+        "inputHash": "516353e17f25970e86fbbc4acb301404876103e7fe3eb6bb7f38f13e1a68a855",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xVcb9gSLiRo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/964c86f9ea5c0c971461.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-19T10:06:28+00:00",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "談士林慈諴宮與台北願景，偏文化觀光形象與競選論述。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The precious \"competitive craftsmanship\" of Shilin Cixian Temple reflects my vision for Taipei: s...",
+      "topicScores": {
+        "文化觀光": 0.86,
+        "競選": 0.78
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/xVcb9gSLiRo"
+    },
+    {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
       "classification": {
@@ -801,6 +1006,40 @@
         "文化觀光"
       ],
       "url": "https://www.threads.com/t/DcNm_KylNft"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "9e96ce9ee0ae449dbf6ba6034e4fa8c1d8f2e4b62d2c7480569fe237a8b90714",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:qm7xRNF5Uoc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/145c685b82b80574113b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-19T07:02:13+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "僅是七夕巧克力與重逢的生活化內容，無公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The long-awaited reunion is here! Pei Chen Tuan X Shen Boyang - Qixi Festival Chocolate!",
+      "topicScores": {
+        "文化觀光": 0.25,
+        "生活": 0.97
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/qm7xRNF5Uoc"
     },
     {
       "agendaRelevance": 0.02,
@@ -911,6 +1150,40 @@
         "交通"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0j9j4YTqVe6fV389iMf9fV5seZC6nCXTknbvqe6nBYmBRHdpkTkKL9CMyK7Grqq3yl"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "e53f567e7f8f855385b3848ea4c132f66575dbdeb88fb71525d4cd45c4c6426b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:iSt--CjzcTo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/a528dbb66f3c53448d89.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-19T04:05:07+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "談校隊來台比賽與教練訪台，屬活動與體育交流。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "My alma mater UCI's men's basketball team was invited to play in Taiwan, and the coach is still t...",
+      "topicScores": {
+        "文化觀光": 0.26,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/iSt--CjzcTo"
     },
     {
       "agendaRelevance": 0.05,
@@ -1123,6 +1396,42 @@
       "url": "https://www.threads.com/t/DcL3pc5lEkk"
     },
     {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "3c2edd973f36a9862b739ace031e4ad3450a424f25bcd499fffa7f72db487b63",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:IEidFTgZY2U",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4cb16f564f42c969924c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-18T12:00:26+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主題是用預算支持青年，屬青年社福與政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Supporting Youth with Less Than 1% of Taipei's Budget",
+      "topicScores": {
+        "教育": 0.5,
+        "社福": 0.82,
+        "競選": 0.45
+      },
+      "topics": [
+        "社福",
+        "教育",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/IEidFTgZY2U"
+    },
+    {
       "agendaRelevance": 0.85,
       "candidateId": "shen-poyang",
       "classification": {
@@ -1195,6 +1504,42 @@
       "url": "https://www.facebook.com/reel/3552277984919772/"
     },
     {
+      "agendaRelevance": 0.83,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "565c594b2f80f3f27bd5b8f20a3598b744445c9f0f92313d621e1caed5d52a19",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3nsJ9XRYcWA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/55605fe124eb2b82a113.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-18T07:57:30+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "明確提出青年補助與數位卡方案，屬具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "A Young Person's First Step, Accelerated by Taipei. Graduates Receive $500,000. AI Card for Youth...",
+      "topicScores": {
+        "教育": 0.86,
+        "社福": 0.71,
+        "競選": 0.58
+      },
+      "topics": [
+        "教育",
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/3nsJ9XRYcWA"
+    },
+    {
       "agendaRelevance": 0.95,
       "candidateId": "shen-poyang",
       "classification": {
@@ -1232,6 +1577,76 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DcKhSudkskt/"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "f0148a176fbd13ea8aea554de9972688ab290c026dd8041257f452432cb825c4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1iel89CTvhk",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/2daeaab5329584ad2a67.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-18T01:31:41+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "記者會標題明顯屬競選造勢，主打年輕人與台北政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "年輕人的第一步 台北來加速記者會｜你的市長 沈伯洋",
+      "topicScores": {
+        "教育": 0.42,
+        "競選": 0.95,
+        "經濟": 0.31
+      },
+      "topics": [
+        "競選",
+        "教育",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/watch?v=1iel89CTvhk"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-19T09:05:24+00:00",
+        "inputHash": "06ae4004bbdfb9a4fdd05efd81e42c71837e85c501b993db08bd1fc86b228f1a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:RcCbbre-5Pc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3f9da4730c610640d3cd.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-17T14:00:01+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "感謝議員並提三井倉庫保存，屬文化與活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "From Preserving the Mitsui Warehouse to Fostering Public Dialogue: Thank You, Councilor Hsu Shu-h...",
+      "topicScores": {
+        "文化觀光": 0.71,
+        "議會監督": 0.46
+      },
+      "topics": [
+        "文化觀光",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/RcCbbre-5Pc"
     },
     {
       "agendaRelevance": 0.05,
@@ -1511,6 +1926,38 @@
       "url": "https://www.instagram.com/p/DcGaHAUSDGt/"
     },
     {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-16T16:05:17+00:00",
+        "inputHash": "2f19a2c47ed117fc4f1284ce9d3b78598eac0df720f61285156793259abd376a",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:MhwzFKblRjk",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4102986bcabe34824bbe.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-16T12:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "內容過於簡短，僅像一般日常互動文字。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Agri is here!! Testing our chemistry the moment we meet",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/MhwzFKblRjk"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "classification": {
@@ -1775,6 +2222,40 @@
       "url": "https://www.instagram.com/p/DcEQC4sS9i1/"
     },
     {
+      "agendaRelevance": 0.61,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-15T16:01:09+00:00",
+        "inputHash": "65e7996578229570f2ea16776085025d60e0299fce1a6191f800008f3964bfd6",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:_g06ChTB6TE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7e133a45f34e177b8661.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-15T15:51:28+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "直接質疑台北市政卡關，屬主動批評與監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The central government has set the policy, so what exactly is holding Taipei back?",
+      "topicScores": {
+        "交通": 0.95,
+        "議會監督": 0.91
+      },
+      "topics": [
+        "交通",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/_g06ChTB6TE"
+    },
+    {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
       "classification": {
@@ -1885,6 +2366,40 @@
         "交通"
       ],
       "url": "https://www.threads.com/t/DcBtmd7lE-Q"
+    },
+    {
+      "agendaRelevance": 0.14,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T16:00:55+00:00",
+        "inputHash": "322bd2dfa3c9ff61295f8def994f081b8f6e001eb82ebe66de52386953c22653",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ST8J9LniZJM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8ffa9780e2deae80bad8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-14T15:52:45+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹台北發表會與訪談內容，未回應特定說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "\"It's hard to find such a burning heart in Taipei these days.\" After the HEART presentation, we i...",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "生活": 0.67
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/ST8J9LniZJM"
     },
     {
       "agendaRelevance": 0.31,
@@ -2249,6 +2764,76 @@
       "candidateId": "shen-poyang",
       "classification": {
         "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "23d8dc39792d46d14276f466627c42794a66a6d67fe66e1ffd4e0b30ed90417f",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:153SYs4aVqA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/96c4ca77b6b6eeea9e3b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-14T06:50:27+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "市場參訪與逛街紀錄，屬生活與商圈活動分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Lin Tzu-yang invited me to Yongle Market! The two \"Yangs\" team up, and I even unlocked the market...",
+      "topicScores": {
+        "文化觀光": 0.8,
+        "生活": 0.92,
+        "經濟": 0.62
+      },
+      "topics": [
+        "生活",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/153SYs4aVqA"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
+        "inputHash": "8018b575840e5f14eb7001534fc811cd106be3618d54ba5dd0b261804a1d5a68",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:ARYOJgRtx_w",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/71a982525cfede24382e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-14T04:43:05+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容在介紹體育中心議題，屬資訊說明非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "What are these trending \"Sports Hubs\"? Answering everything you want to know in one video!",
+      "topicScores": {
+        "生活": 0.6,
+        "體育": 0.96
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/ARYOJgRtx_w"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-14T10:03:30+00:00",
         "inputHash": "4c280e5fe5b2dde4dffaf772d77c61700a33b0c2b474ecf0bec4d31a5947b6fb",
         "method": "ai",
         "model": "gpt-5.4-mini",
@@ -2419,6 +3004,40 @@
         "經濟"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid034xin5dPNsKPQwhh8VSxYnFrTmwPzn3EKj5JUFxPGQda7pPPAaAHedgpcwZMu3dnwl"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T16:04:53+00:00",
+        "inputHash": "5623dfbcdd44bfd686860c2853edec2f4658b3841b5c7767a65efd6ff97cec93",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:r6S-SxCJB4g",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7ee06aa804d706b53bca.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-13T11:08:30+00:00",
+      "postingIntent": {
+        "confidence": 0.85,
+        "label": "主動發文",
+        "reason": "內容僅述市政問題偵察，未見回應特定對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "When it comes to uncovering municipal issues, many think of the experienced and reliable Councilo...",
+      "topicScores": {
+        "生活": 0.9,
+        "議會監督": 0.36
+      },
+      "topics": [
+        "生活",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/r6S-SxCJB4g"
     },
     {
       "agendaRelevance": 0.08,
@@ -2634,6 +3253,40 @@
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid02D1V9f42J9mTTTZTQNrbWVXjXmQ6d5nwAS6RJjno3zwt5rwfb3ixnYX6h8ZURm8hql"
     },
     {
+      "agendaRelevance": 0.7,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-13T10:00:55+00:00",
+        "inputHash": "c0506ce0ac3bf8bf5046ea6b387565ddcba52e14dde4b7b805fff1febad271a8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:S8qt_bdFZZY",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/e9dd59c0b06859862c14.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-13T05:49:02+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "影片主打臺北升級與交通建設，屬政策宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Upgraded: We Are Ready!",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.95
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/S8qt_bdFZZY"
+    },
+    {
       "agendaRelevance": 0.04,
       "candidateId": "shen-poyang",
       "classification": {
@@ -2703,6 +3356,76 @@
         "文化觀光"
       ],
       "url": "https://www.threads.com/t/Db-AjwJkUzO"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "683ba0246597b5509f2c9bf0c91adeecc98fa81b7d4dc108a2ac1a1d62796d42",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:i5zByHt6esg",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/06214fbc365068846e76.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-12T15:46:38+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "發布五大政見，內容指向城市治理與教育等具體主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "沈伯洋「HEART」五大政見正式發布，從城市的空間、機會、陪伴、韌性與時間，全面打造台北的市政生態系！",
+      "topicScores": {
+        "住宅": 0.36,
+        "教育": 0.88,
+        "社福": 0.52,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "教育",
+        "社福",
+        "住宅"
+      ],
+      "url": "https://www.youtube.com/watch?v=i5zByHt6esg"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-12T16:00:54+00:00",
+        "inputHash": "a494a1e150660679a45fcad375b8c2f712c629ae5d34b616db34c8cc072ecb61",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:z-s3FmHcBuc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/181ceeec0462f81904e5.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-12T11:45:02+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容為競選背書與稱讚，未見具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Thanks to These Three Key Influential Figures for Endorsing Enoch Shen: Hear the Professional Per...",
+      "topicScores": {
+        "競選": 0.92
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/z-s3FmHcBuc"
     },
     {
       "agendaRelevance": 0.12,
@@ -2891,6 +3614,40 @@
         "交通"
       ],
       "url": "https://www.facebook.com/reel/4587571754847684/"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-11T16:01:04+00:00",
+        "inputHash": "d0c1a15dadd8a4ac36c6d0b0bf203e6b51db62449e6528245f57d4cc7af59208",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:OU4H7v-jRo8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/08c259eb96268a6806c7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-11T13:23:49+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標題為政策願景摘要，屬主動提出市政理念。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Five Policy Visions: \"Space, Time, Companionship, Opportunity, Resilience.\" Together, they spell ...",
+      "topicScores": {
+        "生活": 0.88,
+        "競選": 0.97
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/OU4H7v-jRo8"
     },
     {
       "agendaRelevance": 0.93,
@@ -3161,6 +3918,74 @@
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0LAhjgM9PZrdNoZLCDFgQKK85XDGVDEXHikYVQhETyzXYSCKTZokj12CuHnRiaci1l"
     },
     {
+      "agendaRelevance": 0.96,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "d2474ac1f9bb55ead9c11647e0406380da3b3405f92295834a06452529c7648e",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8WH53TUHS-s",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/763a6765bcf38c880930.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-11T01:16:06+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "為參選台北市長政策願景發表會，屬明確競選政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "沈伯洋參選台北市長政策願景發表會｜你的市長 沈伯洋",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=8WH53TUHS-s"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "a3911d598d5484687a63e72af4f442bd1481cfccb529010b058c0432ff53f6e4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:fFsQuQJ4u10",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ef09647a3d787c10ee83.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-10T15:28:47+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "標題為跑行程式競選宣傳，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Ling-Yang on the Move! Joining Councilwoman @ChungPeiling to Feel the Passion of Shilin and Beitou",
+      "topicScores": {
+        "生活": 0.3,
+        "競選": 0.92
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/fFsQuQJ4u10"
+    },
+    {
       "agendaRelevance": 0.28,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3236,6 +4061,40 @@
         "住宅"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0q73g6W6VkTHFHdfJfD589X7jg3LfJejxTHmBvGPUgV6RvGA4gtk6TXfRaz6nKnpl"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-10T16:37:57+00:00",
+        "inputHash": "8016fb03709649d2086290e90f40c52a5e6614ce56c966c7e476d2214f71f65b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:p9fjwMu_2Dk",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/f0789f67d6a842deb712.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-10T10:06:54+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "描述青年返鄉從政故事，屬人物競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "At 26, Fan-Tsai Kuo is a classic example of youth returning home to enter politics. A Hakka nativ...",
+      "topicScores": {
+        "生活": 0.28,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/p9fjwMu_2Dk"
     },
     {
       "agendaRelevance": 0.26,
@@ -3718,6 +4577,38 @@
       "url": "https://www.threads.com/t/DbxEO-ykTlY"
     },
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-08T04:01:16+00:00",
+        "inputHash": "c67202f647ef0151dad32f3d7e2c075672c22f918f845b0b4530dd5654cf8ecc",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Um-gUH5YU2Y",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6a77c9a87c067bde6b2f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-08T01:22:09+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "標題僅為育兒日常內容，無公共議題或回應對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Back to Cram School for a Day! New Dad 101",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/Um-gUH5YU2Y"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3854,6 +4745,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbvEzU-AGSM"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-07T16:05:04+00:00",
+        "inputHash": "998402b6cd5ac3338a0596a15a69727af362d2a238a57491f2599f95c6778ec5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:9dltpz_QvsA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3cfe7810faede762d934.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-07T10:05:52+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅為受邀上節目致謝，無具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Thanks to my old friend @Attorney Chen Yu-Hsin - Dad Lawyer for inviting me on \"Ganghu Unscripted...",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/9dltpz_QvsA"
     },
     {
       "agendaRelevance": 0.0,
@@ -4024,6 +4947,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbuIsEslH8f"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-06T16:02:05+00:00",
+        "inputHash": "84497e8e2e45a3456fc284efdd994c6e1ef0d2736dba51ad2929baef8337ea70",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:zm9DeoDymY4",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d4c04a2694e6f5793a7c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-06T10:43:49+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹議員用陀螺讓孩子離開手機，屬活動報導與形象內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Councilor Hung Chien-yi uses Beyblade to get kids off their phones and bring generations together...",
+      "topicScores": {
+        "教育": 0.82,
+        "生活": 0.64
+      },
+      "topics": [
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/zm9DeoDymY4"
     },
     {
       "agendaRelevance": 0.02,
@@ -4262,6 +5219,40 @@
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid02S9LBkWf64fEWEWbNoTD96MGFQKhYXFtGFD8fym3vwn8GRcCALSDgYFR47p5vqWHRl"
     },
     {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-05T10:03:43+00:00",
+        "inputHash": "d4a6746512c77de56c4d519e568c4528dcb78c46e319ba8d9b204ef9a91b4aeb",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:sFvKXjGIbLs",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/377bf9e7cdb4be33b419.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-05T08:55:37+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹內湖夜市美食導覽，屬觀光生活內容，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Join Gao Chia-yu for a Food Tour of the Neihu 737 Night Market.",
+      "topicScores": {
+        "文化觀光": 0.88,
+        "生活": 0.22
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/sFvKXjGIbLs"
+    },
+    {
       "agendaRelevance": 0.55,
       "candidateId": "shen-poyang",
       "classification": {
@@ -4364,6 +5355,38 @@
       "url": "https://www.threads.com/t/Dbn9wmJlIEF"
     },
     {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "eeb477430c1bdb72b73012f51faccbf2be075c2751e0b441aa86f633e924f666",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:cQRzNld48Gk",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f0ffe85eb23a00d5dfb0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-04T15:17:17+00:00",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "僅有影片標題，無法辨識公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The Best Place in Taiwan to Tell Jokes Is.........",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/cQRzNld48Gk"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
@@ -4428,6 +5451,40 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DbndI6WzoQR/"
+    },
+    {
+      "agendaRelevance": 0.15,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T16:03:53+00:00",
+        "inputHash": "4681d1d066d281b7b717fe80af3649e2172d0f116178ec66787c53e2732dc17c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:-eUrHoe3OO4",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/7df3df33f380e91a14c5.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-04T10:52:41+00:00",
+      "postingIntent": {
+        "confidence": 0.7,
+        "label": "主動發文",
+        "reason": "標題暗示台北改變與城市活化，內容不足以明確判定。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "This change starts with your life. I’m going to get a stagnant Taipei moving again, ensuring a sm...",
+      "topicScores": {
+        "交通": 0.38,
+        "生活": 0.7
+      },
+      "topics": [
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/-eUrHoe3OO4"
     },
     {
       "agendaRelevance": 0.12,
@@ -4497,6 +5554,105 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DbmVA6UztNi/"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "7bc87c5d4df1660dd768b9a0481464373445d9de122ef9aab5008004a7eef828",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xqi7z9rfiaM",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/b5d10a5ec5ce2e89f9e4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-04T01:41:02+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "標題為台北市長選舉主視覺揭露，核心是競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Smooth & Steady | Kuma Shen 2026 Campaign Key Visual Reveal Concept Animation | Taipei May...",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=xqi7z9rfiaM"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-04T04:01:20+00:00",
+        "inputHash": "e2c23e6250e56f3353ba48f48a5fdf6d72cda096279801b88b675be0dbe185d9",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:JMIS9oAd7sQ",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/08bc3c1a0ccf747ddf6c.webp",
+      "keywords": [
+        "競選",
+        "主視覺"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-04T01:30:16+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是競選主視覺公布記者會，屬選舉宣傳活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "競選主視覺公佈記者會",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=JMIS9oAd7sQ"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-03T16:01:45+00:00",
+        "inputHash": "71ad9c114d3082fb06ba550d356f014969e06b3fdd816c0bce3ae6fbeb2fad7c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:qHpLW3TAG4E",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d402fa819086668054c9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-03T10:22:48+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "影片主題是挑戰超辣辣椒，純娛樂內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Challenging the Dragon's Breath Pepper!",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/qHpLW3TAG4E"
     },
     {
       "agendaRelevance": 0.02,
@@ -4697,6 +5853,40 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DbjtDIxk3cA"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-02T22:01:38+00:00",
+        "inputHash": "7eaac2f56fdf4b7bec2412a4b97c96eb18ec771b67645d3bdedd10b2e2a3cd58",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:o-0eqrBnKKU",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/62c30e0cde13424d2108.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-02T16:16:44+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "英文評論蔣萬安市長優點，屬政治觀點發表，非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Actually, Chiang Wan-an does have some strengths as mayor, and those strengths are...",
+      "topicScores": {
+        "生活": 0.14,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/o-0eqrBnKKU"
     },
     {
       "agendaRelevance": 0.0,
@@ -5117,6 +6307,40 @@
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
       "classification": {
+        "classifiedAt": "2026-08-01T10:00:57+00:00",
+        "inputHash": "0aa2acc0107cd24d0ab5e7ba15c31fa2b84a8f083f54a2be83262e56fd8e74d1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:LoEueYBpsME",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/845437867501804a2361.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-01T08:17:23+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "唱歌與拜票式活動紀錄，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Singing with the folks in Wanhua—wishing everyone the best with the song \"This Year Will Surely B...",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "競選": 0.86
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/LoEueYBpsME"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
         "classifiedAt": "2026-08-01T16:03:29+00:00",
         "inputHash": "1fdd53682d8b98525a05968b8f5a69d7677bbba25f069990bf0c19b67f2e19df",
         "method": "ai",
@@ -5446,6 +6670,38 @@
       "url": "https://www.threads.com/t/Dbaz5GvFP9r"
     },
     {
+      "agendaRelevance": 0.4,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T16:01:07+00:00",
+        "inputHash": "18bc66527d569e5931cdb05eb6720fbdfb18002b5269d3f20bfd15fe57769e74",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:2BB-sWLbiZA",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3cb80c808cbfed2cc0d4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-30T13:27:50+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "主動宣傳訪美行程與國際連結成果，非回應他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Our intense 8-day trip to the U.S. successfully built global connections and brought home solutio...",
+      "topicScores": {
+        "兩岸外交": 0.9
+      },
+      "topics": [
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/shorts/2BB-sWLbiZA"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "classification": {
@@ -5640,6 +6896,42 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0DycWcyhhp8eFADpUQYGhTbMfvug3kYnSVfwSNFTsevW1wePQbEVKkXZwaTUV6s1Jl"
+    },
+    {
+      "agendaRelevance": 0.56,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-30T04:00:56+00:00",
+        "inputHash": "dd82b2c2d078ef86066535c5ab78baf7b20d920b1c50558dbe47d1fa770f97b8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:gWhnc3Z289A",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/a50dd58222e14c5c373a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-30T01:28:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是訪美成果記者會，主軸為對外交流與城市發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "沈伯洋訪美成果記者會｜從世界取經，為台北加速！",
+      "topicScores": {
+        "兩岸外交": 0.71,
+        "教育": 0.41,
+        "文化觀光": 0.44
+      },
+      "topics": [
+        "兩岸外交",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/watch?v=gWhnc3Z289A"
     },
     {
       "agendaRelevance": 0.87,
@@ -6144,6 +7436,40 @@
         "兩岸外交"
       ],
       "url": "https://www.threads.com/t/DbTcwX7Ew-M"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-27T16:01:25+00:00",
+        "inputHash": "98483f2c2a4f2e9eabcebab42f83b1aacb8665a25cda7a1a5bbe247ea3546c39",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:8ABqjv2KORs",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/4df079a0c78063dcf43c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-27T13:50:41+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "與紐約台灣青年交流，屬主動宣傳與意見交換，非回應特定他方觀點。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The nation's capital should lead the way! Discussing ideas with Taiwanese youth in New York: My p...",
+      "topicScores": {
+        "兩岸外交": 0.23,
+        "教育": 0.2
+      },
+      "topics": [
+        "兩岸外交",
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/8ABqjv2KORs"
     },
     {
       "agendaRelevance": 0.66,
@@ -7115,6 +8441,40 @@
       "url": "https://www.facebook.com/reel/970081019387150/"
     },
     {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-20T16:03:25+00:00",
+        "inputHash": "d10b888cb0d1de84f94b598dae795be8177b2d52bf9b319202c3bcb32d02e981",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xhUbGeF3ENo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/5cf63fe83ccaa3a8e110.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-20T11:54:15+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "描述走訪市場與互動感謝，屬活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "市場的聲音，是最真實的在地呼吸。這週末我在萬華三水街市場、直興市場、大稻埕永樂市場，還有雙連謙和市場，見到非常多鄉親，感謝大家的加油、餵食！",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "生活": 0.88
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/xhUbGeF3ENo"
+    },
+    {
       "agendaRelevance": 0.7,
       "candidateId": "shen-poyang",
       "classification": {
@@ -7153,6 +8513,42 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid0JLyW57NXiYS9rDADF13g586iaT7dAmcAEqZekoRwJ7cWw2ZxAeLAdrLvd8j2v3Rnl"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-20T10:01:05+00:00",
+        "inputHash": "4fbb8f92991a42fbb4d04202eb98286e09990338a66709ba3629707f23c2690b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:4NwAhwKo8J4",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/7cfc145c0a7b6c0e8fc0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-20T09:30:50+00:00",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "在委員會抗議國防採購分工，屬議會監督與軍購議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "A strong protest! Why are Minister Gu and I in the Economics Committee? Defense procurement shoul...",
+      "topicScores": {
+        "經濟": 0.95,
+        "議會監督": 0.91,
+        "防災": 0.58
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "防災"
+      ],
+      "url": "https://www.youtube.com/watch?v=4NwAhwKo8J4"
     },
     {
       "agendaRelevance": 0.78,
@@ -7845,6 +9241,40 @@
       "url": "https://www.instagram.com/p/Da4ol7WkmCk/"
     },
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-17T04:00:59+00:00",
+        "inputHash": "f67b7e023910e2fbc3fe3d8c5670f2dcccbbea6b076f8a6ff26874bc8de86843",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:3B7iNmILMU8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8209309955799aebb637.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-17T03:22:28+00:00",
+      "postingIntent": {
+        "confidence": 0.86,
+        "label": "主動發文",
+        "reason": "內容提及世足與地方人物訪談，屬體育與一般介紹，不是回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Hitchhiker | \"Uncle Zuo\" Shih Ming-chin is here! Discussing the World Cup and fostering a ...",
+      "topicScores": {
+        "文化觀光": 0.56,
+        "體育": 0.67
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/3B7iNmILMU8"
+    },
+    {
       "agendaRelevance": 0.06,
       "candidateId": "shen-poyang",
       "classification": {
@@ -7955,6 +9385,43 @@
         "競選"
       ],
       "url": "https://www.facebook.com/reel/1323415426181608/"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-16T16:02:38+00:00",
+        "inputHash": "59864b105898628f7487ec2f56fc1492c70a16cc04bf3445f3be3a7abd355126",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:GbrlZ-yi68g",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/527e46e5c79631046d8c.webp",
+      "keywords": [
+        "運動",
+        "球隊"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-07-16T15:45:15+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題為球隊與人物對談，偏體育與選戰包裝。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "「一座偉大的城市，一定會有一支偉大的職業運動球隊。」 左盃 石明謹來了！ V.S  《台北順風車》",
+      "topicScores": {
+        "競選": 0.74,
+        "體育": 0.88
+      },
+      "topics": [
+        "體育",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=GbrlZ-yi68g"
     },
     {
       "agendaRelevance": 0.63,
@@ -8186,6 +9653,42 @@
       "url": "https://www.threads.com/t/Da18KltkQlq"
     },
     {
+      "agendaRelevance": 0.77,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-16T04:03:19+00:00",
+        "inputHash": "19abae9fe4309cb4dbd99beb9e4863dcd4b4572fd6fc3a8b959bb1fab150f3e7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:1DXr1Njptcc",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/7d6f36043f978daf26ff.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-07-16T00:58:41+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "標示運動政策記者會，屬主動發布政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "「你的市長 你的主場」沈伯洋公布運動政策記者會",
+      "topicScores": {
+        "競選": 0.95,
+        "體育": 0.86
+      },
+      "topics": [
+        "競選",
+        "體育"
+      ],
+      "url": "https://www.youtube.com/watch?v=1DXr1Njptcc"
+    },
+    {
       "agendaRelevance": 0.18,
       "candidateId": "shen-poyang",
       "classification": {
@@ -8296,6 +9799,72 @@
         "環境"
       ],
       "url": "https://www.threads.com/t/Dazp4A4lJu1"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "fc2cb89690567dff5675b4b750480f41fff44781516c17f323b9c405172e10ec",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:xPFtdeju3-o",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/70c3ccceda5f4dfc29c9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-15T01:01:21+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主打訪美記者會與國際曝光，屬對外交往與形象宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "走向國際！團隊升級！沈伯洋訪美記者會",
+      "topicScores": {
+        "兩岸外交": 0.54,
+        "競選": 0.68
+      },
+      "topics": [
+        "競選",
+        "兩岸外交"
+      ],
+      "url": "https://www.youtube.com/watch?v=xPFtdeju3-o"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "abef34ee47807e466bc33f6db2772fe67577badbe6573062d3506cec63be7ade",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:J4K5ee8df44",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/27d9a761180d1fd85329.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-14T15:29:04+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅為教學與學生口試片段，屬日常內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "I'm still teaching at Peking University. I happened to have a student taking an oral exam today, ...",
+      "topicScores": {
+        "教育": 0.98
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/J4K5ee8df44"
     },
     {
       "agendaRelevance": 0.3,
@@ -8670,6 +10239,40 @@
         "防災"
       ],
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid03o6scZwUcYmeD5aWzTUBYkSzoT5J4XSQGJBcJCNpSh1KV4zrjjcXpj6Th5d1quC7l"
+    },
+    {
+      "agendaRelevance": 0.22,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "ff5ac64d0612c7ed630c89aea0f6ef34cac5c0ebdd5e26a6d92dbec71aee96b4",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:IgalUzEeae4",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/6b10eb3f594f9d7599ae.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-08T07:26:12+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "標題為質詢國防部與後備訓練，屬監督提問。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Questioning the Ministry of National Defense: A Comprehensive Overview of Military Reservist Trai...",
+      "topicScores": {
+        "治安": 0.84,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/watch?v=IgalUzEeae4"
     },
     {
       "agendaRelevance": 0.84,
@@ -9375,6 +10978,72 @@
       "url": "https://www.facebook.com/puma.taipei/posts/pfbid02d4d7o992Frao2ab5KqCXhwRGans72E7u2djq2Zi1zrRPPci1gF83qSGX5iFq5EXUl"
     },
     {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "aa731f85a20970ab918463973e62d141b714633536f3f45fbdcdc57cbdd1d957",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:tMMhRCYVD9o",
+      "imageAspect": 1.7872,
+      "imageUrl": "assets/feed-images/0a27b6a5e536812c9fc8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-07-01T12:10:44+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "刑法總則教學課程，屬知識教育內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "撲馬刑法總則第十一課：複數行為人【十萬訂閱感謝祭，最後一堂刑總課】",
+      "topicScores": {
+        "教育": 0.9,
+        "生活": 0.25
+      },
+      "topics": [
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=tMMhRCYVD9o"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "eecef82036b822a5515b09920f3cd772dfdf3cea42f45363bf4a68ae29877a87",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:LDvKlLzmR9I",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7ce1319c1124bdae933d.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-30T10:48:52+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳法律課直播，屬課程公告而非回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "The Final Criminal Law Class, Streaming Tomorrow Night! Whether or not you’ve attended previous l...",
+      "topicScores": {
+        "教育": 0.95
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.youtube.com/shorts/LDvKlLzmR9I"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "classification": {
@@ -9521,6 +11190,40 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/reel/1010886531827847/"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "10cbe481e9cb87d0e74b280ee0247d2f7c809964ddbe89197f7642d160e56d7b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:g_ADDaT4ecc",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/dbb2992223058cd66701.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-29T07:19:31+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參拜龍山寺祈福，屬一般生活分享與景點活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Visiting Lungshan Temple in Monga to pray for peace and prosperity🙏",
+      "topicScores": {
+        "文化觀光": 0.78,
+        "生活": 0.62
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/g_ADDaT4ecc"
     },
     {
       "agendaRelevance": 0.82,
@@ -9806,8 +11509,8 @@
         "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZ6vvookvxV/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/2ca1c45a4538517b4c22.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "育兒",
         "補助",
@@ -9834,6 +11537,40 @@
       "url": "https://www.instagram.com/p/DZ6vvookvxV/"
     },
     {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "0002779a00e616c5908e927479af2227b5eb4120674b7d6adcd855cf428a2f25",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:CWOHVJpj-zI",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-19T14:26:01+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "首度參加龍舟賽的活動紀錄，主要是體育與生活分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "My First Dragon Boat Race 🐲",
+      "topicScores": {
+        "生活": 0.55,
+        "體育": 0.99
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/CWOHVJpj-zI"
+    },
+    {
       "agendaRelevance": 0.08,
       "candidateId": "shen-poyang",
       "classification": {
@@ -9844,8 +11581,8 @@
         "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZxTKeySXDx/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/9665563080f6260809cc.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-06-19T14:17:41+00:00",
@@ -9878,8 +11615,8 @@
         "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZv_qm5hLPh/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/c92043f616b9cc8e1d8e.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-06-19T02:00:11+00:00",
@@ -9904,14 +11641,48 @@
       "candidateId": "shen-poyang",
       "classification": {
         "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "bfcf94202254bf83eb48a775371a1d876d476d1d6c09d63283c294cff1707b62",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:rIhKXyUysRY",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-19T01:32:11+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "球隊拍攝幕後花絮，屬活動紀錄與生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Taipei Team Photoshoot Behind-the-Scenes: Captain's POV!",
+      "topicScores": {
+        "生活": 0.54,
+        "體育": 0.84
+      },
+      "topics": [
+        "體育",
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/rIhKXyUysRY"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
         "inputHash": "55d788d0d7d02546541478ffd8bc9db2bb76c4b332326924d8bfec070de17441",
         "method": "ai",
         "model": "gpt-5.4-mini",
         "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZu4-YlyvQA/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/4b341a81e3f758d42734.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-06-18T15:45:27+00:00",
@@ -9932,6 +11703,38 @@
       "url": "https://www.instagram.com/p/DZu4-YlyvQA/"
     },
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "8da9cb898a16f1612c814b0bbb860d9220c1ecd52fbfadf90a1b981fed720cf1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:auN7zdxMTPo",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-17T14:28:15+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "感謝在美國照顧，屬個人生活性發文。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Still, I have to thank Qiaohui for taking care of me in the US!!",
+      "topicScores": {
+        "生活": 0.9
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/auN7zdxMTPo"
+    },
+    {
       "agendaRelevance": 0.1,
       "candidateId": "shen-poyang",
       "classification": {
@@ -9942,8 +11745,8 @@
         "rubricVersion": "content-v4"
       },
       "id": "instagram:https://www.instagram.com/p/DZsKRGTybqD/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/26de70d188cc196535b9.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "動漫"
       ],
@@ -10032,6 +11835,38 @@
       "url": "https://www.facebook.com/pumashen/posts/pfbid0S8Ythg3haDwFRocVRNoWoa8jf8aFrLXQpJhMggcYivw9B8n6Szsf4q3JA5KCM9onl"
     },
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-07-15T09:35:26+00:00",
+        "inputHash": "51a03d08ae7f6f738117c4167f29a1e34ba76bd3e8ff30d2602b8522647b88e0",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:0jOSng47e4I",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-06-08T14:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "標題為南洋街往事談話節目，屬文化敘事。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "\"Those Years on Nanyang Street\" | \"PUMA Unlimited Talk\"",
+      "topicScores": {
+        "文化觀光": 0.72
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=0jOSng47e4I"
+    },
+    {
       "agendaRelevance": 0.0,
       "candidateId": "shen-poyang",
       "classification": {
@@ -10064,38 +11899,6 @@
       "url": "https://www.facebook.com/pumashen/posts/pfbid02C2TRD2nhtKMjtZxtMjGR2D4xCdA16o8ZztH1WnHrY4QNDqY5E9AWggLt3TZDBAu5l"
     },
     {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "51a03d08ae7f6f738117c4167f29a1e34ba76bd3e8ff30d2602b8522647b88e0",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:0jOSng47e4I",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/fb8f981839c5f4888b2a.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.9,
-        "label": "主動發文",
-        "reason": "標題為南洋街往事談話節目，屬文化敘事。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "\"Those Years on Nanyang Street\" | \"PUMA Unlimited Talk\"",
-      "topicScores": {
-        "文化觀光": 0.72
-      },
-      "topics": [
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/watch?v=0jOSng47e4I"
-    },
-    {
       "agendaRelevance": 0.42,
       "candidateId": "shen-poyang",
       "classification": {
@@ -10106,11 +11909,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:fVwLpOuUSGk",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/b116881222598f47a3c8.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2026-05-26T09:46:36+00:00",
       "postingIntent": {
         "confidence": 0.95,
         "label": "主動發文",
@@ -10140,11 +11943,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:L4Dtwz-KUEw",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/094bfd4ac9d7891a9d1d.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2026-05-20T09:36:56+00:00",
       "postingIntent": {
         "confidence": 0.97,
         "label": "主動發文",
@@ -10176,11 +11979,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:F_ZjK4EnKxg",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/f74698d6801d4497a762.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2026-05-19T11:06:27+00:00",
       "postingIntent": {
         "confidence": 0.96,
         "label": "主動發文",
@@ -10212,11 +12015,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:KcZByCd_pCM",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/6a05bd70eb7bfdb18cfe.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2026-05-15T02:18:13+00:00",
       "postingIntent": {
         "confidence": 0.99,
         "label": "主動發文",
@@ -10234,40 +12037,6 @@
       "url": "https://www.youtube.com/watch?v=KcZByCd_pCM"
     },
     {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "aa731f85a20970ab918463973e62d141b714633536f3f45fbdcdc57cbdd1d957",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:tMMhRCYVD9o",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/0a27b6a5e536812c9fc8.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "刑法總則教學課程，屬知識教育內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "撲馬刑法總則第十一課：複數行為人【十萬訂閱感謝祭，最後一堂刑總課】",
-      "topicScores": {
-        "教育": 0.9,
-        "生活": 0.25
-      },
-      "topics": [
-        "教育",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/watch?v=tMMhRCYVD9o"
-    },
-    {
       "agendaRelevance": 0.22,
       "candidateId": "shen-poyang",
       "classification": {
@@ -10278,11 +12047,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:-XNC7L9w_lk",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/dac1de93a82bd59cc853.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2026-01-26T13:31:05+00:00",
       "postingIntent": {
         "confidence": 0.94,
         "label": "主動發文",
@@ -10312,13 +12081,13 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:eTj3BEECYfE",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/c4555cc4cdfe6b732fcf.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "外交"
       ],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2025-05-08T04:17:00+00:00",
       "postingIntent": {
         "confidence": 0.97,
         "label": "主動發文",
@@ -10348,11 +12117,11 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:KejPWPWXyew",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/be82bc20d378755f5803.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2025-03-25T13:45:21+00:00",
       "postingIntent": {
         "confidence": 0.95,
         "label": "主動發文",
@@ -10384,13 +12153,13 @@
         "rubricVersion": "content-v4"
       },
       "id": "youtube:Zvke2Jebxz8",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/6f799f05b063d0dc019a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "民調"
       ],
       "platform": "youtube",
-      "postedAt": "",
+      "postedAt": "2025-01-15T01:55:32+00:00",
       "postingIntent": {
         "confidence": 0.98,
         "label": "主動發文",
@@ -10406,519 +12175,6 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=Zvke2Jebxz8"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "eecef82036b822a5515b09920f3cd772dfdf3cea42f45363bf4a68ae29877a87",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:LDvKlLzmR9I",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/7ce1319c1124bdae933d.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "宣傳法律課直播，屬課程公告而非回應他人。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The Final Criminal Law Class, Streaming Tomorrow Night! Whether or not you’ve attended previous l...",
-      "topicScores": {
-        "教育": 0.95
-      },
-      "topics": [
-        "教育"
-      ],
-      "url": "https://www.youtube.com/shorts/LDvKlLzmR9I"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "10cbe481e9cb87d0e74b280ee0247d2f7c809964ddbe89197f7642d160e56d7b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:g_ADDaT4ecc",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/dbb2992223058cd66701.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "參拜龍山寺祈福，屬一般生活分享與景點活動。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Visiting Lungshan Temple in Monga to pray for peace and prosperity🙏",
-      "topicScores": {
-        "文化觀光": 0.78,
-        "生活": 0.62
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/g_ADDaT4ecc"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "0002779a00e616c5908e927479af2227b5eb4120674b7d6adcd855cf428a2f25",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:CWOHVJpj-zI",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/d373befa9505b346dad6.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "首度參加龍舟賽的活動紀錄，主要是體育與生活分享。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "My First Dragon Boat Race 🐲",
-      "topicScores": {
-        "生活": 0.55,
-        "體育": 0.99
-      },
-      "topics": [
-        "體育",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/CWOHVJpj-zI"
-    },
-    {
-      "agendaRelevance": 0.02,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "bfcf94202254bf83eb48a775371a1d876d476d1d6c09d63283c294cff1707b62",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:rIhKXyUysRY",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/ff7cb198324ff6cc1167.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "球隊拍攝幕後花絮，屬活動紀錄與生活內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Taipei Team Photoshoot Behind-the-Scenes: Captain's POV!",
-      "topicScores": {
-        "生活": 0.54,
-        "體育": 0.84
-      },
-      "topics": [
-        "體育",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/rIhKXyUysRY"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "8da9cb898a16f1612c814b0bbb860d9220c1ecd52fbfadf90a1b981fed720cf1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:auN7zdxMTPo",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/ef66787afd04e41c18c7.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "感謝在美國照顧，屬個人生活性發文。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Still, I have to thank Qiaohui for taking care of me in the US!!",
-      "topicScores": {
-        "生活": 0.9
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/auN7zdxMTPo"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "ff5ac64d0612c7ed630c89aea0f6ef34cac5c0ebdd5e26a6d92dbec71aee96b4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:IgalUzEeae4",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/6b10eb3f594f9d7599ae.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "標題為質詢國防部與後備訓練，屬監督提問。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Questioning the Ministry of National Defense: A Comprehensive Overview of Military Reservist Trai...",
-      "topicScores": {
-        "治安": 0.84,
-        "議會監督": 0.72
-      },
-      "topics": [
-        "治安",
-        "議會監督"
-      ],
-      "url": "https://www.youtube.com/watch?v=IgalUzEeae4"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "abef34ee47807e466bc33f6db2772fe67577badbe6573062d3506cec63be7ade",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:J4K5ee8df44",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/27d9a761180d1fd85329.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅為教學與學生口試片段，屬日常內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "I'm still teaching at Peking University. I happened to have a student taking an oral exam today, ...",
-      "topicScores": {
-        "教育": 0.98
-      },
-      "topics": [
-        "教育"
-      ],
-      "url": "https://www.youtube.com/shorts/J4K5ee8df44"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-15T09:35:26+00:00",
-        "inputHash": "fc2cb89690567dff5675b4b750480f41fff44781516c17f323b9c405172e10ec",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:xPFtdeju3-o",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/70c3ccceda5f4dfc29c9.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "主打訪美記者會與國際曝光，屬對外交往與形象宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "走向國際！團隊升級！沈伯洋訪美記者會",
-      "topicScores": {
-        "兩岸外交": 0.54,
-        "競選": 0.68
-      },
-      "topics": [
-        "競選",
-        "兩岸外交"
-      ],
-      "url": "https://www.youtube.com/watch?v=xPFtdeju3-o"
-    },
-    {
-      "agendaRelevance": 0.77,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-16T04:03:19+00:00",
-        "inputHash": "19abae9fe4309cb4dbd99beb9e4863dcd4b4572fd6fc3a8b959bb1fab150f3e7",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:1DXr1Njptcc",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/7d6f36043f978daf26ff.webp",
-      "keywords": [
-        "運動"
-      ],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "標示運動政策記者會，屬主動發布政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "「你的市長 你的主場」沈伯洋公布運動政策記者會",
-      "topicScores": {
-        "競選": 0.95,
-        "體育": 0.86
-      },
-      "topics": [
-        "競選",
-        "體育"
-      ],
-      "url": "https://www.youtube.com/watch?v=1DXr1Njptcc"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-16T16:02:38+00:00",
-        "inputHash": "59864b105898628f7487ec2f56fc1492c70a16cc04bf3445f3be3a7abd355126",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:GbrlZ-yi68g",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/527e46e5c79631046d8c.webp",
-      "keywords": [
-        "運動",
-        "球隊"
-      ],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "標題為球隊與人物對談，偏體育與選戰包裝。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "「一座偉大的城市，一定會有一支偉大的職業運動球隊。」 左盃 石明謹來了！ V.S  《台北順風車》",
-      "topicScores": {
-        "競選": 0.74,
-        "體育": 0.88
-      },
-      "topics": [
-        "體育",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/watch?v=GbrlZ-yi68g"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-17T04:00:59+00:00",
-        "inputHash": "f67b7e023910e2fbc3fe3d8c5670f2dcccbbea6b076f8a6ff26874bc8de86843",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:3B7iNmILMU8",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/8209309955799aebb637.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.86,
-        "label": "主動發文",
-        "reason": "內容提及世足與地方人物訪談，屬體育與一般介紹，不是回應他人。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Taipei Hitchhiker | \"Uncle Zuo\" Shih Ming-chin is here! Discussing the World Cup and fostering a ...",
-      "topicScores": {
-        "文化觀光": 0.56,
-        "體育": 0.67
-      },
-      "topics": [
-        "體育",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/3B7iNmILMU8"
-    },
-    {
-      "agendaRelevance": 0.55,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-20T10:01:05+00:00",
-        "inputHash": "4fbb8f92991a42fbb4d04202eb98286e09990338a66709ba3629707f23c2690b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:4NwAhwKo8J4",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/7cfc145c0a7b6c0e8fc0.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.88,
-        "label": "主動發文",
-        "reason": "在委員會抗議國防採購分工，屬議會監督與軍購議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "A strong protest! Why are Minister Gu and I in the Economics Committee? Defense procurement shoul...",
-      "topicScores": {
-        "經濟": 0.95,
-        "議會監督": 0.91,
-        "防災": 0.58
-      },
-      "topics": [
-        "經濟",
-        "議會監督",
-        "防災"
-      ],
-      "url": "https://www.youtube.com/watch?v=4NwAhwKo8J4"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-20T16:03:25+00:00",
-        "inputHash": "d10b888cb0d1de84f94b598dae795be8177b2d52bf9b319202c3bcb32d02e981",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:xhUbGeF3ENo",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/5cf63fe83ccaa3a8e110.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "描述走訪市場與互動感謝，屬活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "市場的聲音，是最真實的在地呼吸。這週末我在萬華三水街市場、直興市場、大稻埕永樂市場，還有雙連謙和市場，見到非常多鄉親，感謝大家的加油、餵食！",
-      "topicScores": {
-        "文化觀光": 0.82,
-        "生活": 0.88
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/xhUbGeF3ENo"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-27T16:01:25+00:00",
-        "inputHash": "98483f2c2a4f2e9eabcebab42f83b1aacb8665a25cda7a1a5bbe247ea3546c39",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:8ABqjv2KORs",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/4df079a0c78063dcf43c.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "與紐約台灣青年交流，屬主動宣傳與意見交換，非回應特定他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The nation's capital should lead the way! Discussing ideas with Taiwanese youth in New York: My p...",
-      "topicScores": {
-        "兩岸外交": 0.23,
-        "教育": 0.2
-      },
-      "topics": [
-        "兩岸外交",
-        "教育"
-      ],
-      "url": "https://www.youtube.com/shorts/8ABqjv2KORs"
-    },
-    {
-      "agendaRelevance": 0.56,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-30T04:00:56+00:00",
-        "inputHash": "dd82b2c2d078ef86066535c5ab78baf7b20d920b1c50558dbe47d1fa770f97b8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:gWhnc3Z289A",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/a50dd58222e14c5c373a.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "內容是訪美成果記者會，主軸為對外交流與城市發展。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "沈伯洋訪美成果記者會｜從世界取經，為台北加速！",
-      "topicScores": {
-        "兩岸外交": 0.71,
-        "教育": 0.41,
-        "文化觀光": 0.44
-      },
-      "topics": [
-        "兩岸外交",
-        "文化觀光",
-        "教育"
-      ],
-      "url": "https://www.youtube.com/watch?v=gWhnc3Z289A"
     },
     {
       "agendaRelevance": 0.02,
@@ -10951,1262 +12207,6 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/dHgLUt24Nhs"
-    },
-    {
-      "agendaRelevance": 0.4,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-07-30T16:01:07+00:00",
-        "inputHash": "18bc66527d569e5931cdb05eb6720fbdfb18002b5269d3f20bfd15fe57769e74",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:2BB-sWLbiZA",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/3cb80c808cbfed2cc0d4.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動宣傳訪美行程與國際連結成果，非回應他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Our intense 8-day trip to the U.S. successfully built global connections and brought home solutio...",
-      "topicScores": {
-        "兩岸外交": 0.9
-      },
-      "topics": [
-        "兩岸外交"
-      ],
-      "url": "https://www.youtube.com/shorts/2BB-sWLbiZA"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-01T10:00:57+00:00",
-        "inputHash": "0aa2acc0107cd24d0ab5e7ba15c31fa2b84a8f083f54a2be83262e56fd8e74d1",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:LoEueYBpsME",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/845437867501804a2361.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "唱歌與拜票式活動紀錄，屬競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Singing with the folks in Wanhua—wishing everyone the best with the song \"This Year Will Surely B...",
-      "topicScores": {
-        "文化觀光": 0.82,
-        "競選": 0.86
-      },
-      "topics": [
-        "競選",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/LoEueYBpsME"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-02T22:01:38+00:00",
-        "inputHash": "7eaac2f56fdf4b7bec2412a4b97c96eb18ec771b67645d3bdedd10b2e2a3cd58",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:o-0eqrBnKKU",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/62c30e0cde13424d2108.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "英文評論蔣萬安市長優點，屬政治觀點發表，非回應他人。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Actually, Chiang Wan-an does have some strengths as mayor, and those strengths are...",
-      "topicScores": {
-        "生活": 0.14,
-        "競選": 0.96
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/o-0eqrBnKKU"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-03T16:01:45+00:00",
-        "inputHash": "71ad9c114d3082fb06ba550d356f014969e06b3fdd816c0bce3ae6fbeb2fad7c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:qHpLW3TAG4E",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/d402fa819086668054c9.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "影片主題是挑戰超辣辣椒，純娛樂內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Challenging the Dragon's Breath Pepper!",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/qHpLW3TAG4E"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-04T04:01:20+00:00",
-        "inputHash": "7bc87c5d4df1660dd768b9a0481464373445d9de122ef9aab5008004a7eef828",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:xqi7z9rfiaM",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/b5d10a5ec5ce2e89f9e4.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "標題為台北市長選舉主視覺揭露，核心是競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Taipei Smooth & Steady | Kuma Shen 2026 Campaign Key Visual Reveal Concept Animation | Taipei May...",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.youtube.com/watch?v=xqi7z9rfiaM"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-04T04:01:20+00:00",
-        "inputHash": "e2c23e6250e56f3353ba48f48a5fdf6d72cda096279801b88b675be0dbe185d9",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:JMIS9oAd7sQ",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/08bc3c1a0ccf747ddf6c.webp",
-      "keywords": [
-        "競選",
-        "主視覺"
-      ],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "內容是競選主視覺公布記者會，屬選舉宣傳活動。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "競選主視覺公佈記者會",
-      "topicScores": {
-        "競選": 0.98
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.youtube.com/watch?v=JMIS9oAd7sQ"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-04T16:03:53+00:00",
-        "inputHash": "eeb477430c1bdb72b73012f51faccbf2be075c2751e0b441aa86f633e924f666",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:cQRzNld48Gk",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/f0ffe85eb23a00d5dfb0.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.72,
-        "label": "主動發文",
-        "reason": "僅有影片標題，無法辨識公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The Best Place in Taiwan to Tell Jokes Is.........",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/cQRzNld48Gk"
-    },
-    {
-      "agendaRelevance": 0.15,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-04T16:03:53+00:00",
-        "inputHash": "4681d1d066d281b7b717fe80af3649e2172d0f116178ec66787c53e2732dc17c",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:-eUrHoe3OO4",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/7df3df33f380e91a14c5.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.7,
-        "label": "主動發文",
-        "reason": "標題暗示台北改變與城市活化，內容不足以明確判定。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "This change starts with your life. I’m going to get a stagnant Taipei moving again, ensuring a sm...",
-      "topicScores": {
-        "交通": 0.38,
-        "生活": 0.7
-      },
-      "topics": [
-        "生活",
-        "交通"
-      ],
-      "url": "https://www.youtube.com/shorts/-eUrHoe3OO4"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-05T10:03:43+00:00",
-        "inputHash": "d4a6746512c77de56c4d519e568c4528dcb78c46e319ba8d9b204ef9a91b4aeb",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:sFvKXjGIbLs",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/377bf9e7cdb4be33b419.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "介紹內湖夜市美食導覽，屬觀光生活內容，非回應他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Join Gao Chia-yu for a Food Tour of the Neihu 737 Night Market.",
-      "topicScores": {
-        "文化觀光": 0.88,
-        "生活": 0.22
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/sFvKXjGIbLs"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-06T16:02:05+00:00",
-        "inputHash": "84497e8e2e45a3456fc284efdd994c6e1ef0d2736dba51ad2929baef8337ea70",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:zm9DeoDymY4",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/d4c04a2694e6f5793a7c.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "介紹議員用陀螺讓孩子離開手機，屬活動報導與形象內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Councilor Hung Chien-yi uses Beyblade to get kids off their phones and bring generations together...",
-      "topicScores": {
-        "教育": 0.82,
-        "生活": 0.64
-      },
-      "topics": [
-        "教育",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/zm9DeoDymY4"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-07T16:05:04+00:00",
-        "inputHash": "998402b6cd5ac3338a0596a15a69727af362d2a238a57491f2599f95c6778ec5",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:9dltpz_QvsA",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/3cfe7810faede762d934.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅為受邀上節目致謝，無具體公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Thanks to my old friend @Attorney Chen Yu-Hsin - Dad Lawyer for inviting me on \"Ganghu Unscripted...",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/9dltpz_QvsA"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-08T04:01:16+00:00",
-        "inputHash": "c67202f647ef0151dad32f3d7e2c075672c22f918f845b0b4530dd5654cf8ecc",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:Um-gUH5YU2Y",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/6a77c9a87c067bde6b2f.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "標題僅為育兒日常內容，無公共議題或回應對象。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Back to Cram School for a Day! New Dad 101",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/Um-gUH5YU2Y"
-    },
-    {
-      "agendaRelevance": 0.96,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "d2474ac1f9bb55ead9c11647e0406380da3b3405f92295834a06452529c7648e",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:8WH53TUHS-s",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/763a6765bcf38c880930.webp",
-      "keywords": [
-        "參選"
-      ],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "為參選台北市長政策願景發表會，屬明確競選政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "沈伯洋參選台北市長政策願景發表會｜你的市長 沈伯洋",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.youtube.com/watch?v=8WH53TUHS-s"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "a3911d598d5484687a63e72af4f442bd1481cfccb529010b058c0432ff53f6e4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:fFsQuQJ4u10",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/ef09647a3d787c10ee83.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "標題為跑行程式競選宣傳，非回應他方觀點。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Ling-Yang on the Move! Joining Councilwoman @ChungPeiling to Feel the Passion of Shilin and Beitou",
-      "topicScores": {
-        "生活": 0.3,
-        "競選": 0.92
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/fFsQuQJ4u10"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-10T16:37:57+00:00",
-        "inputHash": "8016fb03709649d2086290e90f40c52a5e6614ce56c966c7e476d2214f71f65b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:p9fjwMu_2Dk",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/f0789f67d6a842deb712.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "描述青年返鄉從政故事，屬人物競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "At 26, Fan-Tsai Kuo is a classic example of youth returning home to enter politics. A Hakka nativ...",
-      "topicScores": {
-        "生活": 0.28,
-        "競選": 0.95
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/p9fjwMu_2Dk"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-11T16:01:04+00:00",
-        "inputHash": "d0c1a15dadd8a4ac36c6d0b0bf203e6b51db62449e6528245f57d4cc7af59208",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:OU4H7v-jRo8",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/08c259eb96268a6806c7.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "標題為政策願景摘要，屬主動提出市政理念。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Five Policy Visions: \"Space, Time, Companionship, Opportunity, Resilience.\" Together, they spell ...",
-      "topicScores": {
-        "生活": 0.88,
-        "競選": 0.97
-      },
-      "topics": [
-        "競選",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/OU4H7v-jRo8"
-    },
-    {
-      "agendaRelevance": 0.76,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "683ba0246597b5509f2c9bf0c91adeecc98fa81b7d4dc108a2ac1a1d62796d42",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:i5zByHt6esg",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/06214fbc365068846e76.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "發布五大政見，內容指向城市治理與教育等具體主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "沈伯洋「HEART」五大政見正式發布，從城市的空間、機會、陪伴、韌性與時間，全面打造台北的市政生態系！",
-      "topicScores": {
-        "住宅": 0.36,
-        "教育": 0.88,
-        "社福": 0.52,
-        "競選": 0.93
-      },
-      "topics": [
-        "競選",
-        "教育",
-        "社福",
-        "住宅"
-      ],
-      "url": "https://www.youtube.com/watch?v=i5zByHt6esg"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-12T16:00:54+00:00",
-        "inputHash": "a494a1e150660679a45fcad375b8c2f712c629ae5d34b616db34c8cc072ecb61",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:z-s3FmHcBuc",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/181ceeec0462f81904e5.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "內容為競選背書與稱讚，未見具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Thanks to These Three Key Influential Figures for Endorsing Enoch Shen: Hear the Professional Per...",
-      "topicScores": {
-        "競選": 0.92
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/z-s3FmHcBuc"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-13T10:00:55+00:00",
-        "inputHash": "c0506ce0ac3bf8bf5046ea6b387565ddcba52e14dde4b7b805fff1febad271a8",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:S8qt_bdFZZY",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/e9dd59c0b06859862c14.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "影片主打臺北升級與交通建設，屬政策宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Taipei Upgraded: We Are Ready!",
-      "topicScores": {
-        "交通": 0.98,
-        "競選": 0.95
-      },
-      "topics": [
-        "交通",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/S8qt_bdFZZY"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-13T16:04:53+00:00",
-        "inputHash": "5623dfbcdd44bfd686860c2853edec2f4658b3841b5c7767a65efd6ff97cec93",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:r6S-SxCJB4g",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/7ee06aa804d706b53bca.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.85,
-        "label": "主動發文",
-        "reason": "內容僅述市政問題偵察，未見回應特定對象。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "When it comes to uncovering municipal issues, many think of the experienced and reliable Councilo...",
-      "topicScores": {
-        "生活": 0.9,
-        "議會監督": 0.36
-      },
-      "topics": [
-        "生活",
-        "議會監督"
-      ],
-      "url": "https://www.youtube.com/shorts/r6S-SxCJB4g"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "23d8dc39792d46d14276f466627c42794a66a6d67fe66e1ffd4e0b30ed90417f",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:153SYs4aVqA",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/96c4ca77b6b6eeea9e3b.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "市場參訪與逛街紀錄，屬生活與商圈活動分享。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Lin Tzu-yang invited me to Yongle Market! The two \"Yangs\" team up, and I even unlocked the market...",
-      "topicScores": {
-        "文化觀光": 0.8,
-        "生活": 0.92,
-        "經濟": 0.62
-      },
-      "topics": [
-        "生活",
-        "文化觀光",
-        "經濟"
-      ],
-      "url": "https://www.youtube.com/shorts/153SYs4aVqA"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-14T10:03:30+00:00",
-        "inputHash": "8018b575840e5f14eb7001534fc811cd106be3618d54ba5dd0b261804a1d5a68",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:ARYOJgRtx_w",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/71a982525cfede24382e.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "內容在介紹體育中心議題，屬資訊說明非政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "What are these trending \"Sports Hubs\"? Answering everything you want to know in one video!",
-      "topicScores": {
-        "生活": 0.6,
-        "體育": 0.96
-      },
-      "topics": [
-        "體育",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/ARYOJgRtx_w"
-    },
-    {
-      "agendaRelevance": 0.14,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-14T16:00:55+00:00",
-        "inputHash": "322bd2dfa3c9ff61295f8def994f081b8f6e001eb82ebe66de52386953c22653",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:ST8J9LniZJM",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/8ffa9780e2deae80bad8.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "介紹台北發表會與訪談內容，未回應特定說法。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "\"It's hard to find such a burning heart in Taipei these days.\" After the HEART presentation, we i...",
-      "topicScores": {
-        "文化觀光": 0.9,
-        "生活": 0.67
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/ST8J9LniZJM"
-    },
-    {
-      "agendaRelevance": 0.61,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-15T16:01:09+00:00",
-        "inputHash": "65e7996578229570f2ea16776085025d60e0299fce1a6191f800008f3964bfd6",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:_g06ChTB6TE",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/7e133a45f34e177b8661.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "直接質疑台北市政卡關，屬主動批評與監督。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The central government has set the policy, so what exactly is holding Taipei back?",
-      "topicScores": {
-        "交通": 0.95,
-        "議會監督": 0.91
-      },
-      "topics": [
-        "交通",
-        "議會監督"
-      ],
-      "url": "https://www.youtube.com/shorts/_g06ChTB6TE"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-16T16:05:17+00:00",
-        "inputHash": "2f19a2c47ed117fc4f1284ce9d3b78598eac0df720f61285156793259abd376a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:MhwzFKblRjk",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/4102986bcabe34824bbe.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.9,
-        "label": "主動發文",
-        "reason": "內容過於簡短，僅像一般日常互動文字。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Agri is here!! Testing our chemistry the moment we meet",
-      "topicScores": {
-        "生活": 0.99
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/MhwzFKblRjk"
-    },
-    {
-      "agendaRelevance": 0.78,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "f0148a176fbd13ea8aea554de9972688ab290c026dd8041257f452432cb825c4",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:1iel89CTvhk",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/2daeaab5329584ad2a67.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "記者會標題明顯屬競選造勢，主打年輕人與台北政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "年輕人的第一步 台北來加速記者會｜你的市長 沈伯洋",
-      "topicScores": {
-        "教育": 0.42,
-        "競選": 0.95,
-        "經濟": 0.31
-      },
-      "topics": [
-        "競選",
-        "教育",
-        "經濟"
-      ],
-      "url": "https://www.youtube.com/watch?v=1iel89CTvhk"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "9e96ce9ee0ae449dbf6ba6034e4fa8c1d8f2e4b62d2c7480569fe237a8b90714",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:qm7xRNF5Uoc",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/145c685b82b80574113b.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "僅是七夕巧克力與重逢的生活化內容，無公共政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The long-awaited reunion is here! Pei Chen Tuan X Shen Boyang - Qixi Festival Chocolate!",
-      "topicScores": {
-        "文化觀光": 0.25,
-        "生活": 0.97
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/qm7xRNF5Uoc"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "e53f567e7f8f855385b3848ea4c132f66575dbdeb88fb71525d4cd45c4c6426b",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:iSt--CjzcTo",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/a528dbb66f3c53448d89.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.94,
-        "label": "主動發文",
-        "reason": "談校隊來台比賽與教練訪台，屬活動與體育交流。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "My alma mater UCI's men's basketball team was invited to play in Taiwan, and the coach is still t...",
-      "topicScores": {
-        "文化觀光": 0.26,
-        "體育": 0.88
-      },
-      "topics": [
-        "體育",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/iSt--CjzcTo"
-    },
-    {
-      "agendaRelevance": 0.62,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "3c2edd973f36a9862b739ace031e4ad3450a424f25bcd499fffa7f72db487b63",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:IEidFTgZY2U",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/4cb16f564f42c969924c.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "主題是用預算支持青年，屬青年社福與政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Supporting Youth with Less Than 1% of Taipei's Budget",
-      "topicScores": {
-        "教育": 0.5,
-        "社福": 0.82,
-        "競選": 0.45
-      },
-      "topics": [
-        "社福",
-        "教育",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/IEidFTgZY2U"
-    },
-    {
-      "agendaRelevance": 0.83,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "565c594b2f80f3f27bd5b8f20a3598b744445c9f0f92313d621e1caed5d52a19",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:3nsJ9XRYcWA",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/55605fe124eb2b82a113.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "明確提出青年補助與數位卡方案，屬具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "A Young Person's First Step, Accelerated by Taipei. Graduates Receive $500,000. AI Card for Youth...",
-      "topicScores": {
-        "教育": 0.86,
-        "社福": 0.71,
-        "競選": 0.58
-      },
-      "topics": [
-        "教育",
-        "社福",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/3nsJ9XRYcWA"
-    },
-    {
-      "agendaRelevance": 0.22,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T09:05:24+00:00",
-        "inputHash": "06ae4004bbdfb9a4fdd05efd81e42c71837e85c501b993db08bd1fc86b228f1a",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:RcCbbre-5Pc",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/3f9da4730c610640d3cd.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.9,
-        "label": "主動發文",
-        "reason": "感謝議員並提三井倉庫保存，屬文化與活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "From Preserving the Mitsui Warehouse to Fostering Public Dialogue: Thank You, Councilor Hsu Shu-h...",
-      "topicScores": {
-        "文化觀光": 0.71,
-        "議會監督": 0.46
-      },
-      "topics": [
-        "文化觀光",
-        "議會監督"
-      ],
-      "url": "https://www.youtube.com/shorts/RcCbbre-5Pc"
-    },
-    {
-      "agendaRelevance": 0.35,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-19T16:01:37+00:00",
-        "inputHash": "516353e17f25970e86fbbc4acb301404876103e7fe3eb6bb7f38f13e1a68a855",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:xVcb9gSLiRo",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/964c86f9ea5c0c971461.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.92,
-        "label": "主動發文",
-        "reason": "談士林慈諴宮與台北願景，偏文化觀光形象與競選論述。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "The precious \"competitive craftsmanship\" of Shilin Cixian Temple reflects my vision for Taipei: s...",
-      "topicScores": {
-        "文化觀光": 0.86,
-        "競選": 0.78
-      },
-      "topics": [
-        "文化觀光",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/xVcb9gSLiRo"
-    },
-    {
-      "agendaRelevance": 0.05,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-20T04:01:05+00:00",
-        "inputHash": "8c7665afff5079bdf4677d7935c45da4ced1ab6e212d15dc5c10c1e786038a80",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:OnT7zfMSgIU",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/fcf05f49db83a51384af.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "標題是選戰倒數與勝選口號，屬純競選動員。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "100-Day Countdown: Let’s Race Together Toward the Starting Point of Victory!",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.youtube.com/shorts/OnT7zfMSgIU"
-    },
-    {
-      "agendaRelevance": 0.68,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-20T16:04:43+00:00",
-        "inputHash": "0ad3d18f239197aea5f3d50fc0f836eeea0d2238ea6beefc85f3fdc418c7b943",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:hZ61l6Bv-Ro",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/aa85669734e0edb7100c.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "主張TTA 2.0設於NTCSP，屬主動提出科技政策與中央溝通。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Advocating for TTA 2.0 to be based in NTCSP, with positive feedback from the central government!",
-      "topicScores": {
-        "兩岸外交": 0.92,
-        "教育": 0.31
-      },
-      "topics": [
-        "兩岸外交",
-        "教育"
-      ],
-      "url": "https://www.youtube.com/shorts/hZ61l6Bv-Ro"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-21T10:03:23+00:00",
-        "inputHash": "7d397ecc1e65578c03bd4ce76aa8269bdb10eff0c3bfd39ec2875c9271f9e6be",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:8i8RVIWP6NM",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/91b693d1c068e7f109b0.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.95,
-        "label": "主動發文",
-        "reason": "標題為劇場合作影片，屬文化活動紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Councilor Lin Liang-chun x Paper Windmill Theatre",
-      "topicScores": {
-        "文化觀光": 0.84
-      },
-      "topics": [
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/8i8RVIWP6NM"
-    },
-    {
-      "agendaRelevance": 0.76,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-21T16:00:58+00:00",
-        "inputHash": "9cf59bbfdbc4bd30b2c343f0482b096bd744432c3188d0767f231dcf824e95f3",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:E5jfzjBmnKo",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/f6a82678d6f4bc3644cc.webp",
-      "keywords": [
-        "育兒",
-        "補助",
-        "津貼",
-        "照顧"
-      ],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "列舉育兒、通學安全與社區建設等地方施政成果。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "從爭取好孕專車延長補助，到推動內科企業附設育兒設施與托兒津貼。從親子照顧、通學安全到社區建設，王孝維議員把地方每一個需要，都放在心上、做到實處。⠀未來我們會繼續並肩努力，一起讓港湖更好、讓台北順起來！",
-      "topicScores": {
-        "交通": 0.76,
-        "教育": 0.71,
-        "社福": 0.9
-      },
-      "topics": [
-        "社福",
-        "交通",
-        "教育"
-      ],
-      "url": "https://www.youtube.com/shorts/E5jfzjBmnKo"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-22T16:01:22+00:00",
-        "inputHash": "e5483b7c2f50643e9955fcd8d2d2cebd5df369a6b4e97dff4c5319457fc012a5",
-        "method": "ai",
-        "model": "gpt-5.4-mini",
-        "rubricVersion": "content-v4"
-      },
-      "id": "youtube:Vwknc_JBvzQ",
-      "imageAspect": 0.6667,
-      "imageUrl": "assets/feed-images/d5cf015985dca08e911f.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "僅有簡短感嘆詞，無可辨識公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "I swear...",
-      "topicScores": {
-        "生活": 0.92
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/Vwknc_JBvzQ"
     }
   ],
   "version": 1

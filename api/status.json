@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-23 00:01:28"
+        "最近一次執行心跳：2026-08-23 01:59:05"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：82 ms"
+        "耗時：17 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -41,14 +41,14 @@
       "label": "正常",
       "name": "Instagram / Threads RSSHub",
       "status": "ok",
-      "summary": "14 個 Instagram、11 個 Threads 來源；最新抓取批次目前 0 個錯誤。"
+      "summary": "14 個 Instagram、11 個 Threads 來源；過去 24 小時 0 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-08-22 06:01:09",
         "本月已花費：$2.93 / 目標 $4.75",
         "單次預估花費：$0.26",
-        "pacing 判斷：not due yet (pace ~every 31.4h, next at 2026-08-23T05:24:01+00:00; ~$2.93 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 31.1h, next at 2026-08-23T05:07:28+00:00; ~$2.93 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -61,10 +61,10 @@
         "已收錄影片：486"
       ],
       "id": "youtube",
-      "label": "部分異常",
+      "label": "正常",
       "name": "YouTube yt-dlp",
-      "status": "degraded",
-      "summary": "14 個 YouTube 來源；最新抓取批次目前 20 個錯誤。"
+      "status": "ok",
+      "summary": "14 個 YouTube 來源；過去 24 小時 0 個錯誤。"
     },
     {
       "details": [
@@ -75,11 +75,33 @@
       "name": "候選人官網",
       "status": "paused",
       "summary": "9 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 0 篇。"
+    },
+    {
+      "details": [
+        "從未收錄：蔣萬安（chiang-wa-threads，Threads）",
+        "從未收錄：李四川（lee-sc-ig-old，Instagram）",
+        "從未收錄：江啟臣（chiang-cc-threads，Threads）",
+        "從未收錄：林義豐（lin-yf-fb，Facebook）",
+        "從未收錄：林義豐（lin-yf-ig，Instagram）",
+        "逾 14 天：蔣萬安（chiang-wa-yt，YouTube）：最新內容 2026-07-16",
+        "逾 14 天：李四川（lee-sc-yt，YouTube）：最新內容 2020-06-05",
+        "逾 14 天：黃世杰（huang-sj-yt，YouTube）：最新內容 2019-01-24",
+        "逾 14 天：江啟臣（chiang-cc-yt，YouTube）：最新內容 2026-07-26",
+        "逾 14 天：陳亭妃（chen-tf-fb-profile，Facebook）：最新內容 2026-06-09",
+        "…以及另外 3 個來源",
+        "可能是帳號停止更新或該帳號型態抓不到內容；查證後請在 watchlist_accounts.csv 修正或停用。"
+      ],
+      "id": "source-health",
+      "label": "部分異常",
+      "name": "來源收錄健康",
+      "status": "degraded",
+      "summary": "56 個社群來源中，5 個從未收錄過貼文、8 個超過 14 天沒有新內容。"
     }
   ],
-  "generatedAt": "2026-08-23T00:01:28+08:00",
+  "generatedAt": "2026-08-23T01:59:33+08:00",
   "metrics": {
     "candidates": 14,
+    "currentErrors": 0,
     "latestPostAt": "2026-08-22T15:50:06+00:00",
     "postsByPlatform": {
       "facebook": 941,
@@ -93,7 +115,7 @@
   "overall": {
     "label": "部分異常",
     "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：YouTube yt-dlp。 Facebook Apify、候選人官網 目前依排程或預算節流。"
+    "summary": "核心 pipeline 有產出；需要注意：來源收錄健康。 Facebook Apify、候選人官網 目前依排程或預算節流。"
   },
   "recentErrors": [
     {
@@ -266,10 +288,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 20,
+        "currentErrors": 0,
         "platform": "youtube",
         "sources": 14,
-        "status": "degraded"
+        "status": "ok"
       }
     ],
     "platforms": {
