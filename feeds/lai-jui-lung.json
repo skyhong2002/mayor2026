@@ -1,6 +1,50 @@
 {
-  "count": 282,
+  "count": 283,
   "posts": [
+    {
+      "agendaRelevance": 0.16,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "9e4ba3eefcc4725eb70cdc1c1c297a45bd859830e86b5053b3bf7a300ecd67c1",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcU1ifmCbgj",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/235c8d6d8ea6f792a9f1.webp",
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "災害",
+        "防災",
+        "大雨",
+        "警戒",
+        "土石流",
+        "強降雨",
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-22T02:26:22+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "是豪雨災情與防災提醒，屬應變通知非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:今天受低壓帶及西南風影響，高雄市有局部大雨或豪雨，市府豪雨災害應變中心已於上午提升為二級開設，全面啟動防災應變機制。\n\n目前市區已有多處短延時強降雨，部分路段出現積淹水情形，高雄機場也因雷雨影響暫時停止地面作業。\n\n此外，農業部稍早針對桃源區及六龜區發布了39條土石流黃色警戒，以及大規模崩塌警戒，六龜區(興龍里)、(新發里)。請上述警戒區域的市民朋友，務必配合市府和區公所的防救災指示，迅速落實撤離工作，確保自身安全。\n\n請市民朋友務必注意瞬間大雨、雷擊和強風。行車用路請放慢車速，並避免前往山區和溪河附近活動。接下來的雨勢可能還會加強，我會持續緊盯各項災情和應變措施。請大家出門務必小心，注意安全。",
+      "topicScores": {
+        "生活": 0.53,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcU1ifmCbgj"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "lai-jui-lung",

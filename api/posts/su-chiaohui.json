@@ -19,8 +19,78 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 325,
+  "count": 329,
   "posts": [
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "5dca4f0b9c278054a6ba3c21b05d90a0f864c6e9fa006fa98cade7e6147768e9",
+        "intentVerificationVersion": "responsive-v1",
+        "intentVerifiedAt": "2026-08-22T04:03:29+00:00",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcU5rUBmYKc",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/4ab3fe1c27f27eb7d299.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-22T03:02:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅見自述與標記他人，未指涉對方具體觀點，也非回應辯駁。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:誰想得到，20年前我和 @pumashen @schuanglawyer 兩位法律系學弟，20年後會一起成為市長候選人🤣",
+      "topicScores": {
+        "生活": 0.52,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcU5rUBmYKc"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "596dda6535194ea42e015c54ed84ab3e1247817b42468cfcae616fb94c80cf36",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcU5VVEJgS2/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/3f9418fa10128bdc5c23.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-22T02:59:59+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "僅是候選人合照與感嘆，未談具體政策或回應他人。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "誰想得到，20年前我和兩位法律系學弟，20年後會一起成為市長候選人🤣",
+      "topicScores": {
+        "生活": 0.55,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcU5VVEJgS2/"
+    },
     {
       "agendaRelevance": 0.04,
       "candidateId": "su-chiaohui",
@@ -98,6 +168,46 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DcTeuFyEsSE"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "81dfb21615a85a7e7836ae6d571dcc687cd9fe96d89b65122dcc93d7d34fb5d5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcTemUrpzdD/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2cd6ad235e21806c8000.webp",
+      "keywords": [
+        "文化",
+        "音樂",
+        "國小"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T13:49:20+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳親子活動與布袋戲、台語體驗，屬活動紀錄非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-ig",
+      "text": "上千組親子一起玩！#水獺媽媽樂園 雙和場大成功🎉\n\n現場不只有好玩的遊戲，這次我們特別邀請 @yisingkuo 義興閣掌中劇團，將傳統布袋戲結合搖滾音樂，用新潮又有趣的方式演出台灣的在地文化，讓大小朋友看得目不轉睛，笑聲不斷！還有許多有趣的互動關卡，讓孩子邊玩邊學台語、瞭解知識，更帶著滿滿的收穫和快樂回家！\n\n暑假最後一場就在土城！還沒來過的大小朋友，千萬別錯過囉！\n\n📍水獺媽媽樂園 土城場\n時間｜8/22（六）09:00-16:00\n地點｜樂利國小樂利廣場（土城區裕生路65號）",
+      "topicScores": {
+        "教育": 0.72,
+        "文化觀光": 0.81,
+        "生活": 0.52
+      },
+      "topics": [
+        "文化觀光",
+        "教育",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcTemUrpzdD/"
     },
     {
       "agendaRelevance": 0.94,
@@ -12095,6 +12205,40 @@
         "生活"
       ],
       "url": "https://www.youtube.com/shorts/SjlYl-4vY-Q"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "4f80566d5133a6ef7f95cf4961d8d71dd0defbce39cb631f98e13565325e8372",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:hPYqLIch80U",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/e9af83375622994343d4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "影片標題偏親子溫馨內容，無明確公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "[Otter Mama’s Little Chats] My Mom Is the Real Superhero | Parent-Child Bonding | Heartwarming & ...",
+      "topicScores": {
+        "生活": 0.88,
+        "社福": 0.62
+      },
+      "topics": [
+        "生活",
+        "社福"
+      ],
+      "url": "https://www.youtube.com/watch?v=hPYqLIch80U"
     }
   ],
   "version": 1

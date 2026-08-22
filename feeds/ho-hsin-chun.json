@@ -1,5 +1,5 @@
 {
-  "count": 314,
+  "count": 316,
   "posts": [
     {
       "agendaRelevance": 0.12,
@@ -39,6 +39,45 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DcTT6p-lykb"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "dbdf2a54fba151338d0eb0de19829f79fcf920ed5ca7ed8b1853ceb843339d8c",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcTT4cfy2mm/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/10528c6103b75aace0c7.webp",
+      "keywords": [
+        "教育",
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-21T12:15:08+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享食農教育與農村文化體驗，屬活動紀錄與文化教育。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "早期農夫家人會先在家裡準備好午餐，送到田邊讓大家一起享用，稱作「割稻仔飯 」，是台灣農村珍貴的生活文化。\n\n參加「大里竹仔坑社區發展協會」所舉辦「小小農夫大冒險」親子食農教育體驗，帶著孩子認識早期農村生活，也學習珍惜食物、土地與農民的辛勞。\n\n孩子是城市的下一代，希望他們從小認識土地、親近農村，在體驗中學會珍惜與感恩，讓這些珍貴的農村文化一代一代傳下去。",
+      "topicScores": {
+        "教育": 0.88,
+        "文化觀光": 0.84,
+        "生活": 0.58
+      },
+      "topics": [
+        "教育",
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DcTT4cfy2mm/"
     },
     {
       "agendaRelevance": 0.01,
@@ -11381,6 +11420,42 @@
         "住宅"
       ],
       "url": "https://www.youtube.com/watch?v=ReILQkzB3XQ"
+    },
+    {
+      "agendaRelevance": 0.69,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-22T04:03:15+00:00",
+        "inputHash": "943a2a56b1fe26f3a4fc95b35bb568ea194306e5cbdaf7b557a138b4358379d8",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:asAlTFUcX-o",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/a3ef58c899363dc2c025.webp",
+      "keywords": [
+        "運動"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "討論運動中心設置門檻與區域均衡，屬公共建設議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "15萬人口才能蓋運動中心？何欣純這樣才可以區域均衡",
+      "topicScores": {
+        "議會監督": 0.74,
+        "體育": 0.93
+      },
+      "topics": [
+        "體育",
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/asAlTFUcX-o"
     }
   ],
   "title": "何欣純（臺中市）貼文更新",
