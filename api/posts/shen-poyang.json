@@ -19,8 +19,40 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 338,
+  "count": 340,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-22T16:01:22+00:00",
+        "inputHash": "2a3f023cace4748cac55efe290869bd807a8728551fd4d21d4d63c75159ef274",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcVrzmKAF76",
+      "imageAspect": 0.5624,
+      "imageUrl": "assets/feed-images/b2ef847b812ed4cdbbff.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-22T10:20:46+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容過短且僅屬情緒發言，無具體公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:我發誓…",
+      "topicScores": {
+        "生活": 0.86
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcVrzmKAF76"
+    },
     {
       "agendaRelevance": 0.16,
       "candidateId": "shen-poyang",
@@ -12143,6 +12175,38 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/E5jfzjBmnKo"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-22T16:01:22+00:00",
+        "inputHash": "e5483b7c2f50643e9955fcd8d2d2cebd5df369a6b4e97dff4c5319457fc012a5",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "youtube:Vwknc_JBvzQ",
+      "imageAspect": 0.6667,
+      "imageUrl": "assets/feed-images/d5cf015985dca08e911f.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅有簡短感嘆詞，無可辨識公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "I swear...",
+      "topicScores": {
+        "生活": 0.92
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/Vwknc_JBvzQ"
     }
   ],
   "version": 1

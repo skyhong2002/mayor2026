@@ -19,8 +19,46 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 195,
+  "count": 196,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-22T16:01:22+00:00",
+        "inputHash": "2d9152ecab8de83a91ab2e8c0c59cdfbab997af1dbcf3ab864153a708b34fb24",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcV2MUEE8bp",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/bd6c5e495894ad73983f.webp",
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "停班停課"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-22T11:51:20+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告豪雨停班停課並提醒民眾注意安全。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:🌧️【豪雨來襲，安全第一】\n\n明天8/23（日）因豪雨影響，臺南市政府宣布停班、停課一天。\n\n提醒大家，明天非必要請儘量留在家中，避免前往山區、低窪及容易積淹水地區，也請隨時留意最新天氣與市府公告。\n\n希望這場雨趕快過去，大家平平安安，台南加油！\n\n#陳亭妃 #停班停課 #豪雨特報 #安全第一 #台南",
+      "topicScores": {
+        "生活": 0.86,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcV2MUEE8bp"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "chen-ting-fei",

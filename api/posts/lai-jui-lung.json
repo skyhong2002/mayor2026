@@ -19,8 +19,48 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 283,
+  "count": 284,
   "posts": [
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-22T16:01:22+00:00",
+        "inputHash": "16e2d65aed95059e4556e362bebee029a20d8112d121545db151279f196972e7",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcV30XGiTDN",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d691cc8cc49ab9fcacc1.webp",
+      "keywords": [
+        "豪雨",
+        "防災",
+        "大雨",
+        "警戒",
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-22T12:05:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告高雄停班停課並提醒降雨風險與通報。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:高雄市全區明日停止上班、停止上課\n\n受到西南風及低壓帶影響，今晚至明日仍有局部大雨或豪雨，清晨至上午雨勢可能再增強。考量持續降雨帶來的風險，高雄市政府宣布：明（23）日高雄市全區停止上班、停止上課。\n\n請市民朋友減少不必要外出，低窪地區留意積水，山區居民配合警戒及撤離通知。\n\n第一線防災夥伴仍持續戒備，謝謝大家堅守崗位。若有災情請通報1999。請大家注意安全！",
+      "topicScores": {
+        "生活": 0.84,
+        "防災": 0.99
+      },
+      "topics": [
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcV30XGiTDN"
+    },
     {
       "agendaRelevance": 0.16,
       "candidateId": "lai-jui-lung",
