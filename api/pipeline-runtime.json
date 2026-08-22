@@ -1,11 +1,11 @@
 {
-  "currentStep": "publish github pages",
-  "heartbeatAt": "2026-08-22T16:01:37.282056+00:00",
+  "currentStep": "",
+  "heartbeatAt": "2026-08-22T16:02:00.646370+00:00",
   "maxPostAgeDays": 30,
-  "message": "",
+  "message": "Pipeline completed",
   "pid": 34255,
   "startedAt": "2026-08-22T16:00:01.075752+00:00",
-  "status": "running",
+  "status": "ok",
   "steps": [
     {
       "command": [
@@ -225,11 +225,11 @@
         "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/publish_github_pages.py"
       ],
-      "finishedAt": "",
+      "finishedAt": "2026-08-22T16:02:00.645250+00:00",
       "name": "publish github pages",
-      "returnCode": null,
+      "returnCode": 0,
       "startedAt": "2026-08-22T16:01:37.282050+00:00",
-      "status": "running"
+      "status": "ok"
     }
   ],
   "version": 1
