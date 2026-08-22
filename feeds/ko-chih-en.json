@@ -1,6 +1,44 @@
 {
-  "count": 289,
+  "count": 290,
   "posts": [
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-22T10:01:02+00:00",
+        "inputHash": "b93e960855455ed17d8f73e4c977923b167744e085fedd861a594185879ce75b",
+        "method": "ai",
+        "model": "gpt-5.4-mini",
+        "rubricVersion": "content-v4"
+      },
+      "id": "threads:https://www.threads.com/t/DcVIlriGRTC",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/9940bea5bdc89cbe46d0.webp",
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "大雨"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-22T05:12:50+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "關心豪雨積淹水與排水改善，屬主動提出防災處理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:近日高雄豪雨不斷，趁著行程空檔，特別趕赴仁武區赤山里，關心地方積淹水情況，也與謝青原里長一同前往仁雄橋，了解曹公新圳排水情形。\n\n謝里長表示，昨晚起里內陸續出現排水不及、積淹水情況，所幸即時反映處理，加上今早雨勢稍緩，積水已陸續排除。\n\n另外，澄清湖原博館基地每逢大雨就有黃泥水流出，造成居民困擾，我也會向原民會反映，協助地方尋求改善。\n\n雨勢仍可能持續，請大家做好防雨、防淹水準備，非必要盡量減少外出，平安最重要。",
+      "topicScores": {
+        "環境": 0.73,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/DcVIlriGRTC"
+    },
     {
       "agendaRelevance": 0.88,
       "candidateId": "ko-chih-en",
