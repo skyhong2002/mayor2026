@@ -111,22 +111,39 @@ def validate_candidate_pages_exist(errors: list[str]) -> None:
                 errors.append(f"missing output for candidate {candidate_id}: {page.relative_to(PROJECT_ROOT)}")
 
 
-def validate_index_prerender(errors: list[str]) -> None:
-    """The homepage must ship with prerendered content — crawlers without JS
+def validate_prerender(errors: list[str]) -> None:
+    """Every page must ship with prerendered content — crawlers without JS
     should never see the '載入中...' placeholders."""
-    index_path = SITE_ROOT / "index.html"
-    if not index_path.exists():
-        return
-    html = index_path.read_text(encoding="utf-8")
-    if "載入中" in html:
-        errors.append("site/index.html still contains a 載入中 placeholder (prerender missing)")
-    for marker, label in (
-        ("stat-card", "stat row"),
-        ("city-card-title", "city grid"),
-        ("feed-latest-excerpt", "latest feed"),
-    ):
-        if marker not in html:
-            errors.append(f"site/index.html has no prerendered {label} ({marker} not found)")
+    pages: list[tuple[Path, list[str]]] = [
+        (SITE_ROOT / "index.html", ["stat-card", "city-card-title", "feed-latest-excerpt"]),
+        (SITE_ROOT / "source" / "index.html", ["directory-source-identity"]),
+        (SITE_ROOT / "spectrum" / "index.html", ["spectrum-table"]),
+        (SITE_ROOT / "policy-match" / "index.html", ["policy-choice"]),
+    ]
+    import classify_topics
+
+    # Topic and candidate pages may legitimately have no posts yet, so only
+    # require that the loading placeholders are gone (an empty-state message
+    # is prerendered content too).
+    pages.extend((SITE_ROOT / "spectrum" / slug / "index.html", []) for slug in classify_topics.TOPIC_SLUGS.values())
+    candidates_path = API_DIR / "candidates.json"
+    if candidates_path.exists():
+        try:
+            candidates = read_json(candidates_path).get("candidates", [])
+        except json.JSONDecodeError:
+            candidates = []
+        pages.extend((SITE_ROOT / "source" / c["id"] / "index.html", []) for c in candidates)
+
+    for path, markers in pages:
+        if not path.exists():
+            continue
+        rel = path.relative_to(PROJECT_ROOT)
+        html = path.read_text(encoding="utf-8")
+        if "載入中" in html:
+            errors.append(f"{rel} still contains a 載入中 placeholder (prerender missing)")
+        for marker in markers:
+            if marker not in html:
+                errors.append(f"{rel} has no prerendered content ({marker} not found)")
 
 
 def validate_count_consistency(errors: list[str]) -> None:
@@ -200,7 +217,7 @@ def main() -> int:
     validate_json_files(errors)
     validate_asset_references(errors)
     validate_candidate_pages_exist(errors)
-    validate_index_prerender(errors)
+    validate_prerender(errors)
     validate_count_consistency(errors)
     validate_qualitative_schema(errors)
 

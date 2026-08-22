@@ -530,7 +530,7 @@
         renderTable();
       })
       .catch((err) => {
-        document.querySelector("#source-table tbody").innerHTML = `<tr><td colspan="5">資料載入失敗：${err.message}</td></tr>`;
+        console.error("source index refresh failed:", err);
       });
   }
 
@@ -567,6 +567,7 @@
         });
 
         const accountBody = document.querySelector("#account-table tbody");
+        accountBody.innerHTML = "";
         source.accounts.forEach((account) => {
           const row = document.createElement("tr");
 
@@ -606,7 +607,7 @@
         });
       })
       .catch((err) => {
-        document.getElementById("post-list").textContent = `資料載入失敗：${err.message}`;
+        console.error("source detail refresh failed:", err);
       });
   }
 
@@ -918,7 +919,7 @@
         renderTable();
       })
       .catch((err) => {
-        document.getElementById("spectrum-cities").textContent = `資料載入失敗：${err.message}`;
+        console.error("spectrum refresh failed:", err);
       });
   }
 
@@ -1062,7 +1063,7 @@
         renderSections();
       })
       .catch((err) => {
-        document.getElementById("topic-candidates").textContent = `資料載入失敗：${err.message}`;
+        console.error("topic detail refresh failed:", err);
       });
   }
 
@@ -1130,7 +1131,7 @@
           results.appendChild(grid);
         });
       });
-    }).catch((err) => { document.getElementById("policy-questions").textContent = `資料載入失敗：${err.message}`; });
+    }).catch((err) => { console.error("policy match refresh failed:", err); });
   }
 
   // /status/ is now rendered server-side by build_status_page.py (it needs
