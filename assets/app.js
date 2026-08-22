@@ -266,6 +266,7 @@
         const candidatesById = Object.fromEntries(candidates.map((c) => [c.id, c]));
 
         const statRow = document.getElementById("stat-row");
+        statRow.innerHTML = "";
         const totalPosts = candidates.reduce((sum, c) => sum + (c.postCount || 0), 0);
         [
           [String(candidates.length), "監看候選人"],
@@ -325,7 +326,9 @@
         createRiver(feed, latestPayload.posts, candidatesById);
       })
       .catch((err) => {
-        document.getElementById("city-grid").textContent = `資料載入失敗：${err.message}`;
+        // The homepage ships with prerendered content; keep it instead of
+        // replacing it with an error banner when the refresh fetch fails.
+        console.error("index data refresh failed:", err);
       });
   }
 
