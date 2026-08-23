@@ -19,7 +19,7 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 353,
+  "count": 354,
   "posts": [
     {
       "agendaRelevance": 0.72,
@@ -97,6 +97,38 @@
         "交通"
       ],
       "url": "https://www.threads.com/t/DcYWQ7kkkOy"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-23T22:00:59+00:00",
+        "inputHash": "dea0dfd08e3c5936445000fa9e08b500d3a34fed9224cbc09466a046ec5bfa50",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:4VZJstId5pE",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/21de3cf9510e2f5c9eb8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-23T11:04:50+00:00",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "宣傳蘇巧慧獲蔡英文背書及市長形象，屬競選宣傳，未提出具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Endorsed by President Tsai Ing-wen! Su Chiao-hui is the mayor who can lead New Taipei into a new era",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/4VZJstId5pE"
     },
     {
       "agendaRelevance": 0.05,

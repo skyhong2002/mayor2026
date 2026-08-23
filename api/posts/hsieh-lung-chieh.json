@@ -19,8 +19,46 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 320,
+  "count": 321,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-23T22:00:59+00:00",
+        "inputHash": "685dfc07e95c87a6a7d258089225af5f2a428c0bff582adc46470ff375c04947",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcY6k5oEv7J",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/74812aab8fe03669c9d1.webp",
+      "keywords": [
+        "淹水",
+        "強降雨",
+        "災情"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-23T16:27:22+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告臺南因強降雨停班停課並提醒民眾注意積淹水與行車安全，屬災害資訊通知。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:⚠️ 因應強降雨及致災風險，明（24）日臺南市停止上班上課⚠️\n\n龍介提醒大家，密切留意最新天氣與災情資訊，非必要請減少外出！行車也請減速慢行，注意積淹水路段，多一分防範、多一分安全！",
+      "topicScores": {
+        "交通": 0.76,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DcY6k5oEv7J"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "hsieh-lung-chieh",

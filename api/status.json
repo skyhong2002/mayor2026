@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-24 00:20:43"
+        "最近一次執行心跳：2026-08-24 06:01:15"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3143",
+        "已收錄貼文：3146",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：22 ms"
+        "耗時：37 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-23 23:49:57",
+        "最新抓取時間：2026-08-24 06:00:40",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
       "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
       "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 7 個錯誤。"
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 2 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-08-23 18:06:26",
         "本月已花費：$3.14 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 26.0h, next at 2026-08-24T12:08:56+00:00; ~$3.14 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 25.3h, next at 2026-08-24T11:24:31+00:00; ~$3.14 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：482"
+        "已收錄影片：483"
       ],
       "id": "youtube",
       "label": "部分異常",
@@ -88,21 +88,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-24T00:20:43+08:00",
+  "generatedAt": "2026-08-24T06:01:15+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 20,
-    "latestPostAt": "2026-08-23T15:09:07+00:00",
+    "currentErrors": 15,
+    "latestPostAt": "2026-08-23T16:27:22+00:00",
     "postsByPlatform": {
       "facebook": 975,
       "instagram": 866,
       "podcast": 4,
-      "threads": 772,
+      "threads": 774,
       "website": 40,
       "x": 4,
-      "youtube": 482
+      "youtube": 483
     },
-    "totalPosts": 3143,
+    "totalPosts": 3146,
     "watchAccounts": 67
   },
   "overall": {
@@ -263,7 +263,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 6,
+        "currentErrors": 1,
         "platform": "instagram",
         "sources": 12,
         "status": "degraded"
