@@ -324,13 +324,20 @@ def build_status() -> dict[str, Any]:
     # --- 候選人官網 -----------------------------------------------------
     website_sources = watch_platforms.get("website", 0)
     official_posts = by_platform.get("website", 0)
+    adapters_dir = feed_common.PROJECT_ROOT / "scripts" / "official_site_adapters"
+    with_adapter = sum(
+        1
+        for s in sources
+        if s.get("platform") == "website"
+        and (adapters_dir / f"{str(s.get('candidate_id')).replace('-', '_')}.py").is_file()
+    )
     components.append(
         component(
             "official-site",
             "候選人官網",
             "paused" if website_sources and not official_posts else "ok",
-            f"{website_sources} 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 {official_posts} 篇。",
-            ["official_site_fetcher.py 目前是骨架；每個官網需要個別撰寫解析邏輯才能抓到內容。"],
+            f"{website_sources} 個候選人官網已列入監看，{with_adapter} 個有逐站 adapter，已收錄 {official_posts} 篇。",
+            ["官網結構各異，每站需要個別撰寫解析邏輯；沒有 adapter 的官網不計入可抓取來源。"],
         )
     )
 
@@ -348,6 +355,16 @@ def build_status() -> dict[str, Any]:
     social_sources = [s for s in sources if s.get("platform") in adapter_platforms]
     never_collected: list[str] = []
     stale_sources: list[str] = []
+    # A source that fetches fine but whose newest content predates the
+    # ingestion window is dormant, not broken — tell those apart using the
+    # raw inbox (everything fetched) versus the promoted archive.
+    inbox_newest: dict[str, str] = {}
+    for row in feed_common.read_jsonl(feed_common.INBOX_JSONL):
+        source_id = str(row.get("source_id") or "")
+        stamp = row.get("posted_at") or ""
+        if stamp > inbox_newest.get(source_id, ""):
+            inbox_newest[source_id] = stamp
+    dormant_sources: list[str] = []
     for source in social_sources:
         source_id = str(source.get("id"))
         label = f"{source.get('candidate_name') or ''}（{source_id}，{PLATFORM_LABELS.get(source.get('platform'), source.get('platform'))}）"
@@ -355,23 +372,28 @@ def build_status() -> dict[str, Any]:
         newest_time = parse_time(newest)
         stale_after = STALE_SOURCE_DAYS_BY_PLATFORM.get(str(source.get("platform")), STALE_SOURCE_DAYS)
         if not newest:
-            never_collected.append(label)
+            fetched_newest = inbox_newest.get(source_id, "")
+            if fetched_newest:
+                dormant_sources.append(f"{label}：帳號最新發文 {fetched_newest[:10]}，早於收錄視窗")
+            else:
+                never_collected.append(label)
         elif newest_time is not None and (now - newest_time).days > stale_after:
             stale_sources.append(f"{label}：最新內容 {newest[:10]}（門檻 {stale_after} 天）")
-    source_health_details = [f"從未收錄：{entry}" for entry in never_collected]
+    source_health_details = [f"抓不到內容：{entry}" for entry in never_collected]
     source_health_details += [f"逾期：{entry}" for entry in stale_sources]
+    source_health_details += [f"帳號沉寂：{entry}" for entry in dormant_sources]
     if len(source_health_details) > 10:
         source_health_details = source_health_details[:10] + [f"…以及另外 {len(source_health_details) - 10} 個來源"]
     if never_collected or stale_sources:
-        source_health_details.append("可能是帳號停止更新或該帳號型態抓不到內容；查證後請在 watchlist_accounts.csv 修正或停用。")
+        source_health_details.append("抓不到內容或內容逾期，請查證後在 watchlist_accounts.csv 修正或停用；帳號沉寂只是該帳號久未發文，不需處理。")
     components.append(
         component(
             "source-health",
             "來源收錄健康",
             "degraded" if never_collected or stale_sources else "ok",
             (
-                f"{len(social_sources)} 個社群來源中，{len(never_collected)} 個從未收錄過貼文、"
-                f"{len(stale_sources)} 個超過門檻天數沒有新內容。"
+                f"{len(social_sources)} 個社群來源中，{len(never_collected)} 個抓不到內容、"
+                f"{len(stale_sources)} 個超過門檻天數沒有新內容、{len(dormant_sources)} 個帳號沉寂。"
             ),
             source_health_details,
         )
