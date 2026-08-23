@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-23 21:32:01"
+        "最近一次執行心跳：2026-08-24 00:15:12"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3133",
+        "已收錄貼文：3143",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：11 ms"
+        "耗時：17 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-23 18:45:11",
+        "最新抓取時間：2026-08-23 23:49:57",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
       "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
       "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 11 個錯誤。"
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 7 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-08-23 18:06:26",
         "本月已花費：$3.14 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 26.4h, next at 2026-08-24T12:30:57+00:00; ~$3.14 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 26.1h, next at 2026-08-24T12:09:40+00:00; ~$3.14 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -64,124 +64,53 @@
       "label": "部分異常",
       "name": "YouTube yt-dlp",
       "status": "degraded",
-      "summary": "10 個 YouTube 來源；過去 24 小時 2 個錯誤。"
+      "summary": "10 個 YouTube 來源；過去 24 小時 12 個錯誤。"
     },
     {
       "details": [
-        "official_site_fetcher.py 目前是骨架；每個官網需要個別撰寫解析邏輯才能抓到內容。"
+        "官網結構各異，每站需要個別撰寫解析邏輯；沒有 adapter 的官網不計入可抓取來源。"
       ],
       "id": "official-site",
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，目前尚未有逐站 adapter，已收錄 40 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 40 篇。"
     },
     {
       "details": [
-        "從未收錄：沈伯洋（shen-x-personal，X）",
-        "從未收錄：蔣萬安（chiang-wa-x，X）",
-        "可能是帳號停止更新或該帳號型態抓不到內容；查證後請在 watchlist_accounts.csv 修正或停用。"
+        "帳號沉寂：沈伯洋（shen-x-personal，X）：帳號最新發文 2025-01-09，早於收錄視窗",
+        "帳號沉寂：蔣萬安（chiang-wa-x，X）：帳號最新發文 2026-01-25，早於收錄視窗"
       ],
       "id": "source-health",
-      "label": "部分異常",
+      "label": "正常",
       "name": "來源收錄健康",
-      "status": "degraded",
-      "summary": "49 個社群來源中，2 個從未收錄過貼文、0 個超過門檻天數沒有新內容。"
+      "status": "ok",
+      "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-23T21:32:01+08:00",
+  "generatedAt": "2026-08-24T00:15:12+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 14,
-    "latestPostAt": "2026-08-23T14:41:30+08:00",
+    "currentErrors": 20,
+    "latestPostAt": "2026-08-23T15:09:07+00:00",
     "postsByPlatform": {
       "facebook": 975,
       "instagram": 866,
       "podcast": 4,
-      "threads": 762,
+      "threads": 772,
       "website": 40,
       "x": 4,
       "youtube": 482
     },
-    "totalPosts": 3133,
+    "totalPosts": 3143,
     "watchAccounts": 67
   },
   "overall": {
     "label": "部分異常",
     "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp、來源收錄健康。 Facebook Apify 目前依排程或預算節流。"
+    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T22:09:53+00:00",
-      "sourceId": "chen-tf-yt",
-      "sourceName": "陳亭妃（chen-tf-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw']' timed out after 60 seconds",
-      "platform": "unknown",
-      "recordedAt": "2026-08-17T22:10:53+00:00",
-      "sourceId": "chen-tf-yt-2",
-      "sourceName": "chen-tf-yt-2"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T22:11:53+00:00",
-      "sourceId": "hsieh-lc-yt",
-      "sourceName": "謝龍介（hsieh-lc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCAbvXdpn460E7CtcjO7KuJA']' timed out after 60 seconds",
-      "platform": "unknown",
-      "recordedAt": "2026-08-17T22:12:53+00:00",
-      "sourceId": "lin-yf-yt",
-      "sourceName": "lin-yf-yt"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T22:13:53+00:00",
-      "sourceId": "lai-jl-yt",
-      "sourceName": "賴瑞隆（lai-jl-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 60 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-17T22:14:53+00:00",
-      "sourceId": "ko-ce-yt",
-      "sourceName": "柯志恩（ko-ce-yt）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
-      "platform": "instagram",
-      "recordedAt": "2026-08-22T19:12:58+00:00",
-      "sourceId": "lee-sc-ig-main",
-      "sourceName": "李四川（lee-sc-ig-main）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
-      "platform": "instagram",
-      "recordedAt": "2026-08-22T19:13:11+00:00",
-      "sourceId": "huang-sj-ig",
-      "sourceName": "黃世杰（huang-sj-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
-      "platform": "instagram",
-      "recordedAt": "2026-08-22T19:13:26+00:00",
-      "sourceId": "chang-sc-ig",
-      "sourceName": "張善政（chang-sc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
-      "platform": "instagram",
-      "recordedAt": "2026-08-22T19:13:37+00:00",
-      "sourceId": "ho-hc-ig",
-      "sourceName": "何欣純（ho-hc-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
       "platform": "instagram",
@@ -251,6 +180,76 @@
       "recordedAt": "2026-08-23T10:40:06+00:00",
       "sourceId": "ko-ce-web",
       "sourceName": "ko-ce-web"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@PumaShen']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T15:51:58+00:00",
+      "sourceId": "shen-yt-personal",
+      "sourceName": "沈伯洋（shen-yt-personal）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T15:53:58+00:00",
+      "sourceId": "chiang-wa-yt",
+      "sourceName": "蔣萬安（chiang-wa-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T15:55:58+00:00",
+      "sourceId": "su-ch-yt",
+      "sourceName": "蘇巧慧（su-ch-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@taoyuansango']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T15:57:58+00:00",
+      "sourceId": "chang-sc-yt",
+      "sourceName": "張善政（chang-sc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T15:59:58+00:00",
+      "sourceId": "ho-hc-yt",
+      "sourceName": "何欣純（ho-hc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/user/kesing168']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T16:01:58+00:00",
+      "sourceId": "chiang-cc-yt",
+      "sourceName": "江啟臣（chiang-cc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T16:03:58+00:00",
+      "sourceId": "chen-tf-yt",
+      "sourceName": "陳亭妃（chen-tf-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T16:05:58+00:00",
+      "sourceId": "hsieh-lc-yt",
+      "sourceName": "謝龍介（hsieh-lc-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T16:07:58+00:00",
+      "sourceId": "lai-jl-yt",
+      "sourceName": "賴瑞隆（lai-jl-yt）"
+    },
+    {
+      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 120 seconds",
+      "platform": "youtube",
+      "recordedAt": "2026-08-23T16:09:58+00:00",
+      "sourceId": "ko-ce-yt",
+      "sourceName": "柯志恩（ko-ce-yt）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -264,7 +263,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 10,
+        "currentErrors": 6,
         "platform": "instagram",
         "sources": 12,
         "status": "degraded"
@@ -294,7 +293,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 2,
+        "currentErrors": 12,
         "platform": "youtube",
         "sources": 10,
         "status": "degraded"
