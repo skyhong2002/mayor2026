@@ -12,7 +12,8 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - `/status/`：資料管線狀態（收錄統計、最近一次執行、近期抓取錯誤）
 - `/policy-match/`：匿名選擇市政優先議題，對照候選人自主政策倡議貼文
 - `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）
-- `/feeds/`：RSS 訂閱入口；每位候選人一條 `<id>.xml` 與對應 `<id>.json`
+- `/feeds/`：RSS 訂閱入口；每位候選人一條 `<id>.xml` 與對應 `<id>.json`（近 50 筆更新；
+  完整貼文檔在 `/api/posts/<id>.json`）
 
 ## 專案結構
 
@@ -73,7 +74,8 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 這是初始骨架版本：
 
 - [x] CSV → JSON 來源設定轉換
-- [x] 真實候選人名單（六都 14 位候選人，含多平台帳號與驗證等級）
+- [x] 真實候選人名單（六都 13 位候選人，含多平台帳號與驗證等級；林義豐因公開帳號長期
+      無活動於 2026-08 下架，中選會登記截止後再複查名單）
 - [x] 抓取 adapter 骨架（RSSHub Instagram/Threads、Apify Facebook、YouTube yt-dlp、官網 scraper）；
       Instagram/Threads 已對 `rss.observe.tw` 驗證過路由會匹配（但可能因該平台流量限制回傳 503，
       屬預期中的不穩定）；正式運作需要設定 `APIFY_TOKEN` 環境變數
@@ -86,7 +88,10 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
       貼文文字紀錄永久保留
 - [ ] 官網逐一 adapter（依真實候選人網站結構撰寫，見 `scripts/official_site_adapters/`；
       未有 adapter 的官網不計入 `check_source_coverage.py` 的可抓取來源）
-- [ ] LINE OA、LINE OpenChat、Podcast、TikTok、X 帳號目前只顯示在候選人頁連結，尚未接入抓取
+- [x] X 帳號經 RSSHub `/twitter/user/:name` 路由抓取；Podcast 走原生 RSS
+      （watchlist CSV 的 `feed_url` 欄位）
+- [ ] LINE OA、LINE OpenChat 沒有可抓的公開時間軸；TikTok 的 RSSHub 路由目前被平台反爬擋住。
+      這些帳號只顯示在候選人頁連結
 
 ## 建置與發佈
 

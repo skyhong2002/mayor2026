@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Fetch Instagram / Threads updates via a RSSHub instance.
+"""Fetch Instagram / Threads / X updates via a RSSHub instance, plus
+direct-RSS platforms (podcast) via their native feed URLs.
 
 Mechanics ported from Harmonica-in-Taiwan's social_feed_watchdog.py:
 
@@ -55,7 +56,12 @@ RSSHUB_ERROR_MESSAGE_RE = re.compile(
 RSSHUB_ROUTE_BUILDERS = {
     "instagram": lambda username: f"/instagram/2/user/{username}",
     "threads": lambda username: f"/threads/{username}",
+    "x": lambda username: f"/twitter/user/{username}",
 }
+
+# Platforms fetched from a direct RSS feed URL (source["feed_url"] from the
+# watchlist CSV) instead of a RSSHub route.
+DIRECT_FEED_PLATFORMS = {"podcast"}
 
 
 def rsshub_error_message(body: bytes) -> str:
@@ -154,11 +160,16 @@ def record_attempt(fetch_state: dict[str, Any], source_id: str, *, ok: bool, mes
 
 def fetch_source(source: dict[str, Any], *, rsshub_base: str, limit: int) -> list[dict[str, Any]]:
     platform = source.get("platform")
-    username = source.get("username")
-    builder = RSSHUB_ROUTE_BUILDERS.get(platform)
-    if not builder or not username:
-        return []
-    url = rsshub_base.rstrip("/") + builder(username)
+    if platform in DIRECT_FEED_PLATFORMS:
+        url = source.get("feed_url") or ""
+        if not url:
+            return []
+    else:
+        username = source.get("username")
+        builder = RSSHUB_ROUTE_BUILDERS.get(platform)
+        if not builder or not username:
+            return []
+        url = rsshub_base.rstrip("/") + builder(username)
     root = fetch_rss(url)
     return normalize_items(source, root, limit=limit)
 
@@ -176,9 +187,9 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Fetch and print, but do not write to inbox.")
     args = parser.parse_args()
 
-    sources = feed_common.load_sources(platforms=set(RSSHUB_ROUTE_BUILDERS))
+    sources = feed_common.load_sources(platforms=set(RSSHUB_ROUTE_BUILDERS) | DIRECT_FEED_PLATFORMS)
     if not sources:
-        print("rsshub_fetcher: no instagram/threads sources configured; nothing to do.")
+        print("rsshub_fetcher: no RSS-fetchable sources configured; nothing to do.")
         return 0
 
     fetch_state = feed_common.load_json(FETCH_STATE_JSON, {"version": 1, "sources": {}})

@@ -42,6 +42,7 @@ RECENT_ERROR_DAYS = 7  # errors shown on the page
 CURRENT_ERROR_WINDOW_HOURS = 24  # errors counted as "current" for component health
 FRESH_PIPELINE_HOURS = 4
 STALE_SOURCE_DAYS = 14  # a social source with nothing newer than this gets flagged
+STALE_SOURCE_DAYS_BY_PLATFORM = {"youtube": 60, "podcast": 60}  # videos/episodes come far less often than posts
 
 STATUS_LABELS = {
     "ok": "正常",
@@ -250,7 +251,7 @@ def build_status() -> dict[str, Any]:
     )
 
     # --- Instagram / Threads RSSHub -------------------------------------
-    ig_threads_platforms = {"instagram", "threads"}
+    ig_threads_platforms = {"instagram", "threads", "x"}
     ig_threads_errors = sum(error_platforms.get(p, 0) for p in ig_threads_platforms)
     fetch_entries = fetch_state.get("sources") or {}
     last_attempts = [
@@ -261,11 +262,11 @@ def build_status() -> dict[str, Any]:
     components.append(
         component(
             "instagram-threads",
-            "Instagram / Threads RSSHub",
+            "Instagram / Threads / X RSSHub",
             "degraded" if ig_threads_errors else "ok",
             (
-                f"{watch_platforms.get('instagram', 0)} 個 Instagram、{watch_platforms.get('threads', 0)} 個 "
-                f"Threads 來源；過去 {CURRENT_ERROR_WINDOW_HOURS} 小時 {ig_threads_errors} 個錯誤。"
+                f"{watch_platforms.get('instagram', 0)} 個 Instagram、{watch_platforms.get('threads', 0)} 個 Threads、"
+                f"{watch_platforms.get('x', 0)} 個 X 來源；過去 {CURRENT_ERROR_WINDOW_HOURS} 小時 {ig_threads_errors} 個錯誤。"
             ),
             [
                 f"最新抓取時間：{taipei_label(max_time(last_attempts))}",
@@ -340,7 +341,7 @@ def build_status() -> dict[str, Any]:
         stamp = post.get("posted_at") or post.get("fetched_at") or ""
         if stamp > newest_by_source.get(source_id, ""):
             newest_by_source[source_id] = stamp
-    adapter_platforms = {"facebook", "instagram", "threads", "youtube"}
+    adapter_platforms = {"facebook", "instagram", "threads", "youtube", "x", "podcast"}
     social_sources = [s for s in sources if s.get("platform") in adapter_platforms]
     never_collected: list[str] = []
     stale_sources: list[str] = []
@@ -349,12 +350,13 @@ def build_status() -> dict[str, Any]:
         label = f"{source.get('candidate_name') or ''}（{source_id}，{PLATFORM_LABELS.get(source.get('platform'), source.get('platform'))}）"
         newest = newest_by_source.get(source_id, "")
         newest_time = parse_time(newest)
+        stale_after = STALE_SOURCE_DAYS_BY_PLATFORM.get(str(source.get("platform")), STALE_SOURCE_DAYS)
         if not newest:
             never_collected.append(label)
-        elif newest_time is not None and (now - newest_time).days > STALE_SOURCE_DAYS:
-            stale_sources.append(f"{label}：最新內容 {newest[:10]}")
+        elif newest_time is not None and (now - newest_time).days > stale_after:
+            stale_sources.append(f"{label}：最新內容 {newest[:10]}（門檻 {stale_after} 天）")
     source_health_details = [f"從未收錄：{entry}" for entry in never_collected]
-    source_health_details += [f"逾 {STALE_SOURCE_DAYS} 天：{entry}" for entry in stale_sources]
+    source_health_details += [f"逾期：{entry}" for entry in stale_sources]
     if len(source_health_details) > 10:
         source_health_details = source_health_details[:10] + [f"…以及另外 {len(source_health_details) - 10} 個來源"]
     if never_collected or stale_sources:
@@ -366,7 +368,7 @@ def build_status() -> dict[str, Any]:
             "degraded" if never_collected or stale_sources else "ok",
             (
                 f"{len(social_sources)} 個社群來源中，{len(never_collected)} 個從未收錄過貼文、"
-                f"{len(stale_sources)} 個超過 {STALE_SOURCE_DAYS} 天沒有新內容。"
+                f"{len(stale_sources)} 個超過門檻天數沒有新內容。"
             ),
             source_health_details,
         )
@@ -448,6 +450,8 @@ PLATFORM_LABELS = {
     "instagram": "Instagram",
     "threads": "Threads",
     "youtube": "YouTube",
+    "x": "X",
+    "podcast": "Podcast",
 }
 
 

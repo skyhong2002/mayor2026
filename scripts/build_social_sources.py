@@ -19,9 +19,12 @@ GENERATED_BY = "scripts/build_social_sources.py"
 # feed_common loads .env on import, so MAYOR_RSSHUB_BASE set there applies here.
 DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 
-# Platforms we actually know how to fetch. line_oa/tiktok/x still show up in
-# candidate link lists (see build_public_data.py) but aren't fetched yet.
-FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube", "website"}
+# Platforms we actually know how to fetch. line_oa/line_openchat have no
+# public timeline to scrape, and TikTok's RSSHub route is broken server-side
+# (TikTok anti-bot), so those still show up in candidate link lists only
+# (see build_public_data.py). x goes through RSSHub's /twitter route;
+# podcast needs a feed_url in the watchlist CSV (native RSS).
+FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube", "website", "x", "podcast"}
 
 
 def build_sources(candidates: list[dict[str, str]], accounts: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -47,6 +50,7 @@ def build_sources(candidates: list[dict[str, str]], accounts: list[dict[str, Any
                 "url": account["url"],
                 "account_role": account.get("account_role", ""),
                 "verification": account.get("verification", ""),
+                "feed_url": account.get("feed_url", ""),
                 "rsshub_base": DEFAULT_RSSHUB_BASE,
                 "generated_by": GENERATED_BY,
             }

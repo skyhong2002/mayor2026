@@ -12,6 +12,22 @@ API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
 FEEDS_DIR = feed_common.PROJECT_ROOT / "site" / "feeds"
 SITE_TITLE = "2026 市長官方來源觀測站"
 
+# Feeds carry recent updates only; the full per-candidate archive (with
+# classification metadata) lives at api/posts/<id>.json.
+FEED_ITEM_LIMIT = 50
+
+
+def slim_feed_post(post: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "id": post.get("id"),
+        "candidateId": post.get("candidateId"),
+        "platform": post.get("platform"),
+        "url": post.get("url"),
+        "postedAt": post.get("postedAt"),
+        "text": post.get("text"),
+        "imageUrl": post.get("imageUrl"),
+    }
+
 
 def rfc822(iso_timestamp: str) -> str:
     import datetime as dt
@@ -65,18 +81,25 @@ def main() -> int:
         candidate_payload = feed_common.load_json(posts_dir / f"{candidate['id']}.json", {"posts": []})
         posts = candidate_payload.get("posts", [])
         all_posts.extend({**p, "candidate_id": candidate["id"], "candidate_name": candidate["name"]} for p in posts)
+        recent = posts[:FEED_ITEM_LIMIT]  # api/posts is sorted newest-first
 
         rss_xml = render_rss(
             title=f"{candidate['name']}（{candidate['cityLabel']}）貼文更新",
             link=candidate.get("links", {}).get("website") or "",
             description=f"{candidate['name']} 在各平台的公開貼文合併時間軸。",
-            posts=[{**p, "posted_at": p.get("postedAt"), "url": p.get("url"), "id": p.get("id"), "text": p.get("text")} for p in posts],
+            posts=[{**p, "posted_at": p.get("postedAt"), "url": p.get("url"), "id": p.get("id"), "text": p.get("text")} for p in recent],
         )
         (FEEDS_DIR / f"{candidate['id']}.xml").write_text(rss_xml, encoding="utf-8")
         # JSON twin of each feed, matching Harmonica's feeds/*.json outputs.
         feed_common.save_json_atomic(
             FEEDS_DIR / f"{candidate['id']}.json",
-            {"version": 1, "title": f"{candidate['name']}（{candidate['cityLabel']}）貼文更新", "count": len(posts), "posts": posts},
+            {
+                "version": 2,
+                "title": f"{candidate['name']}（{candidate['cityLabel']}）貼文更新",
+                "archive": f"../api/posts/{candidate['id']}.json",
+                "count": len(recent),
+                "posts": [slim_feed_post(p) for p in recent],
+            },
         )
 
     all_posts.sort(key=lambda p: p.get("postedAt") or "", reverse=True)
@@ -89,7 +112,7 @@ def main() -> int:
     (FEEDS_DIR / "updates.xml").write_text(combined_xml, encoding="utf-8")
     feed_common.save_json_atomic(
         FEEDS_DIR / "updates.json",
-        {"version": 1, "title": SITE_TITLE, "count": len(all_posts[:100]), "posts": all_posts[:100]},
+        {"version": 2, "title": SITE_TITLE, "count": len(all_posts[:100]), "posts": [slim_feed_post(p) for p in all_posts[:100]]},
     )
 
     feed_links = "\n".join(

@@ -11,7 +11,7 @@ import feed_common
 # `website` is only fetchable per-candidate: official_site_fetcher.py needs a
 # hand-written adapter module for each site, so a website account without one
 # must not be counted as covered.
-FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube"}
+FETCHABLE_PLATFORMS = {"facebook", "instagram", "threads", "youtube", "x", "podcast"}
 ADAPTERS_DIR = Path(__file__).resolve().parent / "official_site_adapters"
 
 
@@ -30,7 +30,7 @@ def main() -> int:
     fetchable_accounts = [
         a
         for a in accounts
-        if a["platform"] in FETCHABLE_PLATFORMS
+        if (a["platform"] in FETCHABLE_PLATFORMS and (a["platform"] != "podcast" or a.get("feed_url")))
         or (a["platform"] == "website" and has_site_adapter(a["candidate_id"]))
     ]
     sites_without_adapter = [a for a in accounts if a["platform"] == "website" and not has_site_adapter(a["candidate_id"])]
