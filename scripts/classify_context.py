@@ -30,7 +30,10 @@ import feed_common
 
 RUBRIC_VERSION = "content-v5"  # v5: loosened the responsive definition (was so strict only 7/3018 qualified)
 INTENT_VERIFICATION_VERSION = "responsive-v2"
-DEFAULT_MODEL = "gpt-5.4-mini"
+# gpt-5.6-luna is served through the Codex CLI subscription, not the OpenAI
+# platform API — hence the codex backend default below.
+DEFAULT_MODEL = "gpt-5.6-luna"
+OPENAI_FALLBACK_MODEL = "gpt-5.4-mini"  # used when MAYOR_AI_BACKEND=openai
 DEFAULT_BATCH_SIZE = 20
 DEFAULT_API_URL = "https://api.openai.com/v1/responses"
 DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
@@ -38,7 +41,7 @@ DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
 # Which AI backend classifies posts:
 #   "openai" — the OpenAI Responses API (needs platform credits)
 #   "codex"  — the local Codex CLI, billed to the ChatGPT subscription
-AI_BACKEND = os.environ.get("MAYOR_AI_BACKEND", "openai").strip().lower()
+AI_BACKEND = os.environ.get("MAYOR_AI_BACKEND", "codex").strip().lower()
 CODEX_BIN_CANDIDATES = (
     os.environ.get("MAYOR_CODEX_BIN", ""),
     shutil.which("codex") or "",
@@ -46,7 +49,6 @@ CODEX_BIN_CANDIDATES = (
     "/Applications/ChatGPT.app/Contents/Resources/codex",
 )
 CODEX_TIMEOUT_SECS = int(os.environ.get("MAYOR_CODEX_TIMEOUT", "600"))
-CODEX_CONFIG_TOML = Path.home() / ".codex" / "config.toml"
 SCHEMA_PATH = Path(__file__).resolve().parent / "schemas" / "content-classification.schema.json"
 INTENT_VERIFICATION_SCHEMA_PATH = (
     Path(__file__).resolve().parent / "schemas" / "posting-intent-verification.schema.json"
@@ -226,17 +228,6 @@ def codex_binary() -> str:
         if candidate and Path(candidate).is_file():
             return candidate
     raise ClassificationError("codex CLI not found (set MAYOR_CODEX_BIN or install codex)")
-
-
-def codex_default_model() -> str:
-    """Best-effort label of the Codex CLI's configured model for provenance."""
-    try:
-        match = re.search(r'^\s*model\s*=\s*"([^"]+)"', CODEX_CONFIG_TOML.read_text(encoding="utf-8"), re.M)
-        if match:
-            return match.group(1)
-    except OSError:
-        pass
-    return "codex-default"
 
 
 def strip_json_fences(text: str) -> str:
@@ -626,7 +617,7 @@ def main() -> int:
     # With the codex backend the model is whatever the Codex CLI is
     # configured for; record that (or MAYOR_AI_MODEL if explicitly pinned).
     default_model = os.environ.get("MAYOR_AI_MODEL") or (
-        codex_default_model() if AI_BACKEND == "codex" else DEFAULT_MODEL
+        DEFAULT_MODEL if AI_BACKEND == "codex" else OPENAI_FALLBACK_MODEL
     )
     parser.add_argument("--model", default=default_model)
     parser.add_argument("--batch-size", type=int, default=int(os.environ.get("MAYOR_AI_BATCH_SIZE", DEFAULT_BATCH_SIZE)))
@@ -635,6 +626,11 @@ def main() -> int:
     args = parser.parse_args()
     if args.batch_size < 1:
         parser.error("--batch-size must be at least 1")
+    if AI_BACKEND != "codex" and args.model.startswith("gpt-5.6"):
+        parser.error(
+            f"{args.model} is only reachable through the Codex CLI; "
+            "set MAYOR_AI_BACKEND=codex or pick an OpenAI platform model"
+        )
 
     rows = feed_common.read_jsonl(feed_common.CANDIDATES_JSONL)
     if not rows:

@@ -54,12 +54,14 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
   （頻道列表用 flat-playlist，新影片再各補一次 metadata 拿發布時間；舊缺日期資料由每次執行的
   backfill 逐步補齊），
   官網則是逐候選人 adapter。全部寫入 `data/feeds/social_feed_inbox.jsonl`。
-- `scripts/classify_context.py` 以 OpenAI Responses API 結構化輸出同時判斷議題與發文動機；發文動機只有「主動發文」與
+- `scripts/classify_context.py` 以 AI 結構化輸出同時判斷議題與發文動機；發文動機只有「主動發文」與
   「回應他方觀點」兩類。初判為回應的貼文會再經第二道 AI 驗證，必須同時辨識他方、他方先前的具體觀點及本篇答覆目的；
   沒有任何人工審核佇列。每篇保留 AI 判斷信心、理由、模型與規範版本。
-  預設使用 `gpt-5.4-mini`，從 `OPENAI_API_KEY` 或權限為 `600` 的 `~/.config/mayor2026/openai-api-key` 讀取憑證，
+  預設使用 `gpt-5.6-luna`，經本機 Codex CLI（ChatGPT 訂閱）呼叫；`MAYOR_AI_BACKEND=openai` 可改走
+  OpenAI Responses API（此時預設 `gpt-5.4-mini`，從 `OPENAI_API_KEY` 或權限為 `600` 的
+  `~/.config/mayor2026/openai-api-key` 讀取憑證），
   並可用 `MAYOR_AI_MODEL` 覆寫。分類以文字、模型及規範版本雜湊快取，
-  因此排程只會處理新貼文或需要重分的貼文。執行器會累計 OpenAI 回傳的 token usage；單次執行達 100 萬 token
+  因此排程只會處理新貼文或需要重分的貼文。走 OpenAI 後端時執行器會累計回傳的 token usage；單次執行達 100 萬 token
   會輸出警告，也可用 `MAYOR_AI_TOKEN_WARNING` 調整門檻。
 - `scripts/build_qualitative.py` 產生發文動機統計及議題選擇器使用的候選人政策議程向量；只有 AI 判為
   「主動發文」且 `agendaRelevance >= 0.6` 的具體政策結果會進入政策配對。
@@ -86,8 +88,8 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - [x] 排程機器（新竹 macOS）launchd 串接（每日 00/06/12/18 各跑一次，見 `deploy/github-pages.md`）
 - [x] 貼文圖片快取有效期（預設 60 天，`MAYOR_FEED_IMAGE_MAX_AGE_DAYS` 可調）；過期只移除本地圖片副本，
       貼文文字紀錄永久保留
-- [ ] 官網逐一 adapter（依真實候選人網站結構撰寫，見 `scripts/official_site_adapters/`；
-      未有 adapter 的官網不計入 `check_source_coverage.py` 的可抓取來源）
+- [x] 官網逐一 adapter（見 `scripts/official_site_adapters/`）；未有 adapter 的官網不計入
+      `check_source_coverage.py` 的可抓取來源
 - [x] X 帳號經 RSSHub `/twitter/user/:name` 路由抓取；Podcast 走原生 RSS
       （watchlist CSV 的 `feed_url` 欄位）
 - [ ] LINE OA、LINE OpenChat 沒有可抓的公開時間軸；TikTok 的 RSSHub 路由目前被平台反爬擋住。
