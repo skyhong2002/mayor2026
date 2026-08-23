@@ -168,7 +168,10 @@ def build_status() -> dict[str, Any]:
     source_by_id = {str(s.get("id")): s for s in sources if s.get("id")}
     watch_platforms = collections.Counter(str(s.get("platform") or "unknown") for s in sources)
 
-    posts = feed_common.read_jsonl(feed_common.CANDIDATES_JSONL)
+    # The JSONL keeps rows for removed candidates as history (append-only);
+    # public metrics only count the current roster.
+    roster_ids = {c["candidate_id"] for c in candidates}
+    posts = [p for p in feed_common.read_jsonl(feed_common.CANDIDATES_JSONL) if p.get("candidate_id") in roster_ids]
     by_platform: dict[str, int] = {}
     for post in posts:
         by_platform[post["platform"]] = by_platform.get(post["platform"], 0) + 1

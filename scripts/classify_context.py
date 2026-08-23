@@ -17,6 +17,8 @@ import os
 from pathlib import Path
 import re
 import sys
+import shutil
+import subprocess
 import tempfile
 import time
 from typing import Any, Callable
@@ -32,6 +34,19 @@ DEFAULT_MODEL = "gpt-5.4-mini"
 DEFAULT_BATCH_SIZE = 20
 DEFAULT_API_URL = "https://api.openai.com/v1/responses"
 DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
+
+# Which AI backend classifies posts:
+#   "openai" — the OpenAI Responses API (needs platform credits)
+#   "codex"  — the local Codex CLI, billed to the ChatGPT subscription
+AI_BACKEND = os.environ.get("MAYOR_AI_BACKEND", "openai").strip().lower()
+CODEX_BIN_CANDIDATES = (
+    os.environ.get("MAYOR_CODEX_BIN", ""),
+    shutil.which("codex") or "",
+    str(Path.home() / ".local" / "bin" / "codex"),
+    "/Applications/ChatGPT.app/Contents/Resources/codex",
+)
+CODEX_TIMEOUT_SECS = int(os.environ.get("MAYOR_CODEX_TIMEOUT", "600"))
+CODEX_CONFIG_TOML = Path.home() / ".codex" / "config.toml"
 SCHEMA_PATH = Path(__file__).resolve().parent / "schemas" / "content-classification.schema.json"
 INTENT_VERIFICATION_SCHEMA_PATH = (
     Path(__file__).resolve().parent / "schemas" / "posting-intent-verification.schema.json"
@@ -85,13 +100,18 @@ def input_hash(post: dict[str, Any], model: str) -> str:
 
 
 def is_current(post: dict[str, Any], model: str) -> bool:
+    # Validate against the model the row was actually classified with, not
+    # today's default — switching AI backends must not invalidate the whole
+    # archive's classification cache. `model` stays in the signature for
+    # callers/tests but recorded provenance wins.
     metadata = post.get("classification") or {}
     intent = post.get("postingIntent") or {}
+    recorded_model = str(metadata.get("model") or model)
     return (
         metadata.get("method") == "ai"
-        and metadata.get("model") == model
+        and bool(recorded_model)
         and metadata.get("rubricVersion") == RUBRIC_VERSION
-        and metadata.get("inputHash") == input_hash(post, model)
+        and metadata.get("inputHash") == input_hash(post, recorded_model)
         and intent.get("type") in INTENT_LABELS
         and (
             intent.get("type") != "responsive"
@@ -201,6 +221,79 @@ def response_output_text(response: dict[str, Any]) -> str:
     return "".join(texts)
 
 
+def codex_binary() -> str:
+    for candidate in CODEX_BIN_CANDIDATES:
+        if candidate and Path(candidate).is_file():
+            return candidate
+    raise ClassificationError("codex CLI not found (set MAYOR_CODEX_BIN or install codex)")
+
+
+def codex_default_model() -> str:
+    """Best-effort label of the Codex CLI's configured model for provenance."""
+    try:
+        match = re.search(r'^\s*model\s*=\s*"([^"]+)"', CODEX_CONFIG_TOML.read_text(encoding="utf-8"), re.M)
+        if match:
+            return match.group(1)
+    except OSError:
+        pass
+    return "codex-default"
+
+
+def strip_json_fences(text: str) -> str:
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    return text.strip()
+
+
+def run_codex_structured_request(
+    *,
+    prompt: str,
+    model: str,
+    schema_path: Path,
+    timeout: int,
+) -> dict[str, Any]:
+    """Run one classification request through the Codex CLI (ChatGPT
+    subscription) instead of the OpenAI API. Same contract as
+    run_structured_request: returns the parsed payload dict."""
+    if not schema_path.is_file():
+        raise ClassificationError(f"missing output schema: {schema_path}")
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    schema.pop("$schema", None)
+    full_prompt = (
+        prompt
+        + "\n\n只輸出一個符合以下 JSON Schema 的 JSON 物件；不要 markdown 圍欄，不要任何說明文字：\n"
+        + json.dumps(schema, ensure_ascii=False)
+    )
+    command = [codex_binary(), "exec", "-", "-s", "read-only"]
+    if os.environ.get("MAYOR_AI_MODEL"):
+        command += ["-m", os.environ["MAYOR_AI_MODEL"]]
+    with tempfile.NamedTemporaryFile("r", suffix=".txt", delete=False) as handle:
+        out_path = Path(handle.name)
+    try:
+        try:
+            result = subprocess.run(
+                command + ["-o", str(out_path)],
+                input=full_prompt,
+                capture_output=True,
+                text=True,
+                timeout=timeout,
+            )
+        except subprocess.TimeoutExpired as exc:
+            raise ClassificationError(f"codex exec timed out after {timeout}s") from exc
+        if result.returncode != 0:
+            detail = (result.stderr or result.stdout or "").strip()[-500:]
+            raise ClassificationError(f"codex exec failed ({result.returncode}): {detail}")
+        raw = out_path.read_text(encoding="utf-8")
+    finally:
+        out_path.unlink(missing_ok=True)
+    try:
+        return json.loads(strip_json_fences(raw))
+    except json.JSONDecodeError as exc:
+        raise ClassificationError(f"codex output was not valid JSON: {exc}: {raw[:200]!r}") from exc
+
+
 def run_structured_request(
     *,
     prompt: str,
@@ -210,6 +303,10 @@ def run_structured_request(
     max_output_tokens: int,
     timeout: int = 600,
 ) -> dict[str, Any]:
+    if AI_BACKEND == "codex":
+        return run_codex_structured_request(
+            prompt=prompt, model=model, schema_path=schema_path, timeout=max(timeout, CODEX_TIMEOUT_SECS)
+        )
     api_key = load_api_key()
     if not schema_path.is_file():
         raise ClassificationError(f"missing output schema: {schema_path}")
@@ -461,7 +558,7 @@ def run_batch_with_retries(
         except (ClassificationError, OSError) as exc:
             # Account-level quota exhaustion can't be fixed by retrying or
             # splitting; fail the run immediately instead of hammering the API.
-            if any(marker in str(exc).lower() for marker in ("no credits", "insufficient_quota", "exceeded your current quota")):
+            if any(marker in str(exc).lower() for marker in ("no credits", "insufficient_quota", "exceeded your current quota", "session limit")):
                 raise ClassificationError(f"AI provider quota exhausted: {exc}") from exc
             last_error = exc
             print(
@@ -526,7 +623,12 @@ def classify_rows(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Classify post topics and posting intent with AI.")
-    parser.add_argument("--model", default=os.environ.get("MAYOR_AI_MODEL", DEFAULT_MODEL))
+    # With the codex backend the model is whatever the Codex CLI is
+    # configured for; record that (or MAYOR_AI_MODEL if explicitly pinned).
+    default_model = os.environ.get("MAYOR_AI_MODEL") or (
+        codex_default_model() if AI_BACKEND == "codex" else DEFAULT_MODEL
+    )
+    parser.add_argument("--model", default=default_model)
     parser.add_argument("--batch-size", type=int, default=int(os.environ.get("MAYOR_AI_BATCH_SIZE", DEFAULT_BATCH_SIZE)))
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--limit", type=int)
