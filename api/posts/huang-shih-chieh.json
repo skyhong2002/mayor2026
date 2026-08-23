@@ -22,13 +22,13 @@
   "count": 327,
   "posts": [
     {
-      "agendaRelevance": 0.82,
+      "agendaRelevance": 0.3,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "bf2c604547e48b0254a728324454a408dc72d44d8fe68bfa89300d84c65712c8",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "3ddf057aca662bb0fc24f858988840e5c3ee812475ecdcbc28d51893846ccc10",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYtoQiCfiq",
@@ -40,20 +40,16 @@
       "postingIntent": {
         "confidence": 0.98,
         "label": "主動發文",
-        "reason": "走訪社區並邀請志工、捐款支持，主要是競選動員與宣傳。",
+        "reason": "記錄走訪市民並提出志工、文宣與捐款等競選動員邀請。",
         "type": "self_initiated"
       },
       "sourceId": "huang-sj-threads",
       "text": "@schuanglawyer:週末，世杰跑了11個區，和許多市民面對面互動，每一次見面、每一句交流，我都很珍惜。因為我相信，市民真正的需要，就在大家最真實的生活裡。\n\n想讓更多朋友了解我的理念與政見，沒有捷徑，就是多跑一點、多聊一點、多聽一點。為了桃園，拚就對了！\n\n最近不少鄉親提醒我，「世杰，你的理念很好，但曝光度還要再衝一下，讓更多人看見！」\n\n大家的期待我都聽到了！改變需要凝聚更多力量，世杰誠摯邀請您一起同行，無論是加入志工、提供看板文宣點位，或用小額捐款支持，都是最重要的力量，詳細資訊放置留言區。請大家成為世杰的小蜜蜂，一起把改變的希望，傳遞到桃園的每一個角落。\n\n下一站，期待在你的生活圈相見，讓我們一起把家變得更好❤️",
       "topicScores": {
-        "生活": 0.72,
-        "競選": 0.99,
-        "經濟": 0.55
+        "競選": 0.99
       },
       "topics": [
-        "競選",
-        "生活",
-        "經濟"
+        "競選"
       ],
       "url": "https://www.threads.com/t/DcYtoQiCfiq"
     },

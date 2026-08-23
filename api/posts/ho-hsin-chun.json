@@ -22,13 +22,13 @@
   "count": 333,
   "posts": [
     {
-      "agendaRelevance": 0.79,
+      "agendaRelevance": 0.82,
       "candidateId": "ho-hsin-chun",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "e1b13529aeda63d4fd92bae91971eb5ca204e380fab137bf4ad9977b95826813",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "d22aab789a62d981635074e17b14b41046ebc1967dd4cdfd5b14fbb7e368a7c6",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYwxLomVu0",
@@ -40,20 +40,18 @@
       "platform": "threads",
       "postedAt": "2026-08-23T15:02:28+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.99,
         "label": "主動發文",
-        "reason": "主張推動捷運藍線延伸，屬明確交通建設政見。",
+        "reason": "簡短宣示推動捷運藍線延伸至太平，屬交通政策主張。",
         "type": "self_initiated"
       },
       "sourceId": "ho-hc-threads",
       "text": "@a_chun1973:捷運藍線進太平\n全速推動！💪💪",
       "topicScores": {
-        "交通": 0.96,
-        "競選": 0.88
+        "交通": 0.98
       },
       "topics": [
-        "交通",
-        "競選"
+        "交通"
       ],
       "url": "https://www.threads.com/t/DcYwxLomVu0"
     },

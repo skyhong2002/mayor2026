@@ -22,13 +22,13 @@
   "count": 201,
   "posts": [
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "7571074e1cb63fea8edf2c5d0e41571f80e098782de579800a39c51b11d7d70e",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "a50b047e9c282ffd6406d2a87b41f62b0d832da56c23c8eacadd7a3580903a66",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYXgIUkyap",
@@ -45,18 +45,16 @@
       "postingIntent": {
         "confidence": 0.99,
         "label": "主動發文",
-        "reason": "公告停班停課與防雨避災提醒，屬災害通知而非回應他方。",
+        "reason": "因豪雨與淹水發布停班停課及安全提醒，未針對特定他方說法。",
         "type": "self_initiated"
       },
       "sourceId": "chen-tf-threads",
       "text": "@chen_tingfei:台南明（8/24）日再度停止上班、停止上課。\n\n連日豪雨，台南多處積淹水，接下來仍可能有大雨、局部豪雨及短延時強降雨。\n\n提醒大家，明天如果非必要請盡量避免外出，遠離積淹水及危險區域，也請大家做好防雨、防淹水準備。\n\n目前最重要的，就是守護大家的安全，也一起努力讓受災的家園盡快恢復。\n\n天雨路滑，大家平安最重要！\n\n#陳亭妃 #台南",
       "topicScores": {
-        "生活": 0.72,
-        "防災": 0.98
+        "防災": 0.99
       },
       "topics": [
-        "防災",
-        "生活"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DcYXgIUkyap"
     },

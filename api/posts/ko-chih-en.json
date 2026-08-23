@@ -22,13 +22,13 @@
   "count": 306,
   "posts": [
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.42,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "4be17fe2df8784276b0ab971b7e162ff3a805edc87a1c21d0c38500210929767",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "2ab1020e09e6a19031ab3263b1ab1489d16c8e1f93a74c7c4c12d277f0b6bd3a",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYvIHXCVFl",
@@ -40,15 +40,15 @@
       "platform": "threads",
       "postedAt": "2026-08-23T14:48:15+00:00",
       "postingIntent": {
-        "confidence": 0.94,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "走訪淹水災區並反映需求，屬災後關懷與問題整理。",
+        "reason": "走訪淹水災區並承諾反映地方需求，重點是災情紀錄與問題處理。",
         "type": "self_initiated"
       },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:今天一整天，我走進淹水的災區、傾聽鄉親的心聲，並將地方的需求反映給中央、地方政府。\n\n發現問題、討論解方，才能讓淹水不再是高雄人的日常。",
       "topicScores": {
-        "防災": 0.97
+        "防災": 0.98
       },
       "topics": [
         "防災"
@@ -56,13 +56,13 @@
       "url": "https://www.threads.com/t/DcYvIHXCVFl"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.68,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "386e753dadc2ded014f79a8d652dbb383b5e2fcb6a578edf30383fba7c8ba005",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "aced1019bb4010730a83994bd94ee1ddddc482cf214d630a48ff765626a340a7",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYsggzjjNy",
@@ -74,22 +74,20 @@
       "platform": "threads",
       "postedAt": "2026-08-23T14:25:35+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "聚焦大寮淹水與排水系統改善，提出向各單位反映與解方。",
+        "reason": "針對大寮淹水主動要求水利與農田水路檢討並提出解決方案。",
         "type": "self_initiated"
       },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:大寮永芳里淹成一片汪洋，我將向中央農田水利署反映問題，也請大寮的議員團隊向高雄市水利局了解情況。\n\n針對農田、農路，以及周邊水路系統找出問題、提出解決方案，讓淹水不再成為大寮人的日常。",
       "topicScores": {
-        "交通": 0.45,
-        "環境": 0.68,
-        "防災": 0.98
+        "議會監督": 0.72,
+        "防災": 0.99
       },
       "topics": [
         "防災",
-        "環境",
-        "交通"
+        "議會監督"
       ],
       "url": "https://www.threads.com/t/DcYsggzjjNy"
     },

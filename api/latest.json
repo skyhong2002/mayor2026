@@ -2,13 +2,13 @@
   "count": 100,
   "posts": [
     {
-      "agendaRelevance": 0.2,
+      "agendaRelevance": 0.18,
       "candidateId": "lai-jui-lung",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "3b073253285d2d8e0ce8f3604c51d547105dfb79fd496df1c497107a8752a96b",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "6308e7fcee2fe88cc6322d5738e1dc74c77fd7a687d11f815d9a0946721ce7b4",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYxn8FiR9w",
@@ -20,33 +20,31 @@
       "platform": "threads",
       "postedAt": "2026-08-23T15:09:07+00:00",
       "postingIntent": {
-        "confidence": 0.98,
+        "confidence": 0.99,
         "label": "主動發文",
-        "reason": "火警空品提醒與防護通知，重點在市民安全與環境監測。",
+        "reason": "針對工廠火警造成的空品影響發布防護與安全提醒。",
         "type": "self_initiated"
       },
       "sourceId": "lai-jl-threads",
       "text": "@zenolai:小港火警空品提醒！小港、大寮、鳳山、鳥松朋友請留意防護\n\n小港區稍早發生工廠火警，消防單位正持續搶救中。預估空氣品質受影響的區域，已擴大至小港區、大寮區、鳳山區和鳥松區。\n\n環保局正持續嚴密監測空品變化，請上述區域的市民朋友盡量待在室內、緊閉門窗，如需外出請務必戴好口罩。我會持續緊盯後續處置狀況，請大家務必注意防護和安全。高雄平安！",
       "topicScores": {
-        "環境": 0.91,
-        "生活": 0.64,
-        "防災": 0.85
+        "環境": 0.94,
+        "防災": 0.87
       },
       "topics": [
         "環境",
-        "防災",
-        "生活"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DcYxn8FiR9w"
     },
     {
-      "agendaRelevance": 0.79,
+      "agendaRelevance": 0.82,
       "candidateId": "ho-hsin-chun",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "e1b13529aeda63d4fd92bae91971eb5ca204e380fab137bf4ad9977b95826813",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "d22aab789a62d981635074e17b14b41046ebc1967dd4cdfd5b14fbb7e368a7c6",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYwxLomVu0",
@@ -58,31 +56,29 @@
       "platform": "threads",
       "postedAt": "2026-08-23T15:02:28+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.99,
         "label": "主動發文",
-        "reason": "主張推動捷運藍線延伸，屬明確交通建設政見。",
+        "reason": "簡短宣示推動捷運藍線延伸至太平，屬交通政策主張。",
         "type": "self_initiated"
       },
       "sourceId": "ho-hc-threads",
       "text": "@a_chun1973:捷運藍線進太平\n全速推動！💪💪",
       "topicScores": {
-        "交通": 0.96,
-        "競選": 0.88
+        "交通": 0.98
       },
       "topics": [
-        "交通",
-        "競選"
+        "交通"
       ],
       "url": "https://www.threads.com/t/DcYwxLomVu0"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.42,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "4be17fe2df8784276b0ab971b7e162ff3a805edc87a1c21d0c38500210929767",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "2ab1020e09e6a19031ab3263b1ab1489d16c8e1f93a74c7c4c12d277f0b6bd3a",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYvIHXCVFl",
@@ -94,15 +90,15 @@
       "platform": "threads",
       "postedAt": "2026-08-23T14:48:15+00:00",
       "postingIntent": {
-        "confidence": 0.94,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "走訪淹水災區並反映需求，屬災後關懷與問題整理。",
+        "reason": "走訪淹水災區並承諾反映地方需求，重點是災情紀錄與問題處理。",
         "type": "self_initiated"
       },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:今天一整天，我走進淹水的災區、傾聽鄉親的心聲，並將地方的需求反映給中央、地方政府。\n\n發現問題、討論解方，才能讓淹水不再是高雄人的日常。",
       "topicScores": {
-        "防災": 0.97
+        "防災": 0.98
       },
       "topics": [
         "防災"
@@ -144,13 +140,13 @@
       "url": "https://inewslong.com/2026/08/23/4118/"
     },
     {
-      "agendaRelevance": 0.62,
+      "agendaRelevance": 0.72,
       "candidateId": "su-chiaohui",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "2b6025c71f45e37217677973a8fe01b0f4681d9653f736d6c3c1554eff70d04e",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "8d40445871c71dad4d0320e701f656d9014277d785668b87acf7e68996b83d69",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYtrmWmQUM",
@@ -160,31 +156,31 @@
       "platform": "threads",
       "postedAt": "2026-08-23T14:34:40+00:00",
       "postingIntent": {
-        "confidence": 0.96,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "感謝牙醫界支持並主張擴大口腔健康照顧，屬競選式醫療政見。",
+        "reason": "感謝醫界支持並提出持續擴大市民口腔健康照顧的競選主張。",
         "type": "self_initiated"
       },
       "sourceId": "su-ch-threads",
       "text": "@su.chiaohui:牙醫界挺巧慧！非常感謝 @taipeishihchung 陳時中政委、@wen_shih_cheng 温世政南投縣長候選人，還有數百位牙醫、牙技、牙材產業好朋友站出來支持我！\n\n這麼多年來，我們一起在立法院支持醫界，守護國人健康。未來，我也要繼續和大家並肩努力，擴大照顧市民的口腔健康❤️",
       "topicScores": {
-        "競選": 0.94,
-        "醫療": 0.98
+        "競選": 0.98,
+        "醫療": 0.9
       },
       "topics": [
-        "醫療",
-        "競選"
+        "競選",
+        "醫療"
       ],
       "url": "https://www.threads.com/t/DcYtrmWmQUM"
     },
     {
-      "agendaRelevance": 0.82,
+      "agendaRelevance": 0.3,
       "candidateId": "huang-shih-chieh",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "bf2c604547e48b0254a728324454a408dc72d44d8fe68bfa89300d84c65712c8",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "3ddf057aca662bb0fc24f858988840e5c3ee812475ecdcbc28d51893846ccc10",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYtoQiCfiq",
@@ -196,31 +192,27 @@
       "postingIntent": {
         "confidence": 0.98,
         "label": "主動發文",
-        "reason": "走訪社區並邀請志工、捐款支持，主要是競選動員與宣傳。",
+        "reason": "記錄走訪市民並提出志工、文宣與捐款等競選動員邀請。",
         "type": "self_initiated"
       },
       "sourceId": "huang-sj-threads",
       "text": "@schuanglawyer:週末，世杰跑了11個區，和許多市民面對面互動，每一次見面、每一句交流，我都很珍惜。因為我相信，市民真正的需要，就在大家最真實的生活裡。\n\n想讓更多朋友了解我的理念與政見，沒有捷徑，就是多跑一點、多聊一點、多聽一點。為了桃園，拚就對了！\n\n最近不少鄉親提醒我，「世杰，你的理念很好，但曝光度還要再衝一下，讓更多人看見！」\n\n大家的期待我都聽到了！改變需要凝聚更多力量，世杰誠摯邀請您一起同行，無論是加入志工、提供看板文宣點位，或用小額捐款支持，都是最重要的力量，詳細資訊放置留言區。請大家成為世杰的小蜜蜂，一起把改變的希望，傳遞到桃園的每一個角落。\n\n下一站，期待在你的生活圈相見，讓我們一起把家變得更好❤️",
       "topicScores": {
-        "生活": 0.72,
-        "競選": 0.99,
-        "經濟": 0.55
+        "競選": 0.99
       },
       "topics": [
-        "競選",
-        "生活",
-        "經濟"
+        "競選"
       ],
       "url": "https://www.threads.com/t/DcYtoQiCfiq"
     },
     {
-      "agendaRelevance": 0.72,
+      "agendaRelevance": 0.68,
       "candidateId": "ko-chih-en",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "386e753dadc2ded014f79a8d652dbb383b5e2fcb6a578edf30383fba7c8ba005",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "aced1019bb4010730a83994bd94ee1ddddc482cf214d630a48ff765626a340a7",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYsggzjjNy",
@@ -232,33 +224,31 @@
       "platform": "threads",
       "postedAt": "2026-08-23T14:25:35+00:00",
       "postingIntent": {
-        "confidence": 0.95,
+        "confidence": 0.98,
         "label": "主動發文",
-        "reason": "聚焦大寮淹水與排水系統改善，提出向各單位反映與解方。",
+        "reason": "針對大寮淹水主動要求水利與農田水路檢討並提出解決方案。",
         "type": "self_initiated"
       },
       "sourceId": "ko-ce-threads",
       "text": "@prof.kochihen:大寮永芳里淹成一片汪洋，我將向中央農田水利署反映問題，也請大寮的議員團隊向高雄市水利局了解情況。\n\n針對農田、農路，以及周邊水路系統找出問題、提出解決方案，讓淹水不再成為大寮人的日常。",
       "topicScores": {
-        "交通": 0.45,
-        "環境": 0.68,
-        "防災": 0.98
+        "議會監督": 0.72,
+        "防災": 0.99
       },
       "topics": [
         "防災",
-        "環境",
-        "交通"
+        "議會監督"
       ],
       "url": "https://www.threads.com/t/DcYsggzjjNy"
     },
     {
-      "agendaRelevance": 0.05,
+      "agendaRelevance": 0.1,
       "candidateId": "lai-jui-lung",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "eba65a9bd968cc926c82fd6aab1b298db7ad58488e647c70589dd184b6b412b8",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "180cf1a06100672727a6acc6697772a844505b7b660232e1122003e846a5f699",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYdzNViTrh",
@@ -270,29 +260,27 @@
       "postingIntent": {
         "confidence": 0.99,
         "label": "主動發文",
-        "reason": "感謝防汛人員屬防災慰勉紀錄，未提出具體政策。",
+        "reason": "感謝防汛人員並表達守護市民安全的行政動員立場。",
         "type": "self_initiated"
       },
       "sourceId": "lai-jl-threads",
       "text": "@zenolai:感謝第一線防汛人員，風雨無阻、堅守崗位，我們會繼續為市民安全全力以赴。",
       "topicScores": {
-        "生活": 0.52,
-        "防災": 0.93
+        "防災": 0.95
       },
       "topics": [
-        "防災",
-        "生活"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DcYdzNViTrh"
     },
     {
-      "agendaRelevance": 0.18,
+      "agendaRelevance": 0.12,
       "candidateId": "chen-ting-fei",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "7571074e1cb63fea8edf2c5d0e41571f80e098782de579800a39c51b11d7d70e",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "a50b047e9c282ffd6406d2a87b41f62b0d832da56c23c8eacadd7a3580903a66",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYXgIUkyap",
@@ -309,29 +297,27 @@
       "postingIntent": {
         "confidence": 0.99,
         "label": "主動發文",
-        "reason": "公告停班停課與防雨避災提醒，屬災害通知而非回應他方。",
+        "reason": "因豪雨與淹水發布停班停課及安全提醒，未針對特定他方說法。",
         "type": "self_initiated"
       },
       "sourceId": "chen-tf-threads",
       "text": "@chen_tingfei:台南明（8/24）日再度停止上班、停止上課。\n\n連日豪雨，台南多處積淹水，接下來仍可能有大雨、局部豪雨及短延時強降雨。\n\n提醒大家，明天如果非必要請盡量避免外出，遠離積淹水及危險區域，也請大家做好防雨、防淹水準備。\n\n目前最重要的，就是守護大家的安全，也一起努力讓受災的家園盡快恢復。\n\n天雨路滑，大家平安最重要！\n\n#陳亭妃 #台南",
       "topicScores": {
-        "生活": 0.72,
-        "防災": 0.98
+        "防災": 0.99
       },
       "topics": [
-        "防災",
-        "生活"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DcYXgIUkyap"
     },
     {
-      "agendaRelevance": 0.88,
+      "agendaRelevance": 0.9,
       "candidateId": "su-chiaohui",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "b8934b5878b9d4d89efcb35465ffc9bf7a85557654a164796481032977014ec3",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "379d350baa4f00ede8a85e4398f28dbf79784c96b988b1bd24bbce7401e1713b",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYWQ7kkkOy",
@@ -339,40 +325,42 @@
       "imageUrl": "assets/feed-images/67c6ed6f459cb9188bfe.webp",
       "keywords": [
         "教育",
+        "長照",
+        "育兒",
         "交通"
       ],
       "platform": "threads",
       "postedAt": "2026-08-23T11:10:45+00:00",
       "postingIntent": {
-        "confidence": 0.97,
+        "confidence": 0.9,
         "label": "主動發文",
-        "reason": "主動提出城市願景與多項政見，並號召支持，屬競選發文。",
+        "reason": "引用總統背書後主動宣傳城市願景與多項政見，並號召選民支持。",
         "type": "self_initiated"
       },
       "sourceId": "su-ch-threads",
       "text": "@su.chiaohui:@tsai_ingwen 小英總統：「看一個政治人物值不值得信任，不只要看她順利的時候說什麼，更要看別人遇到困難的時候，她願不願意站在你那邊，這就是我認識的蘇巧慧。」\n\n感謝小英總統的加持，我們從一開始不被看好，一步一步走到現在，不只已經平手，更有機會贏得勝利。\n\n我也在這段時間負責任的提出城市願景，從區域均衡、產業升級，到育兒、教育、長照、交通，以及新皇冠海岸、鑽石山城等政見。\n\n我們會帶著大家的期待，讓這座城市越來越有希望，讓這座城市進步的速度越來越快！一起出發，迎向勝利！2026新北慧贏！",
       "topicScores": {
-        "交通": 0.72,
-        "住宅": 0.56,
-        "教育": 0.8,
+        "交通": 0.76,
+        "教育": 0.82,
+        "社福": 0.8,
         "競選": 0.99
       },
       "topics": [
         "競選",
         "教育",
-        "交通",
-        "住宅"
+        "社福",
+        "交通"
       ],
       "url": "https://www.threads.com/t/DcYWQ7kkkOy"
     },
     {
-      "agendaRelevance": 0.74,
+      "agendaRelevance": 0.94,
       "candidateId": "lai-jui-lung",
       "classification": {
-        "classifiedAt": "2026-08-23T16:15:04+00:00",
-        "inputHash": "69c7c02c5e5a48ac13790e87a639d3468700ecf0c67847d26b17018bf1e4db5d",
+        "classifiedAt": "2026-08-23T16:20:10+00:00",
+        "inputHash": "7288bf6352ccb5d163c82289ec812411c4bb04aaa4f95c20a680fad182f682fe",
         "method": "ai",
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DcYVL8-D0B_",
@@ -385,20 +373,18 @@
       "platform": "threads",
       "postedAt": "2026-08-23T11:00:38+00:00",
       "postingIntent": {
-        "confidence": 0.97,
+        "confidence": 0.99,
         "label": "主動發文",
-        "reason": "勘查排水工程並爭取預算改善淹水，屬具體防災政策。",
+        "reason": "提出排水拓寬工程、經費與城市韌性計畫，屬具體防災政策主張。",
         "type": "self_initiated"
       },
       "sourceId": "lai-jl-threads",
       "text": "@zenolai:在離開西溪抽水站後，接續前往大寮上寮排水、林園排水匯流處，勘查河道排水情形及後續改善工程。\n\n該工程規劃將匯合口河道由20公尺拓寬至25公尺，改善範圍約1公里，沿線4座橋梁也會配合調整，總經費6.5億元。完工後可進一步降低水位，改善上寮地區積淹水問題。\n\n面對極端氣候下愈來愈頻繁的強降雨與長時間降雨，我們持續從滯洪、抽排、河道拓寬到排水匯流進行整體改善。未來我也會繼續爭取預算，提升高雄的城市韌性。",
       "topicScores": {
-        "交通": 0.55,
-        "防災": 0.98
+        "防災": 0.99
       },
       "topics": [
-        "防災",
-        "交通"
+        "防災"
       ],
       "url": "https://www.threads.com/t/DcYVL8-D0B_"
     },
