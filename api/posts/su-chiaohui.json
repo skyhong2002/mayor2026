@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/aaaf802b235041ccaa54.webp",
+    "avatarUrl": "assets/source-avatars/ab841152285f22650cd7.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "su-chiaohui",
@@ -19,8 +19,128 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 356,
+  "count": 361,
   "posts": [
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T10:02:23+00:00",
+        "inputHash": "b0355ff6e7a2d738f53cef5bd6ce6efe51d793717db08056c3d60c1828fd9692",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:mbQ2uelDDMQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/9e0d306db02469f89126.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-24T06:37:40+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "感謝中醫師支持並宣傳打造健康新北，政策內容不足。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Thank you to the TCM doctors for your support! Let's build a healthier New Taipei together",
+      "topicScores": {
+        "競選": 0.91,
+        "醫療": 0.92
+      },
+      "topics": [
+        "醫療",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/mbQ2uelDDMQ"
+    },
+    {
+      "agendaRelevance": 0.94,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T10:02:23+00:00",
+        "inputHash": "495586a9ba251aec0fb1cd7816a7b5522c8724bc435f28344601f5ec5b5d36eb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcabUamkiZ9",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d8ecc02ee9e179ee1e44.webp",
+      "keywords": [
+        "醫療",
+        "醫院",
+        "醫師",
+        "長照",
+        "補助",
+        "照顧"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T06:33:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出市立中西醫復健、長照與科技診療等具體中醫政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:看到有這麼多中醫師願意上台支持我，真的讓人很感動。過去十年，我和大家並肩努力，未來我當市長，會和大家一起繼續推動中醫藥發展：\n\n✅ 市立醫院設立「中西醫復健病房」。 \n✅ 補助中醫投入長照服務，走進社區據點、推動居家醫療，並加碼獎勵偏鄉服務。\n✅ 結合智慧科技，善用科技輔助診療。 \n\n我會繼續努力，照顧市民朋友，打造更健康的新北！",
+      "topicScores": {
+        "社福": 0.75,
+        "競選": 0.89,
+        "醫療": 0.99
+      },
+      "topics": [
+        "醫療",
+        "競選",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DcabUamkiZ9"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T10:02:23+00:00",
+        "inputHash": "fee3b05b850eb64e6d203843dfd1efdf020d15ea107aa83c0b05832660363635",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1632532064895290",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/41e2ff349de852a77c3b.webp",
+      "keywords": [
+        "醫療",
+        "醫院",
+        "醫師",
+        "長照",
+        "補助",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-24T06:31:35.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "藉醫界支持提出中西醫復健、長照醫療與智慧診療等具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "看到有這麼多中醫師願意上台支持我，真的讓人很感動。\n\n過去十年，我和大家一起推動《#中醫藥發展法》、成功爭取「#中醫藥振興計畫」，也持續爭取設立「#國家中醫研究院」。我也藉機會向各位醫師提出各項政見，未來我當市長，會和大家一起繼續推動中醫藥發展：\n\n✅ 市立醫院設立「#中西醫復健病房」。 \n✅ 補助中醫投入 #長照服務，走進社區據點、推動居家醫療，並加碼獎勵 #偏鄉服務。\n✅ 結合 #智慧科技，善用科技輔助診療。 \n\n我會繼續努力，照顧市民朋友，打造更健康的新北！",
+      "topicScores": {
+        "社福": 0.82,
+        "競選": 0.76,
+        "醫療": 0.98
+      },
+      "topics": [
+        "醫療",
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1661617485385764/"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "su-chiaohui",
@@ -54,6 +174,47 @@
         "醫療"
       ],
       "url": "https://www.threads.com/t/DcYtrmWmQUM"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T10:02:23+00:00",
+        "inputHash": "ae337f807c33dbf49e6b9c70a84198a645bce22234cf284e1e6af38aecf32de3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1631983238283506",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/a93e736b516a5b49a282.webp",
+      "keywords": [
+        "醫療",
+        "長輩",
+        "補助",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-23T14:30:25.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出長者牙助、兒童塗氟、部分負擔及居家牙醫等具體醫療政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "牙醫界挺巧慧！非常感謝 陳時中 政委、温世政 Wen Shih-cheng 南投縣長候選人，還有數百位牙醫、牙技、牙材產業好朋友站出來支持我！\n\n這麼多年來，我們一起在立法院支持醫界，守護國人健康。未來，我也要繼續和大家並肩努力，擴大照顧市民的口腔健康。\n\n✅ 加強長者牙口與生活照顧\n\n在陳時中政委、阿中部長的建議下，我宣布除了原有政見「長輩假牙補助最高5萬元」，針對中低收入戶及低收入戶長者，要分別加碼提供 #最高8萬元 與 #最高12萬元 補助，讓新北的每一位長輩都活得健康有尊嚴。\n\n✅ 落實兒童口腔預防醫學\n\n我會將現行0至6歲每半年一次的 #免費塗氟延伸至12歲，從源頭減少小朋友蛀牙的機會，也會推動 #0至6歲門診和住院免部分負擔，減輕家庭壓力。\n\n✅ 投入資源補缺口、挺專業\n\n為了落實醫療平權、照顧行動不便者，市府會提供獎勵，擴大到宅與到機構的「#居家牙醫服務」，並配合牙技師推動「假牙身分證」，嚴格稽查無照牙技師與非法牙材，支持、保障專業，也守護民眾健康。\n\n倒數97天，做伙拚、做伙贏！一起照顧更多市民朋友！",
+      "topicScores": {
+        "社福": 0.9,
+        "競選": 0.82,
+        "醫療": 0.99
+      },
+      "topics": [
+        "醫療",
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0aysBAVszV26Xb1REqfWffHZ5P5J3kWoQ6spTvYimAaL9bGzeanWq2riJ5sXQxupwl"
     },
     {
       "agendaRelevance": 0.97,
@@ -136,6 +297,48 @@
         "交通"
       ],
       "url": "https://www.threads.com/t/DcYWQ7kkkOy"
+    },
+    {
+      "agendaRelevance": 0.51,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T10:02:23+00:00",
+        "inputHash": "9837397f0b59e234ba1e45d8c7e8a8d018efcfe2c7156c8ed1fdbb3206424a11",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1631846594963837",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/0465df17f7888877f282.webp",
+      "keywords": [
+        "產業",
+        "教育",
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-23T11:06:22.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以總統背書與勝選動員為主，概述區域、產業、教育及交通城市願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "蔡英文 Tsai Ing-wen 小英總統：「看一個政治人物值不值得信任，不只要看她順利的時候說什麼，更要看別人遇到困難的時候，她願不願意站在你那邊，這就是我認識的蘇巧慧。」\n\n感謝小英總統的加持，我們從一開始不被看好，一步一步走到現在，不只已經平手，更有機會贏得勝利。\n\n我也在這段時間負責任的提出城市願景，從區域均衡、產業升級，到育兒、教育、長照、交通，以及新皇冠海岸、鑽石山城等政見。\n\n我們會帶著大家的期待，讓這座城市越來越有希望，讓這座城市進步的速度越來越快！一起出發，迎向勝利！2026新北慧贏！",
+      "topicScores": {
+        "交通": 0.55,
+        "教育": 0.58,
+        "競選": 0.99,
+        "經濟": 0.62
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "教育",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/reel/1040826852054549/"
     },
     {
       "agendaRelevance": 0.08,

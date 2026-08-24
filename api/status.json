@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-24 12:04:00"
+        "最近一次執行心跳：2026-08-24 18:03:52"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3167",
+        "已收錄貼文：3215",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：18 ms"
+        "耗時：35 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-24 12:02:54",
+        "最新抓取時間：2026-08-24 18:00:56",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
-      "label": "部分異常",
+      "label": "正常",
       "name": "Instagram / Threads / X RSSHub",
-      "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 2 個錯誤。"
+      "status": "ok",
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 0 個錯誤。"
     },
     {
       "details": [
-        "最近成功 run：2026-08-23 18:06:26",
-        "本月已花費：$3.14 / 目標 $4.75",
+        "最近成功 run：2026-08-24 18:01:15",
+        "本月已花費：$3.35 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 24.5h, next at 2026-08-24T10:37:12+00:00; ~$3.14 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 27.3h, next at 2026-08-25T13:18:40+00:00; ~$3.35 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：484"
+        "已收錄影片：488"
       ],
       "id": "youtube",
       "label": "部分異常",
@@ -74,7 +74,7 @@
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 40 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 42 篇。"
     },
     {
       "details": [
@@ -88,27 +88,27 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-24T12:04:00+08:00",
+  "generatedAt": "2026-08-24T18:03:52+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 15,
-    "latestPostAt": "2026-08-24T04:01:10+00:00",
+    "currentErrors": 13,
+    "latestPostAt": "2026-08-24T10:00:31.000Z",
     "postsByPlatform": {
-      "facebook": 975,
+      "facebook": 1005,
       "instagram": 878,
       "podcast": 4,
-      "threads": 782,
-      "website": 40,
+      "threads": 794,
+      "website": 42,
       "x": 4,
-      "youtube": 484
+      "youtube": 488
     },
-    "totalPosts": 3167,
+    "totalPosts": 3215,
     "watchAccounts": 67
   },
   "overall": {
     "label": "部分異常",
     "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。"
+    "summary": "核心 pipeline 有產出；需要注意：YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
     {
@@ -263,10 +263,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 1,
+        "currentErrors": 0,
         "platform": "instagram",
         "sources": 12,
-        "status": "degraded"
+        "status": "ok"
       },
       {
         "currentErrors": 0,
@@ -275,10 +275,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 1,
+        "currentErrors": 0,
         "platform": "threads",
         "sources": 9,
-        "status": "degraded"
+        "status": "ok"
       },
       {
         "currentErrors": 0,
