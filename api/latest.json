@@ -2,6 +2,287 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "cd45941934bad7419ad763775aba31c88814850ca5a55376c251bd68a7346a7e",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-24T16:01:22+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://inewslong.com/2026/08/24/4122/",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "災情"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-24T20:25:18+08:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "回應他方觀點",
+        "reason": "針對青鳥及民進黨被概括轉述為稱讚淹水乾淨、為執政辯護的說法，文章以蘇一峰的批評加以反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-web-media",
+      "text": "南部慘淹「水好乾淨」？ 蘇一峰：青鳥讓民進黨不認錯 〈 南部慘淹「水好乾淨」？ 蘇一峰：青鳥讓民進黨不認錯 〉本文來自於《 龍傳媒新聞 iNews Long 》。 南部地區連日豪雨，淹水災情頻傳。胸腔科醫師蘇一峰今天接受專訪無奈表示，大家關注的是為什麼南部一直淹水，但青鳥卻說「這水好乾淨啊」、「我們民進黨好棒啊」...",
+      "topicScores": {
+        "競選": 0.8,
+        "防災": 0.93
+      },
+      "topics": [
+        "防災",
+        "競選"
+      ],
+      "url": "https://inewslong.com/2026/08/24/4122/"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "164599318c1c216d3ddcb0548b11fce24b1a571ae43d640a8cf8a07e51cfc81f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcbUqMfieH3",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c7c9a7ae63135f729ac9.webp",
+      "keywords": [
+        "豪雨",
+        "災害",
+        "產業",
+        "補助"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T14:53:45+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告豪雨農損救助與低利貸款申請，屬災後行政資訊與農民扶助。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:8月下旬豪雨農損救助！高雄市農業全品項開放申請\n\n連日豪雨，除了積極勘災，我們也持續向中央爭取建設經費及災害補助，並以「從簡、從速、從寬」為原則，做市民最堅強的後盾。\n\n農業部正式公告，高雄市列入本次天然災害現金救助地區，「 #農產業全品項 」均納入救助範圍，同時提供 #低利貸款申請 。申請資訊如下： \n\n🔺申請項目：農產業全品項 \n🔺受理地區：高雄市全區 \n🔺申請期間：8月25日至9月7日（假日照常受理） \n🔺辦理地點：土地所在地的區公所\n\n #農作物損失率達20%以上 之農友，備妥身分證、印章、存摺、土地相關證明等文件，向 #所在地公所 申辦。有低利貸款需求者，請於10個工作日內先申請受災證明，以利後續辦理。",
+      "topicScores": {
+        "社福": 0.78,
+        "經濟": 0.9,
+        "防災": 0.95
+      },
+      "topics": [
+        "防災",
+        "經濟",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/DcbUqMfieH3"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "25b5bd415b8853820a041e864f9e07e5724939a7050263b21af33c3b0cf0141e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcbNiB_EnII",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/dfed1bbdccb072cec347.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-24T13:59:02+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以候選人玩偶募集捐款，屬競選募款與支持動員，沒有政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:🙋‍♂️：新北去哪裡可以找到超可愛的水獺媽媽玩偶呢？\n💁‍♀️：這裡就有啊！\n🙋‍♂️：Kám-án-ne（敢按呢）？\n🙆‍♀️：tong-liân（當然）！\n\n歡迎捐款支持巧慧，收藏屬於你的玩偶❤️\n🔗https://chiao.tw/donate",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcbNiB_EnII"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "0c4c2f845728e76575a586ddd53bc9265be2aa6622bad9d97a37ba183b6b77aa",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcbGfr2iVfl",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2c489385e784b449f18c.webp",
+      "keywords": [
+        "防災"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T12:50:40+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明防汛期間抽水、排水與水情巡查工作，屬防災應變紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:防汛期間，抽水設備運作、道路排水及各地水情都必須即時掌握。持續深入現場、排除問題，把防災應變落實在每一個需要的地方，感謝每一位堅守崗位、守護高雄的夥伴，大家辛苦了！",
+      "topicScores": {
+        "防災": 0.99
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DcbGfr2iVfl"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "4a5cc6fdb118466e82b953d95c35d3da1995dac2fc0af85efa51ca2948d5fd84",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcbAJ2DiSnj",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/a95243a1c7e343ffc734.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-24T11:56:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明極端氣候下的勘查、資源協調與復原工作，屬災害應變進度。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:因應極端氣候，我們盡全力守護家園，從抽水站、道路到社區，逐一勘查，實地了解市民需求。地方需要什麼，我們儘速協調資源，復原工作刻不容緩。",
+      "topicScores": {
+        "防災": 0.97
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DcbAJ2DiSnj"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "aba1fe7f4f526e2a13cf34afb3b5e437f1f95c548cdef29623130136ff3b7b72",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dca4JuvGitn",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/6574ca19751509657a78.webp",
+      "keywords": [
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T10:44:39+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "預告候選人到市場掃街問候，主要是競選活動紀錄與動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上9:00，動起來！埔心市場掃街✨\n\n楊梅的埔心市場是在地居民日常採買的重要去處，客家傳統與眷村飲食文化在這裡自然交會。從客家傳統點心、中式早點到各式特色小吃，周邊還藏著不少低調老店、老饕才知道的隱藏版美食，走一趟就能感受到埔心多元又豐富的生活滋味👍🏻\n\n明早9:00世杰到埔心市場和大家問早！心楊梅，動起來💖",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dca4JuvGitn"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "66b4223df6a53f59023117bcb6d14bbe91092b97f1437d80de187d2cd11362e8",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dca18TwlI0D",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/497ede436548adadad41.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-24T10:25:20+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "宣傳沈伯洋官方商品與記者會資訊，屬競選相關動員，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:等待結束 .ᐟ \n沈伯洋「洋流好物」，\n即將在明天與大家見面 .ᐟ.ᐟ \n⠀\n꒰ 搶先一睹洋流好物\n加入沈伯洋官方LINE帳號，\n明天上午09:30準時收到\n好物公布記者會\n提醒與連結\n⠀\n꒰ 上線時間\n8/25（二）中午12:00\n⠀\n꒰ 貼心提醒\n預先註冊，\n上線後流程更「順」喔 .ᐟ",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dca18TwlI0D"
+    },
+    {
+      "agendaRelevance": 0.67,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "a6946803053801b0b0bf8036c3661d581ba43b45e773cfad8d37d273707d5407",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dca0z69Evin",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d9deb5177e7e761cbe39.webp",
+      "keywords": [
+        "垃圾"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T10:15:28+00:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "針對非法廢棄物堆置與市府稽查責任提出追查要求，屬環境監督主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:兩天前，龍介就說過，安南區這場大爆炸，絕對不能只當成一場普通爆炸案處理。現在案情愈查愈深，愈來愈多疑點浮上檯面。\n\n檢方查出，民進黨籍的理想里里長鄭順，涉嫌與楊姓仲介、龔姓男子共同非法堆置廢棄物，三人今天都遭法院裁定羈押禁見。\n\n司法最後怎麼查、怎麼判，我們尊重；但背後到底還有多少人、多少利益關係，一定要繼續查到底。\n\n更奇怪的是，地主說土地十多年來借給里長作為停車場，地主、里長卻都說「不認識」所謂的仲介；另一頭，檢警卻正在追查仲介、租金與相關金流。\n\n龍介就要問：這塊地到底是誰同意拿來堆廢棄物？誰牽線？誰收錢？錢最後流到哪裡？\n\n含鎂、鋁等危險廢棄物，不是三兩包垃圾，而是一車一車運進住宅區旁邊。附近建案人員甚至曾看到外車進場傾倒、拍下車牌。這麼大的動靜，地方和市府的稽查系統，難道一路都沒人發現、沒人管？\n\n現在既然連鄭姓里長、業者、仲介都被捲入調查，就不能只抓幾個人交差。廢棄物來源、清運管道、土地關係、背後金流，有沒有形成一整條非法利益鏈，都要查清楚。\n\n司法查刑責，市府就要查行政責任。龍介還是那句話：火可以把垃圾燒掉，不能把責任跟金流一起燒掉。",
+      "topicScores": {
+        "環境": 0.98,
+        "議會監督": 0.91
+      },
+      "topics": [
+        "環境",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/Dca0z69Evin"
+    },
+    {
       "agendaRelevance": 0.34,
       "candidateId": "ko-chih-en",
       "classification": {
@@ -1821,6 +2102,38 @@
       "url": "https://www.facebook.com/94achun/posts/pfbid02tABu2DRkZqYQxihtXtHaSTqxn8TwVmgtqdrmCaZZGnhwPJXeCfafxMa4kCg31QKpl"
     },
     {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "01d0406f48eb3dba8f9767ffba8ac32c179e0dc89e6100f62e2baa9b0ec1a0d5",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:BmmmgtfVDUenqnQyYsUJr",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/c7d286f66eaf19e6d4c6.webp",
+      "keywords": [],
+      "platform": "website",
+      "postedAt": "2026-08-24T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "僅列出受訪與市政辯論等標籤，主要是競選相關媒體紀錄，缺乏具體主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0824受訪 #受訪 #洋流 #A進B出 #市政辯論 #洋流好物 #亞洲第一登山城",
+      "topicScores": {
+        "競選": 0.8
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://puma.taipei/videos/BmmmgtfVDUenqnQyYsUJr"
+    },
+    {
       "agendaRelevance": 0.33,
       "candidateId": "lee-shih-chuan",
       "classification": {
@@ -3321,353 +3634,6 @@
         "防災"
       ],
       "url": "https://www.instagram.com/p/DcYJA64FB7o/"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "c314eb26e2274b0a18beace59cf213c8f28223a53d6761fa12b3d1c852dbad73",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcYI2tXk9xg/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/a9a63fd8feb5b7d48ca9.webp",
-      "keywords": [
-        "表演",
-        "市集"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-23T09:12:55+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "發布免費親子娛樂活動資訊，屬生活與活動宣傳，未形成政策議程。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-ig",
-      "text": "🎈藝啟動一動 親子歡樂城🎈 ＃潭子站\n\n8/29（六）早上9點，帶著孩子們一起出門放電吧！地點就在 #潭水亭觀音媽廟（潭子區復興路二段89號）！現場不只準備滑步車體驗、充氣城堡，還有市集和精彩舞台表演，讓大小朋友一起度過熱鬧又有趣的午後。\n\n活動免費入場！也歡迎帶上野餐墊，和孩子一起輕鬆看表演。\n🎁 提前報名還可領取限量精美小禮物，數量有限，記得搶先報名！\n\n報名網址：\nhttps://www.beclass.com/rid=30527d56a87c9b4dcfe4\n\n#藝啟動一動 #親子歡樂城 \n#臺中啟程 #打造旗艦城",
-      "topicScores": {
-        "文化觀光": 0.7,
-        "生活": 0.68
-      },
-      "topics": [
-        "文化觀光",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DcYI2tXk9xg/"
-    },
-    {
-      "agendaRelevance": 0.03,
-      "candidateId": "chiang-chi-chen",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "f0a49c0c8798ebb63bb52265a1d49ce94fd62b375011bec18062554e9630cdf0",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1597475228405959",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/588d8c92855c5acf09a8.webp",
-      "keywords": [
-        "表演",
-        "市集"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-23T09:12:51.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動公告免費親子活動、滑步車體驗與舞台表演，未提出政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chiang-cc-fb",
-      "text": "🎈藝啟動一動 親子歡樂城🎈 ＃潭子站\n\n8/29（六）早上9點，帶著孩子們一起出門放電吧！地點就在 #潭水亭觀音媽廟（潭子區復興路二段89號）！現場不只準備滑步車體驗、充氣城堡，還有市集和精彩舞台表演，讓大小朋友一起度過熱鬧又有趣的午後。\n\n活動免費入場！也歡迎帶上野餐墊，和孩子一起輕鬆看表演。\n🎁 提前報名還可領取限量精美小禮物，數量有限，記得搶先報名！\n\n報名網址：\nhttps://www.beclass.com/rid=30527d56a87c9b4dcfe4\n\n#藝啟動一動 #親子歡樂城 \n#臺中啟程 #打造旗艦城",
-      "topicScores": {
-        "文化觀光": 0.82,
-        "生活": 0.61,
-        "體育": 0.69
-      },
-      "topics": [
-        "文化觀光",
-        "體育",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/johnnyccchiang/posts/pfbid02VzTUPjesC8y8jYVq636CKPTnCpVdS3gZHGdV94xSEHeA8F8NAGX2FZesYPcYeAD7l"
-    },
-    {
-      "agendaRelevance": 0.7,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "b65e0e6ccc8c0b1158c5e166fe9747e677c3e95ada13036620b3b9caabd215ae",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcYHYuqia9b",
-      "imageAspect": 1.4002,
-      "imageUrl": "assets/feed-images/ea30fff52a77e40464e9.webp",
-      "keywords": [
-        "豪雨",
-        "淹水",
-        "大雨"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-23T09:00:03+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動勘災並要求改善道路警示及通盤檢視大寮長期排水問題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:高雄今天大雨持續，下午我再來到大寮區，關心地方積淹水情況。\n\n首先來到永芳里，農田積水已經漫上道路，部分路段幾乎分不清哪裡是農田、哪裡是道路。現場也有民眾誤闖積水區，造成車輛拋錨。簡基成里長無奈說，這樣的情況已經持續很久，每逢豪雨就容易淹水，甚至還得經常提醒外地民眾不要誤闖。\n\n對大寮人來說，這樣的淹水情況，已經困擾大家很久了。每逢豪雨，就要擔心農田、道路，甚至自己的生活會不會受到影響。我認為，這不該再繼續下去。\n\n現場我也立即請議員團隊向市警局反映，積水路段的封鎖線與警示標誌應更加清楚，避免民眾誤闖。至於長期的排水問題，後續我會向中央 #農田水利署 反映地方需求，也請大寮、林園的市議員向 #市府水利局 了解，針對農田排水、農路以及周邊水路系統進行通盤檢視，找出問題、提出改善方案，而不是每次下大雨才來處理。\n\n接著我也來到大寮里，與蕭清翔里長關心當地積淹水狀況。不少道路仍泡在水中，也再次提醒大家，遇到積淹水路段千萬不要冒險通行，安全最重要。\n\n雨還沒停，防汛就不能鬆懈；但雨停之後，這些長期困擾大寮人的問題，也不能再船過水無痕。",
-      "topicScores": {
-        "議會監督": 0.82,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "議會監督"
-      ],
-      "url": "https://www.threads.com/t/DcYHYuqia9b"
-    },
-    {
-      "agendaRelevance": 0.57,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "456e1ff6db5d8fad65216a60eed43af858f4e4ea2570a85bd0236c2a62078669",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:JleZkw-hPaM",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/34d1841a66828881c048.webp",
-      "keywords": [
-        "淹水",
-        "預算",
-        "治水"
-      ],
-      "platform": "youtube",
-      "postedAt": "2026-08-23T08:44:29+00:00",
-      "postingIntent": {
-        "confidence": 0.91,
-        "label": "主動發文",
-        "reason": "主動批評治水成效並要求中央與地方改善大寮長期淹水問題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-yt",
-      "text": "大寮永芳里淹成一片汪洋，柯志恩：治水不能只停留在預算數字。立即向中央及地方政府反映，讓淹水不再成為大寮人的日常。#柯志恩 #淹水 #高雄 #大寮 #勘災",
-      "topicScores": {
-        "環境": 0.68,
-        "議會監督": 0.79,
-        "防災": 0.98
-      },
-      "topics": [
-        "防災",
-        "議會監督",
-        "環境"
-      ],
-      "url": "https://www.youtube.com/shorts/JleZkw-hPaM"
-    },
-    {
-      "agendaRelevance": 0.68,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "5a38bb4e3e12f51a2aa032a6a7eb8fea59db531d68758d418e7f28875c2bbe59",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcYEwrKE5d-/",
-      "imageAspect": 1.4019,
-      "imageUrl": "assets/feed-images/171fbd76322e8e7290d8.webp",
-      "keywords": [
-        "豪雨",
-        "淹水",
-        "大雨",
-        "警戒",
-        "強降雨"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-23T08:37:08+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動勘查大寮淹水並要求跨機關通盤檢視排水、農路及警示措施。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-ig",
-      "text": "高雄今天大雨持續，下午我再來到 #大寮區，關心地方積淹水情況。\n\n首先來到 #永芳里，農田積水已經漫上道路，部分路段幾乎分不清哪裡是農田、哪裡是道路。現場也有民眾誤闖積水區，造成車輛拋錨。簡基成里長無奈說，這樣的情況已經持續很久，每逢豪雨就容易淹水，甚至還得經常提醒外地民眾不要誤闖。\n\n對大寮人來說，這樣的淹水情況，已經困擾大家很久了。每逢豪雨，就要擔心農田、道路，甚至自己的生活會不會受到影響。我認為，這不該再繼續下去。\n\n現場我也立即請議員團隊向市警局反映，積水路段的封鎖線與警示標誌應更加清楚，避免民眾誤闖。至於長期的排水問題，後續我會向中央 #農田水利署 反映地方需求，也請大寮、林園的市議員向 #市府水利局 了解，針對農田排水、農路以及周邊水路系統進行通盤檢視，找出問題、提出改善方案，而不是每次下大雨才來處理。\n\n接著我也來到 #大寮里，與蕭清翔里長關心當地積淹水狀況。不少道路仍泡在水中，也再次提醒大家，遇到積淹水路段千萬不要冒險通行，安全最重要。\n\n雨還沒停，防汛就不能鬆懈；但雨停之後，這些長期困擾大寮人的問題，也不能再船過水無痕。\n\n大寮人不該每逢豪雨，就一次次面對同樣的淹水困境。這些問題既然存在這麼久，就應該好好面對、設法解決，讓淹水不再成為大寮人的日常。\n\n根據氣象署預告，今晚入夜後到明天上午8點，定量降水資料顯示仍有一波持續性強降雨，請大家一定要特別小心，留意最新雨勢與警戒資訊，做好防汛準備。\n\n黃天煌 高雄市議員 邱于軒 王耀裕市議員",
-      "topicScores": {
-        "議會監督": 0.82,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "議會監督"
-      ],
-      "url": "https://www.instagram.com/p/DcYEwrKE5d-/"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "1e7f87924ddab31bef8d2fcc84d2facb012bc735388d0b024d2c133a3ad47c19",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1621923865954660",
-      "imageAspect": 1.4005,
-      "imageUrl": "assets/feed-images/aeeec1094326fbf09479.webp",
-      "keywords": [
-        "豪雨",
-        "淹水",
-        "大雨",
-        "警戒",
-        "強降雨"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-23T08:37:00.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動勘查大寮淹水並要求跨機關通盤檢視排水系統，兼具防災提醒與改善主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-fb",
-      "text": "高雄今天大雨持續，下午我再來到 #大寮區，關心地方積淹水情況。\n\n首先來到 #永芳里，農田積水已經漫上道路，部分路段幾乎分不清哪裡是農田、哪裡是道路。現場也有民眾誤闖積水區，造成車輛拋錨。簡基成里長無奈說，這樣的情況已經持續很久，每逢豪雨就容易淹水，甚至還得經常提醒外地民眾不要誤闖。\n\n對大寮人來說，這樣的淹水情況，已經困擾大家很久了。每逢豪雨，就要擔心農田、道路，甚至自己的生活會不會受到影響。我認為，這不該再繼續下去。\n\n現場我也立即請議員團隊向市警局反映，積水路段的封鎖線與警示標誌應更加清楚，避免民眾誤闖。至於長期的排水問題，後續我會向中央 #農田水利署 反映地方需求，也請大寮、林園的市議員向 #市府水利局 了解，針對農田排水、農路以及周邊水路系統進行通盤檢視，找出問題、提出改善方案，而不是每次下大雨才來處理。\n\n接著我也來到 #大寮里，與蕭清翔里長關心當地積淹水狀況。不少道路仍泡在水中，也再次提醒大家，遇到積淹水路段千萬不要冒險通行，安全最重要。\n\n雨還沒停，防汛就不能鬆懈；但雨停之後，這些長期困擾大寮人的問題，也不能再船過水無痕。\n\n大寮人不該每逢豪雨，就一次次面對同樣的淹水困境。這些問題既然存在這麼久，就應該好好面對、設法解決，讓淹水不再成為大寮人的日常。\n\n根據氣象署資訊，今晚入夜後到明天上午，仍有一波持續性強降雨，請大家一定要特別小心，留意最新雨勢與警戒資訊，做好防汛準備。\n\n黃天煌 高雄市議員 邱于軒 王耀裕市議員",
-      "topicScores": {
-        "議會監督": 0.73,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "議會監督"
-      ],
-      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0sPjtpUsSULKYp8rCQYQDkEsWpCPdxAe5VrW24pHp25bxrP1rCj1ZUjVEQP4waJ8Tl"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "f366700a1149e3fc0c03e044e6715aeb8761d550b6fe8a56e73cdaab1a93073f",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1618992056504715",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/f8ad08428e4d80f43f09.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-23T07:48:12.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "以工程方位與排舞方向自我調侃，沒有實質公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "工程方位我清清楚楚，\n       但排舞方向⋯我要再練練。",
-      "topicScores": {
-        "生活": 0.98
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.facebook.com/reel/2147069622688800/"
-    },
-    {
-      "agendaRelevance": 0.95,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "b629f760422d85bc2e81ead92fb143c6e8780d1cafa16f63e15190502895fe87",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1579719516935914",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/8d05cff1782daa4d04c0.webp",
-      "keywords": [
-        "交通",
-        "公車",
-        "道路",
-        "托育",
-        "敬老",
-        "照顧",
-        "產業"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-23T07:32:19.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動替候選人助選，並提出托育、敬老卡、交通建設及產業發展主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "今天早上再次來到龍潭，和鄉親朋友一起為 張贊聞 挺贊的議員候選人加油！我和贊聞同為在地客家子弟，一樣身為孩子的爸爸，一樣關心這片土地，也希望把家鄉跟家人照顧得更好。\n\n所以我已經提出，要增加托育資源，要把敬老愛心卡提高到每月1200點並擴大使用。未來進入市府，在地鄉親關心的龍潭市區舊公所、舊鄉代會的土地，也要重新規劃活化。讓每個世代都能在桃園宜居宜業。\n\n世杰過去擔任立委期間，就關心爭取新梅龍快速道路、板龍快速道路、高原交流道、台66線全線高架化等交通建設。\n\n因為我知道，龍潭進步的腳步不能停下，台積電進駐龍科三期、桃竹苗大矽谷、公車路網與生活機能，都要做得更快更好。人潮進來龍潭後，我們要串聯客庄文化、茶產業、石門水庫等特色，讓觀光發展一起升級！\n\n感謝張火爐主委、衛福部呂建德次長、龍星里張金財里長，以及到場相挺的每一位市民。\n\n龍潭的發展非常關鍵！未來世杰在市府、贊聞在議會，我們一起加快龍潭發展的速度，讓心龍潭 動起來💖",
-      "topicScores": {
-        "交通": 0.96,
-        "社福": 0.94,
-        "競選": 0.98,
-        "經濟": 0.83
-      },
-      "topics": [
-        "競選",
-        "交通",
-        "社福",
-        "經濟"
-      ],
-      "url": "https://www.facebook.com/SCHuangLawyer/posts/pfbid0gNCu7f9DwcDf4UKit1mdLNH8dYfo2hYJi4pYqPuBNGV8Y3FTbM724ZtxKnCVAaWul"
-    },
-    {
-      "agendaRelevance": 0.17,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "e1c434028a522e741ade9b696aa6fb8206e5464f6ef6f13eb6770974fb8e4ace",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcX8ofFCQsE",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/3fa9bbc3dc5385986e21.webp",
-      "keywords": [
-        "淹水",
-        "強降雨"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-23T07:30:05+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動通報永芳里嚴重積淹水及長期排水問題，重點仍是即時示警。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:下午來到大寮區永芳里，農田的水已經漫至道路，現場狀況非常嚴重。\n\n地方鄉親也反映，永芳里鄰近的農路及周邊排水問題並非第一次發生，每逢強降雨就容易淹水。\n\n提醒大家，該路段嚴重積淹水，切勿駕駛汽機車通行，務必注意安全！",
-      "topicScores": {
-        "防災": 0.99
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.threads.com/t/DcX8ofFCQsE"
     }
   ],
   "version": 1

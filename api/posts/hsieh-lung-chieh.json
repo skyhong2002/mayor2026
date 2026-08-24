@@ -19,8 +19,84 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 326,
+  "count": 328,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "cd45941934bad7419ad763775aba31c88814850ca5a55376c251bd68a7346a7e",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-24T16:01:22+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://inewslong.com/2026/08/24/4122/",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "豪雨",
+        "淹水",
+        "災情"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-24T20:25:18+08:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "回應他方觀點",
+        "reason": "針對青鳥及民進黨被概括轉述為稱讚淹水乾淨、為執政辯護的說法，文章以蘇一峰的批評加以反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-web-media",
+      "text": "南部慘淹「水好乾淨」？ 蘇一峰：青鳥讓民進黨不認錯 〈 南部慘淹「水好乾淨」？ 蘇一峰：青鳥讓民進黨不認錯 〉本文來自於《 龍傳媒新聞 iNews Long 》。 南部地區連日豪雨，淹水災情頻傳。胸腔科醫師蘇一峰今天接受專訪無奈表示，大家關注的是為什麼南部一直淹水，但青鳥卻說「這水好乾淨啊」、「我們民進黨好棒啊」...",
+      "topicScores": {
+        "競選": 0.8,
+        "防災": 0.93
+      },
+      "topics": [
+        "防災",
+        "競選"
+      ],
+      "url": "https://inewslong.com/2026/08/24/4122/"
+    },
+    {
+      "agendaRelevance": 0.67,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-24T16:00:57+00:00",
+        "inputHash": "a6946803053801b0b0bf8036c3661d581ba43b45e773cfad8d37d273707d5407",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dca0z69Evin",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/d9deb5177e7e761cbe39.webp",
+      "keywords": [
+        "垃圾"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-24T10:15:28+00:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "針對非法廢棄物堆置與市府稽查責任提出追查要求，屬環境監督主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:兩天前，龍介就說過，安南區這場大爆炸，絕對不能只當成一場普通爆炸案處理。現在案情愈查愈深，愈來愈多疑點浮上檯面。\n\n檢方查出，民進黨籍的理想里里長鄭順，涉嫌與楊姓仲介、龔姓男子共同非法堆置廢棄物，三人今天都遭法院裁定羈押禁見。\n\n司法最後怎麼查、怎麼判，我們尊重；但背後到底還有多少人、多少利益關係，一定要繼續查到底。\n\n更奇怪的是，地主說土地十多年來借給里長作為停車場，地主、里長卻都說「不認識」所謂的仲介；另一頭，檢警卻正在追查仲介、租金與相關金流。\n\n龍介就要問：這塊地到底是誰同意拿來堆廢棄物？誰牽線？誰收錢？錢最後流到哪裡？\n\n含鎂、鋁等危險廢棄物，不是三兩包垃圾，而是一車一車運進住宅區旁邊。附近建案人員甚至曾看到外車進場傾倒、拍下車牌。這麼大的動靜，地方和市府的稽查系統，難道一路都沒人發現、沒人管？\n\n現在既然連鄭姓里長、業者、仲介都被捲入調查，就不能只抓幾個人交差。廢棄物來源、清運管道、土地關係、背後金流，有沒有形成一整條非法利益鏈，都要查清楚。\n\n司法查刑責，市府就要查行政責任。龍介還是那句話：火可以把垃圾燒掉，不能把責任跟金流一起燒掉。",
+      "topicScores": {
+        "環境": 0.98,
+        "議會監督": 0.91
+      },
+      "topics": [
+        "環境",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/Dca0z69Evin"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "hsieh-lung-chieh",
