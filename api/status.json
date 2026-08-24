@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-25 00:01:23"
+        "最近一次執行心跳：2026-08-25 06:04:13"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3224",
+        "已收錄貼文：3248",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：13 ms"
+        "耗時：41 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-25 00:00:37",
+        "最新抓取時間：2026-08-25 06:02:56",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-08-24 18:01:15",
         "本月已花費：$3.35 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 26.4h, next at 2026-08-25T12:25:02+00:00; ~$3.35 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 25.5h, next at 2026-08-25T11:30:36+00:00; ~$3.35 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -61,10 +61,10 @@
         "已收錄影片：488"
       ],
       "id": "youtube",
-      "label": "部分異常",
+      "label": "正常",
       "name": "YouTube yt-dlp",
-      "status": "degraded",
-      "summary": "10 個 YouTube 來源；過去 24 小時 5 個錯誤。"
+      "status": "ok",
+      "summary": "10 個 YouTube 來源；過去 24 小時 0 個錯誤。"
     },
     {
       "details": [
@@ -88,27 +88,27 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-25T00:01:23+08:00",
+  "generatedAt": "2026-08-25T06:04:14+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 5,
+    "currentErrors": 0,
     "latestPostAt": "2026-08-24T20:25:18+08:00",
     "postsByPlatform": {
       "facebook": 1005,
-      "instagram": 878,
+      "instagram": 902,
       "podcast": 4,
       "threads": 801,
       "website": 44,
       "x": 4,
       "youtube": 488
     },
-    "totalPosts": 3224,
+    "totalPosts": 3248,
     "watchAccounts": 67
   },
   "overall": {
-    "label": "部分異常",
-    "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。"
+    "label": "正常",
+    "status": "ok",
+    "summary": "核心資料抓取與公開 API 正常。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
     {
@@ -293,10 +293,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 5,
+        "currentErrors": 0,
         "platform": "youtube",
         "sources": 10,
-        "status": "degraded"
+        "status": "ok"
       }
     ],
     "platforms": {
