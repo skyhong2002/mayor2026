@@ -2,6 +2,177 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.2,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "0701ace83c3ba519df969fe4f0e3ee02e4cd6425fe7a24e65ac2ea9142bcbd04",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T04:01:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcclIbGCaxF",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "產業",
+        "選舉"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-25T02:36:56+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "指向張善政及其幼擴二期政策，反駁其施政與選舉政績說法並提出批評。",
+        "type": "responsive"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:張善政躺平四年才急著抱佛腳？不要拿「幼擴二期」來掩飾產業政策的無能！\n\n三年多前，張善政把台積電趕出桃園。最近眼看選舉到了火燒屁股，急著拋出幼擴二期要開放給台積電供應鏈進駐，充當政績。\n\n幼擴二是早在文燦當市長、世杰的立委任內就積極推動的計畫。文燦市長卸任前完備程序，送內政部都委會審查。\n\n結果張善政上任三年半以來，專案小組會議只開兩次，都市計畫審議一動不動。現在才想起被自己冷凍四年的幼擴二，拿來當作挽救形象的遮羞布。\n\n這就是張善政的施政風格，讓桃園錯過台積電這麼久、把幼擴二期持續冰著。\n\n張善政如果不懂問題在哪，歡迎來問我，我會好好告訴你該怎麼做。\n\n如果做不到，那就讓黃世杰來做！",
+      "topicScores": {
+        "競選": 0.91,
+        "經濟": 0.93
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcclIbGCaxF"
+    },
+    {
+      "agendaRelevance": 0.91,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "92d10f32cf4ae4efee9c9cb5634c51cc5a3e2351f25a42688a3eb130856c3501",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dcck_fjGZcr",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c1a98a4613a676cb69e2.webp",
+      "keywords": [
+        "醫療"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-25T02:35:42+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出塗氟、假牙補助與居家醫療等口腔健康政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:巧慧照顧市民口腔健康！政見一次看🦷\n\n從小朋友的塗氟防蛀、長輩的假牙補助，到深入社區的居家醫療，未來我會攜手專業團隊，完善醫療資源，守護全體市民的口腔健康！",
+      "topicScores": {
+        "醫療": 0.98
+      },
+      "topics": [
+        "醫療"
+      ],
+      "url": "https://www.threads.com/t/Dcck_fjGZcr"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "34f5c9e06f470194d777ea872e5c6b4fcbf6c3bdb7b4ba7a11dd2d8fef3bf22e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DccjlPgFLzQ",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/baf2b29c125ad872c678.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-25T02:23:23+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動公布政治獻金捐款方案與支持者回饋，屬競選動員而非具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:「洋流好物」大公開！\n今天中午12點正式上線！\n每個方案各有亮點，但心意同樣珍貴！\n⠀\n❑ 捐款方案\n𝙉𝙏 $888〖台北順起來〗\n𝙉𝙏 $1,234〖123，順起來〗\n𝙉𝙏 $2,026〖你的市長〗\n𝙉𝙏 $3,939〖應援台北〗\n𝙉𝙏 $6,666〖台北 Future Soon〗\n𝙉𝙏 $10,000〖TAIPEI HEART〗\n𝙉𝙏 $66,666〖台北順順順〗\n𝙉𝙏 $100,000〖鐵粉撲力挺〗\n⠀\n❑ 捐款方式\n𝙎𝙩𝙚𝙥 𝟭：進入捐款頁面，並確認您已登入帳號\n𝙎𝙩𝙚𝙥 𝟮：選擇方案\n𝙎𝙩𝙚𝙥 𝟯：選擇規格（如有），並點選「加入購物車」\n𝙎𝙩𝙚𝙥 𝟰：點選右上角購物車，確認無誤後點選「前往結帳」\n𝙎𝙩𝙚𝙥 𝟱：完成資料填寫，並點選「前往付款」\n＊依政治獻金法規定，請務必填寫真實資訊＊\n𝙎𝙩𝙚𝙥 𝟲：進行線上捐款，並確認頁面最後顯示「訂單已建立」即表示完成！\n⠀\n❑ 已捐款者\n請於近期留意您的電子信箱，我們將以「donate@pumashen.org」通知您回饋品寄送方案。\n如有收到其他非此信箱寄出的類似信件，請勿理會。",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DccjlPgFLzQ"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "5b8b62530e25d4b8bdd6da3d10ec75cc9b79b02bb254c4515893cafb3516f537",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:CwpvNq3v44A",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/a44fb306f2a21dc518b2.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-25T01:21:46+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "內容是競選商品與發言人發布記者會，屬競選活動資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "2026 Ocean Current Merchandise and Shen Po-yang Campaign Spokesperson Announcement Press Conference",
+      "topicScores": {
+        "競選": 0.96
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=CwpvNq3v44A"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "5a21a461eca69f7627c42ed81089afeef6703dd79c81e08cb58cc2baee4ee6ed",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DccTZXLEvOw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5e6ed25199e21a5eae5d.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-25T00:04:35+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "因豪雨主動走訪掌握水情與市民安全，屬災害應變紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:連日豪大雨影響高雄，這幾天不停走訪各地，了解各地狀況、聽取鄉親反映，掌握各地水情，把市民安全放在第一位。",
+      "topicScores": {
+        "防災": 0.98
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DccTZXLEvOw"
+    },
+    {
       "agendaRelevance": 0.08,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
@@ -3255,6 +3426,45 @@
       "agendaRelevance": 0.9,
       "candidateId": "ho-hsin-chun",
       "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "106a5f9cf22cee44425f7e726b7b4d28b1fa9ba92acd1611e3eb3166b471d0e3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://a-chun.tw/news/coastal-area-development",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "鐵路",
+        "運動"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-23T16:00:31+08:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動提出海線運動館與鐵路雙軌高架建設，屬具體地方發展政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-web",
+      "text": "何欣純推海線翻新 大甲運動館、鐵路雙軌高架齊進 台中市長候選人、立法委員何欣純把握週末時 […] 〈 何欣純推海線翻新 大甲運動館、鐵路雙軌高架齊進 〉這篇文章最早發佈於《 何欣純官方網站｜2026 台中市長候選人 》。",
+      "topicScores": {
+        "交通": 0.95,
+        "競選": 0.78,
+        "體育": 0.94
+      },
+      "topics": [
+        "交通",
+        "體育",
+        "競選"
+      ],
+      "url": "https://a-chun.tw/news/coastal-area-development"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
         "classifiedAt": "2026-08-24T10:02:23+00:00",
         "inputHash": "1ab57d7caa8dee70642b09e26cb51d82e92c948dce240bdc57406302dbe0fd3b",
         "method": "ai",
@@ -3424,215 +3634,6 @@
         "防災"
       ],
       "url": "https://www.threads.com/t/DcYvIHXCVFl"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-23T10:55:23+00:00",
-        "inputHash": "2a570b1cd5cf2e0aadc5b477a1d799f111a636d51d8e3919a2a917cb016afe72",
-        "method": "ai",
-        "model": "gpt-5.6-sol",
-        "rubricVersion": "content-v5"
-      },
-      "id": "website:https://inewslong.com/2026/08/23/4118/",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "website",
-      "postedAt": "2026-08-23T14:41:30+08:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "轉述中油因應國際油價而維持一週油價不調整，屬價格公告而非發文者政策議程。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-web-media",
-      "text": "國際油價上漲！持續專案平穩 中油公布8/24-8/30汽、柴油價格維持不調整 〈 國際油價上漲！持續專案平穩 中油公布8/24-8/30汽、柴油價格維持不調整 〉本文來自於《 龍傳媒新聞 iNews Long 》。 台灣中油公司（8／22）日宣布，自下週一(24日)凌晨零時起至8月30日晚上12時止，汽、柴油價格維持...",
-      "topicScores": {
-        "生活": 0.66,
-        "經濟": 0.96
-      },
-      "topics": [
-        "經濟",
-        "生活"
-      ],
-      "url": "https://inewslong.com/2026/08/23/4118/"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-23T16:20:10+00:00",
-        "inputHash": "8d40445871c71dad4d0320e701f656d9014277d785668b87acf7e68996b83d69",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcYtrmWmQUM",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/a697c1049654badfac62.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-23T14:34:40+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "感謝醫界支持並提出持續擴大市民口腔健康照顧的競選主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:牙醫界挺巧慧！非常感謝 @taipeishihchung 陳時中政委、@wen_shih_cheng 温世政南投縣長候選人，還有數百位牙醫、牙技、牙材產業好朋友站出來支持我！\n\n這麼多年來，我們一起在立法院支持醫界，守護國人健康。未來，我也要繼續和大家並肩努力，擴大照顧市民的口腔健康❤️",
-      "topicScores": {
-        "競選": 0.98,
-        "醫療": 0.9
-      },
-      "topics": [
-        "競選",
-        "醫療"
-      ],
-      "url": "https://www.threads.com/t/DcYtrmWmQUM"
-    },
-    {
-      "agendaRelevance": 0.3,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-23T16:20:10+00:00",
-        "inputHash": "3ddf057aca662bb0fc24f858988840e5c3ee812475ecdcbc28d51893846ccc10",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcYtoQiCfiq",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/e2352fc8d71953c3147c.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-23T14:34:13+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "記錄走訪市民並提出志工、文宣與捐款等競選動員邀請。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:週末，世杰跑了11個區，和許多市民面對面互動，每一次見面、每一句交流，我都很珍惜。因為我相信，市民真正的需要，就在大家最真實的生活裡。\n\n想讓更多朋友了解我的理念與政見，沒有捷徑，就是多跑一點、多聊一點、多聽一點。為了桃園，拚就對了！\n\n最近不少鄉親提醒我，「世杰，你的理念很好，但曝光度還要再衝一下，讓更多人看見！」\n\n大家的期待我都聽到了！改變需要凝聚更多力量，世杰誠摯邀請您一起同行，無論是加入志工、提供看板文宣點位，或用小額捐款支持，都是最重要的力量，詳細資訊放置留言區。請大家成為世杰的小蜜蜂，一起把改變的希望，傳遞到桃園的每一個角落。\n\n下一站，期待在你的生活圈相見，讓我們一起把家變得更好❤️",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DcYtoQiCfiq"
-    },
-    {
-      "agendaRelevance": 0.95,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-24T10:02:23+00:00",
-        "inputHash": "ae337f807c33dbf49e6b9c70a84198a645bce22234cf284e1e6af38aecf32de3",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1631983238283506",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/a93e736b516a5b49a282.webp",
-      "keywords": [
-        "醫療",
-        "長輩",
-        "補助",
-        "照顧"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-23T14:30:25.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出長者牙助、兒童塗氟、部分負擔及居家牙醫等具體醫療政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "牙醫界挺巧慧！非常感謝 陳時中 政委、温世政 Wen Shih-cheng 南投縣長候選人，還有數百位牙醫、牙技、牙材產業好朋友站出來支持我！\n\n這麼多年來，我們一起在立法院支持醫界，守護國人健康。未來，我也要繼續和大家並肩努力，擴大照顧市民的口腔健康。\n\n✅ 加強長者牙口與生活照顧\n\n在陳時中政委、阿中部長的建議下，我宣布除了原有政見「長輩假牙補助最高5萬元」，針對中低收入戶及低收入戶長者，要分別加碼提供 #最高8萬元 與 #最高12萬元 補助，讓新北的每一位長輩都活得健康有尊嚴。\n\n✅ 落實兒童口腔預防醫學\n\n我會將現行0至6歲每半年一次的 #免費塗氟延伸至12歲，從源頭減少小朋友蛀牙的機會，也會推動 #0至6歲門診和住院免部分負擔，減輕家庭壓力。\n\n✅ 投入資源補缺口、挺專業\n\n為了落實醫療平權、照顧行動不便者，市府會提供獎勵，擴大到宅與到機構的「#居家牙醫服務」，並配合牙技師推動「假牙身分證」，嚴格稽查無照牙技師與非法牙材，支持、保障專業，也守護民眾健康。\n\n倒數97天，做伙拚、做伙贏！一起照顧更多市民朋友！",
-      "topicScores": {
-        "社福": 0.9,
-        "競選": 0.82,
-        "醫療": 0.99
-      },
-      "topics": [
-        "醫療",
-        "社福",
-        "競選"
-      ],
-      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid0aysBAVszV26Xb1REqfWffHZ5P5J3kWoQ6spTvYimAaL9bGzeanWq2riJ5sXQxupwl"
-    },
-    {
-      "agendaRelevance": 0.68,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-08-23T16:20:10+00:00",
-        "inputHash": "aced1019bb4010730a83994bd94ee1ddddc482cf214d630a48ff765626a340a7",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcYsggzjjNy",
-      "imageAspect": 0.5614,
-      "imageUrl": "assets/feed-images/5b500981ebf0f82c4529.webp",
-      "keywords": [
-        "淹水"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-23T14:25:35+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "針對大寮淹水主動要求水利與農田水路檢討並提出解決方案。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:大寮永芳里淹成一片汪洋，我將向中央農田水利署反映問題，也請大寮的議員團隊向高雄市水利局了解情況。\n\n針對農田、農路，以及周邊水路系統找出問題、提出解決方案，讓淹水不再成為大寮人的日常。",
-      "topicScores": {
-        "議會監督": 0.72,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "議會監督"
-      ],
-      "url": "https://www.threads.com/t/DcYsggzjjNy"
-    },
-    {
-      "agendaRelevance": 0.45,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-24T04:03:15+00:00",
-        "inputHash": "b210b80f4b15d692cecce4e0e221bc5712b7ccad158b21b50d0106d449ea5b38",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcYslHpE71d/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/aff5172b32a28d693e23.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-23T14:25:07+00:00",
-      "postingIntent": {
-        "confidence": 0.93,
-        "label": "主動發文",
-        "reason": "記錄拜訪市民並號召志工、文宣點位及小額捐款支持競選。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "週末，世杰跑了11個區，和許多市民面對面互動，每一次見面、每一句交流，我都很珍惜。因為我相信，市民真正的需要，就在大家最真實的生活裡。\n\n想讓更多朋友了解我的理念與政見，沒有捷徑，就是多跑一點、多聊一點、多聽一點。為了桃園，拚就對了！\n\n最近不少鄉親提醒我，「世杰，你的理念很好，但曝光度還要再衝一下，讓更多人看見！」\n\n大家的期待我都聽到了！改變需要凝聚更多力量，世杰誠摯邀請您一起同行，無論是加入志工、提供看板文宣點位，或用小額捐款支持，都是最重要的力量，詳細資訊放置留言區。請大家成為世杰的小蜜蜂，一起把改變的希望，傳遞到桃園的每一個角落。\n\n下一站，期待在你的生活圈相見，讓我們一起把家變得更好❤️",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/DcYslHpE71d/"
     }
   ],
   "version": 1

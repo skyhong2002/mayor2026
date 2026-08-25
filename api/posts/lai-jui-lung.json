@@ -19,8 +19,42 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 316,
+  "count": 317,
   "posts": [
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-25T04:01:06+00:00",
+        "inputHash": "5a21a461eca69f7627c42ed81089afeef6703dd79c81e08cb58cc2baee4ee6ed",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DccTZXLEvOw",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/5e6ed25199e21a5eae5d.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-25T00:04:35+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "因豪雨主動走訪掌握水情與市民安全，屬災害應變紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:連日豪大雨影響高雄，這幾天不停走訪各地，了解各地狀況、聽取鄉親反映，掌握各地水情，把市民安全放在第一位。",
+      "topicScores": {
+        "防災": 0.98
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DccTZXLEvOw"
+    },
     {
       "agendaRelevance": 0.35,
       "candidateId": "lai-jui-lung",
