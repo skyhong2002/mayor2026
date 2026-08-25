@@ -19,8 +19,42 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 322,
+  "count": 323,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-25T16:06:14+00:00",
+        "inputHash": "45ea61364ed6644f51b19c591119ce7fc64894cbe1bc22ae885bacd7f405b222",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:wqyCGc6AIEo",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8a8b4e01cdf724232fd0.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-25T12:03:26+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "紀錄前往災區關懷居民與了解災後復原情形。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "大雨滂沱，我依舊心繫鄉親。今天下午我趕往阿蓮區玉庫里，關心受災居民的災後復原狀況。",
+      "topicScores": {
+        "防災": 0.98
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/wqyCGc6AIEo"
+    },
     {
       "agendaRelevance": 0.04,
       "candidateId": "ko-chih-en",

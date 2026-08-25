@@ -19,8 +19,49 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 333,
+  "count": 334,
   "posts": [
+    {
+      "agendaRelevance": 0.45,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T16:06:14+00:00",
+        "inputHash": "fa1e3555a294bfcb25492b296872f79ab421849d719e39e26f7a94a41f4c9d4e",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T16:06:54+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:HE3jwGOjGzk",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/fa59fc5beb2af01e5a62.webp",
+      "keywords": [
+        "淹水",
+        "預算"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-25T13:16:54+00:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "回應他方觀點",
+        "reason": "提及回覆網友陳情，並針對卓榮泰及藍白的預算說法、勘災能力提出質疑與反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "20260825 台南大淹水「三天淹四次」..水溝到底有沒有清？勘災也扯預算...藍白砍預算卓榮泰沒辦法南下勘災？回覆網友陳情：南科裡限速不合理...  @longmedia  ｜龍介的直播",
+      "topicScores": {
+        "交通": 0.79,
+        "議會監督": 0.87,
+        "防災": 0.95
+      },
+      "topics": [
+        "防災",
+        "議會監督",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/watch?v=HE3jwGOjGzk"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "hsieh-lung-chieh",
@@ -11651,8 +11692,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:X6n-8qxFvP8",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/c588a23aaa0b969f28ba.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "預算"
       ],
