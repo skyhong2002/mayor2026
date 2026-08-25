@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/798142aa7c21d5e3593b.webp",
+    "avatarUrl": "assets/source-avatars/dc88c9c6fba845781b4b.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,79 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 224,
+  "count": 226,
   "posts": [
+    {
+      "agendaRelevance": 0.43,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "841abcc9b5533cbfd00d6d38ab9cea8bb06c2054dc996c60abe802cb8c601e9c",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1620816566322264",
+      "imageAspect": 0.5615,
+      "imageUrl": "assets/feed-images/e360cf6aeddfe469da73.webp",
+      "keywords": [
+        "預算",
+        "立法院"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-25T09:08:14.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "回應他方觀點",
+        "reason": "針對中央增加統籌款卻刪減補助、民進黨宣稱爭取預算的說法提出反駁與要求說明。",
+        "type": "responsive"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "中央不應該玩兩面手法，新北人要一個合理的說法\n\n財政部公布明年度統籌分配稅款。看起來新北多拿了 106 億，是六都增加金額最多的——加完之後，人均 2.66 萬，六都最後一名。\n\n中央我待過，地方我也待過。這種帳我看得懂：統籌分配款加上去，一般補助跟計畫型補助再刪回來。\n\n就講學校電費。338 所學校、將近 40 萬個孩子，中央不編了， 侯友宜 市長自己編、自己扛。\n\n中央表面上加了，民進黨說幫新北人爭取了預算，但市民冷暖自知。\n\n新北 約404 萬人，全國最多；人均 2.66 萬，六都最少。這個名次，新北自己改不了，改得了的人在立法院。\n\n不分藍綠的新北人，都該說一句公道話。\n\n這不需要政治口水。我只要一件事——改得了的人，要為新北開口。\n\n該爭的，我來爭。",
+      "topicScores": {
+        "議會監督": 0.91
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/reel/1381364880752991/"
+    },
+    {
+      "agendaRelevance": 0.34,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "02074d821ea9d6f94c45026de6b701d45bafae997e47ea03f14ce05e65c6c4ed",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1620502076353713",
+      "imageAspect": 0.5621,
+      "imageUrl": "assets/feed-images/72d22f67979b93cbecfb.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-24T23:30:44.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享學習台菜手藝，並表達保存新北辦桌文化的主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "我今天是來跟我們新北名廚王永宗學做豬腳的，結果師傅拿出壓箱寶。\n說實在，雖然大家叫我川伯，但沒想到看到一只比我還老的盤子。\n東西能留這麼久，是因為做的人不馬虎，留的人捨不得丟。\n手藝也一樣。台菜的辦桌文化，我想幫新北留著。",
+      "topicScores": {
+        "文化觀光": 0.86
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/1345706544215511/"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "lee-shih-chuan",

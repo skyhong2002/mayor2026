@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/e010eefb61e3cff88552.webp",
+    "avatarUrl": "assets/source-avatars/b53e8212ed852541d59e.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,114 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 329,
+  "count": 333,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "625ec362b1ebb95479354005be066c6df9fc03fbec46b5c43bd51c2131aac345",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:pPqLpL2EjWg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d0546ce52bf7aa4057bc.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-25T04:41:58+00:00",
+      "postingIntent": {
+        "confidence": 0.84,
+        "label": "主動發文",
+        "reason": "僅陳述卓榮泰關於預算刪減與無法南下的說法，未見答覆或反駁目的。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Premier Cho Jung-tai claims that the \"budget cuts\" prevented him from traveling south to assess t...",
+      "topicScores": {
+        "議會監督": 0.72
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/pPqLpL2EjWg"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "9c60f05f302d91e14b134c1cc6fe8c87c92a4bad0a296b165a2828f34d5482ba",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1639755574172691",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/0b81319c186fd1ed8ed5.webp",
+      "keywords": [
+        "預算"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-25T04:40:49.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "針對卓榮泰稱預算遭刪而無法南下勘災的說法，要求其道歉。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "卓榮泰院長稱「被刪預算」無法南下勘災…應公開向全國人民道歉",
+      "topicScores": {
+        "議會監督": 0.87
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/reel/1039354962055745/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "be0584bef16fb21f04391fed2ca06f4e816ade374ad06cc2af7dd68aad907866",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcczCHlkQXc",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/5f450d7051d56ee66de2.webp",
+      "keywords": [
+        "預算"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-25T04:38:26+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "針對卓榮泰稱預算遭刪而無法南下勘災的說法，要求其道歉。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:卓榮泰院長稱「被刪預算」無法南下勘災…應公開向全國人民道歉",
+      "topicScores": {
+        "議會監督": 0.86
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DcczCHlkQXc"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "hsieh-lung-chieh",
@@ -134,6 +240,44 @@
         "治安"
       ],
       "url": "https://www.instagram.com/p/Dca0xxVya4k/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "97229188ba9801bce275955c8207cd3d929da747791fd536fc4d05a534b34561",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1639076257573956",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/28c9d5422d89b7d1fe67.webp",
+      "keywords": [
+        "垃圾"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-24T10:14:33.000Z",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "追問非法堆置危險廢棄物的責任、金流與地方稽查失靈問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "兩天前，龍介就說過，安南區這場大爆炸，絕對不能只當成一場普通爆炸案處理。現在案情愈查愈深，愈來愈多疑點浮上檯面。\n\n檢方查出，民進黨籍的理想里里長鄭順，涉嫌與楊姓仲介、龔姓男子共同非法堆置廢棄物，三人今天都遭法院裁定羈押禁見。\n\n司法最後怎麼查、怎麼判，我們尊重；但背後到底還有多少人、多少利益關係，一定要繼續查到底。\n\n更奇怪的是，地主說土地十多年來借給里長作為停車場，地主、里長卻都說「不認識」所謂的仲介；另一頭，檢警卻正在追查仲介、租金與相關金流。\n\n龍介就要問：這塊地到底是誰同意拿來堆廢棄物？誰牽線？誰收錢？錢最後流到哪裡？\n\n含鎂、鋁等危險廢棄物，不是三兩包垃圾，而是一車一車運進住宅區旁邊。附近建案人員甚至曾看到外車進場傾倒、拍下車牌。這麼大的動靜，地方和市府的稽查系統，難道一路都沒人發現、沒人管？\n\n現在既然連鄭姓里長、業者、仲介都被捲入調查，就不能只抓幾個人交差。廢棄物來源、清運管道、土地關係、背後金流，有沒有形成一整條非法利益鏈，都要查清楚。\n\n司法查刑責，市府就要查行政責任。龍介還是那句話：火可以把垃圾燒掉，不能把責任跟金流一起燒掉。",
+      "topicScores": {
+        "治安": 0.9,
+        "環境": 0.95,
+        "議會監督": 0.89
+      },
+      "topics": [
+        "環境",
+        "治安",
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid0gY9Qh3P7nCDC2fqtXJGFsYrXjD95CLxS3MKXnr2kYhvQNaRruULbpEiwcpw5exnal"
     },
     {
       "agendaRelevance": 0.2,

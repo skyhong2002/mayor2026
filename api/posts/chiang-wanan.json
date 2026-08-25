@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/460b04f7534c7d59000f.webp",
+    "avatarUrl": "assets/source-avatars/adeb4da8f8d2e4b73492.webp",
     "city": "taipei",
     "cityLabel": "臺北市",
     "id": "chiang-wanan",
@@ -19,8 +19,40 @@
     "name": "蔣萬安",
     "party": "國民黨"
   },
-  "count": 82,
+  "count": 83,
   "posts": [
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "59157c8e87e8f08ff58de091698e2baf58e4c98f44971d0945e5e62685aa373b",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1617601133063171",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-24T14:17:00.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告指南宮火警救援、空品監測及市府應變情形。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "指南宮是地方重要的信仰中心，承載許多市民朋友共同的信仰與記憶。\n\n今晚得知指南宮凌霄寶殿發生火警，我十分關心現場狀況。\n\n消防局第一時間出動指揮車7輛、消防車22輛、救護車2輛，共85名人員趕赴現場，目前確認無人受困。市府正全力投入搶救，並視現場火勢及救災需求，持續調派人力與相關救災資源，全力控制火勢。\n\n另一方面，環保局透過模式模擬預測煙霧飄散方向及範圍，影響區域為台北市文山區。目前木柵測站空氣品質仍維持良好等級，臺北市環保局將持續進行空品監控；針對煙霧可能影響新北新店、中和區，市府已同步通知新北市政府EOC。\n\n市府將持續掌握現場最新情形，現階段以人員安全及控制火勢為最優先，也請第一線消防同仁務必注意自身安全。",
+      "topicScores": {
+        "防災": 0.96
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0gqjBtSFjQaKCXGh7f6ywdKarFicEwKJ1pnMDfXSnFsp5BdAS3SEKsgGd81DMYuY3l"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "chiang-wanan",

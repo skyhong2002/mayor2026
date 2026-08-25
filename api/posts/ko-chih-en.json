@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/ce31f4c743c25e4eab35.webp",
+    "avatarUrl": "assets/source-avatars/e722da157a2b731c7994.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "ko-chih-en",
@@ -19,8 +19,119 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 319,
+  "count": 322,
   "posts": [
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "8327b02721936036668e944fd4f170e7a6cc70cd24b10abdaeca548f5121f291",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1623651022448611",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/870358cd8cb231463fa2.webp",
+      "keywords": [
+        "大雨"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-25T08:08:38.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "簡短記錄前往災區關心受災居民，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "大雨滂沱，我依舊心繫鄉親。今天下午我趕往阿蓮區玉庫里，關心受災居民的災後復原狀況。",
+      "topicScores": {
+        "防災": 0.91
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.facebook.com/reel/1588309746031109/"
+    },
+    {
+      "agendaRelevance": 0.46,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "6b6f1eeb2def24aba73e554cfdcfbf6311d426fd28937f871af07606fe0dbc83",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1623497049130675",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/caf98c1083fcbf35341e.webp",
+      "keywords": [
+        "豪雨",
+        "災害",
+        "防災",
+        "災情",
+        "產業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-25T03:28:11.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告爭取農漁業災害救助與低利貸款，協助受災產業復原。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "挺過風雨，我們與農民同在！高雄市農業全品項現金救助開放申請\n\n這幾天連日的狂風暴雨，看著各地積水的農地與暴漲的溪流，實在讓人十分揪心。許多即將收成的瓜果蔬菜長時間泡水，爛根腐壞，也有部分養殖魚塭因為豪雨溢堤、水質驟變，讓農漁民們好幾個月的心血瞬間付諸東流。面對極端氣候的無情，大家看天吃飯的無奈與焦急，我們都深切地感同身受。\n\n為了盡可能減輕鄉親們的損失與負擔，我們第一時間便全力向農業部爭取「農漁產天災全品項救助」與「低利貸款」。期盼中央能給予地方最大的支持，陪伴受災市民度過眼前的難關。\n\n很高興馬上就傳來了好消息！農業部已正式公告，高雄市全區列入本次天然災害現金救助地區，「農產業全品項」均納入救助範圍。接下來，我也會與議員團隊持續緊盯各地災情復原進度，協助鄉親反映問題。感謝每一位在風雨中堅守崗位、守護高雄的防災夥伴，大家真的辛苦了！",
+      "topicScores": {
+        "經濟": 0.79,
+        "防災": 0.93
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0psjBkTMAbqDNGTLXgZDipGYc37gTZ2vP9apeQGMRtqtYQdBhLdaCetoRfGYo5CVLl"
+    },
+    {
+      "agendaRelevance": 0.57,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "f572d20ef8d096db5635d55310798f8636561856803eabe4a359e6f492821c6e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1623396005807446",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/e60836e59244d0777777.webp",
+      "keywords": [
+        "淹水",
+        "產業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-25T00:30:50.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "勘災後提出整體排水改善、災損補助及農漁業救助作法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "歷經數日狂風暴雨，高雄多處嚴重淹水，我們週一一早前往永安、梓官勘災。看見鄉親辛苦守護的家園泡在水裡，生活心血一夕之間受到衝擊，真的讓人既心疼又不捨。\n\n治水不能只在災後搶救，更不能讓鄉親一次次承受同樣的痛苦，必須從整體排水系統徹底檢討、積極改善；面對農漁產業遭受重創，我也已向農業部爭取到全品項天災救助及低利貸款，盡力減輕大家的負擔。\n\n接下來我們會持續協助災損補助、家園清理與災後復原，一步一步陪著鄉親整理家園、重建生活。這段路或許不容易，但大家不是孤單一個人，高雄加油！",
+      "topicScores": {
+        "經濟": 0.7,
+        "防災": 0.96
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/2073600446859525/"
+    },
     {
       "agendaRelevance": 0.62,
       "candidateId": "ko-chih-en",

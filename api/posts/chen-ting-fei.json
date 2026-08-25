@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/83ff0ddff061c512fc72.webp",
+    "avatarUrl": "assets/source-avatars/9f68ced9afcdef3b1e64.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "chen-ting-fei",
@@ -19,8 +19,45 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 207,
+  "count": 208,
   "posts": [
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-25T10:02:25+00:00",
+        "inputHash": "61b13b28a293d31217ab63f28c062fd3c555b67268d0ff4879042a8a1be4173e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1627977268690195",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1b77eade74f422b5fa1b.webp",
+      "keywords": [
+        "豪雨",
+        "災害"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-24T13:54:42.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動公告台南豪雨農業救助與貸款申請資訊，並呼籲受災農民辦理。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "妃妃報你知 🌧️ 台南市115年8月下旬豪雨農業災損公告了！\n\n這次台南市全區納入農業天然災害現金救助及低利貸款地區，受災的農民朋友請把握時間申請！\n\n📌 申請期間｜8/25～9/7\n📌 台南市全區皆可申請\n📌 例假日也可以受理申請\n\n農民朋友辛苦了！面對連日豪雨造成的農業損失，亭妃會持續為大家發聲、向中央爭取，讓受災農民獲得應有的協助。\n\n請大家告訴大家、相互提醒，符合資格的農民朋友記得把握申請期限！",
+      "topicScores": {
+        "經濟": 0.84,
+        "防災": 0.94
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid02q2nqcpTCPDo4nuy9JtKABiruRESBSXdv2Ai1poZg6rw8wN7SukFz5uATMa9HPZXKl"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "chen-ting-fei",
