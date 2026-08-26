@@ -36,6 +36,248 @@
       "url": "https://a-chun.tw/news/route-63-national-highway-3"
     },
     {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "195bb12cfa53688bd31365265ea40e35d0799a2948fc93e8d4b2408009a461b7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcgXzUolN0n",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/d891166e131dc7f54356.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-26T13:57:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳捐款支持特定政治人物並介紹競選回饋品，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:.ᐟ.ᐟ 捐款支持沈伯洋，台北進步有力量 .ᐟ.ᐟ \n⠀\n洋流好物實穿照來啦～\n⠀\n由兩位發言人詮釋本次帽子、衣服、提袋等捐款回饋品，\n大家可以來看看，找找自己喜歡的組合喔 .ᐟ",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcgXzUolN0n"
+    },
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "a20182f86591fd2090e9ccfd280451bc88a66b6c79e0d7e6131e96457219ebed",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcgV-RVieyz",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/84b5597b5f33a02a2bc7.webp",
+      "keywords": [
+        "淹水",
+        "大雨",
+        "治水"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-26T13:42:05+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "針對高雄淹水問題進行現勘並討論以科學方法改善治水策略。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:治水不能只討論錢花多少，而是要透過科學方法把錢花在刀口上！\n\n這幾天走訪高雄各地，看著鄉親疲於清理家園，我們必須面對最核心的問題：如何確保大家在下一場大雨過後，能最快恢復正常生活？\n\n今天特別邀請前內政部長李鴻源，前往梓官區典寶溪實地會勘，並與在地議員、里長及鄉親們一起，共同檢視典寶溪的淹水問題以及高雄治水的策略與方針。",
+      "topicScores": {
+        "環境": 0.76,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/DcgV-RVieyz"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "38dc72fea6a33fb1af2659a18bf2dbcfb8651c0630dd57ce05a458b9f13f0951",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:OYkpgPCTx2k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b08eeed93c50e9bc7764.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-26T13:35:33+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "主張以科學方法提升治水經費效益，屬防災政策立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Flood control isn't just about how much we spend, but using science to ensure every dollar counts!",
+      "topicScores": {
+        "防災": 0.96
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/OYkpgPCTx2k"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "dd7c99e5fcc34472e4aad0c78421ac2e2050a79e631211237a631f53b0d0eb54",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcgUBDMiWc3",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/61e348936ba9193ccb6d.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-26T13:24:34+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享參加中元水燈遶境活動，屬地方文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:來到桃園大廟，參加慶讚中元水燈排車遶境！\n等等有市民朋友會去放水燈嗎？",
+      "topicScores": {
+        "文化觀光": 0.94
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DcgUBDMiWc3"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "chiang-chi-chen",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "5838fd1aa3a9252ceea91a90a5446805f650198d07207f1541fad1fef89daed2",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "x:https://twitter.com/JohnnyChiang12/status/2092599022930591935",
+      "imageAspect": 1.4993,
+      "imageUrl": "assets/feed-images/273aa064b748650dcdce.webp",
+      "keywords": [],
+      "platform": "x",
+      "postedAt": "2026-08-26T13:04:20+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "公布國際議會交流會議成果與台灣相關決議，屬外交活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-cc-x",
+      "text": "The 54th APPU concludes with all 3 Taiwan resolutions adopted: supply chain resilience, food security &amp; marine governance! 🇹🇼🤝\n\nUnited across parties, we signed the Joint Communiqué. Congrats to Palau, next year’s host!\n\n#APPU #Taiwan #ParliamentaryDiplomacy",
+      "topicScores": {
+        "兩岸外交": 0.9
+      },
+      "topics": [
+        "兩岸外交"
+      ],
+      "url": "https://x.com/JohnnyChiang12/status/2092599022930591935"
+    },
+    {
+      "agendaRelevance": 0.97,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "3946d25684aad1587eeff1a22092404b280eb7d91326480d34e09be0bc7f3269",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dcf_q2iGR0u",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/30eef4f3081d7a2a16b5.webp",
+      "keywords": [
+        "教育",
+        "校園",
+        "幼兒園",
+        "營養午餐",
+        "高中"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-26T10:26:32+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出免費營養午餐、食農教育及校園食安設備等具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:開學前夕，我特別穿上無塵衣，走進汐止的食家安 團膳廚房，一一觀察從環境清潔、食材挑選、烹煮到供餐的過程，也和現場許多團膳業者交流，瞭解實務狀況與需求。\n\n今年年初，我就提出✨免費營養午餐的政見。未來我擔任市長，會持續精進校園供餐品質，並結合✨食農教育，讓孩子在吃飯的過程中，更認識新北這片土地。\n\n我也會推動✨3章1Q擴大實施，向上延伸到高中職、向下延伸到幼兒園，讓全新北的師生都吃得更在地、更安全！\n\n同時，感謝團膳業者照顧師生的健康，未來市府要✨照顧照顧者，透過補助食安設備升級、持續推動食安智慧監控系統，以最高標準守護新北孩子的飲食安全！",
+      "topicScores": {
+        "教育": 0.98,
+        "醫療": 0.72
+      },
+      "topics": [
+        "教育",
+        "醫療"
+      ],
+      "url": "https://www.threads.com/t/Dcf_q2iGR0u"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "126f075fae8d633b73a7156e016ae893f4e1b835275e720fde3c798cb0841b41",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dcf9YnjmnUt",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/e21ca4af8a5c26550d53.webp",
+      "keywords": [
+        "經濟"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-26T10:06:35+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹市場設施與採買功能，並號召市民參與活動，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:明天早上9:00，新永和市場動起來✨\n\n新永和市場從舊永和市場一路延續桃園人的採買日常，如今有室內空調、乾濕分離、共食區和停車空間，生鮮蔬果、肉品、水產到熟食一次都能買齊，獲得經濟部「四星優良市集」肯定🌟\n\n明早9:00一起到新永和市場杰伴同行！心桃園，動起來💖",
+      "topicScores": {
+        "競選": 0.7,
+        "經濟": 0.86
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Dcf9YnjmnUt"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
       "classification": {
@@ -3429,251 +3671,6 @@
         "經濟"
       ],
       "url": "https://www.facebook.com/zenolai2/posts/pfbid0pgNQW9DWD9kTN2F9yveQ7Ptr2HQKMG2AvjTVC3iMrEXucfJw1SDdVPmhrCbg1VZql"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "0af6874f2d4bae0264cb6d42836b16206f9349f9e29e6f6290dc73fde287b16b",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:122110525035329310",
-      "imageAspect": 1.5019,
-      "imageUrl": "assets/feed-images/bd8089caf234ee8c8160.webp",
-      "keywords": [
-        "競選",
-        "選戰"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-25T05:13:58.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "宣布競選團隊發言人，屬競選組織與動員內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-fb-campaign",
-      "text": "今天我們正式宣布，#蔡一愷、 #林昱彤 成為沈伯洋競選團隊發言人！\n⠀\n蔡一愷，從學生自治、公共倡議一路走到地方服務第一線；\n林昱彤，有民間組織與國會工作的經驗，長期關注教育、環境與兒少議題。\n⠀\n他們都深刻了解，市民的問題，不是講完就算了。\n而是要將市民們心聲，帶回團隊，帶進政策裡。\n⠀\n這場選戰，我們需要年輕、專業，而且真的做過事的人。\n⠀\n問 A 答 A 是基本，\n但我們要做到 A+++！\n⠀\n讓我們好好回答台北的問題，\n一起大力想像台北的未來！\n⠀\n#台北順起來\n#你的市長沈伯洋",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0ovgjP5KerzTkBTrRGx3XZVgECcubCnnDpzsypgNvTgRiVknTrsyk4XCd5YzzFXuXl"
-    },
-    {
-      "agendaRelevance": 0.78,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "1d0dc3049b411986328248a5cc7297e3e085ea96011aab1da1d15915816a7ecd",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/Dcc1IciGcCu",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/5d7df368e119478ffdf2.webp",
-      "keywords": [
-        "颱風"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-25T04:56:44+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "介紹抽水站自動化與防汛工程進度，屬主動公布防災建設。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:中央全額補助4867萬元！升級新莊防洪能力！\n\n沙德爾颱風持續逼近，今天我和侯市長也一起到新莊的塔寮坑二抽水站，了解智慧防汛工程的完工情況。\n\n感謝中央全額補助4867萬元、新北市府團隊大力施作，將塔寮坑二抽水站全面自動化，可以遠端監控、自動啟停，讓防汛工作更安全、更快速。\n\n未來我們一起繼續努力，中央地方攜手合作，讓市民生活環境更好、更安全。",
-      "topicScores": {
-        "防災": 0.99
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.threads.com/t/Dcc1IciGcCu"
-    },
-    {
-      "agendaRelevance": 0.5,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "0ea82519bbfad06be1d7f35d2f7538324a2adf0853bbc3cd978b65f9bdde4741",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dcc0si6iUkt/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/afcb3b41b42778535618.webp",
-      "keywords": [
-        "颱風",
-        "防災"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-25T04:52:58+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "介紹抽水站自動化與中央地方合作的防洪工程進度。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "中央全額補助4867萬元！升級新莊防洪能力！\n\n沙德爾颱風持續逼近，今天我和侯市長也一起到新莊的塔寮坑二抽水站，了解智慧防汛工程的完工情況。\n\n過去抽水站機組啟動往往仰賴人工啟動，耗時又費力，這次感謝 #中央全額補助4867萬元、新北市府團隊大力施作，將塔寮坑二抽水站 #全面自動化，可以遠端監控、自動啟停，讓防汛工作更安全、更快速。\n\n其實治水從來就不分中央和地方，光是2026年度，中央便核定補助新北9.9億元，升級4座抽水站和21組抽水機。\n\n我在新北服務的十年以來，也陸續爭取中央補助：\n✅大漢溪左案堤防基礎加固防災減災工程\n✅新莊潭底溝抽水站機組更新\n✅新莊塔寮坑溪排水左岸改善工程\n✅北大特區防洪排水工程\n✅鶯歌東門溪排水工程及鳳鳴滯洪池工程\n等等治水工程\n\n未來我們一起繼續努力，中央地方攜手合作，讓市民生活環境更好、更安全。",
-      "topicScores": {
-        "防災": 0.99
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.instagram.com/p/Dcc0si6iUkt/"
-    },
-    {
-      "agendaRelevance": 0.48,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "0241811eb062e8b6d8abd46fb69f7c943e3c2d0f6adf0ba9f58ac7e82123af99",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1633338288148001",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/15d6b59f3f247bddcc1d.webp",
-      "keywords": [
-        "颱風",
-        "防災"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-25T04:50:41.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "公布抽水站自動化與既有治水工程進度，屬防洪建設紀錄。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "中央全額補助4867萬元！升級新莊防洪能力！\n\n沙德爾颱風持續逼近，今天我和侯市長也一起到新莊的塔寮坑二抽水站，了解智慧防汛工程的完工情況。\n\n過去抽水站機組啟動往往仰賴人工啟動，耗時又費力，這次感謝 #中央全額補助4867萬元、新北市府團隊大力施作，將塔寮坑二抽水站 #全面自動化，可以遠端監控、自動啟停，讓防汛工作更安全、更快速。\n\n其實治水從來就不分中央和地方，光是2026年度，中央便核定補助新北9.9億元，升級4座抽水站和21組抽水機。\n\n我在新北服務的十年以來，也陸續爭取中央補助 #大漢溪左案堤防基礎加固防災減災工程、#新莊潭底溝抽水站機組更新、#新莊塔寮坑溪排水左岸改善工程、#北大特區防洪排水工程、#鶯歌東門溪排水工程及鳳鳴滯洪池工程 等等治水工程。\n\n未來我們一起繼續努力，中央地方攜手合作，讓市民生活環境更好、更安全。",
-      "topicScores": {
-        "防災": 0.95
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02Q7PtCWY1QqXRwTwxBeVLLuKExj7QyYGRjo6BCRmRPLYVWRjhgFCEUEBzqVeZp2chl"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "625ec362b1ebb95479354005be066c6df9fc03fbec46b5c43bd51c2131aac345",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:pPqLpL2EjWg",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/d0546ce52bf7aa4057bc.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "2026-08-25T04:41:58+00:00",
-      "postingIntent": {
-        "confidence": 0.84,
-        "label": "主動發文",
-        "reason": "僅陳述卓榮泰關於預算刪減與無法南下的說法，未見答覆或反駁目的。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-yt",
-      "text": "Premier Cho Jung-tai claims that the \"budget cuts\" prevented him from traveling south to assess t...",
-      "topicScores": {
-        "議會監督": 0.72
-      },
-      "topics": [
-        "議會監督"
-      ],
-      "url": "https://www.youtube.com/shorts/pPqLpL2EjWg"
-    },
-    {
-      "agendaRelevance": 0.1,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "9c60f05f302d91e14b134c1cc6fe8c87c92a4bad0a296b165a2828f34d5482ba",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1639755574172691",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/0b81319c186fd1ed8ed5.webp",
-      "keywords": [
-        "預算"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-25T04:40:49.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "回應他方觀點",
-        "reason": "針對卓榮泰稱預算遭刪而無法南下勘災的說法，要求其道歉。",
-        "type": "responsive"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "卓榮泰院長稱「被刪預算」無法南下勘災…應公開向全國人民道歉",
-      "topicScores": {
-        "議會監督": 0.87
-      },
-      "topics": [
-        "議會監督"
-      ],
-      "url": "https://www.facebook.com/reel/1039354962055745/"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-25T10:02:25+00:00",
-        "inputHash": "be0584bef16fb21f04391fed2ca06f4e816ade374ad06cc2af7dd68aad907866",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-25T10:03:39+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcczCHlkQXc",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/5f450d7051d56ee66de2.webp",
-      "keywords": [
-        "預算"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-25T04:38:26+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "回應他方觀點",
-        "reason": "針對卓榮泰稱預算遭刪而無法南下勘災的說法，要求其道歉。",
-        "type": "responsive"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:卓榮泰院長稱「被刪預算」無法南下勘災…應公開向全國人民道歉",
-      "topicScores": {
-        "議會監督": 0.86
-      },
-      "topics": [
-        "議會監督"
-      ],
-      "url": "https://www.threads.com/t/DcczCHlkQXc"
     }
   ],
   "version": 1

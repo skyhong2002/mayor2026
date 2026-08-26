@@ -19,8 +19,40 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 398,
+  "count": 399,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "195bb12cfa53688bd31365265ea40e35d0799a2948fc93e8d4b2408009a461b7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcgXzUolN0n",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/d891166e131dc7f54356.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-26T13:57:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳捐款支持特定政治人物並介紹競選回饋品，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:.ᐟ.ᐟ 捐款支持沈伯洋，台北進步有力量 .ᐟ.ᐟ \n⠀\n洋流好物實穿照來啦～\n⠀\n由兩位發言人詮釋本次帽子、衣服、提袋等捐款回饋品，\n大家可以來看看，找找自己喜歡的組合喔 .ᐟ",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcgXzUolN0n"
+    },
     {
       "agendaRelevance": 0.82,
       "candidateId": "shen-poyang",
@@ -13119,8 +13151,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaF52RBEnpx/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/f5195a93b726efbf6ba8.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "育兒",
         "教育"

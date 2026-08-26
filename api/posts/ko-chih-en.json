@@ -19,8 +19,78 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 328,
+  "count": 330,
   "posts": [
+    {
+      "agendaRelevance": 0.76,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "a20182f86591fd2090e9ccfd280451bc88a66b6c79e0d7e6131e96457219ebed",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcgV-RVieyz",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/84b5597b5f33a02a2bc7.webp",
+      "keywords": [
+        "淹水",
+        "大雨",
+        "治水"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-26T13:42:05+00:00",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "針對高雄淹水問題進行現勘並討論以科學方法改善治水策略。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:治水不能只討論錢花多少，而是要透過科學方法把錢花在刀口上！\n\n這幾天走訪高雄各地，看著鄉親疲於清理家園，我們必須面對最核心的問題：如何確保大家在下一場大雨過後，能最快恢復正常生活？\n\n今天特別邀請前內政部長李鴻源，前往梓官區典寶溪實地會勘，並與在地議員、里長及鄉親們一起，共同檢視典寶溪的淹水問題以及高雄治水的策略與方針。",
+      "topicScores": {
+        "環境": 0.76,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/DcgV-RVieyz"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-26T16:01:11+00:00",
+        "inputHash": "38dc72fea6a33fb1af2659a18bf2dbcfb8651c0630dd57ce05a458b9f13f0951",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:OYkpgPCTx2k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b08eeed93c50e9bc7764.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-26T13:35:33+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "主張以科學方法提升治水經費效益，屬防災政策立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Flood control isn't just about how much we spend, but using science to ensure every dollar counts!",
+      "topicScores": {
+        "防災": 0.96
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/OYkpgPCTx2k"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "ko-chih-en",
