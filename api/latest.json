@@ -2,6 +2,76 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.28,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-08-26T04:01:09+00:00",
+        "inputHash": "ba1e9b8dc51716f752763ff8f8fa1d3641fbde09da291b4b9f352b443595527b",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcfPRqokYCJ",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/98d2cf11b9c410d5ab16.webp",
+      "keywords": [
+        "豪雨",
+        "災害",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-26T03:23:40+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "公告豪雨後畜牧業天然災害救助申請資訊，屬行政資訊發布，未針對特定他方說法回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:畜牧產業救助措施公布，高雄全品項納入範圍\n\n面對連日豪雨，我們持續掌握農漁牧產業狀況，並向中央反映地方需求、爭取相關協助，希望讓各項救助儘快到位，減輕畜牧業者的負擔。\n\n農業部公布最新救助措施，高雄市全區「#畜牧全品項」納入8月下旬豪雨農業天然災害現金救助地區，除畜禽舍、堆肥舍外，其餘畜牧品項皆可依規定提出申請。申請資訊如下：\n\n🔺申請項目：畜牧全品項（畜禽舍、堆肥舍除外） \n🔺受理地區：高雄市全區 \n🔺申請期間：8月26日至9月9日（假日照常受理） \n🔺辦理地點：所在地區公所\n\n#畜牧業者朋友 請留意申請期限，備妥身分證、印章、存摺及相關證明文件，向所在地區公所申辦。",
+      "topicScores": {
+        "經濟": 0.84,
+        "防災": 0.9
+      },
+      "topics": [
+        "防災",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DcfPRqokYCJ"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-26T04:01:09+00:00",
+        "inputHash": "e4d911def74261cfd56cd6ab1cfa3e9d6a647eff7506bcbffb9f3fb88f14c4c5",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:6LBr0aIOUm8",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/45d6766c65afceab50a6.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-26T01:44:39+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出以都市植樹形成微森林、降低台北熱度的具體環境政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "都市微森林政策｜把樹種回來！降溫台北！",
+      "topicScores": {
+        "環境": 0.98
+      },
+      "topics": [
+        "環境"
+      ],
+      "url": "https://www.youtube.com/watch?v=6LBr0aIOUm8"
+    },
+    {
       "agendaRelevance": 0.94,
       "candidateId": "ho-hsin-chun",
       "classification": {
@@ -3527,84 +3597,6 @@
         "社福"
       ],
       "url": "https://www.threads.com/t/DcabUamkiZ9"
-    },
-    {
-      "agendaRelevance": 0.3,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-08-24T22:03:15+00:00",
-        "inputHash": "5ffc886f05fe296dfc951e1388b24f538cd9e8865f78133acda282c9514075cd",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcabPkslDzG/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/81adaab074e7ef0d1362.webp",
-      "keywords": [
-        "豪雨",
-        "防災"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-24T06:32:29+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "主動記錄豪雨期間勘查與防災工作，屬災情處理資訊，沒有明確政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-ig",
-      "text": "心繫豪雨造成市民鄉親的不便，從田寮、阿蓮到路竹，了解問題、解決問題，避免致災影響，豪雨期間防災工作持續進行！",
-      "topicScores": {
-        "防災": 0.99
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.instagram.com/p/DcabPkslDzG/"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-08-24T10:02:23+00:00",
-        "inputHash": "fee3b05b850eb64e6d203843dfd1efdf020d15ea107aa83c0b05832660363635",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1632532064895290",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/41e2ff349de852a77c3b.webp",
-      "keywords": [
-        "醫療",
-        "醫院",
-        "醫師",
-        "長照",
-        "補助",
-        "照顧"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-24T06:31:35.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "藉醫界支持提出中西醫復健、長照醫療與智慧診療等具體政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-fb",
-      "text": "看到有這麼多中醫師願意上台支持我，真的讓人很感動。\n\n過去十年，我和大家一起推動《#中醫藥發展法》、成功爭取「#中醫藥振興計畫」，也持續爭取設立「#國家中醫研究院」。我也藉機會向各位醫師提出各項政見，未來我當市長，會和大家一起繼續推動中醫藥發展：\n\n✅ 市立醫院設立「#中西醫復健病房」。 \n✅ 補助中醫投入 #長照服務，走進社區據點、推動居家醫療，並加碼獎勵 #偏鄉服務。\n✅ 結合 #智慧科技，善用科技輔助診療。 \n\n我會繼續努力，照顧市民朋友，打造更健康的新北！",
-      "topicScores": {
-        "社福": 0.82,
-        "競選": 0.76,
-        "醫療": 0.98
-      },
-      "topics": [
-        "醫療",
-        "社福",
-        "競選"
-      ],
-      "url": "https://www.facebook.com/reel/1661617485385764/"
     }
   ],
   "version": 1
