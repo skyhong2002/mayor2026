@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/c1542221a0bbd26e69e1.webp",
+    "avatarUrl": "assets/source-avatars/6ccb80444f7b7ca23f40.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,42 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 234,
+  "count": 236,
   "posts": [
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "2c3f3f8a4e65ccccff861f9fe11a36a43d18978a0565b9d16915663529a43f19",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1622224209514833",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/778c483d2bf60a5f7b3d.webp",
+      "keywords": [
+        "都更"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T00:00:46.000Z",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "主動批評都市更新效率並提出應以加速程序解決問題的立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "說實在，做了 40 年，我看過太多案子不是不能做，是等太久。 \n\n都更的問題，不在層級，在速度。\n\n局處就算再多一個，速度不會因此快一天。",
+      "topicScores": {
+        "住宅": 0.9
+      },
+      "topics": [
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/1374164728263291/"
+    },
     {
       "agendaRelevance": 0.27,
       "candidateId": "lee-shih-chuan",
@@ -52,6 +86,45 @@
         "競選"
       ],
       "url": "https://www.instagram.com/p/DcgKdweGJpd/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "85118f4efacf666ecf86eb2cbfb464345fab53662e7d6eba8053241f30dd01e4",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1621735479563706",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/5c0ff2c827a9b2a0c0dc.webp",
+      "keywords": [
+        "文化",
+        "觀光",
+        "歷史",
+        "經濟"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-26T10:47:55.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "介紹猴硐礦業文化保存，並提出台車復駛以結合歷史教育與觀光發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "地底下沒有光。台灣的經濟，曾經是他們用命換上來的。\n\n礦工前輩「折腰再折腰」，撐起的是幾代人的生活，是咱新北猴硐的驕傲。\n\n今天我到猴硐礦工文史館，拜訪礦長周朝南，還有許多礦工前輩，以及為礦工文化保存盡心盡力的志工們。百年的礦業歷史，他們講起來依舊如黑金般閃閃發亮。\n\n我當起一日礦工，整裝起來，倒真像我過去的裝扮，只是採礦頭燈安全帽、鏟子、裝渣機等等，各個不同，是完全不一樣的領域。\n\n礦長和幹部以及志工們，對於煤礦文化的保存，他們把歷史顧住了。接下來，換我們把人帶進來。\n\n日前我提出「水金九以及猴硐台車復駛計畫」，要讓所有民眾和孩子，都能了解文化，體驗歷史，更要帶動觀光，讓更多人看見猴硐。\n\n過去我時常進出隧道及下水道，和礦工前輩或許有相同的「地底經驗」，我很清楚黑暗、高溫、高濕的工作環境，是多麼辛苦，那種克難與堅強，是我一輩子要向礦工前輩學習的課題。\n\n礦工前輩說：入坑，命是土地公的；出坑，命才是自己的。\n\n過去，他們把命交給天地，未來，猴硐的下一段路，我來鋪。",
+      "topicScores": {
+        "文化觀光": 0.97,
+        "經濟": 0.67
+      },
+      "topics": [
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02QsJGxTDcJ7nB8No7X3qBeiBVduztz6FAcVwhJ8VfGFaCbu94QzWnxH3qDxfJaLC6l&id=100051818071280"
     },
     {
       "agendaRelevance": 0.42,
@@ -8403,8 +8476,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaHYhbkMnp3/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/fd2dcf80fcbaec60b6e8.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "住宅",
         "社會住宅",
@@ -8453,8 +8526,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaHW-mrsvTk/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/247cd9233840f8cd1df8.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "淹水",
         "防災",

@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/bd3e80e4a5d9681fa3f9.webp",
+    "avatarUrl": "assets/source-avatars/d62e1e6bf9e5bdef935f.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,395 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 345,
+  "count": 355,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "ae749ea13cc337aed3a450faf53e2d4bd2ecb1d65d48bc2f4c82468321a9bc8f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://inewslong.com/2026/08/27/4133/",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "颱風",
+        "淹水",
+        "大雨"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-27T13:21:04+08:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "新聞報導高雄淹水及議員批評市府治水，屬事件轉述而非明確回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-web-media",
+      "text": "南台灣大淹水！高雄市議員怒批民進黨執政高雄淹水始終無法改善 〈 南台灣大淹水！高雄市議員怒批民進黨執政高雄淹水始終無法改善 〉本文來自於《 龍傳媒新聞 iNews Long 》。 颱風還沒來，南部已經連續淹水好幾天。高雄市議員陳美雅，直說高雄現在一下大雨，民眾就人心惶惶，晚上不敢睡覺..",
+      "topicScores": {
+        "議會監督": 0.9,
+        "防災": 0.97
+      },
+      "topics": [
+        "防災",
+        "議會監督"
+      ],
+      "url": "https://inewslong.com/2026/08/27/4133/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "5adb5937175ac24776a28093fba45ce62b50b742d59910509aa669d529c64464",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://inewslong.com/2026/08/27/4129/",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "淹水",
+        "災情"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-27T12:57:10+08:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "新聞轉述南部淹水後對治水經費的政治爭議，未見發文者自身主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-web-media",
+      "text": "賴清德喊不要淹水就責備中南部治水的錢花到哪 葉向媛：台北不是親生的 〈 賴清德喊不要淹水就責備中南部治水的錢花到哪 葉向媛：台北不是親生的 〉本文來自於《 龍傳媒新聞 iNews Long 》。 南部淹水災情慘重，賴清德總統到高雄視察治水工程時抱怨，淹水就責備中南部治水的錢花到哪裡去是不公平的...",
+      "topicScores": {
+        "議會監督": 0.89,
+        "防災": 0.96
+      },
+      "topics": [
+        "防災",
+        "議會監督"
+      ],
+      "url": "https://inewslong.com/2026/08/27/4129/"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:04:33+00:00",
+        "inputHash": "d9381b0ee41f5b494b2e82021054b70cb30ec0c82915f79104389455d2570569",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcihGDfnCHa",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/6e497bd23ead5ed5a7fc.webp",
+      "keywords": [
+        "法案",
+        "立法院"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-27T09:57:08+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "回應他方觀點",
+        "reason": "針對立法院三讀後行政院不副署及韓國瑜立場，提出要求與反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:立法院三讀法案行政院不副署…支持韓國瑜院長更硬氣一點提出矯正",
+      "topicScores": {
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DcihGDfnCHa"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:04:33+00:00",
+        "inputHash": "f2155082fa3e2f44814ff9be2049e1d0f3dc0c7352d8bc15d4c65b3b58e811fa",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:E7jkfstlRE4",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/b03f590709334ae9bfce.webp",
+      "keywords": [
+        "法案",
+        "立法院"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-27T09:55:49+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "回應他方觀點",
+        "reason": "針對立法院三讀後行政院不副署及韓國瑜立場，提出要求與反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "立法院三讀法案行政院不副署…支持韓國瑜院長更硬氣一點提出矯正",
+      "topicScores": {
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.youtube.com/shorts/E7jkfstlRE4"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:04:33+00:00",
+        "inputHash": "6d86b87f7e1eb3e6a78d97a5bc7b0e8a62760d7b499994feb7814890e70b0198",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1641653123982936",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a7dbeaa415f3649a7bab.webp",
+      "keywords": [
+        "法案",
+        "立法院"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T09:54:54.000Z",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "回應他方觀點",
+        "reason": "針對立法院三讀後行政院不副署及韓國瑜立場，提出要求與反駁。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "立法院三讀法案行政院不副署…支持韓國瑜院長更硬氣一點提出矯正",
+      "topicScores": {
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/reel/1765270147820567/"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "01ba5fee46f8c3db415fcd0517a33c30f1b8c9b9780af7d12968bb35af791e75",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcierFGEiQp",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/60ec473e3c2ebdf9c84f.webp",
+      "keywords": [
+        "產業",
+        "中小企業",
+        "預算",
+        "立法院",
+        "監督",
+        "國防"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-27T09:35:57+00:00",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "支持無人機條例及長期國防產業政策，主張建立國內供應鏈並接受國會監督。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:無人機條例三讀！\n強化國防自主，振興台灣產業！\n\n今天立法院三讀通過《強化國防自主暨無人載具產業發展條例》（無人機條例）。\n\n台灣要發展無人機產業，不能只靠政府一口氣下大單、拚採購數字，最後卻讓訂單集中少數廠商，甚至關鍵零組件、核心技術還得看別人臉色。\n\n國民黨提出的6年2400億元版本，就是希望透過長期、穩定政策，把國防需求轉化成扶植台灣產業的力量，避免只衝短期採購，卻沒有留下技術與產能。\n\n這次三讀有幾個重點：\n👉 6年投入2400億元\n原則每年400億元，透過年度預算逐年審議、接受國會監督。\n\n👉國防需求與產業發展並進\n軍用採購結合產業政策，讓國防需求帶動國內研發與製造。\n\n👉建立台灣自己的供應鏈\n從研發、製造、維修到測試，扶植國內廠商與中小企業，把產業根留在台灣。\n\n龍介支持強化國防，但錢一定要花在刀口上。2400億元不能只買裝備，更要轉化成真正戰力、強化國防自主，也要成為台灣產業升級的機會。\n\n把技術留在台灣、把產能留在台灣。國防更自主，產業更有力，台灣才會更安全。",
+      "topicScores": {
+        "兩岸外交": 0.67,
+        "經濟": 0.94,
+        "議會監督": 0.71
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "兩岸外交"
+      ],
+      "url": "https://www.threads.com/t/DcierFGEiQp"
+    },
+    {
+      "agendaRelevance": 0.87,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "96073f1134f0cc5dff7327c0b04aa485c8f6e4bbd370adc19777651aaef5517a",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1641640873984161",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/7ea58bf03b86bc87f8f1.webp",
+      "keywords": [
+        "產業",
+        "中小企業",
+        "預算",
+        "立法院",
+        "監督"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T09:34:38.000Z",
+      "postingIntent": {
+        "confidence": 0.83,
+        "label": "主動發文",
+        "reason": "主動說明無人機條例內容與產業政策立場，強調國防採購應帶動自主供應鏈。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "無人機條例三讀！\n強化國防自主，振興台灣產業！\n\n今天立法院三讀通過《強化國防自主暨無人載具產業發展條例》（無人機條例）。\n\n台灣要發展無人機產業，不能只靠政府一口氣下大單、拚採購數字，最後卻讓訂單集中少數廠商，甚至關鍵零組件、核心技術還得看別人臉色。\n\n國民黨提出的6年2400億元版本，就是希望透過長期、穩定政策，把國防需求轉化成扶植台灣產業的力量，避免只衝短期採購，卻沒有留下技術與產能。\n\n這次三讀有幾個重點：\n👉 6年投入2400億元\n原則每年400億元，透過年度預算逐年審議、接受國會監督。\n\n👉國防需求與產業發展並進\n軍用採購結合產業政策，讓國防需求帶動國內研發與製造。\n\n👉建立台灣自己的供應鏈\n從研發、製造、維修到測試，扶植國內廠商與中小企業，把產業根留在台灣。\n\n龍介支持強化國防，但錢一定要花在刀口上。2400億元不能只買裝備，更要轉化成真正戰力、強化國防自主，也要成為台灣產業升級的機會。\n\n把技術留在台灣、把產能留在台灣。國防更自主，產業更有力，台灣才會更安全。",
+      "topicScores": {
+        "經濟": 0.94,
+        "議會監督": 0.83
+      },
+      "topics": [
+        "經濟",
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid09Z6Q5NrjJGLjk385dzYVoyxyTKx8y27aUQ1CoKAv2khbyyZxQfbBRUhbPthnnQ2Zl"
+    },
+    {
+      "agendaRelevance": 0.65,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "8e075fa820860c78e8e2c379fe8593fda282224cabb491bd31f59c6433017806",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DciRPp9jyEm",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/0db25f072bc38365a338.webp",
+      "keywords": [
+        "淹水",
+        "大雨",
+        "強降雨",
+        "預算"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-27T07:38:36+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "回應他方觀點",
+        "reason": "回應蔡宗豪的質疑、黃偉哲市府說法及民進黨莊瑞雄的治水預算論述。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:昨天，台南市議員蔡宗豪針對台南水患提出幾個問題，龍介認為，黃偉哲市府真的要好好回答。\n\n宗豪講得很實在，台南一淹水，市府的說法總是差不多：雨太大、面積大、預算少。但極端氣候不是今年才開始，短延時強降雨也不是第一次遇到。既然舊標準已經跟不上，治水標準和整體規畫就應該跟著更新。\n\n宗豪也點出，2014至2026年，台南、高雄治水經費合計約占全國四分之一。既然這些年治水預算沒有少，就不能每逢淹水，就把問題推給「預算不夠」。\n\n以中西區為例，雨水下水道整體規畫仍沿用2011年資料，已經15年沒有全面檢討。十多年來，都市開發、建築密度、降雨強度都變了，當年的排水規畫，還撐不撐得住今天的大雨？\n\n但這次台南淹水後，黃偉哲市長又喊著要更多治水經費。龍介要講，該替台南爭的，一毛都不能少；但不能每次淹水，就只有一句「預算不夠」。\n\n把2006至2026年的治水特別預算補助攤開來看，這20年間，台南市拿了約484億元，全國最高；而北北基桃加上台中，差不多只有約400億元，還比不上一個台南市。\n\n現在的問題不是台南有沒有拿到錢，而是：拿了這麼多資源預算後，治水成果到底在哪裡？",
+      "topicScores": {
+        "議會監督": 0.88,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DciRPp9jyEm"
+    },
+    {
+      "agendaRelevance": 0.52,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "160a5fabb96611f12209a1b44424724e42ef17527fe70e8f19912d0b293b5daa",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1641573330657582",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/5ae55c43e2ebd9141fe8.webp",
+      "keywords": [
+        "淹水",
+        "大雨",
+        "強降雨",
+        "預算"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T07:33:34.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "回應蔡宗豪、黃偉哲市府及莊瑞雄對台南治水預算與責任的說法。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "昨天，台南市議員蔡宗豪針對台南水患提出幾個問題，龍介認為，黃偉哲市府真的要好好回答。\n\n宗豪講得很實在，台南一淹水，市府的說法總是差不多：雨太大、面積大、預算少。但極端氣候不是今年才開始，短延時強降雨也不是第一次遇到。既然舊標準已經跟不上，治水標準和整體規畫就應該跟著更新。\n\n宗豪也點出，2014至2026年，台南、高雄治水經費合計約占全國四分之一。既然這些年治水預算沒有少，就不能每逢淹水，就把問題推給「預算不夠」。\n\n以中西區為例，雨水下水道整體規畫仍沿用2011年資料，已經15年沒有全面檢討。十多年來，都市開發、建築密度、降雨強度都變了，當年的排水規畫，還撐不撐得住今天的大雨？\n\n但這次台南淹水後，黃偉哲市長又喊著要更多治水經費。龍介要講，該替台南爭的，一毛都不能少；但不能每次淹水，就只有一句「預算不夠」。\n\n把2006至2026年的治水特別預算補助攤開來看，這20年間，台南市拿了約484億元，全國最高；而北北基桃加上台中，差不多只有約400億元，還比不上一個台南市。\n\n現在的問題不是台南有沒有拿到錢，而是：拿了這麼多資源預算後，治水成果到底在哪裡？\n\n但現在民進黨幹事長莊瑞雄又拿1982年至2013年的數字來說，北北基投入的治水預算約1649億元，台南、高雄只有約317億元，替中央解釋南部過去拿得比較少。\n\n龍介就要問：現在台南淹的是2026年的水，治水不是歷史考古，怎麼可以把2014年之後的大筆治水預算全部切掉不談？\n\n2014年之後，中央陸續推動流域綜合治理、前瞻治水特別預算。光是台南，2014至2019年的流域綜合治理就獲得約97.12億元，後續前瞻治水又有約187.54億元，都是全國最多。\n\n這些數字更說明，現在真正該檢討的，不是預算夠不夠，而是這些年台南拿到全國最多的治水預算，規畫有沒有跟上、錢有沒有花出效果。\n\n龍介不是反對爭預算。該替台南爭的，一毛不能少；但錢拿到了，政府就要接受檢驗。錢花到哪裡、改善了什麼，為什麼有些地方還是一再淹水？這才是黃偉哲市府該給台南人的答案。\n\n雨可以愈下愈大，治水標準就要跟著提高；城市一直往前走，治水思維不能還停在15年前。",
+      "topicScores": {
+        "議會監督": 0.96,
+        "防災": 0.98
+      },
+      "topics": [
+        "防災",
+        "議會監督"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid0omqjgN7DBfNoY1m9C4ddy8wrzut6bEswN4X7YZnUWMHg7BUiBBWLWxxeNLce8uKdl"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "db9303a257d2fa3015897e4ed5f994d52f3e2af0ea1eb1572dbcafb55b76841b",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Sk01vji6tig",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d783422aabf5dc622ae0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-27T05:21:33+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "回應他方觀點",
+        "reason": "標題明確回應使用者對空襲演習行動網路中斷的抱怨，並追問電信業者責任。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Responding to User Complaints: Air Raid Drill Mobile Network Outage... Can Telecom Companies Prov...",
+      "topicScores": {
+        "生活": 0.83,
+        "防災": 0.68
+      },
+      "topics": [
+        "生活",
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/Sk01vji6tig"
+    },
     {
       "agendaRelevance": 0.35,
       "candidateId": "hsieh-lung-chieh",

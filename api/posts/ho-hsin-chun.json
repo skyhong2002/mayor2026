@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/db558149e206735e0ac6.webp",
+    "avatarUrl": "assets/source-avatars/e131caff8cbb6453f532.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,42 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 364,
+  "count": 369,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "bb3fa4974b789578c2d9a2b38559a6670c4739e89724bce76dc88f3974ea88e4",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1669566541199420",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/c165f9ac57d4b17daaad.webp",
+      "keywords": [
+        "颱風"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T10:00:15.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動發布颱風警示與防颱提醒，屬災害資訊公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "颱風 #沙德爾 逐漸接近台灣，中央氣象署已發布海警，提醒大家做好防颱準備！\n\n今晚至明天是颱風最靠近台灣的時候，中部可能出現不定時陣雨，提醒大家外出時務必多加留意，避免前往海邊及山區，並隨時掌握最新颱風動態。\n\n更多資訊請見中央氣象署網站：\nhttps://www.cwa.gov.tw/V8/C/",
+      "topicScores": {
+        "防災": 0.99
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid0R6J6ynvxCqdReHqNfTu5s1dcwJowVtfgwqSSuh42WHvAEHDdgXvX527uF16fbPRql"
+    },
     {
       "agendaRelevance": 0.91,
       "candidateId": "ho-hsin-chun",
@@ -99,6 +133,51 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DchoU8iGbhX"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "5658d906e0dce6f7c0e784befcd5df240aa2f1678e45291c2c6a595447299ab3",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-27T10:04:45+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1669287571227317",
+      "imageAspect": 1.7741,
+      "imageUrl": "assets/feed-images/3f4a68be1d5d30d5581d.webp",
+      "keywords": [
+        "預算",
+        "立法院",
+        "產業",
+        "競選",
+        "選舉",
+        "投票"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T01:17:55.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "直接要求江啟臣回應投票、國防條例及盧市長公帑購餅等相關質疑。",
+        "type": "responsive"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "江啟臣委員，你今天會進立法院議場表決嗎？投下支持台中廣大勞工朋友及產業的一票！\n\n延會最後一天的院會，要處理無人載具特別條例，我希望你能勇敢進場投票。過去在國防軍購特別條例，刪去4700億無人機預算，你沒聲音；為補救被刪砍預算，行政院提出特別條例，我6度向你鞠躬請託不要擋，你置之不理；今天表決，我希望你能現身表態！\n\n昨天你以立法院副院長之姿率團訪日回國，說提案建立民主與韌性的供應鏈體系，但國防安全與自主、展現防衛決心，在今天要表決的無人載具條例，不就是最根本嗎？口頭支持、總該化為實際行動了吧！\n\n此外，昨晚你面對記者詢問，如何看待盧市長用台中市府公帑認購中秋月餅的問題，你說，這3天都在國外，這部分還不清楚，待了解後會再跟大家報告。所以，今天會有答覆嗎？\n\n市民有許多問題想問你，但你貴為立法院副院長，各場合都有大批隨員可幫你避開媒體詢問。不過，同為競選台中市長，容我提醒，競選過程中對重大議題表態，都是民主選舉的一環，也是對市民朋友最基本的尊重！",
+      "topicScores": {
+        "競選": 0.72,
+        "經濟": 0.78,
+        "議會監督": 0.96
+      },
+      "topics": [
+        "議會監督",
+        "經濟",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02uHPUruvWKYUtYM1ZzGvFrcfZT9jM4Ycxy82zh8BUTsCZPZffSwCUwXsaH7hDrktul"
     },
     {
       "agendaRelevance": 0.2,
@@ -233,6 +312,46 @@
         "兩岸外交"
       ],
       "url": "https://www.instagram.com/p/DchhNeByz9T/"
+    },
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "46442fac7ebba2f519cd554a953d779a5624dd6a38fd155f65ae08efe0be064c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1669248274564580",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/a0abb7f3ba924f548e58.webp",
+      "keywords": [
+        "照顧",
+        "醫療",
+        "產業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T00:01:05.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出毛孩照護、認養、飼主教育與寵物產業的整體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "毛孩不僅是寵物，更是我們的家人，因此我推出「寵愛毛孩5大安心、1個加碼」，從環境改善、醫療照護、飼主課程、安心認養到寵物產業，全面升級相關政策，希望讓台中成為毛孩可以安心生活的友善城市。\n\n如果你也認同牠們值得更好的照顧，歡迎收看影片，也請幫忙分享，讓更多人一起關心毛孩的權益🐈🐕",
+      "topicScores": {
+        "社福": 0.91,
+        "經濟": 0.7,
+        "醫療": 0.78
+      },
+      "topics": [
+        "社福",
+        "醫療",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1103234175702025/"
     },
     {
       "agendaRelevance": 0.68,
@@ -13089,6 +13208,76 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/watch?v=Yz3i3JIUH_M"
+    },
+    {
+      "agendaRelevance": 0.78,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "a66d3eae5ceb7c9a065a0c9d846718aa50e1a65044b833e5516d06185b3524c9",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:DC0YhUMhwic",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/8432068756f934c0288a.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "主動宣傳爭取經費將梧棲漁港升級為國際觀光漁港的政策成果。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "不用飛釜山！何欣純爭取6000萬，讓梧棲漁港變國際觀光漁港",
+      "topicScores": {
+        "文化觀光": 0.96,
+        "競選": 0.77
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=DC0YhUMhwic"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "71622fa32884f777db27521ecfb7da65b8752b9767d51cafd569a2c1ca850e32",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Auu579l6mL8",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/55d035e1167159bd6239.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "提出寵物照護與寵物券等政見，屬競選期間的動物福利政策宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "台中毛孩38萬！何欣純「寵愛毛孩5大安心」＋500元寵物券一次講",
+      "topicScores": {
+        "社福": 0.86,
+        "競選": 0.79
+      },
+      "topics": [
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=Auu579l6mL8"
     }
   ],
   "version": 1
