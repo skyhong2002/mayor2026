@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-28 00:02:04"
+        "最近一次執行心跳：2026-08-28 06:03:09"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：19 ms"
+        "耗時：14 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-28 00:01:05",
+        "最新抓取時間：2026-08-28 06:02:48",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
-      "label": "正常",
+      "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
-      "status": "ok",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 0 個錯誤。"
+      "status": "degraded",
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 11 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-08-27 18:01:18",
         "本月已花費：$3.98 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 28.4h, next at 2026-08-28T14:22:33+00:00; ~$3.98 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 26.7h, next at 2026-08-28T12:44:04+00:00; ~$3.98 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -88,10 +88,10 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-28T00:02:04+08:00",
+  "generatedAt": "2026-08-28T06:03:09+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 0,
+    "currentErrors": 11,
     "latestPostAt": "2026-08-27T19:17:08+08:00",
     "postsByPlatform": {
       "facebook": 1085,
@@ -106,88 +106,11 @@
     "watchAccounts": 67
   },
   "overall": {
-    "label": "正常",
-    "status": "ok",
-    "summary": "核心資料抓取與公開 API 正常。 Facebook Apify 目前依排程或預算節流。"
+    "label": "部分異常",
+    "status": "degraded",
+    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T15:55:58+00:00",
-      "sourceId": "su-ch-yt",
-      "sourceName": "蘇巧慧（su-ch-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@taoyuansango']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T15:57:58+00:00",
-      "sourceId": "chang-sc-yt",
-      "sourceName": "張善政（chang-sc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T15:59:58+00:00",
-      "sourceId": "ho-hc-yt",
-      "sourceName": "何欣純（ho-hc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/user/kesing168']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T16:01:58+00:00",
-      "sourceId": "chiang-cc-yt",
-      "sourceName": "江啟臣（chiang-cc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T16:03:58+00:00",
-      "sourceId": "chen-tf-yt",
-      "sourceName": "陳亭妃（chen-tf-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T16:05:58+00:00",
-      "sourceId": "hsieh-lc-yt",
-      "sourceName": "謝龍介（hsieh-lc-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T16:07:58+00:00",
-      "sourceId": "lai-jl-yt",
-      "sourceName": "賴瑞隆（lai-jl-yt）"
-    },
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-23T16:09:58+00:00",
-      "sourceId": "ko-ce-yt",
-      "sourceName": "柯志恩（ko-ce-yt）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-25T16:00:24+00:00",
-      "sourceId": "shen-ig-personal",
-      "sourceName": "沈伯洋（shen-ig-personal）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-25T16:00:56+00:00",
-      "sourceId": "chiang-wa-ig",
-      "sourceName": "蔣萬安（chiang-wa-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-25T16:01:23+00:00",
-      "sourceId": "su-ch-ig",
-      "sourceName": "蘇巧慧（su-ch-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
       "platform": "instagram",
@@ -250,6 +173,83 @@
       "recordedAt": "2026-08-25T16:05:37+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:00:13+00:00",
+      "sourceId": "chiang-wa-ig",
+      "sourceName": "蔣萬安（chiang-wa-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:00:26+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:00:41+00:00",
+      "sourceId": "lee-sc-ig-main",
+      "sourceName": "李四川（lee-sc-ig-main）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:00:57+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:01:13+00:00",
+      "sourceId": "chang-sc-ig",
+      "sourceName": "張善政（chang-sc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:01:25+00:00",
+      "sourceId": "ho-hc-ig",
+      "sourceName": "何欣純（ho-hc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:01:39+00:00",
+      "sourceId": "chiang-cc-ig",
+      "sourceName": "江啟臣（chiang-cc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:01:51+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:02:06+00:00",
+      "sourceId": "hsieh-lc-ig",
+      "sourceName": "謝龍介（hsieh-lc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:02:22+00:00",
+      "sourceId": "lai-jl-ig",
+      "sourceName": "賴瑞隆（lai-jl-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author",
+      "platform": "instagram",
+      "recordedAt": "2026-08-27T22:02:37+00:00",
+      "sourceId": "ko-ce-ig",
+      "sourceName": "柯志恩（ko-ce-ig）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -263,10 +263,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 0,
+        "currentErrors": 11,
         "platform": "instagram",
         "sources": 12,
-        "status": "ok"
+        "status": "degraded"
       },
       {
         "currentErrors": 0,
