@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/6ccb80444f7b7ca23f40.webp",
+    "avatarUrl": "assets/source-avatars/a2876184f8c9c0223f4b.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,40 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 236,
+  "count": 237,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-28T10:02:38+00:00",
+        "inputHash": "cc90b3301fe321d22adf2bd53e2503b010f5f0bcf51a3232f044f22ca1ba88f3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1623045392766048",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ee0f24effd8fdfff23c6.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-27T23:31:13.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "描述在三重與民眾握手互動，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "在三重，被握了一整場。\n從門口走到台前，走了好久，因為每一雙手都值得停下來。\n說實在，鐵鎚我拿得動，但這份熱情，比鐵鎚重多了。",
+      "topicScores": {
+        "競選": 0.91
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1339391301609470/"
+    },
     {
       "agendaRelevance": 0.7,
       "candidateId": "lee-shih-chuan",
@@ -8442,8 +8474,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaKmMGhM5mD/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/dd3dd43666d5029a9053.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-06-29T09:57:45+00:00",

@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/3401200946c6655d4915.webp",
+    "avatarUrl": "assets/source-avatars/534a98bfa2bd5511c708.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "chang-ching",
@@ -19,8 +19,40 @@
     "name": "張靜",
     "party": "司法改革黨"
   },
-  "count": 57,
+  "count": 58,
   "posts": [
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "chang-ching",
+      "classification": {
+        "classifiedAt": "2026-08-28T10:02:38+00:00",
+        "inputHash": "6a533aeed0eb3abd954ca4e8205d4a292fb437de0ed8137d3b7a9b3a75e61344",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1623846846015926",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d7a6c9a19254ae5e0eb1.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-28T02:03:41.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "貼文沒有文字內容，無法辨識具體公共議題或政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-ching-party-fb",
+      "text": "",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/100093646137173/videos/1623846846015926/"
+    },
     {
       "agendaRelevance": 0.64,
       "candidateId": "chang-ching",
