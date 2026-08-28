@@ -19,8 +19,74 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 215,
+  "count": 217,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "649188bce78fe2510047cf90d531ffec2fe6b87b5fcee27a4cd9703fed03d72e",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-28T16:04:59+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DclQfstD8lp",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/792e4ba146f423960e09.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-28T11:29:46+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "直接反駁翁曉玲以「扁家就是愛錢」批評陳幸妤的說法，為其辯護澄清。",
+        "type": "responsive"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:翁曉玲妳也是女性，何必為了蹭熱度，來傷害一位完全不認識妳的女性朋友呢？\n\n昨天大家在狂傳這一段話，讓我更不捨幸妤，一個對政治沒有興趣，連翁曉玲是誰都不知道的人，為什麼會莫名其妙中「翁曉玲」的槍呢？\n\n幸妤為了保護自己的小孩，展現媽媽的本能，何錯之有？為什麼翁曉玲要用「扁家就是愛錢」來傷害一位為母則強的媽媽呢？而且幸妤只是要追回合法贈與給自己小孩的錢，翁曉玲真的不用這麼迫不及待地傷害對政治毫無興趣而且根本不知道「翁曉玲」是誰的陳幸妤。\n\n圖片來源：東森新聞",
+      "topicScores": {
+        "議會監督": 0.72
+      },
+      "topics": [
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DclQfstD8lp"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "c4c1bd53e55a65295846745c4c11c9d33ffe8efd92b896cb23b3277c0f1d23be",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dci_FJeTe9B/",
+      "imageAspect": 1.6506,
+      "imageUrl": "assets/feed-images/4ae21096fe13a8dcb003.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-08-27T14:20:49+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "表達對友人支持的感謝與祝福，沒有公共政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-ig",
+      "text": "謝謝幸妤的支持，我會好好珍惜這一份支持，為台南繼續打拼。\n\n我也要替幸妤加油！我也替幸妤感到非常驕傲，可以栽培出三個非常優秀的寶貝，最難得的是幸妤可以保有永遠的真性情，永遠做自己喜歡做的事。",
+      "topicScores": {
+        "生活": 0.95
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/Dci_FJeTe9B/"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "chen-ting-fei",
@@ -6425,8 +6491,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaLIHKnzGTW/",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/3674de5017ba2858865d.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "豪雨",
         "淹水",

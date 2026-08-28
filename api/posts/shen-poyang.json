@@ -19,8 +19,106 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 422,
+  "count": 425,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "715ccc915f97c4f40dff148372b65c362bc0266d6e1d87c5c62319033ecc04c5",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:8a-gM-x6MZs",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7ce0e314651df14e42cf.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T14:02:35+00:00",
+      "postingIntent": {
+        "confidence": 0.8,
+        "label": "主動發文",
+        "reason": "內容僅呈現議員準備刨冰的象徵性活動，缺乏明確公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Councilor Chang Wen-chieh prepared a giant bowl of shaved ice for me, symbolizing the weight of m...",
+      "topicScores": {
+        "生活": 0.45
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/8a-gM-x6MZs"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "6bfb8f284c654c868aae063dae422fd846b34376fe007361dc7cc3150af42bdc",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DclUS6qFC_p",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/5f241938a70c981751c8.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-28T12:02:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "整理捐款物品與寄送問題的常見問答，沒有公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:〖洋流好物 捐款常見問題解答〗\n⠀\n𝙌. 小物可以換嗎？\n𝙌. 沒有收到確認信件怎麼辦？\n𝙌. 如何變更寄送地址？\n⠀\n過去一週大家最常問的問題，\n我們搜集起來，\n今天一次整理解答給大家！",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DclUS6qFC_p"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "9453fa6c6ba4a4a06b2a008bdd4e37c9130f7df32bf9e2b9bf2148b7cb32a9be",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:gWeaJXrvLTw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/29d7532c03c2c0c0333b.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T10:50:47+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "以打棒球及團隊口號呈現活動或動員內容，沒有具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Step up to the plate with Council Member Wang Min-sheng and hit a home run for Team Taipei!",
+      "topicScores": {
+        "競選": 0.55,
+        "體育": 0.86
+      },
+      "topics": [
+        "體育",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/gWeaJXrvLTw"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "shen-poyang",

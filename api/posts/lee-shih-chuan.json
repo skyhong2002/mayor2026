@@ -19,7 +19,7 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 237,
+  "count": 239,
   "posts": [
     {
       "agendaRelevance": 0.05,
@@ -52,6 +52,76 @@
         "競選"
       ],
       "url": "https://www.facebook.com/reel/1339391301609470/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "487c832866e45bfd09ffebd7851cbaf8bb73ee5d745fad74a140021941e6c495",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/Dcf8r0EGIqn/",
+      "imageAspect": 0.5627,
+      "imageUrl": "assets/feed-images/2b54eed9c1d92a3c4d5a.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-27T12:00:04+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "從名廚與台菜辦桌文化出發，表達保存地方技藝的文化立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "我前幾天是來跟我們新北名廚王永宗學做豬腳的，結果師傅拿出壓箱寶。\n\n說實在，雖然大家叫我川伯，但沒想到看到一只比我還老的盤子。\n\n東西能留這麼久，是因為做的人不馬虎，留的人捨不得丟。\n\n手藝也一樣。台菜的辦桌文化，我想幫新北留著。",
+      "topicScores": {
+        "文化觀光": 0.94
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Dcf8r0EGIqn/"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-28T16:03:19+00:00",
+        "inputHash": "9a30121208a7dc43137fed54bd01d05d2a6575a638b820475ba8e492f0d339a8",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DcfoEBUGJMh/",
+      "imageAspect": 0.5626,
+      "imageUrl": "assets/feed-images/7b754de50da91945de8d.webp",
+      "keywords": [
+        "產業",
+        "科技",
+        "AI"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-08-27T08:00:03+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出將AI與高科技產業鏈導入新北多地、增加在地就業的規劃。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "新北的工廠多，人也最多。\n\n每天早上六點半，捷運上滿滿都是要出去上班的人。\n\n輝達會留在北士科，那一年多我全程在裡面。\n\n未來五股、蘆洲、林口、淡水、土城、鶯歌、新店——我要把AI跟高科技的產業鏈拉進這幾個地方。\n\n我看的不是三年五年，是往後三十年。\n\n好工作留在新北，人就留在新北。",
+      "topicScores": {
+        "經濟": 0.99
+      },
+      "topics": [
+        "經濟"
+      ],
+      "url": "https://www.instagram.com/p/DcfoEBUGJMh/"
     },
     {
       "agendaRelevance": 0.7,
