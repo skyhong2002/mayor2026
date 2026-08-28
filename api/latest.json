@@ -2,6 +2,316 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.24,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "0af3ece82e2c5b360e1f58801ae04e46156f27131e73eae01845e239bc5a0219",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Dckc74PkbRY",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/9f4aea339c4489eba521.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-28T03:59:16+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "記錄民眾反映水溝異味積水及地方單位處理進度。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:民眾陳情：永康區勝華街37巷水溝有臭味會積水…永康區水溝班已處理回報",
+      "topicScores": {
+        "環境": 0.82
+      },
+      "topics": [
+        "環境"
+      ],
+      "url": "https://www.threads.com/t/Dckc74PkbRY"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "7b2e9a41d5636e21d37b5b1b6e8c1fa6788ad360534a986c6a1398f1eab9cb31",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-08-28T04:01:52+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DckY71CEW9n",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "弱勢",
+        "預算",
+        "立法院"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-28T03:24:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "反駁蔣萬安支持翁曉玲砍庇護工廠預算及其相關說法，指其誤導大眾、傷害弱勢。",
+        "type": "responsive"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:平常問A答B就算了，庇護工廠這題，蔣萬安可以選擇不發聲，結果卻選擇跟翁曉玲站在一起，再踩弱勢一腳。\n\n事實很清楚，就是翁曉玲濫砍預算，而且在明知會傷到弱勢的狀況之下，執意為之，才導致總統府無法繼續訂購。\n\n從頭到尾就是立法院砍單。\n\n這就像，先把人家的錢搶走，再回頭問：「你怎麼不花錢買東西？」\n\n蔣萬安刻意只講對自己有利的部分、誤導大眾，為了政治攻防，連同理心都不要，不會良心不安嗎？\n\n蔣萬安說要有智慧地處理？有智慧的處理就是告訴你台北的國民黨委員不要砍，不要跟著翁曉玲投票，這才叫有智慧。\n\n作為父母官，能把這種話說得毫不遲疑，真的讓人匪夷所思。",
+      "topicScores": {
+        "社福": 0.96,
+        "議會監督": 0.94
+      },
+      "topics": [
+        "社福",
+        "議會監督"
+      ],
+      "url": "https://www.threads.com/t/DckY71CEW9n"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-27T10:03:12+00:00",
+        "inputHash": "71622fa32884f777db27521ecfb7da65b8752b9767d51cafd569a2c1ca850e32",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Auu579l6mL8",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/55d035e1167159bd6239.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T03:00:06+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "提出寵物照護與寵物券等政見，屬競選期間的動物福利政策宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "台中毛孩38萬！何欣純「寵愛毛孩5大安心」＋500元寵物券一次講",
+      "topicScores": {
+        "社福": 0.86,
+        "競選": 0.79
+      },
+      "topics": [
+        "社福",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=Auu579l6mL8"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "3a04682b18f3aa54b90f1f7d98a3a3e185c65ed2bf7a03bd7b4a5b94a8f3b964",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:dOc33LazkvQ",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/46c5023a8393c035b2a0.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T02:55:17+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "主動討論都市微型森林、樹木與降溫遮蔭等環境政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Bring Back the Trees, Cool Down Taipei. Urban Micro-Forests: Bringing Green Shade into Daily Life...",
+      "topicScores": {
+        "環境": 0.96
+      },
+      "topics": [
+        "環境"
+      ],
+      "url": "https://www.youtube.com/shorts/dOc33LazkvQ"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "e136f962e310580e6cf4920db81637db48b19bb98c30ed57ead722c80ad92efb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:K7CKc7B8VlQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8520b41555ccbac204e7.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T02:51:48+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "主動提出捷運藍線及台中路網推進、交通配套與工程透明政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "新台中，交給何欣純！等了8年，捷運藍線動工了！台中捷運路網要全力有效率推進！中央地方一起，做好交通配套，工程時程公開透明，讓市民清楚。",
+      "topicScores": {
+        "交通": 0.99,
+        "競選": 0.94
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/K7CKc7B8VlQ"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "f9631536e721960efd31bf0a07e86765fccc08fef97f0ae2de054f764e2773b7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DckTn5hmHX2",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/e49c26cd32270a6860f6.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-28T02:42:24+00:00",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "主動提出捷運路網推進、交通配套與工程資訊公開的政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:等了8年，捷運藍線動工了！\n\n台中捷運路網要全力有效率推進！中央地方一起，做好交通配套，工程時程公開透明，讓市民清楚。\n\n新台中，交給何欣純！",
+      "topicScores": {
+        "交通": 0.98,
+        "競選": 0.91
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DckTn5hmHX2"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "2e4ea3dd829ca7af3e69b8dd6e625f0fa11e1cc7aa6ab3c1db77a75657b63d11",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:39m6360l8tg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/66a961ca87faac7c62b6.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T01:00:09+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是打匹克球的活動紀錄，沒有具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Playing Pickleball with Shen Po-yang!",
+      "topicScores": {
+        "體育": 0.98
+      },
+      "topics": [
+        "體育"
+      ],
+      "url": "https://www.youtube.com/shorts/39m6360l8tg"
+    },
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "57f364d64636fb04520439e13e1573225fe02470d0651f353abd405fae372775",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:egSLTysvc50",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ca971e97a7f007272ef7.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-28T01:00:01+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "明確提出綠線延伸大坑、四年內動工及完工的交通承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "綠線延伸大坑！何欣純4年內動工＋拼完工",
+      "topicScores": {
+        "交通": 0.99,
+        "競選": 0.93
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/egSLTysvc50"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "3955be3fdbfc287305868581998dd3cfbb929f0fd35dca02fcb3155dff4ca975",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DckE_ndgHJW",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/a3438511ddc77d0c33e7.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-08-28T00:30:02+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "主動公布競選相關探險隊角色，屬形象宣傳而非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:TEAM TAIWAN 拓荒探險隊第三彈角色曝光！\n\n猜猜看這次登場的是誰？沒錯，就是大家最熟悉的「水獺媽媽」✨",
+      "topicScores": {
+        "競選": 0.72
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DckE_ndgHJW"
+    },
+    {
       "agendaRelevance": 0.04,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
@@ -2002,6 +2312,42 @@
       "url": "https://www.facebook.com/reel/1374164728263291/"
     },
     {
+      "agendaRelevance": 0.86,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-08-28T04:01:22+00:00",
+        "inputHash": "d2d02e275fa40996e7e22978f6ada42141cbc609b18760bd90959822230bf971",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:https://chiao.tw/chiao_view/%e6%b4%bb%e7%b5%a1%e6%96%b0%e5%8c%97%e5%95%86%e6%a5%ad%e6%b4%bb%e5%8b%95-%e6%b1%bd%e8%bb%8a%e7%94%a2%e6%a5%ad%e5%86%8d%e7%99%bc%e5%b1%95",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/d78675510d0473ac2c89.webp",
+      "keywords": [
+        "產業"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-27T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "主動提出照顧汽車產業、促進商業活動及匯聚產業人才的政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-web",
+      "text": "巧觀點 活絡新北商業活動 汽車產業再發展 未來我不但會照顧產業，也要持續匯聚各行各業的力量，讓產業與人才，都在新北發光發熱！ 2026.08.27",
+      "topicScores": {
+        "競選": 0.77,
+        "經濟": 0.98
+      },
+      "topics": [
+        "經濟",
+        "競選"
+      ],
+      "url": "https://chiao.tw/chiao_view/%e6%b4%bb%e7%b5%a1%e6%96%b0%e5%8c%97%e5%95%86%e6%a5%ad%e6%b4%bb%e5%8b%95-%e6%b1%bd%e8%bb%8a%e7%94%a2%e6%a5%ad%e5%86%8d%e7%99%bc%e5%b1%95"
+    },
+    {
       "agendaRelevance": 0.62,
       "candidateId": "huang-shih-chieh",
       "classification": {
@@ -3203,381 +3549,6 @@
         "防災"
       ],
       "url": "https://www.instagram.com/p/Dcfu8vmGNhT/"
-    },
-    {
-      "agendaRelevance": 0.2,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "ca5675504386324201ebc42c1dbf5df323b4f7bce61a97958df3c200fecb9eee",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-26T10:07:22+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:10175575732535654",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-26T07:59:56.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "回應他方觀點",
-        "reason": "回應市府無菸城市柵欄政策及外界跨黨派質疑，批評市府未檢討並被迫拆除。",
-        "type": "responsive"
-      },
-      "sourceId": "shen-fb-personal",
-      "text": "無菸城市我支持\n但無菸城市需要的是配套\n不是把有吸菸需求的市民\n用柵欄圍在路口\n⠀\n大家批評了幾個月\n市府不說明、不檢討\n今天，默默把柵欄拆了\n⠀\n以前，問A答B；\n現在，問A拆A。\n難怪垃圾桶也會不見\n⠀\n繞了一大圈\n其實就該回頭檢討\n為何一開始都沒有想好\n⠀\n七百多萬的陽傘\n層出不窮的兒虐\n到今天的「柵欄城市」\n都已經是跨黨派的質疑\n蔣市府卻依然故我\n民怨炸鍋了才要改？\n⠀\n台北人的金錢與時間\n可以一直被這樣浪費嗎￼",
-      "topicScores": {
-        "生活": 0.76,
-        "議會監督": 0.91
-      },
-      "topics": [
-        "議會監督",
-        "生活"
-      ],
-      "url": "https://www.facebook.com/pumashen/posts/pfbid0DeBv9NPSnfw5htbGa2kuJizwm7VayFm2hFqRL96EDXBXsKG31engQWnZFMLCZcvcl"
-    },
-    {
-      "agendaRelevance": 0.18,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "3a99699c6e032a41e13510532554e5bbe9d945725c8f808c3cab1b3236ac5840",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-26T10:07:22+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcfuoV6FNqn",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "垃圾"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-26T07:57:39+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "回應他方觀點",
-        "reason": "回應市府對無菸城市柵欄政策的批評與拆除處置，並反駁其不說明、不檢討的立場。",
-        "type": "responsive"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:無菸城市我支持\n但無菸城市需要的是配套\n不是把有吸菸需求的市民\n用柵欄圍在路口\n⠀\n大家批評了幾個月\n市府不說明、不檢討\n今天，默默把柵欄拆了\n⠀\n以前，問A答B；\n現在，問A拆A。\n難怪垃圾桶也會不見\n⠀\n繞了一大圈\n其實就該回頭檢討\n為何一開始都沒有想好\n⠀\n七百多萬的陽傘\n層出不窮的兒虐\n到今天的「柵欄城市」\n都已經是跨黨派的質疑\n蔣市府卻依然故我\n民怨炸鍋了才要改？\n⠀\n台北人的金錢與時間\n可以一直被這樣浪費嗎",
-      "topicScores": {
-        "環境": 0.88,
-        "議會監督": 0.94
-      },
-      "topics": [
-        "議會監督",
-        "環境"
-      ],
-      "url": "https://www.threads.com/t/DcfuoV6FNqn"
-    },
-    {
-      "agendaRelevance": 0.99,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "a489bb1e32ed6f7f67f6025e9ea923698d20bd138ba0fed2d3a9b2c67396806d",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/Dcftx6RD1e2",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/ea89b511799a68cb9391.webp",
-      "keywords": [
-        "育兒",
-        "補助",
-        "津貼",
-        "社宅",
-        "租金"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-26T07:50:13+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出育兒補助、生育津貼、婚育宅及租金折抵等完整政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-threads",
-      "text": "@hsiehlungchieh:看到新加坡為了提高出生率，再度大手筆加碼催生政策，龍介第一個想法就是：好的政策，就應該見賢思齊。\n\n新加坡政府規劃，未來每名孩子從出生一路到17歲，家庭可獲得近7萬新加坡元、折合新台幣將近175萬元的支持。這說明一件事：少子化不是發一次紅包就能解決，而是要從生育、育兒到居住，一路替年輕家庭減輕負擔。\n\n台灣的目前補助雖然還比不上新加坡，但該做的還是要做。龍介在台南提出幾項育兒政策，就是要把育兒環境顧得更好，從生、養到住，實實在在替年輕家庭減輕壓力：\n\n👉0到15歲，每月領5000元，龍介再加碼：\n龍介先前提出，台南0到15歲孩子每月加碼5000元，總額最高96萬元。中央後來跟進延長到18歲，但6到18歲每月有2500元要存進孩子帳戶。\n\n龍介主張，台南再補2500元，讓年輕爸媽每個月真正領滿5000元！\n\n👉最強生育津貼：\n第一胎3萬元，第二胎以上每胎5萬元。\n\n👉婚育宅比例直接翻倍到40%：\n把更多社宅優先留給台南有婚育需求的年輕人，先幫大家解決「住」的問題。\n\n👉三胎家庭租金折抵購屋金：\n育有三胎的夫妻優先入住婚育宅，未來若購買政府社宅、公宅，過去繳的租金還能折抵購屋金。",
-      "topicScores": {
-        "住宅": 0.91,
-        "社福": 0.96
-      },
-      "topics": [
-        "社福",
-        "住宅"
-      ],
-      "url": "https://www.threads.com/t/Dcftx6RD1e2"
-    },
-    {
-      "agendaRelevance": 0.99,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "85fdfbed4bccee55c1af83006d05f2da77ddcf464a0e94a038861b541043d394",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DcftPIBkr0b/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/47f5e47aa07ede49a478.webp",
-      "keywords": [
-        "托育",
-        "育兒",
-        "補助",
-        "津貼",
-        "社宅",
-        "租金"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-08-26T07:45:31+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出育兒補助、生育津貼、婚育宅及租金折抵等完整政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-ig",
-      "text": "看到新加坡為了提高出生率，再度大手筆加碼催生政策，龍介第一個想法就是：好的政策，就應該見賢思齊。\n\n新加坡政府規劃，未來每名孩子從出生一路到17歲，家庭可獲得近7萬新加坡元、折合新台幣將近175萬元的支持。這說明一件事：少子化不是發一次紅包就能解決，而是要從生育、育兒到居住，一路替年輕家庭減輕負擔。\n\n台灣的目前補助雖然還比不上新加坡，但該做的還是要做。龍介在台南提出幾項育兒政策，就是要把育兒環境顧得更好，從生、養到住，實實在在替年輕家庭減輕壓力：\n\n👉0到15歲，每月領5000元，龍介再加碼：\n龍介先前提出，台南0到15歲孩子每月加碼5000元，總額最高96萬元。中央後來跟進延長到18歲，但6到18歲每月有2500元要存進孩子帳戶。\n\n龍介主張，台南再補2500元，讓年輕爸媽每個月真正領滿5000元！\n\n👉最強生育津貼：\n第一胎3萬元，第二胎以上每胎5萬元。\n\n👉婚育宅比例直接翻倍到40%：\n把更多社宅優先留給台南有婚育需求的年輕人，先幫大家解決「住」的問題。\n\n👉三胎家庭租金折抵購屋金：\n育有三胎的夫妻優先入住婚育宅，未來若購買政府社宅、公宅，過去繳的租金還能折抵購屋金。\n\n龍介講一句實在話，少年人不是不想生，是現在養一個囝仔，奶粉、尿布、托育、教育、房租，哪一項不是壓力？\n\n從生育津貼、每月育兒支持，到婚育宅、成家買厝，龍介就是要一步一步把年輕人負擔減下來，讓大家敢結婚、敢生囝仔，敢留在台南落地生根。",
-      "topicScores": {
-        "住宅": 0.91,
-        "社福": 0.96
-      },
-      "topics": [
-        "社福",
-        "住宅"
-      ],
-      "url": "https://www.instagram.com/p/DcftPIBkr0b/"
-    },
-    {
-      "agendaRelevance": 0.92,
-      "candidateId": "chen-ting-fei",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "d76e6e4d294a4fc6def9cfa5b26e36c4f8b709d3bbd6e270343957cfec522db4",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1629496555204933",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/8f84587bc31e615d59de.webp",
-      "keywords": [
-        "淹水",
-        "質詢",
-        "預算"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-26T07:42:50.000Z",
-      "postingIntent": {
-        "confidence": 0.84,
-        "label": "主動發文",
-        "reason": "提出防洪工程與預算要求，並說明已透過質詢推動治水。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chen-tf-fb",
-      "text": "不要讓政治口水延誤治水預算！亭妃強勢爭取台南關鍵防洪工程，要求明年汛期前全面到位！\n\n台南連日暴雨突破 1,000 毫米！雖然歷年的治水預算有發揮作用，讓淹水面積大幅縮小，但面對極端氣候，治水預算一刻都不能等。昨天賴清德總統已實地赴台南會勘指示全力支援，亭妃今天也提出質詢，要求中央迅速核定預算，切勿讓政治口水延誤治水時程！\n\n為了徹底解決淹水瓶頸，亭妃積極爭取 9,500 萬元進行三爺溪延伸加高工程，並協調高公局借地設置永久抽水站，全面加強內水抽排。針對永康大灣地區，除了推動 1.5 億元崑大路箱涵工程，更特別感謝崑山科大無償提供 2,000 坪土地，打造地下滯洪、地上還原球場與停車場的立體化工程，創造校園與治水雙贏！另外大灣防汛道路底下箱涵的建置也是重中之重。\n\n從小生長在淹水區的亭妃，深知大家面對暴雨的焦慮與痛苦，亭妃拜託相關單位不能讓政治口水延誤治水時程，現在南部治水要進入另外一個「區域治水」的階段，才能面對極端氣候的瞬間暴雨，給台南鄉親一個安全無虞的家！\n\n#陳亭妃  #台南治水工程  #拒絕政治口水",
-      "topicScores": {
-        "議會監督": 0.82,
-        "防災": 0.99
-      },
-      "topics": [
-        "防災",
-        "議會監督"
-      ],
-      "url": "https://www.facebook.com/fififans/posts/pfbid07wAzs5nYuH6iEVLDgc7QYRuLQGbeHwUcnCvjeDRF1eUrapu6g4nAYUvuMvsmXQS4l"
-    },
-    {
-      "agendaRelevance": 0.97,
-      "candidateId": "hsieh-lung-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "f85825640fec07b117a82f6f6e7ca7c3bdf12cc303d044f60943953d83b43d82",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1640732680741647",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/88f127af8485f1dcdd9f.webp",
-      "keywords": [
-        "托育",
-        "育兒",
-        "補助",
-        "津貼",
-        "社宅",
-        "租金"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-08-26T07:42:38.000Z",
-      "postingIntent": {
-        "confidence": 0.93,
-        "label": "主動發文",
-        "reason": "比較新加坡政策並具體提出育兒補助、婚育宅與購屋支持方案。",
-        "type": "self_initiated"
-      },
-      "sourceId": "hsieh-lc-fb",
-      "text": "看到新加坡為了提高出生率，再度大手筆加碼催生政策，龍介第一個想法就是：好的政策，就應該見賢思齊。\n\n新加坡政府規劃，未來每名孩子從出生一路到17歲，家庭可獲得近7萬新加坡元、折合新台幣將近175萬元的支持。這說明一件事：少子化不是發一次紅包就能解決，而是要從生育、育兒到居住，一路替年輕家庭減輕負擔。\n\n台灣的目前補助雖然還比不上新加坡，但該做的還是要做。龍介在台南提出幾項育兒政策，就是要把育兒環境顧得更好，從生、養到住，實實在在替年輕家庭減輕壓力：\n\n👉0到15歲，每月領5000元，龍介再加碼：\n龍介先前提出，台南0到15歲孩子每月加碼5000元，總額最高96萬元。中央後來跟進延長到18歲，但6到18歲每月有2500元要存進孩子帳戶。\n\n龍介主張，台南再補2500元，讓年輕爸媽每個月真正領滿5000元！\n\n👉最強生育津貼：\n第一胎3萬元，第二胎以上每胎5萬元。\n\n👉婚育宅比例直接翻倍到40%：\n把更多社宅優先留給台南有婚育需求的年輕人，先幫大家解決「住」的問題。\n\n👉三胎家庭租金折抵購屋金：\n育有三胎的夫妻優先入住婚育宅，未來若購買政府社宅、公宅，過去繳的租金還能折抵購屋金。\n\n龍介講一句實在話，少年人不是不想生，是現在養一個囝仔，奶粉、尿布、托育、教育、房租，哪一項不是壓力？\n\n從生育津貼、每月育兒支持，到婚育宅、成家買厝，龍介就是要一步一步把年輕人負擔減下來，讓大家敢結婚、敢生囝仔，敢留在台南落地生根。",
-      "topicScores": {
-        "住宅": 0.91,
-        "社福": 0.98
-      },
-      "topics": [
-        "社福",
-        "住宅"
-      ],
-      "url": "https://www.facebook.com/TEL062268268/posts/pfbid06wWYk5HYioWznDpiEPf9crasEVaDqGDtZGe3K6P5XHpYZC9dhf9Z55Xf63mrFttul"
-    },
-    {
-      "agendaRelevance": 0.98,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "118a2abf09a4ee2d34593686ed627581d4696db5e3c0772ccaf95d4fcde6e716",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DcfsCdmj6i6",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/c3711d48723e24a5617b.webp",
-      "keywords": [
-        "補助",
-        "醫療",
-        "醫院",
-        "疫苗",
-        "急診",
-        "產業"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-08-26T07:37:21+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動提出寵物照護、醫療、認養及產業支持等具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ho-hc-threads",
-      "text": "@a_chun1973:我提出「寵愛毛孩5大安心、1個加碼」，打造更全面、更友善的寵物欣樂園！\n\n1️⃣ 友善環境安心\n升級公園寵物專區、串聯毛孩友善店家。\n\n2️⃣ 醫療量能安心\n鼓勵動物醫院增加夜間急診，培育動物醫事助理人才。\n\n3️⃣ 飼主學習安心\n免費提供照護、行為、清潔美容及生命教育課程。\n\n4️⃣ 動物領養安心\n提升收容品質、打擊非法繁殖；公立動物之家認養再加碼500元疫苗補助＋免費基礎健檢。\n\n5️⃣ 寵物產業安心\n強化寵物食品、寄養、美容等專業培訓。\n\n⭐ 再加碼500元「台中版寵物券」\n設籍台中、毛孩完成寵物登記即可申請，減輕飼主負擔，也支持在地寵物產業。",
-      "topicScores": {
-        "社福": 0.9,
-        "經濟": 0.7,
-        "醫療": 0.76
-      },
-      "topics": [
-        "社福",
-        "醫療",
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DcfsCdmj6i6"
-    },
-    {
-      "agendaRelevance": 0.96,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "cc9d85d637c6385fca32c9144f2df5c2937d9fbe488dfb4f15c5b0bc4d7a9e38",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/Dcfq2duicrB",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/5e855cc3b387f9919d63.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-08-26T07:28:05+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出青少年遊憩、十分鐘遊戲圈及涼感公園等具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:來到公園，親自挑戰看看🤣從孩子的角度出發，更能了解孩子需要什麼！\n\n身為爸爸，我時常陪著孩子到公園玩。我已簽下「兒童遊戲空間政策承諾書」，未來要讓桃園的公園更好玩，也更適合孩子活動、探索與成長。\n\n✅打造青少年戶外遊憩空間：正視12歲以上青少年的需求，規劃適合的活動空間！\n✅打造10分鐘遊戲圈：讓每個生活圈，都有孩子可以自在玩耍的遊戲空間！\n✅打造涼感公園：增加遮蔭、降溫與戲水設施，夏天也能舒服玩！\n\n努力把桃園打造成真正的遊戲宜居城市！心桃園，玩起來💖",
-      "topicScores": {
-        "生活": 0.92
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/Dcfq2duicrB"
-    },
-    {
-      "agendaRelevance": 0.96,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "e3b3bd55adbd695cd984f522020393df976ad53d05ddddf087ae2544a2c40c19",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/Dcfqed3TBJ1/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/aeb51fe5a3df1ffd6fd2.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-08-26T07:21:43+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出青少年遊憩、十分鐘遊戲圈及涼感公園等具體政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "來到公園，親自挑戰看看🤣從孩子的角度出發，更能了解孩子需要什麼！\n\n身為爸爸，我時常陪著孩子到公園玩。我已簽下「兒童遊戲空間政策承諾書」，未來要讓桃園的公園更好玩，也更適合孩子活動、探索與成長。\n\n✅打造青少年戶外遊憩空間：正視12歲以上青少年的需求，規劃適合的活動空間！\n✅打造10分鐘遊戲圈：讓每個生活圈，都有孩子可以自在玩耍的遊戲空間！\n✅打造涼感公園：增加遮蔭、降溫與戲水設施，夏天也能舒服玩！\n\n努力把桃園打造成真正的遊戲宜居城市！心桃園，玩起來💖",
-      "topicScores": {
-        "生活": 0.92
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/Dcfqed3TBJ1/"
-    },
-    {
-      "agendaRelevance": 0.9,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-08-26T10:04:43+00:00",
-        "inputHash": "fa1a910b84eb5e86687c3ed2a3f1f2864a2aae0065323a42669febb20350fd9f",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1582271506680715",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/75e430c8a58828f1102f.webp",
-      "keywords": [],
-      "platform": "facebook",
-      "postedAt": "2026-08-26T07:21:14.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "提出青少年遊憩、十分鐘遊戲圈及涼感公園等具體兒童公園政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-fb",
-      "text": "來到公園，親自挑戰看看🤣從孩子的角度出發，更能了解孩子需要什麼！\n\n身為爸爸，我時常陪著孩子到公園玩。我已簽下「兒童遊戲空間政策承諾書」，未來要讓桃園的公園更好玩，也更適合孩子活動、探索與成長。\n\n✅打造青少年戶外遊憩空間：正視12歲以上青少年的需求，規劃適合的活動空間！\n✅打造10分鐘遊戲圈：讓每個生活圈，都有孩子可以自在玩耍的遊戲空間！\n✅打造涼感公園：增加遮蔭、降溫與戲水設施，夏天也能舒服玩！\n\n努力把桃園打造成真正的遊戲宜居城市！心桃園，玩起來💖",
-      "topicScores": {
-        "教育": 0.66,
-        "生活": 0.93
-      },
-      "topics": [
-        "生活",
-        "教育"
-      ],
-      "url": "https://www.facebook.com/reel/1592659815829099/"
     }
   ],
   "version": 1
