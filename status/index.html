@@ -32,9 +32,9 @@
           <div class="feed-page-summary status-summary-panel">
             <div class="status-summary-line">
               <span class="status-badge status-degraded">部分異常</span>
-              <strong>核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub。 Facebook Apify 目前依排程或預算節流。</strong>
+              <strong>核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。</strong>
             </div>
-            <p>快照時間 2026-08-30T00:02:54+08:00</p>
+            <p>快照時間 2026-08-30T06:28:20+08:00</p>
             <div class="feed-links">
               <a href="../api/status.json">Status JSON</a>
               <a href="../feeds/">RSS</a>
@@ -76,7 +76,7 @@
             
       <article class="status-metric-card">
         <span>目前錯誤</span>
-        <strong>12</strong>
+        <strong>20</strong>
         <p>過去 24 小時</p>
       </article>
     
@@ -100,7 +100,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>定期 pipeline 已產生公開資料快照。</p>
-        <ul class="status-detail-list"><li>最近一次執行心跳：2026-08-30 00:02:54</li></ul>
+        <ul class="status-detail-list"><li>最近一次執行心跳：2026-08-30 06:28:20</li></ul>
       </article>
     
 
@@ -120,7 +120,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>http://127.0.0.1:1200 回應 正常。</p>
-        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：14 ms</li></ul>
+        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：54 ms</li></ul>
       </article>
     
 
@@ -129,8 +129,8 @@
           <h2>Instagram / Threads / X RSSHub</h2>
           <span class="status-badge status-degraded">部分異常</span>
         </div>
-        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 12 個錯誤。</p>
-        <ul class="status-detail-list"><li>最新抓取時間：2026-08-30 00:00:46</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
+        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 10 個錯誤。</p>
+        <ul class="status-detail-list"><li>最新抓取時間：2026-08-30 06:01:13</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
       </article>
     
 
@@ -140,16 +140,16 @@
           <span class="status-badge status-paused">節流中</span>
         </div>
         <p>14 個 Facebook 來源。 目前依預算 pacing 暫停開 run。</p>
-        <ul class="status-detail-list"><li>最近成功 run：2026-08-29 18:05:39</li><li>本月已花費：$4.40 / 目標 $4.75</li><li>單次預估花費：$0.21</li><li>pacing 判斷：not due yet (pace ~every 33.6h, next at 2026-08-30T19:39:54+00:00; ~$4.40 of $4.75 spent)</li></ul>
+        <ul class="status-detail-list"><li>最近成功 run：2026-08-29 18:05:39</li><li>本月已花費：$4.40 / 目標 $4.75</li><li>單次預估花費：$0.21</li><li>pacing 判斷：not due yet (pace ~every 29.7h, next at 2026-08-30T15:48:38+00:00; ~$4.40 of $4.75 spent)</li></ul>
       </article>
     
 
-      <article class="status-component-card status-card-ok">
+      <article class="status-component-card status-card-degraded">
         <div class="status-component-head">
           <h2>YouTube yt-dlp</h2>
-          <span class="status-badge status-ok">正常</span>
+          <span class="status-badge status-degraded">部分異常</span>
         </div>
-        <p>10 個 YouTube 來源；過去 24 小時 0 個錯誤。</p>
+        <p>10 個 YouTube 來源；過去 24 小時 10 個錯誤。</p>
         <ul class="status-detail-list"><li>已收錄影片：527</li></ul>
       </article>
     
@@ -206,7 +206,7 @@
             <tr>
               <th scope="row">Instagram</th>
               <td>12</td>
-              <td>12</td>
+              <td>10</td>
               <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
@@ -246,8 +246,8 @@
             <tr>
               <th scope="row">YouTube</th>
               <td>10</td>
-              <td></td>
-              <td><span class="status-badge status-ok">正常</span></td>
+              <td>10</td>
+              <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
               </tbody>
@@ -267,6 +267,105 @@
           </div>
           <div class="status-error-list">
             
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:21:14+00:00 · YouTube</span>
+                <strong>柯志恩（ko-ce-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:19:14+00:00 · YouTube</span>
+                <strong>賴瑞隆（lai-jl-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:17:14+00:00 · YouTube</span>
+                <strong>謝龍介（hsieh-lc-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:15:14+00:00 · YouTube</span>
+                <strong>陳亭妃（chen-tf-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:13:14+00:00 · YouTube</span>
+                <strong>江啟臣（chiang-cc-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/user/kesing168&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:11:14+00:00 · YouTube</span>
+                <strong>何欣純（ho-hc-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:09:14+00:00 · YouTube</span>
+                <strong>張善政（chang-sc-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/@taoyuansango&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:07:14+00:00 · YouTube</span>
+                <strong>蘇巧慧（su-ch-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:05:14+00:00 · YouTube</span>
+                <strong>蔣萬安（chiang-wa-yt）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:03:14+00:00 · YouTube</span>
+                <strong>沈伯洋（shen-yt-personal）</strong>
+              </div>
+              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/@PumaShen&#x27;]&#x27; timed out after 120 seconds</p>
+            </article>
+            
+
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-29T22:00:24+00:00 · Instagram</span>
+                <strong>沈伯洋（shen-ig-personal）</strong>
+              </div>
+              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
+            </article>
+            
+
             <article class="status-error-item">
               <div>
                 <span class="feed-latest-meta">2026-08-29T10:05:11+00:00 · Instagram</span>
@@ -345,105 +444,6 @@
                 <strong>李四川（lee-sc-ig-main）</strong>
               </div>
               <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-29T10:00:55+00:00 · Instagram</span>
-                <strong>蘇巧慧（su-ch-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-29T10:00:28+00:00 · Instagram</span>
-                <strong>蔣萬安（chiang-wa-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-29T04:00:22+00:00 · Instagram</span>
-                <strong>沈伯洋（shen-ig-personal）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:02:37+00:00 · Instagram</span>
-                <strong>柯志恩（ko-ce-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:02:22+00:00 · Instagram</span>
-                <strong>賴瑞隆（lai-jl-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:02:06+00:00 · Instagram</span>
-                <strong>謝龍介（hsieh-lc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:01:51+00:00 · Instagram</span>
-                <strong>陳亭妃（chen-tf-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:01:39+00:00 · Instagram</span>
-                <strong>江啟臣（chiang-cc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:01:25+00:00 · Instagram</span>
-                <strong>何欣純（ho-hc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:01:13+00:00 · Instagram</span>
-                <strong>張善政（chang-sc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-27T22:00:57+00:00 · Instagram</span>
-                <strong>黃世杰（huang-sj-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: Error: Instagram user feed returned no author</p>
             </article>
             
           </div>
