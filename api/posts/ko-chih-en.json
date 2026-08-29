@@ -19,8 +19,44 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 340,
+  "count": 341,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-08-29T16:01:27+00:00",
+        "inputHash": "9590541f31677ac1ef7b23fbc982a7bd8476777475409ec01fc021045f6fb2f3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcnPjFhoK9m",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/4c139303a93daac2c324.webp",
+      "keywords": [
+        "豪雨",
+        "災害",
+        "警戒"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-29T06:00:01+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "說明豪雨崩落現場與疏散警戒，屬災害通報及安全提醒。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:高雄連日豪雨，小港松富街昨日下午發生土石崩落，今早雨勢再起，第一時間與曾麗燕、陳麗娜、蔡武宏議員前往現場關心。\n\n目前市府已緊急疏散部分居民，也要求持續評估災害潛勢，必要時擴大警戒範圍。守護市民安全是第一優先，請附近居民務必提高警覺、配合疏散指示。\n\n祈求雨勢早日減弱，高雄平安。",
+      "topicScores": {
+        "防災": 0.99
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.threads.com/t/DcnPjFhoK9m"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "ko-chih-en",
@@ -12311,8 +12347,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaMmofGGhQ0/",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/1d752c2b2a64790d8b33.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "經濟",
         "產業",

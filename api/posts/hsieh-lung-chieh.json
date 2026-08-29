@@ -19,8 +19,74 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 369,
+  "count": 371,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-29T16:01:27+00:00",
+        "inputHash": "ec514c751cc5c4d3dc81b9bccac0696a2c42d3ea9ec6831d7f981cfff7a387a3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcoJjmqD2wB",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/0dd23dd2cf388e067db9.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-29T14:27:05+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布登記參選台南市長，屬候選動態而非政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:龍介2026年9月1日會去登記參選台南市長",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DcoJjmqD2wB"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-29T16:01:27+00:00",
+        "inputHash": "b0f048d00079e1cb68c2be6c0bcc600fad0aa0c31a85750aceb93885c8e4ac5f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Urprfkv5K0k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/5b4ae79a35bc4bcd30ea.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-29T14:18:19+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "內容是宣布參選台南市長，屬競選資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Hsieh Lung-chieh will register to run for Mayor of Tainan on September 1, 2026 #HsiehLungChieh #R...",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/Urprfkv5K0k"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "hsieh-lung-chieh",
@@ -12932,8 +12998,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:smAQ05IrLTg",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/be8644b3ffedf0b8a136.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-06-30T13:16:18+00:00",
