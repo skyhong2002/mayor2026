@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-29 06:01:03"
+        "最近一次執行心跳：2026-08-29 12:01:59"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3564",
+        "已收錄貼文：3568",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：53 ms"
+        "耗時：72 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-29 06:00:41",
+        "最新抓取時間：2026-08-29 12:01:14",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
       "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
       "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 7 個錯誤。"
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 1 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-08-28 18:01:30",
         "本月已花費：$4.19 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 27.7h, next at 2026-08-29T13:46:06+00:00; ~$4.19 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 25.5h, next at 2026-08-29T11:30:45+00:00; ~$4.19 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：524"
+        "已收錄影片：525"
       ],
       "id": "youtube",
       "label": "正常",
@@ -88,21 +88,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-29T06:01:03+08:00",
+  "generatedAt": "2026-08-29T12:01:59+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 7,
-    "latestPostAt": "2026-08-28T14:49:43+00:00",
+    "currentErrors": 1,
+    "latestPostAt": "2026-08-29T03:21:58+00:00",
     "postsByPlatform": {
       "facebook": 1110,
       "instagram": 977,
       "podcast": 5,
-      "threads": 869,
+      "threads": 872,
       "website": 73,
       "x": 6,
-      "youtube": 524
+      "youtube": 525
     },
-    "totalPosts": 3564,
+    "totalPosts": 3568,
     "watchAccounts": 67
   },
   "overall": {
@@ -111,13 +111,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-25T16:01:54+00:00",
-      "sourceId": "lee-sc-ig-main",
-      "sourceName": "李四川（lee-sc-ig-main）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
       "platform": "instagram",
@@ -250,6 +243,13 @@
       "recordedAt": "2026-08-27T22:02:37+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-08-29T04:00:22+00:00",
+      "sourceId": "shen-ig-personal",
+      "sourceName": "沈伯洋（shen-ig-personal）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -263,7 +263,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 7,
+        "currentErrors": 1,
         "platform": "instagram",
         "sources": 12,
         "status": "degraded"
