@@ -17,11 +17,13 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+from typing import Callable
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
 DEFAULT_LOCK_FILE = PROJECT_ROOT / "state" / "run_pipeline.lock"
 DEFAULT_RUNTIME_STATUS = PROJECT_ROOT / "site" / "api" / "pipeline-runtime.json"
+AI_DEFERRED_EXIT_CODE = 75
 
 
 def utc_now() -> dt.datetime:
@@ -114,6 +116,43 @@ def release_lock(path: Path) -> None:
             pass
 
 
+def execute_step(
+    command: list[str],
+    *,
+    step: str,
+    mark_step: Callable[..., None],
+    optional: bool = False,
+    deferred_exit_codes: frozenset[int] = frozenset(),
+) -> int:
+    mark_step(step, "running", command=command)
+    result = subprocess.run(command, cwd=PROJECT_ROOT)
+    if result.returncode in deferred_exit_codes:
+        mark_step(step, "deferred", command=command, returncode=result.returncode)
+        print(
+            f"Pipeline step deferred until the next scheduled run "
+            f"(exit {result.returncode}): {' '.join(command)}",
+            file=sys.stderr,
+        )
+        return result.returncode
+    if result.returncode:
+        mark_step(
+            step,
+            "optional_failed" if optional else "failed",
+            command=command,
+            returncode=result.returncode,
+        )
+        if optional:
+            print(
+                f"Optional pipeline step failed with exit code {result.returncode}: "
+                f"{' '.join(command)}",
+                file=sys.stderr,
+            )
+            return result.returncode
+        raise subprocess.CalledProcessError(result.returncode, command)
+    mark_step(step, "ok", command=command, returncode=0)
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--skip-watch", action="store_true", help="Skip fetching new posts; rebuild site from existing data only.")
@@ -178,17 +217,20 @@ def main() -> int:
         else:
             publish_runtime_status("running", current_step=label, returncode=returncode)
 
-    def run(command: list[str], *, step: str, optional: bool = False) -> None:
-        mark_step(step, "running", command=command)
-        result = subprocess.run(command, cwd=PROJECT_ROOT)
-        if result.returncode:
-            mark_step(step, "optional_failed" if optional else "failed", command=command, returncode=result.returncode)
-            if optional:
-                print(f"Optional pipeline step failed with exit code {result.returncode}: {' '.join(command)}", file=sys.stderr)
-            else:
-                raise subprocess.CalledProcessError(result.returncode, command)
-        else:
-            mark_step(step, "ok", command=command, returncode=0)
+    def run(
+        command: list[str],
+        *,
+        step: str,
+        optional: bool = False,
+        deferred_exit_codes: frozenset[int] = frozenset(),
+    ) -> int:
+        return execute_step(
+            command,
+            step=step,
+            mark_step=mark_step,
+            optional=optional,
+            deferred_exit_codes=deferred_exit_codes,
+        )
 
     locked = args.no_lock or acquire_lock(lock_path, stale_after_minutes=args.lock_stale_minutes)
     if not locked:
@@ -218,7 +260,20 @@ def main() -> int:
             )
 
         run([PYTHON, "scripts/fetch_media_cache.py"], step="cache media", optional=True)
-        run([PYTHON, "scripts/classify_context.py"], step="classify post topics and posting intent with AI")
+        classification_returncode = run(
+            [PYTHON, "scripts/classify_context.py"],
+            step="classify post topics and posting intent with AI",
+            deferred_exit_codes=frozenset({AI_DEFERRED_EXIT_CODE}),
+        )
+        if classification_returncode == AI_DEFERRED_EXIT_CODE:
+            completed = True
+            publish_runtime_status(
+                "deferred",
+                current_step="classify post topics and posting intent with AI",
+                message="AI item deferred; keeping the current public snapshot until the next scheduled retry",
+                returncode=classification_returncode,
+            )
+            return 0
         run([PYTHON, "scripts/build_public_data.py"], step="build public data")
         run([PYTHON, "scripts/build_spectrum.py"], step="build spectrum")
         run([PYTHON, "scripts/build_qualitative.py"], step="build qualitative comparisons")

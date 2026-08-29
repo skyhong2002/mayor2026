@@ -37,6 +37,7 @@ OPENAI_FALLBACK_MODEL = "gpt-5.4-mini"  # used when MAYOR_AI_BACKEND=openai
 DEFAULT_BATCH_SIZE = 20
 DEFAULT_API_URL = "https://api.openai.com/v1/responses"
 DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
+DEFERRED_EXIT_CODE = 75
 
 # Which AI backend classifies posts:
 #   "openai" — the OpenAI Responses API (needs platform credits)
@@ -67,6 +68,10 @@ TOPIC_LABELS = tuple(classify_topics.TOPIC_SLUGS)
 
 class ClassificationError(RuntimeError):
     pass
+
+
+class DeferredClassificationError(ClassificationError):
+    """A single item still failed after retries and should wait for the next run."""
 
 
 def record_token_usage(response: dict[str, Any]) -> None:
@@ -579,8 +584,10 @@ def run_batch_with_retries(
             *run_batch_with_retries(remaining[:midpoint], model, runner),
             *run_batch_with_retries(remaining[midpoint:], model, runner),
         ]
-    raise ClassificationError(
-        f"AI classification stopped after automatic retries: {last_error or 'model kept omitting the requested id'}"
+    post_id = str(remaining[0].get("id") or "unknown")
+    raise DeferredClassificationError(
+        f"AI classification deferred for {post_id} after automatic retries: "
+        f"{last_error or 'model kept omitting the requested id'}"
     )
 
 
@@ -645,6 +652,9 @@ def main() -> int:
             limit=args.limit,
             save=write_rows,
         )
+    except DeferredClassificationError as exc:
+        print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
+        return DEFERRED_EXIT_CODE
     except ClassificationError as exc:
         print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
         return 1
@@ -661,6 +671,9 @@ def main() -> int:
                 f"classify_context: verified {verified_rows} responsive candidate(s) "
                 f"across {verified_groups} text group(s)."
             )
+    except DeferredClassificationError as exc:
+        print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
+        return DEFERRED_EXIT_CODE
     except ClassificationError as exc:
         print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
         return 1

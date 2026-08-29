@@ -111,6 +111,8 @@ python3 scripts/run_pipeline.py --publish-pages
 
 `run_pipeline.py` 會依序重建來源設定、抓取各平台更新、分類議題、建置 `site/api`、`site/data`、`site/feeds`，
 最後執行 `validate_public_outputs.py`；驗證成功後才更新 `data` 分支，驗證失敗不會發佈資料或網站。
+若只有單筆 AI 分類在自動重試及拆批後仍無法產生有效結果，該次執行會保留目前公開快照，並把該筆延後到
+下一次排程重新嘗試；其他分類器錯誤仍會讓 pipeline 失敗並告警。
 一般執行會先從 `origin/data` 還原上次資料，避免排程機器的本機狀態成為唯一副本。開發時若要保留
 現有本機資料，可加 `--skip-data-restore`；只測試、不推送資料則加 `--data-no-push`。
 
