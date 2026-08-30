@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/a19b6b072a4032428c7e.webp",
+    "avatarUrl": "assets/source-avatars/3e342f907f4034277c38.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,7 +19,7 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 371,
+  "count": 373,
   "posts": [
     {
       "agendaRelevance": 0.1,
@@ -54,6 +54,40 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DcoJjmqD2wB"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-30T10:02:33+00:00",
+        "inputHash": "2356d6dc3332ceef26d3fb1371d923d3e7405c85cb7f66bb237b8e0cbe2dbb02",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1643544410460474",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3b52a097d111cac31650.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-29T14:20:07.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告登記參選市長的競選動態，未提出施政政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "龍介2026年9月1日會去登記參選台南市長",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1762933041277415/"
     },
     {
       "agendaRelevance": 0.08,
@@ -118,6 +152,38 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DclJTllD3wp"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-08-30T10:02:33+00:00",
+        "inputHash": "6edcc056101d6499d2c8ed6f2ac0ae42e384f5df81f4d9b4683fe3b01ad78271",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1642535033894745",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-28T10:21:38.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "單純公告直播暫停，沒有公共議題或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "今晚龍介直播暫停一次\n各位市民朋友我們下集見",
+      "topicScores": {
+        "生活": 0.93
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid0ywMmoJj3t6euapeJ8wQBAFH5PnnXPUgn9GX2wPX43ScATQnS23R1Hr1ckYvzARjyl"
     },
     {
       "agendaRelevance": 0.9,
@@ -12840,8 +12906,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaPVGO1yHtD/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/a817b59ef643922d53a5.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "產業",
         "中小企業",
