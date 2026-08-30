@@ -19,8 +19,44 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 243,
+  "count": 244,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-08-30T16:01:46+00:00",
+        "inputHash": "08d9a50f6efdc9a5d3c55f119c8be3ca4eb16b19ed2f0d669cf5e58c6bf6a232",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DcqkSq6E6q3",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/2575dd3ab6ac2372d3de.webp",
+      "keywords": [
+        "藝術"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-08-30T12:58:57+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享時尚藝術季穿搭與個人感受，屬文化活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:第一次穿這麼漂亮的衣服，是針織女王 GIOIA PAN 潘怡良 設計師幫我設計的。\n\n在北海岸時尚藝術季，不只吹海風，也讓我走路有風。\n\n好看吧？",
+      "topicScores": {
+        "文化觀光": 0.82,
+        "生活": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DcqkSq6E6q3"
+    },
     {
       "agendaRelevance": 0.72,
       "candidateId": "lee-shih-chuan",

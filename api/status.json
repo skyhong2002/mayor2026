@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-08-30 18:03:47"
+        "最近一次執行心跳：2026-08-31 00:02:22"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3624",
+        "已收錄貼文：3642",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：74 ms"
+        "耗時：18 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,14 +34,14 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-08-30 18:00:46",
+        "最新抓取時間：2026-08-31 00:01:12",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
       "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
       "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 11 個錯誤。"
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 12 個錯誤。"
     },
     {
       "details": [
@@ -58,13 +58,13 @@
     },
     {
       "details": [
-        "已收錄影片：528"
+        "已收錄影片：530"
       ],
       "id": "youtube",
       "label": "部分異常",
       "name": "YouTube yt-dlp",
       "status": "degraded",
-      "summary": "10 個 YouTube 來源；過去 24 小時 9 個錯誤。"
+      "summary": "10 個 YouTube 來源；過去 24 小時 8 個錯誤。"
     },
     {
       "details": [
@@ -74,7 +74,7 @@
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 74 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 79 篇。"
     },
     {
       "details": [
@@ -88,21 +88,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-08-30T18:03:47+08:00",
+  "generatedAt": "2026-08-31T00:02:22+08:00",
   "metrics": {
     "candidates": 13,
     "currentErrors": 20,
-    "latestPostAt": "2026-08-30T08:45:40+00:00",
+    "latestPostAt": "2026-08-30T15:37:52+00:00",
     "postsByPlatform": {
       "facebook": 1141,
       "instagram": 977,
       "podcast": 5,
-      "threads": 893,
-      "website": 74,
+      "threads": 904,
+      "website": 79,
       "x": 6,
-      "youtube": 528
+      "youtube": 530
     },
-    "totalPosts": 3624,
+    "totalPosts": 3642,
     "watchAccounts": 67
   },
   "overall": {
@@ -111,13 +111,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ']' timed out after 120 seconds",
-      "platform": "youtube",
-      "recordedAt": "2026-08-29T22:05:14+00:00",
-      "sourceId": "chiang-wa-yt",
-      "sourceName": "蔣萬安（chiang-wa-yt）"
-    },
     {
       "message": "yt-dlp fetch failed: Command '['/opt/homebrew/bin/yt-dlp', '--flat-playlist', '--dump-json', '--playlist-end', '5', 'https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A']' timed out after 120 seconds",
       "platform": "youtube",
@@ -250,6 +243,13 @@
       "recordedAt": "2026-08-30T04:05:09+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-08-30T16:00:21+00:00",
+      "sourceId": "shen-ig-personal",
+      "sourceName": "沈伯洋（shen-ig-personal）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -263,7 +263,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 11,
+        "currentErrors": 12,
         "platform": "instagram",
         "sources": 12,
         "status": "degraded"
@@ -293,7 +293,7 @@
         "status": "ok"
       },
       {
-        "currentErrors": 9,
+        "currentErrors": 8,
         "platform": "youtube",
         "sources": 10,
         "status": "degraded"

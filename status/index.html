@@ -34,7 +34,7 @@
               <span class="status-badge status-degraded">部分異常</span>
               <strong>核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、YouTube yt-dlp。 Facebook Apify 目前依排程或預算節流。</strong>
             </div>
-            <p>快照時間 2026-08-30T18:03:47+08:00</p>
+            <p>快照時間 2026-08-31T00:02:22+08:00</p>
             <div class="feed-links">
               <a href="../api/status.json">Status JSON</a>
               <a href="../feeds/">RSS</a>
@@ -69,7 +69,7 @@
             
       <article class="status-metric-card">
         <span>已收錄貼文</span>
-        <strong>3624</strong>
+        <strong>3642</strong>
         <p>social_candidates.jsonl</p>
       </article>
     
@@ -100,7 +100,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>定期 pipeline 已產生公開資料快照。</p>
-        <ul class="status-detail-list"><li>最近一次執行心跳：2026-08-30 18:03:47</li></ul>
+        <ul class="status-detail-list"><li>最近一次執行心跳：2026-08-31 00:02:22</li></ul>
       </article>
     
 
@@ -110,7 +110,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>candidates.json 有 13 位候選人，sources.json 有 55 個監看帳號。</p>
-        <ul class="status-detail-list"><li>已收錄貼文：3624</li><li>監看帳號：67</li></ul>
+        <ul class="status-detail-list"><li>已收錄貼文：3642</li><li>監看帳號：67</li></ul>
       </article>
     
 
@@ -120,7 +120,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>http://127.0.0.1:1200 回應 正常。</p>
-        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：74 ms</li></ul>
+        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：18 ms</li></ul>
       </article>
     
 
@@ -129,8 +129,8 @@
           <h2>Instagram / Threads / X RSSHub</h2>
           <span class="status-badge status-degraded">部分異常</span>
         </div>
-        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 11 個錯誤。</p>
-        <ul class="status-detail-list"><li>最新抓取時間：2026-08-30 18:00:46</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
+        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 12 個錯誤。</p>
+        <ul class="status-detail-list"><li>最新抓取時間：2026-08-31 00:01:12</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
       </article>
     
 
@@ -149,8 +149,8 @@
           <h2>YouTube yt-dlp</h2>
           <span class="status-badge status-degraded">部分異常</span>
         </div>
-        <p>10 個 YouTube 來源；過去 24 小時 9 個錯誤。</p>
-        <ul class="status-detail-list"><li>已收錄影片：528</li></ul>
+        <p>10 個 YouTube 來源；過去 24 小時 8 個錯誤。</p>
+        <ul class="status-detail-list"><li>已收錄影片：530</li></ul>
       </article>
     
 
@@ -159,7 +159,7 @@
           <h2>候選人官網</h2>
           <span class="status-badge status-ok">正常</span>
         </div>
-        <p>6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 74 篇。</p>
+        <p>6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 79 篇。</p>
         <ul class="status-detail-list"><li>官網結構各異，每站需要個別撰寫解析邏輯；沒有 adapter 的官網不計入可抓取來源。</li></ul>
       </article>
     
@@ -206,7 +206,7 @@
             <tr>
               <th scope="row">Instagram</th>
               <td>12</td>
-              <td>11</td>
+              <td>12</td>
               <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
@@ -246,7 +246,7 @@
             <tr>
               <th scope="row">YouTube</th>
               <td>10</td>
-              <td>9</td>
+              <td>8</td>
               <td><span class="status-badge status-degraded">部分異常</span></td>
             </tr>
             
@@ -267,6 +267,15 @@
           </div>
           <div class="status-error-list">
             
+            <article class="status-error-item">
+              <div>
+                <span class="feed-latest-meta">2026-08-30T16:00:21+00:00 · Instagram</span>
+                <strong>沈伯洋（shen-ig-personal）</strong>
+              </div>
+              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&amp;quot;: &amp;lt;no response&amp;gt; fetch failed</p>
+            </article>
+            
+
             <article class="status-error-item">
               <div>
                 <span class="feed-latest-meta">2026-08-30T04:05:09+00:00 · Instagram</span>
@@ -435,15 +444,6 @@
                 <strong>蘇巧慧（su-ch-yt）</strong>
               </div>
               <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A&#x27;]&#x27; timed out after 120 seconds</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-08-29T22:05:14+00:00 · YouTube</span>
-                <strong>蔣萬安（chiang-wa-yt）</strong>
-              </div>
-              <p>yt-dlp fetch failed: Command &#x27;[&#x27;/opt/homebrew/bin/yt-dlp&#x27;, &#x27;--flat-playlist&#x27;, &#x27;--dump-json&#x27;, &#x27;--playlist-end&#x27;, &#x27;5&#x27;, &#x27;https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ&#x27;]&#x27; timed out after 120 seconds</p>
             </article>
             
           </div>
