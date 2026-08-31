@@ -19,8 +19,40 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 443,
+  "count": 444,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-31T17:40:17+00:00",
+        "inputHash": "5ce551e3ade5c6ee0243bcf692790fd7413a65b36ef404c29b5763030ffb9e4f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:_7vi7FakNMg",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/024a129b71fcb11a5355.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-08-31T11:18:20+00:00",
+      "postingIntent": {
+        "confidence": 0.8,
+        "label": "主動發文",
+        "reason": "聚焦兒童需求與輔具議題，較像人物或服務介紹，沒有明確政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "From children's smiles to their needs for assistive devices, Zhang Mingyou keeps every little thi...",
+      "topicScores": {
+        "社福": 0.86
+      },
+      "topics": [
+        "社福"
+      ],
+      "url": "https://www.youtube.com/shorts/_7vi7FakNMg"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
