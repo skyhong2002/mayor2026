@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 442,
+  "count": 443,
   "posts": [
     {
       "agendaRelevance": 0.02,
@@ -289,6 +289,48 @@
         "競選"
       ],
       "url": "https://puma.taipei/videos/zZ_kukH2355geHxsUueJz"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-08-31T04:01:09+00:00",
+        "inputHash": "319c8e434fa0e0ef4565666b96a9a9c86f73e9d9ac6cc679abe163cb014775c9",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:3F8HSfcOjgqHboFkw_Gli",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/9f43e779d47d4a10b8e8.webp",
+      "keywords": [
+        "選舉",
+        "補助",
+        "運動"
+      ],
+      "platform": "website",
+      "postedAt": "2026-08-30T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.8,
+        "label": "主動發文",
+        "reason": "僅列出受訪、市政辯論及多項政策標籤，未呈現明確主張或回應對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0830受訪 #受訪 #市政辯論 #兒童保護 #選舉補助款 #台北智庫-台北研究院 #城市規劃 #運動驛站",
+      "topicScores": {
+        "住宅": 0.55,
+        "社福": 0.78,
+        "競選": 0.92,
+        "體育": 0.69
+      },
+      "topics": [
+        "競選",
+        "社福",
+        "體育",
+        "住宅"
+      ],
+      "url": "https://puma.taipei/videos/3F8HSfcOjgqHboFkw_Gli"
     },
     {
       "agendaRelevance": 0.1,
