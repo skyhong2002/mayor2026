@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/3e342f907f4034277c38.webp",
+    "avatarUrl": "assets/source-avatars/34f38315df125e24b467.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,7 +19,7 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 385,
+  "count": 388,
   "posts": [
     {
       "agendaRelevance": 0.25,
@@ -116,6 +116,57 @@
       "url": "https://www.instagram.com/p/Dcs4a_-ym4U/"
     },
     {
+      "agendaRelevance": 0.3,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "c2117197dac273e9ec7ad3c8007a14c418c8531dd0690850ff043862684eb996",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-09-01T04:04:04+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1645063170308598",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/96ae975701fc0eee0944.webp",
+      "keywords": [
+        "競選",
+        "造勢",
+        "拜票",
+        "提名",
+        "站台",
+        "議會",
+        "監督",
+        "醫療",
+        "社福",
+        "弱勢"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-31T10:32:42.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "回應他方觀點",
+        "reason": "回應柯文哲到台南輔選時的公開喊話，向柯與民眾黨說明藍白合作及後續安排。",
+        "type": "responsive"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "今天看到文哲兄到台南輔選時的公開喊話，龍介要向柯市長，與民眾黨的好朋友們報告：\n\n為了台南鄉親的福祉，我們在基層早就已經「藍白合」作伙拼了大半年！ \n\n大家都知道，要在台南打破一黨獨大三十年的傲慢，過程極為艱辛。但龍介一向秉持理念相同，為百姓好，大家都可以合作的江湖道義。這大半年來，民眾黨在台南提名的幾位優秀年輕人，龍介早就默默用行動在相挺。\n\n在新營，我和國昌兄親自站台，力挺蔡育輝與白營陳詩薇，高喊「一票投藍、一票投白」，就是要徹底打破台南溪北邊緣化的僵局！\n\n在街頭，各大重要路口立起的看板、路上行駛的公車廣告、基層拜票的場合，藍白小雞早就同框造勢，展現在野團結氣勢！\n\n在議會，這半年來，針對民進黨留下的光電爭議、土地弊案、偏鄉醫療不足、以及弱勢社福破網，藍白小雞們聯手砲轟市府，展現最強的監督火力！\n\n身為國民黨台南市黨部主委，龍介早就公開承諾：這次我們大雞帶小雞，目標全力協助民眾黨在台南市議會搶下至少3席、成立黨團！\n\n未來，聯合競選，聯合造勢，分進合擊，都會按部就班安排，讓有衝勁、有理想的少年活水，服務鄉里，一展長才。",
+      "topicScores": {
+        "社福": 0.73,
+        "競選": 0.99,
+        "議會監督": 0.9,
+        "醫療": 0.74
+      },
+      "topics": [
+        "競選",
+        "議會監督",
+        "醫療",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid037jAHrzSio4YHT1W4dekt9NLdhCKPNGM9ftX1RVnNghLopc3c73FLCK5tSAe33tk6l"
+    },
+    {
       "agendaRelevance": 0.28,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
@@ -146,6 +197,38 @@
         "交通"
       ],
       "url": "https://www.youtube.com/shorts/0Z5l8FqQNZw"
+    },
+    {
+      "agendaRelevance": 0.24,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "52e17423874b63b6cf60418006194e472fef1a5882fcbbc16c38013b64c531d7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1645038223644426",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/885d4b431fd28386be43.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-31T09:49:11.000Z",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "轉述民眾道路陳情及地方代表現場勘察，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "網友陳情：麻豆油車里自強街這段路，20-30年完全沒修過…尤淨寬代表尤榮智議員已現場勘察",
+      "topicScores": {
+        "交通": 0.96
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.facebook.com/reel/1070788738643547/"
     },
     {
       "agendaRelevance": 0.44,
@@ -242,6 +325,42 @@
         "社福"
       ],
       "url": "https://www.youtube.com/shorts/bKQ526MfHTw"
+    },
+    {
+      "agendaRelevance": 0.32,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "67b53dcc5983f0a46a211e297ed55678628fb191693cc9f7062b0faa25e8782c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1644875400327375",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/899af97698c9c4ebba55.webp",
+      "keywords": [
+        "身心障礙"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-31T04:43:46.000Z",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "反映身心障礙者在台南求職困難，屬問題陳述而非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "身心障礙網友陳情在臺南難找工作",
+      "topicScores": {
+        "社福": 0.96,
+        "經濟": 0.76
+      },
+      "topics": [
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/1599697004901246/"
     },
     {
       "agendaRelevance": 0.39,

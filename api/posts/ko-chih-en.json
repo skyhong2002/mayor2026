@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/20f0c2c1a0cd615ebc8d.webp",
+    "avatarUrl": "assets/source-avatars/7f5fc1cfc8a49d9e717b.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "ko-chih-en",
@@ -19,8 +19,76 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 353,
+  "count": 356,
   "posts": [
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "65a3a9130505c6b0fb35b8b573c16542b67bee26f1c5281f77ed85c3784236a4",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1629438385203208",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/0519a677ca884f2f3bdd.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-01T03:45:37.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "因天候不佳公告競選活動取消，屬活動資訊通知。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "緊急公告‼️\n由於天候不佳，為考量民眾交通安全，原定今日 #燕巢區 廟口那卡西活動取消，將擇期另行舉行。\n造成大家不便，敬請見諒。",
+      "topicScores": {
+        "生活": 0.88,
+        "防災": 0.55
+      },
+      "topics": [
+        "生活",
+        "防災"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid05pXrau4FNvA9xW5zrrCyTri6MgXyvJizB1E2qCHJzayZVWMYrboiQAm42hovr7Twl"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "fdb8f4ed76f7998404e97dfcad95fe59c24430bc51dcd8b2ba237e1c82a2ba2e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1628823491931364",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/93e0a3633ce7b199786e.webp",
+      "keywords": [
+        "參選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-01T00:00:01.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告廟口活動時間地點並邀請民眾參與，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "廟口那卡西繼續出發，前往燕巢區！\n今晚7點在燕巢區 #角宿天后宮廟埕廣場 (燕巢區角宿路6-1號)，\n「樓頂揪樓下，作伙來聽歌！」\n柯志恩 與 高雄市議員 #方信淵 #宋立彬 、參選人 #黃韻涵，邀請大家一起來聽歌聽講！ \n\n📍時間｜9月1日（二）晚上7點開始\n📍地點｜燕巢區 #角宿天后宮廟埕廣場 (燕巢區角宿路6-1號)\n📍主持人｜#陳昭瑋\n📍歌手｜#鳥來嬤吳敏\n📍二胡｜#葉維仁\n📍與會來賓｜高雄市議員 #方信淵 #宋立彬 、參選人 #黃韻涵",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid02qmH4SmoS5QkiXtxmJWfepLiveuMVsv5goiCq3urtPp5GJNgRWx8Ep6uwmqH2jktxl"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "ko-chih-en",
@@ -89,6 +157,41 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DctDKKpiQKr"
+    },
+    {
+      "agendaRelevance": 0.38,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "a23d1c2e60dbccf05f5ba248137663afecc79b5fff07ec7f908c71254da1f2e9",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1628894651924248",
+      "imageAspect": 1.5051,
+      "imageUrl": "assets/feed-images/04ee6d50ca5aafe97b02.webp",
+      "keywords": [
+        "選舉",
+        "參選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-31T12:02:13.000Z",
+      "postingIntent": {
+        "confidence": 0.78,
+        "label": "主動發文",
+        "reason": "回顧與陳其邁的競爭後宣布參選，主軸是競選與政治表態。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "四年前，我送給當年的競爭對手、如今的 陳其邁 Chen Chi-Mai  市長一箱麥香，逗趣的跟他說了一句：「Bye 邁 dear friend。」\n\n當時是競爭對手，但我始終相信，選舉可以有競爭，也可以有風度。那場選舉，我們少一點攻擊、多一點善意，雖然當時我的「夢想」沒有成真，卻也成為大家印象深刻的一場戰役。\n\n這些年，我和陳其邁市長也有不少針鋒相對、理性辯證。從市政議題到城市規劃，我們有過不同立場，也有過很多交流。\n不管政黨立場為何，我們都一樣愛高雄，也都希望高雄可以更好。\n\n今天是陳其邁市長最後一次進行施政報告，我特別請國民黨黨團送上一個黃色背包，當作他的「畢業禮物」。過去我是繞著地球跑，現在也祝福他背著這個行囊，帶著大家滿滿的祝福，不管未來走到世界哪個角落，都不要忘記高雄，繼續大步向前。\n\n其實，包包裡還偷偷放了兩本書。\n一本是宮崎駿電影《蒼鷺與少年》的原版小說《你想活出怎樣的人生》。希望市長走進下一個人生階段時，也能好好想想自己想走的路，繼續為台灣、為高雄做出最好的選擇。\n\n另一本是《不想談也沒關係》。當大家問起，誰比較適合當高雄市長時，我想，有些話其實不用急著回答。如果不方便談、「不想談，也沒關係」。最後，就讓高雄人用手中的選票，選出自己認為最適合帶領高雄的人。\n\n民主政治最好的樣子，就是有競爭、有選擇，也能在競爭之中保有彼此的尊重。政黨可以不同，但我們共同愛著的高雄，只有一個。\n\n這週，我也將正式登記參選高雄市長。\n\n四年前，我說過我會留下來。這些年，我選擇留在高雄，從一個北漂的歸人，一步一步走進高雄的大街小巷，認識這座城市、聽見鄉親的聲音，也讓自己成為一個以高雄為榮的高雄人。\n\n現在，我想把這份努力繼續延續下去。\n\n高雄下一任市長，重要的從來不是掛著什麼顏色、屬於什麼派系，而是誰真正了解高雄、願意承擔責任，也有能力帶著這座城市繼續往前走。\n\n我會繼續站在高雄，為高雄努力。\n\n這一次，希望高雄把城市的未來，交給真正能帶領高雄大步向前的人。",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0z6eED1A6USJCmMqp3t1VJMhxEvbHT6YNXUpzHcBabjFCtUrnAk8saQf8TBQfRF1dl"
     },
     {
       "agendaRelevance": 0.94,

@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/90b2399fbefd14f60ce7.webp",
+    "avatarUrl": "assets/source-avatars/8d7b3553ddeb7a1835dc.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,16 +19,48 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 248,
+  "count": 251,
   "posts": [
     {
-      "agendaRelevance": 0.25,
+      "agendaRelevance": 0.05,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "classifiedAt": "2026-08-31T17:40:17+00:00",
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "7398d63f8927d6a1120e283a5e7b07ffa7ae9d4ececc018ce45f9bcd3d128ae7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1626515075752413",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/203d28d38b7963527bcd.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-31T23:30:02.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以記者節致意並分享對記者工作的看法，沒有具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "這段時間跑新北二十九區，大太陽的日子有，下大雨的日子也有。清晨的市場、晚上的活動，我常常一回頭，麥克風已經舉在旁邊了。\n\n攝影機扛在肩上，一站就是好幾個鐘頭。\n\n說實在，我做工程的，習慣一件事叫「監造」。\n\n圖畫得再漂亮都沒有用，工程一定要有人在旁邊盯著。鋼筋綁得對不對、水泥灌得夠不夠，都要有人看著、記下來。監造不是找麻煩，是讓這個東西真的能用上幾十年。\n\n有人記下來，事情才不會走樣；下一次要蓋得更好，也是從這些紀錄開始。\n\n記者做的，其實是同一件事。差別只在，你們盯的不是一座橋，是一整座城市。\n\n查證、跑現場、把話問清楚，這些工作外人很少看見。很多個日夜只為了一句話反覆確認。\n\n但每一次確認，這座城市就多一分安全。\n\n我蓋的東西要驗收，我講的話也要。\n\n記者節快樂，辛苦了。",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0mFik6c7N4WbSCVvSa4yBa7RQNndaqxac3H7FndToeuy4hz36LpRo3wL3XkxsYgF1l&id=100051818071280"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:03:57+00:00",
         "inputHash": "56887f91b1dd55c439d256b84e859fe62bba91afe34082ef02fca70a0c1351c9",
         "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-31T17:43:09+00:00",
+        "intentVerifiedAt": "2026-09-01T04:04:04+00:00",
         "method": "ai",
         "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
@@ -40,15 +72,15 @@
       "platform": "threads",
       "postedAt": "2026-08-31T08:05:28+00:00",
       "postingIntent": {
-        "confidence": 0.82,
+        "confidence": 0.66,
         "label": "回應他方觀點",
-        "reason": "明確提及侯友宜市長交棒，主要回應其交付與肯定，表達承接責任。",
+        "reason": "侯友宜市長先以「交棒」表達交接立場，本文回應並承接其交付的責任。",
         "type": "responsive"
       },
       "sourceId": "lee-sc-threads",
       "text": "@hammer__lee:謝謝侯友宜市長，把這一棒交下來。\n\n說實在，這句話對我來說不只是肯定，更是交到手上的一份重量。\n\n新北每一個階段都有不同的使命。友宜市長這些年一步一步深化，才有今天的新北。\n\n接下來這一段——重量，我扛。路，我接著鋪。",
       "topicScores": {
-        "競選": 0.91
+        "競選": 0.98
       },
       "topics": [
         "競選"
@@ -56,13 +88,13 @@
       "url": "https://www.threads.com/t/Dcsnb_UCHzL"
     },
     {
-      "agendaRelevance": 0.25,
+      "agendaRelevance": 0.2,
       "candidateId": "lee-shih-chuan",
       "classification": {
-        "classifiedAt": "2026-08-31T17:40:17+00:00",
+        "classifiedAt": "2026-09-01T04:03:57+00:00",
         "inputHash": "c804c71b04d381faf97a8aef5d1351daae37d5e1f2081dc4a9debcda6c419cbf",
         "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-08-31T17:43:09+00:00",
+        "intentVerifiedAt": "2026-09-01T04:04:04+00:00",
         "method": "ai",
         "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
@@ -74,20 +106,54 @@
       "platform": "instagram",
       "postedAt": "2026-08-31T08:05:19+00:00",
       "postingIntent": {
-        "confidence": 0.82,
+        "confidence": 0.66,
         "label": "回應他方觀點",
-        "reason": "明確提及侯友宜市長交棒，主要回應其交付與肯定，表達承接責任。",
+        "reason": "侯友宜市長先以「交棒」表達交接立場，本文回應並承接其交付的責任。",
         "type": "responsive"
       },
       "sourceId": "lee-sc-ig-main",
       "text": "謝謝侯友宜市長，把這一棒交下來。\n\n說實在，這句話對我來說不只是肯定，更是交到手上的一份重量。\n\n新北每一個階段都有不同的使命。友宜市長這些年一步一步深化，才有今天的新北。\n\n接下來這一段——重量，我扛。路，我接著鋪。",
       "topicScores": {
-        "競選": 0.91
+        "競選": 0.98
       },
       "topics": [
         "競選"
       ],
       "url": "https://www.instagram.com/p/DcsnZi5sHbC/"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:03:57+00:00",
+        "inputHash": "c147a7379ce9362905ab1774a229a3ba89a4e1b5d05cc149ef398f894b24134d",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-09-01T04:04:04+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1625688682501719",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1fc923ac76ce78dc89d9.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-08-30T23:31:14.000Z",
+      "postingIntent": {
+        "confidence": 0.66,
+        "label": "回應他方觀點",
+        "reason": "侯友宜市長先以「交棒」表達交接立場，本文回應並承接其交付的責任。",
+        "type": "responsive"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "謝謝侯友宜市長，把這一棒交下來。\n\n說實在，這句話對我來說不只是肯定，更是交到手上的一份重量。\n\n新北每一個階段都有不同的使命。友宜市長這些年一步一步深化，才有今天的新北。\n\n接下來這一段——重量，我扛。路，我接著鋪。",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/952174623803990/"
     },
     {
       "agendaRelevance": 0.08,
@@ -158,6 +224,40 @@
         "文化觀光"
       ],
       "url": "https://www.instagram.com/p/DcqkHkCM89l/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-01T04:02:26+00:00",
+        "inputHash": "70ac4873d9880c7ca1ac4517ca76a78348c2b497d734f96d50f96f248687f649",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1625232382547349",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/2406cfa707dda66b7da7.webp",
+      "keywords": [
+        "藝術"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-08-30T11:07:16.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享參與北海岸時尚藝術季及服裝設計，屬活動紀錄與生活內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "第一次穿這麼漂亮的衣服，是針織女王 GIOIA PAN 潘怡良 設計師幫我設計的。\n\n在北海岸時尚藝術季，不只吹海風，也讓我走路有風。\n\n好看吧？",
+      "topicScores": {
+        "文化觀光": 0.82
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0K5bDjKYGoFLZmYTrasKAjmXKPG133jbi4kdwGjAThVBa1raU14cRpBhndS2Xj7XZl&id=100051818071280"
     },
     {
       "agendaRelevance": 0.72,
@@ -8490,8 +8590,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DaUI6MOk6mJ",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/e24fd7e3ac7287146227.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "學校",
@@ -8531,8 +8631,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DaUICrnmKiN/",
-      "imageAspect": 0.8,
-      "imageUrl": "assets/feed-images/c2adc98ff498d6b96874.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "學校",
