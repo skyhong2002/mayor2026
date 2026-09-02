@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-02 12:05:58"
+        "最近一次執行心跳：2026-09-03 00:04:28"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3820",
+        "已收錄貼文：3878",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：37 ms"
+        "耗時：31 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-02 12:05:15",
+        "最新抓取時間：2026-09-03 00:00:57",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -45,10 +45,10 @@
     },
     {
       "details": [
-        "最近成功 run：2026-09-01 12:01:11",
-        "本月已花費：$0.21 / 目標 $4.75",
+        "最近成功 run：2026-09-03 00:01:20",
+        "本月已花費：$0.42 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 32.0h, next at 2026-09-02T12:01:26+00:00; ~$0.21 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 33.0h, next at 2026-09-04T00:59:52+00:00; ~$0.42 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：553"
+        "已收錄影片：557"
       ],
       "id": "youtube",
       "label": "正常",
@@ -74,7 +74,7 @@
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 86 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 89 篇。"
     },
     {
       "details": [
@@ -88,21 +88,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-02T12:05:58+08:00",
+  "generatedAt": "2026-09-03T00:04:29+08:00",
   "metrics": {
     "candidates": 13,
     "currentErrors": 11,
-    "latestPostAt": "2026-09-02T03:55:48+00:00",
+    "latestPostAt": "2026-09-02T15:33:30.000Z",
     "postsByPlatform": {
-      "facebook": 1176,
-      "instagram": 1049,
+      "facebook": 1212,
+      "instagram": 1051,
       "podcast": 5,
-      "threads": 945,
-      "website": 86,
+      "threads": 958,
+      "website": 89,
       "x": 6,
-      "youtube": 553
+      "youtube": 557
     },
-    "totalPosts": 3820,
+    "totalPosts": 3878,
     "watchAccounts": 67
   },
   "overall": {

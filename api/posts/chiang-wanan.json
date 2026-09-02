@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/bf900fea026c3f0597c3.webp",
+    "avatarUrl": "assets/source-avatars/f1cc6fd1dd31727069ca.webp",
     "city": "taipei",
     "cityLabel": "臺北市",
     "id": "chiang-wanan",
@@ -19,8 +19,78 @@
     "name": "蔣萬安",
     "party": "國民黨"
   },
-  "count": 92,
+  "count": 94,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-02T16:02:42+00:00",
+        "inputHash": "af6abaa1417c3b77b613feec76502ad98bb0ff63df214774416198f9307f1d19",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-09-02T16:04:28+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1624856125671005",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [
+        "教育",
+        "國小",
+        "國中"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-01T23:45:17.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "回應他方觀點",
+        "reason": "回應外界對其子女交換計畫申請、資格與是否享有特權的質疑，並澄清未介入甄選。",
+        "type": "responsive"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "得立跟所有參加交換學生計畫的孩子一樣，依照公開的規定提出申請、經過正式的甄選程序。我從頭到尾都沒有介入甄選。\n\n大家關心他的申請以及赴美資格，教育局也已經說明得很清楚。得立是臺灣人，是中華民國國民，在臺北一路從國小、國中、參加會考，這次的計畫申請，符合資格，符合規定，符合程序。他沒有因為是誰的兒子，而有任何特殊待遇。\n\n得立憑自己的努力申請上這個計劃，我以他為榮。\n\n至於教育局的相關補助，我和太太、得立共同討論之後，決定不領取。\n\n政治人物本來就應該接受最嚴格的檢驗，我也願意接受所有的檢驗。但是，我希望不要因為得立的父親是臺北市長，就讓一個孩子因此必須放棄追求夢想的權利。\n\n得立決定休學一年，去看看世界。看到一個15歲的孩子，有獨立探索的心與勇氣，我和舫亘的態度就是尊重與支持。\n\n我踏上從政之路，成為公眾人物，是我的選擇，不是得立的選擇。而得立的所有選擇，做父母的永遠都會尊重、支持。",
+      "topicScores": {
+        "教育": 0.96
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02gkGh4fewnxTHAMqFTcZRPKHwwpFfYVKgQUd6k2YmmG9Ht5P33tixrtAD3ae4nDspl"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-02T16:02:42+00:00",
+        "inputHash": "d3b434dc4f4722c4004dd227f20c0e3a0c791c991219249a61a10e91313e423d",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1624148665741751",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/61d3f003546ed9d91613.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-01T04:09:03.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "單純向記者致意並祝賀記者節，沒有公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "每一則新聞的背後，都有記者朋友辛苦奔波的身影。\n\n不論風吹日曬、趕場追新聞，訪問一結束，接著趕稿、剪帶，為的就是帶給大家臺北的第一手消息。\n\n謝謝記者朋友，今天是屬於你們的日子，辛苦了！\n\n記者節快樂！🎤",
+      "topicScores": {
+        "生活": 0.96
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0B9P2tz1JAYHv5egRDF3mHpvTyeNRkncqG7kq146cpUfbdVKEUnA9g2mGVscwFzjsl"
+    },
     {
       "agendaRelevance": 0.95,
       "candidateId": "chiang-wanan",
