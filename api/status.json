@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-02 06:01:32"
+        "最近一次執行心跳：2026-09-02 12:05:58"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：3812",
+        "已收錄貼文：3820",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：29 ms"
+        "耗時：37 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-02 06:00:59",
+        "最新抓取時間：2026-09-02 12:05:15",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
-      "label": "正常",
+      "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
-      "status": "ok",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 0 個錯誤。"
+      "status": "degraded",
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 11 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-09-01 12:01:11",
         "本月已花費：$0.21 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 32.3h, next at 2026-09-02T12:18:17+00:00; ~$0.21 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 32.0h, next at 2026-09-02T12:01:26+00:00; ~$0.21 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：550"
+        "已收錄影片：553"
       ],
       "id": "youtube",
       "label": "正常",
@@ -88,106 +88,29 @@
       "summary": "49 個社群來源中，0 個抓不到內容、0 個超過門檻天數沒有新內容、2 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-02T06:01:32+08:00",
+  "generatedAt": "2026-09-02T12:05:58+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 0,
-    "latestPostAt": "2026-09-01T15:12:34+00:00",
+    "currentErrors": 11,
+    "latestPostAt": "2026-09-02T03:55:48+00:00",
     "postsByPlatform": {
       "facebook": 1176,
       "instagram": 1049,
       "podcast": 5,
-      "threads": 940,
+      "threads": 945,
       "website": 86,
       "x": 6,
-      "youtube": 550
+      "youtube": 553
     },
-    "totalPosts": 3812,
+    "totalPosts": 3820,
     "watchAccounts": 67
   },
   "overall": {
-    "label": "正常",
-    "status": "ok",
-    "summary": "核心資料抓取與公開 API 正常。 Facebook Apify 目前依排程或預算節流。"
+    "label": "部分異常",
+    "status": "degraded",
+    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:01:53+00:00",
-      "sourceId": "huang-sj-ig",
-      "sourceName": "黃世杰（huang-sj-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:02:22+00:00",
-      "sourceId": "chang-sc-ig",
-      "sourceName": "張善政（chang-sc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:02:48+00:00",
-      "sourceId": "ho-hc-ig",
-      "sourceName": "何欣純（ho-hc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:03:17+00:00",
-      "sourceId": "chiang-cc-ig",
-      "sourceName": "江啟臣（chiang-cc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:03:44+00:00",
-      "sourceId": "chen-tf-ig",
-      "sourceName": "陳亭妃（chen-tf-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:04:13+00:00",
-      "sourceId": "hsieh-lc-ig",
-      "sourceName": "謝龍介（hsieh-lc-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: 500 Internal Server Error",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:04:40+00:00",
-      "sourceId": "lai-jl-ig",
-      "sourceName": "賴瑞隆（lai-jl-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T04:05:09+00:00",
-      "sourceId": "ko-ce-ig",
-      "sourceName": "柯志恩（ko-ce-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T16:00:21+00:00",
-      "sourceId": "shen-ig-personal",
-      "sourceName": "沈伯洋（shen-ig-personal）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T22:00:26+00:00",
-      "sourceId": "chiang-wa-ig",
-      "sourceName": "蔣萬安（chiang-wa-ig）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
-      "platform": "instagram",
-      "recordedAt": "2026-08-30T22:00:52+00:00",
-      "sourceId": "su-ch-ig",
-      "sourceName": "蘇巧慧（su-ch-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
       "platform": "instagram",
@@ -250,6 +173,83 @@
       "recordedAt": "2026-08-30T22:05:01+00:00",
       "sourceId": "ko-ce-ig",
       "sourceName": "柯志恩（ko-ce-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:00:24+00:00",
+      "sourceId": "chiang-wa-ig",
+      "sourceName": "蔣萬安（chiang-wa-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:00:49+00:00",
+      "sourceId": "su-ch-ig",
+      "sourceName": "蘇巧慧（su-ch-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:01:17+00:00",
+      "sourceId": "lee-sc-ig-main",
+      "sourceName": "李四川（lee-sc-ig-main）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:01:45+00:00",
+      "sourceId": "huang-sj-ig",
+      "sourceName": "黃世杰（huang-sj-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:02:11+00:00",
+      "sourceId": "chang-sc-ig",
+      "sourceName": "張善政（chang-sc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:02:46+00:00",
+      "sourceId": "ho-hc-ig",
+      "sourceName": "何欣純（ho-hc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:03:13+00:00",
+      "sourceId": "chiang-cc-ig",
+      "sourceName": "江啟臣（chiang-cc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:03:38+00:00",
+      "sourceId": "chen-tf-ig",
+      "sourceName": "陳亭妃（chen-tf-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:04:05+00:00",
+      "sourceId": "hsieh-lc-ig",
+      "sourceName": "謝龍介（hsieh-lc-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:04:33+00:00",
+      "sourceId": "lai-jl-ig",
+      "sourceName": "賴瑞隆（lai-jl-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/api/v1/web/fxcal/ig_sso_users/&quot;: &lt;no response&gt; fetch failed",
+      "platform": "instagram",
+      "recordedAt": "2026-09-02T04:05:04+00:00",
+      "sourceId": "ko-ce-ig",
+      "sourceName": "柯志恩（ko-ce-ig）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -263,10 +263,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 0,
+        "currentErrors": 11,
         "platform": "instagram",
         "sources": 12,
-        "status": "ok"
+        "status": "degraded"
       },
       {
         "currentErrors": 0,
