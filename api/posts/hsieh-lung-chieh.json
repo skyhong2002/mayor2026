@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/a8a0e5a21a7f2ec648de.webp",
+    "avatarUrl": "assets/source-avatars/2a26b124560951cda530.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,72 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 458,
+  "count": 461,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "d9009c9885e153ea836513501f8af6d10176bfae20e7162e203ea3e615589647",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1010343662056233",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/577e3e737afce0be59f0.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-13T06:48:09.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "記錄藍白聯合服務中心成立及車隊遊行，屬競選活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "臺南藍白合聯合服務中心成立暨車隊遊行",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1010343662056233/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "f8e2e6897dcb92680a6b5130cab7169196f489195f808e97b7ec731b35216d6f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1617651810006690",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/3dc35f51b8ebf000147f.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-13T06:04:37.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告臺南藍白聯合服務中心成立，屬競選組織活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "臺南藍白合聯合服務中心成立",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1617651810006690/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -120,6 +184,40 @@
         "競選"
       ],
       "url": "https://www.instagram.com/p/DdL_F7pyQO6/"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "9e2763aa9f15b2843d95ee16df3bd33588a5a75da096c678c80970494e3d9b31",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1655369879277927",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/79fb0948ae9277ea3811.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-12T12:27:24.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提供競選服務中心成立的時間、地點與活動資訊。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "臺南藍白聯合服務中心成立\n09月13（日）下午兩點半\n市長候選人謝龍介競選總部（南區新興路498號）",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/posts/pfbid06kpPfrg3tjdJydBWWBEP5GM4iyktU1uyacCH4vxp3FRV7Zr3ppW9PUi8iyfor3FDl"
     },
     {
       "agendaRelevance": 0.05,

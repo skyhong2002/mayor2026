@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/4dafbb75deeb43f28ef1.webp",
+    "avatarUrl": "assets/source-avatars/be47e738d3bd709f976d.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "chen-ting-fei",
@@ -19,7 +19,7 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 254,
+  "count": 257,
   "posts": [
     {
       "agendaRelevance": 0.72,
@@ -58,6 +58,38 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/shorts/DcMOXCQHNJ8"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "2af466b197f3964c531b467fee570a084cf00a6ce5592f243c3bbb3d976cdfb2",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1644743917013530",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/447f2a62941678353f48.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-12T22:25:50.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享地方健康健走活動，未提出具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "學甲平和里健康健走❤️",
+      "topicScores": {
+        "生活": 0.88
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/972056519264883/"
     },
     {
       "agendaRelevance": 0.2,
@@ -130,6 +162,81 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DdLV89ak07M"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "4ba5d0c6e1a355841af481b922d1ae286fe2515331e4116a1be8abe550eb058b",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1644098550411400",
+      "imageAspect": 1.3288,
+      "imageUrl": "assets/feed-images/76becef29c70aabf6799.webp",
+      "keywords": [
+        "競選",
+        "選戰",
+        "歷史"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-12T05:00:27.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布競選總部成立並號召參與，核心是競選動員與形象營造。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "🏠 亭妃競選總部，今天正式進駐！\n\n不只是選戰基地，更希望打造一個屬於台南人的空間。\n\n以「美學台南」為核心，跳脫傳統競選總部的制式感，把自然、親子、交流與生活帶進政治，讓政治也可以很生活、很有溫度。\n\n總部戶外跑道，象徵台南持續向前；「1」的設計意象，則代表台南400年來第一位女市長的歷史意義。\n\n下一棒，接下責任、延續好的政策，用行動政府、行動正能量，帶台南繼續向前！\n\n📍陳亭妃競選總部\n台南市永康區水漾路520號\n\n10月11日下午3點\n競選總部成立大會\n邀請大家一起來，見證「台南隊」正式成立！\n\n#陳亭妃\n#台南市長候選人\n#美學台南\n#台南隊\n#咱作伙寫歷史\n#行動政府行動正能量",
+      "topicScores": {
+        "文化觀光": 0.62,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid02bvhYcN8Qm6h8muKjR4Lw1b9u4WgzGhpzmqVZ56z8otQghpDFVeSxAy4uCZ4w3ptwl"
+    },
+    {
+      "agendaRelevance": 0.5,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-13T22:02:04+00:00",
+        "inputHash": "ce465e66a26ad63b54d91b5ab9ef89705c3bc64ad8e461e0e72984009ca996dd",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1643388987149023",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/fe1daca0aacc14742151.webp",
+      "keywords": [
+        "文化",
+        "美食"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-11T09:31:52.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "從牛肉湯文化與業者困境出發，主張保存傳統飲食技藝並促進傳承。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "妃姐，台南最好喝的牛肉湯是哪一家？ 怎麼大家都問這個，好像我們是喝牛肉湯長大的一樣～（對啊，好啦，我是😄）\n\n每個台南人心中都有自己的「牛肉湯神」，美食是一種記憶，少了那一碗，人生好像就不完整了。\n但你別看生意好，很多老闆跟我說：「這行業太辛苦，每天4點起床、湯要熬6小時、火要一直看，賺的只夠養家，絕對不讓小孩接手。」\n 日本職人文化讓一家壽司店能傳五代，政府認證為文化資產；西班牙用 DO 產地認證，把傳統手藝當「國寶」，年輕人接手是件驕傲的事。我們也應該更努力，把大家小時候最珍貴的味道保存下來。\n\n（對著牛肉湯說：拜託你們了，我還想再喝30年～）你心中的第一名牛肉湯神是哪一碗？留言告訴我！\n\n#台南 #牛肉湯 #台南美食 #陳亭妃",
+      "topicScores": {
+        "文化觀光": 0.8,
+        "經濟": 0.63
+      },
+      "topics": [
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/reel/2638069573278799/"
     },
     {
       "agendaRelevance": 0.97,
