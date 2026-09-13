@@ -2,6 +2,253 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.72,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "79880479839d96aa4f3e3f339f95fa9cd8b411e902f502ba677a0c29e3a91754",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-09-13T10:01:25+00:00",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:DcMOXCQHNJ8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/bde42ca22cb947095fd6.webp",
+      "keywords": [
+        "AI"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-13T08:44:49+00:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "回應他方觀點",
+        "reason": "可辨識他方為藍白政黨；貼文主要喊話其勿阻擋明年預算，屬於回應或反擊其可能的審查、阻擋立場。",
+        "type": "responsive"
+      },
+      "sourceId": "chen-tf-yt",
+      "text": "拚全民福利！0-18歲月領5千、AI紅利1萬元 陳亭妃喊話藍白：別擋明年預算！ #shorts",
+      "topicScores": {
+        "社福": 0.95,
+        "經濟": 0.81
+      },
+      "topics": [
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.youtube.com/shorts/DcMOXCQHNJ8"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "80c02673afedf5cc4de5fbeed92cd969fe26da3c823bfa1adb613f8a428fddf1",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdOJasZGc6x",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/e2ac06fe6eb87164f9a5.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-13T08:36:47+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳演說直播並邀請民眾觀看，屬競選活動與政見宣講預告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:現在台中海線，對台中滿滿滿滿的期待！\n\n等下我就要上台演說，向台中市民報告何欣純的市政願景，直播連結在下面，何欣純邀請您一起加入觀賞分享！！",
+      "topicScores": {
+        "競選": 0.95
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdOJasZGc6x"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "db693e88dad34264a57613900745c80afd276f387e2b720f7ea382bde3ee8f96",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdOHzLfGTOO",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/a02356bf89a8424e7664.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-13T08:22:39+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄受邀到龜吼魚港用餐的社交活動，主要是互動與趣味分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:今天有位萬里子弟請我來到龜吼魚港，要請我吃螃蟹，順便邀請了一位愛吃香菜的嘉賓一起，大家猜猜等等哪道菜會加香菜？\n\n@william_chingte  @tsai_ingwen",
+      "topicScores": {
+        "文化觀光": 0.63,
+        "生活": 0.83
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DdOHzLfGTOO"
+    },
+    {
+      "agendaRelevance": 0.56,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "7e0e6acbf56f72d940e46e23e517e0c58e4a9d3e9497e922dfde1d0a2a00fc61",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdN777riTea",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/4be54d05c6165667a0c8.webp",
+      "keywords": [
+        "競選",
+        "選戰",
+        "交通",
+        "機場",
+        "照顧",
+        "產業"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-13T06:40:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣布競選總部成立並提出交通、產業、照顧及機場等競選訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:🔥 競選總部正式成立！台中隊，出發！\n\n謝謝賴清德總統、鄭麗君副院長、蔡其昌主委，以及所有台中隊夥伴到場相挺，更謝謝現場超過5000位鄉親給我滿滿力量！❤️\n\n選戰到數計時中，接下來繼續全力向前拚：\n拚交通效率第一\n拚產業升級第一\n拚全齡照顧第一\n再拼一座國際大機場✈️",
+      "topicScores": {
+        "交通": 0.86,
+        "社福": 0.81,
+        "競選": 0.98,
+        "經濟": 0.78
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "社福",
+        "經濟"
+      ],
+      "url": "https://www.threads.com/t/DdN777riTea"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "83df84f8e99578cb7af6ce62ad9ebd501a34dadbccd93369c118acd1df661f80",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Fb4CK3ZubxE",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/05dde1426ac4b950ca3c.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-13T05:57:01+00:00",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "記錄藍白聯合服務中心揭牌與遊行活動，未呈現具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "臺南藍白聯合服務中心成立揭牌暨遊行｜謝龍介",
+      "topicScores": {
+        "競選": 0.93
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=Fb4CK3ZubxE"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "29b6a5c05e91098c1f176929168ff8c529cb4317a9f567c02fa9fbb80f8744f7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdN2XryESlf",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/fbad78bec238f4e3117f.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-13T05:50:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告競選總部成立活動時間地點並號召支持，屬競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:台中海線的陽光好美、好燦爛，此時還起風了！！\n\n椅子排列整齊，恭候市民鄉親大駕光臨，給予何欣純最大的鼓勵與支持！！\n\n何欣純海線競選總部\n今天下午就要成立，歡迎所有市民鄉親好朋友、欣潮、追欣族、台中純派\n\n一起參加！全力相挺何欣純💪\n\n📌日期｜9/13（日）今天下午3：30\n📌地點｜清水龍天宮旁（台中市清水區西社里鎮新路21號）",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdN2XryESlf"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "eb570b1bc0737e340852b78b8881a9e89fa38efeff43c37cf209a3c83a04e6d8",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdN0FPHkRJC",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/fc9b66236cbf4ac1641a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-13T05:30:21+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "分享與日本議員交流及飲食話題，未提出明確公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:這是大家敲碗的合體嗎？！\n\n今天和 @uehata1204 上畠議員\n一起到澀谷\n我向他請教\n日本吸煙區做了這麼久\n有什麼心得和檢討？\n各地又是怎麼做\n吸煙區的管理\n\n聊了好多好多\n再用一支影片跟大家分享\n\n他今天也跟我分享了\n飲食管理的心得\n但我覺得我做不到！！\n\n照片裡的他\n剛選上議員25歲\n照片裡的我\n剛擔任立法委員41歲\n我們互相簽名交換\n是我們友情的象徵！",
+      "topicScores": {
+        "生活": 0.88
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdN0FPHkRJC"
+    },
+    {
       "agendaRelevance": 0.1,
       "candidateId": "ko-chih-en",
       "classification": {
@@ -3272,263 +3519,6 @@
         "競選"
       ],
       "url": "https://www.instagram.com/p/DdGzog1yPKo/"
-    },
-    {
-      "agendaRelevance": 0.35,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "da02d7650824217fa8facb693d9063f79e575e48491e4119e3e7a8afce8c949b",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdG0R0gFAQK",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "產業",
-        "AI"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-10T12:17:23+00:00",
-      "postingIntent": {
-        "confidence": 0.94,
-        "label": "主動發文",
-        "reason": "預告與來賓討論AI及產業政策，屬內容宣傳而非具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:沒想到有第二集吧，再戰默契大考驗，\n我們的答案能不能一樣？\n\n這一次會聊到AI跟整個產業政策，\n完整版記得到阿格力的頻道觀看！\n\n#默契大考驗 #台北順起來 #你的市長沈伯洋",
-      "topicScores": {
-        "經濟": 0.88
-      },
-      "topics": [
-        "經濟"
-      ],
-      "url": "https://www.threads.com/t/DdG0R0gFAQK"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "d088ee4ac5f05921583fc8302998fc5a0b37d04209d9d0e03c420d5e6c03d646",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:hilAYMmVUjw",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/efc82e582be6cd8d5771.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "2026-09-10T12:16:08+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "內容是再次進行化學測驗的輕鬆影片，沒有明確公共議題。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-yt-personal",
-      "text": "Didn't see a part two coming, did you? Back for another chemistry test—can we match our answers t...",
-      "topicScores": {
-        "生活": 0.82
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.youtube.com/shorts/hilAYMmVUjw"
-    },
-    {
-      "agendaRelevance": 0.35,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "eacc0df5c219db05cdd0ffae1e38441c3fe26af37681e332d36d92ad6e991508",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DdGz_B1y56X/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/bd4577dc7eddc6cd5fa2.webp",
-      "keywords": [
-        "產業",
-        "AI"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-09-10T12:15:56+00:00",
-      "postingIntent": {
-        "confidence": 0.94,
-        "label": "主動發文",
-        "reason": "預告與來賓討論AI及產業政策，屬內容宣傳而非具體政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-ig-personal",
-      "text": "沒想到有第二集吧，再戰默契大考驗，\n我們的答案能不能一樣？\n\n這一次會聊到AI跟整個產業政策，\n完整版記得到阿格力的頻道觀看！\n\n#默契大考驗 #台北順起來 #你的市長沈伯洋",
-      "topicScores": {
-        "經濟": 0.88
-      },
-      "topics": [
-        "經濟"
-      ],
-      "url": "https://www.instagram.com/p/DdGz_B1y56X/"
-    },
-    {
-      "agendaRelevance": 0.87,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "7742b3ddddae942c58ae89ea78dfca079dafc23669715e1eb6d5c0b21c0bb481",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdGzEtdGjkF",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/432eaacf0eba5d05146d.webp",
-      "keywords": [
-        "商圈",
-        "長輩",
-        "照顧",
-        "環境"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-10T12:07:24+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "提出商圈活化、老屋更新、長輩照顧與河川環境改善的地方政見。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:四年前，我的第一場廟口開講從三鳳宮出發；再度回到這裡，初心沒變，決心更堅定。\n\n曾經繁華的三民區，不該慢慢老去。\n商圈活化、老屋更新、長輩照顧、幸福川環境提升；我要讓三民區重新發光，成為高雄再起飛的原點！\n\n「投給柯志恩，就是投給善良、正向的力量。」 \n高雄值得更好的未來，高雄也值得再次站上世界舞台！",
-      "topicScores": {
-        "住宅": 0.86,
-        "環境": 0.74,
-        "社福": 0.78,
-        "經濟": 0.86
-      },
-      "topics": [
-        "經濟",
-        "住宅",
-        "社福",
-        "環境"
-      ],
-      "url": "https://www.threads.com/t/DdGzEtdGjkF"
-    },
-    {
-      "agendaRelevance": 0.91,
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "26b2725745006340ac1c405175a74d055fcaf8713f429f8233ff23d2dfd79c9e",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DdGyUFmn5jt/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/ecbbe1d84e5b1bf0a067.webp",
-      "keywords": [
-        "運動",
-        "球場",
-        "賽事",
-        "健身"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-09-10T12:00:04+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "公告運動館啟用與體育園區開工，說明補足運動空間的建設規劃。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-sc-ig",
-      "text": "迎接全民運在桃園，我們希望運動不只在賽場，也走進市民的日常生活\n\n桃園是全台人口成長最快的城市之一，除了交通、建設要跟上，市民需要的運動空間，也要一步一步補足。\n\n今天，龍岡全民運動館正式落成啟用，大園體育園區也同步開工。這兩項建設，一南一北，我們持續完善桃園各區的運動、休閒設施。\n\n#龍岡全民運動館試營運\n\n投入近4.8億元打造的龍岡全民運動館，規劃溫水游泳池、SPA、體適能中心與多功能教室，並導入AI智慧安全防護，補足龍岡地區長期缺乏大型室內運動及游泳空間的需求。\n\n即日起至9月20日免費試營運，歡迎大家來體驗。\n\n#大園體育園區開工\n\n大園則是另一種情況。隨著航空城開發、客運園區移入，大園的人口持續成長，我們投入7.7億元打造大園體育園區。\n\n除了25公尺溫水泳池、綜合球場及健身空間，也依照地形配置綠地步道與生態景觀，讓園區能一次滿足不同興趣愛好的朋友，工程預計118年完工。\n\n一個是補足現在的生活需求；一個是替未來的成長預先準備。\n\n這幾年，從爭取預算、克服用地限制，到把一項項工程做好，過程並不容易，但我們會繼續把每一分建設經費用在刀口上，讓各區都能有更充足的運動空間。\n\n10月，#全民運 即將在桃園登場，除了辦好賽事，我們更希望透過運動建設，讓運動不只發生在賽場，也讓更多市民愛上運動，變得更健康、更快樂。",
-      "topicScores": {
-        "生活": 0.74,
-        "體育": 0.99
-      },
-      "topics": [
-        "體育",
-        "生活"
-      ],
-      "url": "https://www.instagram.com/p/DdGyUFmn5jt/"
-    },
-    {
-      "agendaRelevance": 0.72,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:46:45+00:00",
-        "inputHash": "2ef0bbca40024f22a29cb3104e0d2a8f638bc92ab853c51bfcce075c561f3c49",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-09-11T10:47:04+00:00",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdGw9MZCYlF",
-      "imageAspect": null,
-      "imageUrl": null,
-      "keywords": [
-        "文化",
-        "觀光"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-10T11:48:21+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "回應他方觀點",
-        "reason": "針對桃園市長張善政未提前招商、消極處理桃園神社營運的作法提出批評與回應。",
-        "type": "responsive"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:這是一個情境題。\n\n如果你是一位市長，遇到愈來愈多年輕人、外地遊客慕名而來，甚至吸引國際旅客專程前往的熱門景點，你會怎麼做？\n\n一般人當市長，會用心經營、大力推廣。\n絕對不是放任合約到期、消極擺爛。\n\n很遺憾地，從明天起，桃園神社的原經營團隊合約期滿撤離，神社將正式面臨營運空窗期。而且這不是突發狀況，桃園市政府早就知道委外契約即將到期。\n\n我要問張善政，為什麼沒有提前招商、做好交接？任由好不容易打造的城市亮點，苦心累積的成果瞬間歸零。張善政的消極與擺爛，再次暴露了他對地方觀光和文化資產的漫不在乎！\n\n更何況桃園神社早就不只是普通的觀光景點，而是珍貴的文化資產。\n\n面對桃園神社的未來，我上任後，會積極尋找好的團隊，延續過去成功的經驗，讓在地文化一點一滴累積成城市品牌，和市民一起重新擦亮桃園的名字！",
-      "topicScores": {
-        "文化觀光": 0.96,
-        "競選": 0.86
-      },
-      "topics": [
-        "文化觀光",
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DdGw9MZCYlF"
-    },
-    {
-      "agendaRelevance": 0.45,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-09-11T10:34:37+00:00",
-        "inputHash": "50ddabff3713a745474ca068801799678b40659ae108650c813eca58c26459b7",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdGu5AtCvC5",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/41636a4be2c67be4922e.webp",
-      "keywords": [
-        "教育"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-10T11:30:18+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "分享家庭教育理念，強調孩子自主選擇與自信成長。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:「我現在很喜歡我自己，因為正在做喜歡的事，也確實感覺到自己能為別人帶來一些改變。」\n\n談到家庭教育，巧慧和大家分享，比起升學或成就，她更在乎孩子能喜歡、擁抱自己的選擇與人生。\n\n希望讓孩子慢慢走出自己的路，有自信的說：「我喜歡現在的我。」\n\n🔗完整報導：https://www.parenting.com.tw/article/6002551",
-      "topicScores": {
-        "教育": 0.93
-      },
-      "topics": [
-        "教育"
-      ],
-      "url": "https://www.threads.com/t/DdGu5AtCvC5"
     }
   ],
   "version": 1

@@ -19,8 +19,42 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 512,
+  "count": 513,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-13T10:01:12+00:00",
+        "inputHash": "db693e88dad34264a57613900745c80afd276f387e2b720f7ea382bde3ee8f96",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdOHzLfGTOO",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/a02356bf89a8424e7664.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-13T08:22:39+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄受邀到龜吼魚港用餐的社交活動，主要是互動與趣味分享。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:今天有位萬里子弟請我來到龜吼魚港，要請我吃螃蟹，順便邀請了一位愛吃香菜的嘉賓一起，大家猜猜等等哪道菜會加香菜？\n\n@william_chingte  @tsai_ingwen",
+      "topicScores": {
+        "文化觀光": 0.63,
+        "生活": 0.83
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DdOHzLfGTOO"
+    },
     {
       "agendaRelevance": 0.68,
       "candidateId": "su-chiaohui",
