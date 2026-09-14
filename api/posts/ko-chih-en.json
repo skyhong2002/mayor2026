@@ -19,8 +19,76 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 422,
+  "count": 424,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-14T16:01:13+00:00",
+        "inputHash": "e67158fdcf212362b40e74e9b3797cb8b26749c7770be2a71b1da41390261f24",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:YqqdswFH6-k",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/927daa55caee0ee064ef.webp",
+      "keywords": [
+        "造勢"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-14T10:07:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "重發鳳山造勢活動資訊並號召參與，屬競選動員而非具體施政議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "9月19日（六）下午3點，#鳳山大造勢 正式吹響號角！把四年前的感動，化成改變高雄的力量。919鳳山見，「大風起」讓這陣風吹向整個高雄！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/YqqdswFH6-k"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-14T16:01:13+00:00",
+        "inputHash": "96f04a35585270ba83b97f09e33b46b72e38475f9f39864f0ebcf67d689a1521",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdQ4aqfj0Ft",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/4ec1c7fba5813b73f1b0.webp",
+      "keywords": [
+        "造勢"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-14T10:06:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告鳳山競選造勢活動並號召參加，屬純競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:9月19日（六）下午3點，#鳳山大造勢 正式吹響號角！\n把四年前的感動，化成改變高雄的力量。\n919鳳山見，「大風起」讓這陣風吹向整個高雄！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdQ4aqfj0Ft"
+    },
     {
       "agendaRelevance": 0.3,
       "candidateId": "ko-chih-en",
@@ -12900,8 +12968,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/Da2uNKHExBB/",
-      "imageAspect": 1.3319,
-      "imageUrl": "assets/feed-images/51f64b845aa3c80779b5.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "豪雨",
         "淹水",
@@ -12978,8 +13046,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/Da2bUUNCYdI",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/8a1178ebff22d089778b.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "文化",
         "音樂"
