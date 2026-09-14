@@ -2,6 +2,222 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.42,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "203df199c40c6951f29e96b7809dd80b7637f98865109b772a32e1c7fb8b2bad",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdQLVM-Ga4y",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/8ee0145e06dc9a879cfc.webp",
+      "keywords": [
+        "後援會"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-14T03:31:59+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "競選活動中感謝新住民支持，並提出打造多元共榮城市的方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:新住民挺巧慧！一起生活一起拚，打造多元族群共榮的城市！\n\n謝謝來自各國的好朋友，穿著隆重的傳統服飾來幫我加油，為我成立「新住民後援會」，還有越南的姊妹送上春捲、西藏的朋友為我掛上哈達，給我滿滿的祝福，真的非常感動！\n\n我會繼續努力，把新北市打造成最了解新住民的城市！",
+      "topicScores": {
+        "生活": 0.72,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdQLVM-Ga4y"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "eb41bd9d2e6cc54a048beb5e637945485c13738383c3ae5ad09188260b33aba4",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdQGqrqie_e",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/df5ac9d4ef7e1592fe8f.webp",
+      "keywords": [
+        "環境"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-14T02:51:14+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄慰問清潔與防疫人員，感謝其災後清理及登革熱防治工作。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:有名的城市、無名的英雄，謝謝每一位默默守護環境的你。\n\n無論暴雨或風災，過後城市總是凌亂不堪，而在最短時間內令其回復整潔，憑藉的就是辛苦的清潔隊。來到三民區探班，感謝清潔隊與登革熱防治隊等同仁的辛勞。\n\n第一線工作的辛苦，除了冒雨清理溝渠、排除障礙；雨停了也無法停歇，持續巡查積水容器、進行家戶宣導和噴藥防治。\n\n謝謝每一位辛勤付出的夥伴，有你們，城市才能維持乾淨、安全。",
+      "topicScores": {
+        "環境": 0.94,
+        "生活": 0.7,
+        "防災": 0.82
+      },
+      "topics": [
+        "環境",
+        "防災",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdQGqrqie_e"
+    },
+    {
+      "agendaRelevance": 0.96,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "55bb745067500e81bed7797e3e12cb8f2b8a3f92df78bff7d03a36a77748b191",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:cMAU8QqeMqo",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/7fc8b9d598d4b6c9543b.webp",
+      "keywords": [
+        "交通",
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-14T02:47:13+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "提出四橫三縱及捷運半環狀等完整交通網絡政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-yt",
+      "text": "讓人民有感！陳亭妃提「交通七彩行」四橫三縱、捷運半環狀 減少城鄉落差 打造完整交通網絡！",
+      "topicScores": {
+        "交通": 0.99,
+        "競選": 0.87
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=cMAU8QqeMqo"
+    },
+    {
+      "agendaRelevance": 0.8,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "ab431f80f4ff94aebde8ccdc2940373a297d5d5c9ea56b971a207fa3463002ac",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdQGAnAGS2J",
+      "imageAspect": 1.7094,
+      "imageUrl": "assets/feed-images/d81fc63437d917a7ab56.webp",
+      "keywords": [
+        "環境",
+        "垃圾"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-14T02:45:29+00:00",
+      "postingIntent": {
+        "confidence": 0.86,
+        "label": "主動發文",
+        "reason": "批評台中垃圾與建設停滯，主張均衡區域發展與優質行政服務。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:台中市民普遍感覺，這幾年來的台中，背離了原有的城市價值。\n\n今天來到霧峰，大家想到的是廚餘；來到大里，想到的是垃圾山，表示這些年來城市該被解決的問題，都沒有被解決，屯區這幾年的發展停滯，看起來被邊緣化。\n\n我帶著滿心祝福來參加 #霧峰聯合行政中心 落成啟用典禮，但我也想起 #大里聯合行政中心，至今仍是一片空地，八年來沒有任何動靜，屯區要進步，建設的腳步不該停滯。\n\n我心中的城市價值，就是每位市民，無論台中的山、海、屯、市，都值得擁有好的生活環境、值得優質的行政服務水準。\n\n區域的均衡發展，就是台中的城市價值，何欣純要用「行動、溫度、創新」均衡台中的區域發展，恢復台中這座城市的價值與榮光！",
+      "topicScores": {
+        "環境": 0.94,
+        "生活": 0.76,
+        "議會監督": 0.83
+      },
+      "topics": [
+        "環境",
+        "議會監督",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdQGAnAGS2J"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "8cbe3caccaaabd7a704434d609c13c160bc59c16e0937bd812e45d768d4ae85f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:2jeEuWUDJaY",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/5a68bf3abb7f810e52bd.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-14T02:08:29+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "以官方影片宣傳高雄國際城市形象與競選品牌。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "\"World-Class Kaohsiung\" Official MV! Working Together to Build Our Global Stage | Ke Chih-en 2026...",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=2jeEuWUDJaY"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-14T04:01:22+00:00",
+        "inputHash": "70da9c6c5cad20e773d1c4b4e21c49fabee760084a7b3dff13401e446dfcabfb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:qajnA_tepW0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/fbca5879427b57edca18.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-14T00:52:21+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "記錄與議員問候民眾並號召參加競選活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "今天一早，和全體議員一起來到衛武營路口，跟大家問早、打招呼。這週六，9月19日下午3點，鳳山西站旁廣場，我們要一起「#大風起」！",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/qajnA_tepW0"
+    },
+    {
       "agendaRelevance": 0.1,
       "candidateId": "ho-hsin-chun",
       "classification": {
@@ -3504,208 +3720,6 @@
         "教育"
       ],
       "url": "https://www.instagram.com/p/DdLKDaaE_Rx/"
-    },
-    {
-      "agendaRelevance": 0.66,
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "classifiedAt": "2026-09-13T22:02:04+00:00",
-        "inputHash": "21b1c8d33f4ae1f3410eb44ad9550911e5213279991b8293a35e8273d7a1d00c",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1847921983363692",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/9eeda7f0fae5125c94cc.webp",
-      "keywords": [
-        "歷史"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-09-12T04:35:08.000Z",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "介紹後慈湖步道、歷史展館與餐飲轉型，推廣觀光及自然環境體驗。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-sc-fb",
-      "text": "初秋涼爽，歡迎來後慈湖走走。\n\n睽違三年，後慈湖已在今年六月重新開放。除了將步道全面升級，我們也將戰備官舍從傳統靜態展示，結合AI 技術，轉型為「沉浸式歷史場域」，並引進桃園在地餐飲品牌，打造特色餐點。\n\n來到後慈湖，彷彿走入世外桃源。1.6公里森林步道，由專業導覽人員帶領，一步步走進山林，感受湖光山色與自然景致。\n\n過去的一號辦公室，現在轉型為沉浸式展館，結合AI互動技術，重現歷史場景，讓遊客彷彿穿越時空，與歷史互動。\n\n二號辦公室則引進榮獲綠色餐飲大獎的桃園在地餐飲品牌，重現總統苦花魚、紅豆鬆糕和俄羅斯軟糖等特色餐點，我推薦大家可以搭配一杯桃園紅茶，在山林裡享受一段悠閒時光。\n\n歡迎大家來到後慈湖，走進這座天然的歷史博物館，在靜謐療癒的景色中，享受悠閒自適的美好時光。",
-      "topicScores": {
-        "文化觀光": 0.97,
-        "環境": 0.8
-      },
-      "topics": [
-        "文化觀光",
-        "環境"
-      ],
-      "url": "https://www.facebook.com/reel/910302021839704/"
-    },
-    {
-      "agendaRelevance": 0.58,
-      "candidateId": "chang-san-cheng",
-      "classification": {
-        "classifiedAt": "2026-09-12T22:03:28+00:00",
-        "inputHash": "31a9be2c2169a21e375a19b526f00e38d70019dbdaf7d343d13886fb43fc5c12",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DdLI4AbFNCH/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/849ce17e653780cba34b.webp",
-      "keywords": [
-        "歷史"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-09-12T04:34:44+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "介紹後慈湖重新開放、步道與歷史展館改造，兼具觀光及自然環境內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "chang-sc-ig",
-      "text": "初秋涼爽，歡迎來後慈湖走走。\n\n睽違三年，後慈湖已在今年六月重新開放。除了將步道全面升級，我們也將戰備官舍從傳統靜態展示，結合AI 技術，轉型為「沉浸式歷史場域」，並引進桃園在地餐飲品牌，打造特色餐點。\n\n來到後慈湖，彷彿走入世外桃源。1.6公里森林步道，由專業導覽人員帶領，一步步走進山林，感受湖光山色與自然景致。\n\n過去的一號辦公室，現在轉型為沉浸式展館，結合AI互動技術，重現歷史場景，讓遊客彷彿穿越時空，與歷史互動。\n\n二號辦公室則引進榮獲綠色餐飲大獎的桃園在地餐飲品牌，重現總統苦花魚、紅豆鬆糕和俄羅斯軟糖等特色餐點，我推薦大家可以搭配一杯桃園紅茶，在山林裡享受一段悠閒時光。\n\n歡迎大家來到後慈湖，走進這座天然的歷史博物館，在靜謐療癒的景色中，享受悠閒自適的美好時光。",
-      "topicScores": {
-        "文化觀光": 0.98,
-        "環境": 0.78
-      },
-      "topics": [
-        "文化觀光",
-        "環境"
-      ],
-      "url": "https://www.instagram.com/p/DdLI4AbFNCH/"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-09-12T10:01:29+00:00",
-        "inputHash": "cf02c4466a65f86d6ee68d6d33eea7b32425ddb802655cffcd10808b529ccf0e",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdLFa00kpXw",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/6d159553cecb064efe45.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-09-12T04:04:32+00:00",
-      "postingIntent": {
-        "confidence": 0.98,
-        "label": "主動發文",
-        "reason": "記錄赴市場拜會與尋求支持，屬競選活動，未提出具體政策議程。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-threads",
-      "text": "@su.chiaohui:一早和新北隊一起到土城學府市場和鄉親好朋友問好！\n\n感謝大家的熱情支持，我們一起繼續拚！拚出新北新時代！",
-      "topicScores": {
-        "競選": 0.99
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DdLFa00kpXw"
-    },
-    {
-      "agendaRelevance": 0.15,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-09-12T22:03:28+00:00",
-        "inputHash": "47b885eed53f79757348e3d589e1412cbe999672d0e5335a7e9d90958625da38",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DdLFPepJnaH/",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/e388ba27ba9306dbbae5.webp",
-      "keywords": [],
-      "platform": "instagram",
-      "postedAt": "2026-09-12T04:03:22+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "市場拜票與競選動員，未提出具體政策內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-ig",
-      "text": "一早和新北隊一起到 #土城學府市場 和鄉親好朋友問好！\n\n感謝大家的熱情支持，我們一起繼續拚！拚出新北新時代！",
-      "topicScores": {
-        "競選": 0.98
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/DdLFPepJnaH/"
-    },
-    {
-      "agendaRelevance": 0.01,
-      "candidateId": "shen-poyang",
-      "classification": {
-        "classifiedAt": "2026-09-12T04:03:00+00:00",
-        "inputHash": "2c72c2bebd3d64a921f2122322f25fc83360c8fffe197c8ef7c0e852604fd237",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdK7vVPgCVt",
-      "imageAspect": 0.5624,
-      "imageUrl": "assets/feed-images/592f2d80d8978566e5d0.webp",
-      "keywords": [],
-      "platform": "threads",
-      "postedAt": "2026-09-12T02:43:48+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "分享運動驛站體驗與被拍攝的趣事，屬日常紀錄，沒有政策討論。",
-        "type": "self_initiated"
-      },
-      "sourceId": "shen-threads-personal",
-      "text": "@pumashen:體驗完運動驛站\n結果時間大delay\n趕緊跑回驛站換衣服\n被無情幕僚錄下\n\n拍攝者不救",
-      "topicScores": {
-        "生活": 0.95
-      },
-      "topics": [
-        "生活"
-      ],
-      "url": "https://www.threads.com/t/DdK7vVPgCVt"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-09-12T04:03:00+00:00",
-        "inputHash": "2b660b2527f0611971551071936038abd4190c4438c19156bc734987dad442ca",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdK4MnXiTYV",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/ca60f5accdb7803bce63.webp",
-      "keywords": [
-        "造勢"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-12T02:08:35+00:00",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "回顧鳳山造勢及支持者情感，屬競選活動紀錄與動員，未提出政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:四年前我們一起種下希望，四年後我們一起收穫改變！\n\n昨晚來到鳳山代天府，看著滿滿鄉親坐滿廟埕，心裡有很多感觸。\n\n鳳山 對我來說，一直是很特別的地方。六歲時，我第一次當花童就在鳳山；2018年，我第一次站上萬人造勢舞台，也是在鳳山。那一次，我看見庶民的力量，也看見高雄人渴望改變的心。\n\n四年前，我第一次大型造勢活動同樣在鳳山，直到今天，我仍然記得那些坐著輪椅、頭髮斑白的90歲老黨員緊緊握著我的手，告訴我：「中華民國靠你了。」那一刻，我感受到的不只是鼓勵，更是一份沉甸甸的責任。",
-      "topicScores": {
-        "競選": 0.98
-      },
-      "topics": [
-        "競選"
-      ],
-      "url": "https://www.threads.com/t/DdK4MnXiTYV"
     }
   ],
   "version": 1
