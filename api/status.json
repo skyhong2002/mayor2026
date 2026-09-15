@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-15 18:01:50"
+        "最近一次執行心跳：2026-09-16 00:01:31"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：4588",
+        "已收錄貼文：4596",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：13 ms"
+        "耗時：10 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-15 18:01:01",
+        "最新抓取時間：2026-09-16 00:00:47",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
-      "label": "部分異常",
+      "label": "正常",
       "name": "Instagram / Threads / X RSSHub",
-      "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 1 個錯誤。"
+      "status": "ok",
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 0 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-09-15 12:03:30",
         "本月已花費：$2.29 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 31.9h, next at 2026-09-16T11:55:04+00:00; ~$2.29 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 31.3h, next at 2026-09-16T11:24:25+00:00; ~$2.29 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：653"
+        "已收錄影片：655"
       ],
       "id": "youtube",
       "label": "正常",
@@ -89,27 +89,27 @@
       "summary": "49 個社群來源中，0 個抓不到內容、1 個超過門檻天數沒有新內容、1 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-15T18:01:50+08:00",
+  "generatedAt": "2026-09-16T00:01:31+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 1,
-    "latestPostAt": "2026-09-15T13:00:06+08:00",
+    "currentErrors": 0,
+    "latestPostAt": "2026-09-15T15:24:20+00:00",
     "postsByPlatform": {
       "facebook": 1381,
       "instagram": 1305,
       "podcast": 7,
-      "threads": 1110,
+      "threads": 1116,
       "website": 124,
       "x": 8,
-      "youtube": 653
+      "youtube": 655
     },
-    "totalPosts": 4588,
+    "totalPosts": 4596,
     "watchAccounts": 67
   },
   "overall": {
     "label": "部分異常",
     "status": "degraded",
-    "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、來源收錄健康。 Facebook Apify 目前依排程或預算節流。"
+    "summary": "核心 pipeline 有產出；需要注意：來源收錄健康。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
     {
@@ -264,10 +264,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 1,
+        "currentErrors": 0,
         "platform": "instagram",
         "sources": 12,
-        "status": "degraded"
+        "status": "ok"
       },
       {
         "currentErrors": 0,

@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 533,
+  "count": 534,
   "posts": [
     {
       "agendaRelevance": 0.95,
@@ -60,6 +60,38 @@
         "競選"
       ],
       "url": "https://a-chun.tw/news/youth-bureau-ai-training-employment-entrepreneurship"
+    },
+    {
+      "agendaRelevance": 0.31,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-15T16:01:18+00:00",
+        "inputHash": "20c7455a1f7719fb1df1744c2db6cf4c12a7e4851659ffb1e4b91b24c1337b58",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:k9vcTSIP5bQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/3d4cbbd4e0083a97caba.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-15T10:00:31+00:00",
+      "postingIntent": {
+        "confidence": 0.84,
+        "label": "主動發文",
+        "reason": "簡短轉述政治人物提出競選口號，未交代具體政策內容或回應對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純喊出「3個第一 1個大」台中要大升級💪",
+      "topicScores": {
+        "競選": 0.88
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/k9vcTSIP5bQ"
     },
     {
       "agendaRelevance": 0.8,
