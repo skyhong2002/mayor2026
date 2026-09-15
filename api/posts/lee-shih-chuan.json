@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/8cb959bcfab40a31c625.webp",
+    "avatarUrl": "assets/source-avatars/90264455272f0edec159.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,43 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 294,
+  "count": 298,
   "posts": [
+    {
+      "agendaRelevance": 0.88,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-15T04:04:40+00:00",
+        "inputHash": "1f7fcaa41ce9e3f17fc29c060fcdb0063806f4864d4be9764eab453570e09b9b",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1638828864521034",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/50d8d5f1f21556849be2.webp",
+      "keywords": [
+        "住宅",
+        "社會住宅"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-14T23:30:38.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張捷運沿線同步興建社宅、勞工宅與婚育宅，降低青年居住負擔。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "「捷運到哪，安居到哪」，這句話要蓋得出來才算數。\n捷運蓋出來，要留一份給租房子的年輕人。\n社會住宅、勞工宅、婚育宅，講到底只有一件事：讓人在新北落得了腳。\n該蓋的，一棟都不會少。",
+      "topicScores": {
+        "住宅": 0.99
+      },
+      "topics": [
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/1390851786448180/"
+    },
     {
       "agendaRelevance": 0.65,
       "candidateId": "lee-shih-chuan",
@@ -56,6 +91,106 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DdRXNGskx21"
+    },
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-15T04:04:40+00:00",
+        "inputHash": "5b4fddf902c6791a35022db19e3f52e6601693c8ac2db5019474f0be24db7480",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdRWfzHslil/",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/56bbe00bb098e3ffaf2a.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-09-14T14:32:30+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹競選主題曲並號召支持，未提出具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "說實在，音樂我不是專業。聽到要做一首競選主題曲，我心裡是打問號的：一首歌，講得完新北嗎？\n\n聽完我收回那句話。是年輕人的才華，替我把話唱完了。\n\n這首歌裡沒有一句政見，但每一句都是新北人的日子。\n\n「歐都拜歸工來來回回，為生活、為家庭、為理想」——這不是歌詞，這是新北人每天早上六點半就在做的事。\n\n「有時存黑暗，看嘸著路」——這也不是歌詞，這是每一個在夜班、在工地、在市場、在店裡顧到打烊的人，都很熟的那種感覺。\n\n最後那句「我毋驚，咱自己找出口」，我聽了大概三遍，後來自己就跟著哼了。\n\n我做了四十年的工程，從三職等做起。我很清楚一件事：路不會自己出現，是有人先想，然後有人去做。\n\n副歌那句「川好勢」，台語是「準備好」。這三個字剛好跟我借了一個字，我就把它聽成新北人在問我一句話：\n\n你準備好了沒？\n\n我的回答很簡單：四十年的經驗，就是為了新北的這一刻。剩下的，咱作夥做。\n\n勇敢想，把新北想得更大。勇敢做，把想的一件一件做完。",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DdRWfzHslil/"
+    },
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-15T04:04:40+00:00",
+        "inputHash": "520d1c1f758955378939433655b53925ffefa7d117ea053ee1a8b2930523d76e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1638082217929032",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/549e18bdbddb3c999bb0.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-14T04:00:29.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享競選歌曲感想並進行候選人形象動員，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "說實在，音樂我不是專業。聽到要做一首競選主題曲，我心裡是打問號的：一首歌，講得完新北嗎？\n\n聽完我收回那句話。是年輕人的才華，替我把話唱完了。\n\n這首歌裡沒有一句政見，但每一句都是新北人的日子。\n\n「歐都拜歸工來來回回，為生活、為家庭、為理想」，這不是歌詞，這是新北人每天早上六點半就在做的事。\n\n「有時存黑暗，看嘸著路」，這也不是歌詞，這是每一個在夜班、在工地、在市場、在店裡顧到打烊的人，都很熟的那種感覺。\n\n最後那句「我毋驚，咱自己找出口」，我聽了大概三遍，後來自己就跟著哼了。\n\n我做了四十年的工程，從三職等做起。我很清楚一件事：路不會自己出現，是有人先想，然後有人去做。\n\n副歌那句「川好勢」，台語是「準備好」。這三個字剛好跟我借了一個字，我就把它聽成新北人在問我一句話：\n\n你準備好了沒？\n\n我的回答很簡單：四十年的經驗，就是為了新北的這一刻。剩下的，咱作夥做。\n\n勇敢想，把新北想得更大。勇敢做，把想的一件一件做完。",
+      "topicScores": {
+        "競選": 0.94
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/reel/1055747257168883/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-15T04:04:40+00:00",
+        "inputHash": "aa22fe30670752a332cfa3f40c545e52987921b88fa411287aebcdbe1064ae60",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1637946127942641",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/61ef5204ef9eedca6a54.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-14T00:00:22.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以新莊副都心與塭仔圳開發經驗，表達延續土地重劃建設的意向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "一張重劃圖從紙上到住進人，要花 18 年。\n18 年前的新莊副都心，我做過；現在大樓都蓋起來了。\n跟新莊的緣分還沒做完，18 年後的塭仔圳，我想接著做。",
+      "topicScores": {
+        "住宅": 0.9
+      },
+      "topics": [
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/1392959425689605/"
     },
     {
       "agendaRelevance": 0.78,
