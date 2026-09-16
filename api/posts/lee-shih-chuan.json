@@ -19,8 +19,44 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 302,
+  "count": 303,
   "posts": [
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-16T04:01:12+00:00",
+        "inputHash": "e9a8d62b8be6a708ff542a8c87a4275f4d8f36df02a1e4ae0727a4b066cfdb28",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdVOqJ4CPS2",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/324b6e79a671aad7ddca.webp",
+      "keywords": [
+        "站台"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-16T02:38:03+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "記述協助受災社區重建的往事並爭取支持，主要是競選敘事而非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:一場排在午餐時間的協調會，她記了十幾年。\n\n最近聲音有些沙啞，我開玩笑說，6個月講了 50 年的話。\n\n但有些話，是別人幫我說的。\n\n李小姐是新北泰山的九二一受災戶，這些日子她跑了很多場川友會，上週末也到「我們挺李四川」大會上幫我站台。\n\n她會來，只是記得我曾經在一個中午，趕去一場協調會，幫社區排除重建的困難。\n\n她在台上講了一句話，我印象很深：我們小小的社區，他都願意真心來幫忙。\n\n說實在，我出來選是為了把新北市下一階段做好。這些從民間走出來的朋友，沒有顯赫的背景，卻是我最珍貴的靠山。\n\n社區有大有小，但一個家要住得安心，沒有大小之分。",
+      "topicScores": {
+        "住宅": 0.7,
+        "競選": 0.94
+      },
+      "topics": [
+        "競選",
+        "住宅"
+      ],
+      "url": "https://www.threads.com/t/DdVOqJ4CPS2"
+    },
     {
       "agendaRelevance": 0.93,
       "candidateId": "lee-shih-chuan",
