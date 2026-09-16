@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/90264455272f0edec159.webp",
+    "avatarUrl": "assets/source-avatars/f3a14ff1fd0929229033.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,76 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 303,
+  "count": 307,
   "posts": [
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "9d5d5a44742263176ee1bdb0896fe302210939611e019cb74ba68757ec6205c3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdV7ZO9E7Nr",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/3830b9644b35802629d1.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-16T09:08:10+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參訪烏來並提出烏來台車觀光升級方向，屬觀光政策討論。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:今天到烏來，看烏來瀑布，談接下來「烏來台車觀光」再升級的方向。\n\n年輕夥伴說我後腦勺的「川」，似乎呼應了後面的瀑布，倒真是「川流不息」。",
+      "topicScores": {
+        "文化觀光": 0.96
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DdV7ZO9E7Nr"
+    },
+    {
+      "agendaRelevance": 0.55,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "604df5a0ab2ffba1498b0a6a27a6f32b176a7df378ab29b8cd5a6297234321ad",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1640021704401750",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/9224760ff77c3953b9df.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-16T09:00:15.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "走訪烏來並討論台車觀光升級方向，屬觀光建設紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "今天到烏來，看烏來瀑布，談接下來「烏來台車觀光」再升級的方向。\n\n年輕夥伴說我後腦勺的「川」，似乎呼應了後面的瀑布，倒真是「川流不息」。",
+      "topicScores": {
+        "文化觀光": 0.94
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0b6kyLKcpABeDyyBZJQ9Xj8xdcWWV8Vf2jJFwndhLR1rfaCPERN9qDoAFyHndX9J2l&id=100051818071280"
+    },
     {
       "agendaRelevance": 0.35,
       "candidateId": "lee-shih-chuan",
@@ -56,6 +124,42 @@
         "住宅"
       ],
       "url": "https://www.threads.com/t/DdVOqJ4CPS2"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "8c894617f2b7454e9f0f1e2a91caf430342b2ad6f117e02fec1af9a58b94e4f0",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1639715007765753",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/0172eb3f4f781175fb02.webp",
+      "keywords": [
+        "站台"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-16T00:00:31.000Z",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以受災戶故事與站台活動宣傳參選，提及住宅重建但未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "一場排在午餐時間的協調會，她記了十幾年。\n\n最近聲音有些沙啞，我開玩笑說，6個月講了 50 年的話。\n\n但有些話，是別人幫我說的。\n\n李小姐是新北泰山的九二一受災戶，這些日子她跑了很多場川友會，上週末也到「我們挺李四川」大會上幫我站台。\n\n她會來，只是記得我曾經在一個中午，趕去一場協調會，幫社區排除重建的困難。\n\n她在台上講了一句話，我印象很深：我們小小的社區，他都願意真心來幫忙。\n\n說實在，我出來選是為了把新北市下一階段做好。這些從民間走出來的朋友，沒有顯赫的背景，卻是我最珍貴的靠山。\n\n社區有大有小，但一個家要住得安心，沒有大小之分。",
+      "topicScores": {
+        "住宅": 0.8,
+        "競選": 0.9
+      },
+      "topics": [
+        "競選",
+        "住宅"
+      ],
+      "url": "https://www.facebook.com/reel/1239627328353819/"
     },
     {
       "agendaRelevance": 0.93,
@@ -128,6 +232,42 @@
         "競選"
       ],
       "url": "https://www.instagram.com/p/DdTtwhCmLrd/"
+    },
+    {
+      "agendaRelevance": 0.75,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "f804a495c7ea6998f5af01756f80507fd0adaf308596f7c875d1fc024a7ff750",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1639266034477317",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/cfc8268342ed7dabafd4.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-15T12:00:39.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "競選造勢中提出軌道、捷運、橋梁等交通建設承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "「歹勢啦，我無聲啊⋯」，第一次讓台下觀眾大笑，是因為我燒聲了。\n\n工程人「憨慢」講話，所以我很用力，沒有技巧，沒有漂亮話，只想努力一字一句，告訴大家我對新北的構想，要帶鄉親走向何方。\n\n今天好朋友替我在三重成立川友會，看到兩千多位鄉親到場替我加油，說實在，再怎麼沒有聲音，我也覺得歡心。\n\n「新北市長李四川，1128投給他」我沒聲音，里長替我喊。 這份力氣我收下了，也會繼續拚下去。\n\n非常多里長，以及三重農會理事長李志源、常務監事鄭俊麟和總幹事林宏記也來到現場相挺，這份感謝，我記在心裡。\n\n未來，包括「軌道建設123」、「大漢溪縱貫線捷運」以及「蘆社大橋」，還有三重忠孝碼頭到大稻埕的跨河景觀橋，我都會一一來做。\n\n三重的路，是我過去出的力。三重的橋，我未來加倍出力。",
+      "topicScores": {
+        "交通": 0.9,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "交通"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid022MV6wjmDHjGta48a8rTVzZnh92CR8X5G2stFiTNH3ZKpfJcAzxMZU3gTAAjtmnbpl&id=100051818071280"
     },
     {
       "agendaRelevance": 0.46,

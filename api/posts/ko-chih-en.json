@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/ec13bb168585f300250e.webp",
+    "avatarUrl": "assets/source-avatars/6b8eac6cfbc80048019c.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "ko-chih-en",
@@ -19,8 +19,191 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 436,
+  "count": 442,
   "posts": [
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "c1870722cf91cb9811383817e9c54fdbf3ebd8d0dc8e0857b297c9733d53578c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdV9AorF5Sr",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/aa08cbd2969b91010ae3.webp",
+      "keywords": [
+        "造勢",
+        "美食"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-16T09:23:31+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹地方美食並邀請參加歌唱及造勢活動，主要是競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:開著我的專屬 胖卡，吹著海風來到 梓官蚵仔寮。這裡的海鮮「尚青」，我最愛來到這裡看海景、享受美食。\n\n胖卡穿越大街小巷，沿途向鄉親問好，也邀請大家：9/22（二）晚上 7 點，一起來 #梓官大舍甲大壽宮 聽我們「廟口那卡西」、作伙唱歌！\n\n但是，9/19（六）下午3點 捷運鳳山西站的 「#大風起」造勢先來相會！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DdV9AorF5Sr"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "f70278b8f9b648bfc7c0ab6d031d95e17f88d4d46ccbc48cdc8ffbbba4a3f0e1",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1642654650548248",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/060a428e182340dcd650.webp",
+      "keywords": [
+        "造勢",
+        "美食"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-16T09:23:17.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "邀請參加地方表演與造勢活動，主要是競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "開著我的專屬 #胖卡，吹著海風來到 #梓官蚵仔寮。這裡的海鮮「尚青」，我最愛來到這裡看海景、享受美食。\n\n胖卡穿越大街小巷，沿途向鄉親問好，也邀請大家：9/22（二）晚上 7 點，一起來 #梓官大舍甲大壽宮 聽我們「廟口那卡西」、作伙唱歌！\n\n但是，9/19（六）下午3點 捷運鳳山西站的 「#大風起」造勢先來相會！",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/2267021004060840/"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "7510365611ec74067ca89a12bae05d144cc6d89716980301fad18ecd58cb3e1b",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:2vy0p23_B0w",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/f620f35a6e9c6eb32936.webp",
+      "keywords": [
+        "美食"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-16T09:21:53+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "分享梓官海鮮與海邊行程，屬地方生活與觀光紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "開著我的專屬 #胖卡，吹著海風來到 #梓官蚵仔寮。這裡的海鮮「尚青」，我最愛來到這裡看海景、享受美食。",
+      "topicScores": {
+        "文化觀光": 0.83
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/2vy0p23_B0w"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "c29cbdc277e5b24ddac2c9600561b2c25bfbf49714d2e177a94ed1e6540aa59d",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdVbrjAIC4s",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/69543da3f57838254f38.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-16T04:31:03+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅記錄到訪海尾橋，缺乏明確公共議題或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:彌陀・海尾橋🌊",
+      "topicScores": {
+        "生活": 0.84
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdVbrjAIC4s"
+    },
+    {
+      "agendaRelevance": 0.93,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "1505591e188dace3c641e2e2e12e879ef08f70e710cbdc55d8f1ad3d0b14a726",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1642436497236730",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/9d7dd2578ce086944858.webp",
+      "keywords": [
+        "文化",
+        "音樂",
+        "觀光",
+        "美食",
+        "產業",
+        "創業"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-16T03:08:53.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出客語傳承、客庄產業國際化及爭取世界客家博覽會等具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "讓世界看見高雄，也讓高雄成為世界客家人的家！\n\n上週末參加「#世界客屬總會高雄分會暨客屬同鄉會聯合會員大會」，和許多長期為客家文化努力的前輩與鄉親相聚。\n\n這些年走遍高雄，我深刻感受到，客家文化早已是高雄不可或缺的一部分，從美濃、杉林、甲仙等客庄，再到都會區客家人口，到許多來到高雄打拚、落地生根的客家鄉親，大家共同寫下的，就是高雄這座城市的故事。\n\n我認為，客家文化不能只是被保存的文化，更應該成為高雄向世界介紹自己的文化。還記得高雄上一次舉辦世界客屬懇親大會，已經是1992年的事，當年正是由世界客屬總會高雄分會承辦。如今全球客家鄉親遍布世界各地，高雄更有條件成為國際客家交流的重要城市，讓更多人透過高雄認識台灣客家文化。\n\n未來我希望把文化、產業、觀光與青年真正串連起來，不只是保存客家文化，更要讓客家美食、農產、工藝與創意產業走向市場與國際；不只是推廣客語，更要讓年輕人願意學、願意用；不只是辦活動，更要創造機會，讓客家文化成為年輕世代投入地方創生與創業發展的重要力量。\n\n我也向大家承諾，未來將持續推動客語傳承、客庄振興、客家影視與音樂發展，並爭取在高雄舉辦世界客家博覽會，讓世界看見高雄客家文化的深厚底蘊與創新能量。\n\n文化的傳承，不是把過去留在場館裡，而是讓下一代願意接過來、繼續走下去，讓高雄客家文化有根、有聲音、有舞台，更有未來。\n#高雄 #客家文化",
+      "topicScores": {
+        "教育": 0.68,
+        "文化觀光": 0.98,
+        "經濟": 0.77
+      },
+      "topics": [
+        "文化觀光",
+        "經濟",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0E5KUNZtRphMKvnmD1zEQPcGgDm8AkUfCYtTvZMzEBybkRpiEsADXbhVEzEeJ9FHkl"
+    },
     {
       "agendaRelevance": 0.9,
       "candidateId": "ko-chih-en",
@@ -64,6 +247,47 @@
         "文化觀光"
       ],
       "url": "https://www.instagram.com/p/DdT7ThLCfZP/"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "e14b88e9b4dcd749e3afc5f8d498297b102c55bed8ec2fcffa52f6f3412078b1",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1641998537280526",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/1a41d706c327ea00bee9.webp",
+      "keywords": [
+        "淹水",
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-15T14:28:47.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主張均衡城鄉資源、提升薪資，並處理淹水、交通與教育機會問題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "高雄的未來不會只有市區的繁華，也會有海線的光彩，我們一起努力，讓薪水漲上去、把人留下來、高雄拚世界！\n\n今晚來到 #彌陀 彌壽宮廟口開講，談到彌陀，是虱目魚的故鄉，也是高雄海線一顆閃亮的珍珠。\n\n下午到海尾橋走走，看著夕陽慢慢落下，真的很美。我一路在想，這麼好的地方，為什麼還有那麼多問題，幾十年來始終沒有真正解決？淹水、交通、觀光發展，鄉親及議員也爭取了很多年，卻還是緩步向前。\n\n我看到的彌陀，有很多認真打拚的人。有堅守漁業的鄉親，用雙手養活一家人；有返鄉的年輕人，自己畫地圖、找景點、推美食，希望讓更多人認識自己的故鄉，這些努力，不該只是靠鄉親自己苦撐。\n\n這些年，高雄市區和縣區的資源分配，大家心裡感到不公平。市區有演唱會、有大型建設，縣區也該被看見；彌陀的孩子也該與市區孩子機會相同、有競爭力。\n\n未來有機會承擔市政，我一定努力讓市區與縣區的發展更均衡，讓每一個角落都被公平對待。\n\n我認為，高雄最重要的，就是薪水漲上去、把人留下來，高雄才能拚全世界！高雄給民進黨40年的時間已經夠多，未來4年，應該換人試試看，給我一個機會，照顧好大家。\n\n今晚也要特別感謝長年深耕大岡山的 陸淑美 議員，如今將交棒給 黃韻涵，還有持續為海線發聲的 宋立彬 高雄市議員 方信淵-高雄市議員，以及所有認真服務的里長們。\n\n基層有里長打拚，議會有議員監督，市政交給我。我會用媽媽照顧孩子的心情來照顧大家，讓更多人看見這片土地的美，也讓下一代以家鄉為榮。",
+      "topicScores": {
+        "交通": 0.82,
+        "教育": 0.65,
+        "經濟": 0.92,
+        "防災": 0.82
+      },
+      "topics": [
+        "經濟",
+        "防災",
+        "交通",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0u1tkihvPbW92KdKU1jWonnyNCjKjdYGqpT6NkCWDrA1VBf2Fvy1TEr1vb7vfT3tFl"
     },
     {
       "agendaRelevance": 0.91,
@@ -13209,8 +13433,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/Da7ICMviZD7",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/50dd836d2890651debee.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "選舉",
         "參選",
@@ -13251,8 +13475,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/Da7EiCsE_LF/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/cdb60b58098db2411b5c.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "育兒",
         "長輩",

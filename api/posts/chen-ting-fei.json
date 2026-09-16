@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/3ee7d51ff77f9d79bb32.webp",
+    "avatarUrl": "assets/source-avatars/0c803277ebd794dffbaa.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "chen-ting-fei",
@@ -19,7 +19,7 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 263,
+  "count": 264,
   "posts": [
     {
       "agendaRelevance": 0.26,
@@ -61,6 +61,48 @@
         "社福"
       ],
       "url": "https://www.instagram.com/p/DdTdCWMk1RU/"
+    },
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "250e93c3b987f8eccb0aaa1ade1f6f5ff2fbabd8f95f9e2e2a0769128e1e730f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1646811496806772",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/cf85dc49931662f294e8.webp",
+      "keywords": [
+        "競選",
+        "競總",
+        "文化",
+        "觀光",
+        "歷史"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-15T08:21:07.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "記錄競選總部活動並展示文化、觀光、福利與交通政見元素。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "✨小英總統來「亭妃競總」開箱！驚艷從來沒見過這麼有美感及設計感的競選總部！\n　　　　\n蔡英文 Tsai Ing-wen總統今天來到陳亭妃競選總部，從打卡區到親自體驗AI動畫政見、當走進「妃熊幸福」專區，還大讚：「我全台跑透透，從沒看過這麼有美感、設計感的競選總部！」讓小英總統覺得最不可思議的就是「妃熊幸福」親子氣墊區\n　　　　　　　　\n從台南400年的文化底蘊，到AI科技、農漁、觀光、福利與交通，再到可愛的妃妃泰迪熊，這裡不只是競選總部，更是陳亭妃心中「美學台南」的實踐。\n　　　　　　　\n歡迎大家來永康區水漾路520號，走一趟「台南妃熊幸福奇幻旅程」！\n\n開箱影片我們拭目以待👀\n　　　\n#蔡英文 #小英總統 #陳亭妃 #台南市長候選人 #美學台南 #妃熊幸福 #姐姐市長 #咱作伙寫歷史",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "社福": 0.62,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid0uev3VQmzK5xZyyRambodQC4i9FXMBQX5fpU3WgkmrLJiakVKhQxnuWzdCZYVugVxl"
     },
     {
       "agendaRelevance": 0.78,
@@ -5923,8 +5965,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/Da7E0o3E0Bt",
-      "imageAspect": 1.7751,
-      "imageUrl": "assets/feed-images/ff713485708ab9f7dae1.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "醫療",
         "醫院",

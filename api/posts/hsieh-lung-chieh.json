@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/6ed9480ec2bf9942ccb8.webp",
+    "avatarUrl": "assets/source-avatars/7b92ff692de5d9ffd02b.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "hsieh-lung-chieh",
@@ -19,8 +19,142 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 471,
+  "count": 476,
   "posts": [
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "773b2d5db41f057c32621fd8bfe75e2bf1f81d6d51cd4ee4108a27317c1513d2",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:fXcFQBXG_Dk",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d1050c30e96b05d8f09a.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-16T04:36:55+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "提出道路、照明與排水改善的城市治理主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-yt",
+      "text": "Building a Happy City! Smooth Roads, Bright Lights, and Clear Drains",
+      "topicScores": {
+        "交通": 0.75,
+        "生活": 0.8
+      },
+      "topics": [
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/fXcFQBXG_Dk"
+    },
+    {
+      "agendaRelevance": 0.5,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "86d8b77cccf87e4a6acc28f698946f5f5704c7e102988a0e9219c6a40832f2cb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1658468312301417",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/f11aabcc121a9324d141.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-16T04:35:40.000Z",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "以路平、照明與排水概括宣示改善生活環境，政策細節有限。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "打造幸福感城市！路平、燈亮、水溝通",
+      "topicScores": {
+        "生活": 0.82
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/1368429132028040/"
+    },
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "a0d9cc5ea6cc1e17268bc53a94ab823534ddbcaccd7ac6f1dcd98d8c9632f303",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdVb4Y2kQ5o",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/e46741116aefdf7dba8d.webp",
+      "keywords": [
+        "路平"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-16T04:32:50+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "簡短提出道路、照明與排水改善的城市治理主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-threads",
+      "text": "@hsiehlungchieh:打造幸福感城市！路平、燈亮、水溝通",
+      "topicScores": {
+        "交通": 0.78,
+        "生活": 0.88
+      },
+      "topics": [
+        "生活",
+        "交通"
+      ],
+      "url": "https://www.threads.com/t/DdVb4Y2kQ5o"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:16+00:00",
+        "inputHash": "8c11fd087751e9bc8c27cce42fee46bfe346b53f31f24f0800e4a0146910a675",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1334364161891261",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/146806baf92c458b5a96.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-15T13:19:33.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "僅為直播節目標題，沒有可辨識的公共議題內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "20260915 談天說地論臺灣｜龍介的直播",
+      "topicScores": {
+        "生活": 0.78
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/TEL062268268/videos/1334364161891261/"
+    },
     {
       "agendaRelevance": 0.01,
       "candidateId": "hsieh-lung-chieh",
@@ -90,13 +224,47 @@
       "url": "https://www.youtube.com/shorts/EAIfVW7foFs"
     },
     {
-      "agendaRelevance": 0.38,
+      "agendaRelevance": 0.62,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-09-15T22:03:31+00:00",
+        "classifiedAt": "2026-09-16T10:02:51+00:00",
+        "inputHash": "2591b87f59e0028468aa0991984b441eb97f67e1ee987497106fc8edf417f021",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1657798935701688",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/926f0c8b4dce7562aba6.webp",
+      "keywords": [
+        "治水"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-15T09:55:34.000Z",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "批評水溝未清與治水經費，屬主動質疑地方排水與防洪治理，未明確回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-fb",
+      "text": "水溝都沒在清…喊什麼治水沒錢？",
+      "topicScores": {
+        "環境": 0.83,
+        "防災": 0.9
+      },
+      "topics": [
+        "防災",
+        "環境"
+      ],
+      "url": "https://www.facebook.com/reel/1778401793074080/"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-16T10:02:51+00:00",
         "inputHash": "aedc6afab92168586f92a2b351dc0e3f438851ac316e9af3ef017752aeafb913",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-09-15T22:03:34+00:00",
         "method": "ai",
         "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
@@ -110,16 +278,16 @@
       "platform": "threads",
       "postedAt": "2026-09-15T09:53:22+00:00",
       "postingIntent": {
-        "confidence": 0.96,
-        "label": "回應他方觀點",
-        "reason": "針對「治水沒錢」的說法提出反駁，指出水溝未清理，質疑其治水主張。",
-        "type": "responsive"
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "批評水溝未清與治水經費，屬主動質疑地方排水與防洪治理，未明確回應特定他方說法。",
+        "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-threads",
       "text": "@hsiehlungchieh:水溝都沒在清…喊什麼治水沒錢？",
       "topicScores": {
-        "環境": 0.74,
-        "防災": 0.86
+        "環境": 0.83,
+        "防災": 0.9
       },
       "topics": [
         "防災",
@@ -128,13 +296,11 @@
       "url": "https://www.threads.com/t/DdTbxIHkt22"
     },
     {
-      "agendaRelevance": 0.38,
+      "agendaRelevance": 0.62,
       "candidateId": "hsieh-lung-chieh",
       "classification": {
-        "classifiedAt": "2026-09-15T22:03:31+00:00",
+        "classifiedAt": "2026-09-16T10:02:51+00:00",
         "inputHash": "cbab693bca3086f38cd551bbcded92f9a479d1cf0b29ad019ab0975aa2bd683e",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-09-15T22:03:34+00:00",
         "method": "ai",
         "model": "gpt-5.6-luna",
         "rubricVersion": "content-v5"
@@ -148,16 +314,16 @@
       "platform": "instagram",
       "postedAt": "2026-09-15T09:53:18+00:00",
       "postingIntent": {
-        "confidence": 0.96,
-        "label": "回應他方觀點",
-        "reason": "針對「治水沒錢」的說法提出反駁，指出水溝未清理，質疑其治水主張。",
-        "type": "responsive"
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "批評水溝未清與治水經費，屬主動質疑地方排水與防洪治理，未明確回應特定他方說法。",
+        "type": "self_initiated"
       },
       "sourceId": "hsieh-lc-ig",
       "text": "水溝都沒在清…喊什麼治水沒錢？",
       "topicScores": {
-        "環境": 0.74,
-        "防災": 0.86
+        "環境": 0.83,
+        "防災": 0.9
       },
       "topics": [
         "防災",
