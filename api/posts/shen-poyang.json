@@ -19,8 +19,74 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 573,
+  "count": 578,
   "posts": [
+    {
+      "agendaRelevance": 0.2,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "68ae1d40dcf3e181a4071fe1dabbcd9e2528e21c9093a9c164a30841ad7e5ee7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Wa3n3KuT028",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/7548d1fa007ef9c537f5.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-17T01:13:19+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "宣傳競選歌曲，主要屬競選活動內容而非具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "《Taipei Flowing Smoothly 𝙁𝙪𝙩𝙪𝙧𝙚 𝙎𝙤𝙤𝙣》2026 Forward-Looking Shen Po-yang Official Campaign Song X C...",
+      "topicScores": {
+        "文化觀光": 0.46,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=Wa3n3KuT028"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "a25931940e84e86a03e1473d60ad97fa9e8982387e03a377c471082c3664d89a",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:lko8BOVdOn0",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/5f4a6d7c038c07d67a77.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-17T01:00:04+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "簡短表達對市長的支持，缺乏可辨識公共議題或政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "市長，我給你聽好的！",
+      "topicScores": {
+        "生活": 0.8
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/watch?v=lko8BOVdOn0"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "shen-poyang",
@@ -380,6 +446,83 @@
       "url": "https://www.youtube.com/watch?v=YvgMkUFwWqU"
     },
     {
+      "agendaRelevance": 0.1,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "3fb4bf13baab5b73d08bf1e8fc2d251fd75630522aa2371d8ccd925265365478",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:-mQ63YjvFE18bq8JsvelF",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/a30a39ed7a9c22203b12.webp",
+      "keywords": [
+        "競總"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-16T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.93,
+        "label": "主動發文",
+        "reason": "記錄受訪及議員競選總部成立相關內容，屬競選活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0916受訪-1 #受訪 #民進黨台北市議員競總成立 #賴俊翰 #民進黨中山大同四位全壘打",
+      "topicScores": {
+        "競選": 0.95
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://puma.taipei/videos/-mQ63YjvFE18bq8JsvelF"
+    },
+    {
+      "agendaRelevance": 0.48,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "a28dde4275edba522099c51c7c0b368d98146df26bda4196a256520052c5cd65",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:Lu1ytpQpPEwc_9XaujOa1",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/3d51bd5c46ad8e6ff117.webp",
+      "keywords": [
+        "交通",
+        "自行車",
+        "營養午餐",
+        "商圈"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-16T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "整理受訪時涉及自行車道、通學安全、午餐、商圈及城市建設等政策議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0916受訪 #受訪 #自行車道政策 #通學區零死亡 #交通零重傷 #兒童保護 #法律先行 #營養午餐 #洋流是暖的 #大巨蛋老鼠 #商圈活絡政策 #「微森林」計畫 #「山徑」計畫 #明治橋 # 雙城論壇",
+      "topicScores": {
+        "交通": 0.94,
+        "教育": 0.74,
+        "社福": 0.55,
+        "經濟": 0.55
+      },
+      "topics": [
+        "交通",
+        "教育",
+        "社福",
+        "經濟"
+      ],
+      "url": "https://puma.taipei/videos/Lu1ytpQpPEwc_9XaujOa1"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
@@ -580,6 +723,44 @@
         "兩岸外交"
       ],
       "url": "https://www.facebook.com/puma.taipei/videos/1408939081428234/"
+    },
+    {
+      "agendaRelevance": 0.38,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "2964cd51bc8747fca82b381c158103c4f0d8c8db96d4d5dd0dc15201b3bc4e6c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:40crP9YFiT69BBJ5mcE4I",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/dd5bae4ad96252e0d15f.webp",
+      "keywords": [],
+      "platform": "website",
+      "postedAt": "2026-09-15T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.7,
+        "label": "主動發文",
+        "reason": "彙整受訪談及夜市、城市治理、災害個案與APEC等公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0915受訪 #受訪 #公館夜市 #小巨蛋外牆 #APEC會議 #陳水扁 #台北市治理 #王偉忠專訪影片 #基泰大直案受災戶",
+      "topicScores": {
+        "兩岸外交": 0.52,
+        "經濟": 0.63,
+        "議會監督": 0.58,
+        "防災": 0.55
+      },
+      "topics": [
+        "經濟",
+        "議會監督",
+        "防災",
+        "兩岸外交"
+      ],
+      "url": "https://puma.taipei/videos/40crP9YFiT69BBJ5mcE4I"
     },
     {
       "agendaRelevance": 0.61,

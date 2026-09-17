@@ -19,8 +19,40 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 436,
+  "count": 437,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "652d641516235d0e4e9fa5252df5283f3c9bbc1e5fe4d9869073965925943d81",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdXvNJIic_X",
+      "imageAspect": 0.8,
+      "imageUrl": "assets/feed-images/8b2465d4954d7deb802a.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-17T02:00:09+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "以天氣與暱稱邀約週六見面，未涉及明確公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:洋流到港，隆捲風來襲！\n我們週六見！ @pumashen",
+      "topicScores": {
+        "生活": 0.82
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdXvNJIic_X"
+    },
     {
       "agendaRelevance": 0.28,
       "candidateId": "lai-jui-lung",

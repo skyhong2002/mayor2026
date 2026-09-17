@@ -19,8 +19,40 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 481,
+  "count": 482,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-17T04:01:14+00:00",
+        "inputHash": "c2251120ce2c7a2d7a67219b07aa79280f655a5f0df74195d00e69a86ce5344c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdXgFWYkhEw",
+      "imageAspect": null,
+      "imageUrl": null,
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-16T23:48:00+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "邀請同行逛夜市，屬日常生活邀約，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:這週日晚上\n要不要杰伴一起逛中壢夜市？",
+      "topicScores": {
+        "生活": 0.94
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdXgFWYkhEw"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "huang-shih-chieh",
