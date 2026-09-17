@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-17 12:01:24"
+        "最近一次執行心跳：2026-09-17 18:04:29"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：4703",
+        "已收錄貼文：4736",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：9 ms"
+        "耗時：30 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,21 +34,21 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-17 12:00:44",
+        "最新抓取時間：2026-09-17 18:02:54",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
       "label": "部分異常",
       "name": "Instagram / Threads / X RSSHub",
       "status": "degraded",
-      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 1 個錯誤。"
+      "summary": "12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 2 個錯誤。"
     },
     {
       "details": [
         "最近成功 run：2026-09-16 18:01:07",
         "本月已花費：$2.50 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 30.9h, next at 2026-09-17T16:56:03+00:00; ~$2.50 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 30.4h, next at 2026-09-17T16:22:15+00:00; ~$2.50 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：667"
+        "已收錄影片：669"
       ],
       "id": "youtube",
       "label": "正常",
@@ -74,7 +74,7 @@
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 131 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 136 篇。"
     },
     {
       "details": [
@@ -89,21 +89,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、1 個超過門檻天數沒有新內容、1 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-17T12:01:24+08:00",
+  "generatedAt": "2026-09-17T18:04:29+08:00",
   "metrics": {
     "candidates": 13,
-    "currentErrors": 1,
-    "latestPostAt": "2026-09-17T03:27:45+00:00",
+    "currentErrors": 2,
+    "latestPostAt": "2026-09-17T10:00:06+00:00",
     "postsByPlatform": {
       "facebook": 1409,
-      "instagram": 1342,
-      "podcast": 7,
-      "threads": 1139,
-      "website": 131,
+      "instagram": 1356,
+      "podcast": 8,
+      "threads": 1150,
+      "website": 136,
       "x": 8,
-      "youtube": 667
+      "youtube": 669
     },
-    "totalPosts": 4703,
+    "totalPosts": 4736,
     "watchAccounts": 67
   },
   "overall": {
@@ -112,20 +112,6 @@
     "summary": "核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、來源收錄健康。 Facebook Apify 目前依排程或預算節流。"
   },
   "recentErrors": [
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/graphql/query&quot;: 401 Unauthorized",
-      "platform": "instagram",
-      "recordedAt": "2026-09-11T11:12:22+00:00",
-      "sourceId": "lee-sc-ig-main",
-      "sourceName": "李四川（lee-sc-ig-main）"
-    },
-    {
-      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/graphql/query&quot;: 401 Unauthorized",
-      "platform": "instagram",
-      "recordedAt": "2026-09-11T11:12:33+00:00",
-      "sourceId": "huang-sj-ig",
-      "sourceName": "黃世杰（huang-sj-ig）"
-    },
     {
       "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/graphql/query&quot;: 401 Unauthorized",
       "platform": "instagram",
@@ -251,6 +237,20 @@
       "recordedAt": "2026-09-16T10:00:10+00:00",
       "sourceId": "shen-threads-personal",
       "sourceName": "沈伯洋（shen-threads-personal）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/graphql/query&quot;: 401 Unauthorized",
+      "platform": "instagram",
+      "recordedAt": "2026-09-17T10:02:29+00:00",
+      "sourceId": "lai-jl-ig",
+      "sourceName": "賴瑞隆（lai-jl-ig）"
+    },
+    {
+      "message": "rsshub fetch failed: HTTP 503: FetchError: [POST] &quot;https://www.instagram.com/graphql/query&quot;: 401 Unauthorized",
+      "platform": "instagram",
+      "recordedAt": "2026-09-17T10:02:42+00:00",
+      "sourceId": "ko-ce-ig",
+      "sourceName": "柯志恩（ko-ce-ig）"
     }
   ],
   "site": "https://mayor2026.observe.tw",
@@ -264,10 +264,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 0,
+        "currentErrors": 2,
         "platform": "instagram",
         "sources": 12,
-        "status": "ok"
+        "status": "degraded"
       },
       {
         "currentErrors": 0,
@@ -276,10 +276,10 @@
         "status": "ok"
       },
       {
-        "currentErrors": 1,
+        "currentErrors": 0,
         "platform": "threads",
         "sources": 9,
-        "status": "degraded"
+        "status": "ok"
       },
       {
         "currentErrors": 0,
