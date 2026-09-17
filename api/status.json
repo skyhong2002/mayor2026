@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-17 18:04:29"
+        "最近一次執行心跳：2026-09-18 00:02:46"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：4736",
+        "已收錄貼文：4773",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：30 ms"
+        "耗時：41 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-17 18:02:54",
+        "最新抓取時間：2026-09-18 00:00:50",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -45,10 +45,10 @@
     },
     {
       "details": [
-        "最近成功 run：2026-09-16 18:01:07",
-        "本月已花費：$2.50 / 目標 $4.75",
+        "最近成功 run：2026-09-18 00:01:09",
+        "本月已花費：$2.71 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 30.4h, next at 2026-09-17T16:22:15+00:00; ~$2.50 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 32.9h, next at 2026-09-19T00:52:30+00:00; ~$2.71 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：669"
+        "已收錄影片：672"
       ],
       "id": "youtube",
       "label": "正常",
@@ -89,21 +89,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、1 個超過門檻天數沒有新內容、1 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-17T18:04:29+08:00",
+  "generatedAt": "2026-09-18T00:02:46+08:00",
   "metrics": {
     "candidates": 13,
     "currentErrors": 2,
-    "latestPostAt": "2026-09-17T10:00:06+00:00",
+    "latestPostAt": "2026-09-17T14:00:22+00:00",
     "postsByPlatform": {
-      "facebook": 1409,
+      "facebook": 1437,
       "instagram": 1356,
       "podcast": 8,
-      "threads": 1150,
+      "threads": 1156,
       "website": 136,
       "x": 8,
-      "youtube": 669
+      "youtube": 672
     },
-    "totalPosts": 4736,
+    "totalPosts": 4773,
     "watchAccounts": 67
   },
   "overall": {

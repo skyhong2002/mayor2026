@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/54661634a4e3fba14d50.webp",
+    "avatarUrl": "assets/source-avatars/412c39ff807d7fdb7f0d.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "su-chiaohui",
@@ -19,8 +19,238 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 566,
+  "count": 573,
   "posts": [
+    {
+      "agendaRelevance": 0.97,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "9e87e8f5c4b22e202d9c88b8846e822982c557b0910fbf868492fdafd60e62d0",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1653240339491129",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/ffa24a9ab13048454a83.webp",
+      "keywords": [
+        "後援會",
+        "交通",
+        "歷史",
+        "教育"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T13:30:10.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出登山步道分級、大眾運輸、商圈串聯及山林教育中心等具體政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "巧慧的 #山友後援會 正式成立！\n\n新北有最豐富的山林和海洋資源，未來我會為新北的山林步道 #分級分眾，增加大眾運輸班次， #縮短大眾登山轉乘的時間；同時將登山活動與老街商圈、歷史人文景點共同串聯，結合登山也 #振興地方商圈。最後，我也會 #打造山林教育中心，作為山友的集訓場地，真正向山致敬。\n\n未來我擔任市長，會從各方面縮短交通接駁、升級硬體設施，打造「新北大縱走」品牌，讓台灣的孩子越來越喜歡山，越來越懂得敬山，越來越親近山！",
+      "topicScores": {
+        "交通": 0.91,
+        "教育": 0.7,
+        "文化觀光": 0.88,
+        "競選": 0.94
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1739811623929289/"
+    },
+    {
+      "agendaRelevance": 0.86,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "b5d204fd758340428e4616927f49e6954dc56abe205417f3160b847498393f0f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdY9OyNEliM",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/d42fb57ac96693c601e8.webp",
+      "keywords": [
+        "後援會",
+        "交通"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-17T13:22:06+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "成立後援會並提出山林交通接駁、設施升級與大縱走品牌政見。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:巧慧的山友後援會⛰️ 正式成立！\n\n新北有最豐富的山林和海洋資源，未來我擔任市長，會從各方面縮短交通接駁、升級硬體設施，打造「新北大縱走」品牌，讓台灣的孩子越來越喜歡山，越來越懂得敬山，越來越親近山！",
+      "topicScores": {
+        "交通": 0.87,
+        "教育": 0.63,
+        "文化觀光": 0.82,
+        "競選": 0.91
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.threads.com/t/DdY9OyNEliM"
+    },
+    {
+      "agendaRelevance": 0.58,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "00f097c31f492163410487d74772d2bcc2a8b2d002caf762fc11d5801a7b1289",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:5qnZdX285v8",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/59a83df79d80036dd1b4.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-17T13:20:26+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以英文宣示打造新北大縱走登山品牌，帶有政策與城市行銷意涵。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Building the New Taipei Grand Trail: A Mountain Hiking Brand⛰️",
+      "topicScores": {
+        "文化觀光": 0.9,
+        "競選": 0.58
+      },
+      "topics": [
+        "文化觀光",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/5qnZdX285v8"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "617c945c34af54e1eefd90f20f80cbd3027ad1191b341a8b0acaeed8d3e6533a",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdYwAYrmZe8",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/bebe6bab9a5083eb396f.webp",
+      "keywords": [
+        "後援會",
+        "創業",
+        "投資"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-17T11:26:23+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "成立海外後援會並主張吸引青年返鄉、工作、創業與投資。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-threads",
+      "text": "@su.chiaohui:海外台商挺巧慧！一起把新北打造成希望之城！\n\n今天來自世界各地的台商、台僑朋友們齊聚在一起，為我成立「海外台商後援會」，謝謝大家特別回到台灣，在忙碌的行程中撥出時間為我加油！\n\n未來，我要讓新北變得有趣、友善、有機會！讓更多的海外青年看見新北的山海與地方的故事，並且在這裡找到好的工作、創業與投資的機會，將新北市打造成聯結世界的起點！\n\n我會繼續努力，讓台灣成為大家的底氣，把新北打造成一座海外年輕人願意回來、也能看見未來的希望之城！",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "競選": 0.95,
+        "經濟": 0.86
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/DdYwAYrmZe8"
+    },
+    {
+      "agendaRelevance": 0.84,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "6bfbcd9af40fdeadf6525d757a42b5816b72c41a7cbb4574be66c64d8cf31ec6",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1653173879497775",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/95d599912aea0b01e6ec.webp",
+      "keywords": [
+        "後援會",
+        "創業",
+        "投資"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T11:23:26.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "成立海外後援會並提出吸引海外青年工作、創業與投資的新北願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "海外台商挺巧慧！一起把新北打造成 #希望之城！\n\n今天來自世界各地的台商、台僑朋友們齊聚在一起，為我成立「海外台商後援會」，謝謝大家特別回到台灣，在忙碌的行程中撥出時間為我加油！\n\n未來，我要讓新北變得有趣、友善、有機會！讓更多的海外青年看見新北的山海與地方的故事，並且在這裡找到好的工作、創業與投資的機會，將新北市打造成聯結世界的起點！\n\n我會繼續努力，讓台灣成為大家的底氣，把新北打造成一座海外年輕人願意回來、也能看見未來的希望之城！",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "競選": 0.95,
+        "經濟": 0.87
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02pZ4isdaZc4xdUMKZ7MhujqXzMTwAefyf7pGDvrANC9eZGLTLoETGRgyt1pfpH8Mel"
+    },
+    {
+      "agendaRelevance": 0.35,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "237a58971429788d92cf1dbb17ca3fae13a816e5b04ffde97f3eecab166da060",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:3j796tH1jAM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/6466f735836cb9273fc6.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-17T10:30:01+00:00",
+      "postingIntent": {
+        "confidence": 0.88,
+        "label": "主動發文",
+        "reason": "以金山及副總統蕭美琴為題，內容極簡，較像競選宣傳標語。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "Jinshan Can Be Even Better ft. Vice President Hsiao Bi-khim",
+      "topicScores": {
+        "競選": 0.71
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/3j796tH1jAM"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "su-chiaohui",
@@ -93,6 +323,38 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/DdYdNhmic4a/"
+    },
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "9ae246074b3b84f7fd353741341cded386ac26294bd49d201142e57588e54732",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1653066636175166",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/1cb2be710e0112860142.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T08:20:49.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布新北景點解謎活動答案，透過地方故事介紹城市特色。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "【#開箱新北 第一彈：你家隔壁】解答公布！\n\n很開心看到大家熱烈參與開箱新北的藏寶計劃！這次我們帶大家走進新北各個角落，也期待透過一個個藏寶點的故事，讓大家認識新北不同地方的特色。\n\n現在就讓我們一起認識第一波藏寶點背後的故事，以及這次合作的創作者，也歡迎跟我分享你答對幾個喔！",
+      "topicScores": {
+        "文化觀光": 0.86
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid02SHYdpt5phs2CoZ3JS1C4p1uNVvFyxW6Ec9hZirMEkkySzXsB341UxGdNUwEK3T8Kl"
     },
     {
       "agendaRelevance": 0.08,

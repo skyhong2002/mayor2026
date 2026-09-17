@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/6b8eac6cfbc80048019c.webp",
+    "avatarUrl": "assets/source-avatars/0f5a1fe5ae4413ff35b5.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "ko-chih-en",
@@ -19,8 +19,83 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 448,
+  "count": 451,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "78f5e6b91b881efb471897f898aac8aa1233eeae4e9f9c4ea4c0c262f36f4666",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1408052104594352",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/ff6a0b9c38c12e8b0902.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T10:56:04.000Z",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "預告政治團隊針對時事進行線上說明，屬宣傳性節目公告。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "最近的新聞讓你霧裡看花嗎？各種議題吵得沸沸揚揚，到底真相是什麼？\n\n今晚的《雄好講》，柯志恩的發言人們將上線和大家聊聊近期的熱門時事！\n不打高空、只講真話，針對大家最關心的議題，我們直接線上回應。",
+      "topicScores": {
+        "競選": 0.88
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/videos/1408052104594352/"
+    },
+    {
+      "agendaRelevance": 0.82,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "165299e472ba912cbd3bdc46202aca55ef07d4e6c792702e590dfa2572ebfb4d",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1643471843799862",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/92fab8a0c9e7c5fa1751.webp",
+      "keywords": [
+        "颱風",
+        "豪雨",
+        "淹水",
+        "選舉",
+        "環境",
+        "治水"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T08:19:28.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "主動提出治水、電線地下化等城市安全政見並進行競選訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "鼓山是我的家、高雄是我的家；我想和鄉親作伙實現夢想的未來！\n\n上週來到 #內惟青雲宮，看著熟悉的里長們、熱情的鄉親們，心裡特別有感，四年前選舉結束後，我曾對自己許下一個承諾：留在高雄，繼續打拚，所以，我把家安在鼓山。\n\n我是鼓山的居民。我喜歡這裡的歷史底蘊，喜歡西子灣、哈瑪星的人文風景，也看見農16、美術館特區帶來的城市轉型。鼓山是高雄最耀眼的門面之一，但我也知道，豪雨一來，鼓山三路泥水漫流；颱風一來，居民擔心淹水、擔心停電。這些問題存在很多年了，市民要的其實不多，就是一個安心生活的環境。\n\n市政最重要的是基本功。治水要做好源頭截流、泥水分流；該推動的電線地下化要加快腳步；讓鄉親不用每逢風雨就提心吊膽。因為政府最基本的責任，就是保護人民免於恐懼。\n\n也特別感謝我的好弟弟 牛煦庭 委員專程從桃園南下相挺。他今天特別跟鄉親分享：每次立法院散會，他總是看我急著趕回高雄、回家跑行程。\n\n原因無他，只因我心繫高雄。\n\n四年前，我用四個月時間拚出53萬票；四年後，我依然站在這裡，和大家一起為高雄努力。我沒有派系包袱，也不追求更高的政治舞台，只希望有機會把高雄顧好，讓孩子有競爭力、讓青年有發展空間、讓長輩活得有尊嚴。\n\n高雄有山、有海、有港、有國際視野。下一步，我們要做的，不只是繼續做夢，而是讓夢想成真。\n\n拜託大家給我一次機會，也給我的好弟弟 下港的囝仔, 蔡金晏、好妹妹 陳美雅，以及所有黨籍議員、里長機會為市民服務，也讓高雄迎來新的改變，重新找回屬於這座城市的光榮。\n#鼓山 #高雄 #城市光榮 #讓夢想成真",
+      "topicScores": {
+        "環境": 0.77,
+        "競選": 0.86,
+        "防災": 0.94
+      },
+      "topics": [
+        "防災",
+        "競選",
+        "環境"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid0CyyfnFnFCzstKNNk1K7LqFVzy49daq1yDKHfmbjX2vjShJ7Ln7NXYwjqtkruDTzLl"
+    },
     {
       "agendaRelevance": 0.2,
       "candidateId": "ko-chih-en",
@@ -88,6 +163,44 @@
         "教育"
       ],
       "url": "https://www.youtube.com/shorts/EOJG83_lork"
+    },
+    {
+      "agendaRelevance": 0.72,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-17T16:02:20+00:00",
+        "inputHash": "309718cacbff900139253c551a57304147593852398725ea83eb3e2f9852dc2e",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1643260560487657",
+      "imageAspect": 1.3318,
+      "imageUrl": "assets/feed-images/ef010ba88f9b0d7590fc.webp",
+      "keywords": [
+        "教育",
+        "課綱",
+        "校園",
+        "大學",
+        "教師"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T02:13:58.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "表揚教師並主張改善教學環境、重建校園信任，屬教育政策立場。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-fb",
+      "text": "老師能改變的，可能是一個孩子看見世界的方式；而一群好老師，能改變一座城市的未來！\n\n參加「#高雄市115年度資深暨特殊優良教師表揚大會」，看見許多服務20年、30年、甚至40年以上的老師接受表揚，心中充滿敬意。\n\n我在大學教書26年，深知站在講台上的責任與重量，當年教過的許多學生，如今也已成為第一線的教育工作者，接續為下一代付出心力。\n\n這些年來，教育環境經歷了許多改變，從課綱改革到科技進入校園，教學方法不斷更新，但始終沒有改變的，是老師對學生的關心與陪伴。\n\n很多人離開校園後才慢慢明白，人生路上那些重要的提醒、一句鼓勵的話、一份不放棄的期待，往往都來自老師。\n\n受到表揚的資深暨特殊優良教師，不只是教育工作的典範，更是無數孩子成長路上的引路人，我要向每一位老師獻上最深的敬意與感謝。\n\n同時，我也了解許多老師對當前教學環境的憂心，無論是校事會議制度的改革或存廢，或是如何重建校園中親師生的信任關係，都是必須認真面對的課題。\n\n我會持續傾聽教育現場的聲音，為老師爭取更合理、更友善的教學環境；唯有老師受到尊重，教育才能發揮力量，孩子才能學得更好，城市才會進步。\n\n謝謝所有老師長年來的堅持與奉獻，因為有你們，高雄的孩子擁有更寬廣的未來；因為有你們，高雄才能培養出更多改變世界的人才。\n\n向所有獲獎教師致敬，也深深表達我們的謝意，為了高雄的教育，我們一起堅持到底。\n#高雄 #教師 #學生 #校園 #教育",
+      "topicScores": {
+        "教育": 0.98
+      },
+      "topics": [
+        "教育"
+      ],
+      "url": "https://www.facebook.com/KoChihEn/posts/pfbid02fugURBbFTdPYoUNr96EgRiur8TCkri7E2iBoAWRcftoCx726k9UXP257tG96X2utl"
     },
     {
       "agendaRelevance": 0.99,
@@ -13158,8 +13271,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/Da-ci7RiUqz",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/1921b0ef484c78547cfa.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-19T13:13:17+00:00",
@@ -13192,8 +13305,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/Da-cR2wCVs9",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/5a451b5594d1ceaeaca0.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-19T13:10:58+00:00",
@@ -13226,8 +13339,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/Da-bJzjjVa_/",
-      "imageAspect": 0.8006,
-      "imageUrl": "assets/feed-images/f7c81e60fcc6a79b4fd2.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "文化",
         "弱勢",
