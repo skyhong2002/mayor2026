@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/4b26be02dab9a3c469f5.webp",
+    "avatarUrl": "assets/source-avatars/40479125b2ce5fee13a4.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "lee-shih-chuan",
@@ -19,8 +19,42 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 313,
+  "count": 314,
   "posts": [
+    {
+      "agendaRelevance": 0.7,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-18T22:03:10+00:00",
+        "inputHash": "bea82bab69fa042b0f61769fb579032a0905d84f763336bc9c861ff418e8be1c",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1641441970926390",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/b2a1748559cf6ae48256.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-17T23:58:05.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "回顧橋梁工程並提出烏來台車升級，涉及交通建設與觀光發展。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-fb",
+      "text": "來到烏來老街，店家說：上次在這邊拍過照。\n說實在，烏來這條路，大概每隔一段時間就會再走一次。\n\n當副市長的時候，這條路就走過好幾遍。\n覽勝大橋，就是朱立倫市長時期，我協助動的工，侯友宜市長接下去把它完成。現在走起來還是穩的。\n我跟侯市長這樣齊心接力，不是第一次。橋是這樣，新北也是。\n\n做工程的人來烏來，看瀑布，看看橋，也來談烏來台車接下來要升級。\n橋開工的時候我在，台車升級的時候，我還在。\n這次來看瀑布，才發現剛好是一個「川」字。烏來這條路，走了整整十幾年，川流不息。",
+      "topicScores": {
+        "交通": 0.9,
+        "文化觀光": 0.75
+      },
+      "topics": [
+        "交通",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/1657494109129857/"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "lee-shih-chuan",
