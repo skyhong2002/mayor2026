@@ -24,8 +24,9 @@ launchctl load ~/Library/LaunchAgents/tw.observe.mayor2026.pipeline.plist
 ```
 
 `StartCalendarInterval` 排在每天 00:00 / 06:00 / 12:00 / 18:00（一天四次）。不用擔心打爆平台：
-pipeline 有 lock 防止重疊執行，抓取層也有各自的節流（Instagram 預設 12 小時抓一次、
+pipeline 有 lock 防止重疊執行，抓取層也有各自的節流（Instagram 依發文頻率每 12–168 小時抓取、每輪最多 6 個來源、
 Facebook Apify 依月預算 pacing、請求之間有延遲），大多數 tick 只會抓增量並重建站台。
+來源失敗會退避重試，IG 401／429 會啟動共用冷卻。詳見 [抓取與健康機制](../docs/ingestion-health.md)。
 log 寫到 `~/Library/Logs/mayor2026/pipeline.log` 與 `pipeline.err.log`（repo 內的 `logs/` 不再使用）。
 
 ## 遠端維運建議

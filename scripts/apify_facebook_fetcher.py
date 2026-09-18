@@ -26,6 +26,7 @@ import urllib.request
 from typing import Any
 
 import feed_common
+import source_status
 
 APIFY_BASE = "https://api.apify.com/v2"
 FACEBOOK_POSTS_ACTOR = "apify~facebook-posts-scraper"
@@ -87,32 +88,38 @@ def dynamic_run_decision(
     interval = remaining_time / affordable_runs_left. Overspending early makes
     the interval grow; an underspent budget near month-end makes it shrink.
     """
+    schedule = pacing_schedule(ledger, now=now, run_cost_usd=run_cost_usd,
+                               budget_usd=budget_usd, utilization=utilization)
+    return schedule["should_run"], schedule["reason"]
+
+
+def pacing_schedule(ledger: dict, *, now: dt.datetime, run_cost_usd: float,
+                    budget_usd: float, utilization: float) -> dict:
     target = budget_usd * utilization
     spent = ledger_month_spend(ledger, now)
     remaining = target - spent
-    if remaining < run_cost_usd:
-        return False, (
-            f"monthly budget target reached (~${spent:.2f} of ${target:.2f}, run costs ~${run_cost_usd:.2f}); "
-            "waiting for next month"
-        )
-
-    affordable_runs = remaining / run_cost_usd
-    seconds_left = max((month_end(now) - now).total_seconds(), 1.0)
-    interval_hours = max(seconds_left / affordable_runs / 3600.0, MIN_RUN_INTERVAL_HOURS)
-
-    last_run = parse_time(ledger.get("last_run_at"))
-    if last_run is None:
-        return True, f"first run this ledger; pacing thereafter ~every {interval_hours:.1f}h"
-    due_at = last_run + dt.timedelta(hours=interval_hours)
-    if now >= due_at:
-        return True, (
-            f"due (pace ~every {interval_hours:.1f}h; ~${spent:.2f} of ${target:.2f} spent, "
-            f"~{affordable_runs:.0f} runs left this month)"
-        )
-    return False, (
-        f"not due yet (pace ~every {interval_hours:.1f}h, next at {due_at.isoformat(timespec='seconds')}; "
-        f"~${spent:.2f} of ${target:.2f} spent)"
-    )
+    exhausted = remaining < run_cost_usd
+    interval = None
+    if run_cost_usd <= 0:
+        return {"should_run": False, "reason": "no facebook sources configured",
+                "next_eligible_at": None, "interval_hours": None, "budget_exhausted": False}
+    if exhausted:
+        due = month_end(now)
+        reason = f"monthly budget target reached (~${spent:.2f} of ${target:.2f}); waiting for next month"
+    else:
+        interval = max((month_end(now) - now).total_seconds() / (remaining / run_cost_usd) / 3600, MIN_RUN_INTERVAL_HOURS)
+        last = parse_time(ledger.get("last_run_at"))
+        due = last + dt.timedelta(hours=interval) if last else now
+        reason = f"pace ~every {interval:.1f}h; ~${spent:.2f} of ${target:.2f} spent"
+    retry = parse_time(ledger.get("retry_after"))
+    if retry and retry > due:
+        due = retry
+        reason += "; retry backoff"
+    should_run = not exhausted and due <= now
+    return {"should_run": should_run, "reason": reason,
+            "next_eligible_at": due.isoformat(timespec="seconds"),
+            "interval_hours": round(interval, 2) if interval is not None else None,
+            "budget_exhausted": exhausted}
 
 
 def record_run(ledger: dict[str, Any], *, now: dt.datetime, results: int) -> None:
@@ -236,7 +243,7 @@ def check_status(args: argparse.Namespace) -> dict[str, Any]:
     """Public-safe pacing snapshot for the status page — never exposes the
     token itself, only whether one is configured."""
     token = apify_token()
-    sources = feed_common.load_sources(platforms={"facebook"}) if token else []
+    sources = feed_common.load_sources(platforms={"facebook"})
     ledger = feed_common.load_json(LEDGER_JSON, {})
     now = dt.datetime.now(dt.timezone.utc)
     run_cost = len(sources) * args.posts_per_page * COST_PER_RESULT_USD
@@ -253,7 +260,10 @@ def check_status(args: argparse.Namespace) -> dict[str, Any]:
         if token and sources
         else (False, "no token or no facebook sources configured")
     )
+    schedule = pacing_schedule(ledger, now=now, run_cost_usd=run_cost,
+                               budget_usd=args.monthly_budget_usd, utilization=args.budget_utilization)
     return {
+        **schedule,
         "has_token": bool(token),
         "facebook_sources": len(sources),
         "posts_per_page": args.posts_per_page,
@@ -265,6 +275,8 @@ def check_status(args: argparse.Namespace) -> dict[str, Any]:
         "last_run_at": ledger.get("last_run_at"),
         "should_run": should_run,
         "reason": reason,
+        "last_error": ledger.get("last_error", ""),
+        "last_error_at": ledger.get("last_error_at"),
     }
 
 
@@ -330,12 +342,24 @@ def main() -> int:
             raise RuntimeError(f"Apify run ended with status {run['status']}")
         items = fetch_dataset_items(token, run["defaultDatasetId"])
     except (urllib.error.URLError, urllib.error.HTTPError, RuntimeError, TimeoutError) as exc:
-        feed_common.record_error("apify_facebook_fetcher", f"Apify run failed: {exc}")
+        if not args.dry_run:
+            failed_at = dt.datetime.now(dt.timezone.utc)
+            failures = int(ledger.get("consecutive_failures", 0)) + 1
+            ledger.update(last_error=source_status.safe_error(exc), last_error_at=source_status.iso(failed_at),
+                          consecutive_failures=failures,
+                          retry_after=source_status.iso(failed_at + dt.timedelta(hours=min(72, 6 * 2 ** min(failures - 1, 4)))))
+            feed_common.save_json_atomic(LEDGER_JSON, ledger)
+            for source in sources:
+                source_status.record_fetch(source, ok=False, error=exc)
+            feed_common.record_error("apify_facebook_fetcher", f"Apify run failed: {source_status.safe_error(exc)}")
         return 0
 
     rows = normalize_items(source_by_url, items)
     print(f"apify_facebook_fetcher: fetched {len(rows)} normalized item(s) from {len(items)} raw item(s).")
 
+    ledger.pop("last_error", None)
+    ledger.pop("retry_after", None)
+    ledger["consecutive_failures"] = 0
     record_run(ledger, now=now, results=len(items))
     feed_common.save_json_atomic(LEDGER_JSON, ledger)
     print(
@@ -347,6 +371,13 @@ def main() -> int:
         return 0
 
     appended = feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
+    schedule = pacing_schedule(ledger, now=now, run_cost_usd=run_cost,
+                               budget_usd=args.monthly_budget_usd, utilization=args.budget_utilization)
+    for source in sources:
+        count = sum(row["source_id"] == source["id"] for row in rows)
+        source_status.record_fetch(source, ok=bool(count), items=count,
+            error="本次 Apify 結果未包含此來源，待下次排程確認" if not count else "",
+            interval_hours=schedule["interval_hours"] or 168)
     print(f"apify_facebook_fetcher: appended {appended} new item(s).")
     return 0
 

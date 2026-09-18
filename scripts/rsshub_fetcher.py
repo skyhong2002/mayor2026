@@ -2,14 +2,10 @@
 """Fetch Instagram / Threads / X updates via a RSSHub instance, plus
 direct-RSS platforms (podcast) via their native feed URLs.
 
-Mechanics ported from Harmonica-in-Taiwan's social_feed_watchdog.py:
-
-- RSSHub error pages are parsed for the real error message ("Error Message:
-  <code>...</code>") instead of logging a bare 503 — a ConfigNotFoundError or
-  NotFoundError points straight at the misconfigured route.
-- Per-source fetch state (state/social_fetch_state.json) rate-limits
-  Instagram profile fetches to once per interval (default 12h) so the
-  instance's IG cookie isn't burned by every pipeline tick.
+Chumei-style per-source telemetry and scheduling:
+- Bounded, oldest-due Instagram batches with adaptive 12–168 hour intervals.
+- Persisted retry backoff and shared 401/429 cooldown; success clears errors.
+- RSSHub error pages expose the upstream failure, not merely HTTP 503.
 - Politeness delays between requests (Instagram 8s, others 0.25s).
 
 Route notes for rss.observe.tw:
@@ -36,12 +32,11 @@ import xml.etree.ElementTree as ET
 from typing import Any
 
 import feed_common
+import source_status
 
 DEFAULT_RSSHUB_BASE = os.environ.get("MAYOR_RSSHUB_BASE", "https://rss.observe.tw").rstrip("/")
 REQUEST_TIMEOUT_SECS = 30
 USER_AGENT = "Mayor2026SocialWatcher/1.0"
-
-FETCH_STATE_JSON = feed_common.PROJECT_ROOT / "state" / "social_fetch_state.json"
 
 DEFAULT_INSTAGRAM_INTERVAL_HOURS = float(os.environ.get("MAYOR_INSTAGRAM_INTERVAL_HOURS", "12"))
 DEFAULT_INSTAGRAM_DELAY_SECS = float(os.environ.get("MAYOR_INSTAGRAM_DELAY_SECS", "8"))
@@ -138,26 +133,6 @@ def parse_time(value: Any) -> dt.datetime | None:
     return parsed.astimezone(dt.timezone.utc)
 
 
-def instagram_due(fetch_state: dict[str, Any], source_id: str, *, interval_hours: float, now: dt.datetime) -> bool:
-    entry = (fetch_state.get("sources") or {}).get(source_id) or {}
-    last = parse_time(entry.get("last_attempt_at"))
-    if last is None:
-        return True
-    return now - last >= dt.timedelta(hours=interval_hours)
-
-
-def record_attempt(fetch_state: dict[str, Any], source_id: str, *, ok: bool, message: str = "") -> None:
-    entry = fetch_state.setdefault("sources", {}).setdefault(source_id, {})
-    now_iso = feed_common.utc_now_iso()
-    entry["last_attempt_at"] = now_iso
-    if ok:
-        entry["last_success_at"] = now_iso
-        entry.pop("last_error", None)
-    else:
-        entry["last_error"] = message[:500]
-        entry["last_error_at"] = now_iso
-
-
 def fetch_source(source: dict[str, Any], *, rsshub_base: str, limit: int) -> list[dict[str, Any]]:
     platform = source.get("platform")
     if platform in DIRECT_FEED_PLATFORMS:
@@ -183,7 +158,8 @@ def main() -> int:
     )
     parser.add_argument("--limit", type=int, default=10, help="Max items to keep per source per run.")
     parser.add_argument("--instagram-interval-hours", type=float, default=DEFAULT_INSTAGRAM_INTERVAL_HOURS)
-    parser.add_argument("--full-refresh", action="store_true", help="Ignore per-source fetch intervals.")
+    parser.add_argument("--full-refresh", action="store_true", help="Ignore regular intervals; retain failure backoff and platform cooldown.")
+    parser.add_argument("--instagram-batch-size", type=int, default=6, help="Oldest-due Instagram accounts per run.")
     parser.add_argument("--dry-run", action="store_true", help="Fetch and print, but do not write to inbox.")
     args = parser.parse_args()
 
@@ -192,47 +168,60 @@ def main() -> int:
         print("rsshub_fetcher: no RSS-fetchable sources configured; nothing to do.")
         return 0
 
-    fetch_state = feed_common.load_json(FETCH_STATE_JSON, {"version": 1, "sources": {}})
+    if args.instagram_batch_size < 1 or args.instagram_interval_hours <= 0:
+        parser.error("Instagram batch size and interval must be positive")
+    fetch_state = source_status.load_state()
     now = dt.datetime.now(dt.timezone.utc)
-
+    ig_sources = [s for s in sources if s["platform"] == "instagram"]
+    oldest = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
+    ig_sources.sort(key=lambda s: (source_status.next_eligible(s, fetch_state,
+        instagram_hours=args.instagram_interval_hours) or oldest, s["id"]))
+    selected_ig = {s["id"] for s in ig_sources if args.full_refresh or
+                   (source_status.next_eligible(s, fetch_state, instagram_hours=args.instagram_interval_hours) or oldest) <= now}
+    selected_ig = {s["id"] for s in [s for s in ig_sources if s["id"] in selected_ig][:args.instagram_batch_size]}
+    cooldown = parse_time(fetch_state.get("platforms", {}).get("instagram", {}).get("cooldown_until"))
     all_rows: list[dict[str, Any]] = []
+    appended = 0
     skipped = 0
-    for source in sources:
+    # Keep due-time ordering during execution as well as batch selection.
+    ordered = [s for s in sources if s["platform"] != "instagram"] + ig_sources
+    for source in ordered:
         platform = source["platform"]
-        if (
-            platform == "instagram"
-            and not args.full_refresh
-            and not instagram_due(fetch_state, source["id"], interval_hours=args.instagram_interval_hours, now=now)
+        if not source_status.retry_ready(source, now=now) or (
+            platform == "instagram" and (source["id"] not in selected_ig or (cooldown and cooldown > now))
         ):
             skipped += 1
             continue
-
-        # Explicit CLI flag wins over the MAYOR_RSSHUB_BASE-derived default.
-        # (The per-source rsshub_base field is informational only; it is
-        # regenerated from the same env var every pipeline run.)
         try:
             rows = fetch_source(source, rsshub_base=args.rsshub_base or DEFAULT_RSSHUB_BASE, limit=args.limit)
-        except (RuntimeError, urllib.error.URLError, ET.ParseError) as exc:
-            record_attempt(fetch_state, source["id"], ok=False, message=str(exc))
-            feed_common.record_error(source["id"], f"rsshub fetch failed: {exc}")
+        except (RuntimeError, OSError, urllib.error.URLError, ET.ParseError) as exc:
+            if not args.dry_run:
+                source_status.record_fetch(source, ok=False, error=exc)
+                feed_common.record_error(source["id"], f"rsshub fetch failed: {source_status.safe_error(exc)}")
+            if platform == "instagram" and source_status.is_rate_limited(exc):
+                # Stop this shared-session batch immediately. Other platforms continue.
+                cooldown = now + dt.timedelta(hours=24)
+                if not args.dry_run:
+                    source_status.set_instagram_cooldown(exc)
+            print(f"rsshub_fetcher: {source['id']} failed: {source_status.safe_error(exc)}")
         else:
-            record_attempt(fetch_state, source["id"], ok=True)
-            all_rows.extend(rows)
-            print(f"rsshub_fetcher: {source['id']} -> {len(rows)} item(s)")
-
+            interval = source_status.instagram_interval(rows, minimum=args.instagram_interval_hours) if platform == "instagram" else 6
+            if not args.dry_run:
+                appended += feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
+                all_rows.extend(rows)
+                source_status.record_fetch(source, ok=True, items=len(rows), interval_hours=interval)
+                if platform == "instagram":
+                    source_status.clear_instagram_cooldown()
+            else:
+                all_rows.extend(rows)
+            print(f"rsshub_fetcher: {source['id']} -> {len(rows)} item(s); target interval {interval:g}h")
         time.sleep(DEFAULT_INSTAGRAM_DELAY_SECS if platform == "instagram" else DEFAULT_RSS_DELAY_SECS)
 
     if skipped:
-        print(f"rsshub_fetcher: skipped {skipped} instagram source(s) not yet due (interval {args.instagram_interval_hours}h).")
-
-    if not args.dry_run:
-        feed_common.save_json_atomic(FETCH_STATE_JSON, fetch_state)
-
+        print(f"rsshub_fetcher: {skipped} source(s) waiting for schedule, batch capacity or retry cooldown.")
     if args.dry_run:
         print(f"rsshub_fetcher: dry-run, fetched {len(all_rows)} item(s) total, not writing.")
         return 0
-
-    appended = feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, all_rows)
     print(f"rsshub_fetcher: appended {appended} new item(s) to {feed_common.INBOX_JSONL.relative_to(feed_common.PROJECT_ROOT)}")
     return 0
 

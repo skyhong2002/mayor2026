@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 import feed_common
+import source_status
 
 # `website` is only fetchable per-candidate: official_site_fetcher.py needs a
 # hand-written adapter module for each site, so a website account without one
@@ -16,7 +17,7 @@ ADAPTERS_DIR = Path(__file__).resolve().parent / "official_site_adapters"
 
 
 def has_site_adapter(candidate_id: str) -> bool:
-    return (ADAPTERS_DIR / f"{candidate_id.replace('-', '_')}.py").is_file()
+    return not source_status.link_only_reason({"platform": "website", "candidate_id": candidate_id})
 
 
 def main() -> int:
@@ -36,7 +37,7 @@ def main() -> int:
     sites_without_adapter = [a for a in accounts if a["platform"] == "website" and not has_site_adapter(a["candidate_id"])]
     if sites_without_adapter:
         print(
-            f"WARNING: {len(sites_without_adapter)} website account(s) watched but without an adapter "
+            f"WARNING: {len(sites_without_adapter)} website account(s) kept as links without an article feed "
             f"(not counted as fetchable): {', '.join(a['account_id'] for a in sites_without_adapter)}",
             file=sys.stderr,
         )

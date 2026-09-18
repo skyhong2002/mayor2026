@@ -19,6 +19,7 @@ import importlib
 from typing import Any
 
 import feed_common
+import source_status
 
 ADAPTER_PACKAGE = "official_site_adapters"
 
@@ -65,7 +66,14 @@ def main() -> int:
         return 0
 
     all_rows: list[dict[str, Any]] = []
+    appended = 0
     for source in sources:
+        reason = source_status.link_only_reason(source)
+        if reason:
+            print(f"official_site_fetcher: {source['id']} link only: {reason}")
+            continue
+        if not source_status.retry_ready(source):
+            continue
         adapter = load_adapter(source["candidate_id"])
         if adapter is None:
             print(f"official_site_fetcher: no adapter for {source['candidate_id']}; skipping {source['url']}")
@@ -73,9 +81,14 @@ def main() -> int:
         try:
             raw_posts = adapter.fetch(source["url"])
         except Exception as exc:  # adapters are third-party-ish and vary a lot; keep the batch alive.
-            feed_common.record_error(source["id"], f"adapter fetch failed: {exc}")
+            if not args.dry_run:
+                source_status.record_fetch(source, ok=False, error=exc)
+                feed_common.record_error(source["id"], f"adapter fetch failed: {source_status.safe_error(exc)}")
             continue
         rows = normalize_raw_posts(source, raw_posts)
+        if not args.dry_run:
+            appended += feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
+            source_status.record_fetch(source, ok=True, items=len(rows))
         all_rows.extend(rows)
         print(f"official_site_fetcher: {source['id']} -> {len(rows)} item(s)")
 
@@ -83,7 +96,6 @@ def main() -> int:
         print(f"official_site_fetcher: dry-run, fetched {len(all_rows)} item(s), not writing.")
         return 0
 
-    appended = feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, all_rows)
     print(f"official_site_fetcher: appended {appended} new item(s).")
     return 0
 

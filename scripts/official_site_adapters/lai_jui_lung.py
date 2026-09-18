@@ -9,5 +9,8 @@ amounts, subscription tabs) with no dated article or news section. The
 from __future__ import annotations
 
 
+NO_FEED_REASON = "此網址為募款／連結頁，沒有可收錄的文章列表（2026-08-23 查核）"
+
+
 def fetch(url: str) -> list[dict]:
     return []

@@ -20,6 +20,7 @@ import subprocess
 from typing import Any
 
 import feed_common
+import source_status
 
 YTDLP_BIN = shutil.which("yt-dlp")
 CHANNEL_FETCH_TIMEOUT_SECS = 120
@@ -179,6 +180,9 @@ def main() -> int:
     args = parser.parse_args()
 
     if not YTDLP_BIN:
+        if not args.dry_run:
+            for source in feed_common.load_sources(platforms={"youtube"}):
+                source_status.record_fetch(source, ok=False, error="yt-dlp 未安裝或不在 PATH")
         print("youtube_ytdlp_fetcher: yt-dlp not found on PATH; skipping. Install with `pip install yt-dlp`.")
         return 0
 
@@ -193,12 +197,17 @@ def main() -> int:
 
     known_ids = {row.get("id") for row in feed_common.read_jsonl(feed_common.INBOX_JSONL)}
     all_rows: list[dict[str, Any]] = []
+    appended = 0
     channel_names: dict[str, str] = {}
     for source in sources:
+        if not source_status.retry_ready(source):
+            continue
         try:
             entries = fetch_channel_videos(source["url"], limit=args.limit)
-        except (RuntimeError, subprocess.TimeoutExpired) as exc:
-            feed_common.record_error(source["id"], f"yt-dlp fetch failed: {exc}")
+        except (RuntimeError, OSError, subprocess.TimeoutExpired, json.JSONDecodeError) as exc:
+            if not args.dry_run:
+                source_status.record_fetch(source, ok=False, error=exc)
+                feed_common.record_error(source["id"], f"yt-dlp fetch failed: {source_status.safe_error(exc)}")
             continue
         for entry in entries:
             name = entry.get("channel") or entry.get("uploader")
@@ -206,6 +215,9 @@ def main() -> int:
                 channel_names[source["id"]] = name
                 break
         rows = normalize_entries(source, entries, known_ids)
+        if not args.dry_run:
+            appended += feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
+            source_status.record_fetch(source, ok=True, items=len(rows))
         all_rows.extend(rows)
         print(f"youtube_ytdlp_fetcher: {source['id']} -> {len(rows)} item(s)")
 
@@ -215,7 +227,6 @@ def main() -> int:
         print(f"youtube_ytdlp_fetcher: dry-run, fetched {len(all_rows)} item(s), not writing.")
         return 0
 
-    appended = feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, all_rows)
     print(f"youtube_ytdlp_fetcher: appended {appended} new item(s).")
     backfill_missing_dates(limit=args.backfill_limit)
     return 0
