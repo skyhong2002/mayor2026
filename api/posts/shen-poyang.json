@@ -19,7 +19,7 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 589,
+  "count": 590,
   "posts": [
     {
       "agendaRelevance": 0.98,
@@ -1150,6 +1150,48 @@
         "兩岸外交"
       ],
       "url": "https://puma.taipei/videos/40crP9YFiT69BBJ5mcE4I"
+    },
+    {
+      "agendaRelevance": 0.62,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-18T04:03:34+00:00",
+        "inputHash": "d5a749ccc2a8c06898fbe4cfdcde04c0d93821602fefe90751de1d28d413d368",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:8an4zl5IsB8SvCpPQRYg4",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/0105146250fbfeafcba0.webp",
+      "keywords": [
+        "都更",
+        "營養午餐",
+        "文化"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-15T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "整理市政受訪與辯論議題，涵蓋都更、營養午餐、文化徑及市政願景，未明確針對特定他方說法回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0915受訪-1 #受訪 #華榮市場 #台北市願景 #北投文化徑 #「市長你給我聽好」平台 #「最短的捷徑就是繞遠路」 #市政辯論 #都更議題 #營養午餐供餐品質 #公辦都更 #里長座談會",
+      "topicScores": {
+        "住宅": 0.7,
+        "教育": 0.58,
+        "文化觀光": 0.5,
+        "議會監督": 0.72
+      },
+      "topics": [
+        "議會監督",
+        "住宅",
+        "教育",
+        "文化觀光"
+      ],
+      "url": "https://puma.taipei/videos/8an4zl5IsB8SvCpPQRYg4"
     },
     {
       "agendaRelevance": 0.61,

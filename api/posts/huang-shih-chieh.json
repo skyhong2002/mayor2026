@@ -19,8 +19,72 @@
     "name": "黃世杰",
     "party": "民進黨"
   },
-  "count": 487,
+  "count": 490,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-18T04:03:34+00:00",
+        "inputHash": "3596a43523fcb0baa47414d095d464340efac47e00dc7bcd793fc21f08fc35f2",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdaFVaEEli2",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/ca94ba9c94d7eca5f454.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-17T23:52:13+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "轉述在民族公園向市民問候的競選活動內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-threads",
+      "text": "@schuanglawyer:桃園的市民朋友早安☀️\n我正在民族公園前，跟大家揮手問好！",
+      "topicScores": {
+        "競選": 0.78
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdaFVaEEli2"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-18T04:03:34+00:00",
+        "inputHash": "bc3866bdc101f3eaf9edd0cbf34fcd4a3b66cc55b9c46dfa5d6a45be0e86fe2f",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdaFKboTNsj/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/11c1b63b26cb6ddc259d.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-17T23:51:15+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "在公園向市民揮手問候，屬競選接觸紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "桃園的市民朋友早安☀️\n我正在民族公園前，跟大家揮手問好！",
+      "topicScores": {
+        "競選": 0.76
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DdaFKboTNsj/"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "huang-shih-chieh",
@@ -52,6 +116,38 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DdYnzDMGpg7"
+    },
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-18T04:03:34+00:00",
+        "inputHash": "ea52e9399d28a020b31879e3e0936019f022f4844dc269196921533ee190d36d",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdYnxlVTExb/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/88668c17b2109720a924.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-17T10:14:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告競選團隊於通勤時段向市民問候的活動。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "明天一早，我跟桃園隊的夥伴，會在市民的上課上班路上，杰伴跟大家問好！\n\n歡迎經過的市民朋友跟我們打招呼喔👋\n\n🔺時間｜9/18（五）07:30\n🔺地點｜桃園區 民族公園前（永安路、三民路口對面）",
+      "topicScores": {
+        "競選": 0.91
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DdYnxlVTExb/"
     },
     {
       "agendaRelevance": 0.12,
