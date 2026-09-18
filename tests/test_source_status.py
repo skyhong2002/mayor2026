@@ -143,6 +143,15 @@ class SourceHealthTests(unittest.TestCase):
         events = [{'source_id': str(i), 'message': 'bad'} for i in range(35)]
         self.assertEqual(len(status.annotate_errors(events, {})), 35)
 
+    def test_error_history_renders_recovery_status(self):
+        for fields, label in (({'resolved': True}, '已恢復'),
+                              ({'inactive': True}, '來源已停用／僅連結'),
+                              ({'unverified': True}, '歷史紀錄，恢復時間未記錄'),
+                              ({}, '尚未恢復')):
+            rendered = status.render_error_list([{'message': '<unsafe>', **fields}])
+            self.assertIn(label, rendered)
+            self.assertNotIn('<unsafe>', rendered)
+
     def test_rss_401_stops_ig_batch_but_threads_continue(self):
         sources = [source('ig1'), source('ig2'), source('th', 'threads')]
         def fetch(src, **kwargs):

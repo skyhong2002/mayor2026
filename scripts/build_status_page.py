@@ -472,6 +472,14 @@ def render_error_list(errors: list[dict[str, Any]]) -> str:
         return f'<div class="empty-state">近 {RECENT_ERROR_DAYS} 天沒有抓取錯誤。</div>'
     items = []
     for row in reversed(errors):
+        if row.get("resolved"):
+            badge = render_badge("ok", "已恢復")
+        elif row.get("inactive"):
+            badge = render_badge("disabled", "來源已停用／僅連結")
+        elif row.get("unverified"):
+            badge = render_badge("unknown", "歷史紀錄，恢復時間未記錄")
+        else:
+            badge = render_badge("error", "尚未恢復")
         items.append(
             f"""
             <article class="status-error-item">
@@ -479,6 +487,7 @@ def render_error_list(errors: list[dict[str, Any]]) -> str:
                 <span class="feed-latest-meta">{html_escape(row.get('recordedAt'))} · {html_escape(PLATFORM_LABELS.get(row.get('platform'), row.get('platform')))}</span>
                 <strong>{html_escape(row.get('sourceName'))}</strong>
               </div>
+              {badge}
               <p>{html_escape(row.get('message'))}</p>
             </article>
             """
@@ -499,6 +508,8 @@ def render_source_table(rows: list[dict]) -> str:
         if row.get("successEvidence") == "inbox":
             success += "（歷史收錄）"
         detail = row.get("reason") or row.get("lastError") or ""
+        if row.get("consecutiveFailures"):
+            detail += f"（連續失敗 {row['consecutiveFailures']} 次）"
         if row["status"] == "disabled":
             detail += "；" + row.get("evidence", "")
         interval = row.get("targetIntervalHours")
