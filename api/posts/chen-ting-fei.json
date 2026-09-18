@@ -19,8 +19,42 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 275,
+  "count": 276,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-18T10:01:18+00:00",
+        "inputHash": "3a8296f3578746b0d3918c4110a07a3be4271cb797dfaf59e10572d4a13ec9ff",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:gQqkTiavRT8",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/8c65bd7b33376e6f7ca7.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-18T07:03:07+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "描述總統參訪競選總部並支持候選人，屬競選宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-yt",
+      "text": "小英總統開箱妃熊幸福競選總部！台灣第一女總統力挺台南第一女市長陳亭妃！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=gQqkTiavRT8"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "chen-ting-fei",

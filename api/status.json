@@ -2,7 +2,7 @@
   "components": [
     {
       "details": [
-        "最近一次執行心跳：2026-09-18 12:03:54"
+        "最近一次執行心跳：2026-09-18 18:01:31"
       ],
       "id": "pipeline",
       "label": "正常",
@@ -12,7 +12,7 @@
     },
     {
       "details": [
-        "已收錄貼文：4797",
+        "已收錄貼文：4817",
         "監看帳號：67"
       ],
       "id": "public-api",
@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：17 ms"
+        "耗時：14 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -34,7 +34,7 @@
     },
     {
       "details": [
-        "最新抓取時間：2026-09-18 12:03:08",
+        "最新抓取時間：2026-09-18 18:00:45",
         "IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。"
       ],
       "id": "instagram-threads",
@@ -48,7 +48,7 @@
         "最近成功 run：2026-09-18 00:01:09",
         "本月已花費：$2.71 / 目標 $4.75",
         "單次預估花費：$0.21",
-        "pacing 判斷：not due yet (pace ~every 31.6h, next at 2026-09-18T23:38:27+00:00; ~$2.71 of $4.75 spent)"
+        "pacing 判斷：not due yet (pace ~every 31.0h, next at 2026-09-18T23:01:43+00:00; ~$2.71 of $4.75 spent)"
       ],
       "id": "facebook-apify",
       "label": "節流中",
@@ -58,7 +58,7 @@
     },
     {
       "details": [
-        "已收錄影片：674"
+        "已收錄影片：679"
       ],
       "id": "youtube",
       "label": "正常",
@@ -74,7 +74,7 @@
       "label": "正常",
       "name": "候選人官網",
       "status": "ok",
-      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 139 篇。"
+      "summary": "6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 144 篇。"
     },
     {
       "details": [
@@ -89,21 +89,21 @@
       "summary": "49 個社群來源中，0 個抓不到內容、1 個超過門檻天數沒有新內容、1 個帳號沉寂。"
     }
   ],
-  "generatedAt": "2026-09-18T12:03:54+08:00",
+  "generatedAt": "2026-09-18T18:01:31+08:00",
   "metrics": {
     "candidates": 13,
     "currentErrors": 2,
-    "latestPostAt": "2026-09-18T03:57:25+00:00",
+    "latestPostAt": "2026-09-18T13:00:41+08:00",
     "postsByPlatform": {
       "facebook": 1437,
       "instagram": 1371,
       "podcast": 8,
-      "threads": 1160,
-      "website": 139,
+      "threads": 1170,
+      "website": 144,
       "x": 8,
-      "youtube": 674
+      "youtube": 679
     },
-    "totalPosts": 4797,
+    "totalPosts": 4817,
     "watchAccounts": 67
   },
   "overall": {
