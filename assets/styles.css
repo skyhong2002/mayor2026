@@ -1769,19 +1769,3 @@ a.topic-breakdown-name:hover {
 .policy-city-title { margin: 28px 0 12px; }
 .policy-score { display: block; margin-top: 14px; color: var(--teal-deep); font-size: 1.15rem; }
 .policy-evidence { display: block; margin-top: 8px; color: var(--ink); font-size: .88rem; line-height: 1.45; }
-
-/* Per-source fetch telemetry, including normal scheduled waits. */
-.status-scheduled, .status-due { background: #edf4fa; color: #325675; }
-.status-disabled, .status-link_only { background: #f0f0ed; color: #626661; }
-.status-error, .status-overdue, .status-blocked { background: #fff0e5; color: #914014; }
-.status-source-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin: 1.25rem 0; }
-.status-source-controls label { display: grid; gap: .35rem; }
-.status-source-controls input, .status-source-controls select { padding: .6rem; border: 1px solid var(--line); border-radius: .4rem; font: inherit; max-width: 100%; }
-.status-source-table { min-width: 850px; }
-.status-source-table th, .status-source-table td { vertical-align: top; min-width: 135px; }
-.status-source-table small { display: block; white-space: normal; overflow-wrap: anywhere; max-width: 320px; margin-top: .45rem; color: var(--muted); font-weight: normal; }
-.status-source-table tr[hidden] { display: none; }
-#status-stale-warning { padding: .75rem; border: 1px solid #a85520; color: #914014; }
-
-.status-card-blocked { border-top-color: var(--coral); }
-.status-sources-band .band-inner { min-width: 0; }

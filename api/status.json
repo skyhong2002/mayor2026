@@ -24,7 +24,7 @@
     {
       "details": [
         "HTTP：200",
-        "耗時：21 ms"
+        "耗時：11 ms"
       ],
       "id": "rsshub",
       "label": "正常",
@@ -49,7 +49,7 @@
         "本月已花費：$2.71 / 目標 $4.75",
         "單次預估花費：$0.21",
         "目前目標間隔：約 30.4 小時",
-        "下次可執行：2026-09-19 06:28:15",
+        "下次可執行：2026-09-19 06:26:39",
         "預計排程：2026-09-19 12:00:00（配速會隨剩餘預算調整）"
       ],
       "id": "facebook-apify",
@@ -81,7 +81,7 @@
     {
       "details": [
         "3 個來源久未發文；內容時間與抓取是否成功分開判斷，不因沉寂自動停用。",
-        "每個來源的最近成功、下次排程、停用設定及既有查證紀錄見下方明細。",
+        "逐來源抓取紀錄與停用資訊可在 Status JSON 查閱。",
         "久未發文：蔣萬安（chiang-wa-yt），最新內容 2026-07-16",
         "久未發文：蔣萬安（chiang-wa-x），最新內容 2026-01-25",
         "久未發文：謝龍介（hsieh-lc-web），最新內容 2019-05-02"
@@ -94,7 +94,7 @@
     }
   ],
   "fetchableSources": 54,
-  "generatedAt": "2026-09-18T23:27:24+08:00",
+  "generatedAt": "2026-09-18T23:43:00+08:00",
   "methods": [
     {
       "backend": "Apify",
@@ -350,13 +350,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T09:00:26+00:00",
       "name": "沈伯洋",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/puma.taipei/"
     },
     {
@@ -375,13 +375,13 @@
       "lastSuccess": "2026-09-13T22:01:17+00:00",
       "latestPostAt": "2026-09-11T11:15:33+00:00",
       "name": "沈伯洋",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/pumashen/"
     },
     {
@@ -575,13 +575,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T13:33:42+00:00",
       "name": "蔣萬安",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/chiangwanan/"
     },
     {
@@ -750,13 +750,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T13:30:10+00:00",
       "name": "蘇巧慧",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/chiaohui.su"
     },
     {
@@ -900,13 +900,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T04:18:55+00:00",
       "name": "李四川",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/p/%E6%9D%8E%E5%9B%9B%E5%B7%9DHammer-Lee-100051818071280/"
     },
     {
@@ -1050,13 +1050,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T10:13:53+00:00",
       "name": "黃世杰",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/SCHuangLawyer/"
     },
     {
@@ -1150,13 +1150,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T10:36:11+00:00",
       "name": "張善政",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/SanCheng624/"
     },
     {
@@ -1250,13 +1250,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T12:12:52+00:00",
       "name": "何欣純",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/94achun/"
     },
     {
@@ -1400,13 +1400,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T11:00:45+00:00",
       "name": "江啟臣",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/johnnyccchiang/"
     },
     {
@@ -1550,13 +1550,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T13:44:03+00:00",
       "name": "陳亭妃",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/fififans/"
     },
     {
@@ -1750,13 +1750,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T05:17:16+00:00",
       "name": "謝龍介",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/TEL062268268/"
     },
     {
@@ -2050,13 +2050,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T13:22:41+00:00",
       "name": "賴瑞隆",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/zenolai2/"
     },
     {
@@ -2200,13 +2200,13 @@
       "lastSuccess": "2026-09-17T16:01:25+00:00",
       "latestPostAt": "2026-09-17T10:56:04+00:00",
       "name": "柯志恩",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/KoChihEn/"
     },
     {
@@ -2375,13 +2375,13 @@
       "lastSuccess": "2026-09-16T10:01:24+00:00",
       "latestPostAt": "2026-09-16T00:35:30+00:00",
       "name": "張靜",
-      "nextEligibleAt": "2026-09-18T22:28:15+00:00",
+      "nextEligibleAt": "2026-09-18T22:26:39+00:00",
       "nextScheduledAt": "2026-09-19T04:00:00+00:00",
       "platform": "facebook",
       "reason": "",
       "status": "ok",
       "successEvidence": "inbox",
-      "targetIntervalHours": 30.45,
+      "targetIntervalHours": 30.43,
       "url": "https://www.facebook.com/p/%E5%8F%B8%E6%B3%95%E6%94%B9%E9%9D%A9%E9%BB%A8-100093646137173/"
     },
     {
