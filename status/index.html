@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>資料管線狀態｜2026 市長官方來源觀測站</title>
     <meta name="robots" content="noindex,follow">
-    <link rel="icon" href="../assets/favicon.svg?v=8e0373bd8b" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/styles.css?v=8e0373bd8b">
+    <link rel="icon" href="../assets/favicon.svg?v=a5e8edf39c" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/styles.css?v=a5e8edf39c">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="../">
-        <img class="brand-logo-img" src="../assets/logo.svg?v=8e0373bd8b" alt="">
+        <img class="brand-logo-img" src="../assets/logo.svg?v=a5e8edf39c" alt="">
         <span>2026 市長官方來源觀測站</span>
       </a>
       <nav class="site-nav">
@@ -31,10 +31,11 @@
           </div>
           <div class="feed-page-summary status-summary-panel">
             <div class="status-summary-line">
-              <span class="status-badge status-degraded">部分異常</span>
-              <strong>核心 pipeline 有產出；需要注意：Instagram / Threads / X RSSHub、來源收錄健康。 Facebook Apify 目前依排程或預算節流。</strong>
+              <span class="status-badge status-ok">正常</span>
+              <strong>核心資料抓取與公開 API 正常。 Facebook Apify 正常等待下次排程。</strong>
             </div>
-            <p>快照時間 2026-09-18T18:01:31+08:00</p>
+            <p>快照時間 <time id="status-generated-at" datetime="2026-09-18T23:25:20+08:00">2026-09-18T23:25:20+08:00</time></p>
+            <p id="status-stale-warning" hidden>此快照已超過 8 小時未更新，請檢查排程或發布狀態。</p>
             <div class="feed-links">
               <a href="../api/status.json">Status JSON</a>
               <a href="../feeds/">RSS</a>
@@ -69,15 +70,15 @@
             
       <article class="status-metric-card">
         <span>已收錄貼文</span>
-        <strong>4817</strong>
+        <strong>4827</strong>
         <p>social_candidates.jsonl</p>
       </article>
     
             
       <article class="status-metric-card">
         <span>目前錯誤</span>
-        <strong>2</strong>
-        <p>過去 24 小時</p>
+        <strong>0</strong>
+        <p>仍未恢復的來源，成功後解除</p>
       </article>
     
           </div>
@@ -100,7 +101,7 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>定期 pipeline 已產生公開資料快照。</p>
-        <ul class="status-detail-list"><li>最近一次執行心跳：2026-09-18 18:01:31</li></ul>
+        <ul class="status-detail-list"><li>最近一次執行心跳：2026-09-18 23:25:20</li></ul>
       </article>
     
 
@@ -109,8 +110,8 @@
           <h2>公開 API</h2>
           <span class="status-badge status-ok">正常</span>
         </div>
-        <p>candidates.json 有 13 位候選人，sources.json 有 55 個監看帳號。</p>
-        <ul class="status-detail-list"><li>已收錄貼文：4817</li><li>監看帳號：67</li></ul>
+        <p>13 位候選人，54 個可抓取來源。</p>
+        <ul class="status-detail-list"><li>已收錄貼文：4827</li><li>監看帳號：67</li></ul>
       </article>
     
 
@@ -120,27 +121,27 @@
           <span class="status-badge status-ok">正常</span>
         </div>
         <p>http://127.0.0.1:1200 回應 正常。</p>
-        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：14 ms</li></ul>
+        <ul class="status-detail-list"><li>HTTP：200</li><li>耗時：30 ms</li></ul>
       </article>
     
 
-      <article class="status-component-card status-card-degraded">
+      <article class="status-component-card status-card-ok">
         <div class="status-component-head">
           <h2>Instagram / Threads / X RSSHub</h2>
-          <span class="status-badge status-degraded">部分異常</span>
+          <span class="status-badge status-ok">正常</span>
         </div>
-        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；過去 24 小時 2 個錯誤。</p>
-        <ul class="status-detail-list"><li>最新抓取時間：2026-09-18 18:00:45</li><li>IG 節流：每來源至少間隔 12 小時抓取一次，避免消耗 RSSHub 的 IG_COOKIE 額度。</li></ul>
+        <p>12 個 Instagram、9 個 Threads、3 個 X 來源；目前 0 個來源尚未恢復。</p>
+        <ul class="status-detail-list"><li>最新抓取時間：2026-09-18 23:24:34</li><li>IG 依發文頻率每 12–168 小時抓取，每輪最多 6 個，較早到期者優先；401／429 會共用冷卻 24–72 小時。</li></ul>
       </article>
     
 
-      <article class="status-component-card status-card-paused">
+      <article class="status-component-card status-card-scheduled">
         <div class="status-component-head">
           <h2>Facebook Apify</h2>
-          <span class="status-badge status-paused">節流中</span>
+          <span class="status-badge status-scheduled">等待排程</span>
         </div>
-        <p>14 個 Facebook 來源。 目前依預算 pacing 暫停開 run。</p>
-        <ul class="status-detail-list"><li>最近成功 run：2026-09-18 00:01:09</li><li>本月已花費：$2.71 / 目標 $4.75</li><li>單次預估花費：$0.21</li><li>pacing 判斷：not due yet (pace ~every 31.0h, next at 2026-09-18T23:01:43+00:00; ~$2.71 of $4.75 spent)</li></ul>
+        <p>14 個 Facebook 來源。 正常等待預算配速排程。</p>
+        <ul class="status-detail-list"><li>最近成功 run：2026-09-18 00:01:09</li><li>本月已花費：$2.71 / 目標 $4.75</li><li>單次預估花費：$0.21</li><li>目前目標間隔：約 30.5 小時</li><li>下次可執行：2026-09-19 06:28:28</li><li>預計排程：2026-09-19 12:00:00（配速會隨剩餘預算調整）</li></ul>
       </article>
     
 
@@ -149,8 +150,8 @@
           <h2>YouTube yt-dlp</h2>
           <span class="status-badge status-ok">正常</span>
         </div>
-        <p>10 個 YouTube 來源；過去 24 小時 0 個錯誤。</p>
-        <ul class="status-detail-list"><li>已收錄影片：679</li></ul>
+        <p>10 個 YouTube 來源；目前 0 個來源尚未恢復。</p>
+        <ul class="status-detail-list"><li>已收錄影片：681</li></ul>
       </article>
     
 
@@ -159,18 +160,18 @@
           <h2>候選人官網</h2>
           <span class="status-badge status-ok">正常</span>
         </div>
-        <p>6 個候選人官網已列入監看，6 個有逐站 adapter，已收錄 144 篇。</p>
-        <ul class="status-detail-list"><li>官網結構各異，每站需要個別撰寫解析邏輯；沒有 adapter 的官網不計入可抓取來源。</li></ul>
+        <p>5 個文章來源、1 個僅連結；已收錄 144 篇。</p>
+        <ul class="status-detail-list"><li>賴瑞隆：此網址為募款／連結頁，沒有可收錄的文章列表（2026-08-23 查核）</li></ul>
       </article>
     
 
-      <article class="status-component-card status-card-degraded">
+      <article class="status-component-card status-card-ok">
         <div class="status-component-head">
-          <h2>來源收錄健康</h2>
-          <span class="status-badge status-degraded">部分異常</span>
+          <h2>來源抓取健康</h2>
+          <span class="status-badge status-ok">正常</span>
         </div>
-        <p>49 個社群來源中，0 個抓不到內容、1 個超過門檻天數沒有新內容、1 個帳號沉寂。</p>
-        <ul class="status-detail-list"><li>逾期：蔣萬安（chiang-wa-yt，YouTube）：最新內容 2026-07-16（門檻 60 天）</li><li>帳號沉寂：蔣萬安（chiang-wa-x，X）：帳號最新發文 2026-01-25，早於收錄視窗</li><li>抓不到內容或內容逾期，請查證後在 watchlist_accounts.csv 修正或停用；帳號沉寂只是該帳號久未發文，不需處理。</li></ul>
+        <p>54 個可抓取來源；0 個未恢復錯誤、0 個排程逾期、0 個受冷卻／額度限制。</p>
+        <ul class="status-detail-list"><li>3 個來源久未發文；內容時間與抓取是否成功分開判斷，不因沉寂自動停用。</li><li>每個來源的最近成功、下次排程、停用設定及既有查證紀錄見下方明細。</li><li>久未發文：蔣萬安（chiang-wa-yt），最新內容 2026-07-16</li><li>久未發文：蔣萬安（chiang-wa-x），最新內容 2026-01-25</li><li>久未發文：謝龍介（hsieh-lc-web），最新內容 2019-05-02</li></ul>
       </article>
     
           </div>
@@ -198,7 +199,7 @@
             <tr>
               <th scope="row">Facebook</th>
               <td>14</td>
-              <td></td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
@@ -206,15 +207,15 @@
             <tr>
               <th scope="row">Instagram</th>
               <td>12</td>
-              <td>2</td>
-              <td><span class="status-badge status-degraded">部分異常</span></td>
+              <td>0</td>
+              <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
 
             <tr>
               <th scope="row">Podcast</th>
               <td>1</td>
-              <td></td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
@@ -222,15 +223,15 @@
             <tr>
               <th scope="row">Threads</th>
               <td>9</td>
-              <td></td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
 
             <tr>
               <th scope="row">官網</th>
-              <td>6</td>
-              <td></td>
+              <td>5</td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
@@ -238,7 +239,7 @@
             <tr>
               <th scope="row">X</th>
               <td>3</td>
-              <td></td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
@@ -246,7 +247,7 @@
             <tr>
               <th scope="row">YouTube</th>
               <td>10</td>
-              <td></td>
+              <td>0</td>
               <td><span class="status-badge status-ok">正常</span></td>
             </tr>
             
@@ -256,12 +257,360 @@
         </div>
       </section>
 
+      <section class="band status-sources-band">
+        <div class="band-inner">
+          <div class="section-heading"><div><p class="section-kicker">Sources</p><h2>逐來源抓取狀態</h2></div></div>
+          <p>時間為臺灣時間。每 6 小時執行排程；下次時間為預估，仍受冷卻、批次容量與預算影響。歷史內容時間不代表最近抓取時間。</p>
+          <div class="status-source-controls">
+            <label>搜尋來源 <input id="source-search" type="search" placeholder="候選人、平台或帳號"></label>
+            <label>顯示 <select id="source-filter"><option value="active">可抓取來源</option><option value="attention">需要注意</option><option value="inactive">停用／僅連結</option><option value="all">全部來源</option></select></label>
+            <span id="source-visible-count" aria-live="polite"></span>
+          </div>
+          <div class="status-table-wrap"><table class="status-table status-source-table"><thead><tr><th>來源</th><th>狀態／原因</th><th>最近成功</th><th>下次預計排程</th><th>最新內容</th></tr></thead><tbody><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-web-campaign 官網">
+          <th scope="row"><a href="https://puma.taipei/">沈伯洋</a><small>shen-web-campaign</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:25:02<small>最近嘗試：2026-09-18 23:25:02</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-16 00:00:00</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-fb-campaign Facebook">
+          <th scope="row"><a href="https://www.facebook.com/puma.taipei/">沈伯洋</a><small>shen-fb-campaign</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 17:00:26</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-fb-personal Facebook">
+          <th scope="row"><a href="https://www.facebook.com/pumashen/">沈伯洋</a><small>shen-fb-personal</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-14 06:01:17（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-11 19:15:33</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="沈伯洋 shen-ig-campaign Instagram">
+          <th scope="row"><a href="https://www.instagram.com/puma.shen/">沈伯洋</a><small>shen-ig-campaign</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；截至 2026-07-05 官網 IG 直連已改為 pumashen；多組搜尋均查無 @puma.shen 存在跡象 判定已不存在或非官方導向</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-ig-personal Instagram">
+          <th scope="row"><a href="https://www.instagram.com/pumashen/">沈伯洋</a><small>shen-ig-personal</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:00:05<small>最近嘗試：2026-09-18 12:00:05</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 17:00:01</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="沈伯洋 shen-threads-campaign Threads">
+          <th scope="row"><a href="https://www.threads.com/@puma.shen">沈伯洋</a><small>shen-threads-campaign</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；截至 2026-07-05 官網 Threads 直連為 @pumashen；搜尋查無 @puma.shen Threads 帳號 判定已不存在或非官方導向</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-threads-personal Threads">
+          <th scope="row"><a href="https://www.threads.com/@pumashen">沈伯洋</a><small>shen-threads-personal</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:23:55<small>最近嘗試：2026-09-18 23:23:55</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 15:37:35</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-yt-personal YouTube">
+          <th scope="row"><a href="https://www.youtube.com/@PumaShen">沈伯洋</a><small>shen-yt-personal</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:36<small>最近嘗試：2026-09-18 23:24:36</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 14:17:15</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="沈伯洋 shen-x-personal X">
+          <th scope="row"><a href="https://x.com/pumashen">沈伯洋</a><small>shen-x-personal</small><small>X · RSSHub X</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:23:57<small>最近嘗試：2026-09-18 23:23:57</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-09 12:49:36</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="沈伯洋 shen-line-campaign LINE 官方帳號">
+          <th scope="row"><a href="https://join.puma.taipei/line/UkfBBgZ2">沈伯洋</a><small>shen-line-campaign</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/chiangwanan/">蔣萬安</a><small>chiang-wa-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 21:33:42</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/wanan.chiang/">蔣萬安</a><small>chiang-wa-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:00:33<small>最近嘗試：2026-09-18 12:00:33</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 21:34:08</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@wanan.chiang">蔣萬安</a><small>chiang-wa-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；handle 與 IG/YouTube 對應 搜尋確認帳號存在</small></td>
+          <td>2026-08-23 00:00:22<small>最近嘗試：2026-08-23 00:00:22</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2026-03-16 16:41:29（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UC9EWrkZoT3agfx45s6FdVtQ">蔣萬安</a><small>chiang-wa-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:37<small>最近嘗試：2026-09-18 23:24:37</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-07-16 14:51:42（久未發文）</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-line LINE 官方帳號">
+          <th scope="row"><a href="https://page.line.me/eso5326z">蔣萬安</a><small>chiang-wa-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蔣萬安 chiang-wa-x X">
+          <th scope="row"><a href="https://x.com/WananChiang">蔣萬安</a><small>chiang-wa-x</small><small>X · RSSHub X</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:23:59<small>最近嘗試：2026-09-18 23:23:59</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-01-25 12:08:02（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-web 官網">
+          <th scope="row"><a href="https://chiao.tw/">蘇巧慧</a><small>su-ch-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:25:04<small>最近嘗試：2026-09-18 23:25:04</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 00:00:00</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/chiaohui.su">蘇巧慧</a><small>su-ch-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 21:30:10</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/su.chiaohui/">蘇巧慧</a><small>su-ch-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:00:46<small>最近嘗試：2026-09-18 12:00:46</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-18 09:00:05</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCBybqVtDU2YgADc8tBqUz5A">蘇巧慧</a><small>su-ch-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:38<small>最近嘗試：2026-09-18 23:24:38</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 17:31:53</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="蘇巧慧 su-ch-line LINE 官方帳號">
+          <th scope="row"><a href="http://line.me/ti/p/%40suchiaohui">蘇巧慧</a><small>su-ch-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@su.chiaohui">蘇巧慧</a><small>su-ch-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:03<small>最近嘗試：2026-09-18 23:24:03</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 21:02:38</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="蘇巧慧 su-ch-podcast Podcast">
+          <th scope="row"><a href="https://open.spotify.com/show/06fXdjNXspAe1QLML8EsAv">蘇巧慧</a><small>su-ch-podcast</small><small>Podcast · 原生 RSS</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:04<small>最近嘗試：2026-09-18 23:24:04</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-17 15:00:00</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="李四川 lee-sc-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/p/%E6%9D%8E%E5%9B%9B%E5%B7%9DHammer-Lee-100051818071280/">李四川</a><small>lee-sc-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 12:18:55</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="李四川 lee-sc-ig-main Instagram">
+          <th scope="row"><a href="https://www.instagram.com/hammer__lee/">李四川</a><small>lee-sc-ig-main</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:01:02<small>最近嘗試：2026-09-18 12:01:02</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 12:54:29</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="李四川 lee-sc-ig-old Instagram">
+          <th scope="row"><a href="https://www.instagram.com/hammer_lee0201/">李四川</a><small>lee-sc-ig-old</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；帳號存在且顯示名為李四川 但無第一方指認、無法確認仍由本人使用</small></td>
+          <td>2026-08-22 12:00:46<small>最近嘗試：2026-08-22 12:00:46</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2021-12-03 13:12:05（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="李四川 lee-sc-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@hammer__lee">李四川</a><small>lee-sc-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:08<small>最近嘗試：2026-09-18 23:24:08</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-17 12:56:46</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="李四川 lee-sc-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCfS5UhHzM8rjH5DnYuVCw5w">李四川</a><small>lee-sc-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；本人 Threads 指認</small></td>
+          <td>2026-07-05 18:00:38（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2020-06-05 18:53:12（久未發文）</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="李四川 lee-sc-tiktok TikTok">
+          <th scope="row"><a href="">李四川</a><small>lee-sc-tiktok</small><small>TikTok · 僅連結</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；雖有本人自述開設但多輪搜尋（含 site:tiktok.com）截至 2026-07-05 找不到帳號 URL 暫列不存在</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="黃世杰 huang-sj-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/SCHuangLawyer/">黃世杰</a><small>huang-sj-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 18:13:53</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="黃世杰 huang-sj-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/schuanglawyer/">黃世杰</a><small>huang-sj-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:01:17<small>最近嘗試：2026-09-18 12:01:17</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-18 07:51:15</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="黃世杰 huang-sj-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@schuanglawyer">黃世杰</a><small>huang-sj-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:12<small>最近嘗試：2026-09-18 23:24:12</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 18:58:36</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="黃世杰 huang-sj-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UC7mnxOvJmztdSfFpOp8BkjQ">黃世杰</a><small>huang-sj-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；頻道名稱為黃世杰且搜尋結果指向該頻道 但 handle 為系統自動產生且無官網或 FB/IG 直連可證為本人官方頻道</small></td>
+          <td>2026-07-05 18:00:39（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2019-01-24 23:28:06（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="張善政 chang-sc-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/SanCheng624/">張善政</a><small>chang-sc-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 18:36:11</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="張善政 chang-sc-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/sancheng624/">張善政</a><small>chang-sc-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:01:31<small>最近嘗試：2026-09-18 12:01:31</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 18:36:14</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="張善政 chang-sc-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/@taoyuansango">張善政</a><small>chang-sc-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:39<small>最近嘗試：2026-09-18 23:24:39</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-05 12:01:56</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="何欣純 ho-hc-web 官網">
+          <th scope="row"><a href="https://a-chun.tw/">何欣純</a><small>ho-hc-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:25:05<small>最近嘗試：2026-09-18 23:25:05</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 13:00:41</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="何欣純 ho-hc-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/94achun/">何欣純</a><small>ho-hc-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 20:12:52</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="何欣純 ho-hc-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/a_chun1973/">何欣純</a><small>ho-hc-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:01:42<small>最近嘗試：2026-09-18 12:01:42</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 13:40:30</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="何欣純 ho-hc-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@a_chun1973">何欣純</a><small>ho-hc-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:16<small>最近嘗試：2026-09-18 23:24:16</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 22:53:14</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="何欣純 ho-hc-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCFcDN6t7tJ7qObwtyBQHdRg">何欣純</a><small>ho-hc-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:40<small>最近嘗試：2026-09-18 23:24:40</small><small>最近回傳：11 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-17 20:30:02</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="何欣純 ho-hc-line LINE 官方帳號">
+          <th scope="row"><a href="https://page.line.me/beu1231o">何欣純</a><small>ho-hc-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="江啟臣 chiang-cc-web 官網">
+          <th scope="row"><a href="https://chichen.org/">江啟臣</a><small>chiang-cc-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；官網 2026-07-05 回應 200 但內容 JS 動態渲染無法抓取全文 ；2026-08-23 查核：chichen.org 無法連線（先前僅轉址 Facebook），停用</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="江啟臣 chiang-cc-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/johnnyccchiang/">江啟臣</a><small>chiang-cc-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 19:00:45</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="江啟臣 chiang-cc-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/taichungjohnny/">江啟臣</a><small>chiang-cc-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:01:56<small>最近嘗試：2026-09-18 12:01:56</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-18 11:55:11</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="江啟臣 chiang-cc-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@taichungjohnny">江啟臣</a><small>chiang-cc-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；與 IG 同 handle 互證</small></td>
+          <td>2026-08-23 00:00:42<small>最近嘗試：2026-08-23 00:00:42</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2026-02-09 12:00:35（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="江啟臣 chiang-cc-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/user/kesing168">江啟臣</a><small>chiang-cc-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:41<small>最近嘗試：2026-09-18 23:24:41</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-07 21:29:38</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="江啟臣 chiang-cc-x X">
+          <th scope="row"><a href="https://x.com/JohnnyChiang12">江啟臣</a><small>chiang-cc-x</small><small>X · RSSHub X</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:18<small>最近嘗試：2026-09-18 23:24:18</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-09 19:07:34</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="江啟臣 chiang-cc-line LINE 官方帳號">
+          <th scope="row"><a href="https://chichen.org/lineme">江啟臣</a><small>chiang-cc-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="陳亭妃 chen-tf-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/fififans/">陳亭妃</a><small>chen-tf-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 21:44:03</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="陳亭妃 chen-tf-fb-profile Facebook">
+          <th scope="row"><a href="https://www.facebook.com/fififamily/">陳亭妃</a><small>chen-tf-fb-profile</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；本人個人帳號頁面 自介稱好友已滿並導向 fififans 粉專</small></td>
+          <td>2026-07-05 18:01:34（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2026-06-09 13:26:27（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="陳亭妃 chen-tf-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/chen_tingfei/">陳亭妃</a><small>chen-tf-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:02:09<small>最近嘗試：2026-09-18 12:02:09</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-17 16:48:51</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="陳亭妃 chen-tf-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@chen_tingfei">陳亭妃</a><small>chen-tf-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:22<small>最近嘗試：2026-09-18 23:24:22</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 18:16:10</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="陳亭妃 chen-tf-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCWlv4Ixpdv0QjkdCL3yfGZw">陳亭妃</a><small>chen-tf-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:42<small>最近嘗試：2026-09-18 23:24:42</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 15:03:07</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="陳亭妃 chen-tf-yt-2 YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCLaZg5OlVbqLZmz3Zwu42sw">陳亭妃</a><small>chen-tf-yt-2</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；第二頻道「陳亭妃」簡介直連 facebook.com/fififans 判定本人舊頻道</small></td>
+          <td>2026-07-05 18:00:44（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2017-09-19 10:40:59（久未發文）</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="陳亭妃 chen-tf-line LINE 官方帳號">
+          <th scope="row"><a href="https://page.line.me/nhu2565u">陳亭妃</a><small>chen-tf-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-web 官網">
+          <th scope="row"><a href="https://www.joo.com.tw/tel062268268/">謝龍介</a><small>hsieh-lc-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:25:06<small>最近嘗試：2026-09-18 23:25:06</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2019-05-03 00:00:00（久未發文）</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/TEL062268268/">謝龍介</a><small>hsieh-lc-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 13:17:16</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/hsiehlungchieh/">謝龍介</a><small>hsieh-lc-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:02:27<small>最近嘗試：2026-09-18 12:02:27</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-18 08:42:47</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@hsiehlungchieh">謝龍介</a><small>hsieh-lc-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:26<small>最近嘗試：2026-09-18 23:24:26</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 08:44:15</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCwmpCYMVf3j9D_-dToJxPNw">謝龍介</a><small>hsieh-lc-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:52<small>最近嘗試：2026-09-18 23:24:52</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 21:18:03</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-line LINE 官方帳號">
+          <th scope="row"><a href="https://page.line.me/lcz1318b">謝龍介</a><small>hsieh-lc-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-tiktok TikTok">
+          <th scope="row"><a href="https://www.tiktok.com/@longuy1003">謝龍介</a><small>hsieh-lc-tiktok</small><small>TikTok · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>目前未提供可用的抓取方式</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="謝龍介 hsieh-lc-web-media 官網">
+          <th scope="row"><a href="https://inewslong.com/">謝龍介</a><small>hsieh-lc-web-media</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:25:07<small>最近嘗試：2026-09-18 23:25:07</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-04 22:58:00</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="lin-yi-feng lin-yf-web 官網">
+          <th scope="row"><a href="https://www.xn--btvt94cw3i.com/">lin-yi-feng</a><small>lin-yf-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；2026-07-05 兩次 fetch 均回應空白內容 站點仍不穩定 暫保留</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="lin-yi-feng lin-yf-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/ceotainan/">lin-yi-feng</a><small>lin-yf-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；本人頁面</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="lin-yi-feng lin-yf-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/marklin_ceo/">lin-yi-feng</a><small>lin-yf-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；本人 FB 公告開設</small></td>
+          <td>2026-08-22 12:02:23<small>最近嘗試：2026-08-22 12:02:23</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2019-12-10 22:46:29（久未發文）</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="lin-yi-feng lin-yf-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCAbvXdpn460E7CtcjO7KuJA">lin-yi-feng</a><small>lin-yf-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；虧雞福來爹頻道</small></td>
+          <td>2026-07-05 18:00:46（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2022-11-25 15:57:16（久未發文）</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-web 官網">
+          <th scope="row"><a href="https://zenolai.oen.tw/">賴瑞隆</a><small>lai-jl-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>此網址為募款／連結頁，沒有可收錄的文章列表（2026-08-23 查核）</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/zenolai2/">賴瑞隆</a><small>lai-jl-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 21:22:41</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/zenolai/">賴瑞隆</a><small>lai-jl-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:02:42<small>最近嘗試：2026-09-18 12:02:42</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-18 11:40:22</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@zenolai">賴瑞隆</a><small>lai-jl-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:30<small>最近嘗試：2026-09-18 23:24:30</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 22:02:21</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/@%E8%B3%B4%E7%91%9E%E9%9A%86">賴瑞隆</a><small>lai-jl-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:53<small>最近嘗試：2026-09-18 23:24:53</small><small>最近回傳：10 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-11 18:13:40</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="賴瑞隆 lai-jl-line LINE 官方帳號">
+          <th scope="row"><a href="https://lin.ee/zW17s0a">賴瑞隆</a><small>lai-jl-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="柯志恩 ko-ce-web 官網">
+          <th scope="row"><a href="https://www.k100.tw/">柯志恩</a><small>ko-ce-web</small><small>官網 · 官網 adapter</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；本人 YT 頻道簡介明列「柯志恩官網」（查核日直接 fetch 無回應 疑擋爬或暫時異常） ；2026-08-23 查核：k100.tw DNS 已消失（NXDOMAIN），網站下線，停用</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="柯志恩 ko-ce-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/KoChihEn/">柯志恩</a><small>ko-ce-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 00:01:25（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-17 18:56:04</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="柯志恩 ko-ce-ig Instagram">
+          <th scope="row"><a href="https://www.instagram.com/prof.kochihen/">柯志恩</a><small>ko-ce-ig</small><small>Instagram · RSSHub Instagram</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 12:02:56<small>最近嘗試：2026-09-18 12:02:56</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 06:00:00（約 12 小時）</td><td>2026-09-16 20:05:39</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="柯志恩 ko-ce-threads Threads">
+          <th scope="row"><a href="https://www.threads.com/@prof.kochihen">柯志恩</a><small>ko-ce-threads</small><small>Threads · RSSHub Threads</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:34<small>最近嘗試：2026-09-18 23:24:34</small><small>最近回傳：4 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 18:58:58</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="柯志恩 ko-ce-yt YouTube">
+          <th scope="row"><a href="https://www.youtube.com/channel/UCmDcMkSjhyj2R91z0FlGjAA">柯志恩</a><small>ko-ce-yt</small><small>YouTube · yt-dlp</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-18 23:24:56<small>最近嘗試：2026-09-18 23:24:56</small><small>最近回傳：15 筆</small></td>
+          <td>2026-09-19 06:00:00（約 6 小時）</td><td>2026-09-18 18:28:03</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="柯志恩 ko-ce-tiktok TikTok">
+          <th scope="row"><a href="https://www.tiktok.com/@kochihen">柯志恩</a><small>ko-ce-tiktok</small><small>TikTok · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>目前未提供可用的抓取方式</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="柯志恩 ko-ce-line LINE 官方帳號">
+          <th scope="row"><a href="https://reurl.cc/MNQXRL">柯志恩</a><small>ko-ce-line</small><small>LINE 官方帳號 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="柯志恩 ko-ce-line-community LINE 社群">
+          <th scope="row"><a href="https://reurl.cc/lep726">柯志恩</a><small>ko-ce-line-community</small><small>LINE 社群 · 僅連結</small></th>
+          <td><span class="status-badge status-link_only">僅提供連結</span><small>沒有可抓取的公開時間軸</small></td>
+          <td>未記錄<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>未記錄</td></tr><tr data-source-group="active" data-source-attention="false" data-source-search="張靜 chang-ching-party-fb Facebook">
+          <th scope="row"><a href="https://www.facebook.com/p/%E5%8F%B8%E6%B3%95%E6%94%B9%E9%9D%A9%E9%BB%A8-100093646137173/">張靜</a><small>chang-ching-party-fb</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-ok">正常</span><small></small></td>
+          <td>2026-09-16 18:01:24（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>2026-09-19 12:00:00（約 30.46 小時）</td><td>2026-09-16 08:35:30</td></tr><tr data-source-group="inactive" data-source-attention="false" data-source-search="張靜 chang-ching-fb-personal Facebook">
+          <th scope="row"><a href="https://www.facebook.com/people/%E5%BC%B5%E9%9D%9C/100006888229303/">張靜</a><small>chang-ching-fb-personal</small><small>Facebook · Apify</small></th>
+          <td><span class="status-badge status-disabled">已停用</span><small>watchlist 設定為停用；歷史資料保留；個人檔案存在且搜尋結果指向同名律師 但 FB 擋爬無法確認為本人經營與公開發文 且無官方來源指認</small></td>
+          <td>2026-07-05 18:01:34（歷史收錄）<small>最近嘗試：未記錄</small><small>最近回傳：未記錄 筆</small></td>
+          <td>不排程</td><td>2025-05-02 13:20:07（久未發文）</td></tr></tbody></table></div>
+        </div>
+      </section>
       <section class="band status-errors-band">
         <div class="band-inner">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Latest Errors</p>
-              <h2>最新錯誤</h2>
+              <h2>近期錯誤紀錄</h2>
             </div>
             <p class="data-date">近 7 天，最多顯示 20 筆</p>
           </div>
@@ -383,73 +732,11 @@
               <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
             </article>
             
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:13:50+00:00 · Instagram</span>
-                <strong>柯志恩（ko-ce-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:13:38+00:00 · Instagram</span>
-                <strong>賴瑞隆（lai-jl-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:13:27+00:00 · Instagram</span>
-                <strong>謝龍介（hsieh-lc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:13:15+00:00 · Instagram</span>
-                <strong>陳亭妃（chen-tf-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:13:05+00:00 · Instagram</span>
-                <strong>江啟臣（chiang-cc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:12:52+00:00 · Instagram</span>
-                <strong>何欣純（ho-hc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
-
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">2026-09-11T11:12:44+00:00 · Instagram</span>
-                <strong>張善政（chang-sc-ig）</strong>
-              </div>
-              <p>rsshub fetch failed: HTTP 503: FetchError: [POST] &amp;quot;https://www.instagram.com/graphql/query&amp;quot;: 401 Unauthorized</p>
-            </article>
-            
           </div>
         </div>
       </section>
     </main>
+    <script src="../assets/status.js?v=a5e8edf39c" defer></script>
 
     <footer class="site-footer">
       <div class="site-footer-inner">

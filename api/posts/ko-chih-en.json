@@ -19,8 +19,79 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 454,
+  "count": 456,
   "posts": [
+    {
+      "agendaRelevance": 0.07,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-18T15:25:12+00:00",
+        "inputHash": "a3101042886e36bb352252d0de49c2bb518eca3552a7bfa2ddb2b373634b3ecf",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdbRkv6Ccb_",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/78138ebd4c9ed3f295ae.webp",
+      "keywords": [
+        "競選",
+        "造勢"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-18T10:58:58+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公布鳳山造勢活動時間、地點及來賓，主要是競選集結動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:大風起 919鳳山大造勢\n志家人，集結吧🔥\n\n📍 捷運鳳山西站旁｜2號出口\n⏰ 15:00入場｜15:30正式開始\n\n‼️特別嘉賓：\n競選總部主委、前立法院院長 王金平\n台北市長 蔣萬安\n新北市長候選人 李四川",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdbRkv6Ccb_"
+    },
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-18T15:25:12+00:00",
+        "inputHash": "2720f2faea2ab14f472c114bef200744edc16095a7d8ab544a9eb69712ea7778",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:pMyp52Trd78",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/4a2bebfad99c4bcaf69e.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "youtube",
+      "postedAt": "2026-09-18T10:28:03+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "發布候選人競選主題曲，屬選舉宣傳與文化表演內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "作伙跳起來！《世界高雄》純舞蹈版｜柯志恩2026高雄市長競選主題曲",
+      "topicScores": {
+        "文化觀光": 0.65,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=pMyp52Trd78"
+    },
     {
       "agendaRelevance": 0.42,
       "candidateId": "ko-chih-en",
@@ -13206,8 +13277,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1592995692180811",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/ba6c9f3c96c677591a2a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "空氣品質",
         "淨零"
@@ -13351,8 +13422,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1592769082203472",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/32303fae485ca7318e71.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "修法",
         "立法院"
@@ -13496,8 +13567,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1592335525580161",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/414c46600f0430f4cc3e.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "文化"
       ],
@@ -13822,8 +13893,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1591607135653000",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/78a80ac1df9a5c3e3f0c.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "facebook",
       "postedAt": "2026-07-18T13:45:33.000Z",
@@ -13854,8 +13925,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1015880997871676",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/69326bea46115d4ba961.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "參選"
       ],
@@ -13978,8 +14049,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1591322392348141",
-      "imageAspect": 1.4975,
-      "imageUrl": "assets/feed-images/d5fbdca36556e722fe5e.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "育兒",
         "長輩",
@@ -14142,8 +14213,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1589949399152107",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/4346a366c27f3a6cad3c.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "豪雨",
         "淹水",
@@ -14218,8 +14289,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1589794935834220",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/5e8f7d77193949a37895.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "參選",
         "文化",
@@ -14332,8 +14403,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1589673092513071",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/884f2175b5e8205382da.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "質詢",
         "預算",
@@ -14636,8 +14707,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1588104072669973",
-      "imageAspect": 1.3348,
-      "imageUrl": "assets/feed-images/b67b19e4a56a78d903d0.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "產業",
         "中小企業",
@@ -14680,8 +14751,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1587983952681985",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/96bf9a78cc6ac41310c1.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "交通"
       ],
@@ -14722,8 +14793,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1587211292759251",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/05550836571ef745bf69.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "學校",
@@ -14996,8 +15067,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1585893802891000",
-      "imageAspect": 1.3333,
-      "imageUrl": "assets/feed-images/e6af6c5099f5bdd84bc8.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "颱風",
         "防災",
@@ -15074,8 +15145,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1585099542970426",
-      "imageAspect": 1.3093,
-      "imageUrl": "assets/feed-images/a3139bc3e79210af7547.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "颱風",
         "停班停課"
@@ -15185,8 +15256,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1585045182975862",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/8e64f4732845299ab845.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "颱風",
         "土石流",
@@ -15379,8 +15450,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1584312576382456",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/44752d97450441ba98eb.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "運動",
         "選手",
@@ -15421,8 +15492,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1584133563067024",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/6f1b63d2d240b3aba6e3.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "學校",
@@ -15509,8 +15580,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1583160079831039",
-      "imageAspect": 0.9593,
-      "imageUrl": "assets/feed-images/1c9104d4bf4ba50e940e.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "校園",
@@ -15556,8 +15627,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1582382459908801",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/a656ee8e8fbda85ae4d3.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "醫療"
       ],
@@ -15634,8 +15705,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1581592659987781",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/2bb00f446e19d74d0909.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育",
         "幼兒園",
@@ -15674,8 +15745,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1581373130009734",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/4026c10772da6a352aa2.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "美食",
         "攤商"
@@ -15797,8 +15868,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1580820033398377",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/ce5fcc7cf2091243032a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "參選",
         "後援會",
@@ -15995,8 +16066,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1580423380104709",
-      "imageAspect": 0.8141,
-      "imageUrl": "assets/feed-images/680dc9694bc69834698d.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "選舉",
         "提名",
@@ -16031,8 +16102,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1579944890152558",
-      "imageAspect": 1.25,
-      "imageUrl": "assets/feed-images/27a924603d468b3df059.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "長照",
         "托育",
@@ -16132,8 +16203,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1579800700166977",
-      "imageAspect": 1.25,
-      "imageUrl": "assets/feed-images/67943a3ff89e5bc9dc36.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "產業",
         "就業",
@@ -16218,8 +16289,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1579736700173377",
-      "imageAspect": 1.25,
-      "imageUrl": "assets/feed-images/2007d76e66d1760bcd3b.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "學校"
       ],
@@ -16294,8 +16365,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1579651786848535",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/e4d9d66e5a84c4d9c437.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "文化",
         "歷史",
@@ -16374,8 +16445,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1579149426898771",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/185322278f5f35b8f23a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "治安",
         "警察",
@@ -16416,8 +16487,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1578977556915958",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/c49f2c8afe3c2a73ef53.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "照顧",
         "產業"
@@ -16453,8 +16524,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1578804563599924",
-      "imageAspect": 1.3318,
-      "imageUrl": "assets/feed-images/f84fc6fa941dd7503d7c.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "產業",
         "就業",
@@ -16540,8 +16611,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1578278216985892",
-      "imageAspect": 1.25,
-      "imageUrl": "assets/feed-images/280cf70e43c85f14c931.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "觀光",
         "美食",
@@ -16581,8 +16652,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "facebook:1577984533681927",
-      "imageAspect": 1.5013,
-      "imageUrl": "assets/feed-images/3737b234bb21741c0523.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "預算",
         "委員會",
