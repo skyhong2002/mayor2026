@@ -1,235 +1,235 @@
 {
-  "currentStep": "",
-  "heartbeatAt": "2026-09-18T15:25:37.679921+00:00",
+  "currentStep": "publish github pages",
+  "heartbeatAt": "2026-09-18T16:01:05.882840+00:00",
   "maxPostAgeDays": 30,
-  "message": "Pipeline completed",
-  "pid": 54925,
-  "startedAt": "2026-09-18T15:23:51.037387+00:00",
-  "status": "ok",
+  "message": "",
+  "pid": 40287,
+  "startedAt": "2026-09-18T16:00:00.284009+00:00",
+  "status": "running",
   "steps": [
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/sync_pipeline_data.py",
         "restore"
       ],
-      "finishedAt": "2026-09-18T15:23:52.024149+00:00",
+      "finishedAt": "2026-09-18T16:00:01.707513+00:00",
       "name": "restore pipeline data",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:23:51.038204+00:00",
+      "startedAt": "2026-09-18T16:00:00.284912+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/build_social_sources.py"
       ],
-      "finishedAt": "2026-09-18T15:23:52.046970+00:00",
+      "finishedAt": "2026-09-18T16:00:01.731535+00:00",
       "name": "build social sources",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:23:52.024516+00:00",
+      "startedAt": "2026-09-18T16:00:01.707899+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/rsshub_fetcher.py"
       ],
-      "finishedAt": "2026-09-18T15:24:35.209892+00:00",
+      "finishedAt": "2026-09-18T16:00:42.323503+00:00",
       "name": "fetch rsshub",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:23:52.047298+00:00",
+      "startedAt": "2026-09-18T16:00:01.731835+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/youtube_ytdlp_fetcher.py"
       ],
-      "finishedAt": "2026-09-18T15:25:02.289576+00:00",
+      "finishedAt": "2026-09-18T16:00:57.879822+00:00",
       "name": "fetch youtube",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:24:35.210986+00:00",
+      "startedAt": "2026-09-18T16:00:42.325590+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/apify_facebook_fetcher.py"
       ],
-      "finishedAt": "2026-09-18T15:25:02.339761+00:00",
+      "finishedAt": "2026-09-18T16:00:57.927536+00:00",
       "name": "fetch facebook apify",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:02.290080+00:00",
+      "startedAt": "2026-09-18T16:00:57.880381+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/official_site_fetcher.py"
       ],
-      "finishedAt": "2026-09-18T15:25:07.747534+00:00",
+      "finishedAt": "2026-09-18T16:01:03.384525+00:00",
       "name": "fetch official sites",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:02.340160+00:00",
+      "startedAt": "2026-09-18T16:00:57.927923+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/social_feed_watchdog.py",
         "--max-post-age-days",
         "30"
       ],
-      "finishedAt": "2026-09-18T15:25:07.946842+00:00",
+      "finishedAt": "2026-09-18T16:01:03.491034+00:00",
       "name": "watch social feeds",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:07.747980+00:00",
+      "startedAt": "2026-09-18T16:01:03.385066+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/fetch_media_cache.py"
       ],
-      "finishedAt": "2026-09-18T15:25:11.963518+00:00",
+      "finishedAt": "2026-09-18T16:01:03.667342+00:00",
       "name": "cache media",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:07.947231+00:00",
+      "startedAt": "2026-09-18T16:01:03.491518+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/classify_context.py"
       ],
-      "finishedAt": "2026-09-18T15:25:19.848365+00:00",
+      "finishedAt": "2026-09-18T16:01:03.846582+00:00",
       "name": "classify post topics and posting intent with AI",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:11.964021+00:00",
+      "startedAt": "2026-09-18T16:01:03.667708+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/build_public_data.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.062228+00:00",
+      "finishedAt": "2026-09-18T16:01:04.065384+00:00",
       "name": "build public data",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:19.848818+00:00",
+      "startedAt": "2026-09-18T16:01:03.847035+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/build_spectrum.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.208475+00:00",
+      "finishedAt": "2026-09-18T16:01:04.206453+00:00",
       "name": "build spectrum",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.062636+00:00",
+      "startedAt": "2026-09-18T16:01:04.065861+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/build_qualitative.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.319324+00:00",
+      "finishedAt": "2026-09-18T16:01:04.299739+00:00",
       "name": "build qualitative comparisons",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.208881+00:00",
+      "startedAt": "2026-09-18T16:01:04.206907+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/generate_rss_feeds.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.417118+00:00",
+      "finishedAt": "2026-09-18T16:01:04.380434+00:00",
       "name": "generate rss feeds",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.319748+00:00",
+      "startedAt": "2026-09-18T16:01:04.300233+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/build_status_page.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.667429+00:00",
+      "finishedAt": "2026-09-18T16:01:04.575619+00:00",
       "name": "build status page",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.417549+00:00",
+      "startedAt": "2026-09-18T16:01:04.380902+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/generate_site_pages.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.775023+00:00",
+      "finishedAt": "2026-09-18T16:01:04.667322+00:00",
       "name": "generate site pages",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.667834+00:00",
+      "startedAt": "2026-09-18T16:01:04.576042+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/generate_seo_pages.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.795769+00:00",
+      "finishedAt": "2026-09-18T16:01:04.687491+00:00",
       "name": "generate SEO pages",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.775461+00:00",
+      "startedAt": "2026-09-18T16:01:04.667857+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/check_source_coverage.py"
       ],
-      "finishedAt": "2026-09-18T15:25:20.838764+00:00",
+      "finishedAt": "2026-09-18T16:01:04.730315+00:00",
       "name": "check source coverage",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.796119+00:00",
+      "startedAt": "2026-09-18T16:01:04.687911+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/validate_public_outputs.py"
       ],
-      "finishedAt": "2026-09-18T15:25:21.121268+00:00",
+      "finishedAt": "2026-09-18T16:01:04.906350+00:00",
       "name": "validate public outputs",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:20.839186+00:00",
+      "startedAt": "2026-09-18T16:01:04.730792+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/sync_pipeline_data.py",
         "publish"
       ],
-      "finishedAt": "2026-09-18T15:25:26.364359+00:00",
+      "finishedAt": "2026-09-18T16:01:05.882071+00:00",
       "name": "publish pipeline data",
       "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:21.121751+00:00",
+      "startedAt": "2026-09-18T16:01:04.906881+00:00",
       "status": "ok"
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
         "scripts/publish_github_pages.py"
       ],
-      "finishedAt": "2026-09-18T15:25:37.678943+00:00",
+      "finishedAt": "",
       "name": "publish github pages",
-      "returnCode": 0,
-      "startedAt": "2026-09-18T15:25:26.365351+00:00",
-      "status": "ok"
+      "returnCode": null,
+      "startedAt": "2026-09-18T16:01:05.882837+00:00",
+      "status": "running"
     }
   ],
   "version": 1
