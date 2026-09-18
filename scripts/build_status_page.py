@@ -358,7 +358,7 @@ def build_status() -> dict[str, Any]:
         "degraded" if current_errors or overdue or blocked else "ok",
         f"{len(active_rows)} 個可抓取來源；{len(current_errors)} 個未恢復錯誤、{len(overdue)} 個排程逾期、{len(blocked)} 個受冷卻／額度限制。",
         [f"{len(quiet)} 個來源久未發文；內容時間與抓取是否成功分開判斷，不因沉寂自動停用。",
-         "每個來源的最近成功、下次排程、停用設定及既有查證紀錄見下方明細。", *[
+         "逐來源抓取紀錄與停用資訊可在 Status JSON 查閱。", *[
              f"久未發文：{r['name']}（{r['id']}），最新內容 {(r['latestPostAt'] or '')[:10]}" for r in quiet]]))
 
     degraded = [c for c in components if c["status"] in {"down", "degraded", "blocked"}]
@@ -408,7 +408,9 @@ def html_escape(value: Any) -> str:
 
 
 def render_badge(status: str, label: str | None = None) -> str:
-    return f'<span class="status-badge status-{html_escape(status)}">{html_escape(label or STATUS_LABELS.get(status, status))}</span>'
+    style = {"scheduled": "ok", "blocked": "degraded", "error": "degraded",
+             "disabled": "unknown", "overdue": "degraded"}.get(status, status)
+    return f'<span class="status-badge status-{html_escape(style)}">{html_escape(label or STATUS_LABELS.get(status, status))}</span>'
 
 
 def render_metric(label: str, value: Any, note: str = "") -> str:
@@ -424,8 +426,9 @@ def render_metric(label: str, value: Any, note: str = "") -> str:
 def render_component_card(item: dict[str, Any]) -> str:
     details = "".join(f"<li>{html_escape(detail)}</li>" for detail in item.get("details", []))
     details_html = f'<ul class="status-detail-list">{details}</ul>' if details else ""
+    style = {"scheduled": "ok", "blocked": "degraded"}.get(item.get("status"), item.get("status"))
     return f"""
-      <article class="status-component-card status-card-{html_escape(item.get('status'))}">
+      <article class="status-component-card status-card-{html_escape(style)}">
         <div class="status-component-head">
           <h2>{html_escape(item.get('name'))}</h2>
           {render_badge(str(item.get('status')), str(item.get('label')))}
@@ -495,35 +498,6 @@ def render_error_list(errors: list[dict[str, Any]]) -> str:
     return "\n".join(items)
 
 
-def render_source_table(rows: list[dict]) -> str:
-    rendered = []
-    for row in rows:
-        search = f"{row['name']} {row['id']} {PLATFORM_LABELS.get(row['platform'], row['platform'])}"
-        group = "active" if row["fetchable"] else "inactive"
-        attention = "true" if row["status"] in {"error", "overdue", "blocked"} else "false"
-        content = taipei_label(parse_time(row.get("latestPostAt")))
-        if row["contentStatus"] == "quiet":
-            content += "（久未發文）"
-        success = taipei_label(parse_time(row.get("lastSuccess")))
-        if row.get("successEvidence") == "inbox":
-            success += "（歷史收錄）"
-        detail = row.get("reason") or row.get("lastError") or ""
-        if row.get("consecutiveFailures"):
-            detail += f"（連續失敗 {row['consecutiveFailures']} 次）"
-        if row["status"] == "disabled":
-            detail += "；" + row.get("evidence", "")
-        interval = row.get("targetIntervalHours")
-        schedule = taipei_label(parse_time(row.get("nextScheduledAt"))) if row["fetchable"] else "不排程"
-        if interval:
-            schedule += f"（約 {interval:g} 小時）"
-        rendered.append(f"""<tr data-source-group="{group}" data-source-attention="{attention}" data-source-search="{html_escape(search)}">
-          <th scope="row"><a href="{html_escape(row['url'])}">{html_escape(row['name'])}</a><small>{html_escape(row['id'])}</small><small>{html_escape(PLATFORM_LABELS.get(row['platform'], row['platform']))} · {html_escape(row['backend'])}</small></th>
-          <td>{render_badge(row['status'])}<small>{html_escape(detail)}</small></td>
-          <td>{html_escape(success)}<small>最近嘗試：{html_escape(taipei_label(parse_time(row.get('lastAttempt'))))}</small><small>最近回傳：{html_escape(row.get('lastItems') if row.get('lastItems') is not None else '未記錄')} 筆</small></td>
-          <td>{html_escape(schedule)}</td><td>{html_escape(content)}</td></tr>""")
-    return '<div class="status-table-wrap"><table class="status-table status-source-table"><thead><tr><th>來源</th><th>狀態／原因</th><th>最近成功</th><th>下次預計排程</th><th>最新內容</th></tr></thead><tbody>' + "".join(rendered) + '</tbody></table></div>'
-
-
 def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
     overall = status["overall"]
     metrics = status["metrics"]
@@ -566,8 +540,7 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
               {render_badge(overall["status"], overall["label"])}
               <strong>{html_escape(overall["summary"])}</strong>
             </div>
-            <p>快照時間 <time id="status-generated-at" datetime="{html_escape(status.get("generatedAt"))}">{html_escape(status.get("generatedAt"))}</time></p>
-            <p id="status-stale-warning" hidden>此快照已超過 8 小時未更新，請檢查排程或發布狀態。</p>
+            <p>快照時間 {html_escape(status.get("generatedAt"))}</p>
             <div class="feed-links">
               <a href="../api/status.json">Status JSON</a>
               <a href="../feeds/">RSS</a>
@@ -631,18 +604,6 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
         </div>
       </section>
 
-      <section class="band status-sources-band">
-        <div class="band-inner">
-          <div class="section-heading"><div><p class="section-kicker">Sources</p><h2>逐來源抓取狀態</h2></div></div>
-          <p>時間為臺灣時間。每 6 小時執行排程；下次時間為預估，仍受冷卻、批次容量與預算影響。歷史內容時間不代表最近抓取時間。</p>
-          <div class="status-source-controls">
-            <label>搜尋來源 <input id="source-search" type="search" placeholder="候選人、平台或帳號"></label>
-            <label>顯示 <select id="source-filter"><option value="active">可抓取來源</option><option value="attention">需要注意</option><option value="inactive">停用／僅連結</option><option value="all">全部來源</option></select></label>
-            <span id="source-visible-count" aria-live="polite"></span>
-          </div>
-          {render_source_table(status.get("sources", []))}
-        </div>
-      </section>
       <section class="band status-errors-band">
         <div class="band-inner">
           <div class="section-heading">
@@ -658,7 +619,6 @@ def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
         </div>
       </section>
     </main>
-    <script src="../assets/status.js?v={asset_version}" defer></script>
 
     <footer class="site-footer">
       <div class="site-footer-inner">

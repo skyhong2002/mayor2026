@@ -9,7 +9,7 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - `/source/`：公開來源列表；`/source/<candidate>/`：單一候選人帳號清單（含性質與驗證等級）
   + 跨平台合併時間軸與議題比例（舊網址 `/<city>/<candidate>/` 已改為轉址到這裡）
 - `/spectrum/`：議題光譜總覽；`/spectrum/<topic>/`：單一議題各候選人比較
-- `/status/`：資料管線狀態（逐來源最近成功／下次排程、目前錯誤、冷卻與預算、停用及僅連結來源；[機制說明](docs/ingestion-health.md)）
+- `/status/`：資料管線狀態（維持原有版型，修正目前錯誤、冷卻與預算狀態；逐來源紀錄由 JSON API 提供；[機制說明](docs/ingestion-health.md)）
 - `/policy-match/`：匿名選擇市政優先議題，對照候選人自主政策倡議貼文
 - `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）
 - `/feeds/`：RSS 訂閱入口；每位候選人一條 `<id>.xml` 與對應 `<id>.json`（近 50 筆更新；
