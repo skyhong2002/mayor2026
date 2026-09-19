@@ -19,8 +19,76 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 599,
+  "count": 601,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-19T16:02:02+00:00",
+        "inputHash": "81613f33d76150728c2de410d1711f619ae2182199421b2e74b08f7469b0afe2",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:xGQATT8OzO0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/bbaaab2a13c8e7fefd98.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-19T14:08:07+00:00",
+      "postingIntent": {
+        "confidence": 0.62,
+        "label": "主動發文",
+        "reason": "提及兒童通學安全與市民相關議題，但內容不完整，未見回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "Councilor Chen Tzu-hui cares deeply about everything from children's commuting safety to citizens...",
+      "topicScores": {
+        "交通": 0.82
+      },
+      "topics": [
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/xGQATT8OzO0"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-19T16:02:02+00:00",
+        "inputHash": "9792d36e27e005228db2ca7c7993e996d92bbeb16c16c4fb1b058787ed5fd8bf",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Ddd_0KMlCRq",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/8e9ddb00cca5af45e206.webp",
+      "keywords": [
+        "音樂"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-19T12:20:43+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "分享參加黨慶音樂會及移動過程，沒有具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:黨慶音樂會\n我一路划回台北了，有點喘\n\n聽說等等要唱歌？",
+      "topicScores": {
+        "文化觀光": 0.55,
+        "競選": 0.7
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Ddd_0KMlCRq"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
