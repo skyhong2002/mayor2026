@@ -19,8 +19,42 @@
     "name": "謝龍介",
     "party": "國民黨"
   },
-  "count": 488,
+  "count": 489,
   "posts": [
+    {
+      "agendaRelevance": 0.28,
+      "candidateId": "hsieh-lung-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-20T16:02:34+00:00",
+        "inputHash": "44e231e0f9e037b1ec5df1050b4bb55018e93da56d0c64cafebf955e0a898a50",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/Ddf7Wm8SoLj/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/455441ced7b7c2c6af66.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-20T06:20:33+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "概括承諾回應市民問題並處理，未指向特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "hsieh-lc-ig",
+      "text": "市民一起來當市長！「反應問題」龍介就來處理",
+      "topicScores": {
+        "競選": 0.75,
+        "議會監督": 0.78
+      },
+      "topics": [
+        "議會監督",
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/Ddf7Wm8SoLj/"
+    },
     {
       "agendaRelevance": 0.18,
       "candidateId": "hsieh-lung-chieh",
@@ -13081,8 +13115,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:Ni6h2U8Z59U",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/4e4d50892163511f158d.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-07-22T10:05:46+00:00",

@@ -19,8 +19,53 @@
     "name": "賴瑞隆",
     "party": "民進黨"
   },
-  "count": 463,
+  "count": 465,
   "posts": [
+    {
+      "agendaRelevance": 0.92,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-09-20T16:02:34+00:00",
+        "inputHash": "fa0828bf3a1a100f6848f281fbf2f5913ecabb41db6e2e240f599e4fbc68fea7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Ddg2_smCeu4",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/13d94e655cdc0a3e8bcd.webp",
+      "keywords": [
+        "後援會",
+        "經濟",
+        "產業",
+        "科技",
+        "AI",
+        "育兒",
+        "補助",
+        "照顧"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-20T15:01:23+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出高雄產業升級及育兒、產後照顧與婦女就業政策承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-threads",
+      "text": "@zenolai:這個週末，我們連續成立了工業區、姊妹會、客家、左營楠梓四個後援總會，看到大家站出來相挺，心裡滿是感動和責任。\n\n高雄的發展引擎正在全速運轉。在工業區後援會上，我向企業界承諾，未來的高雄不能只當AI的房東，我們必須成為AI的股東。傳統產業和科技產業要互相加值，帶動高雄經濟大步向前。\n\n城市的進步，更需要溫暖的力量支撐。在姊妹會上， @bikhimhsiao 蕭副總統特別到場支持，滿場的熱情讓我非常感動。我承諾推動「雄愛媽媽」三大政策，從加碼育兒補助、擴大產後照顧，到協助重返職場，高雄一定會做每一位女性最堅強的後盾。",
+      "topicScores": {
+        "社福": 0.9,
+        "競選": 0.95,
+        "經濟": 0.9
+      },
+      "topics": [
+        "競選",
+        "經濟",
+        "社福"
+      ],
+      "url": "https://www.threads.com/t/Ddg2_smCeu4"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",
@@ -88,6 +133,40 @@
         "文化觀光"
       ],
       "url": "https://www.facebook.com/reel/4042986329177374/"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-09-20T16:02:34+00:00",
+        "inputHash": "4633e6ca70a1ebd104b4f3efdca1ef5f386d38778652b9dee8105133cdc485b3",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdfVDtolGDT/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/1f345aebaf2ae9d00f90.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-20T00:46:11+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享划SUP體驗高雄水域魅力，屬休閒活動內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-ig",
+      "text": "「隆捲風」遇上「洋流」，這次我們划起SUP，一起感受高雄的水上魅力！",
+      "topicScores": {
+        "文化觀光": 0.75,
+        "體育": 0.94
+      },
+      "topics": [
+        "體育",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DdfVDtolGDT/"
     },
     {
       "agendaRelevance": 0.03,

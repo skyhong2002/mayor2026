@@ -19,8 +19,72 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 608,
+  "count": 610,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-20T16:02:34+00:00",
+        "inputHash": "50150f7608b31297832e37020570ad948755577002d2f259581a8462994a2aae",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Ddg7HstCYKj",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/e8968458e18aabd46fa6.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-20T15:37:25+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享與友人逛中壢夜市及品嘗小吃，屬日常活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:謝謝學長帶我飛！\n⠀\n刈包有夠好吃\n然後我人生第一次吃糖葫蘆\n⠀\n今天我們勇敢走進夜市\n大家在夜市前就自動摩西分海\n實在有夠厲害\n⠀\n謝謝大家的熱情\n我愛中壢的大家！",
+      "topicScores": {
+        "文化觀光": 0.98
+      },
+      "topics": [
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Ddg7HstCYKj"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-20T16:02:34+00:00",
+        "inputHash": "92847f5f98935e40bc58adc02714e3aead9e92be69c088ba08b0298f660d0e10",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:qb3PnKQbdyM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/1d981609b9ab0ea956a9.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-20T15:08:44+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享個人座右銘，未涉及公共議題或回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-yt-personal",
+      "text": "\"The shortest shortcut is the long way 'round\"—that has always been my motto",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.youtube.com/shorts/qb3PnKQbdyM"
+    },
     {
       "agendaRelevance": 0.05,
       "candidateId": "shen-poyang",
@@ -17412,8 +17476,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DbGUF9WSYKi/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/1c61dd16088e5f1b7b8f.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "instagram",
       "postedAt": "2026-07-22T14:34:44+00:00",
