@@ -19,8 +19,78 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 473,
+  "count": 475,
   "posts": [
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-20T10:02:03+00:00",
+        "inputHash": "33251b37df95a47db7a7f29a49ba975253d7cbebfed6ccb8d3118dc3264166ef",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Ddf5fjjiWmi",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/8ea786bc67ca6900d823.webp",
+      "keywords": [
+        "造勢"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-20T06:04:34+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "記錄造勢後陪同市長逛夜市，屬競選與地方活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:919鳳山大造勢之後，我帶著蔣萬安市長到 六合夜市，感受到高雄鄉親滿滿的熱情。",
+      "topicScores": {
+        "文化觀光": 0.72,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.threads.com/t/Ddf5fjjiWmi"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-20T10:02:03+00:00",
+        "inputHash": "622a5d2ff22c994884524a3da00fa1c7012e6e85b52f77d902f08f06e725c3eb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:7QJdfzH9zpw",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/8167eac3bb4ac123c61e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-20T06:02:36+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "記錄造勢後陪同市長逛六合夜市，屬競選及地方活動紀錄。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "After the 9/19 Fengshan rally, I brought Mayor #ChiangWanAn to #LiuheNightMarket and felt the ove...",
+      "topicScores": {
+        "文化觀光": 0.7,
+        "競選": 0.95
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/7QJdfzH9zpw"
+    },
     {
       "agendaRelevance": 0.03,
       "candidateId": "ko-chih-en",
