@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/db1b2830c6bf6c787dc3.webp",
+    "avatarUrl": "assets/source-avatars/47ebb0bcaf36fbd56ca0.webp",
     "city": "taipei",
     "cityLabel": "臺北市",
     "id": "chiang-wanan",
@@ -19,8 +19,40 @@
     "name": "蔣萬安",
     "party": "國民黨"
   },
-  "count": 104,
+  "count": 105,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-20T04:03:43+00:00",
+        "inputHash": "07358f2ef0d44a01e13b62b00afb2c1fefe0cf53c5decb800c3cb51b8d0eadab",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1639808677509083",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/c6acbec19093f066b8f2.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-19T13:44:11.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以口號感謝高雄支持並宣示繼續前進，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "川流不息，有志一同！\n謝謝港都的熱情，謝謝高雄的鄉親，我們繼續向前！",
+      "topicScores": {
+        "競選": 0.9
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid0hZMMXeZHfKMfYVTsN18SfvKcG4d6c6WSwkhxGk7TZ3oabdbWYebSMEUtWybf7Kryl"
+    },
     {
       "agendaRelevance": 0.88,
       "candidateId": "chiang-wanan",

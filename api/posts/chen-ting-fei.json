@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/76ec7012bdc99131e6d8.webp",
+    "avatarUrl": "assets/source-avatars/bd8142a3a4ae5af466c2.webp",
     "city": "tainan",
     "cityLabel": "臺南市",
     "id": "chen-ting-fei",
@@ -19,7 +19,7 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 281,
+  "count": 282,
   "posts": [
     {
       "agendaRelevance": 0.06,
@@ -52,6 +52,38 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DdeEthmD3Sm"
+    },
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-20T04:03:43+00:00",
+        "inputHash": "9ac4aed86fc21b3bf2665f31eeaa1fa44847f54931a42c71d16b0c1bc12b43fb",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1650455963108992",
+      "imageAspect": 1.3348,
+      "imageUrl": "assets/feed-images/cfe0523130f7f5b926e7.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-19T12:58:12.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "參與政黨創黨週年音樂會並與同志相聚，屬政治活動紀錄與動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-fb",
+      "text": "民進黨創黨40週年音樂會，和一路並肩奮鬥的好戰友忙碌中相聚！\n    \n40年初心不變，繼續作伙向前行、一起為台灣打拚！💚\n    \n#民進黨40週年 #台灣隊 #作伙向前行",
+      "topicScores": {
+        "競選": 0.85
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.facebook.com/fififans/posts/pfbid0emikyhYqgBb8JRLjmsusVtwJab9rcf88g45cBRGHkyTE6Hh8HMhoV5wUbgSAtVtkl"
     },
     {
       "agendaRelevance": 0.01,
