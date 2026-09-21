@@ -19,8 +19,42 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 592,
+  "count": 594,
   "posts": [
+    {
+      "agendaRelevance": 0.3,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-21T16:02:29+00:00",
+        "inputHash": "914ab188cc4281a9e31e20e936bdfb3cec15dc694e74fd499e7cf8080a34e76a",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:RNbgSnr1jug",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/04fa1a99c3372b5626c8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-21T11:00:07+00:00",
+      "postingIntent": {
+        "confidence": 0.92,
+        "label": "主動發文",
+        "reason": "以競選宣傳方式主張海線建設加速，但未交代具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "張惇涵力挺何欣純｜海線建設不能再等！🌊",
+      "topicScores": {
+        "交通": 0.55,
+        "競選": 0.92
+      },
+      "topics": [
+        "競選",
+        "交通"
+      ],
+      "url": "https://www.youtube.com/shorts/RNbgSnr1jug"
+    },
     {
       "agendaRelevance": 0.7,
       "candidateId": "ho-hsin-chun",
@@ -16596,8 +16630,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbIWOg0mfxh",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/7ba83b646cb870c3e372.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "教育"
       ],
@@ -21164,6 +21198,40 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=bZQ2NVayVsk"
+    },
+    {
+      "agendaRelevance": 0.18,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-21T16:02:29+00:00",
+        "inputHash": "26268e7347d4c00abcf2e51303425802424c3d62ff8e3951024f3f8431d84014",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:3KhdOI5vqKs",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/48ed400f9ac4493357cf.webp",
+      "keywords": [
+        "競總"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "報導競選總部成立及支持者站台，重點是競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "【何欣純海線競總成立】張惇涵力挺何欣純 台中不能原地踏步",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=3KhdOI5vqKs"
     }
   ],
   "version": 1

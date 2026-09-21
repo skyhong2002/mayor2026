@@ -19,8 +19,74 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 321,
+  "count": 323,
   "posts": [
+    {
+      "agendaRelevance": 0.12,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-21T16:02:29+00:00",
+        "inputHash": "04559df25f06d0249a51f952196bb4c56e5691a6108ca558511fa4ca31e4ae23",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdjPleoE2xY",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/d967b8bee704ab7567df.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-21T13:14:44+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "記錄與市長同走橋梁的行程，主要是雙北合作與競選式宣傳。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:今晚，我與侯友宜市長、蔣萬安市長，一起走上川端橋。\n\n這座橋跨越新店溪，連接雙北的風景。\n\n雙北連線，我們一起拚！",
+      "topicScores": {
+        "交通": 0.7,
+        "競選": 0.62
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdjPleoE2xY"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-21T16:02:29+00:00",
+        "inputHash": "63648035d11ec6e644c567007820681a80c3a47a791dab8246188cd51db98cf7",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdjGCeRAZ71",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/116cda589ff4045552a9.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-21T11:51:22+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享個人飲食偏好，沒有公共議題或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-threads",
+      "text": "@hammer__lee:行程空檔補給一下，最愛鬍鬚張筍絲。\n\n但滷肉飯，怎麼可以不拌？當然要拌，這樣才香！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdjGCeRAZ71"
+    },
     {
       "agendaRelevance": 0.34,
       "candidateId": "lee-shih-chuan",
@@ -8870,8 +8936,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbIag8piG0X",
-      "imageAspect": 0.5634,
-      "imageUrl": "assets/feed-images/1821ad20dcf5ae436e6a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "觀光"
       ],
@@ -8906,8 +8972,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DbIafYws2xX/",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/2a7cf44e830642a22f30.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "觀光"
       ],
@@ -8942,8 +9008,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbH98wak5pN",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/b0543e8efa94defa7b29.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "交通",
         "捷運",
@@ -8989,8 +9055,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "instagram:https://www.instagram.com/p/DbH96W8mFp-/",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/185f878ef440ee64f4c7.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "交通",
         "捷運",
