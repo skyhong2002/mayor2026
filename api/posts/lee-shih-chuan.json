@@ -19,7 +19,7 @@
     "name": "李四川",
     "party": "國民黨"
   },
-  "count": 323,
+  "count": 325,
   "posts": [
     {
       "agendaRelevance": 0.12,
@@ -56,6 +56,40 @@
       "url": "https://www.threads.com/t/DdjPleoE2xY"
     },
     {
+      "agendaRelevance": 0.12,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-21T22:01:51+00:00",
+        "inputHash": "27380ec29c1a7d0b8e74ea35f20fb20ebd87662127f1f947f9f2d9f51f2fcd29",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdjPWViMqkJ/",
+      "imageAspect": 1.145,
+      "imageUrl": "assets/feed-images/c8a2461e44bb980871c7.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-21T13:13:17+00:00",
+      "postingIntent": {
+        "confidence": 0.96,
+        "label": "主動發文",
+        "reason": "記錄與雙北市長同行走橋行程並宣傳合作，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "今晚，我與 @hou.yuih 侯友宜市長、 @wanan.chiang 蔣萬安市長，一起走上川端橋。\n\n這座橋跨越新店溪，連接雙北的風景。\n\n雙北連線，我們一起拚！",
+      "topicScores": {
+        "交通": 0.76,
+        "競選": 0.72
+      },
+      "topics": [
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.instagram.com/p/DdjPWViMqkJ/"
+    },
+    {
       "agendaRelevance": 0.0,
       "candidateId": "lee-shih-chuan",
       "classification": {
@@ -86,6 +120,38 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DdjGCeRAZ71"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "lee-shih-chuan",
+      "classification": {
+        "classifiedAt": "2026-09-21T22:01:51+00:00",
+        "inputHash": "faac1b5f425d5b076a78e078f6bd1c6f4ebdb4e97d11afb7db62d1a4f39824e4",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdjF-SssPYl/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/c04141f318b0cf3b4a0c.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-21T11:51:16+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "分享個人飲食偏好，沒有公共議題或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lee-sc-ig-main",
+      "text": "行程空檔補給一下，最愛鬍鬚張筍絲。\n\n但滷肉飯，怎麼可以不拌？當然要拌，這樣才香！",
+      "topicScores": {
+        "生活": 0.99
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DdjF-SssPYl/"
     },
     {
       "agendaRelevance": 0.34,
