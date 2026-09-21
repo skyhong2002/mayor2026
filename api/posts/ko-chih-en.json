@@ -19,8 +19,40 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 479,
+  "count": 480,
   "posts": [
+    {
+      "agendaRelevance": 0.1,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-21T04:02:08+00:00",
+        "inputHash": "a6b536e0b486b88c793d502115042a6c3e079caad53df1dd9de957471c7ae464",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:-6GpZHPVH4I",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/765d23c97f6143fdaa61.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-21T04:00:10+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "競選造勢場合演講精華紀錄，未呈現具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "[9/19 Fengshan Grand Rally | Highlights of Ko Chih-en's Speech]",
+      "topicScores": {
+        "競選": 0.98
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/-6GpZHPVH4I"
+    },
     {
       "agendaRelevance": 0.96,
       "candidateId": "ko-chih-en",
