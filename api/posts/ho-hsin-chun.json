@@ -19,8 +19,43 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 600,
+  "count": 602,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-22T22:01:58+00:00",
+        "inputHash": "cb1ef88af70bdb23670ecdf70bbf34c7a5f6eb9dfaafd6c2d982df7e0d8c8194",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdluWqSABK9",
+      "imageAspect": 0.5624,
+      "imageUrl": "assets/feed-images/dff46e16e0b823e1186b.webp",
+      "keywords": [
+        "競選",
+        "投票"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-22T12:22:52+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "競選總部成立與投票動員，屬純競選宣傳，沒有具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:競選總部成立當天，謝謝每一位來到現場、為我加油的台中純派們！謝謝各位撥空前來，一起見證台中換新的可能！\n\n11/28，一定要去投票！",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdluWqSABK9"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "ho-hsin-chun",
@@ -52,6 +87,45 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/Ddk-PbeEbE4"
+    },
+    {
+      "agendaRelevance": 0.65,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-22T22:01:58+00:00",
+        "inputHash": "ed87e77a86e05a699f97d3885ecbb558c53db8fec2a2b67079d5f5679ba3e6ff",
+        "method": "ai",
+        "model": "gpt-5.6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/Ddk8PT-xK3J/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/2bfc3bea028575e543b8.webp",
+      "keywords": [
+        "交通",
+        "公車"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-09-22T05:05:33+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以公車廣告宣傳台中市長參選及交通、福利與城市願景。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "大家看到我的跑跑純公車廣告了嗎？\n\n我要衝刺台中市長，為市民謀福利，公車乘載著我對台中的願景與祝福，\n何欣純要做好3件事：交通串聯、年輕城市、福利升級！\n\n新台中，就交給何欣純！",
+      "topicScores": {
+        "交通": 0.82,
+        "社福": 0.7,
+        "競選": 0.96
+      },
+      "topics": [
+        "競選",
+        "交通",
+        "社福"
+      ],
+      "url": "https://www.instagram.com/p/Ddk8PT-xK3J/"
     },
     {
       "agendaRelevance": 0.54,
