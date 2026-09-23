@@ -22,6 +22,40 @@
   "count": 480,
   "posts": [
     {
+      "agendaRelevance": 0.0,
+      "candidateId": "lai-jui-lung",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "b5377ca591139c41526b29b6bdfc90e55096638986076b32d1433b8e5623da02",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:hrSi_PDfOVQ",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/ce87d0cc0c6228d8db12.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-23T09:17:07+00:00",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "分享與副總統製作紅龜粿的輕鬆活動紀錄，沒有政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "lai-jl-yt",
+      "text": "和蕭美琴副總統一起做紅龜粿，我做的比較大顆，剛好可以多分一口給大家！",
+      "topicScores": {
+        "文化觀光": 0.42,
+        "生活": 0.76
+      },
+      "topics": [
+        "生活",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/shorts/hrSi_PDfOVQ"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "lai-jui-lung",
       "classification": {
@@ -11979,8 +12013,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbN3Db2iRLw",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/bea1e4756ef66cda1b42.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "後援會",
         "交通",
@@ -17230,40 +17264,6 @@
         "競選"
       ],
       "url": "https://www.youtube.com/shorts/S7XKqa8OeK0"
-    },
-    {
-      "agendaRelevance": 0.0,
-      "candidateId": "lai-jui-lung",
-      "classification": {
-        "classifiedAt": "2026-09-23T10:02:13+00:00",
-        "inputHash": "b5377ca591139c41526b29b6bdfc90e55096638986076b32d1433b8e5623da02",
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:hrSi_PDfOVQ",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/ce87d0cc0c6228d8db12.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.94,
-        "label": "主動發文",
-        "reason": "分享與副總統製作紅龜粿的輕鬆活動紀錄，沒有政策主張。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lai-jl-yt",
-      "text": "和蕭美琴副總統一起做紅龜粿，我做的比較大顆，剛好可以多分一口給大家！",
-      "topicScores": {
-        "文化觀光": 0.42,
-        "生活": 0.76
-      },
-      "topics": [
-        "生活",
-        "文化觀光"
-      ],
-      "url": "https://www.youtube.com/shorts/hrSi_PDfOVQ"
     },
     {
       "agendaRelevance": 0.0,

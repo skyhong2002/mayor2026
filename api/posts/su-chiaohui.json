@@ -56,6 +56,38 @@
       "url": "https://www.threads.com/t/Ddn4166mfvf"
     },
     {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "642be78309cc84a642001837ef0ae739af8802cd7f34d61d1a25c750e3726701",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:0DaNz84n2Ek",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/661be5edf6b481fcc2d8.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-23T08:30:32+00:00",
+      "postingIntent": {
+        "confidence": 0.83,
+        "label": "主動發文",
+        "reason": "紀念馬太鞍洪災並表達團結勇氣，未回應特定他方說法或提出政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-yt",
+      "text": "One Year Since the Mata'an Floods: Taiwanese People Will Continue to Stand Together with Courage ...",
+      "topicScores": {
+        "防災": 0.91
+      },
+      "topics": [
+        "防災"
+      ],
+      "url": "https://www.youtube.com/shorts/0DaNz84n2Ek"
+    },
+    {
       "agendaRelevance": 0.16,
       "candidateId": "su-chiaohui",
       "classification": {
@@ -18051,8 +18083,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbN9nBZmVlx",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/fd35d16b7e1b12e52f04.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "弱勢",
         "照顧",
@@ -18091,8 +18123,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:2EMZuYr3V8A",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/3249ed0baf2b68e80a4d.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-07-25T12:00:38+00:00",
@@ -22915,38 +22947,6 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=A7Cpkc3byyQ"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "su-chiaohui",
-      "classification": {
-        "classifiedAt": "2026-09-23T10:02:13+00:00",
-        "inputHash": "642be78309cc84a642001837ef0ae739af8802cd7f34d61d1a25c750e3726701",
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:0DaNz84n2Ek",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/661be5edf6b481fcc2d8.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.83,
-        "label": "主動發文",
-        "reason": "紀念馬太鞍洪災並表達團結勇氣，未回應特定他方說法或提出政策。",
-        "type": "self_initiated"
-      },
-      "sourceId": "su-ch-yt",
-      "text": "One Year Since the Mata'an Floods: Taiwanese People Will Continue to Stand Together with Courage ...",
-      "topicScores": {
-        "防災": 0.91
-      },
-      "topics": [
-        "防災"
-      ],
-      "url": "https://www.youtube.com/shorts/0DaNz84n2Ek"
     }
   ],
   "version": 1

@@ -19,8 +19,45 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 636,
+  "count": 643,
   "posts": [
+    {
+      "agendaRelevance": 0.05,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "f4a60dc1495f01c1f9853ddaa506ff1fdb2b50ebb90fbcc4ba3128ddaca9e543",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdoQU33lPSJ",
+      "imageAspect": 1.7778,
+      "imageUrl": "assets/feed-images/da7d2d49d15e57243f1a.webp",
+      "keywords": [
+        "選舉",
+        "掃街"
+      ],
+      "platform": "threads",
+      "postedAt": "2026-09-23T11:57:24+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "掃街紀錄與選舉動員，提及關懷跌倒長者及安全提醒，未提出政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-threads-personal",
+      "text": "@pumashen:回到從小長大的五分埔掃街\n\n路上遇到的商家都好熱情\n還意外完成「沈家族大合照」😂\n\n途中看到兩位長輩不慎跌倒\n我趕快上前關心\n還好都沒有大礙\n後續也請志工陪同觀察\n請助理留下名片\n有需要都可以隨時聯絡我們\n\n謝謝大家的支持\n請大家回家注意安全\n平安最重要\n\n選舉很重要，安全更重要\n大家都要平平安安回家！",
+      "topicScores": {
+        "生活": 0.92,
+        "競選": 0.98
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdoQU33lPSJ"
+    },
     {
       "agendaRelevance": 0.12,
       "candidateId": "shen-poyang",
@@ -459,6 +496,119 @@
       "agendaRelevance": 0.02,
       "candidateId": "shen-poyang",
       "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "7e8dce24aea8cd95cdaa874d482cefb5fbdf48237b218d8a57ad07ab82fa184c",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:-Tg0dmZI8mjF4MsJ29Ddu",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/88f1b8ee3676f5ea3fd9.webp",
+      "keywords": [
+        "選舉",
+        "民調"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-22T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.77,
+        "label": "主動發文",
+        "reason": "僅列受訪與座談、民調及市長選舉等標籤，沒有可辨識的政策主張或回應對象。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0922受訪-2 #受訪 #影視座談會 #問A答A #民調 #城市願景 #學霸中二阿宅 #鄭朝方 #城市好設計帶來好效應 #「開罰不是保護，制度才要補洞」 #蘇巧慧 #雙北市長選舉 #回歸專業",
+      "topicScores": {
+        "文化觀光": 0.53,
+        "競選": 0.75,
+        "議會監督": 0.63
+      },
+      "topics": [
+        "競選",
+        "議會監督",
+        "文化觀光"
+      ],
+      "url": "https://puma.taipei/videos/-Tg0dmZI8mjF4MsJ29Ddu"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "b371d6bab6bf5baf4183f4ec23b93ad5128111e13fd9ef4964af02cd4794e48d",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:VnuzcrS7JLxOdfDobeX1g",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/bb6597301db3b6967796.webp",
+      "keywords": [
+        "觀光"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-22T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.86,
+        "label": "主動發文",
+        "reason": "列出受訪、夜市及無車日相關標籤，未呈現具體立場或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0922受訪-1 #受訪 #延三觀光夜市 #夜市帶貨王 #922國際無車日",
+      "topicScores": {
+        "交通": 0.7,
+        "文化觀光": 0.88
+      },
+      "topics": [
+        "文化觀光",
+        "交通"
+      ],
+      "url": "https://puma.taipei/videos/VnuzcrS7JLxOdfDobeX1g"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "7a9d8891650cfb824a7b329e9bd981bb75ec4e5da828ab364330b3fe027250d9",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:AJngrfdyTpKLgkzoH-gPt",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/42c56420b22c1ea19c21.webp",
+      "keywords": [
+        "國防"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-22T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.79,
+        "label": "主動發文",
+        "reason": "僅羅列專訪與兒童保護、樹木、國防採購等議題標籤，無實質主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0922受訪 #受訪 #王偉忠專訪沈伯洋 #市政討論 #兒童保護議題 #樹的議題 #民調公正性 #國防採購特別條例",
+      "topicScores": {
+        "兩岸外交": 0.59,
+        "治安": 0.75,
+        "環境": 0.61
+      },
+      "topics": [
+        "治安",
+        "環境",
+        "兩岸外交"
+      ],
+      "url": "https://puma.taipei/videos/AJngrfdyTpKLgkzoH-gPt"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
         "classifiedAt": "2026-09-21T16:02:29+00:00",
         "inputHash": "53f0507979b6e73c6f54743f6292637d23bca4c83c37230978f36be953d9d8e8",
         "method": "ai",
@@ -712,6 +862,40 @@
       "url": "https://www.youtube.com/shorts/_uYnHOU7qrQ"
     },
     {
+      "agendaRelevance": 0.01,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "b906cbb21a77b89579e0ebbb961ef62d4111918f172d4f96d984821aa37a9fa0",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:qraBE_gsb3JInLD1ya3CX",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/cb11e38daf980eec8463.webp",
+      "keywords": [],
+      "platform": "website",
+      "postedAt": "2026-09-21T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.8,
+        "label": "主動發文",
+        "reason": "只有受訪、城市治理與願景標籤，缺少可判定的政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0921受訪 #受訪 #城市治理能力 #城市願景",
+      "topicScores": {
+        "生活": 0.58,
+        "競選": 0.55
+      },
+      "topics": [
+        "生活",
+        "競選"
+      ],
+      "url": "https://puma.taipei/videos/qraBE_gsb3JInLD1ya3CX"
+    },
+    {
       "agendaRelevance": 0.03,
       "candidateId": "shen-poyang",
       "classification": {
@@ -940,6 +1124,83 @@
         "生活"
       ],
       "url": "https://www.threads.com/t/DdfqUWbEZOR"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "57c609012396e2ae49cfe6b595dde9bb5a96a542fa28280e62c4ce7f098b2292",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:D4vRq-IBjdQ-2ixTN06i2",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/cce3249526b0ff2fec02.webp",
+      "keywords": [
+        "後援會"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-20T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.83,
+        "label": "主動發文",
+        "reason": "僅列青年政策、後援會、市場動線等受訪標籤，未具體說明方案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0920受訪-1 #受訪 #青年政策 #青商後援會 #新世代扛起新時代 #城市交流 #市場動線規劃增加人潮 #北北基桃共同生活圈 #管理文化",
+      "topicScores": {
+        "交通": 0.58,
+        "競選": 0.65,
+        "經濟": 0.83
+      },
+      "topics": [
+        "經濟",
+        "競選",
+        "交通"
+      ],
+      "url": "https://puma.taipei/videos/D4vRq-IBjdQ-2ixTN06i2"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-23T16:02:03+00:00",
+        "inputHash": "b88ddcf8d4fd4ee0fc448d61b9d30b1207a7295e59929a7bc923f4a07c280e07",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "website:1mjpQwUUIi71BOpi9tgRh",
+      "imageAspect": 1.3333,
+      "imageUrl": "assets/feed-images/6e5b89f3f83b6c130b35.webp",
+      "keywords": [
+        "經濟",
+        "營養午餐"
+      ],
+      "platform": "website",
+      "postedAt": "2026-09-20T00:00:00+08:00",
+      "postingIntent": {
+        "confidence": 0.84,
+        "label": "主動發文",
+        "reason": "羅列市場、演唱會經濟、營養午餐及市政辯論等標籤，未呈現明確主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-web-campaign",
+      "text": "0920受訪 #受訪 #北投市場 #北高市政討論 #演唱會經濟 #雙城辯論 #城市治理能力 #國際觀 #市政願景 #營養午餐配套措施",
+      "topicScores": {
+        "教育": 0.64,
+        "競選": 0.64,
+        "經濟": 0.68
+      },
+      "topics": [
+        "經濟",
+        "教育",
+        "競選"
+      ],
+      "url": "https://puma.taipei/videos/1mjpQwUUIi71BOpi9tgRh"
     },
     {
       "agendaRelevance": 0.15,
