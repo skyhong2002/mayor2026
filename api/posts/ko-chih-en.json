@@ -19,8 +19,40 @@
     "name": "柯志恩",
     "party": "國民黨"
   },
-  "count": 497,
+  "count": 499,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "ce795f5c5ed3e6826678823e8648d51f360cc18b3cbfc6913d4c721cd4768297",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdoBlpxCRJK",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/691fbdda531ffefb8833.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-23T09:49:32+00:00",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "僅描述直播及帶來驚喜，沒有實質公共議題或政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-threads",
+      "text": "@prof.kochihen:發言人在直播，柯老師給他們帶來「驚喜」。",
+      "topicScores": {
+        "生活": 0.88
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.threads.com/t/DdoBlpxCRJK"
+    },
     {
       "agendaRelevance": 0.1,
       "candidateId": "ko-chih-en",
@@ -18858,6 +18890,38 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=rGz4h1nTBIo"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ko-chih-en",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "8fa712363695d542fbe8ae10623aa784ca8aa4f1fea054cdc34be7938b1f4389",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:EDS3dt1AGuM",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/f8bf431a55484406692e.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.72,
+        "label": "主動發文",
+        "reason": "描述柯教授直播帶來驚喜，未見回應他方說法或提出政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ko-ce-yt",
+      "text": "Spokesperson live-streaming, Professor Ke brings them a \"surprise\". #KeChihEn #CommonGoals #Kaohs...",
+      "topicScores": {
+        "競選": 0.73
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/EDS3dt1AGuM"
     }
   ],
   "version": 1

@@ -19,8 +19,40 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 604,
+  "count": 606,
   "posts": [
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "419e3eed4e01ca633a18f4d486cccaa8d08dca554fd6bc9a409d3a441701f2c9",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/DdnxBYtEcRq",
+      "imageAspect": 0.7426,
+      "imageUrl": "assets/feed-images/0cbb026e0adc3a80b930.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-23T07:23:52+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "邀請民眾參與城市走讀與交流，主要是活動宣傳，未提出具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-threads",
+      "text": "@a_chun1973:洋流交會，純情相遇！\n\n來～各、位、觀、眾、久、等、了！\n台中純派們，準備迎接洋流了嗎🌊\n\n9/27（日） 沈伯洋 @pumashen 將抵達台中，我們會從審計新村開始城市走讀。\n邀請大家一起來散步、一起聊聊台中的日常，也討論城市的未來願景。\n\n📍地點：審計新村 \n🕙 時間：9/27（日）10:00\n\n我們週日見💜🧡",
+      "topicScores": {
+        "競選": 0.92
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/DdnxBYtEcRq"
+    },
     {
       "agendaRelevance": 0.08,
       "candidateId": "ho-hsin-chun",
@@ -21589,6 +21621,38 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=bZQ2NVayVsk"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "57c7fdf8566bea1bae25130ccf27d8f2dff86f873257c60ebf78f9a3b61cb0fb",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:rXvb4OHM27A",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/db1eb7dc2080ee248e18.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "以六星市政口號號召台中團隊，屬競選動員，未說明具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純喊話29區台中隊 六星市政拚全國第一！",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=rXvb4OHM27A"
     }
   ],
   "version": 1
