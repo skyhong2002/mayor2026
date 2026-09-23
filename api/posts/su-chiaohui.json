@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/f381d1b891a38578813c.webp",
+    "avatarUrl": "assets/source-avatars/b70080aa90f0ab3e7a25.webp",
     "city": "new-taipei",
     "cityLabel": "新北市",
     "id": "su-chiaohui",
@@ -19,7 +19,7 @@
     "name": "蘇巧慧",
     "party": "民進黨"
   },
-  "count": 630,
+  "count": 633,
   "posts": [
     {
       "agendaRelevance": 0.16,
@@ -86,6 +86,40 @@
         "防災"
       ],
       "url": "https://www.youtube.com/shorts/0DaNz84n2Ek"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-23T22:03:16+00:00",
+        "inputHash": "f2d761f5ebdc3b6071dbc236210f032b6bf3b81da913021d9e4f42f0d44ec4b7",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1658077585674071",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/03fc285d9dc9e727ecff.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-23T08:30:15.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "追述洪災周年及持續協助災民的情形，屬災後關懷紀錄而非政策提案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "今天是花蓮馬太鞍溪堰塞湖洪災一周年，來自各地的「鏟子超人」，一鏟一鏟將厚重的淤泥清出家園，還有許多熱心朋友協助重型機具開挖、物資調度與車輛接駁，把急需的資源與人力送進災區。\n\n這是台灣人的團結與溫暖，也是台灣人的韌性。\n\n過去一年，我持續和Fata'an自救會、在地青年保持聯繫，希望提供大家最需要的幫助。感謝 Fata'an部落豐年祭總幹事 #張志雄 一直關心家園，也感謝中友家具、威特家電、東昇空調，默默捐贈近200件家具家電，讓受災家庭在清理家園後，有適合的桌椅好好坐下來、有適合的床鋪能好好睡一覺。\n\n災後一年，重建仍在進行中，我們會繼續自信勇敢地站在一起，守護我們的家園、守護台灣。",
+      "topicScores": {
+        "社福": 0.66,
+        "防災": 0.95
+      },
+      "topics": [
+        "防災",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/reel/2209766776417279/"
     },
     {
       "agendaRelevance": 0.16,
@@ -206,6 +240,48 @@
       "url": "https://www.instagram.com/p/DdnnzT8CWEE/"
     },
     {
+      "agendaRelevance": 0.52,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-23T22:03:16+00:00",
+        "inputHash": "9bfc987aefae68f654d54b5e2385c777da09e84ed61cc81838484d44890a5a13",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1658024975679332",
+      "imageAspect": 1.7771,
+      "imageUrl": "assets/feed-images/bafcbca5b3ac690ac910.webp",
+      "keywords": [
+        "競選",
+        "掃街",
+        "文化",
+        "觀光",
+        "商圈"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-23T05:56:23.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "在競選掃街與造勢中提出新莊文化觀光廊帶構想，並搭配競選動員。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "#新莊隊 大團結！四席力拚全壘打！\n\n今天和 吳秉叡 委員，鍾宏仁議員，以及新莊隊的 翁震州、林秉宥、陳岱吟 帶你贏、吳奕萱 新莊新萱言 四位議員及候選人團結在一起，大家也來到 #宏泰市場 掃街，除了展現新莊隊的氣勢，也和鄉親報告我們的成績和對新莊的願景。\n\n未來，我要和新莊隊一起推動 #國影中心 升級，打造集結金曲、金馬、金鐘的「 #三金博物館」；更要串聯新莊廟街、新莊體育館、中港大排及宏匯廣場，整合文化、運動、休閒與商圈，打造「 #觀光十字廊帶」，讓更多人走進新莊、認識新莊，帶動人潮與地方發展，也讓新莊人以自己的家鄉為榮！\n\n我也向大家預告，「北新莊聯合競選總部」即將正式成立，歡迎大家一起來相挺，為新莊隊加油！\n\n📍北新莊聯合競選總部成立大會\n日期：10/9（五）15:00開始入場\n地點：新莊體育館前廣場（中華路與公園路口）",
+      "topicScores": {
+        "文化觀光": 0.93,
+        "競選": 0.96,
+        "經濟": 0.69
+      },
+      "topics": [
+        "競選",
+        "文化觀光",
+        "經濟"
+      ],
+      "url": "https://www.facebook.com/chiaohui.su/posts/pfbid028DEymMVz1ApnTLsbmxSF8FfoU25ZgNurphhoh4FBZ5ELE7nVFRwQ7vvXaaAXsFkxl"
+    },
+    {
       "agendaRelevance": 0.82,
       "candidateId": "su-chiaohui",
       "classification": {
@@ -308,6 +384,42 @@
         "文化觀光"
       ],
       "url": "https://www.youtube.com/shorts/IHkGzYx_e_U"
+    },
+    {
+      "agendaRelevance": 0.34,
+      "candidateId": "su-chiaohui",
+      "classification": {
+        "classifiedAt": "2026-09-23T22:03:16+00:00",
+        "inputHash": "a427a083a2179b7049e43eb651323520ba0bbf1c0832b4d97e2c3d769b17413b",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1657883929026770",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3889bd69391569149d2a.webp",
+      "keywords": [
+        "文化"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-23T01:39:15.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以歌仔戲體驗與演出邀請為主，並概括表達傳承傳統戲曲的政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "su-ch-fb",
+      "text": "體驗一日歌仔戲學徒！邀請大家中秋來三重看《龍鳳情緣》\n\n我來和唐美雲、許秀年老師學習歌仔戲，老師們從唱七字調、水袖身段一一教學。殊不知我首次嘗試還未上手，還好老師們出手相救🤣\n\n感謝許多傳統戲曲工作者長期的努力，讓台灣本土文化可以被保存、傳承！我會繼續用政策、用活動，讓下一代的孩子認識傳統戲曲、喜歡傳統戲曲！\n\n本週日(9/27)晚上7點，在三重向日葵廣場由唐美雲歌仔戲團帶來《龍鳳情緣》，邀請大家「做伙來看戲」！",
+      "topicScores": {
+        "教育": 0.67,
+        "文化觀光": 0.97
+      },
+      "topics": [
+        "文化觀光",
+        "教育"
+      ],
+      "url": "https://www.facebook.com/reel/1089935683892576/"
     },
     {
       "agendaRelevance": 0.12,
