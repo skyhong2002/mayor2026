@@ -2,6 +2,70 @@
   "count": 100,
   "posts": [
     {
+      "agendaRelevance": 0.04,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-23T10:02:13+00:00",
+        "inputHash": "57c7fdf8566bea1bae25130ccf27d8f2dff86f873257c60ebf78f9a3b61cb0fb",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:rXvb4OHM27A",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/db1eb7dc2080ee248e18.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-24T04:00:06+00:00",
+      "postingIntent": {
+        "confidence": 0.9,
+        "label": "主動發文",
+        "reason": "以六星市政口號號召台中團隊，屬競選動員，未說明具體政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純喊話29區台中隊 六星市政拚全國第一！",
+      "topicScores": {
+        "競選": 0.97
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=rXvb4OHM27A"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-24T04:01:59+00:00",
+        "inputHash": "6a84537b79c6f0ea3251564a2e8f203e64ad7752211f79e68fe289421d64c75a",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:pxYzTtdShz0",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/d77f9b17b13057b9f3be.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-24T01:00:04+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "宣傳台中隊集結與競選口號，屬主動競選動員，沒有具體政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "29區台中隊集結！何欣純一起拚出台中首都格局🔥",
+      "topicScores": {
+        "競選": 0.99
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/pxYzTtdShz0"
+    },
+    {
       "agendaRelevance": 0.02,
       "candidateId": "huang-shih-chieh",
       "classification": {
@@ -36,6 +100,42 @@
         "文化觀光"
       ],
       "url": "https://www.threads.com/t/DdohpnLCZ9E"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-24T04:01:59+00:00",
+        "inputHash": "36230774fdb54648d2512ff5e35860071202825fd3a9f99cdb28b87fea64282c",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdohhYhiSIj/",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/a7bf1b6c07c18f71332a.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-09-23T14:27:40+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "公告競選總部成立與表演邀請，屬主動競選動員，沒有提出具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "黃世杰南桃園競選總部成立大會，就在下週六！\n\n賴清德總統 @william_chingte 將來到現場，還有董事長樂團 @thechairman_tw 、雷昇傳藝劇團 @leishengartgroup_1997 、無双樂團 musouband ，帶來精彩演出！\n\n邀請您杰伴同行，成為改變桃園的力量，一起讓心桃園動起來💖\n\n📌時間｜10/3（六）18:00進場\n📌地點｜中壢區環中東路、後興路二段周邊空地",
+      "topicScores": {
+        "文化觀光": 0.77,
+        "競選": 0.99
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/DdohhYhiSIj/"
     },
     {
       "agendaRelevance": 0.02,
@@ -590,6 +690,50 @@
         "競選"
       ],
       "url": "https://www.threads.com/t/DdoPFqWiXKi"
+    },
+    {
+      "agendaRelevance": 0.66,
+      "candidateId": "huang-shih-chieh",
+      "classification": {
+        "classifiedAt": "2026-09-24T04:01:59+00:00",
+        "inputHash": "709286b69a9b0fb005a1d6984d98279fd94175e69851b54dd927f2722e3c43bb",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdoN1y6CcHU/",
+      "imageAspect": 1.5,
+      "imageUrl": "assets/feed-images/e6bd8665ae17dc9cf204.webp",
+      "keywords": [
+        "產業",
+        "科技",
+        "AI",
+        "交通",
+        "醫療"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-09-23T11:35:41+00:00",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動闡述桃園發展問題與產業、交通、醫療等政策方向，但具體解方尚未展開，並含競選訴求。",
+        "type": "self_initiated"
+      },
+      "sourceId": "huang-sj-ig",
+      "text": "桃園是國門之都，有山有海，有鄉村也有都會，我們是全國工業產值第一的城市，產業鏈完整多元。這裡有引領世界潮流的AI、科技、電腦產業，也有傳統的汽車、機械、食品產業。百工百業在桃園，都有蓬勃發展的機會。\n\n感謝民進黨主席賴清德總統 @william_chingte ，今天移師桃園舉辦行動中常會，我要向大家報告，我的家鄉桃園擁有獨一無二的優勢，更匯聚了大家對未來的無限期待。升格直轄市以來，我們的人口增加超過30萬。\n\n然而，隨著人口迅速成長，建設的速度，卻明顯跟不上城市發展的腳步。\n\n這段時間，我走遍桃園各區，聽見市民對於改變現狀的渴望，也看見這座城市的各種可能，以及被壓抑的巨大潛能。\n\n我深知，現在的桃園正站在關鍵十字路口。市長作為市政發動機、民意接收站，需要「心在桃園、根在桃園」，唯有真正了解地方需求的人，才能帶領這座城市向前。\n\n從產業升級、交通改善、醫療平權，到青年支持、藝文發展與運動環境，針對桃園此刻的各項不足，我已經準備好全方位的具體解方，要用扎實的政策，驅動這座城市大步向前！\n\n手上這一票，決定了接下來四年，桃園要向世界訴說什麼樣的故事。\n\n我是在地子弟黃世杰，我受這片土地栽培，我的心在桃園，成家立業也在桃園，桃園是我的家鄉，是我實踐夢想的地方。\n\n我有決心、更有行動力，我們要匯聚最大的力量，把過去三年多的停滯，化作未來三十年的爆發力。讓真正準備好的市長，帶領桃園迎向光榮、走向世界、奔向未來！\n\n11/28懇請支持黃世杰，支持桃園隊全壘打！\n\n一起找回令人動心的城市，讓心桃園動起來💖",
+      "topicScores": {
+        "交通": 0.88,
+        "教育": 0.64,
+        "經濟": 0.93,
+        "醫療": 0.82
+      },
+      "topics": [
+        "經濟",
+        "交通",
+        "醫療",
+        "教育"
+      ],
+      "url": "https://www.instagram.com/p/DdoN1y6CcHU/"
     },
     {
       "agendaRelevance": 0.2,
@@ -3478,160 +3622,6 @@
         "交通"
       ],
       "url": "https://www.threads.com/t/DdlhN6IlDm4"
-    },
-    {
-      "agendaRelevance": 0.98,
-      "candidateId": "lee-shih-chuan",
-      "classification": {
-        "classifiedAt": "2026-09-23T22:03:16+00:00",
-        "inputHash": "c2fe89ab0469aca5ee2453d748cb01845a2e43f600e1dc9fa3256d48d390a370",
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "facebook:1645299650540622",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/e0bf2d775a4b479fb1fe.webp",
-      "keywords": [
-        "交通",
-        "捷運",
-        "公車",
-        "道路",
-        "停車",
-        "自行車",
-        "人行道",
-        "通勤",
-        "機場"
-      ],
-      "platform": "facebook",
-      "postedAt": "2026-09-22T10:08:33.000Z",
-      "postingIntent": {
-        "confidence": 0.99,
-        "label": "主動發文",
-        "reason": "主動提出跨域交通治理、人本步行環境與道路安全等具體政策方案。",
-        "type": "self_initiated"
-      },
-      "sourceId": "lee-sc-fb",
-      "text": "說實在，做工程做了四十多年。\n\n路蓋了不少，橋也接了幾座，三環三線就是這樣一段一段接起來的。\n\n做到後來，我越來越確定一件事：\n\n交通建設最後看的，不只是蓋了多少路、多少橋。\n\n路是手段，人才是目的，最重要的是市民出門有沒有更方便，上班上學有沒有少花一點時間，一家人出門，能不能平平安安回家。\n\n三環三線到四環八線，新北的基礎已經打好。\n\n下一步不是另起爐灶，是接上去、打得通、做得更安全。\n\n30 分鐘更快，雙北核心生活圈：雙北本來就是一塊，路網不該在市界斷掉。建立「北北基桃四市首長級跨域治理平台」一起規劃，捷運、公車、國道一起看；淡江大橋接桃園機場，智駕電巴示範廊道；雙北自行車通勤網，跨河不斷點。\n\n15 分鐘更近，車站為中心的日常生活圈：人本友善城市委員會先成立，整合交通、捷運、都市規劃與公共空間。車站、學校、醫院、市場走出來，人行道要接得起來。人行斷點優先打通；停車往路外移，停車有地方，行人有路走。\n\n零死亡願景，更安心：以人為本，一條一條路做出來。道路設計、速限、路口、號誌一個一個改，高風險路段先處理；AI 動態號誌、車路協同，救護車先過，公車準時。\n\n交通少塞一點，市民就多一點時間。\n道路安全一點，家人就多一點安心。\n這就是我拚交通最重要的目的。",
-      "topicScores": {
-        "交通": 1.0
-      },
-      "topics": [
-        "交通"
-      ],
-      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid08m2K4nffRsA4nmmG5k3z7SM9e6sG3qCfrpJfxrUeLKcXVP45GukMVWfarK6QNh9Ml&id=100051818071280"
-    },
-    {
-      "agendaRelevance": 0.63,
-      "candidateId": "ko-chih-en",
-      "classification": {
-        "classifiedAt": "2026-09-22T10:01:44+00:00",
-        "inputHash": "3642dedf626cdecf97e9a0a8cc2488215bb2ee0fade959dccda0feda9bfb80a3",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdlYAILiaeS",
-      "imageAspect": 1.0,
-      "imageUrl": "assets/feed-images/364ec76e6460480490f0.webp",
-      "keywords": [
-        "交通",
-        "自行車",
-        "環境"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-22T09:06:45+00:00",
-      "postingIntent": {
-        "confidence": 0.97,
-        "label": "主動發文",
-        "reason": "主動倡議低碳運輸與多元交通，提出打造高雄友善交通的政策方向。",
-        "type": "self_initiated"
-      },
-      "sourceId": "ko-ce-threads",
-      "text": "@prof.kochihen:世界無車日，是重新思考城市交通的關鍵時機。\n\n除了持續提升低碳運輸的品質與使用率，更要從市民每天的生活需求出發，讓步行、騎自行車、大眾運輸與汽機車，都能有更完善的交通環境，打造安全、便利、舒適的高雄。\n\n五大政策，打造高雄友善交通新生活。",
-      "topicScores": {
-        "交通": 0.94,
-        "環境": 0.82
-      },
-      "topics": [
-        "交通",
-        "環境"
-      ],
-      "url": "https://www.threads.com/t/DdlYAILiaeS"
-    },
-    {
-      "agendaRelevance": 0.12,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-09-22T10:01:44+00:00",
-        "inputHash": "a746c914c0da3eb79c28a2fef15d3c638ff7f6c0e0484febbb0529bc5a01a0f2",
-        "method": "ai",
-        "model": "gpt-5.6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "threads:https://www.threads.com/t/DdlW0h-k_rN",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/72d0471c1e9170735b40.webp",
-      "keywords": [
-        "文化",
-        "觀光"
-      ],
-      "platform": "threads",
-      "postedAt": "2026-09-22T08:56:26+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "介紹大溪文化觀光景點並記錄與蔡英文同台，核心是競選宣傳。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-threads",
-      "text": "@schuanglawyer:小英總統來了！今天非常榮幸邀請蔡英文總統 @tsai_ingwen 來到大溪老茶廠🫖\n\n大溪擁有深厚文化底蘊跟觀光潛力，從大溪老街、大溪木藝生態博物館、李騰芳古宅、武德殿到六二四故事館，都是值得一去再去，我也帶著孩子來過的私房景點。\n\n小英總統分享，上次到大溪老茶廠是七年前，他特別勉勵我：「我總統都選上了，你也要選上市長。」聽完真的充滿動力，我一定會跟緊學姐腳步全力衝刺，讓心桃園動起來💖\n\n今天也特別跟小英學姐介紹我的募款小物「企鵝阿爸」🐧學姐笑說眼睛真的有像，大家覺得呢？",
-      "topicScores": {
-        "文化觀光": 0.83,
-        "競選": 0.88
-      },
-      "topics": [
-        "競選",
-        "文化觀光"
-      ],
-      "url": "https://www.threads.com/t/DdlW0h-k_rN"
-    },
-    {
-      "agendaRelevance": 0.08,
-      "candidateId": "huang-shih-chieh",
-      "classification": {
-        "classifiedAt": "2026-09-23T10:02:13+00:00",
-        "inputHash": "277148dd5535a782a17fe9ba99bca8a9b97315a2c13fa4c03c7d49336d2c0323",
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "instagram:https://www.instagram.com/p/DdlWy9HE1Yu/",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/d748b7b6d152ed1c6406.webp",
-      "keywords": [
-        "文化",
-        "觀光"
-      ],
-      "platform": "instagram",
-      "postedAt": "2026-09-22T08:56:13+00:00",
-      "postingIntent": {
-        "confidence": 0.96,
-        "label": "主動發文",
-        "reason": "介紹大溪文化觀光景點並記錄總統到訪及選舉鼓勵，主要是活動與競選內容。",
-        "type": "self_initiated"
-      },
-      "sourceId": "huang-sj-ig",
-      "text": "小英總統來了！今天非常榮幸邀請蔡英文總統 @tsai_ingwen 來到大溪老茶廠🫖\n\n大溪擁有深厚文化底蘊跟觀光潛力，從大溪老街、大溪木藝生態博物館、李騰芳古宅、武德殿到六二四故事館，都是值得一去再去，我也帶著孩子來過的私房景點。\n\n小英總統分享，上次到大溪老茶廠是七年前，他特別勉勵我：「我總統都選上了，你也要選上市長。」聽完真的充滿動力，我一定會跟緊學姐腳步全力衝刺，讓心桃園動起來💖\n\n今天也特別跟小英學姐介紹我的募款小物「企鵝阿爸」🐧學姐笑說眼睛真的有像，大家覺得呢？",
-      "topicScores": {
-        "文化觀光": 0.94,
-        "競選": 0.93
-      },
-      "topics": [
-        "文化觀光",
-        "競選"
-      ],
-      "url": "https://www.instagram.com/p/DdlWy9HE1Yu/"
     }
   ],
   "version": 1
