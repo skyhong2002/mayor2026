@@ -19,8 +19,40 @@
     "name": "陳亭妃",
     "party": "民進黨"
   },
-  "count": 293,
+  "count": 294,
   "posts": [
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "chen-ting-fei",
+      "classification": {
+        "classifiedAt": "2026-09-24T16:01:38+00:00",
+        "inputHash": "6b2d399710fa1cfab6bc420ea700f1602612e3066e49694e722ffbfdf6961a07",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "threads:https://www.threads.com/t/Ddqo-X6ErW_",
+      "imageAspect": 0.5629,
+      "imageUrl": "assets/feed-images/f68d4df4789366cc7346.webp",
+      "keywords": [],
+      "platform": "threads",
+      "postedAt": "2026-09-24T10:11:18+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "介紹候選人行程日常，屬個人形象與競選宣傳，沒有政策議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chen-tf-threads",
+      "text": "@chen_tingfei:《妃行日記》出發！🏃🏻‍♀️💨\n\n大家平常看到我，不是在活動現場，就是在趕往下一個行程的路上\n\n所以決定帶大家看看候選人的一天，到底都在忙些什麼👀\n\n跟著妃姐，跑遍台南！🚗🏘️",
+      "topicScores": {
+        "競選": 0.81
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.threads.com/t/Ddqo-X6ErW_"
+    },
     {
       "agendaRelevance": 0.29,
       "candidateId": "chen-ting-fei",
@@ -5932,8 +5964,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:gf9Dfo83U3w",
-      "imageAspect": 0.6661,
-      "imageUrl": "assets/feed-images/dc413ee492265d22f183.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-07-26T10:46:35+00:00",
