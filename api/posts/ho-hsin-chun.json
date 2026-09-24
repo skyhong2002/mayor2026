@@ -19,7 +19,7 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 617,
+  "count": 620,
   "posts": [
     {
       "agendaRelevance": 0.04,
@@ -16657,8 +16657,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:8Z0b24V_v1M",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/8ca132d3bdb50986544a.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-07-26T10:00:06+00:00",
@@ -16691,8 +16691,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbQEywcGSXQ",
-      "imageAspect": 1.7778,
-      "imageUrl": "assets/feed-images/4dd831e2dda0192f69a1.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "敬老",
         "補助",
@@ -22028,6 +22028,110 @@
         "競選"
       ],
       "url": "https://www.youtube.com/watch?v=2gN3-_GRtUg"
+    },
+    {
+      "agendaRelevance": 0.08,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-24T10:02:06+00:00",
+        "inputHash": "a2b01dcc69ed6f96d1899df2a390afe88ee60e6937184d0a0bc5681711035c4e",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:lGahVxMz9_Q",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/b41607562c31ebdcf90f.webp",
+      "keywords": [
+        "競選"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.94,
+        "label": "主動發文",
+        "reason": "介紹競選總部特色與活動空間，並非具體施政政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純的競選總部超不一樣！繪本 露營 綠蔭十分鐘還有毛孩友善城市",
+      "topicScores": {
+        "文化觀光": 0.67,
+        "競選": 0.84
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.youtube.com/watch?v=lGahVxMz9_Q"
+    },
+    {
+      "agendaRelevance": 0.19,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-24T10:02:06+00:00",
+        "inputHash": "17af0efa1596aa76858929721631a9fc7f07ebd61b02c4f854fd4c18dbe988aa",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:hXb-yMUrcrY",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/c033f4eb65cf0eb89578.webp",
+      "keywords": [
+        "捷運"
+      ],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.76,
+        "label": "主動發文",
+        "reason": "以新聞式標題提及捷運與廚餘市政議題，未見明確政策內容或對他方回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "台中不能再等！何欣純談捷運 廚餘 市政要做實事 讓市民看得到進度",
+      "topicScores": {
+        "交通": 0.89,
+        "環境": 0.74
+      },
+      "topics": [
+        "交通",
+        "環境"
+      ],
+      "url": "https://www.youtube.com/watch?v=hXb-yMUrcrY"
+    },
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-24T10:02:06+00:00",
+        "inputHash": "5ae987e492cb07d5e47f84c7c35bec8e56029afa7ad42ad2be937f6980d4a10f",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:wdMBcSUBbiM",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/118c3b37e72265bc2035.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "",
+      "postingIntent": {
+        "confidence": 0.95,
+        "label": "主動發文",
+        "reason": "宣傳政治人物對談直播，沒有具體公共政策主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "🔴LIVE直播｜何欣純x沈伯洋 洋流交會 純情相遇🌊",
+      "topicScores": {
+        "競選": 0.75
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=wdMBcSUBbiM"
     }
   ],
   "version": 1
