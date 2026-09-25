@@ -156,6 +156,36 @@ def esc(value: Any) -> str:
     return re.sub(r"[&<>\"']", lambda m: _ESC[m.group(0)], str(value))
 
 
+_SAFE_SCHEME_RE = re.compile(r"^https?://", re.I)
+
+
+def safe_url(value: Any, *, internal: bool = True) -> str:
+    """Return a link target that is safe to put in href/src, or "".
+
+    Accepts absolute http(s) URLs and (when ``internal``) root-absolute site
+    paths ("/x/", not "//host"). Everything else (javascript:, data:, relative
+    paths, protocol-relative URLs) is rejected. The result still needs esc().
+    """
+    if value is None:
+        return ""
+    url = str(value).strip()
+    if not url or any(ord(c) < 0x20 or ord(c) == 0x7f for c in url):
+        return ""
+    if _SAFE_SCHEME_RE.match(url):
+        return url
+    if internal and url.startswith("/") and not url.startswith("//") and not url.startswith("/\\"):
+        return url
+    return ""
+
+
+def json_for_script(value: Any, **kwargs: Any) -> str:
+    """json.dumps for inline <script> blocks: no literal <, >, & or U+2028/9."""
+    kwargs.setdefault("ensure_ascii", False)
+    text = json.dumps(value, **kwargs)
+    return (text.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+            .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
+
+
 def read_json(path: Path | str, default: Any = None) -> Any:
     path = Path(path)
     if not path.is_absolute():
@@ -417,7 +447,7 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
     name = cand.get("name") or cid
     platform = post.get("platform") or "website"
     plat_label = PLATFORM_LABELS.get(platform, platform)
-    url = post.get("url") or ""
+    url = safe_url(post.get("url"), internal=False)
     topics = [t for t in (post.get("topics") or []) if t]
     intent = post.get("postingIntent") if isinstance(post.get("postingIntent"), Mapping) else None
     cand_href = f"/{city}/{cid}/" if city else "/source/"
@@ -432,13 +462,16 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
         head.append(f'<time class="feed-time" datetime="{esc(iso)}" data-rel>{esc(fmt_time_tpe(post.get("postedAt")))}</time>')
     else:
         head.append('<span class="feed-time">時間不明</span>')
-    head.append(f'<a class="feed-plat" href="{esc(url)}" target="_blank" rel="noopener" '
-                f'aria-label="在 {esc(plat_label)} 開啟原文" title="{esc(plat_label)}">{icon(platform)}</a>')
+    if url:
+        head.append(f'<a class="feed-plat" href="{esc(url)}" target="_blank" rel="noopener" '
+                    f'aria-label="在 {esc(plat_label)} 開啟原文" title="{esc(plat_label)}">{icon(platform)}</a>')
+    else:
+        head.append(f'<span class="feed-plat" title="{esc(plat_label)}">{icon(platform)}</span>')
 
     body = [f'<div class="feed-text" data-clamp>{format_post_text(post.get("text"))}</div>',
             '<button class="feed-text-toggle" type="button" hidden>顯示全文</button>']
     image = asset_abs(post.get("imageUrl"))
-    if image:
+    if image and url:
         aspect = post.get("imageAspect")
         ratio = f"{round(float(aspect), 4)}" if isinstance(aspect, (int, float)) and aspect > 0 else "4/3"
         body.append(f'<a class="feed-media" href="{esc(url)}" target="_blank" rel="noopener" tabindex="-1">'
@@ -458,7 +491,7 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
         f'<a class="feed-action" href="{esc(url)}" target="_blank" rel="noopener">{icon("external")}<span>原文</span></a>',
         f'<button class="feed-action btn-share" type="button" data-url="{esc(url)}" data-title="{esc(share_title)}">'
         f'{icon("share")}<span>分享</span></button>',
-    ]
+    ] if url else []
     if show_json and cid:
         actions.append(f'<a class="feed-action" href="/api/posts/{esc(cid)}.json" '
                        f'title="{esc(name)} 的貼文 JSON">{icon("json")}<span>JSON</span></a>')
@@ -524,7 +557,7 @@ def head(title: str, description: str, path: str, og_image: str | None = None,
     if jsonld:
         blocks = jsonld if isinstance(jsonld, list) else [jsonld]
         for block in blocks:
-            text = json.dumps(block, ensure_ascii=False).replace("</", "<\\/")
+            text = json_for_script(block)
             parts.append(f'<script type="application/ld+json">{text}</script>')
     return "\n".join(p for p in parts if p)
 

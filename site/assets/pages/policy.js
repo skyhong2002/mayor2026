@@ -18,6 +18,9 @@
   var results = qs("#policy-results", app);
   var steps = qsa(".policy-step", quiz);
   var total = steps.length;
+  if (!quiz || !results || !total || !Array.isArray(D.questions) || !D.questions.length) {
+    root.classList.remove("pm-js", "pm-hash"); return;
+  }
   var btnPrev = qs('[data-act="prev"]', quiz);
   var btnNext = qs('[data-act="next"]', quiz);
   var btnResult = qs('[data-act="result"]', quiz);
@@ -194,10 +197,11 @@
       var label = (MO.PLATFORM_LABELS && MO.PLATFORM_LABELS[plat]) || "原文";
       var text = String(it.text || "").replace(/\s+/g, " ").trim();
       var more = text.length >= 180 ? "…" : "";
+      var href = MO.safeUrl(it.url, true);
       return '<li class="policy-ev"><p class="policy-ev-text">' + esc(text) + more + "</p>" +
-        '<a class="feed-action policy-ev-link" href="' + esc(it.url) + '" target="_blank" rel="noopener" ' +
+        (href ? '<a class="feed-action policy-ev-link" href="' + esc(href) + '" target="_blank" rel="noopener" ' +
         'aria-label="在 ' + esc(label) + ' 開啟原文：' + esc(text.slice(0, 24)) + '">' +
-        MO.icon(plat) + "<span>" + esc(label) + " 原文</span>" + MO.icon("external") + "</a></li>";
+        MO.icon(plat) + "<span>" + esc(label) + " 原文</span>" + MO.icon("external") + "</a>" : "") + "</li>";
     }).join("") + "</ul>";
   }
 

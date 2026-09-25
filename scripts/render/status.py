@@ -433,7 +433,7 @@ def _source_row(row: Dict[str, Any], data, accounts: Dict[str, Dict[str, Any]], 
     name = S.esc(row.get("name") or cid)
     name_html = f'<a href="/source/{S.esc(cid)}/">{name}</a>' if cand else f'<span>{name}</span><span class="chip-soft src-off">已下架</span>'
     avatar = S.render_avatar(cand, "xs") if cand else ""
-    url = row.get("url") or ""
+    url = S.safe_url(row.get("url"), internal=False)
     handle_html = (f'<a class="src-handle" href="{S.esc(url)}" target="_blank" rel="noopener" title="{S.esc(url)}">'
                    f'{S.icon(platform)}<span>{S.esc(handle)}</span></a>') if url else \
         f'<span class="src-handle">{S.icon(platform)}<span>{S.esc(handle)}</span></span>'

@@ -27,6 +27,14 @@
 
   var ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
   function esc(v) { return v == null ? "" : String(v).replace(/[&<>"']/g, function (c) { return ESC[c]; }); }
+  /* http(s) URLs and (unless external-only) root-absolute paths; anything else → "". Still needs esc(). */
+  function safeUrl(v, externalOnly) {
+    var u = v == null ? "" : String(v).trim();
+    if (!u || /[\u0000-\u001f\u007f]/.test(u)) return "";
+    if (/^https?:\/\//i.test(u)) return u;
+    if (!externalOnly && u.charAt(0) === "/" && u.charAt(1) !== "/" && u.charAt(1) !== "\\") return u;
+    return "";
+  }
 
   function icon(name) {
     var icons = window.MO_ICONS || {};
@@ -136,7 +144,7 @@
     var name = cand.name || cid;
     var platform = post.platform || "website";
     var platLabel = PLATFORM_LABELS[platform] || platform;
-    var url = post.url || "";
+    var url = safeUrl(post.url, true);
     var topics = (post.topics || []).filter(Boolean);
     var intent = post.postingIntent && typeof post.postingIntent === "object" ? post.postingIntent : null;
     var candHref = city ? "/" + city + "/" + cid + "/" : "/source/";
@@ -147,12 +155,14 @@
     if (showCity && city) head += '<span class="feed-sep" aria-hidden="true">›</span><a class="feed-city chip-city" data-city="' + esc(city) + '" href="/?city=' + esc(city) + '">' + esc(CITY_SHORT[city] || city) + "</a>";
     if (ts) head += '<time class="feed-time" datetime="' + esc(isoOf(post.postedAt)) + '" data-rel>' + esc(fmtTime(post.postedAt)) + "</time>";
     else head += '<span class="feed-time">時間不明</span>';
-    head += '<a class="feed-plat" href="' + esc(url) + '" target="_blank" rel="noopener" aria-label="在 ' + esc(platLabel) + ' 開啟原文" title="' + esc(platLabel) + '">' + icon(platform) + "</a>";
+    head += url
+      ? '<a class="feed-plat" href="' + esc(url) + '" target="_blank" rel="noopener" aria-label="在 ' + esc(platLabel) + ' 開啟原文" title="' + esc(platLabel) + '">' + icon(platform) + "</a>"
+      : '<span class="feed-plat" title="' + esc(platLabel) + '">' + icon(platform) + "</span>";
 
     var body = '<div class="feed-text" data-clamp>' + formatText(post.text) + "</div>" +
       '<button class="feed-text-toggle" type="button" hidden>顯示全文</button>';
     var image = assetAbs(post.imageUrl);
-    if (image) {
+    if (image && url) {
       var a = post.imageAspect;
       var ratio = typeof a === "number" && a > 0 ? String(Math.round(a * 10000) / 10000) : "4/3";
       body += '<a class="feed-media" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="' + esc(image) + '" alt="" style="aspect-ratio: ' + ratio + '"></a>';
@@ -167,8 +177,8 @@
     }
     if (tags) body += '<div class="feed-tags">' + tags + "</div>";
     var shareTitle = name + "：" + String(post.text || "").trim().slice(0, 40);
-    var actions = '<a class="feed-action" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon("external") + "<span>原文</span></a>" +
-      '<button class="feed-action btn-share" type="button" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>";
+    var actions = url ? '<a class="feed-action" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon("external") + "<span>原文</span></a>" +
+      '<button class="feed-action btn-share" type="button" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>" : "";
     if (showJson && cid) actions += '<a class="feed-action" href="/api/posts/' + esc(cid) + '.json" title="' + esc(name) + ' 的貼文 JSON">' + icon("json") + "<span>JSON</span></a>";
     body += '<div class="feed-actions">' + actions + "</div>";
 
@@ -321,6 +331,7 @@
     relTime: relTime,
     fmtTime: fmtTime,
     esc: esc,
+    safeUrl: safeUrl,
     postHTML: postHTML,
     avatarHTML: avatarHTML,
     formatText: formatText,

@@ -62,7 +62,11 @@ def _account_link(acc: dict[str, Any]) -> str:
     parts = [plabel] + ([who] if who else []) + [
         f"{ROLE_LABELS.get(acc.get('role'), acc.get('role') or '')}・{VERIFICATION_LABELS.get(ver, ver)}"]
     title = "｜".join(p for p in parts if p)
-    return (f'<a class="acct" data-verification="{S.esc(ver)}" href="{S.esc(acc.get("url") or "#")}" '
+    url = S.safe_url(acc.get("url"), internal=False)
+    if not url:
+        return (f'<span class="acct" data-verification="{S.esc(ver)}" title="{S.esc(title)}" '
+                f'aria-label="{S.esc(title)}">{S.icon(platform)}</span>')
+    return (f'<a class="acct" data-verification="{S.esc(ver)}" href="{S.esc(url)}" '
             f'target="_blank" rel="noopener" title="{S.esc(title)}" aria-label="{S.esc(title)}">'
             f'{S.icon(platform)}</a>')
 

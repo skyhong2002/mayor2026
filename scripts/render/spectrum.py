@@ -220,7 +220,7 @@ def render_index(data) -> None:
                     for cid, e in result.items()},
         "intentCounts": intent_counts,
     }
-    boot_json = json.dumps(boot, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    boot_json = S.json_for_script(boot, separators=(",", ":"))
     lede = ("比較六都候選人把公開發文的聲量放在哪些議題上。每一列是一位候選人：格子裡的百分比是該議題佔他／她議題發文的比例"
             "（同一篇貼文可同時屬於數個議題，依 AI 分類分數加權），顏色越深比例越高。"
             "日常生活類貼文（「生活」）預設不列入計算，可在下方議題篩選中加回。")

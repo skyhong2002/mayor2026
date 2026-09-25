@@ -9,7 +9,6 @@ browser from a slim inline scoring blob; evidence excerpts are fetched from
 
 from __future__ import annotations
 
-import json
 import shutil
 from typing import Any
 
@@ -31,7 +30,7 @@ BOOT_SCRIPT = (
 
 
 def _json_script(element_id: str, payload: Any) -> str:
-    text = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    text = S.json_for_script(payload, separators=(",", ":"))
     return f'<script type="application/json" id="{element_id}">{text}</script>'
 
 

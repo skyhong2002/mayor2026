@@ -117,8 +117,11 @@ class Data:
         stamp = parse_ts((self.status or {}).get("generatedAt"))
         if stamp:
             return stamp
-        newest = next((p for p in self.all_posts() if p.get("postedAt")), None)
-        return parse_ts(newest.get("postedAt")) if newest else dt.datetime.now(dt.timezone.utc)
+        for post in self.all_posts():
+            stamp = parse_ts(post.get("postedAt"))
+            if stamp:
+                return stamp
+        return dt.datetime.now(dt.timezone.utc)
 
     # -- render_post context ---------------------------------------------------
     def post_ctx(self, **opts: Any) -> dict[str, Any]:

@@ -85,7 +85,7 @@ def _components(data) -> str:
                '<button class="btn" type="button" disabled>停用</button>')
     seg = ('<div class="seg" role="group" aria-label="城市"><button type="button" aria-pressed="true">全部</button>'
            + "".join(f'<button type="button" aria-pressed="false">{S.city_label(c)}</button>' for c in S.CITY_ORDER) + "</div>")
-    spec = sorted(data.spectrum, key=lambda r: -r.get("postCount", 0))[0]
+    spec = max(data.spectrum or [{}], key=lambda r: r.get("postCount", 0))
     props = sorted((spec.get("topicProportions") or {}).items(), key=lambda kv: -kv[1])[:6]
     meters = "".join(
         f'<div class="meter-row"><a class="meter-label" href="/spectrum/{S.topic_slug(t)}/">{S.esc(t)}</a>'

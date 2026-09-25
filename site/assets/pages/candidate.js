@@ -256,7 +256,7 @@
     state.topics = (params.get("topic") || "").split(",").map(function (t) {
       t = t.trim(); return slugToTopic[t] || t;
     }).filter(function (t) { return known[t]; });
-    if (!MO.qs('[data-platform="' + state.platform.replace(/"/g, "") + '"]', platGroup)) state.platform = "";
+    if (!MO.qsa("[data-platform]", platGroup).some(function (b) { return b.getAttribute("data-platform") === state.platform; })) state.platform = "";
     syncControls();
     if (filtered()) rerender(); else updateUI([]);
   }

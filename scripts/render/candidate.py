@@ -12,6 +12,7 @@ from __future__ import annotations
 import csv
 import datetime as dt
 import json
+import re
 import shutil
 from collections import Counter
 from typing import Any
@@ -405,11 +406,12 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
         "description": f"{city_full}市長候選人",
         "affiliation": {"@type": "PoliticalParty", "name": party} if c.get("party") else None,
         "homeLocation": {"@type": "City", "name": city_full},
-        "sameAs": [a["url"] for a in accounts if a.get("active", True) and a.get("url")],
+        "sameAs": [S.safe_url(a.get("url"), internal=False) for a in accounts
+                   if a.get("active", True) and S.safe_url(a.get("url"), internal=False)],
         "url": url,
     }
     if image:
-        person["image"] = S.BASE_URL + image
+        person["image"] = image if re.match(r"^https?://", image, re.I) else S.BASE_URL + image
     person = {k: v for k, v in person.items() if v}
     jsonld = {
         "@context": "https://schema.org", "@type": "ProfilePage", "url": url,
@@ -445,8 +447,9 @@ def _source_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], post_c
         plat_label = S.PLATFORM_LABELS.get(platform, platform)
         active = a.get("active", True)
         label = _account_label(a)
-        link = (f'<a href="{S.esc(a["url"])}" target="_blank" rel="noopener">{S.esc(label)}</a>'
-                if a.get("url") else S.esc(label))
+        acct_url = S.safe_url(a.get("url"), internal=False)
+        link = (f'<a href="{S.esc(acct_url)}" target="_blank" rel="noopener">{S.esc(label)}</a>'
+                if acct_url else S.esc(label))
         disp = a.get("displayName")
         ident = (f'<div class="src-acct">{link}'
                  + (f'<span class="muted xs">{S.esc(disp)}</span>' if disp and disp != label else "")
