@@ -17,13 +17,14 @@ def main() -> int:
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
     candidates = candidates_payload.get("candidates", [])
 
-    paths = ["/", "/source/", "/status/", "/spectrum/", "/policy-match/"]
+    paths = ["/", "/source/", "/status/", "/spectrum/", "/policy-match/", "/about/", "/feeds/", "/search/"]
     import classify_topics
 
     paths.extend(f"/spectrum/{slug}/" for slug in classify_topics.TOPIC_SLUGS.values())
     for candidate in candidates:
-        # /<city>/<id>/ is now just a redirect stub to /source/<id>/; only the
-        # canonical target belongs in the sitemap.
+        # /<city>/<id>/ is the candidate profile; /source/<id>/ lists the
+        # candidate's monitored accounts. Both are canonical pages.
+        paths.append(f"/{candidate['city']}/{candidate['id']}/")
         paths.append(f"/source/{candidate['id']}/")
 
     today = dt.date.today().isoformat()

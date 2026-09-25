@@ -92,7 +92,7 @@ main :where(p, li, dd) a[href]:not([class]) {
 .nav-more[open] > summary { color: var(--color-text-primary); }
 .nav-more-menu {
   position: absolute; bottom: calc(100% + 8px); left: 0; z-index: 50;
-  width: 240px; padding: 8px; display: flex; flex-direction: column; gap: 2px;
+  width: 256px; padding: 8px; display: flex; flex-direction: column; gap: 2px;
   background: var(--color-surface-raised); border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg); box-shadow: var(--shadow-raised);
 }
@@ -104,8 +104,8 @@ main :where(p, li, dd) a[href]:not([class]) {
 .nav-more-menu .mi { width: 20px; height: 20px; flex: none; color: var(--color-text-secondary); }
 .nav-more-label { padding: 8px 12px 4px; font-size: var(--text-xs); font-weight: 700; color: var(--color-text-muted); }
 .nav-more-sep { margin: 6px 4px; }
-.nav-more-menu .seg { margin: 2px 4px 4px; display: flex; }
-.nav-more-menu .seg button { flex: 1; }
+.nav-more-menu .seg { margin: 2px 4px 4px; display: flex; width: auto; overflow: visible; }
+.nav-more-menu .seg button { flex: 1 1 0; min-width: 0; padding: 0 6px; gap: 4px; }
 .nav-mobile-extra { display: none !important; }
 
 /* 手機頂欄右側全域搜尋；左側保留給頁面動作（.topbar-action） */

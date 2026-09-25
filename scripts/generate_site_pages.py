@@ -14,6 +14,7 @@ warning so the site can be rebuilt incrementally.
 from __future__ import annotations
 
 import importlib
+import shutil
 import sys
 import traceback
 from pathlib import Path
@@ -71,6 +72,8 @@ def main(argv: list[str] | None = None) -> int:
         from render import kit
         kit.render(data)
         rendered.append("_kit")
+    else:  # dev-only page must never reach a published snapshot
+        shutil.rmtree(shell.SITE_ROOT / "_kit", ignore_errors=True)
 
     print(f"generate_site_pages: rendered {', '.join(rendered) or 'nothing'}; "
           f"{redirects} topic redirect(s); assets v={asset_version()}")
