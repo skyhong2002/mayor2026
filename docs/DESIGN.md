@@ -246,3 +246,10 @@ MO.qs / MO.qsa
    自己看過再回報（截圖放 `/tmp/shots/<agent>/`）。
 3. `python3 scripts/validate_public_outputs.py` 不因你的改動新增錯誤（既有的 5 則 YouTube 未分類錯誤是資料問題，可忽略）。
 4. 回報：改了哪些檔、需要主 agent 整合的事項（pipeline 步驟、驗證調整）、已知限制。
+
+## 10. 執行環境限制（重要）
+
+- 正式排程機 sky-mini 的直譯器是 **Python 3.9.6**。所有 `scripts/**/*.py` 必須能在 3.9 執行：
+  檔頭加 `from __future__ import annotations`；不得使用 `match` 陳述式、`isinstance(x, A | B)`、`zip(strict=)`、
+  `dataclass(slots=)`、3.10+ 的 `typing` 執行期功能。`zoneinfo`、`str.removeprefix`、dict `|` 合併可用。
+- 網站改由 sky-mini 上的 Caddy 直接以 `published/current` 快照目錄提供（DNS 已改為 A 記錄）；`scripts/publish_local.py` 由主 agent 負責。

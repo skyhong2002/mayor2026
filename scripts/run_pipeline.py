@@ -163,6 +163,11 @@ def main() -> int:
     parser.add_argument("--max-post-age-days", type=int, default=30)
     parser.add_argument("--publish-pages", action="store_true")
     parser.add_argument("--pages-no-push", action="store_true")
+    parser.add_argument(
+        "--publish-local",
+        action="store_true",
+        help="Copy site/ to published/releases/<ts> and swap published/current (served by Caddy on sky-mini).",
+    )
     parser.add_argument("--skip-data-restore", action="store_true", help="Use existing local pipeline data without restoring the data branch first.")
     parser.add_argument("--data-no-push", action="store_true", help="Commit pipeline data only to the local data branch.")
     parser.add_argument("--lock-file", type=Path, default=DEFAULT_LOCK_FILE)
@@ -291,6 +296,10 @@ def main() -> int:
         if args.data_no_push:
             data_args.append("--no-push")
         run(data_args, step="publish pipeline data")
+
+        if args.publish_local:
+            publish_runtime_status("ok", message="Pipeline completed; publishing local snapshot")
+            run([PYTHON, "scripts/publish_local.py"], step="publish local snapshot")
 
         if args.publish_pages:
             pages_args = [PYTHON, "scripts/publish_github_pages.py"]

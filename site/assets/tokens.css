@@ -1,0 +1,223 @@
+/* mayor2026.observe.tw design tokens — 觀測站家族（chumei / harmonica）同一套命名。
+   品牌 accent 為中性紫羅蘭，刻意避開各政黨代表色；政黨色只用於小面積識別。
+   淺色為 :root 預設；深色由 [data-theme=dark] 或系統偏好（未指定 light 時）套用。 */
+
+:root {
+  color-scheme: light;
+
+  /* ---- 語意色：淺色 ---- */
+  --color-canvas: #FAFAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #FFFFFF;
+  --color-surface-soft: #F1F0F6;
+  --color-surface-brand: #EEEAFD;
+  --color-text-primary: #16151D;
+  --color-text-secondary: #47455A;
+  --color-text-muted: #676478;
+  --color-text-inverse: #FFFFFF;
+  --color-text-brand: #5A3FD1;
+  --color-text-on-brand: #FFFFFF;
+  --color-border-subtle: #E4E2EC;
+  --color-border-strong: #A9A6B8;
+  --color-action-primary: #5F44D6;
+  --color-action-primary-hover: #5036C2;
+  --color-action-primary-pressed: #432CA6;
+  --color-action-on-primary: #FFFFFF;
+  --color-action-disabled-surface: #ECEBF2;
+  --color-action-disabled-text: #676478;
+  --color-focus-ring: #7C66EE;
+
+  --color-info-surface: #EEEAFD;
+  --color-info-text: #432CA6;
+  --color-success-surface: #E3F4E6;
+  --color-success-text: #1F6A2E;
+  --color-warning-surface: #FDF0D5;
+  --color-warning-text: #7A4E00;
+  --color-danger-surface: #FDE4E6;
+  --color-danger-text: #A3202B;
+  --color-neutral-surface: #EFEEF3;
+  --color-neutral-text: #47455A;
+
+  /* 品牌字標漸層（全站唯一允許的漸層） */
+  --brand-gradient: linear-gradient(180deg, #8B74FF 0%, #5F44D6 100%);
+
+  /* ---- 政黨識別（只用於頭像外環與 chip 圓點） ---- */
+  --party-dpp: #1B9431;
+  --party-kmt: #000095;
+  --party-tpp: #1FA8A8;
+  --party-jrp: #8A5A00;
+  --party-none: var(--color-text-muted);
+
+  /* ---- 六都中性辨識色（淺色底用加深版） ---- */
+  --city-taipei: #6650E0;
+  --city-new-taipei: #C25A36;
+  --city-taoyuan: #1F7F92;
+  --city-taichung: #946608;
+  --city-tainan: #A83E71;
+  --city-kaohsiung: #3A7F3A;
+
+  /* ---- accent 單色序列（熱圖 / 比例條；淺 → 深 = 低 → 高） ---- */
+  --seq-0: #F4F2FA;
+  --seq-1: #E6E0FC;
+  --seq-2: #CBBFF8;
+  --seq-3: #AA98F1;
+  --seq-4: #8770E5;
+  --seq-5: #6649D4;
+  --seq-6: #4A2FB0;
+
+  /* ---- 間距 / 圓角 / 陰影 / 動態 / 版面 / 字體 ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+  --shadow-raised: 0 16px 48px rgb(22 21 29 / 14%);
+  --shadow-focus: 0 0 0 4px color-mix(in srgb, var(--color-focus-ring) 35%, transparent);
+  --motion-fast: 140ms;
+  --motion-normal: 220ms;
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --layout-content: 75rem;
+  --layout-reading: 45rem;
+  --layout-tap-target: 2.75rem;
+  --layout-sidebar: 260px;
+  --layout-rail: 76px;
+  --layout-topbar: 54px;
+  --layout-tabbar: 60px;
+  --layout-col: 380px;
+  --font-sans: "Noto Sans TC", "PingFang TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --text-title: clamp(1.5rem, 2.4vw, 2rem);
+  --text-heading: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+}
+
+/* 深色 token（兩個選擇器共用同一組值；修改時兩處一起改） */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: #000000;
+  --color-surface: #000000;
+  --color-surface-raised: #101013;
+  --color-surface-soft: #1A1A1F;
+  --color-surface-brand: #1E1838;
+  --color-text-primary: #F3F2F8;
+  --color-text-secondary: #C8C6D3;
+  --color-text-muted: #9896A6;
+  --color-text-inverse: #000000;
+  --color-text-brand: #B3A5FF;
+  --color-text-on-brand: #FFFFFF;
+  --color-border-subtle: #2A2A30;
+  --color-border-strong: #57555F;
+  --color-action-primary: #6A50E8;
+  --color-action-primary-hover: #7A62F0;
+  --color-action-primary-pressed: #5A40D8;
+  --color-action-on-primary: #FFFFFF;
+  --color-action-disabled-surface: #2A2A30;
+  --color-action-disabled-text: #9896A6;
+  --color-focus-ring: #C4B8FF;
+  --color-info-surface: #1E1838;
+  --color-info-text: #CFC6FF;
+  --color-success-surface: #12301A;
+  --color-success-text: #9BE0A8;
+  --color-warning-surface: #3A2A0B;
+  --color-warning-text: #F5CD7A;
+  --color-danger-surface: #3E161B;
+  --color-danger-text: #FFB0B7;
+  --color-neutral-surface: #1A1A1F;
+  --color-neutral-text: #C8C6D3;
+  --brand-gradient: linear-gradient(180deg, #C2B6FF 0%, #7C62F5 100%);
+  --party-dpp: #3DBB57;
+  --party-kmt: #5B6CFF;
+  --party-tpp: #28C8C8;
+  --party-jrp: #E0A83A;
+  --city-taipei: #8B7CF6;
+  --city-new-taipei: #F28E6B;
+  --city-taoyuan: #4FB6C9;
+  --city-taichung: #E0A83A;
+  --city-tainan: #D46A9A;
+  --city-kaohsiung: #6BB56B;
+  --seq-0: #0E0D14;
+  --seq-1: #1F1A3A;
+  --seq-2: #312865;
+  --seq-3: #483B93;
+  --seq-4: #6652C2;
+  --seq-5: #8C79E8;
+  --seq-6: #BBAEFF;
+  --shadow-raised: 0 16px 48px rgb(0 0 0 / 60%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-canvas: #000000;
+    --color-surface: #000000;
+    --color-surface-raised: #101013;
+    --color-surface-soft: #1A1A1F;
+    --color-surface-brand: #1E1838;
+    --color-text-primary: #F3F2F8;
+    --color-text-secondary: #C8C6D3;
+    --color-text-muted: #9896A6;
+    --color-text-inverse: #000000;
+    --color-text-brand: #B3A5FF;
+    --color-text-on-brand: #FFFFFF;
+    --color-border-subtle: #2A2A30;
+    --color-border-strong: #57555F;
+    --color-action-primary: #6A50E8;
+    --color-action-primary-hover: #7A62F0;
+    --color-action-primary-pressed: #5A40D8;
+    --color-action-on-primary: #FFFFFF;
+    --color-action-disabled-surface: #2A2A30;
+    --color-action-disabled-text: #9896A6;
+    --color-focus-ring: #C4B8FF;
+    --color-info-surface: #1E1838;
+    --color-info-text: #CFC6FF;
+    --color-success-surface: #12301A;
+    --color-success-text: #9BE0A8;
+    --color-warning-surface: #3A2A0B;
+    --color-warning-text: #F5CD7A;
+    --color-danger-surface: #3E161B;
+    --color-danger-text: #FFB0B7;
+    --color-neutral-surface: #1A1A1F;
+    --color-neutral-text: #C8C6D3;
+    --brand-gradient: linear-gradient(180deg, #C2B6FF 0%, #7C62F5 100%);
+    --party-dpp: #3DBB57;
+    --party-kmt: #5B6CFF;
+    --party-tpp: #28C8C8;
+    --party-jrp: #E0A83A;
+    --city-taipei: #8B7CF6;
+    --city-new-taipei: #F28E6B;
+    --city-taoyuan: #4FB6C9;
+    --city-taichung: #E0A83A;
+    --city-tainan: #D46A9A;
+    --city-kaohsiung: #6BB56B;
+    --seq-0: #0E0D14;
+    --seq-1: #1F1A3A;
+    --seq-2: #312865;
+    --seq-3: #483B93;
+    --seq-4: #6652C2;
+    --seq-5: #8C79E8;
+    --seq-6: #BBAEFF;
+    --shadow-raised: 0 16px 48px rgb(0 0 0 / 60%);
+  }
+}
+
+/* 城市 surface：由主色混出，深淺色自動跟隨 */
+:root {
+  --city-taipei-surface: color-mix(in srgb, var(--city-taipei) 16%, transparent);
+  --city-new-taipei-surface: color-mix(in srgb, var(--city-new-taipei) 16%, transparent);
+  --city-taoyuan-surface: color-mix(in srgb, var(--city-taoyuan) 16%, transparent);
+  --city-taichung-surface: color-mix(in srgb, var(--city-taichung) 16%, transparent);
+  --city-tainan-surface: color-mix(in srgb, var(--city-tainan) 16%, transparent);
+  --city-kaohsiung-surface: color-mix(in srgb, var(--city-kaohsiung) 16%, transparent);
+}

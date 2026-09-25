@@ -41,6 +41,9 @@ REQUIRED_FILES = [
     API_DIR / "qualitative-summary.json",
     API_DIR / "policy-match.json",
     SITE_ROOT / "policy-match" / "index.html",
+    SITE_ROOT / "about" / "index.html",
+    SITE_ROOT / "search" / "index.html",
+    SITE_ROOT / "404.html",
     SITE_ROOT / "sitemap.xml",
     SITE_ROOT / "robots.txt",
 ]
@@ -115,10 +118,11 @@ def validate_prerender(errors: list[str]) -> None:
     """Every page must ship with prerendered content — crawlers without JS
     should never see the '載入中...' placeholders."""
     pages: list[tuple[Path, list[str]]] = [
-        (SITE_ROOT / "index.html", ["stat-card", "city-card-title", "feed-latest-excerpt"]),
-        (SITE_ROOT / "source" / "index.html", ["directory-source-identity"]),
+        (SITE_ROOT / "index.html", ["story-strip", "feed-col", "feed-post"]),
+        (SITE_ROOT / "source" / "index.html", ["directory-table"]),
         (SITE_ROOT / "spectrum" / "index.html", ["spectrum-table"]),
         (SITE_ROOT / "policy-match" / "index.html", ["policy-choice"]),
+        (SITE_ROOT / "status" / "index.html", ["badge-status"]),
     ]
     import classify_topics
 
@@ -133,6 +137,7 @@ def validate_prerender(errors: list[str]) -> None:
         except json.JSONDecodeError:
             candidates = []
         pages.extend((SITE_ROOT / "source" / c["id"] / "index.html", []) for c in candidates)
+        pages.extend((SITE_ROOT / c["city"] / c["id"] / "index.html", ["feed-post"]) for c in candidates)
 
     for path, markers in pages:
         if not path.exists():
