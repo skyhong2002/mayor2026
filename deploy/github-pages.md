@@ -1,4 +1,14 @@
-# 部署到 GitHub Pages
+# 部署
+
+## 正式機直接提供（2026-09 起）
+
+`mayor2026.observe.tw` 的 DNS 是 A 記錄直指新竹機器（sky-mini，140.113.240.11，DNS only）。機器上的 Caddy
+（`/usr/local/etc/caddy/Caddyfile`）以 `file_server` 提供 `/Users/skyhong/Documents/mayor2026/published/current`，
+404 時回 `/404.html`。`scripts/run_pipeline.py --publish-local`（launchd plist 預設）會呼叫 `scripts/publish_local.py`
+把 `site/` 複製到 `published/releases/<ts>-<sha>/` 再原子切換 `current` / `previous` 符號連結，保留最近 5 份。
+Caddy 設定變更後：`/usr/local/sbin/caddy reload --config /usr/local/etc/caddy/Caddyfile --adapter caddyfile`。
+
+## （備援）GitHub Pages
 
 ## 一次性設定
 

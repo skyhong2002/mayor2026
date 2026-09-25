@@ -115,64 +115,9 @@ def main() -> int:
         {"version": 2, "title": SITE_TITLE, "count": len(all_posts[:100]), "posts": [slim_feed_post(p) for p in all_posts[:100]]},
     )
 
-    feed_links = "\n".join(
-        f'      <li><a href="{c["id"]}.xml">{c["name"]}（{c["cityLabel"]}）</a>'
-        f' · <a href="{c["id"]}.json">JSON</a></li>'
-        for c in candidates
-    )
-    index_html = f"""<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RSS 訂閱｜2026 市長官方來源觀測站</title>
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="../">
-      <img class="brand-logo-img" src="../assets/logo.svg" alt="">
-      <span>2026 市長官方來源觀測站</span>
-    </a>
-    <nav class="site-nav">
-      <a href="../">六都總覽</a>
-      <a href="../policy-match/">議題選擇器</a>
-      <a href="../spectrum/">議題光譜</a>
-      <a href="../source/">公開來源</a>
-    </nav>
-  </header>
-  <section class="band">
-    <div class="band-inner">
-      <p class="section-kicker">Feeds</p>
-      <h2>RSS 訂閱</h2>
-      <p>總河道：<a href="updates.xml">updates.xml</a> · <a href="updates.json">updates.json</a></p>
-      <ul>
-{feed_links}
-      </ul>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div class="footer-brand">
-        <span class="footer-title">2026 市長官方來源觀測站</span>
-        <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
-      </div>
-      <div class="footer-links">
-        <a href="../status/">狀態</a>
-        <a href="../feeds/">RSS</a>
-        <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
-        <a href="https://github.com/skyhong2002/mayor2026/issues/new/choose">資料回報</a>
-      </div>
-      <p class="footer-meta">資料來源為候選人公開帳號；貼文著作權屬原作者。MIT License.</p>
-    </div>
-  </footer>
-</body>
-</html>
-"""
-    (FEEDS_DIR / "index.html").write_text(index_html, encoding="utf-8")
+    # /feeds/index.html is rendered by scripts/render/directory.py (generate_site_pages.py).
 
-    print(f"generate_rss_feeds: wrote {len(candidates)} candidate feed(s) (xml+json), updates feed, and feeds index to {FEEDS_DIR.relative_to(feed_common.PROJECT_ROOT)}")
+    print(f"generate_rss_feeds: wrote {len(candidates)} candidate feed(s) (xml+json), updates feed to {FEEDS_DIR.relative_to(feed_common.PROJECT_ROOT)}")
     return 0
 
 

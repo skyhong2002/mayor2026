@@ -30,10 +30,12 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 │       ├── social_candidates.jsonl   # 分類後的貼文（由 data 分支保存）
 │       └── source_profiles.json      # 來源頭像快取（由 data 分支保存）
 ├── scripts/                          # 抓取、正規化、分類、建站腳本
+├── scripts/render/                   # 各頁面的 Python 渲染模組（shell.py 為共用殼與貼文卡；見 docs/KIT.md）
 ├── site/
-│   ├── assets/                       # CSS/JS，source assets，留在 main
-│   ├── templates/                    # HTML 模板，留在 main
-│   ├── api/、data/、feeds/、city/     # 產生輸出，不進 main，由 gh-pages 分支保存
+│   ├── assets/                       # tokens.css、styles.css、shell.js、icons.js、pages/*.{css,js}，留在 main
+│   ├── api/、data/、feeds/、city/     # 產生輸出，不進 main
+├── published/                        # 正式機上的發布快照（releases/<ts>、current 符號連結），不進 git
+├── docs/DESIGN.md、docs/KIT.md       # 2026-09 全站重製的設計契約與元件 API
 ├── deploy/                           # launchd 排程設定與部署文件
 ├── .github/ISSUE_TEMPLATE/           # 公開資料回報表單
 └── README.md
@@ -84,7 +86,8 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - [x] 正規化、去重、AI 議題與發文動機分類
 - [x] 候選人頁議題／發文動機篩選
 - [x] 議題選擇器（以自主政策倡議貼文為依據，附來源與資料不足提示）
-- [x] 靜態站建置、驗證、gh-pages 發布腳本
+- [x] 靜態站建置、驗證、本機快照發布（Caddy）與 gh-pages 發布腳本
+- [x] 2026-09 全站重製：觀測站家族（chumei / harmonica）風格 app 殼、深淺色、六都多欄河道、搜尋、關於頁
 - [x] 排程機器（新竹 macOS）launchd 串接（每日 00/06/12/18 各跑一次，見 `deploy/github-pages.md`）
 - [x] 貼文圖片快取有效期（預設 60 天，`MAYOR_FEED_IMAGE_MAX_AGE_DAYS` 可調）；過期只移除本地圖片副本，
       貼文文字紀錄永久保留
@@ -103,11 +106,16 @@ python3 scripts/validate_public_outputs.py     # 驗證 generated JSON 是否可
 python3 scripts/publish_github_pages.py --no-push  # 檢查 gh-pages worktree 複製邏輯
 ```
 
-正式抓取 + 發布：
+正式抓取 + 發布（正式機 sky-mini，Caddy 直接提供 `published/current`）：
 
 ```bash
-python3 scripts/run_pipeline.py --publish-pages
+python3 scripts/run_pipeline.py --publish-local
 ```
+
+`--publish-local` 會把 `site/` 複製到 `published/releases/<UTC 時間>-<git sha>/`，再原子切換 `published/current`
+（保留最近 5 份）。`--publish-pages` 仍可用來同步 gh-pages 鏡像，但網域自 2026-09-25 起已改為 A 記錄直指正式機。
+
+只重建網頁（不抓資料、不發布）：`python3 scripts/generate_site_pages.py`；開發用元件總覽頁加 `--kit` → `/_kit/`。
 
 `run_pipeline.py` 會依序重建來源設定、抓取各平台更新、分類議題、建置 `site/api`、`site/data`、`site/feeds`，
 最後執行 `validate_public_outputs.py`；驗證成功後才更新 `data` 分支，驗證失敗不會發佈資料或網站。
