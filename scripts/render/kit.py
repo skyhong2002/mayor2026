@@ -73,7 +73,7 @@ def _components(data) -> str:
         S.render_chip("民進黨", party="民進黨"), S.render_chip("國民黨", party="國民黨"),
         S.render_chip("司法改革黨", party="司法改革黨"), S.render_chip("無黨籍", party=""),
         *[S.render_chip(S.city_label(c), city=c) for c in S.CITY_ORDER],
-        S.render_chip("議會監督", soft=True), S.render_chip("回應他方觀點 87%", soft=True, cls="chip-intent", attrs={"data-intent": "responsive"}),
+        S.render_chip("議會監督", soft=True),
     ])
     badges = "".join(S.render_badge(s, l) for s, l in
                      [("ok", "正常"), ("warn", "部分異常"), ("error", "抓取失敗"), ("paused", "節流中"), ("pending", "等待排程")])

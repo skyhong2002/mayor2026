@@ -477,13 +477,7 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
         body.append(f'<a class="feed-media" href="{esc(url)}" target="_blank" rel="noopener" tabindex="-1">'
                     f'<img loading="lazy" decoding="async" src="{esc(image)}" alt="" style="aspect-ratio: {ratio}"></a>')
     tags = [f'<a class="chip-soft chip-topic" href="/spectrum/{topic_slug(t)}/">{esc(t)}</a>' for t in topics]
-    if intent and intent.get("type"):
-        itype = intent.get("type")
-        label = intent.get("label") or INTENT_LABELS.get(itype, itype)
-        conf = intent.get("confidence")
-        pct = f" {round(float(conf) * 100)}%" if isinstance(conf, (int, float)) else ""
-        tags.append(f'<span class="chip-soft chip-intent" data-intent="{esc(itype)}" '
-                    f'title="{esc(intent.get("reason") or "")}">{esc(label)}{pct}</span>')
+    # Posting-intent chips are intentionally not shown on cards (kept in data-intent for filters).
     if tags:
         body.append(f'<div class="feed-tags">{"".join(tags)}</div>')
     share_title = f"{name}：{(post.get('text') or '').strip()[:40]}"

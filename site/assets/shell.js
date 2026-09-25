@@ -170,11 +170,7 @@
     var tags = topics.map(function (t) {
       return '<a class="chip-soft chip-topic" href="/spectrum/' + (TOPIC_SLUGS[t] || "life") + '/">' + esc(t) + "</a>";
     }).join("");
-    if (intent && intent.type) {
-      var label = intent.label || INTENT_LABELS[intent.type] || intent.type;
-      var pct = typeof intent.confidence === "number" ? " " + Math.round(intent.confidence * 100) + "%" : "";
-      tags += '<span class="chip-soft chip-intent" data-intent="' + esc(intent.type) + '" title="' + esc(intent.reason || "") + '">' + esc(label) + pct + "</span>";
-    }
+    // Posting-intent chips are intentionally not shown on cards (data-intent stays for filters).
     if (tags) body += '<div class="feed-tags">' + tags + "</div>";
     var shareTitle = name + "：" + String(post.text || "").trim().slice(0, 40);
     var actions = url ? '<a class="feed-action" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon("external") + "<span>原文</span></a>" +
