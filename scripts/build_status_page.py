@@ -16,12 +16,10 @@ from typing import Any
 
 import feed_common
 import source_status
-import generate_site_pages
 
 SITE_ROOT = feed_common.PROJECT_ROOT / "site"
 API_DIR = SITE_ROOT / "api"
 STATUS_JSON_OUT = API_DIR / "status.json"
-STATUS_PAGE_OUT = SITE_ROOT / "status" / "index.html"
 FETCH_STATE_JSON = feed_common.PROJECT_ROOT / "state" / "social_fetch_state.json"
 APIFY_LEDGER_JSON = feed_common.PROJECT_ROOT / "state" / "apify_facebook_fetcher.json"
 PIPELINE_RUNTIME_JSON = API_DIR / "pipeline-runtime.json"
@@ -407,245 +405,17 @@ def html_escape(value: Any) -> str:
     return html.escape("" if value is None else str(value), quote=True)
 
 
-def render_badge(status: str, label: str | None = None) -> str:
-    style = {"scheduled": "ok", "blocked": "degraded", "error": "degraded",
-             "disabled": "unknown", "overdue": "degraded"}.get(status, status)
-    return f'<span class="status-badge status-{html_escape(style)}">{html_escape(label or STATUS_LABELS.get(status, status))}</span>'
-
-
-def render_metric(label: str, value: Any, note: str = "") -> str:
-    return f"""
-      <article class="status-metric-card">
-        <span>{html_escape(label)}</span>
-        <strong>{html_escape(value)}</strong>
-        <p>{html_escape(note)}</p>
-      </article>
-    """
-
-
-def render_component_card(item: dict[str, Any]) -> str:
-    details = "".join(f"<li>{html_escape(detail)}</li>" for detail in item.get("details", []))
-    details_html = f'<ul class="status-detail-list">{details}</ul>' if details else ""
-    style = {"scheduled": "ok", "blocked": "degraded"}.get(item.get("status"), item.get("status"))
-    return f"""
-      <article class="status-component-card status-card-{html_escape(style)}">
-        <div class="status-component-head">
-          <h2>{html_escape(item.get('name'))}</h2>
-          {render_badge(str(item.get('status')), str(item.get('label')))}
-        </div>
-        <p>{html_escape(item.get('summary'))}</p>
-        {details_html}
-      </article>
-    """
-
-
-PLATFORM_LABELS = {
-    "website": "官網",
-    "facebook": "Facebook",
-    "instagram": "Instagram",
-    "threads": "Threads",
-    "youtube": "YouTube",
-    "x": "X",
-    "podcast": "Podcast",
-    "line_oa": "LINE 官方帳號",
-    "line_openchat": "LINE 社群",
-    "tiktok": "TikTok",
-}
-
-
-def render_platform_rows(rows: list[dict[str, Any]]) -> str:
-    rendered = []
-    for row in rows:
-        status = str(row.get("status") or "unknown")
-        rendered.append(
-            f"""
-            <tr>
-              <th scope="row">{html_escape(PLATFORM_LABELS.get(row.get('platform'), row.get('platform')))}</th>
-              <td>{html_escape(row.get('sources'))}</td>
-              <td>{html_escape(row.get('currentErrors'))}</td>
-              <td>{render_badge(status)}</td>
-            </tr>
-            """
-        )
-    return "\n".join(rendered)
-
-
 def render_error_list(errors: list[dict[str, Any]]) -> str:
-    if not errors:
-        return f'<div class="empty-state">近 {RECENT_ERROR_DAYS} 天沒有抓取錯誤。</div>'
-    items = []
-    for row in reversed(errors):
-        if row.get("resolved"):
-            badge = render_badge("ok", "已恢復")
-        elif row.get("inactive"):
-            badge = render_badge("disabled", "來源已停用／僅連結")
-        elif row.get("unverified"):
-            badge = render_badge("unknown", "歷史紀錄，恢復時間未記錄")
-        else:
-            badge = render_badge("error", "尚未恢復")
-        items.append(
-            f"""
-            <article class="status-error-item">
-              <div>
-                <span class="feed-latest-meta">{html_escape(row.get('recordedAt'))} · {html_escape(PLATFORM_LABELS.get(row.get('platform'), row.get('platform')))}</span>
-                <strong>{html_escape(row.get('sourceName'))}</strong>
-              </div>
-              {badge}
-              <p>{html_escape(row.get('message'))}</p>
-            </article>
-            """
-        )
-    return "\n".join(items)
+    """Recent-error list HTML, shared with the /status/ page renderer."""
+    from render import status as status_page
 
-
-def render_status_page(status: dict[str, Any], *, asset_version: str) -> str:
-    overall = status["overall"]
-    metrics = status["metrics"]
-    component_cards = "\n".join(render_component_card(item) for item in status["components"])
-    platform_rows = render_platform_rows(status["watchSources"]["platformRows"])
-    error_list = render_error_list(status["recentErrors"])
-    return f"""<!doctype html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>資料管線狀態｜2026 市長官方來源觀測站</title>
-    <meta name="robots" content="noindex,follow">
-    <link rel="icon" href="../assets/favicon.svg?v={asset_version}" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/styles.css?v={asset_version}">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">
-        <img class="brand-logo-img" src="../assets/logo.svg?v={asset_version}" alt="">
-        <span>2026 市長官方來源觀測站</span>
-      </a>
-      <nav class="site-nav">
-        <a href="../">六都總覽</a>
-        <a href="../policy-match/">議題選擇器</a>
-        <a href="../spectrum/">議題光譜</a>
-        <a href="../source/">公開來源</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="feed-page-hero status-hero">
-        <div class="band-inner split-layout">
-          <div>
-            <p class="section-kicker">Status</p>
-            <h1>資料管線狀態</h1>
-          </div>
-          <div class="feed-page-summary status-summary-panel">
-            <div class="status-summary-line">
-              {render_badge(overall["status"], overall["label"])}
-              <strong>{html_escape(overall["summary"])}</strong>
-            </div>
-            <p>快照時間 {html_escape(status.get("generatedAt"))}</p>
-            <div class="feed-links">
-              <a href="../api/status.json">Status JSON</a>
-              <a href="../feeds/">RSS</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="band status-overview-band">
-        <div class="band-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Metrics</p>
-              <h2>收錄統計</h2>
-            </div>
-          </div>
-          <div class="status-metric-grid">
-            {render_metric("監看候選人", metrics.get("candidates"), "candidates.json")}
-            {render_metric("監看帳號", metrics.get("watchAccounts"), "sources.json")}
-            {render_metric("已收錄貼文", metrics.get("totalPosts"), "social_candidates.jsonl")}
-            {render_metric("目前錯誤", metrics.get("currentErrors"), "仍未恢復的來源，成功後解除")}
-          </div>
-        </div>
-      </section>
-
-      <section class="band status-component-band">
-        <div class="band-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Collectors</p>
-              <h2>元件狀態</h2>
-            </div>
-          </div>
-          <div class="status-component-grid">
-            {component_cards}
-          </div>
-        </div>
-      </section>
-
-      <section class="band status-platform-band">
-        <div class="band-inner split-layout">
-          <div>
-            <p class="section-kicker">Platforms</p>
-            <h2>平台來源</h2>
-          </div>
-          <div class="status-table-wrap">
-            <table class="status-table">
-              <thead>
-                <tr>
-                  <th scope="col">平台</th>
-                  <th scope="col">來源數</th>
-                  <th scope="col">目前錯誤</th>
-                  <th scope="col">狀態</th>
-                </tr>
-              </thead>
-              <tbody>
-                {platform_rows}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section class="band status-errors-band">
-        <div class="band-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Latest Errors</p>
-              <h2>近期錯誤紀錄</h2>
-            </div>
-            <p class="data-date">近 {RECENT_ERROR_DAYS} 天，最多顯示 {RECENT_ERROR_LIMIT} 筆</p>
-          </div>
-          <div class="status-error-list">
-            {error_list}
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <div class="footer-brand">
-          <span class="footer-title">2026 市長官方來源觀測站</span>
-          <p>以公開資料為主的六都市長候選人官方發文索引。非官方認證資料庫。</p>
-        </div>
-        <div class="footer-links">
-          <a href="../status/">狀態</a>
-          <a href="../feeds/">RSS</a>
-          <a href="https://github.com/skyhong2002/mayor2026">GitHub</a>
-          <a href="https://github.com/skyhong2002/mayor2026/issues/new/choose">資料回報</a>
-        </div>
-        <p class="footer-meta">資料來源為候選人公開帳號；貼文著作權屬原作者。MIT License.</p>
-      </div>
-    </footer>
-  </body>
-</html>
-"""
+    return status_page.error_list(errors)
 
 
 def main() -> int:
     status = build_status()
     feed_common.save_json_atomic(STATUS_JSON_OUT, status)
-    STATUS_PAGE_OUT.parent.mkdir(parents=True, exist_ok=True)
-    version = generate_site_pages.asset_version()
-    STATUS_PAGE_OUT.write_text(render_status_page(status, asset_version=version), encoding="utf-8")
+    # site/status/index.html is rendered by generate_site_pages.py (scripts/render/status.py).
     print(
         f"build_status_page: overall={status['overall']['status']}, "
         f"{len(status['components'])} component(s), {len(status['recentErrors'])} recent error(s)."
