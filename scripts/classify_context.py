@@ -30,10 +30,9 @@ import feed_common
 
 RUBRIC_VERSION = "content-v5"  # v5: loosened the responsive definition (was so strict only 7/3018 qualified)
 INTENT_VERIFICATION_VERSION = "responsive-v2"
-# gpt-5.6-luna is available on the OpenAI platform API as well as through the
-# Codex CLI; the same model id is used on both backends so cached
-# classifications stay valid when switching between them.
-DEFAULT_MODEL = "gpt-5.6-luna"
+# Use the same model id on both backends so classification provenance
+# matches the requested model when switching between them.
+DEFAULT_MODEL = "gpt-6-luna"
 DEFAULT_BATCH_SIZE = 20
 DEFAULT_API_URL = "https://api.openai.com/v1/responses"
 DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
@@ -286,9 +285,7 @@ def run_codex_structured_request(
         + "\n\n只輸出一個符合以下 JSON Schema 的 JSON 物件；不要 markdown 圍欄，不要任何說明文字：\n"
         + json.dumps(schema, ensure_ascii=False)
     )
-    command = [codex_binary(), "exec", "-", "-s", "read-only"]
-    if os.environ.get("MAYOR_AI_MODEL"):
-        command += ["-m", os.environ["MAYOR_AI_MODEL"]]
+    command = [codex_binary(), "exec", "-", "-s", "read-only", "-m", model]
     with tempfile.NamedTemporaryFile("r", suffix=".txt", delete=False) as handle:
         out_path = Path(handle.name)
     try:

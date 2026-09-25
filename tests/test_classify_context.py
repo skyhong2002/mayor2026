@@ -45,6 +45,27 @@ class ContentClassifierTest(unittest.TestCase):
         with self.assertRaises(classify_context.ClassificationError):
             classify_context.validate_results({"results": [self.result("wrong")]}, {"post-1"})
 
+    def test_codex_uses_resolved_model_even_with_conflicting_environment(self):
+        def fake_run(command, **kwargs):
+            self.assertEqual(command[command.index("-m") + 1], "gpt-6-luna")
+            Path(command[command.index("-o") + 1]).write_text('{"results":[]}', encoding="utf-8")
+            return mock.Mock(returncode=0)
+
+        for configured_model in ("", "gpt-6-sol"):
+            with (
+                self.subTest(configured_model=configured_model),
+                mock.patch.dict(classify_context.os.environ, {"MAYOR_AI_MODEL": configured_model}),
+                mock.patch.object(classify_context, "codex_binary", return_value="codex"),
+                mock.patch.object(classify_context.subprocess, "run", side_effect=fake_run),
+            ):
+                result = classify_context.run_codex_structured_request(
+                    prompt="Classify posts",
+                    model="gpt-6-luna",
+                    schema_path=classify_context.SCHEMA_PATH,
+                    timeout=10,
+                )
+                self.assertEqual(result, {"results": []})
+
     def test_classify_rows_uses_runner_and_then_cache(self):
         rows = [self.row()]
         calls = []
