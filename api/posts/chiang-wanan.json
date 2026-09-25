@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/8c0864d710d1d4516fd4.webp",
+    "avatarUrl": "assets/source-avatars/30c365424d81ada8ef08.webp",
     "city": "taipei",
     "cityLabel": "臺北市",
     "id": "chiang-wanan",
@@ -19,8 +19,116 @@
     "name": "蔣萬安",
     "party": "國民黨"
   },
-  "count": 111,
+  "count": 114,
   "posts": [
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "b3a84f65402e3fe2c45198202eb4b5be3c098d0a5731d4b374d87db1dad90397",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1644631053693512",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/76964de200ac848be0fb.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-25T01:06:44.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是中秋祝福並感謝值勤人員，沒有具體施政主張。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "月圓人團圓，中秋節是最適合和家人、朋友相聚的日子。\n\n節慶期間，城市的運作不會停下腳步。謝謝持續堅守崗位的警消、醫護、交通、清潔，以及所有第一線夥伴，守護城市安全，讓市民朋友安心過節。\n\n也歡迎大家趁著佳節，走進臺北的大街小巷，感受節慶氣氛。\n\n祝福大家中秋愉快、闔家平安！🌕",
+      "topicScores": {
+        "治安": 0.4,
+        "生活": 0.63
+      },
+      "topics": [
+        "生活",
+        "治安"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02stv9hidXrkPv7rgg4ZofPk2aSggB4WxNi3BLH8ZHiCodNFJKVhBzQ9JqJmV8FuHnl"
+    },
+    {
+      "agendaRelevance": 0.42,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "5b82188b35cc91e937b2995b7b6651385923e321083f2a15763faf2eccf8f912",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1644146993741918",
+      "imageAspect": 1.4975,
+      "imageUrl": "assets/feed-images/e17514f454ec11101b09.webp",
+      "keywords": [
+        "攤商",
+        "觀光"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T13:20:11.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "介紹市場改建、攤商制度與行銷預算進度，屬市場經營措施但非全新政策提案。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-fb",
+      "text": "中秋連假前，來和 #環南市場 好朋友們問早！\n\n中秋節前正是市場忙碌備貨的時候。\n今天一大早，我特別來到環南市場，感謝大家的辛苦付出，也跟老朋友們見面敘舊，持續傾聽大家的需求。\n\n環南市場從去年完成改建後，整體環境更加舒適，民眾採買動線也更加完善，成為全臺市場轉型的新典範！\n\n我上任後，也解除市場「一戶一攤」限制，讓攤商經營更有彈性，預計明年就能上路。\n另外，我們也持續增加針對各傳統市場的行銷及精進預算，讓更多市民及觀光客走進傳統市場。\n\n中秋連假前，感謝每一位市場夥伴的辛苦付出\n臺北隊也會持續和大家一起努力！",
+      "topicScores": {
+        "文化觀光": 0.43,
+        "經濟": 0.76
+      },
+      "topics": [
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/chiangwanan/posts/pfbid02LT7EsAZG5umWiQvjV3R9oAZJ86ukY7xs7nuypBfyn56gtBJ79We3WG9GcFpBE5EFl"
+    },
+    {
+      "agendaRelevance": 0.9,
+      "candidateId": "chiang-wanan",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "f1ab0b05cf0defa6c668b0cd4be99dbd5050b8ae945d81774685b18d67706a94",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/Ddq-XFwtyR6/",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/d8c5051af4a655977a9f.webp",
+      "keywords": [
+        "攤商",
+        "觀光"
+      ],
+      "platform": "instagram",
+      "postedAt": "2026-09-24T13:20:07+00:00",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "說明市場改建、攤商經營彈性與行銷預算等施政進度及措施，非回應他方。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chiang-wa-ig",
+      "text": "中秋連假前，來和 #環南市場 好朋友們問早！\n\n中秋節前正是市場忙碌備貨的時候。\n今天一大早，我特別來到環南市場，感謝大家的辛苦付出，也跟老朋友們見面敘舊，持續傾聽大家的需求。\n\n環南市場從去年完成改建後，整體環境更加舒適，民眾採買動線也更加完善，成為全臺市場轉型的新典範！\n\n我上任後，也解除市場「一戶一攤」限制，讓攤商經營更有彈性，預計明年就能上路。\n另外，我們也持續增加針對各傳統市場的行銷及精進預算，讓更多市民及觀光客走進傳統市場。\n\n中秋連假前，感謝每一位市場夥伴的辛苦付出\n臺北隊也會持續和大家一起努力！",
+      "topicScores": {
+        "文化觀光": 0.68,
+        "經濟": 0.91
+      },
+      "topics": [
+        "經濟",
+        "文化觀光"
+      ],
+      "url": "https://www.instagram.com/p/Ddq-XFwtyR6/"
+    },
     {
       "agendaRelevance": 0.53,
       "candidateId": "chiang-wanan",

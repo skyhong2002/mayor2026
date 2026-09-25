@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/43baef72cd8a0281c244.webp",
+    "avatarUrl": "assets/source-avatars/7c6aaddf1759f049d233.webp",
     "city": "kaohsiung",
     "cityLabel": "高雄市",
     "id": "chang-ching",
@@ -19,8 +19,40 @@
     "name": "張靜",
     "party": "司法改革黨"
   },
-  "count": 65,
+  "count": 66,
   "posts": [
+    {
+      "agendaRelevance": 0.03,
+      "candidateId": "chang-ching",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "ec92fb811bd40f36b869fc36dbdd5209450e4b98f3f47aa047485ff16a0ef892",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:982736334857895",
+      "imageAspect": 1.0057,
+      "imageUrl": "assets/feed-images/e2745e7186c805110ac3.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-25T00:00:03.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主要是政黨的中秋節祝福，司法改革僅作標籤式提及，沒有政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "chang-ching-party-fb",
+      "text": "一輪明月，照見公平\n\n中秋，是一家人團聚、分享祝福的時刻。\n\n同一輪明月，照亮每一個家庭；而公平，也應該屬於每一個人。\n\n願這個中秋，大家都能與家人共享團圓，心中有平安，生活有希望。\n\n司法改革黨祝福大家：\n中秋佳節愉快，闔家平安！\n\n#司法改革黨\n#中秋節\n#一輪明月照見公平\n#落實司法改革還給人民公道",
+      "topicScores": {
+        "生活": 0.81
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid025mpFuNQ3So8GZYVMgcPm4TsicYuM8wVpSBxBPseDBWQdLZmHPsGvHXbxzj9LmQWil&id=100093646137173"
+    },
     {
       "agendaRelevance": 0.25,
       "candidateId": "chang-ching",

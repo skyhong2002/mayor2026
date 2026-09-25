@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/ef375d09ac050337fffb.webp",
+    "avatarUrl": "assets/source-avatars/14a3bb4cdd5e4c2504e3.webp",
     "city": "taipei",
     "cityLabel": "臺北市",
     "id": "shen-poyang",
@@ -19,8 +19,106 @@
     "name": "沈伯洋",
     "party": "民進黨"
   },
-  "count": 650,
+  "count": 655,
   "posts": [
+    {
+      "agendaRelevance": 0.19,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "54d22177d57c0e59e178eeba7e985877a186ad1d13fad4923e392d7e3c21c7b1",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:122113388151329310",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/54d1b6f9f190d6bf6637.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-25T01:02:02.000Z",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以中秋祝福談打造包容、讓人有歸屬的城市，未提出具體施政措施。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "月圓，是團聚的時刻；團圓，有很多不同的模樣。\n⠀\n有人與家人圍坐吃飯，有人和朋友相聚，有人仍堅守工作崗位，也有人選擇安靜地度過今晚。\n⠀\n無論怎麼過，我都想把台北打造成一座接住每個人的城市，讓每個人都有自己的歸屬。\n⠀\n歡迎大家留言告訴我，今年中秋，你最希望實現的願望是什麼？\n願今晚的月光，照亮你回家的路，也陪伴你未完成的夢想。\n⠀\n祝大家中秋節快樂，平安順心 🌕",
+      "topicScores": {
+        "社福": 0.64
+      },
+      "topics": [
+        "社福"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02LTyuvnbTWcqYAuv12jdLheY3E8VtAPve7dkK7ooFXYXty9dBezndoVeuGhWg99Y9l"
+    },
+    {
+      "agendaRelevance": 0.51,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "8a61d059b13a1b85995b9d3c92ba15169a8d6c0030702bd1f6c7b54c9f688574",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:10175813735930654",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/20cd9444f3370ca2663d.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-25T01:00:14.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "主動提出打造接住每個人的台北市願景，著重歸屬與包容，但缺乏具體政策措施。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "月圓，是團聚的時刻；團圓，有很多不同的模樣。\n⠀\n有人與家人圍坐吃飯，有人和朋友相聚，有人仍堅守工作崗位，也有人選擇安靜地度過今晚。\n⠀\n無論怎麼過，我都想把台北打造成一座接住每個人的城市，讓每個人都有自己的歸屬。\n⠀\n歡迎大家留言告訴我，今年中秋，你最希望實現的願望是什麼？\n願今晚的月光，照亮你回家的路，也陪伴你未完成的夢想。\n⠀\n祝大家中秋節快樂，平安順心 🌕",
+      "topicScores": {
+        "生活": 0.75,
+        "社福": 0.76
+      },
+      "topics": [
+        "社福",
+        "生活"
+      ],
+      "url": "https://www.facebook.com/pumashen/posts/pfbid0j71trgfxjNUtsHENXwHbWpwPPEDe4ZLtuLcYPBHshFtSqJMgr1nWE7XjknvyQU5jl"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "894140fc1f66b5c542dfee834ba4de06215921265c1fb015ff3859df335a11d8",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:10175810137165654",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/9769394f06a72336fddb.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T15:30:56.000Z",
+      "postingIntent": {
+        "confidence": 0.91,
+        "label": "主動發文",
+        "reason": "以滷肉飯開玩笑比較廚藝，屬日常內容，沒有公共議題。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-personal",
+      "text": "我跟安成宰差不多厲害吧，滷肉飯的部分",
+      "topicScores": {
+        "生活": 0.97
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/reel/2516484312194543/"
+    },
     {
       "agendaRelevance": 0.0,
       "candidateId": "shen-poyang",
@@ -84,6 +182,86 @@
         "生活"
       ],
       "url": "https://www.instagram.com/p/Ddq8VwAy4of/"
+    },
+    {
+      "agendaRelevance": 0.95,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "b1c17fc24e4ae21ab8dc820fe4b80d8ca017a5fe5cf2d462b4dd3a642ff24a3b",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:122113287219329310",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/b71751e3945ff5249d8b.webp",
+      "keywords": [
+        "住宅",
+        "社宅",
+        "都更",
+        "危老",
+        "包租代管",
+        "身障",
+        "照顧"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T12:01:01.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出社宅戶數、多元取得與照顧長者、身障者及年輕人的明確政策方向。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "⁨⁨中央興辦的「黎孝好室」社宅，開工動土\n⠀\n「黎孝好室」是全國首件行政院依危老重建條例興辦的社宅，預計2029年完工，提供約137戶住宅，並設置店鋪與共享空間。\n⠀\n這幾年，社宅的樣貌正在改變。從天空慢跑廊道、公園與捷運，到日照中心、幼兒園，社宅不只是蓋房子，更要回應社區真正的需要。\n⠀\n未來台北的社宅政策，我會堅持三個方向：\n完成中央與地方已規劃的約「2,100戶」；透過危老、都更及容積獎勵，多元取得社宅；串聯社宅、包租代管與都市更新，照顧獨居長者、身障朋友，也增加年輕人的居住選擇。\n⠀\n「黎孝好室」小而美、融入社區，是未來值得發展的方向。期待下次來到這裡，能代表台北市，與大家一起為它開幕剪綵。\n＃台北順起來\n＃你的市長沈伯洋⁩",
+      "topicScores": {
+        "住宅": 0.98,
+        "社福": 0.75
+      },
+      "topics": [
+        "住宅",
+        "社福"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid02cfBv3jKFVNQesDGXWRDtAFdezT812Kqa7Re3zk2HvTNKkpTh5XjMHZix88Fp7xr2l"
+    },
+    {
+      "agendaRelevance": 0.57,
+      "candidateId": "shen-poyang",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "4567e40c2a83cc962f679bd68e4fe68b2ff9b6c3f5d3af0d486415be7f4ba3f9",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:122113283385329310",
+      "imageAspect": 1.5013,
+      "imageUrl": "assets/feed-images/b2e709f030133df85a49.webp",
+      "keywords": [
+        "交通"
+      ],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T10:00:24.000Z",
+      "postingIntent": {
+        "confidence": 0.97,
+        "label": "主動發文",
+        "reason": "整理市民座談議題並提出無家者安置及交通標線主張，並非回應特定他方說法。",
+        "type": "self_initiated"
+      },
+      "sourceId": "shen-fb-campaign",
+      "text": "政黨立場可以不同，但我們同樣有讓台北更好的心願。 \n⠀\n第二場「市長，你給我聽好了！」來到西門町，從無家者安置、交通標線，到「選前期待、選後失望」，每一題都很直接，也是市民對台北最真實的期待。\n⠀\n無家者問題，要從安置出發，串聯就業、成癮防治與心理健康支持；台北交通標線像「鬼畫符」，如果我當市長，就會重新盤點規劃，不能再只靠開罰處理問題。\n⠀\n現場提出建議的市民來自不同背景，也可能支持不同政黨，但希望台北更好的心願是一致的。市政不分黨派，只要是對市民有幫助的建議，我都會認真聽、積極做。\n⠀\n也有人問我，如何讓期待不變成失望？\n⠀\n我會守住投入公共領域的初衷，也用制度讓施政接受檢驗。\n未來如果偏離對城市的願景、對國家的信念與自己的價值，請大家用力批評。\n⠀\n謝謝每一位願意站上台，把話說給我聽的市民。\n⠀\n＃市長你給我聽好了\n＃台北順起來\n＃你的市長沈伯洋",
+      "topicScores": {
+        "交通": 0.82,
+        "社福": 0.84,
+        "競選": 0.71
+      },
+      "topics": [
+        "社福",
+        "交通",
+        "競選"
+      ],
+      "url": "https://www.facebook.com/puma.taipei/posts/pfbid0rbLvqTcZ23GNyJ6SMTVbYXy7TtMAXHF8jQmqmGYPvsfT7iq9v2pni2YZV8UetY4il"
     },
     {
       "agendaRelevance": 0.03,
@@ -18083,8 +18261,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "threads:https://www.threads.com/t/DbRj2mbk55Z",
-      "imageAspect": 1.5,
-      "imageUrl": "assets/feed-images/bbc98b0e53767347384c.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "threads",
       "postedAt": "2026-07-26T23:22:43+00:00",

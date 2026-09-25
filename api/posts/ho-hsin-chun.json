@@ -1,6 +1,6 @@
 {
   "candidate": {
-    "avatarUrl": "assets/source-avatars/15f0f696b1f2479cfa88.webp",
+    "avatarUrl": "assets/source-avatars/41ba4e51d9e7083dd7bd.webp",
     "city": "taichung",
     "cityLabel": "臺中市",
     "id": "ho-hsin-chun",
@@ -19,8 +19,110 @@
     "name": "何欣純",
     "party": "民進黨"
   },
-  "count": 621,
+  "count": 626,
   "posts": [
+    {
+      "agendaRelevance": 0.06,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-24T04:01:59+00:00",
+        "inputHash": "23cde6ec62a15216ae1ebbe17f896deea6d4fda8a69dca0a780e26d2a30fee75",
+        "intentVerificationVersion": "responsive-v2",
+        "intentVerifiedAt": "2026-09-24T04:02:07+00:00",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:2gN3-_GRtUg",
+      "imageAspect": 1.7822,
+      "imageUrl": "assets/feed-images/48af041408be7c6c3815.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-25T04:00:06+00:00",
+      "postingIntent": {
+        "confidence": 0.87,
+        "label": "回應他方觀點",
+        "reason": "以「蔡英文怕接電話」的質疑為對象，何欣純表明會持續追問，主要是在回應該質疑。",
+        "type": "responsive"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "蔡英文為何「怕接何欣純電話」？ 何欣純 重要的事我就是會一直追！",
+      "topicScores": {
+        "競選": 0.57,
+        "議會監督": 0.73
+      },
+      "topics": [
+        "議會監督",
+        "競選"
+      ],
+      "url": "https://www.youtube.com/watch?v=2gN3-_GRtUg"
+    },
+    {
+      "agendaRelevance": 0.0,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "f088d1ef4b88f6dbd5ef698a552b942866dc5c7d19e963f2a8786c1c5e2321d0",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "youtube:Pa_krU9T488",
+      "imageAspect": 0.6661,
+      "imageUrl": "assets/feed-images/7daf5f6f912aab38ae29.webp",
+      "keywords": [],
+      "platform": "youtube",
+      "postedAt": "2026-09-25T01:00:13+00:00",
+      "postingIntent": {
+        "confidence": 0.75,
+        "label": "主動發文",
+        "reason": "以疑問談何欣純與股市漲停指標的關聯，屬簡短政治評論，未見對他方說法的明確回應。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-yt",
+      "text": "何欣純是漲停板指標? !",
+      "topicScores": {
+        "競選": 0.66
+      },
+      "topics": [
+        "競選"
+      ],
+      "url": "https://www.youtube.com/shorts/Pa_krU9T488"
+    },
+    {
+      "agendaRelevance": 0.04,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "d94f34c4079d97890b409c4cf524300dde6a0013c8ba7d123e6d1d094c49e465",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "instagram:https://www.instagram.com/p/DdrHiOXPnfI/",
+      "imageAspect": 0.5634,
+      "imageUrl": "assets/feed-images/598cf673d06ddfc99c89.webp",
+      "keywords": [],
+      "platform": "instagram",
+      "postedAt": "2026-09-24T14:39:56+00:00",
+      "postingIntent": {
+        "confidence": 0.98,
+        "label": "主動發文",
+        "reason": "以節慶祝福與「新台中交給何欣純」進行競選宣傳，沒有具體政策內容。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-ig",
+      "text": "台中超多超厲害的！連假來台中走走吧！\n中秋、教師結連假，敬祝平安愉快喔！\n新台中，就交給何欣純！\n\n#嚴禁酒駕 #未成年不得飲酒",
+      "topicScores": {
+        "生活": 0.73,
+        "競選": 0.93
+      },
+      "topics": [
+        "競選",
+        "生活"
+      ],
+      "url": "https://www.instagram.com/p/DdrHiOXPnfI/"
+    },
     {
       "agendaRelevance": 0.02,
       "candidateId": "ho-hsin-chun",
@@ -54,6 +156,106 @@
         "文化觀光"
       ],
       "url": "https://www.threads.com/t/DdrHi2uDxvj"
+    },
+    {
+      "agendaRelevance": 0.02,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "820e7e97a37ad220eb2a99eb0c5dd19e68d1a2a3752a157e49180e48cd1c9c20",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1695327768623297",
+      "imageAspect": 0.5625,
+      "imageUrl": "assets/feed-images/3fd33c9e1038b236dd1e.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T14:22:02.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "以連假邀遊台中及候選人標語進行節慶宣傳，沒有具體議程。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "台中超多超厲害的！連假來台中走走吧！\n中秋、教師節連假，敬祝平安愉快喔！\n\n新台中，就交給何欣純！\n\n#嚴禁酒駕 #未成年不得飲酒",
+      "topicScores": {
+        "文化觀光": 0.55,
+        "競選": 0.84
+      },
+      "topics": [
+        "競選",
+        "文化觀光"
+      ],
+      "url": "https://www.facebook.com/reel/1056264667413547/"
+    },
+    {
+      "agendaRelevance": 0.01,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "9c3e0170cdb32224ae446bf87266bf31f7ff59c724601fca39b291ed0e70b8af",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1695207768635297",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/7543ae77286fe18bce78.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T12:00:09.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "內容是中秋假期問候與祝福，未涉及公共政策。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "明天開始就是中秋連假了，大家準備去哪裡度假呢？\n\n月圓人團圓，不論是要跟家人吃飯，或是跟朋友相聚，都希望你能享受這段美好時光。\n\n祝大家有個幸福快樂的中秋假期❤️",
+      "topicScores": {
+        "生活": 0.98
+      },
+      "topics": [
+        "生活"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid02mKZAx16XzVeQfn3pjLrsrhkgephig8LBPWLXuMaftqB95MnqReuQLJZaUQa5C2E6l"
+    },
+    {
+      "agendaRelevance": 0.97,
+      "candidateId": "ho-hsin-chun",
+      "classification": {
+        "classifiedAt": "2026-09-25T04:04:15+00:00",
+        "inputHash": "77d81771aa2f0d84e47b33800913d1362d9092f6ed0f7844b4920adbc562f38c",
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "rubricVersion": "content-v5"
+      },
+      "id": "facebook:1695007151988692",
+      "imageAspect": 1.0,
+      "imageUrl": "assets/feed-images/a5122b9239c81fcfdd0f.webp",
+      "keywords": [],
+      "platform": "facebook",
+      "postedAt": "2026-09-24T07:13:42.000Z",
+      "postingIntent": {
+        "confidence": 0.99,
+        "label": "主動發文",
+        "reason": "提出提升清潔隊待遇、人力、安全裝備及環保志工經費的具體政策承諾。",
+        "type": "self_initiated"
+      },
+      "sourceId": "ho-hc-fb",
+      "text": "清潔隊員是守護城市的無名英雄，有他們辛苦付出，才有乾淨美麗的台中。\n\n今天我與台中隊共同宣布「五大承諾 守護清潔第一線」政策，要全面提升清潔隊員的待遇和工作安全：\n\n✅夜點費加碼100元\n▪️由現行100元至120元，提高至200元至220元，將成全國第一，並隨物價適時調整\n▪️針對焚化廠及特殊高風險勤務研議額外加給\n\n✅擴大人力\n▪️盤點各區服務人口、清運量及勤務負擔，建立合理公開的人力配置標準，逐年擴編員額\n▪️檢討並加速儲備隊員及臨時人員轉正，縮短等待時間，落實同工同酬保障\n\n✅加速車輛更新\n▪️編足維修經費、下修車輛淘汰年限，優先汰換車齡高、故障頻繁、維修成本高及安全配備不足的車輛\n▪️針對仍在使用的舊式車輛，逐年增設環景影像、倒車警示等設備\n\n✅裝備升級\n▪️編列專案預算，採購符合職業安全與電氣安全規範的風扇衣，納入標準工作裝備，全面配發具有高溫暴露風險的外勤人員，並完善包含雨衣雨具等各項勤務裝備\n▪️針對大型廢棄家具及床墊處理，將添購大型廢棄物破壞處理機具，增加載運地點及暫置空間，提升清運與處理量能\n\n✅環保志工隊業務費提高至每年6萬元\n將每隊每年業務費由現行2萬4,000元提高至6萬元，讓志工隊運作獲得充足經費支持\n\n清潔隊員的工作繁雜又危險，市府應該成為第一線最有力的後盾，讓他們待遇有保障、勤務更安全、裝備更完善，讓守護城市的英雄受到應有的尊重！\n\n#心存大台中\n#市長換欣_台中創新\n#首都格局_台中進擊",
+      "topicScores": {
+        "環境": 0.62,
+        "社福": 0.84
+      },
+      "topics": [
+        "社福",
+        "環境"
+      ],
+      "url": "https://www.facebook.com/94achun/posts/pfbid0twRMFDeqc94FcW7Xq2siUCUapJPbSMypvmURAVY2XqaSWPBzWCud62JgrHAxZ9Lrl"
     },
     {
       "agendaRelevance": 0.04,
@@ -16585,8 +16787,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:c7-5gvaxz_E",
-      "imageAspect": 1.7872,
-      "imageUrl": "assets/feed-images/d6667f17644deedf68f0.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [
         "長輩"
       ],
@@ -16625,8 +16827,8 @@
         "rubricVersion": "content-v5"
       },
       "id": "youtube:ybBD-g36fHY",
-      "imageAspect": 0.5625,
-      "imageUrl": "assets/feed-images/23905cc5a257ce326ecf.webp",
+      "imageAspect": null,
+      "imageUrl": null,
       "keywords": [],
       "platform": "youtube",
       "postedAt": "2026-07-27T01:00:38+00:00",
@@ -22026,42 +22228,6 @@
         "經濟"
       ],
       "url": "https://www.youtube.com/watch?v=GnRRmuGnz9c"
-    },
-    {
-      "agendaRelevance": 0.06,
-      "candidateId": "ho-hsin-chun",
-      "classification": {
-        "classifiedAt": "2026-09-24T04:01:59+00:00",
-        "inputHash": "23cde6ec62a15216ae1ebbe17f896deea6d4fda8a69dca0a780e26d2a30fee75",
-        "intentVerificationVersion": "responsive-v2",
-        "intentVerifiedAt": "2026-09-24T04:02:07+00:00",
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "rubricVersion": "content-v5"
-      },
-      "id": "youtube:2gN3-_GRtUg",
-      "imageAspect": 1.7822,
-      "imageUrl": "assets/feed-images/48af041408be7c6c3815.webp",
-      "keywords": [],
-      "platform": "youtube",
-      "postedAt": "",
-      "postingIntent": {
-        "confidence": 0.87,
-        "label": "回應他方觀點",
-        "reason": "以「蔡英文怕接電話」的質疑為對象，何欣純表明會持續追問，主要是在回應該質疑。",
-        "type": "responsive"
-      },
-      "sourceId": "ho-hc-yt",
-      "text": "蔡英文為何「怕接何欣純電話」？ 何欣純 重要的事我就是會一直追！",
-      "topicScores": {
-        "競選": 0.57,
-        "議會監督": 0.73
-      },
-      "topics": [
-        "議會監督",
-        "競選"
-      ],
-      "url": "https://www.youtube.com/watch?v=2gN3-_GRtUg"
     },
     {
       "agendaRelevance": 0.08,
