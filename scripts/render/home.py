@@ -22,9 +22,16 @@ BADGE_WINDOW = dt.timedelta(hours=48)
 BUNDLE_KEYS = ("id", "candidateId", "platform", "url", "postedAt", "text", "imageUrl", "imageAspect", "topics")
 
 
+def safe_http(url: Any) -> str:
+    """Only http(s) URLs may reach an href; anything else becomes ""."""
+    u = str(url or "").strip()
+    return u if u.lower().startswith(("http://", "https://")) else ""
+
+
 def _slim(post: Dict[str, Any]) -> Dict[str, Any]:
     """Only the fields MO.postHTML reads."""
     out = {k: post.get(k) for k in BUNDLE_KEYS}
+    out["url"] = safe_http(out.get("url"))
     intent = post.get("postingIntent")
     if isinstance(intent, dict) and intent.get("type"):
         out["postingIntent"] = {k: intent.get(k) for k in ("type", "label", "confidence", "reason")}
@@ -138,7 +145,9 @@ def boot_json(data) -> str:
     cands = [{k: c.get(k) for k in ("id", "name", "city", "party", "avatarUrl")} for c in data.candidates]
     payload = {"candidates": cands, "topics": list(S.TOPIC_SLUGS), "cities": S.CITY_ORDER,
                "perCol": SSR_PER_COL, "bundle": BUNDLE_SIZE, "v": S.epoch(data.generated_at.isoformat())}
-    raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    raw = (json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+           .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+           .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
     return f'<script type="application/json" id="home-boot">{raw}</script>'
 
 

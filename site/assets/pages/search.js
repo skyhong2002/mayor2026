@@ -86,6 +86,7 @@
     if (!index) {
       results.setAttribute("aria-busy", "true");
       countEl.textContent = "正在讀取搜尋索引…";
+      results.innerHTML = "";
       load().then(function () { results.removeAttribute("aria-busy"); run(); }, function () {
         results.removeAttribute("aria-busy");
         countEl.textContent = "";

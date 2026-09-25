@@ -12,6 +12,7 @@ import json
 from typing import Any, Dict
 
 from . import shell as S
+from .home import safe_http
 
 INDEX_PATH = S.SITE_ROOT / "data" / "search-index.json"
 TEXT_LIMIT = 300
@@ -32,7 +33,7 @@ def _record(post: Dict[str, Any]) -> Dict[str, Any]:
         "a": post.get("imageAspect"),
         "o": [t for t in (post.get("topics") or []) if t],
         "n": intent.get("type") or None,
-        "u": post.get("url") or "",
+        "u": safe_http(post.get("url")),
         "r": round(float(conf), 2) if isinstance(conf, (int, float)) else None,
     }
 
