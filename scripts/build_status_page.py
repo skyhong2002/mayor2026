@@ -162,9 +162,11 @@ def build_status() -> dict[str, Any]:
     watch_platforms = collections.Counter(str(s.get("platform") or "unknown") for s in sources)
 
     # The JSONL keeps rows for removed candidates as history (append-only);
-    # public metrics only count the current roster.
+    # public metrics only count the current roster. Posts still awaiting AI
+    # classification (deferred to the next run) aren't published yet, so they
+    # don't count either; otherwise totalPosts disagrees with candidates.json.
     roster_ids = {c["candidate_id"] for c in candidates}
-    posts = [p for p in feed_common.read_jsonl(feed_common.CANDIDATES_JSONL) if p.get("candidate_id") in roster_ids]
+    posts = [p for p in feed_common.read_classified_candidates() if p.get("candidate_id") in roster_ids]
     by_platform: dict[str, int] = {}
     for post in posts:
         by_platform[post["platform"]] = by_platform.get(post["platform"], 0) + 1
