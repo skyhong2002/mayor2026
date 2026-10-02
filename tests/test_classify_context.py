@@ -1,3 +1,4 @@
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -41,6 +42,66 @@ class ContentClassifierTest(unittest.TestCase):
         row["text"] += "，並增加租金補貼"
         self.assertFalse(classify_context.is_current(row, "gpt-5-mini"))
 
+    def test_provenance_records_alias_and_resolved_model(self):
+        row = self.row()
+        result = {**self.result(), "resolvedModel": "gpt-6-luna"}
+        classify_context.apply_result(row, result, "sky-fast", "2026-10-02T00:00:00+00:00")
+        self.assertEqual(row["classification"]["model"], "gpt-6-luna")
+        self.assertEqual(row["classification"]["requestedModel"], "sky-fast")
+        self.assertNotIn("resolvedModel", row["classification"])
+        self.assertTrue(classify_context.is_current(row, "sky-fast"))
+
+    def test_switching_to_gateway_alias_keeps_archived_classifications(self):
+        row = self.row()
+        classify_context.apply_result(row, self.result(), "gpt-6-luna", "2026-07-15T00:00:00+00:00")
+        self.assertTrue(classify_context.is_current(row, "sky-fast"))
+
+    def test_gateway_request_uses_configured_reasoning_effort_and_reports_model(self):
+        sent = {}
+
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self):
+                return json.dumps({
+                    "model": "gpt-6-luna",
+                    "status": "completed",
+                    "output": [{
+                        "type": "message",
+                        "content": [{"type": "output_text", "text": '{"results":[]}'}],
+                    }],
+                }).encode("utf-8")
+
+        def fake_urlopen(request, timeout):
+            sent["url"] = request.full_url
+            sent["body"] = json.loads(request.data.decode("utf-8"))
+            return FakeResponse()
+
+        with (
+            mock.patch.object(classify_context, "AI_BACKEND", "openai"),
+            mock.patch.object(classify_context, "REASONING_EFFORT", "low"),
+            mock.patch.object(classify_context, "load_api_key", return_value="test-key"),
+            mock.patch.dict(classify_context.os.environ, {"MAYOR_OPENAI_API_URL": ""}),
+            mock.patch.object(classify_context.urllib.request, "urlopen", side_effect=fake_urlopen),
+        ):
+            classify_context.os.environ.pop("MAYOR_OPENAI_API_URL")
+            payload, resolved = classify_context.run_structured_request(
+                prompt="Classify posts",
+                model="sky-fast",
+                schema_path=classify_context.SCHEMA_PATH,
+                schema_name="post_classification",
+                max_output_tokens=100,
+            )
+
+        self.assertEqual((payload, resolved), ({"results": []}, "gpt-6-luna"))
+        self.assertEqual(sent["url"], classify_context.DEFAULT_API_URL)
+        self.assertEqual(sent["body"]["model"], "sky-fast")
+        self.assertEqual(sent["body"]["reasoning"], {"effort": "low"})
+
     def test_validate_results_rejects_missing_id(self):
         with self.assertRaises(classify_context.ClassificationError):
             classify_context.validate_results({"results": [self.result("wrong")]}, {"post-1"})
@@ -64,7 +125,7 @@ class ContentClassifierTest(unittest.TestCase):
                     schema_path=classify_context.SCHEMA_PATH,
                     timeout=10,
                 )
-                self.assertEqual(result, {"results": []})
+                self.assertEqual(result, ({"results": []}, "gpt-6-luna"))
 
     def test_classify_rows_uses_runner_and_then_cache(self):
         rows = [self.row()]
@@ -91,7 +152,7 @@ class ContentClassifierTest(unittest.TestCase):
 
         def fake_request(*, prompt, **kwargs):
             prompts.append(prompt)
-            return {"results": [self.result("p2"), self.result("p1")]}
+            return {"results": [self.result("p2"), self.result("p1")]}, "gpt-5.4-mini"
 
         with mock.patch.object(classify_context, "run_structured_request", fake_request):
             results = classify_context.run_openai_batch(rows, "gpt-5.4-mini")

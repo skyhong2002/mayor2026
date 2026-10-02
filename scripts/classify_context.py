@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Classify post topics and posting intent with OpenAI Structured Outputs.
+"""Classify post topics and posting intent with AI Structured Outputs.
 
-The classifier calls the Responses API, persists its result with each post,
+The classifier calls the Responses API on the sky-mini AI gateway (an
+OpenAI-compatible proxy that maps semantic aliases such as `sky-fast` to a
+concrete model), persists its result with each post,
 and skips unchanged posts on later pipeline runs. There is deliberately no
 human-review state: uncertain results remain AI estimates with an explicit
 confidence score.
@@ -30,17 +32,19 @@ import feed_common
 
 RUBRIC_VERSION = "content-v5"  # v5: loosened the responsive definition (was so strict only 7/3018 qualified)
 INTENT_VERIFICATION_VERSION = "responsive-v2"
-# Use the same model id on both backends so classification provenance
-# matches the requested model when switching between them.
-DEFAULT_MODEL = "gpt-6-luna"
+# A gateway alias, not a concrete model: the gateway policy decides what it
+# resolves to, and each classification records both. The codex backend talks
+# to Codex directly and needs a concrete model in MAYOR_AI_MODEL.
+DEFAULT_MODEL = "sky-fast"
 DEFAULT_BATCH_SIZE = 20
-DEFAULT_API_URL = "https://api.openai.com/v1/responses"
+DEFAULT_API_URL = "http://127.0.0.1:8317/v1/responses"
+DEFAULT_REASONING_EFFORT = "none"
 DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
 DEFERRED_EXIT_CODE = 75
 
 # Which AI backend classifies posts:
-#   "openai" — the OpenAI Responses API (platform key; default, uses the
-#              daily free token allowance)
+#   "openai" — an OpenAI-compatible Responses API (default: the sky-mini AI
+#              gateway; MAYOR_OPENAI_API_URL is the full endpoint URL)
 #   "codex"  — the local Codex CLI, billed to the ChatGPT subscription
 AI_BACKEND = os.environ.get("MAYOR_AI_BACKEND", "openai").strip().lower()
 CODEX_BIN_CANDIDATES = (
@@ -54,6 +58,7 @@ SCHEMA_PATH = Path(__file__).resolve().parent / "schemas" / "content-classificat
 INTENT_VERIFICATION_SCHEMA_PATH = (
     Path(__file__).resolve().parent / "schemas" / "posting-intent-verification.schema.json"
 )
+REASONING_EFFORT = os.environ.get("MAYOR_AI_REASONING_EFFORT", DEFAULT_REASONING_EFFORT).strip().lower()
 TOKEN_WARNING_THRESHOLD = int(os.environ.get("MAYOR_AI_TOKEN_WARNING", "1000000"))
 TOKEN_USAGE = {"input": 0, "output": 0, "total": 0}
 TOKEN_WARNING_EMITTED = False
@@ -229,7 +234,7 @@ def load_api_key() -> str:
         return key_file.read_text(encoding="utf-8").strip()
     except OSError as exc:
         raise ClassificationError(
-            f"OpenAI API key not found; set OPENAI_API_KEY or create {key_file}"
+            f"AI API key not found; set OPENAI_API_KEY or create {key_file}"
         ) from exc
 
 
@@ -272,10 +277,10 @@ def run_codex_structured_request(
     model: str,
     schema_path: Path,
     timeout: int,
-) -> dict[str, Any]:
+) -> tuple[dict[str, Any], str]:
     """Run one classification request through the Codex CLI (ChatGPT
     subscription) instead of the OpenAI API. Same contract as
-    run_structured_request: returns the parsed payload dict."""
+    run_structured_request: returns the parsed payload dict and the model."""
     if not schema_path.is_file():
         raise ClassificationError(f"missing output schema: {schema_path}")
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
@@ -306,7 +311,7 @@ def run_codex_structured_request(
     finally:
         out_path.unlink(missing_ok=True)
     try:
-        return json.loads(strip_json_fences(raw))
+        return json.loads(strip_json_fences(raw)), model
     except json.JSONDecodeError as exc:
         raise ClassificationError(f"codex output was not valid JSON: {exc}: {raw[:200]!r}") from exc
 
@@ -319,7 +324,12 @@ def run_structured_request(
     schema_name: str,
     max_output_tokens: int,
     timeout: int = 600,
-) -> dict[str, Any]:
+) -> tuple[dict[str, Any], str]:
+    """Return the parsed structured output and the model that answered.
+
+    The gateway reports the resolved upstream model in `model`; fall back to
+    the requested model when a backend doesn't say.
+    """
     if AI_BACKEND == "codex":
         return run_codex_structured_request(
             prompt=prompt, model=model, schema_path=schema_path, timeout=max(timeout, CODEX_TIMEOUT_SECS)
@@ -332,7 +342,7 @@ def run_structured_request(
     request_payload = {
         "model": model,
         "input": prompt,
-        "reasoning": {"effort": "none"},
+        "reasoning": {"effort": REASONING_EFFORT},
         "store": False,
         "max_output_tokens": max_output_tokens,
         "text": {
@@ -368,14 +378,15 @@ def run_structured_request(
         raise ClassificationError(f"OpenAI request failed: {exc}") from exc
 
     record_token_usage(api_response)
+    resolved_model = str(api_response.get("model") or model)
     try:
-        return json.loads(response_output_text(api_response))
+        return json.loads(response_output_text(api_response)), resolved_model
     except json.JSONDecodeError as exc:
         raise ClassificationError(f"OpenAI output was not valid JSON: {exc}") from exc
 
 
 def run_openai_batch(posts: list[dict[str, Any]], model: str, timeout: int = 600) -> list[dict[str, Any]]:
-    payload = run_structured_request(
+    payload, resolved_model = run_structured_request(
         prompt=build_prompt(posts),
         model=model,
         schema_path=SCHEMA_PATH,
@@ -384,7 +395,10 @@ def run_openai_batch(posts: list[dict[str, Any]], model: str, timeout: int = 600
         timeout=timeout,
     )
     aliases = model_ids(posts)
-    return restore_ids(validate_results(payload, set(aliases)), aliases)
+    results = restore_ids(validate_results(payload, set(aliases)), aliases)
+    for result in results:
+        result["resolvedModel"] = resolved_model
+    return results
 
 
 def build_intent_verification_prompt(posts: list[dict[str, Any]]) -> str:
@@ -432,7 +446,7 @@ def validate_intent_verification_results(
 def run_intent_verification_batch(
     posts: list[dict[str, Any]], model: str, timeout: int = 600
 ) -> list[dict[str, Any]]:
-    payload = run_structured_request(
+    payload, _ = run_structured_request(
         prompt=build_intent_verification_prompt(posts),
         model=model,
         schema_path=INTENT_VERIFICATION_SCHEMA_PATH,
@@ -459,11 +473,16 @@ def apply_result(post: dict[str, Any], result: dict[str, Any], model: str, class
         "reason": str(result["reason"]).strip(),
     }
     post["agendaRelevance"] = round(float(result["agendaRelevance"]), 4)
+    # `model` is the model that actually answered (the gateway's resolved
+    # model) and is what inputHash/is_current key on, so archived rows stay
+    # valid across alias changes; `requestedModel` is what was asked for.
+    resolved_model = str(result.get("resolvedModel") or model)
     post["classification"] = {
         "method": "ai",
-        "model": model,
+        "model": resolved_model,
+        "requestedModel": model,
         "rubricVersion": RUBRIC_VERSION,
-        "inputHash": input_hash(post, model),
+        "inputHash": input_hash(post, resolved_model),
         "classifiedAt": classified_at,
     }
 
