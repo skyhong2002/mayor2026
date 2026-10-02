@@ -19,8 +19,6 @@ import os
 from pathlib import Path
 import re
 import sys
-import shutil
-import subprocess
 import tempfile
 import time
 from typing import Any, Callable
@@ -33,27 +31,13 @@ import feed_common
 RUBRIC_VERSION = "content-v5"  # v5: loosened the responsive definition (was so strict only 7/3018 qualified)
 INTENT_VERIFICATION_VERSION = "responsive-v2"
 # A gateway alias, not a concrete model: the gateway policy decides what it
-# resolves to, and each classification records both. The codex backend talks
-# to Codex directly and needs a concrete model in MAYOR_AI_MODEL.
+# resolves to, and each classification records both.
 DEFAULT_MODEL = "sky-fast"
 DEFAULT_BATCH_SIZE = 20
 DEFAULT_API_URL = "http://127.0.0.1:8317/v1/responses"
 DEFAULT_REASONING_EFFORT = "none"
-DEFAULT_KEY_FILE = Path.home() / ".config" / "mayor2026" / "openai-api-key"
 DEFERRED_EXIT_CODE = 75
 
-# Which AI backend classifies posts:
-#   "openai" — an OpenAI-compatible Responses API (default: the sky-mini AI
-#              gateway; MAYOR_OPENAI_API_URL is the full endpoint URL)
-#   "codex"  — the local Codex CLI, billed to the ChatGPT subscription
-AI_BACKEND = os.environ.get("MAYOR_AI_BACKEND", "openai").strip().lower()
-CODEX_BIN_CANDIDATES = (
-    os.environ.get("MAYOR_CODEX_BIN", ""),
-    shutil.which("codex") or "",
-    str(Path.home() / ".local" / "bin" / "codex"),
-    "/Applications/ChatGPT.app/Contents/Resources/codex",
-)
-CODEX_TIMEOUT_SECS = int(os.environ.get("MAYOR_CODEX_TIMEOUT", "600"))
 SCHEMA_PATH = Path(__file__).resolve().parent / "schemas" / "content-classification.schema.json"
 INTENT_VERIFICATION_SCHEMA_PATH = (
     Path(__file__).resolve().parent / "schemas" / "posting-intent-verification.schema.json"
@@ -226,94 +210,31 @@ def validate_results(payload: dict[str, Any], expected_ids: set[str]) -> list[di
 
 
 def load_api_key() -> str:
-    configured = os.environ.get("OPENAI_API_KEY", "").strip()
-    if configured:
-        return configured
-    key_file = Path(os.environ.get("MAYOR_OPENAI_KEY_FILE", DEFAULT_KEY_FILE)).expanduser()
-    try:
-        return key_file.read_text(encoding="utf-8").strip()
-    except OSError as exc:
-        raise ClassificationError(
-            f"AI API key not found; set OPENAI_API_KEY or create {key_file}"
-        ) from exc
+    """The gateway client key. OPENAI_API_KEY is the pre-gateway name, still
+    accepted so an older .env keeps working."""
+    for name in ("MAYOR_AI_API_KEY", "OPENAI_API_KEY"):
+        configured = os.environ.get(name, "").strip()
+        if configured:
+            return configured
+    raise ClassificationError("AI gateway key not found; set MAYOR_AI_API_KEY in .env")
 
 
 def response_output_text(response: dict[str, Any]) -> str:
     if response.get("status") != "completed":
         detail = response.get("error") or response.get("incomplete_details") or response.get("status")
-        raise ClassificationError(f"OpenAI response did not complete: {detail}")
+        raise ClassificationError(f"AI gateway response did not complete: {detail}")
     texts = []
     for output in response.get("output") or []:
         if output.get("type") != "message":
             continue
         for item in output.get("content") or []:
             if item.get("type") == "refusal":
-                raise ClassificationError(f"OpenAI refused classification: {item.get('refusal') or 'no detail'}")
+                raise ClassificationError(f"AI gateway refused classification: {item.get('refusal') or 'no detail'}")
             if item.get("type") == "output_text":
                 texts.append(item.get("text") or "")
     if not texts:
-        raise ClassificationError("OpenAI response contained no output text")
+        raise ClassificationError("AI gateway response contained no output text")
     return "".join(texts)
-
-
-def codex_binary() -> str:
-    for candidate in CODEX_BIN_CANDIDATES:
-        if candidate and Path(candidate).is_file():
-            return candidate
-    raise ClassificationError("codex CLI not found (set MAYOR_CODEX_BIN or install codex)")
-
-
-def strip_json_fences(text: str) -> str:
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
-        text = re.sub(r"\s*```$", "", text)
-    return text.strip()
-
-
-def run_codex_structured_request(
-    *,
-    prompt: str,
-    model: str,
-    schema_path: Path,
-    timeout: int,
-) -> tuple[dict[str, Any], str]:
-    """Run one classification request through the Codex CLI (ChatGPT
-    subscription) instead of the OpenAI API. Same contract as
-    run_structured_request: returns the parsed payload dict and the model."""
-    if not schema_path.is_file():
-        raise ClassificationError(f"missing output schema: {schema_path}")
-    schema = json.loads(schema_path.read_text(encoding="utf-8"))
-    schema.pop("$schema", None)
-    full_prompt = (
-        prompt
-        + "\n\n只輸出一個符合以下 JSON Schema 的 JSON 物件；不要 markdown 圍欄，不要任何說明文字：\n"
-        + json.dumps(schema, ensure_ascii=False)
-    )
-    command = [codex_binary(), "exec", "-", "-s", "read-only", "-m", model]
-    with tempfile.NamedTemporaryFile("r", suffix=".txt", delete=False) as handle:
-        out_path = Path(handle.name)
-    try:
-        try:
-            result = subprocess.run(
-                command + ["-o", str(out_path)],
-                input=full_prompt,
-                capture_output=True,
-                text=True,
-                timeout=timeout,
-            )
-        except subprocess.TimeoutExpired as exc:
-            raise ClassificationError(f"codex exec timed out after {timeout}s") from exc
-        if result.returncode != 0:
-            detail = (result.stderr or result.stdout or "").strip()[-500:]
-            raise ClassificationError(f"codex exec failed ({result.returncode}): {detail}")
-        raw = out_path.read_text(encoding="utf-8")
-    finally:
-        out_path.unlink(missing_ok=True)
-    try:
-        return json.loads(strip_json_fences(raw)), model
-    except json.JSONDecodeError as exc:
-        raise ClassificationError(f"codex output was not valid JSON: {exc}: {raw[:200]!r}") from exc
 
 
 def run_structured_request(
@@ -328,12 +249,8 @@ def run_structured_request(
     """Return the parsed structured output and the model that answered.
 
     The gateway reports the resolved upstream model in `model`; fall back to
-    the requested model when a backend doesn't say.
+    the requested alias when it doesn't say.
     """
-    if AI_BACKEND == "codex":
-        return run_codex_structured_request(
-            prompt=prompt, model=model, schema_path=schema_path, timeout=max(timeout, CODEX_TIMEOUT_SECS)
-        )
     api_key = load_api_key()
     if not schema_path.is_file():
         raise ClassificationError(f"missing output schema: {schema_path}")
@@ -373,19 +290,19 @@ def run_structured_request(
             detail = (json.loads(body).get("error") or {}).get("message") or body
         except json.JSONDecodeError:
             detail = body
-        raise ClassificationError(f"OpenAI HTTP {exc.code}: {detail[:500]}") from exc
+        raise ClassificationError(f"AI gateway HTTP {exc.code}: {detail[:500]}") from exc
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-        raise ClassificationError(f"OpenAI request failed: {exc}") from exc
+        raise ClassificationError(f"AI gateway request failed: {exc}") from exc
 
     record_token_usage(api_response)
     resolved_model = str(api_response.get("model") or model)
     try:
         return json.loads(response_output_text(api_response)), resolved_model
     except json.JSONDecodeError as exc:
-        raise ClassificationError(f"OpenAI output was not valid JSON: {exc}") from exc
+        raise ClassificationError(f"AI gateway output was not valid JSON: {exc}") from exc
 
 
-def run_openai_batch(posts: list[dict[str, Any]], model: str, timeout: int = 600) -> list[dict[str, Any]]:
+def run_classification_batch(posts: list[dict[str, Any]], model: str, timeout: int = 600) -> list[dict[str, Any]]:
     payload, resolved_model = run_structured_request(
         prompt=build_prompt(posts),
         model=model,
@@ -520,7 +437,7 @@ def reconcile_intent_conflicts(
     rows: list[dict[str, Any]],
     *,
     model: str,
-    runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]] = run_openai_batch,
+    runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]] = run_classification_batch,
 ) -> tuple[int, int]:
     groups = conflicting_intent_groups(rows)
     if not groups:
@@ -640,7 +557,7 @@ def classify_rows(
     batch_size: int,
     force: bool = False,
     limit: int | None = None,
-    runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]] = run_openai_batch,
+    runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]] = run_classification_batch,
     save: Callable[[list[dict[str, Any]]], None] | None = None,
 ) -> tuple[int, int]:
     pending = [row for row in rows if force or not is_current(row, model)]

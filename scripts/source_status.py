@@ -45,7 +45,7 @@ def iso(value: dt.datetime) -> str:
 
 def safe_error(error: object) -> str:
     text = str(error)
-    for key in ("APIFY_TOKEN", "OPENAI_API_KEY"):
+    for key in ("APIFY_TOKEN", "MAYOR_AI_API_KEY", "OPENAI_API_KEY"):
         secret = os.environ.get(key, "")
         if secret:
             text = text.replace(secret, "[redacted]")

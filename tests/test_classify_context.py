@@ -82,7 +82,6 @@ class ContentClassifierTest(unittest.TestCase):
             return FakeResponse()
 
         with (
-            mock.patch.object(classify_context, "AI_BACKEND", "openai"),
             mock.patch.object(classify_context, "REASONING_EFFORT", "low"),
             mock.patch.object(classify_context, "load_api_key", return_value="test-key"),
             mock.patch.dict(classify_context.os.environ, {"MAYOR_OPENAI_API_URL": ""}),
@@ -106,26 +105,19 @@ class ContentClassifierTest(unittest.TestCase):
         with self.assertRaises(classify_context.ClassificationError):
             classify_context.validate_results({"results": [self.result("wrong")]}, {"post-1"})
 
-    def test_codex_uses_resolved_model_even_with_conflicting_environment(self):
-        def fake_run(command, **kwargs):
-            self.assertEqual(command[command.index("-m") + 1], "gpt-6-luna")
-            Path(command[command.index("-o") + 1]).write_text('{"results":[]}', encoding="utf-8")
-            return mock.Mock(returncode=0)
-
-        for configured_model in ("", "gpt-6-sol"):
-            with (
-                self.subTest(configured_model=configured_model),
-                mock.patch.dict(classify_context.os.environ, {"MAYOR_AI_MODEL": configured_model}),
-                mock.patch.object(classify_context, "codex_binary", return_value="codex"),
-                mock.patch.object(classify_context.subprocess, "run", side_effect=fake_run),
-            ):
-                result = classify_context.run_codex_structured_request(
-                    prompt="Classify posts",
-                    model="gpt-6-luna",
-                    schema_path=classify_context.SCHEMA_PATH,
-                    timeout=10,
-                )
-                self.assertEqual(result, ({"results": []}, "gpt-6-luna"))
+    def test_load_api_key_prefers_gateway_name_and_accepts_legacy(self):
+        cases = (
+            ({"MAYOR_AI_API_KEY": "gateway", "OPENAI_API_KEY": "legacy"}, "gateway"),
+            ({"MAYOR_AI_API_KEY": "", "OPENAI_API_KEY": "legacy"}, "legacy"),
+        )
+        for environ, expected in cases:
+            with self.subTest(environ=environ), mock.patch.dict(classify_context.os.environ, environ):
+                self.assertEqual(classify_context.load_api_key(), expected)
+        with (
+            mock.patch.dict(classify_context.os.environ, {"MAYOR_AI_API_KEY": "", "OPENAI_API_KEY": ""}),
+            self.assertRaisesRegex(classify_context.ClassificationError, "AI gateway key"),
+        ):
+            classify_context.load_api_key()
 
     def test_classify_rows_uses_runner_and_then_cache(self):
         rows = [self.row()]
@@ -155,7 +147,7 @@ class ContentClassifierTest(unittest.TestCase):
             return {"results": [self.result("p2"), self.result("p1")]}, "gpt-5.4-mini"
 
         with mock.patch.object(classify_context, "run_structured_request", fake_request):
-            results = classify_context.run_openai_batch(rows, "gpt-5.4-mini")
+            results = classify_context.run_classification_batch(rows, "gpt-5.4-mini")
 
         self.assertNotIn("%e6%96%b0", prompts[0])
         self.assertEqual([r["id"] for r in results], ["post-2", "website:https://example.tw/%e6%96%b0%e5%8c%97"])
