@@ -15,9 +15,10 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import re
 import shutil
 import subprocess
-from typing import Any
+from typing import Any, Optional
 
 import feed_common
 import source_status
@@ -25,6 +26,24 @@ import source_status
 YTDLP_BIN = shutil.which("yt-dlp")
 CHANNEL_FETCH_TIMEOUT_SECS = 120
 VIDEO_FETCH_TIMEOUT_SECS = 60
+
+# Per-video date-lookup outcomes worth remembering live in the shared fetch
+# state file under this key, so deleted/private videos and not-yet-premiered
+# ones stop costing a yt-dlp call on every run.
+LOOKUP_STATE_KEY = "youtube_videos"
+# Matched against yt-dlp's ERROR: lines only. Bot checks and YouTube's
+# rate-limit wording ("Video unavailable. This content isn't available, try
+# again later") stay transient and keep retrying every run.
+TRANSIENT_LOOKUP_ERROR_RE = re.compile(r"try again later|sign in to confirm|not a bot|rate.?limit|\b429\b", re.I)
+PERMANENT_LOOKUP_ERROR_RE = re.compile(
+    r"video unavailable|this video is (?:unavailable|not available|no longer available)|private video"
+    r"|removed by the uploader",
+    re.I,
+)
+UPCOMING_STARTING_RE = re.compile(r"premiere will begin shortly|will begin in a few moments", re.I)
+UPCOMING_IN_RE = re.compile(r"(?:premieres|will begin) in (\d+) (minute|hour|day)s?\b", re.I)
+UPCOMING_RE = re.compile(r"premiere|live event will begin|upcoming", re.I)
+UPCOMING_UNKNOWN_BACKOFF = dt.timedelta(hours=24)
 
 
 def fetch_channel_videos(url: str, *, limit: int) -> list[dict[str, Any]]:
@@ -72,6 +91,56 @@ def fetch_video_posted_at(video_id: str) -> str:
     return ""
 
 
+def classify_lookup_error(error: object, *, now: dt.datetime) -> Optional[dict[str, str]]:
+    """Return the state entry to remember for a failed date lookup, or None
+    when the failure is transient (timeouts, bot checks, rate limits, unknown
+    errors) and the next run should simply try again."""
+    lines = [line.strip() for line in str(error).splitlines() if line.strip().startswith("ERROR:")]
+    text = "\n".join(lines)
+    if not text or TRANSIENT_LOOKUP_ERROR_RE.search(text):
+        return None
+    entry = {"error": source_status.safe_error(lines[-1]), "recorded_at": source_status.iso(now)}
+    if PERMANENT_LOOKUP_ERROR_RE.search(text):
+        return {**entry, "status": "unavailable"}
+    if UPCOMING_STARTING_RE.search(text):
+        return None  # The premiere is starting now; next run's lookup should succeed.
+    match = UPCOMING_IN_RE.search(text)
+    if match:
+        delay = dt.timedelta(**{f"{match.group(2).lower()}s": int(match.group(1))})
+    elif UPCOMING_RE.search(text):
+        delay = UPCOMING_UNKNOWN_BACKOFF
+    else:
+        return None
+    return {**entry, "status": "upcoming", "retry_after": source_status.iso(now + delay)}
+
+
+def lookup_due(entry: Optional[dict[str, Any]], *, now: dt.datetime) -> bool:
+    if not entry:
+        return True
+    if entry.get("status") == "unavailable":
+        return False
+    retry_after = source_status.parse_time(entry.get("retry_after"))
+    return retry_after is None or retry_after <= now
+
+
+def load_lookup_state() -> dict[str, dict[str, Any]]:
+    return source_status.load_state().get(LOOKUP_STATE_KEY, {})
+
+
+def save_lookup_state(changes: dict[str, Optional[dict[str, Any]]]) -> None:
+    """Apply per-video changes in one locked write; None removes an entry."""
+    if not changes:
+        return
+    with source_status.locked_state() as state:
+        videos = state.setdefault(LOOKUP_STATE_KEY, {})
+        for video_id in sorted(changes):
+            entry = changes[video_id]
+            if entry is None:
+                videos.pop(video_id, None)
+            else:
+                videos[video_id] = entry
+
+
 def normalize_entries(source: dict[str, Any], entries: list[dict[str, Any]], known_ids: set[str]) -> list[dict[str, Any]]:
     rows = []
     for entry in entries:
@@ -102,24 +171,42 @@ def normalize_entries(source: dict[str, Any], entries: list[dict[str, Any]], kno
     return rows
 
 
-def backfill_missing_dates(*, limit: int) -> int:
+def backfill_missing_dates(*, limit: int, now: Optional[dt.datetime] = None) -> int:
     """Self-healing pass: fill posted_at on already-ingested YouTube rows
     whose per-video lookup failed (or predates this feature). Bounded per run
-    so a scheduled tick never stalls on a long tail."""
+    so a scheduled tick never stalls on a long tail. Videos known to be gone
+    are never looked up again, and upcoming premieres wait until they air."""
     inbox = feed_common.read_jsonl(feed_common.INBOX_JSONL)
     missing = [row for row in inbox if row.get("platform") == "youtube" and not row.get("posted_at")]
     if not missing or limit <= 0:
         return 0
+    now = now or source_status.utc_now()
+    known = load_lookup_state()
+    missing_ids = {row["id"].removeprefix("youtube:") for row in missing}
+    # Forget entries for rows that have a date now (or left the inbox).
+    lookup_changes: dict[str, Optional[dict[str, Any]]] = {vid: None for vid in known if vid not in missing_ids}
+    due = [row for row in missing if lookup_due(known.get(row["id"].removeprefix("youtube:")), now=now)]
+    if len(due) < len(missing):
+        print(
+            f"youtube_ytdlp_fetcher: backfill skipping {len(missing) - len(due)} row(s) "
+            "known unavailable or not yet premiered."
+        )
     updates: dict[str, dict[str, Any]] = {}
-    for row in missing[:limit]:
+    for row in due[:limit]:
         video_id = row["id"].removeprefix("youtube:")
         try:
             posted_at = fetch_video_posted_at(video_id)
         except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError) as exc:
             print(f"youtube_ytdlp_fetcher: backfill date lookup failed for {video_id}: {exc}")
+            entry = classify_lookup_error(exc, now=now)
+            if entry:
+                lookup_changes[video_id] = entry
             continue
+        if video_id in known:
+            lookup_changes[video_id] = None
         if posted_at:
             updates[row["id"]] = {"posted_at": posted_at}
+    save_lookup_state(lookup_changes)
     if not updates:
         return 0
     changed = feed_common.fill_jsonl_fields(feed_common.INBOX_JSONL, updates)
