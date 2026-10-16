@@ -145,6 +145,27 @@ class BackfillTests(unittest.TestCase):
         row = yt.feed_common.read_jsonl(yt.feed_common.INBOX_JSONL)[0]
         self.assertEqual(row['posted_at'], aired)
 
+    def test_new_row_lookup_failure_is_not_repeated_by_same_run_backfill(self):
+        source = {'id': 'test-yt', 'candidate_id': 'test', 'city': 'taipei'}
+        entries = [{'id': 'soon', 'title': 'premiere'}, {'id': 'flaky', 'title': 'timeout'}]
+        outcomes = {'soon': ytdlp_error('soon', 'Premieres in 25 hours'),
+                    'flaky': subprocess.TimeoutExpired(['yt-dlp'], 60)}
+        changes = {}
+
+        def failing_lookup(video_id):
+            raise outcomes[video_id]
+
+        with mock.patch.object(yt, 'fetch_video_posted_at', side_effect=failing_lookup), \
+                mock.patch('builtins.print'):
+            rows = yt.normalize_entries(source, entries, set(), changes, now=NOW)
+        self.assertEqual([row['posted_at'] for row in rows], ['', ''])
+        self.assertEqual(set(changes), {'soon'})
+        self.write_inbox(rows)
+        yt.save_lookup_state(changes)
+
+        calls, _ = self.run_backfill(outcomes)
+        self.assertEqual(calls, ['flaky'])
+
     def test_entries_for_rows_that_gained_a_date_are_pruned(self):
         self.write_inbox([{'id': 'youtube:dated', 'platform': 'youtube', 'posted_at': '2026-10-01T00:00:00+00:00'},
                           {'id': 'youtube:gone', 'platform': 'youtube', 'posted_at': ''}])

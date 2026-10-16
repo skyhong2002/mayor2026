@@ -141,7 +141,16 @@ def save_lookup_state(changes: dict[str, Optional[dict[str, Any]]]) -> None:
                 videos[video_id] = entry
 
 
-def normalize_entries(source: dict[str, Any], entries: list[dict[str, Any]], known_ids: set[str]) -> list[dict[str, Any]]:
+def normalize_entries(
+    source: dict[str, Any],
+    entries: list[dict[str, Any]],
+    known_ids: set[str],
+    lookup_changes: Optional[dict[str, Optional[dict[str, Any]]]] = None,
+    *,
+    now: Optional[dt.datetime] = None,
+) -> list[dict[str, Any]]:
+    """Failed date lookups worth remembering are added to `lookup_changes`
+    (the caller saves them) so the backfill pass doesn't repeat them."""
     rows = []
     for entry in entries:
         video_id = entry.get("id")
@@ -154,6 +163,9 @@ def normalize_entries(source: dict[str, Any], entries: list[dict[str, Any]], kno
                 posted_at = fetch_video_posted_at(video_id)
             except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError) as exc:
                 print(f"youtube_ytdlp_fetcher: date lookup failed for {video_id}: {exc}")
+                lookup = classify_lookup_error(exc, now=now or source_status.utc_now())
+                if lookup and lookup_changes is not None:
+                    lookup_changes[video_id] = lookup
         rows.append(
             {
                 "id": row_id,
@@ -286,6 +298,7 @@ def main() -> int:
     all_rows: list[dict[str, Any]] = []
     appended = 0
     channel_names: dict[str, str] = {}
+    lookup_changes: dict[str, Optional[dict[str, Any]]] = {}
     for source in sources:
         if not source_status.retry_ready(source):
             continue
@@ -301,7 +314,7 @@ def main() -> int:
             if name:
                 channel_names[source["id"]] = name
                 break
-        rows = normalize_entries(source, entries, known_ids)
+        rows = normalize_entries(source, entries, known_ids, lookup_changes)
         if not args.dry_run:
             appended += feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
             source_status.record_fetch(source, ok=True, items=len(rows))
@@ -315,6 +328,7 @@ def main() -> int:
         return 0
 
     print(f"youtube_ytdlp_fetcher: appended {appended} new item(s).")
+    save_lookup_state(lookup_changes)  # before backfill, so it skips what just failed
     backfill_missing_dates(limit=args.backfill_limit)
     return 0
 
