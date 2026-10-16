@@ -59,15 +59,15 @@ PLATFORM_ORDER = ["facebook", "instagram", "threads", "x", "youtube", "website",
 # backend (source_status.BACKENDS) → (card title, method chip)
 METHOD_COPY = {
     "Apify": ("Facebook 粉專貼文", "Apify・預算配速"),
-    "RSSHub Instagram": ("Instagram 貼文", "RSSHub・依發文頻率"),
+    "Instagram public / Apify": ("Instagram 貼文", "公開查詢／Apify 備援・依發文頻率"),
     "RSSHub Threads": ("Threads 公開貼文", "RSSHub"),
     "RSSHub X": ("X 公開貼文", "RSSHub"),
     "yt-dlp": ("YouTube 影片", "yt-dlp"),
     "官網 adapter": ("候選人官網", "網頁爬蟲"),
     "原生 RSS": ("Podcast", "原生 RSS"),
 }
-METHOD_ORDER = ["Apify", "RSSHub Instagram", "RSSHub Threads", "RSSHub X", "yt-dlp", "官網 adapter", "原生 RSS"]
-METHOD_COMPONENT = {"Apify": "facebook-apify", "RSSHub Instagram": "instagram-threads",
+METHOD_ORDER = ["Apify", "Instagram public / Apify", "RSSHub Threads", "RSSHub X", "yt-dlp", "官網 adapter", "原生 RSS"]
+METHOD_COMPONENT = {"Apify": "facebook-apify", "Instagram public / Apify": "instagram-threads",
                     "RSSHub Threads": "instagram-threads", "RSSHub X": "instagram-threads",
                     "yt-dlp": "youtube", "官網 adapter": "official-site"}
 CLASSIFY_STEP = "classify post topics and posting intent with AI"

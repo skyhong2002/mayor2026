@@ -277,7 +277,7 @@ def build_status() -> dict[str, Any]:
     components.append(
         component(
             "instagram-threads",
-            "Instagram / Threads / X RSSHub",
+            "Instagram 公開查詢 / Threads / X RSSHub",
             "degraded" if any(r["fetchable"] and r["platform"] in ig_threads_platforms and r["status"] in {"error", "blocked", "overdue"} for r in source_rows) else "ok",
             (
                 f"{watch_platforms.get('instagram', 0)} 個 Instagram、{watch_platforms.get('threads', 0)} 個 Threads、"
@@ -285,7 +285,7 @@ def build_status() -> dict[str, Any]:
             ),
             [
                 f"最新抓取時間：{taipei_label(max_time(last_attempts))}",
-                "IG 依發文頻率每 12–168 小時抓取，每輪最多 6 個，較早到期者優先；401／429 會共用冷卻 24–72 小時。",
+                "IG 依發文頻率每 12–168 小時抓取，每輪最多 6 個，較早到期者優先；免登入查詢遭擋時改用 Apify（每月上限 $0.75）。",
             ],
         )
     )
