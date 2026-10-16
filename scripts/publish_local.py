@@ -43,7 +43,34 @@ def git_short_sha() -> str:
         return "nogit"
 
 
+def remove_skipped(root: Path) -> None:
+    for dirpath, dirnames, filenames in os.walk(root):
+        for name in [n for n in dirnames if n in SKIP_NAMES]:
+            shutil.rmtree(Path(dirpath) / name)
+            dirnames.remove(name)
+        for name in filenames:
+            if name in SKIP_NAMES:
+                (Path(dirpath) / name).unlink()
+
+
 def copy_site(src: Path, dest: Path) -> None:
+    """Copy site/ into a new release as independent files.
+
+    On macOS, APFS clones share blocks copy-on-write, so each release costs almost
+    no SSD writes or space until one side changes. copytree covers other platforms
+    or any cp failure.
+    """
+    if sys.platform == "darwin":
+        dest.mkdir(parents=True)
+        # -L follows symlinks like copytree(symlinks=False); -p matches copy2.
+        result = subprocess.run(["/bin/cp", "-c", "-p", "-R", "-L", f"{src}/.", f"{dest}/"],
+                                stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
+        if result.returncode == 0:
+            remove_skipped(dest)
+            return
+        print(f"Clone copy failed, using a full copy: {result.stderr.strip()}", file=sys.stderr)
+        shutil.rmtree(dest)
+
     def ignore(_dir: str, names: list[str]) -> set[str]:
         return {n for n in names if n in SKIP_NAMES}
 
