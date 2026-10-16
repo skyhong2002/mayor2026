@@ -50,7 +50,7 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
   一位候選人在同平台可以有多個帳號（例如競選粉專 + 個人粉專），抓取層會全部監看；建站時的候選人頁連結只挑
   信心最高的一個顯示。這份清單目前的內容來自 2026-07-05 的公開來源查證（見同目錄下的查證紀錄 md 檔）。
 - `scripts/build_social_sources.py` 把兩份 CSV 轉成抓取設定 `data/feeds/social_sources.json`。
-- 抓取層：Instagram/Threads 走 RSSHub（預設 `https://rss.observe.tw`，可在 `.env` 用
+- 抓取層：Threads/X 走 RSSHub（預設 `https://rss.observe.tw`，可在 `.env` 用
   `MAYOR_RSSHUB_BASE` 覆寫；排程機器實際指向本機實例 `http://127.0.0.1:1200`），
   Facebook 走 Apify（這個 RSSHub 實例沒有註冊 `/facebook/*` route，經 curl 驗證過），YouTube 用 yt-dlp
   （頻道列表用 flat-playlist，新影片再各補一次 metadata 拿發布時間；舊缺日期資料由每次執行的
@@ -83,9 +83,7 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - [x] CSV → JSON 來源設定轉換
 - [x] 真實候選人名單（六都 13 位候選人，含多平台帳號與驗證等級；林義豐因公開帳號長期
       無活動於 2026-08 下架，中選會登記截止後再複查名單）
-- [x] 抓取 adapter 骨架（RSSHub Instagram/Threads、Apify Facebook、YouTube yt-dlp、官網 scraper）；
-      Instagram/Threads 已對 `rss.observe.tw` 驗證過路由會匹配（但可能因該平台流量限制回傳 503，
-      屬預期中的不穩定）；正式運作需要設定 `APIFY_TOKEN` 環境變數
+- [x] 抓取 adapter（Instagram 公開查詢／Apify 備援、RSSHub Threads/X、Apify Facebook、YouTube yt-dlp、官網 scraper）
 - [x] 正規化、去重、AI 議題與發文動機分類
 - [x] 候選人頁議題／發文動機篩選
 - [x] 議題選擇器（以自主政策倡議貼文為依據，附來源與資料不足提示）
@@ -136,3 +134,14 @@ python3 scripts/run_pipeline.py --publish-local
 ## License
 
 MIT. See `LICENSE`.
+
+Instagram 由 `scripts/instagram_public_fetcher.py` 以免登入 PolarisProfilePostsQuery 抓取，
+`MAYOR_IG_PROFILE_POSTS_DOC_ID` 可覆寫查詢 ID。與 Chumei、Harmonica 共用
+`~/.cache/observe-instagram-public.json`，每次請求間隔至少 10 秒，遭拒後全主機暫停直接查詢。
+失敗來源以本專案 `.env` 的 `APIFY_TOKEN` 批次使用 `apify/instagram-profile-scraper`，不使用其他專案的 pool。
+每次最多 6 個最早到期來源；支援 `--batch-size`、`--full-refresh`（仍保留退避與冷卻）及
+`--dry-run`（僅直接查詢，不付費、不寫 inbox／來源狀態；主機節流仍生效）。
+IG 預估每帳號 $0.006，月上限 `MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD` 預設 $0.75；
+費用記在 `state/apify_facebook_fetcher.json` 的 `months[YYYY-MM].instagram`，
+Facebook 與 IG 共用 `MAYOR_APIFY_MONTHLY_BUDGET_USD × MAYOR_APIFY_BUDGET_UTILIZATION`。
+付費前檢查即時額度並保留 $0.25；未知結果保留預估費，已回報用量較高時補記差額。

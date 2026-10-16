@@ -253,6 +253,10 @@ def main() -> int:
             if args.full_refresh:
                 rsshub_args.append("--full-refresh")
             run(rsshub_args, step="fetch rsshub", optional=True)
+            instagram_args = [PYTHON, "scripts/instagram_public_fetcher.py"]
+            if args.full_refresh:
+                instagram_args.append("--full-refresh")
+            run(instagram_args, step="fetch instagram public", optional=True)
             if not args.skip_youtube:
                 run([PYTHON, "scripts/youtube_ytdlp_fetcher.py"], step="fetch youtube", optional=True)
             if not args.skip_facebook_apify:

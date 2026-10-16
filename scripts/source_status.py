@@ -21,7 +21,7 @@ import feed_common
 
 STATE_PATH = feed_common.PROJECT_ROOT / "state" / "social_fetch_state.json"
 PIPELINE_INTERVAL_HOURS = 6
-BACKENDS = {"instagram": "RSSHub Instagram", "threads": "RSSHub Threads", "x": "RSSHub X",
+BACKENDS = {"instagram": "Instagram public / Apify", "threads": "RSSHub Threads", "x": "RSSHub X",
             "podcast": "原生 RSS", "youtube": "yt-dlp", "website": "官網 adapter", "facebook": "Apify"}
 
 

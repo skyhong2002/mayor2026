@@ -66,7 +66,7 @@ def month_key(now: dt.datetime) -> str:
 def ledger_month_spend(ledger: dict[str, Any], now: dt.datetime) -> float:
     months = ledger.get("months") or {}
     entry = months.get(month_key(now)) or {}
-    return float(entry.get("estimated_spend_usd") or 0.0)
+    return float(entry.get("estimated_spend_usd") or 0.0) + float((entry.get("instagram") or {}).get("estimated_spend_usd") or 0.0)
 
 
 def month_end(now: dt.datetime) -> dt.datetime:
@@ -126,9 +126,9 @@ def record_run(ledger: dict[str, Any], *, now: dt.datetime, results: int) -> Non
     ledger["last_run_at"] = now.isoformat(timespec="seconds")
     months = ledger.setdefault("months", {})
     entry = months.setdefault(month_key(now), {"runs": 0, "results": 0, "estimated_spend_usd": 0.0})
-    entry["runs"] += 1
-    entry["results"] += results
-    entry["estimated_spend_usd"] = round(entry["estimated_spend_usd"] + results * COST_PER_RESULT_USD, 4)
+    entry["runs"] = entry.get("runs", 0) + 1
+    entry["results"] = entry.get("results", 0) + results
+    entry["estimated_spend_usd"] = round(entry.get("estimated_spend_usd", 0) + results * COST_PER_RESULT_USD, 4)
 
 
 def start_run(token: str, page_urls: list[str], *, posts_per_page: int) -> str:

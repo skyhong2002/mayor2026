@@ -9,6 +9,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import source_status as health
 import rsshub_fetcher as rss
+import instagram_public_fetcher as ig
 import apify_facebook_fetcher as facebook
 import build_status_page as status
 
@@ -152,23 +153,13 @@ class SourceHealthTests(unittest.TestCase):
             self.assertIn(label, rendered)
             self.assertNotIn('<unsafe>', rendered)
 
-    def test_rss_401_stops_ig_batch_but_threads_continue(self):
-        sources = [source('ig1'), source('ig2'), source('th', 'threads')]
-        def fetch(src, **kwargs):
-            if src['platform'] == 'instagram':
-                raise RuntimeError('HTTP 503: upstream 401 Unauthorized')
-            return []
-        with mock.patch.object(rss.feed_common, 'load_sources', return_value=sources), \
-             mock.patch.object(rss, 'fetch_source', side_effect=fetch) as fetching, \
-             mock.patch.object(rss.time, 'sleep'), \
-             mock.patch.object(rss.feed_common, 'record_error'), \
-             mock.patch.object(rss.feed_common, 'append_jsonl_dedup', return_value=0), \
-             mock.patch.object(sys, 'argv', ['rsshub_fetcher.py', '--full-refresh']):
+    def test_rss_excludes_instagram(self):
+        with mock.patch.object(rss.feed_common, 'load_sources', return_value=[source()]), \
+             mock.patch.object(rss, 'fetch_source') as fetching, \
+             mock.patch.object(sys, 'argv', ['rsshub_fetcher.py']):
             self.assertEqual(rss.main(), 0)
-        ids = [call.args[0]['id'] for call in fetching.call_args_list]
-        self.assertIn('th', ids)
-        self.assertEqual(len([i for i in ids if i.startswith('ig')]), 1)
-        self.assertIn('cooldown_until', health.load_state()['platforms']['instagram'])
+        fetching.assert_not_called()
+        self.assertNotIn('instagram', rss.RSSHUB_ROUTE_BUILDERS)
 
     def test_oldest_due_instagram_batch_is_fair_and_bounded(self):
         sources = [source('a'), source('b'), source('c')]
@@ -176,20 +167,20 @@ class SourceHealthTests(unittest.TestCase):
             'a': {'next_eligible_at': '2026-01-03T00:00:00Z'},
             'b': {'next_eligible_at': '2026-01-01T00:00:00Z'},
             'c': {'next_eligible_at': '2026-01-02T00:00:00Z'}}}))
-        with mock.patch.object(rss.feed_common, 'load_sources', return_value=sources), \
-             mock.patch.object(rss, 'fetch_source', return_value=[]) as fetching, \
-             mock.patch.object(rss.time, 'sleep'), \
-             mock.patch.object(rss.feed_common, 'append_jsonl_dedup', return_value=0), \
-             mock.patch.object(sys, 'argv', ['rsshub_fetcher.py', '--instagram-batch-size', '2']):
-            self.assertEqual(rss.main(), 0)
+        with mock.patch.object(ig.feed_common, 'load_sources', return_value=sources), \
+             mock.patch.object(ig, 'fetch_public_profile', return_value=[]) as fetching, \
+             mock.patch.object(ig.time, 'sleep'), \
+             mock.patch.object(ig.feed_common, 'append_jsonl_dedup', return_value=0), \
+             mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py', '--batch-size', '2']):
+            self.assertEqual(ig.main(), 0)
         self.assertEqual([call.args[0]['id'] for call in fetching.call_args_list], ['b', 'c'])
 
     def test_full_refresh_respects_existing_platform_cooldown(self):
         health.set_instagram_cooldown('429')
-        with mock.patch.object(rss.feed_common, 'load_sources', return_value=[source()]), \
-             mock.patch.object(rss, 'fetch_source') as fetching, \
-             mock.patch.object(sys, 'argv', ['rsshub_fetcher.py', '--full-refresh']):
-            self.assertEqual(rss.main(), 0)
+        with mock.patch.object(ig.feed_common, 'load_sources', return_value=[source()]), \
+             mock.patch.object(ig, 'fetch_public_profile') as fetching, \
+             mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py', '--full-refresh']):
+            self.assertEqual(ig.main(), 0)
         fetching.assert_not_called()
 
     def test_rss_dry_run_does_not_write_telemetry_or_errors(self):
