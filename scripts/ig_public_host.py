@@ -1,7 +1,11 @@
 """Host-wide pacing for logged-out Instagram queries.
 
-Chumei, Harmonica and mayor2026 share this protocol and one host state file.
-Keep all three copies identical apart from this docstring.
+Instagram rate-limits logged-out queries per server IP, and Chumei, Harmonica
+and mayor2026 run on the same host. All three take turns through one small
+state file outside any repository: any two queries are spaced at least
+``MIN_GAP_SECONDS`` apart, and once Instagram refuses one, every collector on
+the host stops direct queries until the block is expected to lift. Chumei and
+Harmonica keep identical copies of this protocol; change all three together.
 """
 
 from __future__ import annotations

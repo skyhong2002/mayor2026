@@ -47,10 +47,8 @@ class InstagramTests(unittest.TestCase):
         response.__enter__.return_value = response
         response.geturl.return_value = 'https://www.instagram.com/graphql/query'
         response.read.return_value = json.dumps(payload).encode()
-        with mock.patch.object(client.opener, 'open', return_value=response), \
-             mock.patch.object(ig.ig_public_host, 'wait_turn', return_value=True) as wait:
+        with mock.patch.object(client.opener, 'open', return_value=response):
             rows = client.fetch(SOURCE)[1]
-        wait.assert_called_once()
         self.assertEqual(set(rows[0]), {'id', 'candidate_id', 'city', 'platform', 'source_id',
                                       'url', 'posted_at', 'text', 'media', 'fetched_at'})
         self.assertEqual(rows[0]['id'], 'instagram:https://www.instagram.com/p/abc/')
@@ -71,6 +69,31 @@ class InstagramTests(unittest.TestCase):
         self.assertEqual(http.call_count, 3)
         ledger = json.loads(fb.LEDGER_JSON.read_text())
         self.assertEqual(ledger['months'][NOW.strftime('%Y-%m')]['instagram']['estimated_spend_usd'], .008)
+
+    def test_existing_host_block_falls_back_without_extending_it(self):
+        until = ig.ig_public_host.report_block('chumei', seconds=600)
+        with mock.patch.object(ig.feed_common, 'load_sources', return_value=[SOURCE]), \
+             mock.patch.object(ig, 'fetch_public_profile') as direct, \
+             mock.patch.object(ig, 'apify_profiles', return_value={'test': PROFILE}), \
+             mock.patch.object(ig.feed_common, 'append_jsonl_dedup', return_value=1) as append, \
+             mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py']):
+            self.assertEqual(ig.main(), 0)
+        direct.assert_not_called()
+        host = json.loads(ig.ig_public_host.STATE_PATH.read_text())
+        self.assertEqual((host['blockedBy'], host['blockedUntil']), ('chumei', until))
+        self.assertEqual(append.call_args.args[1][0]['source_id'], 'ig-test')
+
+    def test_repeated_query_failures_stop_direct_attempts(self):
+        sources = [{**SOURCE, 'id': f'ig-{n}', 'username': f'user{n}'} for n in range(5)]
+        with mock.patch.object(ig.feed_common, 'load_sources', return_value=sources), \
+             mock.patch.object(ig.ig_public_host, 'wait_turn', return_value=True), \
+             mock.patch.object(ig, 'fetch_public_profile', side_effect=ValueError('no timeline')) as direct, \
+             mock.patch.object(ig, 'apify_profiles', side_effect=RuntimeError('Apify skipped')), \
+             mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py']):
+            self.assertEqual(ig.main(), 0)
+        self.assertEqual(direct.call_count, ig.DIRECT_MAX_CONSECUTIVE_FAILURES)
+        self.assertFalse(ig.ig_public_host.STATE_PATH.exists() and
+                         json.loads(ig.ig_public_host.STATE_PATH.read_text()).get('blockedBy'))
 
     def test_monthly_cap_skips_http(self):
         ig.feed_common.save_json_atomic(fb.LEDGER_JSON, {'months': {'2026-10': {
@@ -112,8 +135,7 @@ class InstagramTests(unittest.TestCase):
         response = mock.MagicMock()
         response.__enter__.return_value = response
         response.geturl.return_value = 'https://www.instagram.com/accounts/login/?next=/test/'
-        with mock.patch.object(client.opener, 'open', return_value=response), \
-             mock.patch.object(ig.ig_public_host, 'wait_turn', return_value=True):
+        with mock.patch.object(client.opener, 'open', return_value=response):
             with self.assertRaises(ig.PublicWebError) as error:
                 client.fetch(SOURCE)
         self.assertEqual(error.exception.code, 401)

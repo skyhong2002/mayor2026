@@ -56,6 +56,16 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
   （頻道列表用 flat-playlist，新影片再各補一次 metadata 拿發布時間；舊缺日期資料由每次執行的
   backfill 逐步補齊），
   官網則是逐候選人 adapter。全部寫入 `data/feeds/social_feed_inbox.jsonl`。
+- Instagram：由 `scripts/instagram_public_fetcher.py` 以免登入 PolarisProfilePostsQuery 抓取，
+  `MAYOR_IG_PROFILE_POSTS_DOC_ID` 可覆寫查詢 ID。與 Chumei、Harmonica 共用
+  `~/.cache/observe-instagram-public.json`，每次請求間隔至少 10 秒，遭拒後全主機暫停直接查詢。
+  失敗來源以本專案 `.env` 的 `APIFY_TOKEN` 批次使用 `apify/instagram-profile-scraper`，不使用其他專案的 pool。
+  每次最多 6 個最早到期來源；支援 `--batch-size`、`--full-refresh`（仍保留退避與冷卻）及
+  `--dry-run`（僅直接查詢，不付費、不寫 inbox／來源狀態；主機節流仍生效）。
+  IG 預估每帳號 $0.006，月上限 `MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD` 預設 $0.75；
+  費用記在 `state/apify_facebook_fetcher.json` 的 `months[YYYY-MM].instagram`，
+  Facebook 與 IG 共用 `MAYOR_APIFY_MONTHLY_BUDGET_USD × MAYOR_APIFY_BUDGET_UTILIZATION`。
+  付費前檢查即時額度並保留 $0.25；未知結果保留預估費，已回報用量較高時補記差額。
 - `scripts/classify_context.py` 以 AI 結構化輸出同時判斷議題與發文動機；發文動機只有「主動發文」與
   「回應他方觀點」兩類。初判為回應的貼文會再經第二道 AI 驗證，必須同時辨識他方、他方先前的具體觀點及本篇答覆目的；
   沒有任何人工審核佇列。每篇保留 AI 判斷信心、理由、模型與規範版本。
@@ -134,14 +144,3 @@ python3 scripts/run_pipeline.py --publish-local
 ## License
 
 MIT. See `LICENSE`.
-
-Instagram 由 `scripts/instagram_public_fetcher.py` 以免登入 PolarisProfilePostsQuery 抓取，
-`MAYOR_IG_PROFILE_POSTS_DOC_ID` 可覆寫查詢 ID。與 Chumei、Harmonica 共用
-`~/.cache/observe-instagram-public.json`，每次請求間隔至少 10 秒，遭拒後全主機暫停直接查詢。
-失敗來源以本專案 `.env` 的 `APIFY_TOKEN` 批次使用 `apify/instagram-profile-scraper`，不使用其他專案的 pool。
-每次最多 6 個最早到期來源；支援 `--batch-size`、`--full-refresh`（仍保留退避與冷卻）及
-`--dry-run`（僅直接查詢，不付費、不寫 inbox／來源狀態；主機節流仍生效）。
-IG 預估每帳號 $0.006，月上限 `MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD` 預設 $0.75；
-費用記在 `state/apify_facebook_fetcher.json` 的 `months[YYYY-MM].instagram`，
-Facebook 與 IG 共用 `MAYOR_APIFY_MONTHLY_BUDGET_USD × MAYOR_APIFY_BUDGET_UTILIZATION`。
-付費前檢查即時額度並保留 $0.25；未知結果保留預估費，已回報用量較高時補記差額。

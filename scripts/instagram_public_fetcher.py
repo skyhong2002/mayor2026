@@ -22,6 +22,8 @@ PUBLIC_APP_ID = "936619743392459"
 PUBLIC_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 PROFILE_POSTS_DOC_ID = "9310670392322965"
 PROFILE_COST_USD = 0.006
+DIRECT_MAX_CONSECUTIVE_FAILURES = 3
+APIFY_RUN_DEADLINE_SECS = 345
 UTC = dt.timezone.utc
 
 
@@ -77,8 +79,6 @@ class PublicInstagramClient:
         return next((cookie.value for cookie in self.cookies if cookie.name == name), "")
 
     def _open(self, request, label):
-        if not ig_public_host.wait_turn():
-            raise PublicWebError("Instagram host blocked", 429)
         try:
             with self.opener.open(request, timeout=30) as response:
                 if "/accounts/login" in response.geturl():
@@ -207,9 +207,8 @@ def apify_profiles(sources, *, now, dry_run=False):
     feed_common.save_json_atomic(facebook.LEDGER_JSON, ledger)
     run = api("POST", f"/acts/apify~instagram-profile-scraper/runs?maxTotalChargeUsd={cost}&restartOnError=false", token,
               body={"usernames": [s["username"] for s in sources], "includeAboutSection": False})["data"]
-    for _ in range(facebook.MAX_POLL_ATTEMPTS):
-        if run.get("status") in facebook.TERMINAL_STATUSES:
-            break
+    deadline = time.monotonic() + APIFY_RUN_DEADLINE_SECS
+    while run.get("status") not in facebook.TERMINAL_STATUSES and time.monotonic() < deadline:
         time.sleep(facebook.POLL_INTERVAL_SECS)
         run = api("GET", f"/actor-runs/{run['id']}", token)["data"]
     usage = run.get("usageTotalUsd")
@@ -261,18 +260,27 @@ def main() -> int:
         print(f"instagram_public_fetcher: {source['id']} -> {len(rows)} item(s); target interval {interval:g}h")
 
     direct = True
+    failures = 0
     for source in selected:
+        # A host block set by any collector skips the query without re-reporting it.
+        if not direct or not ig_public_host.wait_turn():
+            direct = False
+            fallback.append(source)
+            continue
         try:
-            if not direct:
-                raise PublicWebError("Instagram host blocked", 429)
             success(source, fetch_public_profile(source, client))
+            failures = 0
         except (OSError, ValueError) as exc:
             fallback.append(source)
             errors[source["id"]] = exc
+            failures += 1
             if is_rate_limited(exc):
-                if direct:
-                    ig_public_host.report_block("mayor2026")
+                # Instagram refused this host: every collector stops direct queries.
+                ig_public_host.report_block("mayor2026")
                 direct = False
+            else:
+                # Repeated failures point at the query itself (e.g. a rotated doc id).
+                direct = failures < DIRECT_MAX_CONSECUTIVE_FAILURES
     if fallback:
         try:
             found = apify_profiles(fallback, now=now, dry_run=args.dry_run)
@@ -292,7 +300,7 @@ def main() -> int:
                 if not args.dry_run:
                     source_status.record_fetch(source, ok=False, error=exc)
                     feed_common.record_error(source["id"], source_status.safe_error(exc))
-                    if not cooled and is_rate_limited(errors[source["id"]]):
+                    if not cooled and is_rate_limited(errors.get(source["id"])):
                         source_status.set_instagram_cooldown(errors[source["id"]])
                         cooled = True
                 print(f"instagram_public_fetcher: {source['id']} failed: {source_status.safe_error(exc)}")

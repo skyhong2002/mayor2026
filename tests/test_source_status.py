@@ -29,9 +29,10 @@ class SourceHealthTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
-        patch = mock.patch.object(health, 'STATE_PATH', Path(self.tmp.name) / 'state.json')
-        patch.start()
-        self.addCleanup(patch.stop)
+        for obj, name in ((health, 'state.json'), (ig.ig_public_host, 'host.json')):
+            patch = mock.patch.object(obj, 'STATE_PATH', Path(self.tmp.name) / name)
+            patch.start()
+            self.addCleanup(patch.stop)
 
     def snapshot(self, src=None, **kwargs):
         src = src or source()
@@ -169,7 +170,7 @@ class SourceHealthTests(unittest.TestCase):
             'c': {'next_eligible_at': '2026-01-02T00:00:00Z'}}}))
         with mock.patch.object(ig.feed_common, 'load_sources', return_value=sources), \
              mock.patch.object(ig, 'fetch_public_profile', return_value=[]) as fetching, \
-             mock.patch.object(ig.time, 'sleep'), \
+             mock.patch.object(ig.ig_public_host, 'wait_turn', return_value=True), \
              mock.patch.object(ig.feed_common, 'append_jsonl_dedup', return_value=0), \
              mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py', '--batch-size', '2']):
             self.assertEqual(ig.main(), 0)
