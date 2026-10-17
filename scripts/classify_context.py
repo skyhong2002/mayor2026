@@ -492,6 +492,35 @@ def conflicting_intent_groups(rows: list[dict[str, Any]]) -> list[list[dict[str,
     ]
 
 
+def unique_id_batches(
+    rows: list[dict[str, Any]], batch_size: int
+) -> list[list[dict[str, Any]]]:
+    """Keep historical rows sharing an ID in separate provider requests."""
+    batches: list[list[dict[str, Any]]] = []
+    for row in rows:
+        if not batches or len(batches[-1]) == batch_size or any(item["id"] == row["id"] for item in batches[-1]):
+            batches.append([])
+        batches[-1].append(row)
+    return batches
+
+
+def run_ordered_batch(
+    rows: list[dict[str, Any]],
+    model: str,
+    runner: Callable[[list[dict[str, Any]], str], list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    """Return one result per input row, correlated before combining requests.
+
+    Responses (including salvaged results and retries) can arrive in any order.
+    IDs identify rows only within each unique-ID request, never across history.
+    """
+    ordered = []
+    for batch in unique_id_batches(rows, len(rows)):
+        by_id = {result["id"]: result for result in run_batch_with_retries(batch, model, runner)}
+        ordered.extend(by_id[row["id"]] for row in batch)
+    return ordered
+
+
 def reconcile_intent_conflicts(
     rows: list[dict[str, Any]],
     *,
@@ -502,12 +531,10 @@ def reconcile_intent_conflicts(
     if not groups:
         return 0, 0
     representatives = [group[0] for group in groups]
-    results = run_batch_with_retries(representatives, model, runner)
-    by_id = {result["id"]: result for result in results}
+    results = run_ordered_batch(representatives, model, runner)
     classified_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     updated = 0
-    for group, representative in zip(groups, representatives):
-        result = by_id[representative["id"]]
+    for group, result in zip(groups, results):
         for row in group:
             apply_result(row, {**result, "id": row["id"]}, model, classified_at)
             updated += 1
@@ -535,12 +562,10 @@ def verify_responsive_intents(
     if not groups:
         return 0, 0
     representatives = [group[0] for group in groups]
-    results = run_batch_with_retries(representatives, model, runner)
-    by_id = {result["id"]: result for result in results}
+    results = run_ordered_batch(representatives, model, runner)
     verified_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     updated = 0
-    for group, representative in zip(groups, representatives):
-        result = by_id[representative["id"]]
+    for group, result in zip(groups, results):
         intent_type = result["postingIntent"]
         for row in group:
             row["postingIntent"] = {
@@ -632,12 +657,7 @@ def classify_rows(
         pending = pending[:limit]
     classified = 0
     classified_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
-    batches: list[list[dict[str, Any]]] = []
-    for row in pending:
-        if not batches or len(batches[-1]) == batch_size or any(item["id"] == row["id"] for item in batches[-1]):
-            batches.append([])
-        batches[-1].append(row)
-    for batch in batches:
+    for batch in unique_id_batches(pending, batch_size):
         by_id = {row["id"]: row for row in batch}
         results = run_batch_with_retries(batch, model, runner)
         for result in results:
