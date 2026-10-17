@@ -106,7 +106,8 @@ STEP_LABELS = {
 STEP_STATE = {"ok": ("ok", "完成"), "running": ("pending", "執行中"), "pending": ("paused", "等待"),
               "deferred": ("paused", "延後"), "skipped": ("paused", "略過"),
               "optional_failed": ("warn", "選用步驟失敗"), "failed": ("error", "失敗")}
-RUNTIME_STATE = {"running": ("pending", "執行中"), "ok": ("ok", "完成"), "failed": ("error", "失敗")}
+RUNTIME_STATE = {"running": ("pending", "擷取時執行中"), "ok": ("ok", "擷取時完成"),
+                 "failed": ("error", "擷取時失敗")}
 
 
 # ---------------------------------------------------------------------------
@@ -308,17 +309,17 @@ def _methods(status: Dict[str, Any], runtime: Dict[str, Any]) -> str:
 
 def _runtime_block(runtime: Dict[str, Any]) -> str:
     if not runtime:
-        return '<p class="runtime-empty muted small">尚無 pipeline 執行紀錄（pipeline-runtime.json）。</p>'
+        return '<p class="runtime-empty muted small">本快照未擷取 pipeline 執行紀錄（pipeline-runtime.json）。</p>'
     state, label = RUNTIME_STATE.get(str(runtime.get("status")), ("pending", str(runtime.get("status") or "未知")))
     step = str(runtime.get("currentStep") or "")
     facts = [
-        ("執行狀態", S.render_badge(state, label)),
-        ("目前步驟", S.esc(STEP_LABELS.get(step, step) or "未記錄")),
-        ("最近心跳", _time(runtime.get("heartbeatAt"))),
-        ("本輪開始", _time(runtime.get("startedAt"))),
+        ("擷取時狀態", S.render_badge(state, label)),
+        ("擷取時步驟", S.esc(STEP_LABELS.get(step, step) or "未記錄")),
+        ("擷取時心跳", _time(runtime.get("heartbeatAt"))),
+        ("該輪開始", _time(runtime.get("startedAt"))),
     ]
     if runtime.get("message"):
-        facts.append(("訊息", S.esc(runtime["message"])))
+        facts.append(("擷取時訊息", S.esc(runtime["message"])))
     dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
     steps = []
     for s in runtime.get("steps") or []:
@@ -334,7 +335,7 @@ def _runtime_block(runtime: Dict[str, Any]) -> str:
             f'<span class="step-name">{S.esc(STEP_LABELS.get(name, name))}</span>'
             f'<span class="step-meta">{S.esc(st_label)}{"・" + dur if dur else ""}</span></li>'
         )
-    steps_html = (f'<details class="runtime-steps"><summary>步驟紀錄（{len(steps)}）</summary>'
+    steps_html = (f'<details class="runtime-steps"><summary>擷取時步驟紀錄（{len(steps)}）</summary>'
                   f'<ol>{"".join(steps)}</ol></details>') if steps else ""
     return (f'<div class="runtime"><p class="runtime-title">產生本快照時的 pipeline 執行紀錄</p>'
             f'<dl class="runtime-facts">{dl}</dl>{steps_html}</div>')

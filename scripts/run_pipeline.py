@@ -2,8 +2,8 @@
 """Run the standalone public data pipeline.
 
 An OS-backed lock keeps overlapping scheduled ticks from colliding, and every step's state is
-written to site/api/pipeline-runtime.json so the /status/ page (and anyone
-curl-ing the API) can see what the pipeline is doing right now.
+written to site/api/pipeline-runtime.json. Published copies and /status/ capture
+historical execution facts; they do not track the live process after publication.
 """
 
 from __future__ import annotations
@@ -293,14 +293,12 @@ def main() -> int:
         run(data_args, step="publish pipeline data")
 
         if args.publish_local:
-            publish_runtime_status("ok", message="Pipeline completed; publishing local snapshot")
             run([PYTHON, "scripts/publish_local.py"], step="publish local snapshot")
 
         if args.publish_pages:
             pages_args = [PYTHON, "scripts/publish_github_pages.py"]
             if args.pages_no_push:
                 pages_args.append("--no-push")
-            publish_runtime_status("ok", message="Pipeline completed; publishing snapshot")
             run(pages_args, step="publish github pages")
         completed = True
         publish_runtime_status(
