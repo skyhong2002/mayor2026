@@ -16,7 +16,7 @@ from typing import Any, Dict, List
 from . import shell as S
 
 FEED_DIR = S.SITE_ROOT / "data" / "feed"
-SSR_PER_COL = 30
+SSR_PER_COL = 10
 BUNDLE_SIZE = 400
 BADGE_WINDOW = dt.timedelta(hours=48)
 BUNDLE_KEYS = ("id", "candidateId", "platform", "url", "postedAt", "text", "imageUrl", "imageAspect", "topics")

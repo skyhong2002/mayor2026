@@ -19,7 +19,7 @@
 
 ## 建置與驗證
 
-1. 本機 dry run：`python3 scripts/run_pipeline.py --skip-watch --no-lock`。
+1. 離線驗證：`python3 -m unittest discover -s tests -v`。`run_pipeline.py --skip-watch` 仍會同步資料分支、補做 AI 分類與回寫資料，不是唯讀 dry run；不要對正式資料使用 `--no-lock`。
 2. 驗證：pipeline 會自動跑 `check_source_coverage.py` 與 `validate_public_outputs.py`；
    驗證失敗不得發佈。
 3. 執行狀態看 `site/api/pipeline-runtime.json` 或 `/status/` 頁。

@@ -1,0 +1,33 @@
+name: Offline checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: offline-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Isolated tests (no ingestion, AI requests or publication)
+        run: python -m unittest discover -s tests -v
+      - name: JavaScript syntax
+        run: find site/assets -type f -name '*.js' -print0 | xargs -0 -n 1 node --check

@@ -14,7 +14,24 @@
 - Facebook：維持既有月預算與批次計費方式。`--check` 同時回傳 `interval_hours`、`next_eligible_at`、`budget_exhausted`；配速等待屬正常，真正額度耗盡才標為受限制。整批失敗也會退避；回傳結果遺漏某來源時不宣稱該來源抓取成功。
 - `--full-refresh` 只略過 IG 一般抓取間隔，仍遵守批次上限、失敗退避與共用冷卻。
 
-目前 Instagram 抓取內容仍使用既有 RSSHub `/instagram/2/user/:key`，Facebook 使用本專案既有 Apify 設定。本次移植的是排程與健康監控機制。Chumei 自身的匿名 Instagram／Apify 後備抓取及多人額度池並未引入。
+Instagram 目前由 `instagram_public_fetcher.py` 使用免登入公開查詢，受全主機共用冷卻與請求間隔保護；
+失敗來源可改用本專案 Apify 後備與月預算，詳細設定見 README。Threads、X 維持 RSSHub。
+Facebook 與 Instagram 共用本專案 Apify 預算，但不使用其他專案的多人額度池。
+
+## 寫入與重疊保護
+
+`run_pipeline.py` 以持續存在的 `state/run_pipeline.lock` 搭配 `flock` 持有排他鎖。
+活著的工作不會因執行時間超過四小時被接管；程序結束後作業系統會自動釋放鎖。
+執行中的 pipeline 子程序會繼承鎖，避免 controller 意外結束時下一輪與尚在寫入的階段重疊。
+`--lock-stale-minutes` 保留相容性，但不再強制接管活鎖。`--no-lock` 只供隔離測試使用。
+鎖檔不應手動刪除；刪除會使不同程序鎖住不同 inode。首次更新應在舊版 pipeline 與其子程序均已結束時進行，
+升級後亦會尊重舊版鎖內仍存活的 PID。
+
+各 JSONL 的讀取、去重追加、缺欄補值與分類寫回共用持續存在的 `.jsonl.lock` sidecar。
+新批次相同 ID 只保留第一筆；追加不重寫既有位元組，也不移除歷史重複列。
+補值維持只填空欄的既有例外；分類寫回只合併衍生欄位，保留推論期間新追加的貼文及來源 metadata。
+這些鎖適用同機本地檔案系統，不是跨主機協調。直接手改或從資料分支覆寫 JSONL 不屬於鎖定追加流程；
+資料 restore 與手動維護仍應等待所有抓取程序結束。
 
 ## 狀態與資料
 

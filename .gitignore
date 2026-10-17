@@ -15,6 +15,7 @@ data/feeds/social_sources.json
 
 # Transient fetch error log (operational noise, not a historical record).
 data/feeds/social_feed_errors.jsonl
+data/feeds/*.jsonl.lock
 
 # Pipeline-owned data is persisted by scripts/sync_pipeline_data.py on the
 # dedicated data branch, keeping generated churn out of main.

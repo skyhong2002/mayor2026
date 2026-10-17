@@ -4,11 +4,14 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import fcntl
 import json
 import os
 import re
+import tempfile
+from contextlib import contextmanager
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Iterable, Iterator
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -136,7 +139,23 @@ def save_json_atomic(path: Path, data: Any) -> None:
     tmp.replace(path)
 
 
-def read_jsonl(path: Path) -> list[dict[str, Any]]:
+@contextmanager
+def jsonl_lock(path: Path, *, exclusive: bool = True) -> Iterator[None]:
+    """Coordinate readers and writers on a stable inode, even after a replace.
+
+    Keep the sidecar in place: unlinking it would let two processes lock
+    different inodes for the same feed. flock releases automatically on exit.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.with_name(path.name + ".lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH)
+        try:
+            yield
+        finally:
+            fcntl.flock(lock, fcntl.LOCK_UN)
+
+
+def _read_jsonl_unlocked(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
     rows = []
@@ -149,6 +168,13 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    with jsonl_lock(path, exclusive=False):
+        return _read_jsonl_unlocked(path)
+
+
 def read_classified_candidates() -> list[dict[str, Any]]:
     """Candidate posts that classify_context has finished with.
 
@@ -159,17 +185,56 @@ def read_classified_candidates() -> list[dict[str, Any]]:
 
 
 def append_jsonl_dedup(path: Path, new_rows: Iterable[dict[str, Any]], *, key: str = "id") -> int:
-    """Append rows whose `key` value isn't already present in the file. Returns count appended."""
-    existing_ids = {row.get(key) for row in read_jsonl(path)}
-    to_append = [row for row in new_rows if row.get(key) not in existing_ids]
-    if not to_append:
-        return 0
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as handle:
-        for row in to_append:
-            handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True))
-            handle.write("\n")
-    return len(to_append)
+    """Append each new ID once, including duplicates in this batch.
+
+    The locked read/dedup/append transaction prevents overlapping fetchers
+    from appending the same ID. Existing bytes and row order are untouched;
+    the first occurrence wins. Encode the whole batch before writing so a
+    bad row or failing iterator cannot leave a partially appended batch.
+    """
+    with jsonl_lock(path):
+        seen = {row.get(key) for row in _read_jsonl_unlocked(path)}
+        encoded = []
+        for row in new_rows:
+            row_id = row.get(key)
+            if row_id in seen:
+                continue
+            encoded.append(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+            seen.add(row_id)
+        if not encoded:
+            return 0
+        # Older snapshots may lack a final newline. Add a separator without
+        # rewriting that historical row or joining two JSON documents.
+        separator = b""
+        if path.exists() and path.stat().st_size:
+            with path.open("rb") as existing:
+                existing.seek(-1, os.SEEK_END)
+                if existing.read(1) != b"\n":
+                    separator = b"\n"
+        payload = separator + "".join(encoded).encode("utf-8")
+        with path.open("ab") as handle:
+            handle.write(payload)
+            handle.flush()
+            os.fsync(handle.fileno())
+        return len(encoded)
+
+
+def _replace_jsonl_unlocked(path: Path, rows: Iterable[dict[str, Any]]) -> None:
+    """Publish an existing metadata update while holding jsonl_lock(path)."""
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as handle:
+            temporary = Path(handle.name)
+            for row in rows:
+                handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        if path.exists():
+            temporary.chmod(path.stat().st_mode & 0o777)
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def fill_jsonl_fields(path: Path, updates: dict[str, dict[str, Any]], *, key: str = "id") -> int:
@@ -181,27 +246,22 @@ def fill_jsonl_fields(path: Path, updates: dict[str, dict[str, Any]], *, key: st
     YouTube rows fetched before per-video date lookup existed. Returns the
     number of rows changed.
     """
-    rows = read_jsonl(path)
-    changed = 0
-    for row in rows:
-        fields = updates.get(row.get(key))
-        if not fields:
-            continue
-        row_changed = False
-        for field, value in fields.items():
-            if value and not row.get(field):
-                row[field] = value
-                row_changed = True
-        changed += row_changed
-    if not changed:
-        return 0
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    with tmp.open("w", encoding="utf-8") as handle:
+    with jsonl_lock(path):
+        rows = _read_jsonl_unlocked(path)
+        changed = 0
         for row in rows:
-            handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True))
-            handle.write("\n")
-    tmp.replace(path)
-    return changed
+            fields = updates.get(row.get(key))
+            if not fields:
+                continue
+            row_changed = False
+            for field, value in fields.items():
+                if value and not row.get(field):
+                    row[field] = value
+                    row_changed = True
+            changed += row_changed
+        if changed:
+            _replace_jsonl_unlocked(path, rows)
+        return changed
 
 
 def strip_html(text: str) -> str:

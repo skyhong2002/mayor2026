@@ -109,10 +109,21 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 - [ ] LINE OA、LINE OpenChat 沒有可抓的公開時間軸；TikTok 的 RSSHub 路由目前被平台反爬擋住。
       這些帳號只顯示在候選人頁連結
 
+## 離線驗證
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+測試使用合成資料、暫存目錄和本機子程序，不執行抓取、AI 分類請求、資料分支同步或發布。
+GitHub Actions 在 Python 3.11／3.13 執行同一套測試，並檢查前端 JavaScript 語法。
+首頁初始預渲染每欄 10 則，既有「載入更多」沿用各欄最新 400 則 bundle；
+關閉 JavaScript 時仍有首批貼文、原文連結與候選人目錄入口。
+
 ## 建置與發佈
 
 ```bash
-python3 scripts/run_pipeline.py --skip-watch   # 本機 dry run：只用現有 jsonl 建站，不抓新資料
+python3 scripts/run_pipeline.py --skip-watch   # 不抓新貼文；仍會同步資料分支、補分類及回寫資料
 python3 scripts/validate_public_outputs.py     # 驗證 generated JSON 是否可解析、必要檔案是否存在
 python3 scripts/publish_github_pages.py --no-push  # 檢查 gh-pages worktree 複製邏輯
 ```

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Run the standalone public data pipeline.
 
-Lock handling and runtime-status reporting are ported from
-Harmonica-in-Taiwan's run_pipeline.py: a stale-aware lock file keeps
-overlapping scheduled ticks from colliding, and every step's state is
+An OS-backed lock keeps overlapping scheduled ticks from colliding, and every step's state is
 written to site/api/pipeline-runtime.json so the /status/ page (and anyone
 curl-ing the API) can see what the pipeline is doing right now.
 """
@@ -12,34 +10,24 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import fcntl
 import json
 import os
 import subprocess
 import sys
 from pathlib import Path
-from typing import Callable
+from typing import Callable, TextIO
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
 DEFAULT_LOCK_FILE = PROJECT_ROOT / "state" / "run_pipeline.lock"
 DEFAULT_RUNTIME_STATUS = PROJECT_ROOT / "site" / "api" / "pipeline-runtime.json"
 AI_DEFERRED_EXIT_CODE = 75
+_PIPELINE_LOCKS: dict[Path, TextIO] = {}
 
 
 def utc_now() -> dt.datetime:
     return dt.datetime.now(dt.timezone.utc)
-
-
-def parse_time(value: object) -> dt.datetime | None:
-    if not isinstance(value, str) or not value.strip():
-        return None
-    try:
-        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=dt.timezone.utc)
-    return parsed.astimezone(dt.timezone.utc)
 
 
 def write_json_atomic(path: Path, data: dict[str, object]) -> None:
@@ -58,62 +46,59 @@ def process_is_running(pid: object) -> bool:
         return False
     try:
         os.kill(value, 0)
-    except ProcessLookupError:
+    except (ProcessLookupError, OverflowError):
         return False
     except PermissionError:
         return True
     return True
 
 
-def load_lock(path: Path) -> dict[str, object]:
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return {}
-
-
-def lock_is_stale(info: dict[str, object], *, stale_after: dt.timedelta, now: dt.datetime) -> bool:
-    if not process_is_running(info.get("pid")):
-        return True
-    started_at = parse_time(info.get("started_at"))
-    return started_at is None or now - started_at > stale_after
-
-
 def acquire_lock(path: Path, *, stale_after_minutes: float) -> bool:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    now = utc_now()
-    stale_after = dt.timedelta(minutes=max(1.0, stale_after_minutes))
-    lock_info = {"pid": os.getpid(), "started_at": now.isoformat()}
+    """Hold a persistent flock; an old timestamp never evicts a live owner.
 
-    while True:
+    stale_after_minutes remains accepted for existing launchd commands, but
+    OS ownership replaces age-based takeover. A pre-upgrade PID lock is
+    respected until its process exits. Never unlink this lock file.
+    """
+    path = path.resolve()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path in _PIPELINE_LOCKS:
+        print("Pipeline already running; skipping this scheduled tick.")
+        return False
+    handle = path.open("a+", encoding="utf-8")
+    try:
         try:
-            fd = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-        except FileExistsError:
-            existing = load_lock(path)
-            if lock_is_stale(existing, stale_after=stale_after, now=now):
-                try:
-                    path.unlink()
-                except FileNotFoundError:
-                    pass
-                continue
-            print(
-                "Pipeline already running; skipping this scheduled tick "
-                f"(lock={path}, pid={existing.get('pid')}, started_at={existing.get('started_at')})."
-            )
+            fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print("Pipeline already running; skipping this scheduled tick.")
             return False
-        with os.fdopen(fd, "w", encoding="utf-8") as handle:
-            json.dump(lock_info, handle, ensure_ascii=False, indent=2, sort_keys=True)
-            handle.write("\n")
+        handle.seek(0)
+        try:
+            existing = json.load(handle)
+        except (ValueError, OSError):
+            existing = {}
+        if isinstance(existing, dict) and existing.get("locking") != "flock" and process_is_running(existing.get("pid")):
+            print("Pre-upgrade pipeline still running; skipping this scheduled tick.")
+            return False
+        handle.seek(0)
+        handle.truncate()
+        json.dump({"pid": os.getpid(), "started_at": utc_now().isoformat(), "locking": "flock"},
+                  handle, ensure_ascii=False, indent=2, sort_keys=True)
+        handle.write("\n")
+        handle.flush()
+        _PIPELINE_LOCKS[path] = handle
         return True
+    finally:
+        if _PIPELINE_LOCKS.get(path) is not handle:
+            handle.close()
 
 
 def release_lock(path: Path) -> None:
-    existing = load_lock(path)
-    if existing.get("pid") == os.getpid():
-        try:
-            path.unlink()
-        except FileNotFoundError:
-            pass
+    handle = _PIPELINE_LOCKS.pop(path.resolve(), None)
+    if handle is not None:
+        # Close rather than LOCK_UN: a stage inherited this descriptor and
+        # may still be finishing if the controller received a signal.
+        handle.close()
 
 
 def execute_step(
@@ -125,7 +110,10 @@ def execute_step(
     deferred_exit_codes: frozenset[int] = frozenset(),
 ) -> int:
     mark_step(step, "running", command=command)
-    result = subprocess.run(command, cwd=PROJECT_ROOT)
+    # Keep the lock alive in the active stage if the controller is killed.
+    # New scheduled ticks must not overlap a surviving ingestion subprocess.
+    result = subprocess.run(command, cwd=PROJECT_ROOT,
+                            pass_fds=tuple(handle.fileno() for handle in _PIPELINE_LOCKS.values()))
     if result.returncode in deferred_exit_codes:
         mark_step(step, "deferred", command=command, returncode=result.returncode)
         print(
@@ -171,7 +159,8 @@ def main() -> int:
     parser.add_argument("--skip-data-restore", action="store_true", help="Use existing local pipeline data without restoring the data branch first.")
     parser.add_argument("--data-no-push", action="store_true", help="Commit pipeline data only to the local data branch.")
     parser.add_argument("--lock-file", type=Path, default=DEFAULT_LOCK_FILE)
-    parser.add_argument("--lock-stale-minutes", type=float, default=240.0)
+    parser.add_argument("--lock-stale-minutes", type=float, default=240.0,
+                        help="Compatibility option; live OS locks are never evicted by age.")
     parser.add_argument("--runtime-status", type=Path, default=DEFAULT_RUNTIME_STATUS)
     parser.add_argument("--no-lock", action="store_true")
     args = parser.parse_args()
@@ -241,9 +230,9 @@ def main() -> int:
     if not locked:
         return 0
 
-    publish_runtime_status("running", message="Pipeline started")
     completed = False
     try:
+        publish_runtime_status("running", message="Pipeline started")
         if not args.skip_data_restore:
             run([PYTHON, "scripts/sync_pipeline_data.py", "restore"], step="restore pipeline data")
         run([PYTHON, "scripts/build_social_sources.py"], step="build social sources")
@@ -321,10 +310,12 @@ def main() -> int:
             ),
         )
     finally:
-        if not args.no_lock:
-            release_lock(lock_path)
-        if not completed:
-            publish_runtime_status("failed", current_step=current_step_label, message="Pipeline stopped before completion")
+        try:
+            if not completed:
+                publish_runtime_status("failed", current_step=current_step_label, message="Pipeline stopped before completion")
+        finally:
+            if not args.no_lock:
+                release_lock(lock_path)
     return 0
 
 

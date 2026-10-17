@@ -15,7 +15,7 @@
   MO._byId = MO._byId || byId;
   var CITIES = boot.cities || MO.CITY_ORDER;
   var TOPICS = boot.topics || Object.keys(MO.TOPIC_SLUGS);
-  var PER = boot.perCol || 30;
+  var PER = boot.perCol || 10;
   var PLATFORMS = ["facebook", "instagram", "threads", "youtube", "x", "website", "podcast"];
   var INTENTS = [["", "全部"], ["self_initiated", "主動發文"], ["responsive", "回應他方觀點"]];
   var STORE = "moDeck";

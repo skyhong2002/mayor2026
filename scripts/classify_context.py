@@ -19,7 +19,6 @@ import os
 from pathlib import Path
 import re
 import sys
-import tempfile
 import time
 from typing import Any, Callable
 import urllib.error
@@ -405,13 +404,31 @@ def apply_result(post: dict[str, Any], result: dict[str, Any], model: str, class
 
 
 def write_rows(rows: list[dict[str, Any]]) -> None:
+    """Save derived classifications without losing posts appended mid-request.
+
+    Inference runs outside the file lock. Merge only classifier-owned fields
+    into the latest feed, preserving source metadata and newly promoted rows.
+    """
     destination = feed_common.CANDIDATES_JSONL
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=destination.parent, delete=False) as handle:
-        temporary = Path(handle.name)
-        for row in rows:
-            handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
-    temporary.replace(destination)
+    updates = {row["id"]: row for row in rows if row.get("classification")}
+    fields = ("topics", "topic_scores", "postingIntent", "agendaRelevance", "classification")
+    legacy_fields = ("nature", "trigger", "actions", "actionLabels", "actionEvidence", "targets")
+    with feed_common.jsonl_lock(destination):
+        latest = feed_common._read_jsonl_unlocked(destination)
+        changed = False
+        for row in latest:
+            update = updates.get(row.get("id"))
+            if not update:
+                continue
+            before = dict(row)
+            for field in fields:
+                if field in update:
+                    row[field] = update[field]
+            for field in legacy_fields:
+                row.pop(field, None)
+            changed |= row != before
+        if changed:
+            feed_common._replace_jsonl_unlocked(destination, latest)
 
 
 def normalized_post_text(post: dict[str, Any]) -> str:
