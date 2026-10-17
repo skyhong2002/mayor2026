@@ -14,6 +14,8 @@ import urllib.error
 import urllib.request
 from typing import Any
 
+import pipeline_subprocess
+
 import feed_common
 import source_status
 
@@ -105,7 +107,7 @@ def probe_url(url: str, timeout: int = 6) -> dict[str, Any]:
 
 def apify_check() -> dict[str, Any]:
     try:
-        result = subprocess.run(
+        result = pipeline_subprocess.run(
             [sys.executable, "scripts/apify_facebook_fetcher.py", "--check"],
             cwd=feed_common.PROJECT_ROOT,
             check=False,

@@ -10,6 +10,8 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+import pipeline_subprocess
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_BRANCH = "data"
@@ -25,7 +27,7 @@ class DataSyncError(RuntimeError):
 
 
 def git(*args: str, cwd: Path = PROJECT_ROOT, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
+    return pipeline_subprocess.run(
         ["git", *args],
         cwd=cwd,
         check=check,

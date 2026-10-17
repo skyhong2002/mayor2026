@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 from pathlib import Path
@@ -142,17 +143,69 @@ print(feed_common.fill_jsonl_fields(Path(sys.argv[1]), {'old': {'posted_at': '20
     def test_classifier_save_preserves_concurrent_append_and_source_metadata(self):
         feed_common.append_jsonl_dedup(self.path, [{"id": "old", "text": "原文", "posted_at": ""}])
         snapshot = feed_common.read_jsonl(self.path)
+        writer = classify_context.ClassificationWriter(snapshot)
         snapshot[0].update({"classification": {"method": "ai"}, "topics": ["住宅"]})
         feed_common.fill_jsonl_fields(self.path, {"old": {"posted_at": "2026-01-01"}})
         feed_common.append_jsonl_dedup(self.path, [{"id": "new", "text": "後來收錄"}])
         with mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path):
-            classify_context.write_rows(snapshot)
+            writer(snapshot)
         rows = feed_common.read_jsonl(self.path)
         self.assertEqual([row["id"] for row in rows], ["old", "new"])
         self.assertEqual(rows[0]["posted_at"], "2026-01-01")
         self.assertEqual(rows[0]["topics"], ["住宅"])
         self.assertEqual(rows[0]["text"], "原文")
         self.assertEqual(rows[1], {"id": "new", "text": "後來收錄"})
+
+    def test_cached_duplicate_ids_are_a_byte_exact_noop(self):
+        rows = [{"id": "same", "text": text} for text in ("住宅政策", "交通政策")]
+        for row, topic in zip(rows, ("住宅", "交通")):
+            classify_context.apply_result(row, {
+                "topics": [{"topic": topic, "confidence": .9}],
+                "postingIntent": "self_initiated", "intentConfidence": .9,
+                "agendaRelevance": .8, "reason": "fixture",
+            }, "fixture-model", "fixture-time")
+        self.path.write_text("\n".join(json.dumps(row, ensure_ascii=False, indent=None) for row in rows) + "\n")
+        before = self.path.read_bytes()
+        with mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path), \
+             mock.patch.object(classify_context, "run_classification_batch", side_effect=AssertionError("No inference")), \
+             mock.patch.object(classify_context, "run_intent_verification_batch", side_effect=AssertionError("No verification")), \
+             mock.patch.object(sys, "argv", ["classify_context.py", "--model", "fixture-model"]):
+            self.assertEqual(classify_context.main(), 0)
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual([row["topics"] for row in feed_common.read_jsonl(self.path)], [["住宅"], ["交通"]])
+        self.assertTrue(all(classify_context.is_current(row, "fixture-model") for row in rows))
+
+    def test_classifier_matches_duplicate_source_content_and_occurrence(self):
+        rows = [{"id": "same", "source_id": source, "text": text, "topics": [topic], "nature": "keep"}
+                for source, text, topic in (("one", "住宅", "住宅"), ("one", "交通", "交通"),
+                                           ("one", "交通", "生活"), ("two", "交通", "交通"))]
+        feed_common._replace_jsonl_unlocked(self.path, rows)
+        writer = classify_context.ClassificationWriter(rows)
+        rows[2]["topics"] = ["環境"]
+        with mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path):
+            writer(rows)
+            # A subsequent no-op save must leave every row untouched.
+            before = self.path.read_bytes()
+            writer(rows)
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(feed_common.read_jsonl(self.path), rows)
+        self.assertTrue(all(row["nature"] == "keep" for row in rows))
+
+    def test_classifier_does_not_overwrite_concurrent_classification_or_edited_source(self):
+        original = [{"id": "one", "text": "住宅", "topics": ["生活"]},
+                    {"id": "two", "text": "交通", "topics": ["生活"]}]
+        snapshot = copy.deepcopy(original)
+        writer = classify_context.ClassificationWriter(snapshot)
+        snapshot[0]["topics"] = ["住宅"]
+        snapshot[1]["topics"] = ["交通"]
+        latest = copy.deepcopy(original)
+        latest[0]["topics"] = ["環境"]
+        latest[1]["text"] = "已更新的交通內容"
+        feed_common._replace_jsonl_unlocked(self.path, latest)
+        before = self.path.read_bytes()
+        with mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path):
+            writer(snapshot)
+        self.assertEqual(self.path.read_bytes(), before)
 
 
 if __name__ == "__main__":

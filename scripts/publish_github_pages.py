@@ -13,6 +13,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import pipeline_subprocess
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SITE_DIR = PROJECT_ROOT / "site"
 DEFAULT_WORKTREE = PROJECT_ROOT.with_name(f"{PROJECT_ROOT.name}-gh-pages")
@@ -27,7 +29,7 @@ class PublishError(RuntimeError):
 
 
 def git(args: list[str], *, cwd: Path = PROJECT_ROOT, check: bool = True, capture: bool = False) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(["git", *args], cwd=cwd, check=check, text=True, capture_output=capture)
+    return pipeline_subprocess.run(["git", *args], cwd=cwd, check=check, text=True, capture_output=capture)
 
 
 def git_stdout(args: list[str], *, cwd: Path = PROJECT_ROOT, check: bool = True) -> str:

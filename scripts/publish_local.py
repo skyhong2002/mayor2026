@@ -21,6 +21,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pipeline_subprocess
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SITE_ROOT = PROJECT_ROOT / "site"
@@ -30,7 +32,7 @@ SKIP_NAMES = {".DS_Store", "templates", "_kit"}
 
 def git_short_sha() -> str:
     try:
-        out = subprocess.run(
+        out = pipeline_subprocess.run(
             ["git", "rev-parse", "--short=8", "HEAD"],
             cwd=PROJECT_ROOT,
             check=True,
@@ -63,7 +65,7 @@ def copy_site(src: Path, dest: Path) -> None:
     if sys.platform == "darwin":
         dest.mkdir(parents=True)
         # -L follows symlinks like copytree(symlinks=False); -p matches copy2.
-        result = subprocess.run(["/bin/cp", "-c", "-p", "-R", "-L", f"{src}/.", f"{dest}/"],
+        result = pipeline_subprocess.run(["/bin/cp", "-c", "-p", "-R", "-L", f"{src}/.", f"{dest}/"],
                                 stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
         if result.returncode == 0:
             remove_skipped(dest)

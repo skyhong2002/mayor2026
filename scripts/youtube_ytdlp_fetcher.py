@@ -20,6 +20,8 @@ import shutil
 import subprocess
 from typing import Any, Optional
 
+import pipeline_subprocess
+
 import feed_common
 import source_status
 
@@ -57,7 +59,7 @@ def fetch_channel_videos(url: str, *, limit: int) -> list[dict[str, Any]]:
         str(limit),
         url,
     ]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=CHANNEL_FETCH_TIMEOUT_SECS)
+    result = pipeline_subprocess.run(command, capture_output=True, text=True, timeout=CHANNEL_FETCH_TIMEOUT_SECS)
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "yt-dlp exited non-zero")
     entries = []
@@ -78,7 +80,7 @@ def fetch_video_posted_at(video_id: str) -> str:
         "--dump-json",
         f"https://www.youtube.com/watch?v={video_id}",
     ]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=VIDEO_FETCH_TIMEOUT_SECS)
+    result = pipeline_subprocess.run(command, capture_output=True, text=True, timeout=VIDEO_FETCH_TIMEOUT_SECS)
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "yt-dlp exited non-zero")
     info = json.loads(result.stdout)
@@ -230,7 +232,7 @@ def backfill_missing_dates(*, limit: int, now: Optional[dt.datetime] = None) -> 
 def fetch_channel_profile(url: str) -> dict[str, str]:
     """Fetch a channel's display name and avatar URL (one extra yt-dlp call)."""
     command = [YTDLP_BIN, "--skip-download", "--playlist-items", "0", "--dump-single-json", url]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=60)
+    result = pipeline_subprocess.run(command, capture_output=True, text=True, timeout=60)
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "yt-dlp exited non-zero")
     info = json.loads(result.stdout)

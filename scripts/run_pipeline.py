@@ -18,6 +18,8 @@ import sys
 from pathlib import Path
 from typing import Callable, TextIO
 
+import pipeline_subprocess
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
 DEFAULT_LOCK_FILE = PROJECT_ROOT / "state" / "run_pipeline.lock"
@@ -112,7 +114,7 @@ def execute_step(
     mark_step(step, "running", command=command)
     # Keep the lock alive in the active stage if the controller is killed.
     # New scheduled ticks must not overlap a surviving ingestion subprocess.
-    result = subprocess.run(command, cwd=PROJECT_ROOT,
+    result = pipeline_subprocess.run(command, cwd=PROJECT_ROOT,
                             pass_fds=tuple(handle.fileno() for handle in _PIPELINE_LOCKS.values()))
     if result.returncode in deferred_exit_codes:
         mark_step(step, "deferred", command=command, returncode=result.returncode)

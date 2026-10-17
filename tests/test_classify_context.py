@@ -152,6 +152,20 @@ class ContentClassifierTest(unittest.TestCase):
         self.assertNotIn("%e6%96%b0", prompts[0])
         self.assertEqual([r["id"] for r in results], ["post-2", "website:https://example.tw/%e6%96%b0%e5%8c%97"])
 
+    def test_duplicate_ids_with_different_text_are_classified_individually(self):
+        rows = [self.row("same", "住宅政策"), self.row("same", "交通政策")]
+
+        def runner(batch, model):
+            self.assertEqual(len({row["id"] for row in batch}), len(batch))
+            return [{**self.result(row["id"]), "topics": [{
+                "topic": "住宅" if "住宅" in row["text"] else "交通", "confidence": .9,
+            }]} for row in batch]
+
+        self.assertEqual(classify_context.classify_rows(rows, model="fixture", batch_size=10,
+                                                       runner=runner), (2, 0))
+        self.assertEqual([row["topics"] for row in rows], [["住宅"], ["交通"]])
+        self.assertTrue(all(classify_context.is_current(row, "fixture") for row in rows))
+
     def test_classify_rows_skips_posts_without_text(self):
         rows = [self.row("post-1"), self.row("post-empty", text="  "), self.row("post-none", text=None)]
         seen = []

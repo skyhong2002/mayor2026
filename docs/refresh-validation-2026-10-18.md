@@ -14,12 +14,20 @@ production output, scheduler, service, credential or provider was changed.
   newly appended row after replacing the file. Classifier saves merge only
   derived fields into the latest feed, preserving concurrent promotions and
   source metadata filled while inference was running.
+- Classifier merges match source/content plus duplicate occurrence, and apply
+  only fields changed during this run. A fully cached duplicate-ID feed stays
+  byte-for-byte unchanged. Concurrent classification or source-text edits are
+  preserved instead of being overwritten by an older inference snapshot.
 - Pipeline tests hold a lock with a year-2000 timestamp: it cannot be evicted
   by the old age threshold. Clean exit and SIGKILL release ownership while
   keeping the same inode. A live legacy PID lock is respected.
 - A real stage subprocess inherits the lock. Killing its controller does not
   allow another pipeline until that stage exits. Runtime-status write failure
   also releases the controller's lock.
+- All repository subprocess launches forward the lock descriptor and its marker.
+  A synthetic executable launched through the real YouTube adapter keeps the
+  lock after both controller and stage are killed; the lock becomes available
+  only when that grandchild exits.
 
 The locks coordinate cooperating processes on one local filesystem. They do
 not make arbitrary direct writes or data-branch restores safe to run alongside
@@ -64,9 +72,12 @@ python3 -m unittest discover -s tests -v
 find site/assets -type f -name '*.js' -print0 | xargs -0 -n 1 node --check
 ```
 
-Result on the development Mac: 88 tests passed; all nine JavaScript files
+Result on the development Mac after review fixes: 93 tests passed; all nine JavaScript files
 passed syntax checks. CI runs these on Python 3.11 and 3.13, with Node 24,
 without installing ingestion dependencies or invoking the production pipeline.
+The full suite also passed with audit hooks blocking network connections and
+writes/deletions in this checkout's data, state, site and published trees.
+Instagram error fixtures write into their temporary test directories.
 
 For an isolated manual browser fixture:
 

@@ -12,6 +12,7 @@ confidence score.
 from __future__ import annotations
 
 import argparse
+import copy
 import datetime as dt
 import hashlib
 import json
@@ -403,32 +404,73 @@ def apply_result(post: dict[str, Any], result: dict[str, Any], model: str, class
     }
 
 
-def write_rows(rows: list[dict[str, Any]]) -> None:
+CLASSIFIER_FIELDS = ("topics", "topic_scores", "postingIntent", "agendaRelevance", "classification",
+                     "nature", "trigger", "actions", "actionLabels", "actionEvidence", "targets")
+
+
+def indexed_rows(rows: list[dict[str, Any]]) -> dict[tuple[str, int], dict[str, Any]]:
+    """Identify historical duplicates by source/content and occurrence, not ID alone."""
+    counts: dict[str, int] = {}
+    indexed = {}
+    for row in rows:
+        source = json.dumps({field: row.get(field) for field in
+                            ("id", "source_id", "platform", "candidate_id", "city", "url", "text")},
+                            ensure_ascii=False, sort_keys=True)
+        occurrence = counts.get(source, 0)
+        counts[source] = occurrence + 1
+        indexed[(source, occurrence)] = row
+    return indexed
+
+
+def classifier_fields(row: dict[str, Any]) -> dict[str, Any]:
+    return {field: row[field] for field in CLASSIFIER_FIELDS if field in row}
+
+
+def write_rows(rows: list[dict[str, Any]], *, original_rows: list[dict[str, Any]]) -> None:
     """Save derived classifications without losing posts appended mid-request.
 
     Inference runs outside the file lock. Merge only classifier-owned fields
     into the latest feed, preserving source metadata and newly promoted rows.
     """
     destination = feed_common.CANDIDATES_JSONL
-    updates = {row["id"]: row for row in rows if row.get("classification")}
-    fields = ("topics", "topic_scores", "postingIntent", "agendaRelevance", "classification")
-    legacy_fields = ("nature", "trigger", "actions", "actionLabels", "actionEvidence", "targets")
+    original = indexed_rows(original_rows)
+    updates = {key: row for key, row in indexed_rows(rows).items()
+               if key in original and classifier_fields(row) != classifier_fields(original[key])}
+    if not updates:
+        return
     with feed_common.jsonl_lock(destination):
         latest = feed_common._read_jsonl_unlocked(destination)
         changed = False
-        for row in latest:
-            update = updates.get(row.get("id"))
-            if not update:
+        for key, row in indexed_rows(latest).items():
+            update = updates.get(key)
+            if update is None:
                 continue
-            before = dict(row)
-            for field in fields:
+            before = original[key]
+            # Another classifier may have committed while inference ran. Never
+            # overwrite its result with this stale snapshot, even for the same text.
+            if classifier_fields(row) != classifier_fields(before):
+                continue
+            for field in CLASSIFIER_FIELDS:
+                if (field in before) == (field in update) and before.get(field) == update.get(field):
+                    continue
                 if field in update:
                     row[field] = update[field]
-            for field in legacy_fields:
-                row.pop(field, None)
-            changed |= row != before
+                else:
+                    row.pop(field, None)
+            changed = True
         if changed:
             feed_common._replace_jsonl_unlocked(destination, latest)
+
+
+class ClassificationWriter:
+    """Remember which derived fields this inference run actually changed."""
+
+    def __init__(self, rows: list[dict[str, Any]]) -> None:
+        self.original_rows = copy.deepcopy(rows)
+
+    def __call__(self, rows: list[dict[str, Any]]) -> None:
+        write_rows(rows, original_rows=self.original_rows)
+        self.original_rows = copy.deepcopy(rows)
 
 
 def normalized_post_text(post: dict[str, Any]) -> str:
@@ -588,11 +630,15 @@ def classify_rows(
         print(f"classify_context: skipped {len(skipped_empty)} post(s) with no text.")
     if limit is not None:
         pending = pending[:limit]
-    by_id = {row["id"]: row for row in rows}
     classified = 0
     classified_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
-    for offset in range(0, len(pending), batch_size):
-        batch = pending[offset : offset + batch_size]
+    batches: list[list[dict[str, Any]]] = []
+    for row in pending:
+        if not batches or len(batches[-1]) == batch_size or any(item["id"] == row["id"] for item in batches[-1]):
+            batches.append([])
+        batches[-1].append(row)
+    for batch in batches:
+        by_id = {row["id"]: row for row in batch}
         results = run_batch_with_retries(batch, model, runner)
         for result in results:
             apply_result(by_id[result["id"]], result, model, classified_at)
@@ -618,6 +664,7 @@ def main() -> int:
     if not rows:
         print("classify_context: no posts to classify.")
         return 0
+    save_rows = ClassificationWriter(rows)
     try:
         classified, cached = classify_rows(
             rows,
@@ -625,7 +672,7 @@ def main() -> int:
             batch_size=args.batch_size,
             force=args.force,
             limit=args.limit,
-            save=write_rows,
+            save=save_rows,
         )
     except DeferredClassificationError as exc:
         print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
@@ -653,7 +700,7 @@ def main() -> int:
         print(f"classify_context.py: {exc}", file=__import__("sys").stderr)
         return 1
     if reconciled_rows or verified_rows or not classified:
-        write_rows(rows)
+        save_rows(rows)
     print(f"classify_context: complete; classified={classified}, cached={cached}, total={len(rows)}.")
     if TOKEN_USAGE["total"]:
         print(

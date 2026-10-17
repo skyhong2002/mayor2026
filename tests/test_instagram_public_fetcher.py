@@ -23,7 +23,8 @@ class InstagramTests(unittest.TestCase):
     def setUp(self):
         self.directory = tempfile.TemporaryDirectory()
         self.addCleanup(self.directory.cleanup)
-        for obj, attr, name in ((fb, 'LEDGER_JSON', 'ledger.json'),
+        for obj, attr, name in ((ig.feed_common, 'ERRORS_JSONL', 'errors.jsonl'),
+                                 (fb, 'LEDGER_JSON', 'ledger.json'),
                                  (ig.source_status, 'STATE_PATH', 'status.json'),
                                  (ig.ig_public_host, 'STATE_PATH', 'host.json')):
             patch = mock.patch.object(obj, attr, Path(self.directory.name) / name)

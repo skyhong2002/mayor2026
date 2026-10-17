@@ -130,6 +130,64 @@ run_pipeline.execute_step([sys.executable, '-u', '-c', sys.argv[2]], step='fixtu
                 run_pipeline.main()
         self.assertTrue(run_pipeline.acquire_lock(self.path, stale_after_minutes=1))
 
+    def test_ytdlp_grandchild_keeps_lock_after_controller_and_stage_are_killed(self):
+        ready = Path(self.directory.name) / "grandchild.json"
+        finish = Path(self.directory.name) / "finish"
+        executable = Path(self.directory.name) / "fake-ytdlp"
+        executable.write_text(f"#!{sys.executable}\n" + f"""
+import json, os, time
+from pathlib import Path
+ready = Path({str(ready)!r})
+temporary = ready.with_suffix('.tmp')
+temporary.write_text(json.dumps([os.getppid(), os.getpid()]))
+temporary.replace(ready)
+while not Path({str(finish)!r}).exists():
+    time.sleep(.01)
+""")
+        executable.chmod(0o700)
+        stage = """
+import sys
+import youtube_ytdlp_fetcher as youtube
+youtube.YTDLP_BIN = sys.argv[1]
+youtube.fetch_channel_videos('synthetic:no-network', limit=1)
+"""
+        controller = """
+from pathlib import Path
+import sys
+import run_pipeline
+assert run_pipeline.acquire_lock(Path(sys.argv[1]), stale_after_minutes=1)
+run_pipeline.execute_step([sys.executable, '-c', sys.argv[2], sys.argv[3]],
+                          step='fixture', mark_step=lambda *a, **kw: None)
+"""
+        child = subprocess.Popen([sys.executable, "-c", controller, str(self.path), stage, str(executable)],
+                                 env=self.env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        descendants = []
+        try:
+            deadline = time.monotonic() + 5
+            while not ready.exists():
+                if time.monotonic() > deadline or child.poll() is not None:
+                    self.fail("Synthetic yt-dlp grandchild did not start")
+                time.sleep(.01)
+            descendants = json.loads(ready.read_text())
+            child.kill()
+            child.wait(timeout=5)
+            os.kill(descendants[0], signal.SIGKILL)
+            self.assertFalse(run_pipeline.acquire_lock(self.path, stale_after_minutes=1))
+            finish.touch()
+            deadline = time.monotonic() + 5
+            while not run_pipeline.acquire_lock(self.path, stale_after_minutes=1):
+                if time.monotonic() > deadline:
+                    self.fail("Grandchild did not release its inherited lock")
+                time.sleep(.01)
+        finally:
+            finish.touch()
+            for pid in descendants:
+                try:
+                    os.kill(pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+            self.stop_child(child)
+
 
 if __name__ == "__main__":
     unittest.main()
