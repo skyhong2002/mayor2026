@@ -6,8 +6,8 @@ Facebook、Instagram、Threads、YouTube、官網等來源抓取貼文，正規�
 ## 目前輸出
 
 - 網站首頁：<https://mayor2026.observe.tw/>（六都候選人總覽 + 最新公開發文河道）
-- `/source/`：公開來源列表；`/source/<candidate>/`：單一候選人帳號清單（含性質與驗證等級）
-  + 跨平台合併時間軸與議題比例（舊網址 `/<city>/<candidate>/` 已改為轉址到這裡）
+- `/<city>/<candidate>/`：單一候選人跨平台合併時間軸、議題比例與發文動機
+- `/source/`：公開來源列表；`/source/<candidate>/`：單一候選人帳號清單（含性質、驗證等級與抓取狀態）
 - `/spectrum/`：議題光譜總覽；`/spectrum/<topic>/`：單一議題各候選人比較
 - `/status/`：資料管線狀態（維持原有版型，修正目前錯誤、冷卻與預算狀態；逐來源紀錄由 JSON API 提供；[機制說明](docs/ingestion-health.md)）
 - `/policy-match/`：匿名選擇市政優先議題，對照候選人自主政策倡議貼文

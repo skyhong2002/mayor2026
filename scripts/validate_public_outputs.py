@@ -9,10 +9,14 @@ across the API surfaces. Validation failure blocks publishing.
 
 from __future__ import annotations
 
+import html
 import json
+import re
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 import classify_context
 
@@ -151,6 +155,43 @@ def validate_prerender(errors: list[str]) -> None:
                 errors.append(f"{rel} has no prerendered content ({marker} not found)")
 
 
+SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+CANONICAL_RE = re.compile(r'<link rel="canonical" href="([^"]*)">')
+NOINDEX_RE = re.compile(r'<meta name="robots" content="[^"]*noindex')
+
+
+def validate_sitemap(errors: list[str]) -> None:
+    """Every sitemap URL must be a real, indexable page whose canonical is itself."""
+    sitemap_path = SITE_ROOT / "sitemap.xml"
+    if not sitemap_path.exists():
+        return
+    try:
+        root = ET.parse(sitemap_path).getroot()
+    except ET.ParseError as exc:
+        errors.append(f"invalid sitemap.xml: {exc}")
+        return
+    locs = [(loc.text or "").strip() for loc in root.iter(f"{SITEMAP_NS}loc")]
+    if not locs:
+        errors.append("sitemap.xml lists no URLs")
+    seen: set[str] = set()
+    for loc in locs:
+        if loc in seen:
+            errors.append(f"sitemap.xml lists {loc} twice")
+        seen.add(loc)
+        path = urlsplit(loc).path
+        page = SITE_ROOT / path.strip("/") / "index.html"
+        if not path.endswith("/") or not page.exists():
+            errors.append(f"sitemap URL {loc} has no generated page")
+            continue
+        page_html = page.read_text(encoding="utf-8")
+        canonical = CANONICAL_RE.search(page_html)
+        if not canonical or html.unescape(canonical.group(1)) != loc:
+            found = html.unescape(canonical.group(1)) if canonical else "none"
+            errors.append(f"sitemap URL {loc} has canonical {found}")
+        if NOINDEX_RE.search(page_html):
+            errors.append(f"sitemap URL {loc} is marked noindex")
+
+
 def validate_count_consistency(errors: list[str]) -> None:
     try:
         candidates = read_json(API_DIR / "candidates.json")
@@ -223,6 +264,7 @@ def main() -> int:
     validate_asset_references(errors)
     validate_candidate_pages_exist(errors)
     validate_prerender(errors)
+    validate_sitemap(errors)
     validate_count_consistency(errors)
     validate_qualitative_schema(errors)
 
