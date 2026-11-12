@@ -526,7 +526,7 @@ a.avatar:hover { text-decoration: none; }
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; line-clamp: 6; overflow: hidden;
 }
 .feed-text.is-expanded { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible; }
-.feed-text a { word-break: break-all; }
+.feed-text a { overflow-wrap: anywhere; }
 .feed-text-toggle {
   position: relative; margin: 2px 0 0; padding: 4px 0; border: 0; background: none;
   color: var(--color-text-muted); font-size: 0.86rem; font-weight: 600;
@@ -535,7 +535,7 @@ a.avatar:hover { text-decoration: none; }
 .feed-text-toggle:hover { color: var(--color-text-primary); }
 .feed-media { display: block; margin-top: 10px; }
 .feed-media img {
-  width: 100%; max-height: 420px; object-fit: cover;
+  width: 100%; height: auto; max-height: 420px; object-fit: cover;
   border: 1px solid var(--color-border-subtle); border-radius: var(--radius-md); background: var(--color-surface-soft);
 }
 .feed-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -551,6 +551,22 @@ a.avatar:hover { text-decoration: none; }
 .feed-action .icon { width: 18px; height: 18px; }
 .feed-action:hover { background: var(--color-surface-soft); color: var(--color-text-primary); text-decoration: none; }
 .feed-more { display: flex; justify-content: center; padding: var(--space-4) 0 var(--space-6); }
+/* 續載／篩選的持續狀態列（載入中或錯誤＋重試），放在 .feed 前 */
+.feed-status { margin: var(--space-3) 0; }
+.feed-status[data-kind="loading"] {
+  display: flex; align-items: center; gap: var(--space-3);
+  padding: 12px 16px; border-radius: var(--radius-md);
+  background: var(--color-info-surface); color: var(--color-info-text); font-size: var(--text-small); font-weight: 600;
+}
+.feed-status .notice { align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.feed-status .notice p { margin-top: 2px; }
+.feed[aria-busy="true"] { opacity: 0.45; transition: opacity var(--motion-normal); }
+.spinner {
+  width: 16px; height: 16px; flex: none; border-radius: 50%;
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent); border-top-color: currentColor;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* =========================================================================
    7. 多欄河道 .feed-cols（TweetDeck 式；欄寬 380px、各欄獨立捲動、橫向捲動欄板）

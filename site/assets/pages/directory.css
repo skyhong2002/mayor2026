@@ -111,7 +111,7 @@
     padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border-subtle);
   }
   .api-table td { display: block; padding: 0; border: 0; }
-  .api-table .api-path { white-space: normal; word-break: break-all; }
+  .api-table .api-path { white-space: normal; overflow-wrap: anywhere; }
   .api-table td:nth-child(2) { grid-column: 1; font-size: var(--text-small); }
   .api-table .api-copy { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
 }

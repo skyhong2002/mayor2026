@@ -473,9 +473,12 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
     image = asset_abs(post.get("imageUrl"))
     if image and url:
         aspect = post.get("imageAspect")
-        ratio = f"{round(float(aspect), 4)}" if isinstance(aspect, (int, float)) and aspect > 0 else "4/3"
+        aspect = float(aspect) if isinstance(aspect, (int, float)) and aspect > 0 else 4 / 3
+        # Intrinsic size (cached images are ≤1200px wide) reserves layout space before load.
+        width, height = 1200, max(1, round(1200 / aspect))
         body.append(f'<a class="feed-media" href="{esc(url)}" target="_blank" rel="noopener" tabindex="-1">'
-                    f'<img loading="lazy" decoding="async" src="{esc(image)}" alt="" style="aspect-ratio: {ratio}"></a>')
+                    f'<img loading="lazy" decoding="async" src="{esc(image)}" alt="" width="{width}" height="{height}" '
+                    f'style="aspect-ratio: {round(aspect, 4)}"></a>')
     tags = [f'<a class="chip-soft chip-topic" href="/spectrum/{topic_slug(t)}/">{esc(t)}</a>' for t in topics]
     # Posting-intent chips are intentionally not shown on cards (kept in data-intent for filters).
     if tags:

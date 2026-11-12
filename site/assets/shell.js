@@ -164,8 +164,9 @@
     var image = assetAbs(post.imageUrl);
     if (image && url) {
       var a = post.imageAspect;
-      var ratio = typeof a === "number" && a > 0 ? String(Math.round(a * 10000) / 10000) : "4/3";
-      body += '<a class="feed-media" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="' + esc(image) + '" alt="" style="aspect-ratio: ' + ratio + '"></a>';
+      a = typeof a === "number" && a > 0 ? a : 4 / 3;
+      body += '<a class="feed-media" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="' + esc(image) +
+        '" alt="" width="1200" height="' + Math.max(1, Math.round(1200 / a)) + '" style="aspect-ratio: ' + Math.round(a * 10000) / 10000 + '"></a>';
     }
     var tags = topics.map(function (t) {
       return '<a class="chip-soft chip-topic" href="/spectrum/' + (TOPIC_SLUGS[t] || "life") + '/">' + esc(t) + "</a>";

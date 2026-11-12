@@ -20,7 +20,7 @@ def _story_strip(data) -> str:
                      if (now - (S.parse_ts(p.get("postedAt")) or now - dt.timedelta(days=99))).total_seconds() < 172800)
         badge = f'<span class="story-badge">{recent}</span>' if recent else ""
         src = S.asset_abs(c.get("avatarUrl"))
-        img = f'<img src="{S.esc(src)}" alt="" width="58" height="58" loading="lazy">' if src else \
+        img = f'<img src="{S.esc(src)}" alt="" width="58" height="58" loading="lazy" decoding="async">' if src else \
             f'<span class="avatar-initial">{S.esc(c["name"][:1])}</span>'
         items.append(
             f'<a class="story-item" href="/?candidate={S.esc(c["id"])}" data-party="{S.party_slug(c.get("party"))}">'

@@ -80,6 +80,7 @@
   function filtersOn() { return !!(state.city.length || state.platform.length || state.intent); }
 
   function run() {
+    countEl.removeAttribute("data-tone");
     state.q = input.value.trim().slice(0, 100);
     writeURL();
     if (!state.q && !filtersOn()) { idle(); return; }
@@ -143,6 +144,18 @@
   }
 
   if (state.q || filtersOn()) run();
-  else setTimeout(function () { load().catch(function () {}); }, 400); // warm the index
+  else setTimeout(warm, 400);
+
+  // Warm the index in the background. A failure is not fatal (run() fetches
+  // again, since MO.fetchJSON drops failed promises), but it must be visible:
+  // say so next to the box instead of failing silently on the first search.
+  function warm() {
+    load().catch(function (err) {
+      if (window.console) console.warn("search: index warm-up failed", err);
+      if (state.q || filtersOn()) return; // a real search already reports its own error
+      countEl.textContent = "搜尋索引暫時無法預先讀取，開始搜尋時會自動再試一次。";
+      countEl.setAttribute("data-tone", "warn");
+    });
+  }
   if (document.activeElement !== input) { try { input.focus({ preventScroll: true }); } catch (e) { /* ignore */ } }
 })();
