@@ -52,6 +52,25 @@ def sitemap_entries(candidates: list[dict]) -> list[tuple[str, str | None]]:
     return entries
 
 
+def election_entries() -> list[tuple[str, str | None]]:
+    """/elections/ hub, county, category and township pages (from the static API)."""
+    index = feed_common.load_json(API_DIR / "elections" / "2026" / "index.json", None)
+    if not index:
+        return []
+    mod = lastmod(index.get("generatedAt"))
+    entries: list[tuple[str, str | None]] = [("/elections/", mod)]
+    for county in index.get("counties", []):
+        if not county.get("count"):
+            continue
+        payload = feed_common.load_json(API_DIR / "elections" / "2026" / f"{county['id']}.json", None) or {}
+        cmod = lastmod(payload.get("numbersFetchedAt")) or mod
+        entries.append((county["path"], cmod))
+        for category in payload.get("categories", []):
+            entries.append((category["path"], cmod))
+            entries.extend((group["path"], cmod) for group in category.get("groups", []) if group.get("key"))
+    return entries
+
+
 def render_sitemap(entries: list[tuple[str, str | None]]) -> str:
     urls = "\n".join(
         f"  <url><loc>{escape(BASE_URL + path)}</loc>"
@@ -69,7 +88,7 @@ def render_sitemap(entries: list[tuple[str, str | None]]) -> str:
 
 def main() -> int:
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
-    entries = sitemap_entries(candidates_payload.get("candidates", []))
+    entries = sitemap_entries(candidates_payload.get("candidates", [])) + election_entries()
     (SITE_ROOT / "sitemap.xml").write_text(render_sitemap(entries), encoding="utf-8")
 
     robots = f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n"

@@ -257,6 +257,56 @@ def validate_qualitative_schema(errors: list[str]) -> None:
         errors.append("policy-match.json has no questions or candidate vectors")
 
 
+def validate_elections(errors: list[str]) -> None:
+    """/elections/: API ↔ pages ↔ search index ↔ RSS agree; numbers 1..n per district."""
+    index_path = API_DIR / "elections" / "2026" / "index.json"
+    if not index_path.exists():
+        return  # dataset not published yet; nothing to check
+    try:
+        index = read_json(index_path)
+        search = read_json(SITE_ROOT / "data" / "elections" / "search-2026.json")
+        ET.parse(FEEDS_DIR / "elections-2026.xml")
+    except (OSError, json.JSONDecodeError, ET.ParseError) as exc:
+        errors.append(f"elections outputs unreadable: {exc}")
+        return
+    if not (SITE_ROOT / "elections" / "index.html").exists():
+        errors.append("missing /elections/ page")
+    # 號次 anomalies already listed in the reconciliation report (as published by the
+    # commission, e.g. a lone candidate numbered 2) are reported there, not hidden;
+    # any other gap is a parsing error.
+    try:
+        reported = {i["district"] for i in read_json(API_DIR / "elections" / "2026" / "reconciliation.json").get("issues", [])
+                    if i.get("kind") == "number-sequence"}
+    except (OSError, json.JSONDecodeError):
+        reported = set()
+    total = 0
+    for county in index.get("counties", []):
+        if not county.get("count"):
+            continue
+        try:
+            payload = read_json(API_DIR / "elections" / "2026" / f"{county['id']}.json")
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"elections county {county['id']} unreadable: {exc}")
+            continue
+        county_total = 0
+        for category in payload.get("categories", []):
+            pages = [category["path"]] + [g["path"] for g in category.get("groups", []) if g.get("key")]
+            for page in pages:
+                if not (SITE_ROOT / page.strip("/") / "index.html").exists():
+                    errors.append(f"missing elections page {page}")
+            for group in category.get("groups", []):
+                for district in group.get("districts", []):
+                    numbers = sorted(c["number"] for c in district.get("candidates", []))
+                    if numbers != list(range(1, len(numbers) + 1)) and f"{county['id']}|{district['key']}" not in reported:
+                        errors.append(f"elections {county['id']} {category['id']} {district['key']}: 號次 {numbers}")
+                    county_total += len(numbers)
+        if county_total != county["count"] or county_total != payload.get("count"):
+            errors.append(f"elections {county['id']}: index {county['count']} / county {payload.get('count')} / rows {county_total}")
+        total += county_total
+    if total != index.get("count") or len(search.get("rows", [])) != total:
+        errors.append(f"elections totals disagree: index {index.get('count')}, rows {total}, search {len(search.get('rows', []))}")
+
+
 def main() -> int:
     errors: list[str] = []
     validate_required_files(errors)
@@ -267,6 +317,7 @@ def main() -> int:
     validate_sitemap(errors)
     validate_count_consistency(errors)
     validate_qualitative_schema(errors)
+    validate_elections(errors)
 
     if errors:
         for error in errors:
