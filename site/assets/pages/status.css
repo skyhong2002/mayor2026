@@ -187,8 +187,13 @@
 .err-plain { margin-top: 4px; font-size: var(--text-small); color: var(--color-text-primary); }
 @media (max-width: 699px) {
   /* 手機：七張統計卡改成一列可橫向滑動，來源明細更早出現 */
-  .status-tiles { display: flex; overflow-x: auto; gap: var(--space-2); scrollbar-width: none; margin-inline: calc(-1 * var(--space-4)); padding-inline: var(--space-4); }
-  .status-tiles::-webkit-scrollbar { display: none; }
-  .status-tiles .stat-tile { flex: 0 0 9.5rem; }
+  /* 手機：統計卡維持 2 欄網格（數字全部看得到），提示文字收掉縮短高度 */
+  .status-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+  .status-tiles .stat-tile { padding: var(--space-3); }
+  .status-tiles .stat-hint { display: none; }
+  /* 平台表：拿掉「目前錯誤」欄（錯誤紀錄另有區塊），狀態徽章不再被裁切 */
+  .platform-table th:nth-child(4), .platform-table td:nth-child(4) { display: none; }
+  .platform-table th, .platform-table td { padding-left: 6px; padding-right: 6px; }
+  .platform-table .badge-status { padding: 0 8px; }
   .status-plain { grid-template-columns: minmax(0, 1fr); }
 }

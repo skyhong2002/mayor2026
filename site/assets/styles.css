@@ -166,6 +166,11 @@ main :where(p, li, dd) a[href]:not([class]) {
     position: fixed; left: 12px; right: 12px; width: auto;
     bottom: calc(var(--layout-tabbar) + 10px + env(safe-area-inset-bottom));
   }
+  /* 手機「更多」選單：背後加半透明遮罩，與內容分層（點遮罩由 shell.js 外點關閉） */
+  body:has(.nav-more[open])::after {
+    content: ""; position: fixed; inset: 0; z-index: 39;
+    background: color-mix(in srgb, #000 42%, transparent);
+  }
   .nav-mobile-extra { display: flex !important; }
   .topbar-search, .topbar-action {
     display: flex; position: fixed; top: 5px; z-index: 41;

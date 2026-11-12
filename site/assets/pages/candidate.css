@@ -183,8 +183,8 @@
   .cand-layout .cand-topics { columns: 1; }
   .cand-layout .cand-timeline-grid { grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--space-6); }
   .cand-layout { grid-template-columns: minmax(0, 1fr) 24rem; }
-  /* 右側欄只留比例條；各議題關鍵字在篩選與議題頁已可查，避免三欄重複 */
-  .cand-layout .cand-kws { display: none; }
+  /* 右側欄每個議題只留前 3 個關鍵字次數，作為比例的依據；完整清單在議題頁 */
+  .cand-layout .cand-kw:nth-child(n+4) { display: none; }
   .cand-jump { display: none; }
 }
 @media (min-width: 1080px) {
