@@ -58,7 +58,7 @@ Neutral ordering: when listing candidates, pick the default sort at random betwe
   <div class="feed-text" data-clamp>{escaped, linkified, \n→<br>}</div><button class="feed-text-toggle" type="button" hidden>顯示全文</button>
   <a class="feed-media" href="{url}" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="/assets/feed-images/…" alt="" style="aspect-ratio: 0.5625"></a>   <!-- only with image -->
   <div class="feed-tags"><a class="chip-soft chip-topic" href="/spectrum/oversight/">議會監督</a>…<span class="chip-soft chip-intent" data-intent="responsive" title="{reason}">回應他方觀點 87%</span></div>
-  <div class="feed-actions"><a class="feed-action" …>{external}<span>原文</span></a><button class="feed-action btn-share" type="button" data-url data-title>{share}<span>分享</span></button><a class="feed-action" href="/api/posts/{cid}.json">{json}<span>JSON</span></a></div>
+  <div class="feed-actions"><a class="feed-action feed-action-source" …>{platform}<span><span class="act-plat">Instagram </span>原文</span>{external}</a><button class="feed-action btn-share" type="button" aria-label="分享" data-url data-title>{share}<span>分享</span></button><a class="feed-action feed-action-json" href="/api/posts/{cid}.json" aria-label="貼文資料（JSON）">{json}<span>資料</span></a></div>
  </div></article>
 ```
 Missing postedAt → `<span class="feed-time">時間不明</span>`. `show_city=False` drops sep+city (use inside a city column).
@@ -75,9 +75,11 @@ Missing postedAt → `<span class="feed-time">時間不明</span>`. `show_city=F
 - **Status**: `.badge-status[data-state=ok|warn|error|paused|pending]` · `.notice[data-tone=info|warn|danger|success]` · `.empty .empty-title .empty-body`.
 - **Filters**: `.filter-row` `.filter-label` `.filter-row .chips` · `.seg` (children `button`/`a` with `aria-pressed|aria-selected|aria-current`).
 - **Meter**: `.meter` (`.meter-lg`) › `.meter-fill style="--v:.35"` (several fills stack; 2nd = lighter tone, or `data-tone="soft"`) · `.meter-row .meter-label .meter-value` · `.legend .legend-swatch`.
-- **Stories**: `.story-strip` (`.has-selection` dims others) `.story-item[data-party][aria-pressed]` `.story-ring` `.story-badge` `.story-name`.
+- **Stories**: `.story-strip` (`.has-selection` dims others) › `.story-group[data-city]` › `.story-city` + `.story-items`; `.story-legend`; `.story-item[data-party][aria-pressed]` `.story-ring` `.story-badge` `.story-name`.
 - **Feed**: `.feed` (single column) · `.feed-post …` (above) · `.feed-more` (centred load-more row).
-- **Deck**: `.feed-cols` (`--deck-h`, default `100dvh - 24px`) › `.feed-col[data-city]` (380px) › `.feed-col-head .feed-col-dot .feed-col-title .feed-col-count .feed-col-tools .col-btn[aria-expanded]/.is-active` · `.col-filters` · `.col-body` (own scroll) · `.feed-col-add`. <700px: one column — the `.is-active` column, else the first.
+- **Deck**: `.feed-cols` (`--deck-h`, default `100dvh - 24px`) › `.feed-col[data-city]` (flex, `--layout-col` 340px → `--layout-col-max` 560px; `.feed-cols.is-cityview` lifts the max) › `.feed-col-head .feed-col-dot .feed-col-title .feed-col-count .feed-col-tools .col-btn[aria-expanded]/.is-active` · `.col-filters` · `.col-body` (own scroll) · `.feed-col-add`. <700px: one column — the `.is-active` column, else the first.
+- **States**: `.feed-status[data-kind=loading|error]` (persistent line above a feed) · `.spinner` · `.skeleton-post` / `.skeleton-lines` / `.skeleton-block` · `.empty[data-tone=error]` · `.col-loading` / `.col-empty-line` (deck) · `details.tech-details` (engineering detail behind a disclosure).
+- **Scroll cues**: `shell.js` marks `.chips .seg .topic-nav .story-strip .spectrum-scroll` with `.x-scroll` / `.x-more-left` / `.x-more-right`; CSS fades the clipped edge.
 - **Utils**: `.sr-only .num .muted .small .xs .mono .ellipsis .snapshot` · `.toast` (driven by `MO.toast`).
 - **Tokens**: `--color-*`, `--space-1..16`, `--radius-xs..pill`, `--shadow-raised/-focus`, `--motion-*`, `--layout-*` (sidebar/rail/topbar/tabbar/col), `--party-dpp/kmt/tpp/jrp/none`, `--city-<slug>` + `--city-<slug>-surface`, `--seq-0..6` (accent sequential; 0 = track), `--brand-gradient`. Any `[data-party]` gets `--party`; any `[data-city]` gets `--city` / `--city-surface`.
 
@@ -89,5 +91,5 @@ Missing postedAt → `<span class="feed-time">時間不明</span>`. `show_city=F
 Auto on DOMContentLoaded: `[data-rel]` relative time (every 60 s), clamp toggles, nav `aria-current` fallback, `.nav-more` outside-click/Esc close, theme seg. After inserting client-rendered cards call `MO.bindPostBehaviors(container)`.
 
 ## Screenshots
-Server: `python3 -m http.server 8743 --directory site`. `bash tools/shot.sh <path> <out.png> <width> <height> <dark|light>` (e.g. `/ /tmp/shots/home/d.png 1440 2200 dark`, phone `414 1800`, rail `900 1600`).
-`?theme=` previews without persisting. Widths < 500 are rendered in an exact-width iframe (Chrome's minimum window is 500px) and cropped, so phone shots are true 414px layouts. Look at every shot before reporting.
+Server: `python3 -m http.server 8743 --directory site`. `node tools/shot.mjs <path> <out.png> <width> <height> <dark|light>` (Playwright, any OS; `tools/node_modules` links to a Playwright install; e.g. `/ /tmp/shots/home/d.png 1440 2200 dark`, phone `390 1800`). Widths < 700 render as a real touch phone viewport.
+`?theme=` previews without persisting. Look at every shot before reporting. Full design-review states and blind rounds: `docs/design-review/`.

@@ -67,15 +67,24 @@ def render(data) -> None:
         '<button type="button" data-fk="intent" data-fv="responsive" aria-pressed="false">回應他方觀點</button>'
         "</div></div>"
     )
+    suggestions = "".join(
+        f'<a class="chip" href="/search/?q={S.esc(k)}">{S.esc(k)}</a>'
+        for k in ("捷運", "社宅", "長照", "托育", "淹水", "空污", "治安", "預算"))
     body = (
-        S.page_head("搜尋", f"在 {count:,} 則候選人官方公開發文中搜尋內文與候選人姓名。結果依時間由新到舊排列。")
-        + '<form class="search-box" role="search" action="/search/" method="get">'
+        S.page_head("搜尋", (f"在 {count:,} 則候選人官方公開發文中搜尋內文與候選人姓名。結果依時間由新到舊排列。" if count
+                           else "搜尋候選人官方公開發文的內文與候選人姓名。目前資料庫還沒有貼文，資料重建完成後即可搜尋。"))
+        + '<div class="search-layout">'
+        + '<details class="search-side" open aria-label="篩選">'
+          '<summary class="side-title"><span>篩選</span><span class="filter-count" data-filter-count hidden></span>'
+          '<span class="side-toggle" aria-hidden="true"></span></summary>'
+          f'<div class="search-filters">{city_row}{plat_row}{intent_seg}</div></details>'
+        + '<div class="search-main">'
+          '<form class="search-box" role="search" action="/search/" method="get">'
           '<label class="sr-only" for="search-q">搜尋貼文</label>'
           f'<span class="search-icon" aria-hidden="true">{S.icon("search")}</span>'
           '<input class="input" id="search-q" name="q" type="search" autocomplete="off" enterkeyhint="search" '
           'placeholder="輸入關鍵字，例如：捷運、社宅、長照" autofocus>'
           "</form>"
-        + f'<div class="search-filters">{city_row}{plat_row}{intent_seg}</div>'
         + '<p class="search-count" id="search-count" role="status" aria-live="polite"></p>'
         + '<div class="feed search-results" id="search-results">'
         + S.render_empty("輸入關鍵字開始搜尋", "可以輸入多個關鍵字（以空白分隔），也可以只用城市、平台篩選瀏覽最新貼文。")
@@ -85,6 +94,14 @@ def render(data) -> None:
           '也可以到<a href="/source/">候選人目錄</a>瀏覽各候選人的完整貼文。</p></div></noscript>'
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
           "搜尋只比對每則貼文的前 300 字；請點原文查看完整內容。</p>"
+        + "</div>"
+        + '<aside class="search-aside" aria-label="搜尋結果概況">'
+          '<section class="card search-dist" id="search-dist" hidden><h2 class="side-title">結果分布</h2>'
+          '<p class="xs muted" id="search-dist-note"></p><div class="search-dist-body"></div></section>'
+          f'<section class="card search-suggest"><h2 class="side-title">常見關鍵字</h2><div class="chips">{suggestions}</div>'
+          '<p class="xs muted">搜尋比對貼文前 300 字與候選人姓名，不分大小寫；多個關鍵字以空白分隔，須全部出現。</p></section>'
+          "</aside>"
+        + "</div>"
     )
     html = S.layout("search", "搜尋", "搜尋 2026 六都市長候選人在官方帳號的公開發文，依城市、平台與發文動機篩選。",
                     "/search/", body, extra_css=["pages/search.css"], extra_js=["pages/search.js"])

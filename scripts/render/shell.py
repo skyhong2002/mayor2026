@@ -390,7 +390,8 @@ def render_empty(title: str, body: str = "", action_html: str = "") -> str:
     parts = [f'<p class="empty-title">{esc(title)}</p>']
     if body:
         parts.append(f'<p class="empty-body">{esc(body)}</p>')
-    return f'<div class="empty">{"".join(parts)}{action_html}</div>'
+    actions = f'<div class="empty-actions">{action_html}</div>' if action_html else ""
+    return f'<div class="empty">{"".join(parts)}{actions}</div>'
 
 # ---------------------------------------------------------------------------
 # Post card (keep isomorphic with MO.postHTML)
@@ -473,22 +474,27 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
     image = asset_abs(post.get("imageUrl"))
     if image and url:
         aspect = post.get("imageAspect")
-        ratio = f"{round(float(aspect), 4)}" if isinstance(aspect, (int, float)) and aspect > 0 else "4/3"
+        aspect = float(aspect) if isinstance(aspect, (int, float)) and aspect > 0 else 4 / 3
+        # Intrinsic size (cached images are ≤1200px wide) reserves layout space before load.
+        width, height = 1200, max(1, round(1200 / aspect))
         body.append(f'<a class="feed-media" href="{esc(url)}" target="_blank" rel="noopener" tabindex="-1">'
-                    f'<img loading="lazy" decoding="async" src="{esc(image)}" alt="" style="aspect-ratio: {ratio}"></a>')
+                    f'<img loading="lazy" decoding="async" src="{esc(image)}" alt="" width="{width}" height="{height}" '
+                    f'style="aspect-ratio: {round(aspect, 4)}"></a>')
     tags = [f'<a class="chip-soft chip-topic" href="/spectrum/{topic_slug(t)}/">{esc(t)}</a>' for t in topics]
     # Posting-intent chips are intentionally not shown on cards (kept in data-intent for filters).
     if tags:
         body.append(f'<div class="feed-tags">{"".join(tags)}</div>')
     share_title = f"{name}：{(post.get('text') or '').strip()[:40]}"
     actions = [
-        f'<a class="feed-action" href="{esc(url)}" target="_blank" rel="noopener">{icon("external")}<span>原文</span></a>',
-        f'<button class="feed-action btn-share" type="button" data-url="{esc(url)}" data-title="{esc(share_title)}">'
+        # The primary action names the platform ("Instagram 原文"); JSON is a quiet icon at the end.
+        f'<a class="feed-action feed-action-source" href="{esc(url)}" target="_blank" rel="noopener">'
+        f'{icon(platform)}<span><span class="act-plat">{esc(plat_label)} </span>原文</span>{icon("external", "icon icon-ext")}</a>',
+        f'<button class="feed-action btn-share" type="button" aria-label="分享" data-url="{esc(url)}" data-title="{esc(share_title)}">'
         f'{icon("share")}<span>分享</span></button>',
     ] if url else []
     if show_json and cid:
-        actions.append(f'<a class="feed-action" href="/api/posts/{esc(cid)}.json" '
-                       f'title="{esc(name)} 的貼文 JSON">{icon("json")}<span>JSON</span></a>')
+        actions.append(f'<a class="feed-action feed-action-json" href="/api/posts/{esc(cid)}.json" '
+                       f'aria-label="貼文資料（JSON）" title="{esc(name)} 的貼文資料（JSON 格式，供研究與程式使用）">{icon("json")}<span>資料</span></a>')
     body.append(f'<div class="feed-actions">{"".join(actions)}</div>')
 
     attrs = _attrs({

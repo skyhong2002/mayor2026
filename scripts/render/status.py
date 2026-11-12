@@ -11,6 +11,8 @@ Sections: headline · 系統總覽 · 抓取方式 · 元件狀態 · 平台來�
 
 from __future__ import annotations
 
+import re
+
 import shutil
 import statistics
 from typing import Any, Dict, List, Optional
@@ -114,6 +116,9 @@ RUNTIME_STATE = {"running": ("pending", "擷取時執行中"), "ok": ("ok", "擷
 # helpers
 # ---------------------------------------------------------------------------
 
+URL_RE = re.compile(r"https?://\S+")
+
+
 def _badge(status: Any, label: Optional[str] = None) -> str:
     status = str(status or "unknown")
     return S.render_badge(BADGE_STATE.get(status, "pending"), label or STATUS_LABELS.get(status, status))
@@ -169,20 +174,60 @@ def _section(sid: str, title: str, inner: str, note: str = "") -> str:
 # ---------------------------------------------------------------------------
 
 def _headline(status: Dict[str, Any]) -> str:
+    """One hero card: verdict, snapshot time, the empty-data conclusion when it applies,
+    and the static-snapshot caveat folded into the same card."""
     overall = status.get("overall") or {}
     state = str(overall.get("status") or "unknown")
     generated = status.get("generatedAt")
+    total = (status.get("metrics") or {}).get("totalPosts")
+    empty = total in (0, "0")
+    summary = ("目前沒有收錄任何貼文，公開頁面會是空的。" if empty else (overall.get("summary") or "尚無資料"))
+    empty_html = ("<p class=\"status-hero-empty\">下方元件燈號只代表各服務本身有回應，不代表已經有資料；"
+                  "通常是資料正在重建，或排程尚未完成第一次收錄。下一次主排程後再回來看看。</p>" if empty else "")
     return (
-        f'<div class="status-hero card" data-state="{S.esc(BADGE_STATE.get(state, "pending"))}">'
+        f'<div class="status-hero card" data-state="{S.esc("warn" if empty else BADGE_STATE.get(state, "pending"))}">'
         f'<div class="status-hero-main">{_badge(state, overall.get("label"))}'
-        f'<p class="status-hero-summary">{S.esc(overall.get("summary") or "尚無資料")}</p></div>'
+        f'<p class="status-hero-summary">{S.esc(summary)}</p></div>'
+        + empty_html +
         f'<p class="status-hero-time">快照時間 <time datetime="{S.esc(generated)}">'
         f'{S.esc(S.fmt_time_tpe(generated, True) or "未記錄")}</time>（GMT+8）'
         f'・主排程每 {S.esc(status.get("pipelineIntervalHours") or 6)} 小時（臺灣時間 00、06、12、18 時）</p>'
-        "</div>"
-        f'<div class="notice" data-tone="info">{S.icon("about")}<p>本頁是發布當下的靜態快照，不是即時監控。'
-        "外部監控請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
-        "不能只依快照內的 <code>overall</code> 判斷目前健康。主排程逾期門檻為 8 小時（6 小時週期加 2 小時寬限）。</p></div>"
+        '<details class="tech-details"><summary>關於這份快照（靜態快照，不是即時監控）</summary>'
+        "<p>本頁是發布當下的靜態快照，不是即時監控：燈號只代表快照時間那一刻；快照時間超過 8 小時，代表排程可能延誤。</p>"
+        "<p>給工程與外部監控：請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
+        "不能只依快照內的 <code>overall</code> 判斷目前健康。主排程逾期門檻為 8 小時（6 小時週期加 2 小時寬限）。</p>"
+        "</details></div>"
+    )
+
+
+ATTENTION = {"overdue": "排程逾期", "error": "抓取失敗", "blocked": "冷卻或額度限制"}
+
+
+def _plain_summary(status: Dict[str, Any]) -> str:
+    """Three plain answers for readers: how fresh, when, and which sources lag."""
+    m = status.get("metrics") or {}
+    latest = m.get("latestPostAt")
+    lagging = [r for r in status.get("sources") or [] if r.get("status") in ATTENTION]
+    if lagging:
+        # A count and the reasons; the per-account list lives in the source table below.
+        people = {str(r.get("name") or r.get("candidateId") or "") for r in lagging}
+        reasons: Dict[str, int] = {}
+        for r in lagging:
+            reasons[ATTENTION[r["status"]]] = reasons.get(ATTENTION[r["status"]], 0) + 1
+        why = "、".join(f"{k} {v}" for k, v in reasons.items())
+        lag_html = (f'{len(lagging)} 個帳號・{len(people)} 位候選人'
+                    f'<span class="small">{S.esc(why)}・<a href="#src-table">看來源清單</a></span>')
+    else:
+        lag_html = '沒有<span class="small">所有可抓取的來源都在排程內，沒有失敗或逾期。</span>'
+    latest_html = (f'{_time(latest)}<span class="small">{S.esc(S.fmt_time_tpe(latest, True))}（GMT+8）</span>'
+                   if latest else '尚未收錄<span class="small">目前沒有任何貼文</span>')
+    return (
+        '<dl class="status-plain">'
+        f'<div class="card"><dt>最新收錄的貼文</dt><dd>{latest_html}</dd></div>'
+        f'<div class="card"><dt>這份快照產生於</dt><dd>{_time(status.get("generatedAt"))}'
+        f'<span class="small">{S.esc(S.fmt_time_tpe(status.get("generatedAt"), True) or "未記錄")}（GMT+8）・每 6 小時更新</span></dd></div>'
+        f'<div class="card"><dt>需要留意的來源</dt><dd>{lag_html}</dd></div>'
+        "</dl>"
     )
 
 
@@ -196,7 +241,7 @@ def _overview(status: Dict[str, Any]) -> str:
     top = sorted(by_platform.items(), key=lambda kv: -kv[1])[:3]
     tiles = [
         (m.get("candidates"), "監看候選人", "六都市長候選人"),
-        (m.get("watchAccounts"), "監看帳號", "watchlist 啟用中的公開帳號"),
+        (m.get("watchAccounts"), "監看帳號", "監看清單中啟用的公開帳號"),
         (m.get("totalPosts"), "已收錄貼文", "、".join(f"{S.PLATFORM_LABELS.get(p, p)} {n:,}" for p, n in top) or "尚無資料"),
         (fetchable, "可抓取來源", f"另 {counts.get('link_only', 0)} 個僅連結、{counts.get('disabled', 0)} 個停用"),
         (m.get("currentErrors"), "目前錯誤", "仍未恢復的來源，成功後解除"),
@@ -211,7 +256,7 @@ def _overview(status: Dict[str, Any]) -> str:
         out.append(f'<div class="stat-tile"{attr}><span class="stat-value">{_num(value)}</span>'
                    f'<span class="stat-label">{S.esc(label)}</span><span class="stat-hint">{S.esc(hint)}</span></div>')
     latest = m.get("latestPostAt")
-    lede = (f'最新收錄內容 {_time(latest)}。可抓取來源 {_num(fetchable)} 個：'
+    lede = (f'可抓取來源 {_num(fetchable)} 個：'
             f'{counts.get("due", 0)} 個待執行、{overdue} 個執行逾期、{counts.get("blocked", 0)} 個冷卻／額度限制、'
             f'{counts.get("error", 0)} 個抓取失敗。')
     return _section("overview", "系統總覽",
@@ -345,14 +390,20 @@ def _components(status: Dict[str, Any], runtime: Dict[str, Any]) -> str:
     cards = []
     for item in status.get("components") or []:
         details = "".join(f"<li>{S.esc(d)}</li>" for d in item.get("details") or [])
-        details_html = f'<ul class="comp-details">{details}</ul>' if details else ""
         extra = _runtime_block(runtime) if item.get("id") == "pipeline" else ""
+        raw_summary = str(item.get("summary") or "")
+        # Plain summary on the card; hosts, tokens and step logs live under 技術細節.
+        plain = URL_RE.sub("轉換服務", raw_summary)
+        tech = (f'<p class="xs muted">原始摘要：{S.esc(raw_summary)}</p>' if plain != raw_summary else "") + \
+            (f'<ul class="comp-details">{details}</ul>' if details else "") + extra
+        details_html = f'<details class="tech-details"><summary>技術細節</summary>{tech}</details>' if tech else ""
+        extra = ""
         state = BADGE_STATE.get(str(item.get("status")), "pending")
         cards.append(
             f'<article class="card comp-card" id="comp-{S.esc(item.get("id"))}" data-state="{state}">'
             f'<div class="comp-head"><h3 class="card-title">{S.esc(item.get("name"))}</h3>'
             f'{_badge(item.get("status"), item.get("label"))}</div>'
-            f'<p class="comp-summary">{S.esc(item.get("summary"))}</p>{details_html}{extra}</article>'
+            f'<p class="comp-summary">{S.esc(plain)}</p>{details_html}{extra}</article>'
         )
     if not cards:
         return _section("components", "元件狀態", S.render_empty("尚無元件狀態資料"))
@@ -392,6 +443,24 @@ def _error_marker(row: Dict[str, Any]) -> str:
     return S.render_badge("error", "尚未恢復")
 
 
+ERROR_HINTS = (
+    (("timed out", "timeout"), "連線逾時：來源網站或轉換服務沒有在時限內回應。"),
+    (("403", "forbidden", "blocked", "login"), "來源拒絕存取：平台暫時擋下免登入查詢。"),
+    (("404", "not found"), "找不到頁面：帳號可能改名、刪除或設為私人。"),
+    (("429", "rate", "too many"), "請求太頻繁：平台暫時限制查詢次數，稍後自動重試。"),
+    (("budget", "quota", "額度"), "超出本月額度：等下個月或預算恢復後再抓取。"),
+    (("ssl", "certificate", "connection", "resolve", "dns"), "網路連線失敗：連不上來源網站。"),
+)
+
+
+def _plain_error(msg: str) -> str:
+    low = msg.lower()
+    for keys, text in ERROR_HINTS:
+        if any(k in low for k in keys):
+            return text
+    return "抓取失敗：系統已記錄原因，下一次排程會自動重試。"
+
+
 def error_list(recent_errors: List[Dict[str, Any]]) -> str:
     """recentErrors (oldest first, as in status.json) → newest-first list with
     recovery markers. Also used by build_status_page.render_error_list (tests)."""
@@ -405,7 +474,8 @@ def error_list(recent_errors: List[Dict[str, Any]]) -> str:
         items.append(
             f'<li class="err-item"><div class="err-head">{_time(row.get("recordedAt"))}'
             f'<span class="err-source">{S.icon(p)}{S.esc(row.get("sourceName"))}</span>{_error_marker(row)}</div>'
-            f'<p class="err-msg mono" title="{S.esc(msg)}">{S.esc(msg)}</p></li>'
+            f'<p class="err-plain">{S.esc(_plain_error(msg))}</p>'
+            f'<details class="tech-details"><summary>原始訊息</summary><p class="err-msg mono">{S.esc(msg)}</p></details></li>'
         )
     return f'<ol class="err-list">{"".join(items)}</ol>'
 
@@ -561,7 +631,8 @@ def _sources(status: Dict[str, Any], data) -> str:
     )
     note = ("「成功」時間標示來源：抓取紀錄＝抓取器寫入；歷史收錄＝舊收錄匣時間，不冒充排程執行時間。"
             "抓取狀態與最新內容時間分開判斷，久未發文不會自動停用。")
-    return _section("sources", "來源表", filters + f'<p class="status-lede small muted">{S.esc(note)}</p>' + count + table)
+    return _section("sources", "來源表", filters + count + table
+                    + f'<details class="tech-details"><summary>表格說明</summary><p class="small">{S.esc(note)}</p></details>')
 
 
 # ---------------------------------------------------------------------------
@@ -578,15 +649,20 @@ def render(data) -> None:
     lede = ("每個監看帳號的抓取排程、最近結果與錯誤。抓取成功與「有沒有新內容」分開判斷；"
             "本頁只呈現紀錄，不會為了顯示正常而修改資料。")
     if not status:
-        body = S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="Status") + S.render_empty(
+        body = S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="資料管線") + S.render_empty(
             "尚無狀態資料", "site/api/status.json 尚未產生；請先執行 scripts/build_status_page.py。")
     else:
         body = (
-            S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="Status")
+            S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="資料管線")
             + _headline(status)
+            + _plain_summary(status)
             + _overview(status)
+            # Long engineering sections fold away; the summary cards above answer the reader's question.
+            + '<details class="status-more"><summary><span class="status-more-title">抓取方式與元件細節</span>'
+              '<span class="small">各平台的排程、預算配速、服務檢查與執行紀錄（給想深入查證的讀者）</span></summary>'
             + _methods(status, runtime)
             + _components(status, runtime)
+            + "</details>"
             + _platform_and_errors(status)
             + _sources(status, data)
             + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(status.get("generatedAt"), True))}（GMT+8）'

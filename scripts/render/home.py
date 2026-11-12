@@ -64,7 +64,7 @@ def write_bundles(data, by_city: Dict[str, List[Dict[str, Any]]]) -> None:
 def story_strip(data) -> str:
     ref = data.generated_at
     ordered = sorted(data.candidates, key=lambda c: S.epoch(c.get("latestPostAt")), reverse=True)
-    items = []
+    items_by_city: Dict[str, List[str]] = {city: [] for city in S.CITY_ORDER}
     for c in ordered:
         recent = 0
         for p in data.posts_for(c["id"]):  # newest first
@@ -79,12 +79,20 @@ def story_strip(data) -> str:
         img = (f'<img src="{S.esc(src)}" alt="" width="58" height="58" loading="lazy" decoding="async">' if src
                else f'<span class="avatar-initial" aria-hidden="true">{S.esc(c["name"][:1])}</span>')
         label = f'{c["name"]}（{S.city_label(c.get("city"))}）' + (f"，近 48 小時 {recent} 則" if recent else "")
-        items.append(
+        items_by_city.setdefault(c.get("city"), []).append(
             f'<a class="story-item" href="/?candidate={S.esc(c["id"])}" data-candidate="{S.esc(c["id"])}" '
             f'data-party="{S.party_slug(c.get("party"))}" aria-label="{S.esc(label)}" title="{S.esc(label)}">'
             f'<span class="story-ring">{img}{badge}</span><span class="story-name">{S.esc(c["name"])}</span></a>'
         )
-    return f'<nav class="story-strip" aria-label="候選人（依最新發文排序，數字為近 48 小時貼文數）">{"".join(items)}</nav>'
+    # Grouped by city (fixed geographic order); inside a city, newest poster first.
+    groups = "".join(
+        f'<div class="story-group" data-city="{city}" role="group" aria-label="{S.esc(S.city_label(city, False))}">'
+        f'<a class="story-city chip-city" data-city="{city}" href="/?city={city}">{S.esc(S.city_label(city))}</a>'
+        f'<div class="story-items">{"".join(items)}</div></div>'
+        for city, items in items_by_city.items() if items)
+    legend = ('<p class="story-legend"><span class="story-legend-badge" aria-hidden="true">3</span>'
+              '頭像右下的數字＝近 48 小時發文數</p>')
+    return (f'<nav class="story-strip" aria-label="候選人（依城市分組，數字為近 48 小時貼文數）">{groups}{legend}</nav>')
 
 
 # ---------------------------------------------------------------------------
@@ -162,9 +170,13 @@ def render(data) -> None:
     snap = S.fmt_time_tpe(data.generated_at.isoformat(), True)
     meta = (
         '<div class="deck-meta">'
-        f'<p class="snapshot">資料快照 <time datetime="{S.esc(data.generated_at.isoformat())}">{S.esc(snap)}</time>（GMT+8）'
-        '・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。'
-        '<a href="/about/">關於本站</a></p>'
+        # Phones get one line: 快照 11/11 06:02・非官方・AI 分類 關於 (year, time zone and long text hidden).
+        f'<p class="snapshot"><span class="snap-label">資料</span>快照 <time datetime="{S.esc(data.generated_at.isoformat())}">'
+        f'<span class="snap-year">{S.esc(snap.split("/", 1)[0])}/</span>{S.esc(snap.split("/", 1)[-1])}'
+        '<span class="snap-tz">（GMT+8）</span></time>'
+        '<span class="snap-long">・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。</span>'
+        '<span class="snap-short">・非官方・AI 分類</span>'
+        '<a href="/about/"><span class="snap-label">關於</span>本站</a></p>'
         f'{city_seg()}</div>'
         '<div class="notice deck-banner" data-tone="info" hidden></div>'
     )

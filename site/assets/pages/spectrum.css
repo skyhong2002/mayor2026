@@ -55,7 +55,7 @@
 .spectrum-identity:hover strong { color: var(--color-text-brand); }
 .spectrum-who-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
 .spectrum-who-text strong { font-size: 0.92rem; font-weight: 700; }
-.spectrum-who-meta { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.spectrum-who-meta { font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .spectrum-city-row th { padding: var(--space-3) 4px var(--space-1) !important; text-align: left; }
 .spectrum-city-label {
@@ -68,7 +68,7 @@
   text-align: center; font-weight: 600; font-size: 0.8rem;
   background: var(--seq-0); color: var(--color-text-primary);
 }
-.spectrum-cell[data-step="0"] { color: var(--color-text-muted); font-weight: 400; }
+.spectrum-cell[data-step="0"] { color: var(--color-text-secondary); font-weight: 500; }
 .spectrum-cell[data-step="1"] { background: var(--seq-1); }
 .spectrum-cell[data-step="2"] { background: var(--seq-2); }
 .spectrum-cell[data-step="3"] { background: var(--seq-3); }
@@ -85,7 +85,7 @@
 /* ---------- legend / footnote ---------- */
 .spectrum-legend {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-4);
-  margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted);
+  margin-top: var(--space-4); font-size: var(--text-small); color: var(--color-text-secondary);
 }
 .spectrum-legend-title { font-weight: 600; color: var(--color-text-secondary); }
 .spectrum-legend-scale { display: inline-flex; gap: 2px; flex-wrap: wrap; }
@@ -119,8 +119,12 @@
 .spectrum-card-empty { margin-top: var(--space-2); font-size: var(--text-small); color: var(--color-text-muted); }
 
 @media (max-width: 699px) {
-  .spectrum-scroll { display: none; }
-  .spectrum-cards { display: block; }
+  /* 手機：保留可比較的迷你熱圖（候選人欄固定、議題可橫向滑動），不改成各人前五名 */
+  .spectrum-scroll { display: block; overflow-x: auto; margin-inline: calc(-1 * var(--space-4)); }
+  .spectrum-cards { display: none; }
+  .spectrum-table { --who-w: 7.5rem; font-size: 0.82rem; }
+  .spectrum-table .spectrum-cell { min-width: 2.75rem; }
+  .spectrum-who-text strong { font-size: 0.86rem; }
   .spectrum-controls { padding: var(--space-3); }
   .spectrum-controls .filter-row { flex-direction: column; gap: var(--space-1); }
   .spectrum-controls .filter-label { height: auto; }
@@ -149,11 +153,17 @@
 .topic-rank-city { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; }
 .topic-rank-row .meter-value { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.25; }
 .topic-rank-row .meter-value strong { color: var(--color-text-primary); font-size: 0.95rem; }
-.topic-rank-n { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; }
+.topic-rank-n { font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap; }
 .topic-rank-kws { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 0 32px; }
-.topic-kw { height: 22px; padding: 0 8px; font-size: 0.72rem; }
+.topic-kw { height: 24px; padding: 0 8px; font-size: 0.8rem; }
 .topic-kw .chip-count { margin-left: 2px; }
 .topic-picker { margin-bottom: var(--space-4); }
+/* 寬螢幕：左比較＋關鍵字，右相關貼文河道 */
+.topic-layout { display: grid; gap: 0 var(--space-12); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 1400px) {
+  .topic-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 40rem); }
+  .topic-left { position: sticky; top: 0; }
+}
 .topic-river .feed-more[hidden] { display: none; }
 .topic-river-status[hidden] { display: none; }
 .topic-river-status { text-align: center; }
@@ -166,3 +176,10 @@
   .topic-picker { flex-direction: column; gap: var(--space-1); }
   .topic-picker .filter-label { height: auto; }
 }
+
+/* 空資料：候選人名冊表（不是空熱圖） */
+.spectrum-roster { margin-top: var(--space-6); max-width: 40rem; }
+.spectrum-table-empty { border-spacing: 0; padding: 0; }
+.spectrum-table-empty caption { text-align: left; padding-bottom: var(--space-2); font-size: var(--text-small); font-weight: 600; color: var(--color-text-secondary); }
+.spectrum-table-empty th[scope="row"] { font-weight: 600; text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--color-border-subtle); }
+.spectrum-table-empty .spectrum-identity { gap: 8px; }

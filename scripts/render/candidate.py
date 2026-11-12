@@ -39,6 +39,7 @@ VERIFICATION_HINTS = {
 }
 # status.json sources[].status → (badge state, label)
 STATUS_BADGES = {
+    "ok": ("ok", "正常"),
     "scheduled": ("ok", "正常"),
     "due": ("pending", "待執行"),
     "overdue": ("warn", "執行逾期"),
@@ -362,6 +363,7 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
         f'<a class="btn btn-sm" href="/feeds/{cid}.xml">{S.icon("rss")}RSS</a>'
         f'<a class="btn btn-sm" href="/api/posts/{cid}.json">{S.icon("json")}JSON</a>'
         f'<a class="btn btn-sm btn-ghost" href="/source/{cid}/">{S.icon("status")}帳號驗證</a>'
+        f'<a class="btn btn-sm btn-ghost cand-jump" href="#cand-feed-h">{S.icon("filter")}時間軸與篩選</a>'
     )
     hero = _profile_head(c, accounts, post_counts, False, actions, f"{city_full}市長候選人")
 
@@ -390,8 +392,10 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
     body = (
         hero
         + _stat_tiles(posts, latest_iso, now)
+        # ≥1400px: timeline + filters lead under the stats, rhythm/topics form a right rail.
+        + '<div class="cand-layout">'
         + f'<div class="cand-grid">{_activity_card(posts, now)}{_topics_card(data, cid)}</div>'
-        + timeline
+        + timeline + "</div>"
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(now.isoformat(), True))}（GMT+8）・'
           '本站為非官方觀測站，所有貼文皆連回原文。</p>'
     )
@@ -483,11 +487,13 @@ def _source_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], post_c
                                if p.get("sourceId") == aid and p.get("postedAt")), None)
         rows.append(
             f'<tr class="{"is-inactive" if not active else ""}" data-platform="{S.esc(platform)}">'
-            f'<td><span class="src-plat">{S.icon(platform)}<span>{S.esc(plat_label)}</span></span></td>'
-            f"<td>{ident}</td><td>{S.esc(role)}</td><td class=\"src-verif-cell\">{verif_html}</td>"
-            f"<td>{badge}</td><td class=\"num\">{count_html}</td>"
-            f'<td class="num">{_time_html(st.get("lastSuccess"))}</td>'
-            f'<td class="num">{_time_html(latest_iso)}</td><td class="src-err-cell">{err_html}</td></tr>'
+            f'<td class="src-c-plat"><span class="src-plat">{S.icon(platform)}<span>{S.esc(plat_label)}</span></span></td>'
+            f'<td class="src-c-acct">{ident}</td><td class="src-c-role" data-label="角色">{S.esc(role)}</td>'
+            f'<td class="src-verif-cell" data-label="驗證・佐證">{verif_html}</td>'
+            f'<td class="src-c-status">{badge}</td><td class="num" data-label="已收錄">{count_html}</td>'
+            f'<td class="num" data-label="最近成功抓取">{_time_html(st.get("lastSuccess"))}</td>'
+            f'<td class="num" data-label="最新內容">{_time_html(latest_iso)}</td>'
+            f'<td class="src-err-cell" data-label="目前錯誤">{err_html}</td></tr>'
         )
     if rows:
         table = ('<div class="table-wrap"><table class="table src-table"><thead><tr>'

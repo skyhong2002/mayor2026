@@ -126,6 +126,7 @@ def _results_shell() -> str:
         "（不含回應他方觀點的貼文），比較議題分布，不代表候選人對政策的立場或支持程度；"
         "貼文較少或未提及某議題，不等於反對。</p>"
         "</div>"
+        '<div class="policy-ev-status" data-ev-status hidden></div>'
         '<div class="policy-cities" data-results></div>'
         '<div class="policy-again">'
         '<button type="button" class="btn" data-act="edit">修改選擇</button>'
@@ -174,8 +175,8 @@ def render(data: Any) -> None:
         + S.page_head(title, S.esc(LEDE), eyebrow="議題選擇器")
         + '<noscript><p class="notice policy-noscript">逐題作答與結果計算需要啟用 JavaScript；'
           "以下仍列出完整題目與計算方式。</p></noscript>"
-        + '<div class="policy-app" id="policy-app">' + main + "</div>"
-        + _methodology(pm, data)
+        + '<div class="policy-layout"><div class="policy-app" id="policy-app">' + main + "</div>"
+        + _methodology(pm, data) + "</div>"
         + _json_script("policy-data", _scoring_blob(data, pm))
     )
     jsonld = {

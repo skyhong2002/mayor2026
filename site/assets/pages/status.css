@@ -1,7 +1,7 @@
 /* /status/ — 資料來源狀態（DESIGN.md §7.6）。只用 tokens，不寫死顏色。 */
 
 .status-section .section-head { flex-wrap: wrap; }
-.section-note { font-size: var(--text-xs); color: var(--color-text-muted); max-width: 52rem; }
+.section-note { font-size: var(--text-small); color: var(--color-text-secondary); max-width: 52rem; }
 .status-lede { margin-bottom: var(--space-4); color: var(--color-text-secondary); font-size: var(--text-small); line-height: 1.7; }
 .status-lede.small { margin-bottom: var(--space-3); }
 .page-status code { font-family: var(--font-mono); font-size: 0.9em; }
@@ -27,7 +27,8 @@
 .status-tiles .stat-tile[data-tone="error"] .stat-value { color: var(--color-danger-text); }
 
 /* ---- 抓取方式 ---- */
-.method-grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.method-grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 17.5rem), 1fr)); }
+@media (min-width: 1400px) { .method-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .method-card { display: flex; flex-direction: column; gap: var(--space-2); }
 .method-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); }
 .method-head .badge-status { flex: none; }
@@ -39,8 +40,8 @@
 .method-stats span { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .method-stats b { font-weight: 600; color: var(--color-text-primary); }
 .method-stats [data-hot] b { color: var(--color-warning-text); }
-.method-line.muted { color: var(--color-text-muted); font-size: var(--text-xs); }
-.method-extra { font-size: var(--text-xs); color: var(--color-text-muted); border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-2); }
+.method-line.muted { color: var(--color-text-secondary); font-size: var(--text-small); }
+.method-extra { font-size: var(--text-small); color: var(--color-text-secondary); border-top: 1px solid var(--color-border-subtle); padding-top: var(--space-2); }
 
 /* ---- 元件狀態 ---- */
 .comp-grid { columns: 3 300px; column-gap: var(--space-3); }
@@ -102,16 +103,16 @@
 .src-name { font-weight: 700; display: flex; align-items: center; gap: 6px; }
 .src-name a { color: var(--color-text-primary); }
 .src-off { height: 20px; font-size: var(--text-xs); }
-.src-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+.src-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--space-2); font-size: var(--text-small); color: var(--color-text-secondary); }
 .src-handle { display: inline-flex; align-items: center; gap: 4px; color: var(--color-text-secondary); max-width: 16rem; min-width: 0; }
 .src-handle span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .src-id { color: var(--color-text-muted); }
 .src-backend { white-space: nowrap; color: var(--color-text-secondary); }
 .src-status { min-width: 8.5rem; }
-.src-reason { margin-top: 4px; max-width: 14rem; font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; }
+.src-reason { margin-top: 4px; max-width: 14rem; font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.5; }
 .src-times { white-space: nowrap; font-variant-numeric: tabular-nums; line-height: 1.7; }
-.src-times .k { display: inline-block; min-width: 2.2em; margin-right: 4px; font-size: var(--text-xs); color: var(--color-text-muted); }
-.src-times .chip-soft { height: 20px; padding: 0 7px; margin-left: 6px; font-size: 0.7rem; vertical-align: 1px; }
+.src-times .k { display: inline-block; min-width: 2.2em; margin-right: 4px; font-size: var(--text-xs); color: var(--color-text-secondary); }
+.src-times .chip-soft { height: 22px; padding: 0 8px; margin-left: 6px; font-size: 0.8rem; vertical-align: 1px; }
 .chip-soft.ev[data-ev="inbox"], .chip-soft.cs[data-cs="quiet"] { background: var(--color-warning-surface); color: var(--color-warning-text); }
 .chip-soft.ev[data-ev="none"], .chip-soft.cs[data-cs="empty"] { background: var(--color-neutral-surface); color: var(--color-text-muted); }
 .src-times .cs { margin-left: 0; }
@@ -154,4 +155,45 @@
   .src-search { max-width: none; }
   .platform-table th, .platform-table td, .platform-table th[scope="row"] { padding-left: 6px; padding-right: 6px; }
   .platform-table .plat-cell { gap: 6px; }
+}
+
+.status-filter-banner { align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: var(--space-4); }
+.status-filter-banner .btn { color: inherit; border-color: currentColor; }
+
+/* 白話摘要：資料新不新、缺哪些（技術名詞留在下方各區與摺疊內） */
+.status-plain { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); margin-top: var(--space-4); }
+.status-plain .card { padding: var(--space-4) var(--space-5); }
+.status-plain dt { font-size: var(--text-small); font-weight: 600; color: var(--color-text-secondary); }
+.status-plain dd { margin: 4px 0 0; font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
+.status-plain dd .small { display: block; margin-top: 2px; font-weight: 500; color: var(--color-text-secondary); }
+
+.status-more { margin-top: var(--space-12); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: var(--color-surface-raised); }
+.status-more > summary {
+  display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) var(--space-5); cursor: pointer; list-style: none;
+}
+.status-more > summary::-webkit-details-marker { display: none; }
+.status-more > summary::after { content: "展開 ▾"; align-self: flex-start; margin-top: var(--space-2); font-size: var(--text-small); font-weight: 600; color: var(--color-text-brand); }
+.status-more[open] > summary::after { content: "收合 ▴"; }
+.status-more-title { font-size: var(--text-heading); font-weight: 700; }
+.status-more > summary .small { color: var(--color-text-secondary); }
+.status-more > .status-section { margin: 0; padding: 0 var(--space-5) var(--space-5); }
+
+.status-hero-empty { margin-top: var(--space-2); font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.7; }
+.status-hero .tech-details { margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid var(--color-border-subtle); }
+.status-hero .tech-details p { font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.7; }
+.status-hero .tech-details p + p { margin-top: var(--space-2); }
+.src-table { font-size: 0.92rem; }
+
+.err-plain { margin-top: 4px; font-size: var(--text-small); color: var(--color-text-primary); }
+@media (max-width: 699px) {
+  /* 手機：七張統計卡改成一列可橫向滑動，來源明細更早出現 */
+  /* 手機：統計卡維持 2 欄網格（數字全部看得到），提示文字收掉縮短高度 */
+  .status-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+  .status-tiles .stat-tile { padding: var(--space-3); }
+  .status-tiles .stat-hint { display: none; }
+  /* 平台表：拿掉「目前錯誤」欄（錯誤紀錄另有區塊），狀態徽章不再被裁切 */
+  .platform-table th:nth-child(4), .platform-table td:nth-child(4) { display: none; }
+  .platform-table th, .platform-table td { padding-left: 6px; padding-right: 6px; }
+  .platform-table .badge-status { padding: 0 8px; }
+  .status-plain { grid-template-columns: minmax(0, 1fr); }
 }

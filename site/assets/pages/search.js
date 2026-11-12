@@ -37,7 +37,23 @@
   });
   if (moreWrap) moreWrap.querySelector("button").addEventListener("click", function () { renderMore(STEP); });
 
+  // Phones: once there is a query, fold the filters into a "篩選（已選 n）" bar so results lead.
+  var side = document.querySelector(".search-side");
+  var wideMQ = window.matchMedia ? matchMedia("(min-width: 1080px)") : { matches: true };
+  function syncDrawer() {
+    if (!side) return;
+    if (wideMQ.matches) side.open = true;
+  }
+  if (side) {
+    if (!wideMQ.matches && (state.q || state.city.length || state.platform.length || state.intent)) side.open = false;
+    side.addEventListener("toggle", syncDrawer);
+    if (wideMQ.addEventListener) wideMQ.addEventListener("change", syncDrawer);
+  }
+
   function syncChips() {
+    var n = state.city.length + state.platform.length + (state.intent ? 1 : 0);
+    var countBadge = document.querySelector("[data-filter-count]");
+    if (countBadge) { countBadge.textContent = n ? "已選 " + n : ""; countBadge.hidden = !n; }
     qsa(".search-filters [data-fk]").forEach(function (b) {
       var k = b.getAttribute("data-fk"), v = b.getAttribute("data-fv");
       var on = k === "intent" ? state.intent === v : state[k].indexOf(v) !== -1;
@@ -80,21 +96,34 @@
   function filtersOn() { return !!(state.city.length || state.platform.length || state.intent); }
 
   function run() {
+    countEl.removeAttribute("data-tone");
     state.q = input.value.trim().slice(0, 100);
     writeURL();
     if (!state.q && !filtersOn()) { idle(); return; }
     if (!index) {
       results.setAttribute("aria-busy", "true");
-      countEl.textContent = "正在讀取搜尋索引…";
-      results.innerHTML = "";
+      countEl.textContent = "";
+      var sk = '<div class="skeleton-post" aria-hidden="true"><span></span><div class="skeleton-lines"><span></span><span></span><span></span><span></span></div></div>';
+      results.innerHTML = '<p class="feed-status" data-kind="loading" role="status"><span class="spinner" aria-hidden="true"></span>' +
+        "正在讀取搜尋索引…第一次搜尋需要下載整份索引，通常幾秒內完成。</p>" + sk + sk + sk;
       load().then(function () { results.removeAttribute("aria-busy"); run(); }, function () {
         results.removeAttribute("aria-busy");
         countEl.textContent = "";
-        results.innerHTML = '<div class="empty"><p class="empty-title">無法讀取搜尋索引</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
+        results.innerHTML = '<div class="empty" data-tone="error"><p class="empty-title">無法讀取搜尋索引</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
           '<button class="btn btn-sm" type="button" data-retry>重試</button></div>';
         var r = results.querySelector("[data-retry]");
         if (r) r.addEventListener("click", run);
       });
+      return;
+    }
+    if (!index.length) {
+      hits = []; shown = 0;
+      renderDist();
+      countEl.textContent = "";
+      if (moreWrap) moreWrap.hidden = true;
+      results.innerHTML = '<div class="empty"><p class="empty-title">目前還沒有可以搜尋的貼文</p>' +
+        '<p class="empty-body">搜尋索引是空的：資料可能正在重建，或候選人尚未發文。這不是你的關鍵字的問題，請稍後再回來。</p>' +
+        '<a class="btn btn-sm" href="/status/">查看資料狀態</a></div>';
       return;
     }
     var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -110,6 +139,7 @@
     }
     shown = 0;
     results.innerHTML = "";
+    renderDist();
     if (!hits.length) {
       countEl.textContent = "找不到符合的貼文";
       results.innerHTML = '<div class="empty"><p class="empty-title">沒有符合「' + esc(state.q || "目前篩選") + '」的貼文</p>' +
@@ -134,8 +164,36 @@
     if (moreWrap) moreWrap.hidden = shown >= hits.length;
   }
 
+  // Right-hand overview: how the hits split by candidate and platform.
+  var distEl = document.getElementById("search-dist");
+  function renderDist() {
+    if (!distEl) return;
+    if (!hits.length) { distEl.hidden = true; return; }
+    var byC = {}, byP = {};
+    hits.forEach(function (r) { byC[r.c] = (byC[r.c] || 0) + 1; byP[r.p] = (byP[r.p] || 0) + 1; });
+    function rows(map, label) {
+      var keys = Object.keys(map).sort(function (a, b) { return map[b] - map[a]; });
+      var top = map[keys[0]] || 1;
+      return keys.slice(0, 8).map(function (k) {
+        return '<div class="meter-row"><span class="meter-label">' + label(k) + "</span>" +
+          '<span class="meter"><span class="meter-fill" style="--v:' + (map[k] / top).toFixed(3) + '"></span></span>' +
+          '<span class="meter-value">' + map[k] + "</span></div>";
+      }).join("");
+    }
+    var cityShort = MO.CITY_SHORT || {};
+    distEl.querySelector(".search-dist-body").innerHTML =
+      "<h3>依候選人</h3>" + rows(byC, function (id) {
+        var c = byId[id] || {};
+        return '<span class="ellipsis">' + esc(c.name || id) + '</span><span class="xs muted">' + esc(cityShort[c.city] || "") + "</span>";
+      }) +
+      "<h3>依平台</h3>" + rows(byP, function (p) { return esc((MO.PLATFORM_LABELS || {})[p] || p); });
+    document.getElementById("search-dist-note").textContent = "共 " + hits.length.toLocaleString("zh-TW") + " 則符合";
+    distEl.hidden = false;
+  }
+
   function idle() {
     hits = []; shown = 0;
+    renderDist();
     countEl.textContent = "";
     if (moreWrap) moreWrap.hidden = true;
     results.innerHTML = '<div class="empty"><p class="empty-title">輸入關鍵字開始搜尋</p>' +
@@ -143,6 +201,18 @@
   }
 
   if (state.q || filtersOn()) run();
-  else setTimeout(function () { load().catch(function () {}); }, 400); // warm the index
+  else setTimeout(warm, 400);
+
+  // Warm the index in the background. A failure is not fatal (run() fetches
+  // again, since MO.fetchJSON drops failed promises), but it must be visible:
+  // say so next to the box instead of failing silently on the first search.
+  function warm() {
+    load().catch(function (err) {
+      if (window.console) console.warn("search: index warm-up failed", err);
+      if (state.q || filtersOn()) return; // a real search already reports its own error
+      countEl.textContent = "搜尋索引暫時無法預先讀取，開始搜尋時會自動再試一次。";
+      countEl.setAttribute("data-tone", "warn");
+    });
+  }
   if (document.activeElement !== input) { try { input.focus({ preventScroll: true }); } catch (e) { /* ignore */ } }
 })();

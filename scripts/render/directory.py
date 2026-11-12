@@ -258,7 +258,7 @@ def _feed_cand(c: dict[str, Any]) -> str:
         f'<div class="sub-cand-text"><a class="sub-cand-name" href="{href}">{S.esc(name)}</a>'
         f'<span class="xs muted">{S.esc(c.get("party") or "無黨籍")}・{int(c.get("postCount") or 0):,} 則</span></div>'
         f'<div class="sub-cand-actions"><a class="btn btn-sm" href="{xml}" aria-label="{S.esc(name)} RSS">RSS</a>'
-        f'<a class="btn btn-sm btn-ghost" href="{jsn}" aria-label="{S.esc(name)} JSON">JSON</a>'
+        f'<a class="btn btn-sm" href="{jsn}" aria-label="{S.esc(name)} JSON">JSON</a>'
         f'{_copy_btn(xml, name + " RSS ")}</div></li>'
     )
 
@@ -380,15 +380,32 @@ def render_about(data) -> None:
          f'<p>原始碼、問題回報與開發紀錄都在 <a href="{S.GITHUB_URL}"{ext}>GitHub</a>。'
          '想自行分析資料，可使用<a href="/feeds/">RSS 與 JSON API</a>。</p>'),
     ]
-    toc = "".join(f'<a class="chip-soft" href="#{sid}">{S.esc(title)}</a>' for sid, title, _ in sections)
+    toc = "".join(f'<a class="about-toc-link" href="#{sid}">{S.esc(title)}</a>' for sid, title, _ in sections)
     prose = "".join(f'<section id="{sid}" class="about-sec"><h2>{S.esc(title)}</h2>{html}</section>'
                     for sid, title, html in sections)
+    n_accounts = sum(len(src.get("accounts") or []) for src in data.sources)
+    n_posts = len(data.all_posts())
+    stamp = S.fmt_time_tpe(data.generated_at.isoformat(), True)
+    facts = (
+        '<aside class="about-facts" aria-label="本站概況">'
+        '<section class="card"><h2 class="about-side-title">本站概況</h2><dl class="about-dl">'
+        f'<div><dt>候選人</dt><dd class="num">{len(data.candidates)}</dd></div>'
+        f'<div><dt>監看帳號</dt><dd class="num">{n_accounts}</dd></div>'
+        f'<div><dt>已收錄貼文</dt><dd class="num">{n_posts:,}</dd></div>'
+        f'<div><dt>資料快照</dt><dd>{S.esc(stamp)}<span class="xs muted">（GMT+8）</span></dd></div>'
+        '</dl><p class="xs muted">議題與發文動機由 AI 分類，可能出錯；每則貼文都連回原文可查證。</p></section>'
+        '<section class="card"><h2 class="about-side-title">發現資料有誤？</h2>'
+        '<p class="small">候選人、帳號或分類有誤，可以在 GitHub 公開回報；請只填公開可查的資料。</p>'
+        f'<a class="btn btn-sm" href="{S.REPORT_URL}" target="_blank" rel="noopener">回報資料問題</a></section>'
+        "</aside>"
+    )
     body = (
-        '<div class="reading about">'
-        + S.page_head("關於本站", "2026 市長官方來源觀測站是獨立、非官方的公開資料專案，"
-                      "整理六都市長候選人官方帳號的公開發文。")
-        + f'<nav class="about-toc" aria-label="本頁目錄">{toc}</nav>'
-        + f'<div class="prose">{prose}</div></div>'
+        S.page_head("關於本站", "2026 市長官方來源觀測站是獨立、非官方的公開資料專案，"
+                    "整理六都市長候選人官方帳號的公開發文。")
+        + '<div class="about-layout">'
+        + f'<nav class="about-toc" aria-label="本頁目錄"><p class="about-side-title">本頁目錄</p>{toc}</nav>'
+        + f'<div class="about prose">{prose}</div>'
+        + facts + "</div>"
     )
     jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "name": "關於本站",
               "url": S.canonical("/about/"), "inLanguage": "zh-Hant",

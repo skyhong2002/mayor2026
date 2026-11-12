@@ -173,6 +173,20 @@ def _sorted_ids(data, city_ids: List[str], sort_id: str) -> List[str]:
     return sorted(city_ids, key=lambda i: -S.epoch(data.by_id[i].get("latestPostAt")))
 
 
+def _empty_roster(data) -> str:
+    """With no classified posts, list who will appear in the heatmap once data arrives."""
+    rows = "".join(
+        f'<tr><th scope="row"><a class="spectrum-identity" href="/{S.esc(c["city"])}/{S.esc(c["id"])}/">'
+        f'{S.render_avatar(c, "xs")}<span>{S.esc(c["name"])}</span></a></th>'
+        f'<td><span class="chip-city" data-city="{S.esc(c["city"])}">{S.esc(S.city_label(c["city"]))}</span></td>'
+        f'<td class="num">0</td></tr>'
+        for city in data.cities for c in data.candidates if c.get("city") == city["id"])
+    return ('<div class="table-wrap spectrum-roster"><table class="table spectrum-table spectrum-table-empty">'
+            '<caption>熱圖會列出的候選人（目前尚無已分類貼文）</caption>'
+            '<thead><tr><th scope="col">候選人</th><th scope="col">城市</th><th scope="col" class="num">已分類貼文</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>')
+
+
 def render_index(data) -> None:
     index = data.topic_index
     excluded = {FALLBACK_TOPIC}
@@ -224,17 +238,32 @@ def render_index(data) -> None:
     lede = ("比較六都候選人把公開發文的聲量放在哪些議題上。每一列是一位候選人：格子裡的百分比是該議題佔他／她議題發文的比例"
             "（同一篇貼文可同時屬於數個議題，依 AI 分類分數加權），顏色越深比例越高。"
             "日常生活類貼文（「生活」）預設不列入計算，可在下方議題篩選中加回。")
+    if not index:
+        # No classified posts: one explanation instead of controls over an empty grid.
+        lede = "比較六都候選人把公開發文的聲量放在哪些議題上。"
+        controls = ""
+        view = ('<section class="spectrum-result" aria-label="議題光譜">'
+                + S.render_empty("目前沒有可以比較的議題資料",
+                                 "資料庫裡還沒有完成 AI 議題分類的貼文，所以熱圖暫時是空的。這代表資料正在重建或尚未收錄，"
+                                 "不是候選人沒有談論任何議題。資料更新後，熱圖會自動出現。",
+                                 '<a class="btn btn-sm" href="/status/">查看資料狀態</a>'
+                                 '<a class="btn btn-sm btn-ghost" href="/source/">瀏覽候選人與帳號</a>')
+                + _empty_roster(data)
+                + "</section>")
+        boot_json = ""
+    else:
+        view = ('<section class="spectrum-result" aria-label="議題光譜">'
+                + '<div class="spectrum-view">' + _table(data, result, topics, order) + _cards(data, result, order) + "</div>"
+                + _legend()
+                + f'<p class="spectrum-footnote">{S.esc(FOOTNOTE)}</p>'
+                + "</section>")
     body = (
-        S.page_head("議題光譜", S.esc(lede), eyebrow="Topic spectrum")
+        S.page_head("議題光譜", S.esc(lede), eyebrow="六都候選人議題比較")
         + controls
-        + '<section class="spectrum-result" aria-label="議題光譜">'
-        + '<div class="spectrum-view">' + _table(data, result, topics, order) + _cards(data, result, order) + "</div>"
-        + _legend()
-        + f'<p class="spectrum-footnote">{S.esc(FOOTNOTE)}</p>'
-        + "</section>"
+        + view
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
           '議題與發文動機由 AI 分類，僅供參考；本站為非官方觀測站。</p>'
-        + f'<script type="application/json" id="spectrum-boot">{boot_json}</script>'
+        + (f'<script type="application/json" id="spectrum-boot">{boot_json}</script>' if boot_json else "")
     )
     html = S.layout("spectrum", "議題光譜",
                     "六都市長候選人公開發文的議題比例光譜：同城市候選人並排比較，看每個人把聲量放在哪些議題上。",
@@ -378,8 +407,11 @@ def render_topic(data, topic: str, stats: Dict[str, Dict[str, Any]], posts_all: 
                 "下方先比較各候選人投入這個議題的比例，再依時間列出所有相關貼文；可複選候選人縮小範圍。")
     else:
         river = ('<section class="section topic-river">'
-                 + S.render_empty("目前沒有這個議題的貼文", "等候選人發布相關貼文並完成分類後，會出現在這裡。",
-                                  '<a class="btn btn-sm" href="/spectrum/">回到議題光譜</a>')
+                 + S.render_empty("目前沒有這個議題的貼文",
+                                  "資料庫裡還沒有被 AI 歸類為這個議題的貼文，所以暫時無法比較各候選人。"
+                                  "資料更新並完成分類後，比較與貼文會出現在這裡。",
+                                  '<a class="btn btn-sm" href="/spectrum/">回到議題光譜</a>'
+                                  '<a class="btn btn-sm btn-ghost" href="/status/">查看資料狀態</a>')
                  + "</section>")
         lede = f"目前尚無被歸類為「{S.esc(topic)}」議題的貼文。"
     if is_life:
@@ -388,7 +420,9 @@ def render_topic(data, topic: str, stats: Dict[str, Dict[str, Any]], posts_all: 
     body = (
         S.page_head(topic, lede, eyebrow="議題光譜")
         + _topic_nav(topic)
-        + ranking + keywords + river
+        + (f'<div class="topic-layout"><div class="topic-left">{ranking}{keywords}</div>{river}</div>' if posts
+           # No posts: one page-level empty state, not 13 rows of 0%.
+           else river)
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
           '議題與發文動機由 AI 分類，僅供參考；所有貼文皆連回原文。</p>'
     )

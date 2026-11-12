@@ -129,13 +129,45 @@
       nodes.forEach(function (n) { MO.bindPostBehaviors(n); });
     }
 
+    // Persistent loading / error line above the feed (a toast alone disappears
+    // and leaves stale, unfiltered posts on screen).
+    var statusEl = document.createElement("div");
+    statusEl.className = "feed-status";
+    statusEl.setAttribute("role", "status");
+    statusEl.hidden = true;
+    feed.parentNode.insertBefore(statusEl, feed);
+    var lastTask = null;
+    function showStatus(kind) {
+      if (!kind) { statusEl.hidden = true; statusEl.innerHTML = ""; feed.removeAttribute("aria-busy"); return; }
+      statusEl.hidden = false;
+      statusEl.setAttribute("data-kind", kind);
+      if (kind === "loading") {
+        feed.setAttribute("aria-busy", "true");
+        statusEl.innerHTML = '<span class="spinner" aria-hidden="true"></span><span>正在讀取這位候選人的全部貼文…</span>';
+      } else {
+        feed.removeAttribute("aria-busy");
+        statusEl.innerHTML = '<div class="notice notice-retry" data-tone="danger"><div><strong>貼文資料讀取失敗</strong>' +
+          '<p>可能是網路中斷或網站正在更新資料。下方仍是先前顯示的貼文，尚未套用目前的篩選。</p></div>' +
+          '<button class="btn btn-sm" type="button" data-retry>重試</button></div>';
+        statusEl.querySelector("[data-retry]").addEventListener("click", function () { if (lastTask) run(lastTask); });
+      }
+    }
+
     function run(task) {
       if (busy) return Promise.resolve();
       busy = true;
+      // A failed candidates.json request must not poison every retry: ask again after a rejection.
+      byIdReady = byIdReady.catch(function () { return MO.loadCandidates(); });
+      lastTask = task;
       if (more) { more.disabled = true; more.setAttribute("aria-busy", "true"); }
-      return Promise.all([byIdReady, task()]).catch(function () {
-        MO.toast("無法取得貼文資料，請稍後再試");
+      var slow = setTimeout(function () { showStatus("loading"); }, 250);
+      return Promise.all([byIdReady, task()]).then(function () {
+        showStatus(null);
+      }, function () {
+        showStatus("error");
       }).then(function () {
+        clearTimeout(slow);
+        if (statusEl.getAttribute("data-kind") === "loading") showStatus(null);
         busy = false;
         if (more) more.removeAttribute("aria-busy");
         updateUI(list());

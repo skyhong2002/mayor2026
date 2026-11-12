@@ -176,6 +176,7 @@
   var evidence = null;       // candidateId → {topic: [items]}
   var evidenceFailed = false;
   function loadEvidence() {
+    evidenceFailed = false;
     return MO.fetchJSON("/api/policy-match.json").then(function (pm) {
       evidence = {};
       (pm.candidates || []).forEach(function (r) { evidence[r.candidateId] = r.evidence || {}; });
@@ -183,14 +184,34 @@
   }
   var evidenceReady = loadEvidence();
 
+  // One page-level status line for the evidence excerpts (loading / failed + retry),
+  // instead of repeating a message in every candidate card.
+  function evidenceStatus() {
+    var el = qs("[data-ev-status]", results);
+    if (!el) return;
+    if (evidence) { el.hidden = true; el.innerHTML = ""; return; }
+    el.hidden = false;
+    el.innerHTML = evidenceFailed
+      ? '<div class="notice notice-retry" data-tone="danger"><div><strong>證據貼文讀取失敗</strong><p>重合度已算好，但各議題的原文摘錄沒有載入（可能是網路中斷或資料更新中）。</p></div>' +
+        '<button type="button" class="btn btn-sm" data-act="ev-retry">重試</button></div>'
+      : '<p class="feed-status" data-kind="loading"><span class="spinner" aria-hidden="true"></span>正在讀取各候選人的證據貼文…</p>';
+  }
+
   function platformOf(item) {
     var p = String(item.postId || "").split(":")[0];
     return MO.PLATFORM_LABELS && MO.PLATFORM_LABELS[p] ? p : "website";
   }
   function evidenceHTML(cid, topic) {
-    if (evidenceFailed) return '<p class="policy-ev-empty">證據貼文暫時無法取得，請重新整理頁面。</p>';
-    if (!evidence) return "";
-    var items = ((evidence[cid] || {})[topic] || []).slice(0, 3);
+    if (evidenceFailed) return '<p class="policy-ev-off">證據摘錄未載入</p>';
+    if (!evidence) return '<div class="policy-ev-skeleton" aria-hidden="true"><span class="skeleton-block"></span><span class="skeleton-block"></span><span class="skeleton-block"></span></div>';
+    // Cross-posted copies (same text on Facebook and Instagram) count once.
+    var seen = {};
+    var items = ((evidence[cid] || {})[topic] || []).filter(function (it) {
+      var key = String(it.text || "").replace(/\s+/g, "");
+      if (seen[key]) return false;
+      seen[key] = 1;
+      return true;
+    }).slice(0, 3);
     if (!items.length) return '<p class="policy-ev-empty">這個議題沒有可列出的證據貼文。</p>';
     return '<ul class="policy-ev-list">' + items.map(function (it) {
       var plat = platformOf(it);
@@ -265,6 +286,22 @@
                   eligible: c.eligible, weights: c.weights, score: score(c, topics) };
       (byCity[c.city] = byCity[c.city] || []).push(row);
     });
+    var scored = D.candidates.some(function (c) { return score(c, topics) !== null; });
+    if (!scored) {
+      // Nothing to compare yet: one explanation, then a compact roster — not 13 identical cards.
+      qs("[data-results]", results).innerHTML =
+        '<div class="empty"><p class="empty-title">目前沒有可以比對的政策倡議貼文</p>' +
+        '<p class="empty-body">13 位候選人都還沒有被 AI 判定為「主動發文且含政策倡議」的貼文，所以無法計算重合度。' +
+        '這代表資料不足，不代表候選人沒有政策。資料更新後再回來看看。</p>' +
+        '<a class="btn btn-sm" href="/status/">查看資料狀態</a></div>' +
+        '<ul class="policy-roster">' + D.cities.map(function (city) {
+          return (byCity[city.id] || []).map(function (r) {
+            return '<li><a href="/' + esc(r.city) + "/" + esc(r.id) + '/">' + MO.avatarHTML(r, "xs") + "<span>" + esc(r.name) + "</span></a>" +
+              '<span class="chip-city xs" data-city="' + esc(r.city) + '">' + esc(city.label) + "</span></li>";
+          }).join("");
+        }).join("") + "</ul>";
+      return;
+    }
     var html = D.cities.map(function (city) {
       var rows = byCity[city.id] || [];
       if (!rows.length) return "";
@@ -278,6 +315,7 @@
         '<div class="policy-cands">' + rows.map(function (r) { return candidateHTML(r, topics); }).join("") + "</div></section>";
     }).join("");
     qs("[data-results]", results).innerHTML = html;
+    evidenceStatus();
   }
 
   function fillEvidence() {
@@ -296,7 +334,7 @@
     quiz.hidden = true;
     results.hidden = false;
     root.classList.remove("pm-hash");
-    if (!evidence && !evidenceFailed) evidenceReady.then(fillEvidence);
+    if (!evidence && !evidenceFailed) evidenceReady.then(function () { fillEvidence(); evidenceStatus(); });
     if (focus) {
       window.scrollTo(0, 0);
       qs("#policy-results-title", results).focus({ preventScroll: true });
@@ -324,6 +362,13 @@
     var act = ev.target.closest("[data-act]");
     if (!act) return;
     var a = act.getAttribute("data-act");
+    if (a === "ev-retry") {
+      evidenceReady = loadEvidence();
+      evidenceStatus();
+      fillEvidence();
+      evidenceReady.then(function () { fillEvidence(); evidenceStatus(); });
+      return;
+    }
     if (a === "share") MO.share(location.href, document.title);
     else if (a === "edit") backToQuiz(false);
     else if (a === "restart") backToQuiz(true);

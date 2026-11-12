@@ -164,8 +164,9 @@
     var image = assetAbs(post.imageUrl);
     if (image && url) {
       var a = post.imageAspect;
-      var ratio = typeof a === "number" && a > 0 ? String(Math.round(a * 10000) / 10000) : "4/3";
-      body += '<a class="feed-media" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="' + esc(image) + '" alt="" style="aspect-ratio: ' + ratio + '"></a>';
+      a = typeof a === "number" && a > 0 ? a : 4 / 3;
+      body += '<a class="feed-media" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" decoding="async" src="' + esc(image) +
+        '" alt="" width="1200" height="' + Math.max(1, Math.round(1200 / a)) + '" style="aspect-ratio: ' + Math.round(a * 10000) / 10000 + '"></a>';
     }
     var tags = topics.map(function (t) {
       return '<a class="chip-soft chip-topic" href="/spectrum/' + (TOPIC_SLUGS[t] || "life") + '/">' + esc(t) + "</a>";
@@ -173,9 +174,10 @@
     // Posting-intent chips are intentionally not shown on cards (data-intent stays for filters).
     if (tags) body += '<div class="feed-tags">' + tags + "</div>";
     var shareTitle = name + "：" + String(post.text || "").trim().slice(0, 40);
-    var actions = url ? '<a class="feed-action" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon("external") + "<span>原文</span></a>" +
-      '<button class="feed-action btn-share" type="button" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>" : "";
-    if (showJson && cid) actions += '<a class="feed-action" href="/api/posts/' + esc(cid) + '.json" title="' + esc(name) + ' 的貼文 JSON">' + icon("json") + "<span>JSON</span></a>";
+    var actions = url ? '<a class="feed-action feed-action-source" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon(platform) +
+      "<span><span class=\"act-plat\">" + esc(platLabel) + " </span>原文</span>" + icon("external").replace('class="icon"', 'class="icon icon-ext"') + "</a>" +
+      '<button class="feed-action btn-share" type="button" aria-label="分享" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>" : "";
+    if (showJson && cid) actions += '<a class="feed-action feed-action-json" href="/api/posts/' + esc(cid) + '.json" aria-label="貼文資料（JSON）" title="' + esc(name) + ' 的貼文資料（JSON 格式，供研究與程式使用）">' + icon("json") + "<span>資料</span></a>";
     body += '<div class="feed-actions">' + actions + "</div>";
 
     var attrs = ' data-id="' + esc(post.id || "") + '" data-candidate="' + esc(cid) + '" data-city="' + esc(city) +
@@ -350,7 +352,32 @@
     INTENT_LABELS: INTENT_LABELS
   };
 
+  /* Horizontal scrollers (chip rows, segmented controls) that are clipped get a
+     fading edge so the hidden options read as "more to the right/left". */
+  var HSCROLL = ".chips, .seg, .topic-nav, .story-strip, .spectrum-scroll";
+  function syncScrollEdges(el) {
+    var max = el.scrollWidth - el.clientWidth;
+    var on = max > 2;
+    el.classList.toggle("x-scroll", on);
+    el.classList.toggle("x-more-right", on && el.scrollLeft < max - 2);
+    el.classList.toggle("x-more-left", on && el.scrollLeft > 2);
+  }
+  function bindScrollEdges() {
+    var all = qsa(HSCROLL, doc);
+    all.forEach(function (el) {
+      if (!el._xs) { el._xs = 1; el.addEventListener("scroll", function () { syncScrollEdges(el); }, { passive: true }); }
+      syncScrollEdges(el);
+    });
+  }
+
   function init() {
+    bindScrollEdges();
+    window.addEventListener("resize", bindScrollEdges);
+    if (window.MutationObserver) {
+      var t;
+      new MutationObserver(function () { clearTimeout(t); t = setTimeout(bindScrollEdges, 120); })
+        .observe(doc.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"] });
+    }
     markNav();
     syncThemeSeg();
     bindPostBehaviors(doc);

@@ -121,7 +121,7 @@
 .cand-filters .seg { width: 100%; }
 .cand-filters .seg > button { flex: 1 1 auto; padding: 0 10px; font-size: 0.8rem; gap: 4px; }
 .cand-filters .seg .chip-count {
-  min-width: 0; padding: 0 5px; font-size: 0.7rem; background: none; color: var(--color-text-muted);
+  min-width: 0; padding: 0 5px; font-size: 0.78rem; background: none; color: var(--color-text-secondary);
 }
 .cand-filters .chips { gap: 6px; }
 .cand-filters .chip { height: 30px; padding: 0 10px; }
@@ -173,3 +173,53 @@
 .src-table tr.is-inactive td { color: var(--color-text-muted); }
 .src-table tr.is-inactive .src-acct a, .src-table tr.is-inactive .src-plat { color: var(--color-text-muted); }
 .src-method { margin-top: var(--space-4); max-width: var(--layout-reading); }
+
+/* ---- 寬螢幕：時間軸＋篩選緊接統計卡，節奏與議題比例改為右側欄 ---- */
+.cand-feed-col .feed-media img { max-height: 360px; }
+@media (min-width: 1400px) {
+  .cand-layout { display: grid; grid-template-columns: minmax(0, 1fr) 26rem; gap: 0 var(--space-8); align-items: start; }
+  .cand-layout > .cand-grid { grid-column: 2; grid-row: 1; position: sticky; top: var(--space-4); }
+  .cand-layout > .cand-timeline { grid-column: 1; grid-row: 1; margin-top: var(--space-6); }
+  .cand-layout .cand-topics { columns: 1; }
+  .cand-layout .cand-timeline-grid { grid-template-columns: 17rem minmax(0, 1fr); gap: var(--space-6); }
+  .cand-layout { grid-template-columns: minmax(0, 1fr) 24rem; }
+  /* 右側欄每個議題只留前 3 個關鍵字次數，作為比例的依據；完整清單在議題頁 */
+  .cand-layout .cand-kw:nth-child(n+4) { display: none; }
+  .cand-jump { display: none; }
+}
+@media (min-width: 1080px) {
+  .cand-filters .seg { flex-wrap: wrap; overflow: visible; border-radius: var(--radius-md); }
+  .cand-filters .seg > button { flex: 1 1 auto; }
+}
+
+/* ---- /source/<id>/ 手機：每個帳號一張卡（平台＋帳號＋狀態在上，驗證與時間依序在下） ---- */
+@media (max-width: 699px) {
+  .src-section .table-wrap { overflow: visible; }
+  .src-table { min-width: 0; display: block; }
+  .src-table thead { display: none; }
+  .src-table tbody { display: flex; flex-direction: column; gap: var(--space-3); }
+  .src-table tr {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px var(--space-3);
+    padding: var(--space-4); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);
+    background: var(--color-surface-raised);
+  }
+  .src-table tbody tr:hover { background: var(--color-surface-raised); }
+  .src-table td { display: block; padding: 0; border: 0; min-width: 0; max-width: none; white-space: normal; text-align: left; }
+  .src-table td.num { text-align: left; }
+  .src-table td.num .muted { display: inline; margin-left: 6px; }
+  .src-table .src-c-plat { grid-column: 1; }
+  .src-table .src-c-status { grid-column: 2; grid-row: 1; justify-self: end; }
+  .src-table .src-c-acct { grid-column: 1 / -1; }
+  .src-table td[data-label] { grid-column: 1 / -1; font-size: var(--text-small); padding-top: 6px; border-top: 1px solid var(--color-border-subtle); }
+  .src-table td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 2px; color: var(--color-text-secondary); font-weight: 600; font-size: var(--text-xs); }
+  .src-table td.num[data-label] { grid-column: auto; border-top: 0; padding-top: 0; }
+  .src-table td[data-label]:empty, .src-table td.src-err-cell:not(:has(*)) { display: none; }
+  .src-verif-cell, .src-reason { max-width: none; }
+  .src-acct { min-width: 0; }
+}
+
+/* 篩選在貼文之前：桌面為左側 sticky 欄（閱讀順序：篩選 → 貼文 → 統計） */
+@media (min-width: 1080px) {
+  .cand-timeline-grid { grid-template-columns: 17rem minmax(0, 1fr); }
+  .cand-aside { order: -1; max-height: calc(100dvh - 2 * var(--space-4)); overflow-y: auto; }
+}

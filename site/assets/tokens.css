@@ -13,7 +13,7 @@
   --color-surface-brand: #EEEAFD;
   --color-text-primary: #16151D;
   --color-text-secondary: #47455A;
-  --color-text-muted: #676478;
+  --color-text-muted: #5C596E;
   --color-text-inverse: #FFFFFF;
   --color-text-brand: #5A3FD1;
   --color-text-on-brand: #FFFFFF;
@@ -86,21 +86,22 @@
   --motion-fast: 140ms;
   --motion-normal: 220ms;
   --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
-  --layout-content: 75rem;
+  --layout-content: 96rem;
   --layout-reading: 45rem;
   --layout-tap-target: 2.75rem;
   --layout-sidebar: 260px;
   --layout-rail: 76px;
   --layout-topbar: 54px;
   --layout-tabbar: 60px;
-  --layout-col: 380px;
+  --layout-col: 340px;      /* 河道欄最小寬；有空間時平均撐開 */
+  --layout-col-max: 560px;
   --font-sans: "Noto Sans TC", "PingFang TC", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --text-title: clamp(1.5rem, 2.4vw, 2rem);
   --text-heading: 1.125rem;
   --text-body: 1rem;
-  --text-small: 0.875rem;
-  --text-xs: 0.75rem;
+  --text-small: 0.9rem;
+  --text-xs: 0.8125rem;   /* 附註最小 13px（1440p 像素比 1 仍可讀） */
 }
 
 /* 深色 token（兩個選擇器共用同一組值；修改時兩處一起改） */
@@ -113,7 +114,7 @@
   --color-surface-brand: #1E1838;
   --color-text-primary: #F3F2F8;
   --color-text-secondary: #C8C6D3;
-  --color-text-muted: #9896A6;
+  --color-text-muted: #ABA9B9;
   --color-text-inverse: #000000;
   --color-text-brand: #B3A5FF;
   --color-text-on-brand: #FFFFFF;
@@ -167,7 +168,7 @@
     --color-surface-brand: #1E1838;
     --color-text-primary: #F3F2F8;
     --color-text-secondary: #C8C6D3;
-    --color-text-muted: #9896A6;
+    --color-text-muted: #ABA9B9;
     --color-text-inverse: #000000;
     --color-text-brand: #B3A5FF;
     --color-text-on-brand: #FFFFFF;
