@@ -34,8 +34,34 @@
       });
       if (shown) shown.textContent = String(n);
       if (empty) empty.hidden = n !== 0;
+      syncBanner(n);
       syncURL();
     }
+
+    // The source table sits far down the page; echo an active filter near the top.
+    var head = qs(".page-head");
+    var banner = document.createElement("div");
+    banner.className = "notice status-filter-banner";
+    banner.setAttribute("role", "status");
+    banner.hidden = true;
+    if (head) head.insertAdjacentElement("afterend", banner);
+    function label(group) {
+      var chip = qs('[data-filter="' + group + '"] .chip[aria-pressed="true"]');
+      return chip ? chip.textContent.replace(/\d[\d,]*$/, "").trim() : "";
+    }
+    function syncBanner(n) {
+      var parts = [];
+      if (state.status) parts.push("狀態：" + label("status"));
+      if (state.platform) parts.push("平台：" + label("platform"));
+      if (state.q) parts.push("關鍵字：「" + state.q + "」");
+      banner.hidden = !parts.length;
+      if (!parts.length) return;
+      banner.innerHTML = '<div><strong>來源表已篩選</strong>・' + MO.esc(parts.join("、")) + "・符合 " + n + ' 個來源</div>' +
+        '<div class="row"><a class="btn btn-sm" href="#src-table">跳到來源表</a><button class="btn btn-sm btn-ghost" type="button" data-banner-reset>清除篩選</button></div>';
+    }
+    banner.addEventListener("click", function (ev) {
+      if (ev.target.closest("[data-banner-reset]")) { var r = qs("[data-reset]"); if (r) r.click(); }
+    });
 
     function num(tr, key) { return +tr.getAttribute("data-" + key) || 0; }
     function sort() {

@@ -8,6 +8,8 @@
    ========================================================================= */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* 1440p 以上（像素比 1）整體放大一級：rem 為基準的字級、間距、容器一起變大 */
+@media (min-width: 1800px) { html { font-size: 106.25%; } }
 body {
   margin: 0;
   min-width: 320px;
@@ -390,6 +392,7 @@ a.avatar:hover { text-decoration: none; }
 .empty-title { font-weight: 700; color: var(--color-text-primary); }
 .empty-body { max-width: 28rem; font-size: var(--text-small); }
 .empty .btn { margin-top: var(--space-2); }
+.empty-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); }
 .notice {
   display: flex; align-items: flex-start; gap: var(--space-3);
   padding: 12px 16px; border-radius: var(--radius-md);
@@ -581,7 +584,8 @@ a.avatar:hover { text-decoration: none; }
   scrollbar-width: thin; scrollbar-color: var(--color-border-strong) transparent;
 }
 .feed-col {
-  position: relative; flex: 0 0 var(--layout-col); width: var(--layout-col);
+  /* 欄寬彈性：至少 --layout-col，寬螢幕平均分配剩餘空間，六都在 1440p 一次放得下 */
+  position: relative; flex: 1 0 var(--layout-col); width: var(--layout-col); max-width: var(--layout-col-max);
   display: flex; flex-direction: column; min-height: 0;
   background: var(--color-canvas);
   border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);
@@ -615,9 +619,33 @@ a.avatar:hover { text-decoration: none; }
   scrollbar-width: thin; scrollbar-color: var(--color-border-subtle) transparent;
 }
 .col-body > .empty { margin: var(--space-6) 0; }
+/* 欄位更新中：欄頭下緣的不定進度條 ＋ 骨架卡（取代把舊內容調淡） */
+.feed-col.is-busy .feed-col-head { position: relative; }
+.feed-col.is-busy .feed-col-head::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-action-primary), transparent) 0 0 / 40% 100% no-repeat;
+  animation: col-progress 1.1s var(--motion-ease) infinite;
+}
+@keyframes col-progress { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .feed-col.is-busy .feed-col-head::after { animation: none; background: var(--color-action-primary); opacity: 0.6; }
+}
+.col-loading {
+  display: flex; align-items: center; gap: var(--space-2); margin: var(--space-3) 0 0; padding: 10px 12px;
+  border-radius: var(--radius-md); background: var(--color-info-surface); color: var(--color-info-text);
+  font-size: var(--text-small); font-weight: 600;
+}
+.skeleton-post { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 0 12px; padding: 16px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.skeleton-post > span:first-child { width: 36px; height: 36px; border-radius: 50%; }
+.skeleton-lines { display: flex; flex-direction: column; gap: 8px; }
+.skeleton-lines > span { height: 12px; border-radius: var(--radius-pill); }
+.skeleton-lines > span:nth-child(1) { width: 40%; }
+.skeleton-lines > span:nth-child(3) { width: 85%; }
+.skeleton-lines > span:nth-child(4) { width: 60%; }
+.skeleton-post > span:first-child, .skeleton-lines > span, .skeleton-block { background: var(--color-surface-soft); }
 /* 「＋ 加欄」欄 */
 .feed-col-add {
-  flex: 0 0 220px; width: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);
+  flex: 0 0 64px; width: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);
   border: 1px dashed var(--color-border-strong); border-radius: var(--radius-lg);
   background: none; color: var(--color-text-muted); font-weight: 600; scroll-snap-align: start;
 }

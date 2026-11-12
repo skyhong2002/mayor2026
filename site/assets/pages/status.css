@@ -155,3 +155,6 @@
   .platform-table th, .platform-table td, .platform-table th[scope="row"] { padding-left: 6px; padding-right: 6px; }
   .platform-table .plat-cell { gap: 6px; }
 }
+
+.status-filter-banner { align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: var(--space-4); }
+.status-filter-banner .btn { color: inherit; border-color: currentColor; }

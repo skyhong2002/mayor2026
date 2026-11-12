@@ -578,11 +578,11 @@ def render(data) -> None:
     lede = ("每個監看帳號的抓取排程、最近結果與錯誤。抓取成功與「有沒有新內容」分開判斷；"
             "本頁只呈現紀錄，不會為了顯示正常而修改資料。")
     if not status:
-        body = S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="Status") + S.render_empty(
+        body = S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="資料管線") + S.render_empty(
             "尚無狀態資料", "site/api/status.json 尚未產生；請先執行 scripts/build_status_page.py。")
     else:
         body = (
-            S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="Status")
+            S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="資料管線")
             + _headline(status)
             + _overview(status)
             + _methods(status, runtime)

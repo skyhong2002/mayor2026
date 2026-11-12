@@ -98,6 +98,16 @@
       });
       return;
     }
+    if (!index.length) {
+      hits = []; shown = 0;
+      renderDist();
+      countEl.textContent = "";
+      if (moreWrap) moreWrap.hidden = true;
+      results.innerHTML = '<div class="empty"><p class="empty-title">目前還沒有可以搜尋的貼文</p>' +
+        '<p class="empty-body">搜尋索引是空的：資料可能正在重建，或候選人尚未發文。這不是你的關鍵字的問題，請稍後再回來。</p>' +
+        '<a class="btn btn-sm" href="/status/">查看資料狀態</a></div>';
+      return;
+    }
     var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
     hits = [];
     for (var i = 0; i < index.length; i++) {
@@ -111,6 +121,7 @@
     }
     shown = 0;
     results.innerHTML = "";
+    renderDist();
     if (!hits.length) {
       countEl.textContent = "找不到符合的貼文";
       results.innerHTML = '<div class="empty"><p class="empty-title">沒有符合「' + esc(state.q || "目前篩選") + '」的貼文</p>' +
@@ -135,8 +146,36 @@
     if (moreWrap) moreWrap.hidden = shown >= hits.length;
   }
 
+  // Right-hand overview: how the hits split by candidate and platform.
+  var distEl = document.getElementById("search-dist");
+  function renderDist() {
+    if (!distEl) return;
+    if (!hits.length) { distEl.hidden = true; return; }
+    var byC = {}, byP = {};
+    hits.forEach(function (r) { byC[r.c] = (byC[r.c] || 0) + 1; byP[r.p] = (byP[r.p] || 0) + 1; });
+    function rows(map, label) {
+      var keys = Object.keys(map).sort(function (a, b) { return map[b] - map[a]; });
+      var top = map[keys[0]] || 1;
+      return keys.slice(0, 8).map(function (k) {
+        return '<div class="meter-row"><span class="meter-label">' + label(k) + "</span>" +
+          '<span class="meter"><span class="meter-fill" style="--v:' + (map[k] / top).toFixed(3) + '"></span></span>' +
+          '<span class="meter-value">' + map[k] + "</span></div>";
+      }).join("");
+    }
+    var cityShort = MO.CITY_SHORT || {};
+    distEl.querySelector(".search-dist-body").innerHTML =
+      "<h3>依候選人</h3>" + rows(byC, function (id) {
+        var c = byId[id] || {};
+        return '<span class="ellipsis">' + esc(c.name || id) + '</span><span class="xs muted">' + esc(cityShort[c.city] || "") + "</span>";
+      }) +
+      "<h3>依平台</h3>" + rows(byP, function (p) { return esc((MO.PLATFORM_LABELS || {})[p] || p); });
+    document.getElementById("search-dist-note").textContent = "共 " + hits.length.toLocaleString("zh-TW") + " 則符合";
+    distEl.hidden = false;
+  }
+
   function idle() {
     hits = []; shown = 0;
+    renderDist();
     countEl.textContent = "";
     if (moreWrap) moreWrap.hidden = true;
     results.innerHTML = '<div class="empty"><p class="empty-title">輸入關鍵字開始搜尋</p>' +

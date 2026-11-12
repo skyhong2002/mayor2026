@@ -390,7 +390,8 @@ def render_empty(title: str, body: str = "", action_html: str = "") -> str:
     parts = [f'<p class="empty-title">{esc(title)}</p>']
     if body:
         parts.append(f'<p class="empty-body">{esc(body)}</p>')
-    return f'<div class="empty">{"".join(parts)}{action_html}</div>'
+    actions = f'<div class="empty-actions">{action_html}</div>' if action_html else ""
+    return f'<div class="empty">{"".join(parts)}{actions}</div>'
 
 # ---------------------------------------------------------------------------
 # Post card (keep isomorphic with MO.postHTML)

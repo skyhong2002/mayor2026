@@ -154,6 +154,12 @@
 .topic-kw { height: 22px; padding: 0 8px; font-size: 0.72rem; }
 .topic-kw .chip-count { margin-left: 2px; }
 .topic-picker { margin-bottom: var(--space-4); }
+/* 寬螢幕：左比較＋關鍵字，右相關貼文河道 */
+.topic-layout { display: grid; gap: 0 var(--space-12); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 1400px) {
+  .topic-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 40rem); }
+  .topic-left { position: sticky; top: 0; }
+}
 .topic-river .feed-more[hidden] { display: none; }
 .topic-river-status[hidden] { display: none; }
 .topic-river-status { text-align: center; }

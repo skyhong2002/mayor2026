@@ -22,7 +22,6 @@
 .feed-col-head .feed-col-avatar { flex: none; }
 .feed-col-sub { margin-left: 8px; font-size: 0.8rem; font-weight: 500; color: var(--color-text-muted); }
 .feed-col.is-phone-only { display: none; }
-.feed-col.is-busy .col-body { opacity: 0.55; transition: opacity var(--motion-fast); }
 .feed-col .feed-more .btn { min-width: 8rem; }
 .col-end { padding: var(--space-4) 0 var(--space-6); text-align: center; font-size: var(--text-xs); color: var(--color-text-muted); }
 .col-end a { color: var(--color-text-brand); }
@@ -48,7 +47,12 @@
 
 /* add column */
 .deck-add { flex: 0 0 auto; display: flex; min-height: 0; }
-.deck-add .feed-col-add { flex: 0 0 180px; width: 180px; cursor: pointer; }
+.deck-add .feed-col-add { flex: 0 0 64px; width: 64px; gap: var(--space-2); padding: var(--space-4) 0; cursor: pointer; font-size: var(--text-small); }
+.deck-add .feed-col-add span { writing-mode: vertical-rl; letter-spacing: 0.2em; }
+/* 欄位超出視窗時，右緣淡出提示還有欄位可以橫向捲動 */
+.feed-cols.has-more-right { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); }
+.feed-cols.has-more-left.has-more-right { -webkit-mask-image: linear-gradient(90deg, transparent, #000 72px, #000 calc(100% - 72px), transparent); mask-image: linear-gradient(90deg, transparent, #000 72px, #000 calc(100% - 72px), transparent); }
+.feed-cols.has-more-left:not(.has-more-right) { -webkit-mask-image: linear-gradient(90deg, transparent, #000 72px); mask-image: linear-gradient(90deg, transparent, #000 72px); }
 .deck-add .feed-col-add[hidden] { display: none; }
 .addcol-menu {
   width: 300px; min-height: 0; overflow-y: auto; overscroll-behavior-y: contain;

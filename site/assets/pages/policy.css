@@ -1,7 +1,13 @@
 /* /policy-match/ — questionnaire + results. Tokens only; party colour appears
    only on the avatar ring and the .chip-party dot (DESIGN.md §1). */
 
-.page-policy .page-head, .policy-app, .policy-method { max-width: 52rem; }
+/* 寬螢幕：左側問卷／結果，右側固定的計算方式；問卷本身維持易讀寬度 */
+.policy-layout { display: grid; gap: var(--space-8); grid-template-columns: minmax(0, 1fr); align-items: start; }
+.policy-quiz { max-width: 56rem; }
+@media (min-width: 1400px) {
+  .policy-layout { grid-template-columns: minmax(0, 1fr) 22rem; gap: var(--space-12); }
+  .policy-layout > .policy-method { position: sticky; top: var(--space-6); margin-top: 0; padding: var(--space-5); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: var(--color-surface-raised); }
+}
 
 /* ---- enhancement gating: no-JS sees every step; JS shows one at a time ---- */
 .policy-progress, .policy-nav { display: none; }
@@ -89,14 +95,24 @@
 }
 .policy-results-note strong { color: var(--color-text-primary); }
 
-.policy-cities { display: flex; flex-direction: column; gap: var(--space-8); }
+.policy-cities { display: grid; gap: var(--space-8) var(--space-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); align-items: start; }
+.policy-cities > .empty, .policy-cities > .policy-roster { grid-column: 1 / -1; }
 .policy-city-title {
   display: flex; align-items: center; gap: var(--space-2);
   margin-bottom: var(--space-3); font-size: var(--text-heading); font-weight: 750;
 }
 .policy-city-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--city); flex: none; }
 .policy-city-count { margin-left: var(--space-1); font-size: var(--text-small); font-weight: 500; color: var(--color-text-muted); }
-.policy-cands { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: var(--space-4); align-items: start; }
+.policy-cands { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: var(--space-4); align-items: start; }
+.policy-ev-status:empty { display: none; }
+.policy-ev-off { font-size: var(--text-xs); color: var(--color-text-muted); }
+.policy-ev-skeleton { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+.policy-ev-skeleton .skeleton-block { height: 12px; border-radius: var(--radius-pill); }
+.policy-ev-skeleton .skeleton-block:nth-child(2) { width: 88%; }
+.policy-ev-skeleton .skeleton-block:nth-child(3) { width: 55%; }
+.policy-roster { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: var(--space-2) var(--space-4); margin-top: var(--space-5); }
+.policy-roster li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding: 8px 12px; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-md); }
+.policy-roster a { display: flex; align-items: center; gap: 8px; color: var(--color-text-primary); font-weight: 600; }
 
 .policy-cand { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5); }
 .policy-cand-head { display: flex; align-items: center; gap: var(--space-3); min-width: 0; }

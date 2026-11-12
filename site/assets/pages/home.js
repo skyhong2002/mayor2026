@@ -196,6 +196,7 @@
     syncSeg();
     syncStrip();
     syncBanner();
+    syncEdges();
   }
 
   function syncCol(el, s) {
@@ -238,16 +239,25 @@
 
   function getList(el, s) {
     return MO.fetchJSON(bundleURL(s.k)).then(function (b) {
+      (MO._bundleReady = MO._bundleReady || {})[s.k] = true;
       el._bundle = b;
       el._list = (b.posts || []).filter(matcher(s.f));
       return el._list;
     });
   }
 
+  function skeletonHTML(s) {
+    var row = '<div class="skeleton-post" aria-hidden="true"><span></span><div class="skeleton-lines"><span></span><span></span><span></span><span></span></div></div>';
+    return '<p class="col-loading" role="status"><span class="spinner" aria-hidden="true"></span>' +
+      (isFiltered(s.f) ? "正在套用篩選，讀取這一欄最新 " + (boot.bundle || 400) + " 則貼文…" : "正在讀取貼文…") + "</p>" + row + row + row;
+  }
+
   function fill(el, s) {
     var body = qs(".col-body", el);
     var token = el._token = (el._token || 0) + 1;
     el._shown = 0;
+    // Stale (unfiltered) cards must not pass for results: show a skeleton until the bundle arrives.
+    if (!MO._bundleReady || !MO._bundleReady[s.k]) body.innerHTML = skeletonHTML(s);
     setBusy(el, true);
     getList(el, s).then(function (list) {
       if (token !== el._token) return;
@@ -329,7 +339,7 @@
   }
   function showError(el) {
     var body = qs(".col-body", el);
-    qsa(".feed-more, .col-error", body).forEach(function (n) { n.remove(); });
+    qsa(".feed-more, .col-error, .col-loading, .skeleton-post", body).forEach(function (n) { n.remove(); });
     body.insertAdjacentHTML("beforeend",
       '<div class="empty col-error"><p class="empty-title">無法取得貼文</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
       '<button class="btn btn-sm" type="button" data-act="retry">重試</button></div>');
@@ -568,6 +578,17 @@
   });
   window.addEventListener("popstate", applyURL);
 
+  // Fade the deck edge that still has columns off-screen (horizontal scroll cue).
+  function syncEdges() {
+    var max = deckEl.scrollWidth - deckEl.clientWidth;
+    deckEl.classList.toggle("has-more-left", !phoneMQ.matches && deckEl.scrollLeft > 4);
+    deckEl.classList.toggle("has-more-right", !phoneMQ.matches && deckEl.scrollLeft < max - 4);
+  }
+  deckEl.addEventListener("scroll", syncEdges, { passive: true });
+  window.addEventListener("resize", syncEdges);
+
   qsa(".feed-col", deckEl).forEach(function (el) { adoptSSR(el); observe(el); });
   applyURL();
+  syncEdges();
+  setTimeout(syncEdges, 300);
 })();

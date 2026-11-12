@@ -225,7 +225,7 @@ def render_index(data) -> None:
             "（同一篇貼文可同時屬於數個議題，依 AI 分類分數加權），顏色越深比例越高。"
             "日常生活類貼文（「生活」）預設不列入計算，可在下方議題篩選中加回。")
     body = (
-        S.page_head("議題光譜", S.esc(lede), eyebrow="Topic spectrum")
+        S.page_head("議題光譜", S.esc(lede), eyebrow="六都候選人議題比較")
         + controls
         + '<section class="spectrum-result" aria-label="議題光譜">'
         + '<div class="spectrum-view">' + _table(data, result, topics, order) + _cards(data, result, order) + "</div>"
@@ -378,8 +378,11 @@ def render_topic(data, topic: str, stats: Dict[str, Dict[str, Any]], posts_all: 
                 "下方先比較各候選人投入這個議題的比例，再依時間列出所有相關貼文；可複選候選人縮小範圍。")
     else:
         river = ('<section class="section topic-river">'
-                 + S.render_empty("目前沒有這個議題的貼文", "等候選人發布相關貼文並完成分類後，會出現在這裡。",
-                                  '<a class="btn btn-sm" href="/spectrum/">回到議題光譜</a>')
+                 + S.render_empty("目前沒有這個議題的貼文",
+                                  "資料庫裡還沒有被 AI 歸類為這個議題的貼文，所以暫時無法比較各候選人。"
+                                  "資料更新並完成分類後，比較與貼文會出現在這裡。",
+                                  '<a class="btn btn-sm" href="/spectrum/">回到議題光譜</a>'
+                                  '<a class="btn btn-sm btn-ghost" href="/status/">查看資料狀態</a>')
                  + "</section>")
         lede = f"目前尚無被歸類為「{S.esc(topic)}」議題的貼文。"
     if is_life:
@@ -388,7 +391,9 @@ def render_topic(data, topic: str, stats: Dict[str, Dict[str, Any]], posts_all: 
     body = (
         S.page_head(topic, lede, eyebrow="議題光譜")
         + _topic_nav(topic)
-        + ranking + keywords + river
+        + (f'<div class="topic-layout"><div class="topic-left">{ranking}{keywords}</div>{river}</div>' if posts
+           # No posts: one page-level empty state, not 13 rows of 0%.
+           else river)
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
           '議題與發文動機由 AI 分類，僅供參考；所有貼文皆連回原文。</p>'
     )
