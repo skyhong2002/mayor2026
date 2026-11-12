@@ -177,11 +177,12 @@ def render(data) -> None:
         '<span class="snap-long">・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。</span>'
         '<span class="snap-short">・非官方・AI 分類</span>'
         '<a href="/about/"><span class="snap-label">關於</span>本站</a></p>'
+        f'<a class="chip chip-soft deck-elections" href="/elections/">{S.icon("ballot")}<span>2026 全部候選人與號次</span></a>'
         f'{city_seg()}</div>'
         '<div class="notice deck-banner" data-tone="info" hidden></div>'
     )
     body = (
-        '<h1 class="sr-only">最新貼文：六都市長候選人官方帳號</h1>'
+        '<h1 class="sr-only">2026 地方選舉官方來源觀測站：六都市長候選人官方帳號最新貼文</h1>'
         + story_strip(data) + meta + deck(data, by_city) + boot_json(data)
         + '<noscript><p class="snapshot">啟用 JavaScript 後可篩選、增減欄位與載入更多貼文；'
           '也可以到<a href="/source/">候選人目錄</a>瀏覽每位候選人的完整貼文。</p></noscript>'
@@ -200,7 +201,7 @@ def render(data) -> None:
             "query-input": "required name=search_term_string",
         },
     }
-    html = S.layout("home", f"{S.SITE_NAME}｜六都候選人最新發文", S.DEFAULT_DESCRIPTION, "/", body,
+    html = S.layout("home", f"{S.SITE_NAME}｜六都市長候選人最新發文", S.DEFAULT_DESCRIPTION, "/", body,
                     extra_css=["pages/home.css"], extra_js=["pages/home.js"], jsonld=jsonld,
                     body_class="layout-deck")
     S.write_page("/", html)

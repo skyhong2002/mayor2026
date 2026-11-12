@@ -10,7 +10,7 @@ import feed_common
 
 API_DIR = feed_common.PROJECT_ROOT / "site" / "api"
 FEEDS_DIR = feed_common.PROJECT_ROOT / "site" / "feeds"
-SITE_TITLE = "2026 市長官方來源觀測站"
+SITE_TITLE = "2026 地方選舉官方來源觀測站"
 
 # Feeds carry recent updates only; the full per-candidate archive (with
 # classification metadata) lives at api/posts/<id>.json.

@@ -95,10 +95,44 @@
 
   function filtersOn() { return !!(state.city.length || state.platform.length || state.intent); }
 
+  /* 2026 地方選舉候選人名單：姓名、選舉區、村里（/data/elections/search-2026.json，首次輸入才下載） */
+  var candsEl = document.getElementById("search-cands");
+  var elIndex = null, elLoading = null;
+  function elNorm(s) { return String(s || "").replace(/[\s\u3000]/g, "").replace(/台/g, "臺").toLowerCase(); }
+  function runCands(q) {
+    if (!candsEl) return;
+    var terms = q.split(/\s+/).map(elNorm).filter(Boolean);
+    if (!terms.length) { candsEl.hidden = true; return; }
+    if (!elLoading) {
+      elLoading = MO.fetchJSON("/data/elections/search-2026.json").then(function (d) {
+        elIndex = { d: d, rows: d.rows.map(function (r) { return { r: r, hay: elNorm(d.counties[r[3]] + r[4] + r[5] + r[0]) }; }) };
+      });
+    }
+    elLoading.then(function () {
+      if (elNorm(input.value) !== elNorm(q)) return;
+      var d = elIndex.d, hits = [], total = 0;
+      elIndex.rows.forEach(function (row) {
+        for (var t = 0; t < terms.length; t++) { if (row.hay.indexOf(terms[t]) < 0) return; }
+        total++; if (hits.length < 6) hits.push(row.r);
+      });
+      if (!total) { candsEl.hidden = true; return; }
+      candsEl.querySelector(".search-cands-body").innerHTML = hits.map(function (r) {
+        var where = d.counties[r[3]] + (r[4] || "") + (r[5] && r[5] !== r[4] && r[5] !== d.counties[r[3]] ? r[5] : "");
+        return '<a class="search-cand" href="' + esc(r[6]) + '"><span class="search-cand-no">' + r[1] + '</span><span><b>' + esc(r[0]) +
+          '</b> <span class="muted small">' + esc(d.categories[r[2]]) + "・" + esc(where) + "・" + esc(r[7]) + "</span></span></a>";
+      }).join("");
+      var more = candsEl.querySelector(".search-cands-more");
+      more.href = "/elections/?q=" + encodeURIComponent(q);
+      more.textContent = total > hits.length ? "查看全部 " + total.toLocaleString("zh-TW") + " 位候選人" : "在候選人名單查看";
+      candsEl.hidden = false;
+    }).catch(function () { candsEl.hidden = true; });
+  }
+
   function run() {
     countEl.removeAttribute("data-tone");
     state.q = input.value.trim().slice(0, 100);
     writeURL();
+    runCands(state.q);
     if (!state.q && !filtersOn()) { idle(); return; }
     if (!index) {
       results.setAttribute("aria-busy", "true");

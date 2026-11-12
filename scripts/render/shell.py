@@ -20,14 +20,14 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SITE_ROOT = PROJECT_ROOT / "site"
 ASSETS_DIR = SITE_ROOT / "assets"
 
-SITE_NAME = "2026 市長官方來源觀測站"
-SITE_SHORT = "市長觀測站"
+SITE_NAME = "2026 地方選舉官方來源觀測站"
+SITE_SHORT = "選舉觀測站"
 BASE_URL = "https://mayor2026.observe.tw"
 GITHUB_URL = "https://github.com/skyhong2002/mayor2026"
 REPORT_URL = "https://github.com/skyhong2002/mayor2026/issues/new/choose"
 DEFAULT_DESCRIPTION = (
-    "獨立、非官方的公開資料觀測站：彙整 2026 六都市長候選人在官方帳號的公開發文，"
-    "依議題與發文動機分類，所有內容皆連回原文。"
+    "獨立、非官方的公開資料觀測站：2026 地方選舉全部候選人的號次與選委會公告來源，"
+    "以及六都市長候選人官方帳號的公開發文（依議題與發文動機分類，皆連回原文）。"
 )
 TPE = dt.timezone(dt.timedelta(hours=8), "Asia/Taipei")
 
@@ -69,9 +69,10 @@ INTENT_LABELS = {"self_initiated": "主動發文", "responsive": "回應他方�
 # into the 更多 menu on phones. ``match`` = page_ids that highlight the item.
 nav_items: list[dict[str, Any]] = [
     {"id": "home", "label": "最新", "short": "最新", "href": "/", "icon": "home", "tab": True, "match": ["home"]},
+    {"id": "elections", "label": "候選人名單", "short": "名單", "href": "/elections/", "icon": "ballot", "tab": True, "match": ["elections"]},
     {"id": "spectrum", "label": "議題光譜", "short": "光譜", "href": "/spectrum/", "icon": "spectrum", "tab": True, "match": ["spectrum", "topic"]},
-    {"id": "policy", "label": "議題選擇器", "short": "選擇器", "href": "/policy-match/", "icon": "match", "tab": True, "match": ["policy"]},
-    {"id": "source", "label": "候選人", "short": "候選人", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
+    {"id": "source", "label": "市長帳號", "short": "市長", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
+    {"id": "policy", "label": "議題選擇器", "short": "選擇器", "href": "/policy-match/", "icon": "match", "tab": False, "match": ["policy"]},
     {"id": "search", "label": "搜尋", "short": "搜尋", "href": "/search/", "icon": "search", "tab": False, "match": ["search"]},
     {"id": "feeds", "label": "訂閱", "short": "訂閱", "href": "/feeds/", "icon": "rss", "tab": False, "match": ["feeds"]},
     {"id": "status", "label": "資料狀態", "short": "狀態", "href": "/status/", "icon": "status", "tab": False, "match": ["status"]},
@@ -87,6 +88,7 @@ _STROKE = {
     "spectrum": '<path d="M4.5 20V11M9.5 20V4.5M14.5 20v-6.5M19.5 20V8"/>',
     "match": '<path d="M10 6.5h10M10 12h10M10 17.5h10"/><path d="m3.8 6.4 1.4 1.4 2.6-2.8M3.8 11.9l1.4 1.4 2.6-2.8M3.8 17.4l1.4 1.4 2.6-2.8"/>',
     "people": '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.1-5.6 6.5-5.6s5.9 2 6.5 5.6"/><path d="M15.8 4.7a3.4 3.4 0 0 1 0 6.6M17.8 14.7c2 .7 3.2 2.4 3.7 5.3"/>',
+    "ballot": '<path d="M4 13.5h16v6A1.5 1.5 0 0 1 18.5 21h-13A1.5 1.5 0 0 1 4 19.5z"/><path d="M8 13.5V4.5A1 1 0 0 1 9 3.5h6a1 1 0 0 1 1 1v9"/><path d="m10 8.6 1.6 1.6L14.4 7"/>',
     "search": '<circle cx="11" cy="11" r="6.8"/><path d="m20 20-4.2-4.2"/>',
     "rss": '<path d="M5 11.5a7.5 7.5 0 0 1 7.5 7.5M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none"/>',
     "status": '<path d="M3 12.5h4l2.5-6.5 5 13 2.5-6.5h4"/>',
@@ -616,8 +618,8 @@ def render_footer() -> str:
     return (
         '<footer class="site-footer">'
         '<div class="footer-about">'
-        f'<a class="footer-brand" href="/"><span class="brand-num">2026</span><span>市長官方來源觀測站</span></a>'
-        "<p>獨立、非官方的公開資料觀測站。本站彙整六都市長候選人官方帳號的公開發文並連回原文，"
+        f'<a class="footer-brand" href="/"><span class="brand-num">2026</span><span>地方選舉官方來源觀測站</span></a>'
+        "<p>獨立、非官方的公開資料觀測站。本站整理選委會公告的候選人名單與號次，並彙整六都市長候選人官方帳號的公開發文、連回原文，"
         "與任何候選人、政黨或競選團隊無關；議題與發文動機由 AI 分類，僅供參考。</p>"
         "</div>"
         '<nav class="footer-nav" aria-label="頁尾導覽">'

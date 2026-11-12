@@ -18,7 +18,7 @@ def render(data) -> None:            # called by generate_site_pages.py
                     jsonld={...}, body_class="layout-deck")
     S.write_page("/", html)           # → site/index.html ; "/spectrum/x/" → site/spectrum/x/index.html
 ```
-Module order: home, candidate, directory, spectrum, policy, status, search. Put page assets in `site/assets/pages/` (auto-included in the `?v=` hash).
+Module order: home, candidate, directory, spectrum, policy, status, search, elections. Put page assets in `site/assets/pages/` (auto-included in the `?v=` hash).
 `/spectrum/topic/<slug>/` redirect stubs are written by the orchestrator after all modules.
 
 ## render/shell.py
@@ -27,14 +27,14 @@ Module order: home, candidate, directory, spectrum, policy, status, search. Put 
 | `esc(v)` | escapes `& < > " '` (same table as `MO.esc`) |
 | `asset_url("styles.css" \| "pages/x.js")` | `/assets/…?v=<10-hex>`; `asset_hash()` (= `generate_site_pages.asset_version()`) |
 | `asset_abs("assets/a.webp")` | → `/assets/a.webp` (http/abs pass through, None → None) |
-| `head(title, description, path, og_image=None, jsonld=None, extra_css=(), noindex=False)` | inner `<head>`; title gets `｜2026 市長官方來源觀測站` |
+| `head(title, description, path, og_image=None, jsonld=None, extra_css=(), noindex=False)` | inner `<head>`; title gets `｜2026 地方選舉官方來源觀測站` |
 | `layout(page_id, title, description, path, body_html, extra_css=(), extra_js=(), jsonld=None, og_image=None, noindex=False, body_class="")` | full document; body goes in `<main class="page" id="main">`. page_id highlights nav: home, spectrum/topic, policy, source/directory/candidate/source-detail, search, feeds, status, about |
 | `page_head(title, lede_html="", actions_html="", eyebrow="")` | `.page-head` block (lede is raw HTML — escape yourself) |
 | `render_post(post, ctx)` | canonical card, see below. `ctx` = `data` or `data.post_ctx(show_city=False, show_json=True)` |
 | `render_avatar(entity, size="sm", href=None, cls="", label=None)` | size xs 24 / sm 36 / md 48 / lg 88; ring = party colour |
 | `render_chip(label, href=None, *, soft=False, cls="", count=None, pressed=None, party=None, city=None, icon_name=None, attrs=None)` | `<a>` if href, `<button aria-pressed>` if pressed is not None, else `<span>` |
 | `render_badge(state, label)` / `render_empty(title, body="", action_html="")` | |
-| `icon(name, cls="icon")` | home spectrum match people search rss status about more sun moon system share external json filter plus close chevron facebook instagram threads youtube x website podcast line tiktok (`line_oa`/`line_openchat` → line; unknown → website) |
+| `icon(name, cls="icon")` | home ballot spectrum match people search rss status about more sun moon system share external json filter plus close chevron facebook instagram threads youtube x website podcast line tiktok (`line_oa`/`line_openchat` → line; unknown → website) |
 | `party_slug(party)` | dpp / kmt / tpp / jrp / none |
 | `city_label(slug, short=True)` | 臺中 / 臺中市 |
 | `topic_slug(topic)`, `TOPIC_SLUGS`, `SLUG_TOPICS`, `PLATFORM_LABELS`, `INTENT_LABELS`, `CITY_ORDER`, `CITY_LABELS`, `CITY_SHORT`, `nav_items` | |

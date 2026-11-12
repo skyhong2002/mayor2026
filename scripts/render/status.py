@@ -669,6 +669,6 @@ def render(data) -> None:
               "・本站為非官方觀測站，狀態僅反映公開資料抓取流程。</p>"
         )
     html = S.layout("status", "資料來源狀態",
-                    "2026 市長官方來源觀測站的資料管線與逐來源抓取狀態快照。", ROUTE, body,
+                    f"{S.SITE_NAME}的資料管線與逐來源抓取狀態快照。", ROUTE, body,
                     extra_css=["pages/status.css"], extra_js=["pages/status.js"], noindex=True)
     S.write_page(ROUTE, html)
