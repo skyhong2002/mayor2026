@@ -15,6 +15,8 @@
 
 - **App 殼（Threads 式）**：桌機固定左側欄 260px；平板（700–1079px）窄欄 76px 只顯示 icon；
   手機頂欄 54px（品牌置中、左上篩選/搜尋鈕）＋底部 tab bar。照抄 chumei 的 breakpoints 與作法。
+- **寬螢幕（2026-11 hill climb）**：`--layout-content` 96rem；≥1800px 根字級 106.25%；內頁在 ≥1080／1400px 改為多欄（搜尋：篩選｜結果｜結果分布；關於：目錄｜內文｜概況；議題選擇器：結果｜計算方式；議題頁：比較｜貼文；候選人頁：時間軸＋篩選｜節奏與議題）。
+- **狀態卡**：`.empty` 為實線卡片＋中性徽記；錯誤用 `.empty[data-tone=error]`（danger 色＋「!」），不可與空資料同樣式；續載／篩選的持續狀態用 `.feed-status`（載入中或錯誤＋重試），不可只用 toast。
 - **深淺色**：以 `tokens.css` 定義語意色；預設跟隨系統，`<html data-theme="dark|light">` 可覆寫，
   `localStorage.theme` 記憶；`<head>` 內 inline script 先套用避免閃爍。深色為主要展示情境（截圖驗收以深色為主，但淺色必須同樣完整可用）。
 - **字型**：`"Noto Sans TC", "PingFang TC", system-ui, -apple-system, "Segoe UI", sans-serif`。不載入 webfont。
@@ -136,9 +138,9 @@ scripts/build_status_page.py    # status agent 可重構其資料計算部分，
       <span class="chip-soft chip-intent" data-intent="responsive" title="{reason}">回應他方觀點 87%</span>
     </div>
     <div class="feed-actions">
-      <a class="feed-action" href="{url}" target="_blank" rel="noopener">{external icon}<span>原文</span></a>
-      <button class="feed-action btn-share" type="button" data-url="{url}" data-title="…">{share icon}<span>分享</span></button>
-      <a class="feed-action" href="/api/posts/{id-safe}.json">{json icon}<span>JSON</span></a>
+      <a class="feed-action feed-action-source" href="{url}" target="_blank" rel="noopener">{platform icon}<span><span class="act-plat">Instagram </span>原文</span>{external icon}</a>
+      <button class="feed-action btn-share" type="button" aria-label="分享" data-url="{url}" data-title="…">{share icon}<span>分享</span></button>
+      <a class="feed-action feed-action-json" href="/api/posts/{id-safe}.json" aria-label="貼文資料（JSON）">{json icon}<span>資料</span></a>
     </div>
   </div>
 </article>
@@ -169,9 +171,9 @@ MO.qs / MO.qsa
 ## 7. 各頁規格
 
 ### 7.1 `/` 最新（home）
-- 上方 `.story-strip`：13 位候選人頭像（依最新貼文時間排序），外環為政黨色，右下 `.story-badge` = 近 48 小時貼文數（0 不顯示）；
+- 上方 `.story-strip`：13 位候選人頭像依六都分組（`.story-group` ＋ 可點的城市小標 `.story-city` → `?city=`；城市固定地理順序，城市內依最新貼文時間排序），外環為政黨色，右下 `.story-badge` = 近 48 小時貼文數（0 不顯示），列尾 `.story-legend` 說明數字意義；
   點擊 → 只顯示該候選人（URL `?candidate=<id>`，deck 變單欄）。
-- 主體 `.feed-cols`：桌機為六都六欄（TweetDeck / chumei 樣式，橫向捲動，欄寬 380px，各欄獨立縱向捲動、高度 = 視窗高），
+- 主體 `.feed-cols`：桌機為六都六欄（TweetDeck / chumei 樣式，欄寬彈性 `--layout-col` 340px 起、`--layout-col-max` 560px 止，1440p 六欄一次放下；超出時右緣淡出提示可橫向捲動；各欄獨立縱向捲動、高度 = 視窗高。`?city=` 在寬螢幕展開為該市每位候選人一欄，手機維持城市合併欄），
   欄頭：城市圓點 ＋ 城市名 ＋ 篩選鈕（開 `.col-filters`：候選人 chips、平台 chips、議題 chips、動機 seg、關鍵字）＋ 移除欄。
   末端「＋ 加欄」可加回城市欄或「全部」欄、「單一候選人」欄。欄設定存 `localStorage.moDeck`。
 - 手機 / 平板：單欄，上方 `.seg` 城市切換（全部 / 六都），篩選面板改為抽屜。
@@ -242,7 +244,7 @@ MO.qs / MO.qsa
 ## 9. 驗收（每個 agent 自己做）
 
 1. `python3 scripts/generate_site_pages.py`（或整合者指定的指令）能無錯產出你的頁面。
-2. `python3 -m http.server 8743 --directory site` 後用 `bash tools/shot.sh <path> <out.png> [width]` 截圖桌機 1440 與手機 414，深淺色各一，
+2. `python3 -m http.server 8743 --directory site` 後用 `node tools/shot.mjs <path> <out.png> [width]`（Playwright）截圖桌機 1440 與手機 390，深淺色各一，
    自己看過再回報（截圖放 `/tmp/shots/<agent>/`）。
 3. `python3 scripts/validate_public_outputs.py` 不因你的改動新增錯誤（既有的 5 則 YouTube 未分類錯誤是資料問題，可忽略）。
 4. 回報：改了哪些檔、需要主 agent 整合的事項（pipeline 步驟、驗證調整）、已知限制。
