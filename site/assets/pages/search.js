@@ -86,8 +86,10 @@
     if (!state.q && !filtersOn()) { idle(); return; }
     if (!index) {
       results.setAttribute("aria-busy", "true");
-      countEl.textContent = "正在讀取搜尋索引…";
-      results.innerHTML = "";
+      countEl.textContent = "";
+      var sk = '<div class="skeleton-post" aria-hidden="true"><span></span><div class="skeleton-lines"><span></span><span></span><span></span><span></span></div></div>';
+      results.innerHTML = '<p class="feed-status" data-kind="loading" role="status"><span class="spinner" aria-hidden="true"></span>' +
+        "正在讀取搜尋索引…第一次搜尋需要下載整份索引，通常幾秒內完成。</p>" + sk + sk + sk;
       load().then(function () { results.removeAttribute("aria-busy"); run(); }, function () {
         results.removeAttribute("aria-busy");
         countEl.textContent = "";

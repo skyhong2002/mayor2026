@@ -11,6 +11,8 @@ Sections: headline · 系統總覽 · 抓取方式 · 元件狀態 · 平台來�
 
 from __future__ import annotations
 
+import re
+
 import shutil
 import statistics
 from typing import Any, Dict, List, Optional
@@ -114,6 +116,9 @@ RUNTIME_STATE = {"running": ("pending", "擷取時執行中"), "ok": ("ok", "擷
 # helpers
 # ---------------------------------------------------------------------------
 
+URL_RE = re.compile(r"https?://\S+")
+
+
 def _badge(status: Any, label: Optional[str] = None) -> str:
     status = str(status or "unknown")
     return S.render_badge(BADGE_STATE.get(status, "pending"), label or STATUS_LABELS.get(status, status))
@@ -180,10 +185,24 @@ def _headline(status: Dict[str, Any]) -> str:
         f'{S.esc(S.fmt_time_tpe(generated, True) or "未記錄")}</time>（GMT+8）'
         f'・主排程每 {S.esc(status.get("pipelineIntervalHours") or 6)} 小時（臺灣時間 00、06、12、18 時）</p>'
         "</div>"
-        f'<div class="notice" data-tone="info">{S.icon("about")}<p>本頁是發布當下的靜態快照，不是即時監控。'
-        "外部監控請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
-        "不能只依快照內的 <code>overall</code> 判斷目前健康。主排程逾期門檻為 8 小時（6 小時週期加 2 小時寬限）。</p></div>"
+        f'<div class="notice" data-tone="info">{S.icon("about")}<div><p>本頁是發布當下的快照，不是即時監控：'
+        "上面的燈號只代表快照時間那一刻。如果快照時間已經超過 8 小時，代表排程可能延誤。</p>"
+        '<details class="tech-details"><summary>給工程與外部監控的說明</summary>'
+        "<p>請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
+        "不能只依快照內的 <code>overall</code> 判斷目前健康。主排程逾期門檻為 8 小時（6 小時週期加 2 小時寬限）。</p>"
+        "</details></div></div>"
+        + _empty_warning(status)
     )
+
+
+def _empty_warning(status: Dict[str, Any]) -> str:
+    """Zero collected posts must read as such, whatever the component lights say."""
+    total = (status.get("metrics") or {}).get("totalPosts")
+    if total not in (0, "0"):
+        return ""
+    return (f'<div class="notice" data-tone="warn">{S.icon("status")}<div><p><strong>目前沒有收錄任何貼文。</strong>'
+            "下方各元件的燈號只表示該服務本身有回應，不代表已經有資料；公開頁面會是空的，"
+            "通常是資料正在重建，或排程尚未完成第一次收錄。下一次主排程（臺灣時間 00、06、12、18 時）後再回來看看。</p></div></div>")
 
 
 def _overview(status: Dict[str, Any]) -> str:
@@ -196,7 +215,7 @@ def _overview(status: Dict[str, Any]) -> str:
     top = sorted(by_platform.items(), key=lambda kv: -kv[1])[:3]
     tiles = [
         (m.get("candidates"), "監看候選人", "六都市長候選人"),
-        (m.get("watchAccounts"), "監看帳號", "watchlist 啟用中的公開帳號"),
+        (m.get("watchAccounts"), "監看帳號", "監看清單中啟用的公開帳號"),
         (m.get("totalPosts"), "已收錄貼文", "、".join(f"{S.PLATFORM_LABELS.get(p, p)} {n:,}" for p, n in top) or "尚無資料"),
         (fetchable, "可抓取來源", f"另 {counts.get('link_only', 0)} 個僅連結、{counts.get('disabled', 0)} 個停用"),
         (m.get("currentErrors"), "目前錯誤", "仍未恢復的來源，成功後解除"),
@@ -345,14 +364,20 @@ def _components(status: Dict[str, Any], runtime: Dict[str, Any]) -> str:
     cards = []
     for item in status.get("components") or []:
         details = "".join(f"<li>{S.esc(d)}</li>" for d in item.get("details") or [])
-        details_html = f'<ul class="comp-details">{details}</ul>' if details else ""
         extra = _runtime_block(runtime) if item.get("id") == "pipeline" else ""
+        raw_summary = str(item.get("summary") or "")
+        # Plain summary on the card; hosts, tokens and step logs live under 技術細節.
+        plain = URL_RE.sub("轉換服務", raw_summary)
+        tech = (f'<p class="xs muted">原始摘要：{S.esc(raw_summary)}</p>' if plain != raw_summary else "") + \
+            (f'<ul class="comp-details">{details}</ul>' if details else "") + extra
+        details_html = f'<details class="tech-details"><summary>技術細節</summary>{tech}</details>' if tech else ""
+        extra = ""
         state = BADGE_STATE.get(str(item.get("status")), "pending")
         cards.append(
             f'<article class="card comp-card" id="comp-{S.esc(item.get("id"))}" data-state="{state}">'
             f'<div class="comp-head"><h3 class="card-title">{S.esc(item.get("name"))}</h3>'
             f'{_badge(item.get("status"), item.get("label"))}</div>'
-            f'<p class="comp-summary">{S.esc(item.get("summary"))}</p>{details_html}{extra}</article>'
+            f'<p class="comp-summary">{S.esc(plain)}</p>{details_html}{extra}</article>'
         )
     if not cards:
         return _section("components", "元件狀態", S.render_empty("尚無元件狀態資料"))

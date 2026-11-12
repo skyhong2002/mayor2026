@@ -111,8 +111,13 @@
     var city = (p.get("city") || "").trim();
     var hasF = isFiltered(f);
     if (cand && byId[cand]) return { cols: [spec("cand:" + cand, f)], candidate: cand };
-    if (city === "all" || CITIES.indexOf(city) !== -1) {
-      return { cols: [spec(city === "all" ? "all" : "city:" + city, f)], city: city };
+    if (city === "all") return { cols: [spec("all", f)], city: city };
+    if (CITIES.indexOf(city) !== -1) {
+      // One city: the merged city column, then one column per candidate so a
+      // wide screen compares them side by side instead of leaving it empty.
+      var cols = [spec("city:" + city, f)];
+      colCandidates("city:" + city).forEach(function (c) { cols.push(spec("cand:" + c.id, f)); });
+      return { cols: cols, city: city };
     }
     if (hasF) return { cols: saved.cols.map(function (c) { return spec(c.k, f); }) };
     return null;
@@ -467,7 +472,9 @@
     if (!banner) return;
     if (!state.transient) { banner.hidden = true; banner.innerHTML = ""; return; }
     var s = state.cols[0];
-    var what = state.cols.length === 1 ? "「" + colTitle(s.k) + "」" : "套用網址篩選的河道";
+    var cityView = /^city:/.test(s.k) && state.cols.slice(1).every(function (c) { return /^cand:/.test(c.k); });
+    var what = state.cols.length === 1 ? "「" + colTitle(s.k) + "」"
+      : cityView ? "「" + colTitle(s.k) + "」與該市每位候選人" : "套用網址篩選的河道";
     banner.innerHTML = MO.icon("filter") + "<p>正在檢視" + esc(what) + "，這個檢視不會改動你儲存的欄位。" +
       ' <a href="/" data-act="home">回到我的欄位</a></p>';
     banner.hidden = false;

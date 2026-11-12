@@ -224,17 +224,31 @@ def render_index(data) -> None:
     lede = ("比較六都候選人把公開發文的聲量放在哪些議題上。每一列是一位候選人：格子裡的百分比是該議題佔他／她議題發文的比例"
             "（同一篇貼文可同時屬於數個議題，依 AI 分類分數加權），顏色越深比例越高。"
             "日常生活類貼文（「生活」）預設不列入計算，可在下方議題篩選中加回。")
+    if not index:
+        # No classified posts: one explanation instead of controls over an empty grid.
+        lede = "比較六都候選人把公開發文的聲量放在哪些議題上。"
+        controls = ""
+        view = ('<section class="spectrum-result" aria-label="議題光譜">'
+                + S.render_empty("目前沒有可以比較的議題資料",
+                                 "資料庫裡還沒有完成 AI 議題分類的貼文，所以熱圖暫時是空的。這代表資料正在重建或尚未收錄，"
+                                 "不是候選人沒有談論任何議題。資料更新後，熱圖會自動出現。",
+                                 '<a class="btn btn-sm" href="/status/">查看資料狀態</a>'
+                                 '<a class="btn btn-sm btn-ghost" href="/source/">瀏覽候選人與帳號</a>')
+                + "</section>")
+        boot_json = ""
+    else:
+        view = ('<section class="spectrum-result" aria-label="議題光譜">'
+                + '<div class="spectrum-view">' + _table(data, result, topics, order) + _cards(data, result, order) + "</div>"
+                + _legend()
+                + f'<p class="spectrum-footnote">{S.esc(FOOTNOTE)}</p>'
+                + "</section>")
     body = (
         S.page_head("議題光譜", S.esc(lede), eyebrow="六都候選人議題比較")
         + controls
-        + '<section class="spectrum-result" aria-label="議題光譜">'
-        + '<div class="spectrum-view">' + _table(data, result, topics, order) + _cards(data, result, order) + "</div>"
-        + _legend()
-        + f'<p class="spectrum-footnote">{S.esc(FOOTNOTE)}</p>'
-        + "</section>"
+        + view
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
           '議題與發文動機由 AI 分類，僅供參考；本站為非官方觀測站。</p>'
-        + f'<script type="application/json" id="spectrum-boot">{boot_json}</script>'
+        + (f'<script type="application/json" id="spectrum-boot">{boot_json}</script>' if boot_json else "")
     )
     html = S.layout("spectrum", "議題光譜",
                     "六都市長候選人公開發文的議題比例光譜：同城市候選人並排比較，看每個人把聲量放在哪些議題上。",

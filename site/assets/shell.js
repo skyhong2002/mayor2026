@@ -351,7 +351,32 @@
     INTENT_LABELS: INTENT_LABELS
   };
 
+  /* Horizontal scrollers (chip rows, segmented controls) that are clipped get a
+     fading edge so the hidden options read as "more to the right/left". */
+  var HSCROLL = ".chips, .seg, .topic-nav, .story-strip";
+  function syncScrollEdges(el) {
+    var max = el.scrollWidth - el.clientWidth;
+    var on = max > 2;
+    el.classList.toggle("x-scroll", on);
+    el.classList.toggle("x-more-right", on && el.scrollLeft < max - 2);
+    el.classList.toggle("x-more-left", on && el.scrollLeft > 2);
+  }
+  function bindScrollEdges() {
+    var all = qsa(HSCROLL, doc);
+    all.forEach(function (el) {
+      if (!el._xs) { el._xs = 1; el.addEventListener("scroll", function () { syncScrollEdges(el); }, { passive: true }); }
+      syncScrollEdges(el);
+    });
+  }
+
   function init() {
+    bindScrollEdges();
+    window.addEventListener("resize", bindScrollEdges);
+    if (window.MutationObserver) {
+      var t;
+      new MutationObserver(function () { clearTimeout(t); t = setTimeout(bindScrollEdges, 120); })
+        .observe(doc.body, { childList: true, subtree: true });
+    }
     markNav();
     syncThemeSeg();
     bindPostBehaviors(doc);
