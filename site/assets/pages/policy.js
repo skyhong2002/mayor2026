@@ -204,7 +204,14 @@
   function evidenceHTML(cid, topic) {
     if (evidenceFailed) return '<p class="policy-ev-off">證據摘錄未載入</p>';
     if (!evidence) return '<div class="policy-ev-skeleton" aria-hidden="true"><span class="skeleton-block"></span><span class="skeleton-block"></span><span class="skeleton-block"></span></div>';
-    var items = ((evidence[cid] || {})[topic] || []).slice(0, 3);
+    // Cross-posted copies (same text on Facebook and Instagram) count once.
+    var seen = {};
+    var items = ((evidence[cid] || {})[topic] || []).filter(function (it) {
+      var key = String(it.text || "").replace(/\s+/g, "").slice(0, 60);
+      if (seen[key]) return false;
+      seen[key] = 1;
+      return true;
+    }).slice(0, 3);
     if (!items.length) return '<p class="policy-ev-empty">這個議題沒有可列出的證據貼文。</p>';
     return '<ul class="policy-ev-list">' + items.map(function (it) {
       var plat = platformOf(it);

@@ -443,6 +443,24 @@ def _error_marker(row: Dict[str, Any]) -> str:
     return S.render_badge("error", "尚未恢復")
 
 
+ERROR_HINTS = (
+    (("timed out", "timeout"), "連線逾時：來源網站或轉換服務沒有在時限內回應。"),
+    (("403", "forbidden", "blocked", "login"), "來源拒絕存取：平台暫時擋下免登入查詢。"),
+    (("404", "not found"), "找不到頁面：帳號可能改名、刪除或設為私人。"),
+    (("429", "rate", "too many"), "請求太頻繁：平台暫時限制查詢次數，稍後自動重試。"),
+    (("budget", "quota", "額度"), "超出本月額度：等下個月或預算恢復後再抓取。"),
+    (("ssl", "certificate", "connection", "resolve", "dns"), "網路連線失敗：連不上來源網站。"),
+)
+
+
+def _plain_error(msg: str) -> str:
+    low = msg.lower()
+    for keys, text in ERROR_HINTS:
+        if any(k in low for k in keys):
+            return text
+    return "抓取失敗：系統已記錄原因，下一次排程會自動重試。"
+
+
 def error_list(recent_errors: List[Dict[str, Any]]) -> str:
     """recentErrors (oldest first, as in status.json) → newest-first list with
     recovery markers. Also used by build_status_page.render_error_list (tests)."""
@@ -456,7 +474,8 @@ def error_list(recent_errors: List[Dict[str, Any]]) -> str:
         items.append(
             f'<li class="err-item"><div class="err-head">{_time(row.get("recordedAt"))}'
             f'<span class="err-source">{S.icon(p)}{S.esc(row.get("sourceName"))}</span>{_error_marker(row)}</div>'
-            f'<p class="err-msg mono" title="{S.esc(msg)}">{S.esc(msg)}</p></li>'
+            f'<p class="err-plain">{S.esc(_plain_error(msg))}</p>'
+            f'<details class="tech-details"><summary>原始訊息</summary><p class="err-msg mono">{S.esc(msg)}</p></details></li>'
         )
     return f'<ol class="err-list">{"".join(items)}</ol>'
 

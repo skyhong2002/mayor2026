@@ -566,11 +566,11 @@ a.avatar:hover { text-decoration: none; }
 /* 窄欄（河道）：分享／資料只留圖示，原文只留平台圖示＋「原文」，永不逐字斷行 */
 .feed-content { container-type: inline-size; }
 @container (max-width: 330px) {
-  .feed-action-json > span, .act-plat { display: none; }
+  .act-plat { display: none; }
   .feed-action { padding: 0 8px; }
 }
-@container (max-width: 230px) {
-  .feed-action.btn-share > span { display: none; }
+@container (max-width: 250px) {
+  .feed-action.btn-share > span, .feed-action-json > span { display: none; }
 }
 .feed-action { min-height: 36px; }
 .feed-action-json { color: var(--color-text-secondary); }
@@ -774,3 +774,18 @@ a.avatar:hover { text-decoration: none; }
 .tech-details[open] > summary::before { content: "▾"; }
 .tech-details > summary:hover { color: var(--color-text-primary); }
 .tech-details[open] > summary { margin-bottom: var(--space-2); }
+
+/* =========================================================================
+   12. 錯誤狀態卡（與空資料區分：警示色＋驚嘆號）、河道窄欄可讀性、城市檢視
+   ========================================================================= */
+.empty[data-tone="error"] { border-color: color-mix(in srgb, var(--color-danger-text) 35%, transparent); background: var(--color-danger-surface); }
+.empty[data-tone="error"]::before {
+  content: "!"; display: flex; align-items: center; justify-content: center;
+  background: var(--color-danger-text); color: var(--color-danger-surface); font-size: 1.4rem; font-weight: 800;
+}
+.empty[data-tone="error"] .empty-title { color: var(--color-danger-text); }
+.empty[data-tone="error"] .empty-body { color: var(--color-text-primary); }
+.col-body .feed-text { font-size: 1rem; }
+.col-body .feed-time { color: var(--color-text-secondary); }
+.col-empty-line { margin: var(--space-4) 0; padding: 10px 12px; border-radius: var(--radius-md); background: var(--color-surface-soft); font-size: var(--text-small); color: var(--color-text-secondary); }
+@media (min-width: 700px) { .feed-cols.is-cityview .feed-col { max-width: none; } }

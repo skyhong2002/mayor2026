@@ -115,9 +115,9 @@
     if (CITIES.indexOf(city) !== -1) {
       // One city: the merged city column, then one column per candidate so a
       // wide screen compares them side by side instead of leaving it empty.
-      var cols = [spec("city:" + city, f)];
-      colCandidates("city:" + city).forEach(function (c) { cols.push(spec("cand:" + c.id, f)); });
-      return { cols: cols, city: city };
+      var cols = colCandidates("city:" + city).map(function (c) { return spec("cand:" + c.id, f); });
+      // Phones keep the merged city column; wide screens show one column per candidate (no duplicates).
+      return { cols: cols, city: city, phone: "city:" + city };
     }
     if (hasF) return { cols: saved.cols.map(function (c) { return spec(c.k, f); }) };
     return null;
@@ -169,13 +169,17 @@
   }
 
   /* ---------------- rendering the deck ---------------- */
-  function phoneKey() { return state.transient ? state.cols[0].k : state.m; }
+  function phoneKey() { return state.transient ? (state.phoneK || state.cols[0].k) : state.m; }
 
   function renderDeck() {
     var list = state.cols.slice();
     var pk = phoneKey();
     var phoneOnly = null;
-    if (!list.some(function (c) { return c.k === pk; })) { phoneOnly = spec(pk); list.push(phoneOnly); }
+    if (!list.some(function (c) { return c.k === pk; })) {
+      // The phone-only column (e.g. the merged city column in a city view) carries the view's filters.
+      phoneOnly = spec(pk, state.transient && state.cols[0] ? state.cols[0].f : undefined);
+      list.push(phoneOnly);
+    }
 
     var existing = {};
     qsa(".feed-col", deckEl).forEach(function (el) { existing[el.getAttribute("data-col")] = el; });
@@ -197,6 +201,7 @@
       b.hidden = single || own.classList.contains("is-phone-only") || state.transient;
     });
     deckEl.classList.toggle("is-single", state.cols.length === 1);
+    deckEl.classList.toggle("is-cityview", !!state.cityView);
     if (addWrap) addWrap.hidden = state.transient;
     syncSeg();
     syncStrip();
@@ -327,6 +332,8 @@
 
   function emptyHTML(s) {
     var filtered = isFiltered(s.f);
+    // URL-filtered views state the conditions once in the banner; columns get a one-line note.
+    if (filtered && state.transient) return '<p class="col-empty-line">這一欄最新 ' + (boot.bundle || 400) + " 則貼文中沒有符合的。</p>";
     return '<div class="empty"><p class="empty-title">' + (filtered ? "沒有符合篩選條件的貼文" : "這一欄尚無貼文") + "</p>" +
       '<p class="empty-body">' + (filtered ? "篩選只涵蓋這一欄最新 " + (boot.bundle || 400) + " 則貼文。試著移除部分條件，或改用全站搜尋。" : "候選人發文後會出現在這裡。") + "</p>" +
       (filtered ? '<button class="btn btn-sm" type="button" data-act="clear">清除篩選</button>' : "") + "</div>";
@@ -346,7 +353,7 @@
     var body = qs(".col-body", el);
     qsa(".feed-more, .col-error, .col-loading, .skeleton-post", body).forEach(function (n) { n.remove(); });
     body.insertAdjacentHTML("beforeend",
-      '<div class="empty col-error"><p class="empty-title">無法取得貼文</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
+      '<div class="empty col-error" data-tone="error"><p class="empty-title">無法取得貼文</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
       '<button class="btn btn-sm" type="button" data-act="retry">重試</button></div>');
   }
   function updateCount(el, s) {
@@ -472,19 +479,25 @@
     if (!banner) return;
     if (!state.transient) { banner.hidden = true; banner.innerHTML = ""; return; }
     var s = state.cols[0];
-    var cityView = /^city:/.test(s.k) && state.cols.slice(1).every(function (c) { return /^cand:/.test(c.k); });
-    var what = state.cols.length === 1 ? "「" + colTitle(s.k) + "」"
-      : cityView ? "「" + colTitle(s.k) + "」與該市每位候選人" : "套用網址篩選的河道";
-    banner.innerHTML = MO.icon("filter") + "<p>正在檢視" + esc(what) + "，這個檢視不會改動你儲存的欄位。" +
-      ' <a href="/" data-act="home">回到我的欄位</a></p>';
+    var what = state.cityView ? "「" + cityLabel(state.cityView) + "」" + (phoneMQ.matches ? "" : "每位候選人")
+      : state.cols.length === 1 ? "「" + colTitle(s.k) + "」" : "六都河道";
+    var f = s.f, conds = [];
+    if (f.q.trim()) conds.push("關鍵字「" + f.q.trim() + "」");
+    if (f.p.length) conds.push("平台：" + f.p.map(function (p) { return MO.PLATFORM_LABELS[p] || p; }).join("、"));
+    if (f.t.length) conds.push("議題：" + f.t.join("、"));
+    if (f.n) conds.push("動機：" + (MO.INTENT_LABELS[f.n] || f.n));
+    banner.innerHTML = MO.icon("filter") + "<p>正在檢視" + esc(what) +
+      (conds.length ? "・篩選條件 <strong>" + esc(conds.join("・")) + "</strong>（每欄套用同樣條件）" : "") +
+      "。這個檢視不會改動你儲存的欄位。" +
+      ' <a href="/" data-act="home">' + (conds.length ? "清除篩選，回到我的欄位" : "回到我的欄位") + "</a></p>";
     banner.hidden = false;
   }
 
   function applyURL() {
     var u = fromURL();
     qsa(".col-filters", deckEl).forEach(function (p) { p.hidden = true; });
-    if (u) { state.cols = u.cols; state.transient = true; }
-    else { state.cols = saved.cols; state.m = saved.m; state.transient = false; }
+    if (u) { state.cols = u.cols; state.transient = true; state.phoneK = u.phone || null; state.cityView = u.phone ? u.city : null; }
+    else { state.cols = saved.cols; state.m = saved.m; state.transient = false; state.phoneK = null; state.cityView = null; }
     renderDeck();
     deckEl.scrollLeft = 0;
   }
@@ -581,7 +594,7 @@
     if (!b) return;
     var k = b.getAttribute("data-mcol");
     state.m = k;
-    if (state.transient) { history.pushState(null, "", "/"); state.cols = saved.cols; state.transient = false; }
+    if (state.transient) { history.pushState(null, "", "/"); state.cols = saved.cols; state.transient = false; state.phoneK = null; state.cityView = null; }
     save();
     renderDeck();
     window.scrollTo({ top: 0 });

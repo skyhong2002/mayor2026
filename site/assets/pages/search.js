@@ -109,7 +109,7 @@
       load().then(function () { results.removeAttribute("aria-busy"); run(); }, function () {
         results.removeAttribute("aria-busy");
         countEl.textContent = "";
-        results.innerHTML = '<div class="empty"><p class="empty-title">無法讀取搜尋索引</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
+        results.innerHTML = '<div class="empty" data-tone="error"><p class="empty-title">無法讀取搜尋索引</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
           '<button class="btn btn-sm" type="button" data-retry>重試</button></div>';
         var r = results.querySelector("[data-retry]");
         if (r) r.addEventListener("click", run);

@@ -354,7 +354,7 @@
 
   /* Horizontal scrollers (chip rows, segmented controls) that are clipped get a
      fading edge so the hidden options read as "more to the right/left". */
-  var HSCROLL = ".chips, .seg, .topic-nav, .story-strip";
+  var HSCROLL = ".chips, .seg, .topic-nav, .story-strip, .spectrum-scroll, .status-tiles";
   function syncScrollEdges(el) {
     var max = el.scrollWidth - el.clientWidth;
     var on = max > 2;
