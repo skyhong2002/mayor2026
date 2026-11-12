@@ -69,7 +69,9 @@ class InstagramTests(unittest.TestCase):
         self.assertEqual(append.call_args.args[1][0]['id'], 'instagram:https://www.instagram.com/p/abc/')
         self.assertEqual(http.call_count, 3)
         ledger = json.loads(fb.LEDGER_JSON.read_text())
-        self.assertEqual(ledger['months'][NOW.strftime('%Y-%m')]['instagram']['estimated_spend_usd'], .008)
+        # ig.main() books spend under the real current month, not the fixed NOW used elsewhere.
+        month = fb.month_key(dt.datetime.now(dt.timezone.utc))
+        self.assertEqual(ledger['months'][month]['instagram']['estimated_spend_usd'], .008)
 
     def test_existing_host_block_falls_back_without_extending_it(self):
         until = ig.ig_public_host.report_block('chumei', seconds=600)
