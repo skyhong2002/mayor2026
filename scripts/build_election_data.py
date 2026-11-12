@@ -72,7 +72,12 @@ def public_row(row: dict[str, str], tracked: dict[tuple[str, str], str]) -> dict
     feed = tracked.get((row["county"], row["name"])) if row["category"] == "municipal-mayor" else None
     out["trackedFeed"] = feed
     out["url"] = page_url(row)
-    return out
+    # county / category / township / district / village are given by the enclosing
+    # county → category → group → district objects; rosterSource is the same CEC URL
+    # for every row (index.json "sources"). Empty values are omitted.
+    for key in ("county", "category", "township", "district", "village", "rosterSource"):
+        out.pop(key, None)
+    return {k: v for k, v in out.items() if v not in ("", None)}
 
 
 def page_url(row: dict[str, str]) -> str:
@@ -194,6 +199,7 @@ def build() -> dict[str, Any]:
             "explained": sum(1 for i in report.get("issues", []) if i.get("status") == "explained"),
             "api": "/api/elections/2026/reconciliation.json",
         },
+        "sources": {"roster": "https://web.cec.gov.tw/central/article/64709"},
         "files": {"csv": "/api/elections/2026/candidates.csv", "sources": "/api/elections/2026/sources.json",
                   "search": "/data/elections/search-2026.json", "rss": "/feeds/elections-2026.xml"},
     }
