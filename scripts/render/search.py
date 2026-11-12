@@ -92,6 +92,8 @@ def render(data) -> None:
         + '<div class="feed-more" id="search-more" hidden><button class="btn btn-sm" type="button">顯示更多結果</button></div>'
         + '<noscript><div class="notice" data-tone="warn"><p>搜尋需要啟用 JavaScript。'
           '也可以到<a href="/source/">候選人目錄</a>瀏覽各候選人的完整貼文。</p></div></noscript>'
+        + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
+          "搜尋只比對每則貼文的前 300 字；請點原文查看完整內容。</p>"
         + "</div>"
         + '<aside class="search-aside" aria-label="搜尋結果概況">'
           '<section class="card search-dist" id="search-dist" hidden><h2 class="side-title">結果分布</h2>'
@@ -100,8 +102,6 @@ def render(data) -> None:
           '<p class="xs muted">搜尋比對貼文前 300 字與候選人姓名，不分大小寫；多個關鍵字以空白分隔，須全部出現。</p></section>'
           "</aside>"
         + "</div>"
-        + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
-          "搜尋只比對每則貼文的前 300 字；請點原文查看完整內容。</p>"
     )
     html = S.layout("search", "搜尋", "搜尋 2026 六都市長候選人在官方帳號的公開發文，依城市、平台與發文動機篩選。",
                     "/search/", body, extra_css=["pages/search.css"], extra_js=["pages/search.js"])

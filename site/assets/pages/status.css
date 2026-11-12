@@ -103,16 +103,16 @@
 .src-name { font-weight: 700; display: flex; align-items: center; gap: 6px; }
 .src-name a { color: var(--color-text-primary); }
 .src-off { height: 20px; font-size: var(--text-xs); }
-.src-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+.src-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--space-2); font-size: var(--text-small); color: var(--color-text-secondary); }
 .src-handle { display: inline-flex; align-items: center; gap: 4px; color: var(--color-text-secondary); max-width: 16rem; min-width: 0; }
 .src-handle span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .src-id { color: var(--color-text-muted); }
 .src-backend { white-space: nowrap; color: var(--color-text-secondary); }
 .src-status { min-width: 8.5rem; }
-.src-reason { margin-top: 4px; max-width: 14rem; font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; }
+.src-reason { margin-top: 4px; max-width: 14rem; font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.5; }
 .src-times { white-space: nowrap; font-variant-numeric: tabular-nums; line-height: 1.7; }
-.src-times .k { display: inline-block; min-width: 2.2em; margin-right: 4px; font-size: var(--text-xs); color: var(--color-text-muted); }
-.src-times .chip-soft { height: 20px; padding: 0 7px; margin-left: 6px; font-size: 0.7rem; vertical-align: 1px; }
+.src-times .k { display: inline-block; min-width: 2.2em; margin-right: 4px; font-size: var(--text-xs); color: var(--color-text-secondary); }
+.src-times .chip-soft { height: 22px; padding: 0 8px; margin-left: 6px; font-size: 0.8rem; vertical-align: 1px; }
 .chip-soft.ev[data-ev="inbox"], .chip-soft.cs[data-cs="quiet"] { background: var(--color-warning-surface); color: var(--color-warning-text); }
 .chip-soft.ev[data-ev="none"], .chip-soft.cs[data-cs="empty"] { background: var(--color-neutral-surface); color: var(--color-text-muted); }
 .src-times .cs { margin-left: 0; }
@@ -177,3 +177,9 @@
 .status-more-title { font-size: var(--text-heading); font-weight: 700; }
 .status-more > summary .small { color: var(--color-text-secondary); }
 .status-more > .status-section { margin: 0; padding: 0 var(--space-5) var(--space-5); }
+
+.status-hero-empty { margin-top: var(--space-2); font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.7; }
+.status-hero .tech-details { margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid var(--color-border-subtle); }
+.status-hero .tech-details p { font-size: var(--text-small); color: var(--color-text-secondary); line-height: 1.7; }
+.status-hero .tech-details p + p { margin-top: var(--space-2); }
+.src-table { font-size: 0.92rem; }

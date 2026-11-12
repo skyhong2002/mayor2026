@@ -258,7 +258,7 @@ def _feed_cand(c: dict[str, Any]) -> str:
         f'<div class="sub-cand-text"><a class="sub-cand-name" href="{href}">{S.esc(name)}</a>'
         f'<span class="xs muted">{S.esc(c.get("party") or "無黨籍")}・{int(c.get("postCount") or 0):,} 則</span></div>'
         f'<div class="sub-cand-actions"><a class="btn btn-sm" href="{xml}" aria-label="{S.esc(name)} RSS">RSS</a>'
-        f'<a class="btn btn-sm btn-ghost" href="{jsn}" aria-label="{S.esc(name)} JSON">JSON</a>'
+        f'<a class="btn btn-sm" href="{jsn}" aria-label="{S.esc(name)} JSON">JSON</a>'
         f'{_copy_btn(xml, name + " RSS ")}</div></li>'
     )
 

@@ -174,24 +174,29 @@ def _section(sid: str, title: str, inner: str, note: str = "") -> str:
 # ---------------------------------------------------------------------------
 
 def _headline(status: Dict[str, Any]) -> str:
+    """One hero card: verdict, snapshot time, the empty-data conclusion when it applies,
+    and the static-snapshot caveat folded into the same card."""
     overall = status.get("overall") or {}
     state = str(overall.get("status") or "unknown")
     generated = status.get("generatedAt")
+    total = (status.get("metrics") or {}).get("totalPosts")
+    empty = total in (0, "0")
+    summary = ("目前沒有收錄任何貼文，公開頁面會是空的。" if empty else (overall.get("summary") or "尚無資料"))
+    empty_html = ("<p class=\"status-hero-empty\">下方元件燈號只代表各服務本身有回應，不代表已經有資料；"
+                  "通常是資料正在重建，或排程尚未完成第一次收錄。下一次主排程後再回來看看。</p>" if empty else "")
     return (
-        f'<div class="status-hero card" data-state="{S.esc(BADGE_STATE.get(state, "pending"))}">'
+        f'<div class="status-hero card" data-state="{S.esc("warn" if empty else BADGE_STATE.get(state, "pending"))}">'
         f'<div class="status-hero-main">{_badge(state, overall.get("label"))}'
-        f'<p class="status-hero-summary">{S.esc(overall.get("summary") or "尚無資料")}</p></div>'
+        f'<p class="status-hero-summary">{S.esc(summary)}</p></div>'
+        + empty_html +
         f'<p class="status-hero-time">快照時間 <time datetime="{S.esc(generated)}">'
         f'{S.esc(S.fmt_time_tpe(generated, True) or "未記錄")}</time>（GMT+8）'
         f'・主排程每 {S.esc(status.get("pipelineIntervalHours") or 6)} 小時（臺灣時間 00、06、12、18 時）</p>'
-        "</div>"
-        f'<div class="notice" data-tone="info">{S.icon("about")}<div><p>本頁是發布當下的靜態快照，不是即時監控：'
-        "上面的燈號只代表快照時間那一刻。如果快照時間已經超過 8 小時，代表排程可能延誤。</p>"
-        '<details class="tech-details"><summary>給工程與外部監控的說明</summary>'
-        "<p>請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
+        '<details class="tech-details"><summary>關於這份快照（靜態快照，不是即時監控）</summary>'
+        "<p>本頁是發布當下的靜態快照，不是即時監控：燈號只代表快照時間那一刻；快照時間超過 8 小時，代表排程可能延誤。</p>"
+        "<p>給工程與外部監控：請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"
         "不能只依快照內的 <code>overall</code> 判斷目前健康。主排程逾期門檻為 8 小時（6 小時週期加 2 小時寬限）。</p>"
-        "</details></div></div>"
-        + _empty_warning(status)
+        "</details></div>"
     )
 
 
@@ -204,22 +209,14 @@ def _plain_summary(status: Dict[str, Any]) -> str:
     latest = m.get("latestPostAt")
     lagging = [r for r in status.get("sources") or [] if r.get("status") in ATTENTION]
     if lagging:
-        # Group by candidate so one person's several accounts read as one line.
-        groups: Dict[str, List[Dict[str, Any]]] = {}
+        # A count and the reasons; the per-account list lives in the source table below.
+        people = {str(r.get("name") or r.get("candidateId") or "") for r in lagging}
+        reasons: Dict[str, int] = {}
         for r in lagging:
-            groups.setdefault(str(r.get("name") or r.get("candidateId") or "未知"), []).append(r)
-        parts = []
-        for name, rows in list(groups.items())[:4]:
-            plats: Dict[str, int] = {}
-            for r in rows:
-                lab = S.PLATFORM_LABELS.get(r.get("platform"), r.get("platform") or "其他")
-                plats[lab] = plats.get(lab, 0) + 1
-            plat_txt = "、".join(f"{k} ×{v}" if v > 1 else k for k, v in plats.items())
-            reasons = "、".join(sorted({ATTENTION[r["status"]] for r in rows}))
-            parts.append(f"{name}：{plat_txt}（{reasons}）")
-        more = f"，另 {len(groups) - 4} 位候選人" if len(groups) > 4 else ""
-        lag_html = (f'{len(lagging)} 個帳號・{len(groups)} 位候選人'
-                    f'<span class="small">{S.esc("；".join(parts) + more)}。完整清單見下方來源表。</span>')
+            reasons[ATTENTION[r["status"]]] = reasons.get(ATTENTION[r["status"]], 0) + 1
+        why = "、".join(f"{k} {v}" for k, v in reasons.items())
+        lag_html = (f'{len(lagging)} 個帳號・{len(people)} 位候選人'
+                    f'<span class="small">{S.esc(why)}・<a href="#src-table">看來源清單</a></span>')
     else:
         lag_html = '沒有<span class="small">所有可抓取的來源都在排程內，沒有失敗或逾期。</span>'
     latest_html = (f'{_time(latest)}<span class="small">{S.esc(S.fmt_time_tpe(latest, True))}（GMT+8）</span>'
@@ -232,16 +229,6 @@ def _plain_summary(status: Dict[str, Any]) -> str:
         f'<div class="card"><dt>需要留意的來源</dt><dd>{lag_html}</dd></div>'
         "</dl>"
     )
-
-
-def _empty_warning(status: Dict[str, Any]) -> str:
-    """Zero collected posts must read as such, whatever the component lights say."""
-    total = (status.get("metrics") or {}).get("totalPosts")
-    if total not in (0, "0"):
-        return ""
-    return (f'<div class="notice" data-tone="warn">{S.icon("status")}<div><p><strong>目前沒有收錄任何貼文。</strong>'
-            "下方各元件的燈號只表示該服務本身有回應，不代表已經有資料；公開頁面會是空的，"
-            "通常是資料正在重建，或排程尚未完成第一次收錄。下一次主排程（臺灣時間 00、06、12、18 時）後再回來看看。</p></div></div>")
 
 
 def _overview(status: Dict[str, Any]) -> str:
@@ -625,7 +612,8 @@ def _sources(status: Dict[str, Any], data) -> str:
     )
     note = ("「成功」時間標示來源：抓取紀錄＝抓取器寫入；歷史收錄＝舊收錄匣時間，不冒充排程執行時間。"
             "抓取狀態與最新內容時間分開判斷，久未發文不會自動停用。")
-    return _section("sources", "來源表", filters + f'<p class="status-lede small muted">{S.esc(note)}</p>' + count + table)
+    return _section("sources", "來源表", filters + count + table
+                    + f'<details class="tech-details"><summary>表格說明</summary><p class="small">{S.esc(note)}</p></details>')
 
 
 # ---------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /* `/search/` — 寬螢幕三欄：左篩選、中結果、右結果分布與建議 */
 .search-layout { display: grid; gap: var(--space-6); grid-template-columns: minmax(0, 1fr); align-items: start; }
 @media (min-width: 1080px) {
-  .search-layout { grid-template-columns: 15rem minmax(0, 44rem) minmax(16rem, 22rem); gap: var(--space-8); }
+  .search-layout { grid-template-columns: 15rem minmax(0, 52rem) minmax(16rem, 21rem); gap: var(--space-8); }
   .search-side, .search-aside { position: sticky; top: var(--space-6); }
 }
 @media (min-width: 1080px) and (max-width: 1399px) {
@@ -70,3 +70,5 @@
   .search-side[open] .side-toggle::after { content: "收合 ▴"; }
   .search-side[open] > .search-filters { padding: 0 var(--space-4) var(--space-4); }
 }
+.search-results > .empty { padding-block: var(--space-16); }
+@media (max-width: 1079px) { .search-main > .snapshot { order: 2; } }

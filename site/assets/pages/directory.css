@@ -84,7 +84,8 @@
 }
 .sub-url code { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--color-text-primary); }
 
-.sub-cities { align-items: start; }
+.sub-cities { align-items: stretch; }
+@media (min-width: 1080px) { .sub-cities { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .sub-city-title { display: flex; align-items: center; gap: 8px; font-size: 1rem; margin-bottom: var(--space-2); }
 .sub-cand-list { list-style: none; }
 .sub-cand {
