@@ -177,7 +177,7 @@
     var actions = url ? '<a class="feed-action feed-action-source" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon(platform) +
       "<span>" + esc(platLabel) + " 原文</span>" + icon("external").replace('class="icon"', 'class="icon icon-ext"') + "</a>" +
       '<button class="feed-action btn-share" type="button" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>" : "";
-    if (showJson && cid) actions += '<a class="feed-action feed-action-json" href="/api/posts/' + esc(cid) + '.json" aria-label="' + esc(name) + ' 的貼文資料（JSON）" title="' + esc(name) + ' 的貼文資料（JSON）">' + icon("json") + "</a>";
+    if (showJson && cid) actions += '<a class="feed-action feed-action-json" href="/api/posts/' + esc(cid) + '.json" title="' + esc(name) + ' 的貼文資料（JSON 格式，供研究與程式使用）">' + icon("json") + "<span>資料</span></a>";
     body += '<div class="feed-actions">' + actions + "</div>";
 
     var attrs = ' data-id="' + esc(post.id || "") + '" data-candidate="' + esc(cid) + '" data-city="' + esc(city) +

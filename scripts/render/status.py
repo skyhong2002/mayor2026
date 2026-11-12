@@ -195,6 +195,32 @@ def _headline(status: Dict[str, Any]) -> str:
     )
 
 
+ATTENTION = {"overdue": "排程逾期", "error": "抓取失敗", "blocked": "冷卻或額度限制"}
+
+
+def _plain_summary(status: Dict[str, Any]) -> str:
+    """Three plain answers for readers: how fresh, when, and which sources lag."""
+    m = status.get("metrics") or {}
+    latest = m.get("latestPostAt")
+    lagging = [r for r in status.get("sources") or [] if r.get("status") in ATTENTION]
+    if lagging:
+        names = "、".join(f'{r.get("name")}（{S.PLATFORM_LABELS.get(r.get("platform"), r.get("platform"))}，{ATTENTION[r["status"]]}）'
+                         for r in lagging[:4]) + ("等" if len(lagging) > 4 else "")
+        lag_html = f'{len(lagging)} 個來源<span class="small">{S.esc(names)}</span>'
+    else:
+        lag_html = '沒有<span class="small">所有可抓取的來源都在排程內，沒有失敗或逾期。</span>'
+    latest_html = (f'{_time(latest)}<span class="small">{S.esc(S.fmt_time_tpe(latest, True))}（GMT+8）</span>'
+                   if latest else '尚未收錄<span class="small">目前沒有任何貼文</span>')
+    return (
+        '<dl class="status-plain">'
+        f'<div class="card"><dt>最新收錄的貼文</dt><dd>{latest_html}</dd></div>'
+        f'<div class="card"><dt>這份快照產生於</dt><dd>{_time(status.get("generatedAt"))}'
+        f'<span class="small">{S.esc(S.fmt_time_tpe(status.get("generatedAt"), True) or "未記錄")}（GMT+8）・每 6 小時更新</span></dd></div>'
+        f'<div class="card"><dt>需要留意的來源</dt><dd>{lag_html}</dd></div>'
+        "</dl>"
+    )
+
+
 def _empty_warning(status: Dict[str, Any]) -> str:
     """Zero collected posts must read as such, whatever the component lights say."""
     total = (status.get("metrics") or {}).get("totalPosts")
@@ -609,6 +635,7 @@ def render(data) -> None:
         body = (
             S.page_head("資料來源狀態", S.esc(lede), actions, eyebrow="資料管線")
             + _headline(status)
+            + _plain_summary(status)
             + _overview(status)
             + _methods(status, runtime)
             + _components(status, runtime)

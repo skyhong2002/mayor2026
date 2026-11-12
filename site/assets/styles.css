@@ -555,7 +555,7 @@ a.avatar:hover { text-decoration: none; }
 .feed-action:hover { background: var(--color-surface-soft); color: var(--color-text-primary); text-decoration: none; }
 .feed-action-source { color: var(--color-text-secondary); font-weight: 600; }
 .feed-action-source .icon-ext { width: 13px; height: 13px; opacity: 0.7; }
-.feed-action-json { margin-left: auto; width: 40px; justify-content: center; padding: 0; }
+.feed-action-json { margin-left: auto; padding: 0 8px; font-size: var(--text-xs); }
 .feed-action-json .icon { width: 16px; height: 16px; opacity: 0.75; }
 .feed-more { display: flex; justify-content: center; padding: var(--space-4) 0 var(--space-6); }
 /* 續載／篩選的持續狀態列（載入中或錯誤＋重試），放在 .feed 前 */
@@ -567,7 +567,7 @@ a.avatar:hover { text-decoration: none; }
 }
 .feed-status .notice { align-items: center; justify-content: space-between; flex-wrap: wrap; }
 .feed-status .notice p { margin-top: 2px; }
-.feed[aria-busy="true"] { opacity: 0.45; transition: opacity var(--motion-normal); }
+.feed[aria-busy="true"] > .feed-post { opacity: 0.45; transition: opacity var(--motion-normal); }
 .spinner {
   width: 16px; height: 16px; flex: none; border-radius: 50%;
   border: 2px solid color-mix(in srgb, currentColor 25%, transparent); border-top-color: currentColor;
@@ -623,6 +623,8 @@ a.avatar:hover { text-decoration: none; }
   scrollbar-width: thin; scrollbar-color: var(--color-border-subtle) transparent;
 }
 .col-body > .empty { margin: var(--space-6) 0; }
+/* 河道欄較窄：圖片限高，讓文字是主角 */
+.col-body .feed-media img { max-height: 240px; }
 /* 欄位更新中：欄頭下緣的不定進度條 ＋ 骨架卡（取代把舊內容調淡） */
 .feed-col.is-busy .feed-col-head { position: relative; }
 .feed-col.is-busy .feed-col-head::after {
@@ -646,7 +648,7 @@ a.avatar:hover { text-decoration: none; }
 .skeleton-lines > span:nth-child(1) { width: 40%; }
 .skeleton-lines > span:nth-child(3) { width: 85%; }
 .skeleton-lines > span:nth-child(4) { width: 60%; }
-.skeleton-post > span:first-child, .skeleton-lines > span, .skeleton-block { background: var(--color-surface-soft); }
+.skeleton-post > span:first-child, .skeleton-lines > span, .skeleton-block { background: var(--color-border-subtle); }
 /* 「＋ 加欄」欄 */
 .feed-col-add {
   flex: 0 0 64px; width: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);

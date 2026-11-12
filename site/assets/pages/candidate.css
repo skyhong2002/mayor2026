@@ -181,7 +181,10 @@
   .cand-layout > .cand-grid { grid-column: 2; grid-row: 1; position: sticky; top: var(--space-4); }
   .cand-layout > .cand-timeline { grid-column: 1; grid-row: 1; margin-top: var(--space-6); }
   .cand-layout .cand-topics { columns: 1; }
-  .cand-layout .cand-timeline-grid { grid-template-columns: minmax(0, var(--layout-reading)) minmax(15rem, 1fr); }
+  .cand-layout .cand-timeline-grid { grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--space-6); }
+  .cand-layout { grid-template-columns: minmax(0, 1fr) 24rem; }
+  /* 右側欄只留比例條；各議題關鍵字在篩選與議題頁已可查，避免三欄重複 */
+  .cand-layout .cand-kws { display: none; }
   .cand-jump { display: none; }
 }
 @media (min-width: 1080px) {

@@ -494,7 +494,7 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
     ] if url else []
     if show_json and cid:
         actions.append(f'<a class="feed-action feed-action-json" href="/api/posts/{esc(cid)}.json" '
-                       f'aria-label="{esc(name)} 的貼文資料（JSON）" title="{esc(name)} 的貼文資料（JSON）">{icon("json")}</a>')
+                       f'title="{esc(name)} 的貼文資料（JSON 格式，供研究與程式使用）">{icon("json")}<span>資料</span></a>')
     body.append(f'<div class="feed-actions">{"".join(actions)}</div>')
 
     attrs = _attrs({

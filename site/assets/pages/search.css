@@ -53,7 +53,8 @@
 @media (max-width: 699px) {
   .search-layout { gap: var(--space-4); }
   .search-filters { gap: var(--space-3); }
-  .search-filters .filter-row { flex-wrap: nowrap; }
-  .search-filters .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 7px 0; margin: -7px 0; }
-  .search-filters .chips::-webkit-scrollbar { display: none; }
+  /* 手機：篩選 chip 換行全部露出（不靠橫向捲動藏選項） */
+  .search-filters .filter-row { flex-wrap: nowrap; align-items: flex-start; }
+  .search-filters .filter-label { flex: none; min-width: 2.5rem; }
+  .search-filters .chips { flex-wrap: wrap; row-gap: 10px; }
 }
