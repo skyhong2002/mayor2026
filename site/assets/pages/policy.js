@@ -207,7 +207,7 @@
     // Cross-posted copies (same text on Facebook and Instagram) count once.
     var seen = {};
     var items = ((evidence[cid] || {})[topic] || []).filter(function (it) {
-      var key = String(it.text || "").replace(/\s+/g, "").slice(0, 60);
+      var key = String(it.text || "").replace(/\s+/g, "");
       if (seen[key]) return false;
       seen[key] = 1;
       return true;

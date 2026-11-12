@@ -156,6 +156,8 @@
     function run(task) {
       if (busy) return Promise.resolve();
       busy = true;
+      // A failed candidates.json request must not poison every retry: ask again after a rejection.
+      byIdReady = byIdReady.catch(function () { return MO.loadCandidates(); });
       lastTask = task;
       if (more) { more.disabled = true; more.setAttribute("aria-busy", "true"); }
       var slow = setTimeout(function () { showStatus("loading"); }, 250);
