@@ -66,7 +66,7 @@
 
 /* add column */
 .deck-add { flex: 0 0 auto; display: flex; min-height: 0; }
-.deck-add .feed-col-add { flex: 0 0 64px; width: 64px; gap: var(--space-2); padding: var(--space-4) 0; cursor: pointer; font-size: var(--text-small); }
+.deck-add .feed-col-add { flex: 0 0 48px; width: 48px; gap: var(--space-2); padding: var(--space-4) 0; cursor: pointer; font-size: var(--text-small); }
 .deck-add .feed-col-add span { writing-mode: vertical-rl; letter-spacing: 0.2em; }
 /* 欄位超出視窗時，右緣淡出提示還有欄位可以橫向捲動 */
 .feed-cols.has-more-right { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); }
@@ -114,4 +114,14 @@
   .col-filters .chips::-webkit-scrollbar { display: none; }
   .col-filters .filter-row { flex-wrap: nowrap; }
   .deck-add { display: none; }
+}
+
+.snap-short { display: none; }
+@media (max-width: 699px) {
+  /* 手機：快照說明縮成一行，貼文更早出現 */
+  .snap-long { display: none; }
+  .snap-short { display: inline; }
+  .deck-meta .snapshot { font-size: var(--text-xs); }
+  .deck-meta .snapshot time { padding: 0 6px; }
+  .story-legend { display: none; }
 }

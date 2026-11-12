@@ -90,7 +90,8 @@ def story_strip(data) -> str:
         f'<a class="story-city chip-city" data-city="{city}" href="/?city={city}">{S.esc(S.city_label(city))}</a>'
         f'<div class="story-items">{"".join(items)}</div></div>'
         for city, items in items_by_city.items() if items)
-    legend = '<p class="story-legend"><span class="story-legend-badge" aria-hidden="true">N</span>近 48 小時貼文數</p>'
+    legend = ('<p class="story-legend"><span class="story-legend-badge" aria-hidden="true">3</span>'
+              '頭像右下的數字＝近 48 小時發文數</p>')
     return (f'<nav class="story-strip" aria-label="候選人（依城市分組，數字為近 48 小時貼文數）">{groups}{legend}</nav>')
 
 
@@ -170,7 +171,8 @@ def render(data) -> None:
     meta = (
         '<div class="deck-meta">'
         f'<p class="snapshot">資料快照 <time datetime="{S.esc(data.generated_at.isoformat())}">{S.esc(snap)}（GMT+8）</time>'
-        '・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。'
+        '<span class="snap-long">・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。</span>'
+        '<span class="snap-short">・非官方・AI 分類僅供參考</span>'
         '<a href="/about/">關於本站</a></p>'
         f'{city_seg()}</div>'
         '<div class="notice deck-banner" data-tone="info" hidden></div>'

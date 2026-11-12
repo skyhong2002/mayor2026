@@ -204,9 +204,22 @@ def _plain_summary(status: Dict[str, Any]) -> str:
     latest = m.get("latestPostAt")
     lagging = [r for r in status.get("sources") or [] if r.get("status") in ATTENTION]
     if lagging:
-        names = "、".join(f'{r.get("name")}（{S.PLATFORM_LABELS.get(r.get("platform"), r.get("platform"))}，{ATTENTION[r["status"]]}）'
-                         for r in lagging[:4]) + ("等" if len(lagging) > 4 else "")
-        lag_html = f'{len(lagging)} 個來源<span class="small">{S.esc(names)}</span>'
+        # Group by candidate so one person's several accounts read as one line.
+        groups: Dict[str, List[Dict[str, Any]]] = {}
+        for r in lagging:
+            groups.setdefault(str(r.get("name") or r.get("candidateId") or "未知"), []).append(r)
+        parts = []
+        for name, rows in list(groups.items())[:4]:
+            plats: Dict[str, int] = {}
+            for r in rows:
+                lab = S.PLATFORM_LABELS.get(r.get("platform"), r.get("platform") or "其他")
+                plats[lab] = plats.get(lab, 0) + 1
+            plat_txt = "、".join(f"{k} ×{v}" if v > 1 else k for k, v in plats.items())
+            reasons = "、".join(sorted({ATTENTION[r["status"]] for r in rows}))
+            parts.append(f"{name}：{plat_txt}（{reasons}）")
+        more = f"，另 {len(groups) - 4} 位候選人" if len(groups) > 4 else ""
+        lag_html = (f'{len(lagging)} 個帳號・{len(groups)} 位候選人'
+                    f'<span class="small">{S.esc("；".join(parts) + more)}。完整清單見下方來源表。</span>')
     else:
         lag_html = '沒有<span class="small">所有可抓取的來源都在排程內，沒有失敗或逾期。</span>'
     latest_html = (f'{_time(latest)}<span class="small">{S.esc(S.fmt_time_tpe(latest, True))}（GMT+8）</span>'

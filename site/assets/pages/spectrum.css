@@ -55,7 +55,7 @@
 .spectrum-identity:hover strong { color: var(--color-text-brand); }
 .spectrum-who-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
 .spectrum-who-text strong { font-size: 0.92rem; font-weight: 700; }
-.spectrum-who-meta { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.spectrum-who-meta { font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .spectrum-city-row th { padding: var(--space-3) 4px var(--space-1) !important; text-align: left; }
 .spectrum-city-label {
@@ -85,7 +85,7 @@
 /* ---------- legend / footnote ---------- */
 .spectrum-legend {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-4);
-  margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted);
+  margin-top: var(--space-4); font-size: var(--text-small); color: var(--color-text-secondary);
 }
 .spectrum-legend-title { font-weight: 600; color: var(--color-text-secondary); }
 .spectrum-legend-scale { display: inline-flex; gap: 2px; flex-wrap: wrap; }
@@ -149,9 +149,9 @@
 .topic-rank-city { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; }
 .topic-rank-row .meter-value { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.25; }
 .topic-rank-row .meter-value strong { color: var(--color-text-primary); font-size: 0.95rem; }
-.topic-rank-n { font-size: var(--text-xs); color: var(--color-text-muted); white-space: nowrap; }
+.topic-rank-n { font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap; }
 .topic-rank-kws { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 0 32px; }
-.topic-kw { height: 22px; padding: 0 8px; font-size: 0.72rem; }
+.topic-kw { height: 24px; padding: 0 8px; font-size: 0.8rem; }
 .topic-kw .chip-count { margin-left: 2px; }
 .topic-picker { margin-bottom: var(--space-4); }
 /* 寬螢幕：左比較＋關鍵字，右相關貼文河道 */

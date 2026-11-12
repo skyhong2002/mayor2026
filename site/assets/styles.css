@@ -247,7 +247,7 @@ a.card:hover { border-color: var(--color-border-strong); text-decoration: none; 
 }
 .stat-label { order: -1; font-size: var(--text-small); font-weight: 600; color: var(--color-text-muted); }
 .stat-value { font-size: 1.75rem; font-weight: 750; line-height: 1.2; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
-.stat-hint { font-size: var(--text-xs); color: var(--color-text-muted); }
+.stat-hint { font-size: 0.84rem; line-height: 1.5; color: var(--color-text-secondary); }
 
 /* ---- chip ---- */
 .chip, .chip-soft {
@@ -267,13 +267,13 @@ a.chip:hover, button.chip:hover { background: var(--color-surface-soft); color: 
 .chip[aria-pressed="true"], .chip[aria-selected="true"], .chip[aria-current="true"] {
   background: var(--color-action-primary); border-color: var(--color-action-primary); color: var(--color-action-on-primary);
 }
-.chip-soft { height: 26px; padding: 0 10px; border: 0; background: var(--color-surface-soft); font-size: 0.78rem; }
+.chip-soft { height: 26px; padding: 0 10px; border: 0; background: var(--color-surface-soft); font-size: 0.84rem; }
 a.chip-soft:hover { color: var(--color-text-primary); background: color-mix(in srgb, var(--color-text-primary) 10%, var(--color-surface-soft)); text-decoration: none; }
 .chip-count {
   display: inline-flex; align-items: center; justify-content: center;
   min-width: 20px; height: 20px; padding: 0 5px; margin-right: -4px; border-radius: var(--radius-pill);
   background: var(--color-surface-soft); color: var(--color-text-muted);
-  font-size: 0.7rem; font-weight: 600; font-variant-numeric: tabular-nums;
+  font-size: 0.78rem; font-weight: 600; font-variant-numeric: tabular-nums;
 }
 .chip[aria-pressed="true"] .chip-count { background: color-mix(in srgb, var(--color-action-on-primary) 22%, transparent); color: inherit; }
 /* 政黨 / 城市：前置 6px 圓點（政黨色只在這種小面積出現） */
@@ -445,7 +445,7 @@ a.avatar:hover { text-decoration: none; }
 }
 .meter-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; color: var(--color-text-primary); }
 .meter-value { text-align: right; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
-.legend { display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted); }
+.legend { display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--text-small); color: var(--color-text-secondary); }
 .legend-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 3px; vertical-align: -1px; }
 
 /* ---- toast ---- */
@@ -490,10 +490,10 @@ a.avatar:hover { text-decoration: none; }
   min-width: 22px; height: 22px; padding: 0 6px; border-radius: var(--radius-pill);
   display: flex; align-items: center; justify-content: center;
   background: var(--color-canvas); border: 1px solid var(--color-border-subtle);
-  color: var(--color-text-primary); font-size: 0.7rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary); font-size: 0.76rem; font-weight: 700; font-variant-numeric: tabular-nums;
 }
 .story-name {
-  display: block; margin-top: 6px; font-size: 0.74rem; line-height: 1.3; color: var(--color-text-secondary);
+  display: block; margin-top: 6px; font-size: 0.8rem; line-height: 1.3; color: var(--color-text-secondary);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .story-item[aria-pressed="true"] .story-name, .story-item[aria-current="true"] .story-name { color: var(--color-text-primary); font-weight: 700; }
@@ -554,6 +554,14 @@ a.avatar:hover { text-decoration: none; }
 .feed-action .icon { width: 18px; height: 18px; }
 .feed-action:hover { background: var(--color-surface-soft); color: var(--color-text-primary); text-decoration: none; }
 .feed-action-source { color: var(--color-text-secondary); font-weight: 600; }
+.feed-action, .feed-action span { white-space: nowrap; }
+.feed-actions { flex-wrap: nowrap; min-width: 0; }
+/* 窄欄（河道）：分享／資料只留圖示，原文只留平台圖示＋「原文」，永不逐字斷行 */
+.feed-content { container-type: inline-size; }
+@container (max-width: 330px) {
+  .feed-action.btn-share > span, .feed-action-json > span, .act-plat { display: none; }
+  .feed-action { padding: 0 8px; }
+}
 .feed-action-source .icon-ext { width: 13px; height: 13px; opacity: 0.7; }
 .feed-action-json { margin-left: auto; padding: 0 8px; font-size: var(--text-xs); }
 .feed-action-json .icon { width: 16px; height: 16px; opacity: 0.75; }
@@ -651,7 +659,7 @@ a.avatar:hover { text-decoration: none; }
 .skeleton-post > span:first-child, .skeleton-lines > span, .skeleton-block { background: var(--color-border-subtle); }
 /* 「＋ 加欄」欄 */
 .feed-col-add {
-  flex: 0 0 64px; width: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);
+  flex: 0 0 48px; width: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);
   border: 1px dashed var(--color-border-strong); border-radius: var(--radius-lg);
   background: none; color: var(--color-text-muted); font-weight: 600; scroll-snap-align: start;
 }
@@ -707,7 +715,7 @@ a.avatar:hover { text-decoration: none; }
 .xs { font-size: var(--text-xs); }
 .mono { font-family: var(--font-mono); font-size: 0.88em; }
 .ellipsis { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.snapshot { margin-top: var(--space-6); font-size: var(--text-xs); color: var(--color-text-muted); }
+.snapshot { margin-top: var(--space-6); font-size: var(--text-small); color: var(--color-text-secondary); }
 .prose { max-width: var(--layout-reading); line-height: 1.85; }
 .prose > * + * { margin-top: var(--space-4); }
 .prose h2 { margin-top: var(--space-8); font-size: 1.25rem; }
