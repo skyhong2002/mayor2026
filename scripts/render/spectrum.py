@@ -173,6 +173,20 @@ def _sorted_ids(data, city_ids: List[str], sort_id: str) -> List[str]:
     return sorted(city_ids, key=lambda i: -S.epoch(data.by_id[i].get("latestPostAt")))
 
 
+def _empty_roster(data) -> str:
+    """With no classified posts, list who will appear in the heatmap once data arrives."""
+    rows = "".join(
+        f'<tr><th scope="row"><a class="spectrum-identity" href="/{S.esc(c["city"])}/{S.esc(c["id"])}/">'
+        f'{S.render_avatar(c, "xs")}<span>{S.esc(c["name"])}</span></a></th>'
+        f'<td><span class="chip-city" data-city="{S.esc(c["city"])}">{S.esc(S.city_label(c["city"]))}</span></td>'
+        f'<td class="num">0</td></tr>'
+        for city in data.cities for c in data.candidates if c.get("city") == city["id"])
+    return ('<div class="table-wrap spectrum-roster"><table class="table spectrum-table spectrum-table-empty">'
+            '<caption>熱圖會列出的候選人（目前尚無已分類貼文）</caption>'
+            '<thead><tr><th scope="col">候選人</th><th scope="col">城市</th><th scope="col" class="num">已分類貼文</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>')
+
+
 def render_index(data) -> None:
     index = data.topic_index
     excluded = {FALLBACK_TOPIC}
@@ -234,6 +248,7 @@ def render_index(data) -> None:
                                  "不是候選人沒有談論任何議題。資料更新後，熱圖會自動出現。",
                                  '<a class="btn btn-sm" href="/status/">查看資料狀態</a>'
                                  '<a class="btn btn-sm btn-ghost" href="/source/">瀏覽候選人與帳號</a>')
+                + _empty_roster(data)
                 + "</section>")
         boot_json = ""
     else:

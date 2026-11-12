@@ -170,10 +170,13 @@ def render(data) -> None:
     snap = S.fmt_time_tpe(data.generated_at.isoformat(), True)
     meta = (
         '<div class="deck-meta">'
-        f'<p class="snapshot">資料快照 <time datetime="{S.esc(data.generated_at.isoformat())}">{S.esc(snap)}（GMT+8）</time>'
+        # Phones get one line: 快照 11/11 06:02・非官方・AI 分類 關於 (year, time zone and long text hidden).
+        f'<p class="snapshot"><span class="snap-label">資料</span>快照 <time datetime="{S.esc(data.generated_at.isoformat())}">'
+        f'<span class="snap-year">{S.esc(snap.split("/", 1)[0])}/</span>{S.esc(snap.split("/", 1)[-1])}'
+        '<span class="snap-tz">（GMT+8）</span></time>'
         '<span class="snap-long">・非官方觀測站，貼文皆連回原文；議題與動機為 AI 分類，僅供參考。</span>'
-        '<span class="snap-short">・非官方・AI 分類僅供參考</span>'
-        '<a href="/about/">關於本站</a></p>'
+        '<span class="snap-short">・非官方・AI 分類</span>'
+        '<a href="/about/"><span class="snap-label">關於</span>本站</a></p>'
         f'{city_seg()}</div>'
         '<div class="notice deck-banner" data-tone="info" hidden></div>'
     )

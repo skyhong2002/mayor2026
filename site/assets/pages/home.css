@@ -121,7 +121,8 @@
   /* 手機：快照說明縮成一行，貼文更早出現 */
   .snap-long { display: none; }
   .snap-short { display: inline; }
-  .deck-meta .snapshot { font-size: var(--text-xs); }
+  .deck-meta .snapshot { font-size: var(--text-xs); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .snap-year, .snap-tz, .snap-label { display: none; }
   .deck-meta .snapshot time { padding: 0 6px; }
   .story-legend { display: none; }
 }

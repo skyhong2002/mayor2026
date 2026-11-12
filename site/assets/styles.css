@@ -549,8 +549,9 @@ a.avatar:hover { text-decoration: none; }
 .feed-text-toggle::before { content: ""; position: absolute; inset: -8px -8px; }
 .feed-text-toggle:hover { color: var(--color-text-primary); }
 .feed-media { display: block; margin-top: 10px; }
+/* 圖片保持原比例、只限高度，不裁切（海報上的文字常是重點） */
 .feed-media img {
-  width: 100%; height: auto; max-height: 420px; object-fit: cover;
+  width: auto; max-width: 100%; height: auto; max-height: 420px; object-fit: contain;
   border: 1px solid var(--color-border-subtle); border-radius: var(--radius-md); background: var(--color-surface-soft);
 }
 .feed-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -649,7 +650,7 @@ a.avatar:hover { text-decoration: none; }
 }
 .col-body > .empty { margin: var(--space-6) 0; }
 /* 河道欄較窄：內文最多 4 行、圖片限高，讓文字是主角；欄位底色與城市色欄頭加強區隔 */
-.col-body .feed-media img { max-height: 180px; }
+.col-body .feed-media img { max-height: 200px; }
 .col-body .feed-text { -webkit-line-clamp: 4; line-clamp: 4; }
 @media (min-width: 700px) {
   .feed-col { background: var(--color-surface-raised); }
@@ -794,3 +795,24 @@ a.avatar:hover { text-decoration: none; }
 .col-body .feed-time { color: var(--color-text-secondary); }
 .col-empty-line { margin: var(--space-4) 0; padding: 10px 12px; border-radius: var(--radius-md); background: var(--color-surface-soft); font-size: var(--text-small); color: var(--color-text-secondary); }
 @media (min-width: 700px) { .feed-cols.is-cityview .feed-col { max-width: none; } }
+
+/* =========================================================================
+   13. 河道欄內的輕量錯誤列、重試提示的一致排版
+   ========================================================================= */
+.col-error {
+  display: flex; align-items: center; gap: var(--space-3); margin: var(--space-4) 0;
+  padding: 10px 12px; border: 1px solid color-mix(in srgb, var(--color-danger-text) 30%, transparent);
+  border-radius: var(--radius-md); background: var(--color-surface-raised); font-size: var(--text-small);
+}
+.col-error p { flex: 1; min-width: 0; color: var(--color-text-secondary); line-height: 1.5; }
+.col-error strong { display: block; color: var(--color-danger-text); }
+.col-error-mark {
+  flex: none; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px;
+  border-radius: 50%; background: var(--color-danger-text); color: var(--color-danger-surface); font-weight: 800; font-size: 0.8rem;
+}
+.col-error .btn { flex: none; }
+/* 標題＋說明靠左、重試固定靠右（候選人時間軸、議題選擇器證據共用） */
+.notice-retry { align-items: center; flex-wrap: wrap; }
+.notice-retry > div { flex: 1 1 18rem; min-width: 0; }
+.notice-retry > div p { margin-top: 2px; }
+.notice-retry > .btn { flex: none; margin-left: auto; color: inherit; border-color: currentColor; }

@@ -376,7 +376,7 @@
     if (window.MutationObserver) {
       var t;
       new MutationObserver(function () { clearTimeout(t); t = setTimeout(bindScrollEdges, 120); })
-        .observe(doc.body, { childList: true, subtree: true });
+        .observe(doc.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"] });
     }
     markNav();
     syncThemeSeg();

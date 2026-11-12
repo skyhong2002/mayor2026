@@ -146,7 +146,7 @@
         statusEl.innerHTML = '<span class="spinner" aria-hidden="true"></span><span>正在讀取這位候選人的全部貼文…</span>';
       } else {
         feed.removeAttribute("aria-busy");
-        statusEl.innerHTML = '<div class="notice" data-tone="danger"><div><strong>貼文資料讀取失敗</strong>' +
+        statusEl.innerHTML = '<div class="notice notice-retry" data-tone="danger"><div><strong>貼文資料讀取失敗</strong>' +
           '<p>可能是網路中斷或網站正在更新資料。下方仍是先前顯示的貼文，尚未套用目前的篩選。</p></div>' +
           '<button class="btn btn-sm" type="button" data-retry>重試</button></div>';
         statusEl.querySelector("[data-retry]").addEventListener("click", function () { if (lastTask) run(lastTask); });

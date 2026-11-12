@@ -353,7 +353,8 @@
     var body = qs(".col-body", el);
     qsa(".feed-more, .col-error, .col-loading, .skeleton-post", body).forEach(function (n) { n.remove(); });
     body.insertAdjacentHTML("beforeend",
-      '<div class="empty col-error" data-tone="error"><p class="empty-title">無法取得貼文</p><p class="empty-body">網路連線可能中斷，或資料正在更新。請稍後再試。</p>' +
+      '<div class="col-error" role="alert"><span class="col-error-mark" aria-hidden="true">!</span>' +
+      '<p><strong>無法取得貼文</strong>網路可能中斷，或資料正在更新。</p>' +
       '<button class="btn btn-sm" type="button" data-act="retry">重試</button></div>');
   }
   function updateCount(el, s) {

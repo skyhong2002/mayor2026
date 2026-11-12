@@ -175,13 +175,13 @@
 .src-method { margin-top: var(--space-4); max-width: var(--layout-reading); }
 
 /* ---- 寬螢幕：時間軸＋篩選緊接統計卡，節奏與議題比例改為右側欄 ---- */
-.cand-feed-col .feed-media img { max-height: 340px; }
+.cand-feed-col .feed-media img { max-height: 360px; }
 @media (min-width: 1400px) {
   .cand-layout { display: grid; grid-template-columns: minmax(0, 1fr) 26rem; gap: 0 var(--space-8); align-items: start; }
   .cand-layout > .cand-grid { grid-column: 2; grid-row: 1; position: sticky; top: var(--space-4); }
   .cand-layout > .cand-timeline { grid-column: 1; grid-row: 1; margin-top: var(--space-6); }
   .cand-layout .cand-topics { columns: 1; }
-  .cand-layout .cand-timeline-grid { grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--space-6); }
+  .cand-layout .cand-timeline-grid { grid-template-columns: 17rem minmax(0, 1fr); gap: var(--space-6); }
   .cand-layout { grid-template-columns: minmax(0, 1fr) 24rem; }
   /* 右側欄每個議題只留前 3 個關鍵字次數，作為比例的依據；完整清單在議題頁 */
   .cand-layout .cand-kw:nth-child(n+4) { display: none; }
@@ -216,4 +216,10 @@
   .src-table td[data-label]:empty, .src-table td.src-err-cell:not(:has(*)) { display: none; }
   .src-verif-cell, .src-reason { max-width: none; }
   .src-acct { min-width: 0; }
+}
+
+/* 篩選在貼文之前：桌面為左側 sticky 欄（閱讀順序：篩選 → 貼文 → 統計） */
+@media (min-width: 1080px) {
+  .cand-timeline-grid { grid-template-columns: 17rem minmax(0, 1fr); }
+  .cand-aside { order: -1; max-height: calc(100dvh - 2 * var(--space-4)); overflow-y: auto; }
 }

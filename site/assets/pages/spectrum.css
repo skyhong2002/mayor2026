@@ -176,3 +176,10 @@
   .topic-picker { flex-direction: column; gap: var(--space-1); }
   .topic-picker .filter-label { height: auto; }
 }
+
+/* 空資料：候選人名冊表（不是空熱圖） */
+.spectrum-roster { margin-top: var(--space-6); max-width: 40rem; }
+.spectrum-table-empty { border-spacing: 0; padding: 0; }
+.spectrum-table-empty caption { text-align: left; padding-bottom: var(--space-2); font-size: var(--text-small); font-weight: 600; color: var(--color-text-secondary); }
+.spectrum-table-empty th[scope="row"] { font-weight: 600; text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--color-border-subtle); }
+.spectrum-table-empty .spectrum-identity { gap: 8px; }

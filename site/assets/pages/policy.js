@@ -192,7 +192,7 @@
     if (evidence) { el.hidden = true; el.innerHTML = ""; return; }
     el.hidden = false;
     el.innerHTML = evidenceFailed
-      ? '<div class="notice" data-tone="danger"><div><strong>證據貼文讀取失敗</strong><p>重合度已算好，但各議題的原文摘錄沒有載入（可能是網路中斷或資料更新中）。</p></div>' +
+      ? '<div class="notice notice-retry" data-tone="danger"><div><strong>證據貼文讀取失敗</strong><p>重合度已算好，但各議題的原文摘錄沒有載入（可能是網路中斷或資料更新中）。</p></div>' +
         '<button type="button" class="btn btn-sm" data-act="ev-retry">重試</button></div>'
       : '<p class="feed-status" data-kind="loading"><span class="spinner" aria-hidden="true"></span>正在讀取各候選人的證據貼文…</p>';
   }
