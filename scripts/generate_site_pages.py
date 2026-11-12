@@ -26,7 +26,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 from render import data as data_mod  # noqa: E402
 from render import shell  # noqa: E402
 
-PAGE_MODULES = ["home", "candidate", "directory", "spectrum", "policy", "status", "search"]
+PAGE_MODULES = ["home", "candidate", "directory", "spectrum", "policy", "status", "search", "elections"]
 
 
 def asset_version() -> str:

@@ -1,0 +1,88 @@
+/* elections: /elections/ 候選人名單與號次（hub / county / category / township） */
+
+.crumbs {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2);
+  margin-bottom: var(--space-3); font-size: var(--text-small); color: var(--color-text-muted);
+}
+.crumbs a { color: var(--color-text-secondary); }
+.crumbs [aria-current] { color: var(--color-text-primary); font-weight: 600; }
+
+/* ---- search ---- */
+.el-search { position: relative; max-width: 36rem; margin-bottom: var(--space-4); }
+.el-search .input { padding-left: 42px; }
+.el-search-icon {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; color: var(--color-text-muted); pointer-events: none;
+}
+.el-results { margin: 0 0 var(--space-6); }
+.el-results-meta { margin-bottom: var(--space-2); font-size: var(--text-small); color: var(--color-text-muted); }
+.el-hit {
+  display: grid; grid-template-columns: 2.5rem minmax(0, 1fr) auto; align-items: center; gap: var(--space-3);
+  padding: 10px 0; border-bottom: 1px solid var(--color-border-subtle); color: var(--color-text-primary);
+}
+.el-hit:hover { text-decoration: none; background: var(--color-surface-soft); }
+.el-hit-name { font-weight: 700; }
+.el-hit-where { font-size: var(--text-small); color: var(--color-text-muted); }
+.el-hit-cat { font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap; }
+
+/* ---- hub / county ---- */
+.el-tiles { margin-bottom: var(--space-6); }
+.county-card.is-pending { opacity: 0.6; }
+.el-cats, .el-towns { margin-bottom: var(--space-6); }
+.el-meta { margin-top: var(--space-8); }
+.el-jump { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4); }
+
+/* ---- district blocks ---- */
+.districts { display: flex; flex-direction: column; gap: var(--space-6); margin-top: var(--space-4); }
+.districts-grid {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); align-items: start;
+}
+.district {
+  scroll-margin-top: var(--space-6);
+  background: var(--color-surface-raised); border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg); padding: var(--space-4);
+}
+.district-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); flex-wrap: wrap;
+  margin-bottom: var(--space-2);
+}
+.district-title { font-size: var(--text-heading); font-weight: 700; }
+.district-count { font-size: var(--text-small); color: var(--color-text-muted); }
+
+.ballot { list-style: none; margin: 0; padding: 0; }
+.ballot-item {
+  display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); gap: var(--space-3); align-items: start;
+  padding: 10px 0; border-top: 1px solid var(--color-border-subtle); scroll-margin-top: var(--space-6);
+}
+.ballot-item:first-child { border-top: 0; }
+.ballot-item:target { background: var(--color-surface-brand); border-radius: var(--radius-sm); }
+.ballot-no {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.5rem; height: 2.5rem; border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border-strong); color: var(--color-text-primary);
+  font-weight: 750; font-size: 1.05rem; font-variant-numeric: tabular-nums;
+}
+.ballot-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ballot-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px var(--space-2); min-width: 0; }
+.ballot-name { font-size: 1.05rem; font-weight: 700; color: var(--color-text-primary); }
+.ballot-sub { font-size: var(--text-xs); color: var(--color-text-muted); }
+.ballot-inc {
+  font-size: var(--text-xs); font-weight: 600; padding: 2px 8px; border-radius: var(--radius-pill);
+  background: var(--color-neutral-surface); color: var(--color-neutral-text);
+}
+.ballot-untracked { color: var(--color-text-muted); }
+.ballot-feed { font-weight: 600; }
+.ballot-src { color: var(--color-text-secondary); }
+.ballot-src, .ballot-feed { min-height: 24px; }
+.ballot-meta:empty { display: none; }
+
+@media (max-width: 699px) {
+  .district { padding: var(--space-3); }
+  .ballot-item { grid-template-columns: 2.5rem minmax(0, 1fr); }
+  .ballot-no { width: 2.25rem; height: 2.25rem; font-size: 1rem; }
+  .el-hit { grid-template-columns: 2.25rem minmax(0, 1fr); }
+  .el-hit-cat { grid-column: 2; }
+}
+.ballot-name { font-weight: 700; }
+.district-count a { color: var(--color-text-secondary); }
