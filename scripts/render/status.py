@@ -269,7 +269,7 @@ def _overview(status: Dict[str, Any]) -> str:
         out.append(f'<div class="stat-tile"{attr}><span class="stat-value">{_num(value)}</span>'
                    f'<span class="stat-label">{S.esc(label)}</span><span class="stat-hint">{S.esc(hint)}</span></div>')
     latest = m.get("latestPostAt")
-    lede = (f'最新收錄內容 {_time(latest)}。可抓取來源 {_num(fetchable)} 個：'
+    lede = (f'可抓取來源 {_num(fetchable)} 個：'
             f'{counts.get("due", 0)} 個待執行、{overdue} 個執行逾期、{counts.get("blocked", 0)} 個冷卻／額度限制、'
             f'{counts.get("error", 0)} 個抓取失敗。')
     return _section("overview", "系統總覽",
@@ -650,8 +650,12 @@ def render(data) -> None:
             + _headline(status)
             + _plain_summary(status)
             + _overview(status)
+            # Long engineering sections fold away; the summary cards above answer the reader's question.
+            + '<details class="status-more"><summary><span class="status-more-title">抓取方式與元件細節</span>'
+              '<span class="small">各平台的排程、預算配速、服務檢查與執行紀錄（給想深入查證的讀者）</span></summary>'
             + _methods(status, runtime)
             + _components(status, runtime)
+            + "</details>"
             + _platform_and_errors(status)
             + _sources(status, data)
             + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(status.get("generatedAt"), True))}（GMT+8）'

@@ -559,9 +559,14 @@ a.avatar:hover { text-decoration: none; }
 /* 窄欄（河道）：分享／資料只留圖示，原文只留平台圖示＋「原文」，永不逐字斷行 */
 .feed-content { container-type: inline-size; }
 @container (max-width: 330px) {
-  .feed-action.btn-share > span, .feed-action-json > span, .act-plat { display: none; }
+  .feed-action-json > span, .act-plat { display: none; }
   .feed-action { padding: 0 8px; }
 }
+@container (max-width: 230px) {
+  .feed-action.btn-share > span { display: none; }
+}
+.feed-action { min-height: 36px; }
+.feed-action-json { color: var(--color-text-secondary); }
 .feed-action-source .icon-ext { width: 13px; height: 13px; opacity: 0.7; }
 .feed-action-json { margin-left: auto; padding: 0 8px; font-size: var(--text-xs); }
 .feed-action-json .icon { width: 16px; height: 16px; opacity: 0.75; }
@@ -631,8 +636,13 @@ a.avatar:hover { text-decoration: none; }
   scrollbar-width: thin; scrollbar-color: var(--color-border-subtle) transparent;
 }
 .col-body > .empty { margin: var(--space-6) 0; }
-/* 河道欄較窄：圖片限高，讓文字是主角 */
-.col-body .feed-media img { max-height: 240px; }
+/* 河道欄較窄：內文最多 4 行、圖片限高，讓文字是主角；欄位底色與城市色欄頭加強區隔 */
+.col-body .feed-media img { max-height: 180px; }
+.col-body .feed-text { -webkit-line-clamp: 4; line-clamp: 4; }
+@media (min-width: 700px) {
+  .feed-col { background: var(--color-surface-raised); }
+  .feed-col-head { background: color-mix(in srgb, var(--city, var(--color-border-strong)) 9%, var(--color-surface-raised)); }
+}
 /* 欄位更新中：欄頭下緣的不定進度條 ＋ 骨架卡（取代把舊內容調淡） */
 .feed-col.is-busy .feed-col-head { position: relative; }
 .feed-col.is-busy .feed-col-head::after {

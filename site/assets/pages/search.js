@@ -37,7 +37,23 @@
   });
   if (moreWrap) moreWrap.querySelector("button").addEventListener("click", function () { renderMore(STEP); });
 
+  // Phones: once there is a query, fold the filters into a "篩選（已選 n）" bar so results lead.
+  var side = document.querySelector(".search-side");
+  var wideMQ = window.matchMedia ? matchMedia("(min-width: 1080px)") : { matches: true };
+  function syncDrawer() {
+    if (!side) return;
+    if (wideMQ.matches) side.open = true;
+  }
+  if (side) {
+    if (!wideMQ.matches && (state.q || state.city.length || state.platform.length || state.intent)) side.open = false;
+    side.addEventListener("toggle", syncDrawer);
+    if (wideMQ.addEventListener) wideMQ.addEventListener("change", syncDrawer);
+  }
+
   function syncChips() {
+    var n = state.city.length + state.platform.length + (state.intent ? 1 : 0);
+    var countBadge = document.querySelector("[data-filter-count]");
+    if (countBadge) { countBadge.textContent = n ? "已選 " + n : ""; countBadge.hidden = !n; }
     qsa(".search-filters [data-fk]").forEach(function (b) {
       var k = b.getAttribute("data-fk"), v = b.getAttribute("data-fv");
       var on = k === "intent" ? state.intent === v : state[k].indexOf(v) !== -1;

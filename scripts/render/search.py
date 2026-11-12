@@ -74,9 +74,10 @@ def render(data) -> None:
         S.page_head("搜尋", (f"在 {count:,} 則候選人官方公開發文中搜尋內文與候選人姓名。結果依時間由新到舊排列。" if count
                            else "搜尋候選人官方公開發文的內文與候選人姓名。目前資料庫還沒有貼文，資料重建完成後即可搜尋。"))
         + '<div class="search-layout">'
-        + '<aside class="search-side" aria-label="篩選">'
-          '<h2 class="side-title">篩選</h2>'
-          f'<div class="search-filters">{city_row}{plat_row}{intent_seg}</div></aside>'
+        + '<details class="search-side" open aria-label="篩選">'
+          '<summary class="side-title"><span>篩選</span><span class="filter-count" data-filter-count hidden></span>'
+          '<span class="side-toggle" aria-hidden="true"></span></summary>'
+          f'<div class="search-filters">{city_row}{plat_row}{intent_seg}</div></details>'
         + '<div class="search-main">'
           '<form class="search-box" role="search" action="/search/" method="get">'
           '<label class="sr-only" for="search-q">搜尋貼文</label>'

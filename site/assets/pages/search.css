@@ -38,9 +38,7 @@
 .search-dist .meter-row { grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr) 2.5rem; min-height: 30px; }
 .search-dist .meter-label { display: flex; align-items: center; gap: 8px; }
 .search-dist h3 { margin: var(--space-4) 0 var(--space-1); font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 700; }
-@media (max-width: 1079px) {
-  .search-side .side-title { display: none; }
-}
+
 @media (max-width: 1079px) {
   /* 單欄：搜尋框 → 篩選 → 結果 → 概況 */
   .search-main { display: contents; }
@@ -57,4 +55,18 @@
   .search-filters .filter-row { flex-wrap: nowrap; align-items: flex-start; }
   .search-filters .filter-label { flex: none; min-width: 2.5rem; }
   .search-filters .chips { flex-wrap: wrap; row-gap: 10px; }
+}
+
+/* 篩選抽屜：桌面恆展開（摘要只是標題），手機可收合 */
+.search-side > summary { display: flex; align-items: center; gap: var(--space-2); list-style: none; }
+.search-side > summary::-webkit-details-marker { display: none; }
+.filter-count { display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: var(--radius-pill); background: var(--color-action-primary); color: var(--color-action-on-primary); font-size: var(--text-xs); font-weight: 700; }
+@media (min-width: 1080px) { .search-side > summary { pointer-events: none; } }
+@media (max-width: 1079px) {
+  .search-side { border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: var(--color-surface-raised); }
+  .search-side > summary { display: flex !important; min-height: 48px; margin: 0; padding: 0 var(--space-4); cursor: pointer; }
+  .search-side .side-toggle { margin-left: auto; font-size: var(--text-small); font-weight: 600; color: var(--color-text-brand); }
+  .search-side .side-toggle::after { content: "展開 ▾"; }
+  .search-side[open] .side-toggle::after { content: "收合 ▴"; }
+  .search-side[open] > .search-filters { padding: 0 var(--space-4) var(--space-4); }
 }

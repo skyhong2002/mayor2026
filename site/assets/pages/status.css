@@ -166,3 +166,14 @@
 .status-plain dt { font-size: var(--text-small); font-weight: 600; color: var(--color-text-secondary); }
 .status-plain dd { margin: 4px 0 0; font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
 .status-plain dd .small { display: block; margin-top: 2px; font-weight: 500; color: var(--color-text-secondary); }
+
+.status-more { margin-top: var(--space-12); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: var(--color-surface-raised); }
+.status-more > summary {
+  display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) var(--space-5); cursor: pointer; list-style: none;
+}
+.status-more > summary::-webkit-details-marker { display: none; }
+.status-more > summary::after { content: "展開 ▾"; align-self: flex-start; margin-top: var(--space-2); font-size: var(--text-small); font-weight: 600; color: var(--color-text-brand); }
+.status-more[open] > summary::after { content: "收合 ▴"; }
+.status-more-title { font-size: var(--text-heading); font-weight: 700; }
+.status-more > summary .small { color: var(--color-text-secondary); }
+.status-more > .status-section { margin: 0; padding: 0 var(--space-5) var(--space-5); }

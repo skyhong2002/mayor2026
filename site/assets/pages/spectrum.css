@@ -68,7 +68,7 @@
   text-align: center; font-weight: 600; font-size: 0.8rem;
   background: var(--seq-0); color: var(--color-text-primary);
 }
-.spectrum-cell[data-step="0"] { color: var(--color-text-muted); font-weight: 400; }
+.spectrum-cell[data-step="0"] { color: var(--color-text-secondary); font-weight: 500; }
 .spectrum-cell[data-step="1"] { background: var(--seq-1); }
 .spectrum-cell[data-step="2"] { background: var(--seq-2); }
 .spectrum-cell[data-step="3"] { background: var(--seq-3); }
