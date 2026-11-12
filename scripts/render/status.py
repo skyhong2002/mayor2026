@@ -185,7 +185,7 @@ def _headline(status: Dict[str, Any]) -> str:
         f'{S.esc(S.fmt_time_tpe(generated, True) or "未記錄")}</time>（GMT+8）'
         f'・主排程每 {S.esc(status.get("pipelineIntervalHours") or 6)} 小時（臺灣時間 00、06、12、18 時）</p>'
         "</div>"
-        f'<div class="notice" data-tone="info">{S.icon("about")}<div><p>本頁是發布當下的快照，不是即時監控：'
+        f'<div class="notice" data-tone="info">{S.icon("about")}<div><p>本頁是發布當下的靜態快照，不是即時監控：'
         "上面的燈號只代表快照時間那一刻。如果快照時間已經超過 8 小時，代表排程可能延誤。</p>"
         '<details class="tech-details"><summary>給工程與外部監控的說明</summary>'
         "<p>請讀取 <a href=\"/api/status.json\">/api/status.json</a> 的 <code>generatedAt</code>，"

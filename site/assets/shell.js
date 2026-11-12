@@ -174,9 +174,10 @@
     // Posting-intent chips are intentionally not shown on cards (data-intent stays for filters).
     if (tags) body += '<div class="feed-tags">' + tags + "</div>";
     var shareTitle = name + "：" + String(post.text || "").trim().slice(0, 40);
-    var actions = url ? '<a class="feed-action" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon("external") + "<span>原文</span></a>" +
+    var actions = url ? '<a class="feed-action feed-action-source" href="' + esc(url) + '" target="_blank" rel="noopener">' + icon(platform) +
+      "<span>" + esc(platLabel) + " 原文</span>" + icon("external").replace('class="icon"', 'class="icon icon-ext"') + "</a>" +
       '<button class="feed-action btn-share" type="button" data-url="' + esc(url) + '" data-title="' + esc(shareTitle) + '">' + icon("share") + "<span>分享</span></button>" : "";
-    if (showJson && cid) actions += '<a class="feed-action" href="/api/posts/' + esc(cid) + '.json" title="' + esc(name) + ' 的貼文 JSON">' + icon("json") + "<span>JSON</span></a>";
+    if (showJson && cid) actions += '<a class="feed-action feed-action-json" href="/api/posts/' + esc(cid) + '.json" aria-label="' + esc(name) + ' 的貼文資料（JSON）" title="' + esc(name) + ' 的貼文資料（JSON）">' + icon("json") + "</a>";
     body += '<div class="feed-actions">' + actions + "</div>";
 
     var attrs = ' data-id="' + esc(post.id || "") + '" data-candidate="' + esc(cid) + '" data-city="' + esc(city) +

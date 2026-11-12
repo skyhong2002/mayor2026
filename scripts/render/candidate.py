@@ -362,6 +362,7 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
         f'<a class="btn btn-sm" href="/feeds/{cid}.xml">{S.icon("rss")}RSS</a>'
         f'<a class="btn btn-sm" href="/api/posts/{cid}.json">{S.icon("json")}JSON</a>'
         f'<a class="btn btn-sm btn-ghost" href="/source/{cid}/">{S.icon("status")}帳號驗證</a>'
+        f'<a class="btn btn-sm btn-ghost cand-jump" href="#cand-feed-h">{S.icon("filter")}時間軸與篩選</a>'
     )
     hero = _profile_head(c, accounts, post_counts, False, actions, f"{city_full}市長候選人")
 
@@ -390,8 +391,10 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
     body = (
         hero
         + _stat_tiles(posts, latest_iso, now)
+        # ≥1400px: timeline + filters lead under the stats, rhythm/topics form a right rail.
+        + '<div class="cand-layout">'
         + f'<div class="cand-grid">{_activity_card(posts, now)}{_topics_card(data, cid)}</div>'
-        + timeline
+        + timeline + "</div>"
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(now.isoformat(), True))}（GMT+8）・'
           '本站為非官方觀測站，所有貼文皆連回原文。</p>'
     )

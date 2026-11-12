@@ -486,13 +486,15 @@ def render_post(post: Mapping[str, Any], ctx: Any = None) -> str:
         body.append(f'<div class="feed-tags">{"".join(tags)}</div>')
     share_title = f"{name}：{(post.get('text') or '').strip()[:40]}"
     actions = [
-        f'<a class="feed-action" href="{esc(url)}" target="_blank" rel="noopener">{icon("external")}<span>原文</span></a>',
+        # The primary action names the platform ("Instagram 原文"); JSON is a quiet icon at the end.
+        f'<a class="feed-action feed-action-source" href="{esc(url)}" target="_blank" rel="noopener">'
+        f'{icon(platform)}<span>{esc(plat_label)} 原文</span>{icon("external", "icon icon-ext")}</a>',
         f'<button class="feed-action btn-share" type="button" data-url="{esc(url)}" data-title="{esc(share_title)}">'
         f'{icon("share")}<span>分享</span></button>',
     ] if url else []
     if show_json and cid:
-        actions.append(f'<a class="feed-action" href="/api/posts/{esc(cid)}.json" '
-                       f'title="{esc(name)} 的貼文 JSON">{icon("json")}<span>JSON</span></a>')
+        actions.append(f'<a class="feed-action feed-action-json" href="/api/posts/{esc(cid)}.json" '
+                       f'aria-label="{esc(name)} 的貼文資料（JSON）" title="{esc(name)} 的貼文資料（JSON）">{icon("json")}</a>')
     body.append(f'<div class="feed-actions">{"".join(actions)}</div>')
 
     attrs = _attrs({

@@ -564,6 +564,12 @@
   });
 
   if (strip) strip.addEventListener("click", function (ev) {
+    var cityLink = ev.target.closest(".story-city");
+    if (cityLink && !(ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button > 0)) {
+      ev.preventDefault();
+      go(cityLink.getAttribute("href"));
+      return;
+    }
     var a = ev.target.closest(".story-item");
     if (!a || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button > 0) return;
     ev.preventDefault();

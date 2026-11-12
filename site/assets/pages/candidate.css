@@ -173,3 +173,18 @@
 .src-table tr.is-inactive td { color: var(--color-text-muted); }
 .src-table tr.is-inactive .src-acct a, .src-table tr.is-inactive .src-plat { color: var(--color-text-muted); }
 .src-method { margin-top: var(--space-4); max-width: var(--layout-reading); }
+
+/* ---- 寬螢幕：時間軸＋篩選緊接統計卡，節奏與議題比例改為右側欄 ---- */
+.cand-feed-col .feed-media img { max-height: 340px; }
+@media (min-width: 1400px) {
+  .cand-layout { display: grid; grid-template-columns: minmax(0, 1fr) 26rem; gap: 0 var(--space-8); align-items: start; }
+  .cand-layout > .cand-grid { grid-column: 2; grid-row: 1; position: sticky; top: var(--space-4); }
+  .cand-layout > .cand-timeline { grid-column: 1; grid-row: 1; margin-top: var(--space-6); }
+  .cand-layout .cand-topics { columns: 1; }
+  .cand-layout .cand-timeline-grid { grid-template-columns: minmax(0, var(--layout-reading)) minmax(15rem, 1fr); }
+  .cand-jump { display: none; }
+}
+@media (min-width: 1080px) {
+  .cand-filters .seg { flex-wrap: wrap; overflow: visible; border-radius: var(--radius-md); }
+  .cand-filters .seg > button { flex: 1 1 auto; }
+}
