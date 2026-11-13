@@ -10,8 +10,10 @@ of the month, so the run interval adapts to actual usage — overspend early
 and the interval grows, underspend and it shrinks. Freshness floor: at most
 one run per 4h.
 
-Requires APIFY_TOKEN in the environment / .env; without it this prints a
-skip message and exits 0 (non-fatal).
+Requires APIFY_TOKEN (plus optional APIFY_TOKEN_<NAME> extra accounts) in the
+environment / .env; without any it prints a skip message and exits 0
+(non-fatal). With several accounts each run uses the one with the most live
+remaining credit and falls back to the next if Apify rejects the start.
 """
 
 from __future__ import annotations
@@ -36,15 +38,56 @@ MAX_POLL_ATTEMPTS = 24
 
 LEDGER_JSON = feed_common.PROJECT_ROOT / "state" / "apify_facebook_fetcher.json"
 COST_PER_RESULT_USD = 0.005  # facebook-posts-scraper list price: $5 / 1000 results
-DEFAULT_MONTHLY_BUDGET_USD = float(os.environ.get("MAYOR_APIFY_MONTHLY_BUDGET_USD", "5"))
+PER_ACCOUNT_MONTHLY_BUDGET_USD = 5.0  # Apify free-plan monthly credit per account
 DEFAULT_BUDGET_UTILIZATION = float(os.environ.get("MAYOR_APIFY_BUDGET_UTILIZATION", "0.95"))
 DEFAULT_POSTS_PER_PAGE = int(os.environ.get("MAYOR_APIFY_POSTS_PER_PAGE", "3"))
 MIN_RUN_INTERVAL_HOURS = 4.0  # freshness floor: never hammer more often than this
 MAX_RUN_INTERVAL_HOURS = 24.0 * 7  # staleness ceiling used only for logging
 
 
+def apify_tokens() -> list[str]:
+    """APIFY_TOKEN first, then APIFY_TOKEN_<NAME> in name order, de-duplicated."""
+    keys = ["APIFY_TOKEN"] + sorted(k for k in os.environ if k.startswith("APIFY_TOKEN_"))
+    tokens: list[str] = []
+    for key in keys:
+        value = os.environ.get(key, "").strip()
+        if value and value not in tokens:
+            tokens.append(value)
+    return tokens
+
+
 def apify_token() -> str:
-    return os.environ.get("APIFY_TOKEN", "").strip()
+    tokens = apify_tokens()
+    return tokens[0] if tokens else ""
+
+
+def monthly_budget_usd() -> float:
+    """Explicit MAYOR_APIFY_MONTHLY_BUDGET_USD, else $5 per configured account."""
+    explicit = os.environ.get("MAYOR_APIFY_MONTHLY_BUDGET_USD", "").strip()
+    return float(explicit) if explicit else PER_ACCOUNT_MONTHLY_BUDGET_USD * max(1, len(apify_tokens()))
+
+
+def live_remaining_usd(token: str) -> float | None:
+    """Live remaining credit for one account, or None if it cannot be verified."""
+    request = urllib.request.Request(f"{APIFY_BASE}/users/me/limits",
+                                     headers={"Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(request, timeout=15) as response:
+            data = json.loads(response.read())["data"]
+    except (urllib.error.URLError, ValueError, KeyError, TimeoutError):
+        return None
+    cap = min(float((data.get("limits") or {}).get("maxMonthlyUsageUsd") or 0), PER_ACCOUNT_MONTHLY_BUDGET_USD)
+    return cap - float((data.get("current") or {}).get("monthlyUsageUsd") or 0)
+
+
+def ranked_tokens(min_remaining_usd: float = 0.0) -> list[tuple[str, float]]:
+    """Accounts with verified live credit >= min_remaining_usd, most remaining first."""
+    ranked = []
+    for token in apify_tokens():
+        remaining = live_remaining_usd(token)
+        if remaining is not None and remaining >= min_remaining_usd:
+            ranked.append((token, remaining))
+    return sorted(ranked, key=lambda pair: -pair[1])
 
 
 def parse_time(value: Any) -> dt.datetime | None:
@@ -265,6 +308,7 @@ def check_status(args: argparse.Namespace) -> dict[str, Any]:
     return {
         **schedule,
         "has_token": bool(token),
+        "token_count": len(apify_tokens()),
         "facebook_sources": len(sources),
         "posts_per_page": args.posts_per_page,
         "monthly_budget_usd": args.monthly_budget_usd,
@@ -283,7 +327,7 @@ def check_status(args: argparse.Namespace) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--posts-per-page", type=int, default=DEFAULT_POSTS_PER_PAGE)
-    parser.add_argument("--monthly-budget-usd", type=float, default=DEFAULT_MONTHLY_BUDGET_USD)
+    parser.add_argument("--monthly-budget-usd", type=float, default=None)
     parser.add_argument("--budget-utilization", type=float, default=DEFAULT_BUDGET_UTILIZATION)
     parser.add_argument("--force", action="store_true", help="Ignore the dynamic budget pacing.")
     parser.add_argument("--dry-run", action="store_true")
@@ -295,6 +339,8 @@ def main() -> int:
         help="Re-ingest an existing Apify dataset instead of starting a run (no cost, ledger untouched). Repeatable.",
     )
     args = parser.parse_args()
+    if args.monthly_budget_usd is None:
+        args.monthly_budget_usd = monthly_budget_usd()
 
     if args.check:
         print(json.dumps(check_status(args), ensure_ascii=False))
@@ -329,14 +375,30 @@ def main() -> int:
     if args.dataset_id:
         rows = []
         for dataset_id in args.dataset_id:
-            items = fetch_dataset_items(token, dataset_id)
+            items = []
+            for candidate in apify_tokens():
+                try:
+                    items = fetch_dataset_items(candidate, dataset_id)
+                    break
+                except urllib.error.HTTPError:
+                    continue
             rows.extend(normalize_items(source_by_url, items))
             print(f"apify_facebook_fetcher: dataset {dataset_id} -> {len(items)} raw item(s).")
         appended = 0 if args.dry_run else feed_common.append_jsonl_dedup(feed_common.INBOX_JSONL, rows)
         print(f"apify_facebook_fetcher: re-ingested {len(rows)} item(s), appended {appended} new item(s).")
         return 0
     try:
-        run_id = start_run(token, list(source_by_url), posts_per_page=args.posts_per_page)
+        candidates = [t for t, _ in ranked_tokens(run_cost)]
+        if not candidates:
+            raise RuntimeError("no Apify account has enough verified live credit for this run")
+        for index, token in enumerate(candidates):
+            try:
+                run_id = start_run(token, list(source_by_url), posts_per_page=args.posts_per_page)
+                break
+            except urllib.error.HTTPError as exc:
+                if exc.code not in (401, 402, 403) or index == len(candidates) - 1:
+                    raise
+                print(f"apify_facebook_fetcher: account #{index + 1} rejected the run (HTTP {exc.code}); trying next account")
         run = poll_run(token, run_id)
         if run["status"] != "SUCCEEDED":
             raise RuntimeError(f"Apify run ended with status {run['status']}")

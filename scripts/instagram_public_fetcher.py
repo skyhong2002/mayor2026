@@ -184,22 +184,29 @@ def api(method, path, token, *, body=None):
 
 
 def apify_profiles(sources, *, now, dry_run=False):
-    token = facebook.apify_token()
-    if dry_run or not token:
+    if dry_run or not facebook.apify_tokens():
         raise RuntimeError("Apify skipped: dry-run or APIFY_TOKEN missing")
     ledger = feed_common.load_json(facebook.LEDGER_JSON, {})
     entry = ledger.setdefault("months", {}).setdefault(facebook.month_key(now), {})
     instagram = entry.setdefault("instagram", {"estimated_spend_usd": 0, "runs": 0})
     cost = round(len(sources) * PROFILE_COST_USD, 6)
     cap = float(os.environ.get("MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD", "0.75"))
-    target = facebook.DEFAULT_MONTHLY_BUDGET_USD * facebook.DEFAULT_BUDGET_UTILIZATION
+    target = facebook.monthly_budget_usd() * facebook.DEFAULT_BUDGET_UTILIZATION
     if instagram["estimated_spend_usd"] + cost > cap or facebook.ledger_month_spend(ledger, now) + cost > target:
         raise RuntimeError("Apify skipped: monthly budget exhausted")
-    limits = api("GET", "/users/me/limits", token)["data"]
-    remaining = min(float(limits.get("limits", {}).get("maxMonthlyUsageUsd") or 0),
-                    facebook.DEFAULT_MONTHLY_BUDGET_USD) - float(limits.get("current", {}).get("monthlyUsageUsd") or 0)
-    if remaining < cost + 0.25:
+    best = None  # (token, live remaining) of the account with the most credit
+    for candidate in facebook.apify_tokens():
+        try:
+            limits = api("GET", "/users/me/limits", candidate)["data"]
+        except RuntimeError:
+            continue
+        remaining = min(float(limits.get("limits", {}).get("maxMonthlyUsageUsd") or 0),
+                        facebook.PER_ACCOUNT_MONTHLY_BUDGET_USD) - float(limits.get("current", {}).get("monthlyUsageUsd") or 0)
+        if best is None or remaining > best[1]:
+            best = (candidate, remaining)
+    if best is None or best[1] < cost + 0.25:
         raise RuntimeError("Apify skipped: live credit reserve")
+    token = best[0]
     # Persist before the paid request; unknown outcomes keep their reservation.
     instagram["estimated_spend_usd"] = round(instagram["estimated_spend_usd"] + cost, 6)
     instagram["runs"] += 1

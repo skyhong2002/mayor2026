@@ -1,6 +1,7 @@
 import datetime as dt
 import io
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -34,6 +35,8 @@ class InstagramTests(unittest.TestCase):
             'MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD': '.75'})
         patch.start()
         self.addCleanup(patch.stop)
+        for key in [k for k in os.environ if k.startswith('APIFY_TOKEN_')]:
+            del os.environ[key]  # isolate from extra accounts in the real .env; restored by patch.stop
 
     def response(self, data):
         return io.BytesIO(json.dumps(data).encode())
@@ -150,6 +153,23 @@ class InstagramTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'monthly budget'):
                 ig.apify_profiles([SOURCE], now=NOW)
         http.assert_not_called()
+
+    def test_multiple_accounts_dedupe_and_budget(self):
+        with mock.patch.dict('os.environ', {'APIFY_TOKEN_B': 'second', 'APIFY_TOKEN_A': 'test-token'}):
+            self.assertEqual(fb.apify_tokens(), ['test-token', 'second'])
+            self.assertEqual(fb.monthly_budget_usd(), 10.0)
+            with mock.patch.dict('os.environ', {'MAYOR_APIFY_MONTHLY_BUDGET_USD': '3'}):
+                self.assertEqual(fb.monthly_budget_usd(), 3.0)
+
+    def test_instagram_uses_account_with_most_credit(self):
+        low = {'data': {'limits': {'maxMonthlyUsageUsd': 5}, 'current': {'monthlyUsageUsd': 4.9}}}
+        high = {'data': {'limits': {'maxMonthlyUsageUsd': 5}, 'current': {'monthlyUsageUsd': 1}}}
+        with mock.patch.dict('os.environ', {'APIFY_TOKEN_SECOND': 'second'}), \
+             mock.patch.object(ig.urllib.request, 'urlopen',
+                               side_effect=[self.response(low), self.response(high), TimeoutError()]) as http:
+            with self.assertRaises(TimeoutError):
+                ig.apify_profiles([SOURCE], now=NOW)
+        self.assertEqual(http.call_args_list[2].args[0].get_header('Authorization'), 'Bearer second')
 
     def test_failed_paid_request_keeps_reservation(self):
         limits = {'data': {'limits': {'maxMonthlyUsageUsd': 5}, 'current': {'monthlyUsageUsd': 1}}}
