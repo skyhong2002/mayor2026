@@ -41,6 +41,11 @@ API_ENDPOINTS = [
     ("/api/policy-match.json", "議題選擇器的題目、選項與候選人政策議程向量（附佐證貼文）。"),
     ("/api/qualitative-summary.json", "全站發文動機統計（主動發文／回應他方觀點）。"),
     ("/api/status.json", "資料管線與每個監看來源的抓取狀態。"),
+    ("/api/elections/2026/index.json", "2026 地方選舉：各類別與各縣市候選人數、官方總數與對帳摘要。"),
+    ("/api/elections/2026/<county>.json", "單一縣市全部候選人（依選舉類別、鄉鎮市區、選舉區分組）：號次、姓名、政黨、性別／出生年（官方有公告者）、2022 當選、號次來源。"),
+    ("/api/elections/2026/candidates.csv", "全國候選人名單 CSV（欄位說明見 GitHub docs/elections-2026.md）。"),
+    ("/api/elections/2026/reconciliation.json", "名單對帳報告：登記、審定、號次、應選名額與每一筆差異的官方佐證。"),
+    ("/api/elections/2026/sources.json", "使用到的官方來源 URL、抓取時間與 sha256。"),
 ]
 
 
@@ -278,6 +283,12 @@ def render_feeds(data) -> None:
         '<div class="sub-url"><code class="mono">/feeds/updates.json</code>'
         f'{_copy_btn("/feeds/updates.json", "全站 JSON ")}</div>'
         f'<a class="btn btn-sm" href="/feeds/updates.json">{S.icon("json")}開啟 JSON</a></div>'
+        '<div class="card sub-card"><div class="sub-card-head">'
+        f'<span class="sub-card-icon">{S.icon("ballot")}</span><div><p class="card-title">2026 候選人名單更新 RSS</p>'
+        '<p class="card-meta">各縣市、各類選舉的候選人名單與號次匯入或更新時發布</p></div></div>'
+        '<div class="sub-url"><code class="mono">/feeds/elections-2026.xml</code>'
+        f'{_copy_btn("/feeds/elections-2026.xml", "候選人名單 RSS ")}</div>'
+        f'<a class="btn btn-sm" href="/feeds/elections-2026.xml">{S.icon("rss")}開啟 RSS</a></div>'
         "</div>"
     )
     city_cards = []
@@ -315,11 +326,11 @@ def render_feeds(data) -> None:
         + '<thead><tr><th scope="col">端點</th><th scope="col">內容</th><th scope="col"><span class="sr-only">複製</span></th></tr></thead>'
         + f"<tbody>{api_rows}</tbody></table></div>"
         + '<div class="notice" data-tone="info">' + S.icon("about")
-        + '<p>程式碼以 MIT 授權釋出；貼文內容的著作權屬原作者，本站只做索引並連回原文。引用資料時請註明「2026 市長官方來源觀測站」並附上原文連結；'
+        + '<p>程式碼以 MIT 授權釋出；貼文內容的著作權屬原作者，本站只做索引並連回原文。引用資料時請註明「2026 地方選舉官方來源觀測站」並附上原文連結；'
         + '議題與發文動機為 AI 分類結果，可能有誤。</p></div></section>'
     )
     html = S.layout("feeds", "訂閱與資料下載",
-                    "六都市長候選人官方發文的 RSS 與 JSON 訂閱：全站更新、每位候選人各一條，並附公開 JSON API 說明。",
+                    "六都市長候選人官方發文的 RSS 與 JSON 訂閱、2026 地方選舉候選人名單更新 RSS，並附公開 JSON API 說明。",
                     "/feeds/", body, extra_css=CSS, extra_js=JS)
     S.write_page("/feeds/", html)
 
@@ -346,7 +357,10 @@ def render_about(data) -> None:
     sections = [
         ("purpose", "宗旨",
          "<p>本站把六都市長候選人在官方帳號上的公開發文集中在一起，依議題與發文動機整理，"
-         "方便用同一把尺比較候選人說了什麼。每則貼文都連回原文；本站不改寫內容，也不做民調或立場推定。</p>"),
+         "方便用同一把尺比較候選人說了什麼。每則貼文都連回原文；本站不改寫內容，也不做民調或立場推定。</p>"
+         '<p>2026 年 11 月起，本站也整理 11/28 地方選舉（九合一）的全部候選人：中選會登記名冊與各選委會公告的號次、'
+         '推薦政黨，逐筆附上官方來源，並公開與官方總數的<a href="/api/elections/2026/reconciliation.json">對帳報告</a>。'
+         '六都市長以外的候選人目前沒有追蹤社群貼文。見<a href="/elections/">候選人名單</a>。</p>'),
         ("scope", "收錄範圍",
          f"<p>目前收錄六都 {n_cand} 位候選人、{n_acct} 個公開帳號，已收錄 {n_posts:,} 則貼文。"
          "平台包括 Facebook、Instagram、Threads、YouTube、X、競選官網與 Podcast；LINE 與 TikTok 沒有可穩定讀取的公開時間軸，只列出連結。"
@@ -400,8 +414,8 @@ def render_about(data) -> None:
         "</aside>"
     )
     body = (
-        S.page_head("關於本站", "2026 市長官方來源觀測站是獨立、非官方的公開資料專案，"
-                    "整理六都市長候選人官方帳號的公開發文。")
+        S.page_head("關於本站", f"{S.SITE_NAME}是獨立、非官方的公開資料專案，"
+                    "整理 2026 地方選舉候選人名單與號次，以及六都市長候選人官方帳號的公開發文。")
         + '<div class="about-layout">'
         + f'<nav class="about-toc" aria-label="本頁目錄"><p class="about-side-title">本頁目錄</p>{toc}</nav>'
         + f'<div class="about prose">{prose}</div>'

@@ -85,6 +85,9 @@ def render(data) -> None:
           '<input class="input" id="search-q" name="q" type="search" autocomplete="off" enterkeyhint="search" '
           'placeholder="輸入關鍵字，例如：捷運、社宅、長照" autofocus>'
           "</form>"
+        + '<section class="card search-cands" id="search-cands" hidden aria-label="候選人名單結果">'
+          '<h2 class="side-title">2026 候選人名單</h2><div class="search-cands-body"></div>'
+          '<a class="link-more search-cands-more" href="/elections/">在候選人名單查看</a></section>'
         + '<p class="search-count" id="search-count" role="status" aria-live="polite"></p>'
         + '<div class="feed search-results" id="search-results">'
         + S.render_empty("輸入關鍵字開始搜尋", "可以輸入多個關鍵字（以空白分隔），也可以只用城市、平台篩選瀏覽最新貼文。")
@@ -103,6 +106,6 @@ def render(data) -> None:
           "</aside>"
         + "</div>"
     )
-    html = S.layout("search", "搜尋", "搜尋 2026 六都市長候選人在官方帳號的公開發文，依城市、平台與發文動機篩選。",
+    html = S.layout("search", "搜尋", "搜尋 2026 地方選舉候選人（姓名、選舉區、村里）與六都市長候選人在官方帳號的公開發文。",
                     "/search/", body, extra_css=["pages/search.css"], extra_js=["pages/search.js"])
     S.write_page("/search/", html)

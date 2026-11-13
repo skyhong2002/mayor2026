@@ -7,7 +7,9 @@
 
 ## 0. 產品定位（不變）
 
-獨立、以公開資料為主的六都市長候選人**官方公開發文**觀測站。非官方、不做民調、不推定立場。
+獨立、以公開資料為主的 2026 地方選舉觀測站（2026-11 起由「六都市長」擴充）：
+六都市長候選人**官方公開發文**，以及九合一全部候選人的**名單與號次**（只用選委會公告，見 `docs/elections-2026.md`）。
+非官方、不做民調、不推定立場。六都市長以外的候選人沒有貼文河道，頁面明示「尚未追蹤社群貼文」。
 候選人 13 位、六都、五個平台（facebook / instagram / threads / youtube / x）＋官網、Podcast。
 所有貼文皆連回原文；本站只索引與分類（議題、發文動機：主動發文 / 回應他方觀點）。
 
@@ -30,9 +32,9 @@
 
 ## 2. 品牌
 
-- 名稱：`2026 市長官方來源觀測站`（`<title>`、footer、meta 使用全名）。
+- 名稱：`2026 地方選舉官方來源觀測站`（`<title>`、footer、meta 使用全名；2026-11 前為「2026 市長官方來源觀測站」）。
 - 側欄字標：`<a class="brand" href="/"><span class="brand-num">2026</span><span class="brand-sub">市長觀測站</span></a>`，
-  `brand-num` 用 accent 漸層文字（模仿 chumei 的「竹梅」漸層），`brand-sub` 為 muted 中量字。
+  `brand-sub` 現為「選舉觀測站」；`brand-num` 用 accent 漸層文字（模仿 chumei 的「竹梅」漸層），`brand-sub` 為 muted 中量字。
 - Favicon / logo：沿用 `site/assets/favicon.svg`、`site/assets/logo.svg`。
 
 ## 3. URL 地圖（全部保留既有路徑；新增三個）
@@ -51,6 +53,7 @@
 | `/about/` **新** | 關於本站：方法、資料原則（刪文保存）、分類說明、免責、回報連結、GitHub | directory |
 | `/search/` **新** | 全站搜尋（純前端，讀 `data/search-index.json`） | home |
 | `/404.html` **新** | GitHub Pages 404 | directory |
+| `/elections/`、`/elections/<county>/`、`/elections/<county>/<race>/`、`/elections/<county>/<race>/t<code>/` | 2026 地方選舉候選人名單與號次（2026-11 新增；導覽「候選人名單」） | elections |
 | `/api/*`、`/feeds/*.xml|json`、`/sitemap.xml`、`/robots.txt` | 既有產出，不變 | （pipeline 既有） |
 
 所有頁內連結一律使用**根絕對路徑**（`/spectrum/`），不再用 `data-base="../"` 相對路徑。

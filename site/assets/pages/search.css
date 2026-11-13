@@ -72,3 +72,17 @@
 }
 .search-results > .empty { padding-block: var(--space-16); }
 @media (max-width: 1079px) { .search-main > .snapshot { order: 2; } }
+
+/* 2026 候選人名單結果（/elections/ 索引） */
+.search-cands { margin-bottom: var(--space-4); }
+.search-cands-body { display: flex; flex-direction: column; margin: var(--space-2) 0; }
+.search-cand {
+  display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); align-items: center; gap: var(--space-3);
+  min-height: 44px; padding: 6px 0; border-top: 1px solid var(--color-border-subtle); color: var(--color-text-primary);
+}
+.search-cand:first-child { border-top: 0; }
+.search-cand:hover { text-decoration: none; background: var(--color-surface-soft); }
+.search-cand-no {
+  display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem;
+  border-radius: var(--radius-pill); border: 1.5px solid var(--color-border-strong); font-weight: 700; font-variant-numeric: tabular-nums;
+}

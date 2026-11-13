@@ -126,3 +126,7 @@
   .deck-meta .snapshot time { padding: 0 6px; }
   .story-legend { display: none; }
 }
+
+/* 首頁 → /elections/ 入口（九合一全部候選人） */
+.deck-elections { flex: 0 0 auto; gap: 6px; font-weight: 600; white-space: nowrap; }
+.deck-elections .icon { width: 16px; height: 16px; }

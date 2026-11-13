@@ -1,0 +1,825 @@
+{
+ "generatedAt": "2026-11-12T18:50:59+00:00",
+ "sources": [
+  {
+   "url": "https://data.cec.gov.tw/選舉資料庫/votedata.zip",
+   "route": "central",
+   "kind": "2022-results (incumbency)"
+  },
+  {
+   "url": "https://web.cec.gov.tw/central/article/64709",
+   "route": "central",
+   "kind": "roster",
+   "fetchedAt": "2026-11-12T18:13:35+00:00",
+   "sha256": "5000a59419f433ef3403f64df793abf01ee27aef79db5e6b72de33b944e8b4dc"
+  },
+  {
+   "url": "https://web.cec.gov.tw/central/article/64711",
+   "route": "central",
+   "kind": "registered"
+  },
+  {
+   "url": "https://web.cec.gov.tw/central/article/65213",
+   "route": "central",
+   "kind": "qualified"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/3fa6c5bc-efb9-4f5b-aff5-a6da35f2d8f3.pdf",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:24+00:00",
+   "sha256": "0bcada705ba73d2e5a49ee0599b2c375586ee9a1b55e70702886469af6970274"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/417ed431-af02-4cd9-b027-c5ffa865c2bc.pdf",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:03+00:00",
+   "sha256": "984b6972c02be71dd20f94cc70335c9b6d911e5eefb2a3dfde1379d049ae1618"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/7b31c9df-fa79-4c51-8702-44cdccbe3b4a.pdf",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:52+00:00",
+   "sha256": "c3a783169853f4d7bd3bece525c9320bdd74f7daace5ba52287039383cc9bb84"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/fc3216f9-62be-4a43-aea3-4747ce4f6d1b.pdf",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:39+00:00",
+   "sha256": "2c4e00ce55c453fdcaa5f054968eab66b3df2b56591023a977a82983db194d62"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/fe5340f4-de1e-4281-a474-7425a3a382f9.pdf",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:03+00:00",
+   "sha256": "6e0f42657a93d8db43f4e2bb6ae2b832688dfe07f461b0493862d1329b84cbf4"
+  },
+  {
+   "url": "https://web.cec.gov.tw/chec/article/65434",
+   "route": "chec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:03+00:00",
+   "sha256": "79059e3f9eafd73033ee561820fe2d5e6072b434ef1ba04d9bed5a482920920d"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/0368dde8-3a7d-4d60-a520-bd5f6781f388.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:26:22+00:00",
+   "sha256": "7bef2de3bd459dd5f62cc60955a7e8cafec6e5650a0f6754c3b36ca3e394a4f1"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/291225b5-43cd-425f-ab90-9059d589d6eb.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:53+00:00",
+   "sha256": "6821fda235f8622771ca560227bccb97cfbf574f921843b4f481237dd43adf45"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/4eb5e000-8f29-4af9-ace0-b167a171f116.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:43+00:00",
+   "sha256": "49584ff0be4f473329e86d17190b0ddd3e16644dd5437067e097b246597ec972"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/6686af24-fdb7-4f3e-8b0b-9b955844f36b.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:26:03+00:00",
+   "sha256": "db8fb870e564483630b3b14ad6b52ea2522f781cc1ddaf48a08dbf3acb4eca4a"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/d493b809-dc63-41ca-ae93-46164cc6e5ec.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:26:13+00:00",
+   "sha256": "a94c41b4fdc72b69d3d4394107c38bb3f08865864e31e31b05868f9d5a131659"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/f93217a0-b5b5-486d-8279-3e313243e8f4.pdf",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:29+00:00",
+   "sha256": "2ebc3ed47300ca75b4d7ce7fe34409c9edc2a065a4f9c203eb132344b283ddf1"
+  },
+  {
+   "url": "https://web.cec.gov.tw/cycec/article/65399",
+   "route": "cycec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:29+00:00",
+   "sha256": "8381dcad0f98c4fd4ad1fe9a9588f05ecddd27e4cf1a19b4324419b987da7176"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/2c83bb46-bee1-4de2-a808-ea4544eca0fe.pdf",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:32+00:00",
+   "sha256": "630c1f93a73df0dfae24b9872e5548dae06e77a04b361b4fdd8e88208c4fbd81"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/3ff09b11-e53f-4cc9-9a50-feac32cf334a.pdf",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:48+00:00",
+   "sha256": "8fdcf7f86af0c6b099c8f5fd57fcd6938c5c96e3518b0b8050912141926c4703"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/61007ba9-944e-48a1-82ea-99740b289690.pdf",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:32:46+00:00",
+   "sha256": "39b3e2f738716697f083066c7fd3c204bb883c21887955607268e093f14e2218"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/7776fb6c-7d6c-49c6-9528-8b8dee9f5d2d.pdf",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:12+00:00",
+   "sha256": "c3a632373a4b077f24dbc818cc53ea6c3a448475a983f6eaf01f753e5ccad938"
+  },
+  {
+   "url": "https://web.cec.gov.tw/cyec/article/65444",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:32:46+00:00",
+   "sha256": "748f69ef39b88591bf29c95b2f7fc450cc67269e171664cad564d691a26e2df6"
+  },
+  {
+   "url": "https://web.cec.gov.tw/cyec/article/65775",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:12+00:00",
+   "sha256": "ec3fd4687506c9b6a89d322a9baa3ce7c2063dcfbed6a6bcce85e1427adb760f"
+  },
+  {
+   "url": "https://web.cec.gov.tw/cyec/article/65777",
+   "route": "cyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:32+00:00",
+   "sha256": "9f9f04c00ca8bd7e665ce6b3c6008555d61525af00326652b7f2f8f805873ed3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/76561c9b-2eaa-4cee-9b4e-de1f46510459.pdf",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:24:44+00:00",
+   "sha256": "826f63c2d259ed3e471ff84dc0877c9ab36b63d54c93277c4e0236a2e511a3b5"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/77b4cc63-fcb1-41e9-b0cd-da5493f1dd09.pdf",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:24:58+00:00",
+   "sha256": "4504fe41f8ee3274ea55df4a1f2283f44ba977ba9d77195991d87b326eb80c4c"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/896537f4-4c49-471a-a834-b8f9cec1b3bf.pdf",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:19+00:00",
+   "sha256": "78e8eebf9260ae01a169fd8aa4dc989cff95435b8a723bc4898e6a26af35fdc9"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/d2e6c0e2-4579-4034-ad98-fa2baca90066.pdf",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:24:27+00:00",
+   "sha256": "b0dbc504c9a747e260f69d83c62cba22e9e97c9d352d1cbc4475774afd916ea3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/e30ea230-638c-48b7-acaa-7f729b7f262c.pdf",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:25:08+00:00",
+   "sha256": "feb0bdce78859f5303525c47e17425e4cfaf83b6eaa704d79e119aa76aea2761"
+  },
+  {
+   "url": "https://web.cec.gov.tw/hccec/article/65398",
+   "route": "hccec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:24:27+00:00",
+   "sha256": "abefcd74eeb696b676b4cb63d5128ee24a6c79345c6fa71d9faa96c8bd9e5239"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/5520dabe-9f8c-4da9-9ebd-c26a3959f33f.xls",
+   "route": "hcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:15:17+00:00",
+   "sha256": "bfb436140dad9d792a8a8ecde46850b1b177ae9401c953437c5828ea70f85617"
+  },
+  {
+   "url": "https://web.cec.gov.tw/hcec/article/65374",
+   "route": "hcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:15:29+00:00",
+   "sha256": "4837f1721004b2fcf43b3fc1e58655004b9974b79d2988528c3f6f270375f4eb"
+  },
+  {
+   "url": "https://web.cec.gov.tw/hcec/article/65417",
+   "route": "hcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:15:17+00:00",
+   "sha256": "fd9e2d0aba3a58603c148818e4a1ddf3ead75fe29c7703248b5a2ae2ed1c7ea9"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/7fc6c79a-1de4-412e-a20e-4870cdcece96.pdf",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:25+00:00",
+   "sha256": "8af712cfcf1191b32f9b7773500da1b15b607b0530c6b8aad482daf2d64ce25f"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/806acf93-5675-4051-ab22-bf1d78ffec70.pdf",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:43+00:00",
+   "sha256": "6d1f30afefbea361b82ed323aed46587fce2022d21f96832c97b61bf782f7cd4"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/839b06dc-129a-42ac-9769-313458aa2a64.pdf",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:32+00:00",
+   "sha256": "d32a8a5551a597b959caf651190a5037ef1c4ef7462241a9d085ac370c80d2d0"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/9deaf56d-2695-4264-8771-47848c0ef269.pdf",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:51+00:00",
+   "sha256": "d0a35fd1d029b62fb73cf5d80e010a4abb76e7fdae157ce56a7dbed27776f3f6"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/bdacd842-dc57-46f4-aff3-dece0832e998.pdf",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:36:01+00:00",
+   "sha256": "2f8977c685cb431b76b0e592647f0dbca5c8dfcb0ff818ccdbc197953700ef62"
+  },
+  {
+   "url": "https://web.cec.gov.tw/hlec/article/65438",
+   "route": "hlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:25+00:00",
+   "sha256": "a3e9bdf97b2146ededcb65143fde6595db509dd6b8b04b5e0ffdf7754068b006"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/0b7dd493-dad1-4c71-9efb-e02717a8556e.pdf",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:21:48+00:00",
+   "sha256": "29ded7eddc8d37ec1b671b7a8887aec590398b75617e119e2d295c6275d50c61"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/4b4bf06a-8768-4d2c-8c9a-2875a38fc177.pdf",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:21:37+00:00",
+   "sha256": "bda016c7a9500f9d038ada232a088b82c554b63dcbb9d8ccabdbf9f3e56968b2"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/542ac4ba-68a3-413a-8fe8-8afb8a86ed65.pdf",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:21:58+00:00",
+   "sha256": "61faa50618fe9e12c6293cc7e7ce011eef7c8d7807221b6791c59dd900e488d3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/a8881295-c06b-400f-9e9b-10bd6a080842.pdf",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:21:23+00:00",
+   "sha256": "c1f877b13ff9a08aa59b0be93fcfa997b2dc3476ec82e0cc9fe66ce1cd6c78a1"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/afc9607e-6463-4f71-a63e-a8a6b5d51d1c.pdf",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:22:08+00:00",
+   "sha256": "1cbff218352dd00b3b4b038253c33f25cf41d5b2992feef53097d6b3cf94a04b"
+  },
+  {
+   "url": "https://web.cec.gov.tw/ilec/article/65391",
+   "route": "ilec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:21:23+00:00",
+   "sha256": "4af58aa4491687b8fe290246323442c2be3dfe60b41fa269644819e0e87664b1"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/9bd4f559-e527-4f55-a4ef-21653d340f79.pdf",
+   "route": "khec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:16:57+00:00",
+   "sha256": "9bcbf34a3f18c634b3b619192288a2ff4712ef080d9d05343a90d5cf4a550aa1"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/afc89758-1b67-491b-995d-6ee07b543001.pdf",
+   "route": "khec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:34+00:00",
+   "sha256": "e4d9593acce732bcecf20c087d74808d9fee596a7f32b21fbb93a619d4c86d7e"
+  },
+  {
+   "url": "https://web.cec.gov.tw/khec/article/65370",
+   "route": "khec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:16:57+00:00",
+   "sha256": "d20545410f36e4e881fbf2f201db530edb4eaa77e0402994509351baeadc3f9c"
+  },
+  {
+   "url": "https://web.cec.gov.tw/khec/article/65530",
+   "route": "khec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:34+00:00",
+   "sha256": "d32701932b3aaa440b684d4267b0e09bee53185360f09f6504cb3d65d4e80d7e"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/229be116-75e4-4a9d-9c3b-348579035886.pdf",
+   "route": "klec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:28:13+00:00",
+   "sha256": "3897069c6a5612a19c440483d79bbd66471bb7d6ac5e2b8e0006e66b727060f6"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/a88ef20e-9a87-49df-a19e-3e9730fef1e7.pdf",
+   "route": "klec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:27:52+00:00",
+   "sha256": "6d5ca76e54189d3283a4537ebf35de1232435df9c0f3580a3f6e0557613daa64"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/efe74705-3231-4466-b9fb-44b78f8d78c2.pdf",
+   "route": "klec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:28:01+00:00",
+   "sha256": "1cd3dd44aaeed02812d32902d07c66476e355ebae5adcabd3aa4ad50b3696913"
+  },
+  {
+   "url": "https://web.cec.gov.tw/klec/article/65421",
+   "route": "klec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:27:52+00:00",
+   "sha256": "99c0a0cfd11f70b24e315d88685b66756af775bdc686020992ca8a39cac2ac08"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/20e96e99-5b94-4a15-955b-a17c77dd5aa5.pdf",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:43+00:00",
+   "sha256": "6dfe7520f22f74e56aab595de5961f5df3f6cda715e21ab3972d35a517f44408"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/2745fa1b-4240-411a-9141-fc0a5f4fda53.pdf",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:09+00:00",
+   "sha256": "cac51d9da66665058c64983af6f4e019cd5e519f9ba294b667d208dab37c3e5a"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/7432a2d5-7612-403d-bdaa-e050e007c8da.pdf",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:19+00:00",
+   "sha256": "4f0235e34e0b915cb4f3b10f152a697893d53b54c271e5c828f800643587025d"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/9a122fc1-c3be-4a9a-8e8f-837bd9571551.pdf",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:30+00:00",
+   "sha256": "d778c943797028dd1a89f4e7cb6661ef7be921d233d69773176ee0331700bce9"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/b5309688-87d5-46af-9eda-2ed8fcc10144.pdf",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:18:58+00:00",
+   "sha256": "570aceb1c0bbb368bd5868b4be375cee1c558b577829e0167547c4e1f9c0cd54"
+  },
+  {
+   "url": "https://web.cec.gov.tw/kmec/article/65458",
+   "route": "kmec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:43+00:00",
+   "sha256": "c24e81283c84f3e9daa6c24a2e4e9ced175b25f4e6372301ddadbd1a82cde092"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/6ae7925e-d158-42ba-814c-34794f003ddb.pdf",
+   "route": "mect",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:04+00:00",
+   "sha256": "40289eb32c23aa96f8092bde212c435ab5cf3be1a8f5aa18539d6aaab49750e8"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/b74a02c0-b39e-4258-afd8-eb31787b0eb0.pdf",
+   "route": "mect",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:14+00:00",
+   "sha256": "0d32916ecd0371b4e1b435f1019093c7a661b21c53a31b0bc14c31f65bd41880"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/eaa5e1cf-910f-4a8b-8135-779cc86f0b8b.pdf",
+   "route": "mect",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:25+00:00",
+   "sha256": "097e5ee8950f1c5b9e3df6342c551bf720fe5b3d427a708349da6e923804a8df"
+  },
+  {
+   "url": "https://web.cec.gov.tw/mect/article/65401",
+   "route": "mect",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:14+00:00",
+   "sha256": "baf78de7c2e229c3310d899bbcd7bf9c9181a5229ec8ce59d77b3355a4bf2b1c"
+  },
+  {
+   "url": "https://web.cec.gov.tw/mlec/article/65362",
+   "route": "mlec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:24:55+00:00",
+   "sha256": "6e23e3ee2118da30bfe09a36c685c3358405a04df7dd9407a80b0a7b1aa2b3d3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/0cb545af-6e41-4afa-b244-9a050f06a907.pdf",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:38:00+00:00",
+   "sha256": "3a82b2951ff90b7bda981e3d1a3ffd7bff4c2a1454e43442f64522ed03971e5f"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/66c9c80e-534b-4a60-81ab-a2b692c2ced3.pdf",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:37:53+00:00",
+   "sha256": "7a3d7cb45819c3e129a6a0d2b462e0cd593c2a144667e4750e82974e20252121"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/c24874c0-bf5f-4fb9-b43c-8abf0dc8290a.pdf",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:37:46+00:00",
+   "sha256": "c297b542a4c7f2a927790dbcce8509eff2a33dbb67e7838cdc5cbc5494b61fd8"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/d4899f1f-5737-4442-a120-3fe11e528e86.pdf",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:38:06+00:00",
+   "sha256": "8473f32fe423de0c5ea598e9dae9e7f9762ed552f4f8d658d3592ea4413ffa3c"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/f5aa62b7-0b02-4a46-86bf-1293edfecceb.pdf",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:38:14+00:00",
+   "sha256": "2201987daea53b5498a96c435c55cd86cb38aa9c1e6df1b077cad3b817835b28"
+  },
+  {
+   "url": "https://web.cec.gov.tw/phec/article/65367",
+   "route": "phec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:37:46+00:00",
+   "sha256": "5ca83ab9c3b0b9808db6b8e84d607313884904f0596dc98ae9c42e5eb24503f4"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/3bbd01d2-4947-4144-829b-4440a4895eb9.pdf",
+   "route": "ptec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:28:45+00:00",
+   "sha256": "6b659d955c86b7e40e6c5e14fe238c82bbc350dca067a1c31bdba22cb23944a9"
+  },
+  {
+   "url": "https://web.cec.gov.tw/ptec/article/65365",
+   "route": "ptec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:28:45+00:00",
+   "sha256": "a9b9f7e3e823df62fe482eb7a2cc9087b0b633cdc4c6dbc70b7702f6a2b56ca3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/33bc788f-7c50-4b50-9dd8-86399ba6e4cd.pdf",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:17+00:00",
+   "sha256": "fb921a17114dec753bfac4828453baeeae51f03d86e8bbf30ec1e69e132fcfba"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/6d2a519a-ea6c-4c48-910c-904fbe6eb2e7.pdf",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:12+00:00",
+   "sha256": "bf6c049b78d2749214d9fea2c5d93d791784b2d09b4d4295b54dc14e424d8ce7"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/a236515a-2b4f-47c8-a8d5-579c26d03c78.pdf",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:16+00:00",
+   "sha256": "11d1ed09f3d594bc93c3bc91fd34412b7881a65835deb4e3da01fc9bceeff1cc"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/a97f0421-d1c4-4812-8e52-28ac83b83e61.pdf",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:21+00:00",
+   "sha256": "e6560573eeba47571a4697c31741e77c8277460b4ddec91cb0a3305f94b39096"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/ad0f698e-66fc-43b9-8fc4-da19e21b50aa.pdf",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:11+00:00",
+   "sha256": "c306691e1a49489054faf12391067b0acf68a99c5ff53754106b2b4ec918d652"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tcec/article/65351",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:21+00:00",
+   "sha256": "46ef7ec22e3542d7a3664560b93237f712f08c74a8cc3c92e00f013de2068298"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tcec/article/65353",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:17+00:00",
+   "sha256": "3fbc99f0d9f5a2f95050488d9e2aa959e1604d1315394d6888e57b7d85118f5d"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tcec/article/65376",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:12+00:00",
+   "sha256": "c430747838e2aeda440330a09fa6bd0a1a3fe4f4fe83ec140ef04e8d018466c3"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tcec/article/65378",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:11+00:00",
+   "sha256": "8f0cd8fe100172adfc4316397f4030eb458242d494dacb0b3ad110f6e7889e63"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tcec/article/65380",
+   "route": "tcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:16+00:00",
+   "sha256": "507e8a209569875f2ed1a44336a0d6cff6a3aa86bf6f40eb67dffd11bcc8a42a"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/43dc2d1c-71f5-4da0-b0cd-a8b2ab046e26.pdf",
+   "route": "tnec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:49+00:00",
+   "sha256": "cfb6a2014313306239a128671bc3a7f82aeecf15c933ab6da6b95e6be773c3d7"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/4e97400f-6cfe-466c-98a6-cff24c576450.pdf",
+   "route": "tnec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:59+00:00",
+   "sha256": "ba25f0a401f0042f82bcac39bda4ddc5134de1aa7047ce45b891f754968fff58"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/6d8036af-3b54-494c-b225-fc43e6b2a840.pdf",
+   "route": "tnec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:41+00:00",
+   "sha256": "3763edaa8a7102b40129f0fb64c67e3cc4c7579a51ee7f65a6138f988a1b6416"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tnec/article/65387",
+   "route": "tnec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:49+00:00",
+   "sha256": "fcf0470c7d7f7d761c83aba3aad8876bcb197dc0c8ab0a4feb3c2efcacdeb41a"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tnec/article/65390",
+   "route": "tnec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:35:41+00:00",
+   "sha256": "532bb009a587d97c481e88e2bae9f41b6cf29af06d1de80d1c3b1afce149924f"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/0009f7fc-c744-46a9-9b67-3aa463eab7c8.pdf",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:04+00:00",
+   "sha256": "07b2021b706cf6e443863078d52f90af3a65ebe421d57ae747d22dd3a6874231"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/20f4551f-3131-4c9c-9654-7636cd2add4e.pdf",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:39+00:00",
+   "sha256": "fb3a87203f51f2c50d775d2f543ad8981545ef76570ab680796a1f2ea3d0cb62"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/5decac5c-7b97-4ba6-95b7-10ae7656d4c6.pdf",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:52+00:00",
+   "sha256": "c9ebbbf4a701ab9519390e3df57534e61eb238556f0a41aea8d05d8ea94075bf"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/ba8a333a-7de9-4fd8-b453-30627ead1441.pdf",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:23+00:00",
+   "sha256": "42b42551c5b5c65f0e47e8b9e5c8254cd324fbaa39058cb2a8bacf53914b4a70"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/efe116ff-946f-4772-b3d2-f7f97a9dde25.pdf",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:16+00:00",
+   "sha256": "fb8e21f3e4e0e0e4e18443f1bafe7b3c740c2f8df18af683384937169c2ffa58"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tpcec/article/65360",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:23+00:00",
+   "sha256": "0d4cecebf4f410d8ecfd3525b67aa86afe2842949dba0c3917d3586dc3e72460"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tpcec/article/65361",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:16+00:00",
+   "sha256": "6e559833c207e536b0700b9ccb5262b67377e12d8630b0d8304e167ada269dc9"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tpcec/article/65393",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:04+00:00",
+   "sha256": "35c56a5e6aa527d1206cdf9ccd18f55c95d882589c2886c53d8b87585d98fe4f"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tpcec/article/65394",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:52+00:00",
+   "sha256": "4127670532971ddcabe0ddb37e43fdd930fdd962110c8ee6f4fa01bde1765676"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tpcec/article/65395",
+   "route": "tpcec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:39+00:00",
+   "sha256": "e6ffe53daff716c03e82824688a0764a4e6c21f635b013fb6ab76998cba96b25"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/31f0d2d1-a1f4-4934-9426-b1294a3cd444.pdf",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:44+00:00",
+   "sha256": "4fce4288c5988ea8182fb7c05c7bc35870818fd9cb8f60efecacf4d8bf00e544"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/3d985fc3-0e05-4137-83f4-087647745023.pdf",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:20+00:00",
+   "sha256": "e5806db2b07b0aaedcb667d187494d081c9e1dc867a0ba65df8e6f1056faa7e0"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/4b1d1740-4923-4d99-90f4-e959f05c92f3.pdf",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:38+00:00",
+   "sha256": "8d2f178c6f6a821868c75c904b12589c5de2a00794cf341032f5642fdf24e71b"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/a91edda3-a35d-4d62-b132-1e9b91a9a1b6.pdf",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:28+00:00",
+   "sha256": "1a93355dbc980d888249d61df859a31609e4618c8f4680cf3f5da9e16e9f20ae"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/fabcff0f-fa7f-4318-9a71-831f3204db14.pdf",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:09+00:00",
+   "sha256": "df115e7c0fc2f581442e0c56bba1841e23352174ebd73cd07c293cce2e4c1358"
+  },
+  {
+   "url": "https://web.cec.gov.tw/ttec/article/65397",
+   "route": "ttec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:09+00:00",
+   "sha256": "e9aa9484cad9446e1c1c6ce99750fac944ea02c37efa4aed6d32307461c69855"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/2dd6f61a-b236-49f1-99f7-6918abce6b7d.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:50+00:00",
+   "sha256": "9f336e89f294335a869a85129aee8efa1651760aa53897cd0a49361e3bf45578"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/8085ca4b-d6cb-43e4-94b2-ae1b32753a21.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:33:36+00:00",
+   "sha256": "d921ca00cf7bd412b2d42af51103282e0af722201ef6e80a7155686219c6c2eb"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/c48d03cc-887e-4355-abf3-0ff9a5548f65.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:33+00:00",
+   "sha256": "8c4682c5f65987fb399e4714a3a8b980d3954effc8f300d60f859b8075a13b56"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/ead5858d-0c79-4aaf-b139-a58e3bd41d81.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:01+00:00",
+   "sha256": "cdcfb1dce0a153b08bb39396678a4b94c4f8ed4bca1e671e74693475a3256aa2"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/f42980aa-67ab-4b4e-b564-b98cf80cca4e.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:12+00:00",
+   "sha256": "b368a769b1cd63ea38831ec9807fde0affce0ad37d86501fbbe6663bb3ba1e70"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/f8576769-a76c-4a1f-9acc-7cf718a542a3.pdf",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:17:21+00:00",
+   "sha256": "10acc1b371694cf59186a3f1ace2415e72dad3e50ba2178f5c816163189b26cb"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tyec/article/65400",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:33+00:00",
+   "sha256": "5fc1a36576eea7c6280da151a03599dc201f2e55ef05cb6758994b5713b77b7b"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tyec/article/65506",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:34:01+00:00",
+   "sha256": "312a4006bc341e7e88bad35554cf267330be1141e37da0e9222d495d04e17c8a"
+  },
+  {
+   "url": "https://web.cec.gov.tw/tyec/article/65650",
+   "route": "tyec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:17:21+00:00",
+   "sha256": "2d414bae0e9d393620ce515127bdfe4d624d6a28365ab828f879ff54ab1bba9d"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/5698ea88-ba67-4f97-b357-bbc0735281af.pdf",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:59+00:00",
+   "sha256": "1ce816e631293b2d618af76037574b36699c5a116ad3ab4d4196829d7ba60b7c"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/5fb0eb40-da2f-4477-8529-853cbb60e76a.pdf",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:32+00:00",
+   "sha256": "357bdb74ec8612be05ec1d8cc9f5b7ff4bcdb8c16330290881924d98984e7b17"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/aa60a301-0613-4a8e-8752-2e8b91716c37.pdf",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:37+00:00",
+   "sha256": "ebd9e35642a6f27a7cb6aa64016de63093d00115d62e7daba46b0358d600e42b"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/af4001de-cfa1-4b10-948e-4f6addd8e5fa.pdf",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:46+00:00",
+   "sha256": "3b9cd0e39bd69b5d3fda55015e1c14d6ed0a2727806eba306a6a0b2544d5d68d"
+  },
+  {
+   "url": "https://web.cec.gov.tw/api/file/d2ce7e7b-8057-4dd4-8530-7415ae62f886.pdf",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:20:17+00:00",
+   "sha256": "b14825830d9dad60163719abeaeca3028c993f39412bb6f7526485547ac66928"
+  },
+  {
+   "url": "https://web.cec.gov.tw/ylec/article/65422",
+   "route": "ylec",
+   "kind": "ballot-numbers",
+   "fetchedAt": "2026-11-12T18:19:32+00:00",
+   "sha256": "71aa0ca27f8befad32c164de5ae45b86d191783402a60818491c28bf3d3ebd75"
+  }
+ ]
+}

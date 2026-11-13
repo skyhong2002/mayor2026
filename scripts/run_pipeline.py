@@ -281,6 +281,7 @@ def main() -> int:
         run([PYTHON, "scripts/build_spectrum.py"], step="build spectrum")
         run([PYTHON, "scripts/build_qualitative.py"], step="build qualitative comparisons")
         run([PYTHON, "scripts/generate_rss_feeds.py"], step="generate rss feeds")
+        run([PYTHON, "scripts/build_election_data.py"], step="build election candidate data")
         run([PYTHON, "scripts/build_status_page.py"], step="build status page")
         run([PYTHON, "scripts/generate_site_pages.py"], step="generate site pages")
         run([PYTHON, "scripts/generate_seo_pages.py"], step="generate SEO pages")
