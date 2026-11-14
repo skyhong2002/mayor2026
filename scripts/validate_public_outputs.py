@@ -141,7 +141,10 @@ def validate_prerender(errors: list[str]) -> None:
         except json.JSONDecodeError:
             candidates = []
         pages.extend((SITE_ROOT / "source" / c["id"] / "index.html", []) for c in candidates)
-        pages.extend((SITE_ROOT / c["city"] / c["id"] / "index.html", ["feed-post"]) for c in candidates)
+        # Newly tracked candidates have no posts until their first fetch: their page must
+        # then ship the prerendered empty state instead of post cards.
+        pages.extend((SITE_ROOT / c["city"] / c["id"] / "index.html",
+                      ["feed-post"] if int(c.get("postCount") or 0) > 0 else ["empty-title"]) for c in candidates)
 
     for path, markers in pages:
         if not path.exists():
