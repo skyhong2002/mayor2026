@@ -240,7 +240,7 @@ def _overview(status: Dict[str, Any]) -> str:
     by_platform = m.get("postsByPlatform") or {}
     top = sorted(by_platform.items(), key=lambda kv: -kv[1])[:3]
     tiles = [
-        (m.get("candidates"), "監看候選人", "六都市長候選人"),
+        (m.get("candidates"), "監看候選人", "直轄市長與縣市長候選人"),
         (m.get("watchAccounts"), "監看帳號", "監看清單中啟用的公開帳號"),
         (m.get("totalPosts"), "已收錄貼文", "、".join(f"{S.PLATFORM_LABELS.get(p, p)} {n:,}" for p, n in top) or "尚無資料"),
         (fetchable, "可抓取來源", f"另 {counts.get('link_only', 0)} 個僅連結、{counts.get('disabled', 0)} 個停用"),

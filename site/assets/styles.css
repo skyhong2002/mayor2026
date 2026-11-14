@@ -298,6 +298,7 @@ a.chip-soft:hover { color: var(--color-text-primary); background: color-mix(in s
 [data-party="tpp"], [data-party="民眾黨"], [data-party="台灣民眾黨"] { --party: var(--party-tpp); }
 [data-party="jrp"], [data-party="司法改革黨"] { --party: var(--party-jrp); }
 .chip-party { --dot: var(--party); }
+[data-city] { --city: var(--color-text-muted); --city-surface: color-mix(in srgb, var(--color-text-muted) 14%, transparent); }
 [data-city="taipei"] { --city: var(--city-taipei); --city-surface: var(--city-taipei-surface); }
 [data-city="new-taipei"] { --city: var(--city-new-taipei); --city-surface: var(--city-new-taipei-surface); }
 [data-city="taoyuan"] { --city: var(--city-taoyuan); --city-surface: var(--city-taoyuan-surface); }

@@ -33,7 +33,7 @@ def _link(path: str) -> str:
 
 POST_FILTER_ROWS = [
     [_code("candidate"), "候選人 ID（逗號分隔可多選），例如 " + _code("chiang-wanan")],
-    [_code("city"), "城市：" + "、".join(_code(c) for c in S.CITY_ORDER)],
+    [_code("city"), "縣市 ID：六都為 " + "、".join(_code(c) for c in S.SIX_CITIES) + "，其他縣市與 2026 候選人名單相同（如 " + _code("yilan") + "、" + _code("hsinchu-city") + "）"],
     [_code("platform"), _code("facebook") + "、" + _code("instagram") + "、" + _code("threads") + "、"
      + _code("youtube") + "、" + _code("x") + "、" + _code("website") + "、" + _code("podcast")],
     [_code("topic"), "議題名稱（中文），例如 " + _code("交通") + "、" + _code("住宅")],
@@ -85,7 +85,7 @@ def render(data) -> None:
              [_code("next"), "下一頁的路徑（含原本參數）；沒有下一頁時為 " + _code("null")],
          ])),
         ("posts", "候選人貼文",
-         "<p>六都市長候選人官方帳號的公開貼文，皆依發文時間由新到舊。</p>"
+         "<p>直轄市長與縣市長候選人官方帳號的公開貼文，皆依發文時間由新到舊。</p>"
          + _table(["端點", "內容"], [
              [_link("/api/latest.json"), "全站最新 100 則（完整欄位）"],
              [_code("/api/posts.json"), "<strong>全部</strong>貼文（完整欄位）；只有加參數時可用，請務必帶 " + _code("limit")],

@@ -48,9 +48,10 @@
     };
   }
   function spec(k, f) { return { k: k, f: cleanF(f) }; }
-  function defaultCols() { return CITIES.map(function (c) { return spec("city:" + c); }); }
+  var DEFAULT_CITIES = (boot.defaultCities || MO.SIX_CITIES || CITIES).filter(function (c) { return CITIES.indexOf(c) !== -1; });
+  function defaultCols() { return DEFAULT_CITIES.map(function (c) { return spec("city:" + c); }); }
   function isFiltered(f) { return !!(f.c.length || f.p.length || f.t.length || f.n || f.q.trim()); }
-  function cityLabel(c, short) { var s = MO.CITY_SHORT[c] || c; return short ? s : s + "市"; }
+  function cityLabel(c, short) { return short ? (MO.CITY_SHORT[c] || c) : (MO.CITY_LABELS[c] || c); }
   function colTitle(k) {
     if (k === "all") return "全部城市";
     if (/^city:/.test(k)) return cityLabel(k.slice(5));
@@ -481,7 +482,7 @@
     if (!state.transient) { banner.hidden = true; banner.innerHTML = ""; return; }
     var s = state.cols[0];
     var what = state.cityView ? "「" + cityLabel(state.cityView) + "」" + (phoneMQ.matches ? "" : "每位候選人")
-      : state.cols.length === 1 ? "「" + colTitle(s.k) + "」" : "六都河道";
+      : state.cols.length === 1 ? "「" + colTitle(s.k) + "」" : "預設河道";
     var f = s.f, conds = [];
     if (f.q.trim()) conds.push("關鍵字「" + f.q.trim() + "」");
     if (f.p.length) conds.push("平台：" + f.p.map(function (p) { return MO.PLATFORM_LABELS[p] || p; }).join("、"));

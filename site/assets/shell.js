@@ -7,8 +7,10 @@
   var root = doc.documentElement;
   var TZ = "Asia/Taipei";
 
-  var CITY_SHORT = { taipei: "臺北", "new-taipei": "新北", taoyuan: "桃園", taichung: "臺中", tainan: "臺南", kaohsiung: "高雄" };
-  var CITY_ORDER = ["taipei", "new-taipei", "taoyuan", "taichung", "tainan", "kaohsiung"];
+  var CITY_SHORT = {"taipei": "臺北", "new-taipei": "新北", "taoyuan": "桃園", "taichung": "臺中", "tainan": "臺南", "kaohsiung": "高雄", "keelung": "基隆", "hsinchu-city": "新竹市", "hsinchu-county": "新竹縣", "miaoli": "苗栗", "changhua": "彰化", "nantou": "南投", "yunlin": "雲林", "chiayi-city": "嘉義市", "chiayi-county": "嘉義縣", "pingtung": "屏東", "yilan": "宜蘭", "hualien": "花蓮", "taitung": "臺東", "penghu": "澎湖", "kinmen": "金門", "lienchiang": "連江"};
+  var CITY_LABELS = {"taipei": "臺北市", "new-taipei": "新北市", "taoyuan": "桃園市", "taichung": "臺中市", "tainan": "臺南市", "kaohsiung": "高雄市", "keelung": "基隆市", "hsinchu-city": "新竹市", "hsinchu-county": "新竹縣", "miaoli": "苗栗縣", "changhua": "彰化縣", "nantou": "南投縣", "yunlin": "雲林縣", "chiayi-city": "嘉義市", "chiayi-county": "嘉義縣", "pingtung": "屏東縣", "yilan": "宜蘭縣", "hualien": "花蓮縣", "taitung": "臺東縣", "penghu": "澎湖縣", "kinmen": "金門縣", "lienchiang": "連江縣"};
+  var CITY_ORDER = ["taipei", "new-taipei", "taoyuan", "taichung", "tainan", "kaohsiung", "keelung", "hsinchu-city", "hsinchu-county", "miaoli", "changhua", "nantou", "yunlin", "chiayi-city", "chiayi-county", "pingtung", "yilan", "hualien", "taitung", "penghu", "kinmen", "lienchiang"];
+  var SIX_CITIES = CITY_ORDER.slice(0, 6);
   var PARTY_SLUGS = { "民主進步黨": "dpp", "民進黨": "dpp", "中國國民黨": "kmt", "國民黨": "kmt", "台灣民眾黨": "tpp", "臺灣民眾黨": "tpp", "民眾黨": "tpp", "司法改革黨": "jrp" };
   var TOPIC_SLUGS = {
     "交通": "transport", "住宅": "housing", "社福": "welfare", "環境": "environment", "教育": "education",
@@ -347,6 +349,8 @@
     qsa: qsa,
     CITY_ORDER: CITY_ORDER,
     CITY_SHORT: CITY_SHORT,
+    CITY_LABELS: CITY_LABELS,
+    SIX_CITIES: SIX_CITIES,
     TOPIC_SLUGS: TOPIC_SLUGS,
     PLATFORM_LABELS: PLATFORM_LABELS,
     INTENT_LABELS: INTENT_LABELS

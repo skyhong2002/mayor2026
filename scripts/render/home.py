@@ -46,7 +46,7 @@ def _write_bundle(path, posts: List[Dict[str, Any]], generated: str, **meta: Any
 def write_bundles(data, by_city: Dict[str, List[Dict[str, Any]]]) -> None:
     shutil.rmtree(FEED_DIR, ignore_errors=True)
     generated = data.generated_at.isoformat()
-    for city in S.CITY_ORDER:
+    for city in by_city:
         _write_bundle(FEED_DIR / f"{city}.json", by_city[city][:BUNDLE_SIZE], generated, city=city,
                       total=len(by_city[city]))
     _write_bundle(FEED_DIR / "all.json", data.all_posts()[:BUNDLE_SIZE], generated, city="all",
@@ -64,7 +64,7 @@ def write_bundles(data, by_city: Dict[str, List[Dict[str, Any]]]) -> None:
 def story_strip(data) -> str:
     ref = data.generated_at
     ordered = sorted(data.candidates, key=lambda c: S.epoch(c.get("latestPostAt")), reverse=True)
-    items_by_city: Dict[str, List[str]] = {city: [] for city in S.CITY_ORDER}
+    items_by_city: Dict[str, List[str]] = {city: [] for city in active_cities(data)}
     for c in ordered:
         recent = 0
         for p in data.posts_for(c["id"]):  # newest first
@@ -124,8 +124,8 @@ def column(key: str, title: str, posts_html: str, city: str = "", extra_cls: str
 def deck(data, by_city: Dict[str, List[Dict[str, Any]]]) -> str:
     ctx = data.post_ctx(show_city=False)
     cols = []
-    for city in S.CITY_ORDER:
-        posts = by_city[city]
+    for city in S.SIX_CITIES:  # default deck; other counties are added with 加欄
+        posts = by_city.get(city, [])
         body = "".join(S.render_post(p, ctx) for p in posts[:SSR_PER_COL]) or S.render_empty(
             "這個城市尚無貼文", "候選人發文後會出現在這裡。")
         cols.append(column(f"city:{city}", S.city_label(city, False), body, city, total=len(posts)))
@@ -142,16 +142,22 @@ def deck(data, by_city: Dict[str, List[Dict[str, Any]]]) -> str:
     return f'<div class="feed-cols" id="deck" aria-label="貼文河道">{"".join(cols)}{add}</div>'
 
 
-def city_seg() -> str:
+def active_cities(data) -> List[str]:
+    """Six municipalities always, then every other county that has a tracked candidate."""
+    have = {c.get("city") for c in data.candidates}
+    return [c for c in S.CITY_ORDER if c in S.SIX_CITIES or c in have]
+
+
+def city_seg(data) -> str:
     btns = ['<button type="button" data-mcol="all" aria-pressed="true">全部</button>']
     btns += [f'<button type="button" data-mcol="city:{c}" aria-pressed="false">{S.city_label(c)}</button>'
-             for c in S.CITY_ORDER]
+             for c in active_cities(data)]
     return f'<div class="seg deck-seg" role="group" aria-label="切換城市" hidden>{"".join(btns)}</div>'
 
 
 def boot_json(data) -> str:
     cands = [{k: c.get(k) for k in ("id", "name", "city", "party", "avatarUrl")} for c in data.candidates]
-    payload = {"candidates": cands, "topics": list(S.TOPIC_SLUGS), "cities": S.CITY_ORDER,
+    payload = {"candidates": cands, "topics": list(S.TOPIC_SLUGS), "cities": active_cities(data), "defaultCities": S.SIX_CITIES,
                "perCol": SSR_PER_COL, "bundle": BUNDLE_SIZE, "v": S.epoch(data.generated_at.isoformat())}
     raw = (json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
            .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
@@ -160,7 +166,7 @@ def boot_json(data) -> str:
 
 
 def render(data) -> None:
-    by_city: Dict[str, List[Dict[str, Any]]] = {c: [] for c in S.CITY_ORDER}
+    by_city: Dict[str, List[Dict[str, Any]]] = {c: [] for c in active_cities(data)}
     for p in data.all_posts():
         city = (data.by_id.get(p.get("candidateId")) or {}).get("city")
         if city in by_city:
@@ -178,11 +184,11 @@ def render(data) -> None:
         '<span class="snap-short">・非官方・AI 分類</span>'
         '<a href="/about/"><span class="snap-label">關於</span>本站</a></p>'
         f'<a class="chip chip-soft deck-elections" href="/elections/">{S.icon("ballot")}<span>2026 全部候選人與號次</span></a>'
-        f'{city_seg()}</div>'
+        f'{city_seg(data)}</div>'
         '<div class="notice deck-banner" data-tone="info" hidden></div>'
     )
     body = (
-        '<h1 class="sr-only">2026 地方選舉官方來源觀測站：六都市長候選人官方帳號最新貼文</h1>'
+        '<h1 class="sr-only">2026 地方選舉官方來源觀測站：直轄市長與縣市長候選人官方帳號最新貼文</h1>'
         + story_strip(data) + meta + deck(data, by_city) + boot_json(data)
         + '<noscript><p class="snapshot">啟用 JavaScript 後可篩選、增減欄位與載入更多貼文；'
           '也可以到<a href="/source/">候選人目錄</a>瀏覽每位候選人的完整貼文。</p></noscript>'
@@ -201,7 +207,7 @@ def render(data) -> None:
             "query-input": "required name=search_term_string",
         },
     }
-    html = S.layout("home", f"{S.SITE_NAME}｜六都市長候選人最新發文", S.DEFAULT_DESCRIPTION, "/", body,
+    html = S.layout("home", f"{S.SITE_NAME}｜縣市長候選人最新發文", S.DEFAULT_DESCRIPTION, "/", body,
                     extra_css=["pages/home.css"], extra_js=["pages/home.js"], jsonld=jsonld,
                     body_class="layout-deck")
     S.write_page("/", html)

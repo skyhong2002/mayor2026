@@ -27,7 +27,7 @@ GITHUB_URL = "https://github.com/skyhong2002/mayor2026"
 REPORT_URL = "https://github.com/skyhong2002/mayor2026/issues/new/choose"
 DEFAULT_DESCRIPTION = (
     "獨立、非官方的公開資料觀測站：2026 地方選舉全部候選人的號次與選委會公告來源，"
-    "以及六都市長候選人官方帳號的公開發文（依議題與發文動機分類，皆連回原文）。"
+    "以及直轄市長與縣市長候選人官方帳號的公開發文（依議題與發文動機分類，皆連回原文）。"
 )
 TPE = dt.timezone(dt.timedelta(hours=8), "Asia/Taipei")
 
@@ -35,14 +35,57 @@ TPE = dt.timezone(dt.timedelta(hours=8), "Asia/Taipei")
 # Vocabulary
 # ---------------------------------------------------------------------------
 
-CITY_ORDER = ["taipei", "new-taipei", "taoyuan", "taichung", "tainan", "kaohsiung"]
+# Six special municipalities first (the default home deck), then the other 16 counties/cities
+# north→south→east→islands. Candidates exist for 直轄市長 and 縣（市）長.
+SIX_CITIES = ["taipei", "new-taipei", "taoyuan", "taichung", "tainan", "kaohsiung"]
+CITY_ORDER = ["taipei", "new-taipei", "taoyuan", "taichung", "tainan", "kaohsiung", "keelung", "hsinchu-city", "hsinchu-county", "miaoli", "changhua", "nantou", "yunlin", "chiayi-city", "chiayi-county", "pingtung", "yilan", "hualien", "taitung", "penghu", "kinmen", "lienchiang"]
 CITY_LABELS = {
-    "taipei": "臺北市", "new-taipei": "新北市", "taoyuan": "桃園市",
-    "taichung": "臺中市", "tainan": "臺南市", "kaohsiung": "高雄市",
+    "taipei": "臺北市",
+    "new-taipei": "新北市",
+    "taoyuan": "桃園市",
+    "taichung": "臺中市",
+    "tainan": "臺南市",
+    "kaohsiung": "高雄市",
+    "keelung": "基隆市",
+    "hsinchu-city": "新竹市",
+    "hsinchu-county": "新竹縣",
+    "miaoli": "苗栗縣",
+    "changhua": "彰化縣",
+    "nantou": "南投縣",
+    "yunlin": "雲林縣",
+    "chiayi-city": "嘉義市",
+    "chiayi-county": "嘉義縣",
+    "pingtung": "屏東縣",
+    "yilan": "宜蘭縣",
+    "hualien": "花蓮縣",
+    "taitung": "臺東縣",
+    "penghu": "澎湖縣",
+    "kinmen": "金門縣",
+    "lienchiang": "連江縣",
 }
 CITY_SHORT = {
-    "taipei": "臺北", "new-taipei": "新北", "taoyuan": "桃園",
-    "taichung": "臺中", "tainan": "臺南", "kaohsiung": "高雄",
+    "taipei": "臺北",
+    "new-taipei": "新北",
+    "taoyuan": "桃園",
+    "taichung": "臺中",
+    "tainan": "臺南",
+    "kaohsiung": "高雄",
+    "keelung": "基隆",
+    "hsinchu-city": "新竹市",
+    "hsinchu-county": "新竹縣",
+    "miaoli": "苗栗",
+    "changhua": "彰化",
+    "nantou": "南投",
+    "yunlin": "雲林",
+    "chiayi-city": "嘉義市",
+    "chiayi-county": "嘉義縣",
+    "pingtung": "屏東",
+    "yilan": "宜蘭",
+    "hualien": "花蓮",
+    "taitung": "臺東",
+    "penghu": "澎湖",
+    "kinmen": "金門",
+    "lienchiang": "連江",
 }
 PARTY_SLUGS = {
     "民主進步黨": "dpp", "民進黨": "dpp",
@@ -71,7 +114,7 @@ nav_items: list[dict[str, Any]] = [
     {"id": "home", "label": "最新", "short": "最新", "href": "/", "icon": "home", "tab": True, "match": ["home"]},
     {"id": "elections", "label": "候選人名單", "short": "名單", "href": "/elections/", "icon": "ballot", "tab": True, "match": ["elections"]},
     {"id": "spectrum", "label": "議題光譜", "short": "光譜", "href": "/spectrum/", "icon": "spectrum", "tab": True, "match": ["spectrum", "topic"]},
-    {"id": "source", "label": "市長帳號", "short": "市長", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
+    {"id": "source", "label": "候選人帳號", "short": "帳號", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
     {"id": "policy", "label": "議題選擇器", "short": "選擇器", "href": "/policy-match/", "icon": "match", "tab": False, "match": ["policy"]},
     {"id": "search", "label": "搜尋", "short": "搜尋", "href": "/search/", "icon": "search", "tab": False, "match": ["search"]},
     {"id": "feeds", "label": "訂閱", "short": "訂閱", "href": "/feeds/", "icon": "rss", "tab": False, "match": ["feeds"]},
@@ -619,7 +662,7 @@ def render_footer() -> str:
         '<footer class="site-footer">'
         '<div class="footer-about">'
         f'<a class="footer-brand" href="/"><span class="brand-num">2026</span><span>地方選舉官方來源觀測站</span></a>'
-        "<p>獨立、非官方的公開資料觀測站。本站整理選委會公告的候選人名單與號次，並彙整六都市長候選人官方帳號的公開發文、連回原文，"
+        "<p>獨立、非官方的公開資料觀測站。本站整理選委會公告的候選人名單與號次，並彙整直轄市長與縣市長候選人官方帳號的公開發文、連回原文，"
         "與任何候選人、政黨或競選團隊無關；議題與發文動機由 AI 分類，僅供參考。</p>"
         "</div>"
         '<nav class="footer-nav" aria-label="頁尾導覽">'

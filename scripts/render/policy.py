@@ -18,7 +18,7 @@ ROUTE = "/policy-match/"
 OUT_DIR = S.SITE_ROOT / "policy-match"
 
 LEDE = "依序回答四題，選出你在意的市政方向，再看各城市候選人的主動政策發文和這些方向有多少重合。"
-DESCRIPTION = ("先選市政優先方向，再看六都市長候選人主動發起的政策倡議貼文與你的選擇有多少議題重合；"
+DESCRIPTION = ("先選市政優先方向，再看直轄市長與縣市長候選人主動發起的政策倡議貼文與你的選擇有多少議題重合；"
                "每項結果都附原文證據，資料不足者不推定立場。")
 
 # Shown before JS runs: marks the document as enhanced (hides later steps via

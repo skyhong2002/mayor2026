@@ -50,10 +50,24 @@ class HomepageTests(unittest.TestCase):
     def render(self):
         return build_fixture(self.root, self.data).read_text()
 
+    def test_county_mayor_candidates_are_addable_but_not_default_columns(self):
+        county = {"id": "yilan-fixture", "city": "yilan", "name": "宜蘭測試候選人", "party": "", "avatarUrl": "/assets/logo.svg"}
+        self.data.candidates.append(county)
+        self.data.by_id[county["id"]] = county
+        self.data.posts[county["id"]] = [dict(self.data.posts["taipei-fixture"][0], id="yilan-post", candidateId="yilan-fixture")]
+        parsed = HomeParser(self.render())
+        self.assertNotIn("city:yilan", parsed.columns)
+        boot = json.loads(parsed.boot)
+        self.assertEqual(boot["defaultCities"], home.S.SIX_CITIES)
+        self.assertEqual(boot["cities"], home.S.SIX_CITIES + ["yilan"])
+        bundle = json.loads((self.root / "data/feed/yilan.json").read_text())
+        self.assertEqual([p["id"] for p in bundle["posts"]], ["yilan-post"])
+        self.assertFalse((self.root / "data/feed/keelung.json").exists())
+
     def test_initial_cards_are_bounded_and_more_data_is_preserved(self):
         html = self.render()
         parsed = HomeParser(html)
-        self.assertEqual(set(parsed.columns), {"all", *["city:" + city for city in home.S.CITY_ORDER]})
+        self.assertEqual(set(parsed.columns), {"all", *["city:" + city for city in home.S.SIX_CITIES]})
         self.assertEqual([len(ids) for ids in parsed.columns.values()], [10] * 7)
         self.assertEqual(json.loads(parsed.boot)["perCol"], 10)
         self.assertEqual(html.count('data-act="more"'), 7)
@@ -64,7 +78,7 @@ class HomepageTests(unittest.TestCase):
         self.assertEqual(bundle["total"], 450)
         self.assertEqual(bundle["count"], 400)
         self.assertEqual(bundle["posts"][:10], [home._slim(post) for post in self.data.all_posts()[:10]])
-        for city in home.S.CITY_ORDER:
+        for city in home.S.SIX_CITIES:
             bundle = json.loads((self.root / f"data/feed/{city}.json").read_text())
             self.assertEqual(bundle["count"], 75)
             self.assertEqual(parsed.columns["city:" + city], [post["id"] for post in bundle["posts"][:10]])

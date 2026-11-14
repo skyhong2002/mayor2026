@@ -235,12 +235,12 @@ def render_index(data) -> None:
         "intentCounts": intent_counts,
     }
     boot_json = S.json_for_script(boot, separators=(",", ":"))
-    lede = ("比較六都候選人把公開發文的聲量放在哪些議題上。每一列是一位候選人：格子裡的百分比是該議題佔他／她議題發文的比例"
+    lede = ("比較各縣市候選人把公開發文的聲量放在哪些議題上。每一列是一位候選人：格子裡的百分比是該議題佔他／她議題發文的比例"
             "（同一篇貼文可同時屬於數個議題，依 AI 分類分數加權），顏色越深比例越高。"
             "日常生活類貼文（「生活」）預設不列入計算，可在下方議題篩選中加回。")
     if not index:
         # No classified posts: one explanation instead of controls over an empty grid.
-        lede = "比較六都候選人把公開發文的聲量放在哪些議題上。"
+        lede = "比較各縣市候選人把公開發文的聲量放在哪些議題上。"
         controls = ""
         view = ('<section class="spectrum-result" aria-label="議題光譜">'
                 + S.render_empty("目前沒有可以比較的議題資料",
@@ -258,7 +258,7 @@ def render_index(data) -> None:
                 + f'<p class="spectrum-footnote">{S.esc(FOOTNOTE)}</p>'
                 + "</section>")
     body = (
-        S.page_head("議題光譜", S.esc(lede), eyebrow="六都候選人議題比較")
+        S.page_head("議題光譜", S.esc(lede), eyebrow="縣市長候選人議題比較")
         + controls
         + view
         + f'<p class="snapshot">資料快照：{S.esc(S.fmt_time_tpe(data.generated_at.isoformat(), True))}（GMT+8）・'
@@ -266,7 +266,7 @@ def render_index(data) -> None:
         + (f'<script type="application/json" id="spectrum-boot">{boot_json}</script>' if boot_json else "")
     )
     html = S.layout("spectrum", "議題光譜",
-                    "六都市長候選人公開發文的議題比例光譜：同城市候選人並排比較，看每個人把聲量放在哪些議題上。",
+                    "直轄市長與縣市長候選人公開發文的議題比例光譜：同城市候選人並排比較，看每個人把聲量放在哪些議題上。",
                     "/spectrum/", body, extra_css=["pages/spectrum.css"], extra_js=["pages/spectrum.js"],
                     body_class="page-spectrum-index")
     S.write_page("/spectrum/", html)
@@ -427,7 +427,7 @@ def render_topic(data, topic: str, stats: Dict[str, Dict[str, Any]], posts_all: 
           '議題與發文動機由 AI 分類，僅供參考；所有貼文皆連回原文。</p>'
     )
     html = S.layout("topic", f"{topic}議題比較",
-                    f"六都市長候選人在「{topic}」議題的公開發文比較：各候選人投入比例、關鍵字與所有相關貼文。",
+                    f"直轄市長與縣市長候選人在「{topic}」議題的公開發文比較：各候選人投入比例、關鍵字與所有相關貼文。",
                     f"/spectrum/{slug}/", body, extra_css=["pages/spectrum.css"], extra_js=["pages/spectrum.js"],
                     body_class="page-spectrum-topic")
     S.write_page(f"/spectrum/{slug}/", html)

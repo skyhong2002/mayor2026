@@ -59,7 +59,7 @@ def _components(data) -> str:
     tiles = "".join(
         f'<div class="stat-tile"><span class="stat-value">{v}</span><span class="stat-label">{l}</span><span class="stat-hint">{h}</span></div>'
         for v, l, h in [
-            (f"{len(data.candidates)}", "監看候選人", "六都"),
+            (f"{len(data.candidates)}", "監看候選人", "縣市長"),
             (f"{len(data.all_posts()):,}", "已收錄貼文", "僅 AI 已分類"),
             (f"{sum(len(s.get('accounts') or []) for s in data.sources)}", "監看帳號", "含官網、Podcast"),
             (S.fmt_time_tpe(data.generated_at.isoformat()), "資料快照", "GMT+8"),
