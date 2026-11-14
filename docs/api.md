@@ -4,12 +4,16 @@
 
 ## 運作方式
 
-- 不帶 query string 的 `/api/*.json`、`/feeds/*.json`：Caddy 直接送 `published/current` 的靜態檔（與以前相同）。
+正式站（2026-10-29 起）：Cloudflare Tunnel（sky-server）→ Dokploy traefik → nginx 容器
+`mini-w1-mayor2026-6lzstg-web-1`，靜態根目錄 `/srv/mayor2026/published/current`（排程：systemd
+`mayor2026-pipeline.timer`，以 `/srv/mayor2026/compose.yml` 的 pipeline 容器執行本 checkout）。
+
+- 不帶 query string 的 `/api/*.json`、`/feeds/*.json`：nginx 直接送靜態檔（加 CORS）。
 - 帶 query string 的請求，以及兩個虛擬端點 `/api/posts.json`、`/api/elections/2026/candidates.json`：
-  Caddy 轉給 `scripts/api_server.py`（`127.0.0.1:8341`，launchd `tw.observe.mayor2026.api`）。
+  nginx 轉給 `scripts/api_server.py`（容器 `mayor2026-api`，`dokploy-network` 上的 `:8341`）。
   它只讀 `published/current`（依 symlink 實際指向的 release 快取），發布新快照後自動換用新資料，不需重啟。
 - 回應保留靜態檔結構；列表被切片，`count` 改為回傳筆數，另加 `total`、`offset`、`limit`、`next`。
-- CORS：`Access-Control-Allow-Origin: *`（靜態檔由 Caddy 加，動態回應由 api_server 加）。
+- CORS：`Access-Control-Allow-Origin: *`。
 - 參數錯誤或端點不支援的參數 → 400 JSON；未知參數名稱（如 `?v=`）忽略。
 
 ## 參數
@@ -48,29 +52,20 @@ https://mayor2026.observe.tw/api/elections/2026/candidates.json?county=taipei&ca
 https://mayor2026.observe.tw/api/elections/2026/candidates.json?county=hsinchu-city&category=county-councilor&limit=50&offset=50
 ```
 
-## 部署（sky-mini）
+## 部署（sky-server）
+
+設定檔在 `deploy/sky-server/`，正式機的副本在 `/srv/mayor2026/`：
 
 ```bash
-sed "s#/Users/REPLACE_ME#$HOME#g" deploy/tw.observe.mayor2026.api.plist > ~/Library/LaunchAgents/tw.observe.mayor2026.api.plist
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/tw.observe.mayor2026.api.plist
-curl -s http://127.0.0.1:8341/healthz
+cp deploy/sky-server/api.compose.yml /srv/mayor2026/api.compose.yml
+docker compose -p mayor2026-api -f /srv/mayor2026/api.compose.yml up -d
+docker exec mini-w1-mayor2026-6lzstg-web-1 wget -qO- http://mayor2026-api:8341/healthz
+
+# nginx.conf 是單檔 bind mount：要原地寫入（cat >），不能 cp/mv 換 inode
+cat deploy/sky-server/nginx.conf > /srv/mayor2026/nginx.conf
+docker exec mini-w1-mayor2026-6lzstg-web-1 nginx -t && docker exec mini-w1-mayor2026-6lzstg-web-1 nginx -s reload
 ```
 
-程式更新後：`launchctl kickstart -k gui/$(id -u)/tw.observe.mayor2026.api`。
-
-Caddyfile `mayor2026.observe.tw` 區塊（放在 `@static` 之前）：
-
-```caddyfile
-header /api/* ?Access-Control-Allow-Origin "*"
-header /feeds/* ?Access-Control-Allow-Origin "*"
-
-@dynamic_api {
-	path /api/*.json /feeds/*.json
-	expression `{query} != "" || {path} in ["/api/posts.json", "/api/elections/2026/candidates.json"]`
-}
-handle @dynamic_api {
-	reverse_proxy 127.0.0.1:8341
-}
-```
+`api_server.py` 改版後：`git pull` 再 `docker restart mayor2026-api`。
 
 本機測試：`python3 scripts/api_server.py --site site --port 18341`；單元測試 `tests/test_api_server.py`。
