@@ -105,9 +105,9 @@ def _district(d: dict[str, Any], heading_level: int = 3) -> str:
 
 
 def _notice_untracked(has_tracked: bool) -> str:
-    extra = "六都市長候選人另有官方貼文河道，點「官方貼文河道」前往。" if has_tracked else ""
+    extra = "直轄市長與縣市長候選人另有官方貼文河道，點「官方貼文河道」前往。" if has_tracked else ""
     return (f'<div class="notice" data-tone="info"><p>本頁列出選委會公告的候選人、號次與推薦政黨。'
-            f'本站目前只追蹤六都市長候選人的官方社群貼文，其他候選人標示「{UNTRACKED}」。{extra}'
+            f'本站目前只追蹤直轄市長與縣市長候選人的官方社群貼文，其他候選人標示「{UNTRACKED}」。{extra}'
             '「2022 當選」依中選會選舉資料庫比對同選舉同姓名推定，補選或解職異動可能未反映。</p></div>')
 
 

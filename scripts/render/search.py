@@ -57,7 +57,7 @@ def _chip_row(label: str, key: str, items) -> str:
 
 def render(data) -> None:
     count = write_index(data)
-    city_row = _chip_row("城市", "city", [(c, S.city_label(c), c, None) for c in S.CITY_ORDER])
+    city_row = _chip_row("城市", "city", [(c, S.city_label(c), c, None) for c in S.CITY_ORDER if c in S.SIX_CITIES or any(x.get("city") == c for x in data.candidates)])
     plat_row = _chip_row("平台", "platform", [(p, S.PLATFORM_LABELS.get(p, p), None, p) for p in PLATFORMS])
     intent_seg = (
         '<div class="filter-row"><span class="filter-label">動機</span>'
@@ -106,6 +106,6 @@ def render(data) -> None:
           "</aside>"
         + "</div>"
     )
-    html = S.layout("search", "搜尋", "搜尋 2026 地方選舉候選人（姓名、選舉區、村里）與六都市長候選人在官方帳號的公開發文。",
+    html = S.layout("search", "搜尋", "搜尋 2026 地方選舉候選人（姓名、選舉區、村里）與直轄市長與縣市長候選人在官方帳號的公開發文。",
                     "/search/", body, extra_css=["pages/search.css"], extra_js=["pages/search.js"])
     S.write_page("/search/", html)

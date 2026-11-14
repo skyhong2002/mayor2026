@@ -69,7 +69,7 @@ def public_row(row: dict[str, str], tracked: dict[tuple[str, str], str]) -> dict
     out["birthYear"] = int(row["birthYear"]) if row.get("birthYear") else None
     out["incumbent"] = row.get("incumbent") == "Y"
     out["partyShort"] = party_short(row["party"])
-    feed = tracked.get((row["county"], row["name"])) if row["category"] == "municipal-mayor" else None
+    feed = tracked.get((row["county"], row["name"])) if row["category"] in ("municipal-mayor", "county-mayor") else None
     out["trackedFeed"] = feed
     out["url"] = page_url(row)
     # county / category / township / district / village are given by the enclosing

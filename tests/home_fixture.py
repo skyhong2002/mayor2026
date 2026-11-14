@@ -20,7 +20,7 @@ class HomeData:
         self.candidates = [
             {"id": city + "-fixture", "city": city, "name": home.S.city_label(city) + "測試候選人",
              "party": "", "avatarUrl": "/assets/logo.svg"}
-            for city in home.S.CITY_ORDER
+            for city in home.S.SIX_CITIES
         ]
         self.by_id = {candidate["id"]: candidate for candidate in self.candidates}
         self.posts = {}

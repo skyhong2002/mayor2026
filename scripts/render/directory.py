@@ -32,7 +32,7 @@ NEUTRAL_SORTS = ("latest", "posts")
 API_ENDPOINTS = [
     ("/api/candidates.json", "候選人名單：姓名、城市、政黨、頭像、各平台代表帳號、已收錄貼文數與最新發文時間。"),
     ("/api/sources.json", "候選人名單加上全部監看帳號（平台、網址、帳號性質、驗證等級）。"),
-    ("/api/cities.json", "六都與各城市候選人 ID，順序固定。"),
+    ("/api/cities.json", "各縣市候選人 ID，順序固定。"),
     ("/api/latest.json", "全站最新 100 則貼文。"),
     ("/api/posts/<id>.json", "單一候選人的全部已收錄貼文（含議題、發文動機與 AI 分類資訊），新到舊。"),
     ("/api/spectrum.json", "每位候選人各議題的發文比例（不含「生活」）。"),
@@ -168,7 +168,7 @@ def render_source_index(data) -> None:
     rows_sorted = _sort_rows_ssr(data, rows, default_sort)
 
     lede = (
-        f"六都 {len(data.candidates)} 位候選人、{total_accounts} 個監看中的公開帳號。"
+        f"{len(data.candidates)} 位直轄市長與縣市長候選人、{total_accounts} 個監看中的公開帳號。"
         "帳號依可信度排序：<b>官方直連</b>＝候選人官網或官方帳號直接連結；"
         "<b>交叉查證</b>＝由多個公開線索合理確認；<span class=\"acct-legend-dim\">未驗證</span>＝"
         "尚無第一手指認，以淡色顯示，僅供參考。"
@@ -209,7 +209,7 @@ def render_source_index(data) -> None:
         + f'<div class="dir-sort"><span class="small muted">排序</span><div class="seg" role="group" aria-label="排序">{sort_seg}</div></div>'
         + "</div></section>"
         + '<div class="table-wrap"><table class="table directory-table" data-default-sort="' + default_sort + '">'
-        + '<caption class="sr-only">六都市長候選人與公開帳號目錄</caption>'
+        + '<caption class="sr-only">直轄市長與縣市長候選人與公開帳號目錄</caption>'
         + f"<thead><tr>{ths}</tr></thead><tbody>{''.join(rows_sorted)}</tbody></table></div>"
         + '<div class="dir-empty" hidden>'
         + S.render_empty("沒有符合條件的候選人", "試著清除搜尋字詞或篩選條件。",
@@ -225,7 +225,7 @@ def render_source_index(data) -> None:
                     for c in data.candidates],
     }
     html = S.layout("directory", "候選人與公開來源",
-                    f"六都 {len(data.candidates)} 位市長候選人的官方公開帳號目錄：平台、驗證等級、已收錄貼文數與監看狀態。",
+                    f"{len(data.candidates)} 位直轄市長與縣市長候選人的官方公開帳號目錄：平台、驗證等級、已收錄貼文數與監看狀態。",
                     "/source/", body, extra_css=CSS, extra_js=JS, jsonld=jsonld)
     S.write_page("/source/", html)
 
@@ -273,7 +273,7 @@ def render_feeds(data) -> None:
         '<div class="grid-2">'
         '<div class="card sub-card"><div class="sub-card-head">'
         f'<span class="sub-card-icon">{S.icon("rss")}</span><div><p class="card-title">全站更新 RSS</p>'
-        '<p class="card-meta">六都所有候選人最新 100 則貼文</p></div></div>'
+        '<p class="card-meta">所有追蹤候選人最新 100 則貼文</p></div></div>'
         '<div class="sub-url"><code class="mono">/feeds/updates.xml</code>'
         f'{_copy_btn("/feeds/updates.xml", "全站 RSS ")}</div>'
         f'<a class="btn btn-sm btn-primary" href="/feeds/updates.xml">{S.icon("rss")}開啟 RSS</a></div>'
@@ -330,7 +330,7 @@ def render_feeds(data) -> None:
         + '議題與發文動機為 AI 分類結果，可能有誤。</p></div></section>'
     )
     html = S.layout("feeds", "訂閱與資料下載",
-                    "六都市長候選人官方發文的 RSS 與 JSON 訂閱、2026 地方選舉候選人名單更新 RSS，並附公開 JSON API 說明。",
+                    "直轄市長與縣市長候選人官方發文的 RSS 與 JSON 訂閱、2026 地方選舉候選人名單更新 RSS，並附公開 JSON API 說明。",
                     "/feeds/", body, extra_css=CSS, extra_js=JS)
     S.write_page("/feeds/", html)
 
@@ -356,13 +356,13 @@ def render_about(data) -> None:
 
     sections = [
         ("purpose", "宗旨",
-         "<p>本站把六都市長候選人在官方帳號上的公開發文集中在一起，依議題與發文動機整理，"
+         "<p>本站把直轄市長與縣市長候選人在官方帳號上的公開發文集中在一起，依議題與發文動機整理，"
          "方便用同一把尺比較候選人說了什麼。每則貼文都連回原文；本站不改寫內容，也不做民調或立場推定。</p>"
          '<p>2026 年 11 月起，本站也整理 11/28 地方選舉（九合一）的全部候選人：中選會登記名冊與各選委會公告的號次、'
          '推薦政黨，逐筆附上官方來源，並公開與官方總數的<a href="/api/elections/2026/reconciliation.json">對帳報告</a>。'
-         '六都市長以外的候選人目前沒有追蹤社群貼文。見<a href="/elections/">候選人名單</a>。</p>'),
+         '縣市長以外的候選人（議員、鄉鎮市長、代表、村里長）目前沒有追蹤社群貼文。見<a href="/elections/">候選人名單</a>。</p>'),
         ("scope", "收錄範圍",
-         f"<p>目前收錄六都 {n_cand} 位候選人、{n_acct} 個公開帳號，已收錄 {n_posts:,} 則貼文。"
+         f"<p>目前收錄 {n_cand} 位直轄市長與縣市長候選人、{n_acct} 個公開帳號，已收錄 {n_posts:,} 則貼文。"
          "平台包括 Facebook、Instagram、Threads、YouTube、X、競選官網與 Podcast；LINE 與 TikTok 沒有可穩定讀取的公開時間軸，只列出連結。"
          '每個帳號都標示驗證等級，完整清單見<a href="/source/">候選人目錄</a>。</p>'),
         ("method", "資料怎麼來",
@@ -415,7 +415,7 @@ def render_about(data) -> None:
     )
     body = (
         S.page_head("關於本站", f"{S.SITE_NAME}是獨立、非官方的公開資料專案，"
-                    "整理 2026 地方選舉候選人名單與號次，以及六都市長候選人官方帳號的公開發文。")
+                    "整理 2026 地方選舉候選人名單與號次，以及直轄市長與縣市長候選人官方帳號的公開發文。")
         + '<div class="about-layout">'
         + f'<nav class="about-toc" aria-label="本頁目錄"><p class="about-side-title">本頁目錄</p>{toc}</nav>'
         + f'<div class="about prose">{prose}</div>'

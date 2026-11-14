@@ -16,7 +16,7 @@ import datetime as dt
 from functools import cached_property
 from typing import Any
 
-from .shell import CITY_LABELS, CITY_ORDER, SITE_ROOT, asset_abs, epoch, read_json  # noqa: F401
+from .shell import CITY_LABELS, CITY_ORDER, SIX_CITIES, SITE_ROOT, asset_abs, epoch, read_json  # noqa: F401
 
 API_DIR = SITE_ROOT / "api"
 
@@ -42,6 +42,8 @@ class Data:
             ids = [i for i in entry.get("candidateIds") or [] if i in self.roster]
             if not ids:
                 ids = [c["id"] for c in self.candidates if c.get("city") == slug]
+            if not ids and slug not in SIX_CITIES:
+                continue
             out.append({**entry, "candidateIds": ids})
         return out
 

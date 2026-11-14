@@ -106,7 +106,7 @@ def main() -> int:
     combined_xml = render_rss(
         title=SITE_TITLE,
         link="",
-        description="六都市長候選人公開貼文合併更新河道。",
+        description="直轄市長與縣市長候選人公開貼文合併更新河道。",
         posts=[{**p, "posted_at": p.get("postedAt")} for p in all_posts[:100]],
     )
     (FEEDS_DIR / "updates.xml").write_text(combined_xml, encoding="utf-8")

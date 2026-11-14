@@ -48,6 +48,22 @@ CITY_LABELS = {
     "taichung": "臺中市",
     "tainan": "臺南市",
     "kaohsiung": "高雄市",
+    "keelung": "基隆市",
+    "hsinchu-city": "新竹市",
+    "hsinchu-county": "新竹縣",
+    "miaoli": "苗栗縣",
+    "changhua": "彰化縣",
+    "nantou": "南投縣",
+    "yunlin": "雲林縣",
+    "chiayi-city": "嘉義市",
+    "chiayi-county": "嘉義縣",
+    "pingtung": "屏東縣",
+    "yilan": "宜蘭縣",
+    "hualien": "花蓮縣",
+    "taitung": "臺東縣",
+    "penghu": "澎湖縣",
+    "kinmen": "金門縣",
+    "lienchiang": "連江縣",
 }
 VALID_CITIES = set(CITY_LABELS)
 
