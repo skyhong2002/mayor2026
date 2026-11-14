@@ -32,7 +32,7 @@ class ApiServerTest(unittest.TestCase):
         a = [post(i, "alice", day=10 - i) for i in range(5)]
         b = [post(i + 10, "bob", platform="threads", topics=("住宅",), day=9 - i) for i in range(3)]
         write(release / "api" / "candidates.json", {"version": 1, "count": 2, "candidates": [
-            {"id": "alice", "city": "taipei"}, {"id": "bob", "city": "tainan"}]})
+            {"id": "alice", "city": "taipei", "name": "乙"}, {"id": "bob", "city": "tainan"}]})
         write(release / "api" / "posts" / "alice.json", {"version": 1, "count": 5, "candidate": {"id": "alice"}, "posts": a})
         write(release / "api" / "posts" / "bob.json", {"version": 1, "count": 3, "candidate": {"id": "bob"}, "posts": b})
         write(release / "api" / "latest.json", {"version": 1, "count": 8, "posts": (a + b)})
@@ -96,6 +96,7 @@ class ApiServerTest(unittest.TestCase):
         self.assertEqual(body["candidates"][0]["countyLabel"], "臺北市")
         _, body, _ = self.get("/api/elections/2026/candidates.json?incumbent=true")
         self.assertEqual([c["name"] for c in body["candidates"]], ["乙"])
+        self.assertEqual(body["candidates"][0]["trackedFeed"], "/taipei/alice/")
 
     def test_errors(self):
         self.assertEqual(self.get("/api/latest.json?limit=-1")[0], 400)
