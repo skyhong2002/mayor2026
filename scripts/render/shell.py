@@ -114,7 +114,7 @@ nav_items: list[dict[str, Any]] = [
     {"id": "home", "label": "最新", "short": "最新", "href": "/", "icon": "home", "tab": True, "match": ["home"]},
     {"id": "elections", "label": "候選人名單", "short": "名單", "href": "/elections/", "icon": "ballot", "tab": True, "match": ["elections"]},
     {"id": "spectrum", "label": "議題光譜", "short": "光譜", "href": "/spectrum/", "icon": "spectrum", "tab": True, "match": ["spectrum", "topic"]},
-    {"id": "source", "label": "市長帳號", "short": "市長", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
+    {"id": "source", "label": "候選人帳號", "short": "帳號", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
     {"id": "policy", "label": "議題選擇器", "short": "選擇器", "href": "/policy-match/", "icon": "match", "tab": False, "match": ["policy"]},
     {"id": "search", "label": "搜尋", "short": "搜尋", "href": "/search/", "icon": "search", "tab": False, "match": ["search"]},
     {"id": "feeds", "label": "訂閱", "short": "訂閱", "href": "/feeds/", "icon": "rss", "tab": False, "match": ["feeds"]},

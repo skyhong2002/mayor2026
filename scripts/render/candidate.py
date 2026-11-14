@@ -365,7 +365,7 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
         f'<a class="btn btn-sm btn-ghost" href="/source/{cid}/">{S.icon("status")}帳號驗證</a>'
         f'<a class="btn btn-sm btn-ghost cand-jump" href="#cand-feed-h">{S.icon("filter")}時間軸與篩選</a>'
     )
-    hero = _profile_head(c, accounts, post_counts, False, actions, f"{city_full}市長候選人")
+    hero = _profile_head(c, accounts, post_counts, False, actions, f"{city_full}長候選人")
 
     ctx = data.post_ctx(show_city=False)
     ssr = "".join(S.render_post(p, ctx) for p in posts[:SSR_POSTS])
@@ -401,13 +401,13 @@ def _candidate_page(data, c: dict[str, Any], accounts: list[dict[str, Any]], pos
     )
 
     party = _party_label(c)
-    desc = (f"{c['name']}（{city_full}市長候選人・{party}）的官方公開發文時間軸：已收錄 {len(posts):,} 則，"
+    desc = (f"{c['name']}（{city_full}長候選人・{party}）的官方公開發文時間軸：已收錄 {len(posts):,} 則，"
             "含議題比例、發文動機與 30 天發文節奏，所有貼文皆連回原文。")
     url = S.canonical(path)
     image = S.asset_abs(c.get("avatarUrl"))
     person = {
         "@type": "Person", "@id": url + "#person", "name": c["name"],
-        "description": f"{city_full}市長候選人",
+        "description": f"{city_full}長候選人",
         "affiliation": {"@type": "PoliticalParty", "name": party} if c.get("party") else None,
         "homeLocation": {"@type": "City", "name": city_full},
         "sameAs": [S.safe_url(a.get("url"), internal=False) for a in accounts
