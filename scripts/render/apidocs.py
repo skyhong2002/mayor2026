@@ -104,7 +104,7 @@ def render(data) -> None:
          + _table(["端點", "內容"], [
              [_code("/api/elections/2026/candidates.json"), "全部候選人的<strong>平面列表</strong>（可篩選、分頁）；"
               "每筆含 " + _code("county") + "、" + _code("countyLabel") + "、" + _code("category") + "、"
-              + _code("categoryLabel") + "、" + _code("township") + "、" + _code("district") + "、" + _code("village") + "、"
+              + _code("categoryLabel") + "、" + _code("trackedFeed") + "（有追蹤貼文者的頁面）、" + _code("township") + "、" + _code("district") + "、" + _code("village") + "、"
               + _code("number") + "、" + _code("name") + "、" + _code("party") + "、" + _code("incumbent") + " 與官方來源網址"],
              [_link("/api/elections/2026/index.json"), "總數、各縣市與各類別統計、縣市 ID 對照"],
              [_code("/api/elections/2026/<縣市ID>.json"), "單一縣市依類別→選舉區分組的完整資料（巢狀，不接受參數）"],

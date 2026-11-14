@@ -230,6 +230,11 @@ def election_rows(snap: Snapshot) -> List[Dict[str, Any]]:
         index = snap.json("api/elections/2026/index.json")
         county_label = {c["id"]: c["label"] for c in index.get("counties") or []}
         category_label = {c["id"]: c.get("label") for c in index.get("categories") or []}
+        try:  # candidates whose official posts are tracked (直轄市長／縣市長) → their feed page
+            roster = snap.json("api/candidates.json").get("candidates") or []
+        except ApiError:
+            roster = []
+        tracked = {(c.get("city"), c.get("name")): f"/{c.get('city')}/{c.get('id')}/" for c in roster}
         rows: List[Dict[str, Any]] = []
         with path.open(encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
@@ -239,6 +244,8 @@ def election_rows(snap: Snapshot) -> List[Dict[str, Any]]:
                 out["incumbent"] = row.get("incumbent") == "Y"
                 out["countyLabel"] = county_label.get(row["county"], row["county"])
                 out["categoryLabel"] = category_label.get(row["category"], row["category"])
+                if row["category"] in ("municipal-mayor", "county-mayor"):
+                    out["trackedFeed"] = tracked.get((row["county"], row["name"]))
                 rows.append({k: v for k, v in out.items() if v not in ("", None)})
         return rows
     return snap.cached("election-rows", build)
