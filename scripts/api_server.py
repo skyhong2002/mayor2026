@@ -19,7 +19,7 @@ Virtual (dynamic-only) endpoints:
 
 Responses keep the static payload shape: the list is sliced, `count` becomes the
 number of items returned, and `total` / `offset` / `limit` / `next` are added.
-Standard library only (runs on the macOS system python3.9+).
+Standard library only (python3.9+). Deployed as container mayor2026-api; see deploy/sky-server/.
 """
 
 from __future__ import annotations

@@ -1,0 +1,28 @@
+# Query-parameter API (scripts/api_server.py) for mayor2026.observe.tw on sky-server.
+# The Dokploy nginx (mini-w1-mayor2026 web) proxies /api/*.json and /feeds/*.json requests
+# that carry a query string to mayor2026-api:8341 over dokploy-network (see nginx.conf).
+#   docker compose -p mayor2026-api -f /srv/mayor2026/api.compose.yml up -d
+# Code is the bind-mounted checkout; after pulling new api_server.py code:
+#   docker restart mayor2026-api
+services:
+  api:
+    container_name: mayor2026-api
+    image: python:3.14-slim
+    platform: linux/amd64
+    restart: unless-stopped
+    working_dir: /app
+    command: ["python3", "-I", "/app/scripts/api_server.py", "--host", "0.0.0.0", "--port", "8341", "--site", "/published/current"]
+    volumes:
+      - /home/sky/Projects/mayor2026:/app:ro
+      - /srv/mayor2026/published:/published:ro
+    environment:
+      TZ: Asia/Taipei
+    networks: [dokploy-network]
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8341/healthz', timeout=3)"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+networks:
+  dokploy-network:
+    external: true
