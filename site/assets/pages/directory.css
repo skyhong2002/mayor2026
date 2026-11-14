@@ -154,6 +154,13 @@
 .about-sec > * + * { margin-top: var(--space-3); }
 .about-sec h2 + p { margin-top: var(--space-2); }
 .about .prose code { font-family: var(--font-mono); font-size: 0.86em; padding: 1px 5px; border-radius: var(--radius-xs); background: var(--color-surface-soft); }
+.about.prose pre.api-pre { margin: var(--space-2) 0 0; padding: var(--space-3) var(--space-4); max-width: 100%; overflow-x: auto; border-radius: var(--radius-sm); background: var(--color-surface-soft); font-size: var(--text-small); line-height: 1.6; }
+.about.prose pre.api-pre code { padding: 0; background: none; white-space: pre-wrap; overflow-wrap: anywhere; }
+.about.prose code { font-family: var(--font-mono); font-size: 0.86em; padding: 1px 5px; border-radius: var(--radius-xs); background: var(--color-surface-soft); }
+.about.prose .api-table { overflow-x: auto; }
+.about.prose .api-table table { width: 100%; font-size: var(--text-small); line-height: 1.6; }
+.about.prose .api-table td { vertical-align: top; overflow-wrap: anywhere; }
+.about.prose .api-table td:first-child { min-width: 7.5rem; }
 @media (max-width: 699px) { .about-sec { scroll-margin-top: calc(var(--layout-topbar) + var(--space-4)); } }
 
 /* ---- 404 ---- */

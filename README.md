@@ -20,7 +20,10 @@
 - `/spectrum/`：議題光譜總覽；`/spectrum/<topic>/`：單一議題各候選人比較
 - `/status/`：資料管線狀態（維持原有版型，修正目前錯誤、冷卻與預算狀態；逐來源紀錄由 JSON API 提供；[機制說明](docs/ingestion-health.md)）
 - `/policy-match/`：匿名選擇市政優先議題，對照候選人自主政策倡議貼文
-- `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）
+- `/api/*.json`：公開 JSON API（candidates / sources / latest / spectrum / status / posts/<id>）。
+  所有列表端點可加 `?limit=N`（指定數量）、`offset`、`fields` 與篩選參數，例如
+  `/api/latest.json?limit=10`、`/api/elections/2026/candidates.json?county=taipei&limit=20`；
+  端點與用法見 <https://mayor2026.observe.tw/api/> 與 [docs/api.md](docs/api.md)
 - `/feeds/`：RSS 訂閱入口；每位候選人一條 `<id>.xml` 與對應 `<id>.json`（近 50 筆更新；
   完整貼文檔在 `/api/posts/<id>.json`）
 

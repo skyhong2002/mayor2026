@@ -18,7 +18,7 @@ BASE_URL = os.environ.get("MAYOR_SITE_BASE_URL", "https://mayor2026.observe.tw")
 # and listing a noindex page in the sitemap sends search engines mixed signals.
 FEED_PATHS = ["/", "/source/", "/spectrum/", "/policy-match/", "/feeds/", "/search/"]
 # Hand-written pages with no data-derived modification time.
-STATIC_PATHS = ["/about/"]
+STATIC_PATHS = ["/about/", "/api/"]
 
 
 def lastmod(value: object) -> str | None:

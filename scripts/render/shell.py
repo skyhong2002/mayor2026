@@ -623,7 +623,7 @@ def render_footer() -> str:
         "與任何候選人、政黨或競選團隊無關；議題與發文動機由 AI 分類，僅供參考。</p>"
         "</div>"
         '<nav class="footer-nav" aria-label="頁尾導覽">'
-        f'<section><h2>本站</h2>{links([("關於本站", "/about/"), ("資料狀態", "/status/"), ("RSS 訂閱", "/feeds/")])}</section>'
+        f'<section><h2>本站</h2>{links([("關於本站", "/about/"), ("資料狀態", "/status/"), ("RSS 訂閱", "/feeds/"), ("開放資料 API", "/api/")])}</section>'
         f'<section><h2>參與</h2>{links([("GitHub", GITHUB_URL), ("資料回報", REPORT_URL)])}</section>'
         f'<section><h2>觀測站家族</h2>{links([("竹梅活動觀測站", "https://chumei.observe.tw/"), ("Harmonica Observatory", "https://harmonica.observe.tw/"), ("observe.tw", "https://observe.tw/")])}</section>'
         "</nav></footer>"

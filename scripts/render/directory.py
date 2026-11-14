@@ -392,7 +392,7 @@ def render_about(data) -> None:
          f'<a href="https://observe.tw/"{ext}>observe.tw</a>。</p>'),
         ("contact", "聯絡與原始碼",
          f'<p>原始碼、問題回報與開發紀錄都在 <a href="{S.GITHUB_URL}"{ext}>GitHub</a>。'
-         '想自行分析資料，可使用<a href="/feeds/">RSS 與 JSON API</a>。</p>'),
+         '想自行分析資料，可使用<a href="/feeds/">RSS</a> 與<a href="/api/">開放資料 API</a>（可用 <code>limit</code> 等參數指定數量與篩選）。</p>'),
     ]
     toc = "".join(f'<a class="about-toc-link" href="#{sid}">{S.esc(title)}</a>' for sid, title, _ in sections)
     prose = "".join(f'<section id="{sid}" class="about-sec"><h2>{S.esc(title)}</h2>{html}</section>'
