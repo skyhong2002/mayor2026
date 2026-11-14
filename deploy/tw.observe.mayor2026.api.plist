@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- Query-parameter API (?limit= / ?offset= / filters) over published/current.
+         Caddy proxies /api/*.json and /feeds/*.json requests that carry a query
+         string to 127.0.0.1:8341; see docs/api.md. -->
+    <key>Label</key>
+    <string>tw.observe.mayor2026.api</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/python3</string>
+      <string>/Users/REPLACE_ME/Projects/mayor2026/scripts/api_server.py</string>
+      <string>--port</string>
+      <string>8341</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/REPLACE_ME/Library/Logs/mayor2026/api.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/REPLACE_ME/Library/Logs/mayor2026/api.err.log</string>
+  </dict>
+</plist>

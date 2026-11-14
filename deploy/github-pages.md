@@ -6,6 +6,8 @@
 （`/usr/local/etc/caddy/Caddyfile`）以 `file_server` 提供 `/Users/skyhong/Projects/mayor2026/published/current`，
 404 時回 `/404.html`。`scripts/run_pipeline.py --publish-local`（launchd plist 預設）會呼叫 `scripts/publish_local.py`
 把 `site/` 複製到 `published/releases/<ts>-<sha>/` 再原子切換 `current` / `previous` 符號連結，保留最近 5 份。
+帶 query string 的 `/api/*.json`、`/feeds/*.json`（例如 `?limit=10`）由 `scripts/api_server.py`（launchd
+`tw.observe.mayor2026.api`，`127.0.0.1:8341`）回應，設定見 [docs/api.md](../docs/api.md)。
 Caddy 設定變更後：`/usr/local/sbin/caddy reload --config /usr/local/etc/caddy/Caddyfile --adapter caddyfile`。
 
 ## （備援）GitHub Pages
