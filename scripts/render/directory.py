@@ -312,7 +312,7 @@ def render_feeds(data) -> None:
         S.page_head(
             "訂閱與資料下載",
             "把 RSS 網址貼進 Feedly、Inoreader、NetNewsWire 等閱讀器，就能追蹤候選人的新發文。"
-            "每條 RSS 收錄最新 50 則；需要完整紀錄請用 JSON API。",
+            "候選人 RSS 預設收錄最新 50 則，全站 RSS 為 100 則；在網址加上 ?limit=100 可指定筆數，亦可用 offset 跳過貼文。例如 /feeds/shen-poyang.xml?limit=100。完整紀錄亦可使用 JSON API。",
             f'<a class="btn btn-sm" href="/about/#license">{S.icon("about")}授權說明</a>',
         )
         + f'<section class="section-first" aria-labelledby="h-site"><div class="section-head"><h2 id="h-site">全站</h2></div>{site_feed}</section>'

@@ -64,6 +64,21 @@ class ApiServerTest(unittest.TestCase):
         except urllib.error.HTTPError as exc:
             return exc.code, json.loads(exc.read()), exc.headers
 
+    def test_rss_limit_offset_and_errors(self):
+        import xml.etree.ElementTree as ET
+        for path, count in [("alice.xml?limit=2&offset=1", 2),
+                            ("alice.xml?limit=100", 5), ("alice.xml?limit=0", 0),
+                            ("updates.xml?limit=7", 7)]:
+            with urllib.request.urlopen(self.base + "/feeds/" + path) as res:
+                self.assertIn("application/rss+xml", res.headers["Content-Type"])
+                items = ET.fromstring(res.read()).findall("channel/item")
+                self.assertEqual(len(items), count)
+                if "offset=1" in path:
+                    self.assertEqual(items[0].findtext("guid"), "facebook:alice:1")
+        for path, expected in [("alice.xml?limit=-1", 400),
+                               ("alice.xml?limit=abc", 400), ("missing.xml?limit=1", 404)]:
+            self.assertEqual(self.get("/feeds/" + path)[0], expected)
+
     def test_limit_and_offset_keep_shape(self):
         status, body, headers = self.get("/api/latest.json?limit=3&offset=2")
         self.assertEqual(status, 200)

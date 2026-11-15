@@ -69,3 +69,10 @@ docker exec mini-w1-mayor2026-6lzstg-web-1 nginx -t && docker exec mini-w1-mayor
 `api_server.py` 改版後：`git pull` 再 `docker restart mayor2026-api`。
 
 本機測試：`python3 scripts/api_server.py --site site --port 18341`；單元測試 `tests/test_api_server.py`。
+
+### RSS 筆數參數
+
+候選人 RSS 支援 `/feeds/shen-poyang.xml?limit=100`；從完整已收錄貼文取最新 100 則，不受靜態版 50 則限制。
+全站 `/feeds/updates.xml?limit=200` 同樣適用。`limit` 為非負整數，0 回傳空清單；超過現有筆數時回傳全部。
+`offset=100` 可跳過前 100 則。未指定 limit 時，候選人預設 50 則、全站 100 則。
+其他貼文篩選請使用 JSON API。部署時須更新 nginx.conf 並重新載入 nginx，以及重啟 API 容器。

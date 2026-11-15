@@ -404,6 +404,43 @@ def handle(snap: Snapshot, rel: str, params: Dict[str, str], base_path: str) -> 
     return payload
 
 
+def handle_rss(snap: Snapshot, rel: str, params: Dict[str, str]) -> str:
+    import xml.sax.saxutils as xml
+    import email.utils
+    cid = Path(rel).stem
+    if cid == "updates":
+        posts = all_posts(snap)
+        title = "2026 地方選舉官方來源觀測站"
+        link = "https://mayor2026.observe.tw/"
+        default_limit = 100
+    else:
+        roster = snap.json("api/candidates.json").get("candidates", [])
+        candidate = next((c for c in roster if c.get("id") == cid), None)
+        if candidate is None:
+            raise ApiError(404, "Not found")
+        posts = snap.json(f"api/posts/{cid}.json").get("posts", [])
+        title = f"{candidate['name']} 貼文更新"
+        link = f"https://mayor2026.observe.tw/{candidate['city']}/{cid}/"
+        default_limit = 50
+    unsupported = set(params) & KNOWN_PARAMS - {"limit", "offset"}
+    if unsupported:
+        raise ApiError(400, "RSS supports limit and offset only", params=sorted(unsupported))
+    limit = int_param(params, "limit")
+    offset = int_param(params, "offset") or 0
+    limit = default_limit if limit is None else limit
+    items = []
+    for post in posts[offset:offset + limit]:
+        text = post.get("text") or ""
+        timestamp = parse_ts(post.get("postedAt"))
+        date = f"<pubDate>{email.utils.format_datetime(timestamp)}</pubDate>" if timestamp else ""
+        items.append(f'<item><title>{xml.escape(text[:80])}</title><link>{xml.escape(post.get("url") or "")}</link>'
+                     f'<guid isPermaLink="false">{xml.escape(post.get("id") or "")}</guid>{date}'
+                     f'<description>{xml.escape(text)}</description></item>')
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+            f'<title>{xml.escape(title)}</title><link>{xml.escape(link)}</link>'
+            f'<description>{xml.escape(title)}</description>{"".join(items)}</channel></rss>')
+
+
 # ---------------------------------------------------------------------------
 # HTTP
 # ---------------------------------------------------------------------------
@@ -416,9 +453,9 @@ class Handler(BaseHTTPRequestHandler):
         if os.environ.get("MAYOR_API_LOG"):
             super().log_message(fmt, *args)
 
-    def _send(self, status: int, body: bytes, head_only: bool = False, cache: str = "public, max-age=60") -> None:
+    def _send(self, status: int, body: bytes, head_only: bool = False, cache: str = "public, max-age=60", content_type: str = "application/json; charset=utf-8") -> None:
         self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Cache-Control", cache)
@@ -447,6 +484,10 @@ class Handler(BaseHTTPRequestHandler):
         rel = parts.path.lstrip("/")
         params = {k: v[-1] for k, v in parse_qs(parts.query, keep_blank_values=True).items()}
         try:
+            if re.fullmatch(r"feeds/[a-z0-9-]+\.xml", rel):
+                data = handle_rss(self.snapshot, rel, params).encode("utf-8")
+                self._send(200, data, head_only, content_type="application/rss+xml; charset=utf-8")
+                return
             if rel == "healthz":
                 body = {"ok": True, "release": self.snapshot.release().name}
             elif ".." in rel or not re.fullmatch(r"(api|feeds)/[A-Za-z0-9_./-]+\.json", rel):
