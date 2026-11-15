@@ -89,6 +89,9 @@ def render_sitemap(entries: list[tuple[str, str | None]]) -> str:
 def main() -> int:
     candidates_payload = feed_common.load_json(API_DIR / "candidates.json", {"candidates": []})
     entries = sitemap_entries(candidates_payload.get("candidates", [])) + election_entries()
+    comparison = feed_common.load_json(API_DIR / "comparison.json", None)
+    if comparison and (SITE_ROOT / "compare/taipei/index.html").exists():
+        entries.append(("/compare/taipei/", lastmod(comparison.get("analysisAt"))))
     (SITE_ROOT / "sitemap.xml").write_text(render_sitemap(entries), encoding="utf-8")
 
     robots = f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n"

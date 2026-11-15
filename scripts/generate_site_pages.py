@@ -14,6 +14,7 @@ warning so the site can be rebuilt incrementally.
 from __future__ import annotations
 
 import importlib
+import argparse
 import shutil
 import sys
 import traceback
@@ -26,7 +27,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 from render import data as data_mod  # noqa: E402
 from render import shell  # noqa: E402
 
-PAGE_MODULES = ["home", "candidate", "directory", "spectrum", "policy", "status", "search", "elections", "apidocs"]
+PAGE_MODULES = ["home", "candidate", "directory", "spectrum", "policy", "status", "search", "elections", "apidocs", "comparison"]
 
 
 def asset_version() -> str:
@@ -43,6 +44,16 @@ def write_topic_redirects() -> int:
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--kit", action="store_true")
+    parser.add_argument("--site-dir", type=Path, help="Build a prepared snapshot without changing the production site")
+    args = parser.parse_args(argv)
+    if args.site_dir:
+        shell.SITE_ROOT = args.site_dir.resolve()
+        shell.ASSETS_DIR = shell.SITE_ROOT / "assets"
+        shell.asset_hash.cache_clear()
+        data_mod.SITE_ROOT = shell.SITE_ROOT
+        data_mod.API_DIR = shell.SITE_ROOT / "api"
     shell.write_icons_js()
     data = data_mod.load(refresh=True)
     if not data.candidates:
@@ -68,7 +79,7 @@ def main(argv: list[str] | None = None) -> int:
 
     redirects = write_topic_redirects()
 
-    if missing or "--kit" in argv:
+    if missing or args.kit:
         from render import kit
         kit.render(data)
         rendered.append("_kit")

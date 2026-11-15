@@ -50,6 +50,8 @@ REQUIRED_FILES = [
     SITE_ROOT / "404.html",
     SITE_ROOT / "sitemap.xml",
     SITE_ROOT / "robots.txt",
+    SITE_ROOT / "compare" / "taipei" / "index.html",
+    API_DIR / "comparison.json",
 ]
 
 
@@ -310,6 +312,27 @@ def validate_elections(errors: list[str]) -> None:
         errors.append(f"elections totals disagree: index {index.get('count')}, rows {total}, search {len(search.get('rows', []))}")
 
 
+def validate_comparison(errors: list[str]) -> None:
+    path = API_DIR / "comparison.json"
+    if not path.exists():
+        return  # missing files are reported by validate_required_files
+    from build_issue_comparisons import validate_snapshot
+
+    try:
+        snapshot = read_json(path)
+        validate_snapshot(snapshot)
+        page = SITE_ROOT / "compare/taipei/index.html"
+        content = page.read_text(encoding="utf-8")
+        if 'class="comparison-table"' not in content:
+            errors.append("comparison page has no prerendered table")
+        for topic in snapshot["topics"]:
+            for question in topic["questions"]:
+                if f'id="{question["id"]}"' not in content:
+                    errors.append(f"comparison page omits question {question['id']}")
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f"invalid comparison output: {exc}")
+
+
 def main() -> int:
     errors: list[str] = []
     validate_required_files(errors)
@@ -321,6 +344,7 @@ def main() -> int:
     validate_count_consistency(errors)
     validate_qualitative_schema(errors)
     validate_elections(errors)
+    validate_comparison(errors)
 
     if errors:
         for error in errors:

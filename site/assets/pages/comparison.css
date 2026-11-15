@@ -1,0 +1,90 @@
+.page-comparison main.page{max-width:none;padding:0}
+.comparison-app.container{max-width:1680px;min-width:0;padding:30px 48px 64px}
+.comparison-intro{padding:12px 0 28px}
+.comparison-intro .eyebrow{font-size:12px;letter-spacing:.08em;color:var(--color-text-muted);margin:0 0 12px}
+.comparison-intro h1{font-size:clamp(30px,3.8vw,48px);line-height:1.15;letter-spacing:-.045em;font-weight:700;margin:0 0 14px}
+.snapshot-line{font-size:13px;color:var(--color-text-muted);margin:0}
+.comparison-toolbar{display:flex;align-items:center;gap:14px;padding:18px 0;border-top:1px solid var(--color-border-subtle)}
+.topic-control{display:flex;align-items:center;gap:10px;font-size:12px;flex-shrink:0}
+.topic-control>span{color:var(--color-text-muted)}
+.topic-control select{appearance:auto;border:0;background:var(--color-surface);color:var(--color-text-primary);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;min-width:190px;cursor:pointer}
+.candidate-menu{position:relative;font-size:13px}
+.candidate-menu>summary{display:flex;align-items:center;gap:9px;list-style:none;cursor:pointer;padding:10px 13px;border:1px solid var(--color-border-subtle);border-radius:10px;white-space:nowrap}
+.candidate-menu>summary::-webkit-details-marker{display:none}
+.candidate-menu>summary span:first-child{color:var(--color-text-muted);font-size:11px}
+.candidate-menu fieldset{position:absolute;top:calc(100% + 8px);left:0;min-width:230px;margin:0;padding:10px;border:1px solid var(--color-border-subtle);border-radius:14px;background:var(--color-surface);box-shadow:0 10px 40px #0002;z-index:20}
+.candidate-menu label{display:flex;align-items:center;gap:10px;padding:9px;font-size:13px;cursor:pointer}
+.candidate-menu label small{margin-left:auto;font-size:10px;color:var(--color-text-muted)}
+.candidate-menu input,.table-status input{accent-color:var(--color-action-primary)}
+.search-control{margin-left:auto;max-width:310px;flex:1}
+.search-control input{width:100%;min-width:100px;border:1px solid var(--color-border-subtle);border-radius:10px;padding:10px 13px;font:inherit;font-size:13px;background:var(--color-surface);color:var(--color-text-primary)}
+.text-button{border:0;background:none;font:inherit;font-size:12px;color:var(--color-text-brand);padding:5px;cursor:pointer}
+.table-status{display:flex;align-items:center;gap:20px;color:var(--color-text-muted);font-size:11px;padding:0 0 13px}
+.table-status label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.table-hint{margin-left:auto}
+.comparison-table-scroll{--candidate-count:6;--question-width:220px;--candidate-width:216px;width:100%;max-width:100%;min-width:0;contain:inline-size layout paint;max-height:calc(100dvh - 285px);min-height:360px;overflow:auto;isolation:isolate;border-top:1px solid var(--color-border-subtle);border-bottom:1px solid var(--color-border-subtle);scroll-padding-top:175px;scroll-padding-left:var(--question-width);overscroll-behavior:contain}
+.comparison-table{border-collapse:separate;border-spacing:0;width:100%;min-width:calc(var(--question-width) + var(--candidate-count)*var(--candidate-width));table-layout:fixed;text-align:left;font-size:13px;line-height:1.75}
+.comparison-table .question-column{width:var(--question-width)}
+.comparison-table th,.comparison-table td{padding:22px 20px;vertical-align:top;border-bottom:1px solid var(--color-border-subtle);overflow-wrap:anywhere}
+.comparison-table thead th{position:sticky;top:0;z-index:4;background:var(--color-canvas);padding:23px 20px 21px;box-shadow:0 1px 0 var(--color-border-subtle);font-weight:400}
+.comparison-table thead strong{display:block;font-size:23px;line-height:1.3;letter-spacing:-.025em;font-weight:650;margin:9px 0 5px}
+.comparison-table thead small,.candidate-party{display:block;font-size:11px;color:var(--color-text-muted);line-height:1.7}
+.ballot-number{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;border:1px solid var(--color-border-strong);border-radius:50%;font-size:11px;color:var(--color-text-secondary)}
+.candidate-photo{position:relative;width:56px;height:56px}
+.candidate-portrait{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--color-surface-soft)}
+.candidate-photo .ballot-number{position:absolute;right:-6px;bottom:-1px;background:var(--color-canvas);width:21px;height:21px;font-size:10px}
+.portrait-initial{display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--color-text-muted)}
+.mobile-question-heading{display:none}
+.comparison-table th.corner-cell{left:0;z-index:6;vertical-align:bottom;font-weight:600;font-size:13px;box-shadow:1px 0 0 var(--color-border-subtle),0 1px 0 var(--color-border-subtle)}
+.corner-cell small{font-weight:400;margin-top:6px}
+.question-label,.empty-topic th{position:sticky;left:0;z-index:2;background:var(--color-canvas);box-shadow:1px 0 0 var(--color-border-subtle);font-weight:550}
+.question-label a{color:var(--color-text-primary);text-decoration:none;line-height:1.8}
+.question-label a:hover{text-decoration:underline;text-underline-offset:4px}
+.comparison-table .topic-divider th{padding:20px;background:var(--color-surface-soft)}
+.topic-divider h2{position:sticky;left:20px;display:inline-block;font-size:21px;letter-spacing:-.025em;line-height:1.3;margin:0 14px 0 0}
+.topic-divider span{font-size:11px;color:var(--color-text-muted);font-weight:400}
+.position-kind{font-size:10px;letter-spacing:.025em;color:var(--color-text-muted);margin:0 0 8px}
+.position-summary{margin:0;font-size:13px;line-height:1.95;white-space:pre-line}
+.empty-position{color:var(--color-text-muted);font-size:12px}
+.row-evidence{margin-top:13px}
+.row-evidence>summary{display:inline-block;cursor:pointer;font-size:11px;color:var(--color-text-brand);list-style:none}
+.row-evidence>summary:after{content:' ＋';font-size:12px}
+.row-evidence[open]>summary:after{content:' −'}
+.row-evidence>summary::-webkit-details-marker{display:none}
+.claim-evidence{padding:12px 0;border-bottom:1px solid var(--color-border-subtle);scroll-margin-top:15px}
+.claim-evidence:last-child{border-bottom:0}
+.evidence-meta{display:flex;gap:5px 9px;flex-wrap:wrap;font-size:10px;line-height:1.7;color:var(--color-text-muted)}
+.evidence-meta .chip-soft{font-size:9px}
+.claim-evidence blockquote{margin:9px 0;padding-left:10px;border-left:2px solid var(--color-border-strong);font-size:12px;line-height:1.85;white-space:pre-wrap}
+.comparison-question:target .question-label,.claim-evidence:target{box-shadow:inset 3px 0 var(--color-action-primary)}
+.comparison-documents,.source-library,.comparison-methods{border-bottom:1px solid var(--color-border-subtle);padding:22px 0}
+.comparison-documents{margin-top:16px}
+.comparison-documents>summary,.source-library>summary,.comparison-methods>summary{cursor:pointer;font-size:13px;font-weight:550}
+.comparison-documents>summary>span,.source-library>summary>span{font-size:11px;color:var(--color-text-muted);font-weight:400;margin-left:12px}
+.outlines-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.policy-outline{border:1px solid var(--color-border-subtle);border-radius:12px;padding:15px;font-size:12px}
+.policy-outline summary{cursor:pointer}
+.policy-outline summary span{display:block;font-size:10px;color:var(--color-text-muted);margin-top:3px}
+.policy-outline ol{padding-left:18px;font-size:12px;line-height:1.9}
+.outline-h3,.outline-h4,.outline-h5,.outline-h6{margin-left:12px}
+.meta{font-size:11px;color:var(--color-text-muted)}
+.library-source{border-bottom:1px solid var(--color-border-subtle);padding:12px 0;font-size:12px}
+.library-source summary{cursor:pointer}
+.source-fulltext{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9;background:var(--color-surface);padding:18px;border-radius:10px;font-size:12px}
+.comparison-methods p{font-size:12px;color:var(--color-text-secondary);line-height:1.9;max-width:800px}
+.empty{padding:40px 20px;text-align:center;font-size:14px;color:var(--color-text-muted)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+[hidden]{display:none!important}
+.comparison-app :is(button,summary,input,select,a):focus-visible,.comparison-table-scroll:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:3px}
+@media(max-width:1000px){.comparison-app.container{padding:22px 24px 48px}.outlines-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.comparison-table-scroll{--question-width:190px;--candidate-width:230px}.comparison-toolbar{gap:10px}.topic-control select{min-width:160px}}
+@media(max-width:699px){.comparison-app.container{padding:18px 16px 40px}.comparison-intro{padding:6px 0 22px}.comparison-intro h1{font-size:31px}.snapshot-line{font-size:11px}.comparison-toolbar{flex-wrap:wrap;gap:10px}.topic-control{flex:1}.topic-control>span{display:none}.topic-control select{width:100%;min-width:0}.search-control{order:3;flex-basis:calc(100% - 50px);max-width:none}.text-button{order:4}.table-status{gap:12px;font-size:10px}.table-hint{font-size:10px}.comparison-table-scroll{--question-width:125px;--candidate-width:205px;max-height:calc(100dvh - 300px);min-height:300px;scroll-padding-top:135px}.comparison-table th,.comparison-table td{padding:17px 13px}.comparison-table thead th{padding:18px 13px}.comparison-table thead strong{font-size:21px}.question-label{font-size:12px}.position-summary{font-size:12px}.candidate-menu fieldset{left:auto;right:0}.outlines-grid{grid-template-columns:1fr}.topic-divider h2{left:13px;font-size:19px}.comparison-table .topic-divider th{padding:16px 13px}.topic-divider span{display:none}}
+@media(max-width:699px){
+  .comparison-table-scroll{--question-width:0px;--candidate-width:calc((100vw - 32px)/2);scroll-padding-left:0;scroll-padding-top:170px}
+  .comparison-table .question-column,.comparison-table .corner-cell,.comparison-table .question-label,.empty-topic th{display:none}
+  .mobile-question-heading{display:table-row}
+  .comparison-table .mobile-question-heading th{padding:12px 0;background:var(--color-surface-soft);font-size:12px;font-weight:550}
+  .mobile-question-heading a{position:sticky;left:0;display:block;width:calc(100vw - 32px);max-width:100%;padding:0 13px;color:var(--color-text-primary);line-height:1.7}
+  .comparison-table thead strong{font-size:20px}
+  .candidate-photo,.candidate-portrait{width:44px;height:44px}
+  .comparison-table-scroll:has(.comparison-question:target) .comparison-question:target td{box-shadow:inset 0 2px var(--color-action-primary)}
+}
