@@ -320,9 +320,15 @@ def render(_data) -> None:
 def render_hub(races: list[dict], out: Path):
     cards = ''.join(f'<a class="comparison-city-card" href="{r["path"]}"><strong>{S.esc(r["name"])}</strong>'
                     f'<span>{r["candidateCount"]} 位候選人 · {r["facetCount"]} 個比較項目</span><span class="city-card-arrow" aria-hidden="true">↗</span></a>' for r in races)
+    map_asset = S.PROJECT_ROOT / 'scripts/assets/taiwan-map.svg'
+    if not map_asset.is_file():
+        raise FileNotFoundError(f'missing comparison map asset: {map_asset}')
+    map_markup = map_asset.read_text(encoding='utf-8')
     body = ('<div class="container comparison-app comparison-hub"><header class="comparison-intro">'
             '<p class="eyebrow">2026 縣市長選舉</p><h1>從你的縣市開始比較。</h1>'
-            '<p class="comparison-hub-copy">同一議題，並排看候選人的做法。選擇縣市後，可展開細項與原文。</p></header>'
+            '<p class="comparison-hub-copy">點選地圖上的縣市，直接查看該選區候選人的政見比較。</p></header>'
+            f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><div class="comparison-map-heading"><div><p class="eyebrow">選擇比較地區</p><h2 id="comparison-map-heading">先從你所在的縣市開始。</h2></div><span class="comparison-map-hint">點選區域即可進入</span></div><div class="comparison-map-wrap">{map_markup}</div></section>'
+            '<div class="comparison-list-heading"><h2>全部縣市</h2><span>共 22 個選區</span></div>'
             f'<nav class="comparison-city-grid" aria-label="選擇政見比較縣市">{cards}</nav></div>')
     html = S.layout('comparison', '縣市長政見比較', '全臺22縣市長候選人，同選區、同議題並排比較主張與原文。', '/compare/', body,
                     extra_css=('pages/comparison.css',))
