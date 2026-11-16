@@ -34,7 +34,7 @@ def day(value: str) -> str:
 
 def evidence(claim: dict, source: dict) -> str:
     date = day(source["postedAt"])
-    kind = "正式政策頁" if source["kind"] == "policy" else source["platform"]
+    kind = "官網原文" if source["kind"] == "policy" else source["platform"]
     heading = f'<span>原頁小標：{S.esc(claim["sourceHeading"])}</span>' if claim["sourceHeading"] and re.sub(r"\s+", "", claim["sourceHeading"]) in re.sub(r"\s+", "", source["text"]) else ""
     return (f'<article class="claim-evidence" id="claim-{claim["id"]}" data-source-id="{S.esc(source["id"])}">'
             f'<div class="evidence-meta"><span class="chip-soft">{S.esc(claim["assertionType"])}</span><span>{S.esc(date)}</span><span>{S.esc(kind)}</span></div>'
@@ -159,11 +159,11 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
                                   for finding in topic.get("briefFindings", []) if finding["verified"]]
         for question in topic["questions"]:
             if not question["summaryVerified"]:
-                question["summary"] = "比較摘要未通過完整檢核，請核對各候選人原文。"
+                question["summary"] = ""
                 question["relation"] = "尚無法比較"
             for row in question["rows"]:
                 if not row["verified"]:
-                    row["summary"] = "摘要未通過語意檢核，請直接核對原文。"
+                    row["summary"] = ""
             question.pop("verification", None)
             for row in question["rows"]:
                 row.pop("verificationReason", None)
@@ -174,9 +174,14 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
     claims = {c["id"]: c for c in data["claims"]}
     source_counts = Counter(s["candidateId"] for s in sources.values())
     post_counts = Counter(s["candidateId"] for s in sources.values() if s["kind"] == "post")
-    candidates = sorted(data["candidates"], key=lambda c: (-post_counts[c["id"]], c["number"]))
+    candidates = sorted(data["candidates"], key=lambda c: (-post_counts[c["id"]], c["number"] is None, c["number"] or 0))
     data["candidates"] = candidates
     selected_count = sum(bool(source_counts[c["id"]]) for c in candidates)
+    race = data.get('race', {'id': 'taipei', 'name': '臺北市'})
+    city, city_name = race['id'], race['name']
+    route_path = f'/compare/{city}/'
+    from comparison_races import COUNTIES
+    city_options = ''.join(f'<option value="/compare/{slug}/"' + (' selected' if slug == city else '') + f'>{S.esc(name)}</option>' for slug, name, _ in COUNTIES)
     compact_topics = {t['id']: t for t in compact['topics']} if compact is not None else {}
     question_count = sum(len(compact_topics[t['id']]['facets']) if compact is not None else len(t['questions']) for t in data['topics'])
     topic_options, topic_sections = [], []
@@ -197,7 +202,7 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         policy_count = count - post_counts[c["id"]]
         state = f'{post_counts[c["id"]]:,} 則貼文' if count else "來源尚未取得"
         if policy_count:
-            state += f' · {policy_count} 篇政見'
+            state += f' · {policy_count} 篇官網文字'
         avatar = S.ASSETS_DIR / "comparison-avatars" / (c["id"] + ".webp")
         if not avatar.is_file():
             avatar = S.PROJECT_ROOT / "private/comparison-taipei/inputs/avatars" / (c["id"] + ".webp")
@@ -211,18 +216,20 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         else:
             portrait = f'<span class="candidate-portrait portrait-initial" aria-hidden="true">{S.esc(c["name"][:1])}</span>'
         hidden = '' if count else ' hidden'
+        ballot = f'<span class="ballot-number">{c["number"]}</span>' if c['number'] is not None else '<span class="ballot-pending">號次待公告</span>'
         candidate_headers.append(f'<th scope="col" id="candidate-{c["id"]}" data-candidate="{c["id"]}"{hidden}>'
-                                 f'<div class="candidate-photo">{portrait}<span class="ballot-number">{c["number"]}</span></div><strong>{S.esc(c["name"])}</strong>'
+                                 f'<div class="candidate-photo">{portrait}{ballot}</div><strong>{S.esc(c["name"])}</strong>'
                                  f'<span class="candidate-party">{S.esc(c["party"])}</span><small>{state}</small></th>')
-    last_post = max(s["postedAt"] for s in sources.values() if s["kind"] == "post" and s["postedAt"])
+    last_post = max((s["postedAt"] for s in sources.values() if s["kind"] == "post" and s["postedAt"]), default='')
+    freshness = '貼文更新至 ' + day(last_post) if last_post else '資料整理於 ' + day(data['generatedAt'])
     failures = data.get("policyFailures", [])
     if failures:
         raise ValueError("cannot call all policy pages complete with fetch failures")
-    candidate_controls = "".join(f'<label><input type="checkbox" data-candidate-filter="{c["id"]}"' + (' checked' if source_counts[c['id']] else '') + f'><span>{c["number"]} {S.esc(c["name"])}</span>' + ('' if source_counts[c['id']] else '<small>尚無來源</small>') + '</label>' for c in candidates)
+    candidate_controls = "".join(f'<label><input type="checkbox" data-candidate-filter="{c["id"]}"' + (' checked' if source_counts[c['id']] else '') + f'><span>{c["number"] if c["number"] is not None else "號次待公告"} {S.esc(c["name"])}</span>' + ('' if source_counts[c['id']] else '<small>尚無來源</small>') + '</label>' for c in candidates)
     candidate_cols = ''.join(f'<col data-candidate="{c["id"]}"' + ('' if source_counts[c['id']] else ' hidden') + '>' for c in candidates)
     body = f'''<div class="container comparison-app">
-      <header class="comparison-intro"><p class="eyebrow">2026 臺北市長選舉</p><h1>比較候選人的政見。</h1>
-      <p class="snapshot-line">{len(data["topics"])} 類議題 · {question_count} 個比較項目 · 貼文更新至 {S.esc(day(last_post))}</p></header>
+      <header class="comparison-intro"><div class="comparison-location"><p class="eyebrow">2026 {S.esc(city_name)}長選舉</p><label class="city-switch-label">切換縣市<select id="comparison-city" aria-label="切換比較縣市">{city_options}</select></label><a href="/compare/" class="all-races-link">全部縣市 ↗</a></div><h1>比較候選人的政見。</h1>
+      <p class="snapshot-line">{len(data["topics"])} 類議題 · {question_count} 個比較項目 · {S.esc(freshness)}</p></header>
       <div class="comparison-toolbar">
         <details class="candidate-menu topic-menu"><summary><span id="selected-topic-label">所有議題</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇要比較的議題，可複選</legend><div class="topic-menu-heading"><strong>選擇議題 · 可複選</strong><button type="button" id="all-topics" class="text-button">顯示全部</button></div>{''.join(topic_options)}</fieldset></details>
         <details class="candidate-menu"><summary>比較對象 <span id="selected-candidate-count">{selected_count}</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇比較對象</legend>{candidate_controls}</fieldset></details>
@@ -232,7 +239,7 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
       <div class="topic-selection" id="topic-selection" hidden aria-label="已選議題"></div>
       <div class="table-status"><span id="result-count" role="status" aria-live="polite">{question_count} 個比較項目</span><label><input type="checkbox" id="only-comparable">只看多人有主張</label><span class="table-hint">左右滑動比較 →</span></div>
       <div class="comparison-table-scroll" style="--candidate-count:{selected_count}" tabindex="0" role="region" aria-label="候選人政見比較表">
-        <table class="comparison-table"><caption class="sr-only">臺北市長候選人政見比較，依議題與政策面向排列</caption>
+        <table class="comparison-table"><caption class="sr-only">{S.esc(city_name)}長候選人政見比較，依議題與政策面向排列</caption>
           <colgroup><col class="question-column">{candidate_cols}</colgroup>
           <thead><tr><th scope="col" class="corner-cell"><span>比較項目</span><small>— 本項無收錄主張</small></th>{''.join(candidate_headers)}</tr></thead>
           {''.join(topic_sections)}
@@ -240,18 +247,18 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         <div id="comparison-no-results" class="empty" hidden>沒有符合的比較項目 <button type="button" id="reset-comparison" class="text-button">重設篩選</button></div>
       </div>
       </div>'''
-    title = "臺北市長政見比較" + ("・Review" if review else "")
-    html = S.layout("comparison", title, "臺北市6位市長候選人，依政策面向並排比較重點，展開查看細項與原文證據。", "/compare/taipei/", body,
+    title = city_name + "長政見比較" + ("・Review" if review else "")
+    html = S.layout("comparison", title, f"{city_name}{len(candidates)}位縣市長候選人，依政策面向並排比較重點，展開查看細項與原文證據。", route_path, body,
                     extra_css=("pages/comparison.css",), extra_js=("pages/comparison.js",), noindex=review)
     # This isolated review contains only its own route. Existing site navigation
     # opens the production pages instead of leading reviewers to broken links.
     if review:
         html = re.sub(r'href="(/(?!assets/|api/comparison\.json)[^"#]*)"', lambda m: 'href="' + S.BASE_URL + m.group(1) + '"', html)
-    route = out / "compare/taipei"
+    route = out / 'compare' / city
     route.mkdir(parents=True, exist_ok=True)
     (route / "index.html").write_text(html, encoding="utf-8")
     if review:
-        (out / "index.html").write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/compare/taipei/"><a href="/compare/taipei/">臺北市政見比較</a>', encoding="utf-8")
+        (out / "index.html").write_text(f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={route_path}"><a href="{route_path}">{S.esc(title)}</a>', encoding="utf-8")
         asset_out = out / "assets"
         asset_out.mkdir(parents=True, exist_ok=True)
         for path in S.ASSETS_DIR.rglob("*"):
@@ -265,7 +272,12 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         public_compact = copy.deepcopy(compact)
         public_compact["snapshotHash"] = snapshot_hash(data)
         data["compactComparison"] = public_compact
-    (out / "api/comparison.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    api_dir = out / 'api' / 'comparisons'
+    api_dir.mkdir(parents=True, exist_ok=True)
+    public_json = json.dumps(data, ensure_ascii=False, indent=2)
+    (api_dir / (city + '.json')).write_text(public_json, encoding='utf-8')
+    if city == 'taipei':
+        (out / "api/comparison.json").write_text(public_json, encoding="utf-8")
     if review:
         (out / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")
     print(f"comparison rendered: {route / 'index.html'}; {question_count} comparison items")
@@ -279,10 +291,44 @@ def render(_data) -> None:
     """
     from build_issue_comparisons import validate_snapshot
 
-    path = S.PROJECT_ROOT / "data/comparisons/taipei.json.gz"
-    with gzip.open(path, "rt", encoding="utf-8") as stream:
-        snapshot = json.load(stream)
-    validate_snapshot(snapshot)
-    with gzip.open(S.PROJECT_ROOT / "data/comparisons/taipei-facets.json.gz", "rt", encoding="utf-8") as stream:
-        compact = json.load(stream)
-    render_review(snapshot, S.SITE_ROOT, review=False, compact=compact)
+    from comparison_facets import validate_facets
+    from comparison_races import COUNTIES
+    snapshots = []
+    for city, name, _ in COUNTIES:
+        root = S.PROJECT_ROOT / 'data/comparisons'
+        with gzip.open(root / (city + '.json.gz'), 'rt', encoding='utf-8') as stream:
+            snapshot = json.load(stream)
+        with gzip.open(root / (city + '-facets.json.gz'), 'rt', encoding='utf-8') as stream:
+            compact = json.load(stream)
+        if city != 'taipei' and snapshot.get('race', {}).get('id') != city:
+            raise ValueError('Comparison snapshot belongs to another county')
+        validate_snapshot(snapshot)
+        validate_facets(compact, snapshot)
+        snapshots.append((city, name, snapshot, compact))
+    races = []
+    for city, name, snapshot, compact in snapshots:
+        render_review(snapshot, S.SITE_ROOT, review=False, compact=compact)
+        races.append({'id': city, 'name': name, 'candidateCount': len(snapshot['candidates']),
+                      'sourceCandidateCount': len({s['candidateId'] for s in snapshot['sources']}),
+                      'facetCount': sum(len(t['facets']) for t in compact['topics']),
+                      'questionCount': sum(len(t['questions']) for t in snapshot['topics']),
+                      'claimCount': len(snapshot['claims']), 'analysisAt': snapshot['analysisAt'],
+                      'path': f'/compare/{city}/', 'dataUrl': f'/api/comparisons/{city}.json'})
+    render_hub(races, S.SITE_ROOT)
+
+
+def render_hub(races: list[dict], out: Path):
+    cards = ''.join(f'<a class="comparison-city-card" href="{r["path"]}"><strong>{S.esc(r["name"])}</strong>'
+                    f'<span>{r["candidateCount"]} 位候選人 · {r["facetCount"]} 個比較項目</span><span class="city-card-arrow" aria-hidden="true">↗</span></a>' for r in races)
+    body = ('<div class="container comparison-app comparison-hub"><header class="comparison-intro">'
+            '<p class="eyebrow">2026 縣市長選舉</p><h1>從你的縣市開始比較。</h1>'
+            '<p class="comparison-hub-copy">同一議題，並排看候選人的做法。選擇縣市後，可展開細項與原文。</p></header>'
+            f'<nav class="comparison-city-grid" aria-label="選擇政見比較縣市">{cards}</nav></div>')
+    html = S.layout('comparison', '縣市長政見比較', '全臺22縣市長候選人，同選區、同議題並排比較主張與原文。', '/compare/', body,
+                    extra_css=('pages/comparison.css',))
+    route = out / 'compare'
+    route.mkdir(parents=True, exist_ok=True)
+    (route / 'index.html').write_text(html, encoding='utf-8')
+    api = out / 'api/comparisons'
+    api.mkdir(parents=True, exist_ok=True)
+    (api / 'index.json').write_text(json.dumps({'version': 1, 'races': races}, ensure_ascii=False, indent=2), encoding='utf-8')

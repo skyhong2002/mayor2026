@@ -119,7 +119,7 @@ class ComparisonIntegrityTests(unittest.TestCase):
         self.assertNotIn("noindex", html)
         self.assertNotIn("・Review", html)
         self.assertIn('href="/"', html)
-        self.assertIn('href="/compare/taipei/"', html)
+        self.assertIn('href="/compare/"', html)
 
     def test_missing_production_snapshot_fails_without_touching_existing_pages(self):
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(comparison.S, "PROJECT_ROOT", Path(tmp)):

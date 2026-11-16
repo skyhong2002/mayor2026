@@ -92,6 +92,10 @@ def main() -> int:
     comparison = feed_common.load_json(API_DIR / "comparison.json", None)
     if comparison and (SITE_ROOT / "compare/taipei/index.html").exists():
         entries.append(("/compare/taipei/", lastmod(comparison.get("analysisAt"))))
+    races = feed_common.load_json(API_DIR / 'comparisons/index.json', {}).get('races', [])
+    if races:
+        entries.append(('/compare/', max((mod for r in races if (mod := lastmod(r.get('analysisAt')))), default=None)))
+        entries.extend((r['path'], lastmod(r.get('analysisAt'))) for r in races if r['id'] != 'taipei')
     (SITE_ROOT / "sitemap.xml").write_text(render_sitemap(entries), encoding="utf-8")
 
     robots = f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n"

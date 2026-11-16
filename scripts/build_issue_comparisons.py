@@ -319,7 +319,35 @@ def split_source(source: dict, limit: int = 6500) -> list[dict]:
 
 def extraction_batch(batch: list[dict]) -> tuple[list[dict], dict]:
     payload = [{k: s[k] for k in ("id", "candidateId", "kind", "title", "postedAt", "text", "headings")} for s in batch]
-    record = request("extract", EXTRACT_PROMPT, payload, EXTRACT_SCHEMA)
+    cache_key = digest([VERSION, MODEL, "extract", EXTRACT_PROMPT, payload, EXTRACT_SCHEMA])
+    cached = (WORK / 'cache' / (cache_key + '.json')).exists()
+    if len(batch) == 1 and batch[0]['kind'] == 'policy' and len(batch[0]['text']) > 1800 and not cached:
+        source = batch[0]
+        parts = split_source(source, 1800)
+        claims, segments, rejected = [], [], []
+        for part in parts:
+            part['parentId'] = source.get('parentId', source['id'])
+            rows, meta = extraction_batch([part])
+            claims.extend(rows)
+            segments.append(meta)
+            rejected.extend(meta.get('rejected', []))
+        # The original part is marked reviewed only after every smaller segment
+        # succeeds; segment provenance remains available for auditing.
+        return claims, {'reviewed': [source['id']], 'segments': segments, 'rejected': rejected}
+    if (len(batch) > 1 and any(s['kind'] == 'policy' for s in batch)
+            and sum(len(s['text']) for s in batch) > 1800
+            and not cached):
+        first, a = extraction_batch(batch[:len(batch) // 2])
+        second, b = extraction_batch(batch[len(batch) // 2:])
+        return first + second, {"children": [a, b]}
+    try:
+        record = request("extract", EXTRACT_PROMPT, payload, EXTRACT_SCHEMA, 26000)
+    except json.JSONDecodeError:
+        if len(batch) == 1:
+            raise
+        first, a = extraction_batch(batch[:len(batch) // 2])
+        second, b = extraction_batch(batch[len(batch) // 2:])
+        return first + second, {"children": [a, b]}
     reviewed = set(record["result"]["reviewedSourceIds"])
     expected = {s["id"] for s in batch}
     if reviewed != expected:
@@ -580,11 +608,18 @@ def analyze(manifest: dict, workers: int) -> None:
 
 
 def validate_snapshot(data: dict) -> None:
-    if len(data["candidates"]) != 6 or len({c["id"] for c in data["candidates"]}) != 6:
+    if 'race' in data:
+        from comparison_races import validate_race
+        validate_race(data)
+    elif len(data["candidates"]) != 6 or len({c["id"] for c in data["candidates"]}) != 6:
         raise ValueError("Taipei review must include all six candidates")
     if {t["id"] for t in data["topics"]} != set(TOPICS.values()):
         raise ValueError("missing topics")
+    if len(data['topics']) != len(TOPICS):
+        raise ValueError('duplicate topics')
     sources = {s["id"]: s for s in data["sources"]}
+    if len(sources) != len(data['sources']) or len({c['id'] for c in data['claims']}) != len(data['claims']):
+        raise ValueError('duplicate source or claim IDs')
     expected_parts = {part["id"] for s in data["sources"] for part in split_source(s)}
     reviewed_parts: list[str] = []
 

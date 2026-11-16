@@ -3,6 +3,14 @@
   'use strict';
   const app = document.querySelector('.comparison-app');
   if (!app) return;
+  document.getElementById('comparison-city')?.addEventListener('change', event => {
+    const destination = new URL(event.target.value, location.origin);
+    const current = new URLSearchParams(location.search);
+    for (const key of ['topics', 'topic', 'q', 'compare']) {
+      if (current.has(key)) destination.searchParams.set(key, current.get(key));
+    }
+    location.assign(destination.href);
+  });
   const input = document.getElementById('comparison-search');
   const topicFilters = Array.from(document.querySelectorAll('[data-topic-filter]'));
   const topicLabel = document.getElementById('selected-topic-label');
@@ -59,8 +67,8 @@
       questions.forEach(q => {
         const candidateCount = q.dataset.claimCandidates ? q.dataset.claimCandidates.split(',').filter(id => shownCandidates.has(id)).length : (q.dataset.comparable === 'true' ? 2 : 1);
         q.hidden = (!!query && !q.dataset.search.includes(query)) || (comparable.checked && candidateCount < 2);
+        const titleMatches = !query || q.querySelector('.question-label a').textContent.toLocaleLowerCase().includes(query);
         q.querySelectorAll('.facet-detail').forEach(detail => {
-          const titleMatches = q.querySelector('.question-label a').textContent.toLocaleLowerCase().includes(query);
           detail.hidden = !!query && !titleMatches && !detail.dataset.detailSearch.includes(query);
           const quotes = detail.querySelector('.detail-quotes');
           if (query && !detail.hidden && detail.querySelector('blockquote') && Array.from(detail.querySelectorAll('blockquote')).some(b => b.textContent.toLocaleLowerCase().includes(query))) {

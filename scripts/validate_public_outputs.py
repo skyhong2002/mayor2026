@@ -52,6 +52,8 @@ REQUIRED_FILES = [
     SITE_ROOT / "robots.txt",
     SITE_ROOT / "compare" / "taipei" / "index.html",
     API_DIR / "comparison.json",
+    SITE_ROOT / 'compare/index.html',
+    API_DIR / 'comparisons/index.json',
 ]
 
 
@@ -313,32 +315,50 @@ def validate_elections(errors: list[str]) -> None:
 
 
 def validate_comparison(errors: list[str]) -> None:
-    path = API_DIR / "comparison.json"
-    if not path.exists():
-        return  # missing files are reported by validate_required_files
+    from collections import Counter
     from build_issue_comparisons import validate_snapshot
-
+    from comparison_facets import validate_facets
+    from comparison_races import COUNTIES
+    index = API_DIR / 'comparisons/index.json'
+    if not index.exists():
+        return
     try:
-        snapshot = read_json(path)
-        validate_snapshot(snapshot)
-        from comparison_facets import validate_facets
-        compact = snapshot.pop("compactComparison")
-        validate_facets(compact, snapshot)
-        page = SITE_ROOT / "compare/taipei/index.html"
-        content = page.read_text(encoding="utf-8")
-        if 'class="comparison-table"' not in content:
-            errors.append("comparison page has no prerendered table")
-        for label in ('id="policy-outlines"', 'id="source-library"', 'class="comparison-methods"'):
-            if label in content:
-                errors.append("comparison page contains a removed auxiliary section")
-        for topic in compact["topics"]:
-            for facet in topic["facets"]:
-                if f'id="{facet["id"]}"' not in content:
-                    errors.append(f"comparison page omits facet {facet['id']}")
-        for topic in snapshot["topics"]:
-            for question in topic["questions"]:
-                if f'id="{question["id"]}"' not in content:
-                    errors.append(f"comparison page omits question {question['id']}")
+        races = read_json(index)['races']
+        if Counter(r['id'] for r in races) != Counter(city for city, _, _ in COUNTIES):
+            errors.append('comparison index must retain all 22 counties exactly once')
+        hub = (SITE_ROOT / 'compare/index.html').read_text(encoding='utf-8')
+        for race in races:
+            city = race['id']
+            expected_path = f'/compare/{city}/'
+            if race['path'] != expected_path or race['dataUrl'] != f'/api/comparisons/{city}.json':
+                raise ValueError('invalid comparison index route')
+            if f'href="{expected_path}"' not in hub:
+                errors.append('comparison hub omits ' + city)
+            snapshot = read_json(API_DIR / 'comparisons' / (city + '.json'))
+            if city == 'taipei' and snapshot != read_json(API_DIR / 'comparison.json'):
+                errors.append('Taipei compatibility API differs from its county API')
+            if city != 'taipei' and snapshot.get('race', {}).get('id') != city:
+                raise ValueError('comparison output belongs to another county')
+            validate_snapshot(snapshot)
+            compact = snapshot.pop('compactComparison')
+            validate_facets(compact, snapshot)
+            if race['candidateCount'] != len(snapshot['candidates']) or race['facetCount'] != sum(len(t['facets']) for t in compact['topics']):
+                errors.append('comparison index counts differ: ' + city)
+            page = SITE_ROOT / 'compare' / city / 'index.html'
+            content = page.read_text(encoding='utf-8')
+            if 'class="comparison-table"' not in content or 'id="comparison-city"' not in content:
+                errors.append('comparison page has no table or county selector: ' + city)
+            for label in ('id="policy-outlines"', 'id="source-library"', 'class="comparison-methods"'):
+                if label in content:
+                    errors.append('comparison page contains a removed auxiliary section: ' + city)
+            ids = Counter(re.findall(r'(?<![\w-])id="([^"]+)"', content))
+            if any(n != 1 for n in ids.values()):
+                errors.append('comparison page has duplicate anchors: ' + city)
+            expected = [f['id'] for t in compact['topics'] for f in t['facets']]
+            expected += [q['id'] for t in snapshot['topics'] for q in t['questions']]
+            expected += ['claim-' + c['id'] for c in snapshot['claims']]
+            if any(ids[i] != 1 for i in expected):
+                errors.append('comparison page omits a facet, question or claim: ' + city)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f"invalid comparison output: {exc}")
 

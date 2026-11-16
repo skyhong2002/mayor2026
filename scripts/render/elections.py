@@ -128,11 +128,15 @@ def _notice_untracked(has_tracked: bool) -> str:
 
 
 def _compare_link(county: str, category: str = "", *, compact: bool = False) -> str:
-    if county != "taipei" or category not in ("", "municipal-mayor"):
+    from comparison_races import COUNTIES
+    names = {slug: name for slug, name, _ in COUNTIES}
+    if county not in names or category not in ("", "municipal-mayor", "county-mayor"):
         return ""
+    title = names[county] + '長政見比較'
+    path = '/compare/' + county + '/'
     if compact:
-        return '<p class="el-compare-inline"><a href="/compare/taipei/">前往臺北市長政見比較 →</a></p>'
-    return ('<a class="el-compare" href="/compare/taipei/"><span><strong>臺北市長政見比較</strong>'
+        return f'<p class="el-compare-inline"><a href="{path}">前往{S.esc(title)} →</a></p>'
+    return (f'<a class="el-compare" href="{path}"><span><strong>{S.esc(title)}</strong>'
             '<span>把候選人的主張放在一起看</span></span><span aria-hidden="true">→</span></a>')
 
 
@@ -169,7 +173,7 @@ def render_hub(index: dict[str, Any]) -> None:
         + '<section class="el-counties" aria-labelledby="el-counties-title"><div class="el-section-heading"><h2 id="el-counties-title">依縣市瀏覽</h2><span>選縣市，再選職位</span></div>'
         + f'<h3 class="el-group-title">直轄市</h3><div class="el-county-grid">{"".join(card(c) for c in muni)}</div>'
         + f'<h3 class="el-group-title">縣（市）</h3><div class="el-county-grid">{"".join(card(c) for c in other)}</div></section>'
-        + _compare_link("taipei")
+        + '<a class="el-compare" href="/compare/"><span><strong>縣市長政見比較</strong><span>選擇縣市，並排比較候選人的主張</span></span><span aria-hidden="true">→</span></a>'
         + '<details class="el-statistics"><summary>各類選舉收錄概況</summary>'
         + f'<div class="el-stats-grid">{tiles}</div></details></div>'
         + _notice_untracked(True) + _source_line(gen)

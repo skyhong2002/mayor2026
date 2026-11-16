@@ -114,6 +114,14 @@ def render(data) -> None:
          ])
          + "<p>" + _code("candidates.json") + " 可用的篩選參數：</p>"
          + _table(["參數", "說明"], ELECTION_FILTER_ROWS)),
+        ('comparisons', '縣市長政見比較',
+         '<p>比較資料為已檢核的靜態快照，更新時間以各檔案的 analysisAt 為準。</p>'
+         + _table(['端點', '內容'], [
+             [_link('/api/comparisons/index.json'), '22 縣市的比較頁面、候選人及比較項目計數'],
+             [_code('/api/comparisons/<縣市ID>.json'), '同選區完整候選人、來源、主張、細項及 compactComparison 精簡比較層'],
+             [_link('/api/comparison.json'), '臺北市資料的相容端點'],
+         ])
+         + '<p>精簡摘要每條皆附 claimIds；可循 claims 的 sourceId 核對 sources 原文。號次尚未取得時 number 為 null，不代填流水號。這些端點提供完整檔案。</p>'),
         ("other", "其他列表端點",
          _table(["端點", "列表欄位", "可用篩選"], [
              [_link("/api/candidates.json"), _code("candidates"), _code("city")],

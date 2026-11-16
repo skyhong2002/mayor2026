@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from comparison_facets import facet_id, snapshot_hash, validate_facets
+from build_comparison_facets import summary_errors
 from render import comparison
 from test_issue_comparisons import fixture
 
@@ -31,6 +32,16 @@ class FacetTests(unittest.TestCase):
 
     def test_complete_grouping(self):
         validate_facets(self.compact, self.data)
+
+    def test_summary_citation_errors_are_reported_before_semantic_review(self):
+        allowed = {'c1': ['a1'], 'c2': ['a2']}
+        rows = [{'candidateId': 'c1', 'highlights': [{'text': '主張', 'claimIds': ['a2']}]},
+                {'candidateId': 'c2', 'highlights': [{'text': '主張', 'claimIds': ['a2']}]}]
+        self.assertTrue(summary_errors(rows, allowed))
+        rows[0]['highlights'][0]['claimIds'] = ['a1']
+        self.assertEqual(summary_errors(rows, allowed), [])
+        rows[0]['highlights'][0]['claimIds'] = ['a1', 'a1']
+        self.assertTrue(summary_errors(rows, allowed))
 
     def test_snapshot_change_is_rejected(self):
         self.data['claims'][0]['quote'] += ' changed'

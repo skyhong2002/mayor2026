@@ -112,7 +112,7 @@ INTENT_LABELS = {"self_initiated": "主動發文", "responsive": "回應他方�
 # into the 更多 menu on phones. ``match`` = page_ids that highlight the item.
 nav_items: list[dict[str, Any]] = [
     {"id": "home", "label": "最新", "short": "最新", "href": "/", "icon": "home", "tab": True, "match": ["home"]},
-    {"id": "comparison", "label": "政見比較", "short": "比較", "href": "/compare/taipei/", "icon": "match", "tab": True, "match": ["comparison"]},
+    {"id": "comparison", "label": "政見比較", "short": "比較", "href": "/compare/", "icon": "match", "tab": True, "match": ["comparison"]},
     {"id": "elections", "label": "候選人名單", "short": "名單", "href": "/elections/", "icon": "ballot", "tab": False, "match": ["elections"]},
     {"id": "spectrum", "label": "議題光譜", "short": "光譜", "href": "/spectrum/", "icon": "spectrum", "tab": True, "match": ["spectrum", "topic"]},
     {"id": "source", "label": "候選人帳號", "short": "帳號", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
