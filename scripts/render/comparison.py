@@ -97,8 +97,9 @@ def render_question(q: dict, candidates: list[dict], claims: dict, sources: dict
         hidden = '' if source_counts[cid] else ' hidden'
         cards.append(f'<td class="position {cls}" data-candidate="{cid}" headers="candidate-{cid} {q["id"]}-title"{hidden}>{body}</td>')
     comparable = "true" if len(by_candidate) > 1 else "false"
+    claim_candidates = ','.join(by_candidate)
     return (f'<tr class="mobile-question-heading"><th colspan="7" data-table-span><a href="#{q["id"]}">{S.esc(q["title"])}</a></th></tr>'
-            f'<tr class="comparison-question" id="{q["id"]}" data-comparable="{comparable}" data-search="{S.esc(" ".join(search).lower())}">'
+            f'<tr class="comparison-question" id="{q["id"]}" data-claim-candidates="{S.esc(claim_candidates)}" data-comparable="{comparable}" data-search="{S.esc(" ".join(search).lower())}">'
             f'<th scope="row" class="question-label" id="{q["id"]}-title"><a href="#{q["id"]}">{S.esc(q["title"])}</a></th>'
             + "".join(cards) + '</tr>')
 
@@ -193,7 +194,7 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         qmap = {q['id']: q for q in topic['questions']}
         rendered = ''.join(render_facet(item, qmap, candidates, claims, sources, source_counts, title) if compact is not None
                            else render_question(item, candidates, claims, sources, source_counts) for item in items)
-        topic_sections.append(f'<tbody class="comparison-topic" id="topic-{tid}" data-topic="{tid}">'
+        topic_sections.append(f'<tbody class="comparison-topic" id="topic-{tid}" data-topic="{tid}" data-topic-name="{S.esc(title)}">'
                               f'<tr class="topic-divider"><th colspan="{selected_count + 1}" data-table-span><h2>{S.esc(title)}</h2><span>{len(items)} 個比較項目</span></th></tr>'
                               + empty + rendered + '</tbody>')
     candidate_headers = []
@@ -220,6 +221,20 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         candidate_headers.append(f'<th scope="col" id="candidate-{c["id"]}" data-candidate="{c["id"]}"{hidden}>'
                                  f'<div class="candidate-photo">{portrait}{ballot}</div><strong>{S.esc(c["name"])}</strong>'
                                  f'<span class="candidate-party">{S.esc(c["party"])}</span><small>{state}</small></th>')
+    mobile_candidate_headers = []
+    for c in candidates:
+        avatar_url = c.get("avatarUrl")
+        if avatar_url:
+            mobile_portrait = f'<img src="/{S.esc(avatar_url)}" alt="" width="36" height="36" decoding="async">'
+        else:
+            mobile_portrait = f'<span class="mobile-sticky-initial" aria-hidden="true">{S.esc(c["name"][:1])}</span>'
+        count = source_counts[c["id"]]
+        hidden = '' if count else ' hidden'
+        number_label = str(c["number"]) if c["number"] is not None else "—"
+        mobile_candidate_headers.append(
+            f'<div class="mobile-sticky-candidate" data-candidate="{c["id"]}"{hidden}>'
+            f'<span class="mobile-sticky-photo">{mobile_portrait}</span><span class="mobile-sticky-copy"><span class="mobile-sticky-name">{S.esc(c["name"])}</span><small class="mobile-sticky-meta">{S.esc(number_label)} · {S.esc(c["party"])}</small></span></div>'
+        )
     last_post = max((s["postedAt"] for s in sources.values() if s["kind"] == "post" and s["postedAt"]), default='')
     freshness = '貼文更新至 ' + day(last_post) if last_post else '資料整理於 ' + day(data['generatedAt'])
     failures = data.get("policyFailures", [])
@@ -228,8 +243,8 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
     candidate_controls = "".join(f'<label><input type="checkbox" data-candidate-filter="{c["id"]}"' + (' checked' if source_counts[c['id']] else '') + f'><span>{c["number"] if c["number"] is not None else "號次待公告"} {S.esc(c["name"])}</span>' + ('' if source_counts[c['id']] else '<small>尚無來源</small>') + '</label>' for c in candidates)
     candidate_cols = ''.join(f'<col data-candidate="{c["id"]}"' + ('' if source_counts[c['id']] else ' hidden') + '>' for c in candidates)
     body = f'''<div class="container comparison-app">
-      <header class="comparison-intro"><div class="comparison-location"><p class="eyebrow">2026 {S.esc(city_name)}長選舉</p><label class="city-switch-label">切換縣市<select id="comparison-city" aria-label="切換比較縣市">{city_options}</select></label><a href="/compare/" class="all-races-link">全部縣市 ↗</a></div><h1>比較候選人的政見。</h1>
-      <p class="snapshot-line">{len(data["topics"])} 類議題 · {question_count} 個比較項目 · {S.esc(freshness)}</p></header>
+      <header class="comparison-intro"><div class="comparison-location"><p class="eyebrow">2026 {S.esc(city_name)}長選舉</p><label class="city-switch-label">切換縣市<select id="comparison-city" aria-label="切換比較縣市">{city_options}</select></label><a href="/compare/" class="all-races-link">全部縣市 →</a></div><h1>{S.esc(city_name)}長政見比較。</h1>
+      <p class="snapshot-line">{len(data["topics"])} 類議題 · {S.esc(freshness)}</p></header>
       <div class="comparison-toolbar">
         <details class="candidate-menu topic-menu"><summary><span id="selected-topic-label">所有議題</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇要比較的議題，可複選</legend><div class="topic-menu-heading"><strong>選擇議題 · 可複選</strong><button type="button" id="all-topics" class="text-button">顯示全部</button></div>{''.join(topic_options)}</fieldset></details>
         <details class="candidate-menu"><summary>比較對象 <span id="selected-candidate-count">{selected_count}</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇比較對象</legend>{candidate_controls}</fieldset></details>
@@ -238,6 +253,7 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
       </div>
       <div class="topic-selection" id="topic-selection" hidden aria-label="已選議題"></div>
       <div class="table-status"><span id="result-count" role="status" aria-live="polite">{question_count} 個比較項目</span><label><input type="checkbox" id="only-comparable">只看多人有主張</label><span class="table-hint">左右滑動比較 →</span></div>
+      <div class="mobile-sticky-head" style="--candidate-count:{len(candidates)};--candidate-width:calc((100vw - 32px)/2)" aria-hidden="true"><div class="mobile-sticky-context" id="mobile-sticky-context">正在閱讀：{S.esc(data["topics"][0]["name"] if data["topics"] else "政見比較")}</div><div class="mobile-sticky-head-inner">{''.join(mobile_candidate_headers)}</div></div>
       <div class="comparison-table-scroll" style="--candidate-count:{selected_count}" tabindex="0" role="region" aria-label="候選人政見比較表">
         <table class="comparison-table"><caption class="sr-only">{S.esc(city_name)}長候選人政見比較，依議題與政策面向排列</caption>
           <colgroup><col class="question-column">{candidate_cols}</colgroup>
@@ -249,7 +265,8 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
       </div>'''
     title = city_name + "長政見比較" + ("・Review" if review else "")
     html = S.layout("comparison", title, f"{city_name}{len(candidates)}位縣市長候選人，依政策面向並排比較重點，展開查看細項與原文證據。", route_path, body,
-                    extra_css=("pages/comparison.css",), extra_js=("pages/comparison.js",), noindex=review)
+                    extra_css=("pages/comparison.css",), extra_js=("pages/comparison.js",), noindex=review,
+                    body_class="comparison-detail")
     # This isolated review contains only its own route. Existing site navigation
     # opens the production pages instead of leading reviewers to broken links.
     if review:
