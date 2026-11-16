@@ -29,6 +29,13 @@
     scroller.style.setProperty('--candidate-count', shown.size);
   }
 
+  function openForSearch(detail) {
+    if (detail && !detail.open) { detail.open = true; detail.dataset.searchOpened = 'true'; }
+  }
+  function restoreSearchOpen(detail) {
+    if (detail?.dataset.searchOpened) { detail.open = false; delete detail.dataset.searchOpened; }
+  }
+
   function update(writeURL = true) {
     const query = input.value.trim().toLocaleLowerCase();
     const chosenTopics = topicFilters.filter(f => f.checked).map(f => f.dataset.topicFilter);
@@ -43,22 +50,36 @@
       chip.addEventListener('click', () => { f.checked = false; update(); });
       topicSelection.append(chip);
     });
+    const shownCandidates = new Set(filters.filter(f => f.checked).map(f => f.dataset.candidateFilter));
     let count = 0;
     sections.forEach(section => {
       const matchesTopic = allTopics || chosenTopics.includes(section.dataset.topic);
       const questions = Array.from(section.querySelectorAll('.comparison-question'));
       let matches = 0;
       questions.forEach(q => {
-        q.hidden = (!!query && !q.dataset.search.includes(query)) || (comparable.checked && q.dataset.comparable !== 'true');
+        const candidateCount = q.dataset.claimCandidates ? q.dataset.claimCandidates.split(',').filter(id => shownCandidates.has(id)).length : (q.dataset.comparable === 'true' ? 2 : 1);
+        q.hidden = (!!query && !q.dataset.search.includes(query)) || (comparable.checked && candidateCount < 2);
+        q.querySelectorAll('.facet-detail').forEach(detail => {
+          const titleMatches = q.querySelector('.question-label a').textContent.toLocaleLowerCase().includes(query);
+          detail.hidden = !!query && !titleMatches && !detail.dataset.detailSearch.includes(query);
+          const quotes = detail.querySelector('.detail-quotes');
+          if (query && !detail.hidden && detail.querySelector('blockquote') && Array.from(detail.querySelectorAll('blockquote')).some(b => b.textContent.toLocaleLowerCase().includes(query))) {
+            openForSearch(quotes);
+          } else restoreSearchOpen(quotes);
+        });
+        const detailList = q.querySelectorAll('.facet-evidence');
+        detailList.forEach(list => {
+          if (query && Array.from(list.querySelectorAll('.facet-detail')).some(d => !d.hidden)) openForSearch(list);
+          else restoreSearchOpen(list);
+        });
         q.previousElementSibling.hidden = q.hidden;
         if (!q.hidden) matches++;
       });
-      section.hidden = !matchesTopic || ((!!query || comparable.checked) && !matches);
+      section.hidden = !matchesTopic || !matches;
       if (!section.hidden) count += matches;
     });
-    document.getElementById('result-count').textContent = `${count} 個政策問題`;
+    document.getElementById('result-count').textContent = `${count} 個比較項目`;
     document.getElementById('comparison-no-results').hidden = count !== 0;
-    document.querySelectorAll('[data-outline-search]').forEach(d => { d.hidden = !!query && !d.dataset.outlineSearch.includes(query); });
     if (writeURL) {
       const url = new URL(location.href);
       url.searchParams.delete('topic');
@@ -92,7 +113,7 @@
   function revealHash() {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
-    const target = document.getElementById(id);
+    const target = document.getElementById(id) || (id.startsWith('source-') ? document.querySelector('[data-source-id="' + CSS.escape(id.slice(7)) + '"]') : null);
     if (!target) return;
     const topic = target.closest('.comparison-topic');
     if (topic) {
@@ -112,6 +133,7 @@
     }
     requestAnimationFrame(() => {
       if (topic) {
+        scroller.scrollIntoView({ block: 'start' });
         const row = target.closest('.comparison-question');
         const scrollTarget = mobile.matches && target === row ? row.previousElementSibling : target;
         const bounds = scrollTarget.getBoundingClientRect();

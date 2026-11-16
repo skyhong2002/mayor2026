@@ -321,10 +321,20 @@ def validate_comparison(errors: list[str]) -> None:
     try:
         snapshot = read_json(path)
         validate_snapshot(snapshot)
+        from comparison_facets import validate_facets
+        compact = snapshot.pop("compactComparison")
+        validate_facets(compact, snapshot)
         page = SITE_ROOT / "compare/taipei/index.html"
         content = page.read_text(encoding="utf-8")
         if 'class="comparison-table"' not in content:
             errors.append("comparison page has no prerendered table")
+        for label in ('id="policy-outlines"', 'id="source-library"', 'class="comparison-methods"'):
+            if label in content:
+                errors.append("comparison page contains a removed auxiliary section")
+        for topic in compact["topics"]:
+            for facet in topic["facets"]:
+                if f'id="{facet["id"]}"' not in content:
+                    errors.append(f"comparison page omits facet {facet['id']}")
         for topic in snapshot["topics"]:
             for question in topic["questions"]:
                 if f'id="{question["id"]}"' not in content:

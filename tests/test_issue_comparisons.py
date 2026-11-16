@@ -191,8 +191,9 @@ class ComparisonIntegrityTests(unittest.TestCase):
 
     def test_original_text_is_escaped_and_script_urls_are_not_linked(self):
         data = fixture()
-        data["sources"][1]["text"] = '<script>alert("source")</script>'
-        data["sources"][1]["url"] = 'javascript:alert("url")'
+        data["sources"][0]["text"] = '<script>alert("source")</script>'
+        data["claims"][0]["quote"] = data["sources"][0]["text"]
+        data["sources"][0]["url"] = 'javascript:alert("url")'
         with tempfile.TemporaryDirectory() as tmp:
             comparison.render_review(data, Path(tmp))
             html = (Path(tmp) / "compare/taipei/index.html").read_text()
