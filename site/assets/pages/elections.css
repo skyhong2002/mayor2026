@@ -86,3 +86,127 @@
 }
 .ballot-name { font-weight: 700; }
 .district-count a { color: var(--color-text-secondary); }
+
+/* Task-first roster: search, location, position, ballot. */
+.page-elections .page { max-width:1120px; }
+.el-hero { margin:8px 0 28px; }
+.el-hero .eyebrow { font-size:12px; color:var(--color-text-secondary); margin-bottom:12px; }
+.el-hero h1 { font-size:clamp(30px,4vw,46px); letter-spacing:-.04em; line-height:1.25; margin:0 0 12px; }
+.el-hero>p:last-child { color:var(--color-text-secondary); font-size:14px; line-height:1.9; }
+.el-total { display:inline-block; margin-left:12px; color:var(--color-text-muted); font-size:12px; }
+.el-finder { margin-bottom:30px; }
+.el-search { max-width:none; margin:0; }
+.el-search-label { display:block; font-size:13px; font-weight:650; margin-bottom:8px; }
+.el-search-field { position:relative; }
+.el-search .input { min-height:52px; padding-right:66px; border-radius:12px; font-size:16px; background:var(--color-surface-raised); }
+.el-clear { position:absolute; right:8px; top:5px; min-height:42px; padding:0 10px; border:0; background:none; color:var(--color-text-brand); cursor:pointer; font:inherit; font-size:13px; }
+.el-search-filters { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+.el-search-filters label { display:flex; align-items:center; gap:12px; color:var(--color-text-secondary); font-size:13px; }
+.el-search-filters select { width:100%; min-width:0; min-height:44px; border:1px solid var(--color-border-subtle); border-radius:10px; padding:8px 12px; background:var(--color-surface-raised); color:var(--color-text-primary); font:inherit; }
+.el-search-status { font-size:13px; margin:18px 0 8px; color:var(--color-text-secondary); }
+.el-results { margin:0; }
+.el-hit-list { border-top:1px solid var(--color-border-subtle); }
+.el-hit { padding:15px 4px; gap:14px; min-height:76px; }
+.el-hit-body { display:flex; flex-direction:column; gap:4px; }
+.el-hit-name { display:flex; align-items:center; flex-wrap:wrap; gap:10px; font-size:17px; }
+.el-hit-party { font-size:12px; font-weight:400; color:var(--color-text-secondary); }
+.el-hit-where { display:block; line-height:1.7; }
+.el-hit-cat { color:var(--color-text-secondary); }
+.el-more { display:block; margin:20px auto 0; min-height:44px; }
+.el-empty { padding:32px 20px; text-align:center; border:1px dashed var(--color-border-strong); border-radius:14px; }
+.el-empty p { color:var(--color-text-secondary); font-size:14px; margin:8px 0 20px; }
+.el-section-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:0 0 18px; }
+.el-section-heading h2,.el-section-title { font-size:20px; letter-spacing:-.02em; margin:0; }
+.el-section-heading>span { font-size:12px; color:var(--color-text-muted); }
+.el-group-title { font-size:12px; color:var(--color-text-secondary); font-weight:500; margin:20px 0 10px; }
+.el-county-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+.county-card { padding:18px; border-radius:12px; position:relative; }
+.county-card:not(.is-pending):after { content:'→'; position:absolute; right:15px; top:17px; font-size:14px; color:var(--color-text-muted); }
+.county-card .card-title { font-size:17px; margin:0 0 6px; }
+.county-card .card-meta { font-size:12px; line-height:1.8; margin:0; }
+.county-card.is-pending { opacity:1; background:var(--color-surface-soft); }
+.county-card.is-pending .card-title { color:var(--color-text-secondary); }
+.el-compare { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px 22px; margin:24px 0; border:1px solid var(--color-border-subtle); background:var(--color-surface-brand); border-radius:14px; color:var(--color-text-primary); }
+.el-compare:hover { text-decoration:none; border-color:var(--color-border-strong); }
+.el-compare strong { display:block; font-size:16px; margin-bottom:4px; }
+.el-compare span span { display:block; font-size:13px; color:var(--color-text-secondary); }
+.el-statistics,.el-note { border-top:1px solid var(--color-border-subtle); padding:18px 0; font-size:13px; }
+.el-statistics>summary,.el-note>summary { cursor:pointer; color:var(--color-text-secondary); min-height:30px; }
+.el-note p { color:var(--color-text-secondary); max-width:760px; line-height:1.9; margin-top:12px; }
+.el-stats-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:16px; }
+.el-stats-grid .stat-tile { padding:16px; }
+.el-cats { margin-top:16px; }
+.el-cats .card,.el-towns .card { min-height:102px; }
+.el-meta { line-height:1.9; padding-top:8px; margin-top:18px; }
+.page-elections .page-head { margin-bottom:24px; }
+.page-elections .notice { margin-top:18px; }
+.page-elections :is(a,button,input,select,summary):focus-visible { outline:2px solid var(--color-focus-ring); outline-offset:4px; }
+.page-elections [hidden] { display:none!important; }
+.ballot-item { padding:16px 0; }
+.ballot-name { font-size:18px; }
+.ballot-sub { font-size:12px; line-height:1.9; }
+.ballot-feed { display:inline-flex; align-items:center; min-height:36px; }
+.district-count a { display:inline-flex; align-items:center; min-height:32px; }
+@media(max-width:699px) {
+  .el-hero { margin-top:0; margin-bottom:22px; }
+  .el-hero .eyebrow { font-size:11px; margin-bottom:10px; }
+  .el-hero>p:last-child { font-size:13px; }
+  .el-total { display:block; margin-left:0; }
+  .el-finder { margin-bottom:24px; }
+  .el-search-filters { gap:10px; }
+  .el-search-filters label { display:block; font-size:12px; }
+  .el-search-filters select { margin-top:5px; font-size:16px; }
+  .el-section-heading { margin-bottom:14px; }
+  .el-section-heading h2 { font-size:19px; }
+  .el-section-heading>span { font-size:11px; }
+  .el-county-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .county-card { padding:15px 12px; }
+  .county-card .card-title { font-size:16px; }
+  .county-card .card-meta { font-size:11px; }
+  .county-card:not(.is-pending):after { right:12px; top:15px; }
+  .el-hit { grid-template-columns:2.25rem minmax(0,1fr); gap:4px 12px; padding:14px 0; }
+  .el-hit-cat { grid-column:2; margin-top:2px; font-size:11px; }
+  .el-hit-where { font-size:12px; }
+  .el-compare { padding:17px; }
+  .el-stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .el-cats { grid-template-columns:1fr; gap:10px; }
+  .el-cats .card { min-height:86px; }
+  .page-elections .page-head h1 { font-size:28px; line-height:1.35; }
+  .crumbs { font-size:12px; line-height:1.8; }
+}
+.el-search-filters label{display:grid;grid-template-columns:auto minmax(0,1fr);white-space:nowrap}
+@media(max-width:699px){.el-search-filters label{display:block}}
+.el-freshness{font-size:12px;color:var(--color-text-secondary);line-height:1.9;margin:-10px 0 18px}
+.el-freshness a{text-decoration:underline;text-underline-offset:3px}
+.page-elections .page-head{padding:12px 0}
+.page-elections .page-head h1{letter-spacing:-.025em}
+.page-elections .el-hero+.el-freshness{margin-top:-16px}
+@media(max-width:699px){.el-freshness{font-size:11px}.el-compare{margin:18px 0;padding:14px 17px}.el-compare strong{font-size:14px}.el-compare span span{font-size:12px}}
+.el-jump-select{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--color-text-secondary);margin:12px 0 0}
+.el-jump-select select{flex:1;min-width:0;min-height:44px;max-width:320px;padding:8px 12px;border:1px solid var(--color-border-subtle);border-radius:10px;background:var(--color-surface-raised);color:var(--color-text-primary);font:inherit;font-size:14px}
+.page-elections .page-head-text{flex-basis:auto}
+.page-elections .page-head{margin-bottom:18px}
+.page-elections .nav-more [data-current-section]{color:var(--color-text-brand)}
+.page-elections .nav-mobile-extra[aria-current]{color:var(--color-text-brand);font-weight:700}
+.page-elections .el-search input::-webkit-search-cancel-button{display:none}
+.page-elections .district-count a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:699px){.page-elections .page-head h1{font-size:26px}.page-elections .page-head{padding:6px 0 8px;margin-bottom:16px}.page-elections .page-lede{font-size:13px;line-height:1.8}.ballot-item{padding:12px 0}.el-jump-select{font-size:11px;gap:8px}.el-jump-select select{font-size:16px}.el-compare{padding:12px 16px}.el-compare strong{margin-bottom:2px}}
+
+.el-compare-inline{font-size:13px;margin:-8px 0 16px}
+.el-compare-inline a{display:inline-flex;align-items:center;min-height:36px;text-decoration:underline;text-underline-offset:4px}
+.el-coverage{font-size:12px;color:var(--color-text-secondary);margin:-8px 0 20px}
+.el-coverage summary{cursor:pointer;min-height:26px}
+.el-coverage .notice{margin:8px 0 0}
+.el-search-filters label{min-width:0}
+@media(max-width:699px){.el-search-filters label{display:flex;flex-direction:column;align-items:stretch;white-space:normal;gap:4px}.el-search-filters select{display:block;margin:0}.el-hero{margin-bottom:18px}.el-hero h1{font-size:30px}.el-hero+.el-freshness{margin-bottom:12px}.el-coverage{font-size:11px;margin-bottom:16px}.el-compare-inline{margin-top:-12px;margin-bottom:8px}}
+
+.ballot-item{grid-template-columns:2.75rem minmax(0,1fr) auto;align-items:center}
+.ballot-feed{white-space:nowrap;font-size:12px;min-height:32px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:699px){
+ .ballot-item{grid-template-columns:2.25rem minmax(0,1fr) auto;gap:10px;padding:10px 0;min-height:56px}
+ .ballot-name{font-size:17px}.ballot-feed{font-size:11px}.ballot-line{gap:5px 7px}
+ .districts{gap:14px}.district-title{font-size:18px}.district-count{font-size:11px}.district-head{gap:6px;margin-bottom:4px}
+ .el-search .input{min-height:48px}.el-search-label{font-size:12px;margin-bottom:6px}.el-search-field .el-clear{top:3px}
+ .el-finder{margin-bottom:20px}.el-compare-inline{margin-top:-10px;margin-bottom:4px}
+ .page-elections .page-head h1{font-size:25px}.page-elections .page-head{margin-bottom:12px}
+}

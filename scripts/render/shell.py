@@ -116,7 +116,6 @@ nav_items: list[dict[str, Any]] = [
     {"id": "elections", "label": "候選人名單", "short": "名單", "href": "/elections/", "icon": "ballot", "tab": False, "match": ["elections"]},
     {"id": "spectrum", "label": "議題光譜", "short": "光譜", "href": "/spectrum/", "icon": "spectrum", "tab": True, "match": ["spectrum", "topic"]},
     {"id": "source", "label": "候選人帳號", "short": "帳號", "href": "/source/", "icon": "people", "tab": True, "match": ["source", "directory", "candidate", "source-detail"]},
-    {"id": "policy", "label": "議題選擇器", "short": "選擇器", "href": "/policy-match/", "icon": "match", "tab": False, "match": ["policy"]},
     {"id": "search", "label": "搜尋", "short": "搜尋", "href": "/search/", "icon": "search", "tab": False, "match": ["search"]},
     {"id": "feeds", "label": "訂閱", "short": "訂閱", "href": "/feeds/", "icon": "rss", "tab": False, "match": ["feeds"]},
     {"id": "status", "label": "資料狀態", "short": "狀態", "href": "/status/", "icon": "status", "tab": False, "match": ["status"]},
@@ -621,7 +620,7 @@ def render_nav(page_id: str) -> str:
         cls = "nav-item" if item["tab"] else "nav-item nav-desktop-only"
         links.append(_nav_link(item, page_id in item["match"], cls))
     extras = "".join(
-        f'<a class="nav-mobile-extra" href="{item["href"]}">{icon(item["icon"], "mi")}<span>{esc(item["label"])}</span></a>'
+        f'<a class="nav-mobile-extra" href="{item["href"]}"' + (' aria-current="page"' if page_id in item["match"] else '') + '>{icon(item["icon"], "mi")}<span>{esc(item["label"])}</span></a>'
         for item in nav_items if not item["tab"]
     )
     seg = "".join(
@@ -637,7 +636,8 @@ def render_nav(page_id: str) -> str:
         f'<a href="{REPORT_URL}" target="_blank" rel="noopener">{icon("about", "mi")}<span>資料回報</span></a>'
         f"</div>"
     )
-    more = (f'<details class="nav-more"><summary class="nav-item">{icon("more")}'
+    more_current = ' data-current-section="true" aria-label="更多，目前位於候選人名單"' if page_id == "elections" else ""
+    more = (f'<details class="nav-more"><summary class="nav-item"{more_current}>{icon("more")}'
             f'<span class="nav-label">更多</span><span class="nav-label-short">更多</span></summary>{menu}</details>')
     return f'<nav class="site-nav" aria-label="主要導覽">{"".join(links)}{more}</nav>'
 

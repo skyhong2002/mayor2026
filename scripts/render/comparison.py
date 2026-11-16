@@ -141,7 +141,7 @@ def render_review(data: dict, out: Path, *, review: bool = True) -> None:
     topic_options, topic_sections = [], []
     for topic in data["topics"]:
         tid, title, questions = topic["id"], topic["name"], topic["questions"]
-        topic_options.append(f'<option value="{tid}">{S.esc(title)} · {len(questions)}</option>')
+        topic_options.append(f'<label><input type="checkbox" data-topic-filter="{tid}"><span>{S.esc(title)}</span><small>{len(questions)}</small></label>')
         empty = '<tr class="empty-topic"><th scope="row">目前無收錄主張</th>' + ''.join(f'<td data-candidate="{c["id"]}"' + ('' if source_counts[c['id']] else ' hidden') + '>—</td>' for c in candidates) + '</tr>' if not questions else ''
         topic_sections.append(f'<tbody class="comparison-topic" id="topic-{tid}" data-topic="{tid}">'
                               f'<tr class="topic-divider"><th colspan="{selected_count + 1}" data-table-span><h2>{S.esc(title)}</h2><span>{len(questions)} 個政策問題</span></th></tr>'
@@ -193,11 +193,12 @@ def render_review(data: dict, out: Path, *, review: bool = True) -> None:
       <header class="comparison-intro"><p class="eyebrow">2026 臺北市長選舉</p><h1>比較候選人的政見。</h1>
       <p class="snapshot-line">{len(data["topics"])} 類議題 · {question_count} 個政策問題 · 貼文更新至 {S.esc(day(last_post))}</p></header>
       <div class="comparison-toolbar">
-        <label class="topic-control" for="topic-select"><span>議題</span><select id="topic-select"><option value="all">所有議題 · {question_count}</option>{''.join(topic_options)}</select></label>
+        <details class="candidate-menu topic-menu"><summary><span id="selected-topic-label">所有議題</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇要比較的議題，可複選</legend><div class="topic-menu-heading"><strong>選擇議題 · 可複選</strong><button type="button" id="all-topics" class="text-button">顯示全部</button></div>{''.join(topic_options)}</fieldset></details>
         <details class="candidate-menu"><summary>比較對象 <span id="selected-candidate-count">{selected_count}</span><span aria-hidden="true">⌄</span></summary><fieldset><legend class="sr-only">選擇比較對象</legend>{candidate_controls}</fieldset></details>
         <label class="search-control" for="comparison-search"><span class="sr-only">搜尋議題或原文</span><input id="comparison-search" type="search" placeholder="搜尋議題或原文" autocomplete="off"></label>
         <button type="button" id="clear-search" class="text-button">清除</button>
       </div>
+      <div class="topic-selection" id="topic-selection" hidden aria-label="已選議題"></div>
       <div class="table-status"><span id="result-count" role="status" aria-live="polite">{question_count} 個政策問題</span><label><input type="checkbox" id="only-comparable">只看多人有主張</label><span class="table-hint">左右滑動比較 →</span></div>
       <div class="comparison-table-scroll" style="--candidate-count:{selected_count}" tabindex="0" role="region" aria-label="候選人政見比較表">
         <table class="comparison-table"><caption class="sr-only">臺北市長候選人政見比較，依議題及政策問題排列</caption>
@@ -205,7 +206,7 @@ def render_review(data: dict, out: Path, *, review: bool = True) -> None:
           <thead><tr><th scope="col" class="corner-cell"><span>政策問題</span><small>— 本題無收錄主張</small></th>{''.join(candidate_headers)}</tr></thead>
           {''.join(topic_sections)}
         </table>
-        <div id="comparison-no-results" class="empty" hidden>沒有符合的政策問題</div>
+        <div id="comparison-no-results" class="empty" hidden>沒有符合的政策問題 <button type="button" id="reset-comparison" class="text-button">重設篩選</button></div>
       </div>
       <details class="comparison-documents" id="policy-outlines"><summary>政策原頁與全部小標 <span>{len(policies)} 篇 · {all_headings} 個標題</span></summary><div class="outlines-grid">{''.join(documents)}</div></details>
       <details id="source-library" class="source-library"><summary>完整來源庫 <span>{len(sources):,} 份文本</span></summary>{''.join(library)}</details>

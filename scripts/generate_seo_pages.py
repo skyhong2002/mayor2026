@@ -16,7 +16,7 @@ BASE_URL = os.environ.get("MAYOR_SITE_BASE_URL", "https://mayor2026.observe.tw")
 # Pages built from collected posts; their lastmod is the newest post on the site.
 # /status/ is deliberately absent: it is a pipeline snapshot rendered noindex,
 # and listing a noindex page in the sitemap sends search engines mixed signals.
-FEED_PATHS = ["/", "/source/", "/spectrum/", "/policy-match/", "/feeds/", "/search/"]
+FEED_PATHS = ["/", "/source/", "/spectrum/", "/feeds/", "/search/"]
 # Hand-written pages with no data-derived modification time.
 STATIC_PATHS = ["/about/", "/api/"]
 

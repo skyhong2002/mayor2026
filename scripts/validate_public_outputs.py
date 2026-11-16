@@ -127,7 +127,7 @@ def validate_prerender(errors: list[str]) -> None:
         (SITE_ROOT / "index.html", ["story-strip", "feed-col", "feed-post"]),
         (SITE_ROOT / "source" / "index.html", ["directory-table"]),
         (SITE_ROOT / "spectrum" / "index.html", ["spectrum-table"]),
-        (SITE_ROOT / "policy-match" / "index.html", ["policy-choice"]),
+        (SITE_ROOT / "policy-match" / "index.html", ["policy-comparison-redirect", "/compare/taipei/"]),
         (SITE_ROOT / "status" / "index.html", ["badge-status"]),
     ]
     import classify_topics

@@ -4,7 +4,9 @@
   const app = document.querySelector('.comparison-app');
   if (!app) return;
   const input = document.getElementById('comparison-search');
-  const selector = document.getElementById('topic-select');
+  const topicFilters = Array.from(document.querySelectorAll('[data-topic-filter]'));
+  const topicLabel = document.getElementById('selected-topic-label');
+  const topicSelection = document.getElementById('topic-selection');
   const comparable = document.getElementById('only-comparable');
   const scroller = document.querySelector('.comparison-table-scroll');
   const sections = Array.from(document.querySelectorAll('.comparison-topic'));
@@ -14,7 +16,8 @@
   const params = new URLSearchParams(location.search);
   const selected = params.get('candidates')?.split(',').filter(id => filters.some(f => f.dataset.candidateFilter === id));
   if (selected?.length) filters.forEach(f => { f.checked = selected.includes(f.dataset.candidateFilter); });
-  selector.value = Array.from(selector.options).some(o => o.value === params.get('topic')) ? params.get('topic') : 'all';
+  const initialTopics = (params.get('topics') || params.get('topic') || '').split(',');
+  topicFilters.forEach(f => { f.checked = initialTopics.includes(f.dataset.topicFilter); });
   comparable.checked = params.get('compare') === '1';
   input.value = params.get('q') || '';
 
@@ -28,9 +31,21 @@
 
   function update(writeURL = true) {
     const query = input.value.trim().toLocaleLowerCase();
+    const chosenTopics = topicFilters.filter(f => f.checked).map(f => f.dataset.topicFilter);
+    const allTopics = !chosenTopics.length || chosenTopics.length === topicFilters.length;
+    topicLabel.textContent = allTopics ? '所有議題' : (chosenTopics.length === 1 ? topicFilters.find(f => f.checked).nextElementSibling.textContent : `已選 ${chosenTopics.length} 個議題`);
+    topicSelection.replaceChildren();
+    topicSelection.hidden = allTopics;
+    if (!allTopics) topicFilters.filter(f => f.checked).forEach(f => {
+      const chip = document.createElement('button'); chip.type = 'button';
+      chip.textContent = f.nextElementSibling.textContent + ' ×';
+      chip.setAttribute('aria-label', '移除議題：' + f.nextElementSibling.textContent);
+      chip.addEventListener('click', () => { f.checked = false; update(); });
+      topicSelection.append(chip);
+    });
     let count = 0;
     sections.forEach(section => {
-      const matchesTopic = selector.value === 'all' || section.dataset.topic === selector.value;
+      const matchesTopic = allTopics || chosenTopics.includes(section.dataset.topic);
       const questions = Array.from(section.querySelectorAll('.comparison-question'));
       let matches = 0;
       questions.forEach(q => {
@@ -42,11 +57,12 @@
       if (!section.hidden) count += matches;
     });
     document.getElementById('result-count').textContent = `${count} 個政策問題`;
-    document.getElementById('comparison-no-results').hidden = count !== 0 || (!query && !comparable.checked);
+    document.getElementById('comparison-no-results').hidden = count !== 0;
     document.querySelectorAll('[data-outline-search]').forEach(d => { d.hidden = !!query && !d.dataset.outlineSearch.includes(query); });
     if (writeURL) {
       const url = new URL(location.href);
-      selector.value === 'all' ? url.searchParams.delete('topic') : url.searchParams.set('topic', selector.value);
+      url.searchParams.delete('topic');
+      allTopics ? url.searchParams.delete('topics') : url.searchParams.set('topics', chosenTopics.join(','));
       query ? url.searchParams.set('q', input.value.trim()) : url.searchParams.delete('q');
       comparable.checked ? url.searchParams.set('compare', '1') : url.searchParams.delete('compare');
       const selected = filters.filter(f => f.checked).map(f => f.dataset.candidateFilter);
@@ -54,7 +70,9 @@
       history.replaceState(null, '', url);
     }
   }
-  selector.addEventListener('change', () => { update(); scroller.scrollTop = 0; });
+  topicFilters.forEach(f => f.addEventListener('change', () => { update(); scroller.scrollTop = 0; }));
+  document.getElementById('all-topics').addEventListener('click', () => { topicFilters.forEach(f => { f.checked = false; }); update(); scroller.scrollTop = 0; });
+  document.getElementById('reset-comparison').addEventListener('click', () => { topicFilters.forEach(f => { f.checked = false; }); input.value = ''; comparable.checked = false; update(); });
   input.addEventListener('input', () => { update(); scroller.scrollTop = 0; });
   comparable.addEventListener('change', () => { update(); scroller.scrollTop = 0; });
   document.getElementById('clear-search').addEventListener('click', () => { input.value = ''; update(); input.focus(); });
@@ -64,9 +82,12 @@
     update();
   }));
   mobile.addEventListener('change', updateColumns);
-  const menu = document.querySelector('.candidate-menu');
-  document.addEventListener('click', event => { if (!menu.contains(event.target)) menu.open = false; });
-  menu.addEventListener('keydown', event => { if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary').focus(); } });
+  const menus = Array.from(document.querySelectorAll('.candidate-menu'));
+  document.addEventListener('click', event => { menus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; }); });
+  menus.forEach(menu => {
+    menu.addEventListener('toggle', () => { if (menu.open) menus.forEach(other => { if (other !== menu) other.open = false; }); });
+    menu.addEventListener('keydown', event => { if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary').focus(); } });
+  });
 
   function revealHash() {
     let id;
@@ -75,7 +96,7 @@
     if (!target) return;
     const topic = target.closest('.comparison-topic');
     if (topic) {
-      selector.value = topic.dataset.topic;
+      topicFilters.forEach(f => { f.checked = f.dataset.topicFilter === topic.dataset.topic; });
       input.value = '';
       comparable.checked = false;
       const cell = target.closest('[data-candidate]');
