@@ -19,7 +19,7 @@
 .comparison-map-wrap{display:flex;justify-content:center;align-items:center;min-height:420px;padding:0 8px}
 .taiwan-map{display:block;width:min(100%,520px);height:auto;overflow:visible}
 .taiwan-map-region{color:var(--color-text-primary)}
-.taiwan-map-region path{fill:var(--color-surface);stroke:var(--color-border-strong);stroke-width:.012;vector-effect:non-scaling-stroke;transition:fill .16s ease,stroke .16s ease,filter .16s ease}
+.taiwan-map-region path{fill:var(--color-surface-raised);stroke:var(--color-border-strong);stroke-width:.9;transition:fill .16s ease,stroke .16s ease,filter .16s ease}
 .taiwan-map-region:hover path,.taiwan-map-region:focus path{fill:var(--color-surface-brand);stroke:var(--color-action-primary);filter:drop-shadow(0 2px 4px #0003)}
 .taiwan-map-region:focus{outline:none}
 .comparison-list-heading{display:flex;align-items:baseline;gap:10px;margin:0 0 14px}
