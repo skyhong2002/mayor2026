@@ -411,7 +411,7 @@ def render_hub(races: list[dict], out: Path):
     # x position and sorting each side north-to-south keeps leader lines nearly
     # monotonic, so they do not form the web of crossings the old grid created.
     callouts, leaders = [], []
-    map_left, map_top, map_width, map_height = 270, 38, 458, 640
+    map_left, map_top, map_width, map_height = 220, 38, 560, 640
     by_x = sorted(races, key=lambda r: map_regions.get(r['id'], {'x': 240.0})['x'])
     left_ids = {r['id'] for r in by_x[:len(by_x) // 2]}
     layout_races = []

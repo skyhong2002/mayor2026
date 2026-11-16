@@ -37,7 +37,7 @@
 .city-card-arrow{position:absolute;top:26px;right:22px;color:var(--color-text-muted)}
 .comparison-city-card:hover{border-color:var(--color-border-strong);background:var(--color-surface-soft)}
 .comparison-map-stage{position:relative;width:100%;max-width:1000px;margin:4px auto 0;aspect-ratio:1000 / 720;overflow:visible;border-radius:24px;background:linear-gradient(110deg,rgba(255,255,255,.025),transparent 58%)}
-.comparison-map-graphic{position:absolute;z-index:1;left:27%;top:0;width:46%;height:100%;display:flex;align-items:center;justify-content:center}
+.comparison-map-graphic{position:absolute;z-index:1;left:22%;top:0;width:56%;height:100%;display:flex;align-items:center;justify-content:center}
 .comparison-map-graphic .taiwan-map{width:100%;height:100%;max-width:none;object-fit:contain}
 .comparison-map-leaders{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:visible;pointer-events:none}
 .comparison-map-leaders line{stroke:color-mix(in srgb,var(--color-border-strong) 55%,transparent);stroke-width:1;vector-effect:non-scaling-stroke}
@@ -49,7 +49,7 @@
 .map-city-callout:hover,.map-city-callout:focus-visible,.map-city-callout.is-active{border-color:var(--color-action-primary);background:var(--color-surface-brand);transform:translateX(3px);box-shadow:0 8px 24px #0002}
 .map-city-name{display:block;font-size:15px;line-height:1.3;font-weight:650;letter-spacing:-.02em}
 .map-city-meta{display:block;margin-top:3px;color:var(--color-text-muted);font-size:10px;line-height:1.3}
-.map-candidate-preview{position:absolute;z-index:8;right:18px;bottom:18px;width:300px;max-width:calc(100% - 36px);padding:18px 18px 16px;border:1px solid var(--color-border-subtle);border-radius:18px;background:color-mix(in srgb,var(--color-canvas) 94%,transparent);box-shadow:0 18px 44px #0004;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.map-candidate-preview{position:absolute;z-index:8;left:50%;right:auto;bottom:18px;transform:translateX(-50%);width:320px;max-width:calc(100% - 36px);padding:18px 18px 16px;border:1px solid var(--color-border-subtle);border-radius:18px;background:color-mix(in srgb,var(--color-canvas) 94%,transparent);box-shadow:0 18px 44px #0004;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
 .map-preview-close{position:absolute;right:10px;top:8px;width:30px;height:30px;border:0;background:none;color:var(--color-text-muted);font-size:23px;line-height:1;cursor:pointer}
 .map-preview-kicker{margin:0 28px 3px 0;color:var(--color-text-muted);font-size:10px;letter-spacing:.08em}
 .map-preview-title{margin:0 0 12px;font-size:22px;letter-spacing:-.035em}
@@ -69,7 +69,7 @@
  .map-city-callout::after{display:none}
  .map-city-name{font-size:14px}
  .map-city-meta{font-size:10px}
- .map-candidate-preview{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:auto;max-width:none;padding:18px 16px 16px;border-radius:18px}
+ .map-candidate-preview{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:auto;max-width:none;transform:none;padding:18px 16px 16px;border-radius:18px}
  .map-preview-candidates{grid-template-columns:repeat(2,minmax(0,1fr));max-height:190px;overflow:auto}
 }
 @media(max-width:1000px){.comparison-city-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
