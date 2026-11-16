@@ -620,7 +620,7 @@ def render_nav(page_id: str) -> str:
         cls = "nav-item" if item["tab"] else "nav-item nav-desktop-only"
         links.append(_nav_link(item, page_id in item["match"], cls))
     extras = "".join(
-        f'<a class="nav-mobile-extra" href="{item["href"]}"' + (' aria-current="page"' if page_id in item["match"] else '') + '>{icon(item["icon"], "mi")}<span>{esc(item["label"])}</span></a>'
+        f'<a class="nav-mobile-extra" href="{item["href"]}"' + (' aria-current="page"' if page_id in item["match"] else '') + f'>{icon(item["icon"], "mi")}<span>{esc(item["label"])}</span></a>'
         for item in nav_items if not item["tab"]
     )
     seg = "".join(
