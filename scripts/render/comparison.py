@@ -20,6 +20,47 @@ def link(url: str, label: str) -> str:
     return f'<a href="{S.esc(url)}" target="_blank" rel="noopener noreferrer">{S.esc(label)} ↗</a>'
 
 
+def avatar_asset(candidate: dict, out: Path) -> tuple[Path, str]:
+    """Return a real or deterministic fallback avatar for every candidate."""
+    avatar_dir = out / "assets" / "comparison-avatars"
+    avatar_dir.mkdir(parents=True, exist_ok=True)
+    candidate_id = candidate["id"]
+    real_exts = (".webp", ".png", ".jpg", ".jpeg")
+    sources = [
+        S.PROJECT_ROOT / "site" / "assets" / "comparison-avatars" / (candidate_id + ext)
+        for ext in real_exts
+    ] + [
+        S.ASSETS_DIR / "comparison-avatars" / (candidate_id + ext)
+        for ext in real_exts
+    ]
+    sources.append(S.PROJECT_ROOT / "private/comparison-taipei/inputs/avatars" / (candidate_id + ".webp"))
+    sources.extend([
+        S.ASSETS_DIR / "comparison-avatars" / (candidate_id + ".svg"),
+        S.PROJECT_ROOT / "site" / "assets" / "comparison-avatars" / (candidate_id + ".svg"),
+    ])
+    for source in sources:
+        if source.is_file():
+            dest = avatar_dir / source.name
+            if source.resolve() != dest.resolve():
+                shutil.copy2(source, dest)
+            return dest, "/assets/comparison-avatars/" + dest.name
+
+    # Keep the fallback recognisable and stable across builds. It is an image,
+    # so the comparison table and the map preview share the same visual rule.
+    import hashlib
+    initials = S.esc((candidate.get("name") or "?")[:2])
+    hue = int(hashlib.sha256(candidate_id.encode("utf-8")).hexdigest()[:6], 16) % 360
+    fallback = avatar_dir / (candidate_id + ".svg")
+    fallback.write_text(
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="{S.esc(candidate.get("name", "候選人"))}頭像">'
+        f'<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl({hue} 65% 58%)"/><stop offset="1" stop-color="hsl({(hue + 52) % 360} 58% 35%)"/></linearGradient></defs>'
+        '<rect width="80" height="80" rx="40" fill="url(#g)"/><circle cx="40" cy="31" r="13" fill="#fff" fill-opacity=".9"/><path d="M16 72c3-16 13-24 24-24s21 8 24 24" fill="#fff" fill-opacity=".9"/>'
+        f'<text x="40" y="76" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" fill-opacity=".92">{initials}</text></svg>',
+        encoding="utf-8",
+    )
+    return fallback, "/assets/comparison-avatars/" + fallback.name
+
+
 def day(value: str) -> str:
     if not value:
         return "發布日期不詳"
@@ -204,18 +245,9 @@ def render_review(data: dict, out: Path, *, review: bool = True, compact: dict |
         state = f'{post_counts[c["id"]]:,} 則貼文' if count else "來源尚未取得"
         if policy_count:
             state += f' · {policy_count} 篇官網文字'
-        avatar = S.ASSETS_DIR / "comparison-avatars" / (c["id"] + ".webp")
-        if not avatar.is_file():
-            avatar = S.PROJECT_ROOT / "private/comparison-taipei/inputs/avatars" / (c["id"] + ".webp")
-        if avatar.is_file():
-            avatar_out = out / "assets/comparison-avatars" / avatar.name
-            avatar_out.parent.mkdir(parents=True, exist_ok=True)
-            if avatar.resolve() != avatar_out.resolve():
-                shutil.copy2(avatar, avatar_out)
-            c["avatarUrl"] = "assets/comparison-avatars/" + avatar.name
-            portrait = f'<img class="candidate-portrait" src="/assets/comparison-avatars/{S.esc(avatar.name)}" alt="{S.esc(c["name"])}頭貼" width="56" height="56" decoding="async">'
-        else:
-            portrait = f'<span class="candidate-portrait portrait-initial" aria-hidden="true">{S.esc(c["name"][:1])}</span>'
+        _, avatar_url = avatar_asset(c, out)
+        c["avatarUrl"] = avatar_url.lstrip("/")
+        portrait = f'<img class="candidate-portrait" src="{S.esc(avatar_url)}" alt="{S.esc(c["name"])}頭貼" width="56" height="56" decoding="async">'
         hidden = '' if count else ' hidden'
         ballot = f'<span class="ballot-number">{c["number"]}</span>' if c['number'] is not None else '<span class="ballot-pending">號次待公告</span>'
         candidate_headers.append(f'<th scope="col" id="candidate-{c["id"]}" data-candidate="{c["id"]}"{hidden}>'
@@ -330,13 +362,11 @@ def render(_data) -> None:
         ordered_candidates = sorted(snapshot['candidates'], key=lambda c: (-post_counts[c['id']], c.get('number') is None, c.get('number') or 0))
         preview_candidates = []
         for candidate in ordered_candidates:
-            avatar = S.ASSETS_DIR / 'comparison-avatars' / (candidate['id'] + '.webp')
-            if not avatar.is_file():
-                avatar = S.PROJECT_ROOT / 'private/comparison-taipei/inputs/avatars' / (candidate['id'] + '.webp')
+            _, avatar_url = avatar_asset(candidate, S.SITE_ROOT)
             preview_candidates.append({
                 'id': candidate['id'], 'name': candidate['name'], 'party': candidate.get('party', ''),
                 'number': candidate.get('number'), 'postCount': post_counts[candidate['id']],
-                'avatar': '/assets/comparison-avatars/' + avatar.name if avatar.is_file() else '',
+                'avatar': avatar_url,
             })
         races.append({'id': city, 'name': name, 'candidateCount': len(snapshot['candidates']),
                       'sourceCandidateCount': len({s['candidateId'] for s in snapshot['sources']}),
