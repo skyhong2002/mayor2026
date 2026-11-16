@@ -409,9 +409,8 @@ def render_hub(races: list[dict], out: Path):
     leader_svg = ''.join(leaders)
     callout_markup = ''.join(callouts)
     body = ('<div class="container comparison-app comparison-hub"><header class="comparison-intro">'
-            '<p class="eyebrow">2026 縣市長選舉</p><h1>從你的縣市開始比較。</h1>'
-            '<p class="comparison-hub-copy">點選地圖上的縣市，直接查看該選區候選人的政見比較。</p></header>'
-            f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><div class="comparison-map-heading"><div><p class="eyebrow">選擇比較地區</p><h2 id="comparison-map-heading">先從你所在的縣市開始。</h2></div><span class="comparison-map-hint">移到縣市名稱查看候選人</span></div>'
+            '<h1>縣市長政見比較</h1></header>'
+            f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><h2 id="comparison-map-heading" class="sr-only">選擇縣市</h2>'
             f'<div class="comparison-map-stage" id="comparison-map-stage"><div class="comparison-map-graphic">{map_markup}</div>'
             f'<svg class="comparison-map-leaders" viewBox="0 0 1000 720" aria-hidden="true">{leader_svg}</svg>'
             f'<div class="comparison-map-callouts" aria-label="選擇比較縣市">{callout_markup}</div>'
