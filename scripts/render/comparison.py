@@ -377,25 +377,32 @@ def render_hub(races: list[dict], out: Path):
         map_regions[href.rstrip('/').split('/')[-1]] = {
             'x': float(x) + tx, 'y': float(y) + ty, 'label': label.strip(), 'aria': aria,
         }
-    # Two compact columns in the open space to the left of the map. The order
-    # follows the national race list; each label has its own line and preview.
+    # Put half the races on each side of the map. Splitting by the map anchor's
+    # x position and sorting each side north-to-south keeps leader lines nearly
+    # monotonic, so they do not form the web of crossings the old grid created.
     callouts, leaders = [], []
-    map_left, map_top, map_width, map_height = 500, 38, 458, 640
-    for index, race in enumerate(races):
+    map_left, map_top, map_width, map_height = 270, 38, 458, 640
+    by_x = sorted(races, key=lambda r: map_regions.get(r['id'], {'x': 240.0})['x'])
+    left_ids = {r['id'] for r in by_x[:len(by_x) // 2]}
+    layout_races = []
+    for side, group in (('left', [r for r in races if r['id'] in left_ids]),
+                        ('right', [r for r in races if r['id'] not in left_ids])):
+        layout_races.extend((side, r) for r in sorted(group, key=lambda r: map_regions.get(r['id'], {'y': 250.0})['y']))
+    for index, (side, race) in enumerate(layout_races):
         anchor = map_regions.get(race['id'], {'x': 240.0, 'y': 250.0})
         anchor_x = map_left + (anchor['x'] - 100) / 280 * map_width
         anchor_y = map_top + (anchor['y'] - 80) / 370 * map_height
-        column, row = divmod(index, 11)
-        label_x = 20 + column * 220
+        row = index % 11
+        label_x = 20 if side == 'left' else 800
         label_y = 24 + row * 61
-        line_x = label_x + 188
+        line_x = label_x + 188 if side == 'left' else label_x
         lines = f'<line x1="{line_x}" y1="{label_y + 24}" x2="{anchor_x:.1f}" y2="{anchor_y:.1f}" />'
         leaders.append(lines)
         preview_json = S.esc(json.dumps(race['candidates'], ensure_ascii=False, separators=(',', ':')))
         callouts.append(
-            f'<button class="map-city-callout" type="button" data-city="{S.esc(race["id"])}" '
+            f'<button class="map-city-callout is-{side}" type="button" data-city="{S.esc(race["id"])}" '
             f'data-path="{S.esc(race["path"])}" data-candidates="{preview_json}" '
-            f'style="--callout-x:{label_x / 10:.2f}%;--callout-y:{label_y / 7.2:.2f}%;--line-x:{line_x / 10:.2f}%;--line-y:{(label_y + 24) / 7.2:.2f}%">'
+            f'style="--callout-x:{label_x / 10:.2f}%;--callout-y:{label_y / 7.2:.2f}%;--line-x:{line_x / 10:.2f}%;--line-y:{(label_y + 24) / 7.2:.2f}%;--mobile-order:{races.index(race)}">'
             f'<span class="map-city-name">{S.esc(race["name"])}</span>'
             f'<span class="map-city-meta">{race["candidateCount"]} 位候選人 · {race["facetCount"]} 項</span>'
             '</button>')
