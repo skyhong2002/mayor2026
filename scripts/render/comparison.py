@@ -325,30 +325,93 @@ def render(_data) -> None:
     races = []
     for city, name, snapshot, compact in snapshots:
         render_review(snapshot, S.SITE_ROOT, review=False, compact=compact)
+        source_counts = Counter(s['candidateId'] for s in snapshot['sources'])
+        post_counts = Counter(s['candidateId'] for s in snapshot['sources'] if s['kind'] == 'post')
+        ordered_candidates = sorted(snapshot['candidates'], key=lambda c: (-post_counts[c['id']], c.get('number') is None, c.get('number') or 0))
+        preview_candidates = []
+        for candidate in ordered_candidates:
+            avatar = S.ASSETS_DIR / 'comparison-avatars' / (candidate['id'] + '.webp')
+            if not avatar.is_file():
+                avatar = S.PROJECT_ROOT / 'private/comparison-taipei/inputs/avatars' / (candidate['id'] + '.webp')
+            preview_candidates.append({
+                'id': candidate['id'], 'name': candidate['name'], 'party': candidate.get('party', ''),
+                'number': candidate.get('number'), 'postCount': post_counts[candidate['id']],
+                'avatar': '/assets/comparison-avatars/' + avatar.name if avatar.is_file() else '',
+            })
         races.append({'id': city, 'name': name, 'candidateCount': len(snapshot['candidates']),
                       'sourceCandidateCount': len({s['candidateId'] for s in snapshot['sources']}),
                       'facetCount': sum(len(t['facets']) for t in compact['topics']),
                       'questionCount': sum(len(t['questions']) for t in snapshot['topics']),
                       'claimCount': len(snapshot['claims']), 'analysisAt': snapshot['analysisAt'],
-                      'path': f'/compare/{city}/', 'dataUrl': f'/api/comparisons/{city}.json'})
+                      'path': f'/compare/{city}/', 'dataUrl': f'/api/comparisons/{city}.json',
+                      'candidates': preview_candidates})
     render_hub(races, S.SITE_ROOT)
 
 
 def render_hub(races: list[dict], out: Path):
-    cards = ''.join(f'<a class="comparison-city-card" href="{r["path"]}"><strong>{S.esc(r["name"])}</strong>'
-                    f'<span>{r["candidateCount"]} 位候選人 · {r["facetCount"]} 個比較項目</span><span class="city-card-arrow" aria-hidden="true">↗</span></a>' for r in races)
     map_asset = S.PROJECT_ROOT / 'scripts/assets/taiwan-map.svg'
     if not map_asset.is_file():
         raise FileNotFoundError(f'missing comparison map asset: {map_asset}')
+    # Copy hub assets before layout() computes the cache-busting hash.
+    asset_out = out / 'assets' / 'pages'
+    asset_out.mkdir(parents=True, exist_ok=True)
+    for asset_name in ('comparison.css', 'comparison-hub.js'):
+        asset_path = S.PROJECT_ROOT / 'site' / 'assets' / 'pages' / asset_name
+        if asset_path.is_file():
+            shutil.copy2(asset_path, asset_out / asset_name)
+    S.asset_hash.cache_clear()
     map_markup = map_asset.read_text(encoding='utf-8')
+    # The source map already contains the geographic anchor for every county.
+    # Reuse those text anchors for leader lines so the labels continue to track
+    # the map if the asset is adjusted later (including moved offshore islands).
+    map_regions = {}
+    region_re = re.compile(
+        r'<a class="taiwan-map-region" href="([^"]+)"(?: transform="translate\(([^)]+)\)")?[^>]*aria-label="([^"]+)"[^>]*>.*?'
+        r'<text[^>]*?x="([0-9.]+)"[^>]*?y="([0-9.]+)"[^>]*>(.*?)</text>', re.S)
+    for match in region_re.finditer(map_markup):
+        href, transform, aria, x, y, label = match.groups()
+        tx = ty = 0.0
+        if transform:
+            bits = transform.replace(',', ' ').split()
+            tx, ty = float(bits[0]), float(bits[1])
+        map_regions[href.rstrip('/').split('/')[-1]] = {
+            'x': float(x) + tx, 'y': float(y) + ty, 'label': label.strip(), 'aria': aria,
+        }
+    # Two compact columns in the open space to the left of the map. The order
+    # follows the national race list; each label has its own line and preview.
+    callouts, leaders = [], []
+    map_left, map_top, map_width, map_height = 500, 38, 458, 640
+    for index, race in enumerate(races):
+        anchor = map_regions.get(race['id'], {'x': 240.0, 'y': 250.0})
+        anchor_x = map_left + (anchor['x'] - 100) / 280 * map_width
+        anchor_y = map_top + (anchor['y'] - 80) / 370 * map_height
+        column, row = divmod(index, 11)
+        label_x = 20 + column * 220
+        label_y = 24 + row * 61
+        line_x = label_x + 188
+        lines = f'<line x1="{line_x}" y1="{label_y + 24}" x2="{anchor_x:.1f}" y2="{anchor_y:.1f}" />'
+        leaders.append(lines)
+        preview_json = S.esc(json.dumps(race['candidates'], ensure_ascii=False, separators=(',', ':')))
+        callouts.append(
+            f'<button class="map-city-callout" type="button" data-city="{S.esc(race["id"])}" '
+            f'data-path="{S.esc(race["path"])}" data-candidates="{preview_json}" '
+            f'style="--callout-x:{label_x / 10:.2f}%;--callout-y:{label_y / 7.2:.2f}%;--line-x:{line_x / 10:.2f}%;--line-y:{(label_y + 24) / 7.2:.2f}%">'
+            f'<span class="map-city-name">{S.esc(race["name"])}</span>'
+            f'<span class="map-city-meta">{race["candidateCount"]} 位候選人 · {race["facetCount"]} 項</span>'
+            '</button>')
+    leader_svg = ''.join(leaders)
+    callout_markup = ''.join(callouts)
     body = ('<div class="container comparison-app comparison-hub"><header class="comparison-intro">'
             '<p class="eyebrow">2026 縣市長選舉</p><h1>從你的縣市開始比較。</h1>'
             '<p class="comparison-hub-copy">點選地圖上的縣市，直接查看該選區候選人的政見比較。</p></header>'
-            f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><div class="comparison-map-heading"><div><p class="eyebrow">選擇比較地區</p><h2 id="comparison-map-heading">先從你所在的縣市開始。</h2></div><span class="comparison-map-hint">點選區域即可進入</span></div><div class="comparison-map-wrap">{map_markup}</div></section>'
-            '<div class="comparison-list-heading"><h2>全部縣市</h2><span>共 22 個選區</span></div>'
-            f'<nav class="comparison-city-grid" aria-label="選擇政見比較縣市">{cards}</nav></div>')
+            f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><div class="comparison-map-heading"><div><p class="eyebrow">選擇比較地區</p><h2 id="comparison-map-heading">先從你所在的縣市開始。</h2></div><span class="comparison-map-hint">移到縣市名稱查看候選人</span></div>'
+            f'<div class="comparison-map-stage" id="comparison-map-stage"><div class="comparison-map-graphic">{map_markup}</div>'
+            f'<svg class="comparison-map-leaders" viewBox="0 0 1000 720" aria-hidden="true">{leader_svg}</svg>'
+            f'<div class="comparison-map-callouts" aria-label="選擇比較縣市">{callout_markup}</div>'
+            '<aside class="map-candidate-preview" id="map-candidate-preview" hidden aria-live="polite"><button class="map-preview-close" type="button" aria-label="關閉候選人預覽">×</button><div class="map-preview-body"></div></aside>'
+            '</div></section></div>')
     html = S.layout('comparison', '縣市長政見比較', '全臺22縣市長候選人，同選區、同議題並排比較主張與原文。', '/compare/', body,
-                    extra_css=('pages/comparison.css',))
+                    extra_css=('pages/comparison.css',), extra_js=('pages/comparison-hub.js',))
     route = out / 'compare'
     route.mkdir(parents=True, exist_ok=True)
     (route / 'index.html').write_text(html, encoding='utf-8')
