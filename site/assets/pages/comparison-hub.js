@@ -30,7 +30,7 @@
       const safePortrait = candidate.avatar ? `<img class="map-preview-avatar" src="${esc(candidate.avatar)}" alt="" width="34" height="34" loading="lazy">` : portrait;
       return `<li class="map-preview-candidate">${safePortrait}<span><strong>${esc(candidate.name)}</strong><small>${esc(number)}${esc(candidate.party || '政黨資料待確認')} · ${esc(posts)}</small></span></li>`;
     }).join('');
-    previewBody.innerHTML = `<p class="map-preview-kicker">候選人預覽</p><h3 class="map-preview-title">${name}</h3><ul class="map-preview-candidates">${rows}</ul><a class="map-preview-link" href="${el.dataset.path}">查看完整政見比較 <span aria-hidden="true">↗</span></a>`;
+    previewBody.innerHTML = `<p class="map-preview-kicker">候選人預覽</p><h3 class="map-preview-title">${esc(name)}</h3><ul class="map-preview-candidates">${rows}</ul><a class="map-preview-link" href="${esc(el.dataset.path)}">進入 ${esc(name)} 政見比較 <span aria-hidden="true">↗</span></a>`;
     preview.hidden = false;
   };
   const hide = () => {

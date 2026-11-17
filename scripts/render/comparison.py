@@ -439,7 +439,7 @@ def render_hub(races: list[dict], out: Path):
     leader_svg = ''.join(leaders)
     callout_markup = ''.join(callouts)
     body = ('<div class="container comparison-app comparison-hub"><header class="comparison-intro">'
-            '<h1>縣市長政見比較</h1></header>'
+            '<h1>縣市長政見比較</h1><p class="comparison-map-mobile-hint">點選地圖上的縣市查看候選人</p></header>'
             f'<section class="comparison-map-panel" aria-labelledby="comparison-map-heading"><h2 id="comparison-map-heading" class="sr-only">選擇縣市</h2>'
             f'<div class="comparison-map-stage" id="comparison-map-stage"><div class="comparison-map-graphic">{map_markup}</div>'
             f'<svg class="comparison-map-leaders" viewBox="0 0 1000 720" aria-hidden="true">{leader_svg}</svg>'
