@@ -62,6 +62,7 @@ def norm_name(name: str) -> str:
     """Comparable form of a person's name (spacing, middle dots, 臺/台 only)."""
     name = re.sub(r"[\s　]", "", name or "")
     name = name.replace("．", "‧").replace("·", "‧").replace("・", "‧").replace("•", "‧")
+    name = re.sub(r"(?<=[A-Za-z])\.(?=[A-Za-z])", "‧", name)
     return name
 
 

@@ -24,6 +24,7 @@ import json
 import os
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from typing import Any
 
@@ -253,16 +254,47 @@ def update_source_profiles(rows_by_page: dict[str, tuple[dict[str, Any], dict[st
         print("apify_facebook_fetcher: updated account profiles in source_profiles.json")
 
 
+def facebook_page_key(url: str) -> str:
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        if parsed.hostname not in {"facebook.com", "www.facebook.com", "m.facebook.com"}:
+            return ""
+    except ValueError:
+        return ""
+    path = urllib.parse.unquote(parsed.path).strip("/").casefold()
+    if path == "profile.php":
+        profile_id = urllib.parse.parse_qs(parsed.query).get("id", [""])[0]
+        return profile_id if profile_id.isdecimal() else ""
+    parts = path.split("/")
+    if len(parts) == 3 and parts[0] == "people" and parts[-1].isdecimal():
+        return parts[-1]
+    if len(parts) == 2 and parts[0] == "p":
+        page_id = parts[-1].rsplit("-", 1)[-1]
+        return page_id if page_id.isdecimal() else ""
+    return path if len(parts) == 1 else ""
+
+
 def normalize_items(source_by_url: dict[str, dict[str, Any]], items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows = []
     latest_item_by_page: dict[str, tuple[dict[str, Any], dict[str, Any]]] = {}
+    sources_by_key: dict[str, dict[str, dict[str, Any]]] = {}
+    for url, source in source_by_url.items():
+        if key := facebook_page_key(url):
+            sources_by_key.setdefault(key, {})[source["id"]] = source
     for item in items:
         post_url = item.get("url") or item.get("postUrl") or ""
-        page_url = item.get("facebookUrl") or item.get("pageUrl") or ""
-        source = source_by_url.get(page_url)
-        if not source or not post_url:
+        matches = {}
+        for page_url in (item.get("facebookUrl"), item.get("pageUrl")):
+            if not page_url:
+                continue
+            if source := source_by_url.get(page_url):
+                matches[source["id"]] = source
+            else:
+                matches.update(sources_by_key.get(facebook_page_key(page_url), {}))
+        if len(matches) != 1 or not post_url:
             continue
-        latest_item_by_page[page_url] = (source, item)
+        source = next(iter(matches.values()))
+        latest_item_by_page[source["id"]] = (source, item)
         post_id = item.get("postId") or post_url
         rows.append(
             {

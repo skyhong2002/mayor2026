@@ -38,6 +38,17 @@ class FeedStorageTests(unittest.TestCase):
         self.assertEqual(feed_common.append_jsonl_dedup(self.path, [{"id": "new"}]), 0)
         self.assertEqual(self.path.read_bytes(), before)
 
+    def test_public_posts_exclude_related_organizations_without_rewriting_history(self):
+        accounts = Path(self.directory.name) / "accounts.csv"
+        accounts.write_text("account_id,account_role\nowned,campaign\nparty,party\nmedia,affiliated\n")
+        rows = [{"id": source, "source_id": source, "classification": {"model": "test"}}
+                for source in ("owned", "party", "media")]
+        feed_common.append_jsonl_dedup(self.path, rows)
+        with mock.patch.object(feed_common, "ACCOUNTS_CSV", accounts), \
+             mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path):
+            self.assertEqual(feed_common.read_classified_candidates(), rows[:1])
+        self.assertEqual(feed_common.read_jsonl(self.path), rows)
+
     def test_append_adds_missing_separator_without_rewriting_history(self):
         original = '{"id":"old","text":"原文"}'.encode()
         self.path.write_bytes(original)

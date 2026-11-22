@@ -37,12 +37,12 @@ class NationalComparisonTests(unittest.TestCase):
         self.assertEqual(sum(map(len, rosters)), 81)
         self.assertEqual(len({c['id'] for rows in rosters for c in rows}), 81)
 
-    def test_registration_only_candidates_keep_unknown_numbers(self):
-        for city in ('nantou', 'lienchiang'):
-            roster = race_roster(city)
-            self.assertEqual(len(roster), 2)
-            self.assertTrue(all(c['number'] is None for c in roster))
-            self.assertTrue(all(c['rosterSource'].startswith('https://web.cec.gov.tw/') for c in roster))
+    def test_nantou_and_lienchiang_use_published_ballot_numbers(self):
+        for city, names in (('nantou', ['許淑華', '温世政']), ('lienchiang', ['王忠銘', '曹爾元'])):
+            with self.subTest(city=city):
+                roster = race_roster(city)
+                self.assertEqual([(c['number'], c['name']) for c in roster], list(enumerate(names, 1)))
+                self.assertTrue(all(c['rosterSource'].startswith('https://web.cec.gov.tw/') for c in roster))
 
     def test_untracked_candidates_are_in_the_roster_with_stable_ids(self):
         first, second = race_roster('new-taipei'), race_roster('new-taipei')
@@ -59,7 +59,7 @@ class NationalComparisonTests(unittest.TestCase):
 
     def test_cross_county_roster_and_fabricated_ballot_numbers_are_rejected(self):
         data = city_fixture('nantou')
-        data['candidates'][0]['number'] = 1
+        data['candidates'][0]['number'] = 999
         with self.assertRaisesRegex(ValueError, 'official roster'):
             validate_race(data)
         data = city_fixture()
@@ -79,7 +79,8 @@ class NationalComparisonTests(unittest.TestCase):
             public = json.loads((root / 'api/comparisons/nantou.json').read_text())
             self.assertEqual((root / 'api/comparison.json').read_text(), 'existing Taipei API')
         self.assertIn('南投縣長選舉', page)
-        self.assertIn('號次待公告', page)
+        self.assertIn('1 許淑華', page)
+        self.assertIn('2 温世政', page)
         self.assertNotIn('>None<', page)
         self.assertIn('id="comparison-city"', page)
         self.assertIn('資料整理於', page)

@@ -31,8 +31,8 @@ def main() -> int:
     fetchable_accounts = [
         a
         for a in accounts
-        if (a["platform"] in FETCHABLE_PLATFORMS and (a["platform"] != "podcast" or a.get("feed_url")))
-        or (a["platform"] == "website" and has_site_adapter(a["candidate_id"]))
+        if (a["platform"] in FETCHABLE_PLATFORMS or a["platform"] == "website")
+        and not source_status.link_only_reason(a)
     ]
     sites_without_adapter = [a for a in accounts if a["platform"] == "website" and not has_site_adapter(a["candidate_id"])]
     if sites_without_adapter:
@@ -45,10 +45,10 @@ def main() -> int:
         if account["account_id"] not in source_ids:
             errors.append(f"active fetchable account missing from social_sources.json: {account['account_id']}")
 
-    accounts_by_candidate = feed_common.accounts_by_candidate(fetchable_accounts)
+    accounts_by_candidate = feed_common.accounts_by_candidate(accounts)
     for candidate in candidates:
         if not accounts_by_candidate.get(candidate["candidate_id"]):
-            errors.append(f"candidate has no fetchable source: {candidate['candidate_id']} ({candidate['name']})")
+            errors.append(f"candidate has no public account: {candidate['candidate_id']} ({candidate['name']})")
 
     candidate_ids = {c["candidate_id"] for c in candidates}
     for account in accounts:

@@ -150,6 +150,8 @@ def scheduled_tick(eligible: dt.datetime) -> dt.datetime:
 
 
 def link_only_reason(source: dict) -> str:
+    if not feed_common.is_candidate_post_source(source):
+        return "關聯組織帳號，貼文不歸入候選人"
     platform = source["platform"]
     if platform not in BACKENDS:
         return {"line_oa": "沒有可抓取的公開時間軸", "line_openchat": "沒有可抓取的公開時間軸",

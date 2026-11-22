@@ -52,6 +52,23 @@ class SourceHealthTests(unittest.TestCase):
         self.assertEqual(entry['last_items'], 0)
         self.assertIn('last_error_at', entry)
 
+    def test_related_facebook_page_is_link_only(self):
+        src = {**source('party-page', 'facebook'), 'account_role': 'party'}
+        row = self.snapshot(src, sources=[])['sources'][0]
+        self.assertEqual(row['status'], 'link_only')
+        self.assertFalse(row['fetchable'])
+
+    def test_facebook_result_can_match_numeric_page_alias_but_not_conflicting_pages(self):
+        first = source('first', 'facebook')
+        second = source('second', 'facebook')
+        configured = {'https://www.facebook.com/profile.php?id=123': first,
+                      'https://www.facebook.com/second/': second}
+        item = {'url': 'https://www.facebook.com/posts/45', 'pageUrl': 'https://m.facebook.com/people/Name/123/'}
+        with mock.patch.object(facebook, 'update_source_profiles'):
+            self.assertEqual(facebook.normalize_items(configured, [item])[0]['source_id'], 'first')
+            conflicting = {**item, 'facebookUrl': 'https://www.facebook.com/SECOND'}
+            self.assertEqual(facebook.normalize_items(configured, [conflicting]), [])
+
     def test_unresolved_error_does_not_expire_after_24_hours(self):
         src = source()
         health.record_fetch(src, ok=False, error='still broken', now=NOW - dt.timedelta(days=4))

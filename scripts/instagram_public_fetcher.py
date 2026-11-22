@@ -233,7 +233,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Fetch direct only; do not write inbox or telemetry.")
     parser.add_argument("--full-refresh", action="store_true", help="Ignore intervals; retain backoff and cooldown.")
-    parser.add_argument("--batch-size", type=int, default=6)
+    parser.add_argument("--batch-size", type=int, default=int(os.environ.get("MAYOR_INSTAGRAM_BATCH_SIZE", "12")))
     parser.add_argument("--instagram-interval-hours", type=float,
                         default=float(os.environ.get("MAYOR_INSTAGRAM_INTERVAL_HOURS", "12")))
     args = parser.parse_args()

@@ -31,7 +31,7 @@ def build_sources(candidates: list[dict[str, str]], accounts: list[dict[str, Any
     candidates_by_id = {c["candidate_id"]: c for c in candidates}
     sources: list[dict[str, Any]] = []
     for account in accounts:
-        if account["platform"] not in FETCHABLE_PLATFORMS:
+        if account["platform"] not in FETCHABLE_PLATFORMS or not feed_common.is_candidate_post_source(account):
             continue
         candidate = candidates_by_id.get(account["candidate_id"])
         if not candidate:

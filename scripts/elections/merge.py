@@ -430,6 +430,8 @@ def main() -> int:
 
 
 def write_sources(numbered: list[dict[str, str]], now: str) -> None:
+    previous = json.loads(SOURCES_JSON.read_text(encoding="utf-8"))["sources"] if SOURCES_JSON.exists() else []
+    previous_by_url = {entry["url"]: entry for entry in previous}
     urls: dict[str, dict[str, Any]] = {}
     for row in numbered:
         for key in ("source", "sourceFile"):
@@ -444,7 +446,10 @@ def write_sources(numbered: list[dict[str, str]], now: str) -> None:
         m = re.match(r"https://web\.cec\.gov\.tw/([a-z]+)/article/(\d+)$", api)
         if m:
             api = f"{fetch.BASE}/api/{m.group(1)}/article/{m.group(2)}"
+        previous_entry = previous_by_url.get(entry["url"], {})
         meta = fetch.meta(api)
+        if not meta or (entry.get("fetchedAt") == previous_entry.get("fetchedAt") and previous_entry.get("sha256")):
+            meta = previous_entry
         if meta:
             entry["fetchedAt"] = entry.get("fetchedAt") or meta.get("fetchedAt", "")
             entry["sha256"] = meta.get("sha256", "")

@@ -73,7 +73,7 @@
   `MAYOR_IG_PROFILE_POSTS_DOC_ID` 可覆寫查詢 ID。與 Chumei、Harmonica 共用
   `~/.cache/observe-instagram-public.json`，每次請求間隔至少 10 秒，遭拒後全主機暫停直接查詢。
   失敗來源以本專案 `.env` 的 `APIFY_TOKEN` 批次使用 `apify/instagram-profile-scraper`，不使用其他專案的 pool。
-  每次最多 6 個最早到期來源；支援 `--batch-size`、`--full-refresh`（仍保留退避與冷卻）及
+  每次預設最多 12 個最早到期來源；支援 `MAYOR_INSTAGRAM_BATCH_SIZE`、`--batch-size`、`--full-refresh`（仍保留退避與冷卻）及
   `--dry-run`（僅直接查詢，不付費、不寫 inbox／來源狀態；主機節流仍生效）。
   IG 預估每帳號 $0.006，月上限 `MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD` 預設 $0.75；
   費用記在 `state/apify_facebook_fetcher.json` 的 `months[YYYY-MM].instagram`，

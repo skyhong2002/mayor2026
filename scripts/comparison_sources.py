@@ -147,7 +147,9 @@ def prepare_manifests(inbox: Path, published: Path, work: Path):
         if not city:
             continue
         a = accounts.get(row.get('source_id'))
-        if not a or a['candidate_id'] != cid or a['city'] != city or a.get('verification') not in ('first_party', 'cross_ref'):
+        if (not a or a['candidate_id'] != cid or a['city'] != city
+                or a.get('verification') not in ('first_party', 'cross_ref')
+                or not feed_common.is_candidate_post_source(a)):
             rejected[city]['unverifiedSource'] += 1
             continue
         text, date = (row.get('text') or '').strip(), row.get('posted_at') or ''
