@@ -6,3 +6,4 @@
 - 蘇巧慧：舊 LINE 連結回應 403，競選官網的直連可開啟蘇巧慧官方帳號。維持原帳號 ID 並更新網址。[競選官網](https://chiao.tw/) [LINE](https://page.line.me/suchiaohui)
 - 謝龍介及張靜：龍傳媒全站 feed 含多位作者，司法改革黨粉專含多位候選人和黨務。兩者已改為關聯連結，排除誤歸貼文及依賴這些貼文的比較證據。原始抓取紀錄保留。龍傳媒上的謝龍介署名專欄已核對，最新一篇是 2025 年 4 月。[龍傳媒](https://inewslong.com/) [署名專欄](https://inewslong.com/author/longuy/feed/) [司法改革黨](https://www.facebook.com/p/司法改革黨-100093646137173/)
 - 梁文韜、魏嘉賢的 Facebook 和吳宗憲的 X 仍有各自競選網站的連結；魏嘉賢的 Instagram 見其公開作者頁。抓取端的限制繼續依實際執行結果顯示。[梁文韜](https://kinmen-toto.oen.tw/) [魏嘉賢](https://lovehualien.com/) [魏嘉賢作者頁](https://vocus.cc/user/@jiaxian) [吳宗憲](https://www.yilan2026.tw/)
+- 過去已分類的 15 筆貼文來自歸屬仍未確認的張靜個人 Facebook、黃世杰 YouTube、沈伯洋 X。排除候選人貼文歸屬，保留原始紀錄。張靜同名 Facebook 只顯示通用個人頁，沒有足以確認本人經營的公開內容。

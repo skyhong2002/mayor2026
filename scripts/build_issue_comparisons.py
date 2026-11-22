@@ -637,8 +637,10 @@ def validate_snapshot(data: dict) -> None:
     candidate_ids = {c["id"] for c in data["candidates"]}
     if any(s["candidateId"] not in candidate_ids for s in sources.values()):
         raise ValueError("source belongs to another race")
-    if any(s["kind"] == "post" and s.get("accountRole") in {"party", "affiliated"} for s in sources.values()):
-        raise ValueError("related organization posts cannot be attributed to a candidate")
+    if any(s["kind"] == "post" and not feed_common.is_candidate_post_source({
+        "account_role": s.get("accountRole"), "verification": s.get("verification"),
+    }) for s in sources.values()):
+        raise ValueError("unverified or related organization posts cannot be attributed to a candidate")
     for c in data["claims"]:
         source = sources[c["sourceId"]]
         if c["topic"] not in TOPICS or not normalize(c["quote"]) or c["candidateId"] != source["candidateId"] or normalize(c["quote"]) not in normalize(source["text"]):

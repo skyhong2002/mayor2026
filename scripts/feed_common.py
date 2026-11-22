@@ -128,8 +128,9 @@ def accounts_by_candidate(accounts: list[dict[str, Any]]) -> dict[str, list[dict
 
 
 def is_candidate_post_source(account: dict[str, Any]) -> bool:
-    """Related organizations are useful links but do not speak for the candidate."""
-    return account.get("account_role") not in {"affiliated", "party"}
+    """Only attribute posts from sources with candidate ownership evidence."""
+    return (account.get("verification") != "unverified"
+            and account.get("account_role") not in {"affiliated", "party"})
 
 
 def best_accounts_per_platform(accounts: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
@@ -202,10 +203,10 @@ def read_classified_candidates() -> list[dict[str, Any]]:
     Text-less posts are left unclassified on purpose (nothing to classify) and
     must stay out of every public output and count.
     """
-    related_sources = {row["account_id"] for row in read_csv_rows(ACCOUNTS_CSV)
-                       if not is_candidate_post_source(row)}
+    excluded_sources = {row["account_id"] for row in read_csv_rows(ACCOUNTS_CSV)
+                        if not is_candidate_post_source(row)}
     return [row for row in read_jsonl(CANDIDATES_JSONL)
-            if row.get("classification") and row.get("source_id") not in related_sources]
+            if row.get("classification") and row.get("source_id") not in excluded_sources]
 
 
 def append_jsonl_dedup(path: Path, new_rows: Iterable[dict[str, Any]], *, key: str = "id") -> int:

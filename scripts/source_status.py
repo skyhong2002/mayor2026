@@ -150,6 +150,8 @@ def scheduled_tick(eligible: dt.datetime) -> dt.datetime:
 
 
 def link_only_reason(source: dict) -> str:
+    if source.get("verification") == "unverified":
+        return "帳號歸屬尚未確認，貼文不歸入候選人"
     if not feed_common.is_candidate_post_source(source):
         return "關聯組織帳號，貼文不歸入候選人"
     platform = source["platform"]
@@ -215,11 +217,15 @@ def build_snapshot(*, accounts: list[dict], sources: list[dict], inbox: list[dic
         interval = float(entry.get("interval_hours") or (12 if platform == "instagram" else 6))
         due = next_eligible(source, state)
         blocked = ""
+        capacity_skip = False
         if platform == "instagram":
             cooldown = parse_time(state.get("platforms", {}).get("instagram", {}).get("cooldown_until"))
             if cooldown and cooldown > now:
                 due = max(due or now, cooldown)
                 blocked = "Instagram 401／429 共用冷卻；到期自動再試"
+            capacity_skip = error in {"Apify skipped: monthly budget exhausted", "Apify skipped: live credit reserve"}
+            if not blocked and capacity_skip and due and due > now:
+                blocked = "Apify 額度不足，等待下次排程重新檢查"
         if platform == "facebook":
             interval = apify.get("interval_hours")
             due = parse_time(apify.get("next_eligible_at"))
@@ -245,7 +251,7 @@ def build_snapshot(*, accounts: list[dict], sources: list[dict], inbox: list[dic
             status = "link_only"
         elif blocked:
             status = "blocked"
-        elif error:
+        elif error and not capacity_skip:
             status = "error"
         elif tick and tick + dt.timedelta(hours=2) < now:
             status = "overdue"

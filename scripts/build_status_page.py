@@ -17,6 +17,7 @@ from typing import Any
 import pipeline_subprocess
 
 import feed_common
+from instagram_public_fetcher import DEFAULT_BATCH_SIZE as DEFAULT_INSTAGRAM_BATCH_SIZE
 import source_status
 
 SITE_ROOT = feed_common.PROJECT_ROOT / "site"
@@ -198,7 +199,7 @@ def build_status() -> dict[str, Any]:
     current_errors = [
         {"sourceId": row["id"], "sourceName": row["name"], "platform": row["platform"],
          "recordedAt": row["lastErrorAt"], "message": row["lastError"]}
-        for row in source_rows if row["fetchable"] and row["lastError"]
+        for row in source_rows if row["status"] == "error"
     ]
     error_platforms = collections.Counter(row["platform"] for row in current_errors)
     annotated_errors = annotate_errors(errors_within(RECENT_ERROR_DAYS * 24)[-RECENT_ERROR_LIMIT:], source_by_id)
@@ -287,7 +288,7 @@ def build_status() -> dict[str, Any]:
             ),
             [
                 f"最新抓取時間：{taipei_label(max_time(last_attempts))}",
-                "IG 依發文頻率每 12–168 小時抓取，每輪最多 6 個，較早到期者優先；免登入查詢遭擋時改用 Apify（每月上限 $0.75）。",
+                f"IG 依發文頻率每 12–168 小時抓取，每輪預設最多 {DEFAULT_INSTAGRAM_BATCH_SIZE} 個，較早到期者優先；免登入查詢遭擋時依剩餘 Apify 額度補抓。",
             ],
         )
     )

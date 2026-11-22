@@ -80,7 +80,7 @@ class InstagramTests(unittest.TestCase):
         until = ig.ig_public_host.report_block('chumei', seconds=600)
         with mock.patch.object(ig.feed_common, 'load_sources', return_value=[SOURCE]), \
              mock.patch.object(ig, 'fetch_public_profile') as direct, \
-             mock.patch.object(ig, 'apify_profiles', return_value={'test': PROFILE}), \
+             mock.patch.object(ig, 'apify_profiles', return_value=({'test': PROFILE}, {'ig-test'})), \
              mock.patch.object(ig.feed_common, 'append_jsonl_dedup', return_value=1) as append, \
              mock.patch.object(sys, 'argv', ['instagram_public_fetcher.py']):
             self.assertEqual(ig.main(), 0)
@@ -108,6 +108,20 @@ class InstagramTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'monthly budget'):
                 ig.apify_profiles([SOURCE], now=NOW)
         http.assert_not_called()
+
+    def test_remaining_budget_only_requests_the_oldest_profiles_it_can_cover(self):
+        ig.feed_common.save_json_atomic(fb.LEDGER_JSON, {'months': {'2026-10': {
+            'instagram': {'estimated_spend_usd': .743, 'runs': 1}}}})
+        second = {**SOURCE, 'id': 'ig-second', 'username': 'second'}
+        limits = {'data': {'limits': {'maxMonthlyUsageUsd': 5}, 'current': {'monthlyUsageUsd': 1}}}
+        run = {'data': {'status': 'SUCCEEDED', 'defaultDatasetId': 'dataset'}}
+        with mock.patch.object(ig, 'api', side_effect=[limits, run, [PROFILE]]) as api:
+            found, attempted = ig.apify_profiles([SOURCE, second], now=NOW)
+        self.assertEqual(attempted, {'ig-test'})
+        self.assertEqual(set(found), {'test'})
+        self.assertEqual(api.call_args_list[1].kwargs['body']['usernames'], ['test'])
+        ledger = json.loads(fb.LEDGER_JSON.read_text())
+        self.assertEqual(ledger['months']['2026-10']['instagram']['estimated_spend_usd'], .749)
 
     def test_live_limit_skips_paid_post(self):
         limits = {'data': {'limits': {'maxMonthlyUsageUsd': 5}, 'current': {'monthlyUsageUsd': 4.75}}}

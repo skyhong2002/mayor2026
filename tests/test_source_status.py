@@ -58,6 +58,16 @@ class SourceHealthTests(unittest.TestCase):
         self.assertEqual(row['status'], 'link_only')
         self.assertFalse(row['fetchable'])
 
+    def test_instagram_budget_skips_are_capacity_or_overdue_not_source_errors(self):
+        src = source()
+        error = 'Apify skipped: monthly budget exhausted'
+        health.record_fetch(src, ok=False, error=error, now=NOW)
+        after_skip = self.snapshot(src)['sources'][0]
+        self.assertEqual(after_skip['status'], 'blocked')
+        after_retry = self.snapshot(src, now=NOW + dt.timedelta(hours=12))['sources'][0]
+        self.assertEqual(after_retry['status'], 'overdue')
+        self.assertEqual(after_retry['lastError'], error)
+
     def test_facebook_result_can_match_numeric_page_alias_but_not_conflicting_pages(self):
         first = source('first', 'facebook')
         second = source('second', 'facebook')

@@ -38,11 +38,12 @@ class FeedStorageTests(unittest.TestCase):
         self.assertEqual(feed_common.append_jsonl_dedup(self.path, [{"id": "new"}]), 0)
         self.assertEqual(self.path.read_bytes(), before)
 
-    def test_public_posts_exclude_related_organizations_without_rewriting_history(self):
+    def test_public_posts_exclude_unverified_accounts_and_organizations_without_rewriting_history(self):
         accounts = Path(self.directory.name) / "accounts.csv"
-        accounts.write_text("account_id,account_role\nowned,campaign\nparty,party\nmedia,affiliated\n")
+        accounts.write_text("account_id,account_role,verification\nowned,campaign,first_party\n"
+                            "party,party,first_party\nmedia,affiliated,cross_ref\nunclear,personal,unverified\n")
         rows = [{"id": source, "source_id": source, "classification": {"model": "test"}}
-                for source in ("owned", "party", "media")]
+                for source in ("owned", "party", "media", "unclear")]
         feed_common.append_jsonl_dedup(self.path, rows)
         with mock.patch.object(feed_common, "ACCOUNTS_CSV", accounts), \
              mock.patch.object(feed_common, "CANDIDATES_JSONL", self.path):

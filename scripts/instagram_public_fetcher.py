@@ -6,6 +6,7 @@ import argparse
 import datetime as dt
 import http.cookiejar
 import json
+import math
 import os
 import re
 import time
@@ -22,6 +23,7 @@ PUBLIC_APP_ID = "936619743392459"
 PUBLIC_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 PROFILE_POSTS_DOC_ID = "9310670392322965"
 PROFILE_COST_USD = 0.006
+DEFAULT_BATCH_SIZE = 12
 DIRECT_MAX_CONSECUTIVE_FAILURES = 3
 APIFY_RUN_DEADLINE_SECS = 345
 UTC = dt.timezone.utc
@@ -53,6 +55,10 @@ class PublicWebError(OSError):
     def __init__(self, message, code=None):
         super().__init__(message)
         self.code = code
+
+
+class ApifyCapacityError(RuntimeError):
+    """A fallback request was skipped before starting the actor."""
 
 
 def is_rate_limited(exc):
@@ -184,16 +190,19 @@ def api(method, path, token, *, body=None):
 
 
 def apify_profiles(sources, *, now, dry_run=False):
+    if not sources:
+        return {}, set()
     if dry_run or not facebook.apify_tokens():
         raise RuntimeError("Apify skipped: dry-run or APIFY_TOKEN missing")
     ledger = feed_common.load_json(facebook.LEDGER_JSON, {})
     entry = ledger.setdefault("months", {}).setdefault(facebook.month_key(now), {})
     instagram = entry.setdefault("instagram", {"estimated_spend_usd": 0, "runs": 0})
-    cost = round(len(sources) * PROFILE_COST_USD, 6)
     cap = float(os.environ.get("MAYOR_APIFY_INSTAGRAM_MONTHLY_BUDGET_USD", "0.75"))
     target = facebook.monthly_budget_usd() * facebook.DEFAULT_BUDGET_UTILIZATION
-    if instagram["estimated_spend_usd"] + cost > cap or facebook.ledger_month_spend(ledger, now) + cost > target:
-        raise RuntimeError("Apify skipped: monthly budget exhausted")
+    monthly_remaining = round(min(cap - instagram["estimated_spend_usd"],
+                                  target - facebook.ledger_month_spend(ledger, now)), 6)
+    if monthly_remaining < PROFILE_COST_USD:
+        raise ApifyCapacityError("Apify skipped: monthly budget exhausted")
     best = None  # (token, live remaining) of the account with the most credit
     for candidate in facebook.apify_tokens():
         try:
@@ -204,8 +213,12 @@ def apify_profiles(sources, *, now, dry_run=False):
                         facebook.PER_ACCOUNT_MONTHLY_BUDGET_USD) - float(limits.get("current", {}).get("monthlyUsageUsd") or 0)
         if best is None or remaining > best[1]:
             best = (candidate, remaining)
-    if best is None or best[1] < cost + 0.25:
-        raise RuntimeError("Apify skipped: live credit reserve")
+    live_remaining = round(best[1] - 0.25, 6) if best else 0
+    if live_remaining < PROFILE_COST_USD:
+        raise ApifyCapacityError("Apify skipped: live credit reserve")
+    slots = math.floor(round(min(monthly_remaining, live_remaining) / PROFILE_COST_USD, 9))
+    sources = sources[:slots]
+    cost = round(len(sources) * PROFILE_COST_USD, 6)
     token = best[0]
     # Persist before the paid request; unknown outcomes keep their reservation.
     instagram["estimated_spend_usd"] = round(instagram["estimated_spend_usd"] + cost, 6)
@@ -226,14 +239,15 @@ def apify_profiles(sources, *, now, dry_run=False):
     if run.get("status") != "SUCCEEDED":
         raise RuntimeError(f"Apify run ended with {run.get('status')}; budget reserved")
     items = api("GET", f"/datasets/{run['defaultDatasetId']}/items", token)
-    return {str(item.get("username", "")).casefold(): item for item in items}
+    found = {str(item.get("username", "")).casefold(): item for item in items}
+    return found, {source["id"] for source in sources}
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Fetch direct only; do not write inbox or telemetry.")
     parser.add_argument("--full-refresh", action="store_true", help="Ignore intervals; retain backoff and cooldown.")
-    parser.add_argument("--batch-size", type=int, default=int(os.environ.get("MAYOR_INSTAGRAM_BATCH_SIZE", "12")))
+    parser.add_argument("--batch-size", type=int, default=int(os.environ.get("MAYOR_INSTAGRAM_BATCH_SIZE", DEFAULT_BATCH_SIZE)))
     parser.add_argument("--instagram-interval-hours", type=float,
                         default=float(os.environ.get("MAYOR_INSTAGRAM_INTERVAL_HOURS", "12")))
     args = parser.parse_args()
@@ -290,14 +304,25 @@ def main() -> int:
                 direct = failures < DIRECT_MAX_CONSECUTIVE_FAILURES
     if fallback:
         try:
-            found = apify_profiles(fallback, now=now, dry_run=args.dry_run)
+            found, attempted = apify_profiles(fallback, now=now, dry_run=args.dry_run)
+        except ApifyCapacityError as exc:
+            found, attempted = {}, set()
+            print(f"instagram_public_fetcher: {exc}")
+            fallback_error = exc
         except (OSError, ValueError, RuntimeError, KeyError) as exc:
             found = {}
+            attempted = {source["id"] for source in fallback}
             fallback_error = exc
         else:
             fallback_error = "Apify profile result unavailable"
         cooled = False
         for source in fallback:
+            if source["id"] not in attempted:
+                if not args.dry_run and not cooled and is_rate_limited(errors.get(source["id"])):
+                    source_status.set_instagram_cooldown(errors[source["id"]])
+                    cooled = True
+                print(f"instagram_public_fetcher: {source['id']} waiting for Apify capacity")
+                continue
             try:
                 item = found.get(source["username"].casefold())
                 if item is None:
