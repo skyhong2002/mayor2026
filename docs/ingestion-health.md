@@ -18,6 +18,20 @@ Instagram 目前由 `instagram_public_fetcher.py` 使用免登入公開查詢，
 失敗來源可改用本專案 Apify 後備與月預算，詳細設定見 README。Threads、X 維持 RSSHub。
 Facebook 與 Instagram 共用本專案 Apify 預算，但不使用其他專案的多人額度池。
 
+### 正式機的抓取映像
+
+在 sky-server 更新或還原 `mayor2026-pipeline.service` 時，一併安裝 Dockerfile 與 systemd 補充設定：
+
+```sh
+sudo install -m 0644 deploy/sky-server/Dockerfile.pipeline /srv/mayor2026/Dockerfile.pipeline
+sudo install -D -m 0644 deploy/sky-server/mayor2026-pipeline.service.d/10-build-image.conf \
+  /etc/systemd/system/mayor2026-pipeline.service.d/10-build-image.conf
+sudo systemctl daemon-reload
+systemctl cat mayor2026-pipeline.service
+```
+
+每輪抓取啟動前，systemd 檢查本機的 `w1-mayor2026-pipeline:py314`。若映像遭清理，就先用 Dockerfile 重建再抓取。映像建置只讀取 Dockerfile，無需把正式資料目錄傳入 Docker。
+
 ## 寫入與重疊保護
 
 `run_pipeline.py` 以持續存在的 `state/run_pipeline.lock` 搭配 `flock` 持有排他鎖。

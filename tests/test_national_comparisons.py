@@ -86,6 +86,27 @@ class NationalComparisonTests(unittest.TestCase):
         self.assertEqual(len(public['candidates']), 2)
         self.assertTrue(all('data-candidate-filter="' + c['id'] + '"' in page for c in data['candidates']))
 
+    def test_hub_renders_in_place_and_copies_assets_to_a_separate_site(self):
+        self.addCleanup(comparison.S.asset_hash.cache_clear)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            map_asset = root / 'scripts/assets/taiwan-map.svg'
+            map_asset.parent.mkdir(parents=True)
+            map_asset.write_text('<svg/>', encoding='utf-8')
+            site = root / 'site'
+            assets = {'comparison.css': '.comparison-hub {}', 'comparison-hub.js': '"use strict";'}
+            (site / 'assets/pages').mkdir(parents=True)
+            for name, content in assets.items():
+                (site / 'assets/pages' / name).write_text(content, encoding='utf-8')
+
+            with mock.patch.object(comparison.S, 'PROJECT_ROOT', root):
+                for output in (site, root / 'preview'):
+                    with self.subTest(output=output.name), mock.patch.object(comparison.S, 'ASSETS_DIR', output / 'assets'):
+                        comparison.render_hub([], output)
+                        self.assertTrue((output / 'compare/index.html').is_file())
+                        for name, content in assets.items():
+                            self.assertEqual((output / 'assets/pages' / name).read_text(encoding='utf-8'), content)
+
     def test_all_race_inputs_validate_before_any_production_page_changes(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

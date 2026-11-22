@@ -387,8 +387,9 @@ def render_hub(races: list[dict], out: Path):
     asset_out.mkdir(parents=True, exist_ok=True)
     for asset_name in ('comparison.css', 'comparison-hub.js'):
         asset_path = S.PROJECT_ROOT / 'site' / 'assets' / 'pages' / asset_name
-        if asset_path.is_file():
-            shutil.copy2(asset_path, asset_out / asset_name)
+        dest = asset_out / asset_name
+        if asset_path.is_file() and (not dest.exists() or not asset_path.samefile(dest)):
+            shutil.copy2(asset_path, dest)
     S.asset_hash.cache_clear()
     map_markup = map_asset.read_text(encoding='utf-8')
     # The source map already contains the geographic anchor for every county.
